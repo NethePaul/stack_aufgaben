@@ -13,7 +13,7 @@ from libretranslatepy import LibreTranslateAPI
     sodass es automatisch übersetzbar ist
 """
 def rm_latex(s,x):
-    xs=["X","#","@","##","!","__"]
+    xs=["X","#","","##","!","@"]
     x=xs[x%len(xs)]
     l=len(s)
     i=0
@@ -96,7 +96,7 @@ def rm_latex(s,x):
 
 
 def readd_latex(r,x):
-    xs=["X","#","@","##","!","__"]
+    xs=["X","#","","##","!","@"]
     x=xs[x%len(xs)]
     s=r['s']
     if r['count']==0:
