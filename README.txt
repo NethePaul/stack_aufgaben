@@ -16,16 +16,32 @@ Quizzes müssen zuletzt manuell aktualisiert oder neu-erstellt werden, sodass si
 1. Notwendige Software
 Installiere ein Programm zum Bearbeiten von .csv Datein
  zb. Libreoffice oder Excel
-Installiere Python
+
+Installiere Python und pip
  In Windows:
   Der Installer kann von der Webseite heruntergeladen werden:  https://www.python.org/downloads/windows/
   Alternativ kann Python auch mit den Microsoft Store installiert werden.
+  Beide Varianten sollten auch pip mit beinhalten.
   Für mehr Info siehe:  https://learn.microsoft.com/de-de/windows/python/beginner
-  Unter Umständen muss der Pfad, unter dem Python installiert ist, manuell zu der "PATH" Enviournment Variable hinzugefühgt werden.
- In Linux und Mac kann Python einfach mit den Package Manager bzw. App Store installiert werden.
+  Es kann sein, dass die Pfäde, unter dem Python und pip installiert sind, manuell zu der "PATH" Enviournment Variable hinzugefühgt werden müssen.
+   Um PATH zu ändern:
+    Öffne regedit.exe
+    Navigiere zu: HKEY_LOCAL_MACHINE -> SYSTEM -> ControlSet001 -> Control Session Manager -> Environment
+    Füge hinten an den Wert der Variable PATH ein ";" an und danach den Pfad zu der Python Installation
+ In Linux und Mac kann Python und pip einfach mit den Package Manager bzw. App Store installiert werden.
 
- Validiere, dass Python richtig installiert ist, indem Sie CMD, oder eine Shell im Terminal öffnen und den Befehl "python --version" eingeben.
- Der Befehl sollte dann die installierte Version von Python ausgeben oder ein Fehler verursachen wenn Python nicht installiert ist.
+ Validiere, dass das beides richtig installiert ist, indem Sie CMD, oder eine Shell im Terminal öffnen und den Befehl "python --version" und "pip --version" eingeben.
+ Die Befehle sollten dann die installierten Versionen von Python und pip ausgeben.
+
+Installiere libretranslate,libretranslatepy,lxml, und beautifulsoup4 mit pip
+ Befehle:
+ "pip install libretranslate" (nur für automatische Übersetzung notwendig) (Die Installation kann lange dauern)
+ "pip install libretranslatepy" (nur für automatische Übersetzung notwendig)
+ "pip install lxml"
+ "pip install beautifulsoup4"
+ In Linux und Mac können manche von diesen auch mit den Package Manager bzw. App Store installiert werden.
+ In Linux und Mac kann es sein, dass man pipx anstelle von pip verwenden muss.
+
 
 2. Export der Fragen aus Moodle
 Navigiere zu den Moodle Kurs.
@@ -46,10 +62,7 @@ Navigiere zu den Ordner in CMD oder in einer Shell mithilfe von den "cd" Befehl.
  Generell:
   Mit "cd [Name des Ordner]" kann zu den Ordner navigiert werden.
   Mit "cd .." kann man zu den Obergeordneten obergeordneten Ordner zurück navigieren.
-Erstelle die .csv und .xml.template datein mit einen der Beiden folgenden Befehlen:
-"python xml2csv.py" (ohne automatischer Übersetzung) oder 
-"pyhton xml2csv_with_autotranslate.py" (mit automatischer Übersetzung).
-Wenn Sie versehentlich den Falschen der beiden Befehle ausgeführt haben oder Sie sich Ihre Meinung geändert haben und lieber den anderen Befehl ausführen wollen, können Sie in diesen Schritt noch einfach den anderen ausführen ohne Konsequenzen.
+Erstelle die .csv und .xml.template datein mit den Befehl "python xml2csv.py"
 Achtung: In allen weiteren Schritten wird eine wiederholte Ausführung eines der xml2csv Skripten die bisherigen Übersetzungen in der .csv Datei löschen!
 
 4. Übersetzung
@@ -65,7 +78,9 @@ Es kann sich empfehlen die "de" Spalte (ausser Header) zu Beginn in die "en" Spa
 Mit Search&Replace in der "en" Spalte kann man häufig wiederholte Ausdrücke alle auf einmal übersetzen.
 
 4.2 mit automatischer Überestzung
-Automatische Übersetzung kann häufig Fehler machen, besonders mit Fachsprache und wenn Text mit LaTeX oder Maxima Code unterbrochen ist.
+Gebe den Befehl "python autotranslate.py" ein. (Der Befehl kann mehrere Stunden brauchen bei vollständiger CPU-Auslastung)
+Wenn der Befehl unterbrochen wird, kann die Übersetzung weitergeführt werden duch einer wiederholten eingabe des Befehls.
+Automatische Übersetzung kann häufig Fehler machen, selbst wenn der vorherige Befehl ohne Fehlermeldungen endete, und besonders mit Fachsprache und wenn Text mit LaTeX oder Maxima Code unterbrochen ist.
 Daher ist es wichtig die .csv Datei vollständig manuell nach Fehlern zu durchsuchen.
 Achtung: Wenn text innerhalb von Mathematischen Ausdrücken in LaTeX (zb. "\(\text{Beispiel}\)") oder in Maxima Code (zb. "{@'Beispiel'@}") steht, wird es nicht automatisch übersetzt.
 
