@@ -25,9 +25,10 @@ def rm_latex(s):
     styles=[
         {'i':0,'start':["\\(","\\["],'end':["\\)","\\]"]},
         {'i':1,'start':["<style","<script","[[jsxgraph"],'end':["</style>","</script>","/>","[[/jsxgraph]]"]},
-        {'i':2,'start':["<"],'end':[">"]},
-        {'i':3,'start':["&"],'end':[";"]},
-        {'i':4,'start':["{","[["],'end':["}","]]"]}
+        {'i':2,'start':["\\begin"],'end':["\\end"]},
+        {'i':3,'start':["<"],'end':[">"]},
+        {'i':4,'start':["&"],'end':[";"]},
+        {'i':5,'start':["{","[["],'end':["}","]]"]}
     ]
     out={'s':"",'count':0}
     while True:

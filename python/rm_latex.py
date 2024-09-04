@@ -15,25 +15,25 @@ def rm_latex(s):
     brackets=''
     styles=[
         {'i':0,'start':["\\(","\\["],'end':["\\)","\\]"]},
-        {'i':1,'start':["<"],'end':[">"]},
-        {'i':2,'start':["&"],'end':[";"]},
-        {'i':3,'start':["{","[["],'end':["}","]]"]}
+        {'i':1,'start':["<style","<script","[[jsxgraph"],'end':["</style>","</script>","/>","[[/jsxgraph]]"]},
+        {'i':2,'start':["<"],'end':[">"]},
+        {'i':3,'start':["&"],'end':[";"]},
+        {'i':4,'start':["{","[["],'end':["}","]]"]}
     ]
     out={'s':"",'count':0}
     while True:
         if i>=l:
             if level>0:
-                print("Fehler bei Übersetzung")
                 return {'s':"",'count':0}
             out['count']=j
             return out
         special=False
         if level>0 and (s[i]=='"' or s[i]=="'"):
-            if len(brackets)==0:
+            if not brackets:
                 brackets=s[i]
             elif s[i]==brackets:
                 brackets=''
-        if len(brackets)==0:
+        if not brackets:
             for style in styles if level==0 else [styles[cstyle]]:
                 for st in style['start']:
                     if special:
@@ -86,8 +86,7 @@ def readd_latex(r):
     if r['count']==0:
         return s
     for i in range(r['count']):
-        if s.count(f" [X{i}] ")==0:
-            print("Fehler bei Übersetzung")
+        if s.count(f"[X{i}]")!=1:
             return ""
-        s=s.replace(f" [X{i}] ",r[str(i)])
+        s=s.replace(f"[X{i}]",r[str(i)])
     return s
