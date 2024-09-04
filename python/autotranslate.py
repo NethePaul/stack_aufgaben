@@ -12,7 +12,9 @@ from libretranslatepy import LibreTranslateAPI
     entfernt latex, maxima, und html von den Text von einer Stack Frage
     sodass es automatisch übersetzbar ist
 """
-def rm_latex(s):
+def rm_latex(s,x):
+    xs=["X","#","@","##","!","__"]
+    x=xs[x%len(xs)]
     l=len(s)
     i=0
     j=0
@@ -64,7 +66,7 @@ def rm_latex(s):
                             level=level-1
                             i=i+len(st)
                             if level == 0:
-                                out['s']=out['s']+f" [X{j}] "
+                                out['s']=out['s']+f"[{x}{j}]"
                                 out[str(j)]=s[start:i]
                                 j=j+1
                             special=True
@@ -73,7 +75,9 @@ def rm_latex(s):
             if i<l-1:
                 if not s[i+1].isalnum() or level!=0:
                     if level==0:
-                        out['s']=out['s']+s[i]+s[i+1]
+                        out[str(j)]=s[i]+s[i+1]
+                        out['s']=out['s']+f"[{x}{j}]"
+                        j=j+1
                     i=i+2
                 else:
                     start=i
@@ -81,7 +85,7 @@ def rm_latex(s):
                     while i+1<l and s[i+1].isalnum():
                         i=i+1
                     i=i+1
-                    out['s']=out['s']+f" [X{j}] "
+                    out['s']=out['s']+f"[{x}{j}]"
                     out[str(j)]=s[start:i]
                     j=j+1
         elif not special and level==0:
@@ -91,14 +95,17 @@ def rm_latex(s):
             i=i+1          
 
 
-def readd_latex(r):
+def readd_latex(r,x):
+    xs=["X","#","@","##","!","__"]
+    x=xs[x%len(xs)]
     s=r['s']
     if r['count']==0:
         return s
     for i in range(r['count']):
-        if s.count(f"[X{i}]")!=1:
+        c = s.count(f"[{x}{i}]")
+        if c!=1:
             return ""
-        s=s.replace(f"[X{i}]",r[str(i)])
+        s=s.replace(f"[{x}{i}]",r[str(i)])
     return s
 
 
@@ -135,17 +142,28 @@ for filename in filenames:
     print(f"Gesamtzahl {len(zeilen)}")
     for zeile in zeilen:
         if not zeile['en']:
-            o=rm_latex(zeile['de']);
-            if o['s']:
-                o['s']=lt.translate(o['s'], "de", "en")
-            en=readd_latex(o)
-            if not en:
-                print(f"Fehler bei der Übersetzung von Nummer: {zeile['Nummer']}")
-                en='Translation Error'
-            else:
-                sys.stdout.write(f" Nummer: {zeile['Nummer']}\r")
-                sys.stdout.flush()
-            zeile['en']=en
+            for i in range(6):
+                o=rm_latex(zeile['de'],i);
+            
+                # dbg=o['s']
+                if o['s']:
+                    o['s']=lt.translate(o['s'], "de", "en")
+                en=readd_latex(o,i)
+                if not en:
+                    if i==5:
+                        print(f"Fehler bei der Übersetzung von Nummer: {zeile['Nummer']}")
+                        en='Translation Error'
+                    continue
+                    # print(dbg)
+                    # print('=====')
+                    # print(o['s'])
+                    # print('=====')
+                    # print(en)
+                else:
+                    sys.stdout.write(f" Nummer: {zeile['Nummer']}\r")
+                    sys.stdout.flush()
+                zeile['en']=en
+                break
         writer.writerow(zeile)
     csvfile.close()
 
