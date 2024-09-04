@@ -24,7 +24,7 @@ def rm_latex(s):
     brackets=''
     styles=[
         {'i':0,'start':["\\(","\\["],'end':["\\)","\\]"]},
-        {'i':1,'start':["<style>","<script>"],'end':["</style>","</script>"]},
+        {'i':1,'start':["<style","<script","[[js"],'end':["</style>","</script>","/>","[[/js"]},
         {'i':2,'start':["<"],'end':[">"]},
         {'i':3,'start':["&"],'end':[";"]},
         {'i':4,'start':["{","[["],'end':["}","]]"]}
@@ -95,7 +95,7 @@ def readd_latex(r):
     if r['count']==0:
         return s
     for i in range(r['count']):
-        if s.count(f"[X{i}]")==0:
+        if s.count(f"[X{i}]")!=1:
             return ""
         s=s.replace(f"[X{i}]",r[str(i)])
     return s
@@ -131,7 +131,7 @@ for filename in filenames:
 
     # print(lt.translate("LibreTranslate is awesome!", "en", "de")) 
     # print(lt.translate("Øving", "no", "de"))
-
+    print(f"Gesamtzahl {len(zeilen)}")
     for zeile in zeilen:
         if not zeile['en']:
             o=rm_latex(zeile['de']);
