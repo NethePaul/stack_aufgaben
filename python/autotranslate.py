@@ -24,7 +24,7 @@ def rm_latex(s):
     brackets=''
     styles=[
         {'i':0,'start':["\\(","\\["],'end':["\\)","\\]"]},
-        {'i':1,'start':["<style","<script","[[js"],'end':["</style>","</script>","/>","[[/js"]},
+        {'i':1,'start':["<style","<script","[[jsxgraph"],'end':["</style>","</script>","/>","[[/jsxgraph]]"]},
         {'i':2,'start':["<"],'end':[">"]},
         {'i':3,'start':["&"],'end':[";"]},
         {'i':4,'start':["{","[["],'end':["}","]]"]}
