@@ -1,8 +1,3 @@
-Warnung:
- Die Python-Skripte sind noch nicht bereit.
-
-
-
 
 Diese Anleitung ist zur Übersetzung von allen Fragen im gesamten Kurs von Deutsch zu Mutlilang mit Deutsch und Englisch.
 
@@ -78,8 +73,13 @@ Es kann sich empfehlen die "de" Spalte (ausser Header) zu Beginn in die "en" Spa
 Mit Search&Replace in der "en" Spalte kann man häufig wiederholte Ausdrücke alle auf einmal übersetzen.
 
 4.2 mit automatischer Überestzung
+Öffne ein 2. Terminal/CMD und gebe dort den Befehl "libretranslate --load-only de,en"
+ Warte bis der Befehl die Ausgabe "Running on http://127.0.0.1:5000" in den Terminal schreibt.
+ Beende den Befehl nicht. Lass das Terminal/CMD im Hintergrund offen.
 Gebe den Befehl "python autotranslate.py" ein. (Der Befehl kann mehrere Stunden brauchen bei vollständiger CPU-Auslastung)
-Wenn der Befehl unterbrochen wird, kann die Übersetzung weitergeführt werden duch einer wiederholten eingabe des Befehls.
+Wenn der Befehl unterbrochen wird, kann die Übersetzung weitergeführt werden duch einer wiederholten Eingabe des Befehls, während der libretranslate Befehl im Hintergrund läuft.
+Sobald der Befehl endet kann das 2. Terminal/CMD mit den libretranslate Befehl geschlossen werden.
+
 Automatische Übersetzung kann häufig Fehler machen, selbst wenn der vorherige Befehl ohne Fehlermeldungen endete, und besonders mit Fachsprache und wenn Text mit LaTeX oder Maxima Code unterbrochen ist.
 Daher ist es wichtig die .csv Datei vollständig manuell nach Fehlern zu durchsuchen.
 Achtung: Wenn text innerhalb von Mathematischen Ausdrücken in LaTeX (zb. "\(\text{Beispiel}\)") oder in Maxima Code (zb. "{@'Beispiel'@}") steht, wird es nicht automatisch übersetzt.

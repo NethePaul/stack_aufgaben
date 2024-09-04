@@ -16,15 +16,13 @@ class UnsortedAttributes(HTMLFormatter):
             yield k, v
 
 filenames=glob.glob('*.xml')
+fieldnames=["Nummer","de","en"]
 
 for filename in filenames:
     tree = ET.parse(filename)
     root = tree.getroot()
     texte=root.findall('.//*[@format="html"]/text')
 
-    languages=set()
-    languages.add('de')
-    languages.add('en')
     groups=[]
     texts=[]
     infile=open(filename)
@@ -56,7 +54,6 @@ for filename in filenames:
             spans = soup.findAll("span",{"class":"multilang"})
             group=[]
             for span in spans:
-                languages.add(span['lang'])
                 group.append(span)
                 try:
                     nexttag_name=span.find_next_sibling().name
@@ -68,7 +65,6 @@ for filename in filenames:
                 group=[]
 
     csvfile=open(filename+'.csv','w',newline='',encoding='utf8')
-    fieldnames=['Nummer']+list(languages)
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
     number=0
