@@ -142,7 +142,7 @@ for filename in filenames:
     print(f"Gesamtzahl {len(zeilen)}")
     for zeile in zeilen:
         if not zeile['en']:
-            for i in range(6):
+            for i in range(3):
                 o=rm_latex(zeile['de'],i);
             
                 # dbg=o['s']
@@ -162,8 +162,8 @@ for filename in filenames:
                 else:
                     sys.stdout.write(f" Nummer: {zeile['Nummer']}\r")
                     sys.stdout.flush()
-                zeile['en']=en
                 break
+            zeile['en']=en
         writer.writerow(zeile)
     csvfile.close()
 
