@@ -30,6 +30,21 @@ for filename in filenames:
     infile=open(filename)
     inhalt=infile.read()
     infile.close()
+
+    category=root.find('.//question[@type="category"]/category/text').text
+    inhalt.replace(category,category+"/übersetzt")
+    inhalt.replace('<quiz>',f"""<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>{category}</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>""",1)
+    
     number=0
     for text in texte:
         if text.text:

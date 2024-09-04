@@ -1,6 +1,7 @@
 
 """
-    removes latex, maxima, and html from a string from a stack question text
+    entfernt latex, maxima, und html von den Text von einer Stack Frage
+    sodass es automatisch übersetzbar ist
 """
 def rm_latex(s):
     l=len(s)
@@ -8,9 +9,10 @@ def rm_latex(s):
     j=0
     start=0
     if l <= 0:
-        return {'s':s, 'num':0}
+        return {'s':s, 'count':0}
     level=0
     cstyle=0
+    brackets=''
     styles=[
         {'i':0,'start':["\\(","\\["],'end':["\\)","\\]"]},
         {'i':1,'start':["<"],'end':[">"]},
@@ -21,41 +23,42 @@ def rm_latex(s):
     while True:
         if i>=l:
             if level>0:
-                print("error: improperly braced")
-                out['s']=out['s']+s[start:i]
+                print("Fehler bei Übersetzung")
+                return {'s':"",'count':0}
             out['count']=j
             return out
-        print(s[i])
         special=False
-        for style in styles if level==0 else [styles[cstyle]]:
-            for st in style['start']:
-                if special:
-                    break
-                if s[i:].startswith(st):
-                    if level == 0:
-                        start=i
-                        cstyle=style['i']
-                    i=i+len(st)
-                    level=level+1
-                    special=True
-                    print("level up")
-                    break
-            if level>0 and not special:
-                for st in style['end']:
-                    print(st)
+        if level>0 and (s[i]=='"' or s[i]=="'"):
+            if len(brackets)==0:
+                brackets=s[i]
+            elif s[i]==brackets:
+                brackets=''
+        if len(brackets)==0:
+            for style in styles if level==0 else [styles[cstyle]]:
+                for st in style['start']:
                     if special:
                         break
                     if s[i:].startswith(st):
-                        print("found end")
-                        level=level-1
-                        i=i+len(st)
                         if level == 0:
-                            print("level 0")
-                            out['s']=out['s']+f" [X{j}] "
-                            out[str(j)]=s[start:i]
-                            j=j+1
+                            start=i
+                            cstyle=style['i']
+                        i=i+len(st)
+                        level=level+1
                         special=True
                         break
+                if level>0 and not special:
+                    for st in style['end']:
+                        if special:
+                            break
+                        if s[i:].startswith(st):
+                            level=level-1
+                            i=i+len(st)
+                            if level == 0:
+                                out['s']=out['s']+f" [X{j}] "
+                                out[str(j)]=s[start:i]
+                                j=j+1
+                            special=True
+                            break
         if not special and s[i]=='\\':
             if i<l-1:
                 if not s[i+1].isalnum() or level!=0:
@@ -76,5 +79,15 @@ def rm_latex(s):
             i=i+1
         elif not special:
             i=i+1          
-                
-                    
+
+
+def readd_latex(r):
+    s=r['s']
+    if r['count']==0:
+        return s
+    for i in range(r['count']):
+        if s.count(f" [X{i}] ")==0:
+            print("Fehler bei Übersetzung")
+            return ""
+        s=s.replace(f" [X{i}] ",r[str(i)])
+    return s
