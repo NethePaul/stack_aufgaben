@@ -142,27 +142,21 @@ for filename in filenames:
     print(f"Gesamtzahl {len(zeilen)}")
     for zeile in zeilen:
         if not zeile['en']:
+            en=""
             for i in range(3):
+                sys.stdout.write(f" Nummer: {zeile['Nummer']}{i+1}/3\r")
+                sys.stdout.flush()
                 o=rm_latex(zeile['de'],i);
             
                 # dbg=o['s']
                 if o['s']:
                     o['s']=lt.translate(o['s'], "de", "en")
                 en=readd_latex(o,i)
-                if not en:
-                    if i==5:
-                        print(f"Fehler bei der Übersetzung von Nummer: {zeile['Nummer']}")
-                        en='Translation Error'
-                    continue
-                    # print(dbg)
-                    # print('=====')
-                    # print(o['s'])
-                    # print('=====')
-                    # print(en)
-                else:
-                    sys.stdout.write(f" Nummer: {zeile['Nummer']}\r")
-                    sys.stdout.flush()
-                break
+                if en:
+                    break
+            if not en:
+                print(f"Fehler bei der Übersetzung von Nummer: {zeile['Nummer']}")
+                en='Translation Error'
             zeile['en']=en
         writer.writerow(zeile)
     csvfile.close()
