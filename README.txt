@@ -22,7 +22,12 @@ Installiere Python und pip
    Um PATH zu ändern:
     Öffne regedit.exe
     Navigiere zu: "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment"
-    Füge hinten an den Wert der Variable PATH ein ";" an und danach den Pfad zu der Python Installation
+    Wenn der Wert von PATH bereits den Pfad zur Python Installation (zb. "C:\Program Files\Python312\") enthält muss es nicht mehr hinzugefügt werden.
+    Ansonsten füge hinten an den Wert der Variable PATH ein ";" an und danach den Pfad zu der Python Installation.
+     Danach füge hinten an den Wert der Variable PATH ein ";" an und danach den Pfad zu den "Script" Ordner in der Python Installation.
+     Der Wert der PATH variable sollte danach ungefähr wie folgt aussehen: "%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\system32\wbem;%SystemRoot%\system32\WindowsPowershell\v1.0;C:\Program Files\dotnet\;C:\Program Files\Python312\;C:\Program Files\Python312\Scripts\"
+    
+    
  In Linux und Mac kann Python und pip einfach mit den Package Manager bzw. App Store installiert werden.
 
  Validiere, dass das beides richtig installiert ist, indem Sie CMD, oder eine Shell im Terminal öffnen und den Befehl "python --version" und "pip --version" eingeben.
