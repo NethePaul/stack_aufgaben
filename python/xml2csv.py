@@ -30,7 +30,7 @@ for filename in filenames:
     infile.close()
 
     category=root.find('.//question[@type="category"]/category/text').text
-    inhalt=inhalt.replace(category,category+"/übersetzt")
+    inhalt=inhalt.replace(category,category+"/ubersetzt")
     inhalt=inhalt.replace('<quiz>',f"""<quiz>
 <!-- question: 0  -->
   <question type="category">
@@ -48,7 +48,7 @@ for filename in filenames:
         if text.text:
             orig=text.text
             number+=1
-            inhalt=inhalt.replace(orig,"###"+str(number)+"###")
+            inhalt=inhalt.replace(orig,"###"+str(number)+"###",1)
             text.text='<span class="multilang" lang="de">'+orig+'</span>'
             soup = BeautifulSoup(text.text,'html.parser')
             spans = soup.findAll("span",{"class":"multilang"})
