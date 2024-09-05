@@ -26,6 +26,7 @@ Installiere Python und pip
     Ansonsten füge hinten an den Wert der Variable PATH ein ";" an und danach den Pfad zu der Python Installation.
      Danach füge hinten an den Wert der Variable PATH ein ";" an und danach den Pfad zu den "Script" Ordner in der Python Installation.
      Der Wert der PATH variable sollte danach ungefähr wie folgt aussehen: "%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\system32\wbem;%SystemRoot%\system32\WindowsPowershell\v1.0;C:\Program Files\dotnet\;C:\Program Files\Python312\;C:\Program Files\Python312\Scripts\"
+    Python ist standardmäßig unter "%ProgramFiles%\Python X.Y" oder "%ProgramFiles(x86)%\Python X.Y" oder "%LocalAppData%\Programs\Python\PythonXY" oder "%LocalAppData%\Programs\Python\PythonXY-32" oder "%LocalAppData%\Programs\Python\PythonXY-64" installiert.
     
     
  In Linux und Mac kann Python und pip einfach mit den Package Manager bzw. App Store installiert werden.
