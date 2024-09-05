@@ -30,7 +30,7 @@ for filename in filenames:
     infile.close()
 
     category=root.find('.//question[@type="category"]/category/text').text
-    inhalt=inhalt.replace(category,category+"/ubersetzt")
+    inhalt=inhalt.replace(category,category+"/übersetzt")
     inhalt=inhalt.replace('<quiz>',f"""<quiz>
 <!-- question: 0  -->
   <question type="category">
