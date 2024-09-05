@@ -28,10 +28,9 @@ Installiere Python und pip
  Validiere, dass das beides richtig installiert ist, indem Sie CMD, oder eine Shell im Terminal öffnen und den Befehl "python --version" und "pip --version" eingeben.
  Die Befehle sollten dann die installierten Versionen von Python und pip ausgeben.
 
-Installiere libretranslate,libretranslatepy,lxml, und beautifulsoup4 mit pip
+Installiere libretranslate,lxml, und beautifulsoup4 mit pip
  Befehle:
  "pip install libretranslate" (nur für automatische Übersetzung notwendig) (Die Installation kann lange dauern)
- "pip install libretranslatepy" (nur für automatische Übersetzung notwendig)
  "pip install lxml"
  "pip install beautifulsoup4"
  In Linux und Mac können manche von diesen auch mit den Package Manager bzw. App Store installiert werden.
