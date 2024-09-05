@@ -7,7 +7,9 @@ import csv
 filenames=glob.glob('*.xml')
 
 for filename in filenames:
-    print(filename)    
+    if filename.endswith("_new.xml"):
+        continue
+    print(filename) 
     templatefile=open(filename+'.template')
     inhalt=templatefile.read()
     templatefile.close()
