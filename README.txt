@@ -84,6 +84,7 @@ Daher ist es wichtig die .csv Datei vollständig manuell nach Fehlern zu durchsu
 Achtung: Wenn text innerhalb von Mathematischen Ausdrücken in LaTeX (zb. "\(\text{Beispiel}\)") oder in Maxima Code (zb. "{@'Beispiel'@}") steht, wird es nicht automatisch übersetzt.
 
 5. Import in Moodle
+Gebe den Befehl "python fix_template.py" ein.
 Gebe den Befehl "python csv2xml.py" ein.
 Es wird dann eine neue _new.xml Datei im Ordner erstellt.
 Dann in Moodle, im selben Menu wo "Export" stand neben "Fragensammlung", klicke auf "Import".
