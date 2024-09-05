@@ -21,7 +21,7 @@ Installiere Python und pip
   Es kann sein, dass die Pfäde, unter dem Python und pip installiert sind, manuell zu der "PATH" Enviournment Variable hinzugefühgt werden müssen.
    Um PATH zu ändern:
     Öffne regedit.exe
-    Navigiere zu: HKEY_LOCAL_MACHINE -> SYSTEM -> ControlSet001 -> Control Session Manager -> Environment
+    Navigiere zu: "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment"
     Füge hinten an den Wert der Variable PATH ein ";" an und danach den Pfad zu der Python Installation
  In Linux und Mac kann Python und pip einfach mit den Package Manager bzw. App Store installiert werden.
 
