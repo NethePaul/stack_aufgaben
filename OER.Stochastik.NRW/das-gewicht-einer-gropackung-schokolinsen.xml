@@ -1,0 +1,1978 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Das Gewicht einer Gro&#223;packung Schokolinsen</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <style>
+        button.next, button.top-next {
+    border: 1px solid black;
+background-color: #A9F5BC; 
+}
+button.next:hover, button.top-next:hover {
+        background-color: #E0F8E6;
+}
+button.prev, button.top {
+    border: 1px solid black;
+    background-color: #DCB25E; 
+}
+button.prev:hover, button.top:hover {
+        background-color: #E7D2A7;
+}
+/* Style f&#252;r Details */
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+    </style>
+    <details>
+        <summary>
+            Inhalt und Umfang dieser Aufgabe
+        </summary>
+        <p>
+            In dieser Aufgabe lernen Sie ,Konfidenzintervalle f&#252;r den Mittelwert und die Varianz unter Annahme normalverteilter Daten zu bestimmen. Sie besteht aus den folgenden drei Teilaufgaben .
+        </p>
+        <ul>
+            <li>
+                <b>
+                    (a)
+                </b>
+                Ein Konfidenzintervall f&#252;r den Mittelwert bestimmen.
+            </li>
+            <li>
+                <b>
+                    (b)
+                </b>
+                Aussagen &#252;ber Konfidenzintervalle kennen.
+            </li>
+            <li>
+                <b>
+                    (c)
+                </b>
+                Ein Konfidenzintervall f&#252;r die Varianz bestimmen.
+            </li>
+        </ul>
+    </details>
+    <div class="question-view">
+        <p>
+            Die Mitarbeiter:innen des Lehrstuhls Mathematik XII haben {# nn #} Gro&#223;packungen von Schokolinsen gewogen. Das mittlere Gewicht betrug {# mean #}&#160;g, {@ if variance_given then sconcat("die Stichprobenvarianz war ", var, "&#160;g
+            <sup>
+                2
+            </sup>
+            ") else sconcat("die empirische Standardabweichung war ", std, "&#160;g") @}. Wir nehmen an, dass das Gewicht einer zuf&#228;llig gew&#228;hlten Packung \(\mathcal{N}(\mu, \sigma^2)\)-verteilt ist, wobei \(\mu\) und \(\sigma^2\) unbekannnte Parameter sind.
+        </p>
+        <div class="question-view">
+            <div class="question-view">
+                <div class="card" id="27045cd4-6b4f-4a2a-9b37-da832def9240" style="display: none;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Zur Erinnerung
+                        </h5>
+                    </div>
+                </div>
+                <p>
+                    <b>
+                        (a)
+                    </b>
+                    Bestimmen Sie ein {@aspercent(1-alpha)@}-Konfidenzintervall f&#252;r den unbekannten Erwartungswert \(\mu\). Geben Sie die Intervallgrenzen bitte mit mindestens zwei Nachkommastellen an. Sie k&#246;nnen das Interval so eingeben:
+                    <code>
+                        [a, b]
+                    </code>
+                    .
+                </p>
+                <p>
+                    Antwort: [[input:confmu]]
+                </p>
+                [[validation:confmu]]
+[[feedback:confmu]]
+            </div>
+            <div class="question-view">
+                <p>
+                    <b>
+                        (a.1)
+                    </b>
+                    Wir wollen ein Konfidenzintervall f&#252;r den unbekannten Erwartungswert \(\mu\) bei gegebener Stichprobenvarianz bestimmen. Welche Formel ist die richtige?
+[[input:formula]]
+[[validation:formula]]
+[[feedback:formula]]
+                </p>
+            </div>
+            <div class="question-view">
+                <p>
+                    <b>
+                        (a.2)
+                    </b>
+                    Bestimmen Sie den Wert f&#252;r das {@ qt(1 - alpha/2, n-1) @}-Quantil. Geben Sie den Wert bitte mit mindestens zwei Nachkommastellen an.
+                </p>
+                <p>
+                    {@ qt(1 - alpha/2, n-1) @} = [[input:t_quantil]]
+[[validation:t_quantil]]
+                </p>
+                [[feedback:t_quantil]]
+            </div>
+        </div>
+        <div class="question-view">
+            <p>
+                <b>
+                    (b)
+                </b>
+                Welche der folgenden Aussagen ist richtig?
+            </p>
+            [[input:ans3]] [[validation:ans3]]
+[[feedback:prt3]]
+        </div>
+        <div class="question-view">
+            <div class="question-view">
+                <div class="card" id="202c154f-a701-40a0-a6d7-e1c2ac8daf0b" style="display: none;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Zur Erinnerung
+                        </h5>
+                    </div>
+                </div>
+                <p>
+                    <b>
+                        (c)
+                    </b>
+                    Bestimmen Sie ein {#(1-alpha)*100#}%-Konfidenzintervall f&#252;r die unbekannte Varianz \(\sigma^2\). Geben Sie die Intervallgrenzen bitte mit mindestens zwei Nachkommastellen an. Sie k&#246;nnen das Interval so eingeben:
+                    <code>
+                        [a, b]
+                    </code>
+                    .
+                </p>
+                <p>
+                    Antwort:&#8239;[[input:confvariance]]
+                </p>
+                [[validation:confvariance]]
+[[feedback:confvariance]]
+            </div>
+            <div class="question-view">
+                <p>
+                    <b>
+                        (c.1)
+                    </b>
+                    Wir wollen ein Konfidenzintervall f&#252;r die unbekannte Varianz \(\sigma^2\) bei gegebenen Stichprobenvarianz bestimmen. Welche Formel ist die richtige?
+[[input:confvar_formula]]
+[[validation:confvar_formula]]
+[[feedback:confvar_formula]]
+                </p>
+            </div>
+            <div class="question-view">
+                <p>
+                    <b>
+                        (c.2)
+                    </b>
+                    Bestimmen Sie die Werte f&#252;r das {@ qchisq(alpha/2, n-1) @} - und das {@ qchisq(1 - alpha/2, n-1) @}-Quantil. Geben Sie die Werte bitte mit mindestens zwei Nachkommastellen an.
+                </p>
+                <p>
+                    {@ qchisq(alpha/2, n-1) @} = [[input:chi2_quantil1]][[validation:chi2_quantil1]]
+                </p>
+                [[feedback:chi2_quantil1]]
+                <p>
+                    {@ qchisq(1 - alpha/2, n-1) @} = [[input:chi2_quantil2]][[validation:chi2_quantil2]]
+[[feedback:chi2_quantil2]]
+                    <br/>
+                    [[feedback:quantiles_complete]]
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // This script is responsible for the question navigation. 
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later
+(()=>{function e(e,t){this.rootElement=e,this.id=t,this.views=e.querySelectorAll(".question-view"),this.currentView=Array.prototype.findIndex.call(this.views,i)}function t(e){for(;e;)o(e),e=n(e)}function n(e){let t=e.parentNode;return t&&(t=t.closest(".question-view")),t}function o(e){e.style.display="block"}function i(e){return null==e.querySelector(".question-view")}function s(e){e.style.display="none"}
+void 0===window.QController&&(window.QController=e,document.addEventListener("DOMContentLoaded",(t=>{const n=document.getElementById("responseform");if(!n)throw Error("Element with id responseform not found.");n.querySelectorAll(".stack.que").forEach((t=>{const n=t.querySelector(".question-view");if(!n)return void console.log("QController Warning: no elements with class question-view inside "+t.id);const o=new e(n,t.id);o.installHandlers(),o.loadState(),o.update()}))}))),e.prototype.update=function(){this.views.forEach(s);const e=this.views[this.currentView];i(e)?t(e):function(e){let n=e;for(;n&&!i(n);)n=n.querySelector(".question-view");t(n)}(e)},e.prototype.installHandlers=function(){const e=this;this.rootElement.querySelectorAll("button").forEach((t=>{t.addEventListener("click",(o=>{const i=t.closest(".question-view");if(!i)return void console.log("qcontroller: <button> not inside question view");const s=t.classList;let r=null;if(s.contains("next"))r=i.nextElementSibling;else if(s.contains("top-next")){const e=i.parentNode;r=e?e.nextElementSibling:null}else s.contains("top")?r=n(i):s.contains("prev")&&(r=i.previousElementSibling);r&&r.classList.contains("question-view")&&(e.currentView=Array.prototype.findIndex.call(e.views,(e=>e===r)),e.saveState(),e.update())}))}))},e.prototype.saveState=function(){const e=this.id+"-controller-state";window.sessionStorage.setItem(e,this.currentView)},e.prototype.loadState=function(){const e=this.id+"-controller-state",t=window.sessionStorage.getItem(e);t&&(this.currentView=Number.parseInt(t))}})();
+//# sourceMappingURL=qcontroller.js.map
+// @license-end
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <style>
+        button.next, button.top-next {
+    border: 1px solid black;
+background-color: #A9F5BC; 
+}
+button.next:hover, button.top-next:hover {
+        background-color: #E0F8E6;
+}
+button.prev, button.top {
+    border: 1px solid black;
+    background-color: #DCB25E; 
+}
+button.prev:hover, button.top:hover {
+        background-color: #E7D2A7;
+}
+/* Style f&#252;r Details */
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+    </style>
+    <details>
+        <summary>
+            Content and scope of this task
+        </summary>
+        <p>
+            In this task, you will learn to determine confidence intervals for the mean value and variance taking normal distributed data. It consists of the following three subtasks .
+        </p>
+        <ul>
+            <li>
+                <b>
+                    (a)
+                </b>
+                Determine a confidence interval for the mean value.
+            </li>
+            <li>
+                <b>
+                    (b)
+                </b>
+                Knowing statements about confidence intervals.
+            </li>
+            <li>
+                <b>
+                    (c)
+                </b>
+                determine a confidence interval for the variance.
+            </li>
+        </ul>
+    </details>
+    <div class="question-view">
+        <p>
+            Staff:in the Chair of Mathematics XII have {# nn #} Large packages weighed by chocolates. The average weight was {# mean #}g. {@ if variance_given then sconcat("die Stichprobenvarianz war ", var, "&#160;g
+            <sup>
+                2
+            </sup>
+            ") else sconcat("die empirische Standardabweichung war ", std, "&#160;g") @}. We assume that the weight of a randomly selected package \(\mathcal{N}(\mu, \sigma^2)\)is distributed, \(\mu\) and \(\sigma^2\) are unrecognized parameters.
+        </p>
+        <div class="question-view">
+            <div class="question-view">
+                <div class="card" id="27045cd4-6b4f-4a2a-9b37-da832def9240" style="display: none;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            To remember
+                        </h5>
+                    </div>
+                </div>
+                <p>
+                    <b>
+                        (a)
+                    </b>
+                    Define a {@aspercent(1-alpha)@}- confidence interval for the unknown expected value \(\mu\). Please specify the interval limits with at least two decimal places. You can enter the Interval so:
+                    <code>
+                        [a]
+                    </code>
+                    .
+                </p>
+                <p>
+                    Answer: [[input:confmu]]
+                </p>
+                [[validation:confmu]][[feedback:confmu]]
+            </div>
+            <div class="question-view">
+                <p>
+                    <b>
+                        (a)
+                    </b>
+                    We want a confidence interval for the unknown expected value \(\mu\) for a given sample variance. What formula is the right one?
+[[input:formula]][[validation:formula]][[feedback:formula]]
+                </p>
+            </div>
+            <div class="question-view">
+                <p>
+                    <b>
+                        (a.2)
+                    </b>
+                    Determine the value for the {@ qt(1 - alpha/2, n-1) @}- Quantil. Please specify the value with at least two debit points.
+                </p>
+                <p>
+                    {@ qt(1 - alpha/2, n-1) @} = [[input:t_quantil]][[validation:t_quantil]]
+                </p>
+                [[feedback:t_quantil]]
+            </div>
+        </div>
+        <div class="question-view">
+            <p>
+                <b>
+                    (b)
+                </b>
+                Which of the following statements is correct?
+            </p>
+            [[input:ans3]] [[validation:ans3]][[feedback:prt3]]
+        </div>
+        <div class="question-view">
+            <div class="question-view">
+                <div class="card" id="202c154f-a701-40a0-a6d7-e1c2ac8daf0b" style="display: none;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            To remember
+                        </h5>
+                    </div>
+                </div>
+                <p>
+                    <b>
+                        (c)
+                    </b>
+                    Define a {#(1-alpha)*100#}% confidence interval for unknown variance \(\sigma^2\). Please specify the interval limits with at least two decimal places. You can enter the Interval so:
+                    <code>
+                        [a]
+                    </code>
+                    .
+                </p>
+                <p>
+                    Answer:[[input:confvariance]]
+                </p>
+                [[validation:confvariance]][[feedback:confvariance]]
+            </div>
+            <div class="question-view">
+                <p>
+                    <b>
+                        (c.1)
+                    </b>
+                    We want a confidence interval for the unknown variance \(\sigma^2\) for given sample variance. What formula is the right one?
+[[input:confvar_formula]][[validation:confvar_formula]][[feedback:confvar_formula]]
+                </p>
+            </div>
+            <div class="question-view">
+                <p>
+                    <b>
+                        (c.2)
+                    </b>
+                    Determine the values for {@ qchisq(alpha/2, n-1) @} - and that {@ qchisq(1 - alpha/2, n-1) @}- Quantil. Please specify the values with at least two decimal places.
+                </p>
+                <p>
+                    {@ qchisq(alpha/2, n-1) @} = [[input:chi2_quantil1]][[validation:chi2_quantil1]]
+                </p>
+                [[feedback:chi2_quantil1]]
+                <p>
+                    {@ qchisq(1 - alpha/2, n-1) @} = [[input:chi2_quantil2]][[validation:chi2_quantil2]][[feedback:chi2_quantil2]]
+                    <br/>
+                    [[feedback:quantiles_complete]]
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // This script is responsible for the question navigation. 
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later
+(()=>{function e(e,t){this.rootElement=e,this.id=t,this.views=e.querySelectorAll(".question-view"),this.currentView=Array.prototype.findIndex.call(this.views,i)}function t(e){for(;e;)o(e),e=n(e)}function n(e){let t=e.parentNode;return t&&(t=t.closest(".question-view")),t}function o(e){e.style.display="block"}function i(e){return null==e.querySelector(".question-view")}function s(e){e.style.display="none"}
+void 0===window.QController&&(window.QController=e,document.addEventListener("DOMContentLoaded",(t=>{const n=document.getElementById("responseform");if(!n)throw Error("Element with id responseform not found.");n.querySelectorAll(".stack.que").forEach((t=>{const n=t.querySelector(".question-view");if(!n)return void console.log("QController Warning: no elements with class question-view inside "+t.id);const o=new e(n,t.id);o.installHandlers(),o.loadState(),o.update()}))}))),e.prototype.update=function(){this.views.forEach(s);const e=this.views[this.currentView];i(e)?t(e):function(e){let n=e;for(;n&&!i(n);)n=n.querySelector(".question-view");t(n)}(e)},e.prototype.installHandlers=function(){const e=this;this.rootElement.querySelectorAll("button").forEach((t=>{t.addEventListener("click",(o=>{const i=t.closest(".question-view");if(!i)return void console.log("qcontroller: <button> not inside question view");const s=t.classList;let r=null;if(s.contains("next"))r=i.nextElementSibling;else if(s.contains("top-next")){const e=i.parentNode;r=e?e.nextElementSibling:null}else s.contains("top")?r=n(i):s.contains("prev")&&(r=i.previousElementSibling);r&&r.classList.contains("question-view")&&(e.currentView=Array.prototype.findIndex.call(e.views,(e=>e===r)),e.saveState(),e.update())}))}))},e.prototype.saveState=function(){const e=this.id+"-controller-state";window.sessionStorage.setItem(e,this.currentView)},e.prototype.loadState=function(){const e=this.id+"-controller-state",t=window.sessionStorage.getItem(e);t&&(this.currentView=Number.parseInt(t))}})();
+//# sourceMappingURL=qcontroller.js.map
+// @license-end
+    </script>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>3.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  Das Gewicht einer Gro&#223;packung Schokolinsen
+
+  wurde entwickelt von
+
+    Daniel Mei&#223;ner <daniel.meissner-i4k(at)ruhr-uni-bochum.de>
+
+  nach einer Idee von
+
+    Herold Dehling <herold.dehling(at)ruhr-uni-bochum.de>
+
+  an der Ruhr-Universit&#228;t Bochum.
+
+  Dieses Werk ist lizenziert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+
+  Diese Aufgabe ist eine mehrteilige Aufgabe, deren einzelne
+  Aufgabenteile mithilfe von JavaScript nacheinander sichtbar
+  gemacht werden.
+
+  Diese Aufgabe verwendet das Maxima-Paket &#8216;distrib&#8217;.
+*/
+
+/* render number as percentages */
+texaspercent (e) := block([num: first (args (e))], sconcat(tex1(ev(num*100, simp)), "\\,\\%"));
+texput(aspercent, texaspercent);
+
+texqt(e) := block([q: first(args(e)), df: second(args(e))],
+  sconcat("t_{", tex1(df), "; ", tex1(q), "}"));
+texput(qt, texqt);
+
+texqchisq(e) := block([q: first(args(e)), df: second(args(e))],
+  sconcat(" \\chi^2_{", tex1(df), "; ", tex1(q), "}"));
+texput(qchisq, texqchisq);
+
+nn: 20;
+mean: rand([171, 169]);
+var: rand([1, 4]);
+std: sqrt(var);
+variance_given: rand([true, false]);
+alpha: 0.05;
+
+ta_t_quantile: quantile_student_t (1-alpha/2, nn - 1);
+eepsilon: ta_t_quantile * sqrt(var / nn);
+conf_interval_mu: [mean - eepsilon, mean +&#8239;eepsilon];
+
+conf_interval_variance: [(nn-1)*var/quantile_chi2(1 - alpha/2, nn-1), (nn-1)*var/quantile_chi2(alpha/2, nn-1)];
+
+Tans3: [
+[1, false, "Wir k&#246;nnen sicher sein, dass der unbekannte Parameter \\(\\mu\\) in dem Konfidenzintervall liegt."], 
+[2, true, sconcat("Wenn wir das von uns verwendete Verfahren immer wieder auf jedes mal neue Packungen anwenden, so wird der unbekannte Parameter \\(\\mu\\) in ", stack_disp(aspercent(1 - alpha), "i"), " aller F&#228;lle im Konfidenzintervall liegen.")]];
+
+ta_formula: random_permutation([
+[1, true, sconcat("\\(\\left[ \\bar{X} - t_{n-1;",
+  1 - alpha/2, "} \\sqrt{\\frac{s_X^2}{n}}, \\bar{X} +&#8239;t_{n-1;",
+  1 - alpha/2, "}\\sqrt{\\frac{s_X^2}{n}}\\right]\\)")],
+[2, false, "\\(\\left[  \\bar{X} - 1.96 \\frac{\\sigma}{\\sqrt{n}}, \\bar{X} +&#8239;1.96 \\frac{\\sigma}{\\sqrt{n}}\\right]\\)"],
+[3, false, sconcat("\\(\\left[ (n-1) \\frac{s_X^2}{\\chi^2_{n-1;&#8239;", 1 - alpha/2, "}}, 
+(n-1) \\frac{s_X^2}{\\chi^2_{n-1;", alpha/2, "}}, \\right]\\)")],
+[4, false, sconcat("\\(\\left[ \\bar{X} - t_{n-1;",
+  1 - alpha/2, "} s_X, \\bar{X} +&#8239;t_{n-1;",
+  1 - alpha/2, "} s_X\\right]\\)")]
+]);
+
+ta_confvar_formula: random_permutation([
+[1, false, sconcat("\\(\\left[ \\bar{X} - t_{n-1;",
+  1 - alpha/2, "} \\sqrt{\\frac{s_X^2}{n}}, \\bar{X} +&#8239;t_{n-1;",
+  1 - alpha/2, "}\\sqrt{\\frac{s_X^2}{n}}\\right]\\)")],
+[2, false, "\\(\\left[  \\bar{X} - 1.96 \\frac{\\sigma}{\\sqrt{n}}, \\bar{X} +&#8239;1.96 \\frac{\\sigma}{\\sqrt{n}}\\right]\\)"],
+[3, true, sconcat("\\(\\left[ (n-1) \\frac{s_X^2}{\\chi^2_{n-1;&#8239;", 1 - alpha/2, "}}, 
+(n-1) \\frac{s_X^2}{\\chi^2_{n-1;", alpha/2, "}}, \\right]\\)")],
+[4, false, sconcat("\\(\\left[ \\bar{X} - t_{n-1;",
+  1 - alpha/2, "} s_X, \\bar{X} +&#8239;t_{n-1;",
+  1 - alpha/2, "} s_X\\right]\\)")]
+]);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{# var #}, {# mean #}, {# variance_given #}, {# ta_formula #}, {# ta_confvar_formula #}</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed>i</variantsselectionseed>
+        <input>
+            <name>ans3</name>
+            <type>radio</type>
+            <tans>Tans3</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>chi2_quantil1</name>
+            <type>numerical</type>
+            <tans>quantile_chi2(1-alpha/2, nn-1)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>chi2_quantil2</name>
+            <type>numerical</type>
+            <tans>quantile_chi2(alpha/2, nn-1)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>confmu</name>
+            <type>algebraic</type>
+            <tans>conf_interval_mu</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>confvar_formula</name>
+            <type>radio</type>
+            <tans>ta_confvar_formula</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>confvariance</name>
+            <type>algebraic</type>
+            <tans>conf_interval_variance</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>formula</name>
+            <type>radio</type>
+            <tans>ta_formula</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>t_quantil</name>
+            <type>numerical</type>
+            <tans>ta_t_quantile</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>chi2_quantil1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>chi2_quantil1</sans>
+                <tans>quantile_chi2(alpha/2, nn-1)</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>chi2_quantil1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>chi2_quantil1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+    </p>
+    <p>
+        Bitte sehen Sie in der Quantiltabelle f&#252;r die \(\chi^2\)-Verteilung nach oder verwenden Sie zum Beispiel das Statistikprogramm R.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+    </p>
+    <p>
+        Please see the quantum table for the \(\chi^2\)-Distribute or use, for example, the statistics program R.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>chi2_quantil2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>chi2_quantil2</sans>
+                <tans>quantile_chi2(1 - alpha/2, nn-1)</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>chi2_quantil2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>chi2_quantil2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+    </p>
+    <p>
+        Bitte sehen Sie in der Quantiltabelle f&#252;r die \(\chi^2\)-Verteilung nach oder verwenden Sie zum Beispiel das Statistikprogramm R.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+    </p>
+    <p>
+        Please see the quantum table for the \(\chi^2\)-Distribute or use, for example, the statistics program R.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>confmu</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>conf_interval_mu_var: [mean - 1.96*sqrt(var/nn), mean +&#8239;1.96*sqrt(var/nn)];
+wrong_conf_mu_sqrt: [mean - ta_t_quantile * std, mean + ta_t_quantile * std];</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>confmu</sans>
+                <tans>conf_interval_mu</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>confmu-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Varianz ist uns unbekannt und wir kennen nur die Stichprobenvarianz. Die Formel f&#252;r das Konfidenzintervall lautet daher
+\[
+\left[ \bar{X} - {@qt(1 - alpha/2, n-1)@} \sqrt{\frac{s_X^2}{n}}, \bar{X} +{@qt(1 - alpha/2, n-1)@} \sqrt{\frac{s_X^2}{n}} \right].
+\]
+Setzen wir nun \(\bar{X} =&#8239;{@ mean @}\), \(s_X^2 =&#8239;{@ var @}\) und \(n =&#8239;{@ nn @}\)&#8239;ein, erhalten wir:
+\[
+\left[ {@mean@} - {@ sqrt(var/nn)@} {@qt(1 - alpha/2, nn-1)@}, {@mean@} + {@ sqrt(var/nn)@} {@qt(1 - alpha/2, nn-1)@} \right] =&#8239;{@ decimalplaces(conf_interval_mu,2) @}.
+\]
+    </p>
+    <p>
+        Klicken Sie auf
+        <button class="top-next" type="button">
+            Weiter
+        </button>
+        , um zum n&#228;chsten Aufgabenteil zu gelangen.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The variance is unknown to us and we only know the sample variance. The formula for the confidence interval is therefore
+\[
+\left[ \bar{X} - {@qt(1 - alpha/2, n-1)@} \sqrt{\frac{s_X^2}{n}}, \bar{X} +{@qt(1 - alpha/2, n-1)@} \sqrt{\frac{s_X^2}{n}} \right].
+\]Let's sit now \(\bar{X} =&#8239;{@ mean @}\), \(s_X^2 =&#8239;{@ var @}\) and \(n =&#8239;{@ nn @}\)one, we get:
+\[
+\left[ {@mean@} - {@ sqrt(var/nn)@} {@qt(1 - alpha/2, nn-1)@}, {@mean@} + {@ sqrt(var/nn)@} {@qt(1 - alpha/2, nn-1)@} \right] =&#8239;{@ decimalplaces(conf_interval_mu,2) @}.
+\]
+    </p>
+    <p>
+        Click on
+        <button class="top-next" type="button">
+            Next
+        </button>
+        to get to the next task.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>confmu-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in kleinere Teilaufgaben unterteilt. Wenn Sie diese Aufgaben alle gel&#246;st haben, k&#246;nnen Sie die urspr&#252;ngliche Aufgabe sicherlich l&#246;sen. Klicken Sie dazu auf
+        <button class="next" type="button">
+            Weiter
+        </button>
+        .
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        That you couldn't solve the task right away is no problem! In the following, the task is subdivided into smaller subtasks. If you have all solved these tasks, you can certainly solve the original task. Click on
+        <button class="next" type="button">
+            Next
+        </button>
+        .
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>confmu</sans>
+                <tans>conf_interval_mu_var</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>confmu-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Haben Sie vielleicht die Formel f&#252;r das Konfidenzintervall bei bekannter Varianz genommen? Der wahre Parameter \(\sigma^2\) ist nicht bekannt, stattdessen ist die Stichprobenvarianz angegeben. Daher m&#252;ssen Sie die Formel f&#252;r das Konfidenzintervall bei unbekannter Varianz nehmen.  Versuchen Sie es noch einmal.
+    </p>
+    <p>
+        Falls Sie nicht genau wissen, was Sie falsch gemacht haben, klicken Sie auf
+        <button class="next" type="button">
+            Weiter
+        </button>
+        , um Hilfe zu erhalten.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Did you perhaps take the formula for the confidence interval with known variance? The true parameter \(\sigma^2\) is not known, instead the sample variance is specified. Therefore, you must take the formula for the confidence interval with unknown variance. Try it again.
+    </p>
+    <p>
+        If you do not know exactly what you did wrong, click on
+        <button class="next" type="button">
+            Next
+        </button>
+        to get help.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>confmu-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>is(listp(confmu) and length(confmu) = 2)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>confmu-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>confmu-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Eingabe wurde nicht als Intervall erkannt. Bitte geben Sie ein Intervall in der Form
+        <code>
+            [a, b]
+        </code>
+        und achten Sie darauf, dass Sie Dezimalzahlen mit einem Punkt als Dezimaltrennzeichen eingeben. Zum Beispiel:
+        <code>
+            [2.1, 3.1]
+        </code>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your input was not recognized as an interval. Please enter an interval in the form
+        <code>
+            [a]
+        </code>
+        and make sure you enter decimal numbers with a point as decimal separator. For example:
+        <code>
+            [2.1, 3.1]
+        </code>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>confmu</sans>
+                <tans>wrong_conf_mu_sqrt</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>confmu-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Haben Sie m&#246;glicherweise vergessen durch \(\sqrt{n}\) zu teilen? Versuchen Sie es noch einmal und beachten Sie, dass Sie beim Konfidenzintervall f&#252;r \(\mu\) die empirische Standardabweichung f&#252;r das mittlere Gewicht nehmen m&#252;ssen, nicht die empirische Standardabweichung f&#252;r eine Einzelbeobachtung.
+    </p>
+    <p>
+        Falls Sie nicht genau wissen, was Sie falsch gemacht haben, klicken Sie auf
+        <button class="next" type="button">
+            Weiter
+        </button>
+        , um Hilfe zu erhalten.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You may have forgotten by \(\sqrt{n}\) to share? Try it again and note that at the confidence interval for \(\mu\) the empirical standard deviation for the mean weight, not the empirical standard deviation for individual observation.
+    </p>
+    <p>
+        If you do not know exactly what you did wrong, click on
+        <button class="next" type="button">
+            Next
+        </button>
+        to get help.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>0</falsenextnode>
+                <falseanswernote>confmu-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>confvar_formula</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>confvar_formula</sans>
+                <tans>first(mcq_correct(ta_confvar_formula))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>confvar_formula-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Klicken Sie auf
+        <button class="next" type="button">
+            Weiter
+        </button>
+        , um zum n&#228;chsten Hilfeschritt zu gelangen. Um zur urspr&#252;nglichen Aufgabe zur&#252;ckzukommen, klicken Sie auf
+        <button class="top" type="button">
+            Zur&#252;ck
+        </button>
+    </p>
+    <script>
+        (function() {
+                const card = document.getElementById("202c154f-a701-40a0-a6d7-e1c2ac8daf0b");
+                const p = document.createElement("p");
+                p.innerText = "Die richtige Formel f&#252;r das Konfidenzintervall lautet: \\" +
+                                "(\\left[ (n-1) \\frac{s_X^2}{\\chi^2_{n-1; {#1 - alpha/2 #}}}, (n-1) \\frac{s_X^2}{\\chi^2_{n-1; {# alpha/2 #}}}, \\right]\\"+")";
+                p.classList.add("card-text");
+                card.querySelector(".card-body").append(p);
+                card.style.display = "";
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        Click on
+        <button class="next" type="button">
+            Next
+        </button>
+        to get to the next step. To return to the original task, click on
+        <button class="top" type="button">
+            Back
+        </button>
+    </p>
+    <script>
+        (function() {
+                const card = document.getElementById("202c154f-a701-40a0-a6d7-e1c2ac8daf0b");
+                const p = document.createElement("p");
+                p.innerText = "Die richtige Formel f&#252;r das Konfidenzintervall lautet: \\" +
+                                "(\\left[ (n-1) \\frac{s_X^2}{\\chi^2_{n-1; {#1 - alpha/2 #}}}, (n-1) \\frac{s_X^2}{\\chi^2_{n-1; {# alpha/2 #}}}, \\right]\\"+")";
+                p.classList.add("card-text");
+                card.querySelector(".card-body").append(p);
+                card.style.display = "";
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>confvar_formula-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>confvar_formula</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>confvar_formula-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Sie haben das Konfidenzintervall f&#252;r \(\mu\) bei bekannter Varianz ausgew&#228;hlt. Es ist aber nach einem Konfidenzintervall f&#252;r die Varianz gefragt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        You have the confidence interval for \(\mu\) selected for known variance. However, it is in demand for a confidence interval for the variance.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>confvar_formula-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>confvar_formula</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>confvar_formula-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Sie haben das Konfidenzintervall f&#252;r \(\mu\) bei unbekannter Varianz ausgew&#228;hlt. Es ist aber nach einem Konfidenzintervall f&#252;r die Varianz gefragt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        You have the confidence interval for \(\mu\) selected for unknown variance. However, it is in demand for a confidence interval for the variance.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>confvar_formula-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>confvar_formula</sans>
+                <tans>4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>confvar_formula-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Das ist keine Formel f&#252;r ein Konfidenzintervall f&#252;r die Varianz. Bitte versuchen Sie es noch einmal.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        This is not a formula for a confidence interval for the variance. Please try again.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>confvar_formula-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>confvariance</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>confvariance</sans>
+                <tans>conf_interval_variance</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>confvariance-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Formel f&#252;r das Konfidenzintervall lautet:
+\[
+\left[
+(n-1) \frac{s_X^2}{{@qchisq(1-alpha/2, n-1)@}}, 
+(n-1) \frac{s_X^2}{{@qchisq(alpha/2, n-1)@}}, 
+\right]
+\]
+Setzen wir nun \(s_X^2 =&#8239;{@ var @}\) und \(n =&#8239;{@ nn @}\)&#8239;ein, erhalten wir:
+\[
+\left[
+\frac{{@(nn-1)*var@}}{{@qchisq(1-alpha/2, nn-1)@}}, 
+\frac{{@(nn-1)*var@}}{{@qchisq(alpha/2, nn-1)@}}, 
+\right]
+= {@ decimalplaces(conf_interval_variance, 2) @}.
+\]
+    </p>
+    <p>
+        Herzlichen Gl&#252;ckwunsch, Sie sind am Ende der Aufgabe angelangt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The formula for the confidence interval is:
+\[
+\left[
+(n-1) \frac{s_X^2}{{@qchisq(1-alpha/2, n-1)@}}, 
+(n-1) \frac{s_X^2}{{@qchisq(alpha/2, n-1)@}}, 
+\right]
+\]Let's sit now \(s_X^2 =&#8239;{@ var @}\) and \(n =&#8239;{@ nn @}\)one, we get:
+\[
+\left[
+\frac{{@(nn-1)*var@}}{{@qchisq(1-alpha/2, nn-1)@}}, 
+\frac{{@(nn-1)*var@}}{{@qchisq(alpha/2, nn-1)@}}, 
+\right]
+= {@ decimalplaces(conf_interval_variance, 2) @}.
+\]
+    </p>
+    <p>
+        Congratulations, you have reached the end of the task.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>confvariance-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in kleinere Teilaufgaben unterteilt. Wenn Sie diese Aufgaben alle gel&#246;st haben, k&#246;nnen Sie die urspr&#252;ngliche Aufgabe sicherlich l&#246;sen. Klicken Sie dazu auf
+        <button class="next" type="button">
+            Weiter
+        </button>
+        .
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        That you couldn't solve the task right away is no problem! In the following, the task is subdivided into smaller subtasks. If you have all solved these tasks, you can certainly solve the original task. Click on
+        <button class="next" type="button">
+            Next
+        </button>
+        .
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>formula</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>formula</sans>
+                <tans>first(mcq_correct(ta_formula))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>formula-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Klicken Sie auf
+        <button class="next" type="button">
+            Weiter
+        </button>
+        , um zum n&#228;chsten Hilfeschritt zu gelangen. Um zur urspr&#252;nglichen Aufgabe zur&#252;ckzukommen, klicken Sie auf
+        <button class="top" type="button">
+            Zur&#252;ck
+        </button>
+    </p>
+    <script>
+        (function() {
+                const card = document.getElementById("27045cd4-6b4f-4a2a-9b37-da832def9240");
+                const p = document.createElement("p");
+                p.innerText = "Die richtige Formel f&#252;r das Konfidenzintervall lautet: \\" + "(\\left[ \\bar{X} - t_{n-1; {#1 - alpha/2 #}} \\sqrt{\\frac{s_X^2}{n}}, \\bar{X} +&#8239;t_{n-1; {#1 - alpha/2 #}}\\sqrt{\\frac{s_X^2}{n}}\\right]\\"+")";
+                p.classList.add("card-text");
+                card.querySelector(".card-body").append(p);
+                card.style.display = "";
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        Click on
+        <button class="next" type="button">
+            Next
+        </button>
+        to get to the next step. To return to the original task, click on
+        <button class="top" type="button">
+            Back
+        </button>
+    </p>
+    <script>
+        (function() {
+                const card = document.getElementById("27045cd4-6b4f-4a2a-9b37-da832def9240");
+                const p = document.createElement("p");
+                p.innerText = "Die richtige Formel f&#252;r das Konfidenzintervall lautet: \\" + "(\\left[ \\bar{X} - t_{n-1; {#1 - alpha/2 #}} \\sqrt{\\frac{s_X^2}{n}}, \\bar{X} +&#8239;t_{n-1; {#1 - alpha/2 #}}\\sqrt{\\frac{s_X^2}{n}}\\right]\\"+")";
+                p.classList.add("card-text");
+                card.querySelector(".card-body").append(p);
+                card.style.display = "";
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>formula-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>formula</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>formula-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Sie haben das Konfidenzintervall f&#252;r \(\mu\) bei bekannter Varianz ausgew&#228;hlt. Die wahre Varianz ist uns aber unbekannt, statt dessen ist die Stichprobenvarianz gegeben. Mit der von Ihnen ausgew&#228;hlten Formel kann man eine N&#228;herung f&#252;r das Konfidenzintervall erhalten, wenn man f&#252;r \(\sigma\) die empirische Standardabweichung einsetzt. Wir k&#246;nnen hier aber ein besseres Konfidenzintervall finden. Versuchen Sie es noch einmal.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        You have the confidence interval for \(\mu\) selected for known variance. The true variance is unknown to us, but instead the sample variance is given. With the formula you choose, you can get an approximation for the confidence interval if you want \(\sigma\) using the empirical standard deviation. But we can find a better confidence interval here. Try it again.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>formula-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>formula</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>formula-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Sie haben das Konfidenzintervall f&#252;r die Varianz ausgew&#228;hlt. Es ist aber nach einem Konfidenzintervall f&#252;r \(\mu\) gefragt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        You have selected the confidence interval for the variance. However, after a confidence interval, \(\mu\) in demand.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>formula-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>formula</sans>
+                <tans>4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>formula-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        In dieser Formel wird die empirische Standardabweichung einer Einzelbeobachtung verwendet. Das ist falsch, statt dessen sollte die empirische Standardabweichung des mittleren Gewichts verwendet werden. Bitte versuchen Sie es noch einmal.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        In this formula, the empirical standard deviation of a single observation is used. This is wrong, instead the empirical standard deviation of the mean weight should be used. Please try again.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>formula-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>first(mcq_correct(Tans3))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Das errechnete Konfidenzintervall h&#228;ngt vom Ausgang des Experiments ab.  Ein Konfidenzintervall garantiert uns allerdings, dass bei h&#228;ufigen Wiederholungen des Experiments der wahre Parameter in {@aspercent(1-alpha)@} der F&#228;lle im errechneten Intervall liegt.
+    </p>
+    <p>
+        Klicken Sie auf
+        <button class="next" type="button">
+            Weiter
+        </button>
+        , um zum n&#228;chsten Aufgabenteil zu gelangen.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The calculated confidence interval depends on the output of the experiment. A confidence interval guarantees us, however, that with frequent repetitions of the experiment the true parameters in {@aspercent(1-alpha)@} the case is in the calculated interval.
+    </p>
+    <p>
+        Click on
+        <button class="next" type="button">
+            Next
+        </button>
+        to get to the next task.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Das errechnete Konfidenzintervall h&#228;ngt vom Ausgang des Experiments ab.  Es kann durchaus vorkommen, dass der unbekannte Paremeterwert \(\mu\) nicht im errechneten Konfidenzintervall liegt.  Dieser Fall ist aber sehr unwahrscheinlich.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The calculated confidence interval depends on the output of the experiment. It may well happen that the unknown parameter value \(\mu\) is not in the calculated confidence interval. This case is very unlikely.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>quantiles_complete</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text>sa: [chi2_quantil1, chi2_quantil2]
+ta: [quantile_chi2(alpha/2, nn-1), quantile_chi2(1 - alpha/2, nn-1)]</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>sa</sans>
+                <tans>ta</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>quantiles_complete-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Klicken Sie auf
+        <button class="top" type="button">
+            Zur&#252;ck
+        </button>
+        , um zur urspr&#252;nglichen Aufgabe zur&#252;ckzukehren.
+    </p>
+    <script>
+        (function() {
+                const card = document.getElementById("202c154f-a701-40a0-a6d7-e1c2ac8daf0b");
+                const p = document.createElement("p");
+                p.innerText = "Sie haben die Quantile der \\"+"(\\chi^2\\"+")-Verteilung wie folgt bestimmt: \\" +
+                                "(\\chi^2_{{#nn-1#}; {#alpha/2#}} = {#chi2_quantil1#}\\"+") und \\"+"(\\chi^2_{{#nn-1#}; {#1 - alpha/2#}} = {#chi2_quantil2#}\\"+")";
+                p.classList.add("card-text");
+                card.querySelector(".card-body").append(p);
+                card.style.display = "";
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Click on
+        <button class="top" type="button">
+            Back
+        </button>
+        to return to the original task.
+    </p>
+    <script>
+        (function() {
+                const card = document.getElementById("202c154f-a701-40a0-a6d7-e1c2ac8daf0b");
+                const p = document.createElement("p");
+                p.innerText = "Sie haben die Quantile der \\"+"(\\chi^2\\"+")-Verteilung wie folgt bestimmt: \\" +
+                                "(\\chi^2_{{#nn-1#}; {#alpha/2#}} = {#chi2_quantil1#}\\"+") und \\"+"(\\chi^2_{{#nn-1#}; {#1 - alpha/2#}} = {#chi2_quantil2#}\\"+")";
+                p.classList.add("card-text");
+                card.querySelector(".card-body").append(p);
+                card.style.display = "";
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>quantiles_complete-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>t_quantil</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>t_quantil</sans>
+                <tans>ta_t_quantile</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>t_quantil-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Klicken Sie auf
+        <button class="top" type="button">
+            Zur&#252;ck
+        </button>
+        , um zur urspr&#252;nglichen Aufgabe zur&#252;ckzukehren.
+    </p>
+    <script>
+        (function() {
+                const card = document.getElementById("27045cd4-6b4f-4a2a-9b37-da832def9240");
+                const p = document.createElement("p");
+                p.innerText = "Sie haben den Wert f&#252;r das t-Quantil wie folgt bestimmt: \\" + 
+                "(\ t_{{#nn-1#}; {#1 - alpha/2#}} = {# t_quantil #}\\" + ")";
+                p.classList.add("card-text");
+                card.querySelector(".card-body").append(p);
+                card.style.display = "";
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        Click on
+        <button class="top" type="button">
+            Back
+        </button>
+        to return to the original task.
+    </p>
+    <script>
+        (function() {
+                const card = document.getElementById("27045cd4-6b4f-4a2a-9b37-da832def9240");
+                const p = document.createElement("p");
+                p.innerText = "Sie haben den Wert f&#252;r das t-Quantil wie folgt bestimmt: \\" + 
+                "(\ t_{{#nn-1#}; {#1 - alpha/2#}} = {# t_quantil #}\\" + ")";
+                p.classList.add("card-text");
+                card.querySelector(".card-body").append(p);
+                card.style.display = "";
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>t_quantil-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Bitte sehen Sie in der Quantiltabelle f&#252;r die Student-t-Verteilung nach oder verwenden Sie zum Beispiel das Statistikprogramm R.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        Please check the Quantil table for the Student-t distribution or use the R statistical program for example.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1482530505</deployedseed>
+        <deployedseed>1713197056</deployedseed>
+        <deployedseed>260436375</deployedseed>
+        <deployedseed>674045492</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <description/>
+            <testinput>
+                <name>ans3</name>
+                <value>first(mcq_correct(Tans3))</value>
+            </testinput>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt3-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

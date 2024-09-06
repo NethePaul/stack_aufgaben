@@ -1,0 +1,4190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Test auf einen fairen W&#252;rfel</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <style type="text/css">
+        .data-table {
+                        border-collapse: collapse;
+                        margin: 25px 0;
+                        font-size: 0.9em;
+                        min-width: 400px;
+                        border-radius: 5px 5px 0 0;
+                        overflow: hidden;
+                        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+  
+  
+  
+  .data-table thead tr {
+                        background-color: #17365c;
+                        color: #ffffff;
+                        text-align: left;
+                        font-weight: bold;
+        }
+
+  
+  
+  
+  .data-table th,
+        .data-table td {
+                        padding: 12px 15px;
+        }
+
+  
+  
+  
+  .data-table tbody tr {
+                        border-bottom: 1px solid #e7e7e7;
+        }
+
+  
+  
+  
+  .data-table tbody tr:nth-of-type(even) {
+                        background-color: #f3f3f3;
+        }
+
+  
+  
+  
+  .data-table tbody tr:last-of-type {
+                        border-bottom: 2px solid #17365c;
+        }
+
+  
+  
+  
+  .data-table tbody tr.active-row {
+                        font-weight: bold;
+                        color: #17365c;
+        }
+
+  
+  
+  
+  .question-view > .question-view {
+                        margin-top: 1rem;
+                        padding-top: 1rem;
+                        border-top: 1px solid lightgray;
+        }
+
+  
+  
+  
+  .que.stack .formulation .question-view .flashback .stackprtfeedback {
+                        border: 1px solid gray;
+                        border-radius: 10px;
+                        padding: 5px;
+                        background: transparent;
+        }
+
+  
+  
+  
+  .subtask-id {
+                        font-weight: bold;
+        }
+        .que.stack .formulation td.correct {
+                background-color: #c8ffc7;
+        }
+        .que.stack .formulation td.incorrect {
+                background-color: #fec4c5;
+        }
+    </style>
+    <div class="question-view">
+        <p>
+            Ein W&#252;rfel wird {# sum(nn[i], i, 1, 6) #} Mal gew&#252;rfelt. In der
+                untenstehenden Tabelle haben wir notiert, wie oft jede der
+                Augenzahlen \(1, \dotsc, 6\) auftrat.
+        </p>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>
+                        Augenzahl
+                    </th>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        4
+                    </td>
+                    <td>
+                        5
+                    </td>
+                    <td>
+                        6
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>
+                        Anzahl
+                    </th>
+                    <td>
+                        {# nn[1] #}
+                    </td>
+                    <td>
+                        {# nn[2] #}
+                    </td>
+                    <td>
+                        {# nn[3] #}
+                    </td>
+                    <td>
+                        {# nn[4] #}
+                    </td>
+                    <td>
+                        {# nn[5] #}
+                    </td>
+                    <td>
+                        {# nn[6] #}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            Wir wollen die Hypothese testen, dass der W&#252;rfel fair ist gegen
+                die Alternative, dass er unfair ist. (&#8222;Fair&#8220; hei&#223;t, dass alle
+                Augenzahlen mit derselben Wahrscheinlichkeit auftreten.)
+        </p>
+        <div class="row">
+            <div class="col-7">
+                <div class="question-view">
+                    <p>
+                        <span class="subtask-id">
+                            a)
+                        </span>
+                        W&#228;hlen Sie die
+                passende Teststatistik aus.
+                    </p>
+                    <p>
+                        [[input:ans1]] [[validation:ans1]]
+                    </p>
+                    [[feedback:prt_ans1]]
+                </div>
+                <div class="question-view">
+                    <div class="flashback">
+                        [[feedback:memoryB]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            <span class="subtask-id">
+                                b)
+                            </span>
+                            Bestimmen Sie den Wert der Teststatistik.
+                        </p>
+                        <p>
+                            \(T = \) [[input:ans2]] [[validation:ans2]]
+                        </p>
+                        [[feedback:prt_ans2]]
+                        <p>
+                            <em>
+                                Hinweis: Wenn Sie gerundete Werte eingeben, runden Sie mindestens auf zwei Nachkommastellen genau.
+                            </em>
+                        </p>
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            <span class="subtask-id">
+                                b.1)
+                            </span>
+                            Suchen Sie die Werte f&#252;r
+                        \(n\) und \(k\) aus dem Aufgabentext.
+                        </p>
+                        <p>
+                            \(n = \) [[input:ans2h1a]] [[validation:ans2h1a]]
+                        </p>
+                        [[feedback:prt_ans2h1a]]
+                        <p>
+                            \(k = \) [[input:ans2h1b]] [[validation:ans2h1b]]
+                        </p>
+                        [[feedback:prt_ans2h1b]]
+                        <br/>
+                        [[feedback:prt_ans2h1]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            <span class="subtask-id">
+                                b.2)
+                            </span>
+                            F&#252;llen Sie die folgende
+                        Tabelle aus.
+                        </p>
+                        <p>
+                            <em>
+                                Hinweis: Sie bekommen erst Feedback zu Ihrer Antwort, wenn Sie die Tabelle vollst&#228;ndig ausgef&#252;llt haben.
+                            </em>
+                        </p>
+                        <div style="overflow: scroll">
+                            <table class="data-table" id="9df01194-d8e4-451d-bc56-09e80aceca50">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            \(i\)
+                                        </th>
+                                        <th>
+                                            1
+                                        </th>
+                                        <th>
+                                            2
+                                        </th>
+                                        <th>
+                                            3
+                                        </th>
+                                        <th>
+                                            4
+                                        </th>
+                                        <th>
+                                            5
+                                        </th>
+                                        <th>
+                                            6
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            \(N_i\)
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2a]] [[validation:ans2h2a]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2b]] [[validation:ans2h2b]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2c]] [[validation:ans2h2c]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2d]] [[validation:ans2h2d]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2e]] [[validation:ans2h2e]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2f]] [[validation:ans2h2f]]
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            \(n \theta^{(0)}_i\)
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2g]] [[validation:ans2h2g]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2h]] [[validation:ans2h2h]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2i]] [[validation:ans2h2i]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2j]] [[validation:ans2h2j]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2k]] [[validation:ans2h2k]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2l]] [[validation:ans2h2l]]
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        [[feedback:prt_ans2h2]]
+                    </div>
+                </div>
+                <div class="question-view">
+                    <div class="question-view">
+                        <p>
+                            <span class="subtask-id">
+                                c)
+                            </span>
+                            Es soll zum Niveau \(\alpha
+                        = {# alpha #}\) getestet werden. Bestimmen Sie den kritischen
+                        Wert f&#252;r Ihren Test.
+                        </p>
+                        <p>
+                            \(k_\alpha = \) [[input:ans3]] [[validation:ans3]]
+                        </p>
+                        [[feedback:prt_ans3]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            Der kritische Wert ist wichtig f&#252;r das Verwerfungskriterium
+                unseres Tests.  Um ihn zu bestimmen, m&#252;ssen wir die Verteilung
+                unserer Teststatistik kennen.
+                        </p>
+                        <p>
+                            <span class="subtask-id">
+                                c.1)
+                            </span>
+                            Welche Verteilung hat die
+                        Teststatistik unter der Nullhypothese?
+                        </p>
+                        <p>
+                            [[input:ans3h1]] [[validation:ans3h1]]
+                        </p>
+                        [[feedback:prt_ans3h1]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            <span class="subtask-id">
+                                c.2)
+                            </span>
+                            Geben Sie die Zahl der
+                Freiheitsgerade an: [[input:ans3h2]] [[validation:ans3h2]]
+                        </p>
+                        [[feedback:prt_ans3h2]]
+                    </div>
+                </div>
+                <div class="question-view">
+                    <div class="flashback">
+                        [[feedback:flashbackD]]
+                    </div>
+                    <p>
+                        <span class="subtask-id">
+                            d)
+                        </span>
+                        Wie lautet Ihre Testentscheidung:
+                    </p>
+                    <p>
+                        [[input:ans4]] [[validation:ans4]]
+                    </p>
+                    [[feedback:prt_ans4]]
+                </div>
+                <div class="question-view">
+                    <p>
+                        <span class="subtask-id">
+                            e)
+                        </span>
+                        Was bedeutet es in der Situation dieser Aufgabe, dass der Test
+                        zum Niveau {# alpha #} durchgef&#252;hrt wird? Markieren Sie die richtigen Aussagen:
+                    </p>
+                    <p>
+                        [[input:ans5]] [[validation:ans5]]
+                    </p>
+                    [[feedback:prt_ans5]]
+                </div>
+            </div>
+            <div class="col-5">
+                <ol class="menu-group list-group">
+                    <li class="list-group-item active">
+                        a) W&#228;hlen Sie die passende
+                                Teststatistik aus.
+                    </li>
+                    <li class="list-group-item">
+                        b) Bestimmen Sie den Wert der
+                        Teststatistik.
+                    </li>
+                    <li class="list-group-item">
+                        c) Es soll zum Niveau \(\alpha = {#
+                        alpha #}\) getestet werden. Bestimmen Sie den kritischen Wert
+                        f&#252;r Ihren Test.
+                    </li>
+                    <li class="list-group-item">
+                        d) Wie lautet Ihre Testentscheidung?
+                    </li>
+                    <li class="list-group-item">
+                        e) Was bedeutet es in der Situation
+                        dieser Aufgabe, dass der Test zum Niveau {# alpha #}
+                        durchgef&#252;hrt wird?
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <script>
+            /*
+                    * This program is free software: you can redistribute it and/or
+                    * modify it under the terms of the GNU General Public License as
+                    * published by the Free Software Foundation, either version 3 of the
+                    * License, or (at your option) any later version.
+                    *
+                    * This program is distributed in the hope that it will be useful, but
+                    * WITHOUT ANY WARRANTY; without even the implied warranty of
+                    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+                    * General Public License for more details.
+                    *
+                    * You should have received a copy of the GNU General Public License
+                    * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+                    *
+                    * Copyright (C) 2021 by Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>
+                    * SPDX-License-Identifier: GPL-3.0-or-later
+                    *
+                    */
+
+    
+    
+    
+    /* @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later */
+
+    
+    
+    
+    (function() {
+                                /* Make sure to create QController instances only once even if the
+                                            script is loaded multiple times.  This is so that the script can
+                                            be included in more than one STACK question on the page and still
+                                            function properly. */
+                                if (window.QController === undefined) {
+                                                window.QController = QController;
+                                                document.addEventListener("DOMContentLoaded", event => {
+                                                                const responseform = document.getElementById("responseform");
+                                                                if (!responseform) {
+                                                                                throw Error("Element with id responseform not found.");
+                                                                }
+
+                
+                
+                
+                responseform.querySelectorAll(".stack.que").forEach(stackQue => {
+                                                                                const rootElement = stackQue.querySelector(".question-view");
+
+                    
+                    
+                    
+                    if (!rootElement) {
+                                                                                                console.log("QController Warning: no elements with class question-view inside " + stackQue.id);
+                                                                                                return;
+                                                                                }
+
+                    
+                    
+                    
+                    const controller = new QController(rootElement, stackQue.id);
+                                                                                controller.installHandlers();
+                                                                                controller.loadState();
+                                                                                controller.update();
+                                                                });
+                                                });
+                                }
+
+        
+        
+        
+        /* This class handles the navigation of a single STACK question */
+                                function QController(rootElement, questionId) {
+                                                this.rootElement = rootElement;
+                                                this.id = questionId;
+                                                this.views = rootElement.querySelectorAll(".question-view");
+                                                this.currentView = Array.prototype.findIndex.call(this.views, isLeaf);
+                                }
+
+        
+        
+        
+        /* Update view according to current controller state */
+                                QController.prototype.update = function() {
+                                                this.views.forEach(hide);
+
+            
+            
+            
+            const current = this.views[this.currentView];
+                                                if (isLeaf(current)) {
+                                                                showView(current);
+                                                } else {
+                                                                showFirstView(current);
+                                                }
+                                };
+
+        
+        
+        
+        /* Install event handlers for all buttons under root element */
+                                QController.prototype.installHandlers = function() {
+                                                const controller = this;
+                                                this.rootElement.querySelectorAll("button").forEach(button => {
+                                                                button.addEventListener("click", ev => {
+                                                                                const view = button.closest(".question-view");
+
+                    
+                    
+                    
+                    if (!view) {
+                                                                                                console.log("qcontroller: <button> not inside question view");
+                                                                                                return;
+                                                                                }
+
+                    
+                    
+                    
+                    const classList = button.classList;
+                                                                                let forward = null;
+
+                    
+                    
+                    
+                    if (classList.contains("next")) {
+                                                                                                forward = view.nextElementSibling;
+                                                                                } else if (classList.contains("top-next")) {
+                                                                                                const parent = view.parentNode;
+                                                                                                if (parent) {
+                                                                                                                forward = parent.nextElementSibling;
+                                                                                                } else {
+                                                                                                                forward = null;
+                                                                                                }
+                                                                                } else if (classList.contains("top")) {
+                                                                                                forward = containingView(view);
+                                                                                } else if (classList.contains("prev")) {
+                                                                                                forward = view.previousElementSibling;
+                                                                                }
+
+                    
+                    
+                    
+                    if (forward && forward.classList.contains("question-view")) {
+                                                                                                controller.currentView = Array.prototype.findIndex.call(
+                                                                                                                controller.views, x => x === forward);
+                                                                                                controller.saveState();
+                                                                                                controller.update();
+                                                                                }
+                                                                });
+                                                });
+                                };
+
+        
+        
+        
+        /* Save controller state to current session */
+                                QController.prototype.saveState = function() {
+                                                const key = this.id + "-controller-state";
+                                                window.sessionStorage.setItem(key, this.currentView);
+                                };
+
+        
+        
+        
+        /* Load controller state from current session */
+                                QController.prototype.loadState = function() {
+                                                const key = this.id + "-controller-state";
+                                                const state = window.sessionStorage.getItem(key);
+
+            
+            
+            
+            if (state) {
+                                                                this.currentView = Number.parseInt(state);
+                                                }
+                                };
+
+        
+        
+        
+        /* Show the first leaf question view */
+                                function showFirstView(questionView) {
+                                                let view = questionView;
+
+            
+            
+            
+            while (view && !isLeaf(view)) {
+                                                                view = view.querySelector(".question-view");
+                                                }
+
+            
+            
+            
+            showView(view);
+                                }
+
+        
+        
+        
+        function showView(view) {
+                                                /* show all containing views */
+                                                while (view) {
+                                                                show(view);
+                                                                view = containingView(view);
+                                                }
+                                }
+
+        
+        
+        
+        /* Return the view containing VIEW */
+                                function containingView(view) {
+                                                let parent = view.parentNode;
+
+            
+            
+            
+            if (parent) {
+                                                                parent = parent.closest(".question-view");
+                                                }
+
+            
+            
+            
+            return parent;
+                                }
+
+        
+        
+        
+        function show(view) {
+                                                view.style.display = "block";
+                                }
+
+        
+        
+        
+        function isLeaf(view) {
+                                                return view.querySelector(".question-view") == null;
+                                }
+
+        
+        
+        
+        function isVisible(view) {
+                                                return view.style.display != "none";
+                                }
+
+        
+        
+        
+        function hide(view) {
+                                                view.style.display = "none";
+                                }
+
+    
+    
+    
+    })();
+                /* @license-end */
+        </script>
+    </div>
+    <script>
+        /* This program is free software: you can redistribute it and/or
+            modify it under the terms of the GNU General Public License as
+            published by the Free Software Foundation, either version 3 of the
+            License, or (at your option) any later version.
+
+   
+   
+   
+   This program is distributed in the hope that it will be useful, but
+            WITHOUT ANY WARRANTY; without even the implied warranty of
+            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+            General Public License for more details.
+
+   
+   
+   
+   You should have received a copy of the GNU General Public License
+            along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+   
+   
+   
+   Copyright 2022 Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>
+            SPDX-License-Identifier: GPL-3.0-or-later  */
+
+
+
+
+(function() {
+        "use strict";
+        var menuGroup = null;
+        var id = document.currentScript.closest(".que.stack").id;
+        var key = id + "-menu-state";
+
+  
+  
+  
+  function update(state) {
+                if (!menuGroup) {
+                        console.warn("QMenu.update: No menu-group found");
+                        return;
+                }
+
+    
+    
+    
+    menuGroup.querySelectorAll("li").forEach(function (item, ind) {
+                        if (ind == state) {
+                                item.classList.add("active");
+                        } else {
+                                item.classList.remove("active");
+                        }
+                });
+        }
+
+  
+  
+  
+  function load() {
+                const state = window.sessionStorage.getItem(key);
+                if (state) {
+                        return state;
+                } else {
+                        return 0;
+                }
+        }
+
+  
+  
+  
+  function storeAndUpdate(state) {
+                window.sessionStorage.setItem(key, state);
+                update(state);
+        }
+
+  
+  
+  
+  document.addEventListener("DOMContentLoaded", function(event) {
+                menuGroup = document.getElementById(id).querySelector(".menu-group");
+                update(load());
+        });
+
+  
+  
+  
+  var QMenu = {};
+        QMenu.update = update;
+        QMenu.storeAndUpdate = storeAndUpdate;
+        window.QMenu = QMenu;
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <style type="text/css">
+        .data-table {
+                        border-collapse: collapse;
+                        margin: 25px 0;
+                        font-size: 0.9em;
+                        min-width: 400px;
+                        border-radius: 5px 5px 0 0;
+                        overflow: hidden;
+                        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+  
+  
+  
+  .data-table thead tr {
+                        background-color: #17365c;
+                        color: #ffffff;
+                        text-align: left;
+                        font-weight: bold;
+        }
+
+  
+  
+  
+  .data-table th,
+        .data-table td {
+                        padding: 12px 15px;
+        }
+
+  
+  
+  
+  .data-table tbody tr {
+                        border-bottom: 1px solid #e7e7e7;
+        }
+
+  
+  
+  
+  .data-table tbody tr:nth-of-type(even) {
+                        background-color: #f3f3f3;
+        }
+
+  
+  
+  
+  .data-table tbody tr:last-of-type {
+                        border-bottom: 2px solid #17365c;
+        }
+
+  
+  
+  
+  .data-table tbody tr.active-row {
+                        font-weight: bold;
+                        color: #17365c;
+        }
+
+  
+  
+  
+  .question-view > .question-view {
+                        margin-top: 1rem;
+                        padding-top: 1rem;
+                        border-top: 1px solid lightgray;
+        }
+
+  
+  
+  
+  .que.stack .formulation .question-view .flashback .stackprtfeedback {
+                        border: 1px solid gray;
+                        border-radius: 10px;
+                        padding: 5px;
+                        background: transparent;
+        }
+
+  
+  
+  
+  .subtask-id {
+                        font-weight: bold;
+        }
+        .que.stack .formulation td.correct {
+                background-color: #c8ffc7;
+        }
+        .que.stack .formulation td.incorrect {
+                background-color: #fec4c5;
+        }
+    </style>
+    <div class="question-view">
+        <p>
+            A cube becomes {# sum(nn[i], i, 1, 6) #} Let's go. In
+The table below shows how often each of the
+Figures \(1, \dotsc, 6\) ?
+        </p>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>
+                        Number
+                    </th>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        4
+                    </td>
+                    <td>
+                        5
+                    </td>
+                    <td>
+                        6
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>
+                        Number
+                    </th>
+                    <td>
+                        {# nn[1] #}
+                    </td>
+                    <td>
+                        {# nn[2] #}
+                    </td>
+                    <td>
+                        {# nn[3] #}
+                    </td>
+                    <td>
+                        {# nn[4] #}
+                    </td>
+                    <td>
+                        {# nn[5] #}
+                    </td>
+                    <td>
+                        {# nn[6] #}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            We want to test the hypothesis that the cube is fair against
+the alternative that he is unfair. &#8216;Fair&#8217; means that all
+Eye numbers with the same probability occur.)
+        </p>
+        <div class="row">
+            <div class="col-7">
+                <div class="question-view">
+                    <p>
+                        <span class="subtask-id">
+                            (a)
+                        </span>
+                        Select the
+suitable test statistics.
+                    </p>
+                    <p>
+                        [[input:ans1]] [[validation:ans1]]
+                    </p>
+                    [[feedback:prt_ans1]]
+                </div>
+                <div class="question-view">
+                    <div class="flashback">
+                        [[feedback:memoryB]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            <span class="subtask-id">
+                                (b)
+                            </span>
+                            Determine the value of test statistics.
+                        </p>
+                        <p>
+                            \(T = \) [[input:ans2]] [[validation:ans2]]
+                        </p>
+                        [[feedback:prt_ans2]]
+                        <p>
+                            <em>
+                                Note: If you enter rounded values, complete at least two descending points.
+                            </em>
+                        </p>
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            <span class="subtask-id">
+                                b.1)
+                            </span>
+                            Search the values for
+    \(n\) and \(k\) from the task text.
+                        </p>
+                        <p>
+                            \(n = \) [[input:ans2h1a]] [[validation:ans2h1a]]
+                        </p>
+                        [[feedback:prt_ans2h1a]]
+                        <p>
+                            \(k = \) [[input:ans2h1b]] [[validation:ans2h1b]]
+                        </p>
+                        [[feedback:prt_ans2h1b]]
+                        <br/>
+                        [[feedback:prt_ans2h1]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            <span class="subtask-id">
+                                b.2)
+                            </span>
+                            Fill the following
+Table.
+                        </p>
+                        <p>
+                            <em>
+                                Note: You will only receive feedback on your response if you have completed the table completely.
+                            </em>
+                        </p>
+                        <div style="overflow: scroll">
+                            <table class="data-table" id="9df01194-d8e4-451d-bc56-09e80aceca50">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            \(i\)
+                                        </th>
+                                        <th>
+                                            1
+                                        </th>
+                                        <th>
+                                            2
+                                        </th>
+                                        <th>
+                                            3
+                                        </th>
+                                        <th>
+                                            4
+                                        </th>
+                                        <th>
+                                            5
+                                        </th>
+                                        <th>
+                                            6
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            \(N_i\)
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2a]] [[validation:ans2h2a]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2b]] [[validation:ans2h2b]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2c]] [[validation:ans2h2c]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2d]] [[validation:ans2h2d]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2e]] [[validation:ans2h2e]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2f]] [[validation:ans2h2f]]
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            \(n \theta^{(0)}_i\)
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2g]] [[validation:ans2h2g]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2h]] [[validation:ans2h2h]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2i]] [[validation:ans2h2i]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2j]] [[validation:ans2h2j]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2k]] [[validation:ans2h2k]]
+                                        </td>
+                                        <td>
+                                            [[input:ans2h2l]] [[validation:ans2h2l]]
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        [[feedback:prt_ans2h2]]
+                    </div>
+                </div>
+                <div class="question-view">
+                    <div class="question-view">
+                        <p>
+                            <span class="subtask-id">
+                                (c)
+                            </span>
+                            It should be level \(\alpha
+                        = {# alpha #}\) to be tested. Determine the critical
+Value for your test.
+                        </p>
+                        <p>
+                            \(k_\alpha = \) [[input:ans3]] [[validation:ans3]]
+                        </p>
+                        [[feedback:prt_ans3]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            The critical value is important for the rejection criterion
+our test. In order to determine it, we need the distribution
+know our test statistics.
+                        </p>
+                        <p>
+                            <span class="subtask-id">
+                                c.1)
+                            </span>
+                            What distribution has
+Test statistics under zero hypothesis?
+                        </p>
+                        <p>
+                            [[input:ans3h1]] [[validation:ans3h1]]
+                        </p>
+                        [[feedback:prt_ans3h1]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            <span class="subtask-id">
+                                c.2)
+                            </span>
+                            Give the number of
+Freedom line: [[input:ans3h2]] [[validation:ans3h2]]
+                        </p>
+                        [[feedback:prt_ans3h2]]
+                    </div>
+                </div>
+                <div class="question-view">
+                    <div class="flashback">
+                        [[feedback:flashbackD]]
+                    </div>
+                    <p>
+                        <span class="subtask-id">
+                            (d)
+                        </span>
+                        What is your test decision:
+                    </p>
+                    <p>
+                        [[input:ans4]] [[validation:ans4]]
+                    </p>
+                    [[feedback:prt_ans4]]
+                </div>
+                <div class="question-view">
+                    <p>
+                        <span class="subtask-id">
+                            (e)
+                        </span>
+                        What does it mean in the situation of this task that the test
+to level {# alpha #} is being carried out? Mark the right statements:
+                    </p>
+                    <p>
+                        [[input:ans5]] [[validation:ans5]]
+                    </p>
+                    [[feedback:prt_ans5]]
+                </div>
+            </div>
+            <div class="col-5">
+                <ol class="menu-group list-group">
+                    <li class="list-group-item active">
+                        a) Select the right
+Test statistics.
+                    </li>
+                    <li class="list-group-item">
+                        b) Determine the value of
+Test statistics.
+                    </li>
+                    <li class="list-group-item">
+                        (c) It should be level \(\alpha = {#
+                        alpha #}\) to be tested. Determine the critical value
+for your test.
+                    </li>
+                    <li class="list-group-item">
+                        (d) What is your test decision?
+                    </li>
+                    <li class="list-group-item">
+                        (e) What does it mean in the situation
+this task that the test to the level {# alpha #}is being carried out?
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <script>
+            /*
+                    * This program is free software: you can redistribute it and/or
+                    * modify it under the terms of the GNU General Public License as
+                    * published by the Free Software Foundation, either version 3 of the
+                    * License, or (at your option) any later version.
+                    *
+                    * This program is distributed in the hope that it will be useful, but
+                    * WITHOUT ANY WARRANTY; without even the implied warranty of
+                    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+                    * General Public License for more details.
+                    *
+                    * You should have received a copy of the GNU General Public License
+                    * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*
+* Copyright (C) 2021 by Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>* SPDX-License Identifier: GPL-3.0-or-later
+*
+*/
+
+
+
+
+/* @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-orLater */
+
+
+
+
+(function() {
+                                /* Make sure to create QController instances only once even if the
+                                            script is loaded multiple times.  This is so that the script can
+                                            be included in more than one STACK question on the page and still
+                                            function properly. */
+                                if (window.QController === undefined) {
+                                                window.QController = QController;
+                                                document.addEventListener("DOMContentLoaded", event => {
+                                                                const responseform = document.getElementById("responseform");
+                                                                if (!responseform) {
+                                                                                throw Error("Element with id responseform not found.");
+                                                                }
+
+                
+                
+                
+                responseform.querySelectorAll(".stack.que").forEach(stackQue => {
+                                                                                const rootElement = stackQue.querySelector(".question-view");
+
+                    
+                    
+                    
+                    if (!rootElement) {
+                                                                                                console.log("QController Warning: no elements with class question-view inside " + stackQue.id);
+                                                                                                return;
+                                                                                }
+
+                    
+                    
+                    
+                    const controller = new QController(rootElement, stackQue.id);
+                                                                                controller.installHandlers();
+                                                                                controller.loadState();
+                                                                                controller.update();
+                                                                });
+                                                });
+                                }
+
+        
+        
+        
+        /* This class handles the navigation of a single STACK question */
+                                function QController(rootElement, questionId) {
+                                                this.rootElement = rootElement;
+                                                this.id = questionId;
+                                                this.views = rootElement.querySelectorAll(".question-view");
+                                                this.currentView = Array.prototype.findIndex.call(this.views, isLeaf);
+                                }
+
+        
+        
+        
+        /* Update view according to current controller state */
+                                QController.prototype.update = function() {
+                                                this.views.forEach(hide);
+
+            
+            
+            
+            const current = this.views[this.currentView];
+                                                if (isLeaf(current)) {
+                                                                showView(current);
+                                                } else {
+                                                                showFirstView(current);
+                                                }
+                                };
+
+        
+        
+        
+        /* Install event handlers for all buttons under root element */
+                                QController.prototype.installHandlers = function() {
+                                                const controller = this;
+                                                this.rootElement.querySelectorAll("button").forEach(button => {
+                                                                button.addEventListener("click", ev => {
+                                                                                const view = button.closest(".question-view");
+
+                    
+                    
+                    
+                    if (!view) {
+                                                                                                console.log("qcontroller: <button> not inside question view");
+                                                                                                return;
+                                                                                }
+
+                    
+                    
+                    
+                    const classList = button.classList;
+                                                                                let forward = null;
+
+                    
+                    
+                    
+                    if (classList.contains("next")) {
+                                                                                                forward = view.nextElementSibling;
+                                                                                } else if (classList.contains("top-next")) {
+                                                                                                const parent = view.parentNode;
+                                                                                                if (parent) {
+                                                                                                                forward = parent.nextElementSibling;
+                                                                                                } else {
+                                                                                                                forward = null;
+                                                                                                }
+                                                                                } else if (classList.contains("top")) {
+                                                                                                forward = containingView(view);
+                                                                                } else if (classList.contains("prev")) {
+                                                                                                forward = view.previousElementSibling;
+                                                                                }
+
+                    
+                    
+                    
+                    if (forward && forward.classList.contains("question-view")) {
+                                                                                                controller.currentView = Array.prototype.findIndex.call(
+                                                                                                                controller.views, x => x === forward);
+                                                                                                controller.saveState();
+                                                                                                controller.update();
+                                                                                }
+                                                                });
+                                                });
+                                };
+
+        
+        
+        
+        /* Save controller state to current session */
+                                QController.prototype.saveState = function() {
+                                                const key = this.id + "-controller-state";
+                                                window.sessionStorage.setItem(key, this.currentView);
+                                };
+
+        
+        
+        
+        /* Load controller state from current session */
+                                QController.prototype.loadState = function() {
+                                                const key = this.id + "-controller-state";
+                                                const state = window.sessionStorage.getItem(key);
+
+            
+            
+            
+            if (state) {
+                                                                this.currentView = Number.parseInt(state);
+                                                }
+                                };
+
+        
+        
+        
+        /* Show the first leaf question view */
+                                function showFirstView(questionView) {
+                                                let view = questionView;
+
+            
+            
+            
+            while (view && !isLeaf(view)) {
+                                                                view = view.querySelector(".question-view");
+                                                }
+
+            
+            
+            
+            showView(view);
+                                }
+
+        
+        
+        
+        function showView(view) {
+                                                /* show all containing views */
+                                                while (view) {
+                                                                show(view);
+                                                                view = containingView(view);
+                                                }
+                                }
+
+        
+        
+        
+        /* Return the view containing VIEW */
+                                function containingView(view) {
+                                                let parent = view.parentNode;
+
+            
+            
+            
+            if (parent) {
+                                                                parent = parent.closest(".question-view");
+                                                }
+
+            
+            
+            
+            return parent;
+                                }
+
+        
+        
+        
+        function show(view) {
+                                                view.style.display = "block";
+                                }
+
+        
+        
+        
+        function isLeaf(view) {
+                                                return view.querySelector(".question-view") == null;
+                                }
+
+        
+        
+        
+        function isVisible(view) {
+                                                return view.style.display != "none";
+                                }
+
+        
+        
+        
+        function hide(view) {
+                                                view.style.display = "none";
+                                }
+
+    
+    
+    
+    }),
+/* @license-end */
+        </script>
+    </div>
+    <script>
+        /* This program is free software: you can redistribute it and/or
+            modify it under the terms of the GNU General Public License as
+            published by the Free Software Foundation, either version 3 of the
+            License, or (at your option) any later version.
+
+   
+   
+   
+   This program is distributed in the hope that it will be useful, but
+            WITHOUT ANY WARRANTY; without even the implied warranty of
+            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+            General Public License for more details.
+
+   
+   
+   
+   You should have received a copy of the GNU General Public License
+            along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
+
+Copyright 2022 Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>SPDX-License Identifier: GPL-3.0-or-later */
+
+
+
+
+(function() {
+        "use strict";
+        var menuGroup = null;
+        var id = document.currentScript.closest(".que.stack").id;
+        var key = id + "-menu-state";
+
+  
+  
+  
+  function update(state) {
+                if (!menuGroup) {
+                        console.warn("QMenu.update: No menu-group found");
+                        return;
+                }
+
+    
+    
+    
+    menuGroup.querySelectorAll("li").forEach(function (item, ind) {
+                        if (ind == state) {
+                                item.classList.add("active");
+                        } else {
+                                item.classList.remove("active");
+                        }
+                });
+        }
+
+  
+  
+  
+  function load() {
+                const state = window.sessionStorage.getItem(key);
+                if (state) {
+                        return state;
+                } else {
+                        return 0;
+                }
+        }
+
+  
+  
+  
+  function storeAndUpdate(state) {
+                window.sessionStorage.setItem(key, state);
+                update(state);
+        }
+
+  
+  
+  
+  document.addEventListener("DOMContentLoaded", function(event) {
+                menuGroup = document.getElementById(id).querySelector(".menu-group");
+                update(load());
+        });
+
+  
+  
+  
+  var QMenu = {};
+        QMenu.update = update;
+        QMenu.storeAndUpdate = storeAndUpdate;
+        window.QMenu = QMenu;
+}),
+    </script>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>10.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/* This question uses the Maxima package distrib */
+
+/* Tweak LaTeX rendering of expressions */
+
+/* render number as percentages */
+texaspercent (e) := block([num: first (args (e))], sconcat(tex1(ev(num*100, simp)), "\\,\\%"));
+texput(aspercent, texaspercent);
+
+/* bars for means of X and Y*/
+texput(Xbar, "\\bar{X}");
+texput(Ybar, "\\bar{Y}");
+
+texput(thetaNH, "\\theta^{(0)}");
+
+/* chi^2 quantiles */
+texput(chi2_quantile, lambda([e], block([q, dof],
+  [q, dof]: args(e),
+  sconcat("\\chi^2_{", tex1(dof), "; ", tex1(1-q), "}"))));
+
+nn: rand ([
+  [  80, 120, 100,  90,  90, 120],
+  [  70, 120, 150,  90, 190, 195],
+  [  90, 115, 115,  90, 100,  85]
+]);
+
+kk: length (nn);
+alpha: 0.05;
+
+theta0: 1 / kk;
+total: sum (nn[j], j, 1, kk);
+
+statistic: sum ((nn[i] - total*theta0)^2 / (total * theta0), i, 1, kk);
+critical: quantile_chi2 (1 - alpha, kk - 1);
+
+simp: false;
+chi2TestStatistic: sum((N[i] - n*thetaNH[i])^2 / (n*thetaNH[i]), i, 1, k);
+statisticChoice: block([vals, correct, incorrect],
+  correct: [X = chi2TestStatistic],
+  incorrect: [
+  T =&#8239;sum(X[i] - mu[0], i, 1, n)/sqrt(n*s_X^2),
+  T = (n-1)* s_X^2 / sigma_0^2,
+  T = (Ybar - Xbar) / sqrt((1/m + 1/n) *s_P^2),
+  F = s_Y^2 / s_X^2],
+  vals: makelist(i, i, ev(length(correct) + length(incorrect), simp)),
+  zip_with(lambda([a, b],
+      [a, if a <= length(correct) then true else false, stack_disp(b,"id")]),
+    vals, append(correct, incorrect)));
+simp:true;
+
+test_result: [
+["Hypothese verwerfen", is(statistic >= critical) ],
+["Hypothese nicht verwerfen", is(statistic < critical)]];
+
+testContext: block([vals, correct, incorrect],
+  correct: [
+    sconcat("Die Wahrscheinlichkeit, einen fairen W&#252;rfel f&#252;r unfair zu halten, ist h&#246;chstens ", stack_disp(aspercent(alpha), "i"), "."),
+    sconcat("Bei diesem Verfahren halten wir in ", stack_disp(aspercent(alpha), "i"), " der F&#228;lle einen fairen W&#252;rfel f&#252;r unfair.")
+  ],
+  incorrect: [
+    sconcat("Die Wahrscheinlichkeit, dass wir eine Fehlentscheidung treffen, ist h&#246;chstens ", stack_disp(aspercent(alpha), "i"), "."),
+  sconcat("Die Wahrscheinlichkeit, einen unfairen W&#252;rfel zu entdecken, ist mindestens ", stack_disp(aspercent(1 - alpha), "i"), ".")],
+  vals: makelist(i, i, ev(length(correct) + length(incorrect), simp)),
+  zip_with(lambda([a, b],
+      [a, if a <= length(correct) then true else false, b]),
+    vals, append(correct, incorrect)));
+
+Tans1: random_permutation (statisticChoice);
+Tans2: statistic;
+Tans3: decimalplaces(critical,1);
+Tans3h1: random_permutation(
+  block([vals, correct, incorrect],
+    correct: [
+    "Chi-Quadrat-Verteilung"
+    ],
+    incorrect: [
+    "Normalverteilung",
+    "Student-t-Verteilung",
+    "Binomialverteilung",
+    "Exponentialverteilung"],
+    vals: makelist(i, i, ev(length(correct) + length(incorrect), simp)),
+    zip_with(lambda([a, b],
+        [a, if a <= length(correct) then true else false, b]),
+      vals, append(correct, incorrect))));
+Tans4: random_permutation (test_result);
+Tans5: random_permutation (testContext);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{@ nn @} {@ Tans1 @} {@ Tans4 @} {@ Tans5 @}</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Ihre Antwort ist nur teilweise richtig.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Your answer is only partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed>i</variantsselectionseed>
+        <input>
+            <name>ans1</name>
+            <type>radio</type>
+            <tans>Tans1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>numerical</type>
+            <tans>decimalplaces(Tans2, 2)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2h1a</name>
+            <type>numerical</type>
+            <tans>total</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2h1b</name>
+            <type>numerical</type>
+            <tans>kk</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2h2a</name>
+            <type>numerical</type>
+            <tans>nn[1]</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2h2b</name>
+            <type>numerical</type>
+            <tans>nn[2]</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2h2c</name>
+            <type>numerical</type>
+            <tans>nn[3]</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2h2d</name>
+            <type>numerical</type>
+            <tans>nn[4]</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2h2e</name>
+            <type>numerical</type>
+            <tans>nn[5]</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2h2f</name>
+            <type>numerical</type>
+            <tans>nn[6]</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2h2g</name>
+            <type>numerical</type>
+            <tans>total/6</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2h2h</name>
+            <type>numerical</type>
+            <tans>total/6</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2h2i</name>
+            <type>numerical</type>
+            <tans>total/6</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2h2j</name>
+            <type>numerical</type>
+            <tans>total/6</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2h2k</name>
+            <type>numerical</type>
+            <tans>total/6</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2h2l</name>
+            <type>numerical</type>
+            <tans>total/6</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>numerical</type>
+            <tans>decimalplaces(Tans3, 2)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3h1</name>
+            <type>radio</type>
+            <tans>Tans3h1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans3h2</name>
+            <type>numerical</type>
+            <tans>kk-1</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>dropdown</type>
+            <tans>Tans4</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans5</name>
+            <type>checkbox</type>
+            <tans>Tans5</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>flashbackD</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumRelative</answertest>
+                <sans>[ans2, ans3]</sans>
+                <tans>[Tans2, Tans3]</tans>
+                <testoptions>0.005</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>flashbackD-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Folgendes ist aus den fr&#252;heren Aufgabenteilen bekannt:
+    </p>
+    <ul>
+        <li>
+            {@ X = Tans2 @}
+        </li>
+        <li>
+            {@ chi2_quantile(alpha, kk-1) = decimalplaces(Tans3,1) @}
+        </li>
+    </ul>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The following is known from previous tasks:
+    </p>
+    <ul>
+        <li>
+            {@ X = Tans2 @}
+        </li>
+        <li>
+            {@ chi2_quantile(alpha, kk-1) = decimalplaces(Tans3,1) @}
+        </li>
+    </ul>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>flashbackD-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>memoryB</name>
+            <value>1.0000000</value>
+            <autosimplify>0</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>first(mcq_correct(Tans1))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>memoryB-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben die folgende Teststatistik ausgew&#228;hlt:
+\[
+{@ X = chi2TestStatistic @}
+\]
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have selected the following test statistics:
+\[
+{@ X = chi2TestStatistic @}
+\]
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>memoryB-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans1</name>
+            <value>2.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>first(mcq_correct(Tans1))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Mit dem Chi-Quadrat-Anpassungstest k&#246;nnen Sie pr&#252;fen, ob ein gegebener Datensatz zu einer vorgegebenen diskreten Verteilung passt. In dieser Aufgabe sollen Sie testen, ob der W&#252;rfel fair ist, das hei&#223;t, ob die Augenzahlen gleichverteilt sind.
+    </p>
+    <p>
+        Klicken Sie auf
+        <button class="next" id="36620499-8e65-4ebb-8869-88bbffeb6913" type="button">
+            Weiter
+        </button>
+        , um zum n&#228;chsten Aufgabenteil zu kommen.
+    </p>
+    <script>
+        (function() {
+document.getElementById("36620499-8e65-4ebb-8869-88bbffeb6913").addEventListener("click", function (event) {
+QMenu.storeAndUpdate(1);
+});
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        With the Chi-Quadrat customization test, you can check whether a given dataset matches a predetermined discrete distribution. In this task, you should test whether the cube is fair, i.e. whether the numbers of eyes are equally distributed.
+    </p>
+    <p>
+        Click on
+        <button class="next" id="36620499-8e65-4ebb-8869-88bbffeb6913" type="button">
+            Next
+        </button>
+        to get to the next task.
+    </p>
+    <script>
+        (function() {
+document.getElementById("36620499-8e65-4ebb-8869-88bbffeb6913").addEventListener("click", function (event) {
+QMenu.storeAndUpdate(1);
+});
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        [[if test="is(ans1 = 5)"]]
+        <!-- F = s_Y^2 / s_X^2 -->
+        Diese Teststatistik geh&#246;rt zum F-Test zum Vergleich der Varianzen
+zweier Verteilungen.  Dieser Test ist hier nicht angebracht.
+Lesen Sie noch einmal den Einleitungstext und achten Sie darauf,
+welche Hypothese getestet werden soll.
+[[elif test="ans1 = 3"]]
+        <!-- T = (n-1)* s_X^2 / sigma_0^2 -->
+        Diese Teststatistik geh&#246;rt zu einem Test, der die Varianz einer Verteilung
+mit einem vorgegebenen Wert \(\sigma_0^2\) vergleicht. Dieser Test ist hier nicht angebracht. Lesen Sie noch einmal
+den Einleitungstext und achten Sie darauf, welche Hypothese getestet werden soll.
+[[elif test="ans1 = 4"]]
+        <!-- T = (Ybar - Xbar) / sqrt((1/m + 1/n) *s_P^2) -->
+        Diese Teststatistik geh&#246;rt zu einem Test, der die Erwartungswerte
+zweier Verteilungen vergleicht.  Dieser Test ist hier nicht angebracht.
+Lesen Sie noch einmal den Einleitungstext und achten Sie darauf,
+welche Hypothese getestet werden soll.
+[[elif test="ans1 = 2"]]
+        <!-- T = sum(X[i] - mu[0], i, 1, n)/sqrt(n*s_X^2) -->
+        Diese Teststatistik geh&#246;rt zu einem Test f&#252;r den Erwartungswert. Dieser Test ist hier nicht angebracht. Lesen Sie noch einmal
+den Einleitungstext und achten Sie darauf, welche Hypothese getestet werden soll.
+[[/if]]
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        [[if test="is(ans1 = 5)"]]
+        <!-- F = s_Y^2 / s_X^2 -->
+        These test statistics are part of the F test for comparing the variances
+two distributions. This test is not appropriate here.
+Read the introduction text again and make sure
+which hypothesis should be tested.
+[[elif test="ans1 = 3"]]
+        <!-- T = (n-1)* s_X^2 / sigma_0^2 -->
+        These test statistics are part of a test that shows the variance of a distribution
+with a predetermined value \(\sigma_0^2\) compares. This test is not appropriate here. Read more
+the introduction text and make sure which hypothesis is to be tested.
+[[elif test="ans1 = 4"]]
+        <!-- T = (Ybar - Xbar) / sqrt((1/m + 1/n) *s_P^2) -->
+        These test statistics are part of a test which shows the expected values
+two distributions. This test is not appropriate here.
+Read the introduction text again and make sure
+which hypothesis should be tested.
+[[elif test="ans1 = 2"]]
+        <!-- T = sum(X[i] - mu[0], i, 1, n)/sqrt(n*s_X^2) -->
+        These test statistics are part of a test for the expected value. This test is not appropriate here. Read more
+the introduction text and make sure which hypothesis is to be tested.
+[[/if]]
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans2</name>
+            <value>2.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans2</sans>
+                <tans>Tans2</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Der Wert der Teststatistik kann mithilfe der folgenden Formel ermittelt werden:
+\[
+X = \sum_{i=1}^{@kk@} \frac{(n_i - n\theta^{(0)}_i)^2}{n\theta^{(0)}_i}
+= \sum_{i=1}^{@kk@} \frac{(n_i - {@total * theta0@})^2}{{@total * theta0@}}
+\approx {@ decimalplaces(sum ((nn[i] - total*theta0)^2 / (total * theta0), i, 1, kk), 2)@}
+\]
+Hierbei ersetzen Sie \(n_i\) mit den jeweiligen Werten aus der obigen Tabelle. Der Werte f&#252;r \(\theta_i^{(0)}\) erhalten Sie aus der vermuteten Verteilung und \(n\) bezeichnet die Anzahl der Experimente.
+    </p>
+    <p>
+        Klicken Sie auf
+        <button class="top-next" id="d8379b1b-7257-4d72-9bb0-87d29ff74151" type="button">
+            Weiter
+        </button>
+        , um zum n&#228;chsten Aufgabenteil zu kommen.
+    </p>
+    <script>
+        (function() {
+document.getElementById("d8379b1b-7257-4d72-9bb0-87d29ff74151").addEventListener("click", function (event) {
+QMenu.storeAndUpdate(2);
+});
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The value of the test statistics can be determined using the following formula:
+\[
+X = \sum_{i=1}^{@kk@} \frac{(n_i - n\theta^{(0)}_i)^2}{n\theta^{(0)}_i}
+= \sum_{i=1}^{@kk@} \frac{(n_i - {@total * theta0@})^2}{{@total * theta0@}}
+\approx {@ decimalplaces(sum ((nn[i] - total*theta0)^2 / (total * theta0), i, 1, kk), 2)@}
+\]Replace here \(n_i\) with the respective values from the above table. Values for \(\theta_i^{(0)}\) you get from the suspected distribution and \(n\) refers to the number of experiments.
+    </p>
+    <p>
+        Click on
+        <button class="top-next" id="d8379b1b-7257-4d72-9bb0-87d29ff74151" type="button">
+            Next
+        </button>
+        to get to the next task.
+    </p>
+    <script>
+        (function() {
+document.getElementById("d8379b1b-7257-4d72-9bb0-87d29ff74151").addEventListener("click", function (event) {
+QMenu.storeAndUpdate(2);
+});
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <div id="oer-aufgabe-prt2-no-help">
+        <p>
+            Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein
+Problem! Im Folgenden wird die Aufgabe in kleinere Teilaufgaben
+unterteilt. Wenn Sie diese Aufgaben alle gel&#246;st haben, k&#246;nnen Sie die
+urspr&#252;ngliche Aufgabe sicherlich l&#246;sen. Klicken Sie dazu auf
+            <button class="next" type="button">
+                Hilfe
+            </button>
+            .
+        </p>
+    </div>
+    <div id="oer-aufgabe-prt2-help" style="display: none">
+        <p>
+            Willkommen zur&#252;ck! Im ersten Zwischenschritt haben Sie
+herausgefunden, dass {@n = total@} und {@ k =&#8239;kk@} gilt. Dann haben
+Sie im zweiten Zwischenschritt die Tabelle wie folgt ausgef&#252;llt:
+        </p>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>
+                        \(i\)
+                    </th>
+                    <th>
+                        1
+                    </th>
+                    <th>
+                        2
+                    </th>
+                    <th>
+                        3
+                    </th>
+                    <th>
+                        4
+                    </th>
+                    <th>
+                        5
+                    </th>
+                    <th>
+                        6
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        \(N_i\)
+                    </td>
+                    <td>
+                        {@nn[1]@}
+                    </td>
+                    <td>
+                        {@nn[2]@}
+                    </td>
+                    <td>
+                        {@nn[3]@}
+                    </td>
+                    <td>
+                        {@nn[4]@}
+                    </td>
+                    <td>
+                        {@nn[5]@}
+                    </td>
+                    <td>
+                        {@nn[6]@}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        \(n \theta_i\)
+                    </td>
+                    <td>
+                        {@total/kk@}
+                    </td>
+                    <td>
+                        {@total/kk@}
+                    </td>
+                    <td>
+                        {@total/kk@}
+                    </td>
+                    <td>
+                        {@total/kk@}
+                    </td>
+                    <td>
+                        {@total/kk@}
+                    </td>
+                    <td>
+                        {@total/kk@}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            Sie haben jetzt alle Informationen, um die Teststatistik zu
+berechnen. Bitte versuchen Sie es noch einmal.
+        </p>
+    </div>
+    <script>
+        (function() {
+                "use strict";
+                const feedback = document.currentScript.closest(".stackprtfeedback");
+                document.addEventListener("DOMContentLoaded", function (event) {
+                        const x = sessionStorage.getItem("oer-aufgabe-prt2-no-help");
+                        const y = sessionStorage.getItem("oer-aufgabe-prt2-help");
+                        if (x != null && y != null) {
+                                document.getElementById("oer-aufgabe-prt2-no-help").style.display = x;
+                                document.getElementById("oer-aufgabe-prt2-help").style.display = y;
+                        }
+                });
+        })();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <div id="oer-aufgabe-prt2-no-help">
+        <p>
+            That you couldn't solve the task right away is not a
+Problem! In the following, the task is to
+divided. If you have solved all these tasks, you can
+to solve the original task. Click on
+            <button class="next" type="button">
+                Help
+            </button>
+            .
+        </p>
+    </div>
+    <div id="oer-aufgabe-prt2-help" style="display: none">
+        <p>
+            Welcome back! In the first step you have
+found that {@n = total@} and {@ k =&#8239;kk@} Article 2 Then have
+In the second intermediate step, the table is filled as follows:
+        </p>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>
+                        \(i\)
+                    </th>
+                    <th>
+                        1
+                    </th>
+                    <th>
+                        2
+                    </th>
+                    <th>
+                        3
+                    </th>
+                    <th>
+                        4
+                    </th>
+                    <th>
+                        5
+                    </th>
+                    <th>
+                        6
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        \(N_i\)
+                    </td>
+                    <td>
+                        {@nn[1]@}
+                    </td>
+                    <td>
+                        {@nn[2]@}
+                    </td>
+                    <td>
+                        {@nn[3]@}
+                    </td>
+                    <td>
+                        {@nn[4]@}
+                    </td>
+                    <td>
+                        {@nn[5]@}
+                    </td>
+                    <td>
+                        {@nn[6]@}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        \(n \theta_i\)
+                    </td>
+                    <td>
+                        {@total/kk@}
+                    </td>
+                    <td>
+                        {@total/kk@}
+                    </td>
+                    <td>
+                        {@total/kk@}
+                    </td>
+                    <td>
+                        {@total/kk@}
+                    </td>
+                    <td>
+                        {@total/kk@}
+                    </td>
+                    <td>
+                        {@total/kk@}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            You now have all the information to get the test statistics
+calculate. Please try again.
+        </p>
+    </div>
+    <script>
+        (function() {
+                "use strict";
+                const feedback = document.currentScript.closest(".stackprtfeedback");
+                document.addEventListener("DOMContentLoaded", function (event) {
+                        const x = sessionStorage.getItem("oer-aufgabe-prt2-no-help");
+                        const y = sessionStorage.getItem("oer-aufgabe-prt2-help");
+                        if (x != null && y != null) {
+                                document.getElementById("oer-aufgabe-prt2-no-help").style.display = x;
+                                document.getElementById("oer-aufgabe-prt2-help").style.display = y;
+                        }
+                });
+        })();
+    </script>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans2h1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ans2h1a,ans2h1b]</sans>
+                <tans>[total,kk]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans2h1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Klicken Sie auf
+        <button class="next" type="button">
+            Weiter
+        </button>
+        , um zum n&#228;chsten Zwischenschritt zu kommen.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Click on
+        <button class="next" type="button">
+            Next
+        </button>
+        to get to the next step.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt_ans2h1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ans2h1a,ans2h1b]</sans>
+                <tans>[kk,total]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans2h1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Haben Sie vielleicht \(n\) und \(k\) vertauscht? Die Anzahl der Experimente wird mit \(n\) und die Anzahl der m&#246;glichen Ausg&#228;nge eines Experiments mit \(k\) bezeichnet.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You may have \(n\) and \(k\) exchanged? The number of experiments will be \(n\) and the number of possible outputs of an experiment with \(k\) denotes.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans2h1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans2h1a</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2h1a</sans>
+                <tans>total</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans2h1a-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans2h1a-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Die Variable \(n\) bezeichnet die Anzahl der durchgef&#252;hrten Experimente.  Sie k&#246;nnen diese Zahl aus dem Aufgabentext herauslesen.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        The variable \(n\) refers to the number of experiments carried out. You can read this number from the task text.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans2h1b</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2h1b</sans>
+                <tans>kk</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans2h1b-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans2h1b-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Die Variable \(k\) bezeichnet die Anzahl der m&#246;glichen Werte der betrachteten Zufallsvariablen.  Sie k&#246;nnen diese Zahl aus dem Aufgabentext herauslesen.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        The variable \(k\) denotes the number of possible values of the random variables considered. You can read this number from the task text.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans2h2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text>sObserved: [ans2h2a, ans2h2b, ans2h2c, ans2h2d, ans2h2e, ans2h2f];
+sExpected: [ans2h2g, ans2h2h, ans2h2i, ans2h2j, ans2h2k, ans2h2l];</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>append(sObserved, sExpected)</sans>
+                <tans>append(nn, makelist(total/kk, kk))</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans2h2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Klicken Sie auf
+        <button class="top" id="62e432e3-b239-4861-b067-bf25e646c5eb" type="button">
+            Zur&#252;ck
+        </button>
+        , um zur urspr&#252;nglichen Aufgabe zur&#252;ckzukehren.
+    </p>
+    <script>
+        (function() {
+                "use strict";
+                const btn = document.getElementById("62e432e3-b239-4861-b067-bf25e646c5eb");
+                btn.addEventListener("click", function (event) {
+                        document.getElementById("oer-aufgabe-prt2-help").style.display = "block";
+                        document.getElementById("oer-aufgabe-prt2-no-help").style.display = "none";
+                        sessionStorage.setItem("oer-aufgabe-prt2-help", "block");
+                        sessionStorage.setItem("oer-aufgabe-prt2-no-help", "none");
+                });
+        })();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        Click on
+        <button class="top" id="62e432e3-b239-4861-b067-bf25e646c5eb" type="button">
+            Back
+        </button>
+        to return to the original task.
+    </p>
+    <script>
+        (function() {
+                "use strict";
+                const btn = document.getElementById("62e432e3-b239-4861-b067-bf25e646c5eb");
+                btn.addEventListener("click", function (event) {
+                        document.getElementById("oer-aufgabe-prt2-help").style.display = "block";
+                        document.getElementById("oer-aufgabe-prt2-no-help").style.display = "none";
+                        sessionStorage.setItem("oer-aufgabe-prt2-help", "block");
+                        sessionStorage.setItem("oer-aufgabe-prt2-no-help", "none");
+                });
+        })();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt_ans2h2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Die
+        <span style="background-color:#fec4c5">
+            rot
+        </span>
+        markierten Felder haben Sie falsch ausgef&#252;llt.
+    </p>
+    <p>
+        Beachten Sie: Die Variable \(N_i\) bezeichnet die beobachtete Anzahl der Augenzahl \(i\) und das Produkt \(n \theta^{(0)}_i\) ergibt die erwartete Anzahl f&#252;r die Augenzahl \(i\).
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        The
+        <span style="background-color:#fec4c5">
+            Red
+        </span>
+        marked fields you have filled incorrectly.
+    </p>
+    <p>
+        Note: The variable \(N_i\) denotes the observed number of eyes \(i\) and the product \(n \theta^{(0)}_i\) gives the expected number of eyes \(i\).
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2h2a</sans>
+                <tans>nn[1]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prt_ans2h2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[1].classList.add("correct");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[1].classList.add("correct");
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt_ans2h2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[1].classList.add("incorrect");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[1].classList.add("incorrect");
+})();
+    </script>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>10</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2h2j</sans>
+                <tans>total/kk</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>11</truenextnode>
+                <trueanswernote>prt_ans2h2-11-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[11].classList.add("correct");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[11].classList.add("correct");
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>11</falsenextnode>
+                <falseanswernote>prt_ans2h2-11-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[11].classList.add("incorrect");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[11].classList.add("incorrect");
+})();
+    </script>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>11</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2h2k</sans>
+                <tans>total/kk</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans2h2-12-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[12].classList.add("correct");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[12].classList.add("correct");
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans2h2-12-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[12].classList.add("incorrect");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[12].classList.add("incorrect");
+})();
+    </script>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2h2b</sans>
+                <tans>nn[2]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>prt_ans2h2-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[2].classList.add("correct");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[2].classList.add("correct");
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prt_ans2h2-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[2].classList.add("incorrect");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[2].classList.add("incorrect");
+})();
+    </script>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2h2c</sans>
+                <tans>nn[3]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>prt_ans2h2-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[3].classList.add("correct");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[3].classList.add("correct");
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prt_ans2h2-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[3].classList.add("incorrect");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[3].classList.add("incorrect");
+})();
+    </script>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2h2d</sans>
+                <tans>nn[4]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>prt_ans2h2-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[4].classList.add("correct");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[4].classList.add("correct");
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>prt_ans2h2-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[4].classList.add("incorrect");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[4].classList.add("incorrect");
+})();
+    </script>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2h2e</sans>
+                <tans>nn[5]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>6</truenextnode>
+                <trueanswernote>prt_ans2h2-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[5].classList.add("correct");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[5].classList.add("correct");
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>6</falsenextnode>
+                <falseanswernote>prt_ans2h2-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[5].classList.add("incorrect");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[5].classList.add("incorrect");
+})();
+    </script>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>6</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2h2f</sans>
+                <tans>nn[6]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>7</truenextnode>
+                <trueanswernote>prt_ans2h2-7-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[6].classList.add("correct");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[6].classList.add("correct");
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>7</falsenextnode>
+                <falseanswernote>prt_ans2h2-7-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[6].classList.add("incorrect");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[6].classList.add("incorrect");
+})();
+    </script>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>7</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2h2g</sans>
+                <tans>total/kk</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>8</truenextnode>
+                <trueanswernote>prt_ans2h2-8-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[8].classList.add("correct");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[8].classList.add("correct");
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>8</falsenextnode>
+                <falseanswernote>prt_ans2h2-8-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[8].classList.add("incorrect");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[8].classList.add("incorrect");
+})();
+    </script>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>8</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2h2h</sans>
+                <tans>total/kk</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>9</truenextnode>
+                <trueanswernote>prt_ans2h2-9-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[9].classList.add("correct");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[9].classList.add("correct");
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>9</falsenextnode>
+                <falseanswernote>prt_ans2h2-9-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[9].classList.add("incorrect");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[9].classList.add("incorrect");
+})();
+    </script>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>9</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2h2i</sans>
+                <tans>total/kk</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>10</truenextnode>
+                <trueanswernote>prt_ans2h2-10-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[10].classList.add("correct");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[10].classList.add("correct");
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>10</falsenextnode>
+                <falseanswernote>prt_ans2h2-10-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[10].classList.add("incorrect");
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <script>
+        (function() {
+"use strict";
+document.getElementById("9df01194-d8e4-451d-bc56-09e80aceca50").querySelectorAll("td")[10].classList.add("incorrect");
+})();
+    </script>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans3</name>
+            <value>2.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans3</sans>
+                <tans>critical</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Klicken Sie auf
+        <button class="top-next" id="838317b8-909a-4956-a70a-b674d0afb35e" type="button">
+            Weiter
+        </button>
+        , um zum n&#228;chsten Aufgabenteil zu kommen.
+    </p>
+    <script>
+        (function() {
+document.getElementById("838317b8-909a-4956-a70a-b674d0afb35e").addEventListener("click", function (event) {
+QMenu.storeAndUpdate(3);
+});
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Click on
+        <button class="top-next" id="838317b8-909a-4956-a70a-b674d0afb35e" type="button">
+            Next
+        </button>
+        to get to the next task.
+    </p>
+    <script>
+        (function() {
+document.getElementById("838317b8-909a-4956-a70a-b674d0afb35e").addEventListener("click", function (event) {
+QMenu.storeAndUpdate(3);
+});
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <div id="oer-aufgabe-prt3-no-help">
+        <p>
+            Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein
+                Problem! Im Folgenden wird die Aufgabe in kleinere Teilaufgaben
+                unterteilt. Wenn Sie diese Aufgaben alle gel&#246;st haben, k&#246;nnen Sie die
+                urspr&#252;ngliche Aufgabe sicherlich l&#246;sen. Klicken Sie dazu auf
+            <button class="next" type="button">
+                Hilfe
+            </button>
+            .
+        </p>
+    </div>
+    <div id="oer-aufgabe-prt3-help" style="display: none">
+        <p>
+            Willkommen zur&#252;ck!  W&#228;hrend der Bearbeitung der Zwischenschritte haben Sie sich erarbeitet, dass die Teststatistik unter der Nullhypothese eine \(\chi^2\)-Verteilung mit {@ kk - 1@} Freiheitsgraden hat. Dieses Wissen k&#246;nnen Sie nun nutzen, um das passende obere Quantil zu bestimmen. Sie k&#246;nnen dieses entweder aus einer Quantil-Tabelle ablesen oder mit dem R-Befehl
+            <code>
+                qchisq
+            </code>
+            bestimmen.
+        </p>
+    </div>
+    <script>
+        (function() {
+                "use strict";
+                document.addEventListener("DOMContentLoaded", function (event) {
+                        const x = sessionStorage.getItem("oer-aufgabe-prt3-no-help");
+                        const y = sessionStorage.getItem("oer-aufgabe-prt3-help");
+                        if (x != null && y != null) {
+                                document.getElementById("oer-aufgabe-prt3-no-help").style.display = x;
+                                document.getElementById("oer-aufgabe-prt3-help").style.display = y;
+                        }
+                });
+        })();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <div id="oer-aufgabe-prt3-no-help">
+        <p>
+            That you couldn't solve the task right away is not a
+Problem! In the following, the task is to
+divided. If you have solved all these tasks, you can
+to solve the original task. Click on
+            <button class="next" type="button">
+                Help
+            </button>
+            .
+        </p>
+    </div>
+    <div id="oer-aufgabe-prt3-help" style="display: none">
+        <p>
+            Welcome back! During the processing of the intermediate steps, you have learned that the test statistics under the zero hypothesis \(\chi^2\)- Distribution with {@ kk - 1@} has degrees of freedom. You can now use this knowledge to determine the appropriate upper quantum. You can either read this from a quantum table or with the R command
+            <code>
+                qchisq
+            </code>
+            to determine.
+        </p>
+    </div>
+    <script>
+        (function() {
+                "use strict";
+                document.addEventListener("DOMContentLoaded", function (event) {
+                        const x = sessionStorage.getItem("oer-aufgabe-prt3-no-help");
+                        const y = sessionStorage.getItem("oer-aufgabe-prt3-help");
+                        if (x != null && y != null) {
+                                document.getElementById("oer-aufgabe-prt3-no-help").style.display = x;
+                                document.getElementById("oer-aufgabe-prt3-help").style.display = y;
+                        }
+                });
+        })();
+    </script>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans3h1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3h1</sans>
+                <tans>first(mcq_correct(Tans3h1))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans3h1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Klicken Sie auf
+        <button class="next" type="button">
+            Weiter
+        </button>
+        , um zum n&#228;chsten Zwischenschritt zu kommen.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        Click on
+        <button class="next" type="button">
+            Next
+        </button>
+        to get to the next step.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans3h1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans3h2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3h2</sans>
+                <tans>kk-1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans3h2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Die relevante Zahl der Freiheitsgrade ist durch die Anzahl \(k\) der m&#246;glichen Augenzahlen bestimmt. Die Anzahl der Freiheitsgrade betr&#228;gt daher {@ k - 1 = kk-1 @}.
+    </p>
+    <p>
+        Klicken Sie auf
+        <button class="top" id="65c47cca-7685-4ac1-997f-02b9559866be" type="button">
+            Zur&#252;ck
+        </button>
+        , um zur urspr&#252;nglichen Aufgabe zur&#252;ckzukehren.
+    </p>
+    <script>
+        (function() {
+                "use strict";
+                const btn = document.getElementById("65c47cca-7685-4ac1-997f-02b9559866be");
+                btn.addEventListener("click", function (event) {
+                        document.getElementById("oer-aufgabe-prt3-help").style.display = "block";
+                        document.getElementById("oer-aufgabe-prt3-no-help").style.display = "none";
+                        sessionStorage.setItem("oer-aufgabe-prt3-help", "block");
+                        sessionStorage.setItem("oer-aufgabe-prt3-no-help", "none");
+                });
+        })();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        The relevant number of degrees of freedom is due to the number \(k\) the possible number of eyes. The number of degrees of freedom is therefore {@ k - 1 = kk-1 @}.
+    </p>
+    <p>
+        Click on
+        <button class="top" id="65c47cca-7685-4ac1-997f-02b9559866be" type="button">
+            Back
+        </button>
+        to return to the original task.
+    </p>
+    <script>
+        (function() {
+                "use strict";
+                const btn = document.getElementById("65c47cca-7685-4ac1-997f-02b9559866be");
+                btn.addEventListener("click", function (event) {
+                        document.getElementById("oer-aufgabe-prt3-help").style.display = "block";
+                        document.getElementById("oer-aufgabe-prt3-no-help").style.display = "none";
+                        sessionStorage.setItem("oer-aufgabe-prt3-help", "block");
+                        sessionStorage.setItem("oer-aufgabe-prt3-no-help", "none");
+                });
+        })();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans3h2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Die relevante Zahl der Freiheitsgrade ist durch die Anzahl \(k\) der m&#246;glichen Augenzahlen bestimmt. Die Anzahl der Freiheitsgrade betr&#228;gt \(k-1\).
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        The relevant number of degrees of freedom is due to the number \(k\) the possible number of eyes. The number of degrees of freedom is \(k-1\).
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans4</name>
+            <value>2.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>first(mcq_correct(Tans4))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    [[if test="is(statistic &gt;= critical)"]]
+    <p>
+        Da {@ X &gt;= Tans3 @} gilt, verwerfen wir die Hypothese.
+    </p>
+    [[else]]
+    <p>
+        Da {@ X &lt; Tans3 @} gilt, behalten wir die Hypothese bei.
+    </p>
+    [[/if]]
+    <p>
+        Klicken Sie auf
+        <button class="next" id="2923a302-bb85-429a-b6dc-bf71e1ec7006" type="button">
+            Weiter
+        </button>
+        , um zum n&#228;chsten Aufgabenteil zu kommen.
+    </p>
+    <script>
+        (function() {
+document.getElementById("2923a302-bb85-429a-b6dc-bf71e1ec7006").addEventListener("click", function (event) {
+QMenu.storeAndUpdate(4);
+});
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    [[if test="is(statistic &gt;= critical)"]]
+    <p>
+        There. {@ X &gt;= Tans3 @} we reject the hypothesis.
+    </p>
+    [[else]]
+    <p>
+        There. {@ X &lt; Tans3 @} we keep the hypothesis.
+    </p>
+    [[/if]]
+    <p>
+        Click on
+        <button class="next" id="2923a302-bb85-429a-b6dc-bf71e1ec7006" type="button">
+            Next
+        </button>
+        to get to the next task.
+    </p>
+    <script>
+        (function() {
+document.getElementById("2923a302-bb85-429a-b6dc-bf71e1ec7006").addEventListener("click", function (event) {
+QMenu.storeAndUpdate(4);
+});
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Schauen Sie noch einmal im Skript nach, unter welchen Bedingungen die Hypothese verworfen oder angenommen wird. Dies h&#228;ngt vom Wert der Teststatistik und dem kritischen Wert ab.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Check again in the script under which conditions the hypothesis is discarded or accepted. This depends on the value of the test statistics and the critical value.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans5</name>
+            <value>2.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans5</sans>
+                <tans>mcq_correct(Tans5)</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Herzlichen Gl&#252;ckwunsch, Sie sind am Ende der Aufgabe angelangt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Congratulations, you have reached the end of the task.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>6</falsenextnode>
+                <falseanswernote>5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>6</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>subsetp(setify(ans5), setify(mcq_correct(Tans5)))</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans5-7-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre markierten Aussagen sind zwar richtig, sie haben aber nicht alle richtigen Aussagen markiert.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Their marked statements are correct, but they have not marked all the correct statements.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans5-7-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben falsche Aussagen markiert.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You've made false statements.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1291938106</deployedseed>
+        <deployedseed>1567684062</deployedseed>
+        <deployedseed>348127765</deployedseed>
+        <deployedseed>1476733934</deployedseed>
+        <deployedseed>1574750082</deployedseed>
+    </question>
+    
+
+</quiz>

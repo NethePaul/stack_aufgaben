@@ -1,0 +1,4112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Vierfeldertafel 2</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <style>
+        .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #a9f5bc;
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #e0f8e6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #dcb25e;
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #e7d2a7;
+                }
+
+    
+    
+    
+    .buttontipp {
+                                border: 1px solid black;
+                                background-color: #c9d3f6;
+                }
+
+    
+    
+    
+    .buttontipp:hover {
+                                background-color: #dbe1f9;
+                }
+
+    
+    
+    
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                                margin: 5px;
+                }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: .5em .5em 0;
+                }
+
+    
+    
+    
+    .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -.5em -.5em 0;
+                                padding: .5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] {
+                                padding: .5em;
+                }
+    </style>
+    <div id="summarybox">
+        <details>
+            <summary>
+                Inhalt und Umfang dieser Aufgabe
+            </summary>
+            <p>
+                In dieser Aufgabe lernen Sie, wie Sie mithilfe der bedingten Wahrscheinlichkeiten die fehlenden Eintr&#228;ge einer Vierfeldertafel bestimmen. Die sechs fehlenden Eintr&#228;ge sind auf die Aufgabenteile (a)-(f) aufgeteilt.
+            </p>
+        </details>
+        <hr/>
+    </div>
+    <div id="aufgabenstellung" style="display:box;">
+        <b>
+            Vierfeldertafel 2
+        </b>
+        <p>
+            Berechnen Sie die Wahrscheinlichkeiten \(a, b, c, d, e, f\) in der folgenden Vierfeldertafel.
+        </p>
+        <p>
+            \begin{array} {|r|r|}\hline &amp; A &amp; \neg A &amp; \Sigma \\ \hline B &amp; a &amp; b &amp; {#p#} \\ \hline \neg B &amp; c &amp; d &amp;&#160; {#1-p#} \\ \hline \Sigma &amp; e &amp; f &amp; 1 \\ \hline&#160; \end{array}
+            <br/>
+        </p>
+        <p>
+            \(P(A\vert B) = {@q1@} \)
+            <br/>
+        </p>
+        <p>
+        </p>
+        <p>
+            \(P(A\vert \neg B) = {@q2@} \)
+            <br/>
+        </p>
+    </div>
+    <div id="urspruenglicheaufgabe" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Urspr&#252;ngliche Fragestellung:
+                                    </u>
+                                    <b>
+                                        Vierfeldertafel 2
+                                    </b>
+                                    <p>
+                                        Berechnen Sie die Wahrscheinlichkeiten \(a, b, c, d, e, f\)  in der folgenden Vierfeldertafel.
+                                    </p>
+                                    <p>
+                                        \begin{array} {|r|r|}\hline  &amp; A &amp; \neg A &amp; \Sigma \\ \hline B &amp; a &amp; b &amp; {#p#} \\ \hline \neg B &amp; c &amp; d &amp;&#160; {#1-p#} \\ \hline \Sigma &amp; e &amp; f &amp; 1 \\ \hline&#160; \end{array}
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        \(P(A\vert B) = {@q1@} \)
+                                        <br/>
+                                    </p>
+                                    <p>
+                                    </p>
+                                    <p>
+                                        \(P(A\vert \neg B) = {@q2@} \)
+                                        <br/>
+                                    </p>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </span>
+    </div>
+    <p>
+    </p>
+    <div id="aufgabe1" style="display:box;">
+        <b>
+            (a)
+        </b>
+        Berechnen Sie \( a \).
+        <br/>
+        <p>
+            <u>
+                Antwort:
+            </u>
+            Die Wahrscheinlichkeit betr&#228;gt [[input:ans1]]. [[validation:ans1]]
+            <br/>
+        </p>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt1]]
+    </div>
+    <div id="zwischen1a" style="display:none;">
+        Welches Ereignis hat Wahrscheinlichkeit \( a \)?
+        <br/>
+        [[input:ans1a]] [[validation:ans1a]]
+        <br/>
+        <br/>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt1a]]
+    </div>
+    <div id="zwischen1b" style="display:none;">
+        Mit welcher Vorschrift kann man \(a \) berechnen?
+        <!--<ol>
+                                <li>Man rechnet \(P(A) \cdot P(B)\).</li>
+                                <li>Man rechnet \(P(B) \cdot P(A \vert B) \).</li>
+                                <li>Man rechnet \(\frac {P(A \cap B)} {P(B)} \).</li>
+                </ol>-->
+        <br/>
+        [[input:ans1b]] [[validation:ans1b]]
+        <br/>
+        <br/>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt1b]]
+    </div>
+    <div id="zwischen1c" style="display:none;">
+        <p>
+            Um die bedingte Wahrscheinlichkeit zu berechnen muss man nun die Wahrscheinlichkeit \( p = P(B) \) mit der bedingten Wahrscheinlichkeit der Bedingung \( P(A \vert B) \) multiplizieren. Geben Sie die Antwort hier ein:&#160;Die Wahrscheinlichkeit betr&#228;gt
+                                [[input:ans1c]]. [[validation:ans1c]]
+            <br/>
+        </p>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt1c]]
+    </div>
+    <p>
+    </p>
+    <div id="aufgabe2" style="display:none;">
+        <b>
+            (b)
+        </b>
+        Berechnen Sie \( b \).
+        <br/>
+        <p>
+            <u>
+                Antwort:
+            </u>
+            Die Wahrscheinlichkeit betr&#228;gt [[input:ans2]]. [[validation:ans2]]
+            <br/>
+        </p>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt2]]
+    </div>
+    <div id="zwischen2a" style="display:none;">
+        Welches Ereignis hat Wahrscheinlichkeit \( b \)?
+        <br/>
+        [[input:ans2a]] [[validation:ans2a]]
+        <br/>
+        <br/>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt2a]]
+    </div>
+    <div id="zwischen2b" style="display:none;">
+        Mit welcher Vorschrift kann man \(b \) berechnen?
+        <br/>
+        [[input:ans2b]] [[validation:ans2b]]
+        <br/>
+        <br/>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt2b]]
+    </div>
+    <div id="zwischen2c" style="display:none;">
+        <p>
+            Um die bedingte Wahrscheinlichkeit zu berechnen muss man nun die Wahrscheinlichkeit \( p = P(B) \) mit der bedingten Wahrscheinlichkeit der Bedingung \( P(\neg A \vert B) \) multiplizieren. Geben Sie die Antwort hier ein:&#160;Die Wahrscheinlichkeit
+                                betr&#228;gt [[input:ans2c]]. [[validation:ans2c]]
+            <br/>
+        </p>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt2c]]
+    </div>
+    <p>
+    </p>
+    <div id="aufgabe3" style="display:none;">
+        <b>
+            (c)
+        </b>
+        Berechnen Sie \( c \).
+        <br/>
+        <p>
+            <u>
+                Antwort:
+            </u>
+            Die Wahrscheinlichkeit betr&#228;gt [[input:ans3]]. [[validation:ans3]]
+            <br/>
+        </p>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt3]]
+    </div>
+    <div id="zwischen3a" style="display:none;">
+        Welches Ereignis hat Wahrscheinlichkeit \( c \)?
+        <br/>
+        [[input:ans3a]] [[validation:ans3a]]
+        <br/>
+        <br/>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt3a]]
+    </div>
+    <div id="zwischen3b" style="display:none;">
+        Mit welcher Vorschrift kann man \(c \) berechnen?
+        <br/>
+        [[input:ans3b]] [[validation:ans3b]]
+        <br/>
+        <br/>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt3b]]
+    </div>
+    <div id="zwischen3c" style="display:none;">
+        <p>
+            Um die bedingte Wahrscheinlichkeit zu berechnen muss man nun die Wahrscheinlichkeit \( p = P(\neg B) \) mit der bedingten Wahrscheinlichkeit der Bedingung \( P(A \vert (\neg B) ) \) multiplizieren. Geben Sie die Antwort hier ein:&#160;Die Wahrscheinlichkeit
+                                betr&#228;gt [[input:ans3c]]. [[validation:ans3c]]
+            <br/>
+        </p>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt3c]]
+    </div>
+    <p>
+    </p>
+    <div id="aufgabe4" style="display:none;">
+        <b>
+            (d)
+        </b>
+        Berechnen Sie \( d \).
+        <br/>
+        <p>
+            <u>
+                Antwort:
+            </u>
+            Die Wahrscheinlichkeit betr&#228;gt [[input:ans4]]. [[validation:ans4]]
+            <br/>
+        </p>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt4]]
+    </div>
+    <div id="zwischen4a" style="display:none;">
+        Welches Ereignis hat Wahrscheinlichkeit \( d \)?
+        <br/>
+        [[input:ans4a]] [[validation:ans4a]]
+        <br/>
+        <br/>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt4a]]
+    </div>
+    <div id="zwischen4b" style="display:none;">
+        Mit welcher Vorschrift kann man \(d \) berechnen?
+        <br/>
+        [[input:ans4b]] [[validation:ans4b]]
+        <br/>
+        <br/>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt4b]]
+    </div>
+    <div id="zwischen4c" style="display:none;">
+        <p>
+            Um die bedingte Wahrscheinlichkeit zu berechnen muss man nun die Wahrscheinlichkeit \( p = P(\neg B) \) mit der bedingten Wahrscheinlichkeit der Bedingung \( P(\neg A \vert \neg B) \) multiplizieren. Geben Sie die Antwort hier ein:&#160;Die Wahrscheinlichkeit
+                                betr&#228;gt [[input:ans4c]]. [[validation:ans4c]]
+            <br/>
+        </p>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt4c]]
+    </div>
+    <p>
+    </p>
+    <div id="alteloesungen" style="display:none;">
+        <p>
+            \(a = {@ta_a@} \)
+            <br/>
+        </p>
+        <p>
+        </p>
+        <p>
+            \(b = {@ta_b@} \)
+            <br/>
+        </p>
+        <p>
+        </p>
+        <p>
+            \(c = {@ta_c@} \)
+            <br/>
+        </p>
+        <p>
+        </p>
+        <p>
+            \(d = {@ta_d@} \)
+            <br/>
+        </p>
+        <p>
+        </p>
+    </div>
+    <p>
+    </p>
+    <div id="aufgabe5" style="display:none;">
+        <b>
+            (e)
+        </b>
+        Berechnen Sie \( e \).
+        <br/>
+        <p>
+            <u>
+                Antwort:
+            </u>
+            Die Wahrscheinlichkeit betr&#228;gt [[input:ans5]]. [[validation:ans5]]
+            <br/>
+        </p>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt5]]
+    </div>
+    <div id="zwischen5a" style="display:none;">
+        Welches Ereignis hat Wahrscheinlichkeit \( e \)?
+        <br/>
+        [[input:ans5a]] [[validation:ans5a]]
+        <br/>
+        <br/>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt5a]]
+    </div>
+    <div id="zwischen5b" style="display:none;">
+        Wie kann man \(e \) berechnen?
+        <br/>
+        [[input:ans5b]] [[validation:ans5b]]
+        <br/>
+        <br/>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt5b]]
+    </div>
+    <div id="zwischen5c" style="display:none;">
+        <p>
+            Geben Sie \(e \) nun hier ein:&#160;Die Wahrscheinlichkeit betr&#228;gt [[input:ans5c]]. [[validation:ans5c]]
+            <br/>
+        </p>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt5c]]
+    </div>
+    <p>
+    </p>
+    <div id="aufgabe6" style="display:none;">
+        <b>
+            (f)
+        </b>
+        Berechnen Sie \( f \).
+        <br/>
+        <p>
+            <u>
+                Antwort:
+            </u>
+            Die Wahrscheinlichkeit betr&#228;gt [[input:ans6]]. [[validation:ans6]]
+            <br/>
+        </p>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt6]]
+    </div>
+    <div id="zwischen6a" style="display:none;">
+        Welches Ereignis hat Wahrscheinlichkeit \( f \)?
+        <br/>
+        [[input:ans6a]] [[validation:ans6a]]
+        <br/>
+        <br/>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt6a]]
+    </div>
+    <div id="zwischen6b" style="display:none;">
+        Wie kann man \(f \) berechnen?
+        <br/>
+        [[input:ans6b]] [[validation:ans6b]]
+        <br/>
+        <br/>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt6b]]
+    </div>
+    <div id="zwischen6c" style="display:none;">
+        <p>
+            Geben Sie \(f\) nun hier ein:&#160;Die Wahrscheinlichkeit betr&#228;gt [[input:ans6c]]. [[validation:ans6c]]
+            <br/>
+        </p>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt6c]]
+    </div>
+    <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <style>
+        .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #a9f5bc;
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #e0f8e6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #dcb25e;
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #e7d2a7;
+                }
+
+    
+    
+    
+    .buttontipp {
+                                border: 1px solid black;
+                                background-color: #c9d3f6;
+                }
+
+    
+    
+    
+    .buttontipp:hover {
+                                background-color: #dbe1f9;
+                }
+
+    
+    
+    
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                                margin: 5px;
+                }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: .5em .5em 0;
+                }
+
+    
+    
+    
+    .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -.5em -.5em 0;
+                                padding: .5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] {
+                                padding: .5em;
+                }
+    </style>
+    <div id="summarybox">
+        <details>
+            <summary>
+                Content and scope of this task
+            </summary>
+            <p>
+                In this task, you will learn how to determine the missing entries of a four-field panel using the conditional probabilities. The six missing entries are divided into the tasks (a)-(f).
+            </p>
+        </details>
+        <hr/>
+    </div>
+    <div id="aufgabenstellung" style="display:box;">
+        <b>
+            Four-field panel 2
+        </b>
+        <p>
+            Calculate the odds \(a, b, c, d, e, f\) in the following four-field panel.
+        </p>
+        <p>
+            \begin{array} {|r|r|}\hline &amp; A &amp; \neg A &amp; \Sigma \\ \hline B &amp; a &amp; b &amp; {#p#} \\ \hline \neg B &amp; c &amp; d &amp;&#160; {#1-p#} \\ \hline \Sigma &amp; e &amp; f &amp; 1 \\ \hline&#160; \end{array}
+            <br/>
+        </p>
+        <p>
+            \(P(A\vert B) = {@q1@} \)
+            <br/>
+        </p>
+        <p>
+        </p>
+        <p>
+            \(P(A\vert \neg B) = {@q2@} \)
+            <br/>
+        </p>
+    </div>
+    <div id="urspruenglicheaufgabe" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Original question:
+                                    </u>
+                                    <b>
+                                        Four-field panel 2
+                                    </b>
+                                    <p>
+                                        Calculate the odds \(a, b, c, d, e, f\) in the following four-field panel.
+                                    </p>
+                                    <p>
+                                        \begin{array} {|r|r|}\hline  &amp; A &amp; \neg A &amp; \Sigma \\ \hline B &amp; a &amp; b &amp; {#p#} \\ \hline \neg B &amp; c &amp; d &amp;&#160; {#1-p#} \\ \hline \Sigma &amp; e &amp; f &amp; 1 \\ \hline&#160; \end{array}
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        \(P(A\vert B) = {@q1@} \)
+                                        <br/>
+                                    </p>
+                                    <p>
+                                    </p>
+                                    <p>
+                                        \(P(A\vert \neg B) = {@q2@} \)
+                                        <br/>
+                                    </p>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </span>
+    </div>
+    <p>
+    </p>
+    <div id="aufgabe1" style="display:box;">
+        <b>
+            (a)
+        </b>
+        Calculate \( a \).
+        <br/>
+        <p>
+            <u>
+                Answer:
+            </u>
+            The probability is [[input:ans1]]. [[validation:ans1]]
+            <br/>
+        </p>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt1]]
+    </div>
+    <div id="zwischen1a" style="display:none;">
+        Which event has probability \( a \)?
+        <br/>
+        [[input:ans1a]] [[validation:ans1a]]
+        <br/>
+        <br/>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt1a]]
+    </div>
+    <div id="zwischen1b" style="display:none;">
+        How to use \(a \) calculate?
+        <!--<ol>
+                                <li>Man rechnet \(P(A) \cdot P(B)\).</li>
+                                <li>Man rechnet \(P(B) \cdot P(A \vert B) \).</li>
+                                <li>Man rechnet \(\frac {P(A \cap B)} {P(B)} \).</li>
+                </ol>-->
+        <br/>
+        [[input:ans1b]] [[validation:ans1b]]
+        <br/>
+        <br/>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt1b]]
+    </div>
+    <div id="zwischen1c" style="display:none;">
+        <p>
+            In order to calculate the conditional probability, one must now calculate the probability \( p = P(B) \) with the conditional probability of condition \( P(A \vert B) \) multiply. Enter the answer here: The probability is
+    [[input:ans1c]]. [[validation:ans1c]]
+            <br/>
+        </p>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt1c]]
+    </div>
+    <p>
+    </p>
+    <div id="aufgabe2" style="display:none;">
+        <b>
+            (b)
+        </b>
+        Calculate \( b \).
+        <br/>
+        <p>
+            <u>
+                Answer:
+            </u>
+            The probability is [[input:ans2]]. [[validation:ans2]]
+            <br/>
+        </p>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt2]]
+    </div>
+    <div id="zwischen2a" style="display:none;">
+        Which event has probability \( b \)?
+        <br/>
+        [[input:ans2a]] [[validation:ans2a]]
+        <br/>
+        <br/>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt2a]]
+    </div>
+    <div id="zwischen2b" style="display:none;">
+        How to use \(b \) calculate?
+        <br/>
+        [[input:ans2b]] [[validation:ans2b]]
+        <br/>
+        <br/>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt2b]]
+    </div>
+    <div id="zwischen2c" style="display:none;">
+        <p>
+            In order to calculate the conditional probability, one must now calculate the probability \( p = P(B) \) with the conditional probability of condition \( P(\neg A \vert B) \) multiply. Enter the answer here: The probability
+is [[input:ans2c]]. [[validation:ans2c]]
+            <br/>
+        </p>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt2c]]
+    </div>
+    <p>
+    </p>
+    <div id="aufgabe3" style="display:none;">
+        <b>
+            (c)
+        </b>
+        Calculate \( c \).
+        <br/>
+        <p>
+            <u>
+                Answer:
+            </u>
+            The probability is [[input:ans3]]. [[validation:ans3]]
+            <br/>
+        </p>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt3]]
+    </div>
+    <div id="zwischen3a" style="display:none;">
+        Which event has probability \( c \)?
+        <br/>
+        [[input:ans3a]] [[validation:ans3a]]
+        <br/>
+        <br/>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt3a]]
+    </div>
+    <div id="zwischen3b" style="display:none;">
+        How to use \(c \) calculate?
+        <br/>
+        [[input:ans3b]] [[validation:ans3b]]
+        <br/>
+        <br/>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt3b]]
+    </div>
+    <div id="zwischen3c" style="display:none;">
+        <p>
+            In order to calculate the conditional probability, one must now calculate the probability \( p = P(\neg B) \) with the conditional probability of condition \( P(A \vert (\neg B) ) \) multiply. Enter the answer here: The probability
+is [[input:ans3c]]. [[validation:ans3c]]
+            <br/>
+        </p>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt3c]]
+    </div>
+    <p>
+    </p>
+    <div id="aufgabe4" style="display:none;">
+        <b>
+            (d)
+        </b>
+        Calculate \( d \).
+        <br/>
+        <p>
+            <u>
+                Answer:
+            </u>
+            The probability is [[input:ans4]]. [[validation:ans4]]
+            <br/>
+        </p>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt4]]
+    </div>
+    <div id="zwischen4a" style="display:none;">
+        Which event has probability \( d \)?
+        <br/>
+        [[input:ans4a]] [[validation:ans4a]]
+        <br/>
+        <br/>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt4a]]
+    </div>
+    <div id="zwischen4b" style="display:none;">
+        How to use \(d \) calculate?
+        <br/>
+        [[input:ans4b]] [[validation:ans4b]]
+        <br/>
+        <br/>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt4b]]
+    </div>
+    <div id="zwischen4c" style="display:none;">
+        <p>
+            In order to calculate the conditional probability, one must now calculate the probability \( p = P(\neg B) \) with the conditional probability of condition \( P(\neg A \vert \neg B) \) multiply. Enter the answer here: The probability
+is [[input:ans4c]]. [[validation:ans4c]]
+            <br/>
+        </p>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt4c]]
+    </div>
+    <p>
+    </p>
+    <div id="alteloesungen" style="display:none;">
+        <p>
+            \(a = {@ta_a@} \)
+            <br/>
+        </p>
+        <p>
+        </p>
+        <p>
+            \(b = {@ta_b@} \)
+            <br/>
+        </p>
+        <p>
+        </p>
+        <p>
+            \(c = {@ta_c@} \)
+            <br/>
+        </p>
+        <p>
+        </p>
+        <p>
+            \(d = {@ta_d@} \)
+            <br/>
+        </p>
+        <p>
+        </p>
+    </div>
+    <p>
+    </p>
+    <div id="aufgabe5" style="display:none;">
+        <b>
+            (e)
+        </b>
+        Calculate \( e \).
+        <br/>
+        <p>
+            <u>
+                Answer:
+            </u>
+            The probability is [[input:ans5]]. [[validation:ans5]]
+            <br/>
+        </p>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt5]]
+    </div>
+    <div id="zwischen5a" style="display:none;">
+        Which event has probability \( e \)?
+        <br/>
+        [[input:ans5a]] [[validation:ans5a]]
+        <br/>
+        <br/>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt5a]]
+    </div>
+    <div id="zwischen5b" style="display:none;">
+        How to \(e \) calculate?
+        <br/>
+        [[input:ans5b]] [[validation:ans5b]]
+        <br/>
+        <br/>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt5b]]
+    </div>
+    <div id="zwischen5c" style="display:none;">
+        <p>
+            Enter \(e \) now here: The probability is [[input:ans5c]]. [[validation:ans5c]]
+            <br/>
+        </p>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt5c]]
+    </div>
+    <p>
+    </p>
+    <div id="aufgabe6" style="display:none;">
+        <b>
+            (f)
+        </b>
+        Calculate \( f \).
+        <br/>
+        <p>
+            <u>
+                Answer:
+            </u>
+            The probability is [[input:ans6]]. [[validation:ans6]]
+            <br/>
+        </p>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt6]]
+    </div>
+    <div id="zwischen6a" style="display:none;">
+        Which event has probability \( f \)?
+        <br/>
+        [[input:ans6a]] [[validation:ans6a]]
+        <br/>
+        <br/>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt6a]]
+    </div>
+    <div id="zwischen6b" style="display:none;">
+        How to \(f \) calculate?
+        <br/>
+        [[input:ans6b]] [[validation:ans6b]]
+        <br/>
+        <br/>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt6b]]
+    </div>
+    <div id="zwischen6c" style="display:none;">
+        <p>
+            Enter \(f\) now here: The probability is [[input:ans6c]]. [[validation:ans6c]]
+            <br/>
+        </p>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt6c]]
+    </div>
+    <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+    </script>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>6.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  Vierfeldertafel 2
+
+  wurde entwickelt von
+  
+    Riko Kelter <riko.kelter(at)uni-siegen.de>
+    Alexander Schnurr <schnurr(at)mathematik.uni-siegen.de>
+    Susanne Spies <spies(at)mathematik.uni-siegen.de>
+
+  nach einer Idee von
+  
+   Riko Kelter <riko.kelter(at)uni-siegen.de>
+   Alexander Schnurr <schnurr(at)mathematik.uni-siegen.de>
+   Susanne Spies <spies(at)mathematik.uni-siegen.de>
+
+  an der Universit&#228;t Siegen.
+
+  Dieses Werk ist lizenziert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+
+  Diese Aufgabe bindet das Skript &#8216;stackselbstlern.js&#8217; von Michael
+  Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+p: rand_with_step(1,9,1)/10;
+q1: rand_with_step(1,9,1)/10;
+q2: rand_with_prohib(1,9,[ q1 ])/10;
+
+test01(x):= is(x>=0) and (x<=1);
+ta_a: p*q1;
+ta_b: p*(1-q1);
+ta_c: (1-p)*q2;
+ta_d: (1-p)*(1-q2);
+ta_e: ta_a+ta_c;
+ta_f: ta_b+ta_d;
+
+Liste1a: [[1, false, "A"], [2, true, "A und B"], [3, false, "A und nicht B"], [4, false, "B"] ];
+Liste1b: [[1, false, "Man rechnet \\(P(A) \\cdot P(B)\\)."], [2, true, "Man rechnet \\(P(B) \\cdot P(A \\vert B) \\)."], [3, false, "Man rechnet \\(\\frac {P(A \\cap B)} {P(B)} \\)."] ];
+Liste2a: [[1, false, "nicht A"], [2, true, "nicht A und B"], [3, false, "nicht A und nicht B"], [4, false, "B"] ];
+Liste2b: [[1, false, "Man rechnet \\(P(\\neg A) \\cdot P(B)\\)."], [2, true, "Man rechnet \\(P(B) \\cdot P(\\neg A \\vert B) \\)."], [3, false, "Man rechnet  \\(\\frac {P((\\neg A) \\cap B)} {P(B)} \\)."] ];
+Liste3a: [[1, false, "A"], [2, false, "A und B"], [3, true, "A und nicht B"], [4, false, "B"] ];
+Liste3b: [[1, false, "Man rechnet \\(P(\\neg B) \\cdot P(A) \\)."], [2, true, "Man rechnet \\(P(\\neg B) \\cdot P(A \\vert \\neg B) \\)."], [3, false, "Man rechnet \\(\\frac {P(A \\cap (\\neg B))} {P(\\neg B)} \\)."] ];
+Liste4a: [[1, false, "nicht A"], [2, false, "nicht A und B"], [3, true, "nicht A und nicht B"], [4, false, "B"] ];
+Liste4b: [[1, false, "Man rechnet \\(P(\\neg A) \\cdot P(\\neg B)\\)."], [2, true, "Man rechnet \\(P(\\neg B) \\cdot P(\\neg A \\vert \\neg B) \\)."], [3, false, "Man rechnet \\(\\frac {P((\\neg A) \\cap (\\neg B))} {P(\\neg B)} \\)."] ];
+
+Liste5a: [[1, true, "A"], [2, false, "nicht A und B"], [3, false, "nicht A und nicht B"], [4, false, "B"] ];
+Liste5b: [[1, true, "Man rechnet \\(a+c}\)."], [2, false, "Man rechnet \\(a \\cdot c \\)."], [3, false, "Man rechnet \\(\\frac a c \\)."] ];
+Liste6a: [[1, true, "nicht A"], [2, false, "nicht A und B"], [3, false, "nicht A und nicht B"], [4, false, "B"] ];
+Liste6b: [[1, true, "Man rechnet \\(b + d\\)."], [2, false, "Man rechnet \\(b \\cdot c \\)."], [3, false, "Man rechnet \\(\\frac b d \\)."] ];]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>[p, q1, q2]</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text/>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text/>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>0.12</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans1a</name>
+            <type>radio</type>
+            <tans>Liste1a</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans1b</name>
+            <type>radio</type>
+            <tans>Liste1b</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans1c</name>
+            <type>algebraic</type>
+            <tans>ans1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>0.28</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2a</name>
+            <type>radio</type>
+            <tans>Liste2a</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans2b</name>
+            <type>radio</type>
+            <tans>Liste2b</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans2c</name>
+            <type>algebraic</type>
+            <tans>ta_b</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>0.12</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3a</name>
+            <type>radio</type>
+            <tans>Liste3a</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans3b</name>
+            <type>radio</type>
+            <tans>Liste3b</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans3c</name>
+            <type>algebraic</type>
+            <tans>ta_c</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>algebraic</type>
+            <tans>0.48</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4a</name>
+            <type>radio</type>
+            <tans>Liste4a</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans4b</name>
+            <type>radio</type>
+            <tans>Liste4b</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans4c</name>
+            <type>algebraic</type>
+            <tans>ta_d</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans5</name>
+            <type>algebraic</type>
+            <tans>0.24</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans5a</name>
+            <type>radio</type>
+            <tans>Liste5a</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans5b</name>
+            <type>radio</type>
+            <tans>Liste5b</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans5c</name>
+            <type>algebraic</type>
+            <tans>ta_e</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans6</name>
+            <type>algebraic</type>
+            <tans>0.76</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans6a</name>
+            <type>radio</type>
+            <tans>Liste6a</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans6b</name>
+            <type>radio</type>
+            <tans>Liste6b</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans6c</name>
+            <type>algebraic</type>
+            <tans>ta_f</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>ta_a</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Sie rechnen \(P(B) \cdot P(A \vert B) = {@p@} \cdot {@q1@} \).
+    <p>
+        Klicken Sie zum Fortfahren mit Teil (b) bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('aufgabe1');show('aufgabe2');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+You expect \(P(B) \cdot P(A \vert B) = {@p@} \cdot {@q1@} \).
+    <p>
+        Click To continue with part (b), please click the following button:
+        <button class="buttonweiter" onclick="hide('aufgabe1');show('aufgabe2');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <div id="prtA-1">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+
+
+
+
+Dass Sie die Aufgabe nicht sofort l&#246;sen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in einzelne Schritte unterteilt.
+        <p>
+            Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+            <button class="buttonweiter" onclick="hide('aufgabe1');show('zwischen1a');hide('aufgabenstellung');show('urspruenglicheaufgabe');" type="button">
+                Weiter
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtA-2" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+        <p>
+            Versuchen Sie die Aufgabe nun noch einmal. Um die bedingte Wahrscheinlichkeit zu berechnen muss man nun die Wahrscheinlichkeit \( P(B) = {@p@} \) mit der bedingten Wahrscheinlichkeit der Bedingung \( P(A \vert B) = {@q1@} \) multiplizieren.
+        </p>
+    </div>
+</span>
+<span class="multilang" lang="en">
+    <div id="prtA-1">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+
+
+
+
+That you could not solve the task immediately is not a problem! In the following, the object is subdivided into individual steps.
+        <p>
+            To continue, click on the following button:
+            <button class="buttonweiter" onclick="hide('aufgabe1');show('zwischen1a');hide('aufgabenstellung');show('urspruenglicheaufgabe');" type="button">
+                Next
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtA-2" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+        <p>
+            Try the task again. In order to calculate the conditional probability, one must now calculate the probability \( P(B) = {@p@} \) with the conditional probability of condition \( P(A \vert B) = {@q1@} \) multiply.
+        </p>
+    </div>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ans1)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die angegebene Wahrscheinlichkeit liegt nicht zwischen 0 und 1. Bitte korrigieren Sie Ihre L&#246;sung.
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The specified probability is not between 0 and 1. Please correct your solution.
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt1a</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1a</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>-</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1a-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Sie lesen die Zeile und Spalte ab, in der sich \(a\) befindet.
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('zwischen1a');show('zwischen1b');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+You read the line and column in which \(a\) located.
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('zwischen1a');show('zwischen1b');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1a-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p dir="ltr" style="text-align: left;">
+        Lesen Sie in der Vierfeldertafel die Zeile und Spalte ab, in der sich \(a\) befindet.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p dir="ltr" style="text-align: left;">
+        Read the line and column in the four-field panel \(a\) located.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt1b</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1b</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>-</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1b-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Es gilt \( P(C \cap D) = P(D) \cdot P(C \vert D) \).
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('zwischen1b');show('aufgabe1');hide('prtA-1');show('prtA-2');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+The following shall apply: \( P(C \cap D) = P(D) \cdot P(C \vert D) \).
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('zwischen1b');show('aufgabe1');hide('prtA-1');show('prtA-2');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1b-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p dir="ltr" style="text-align: left;">
+        Es gilt \( P(C \cap D) = P(D) \cdot P(C \vert D) \). Was sind in diesem Fall \(C\) und \(D\)?
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p dir="ltr" style="text-align: left;">
+        The following shall apply: \( P(C \cap D) = P(D) \cdot P(C \vert D) \). What are in this case \(C\) and \(D\)?
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt1c</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1c</sans>
+                <tans>ta_a</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1c-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    Richtig. Sie rechnen \( {@p@} \cdot {@q1@} \).
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button onclick="hide('zwischen1c');show('aufgabe2');show('aufgabenstellung');hide('urspruenglicheaufgabe');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    Right. You expect \( {@p@} \cdot {@q1@} \).
+    <p>
+        To continue, click on the following button:
+        <button onclick="hide('zwischen1c');show('aufgabe2');show('aufgabenstellung');hide('urspruenglicheaufgabe');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1c-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr" style="text-align: left;">
+        Rechnen Sie \( {@p@} \cdot {@q1@} \).
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr" style="text-align: left;">
+        Recognition \( {@p@} \cdot {@q1@} \).
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>ta_b</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Sie rechnen \(P(B) \cdot P(\neg A \vert B) = {@p@} \cdot {@1-q1@} \).
+    <p>
+        Klicken Sie zum Fortfahren mit Teil (c) bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('aufgabe2');show('aufgabe3');hide('aufgabenstellung');show('urspruenglicheaufgabe');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+You expect \(P(B) \cdot P(\neg A \vert B) = {@p@} \cdot {@1-q1@} \).
+    <p>
+        Click To continue with part (c), please click the following button:
+        <button class="buttonweiter" onclick="hide('aufgabe2');show('aufgabe3');hide('aufgabenstellung');show('urspruenglicheaufgabe');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <div id="prtB-1">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+
+
+
+
+Dass Sie die Aufgabe nicht sofort l&#246;sen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in einzelne Schritte unterteilt.
+        <p>
+            Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+            <button class="buttonweiter" onclick="hide('aufgabe2');show('zwischen2a');hide('aufgabenstellung');show('urspruenglicheaufgabe');" type="button">
+                Weiter
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtB-2" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+        <p>
+            Versuchen Sie die Aufgabe nun noch einmal. Um die bedingte Wahrscheinlichkeit zu berechnen muss man nun die Wahrscheinlichkeit \( P(B) = {@p@} \) mit der bedingten Wahrscheinlichkeit der Bedingung \( P(\neg A \vert B) = 1- P(A \vert B) = {@1- q1@}\) multiplizieren.
+        </p>
+    </div>
+</span>
+<span class="multilang" lang="en">
+    <div id="prtB-1">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+
+
+
+
+That you could not solve the task immediately is not a problem! In the following, the object is subdivided into individual steps.
+        <p>
+            To continue, click on the following button:
+            <button class="buttonweiter" onclick="hide('aufgabe2');show('zwischen2a');hide('aufgabenstellung');show('urspruenglicheaufgabe');" type="button">
+                Next
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtB-2" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+        <p>
+            Try the task again. In order to calculate the conditional probability, one must now calculate the probability \( P(B) = {@p@} \) with the conditional probability of condition \( P(\neg A \vert B) = 1- P(A \vert B) = {@1- q1@}\) multiply.
+        </p>
+    </div>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ans2)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>prt2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die angegebene Wahrscheinlichkeit liegt nicht zwischen 0 und 1. Bitte korrigieren Sie Ihre L&#246;sung.
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The specified probability is not between 0 and 1. Please correct your solution.
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2a</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2a</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>-</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2a-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+    <p dir="ltr" style="text-align: left;">
+        Sie lesen die Zeile und Spalte ab, in der sich \(b\) befindet.
+        <br/>
+    </p>
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('zwischen2a');show('zwischen2b');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+    <p dir="ltr" style="text-align: left;">
+        You read the line and column in which \(b\) located.
+        <br/>
+    </p>
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('zwischen2a');show('zwischen2b');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2a-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p dir="ltr">
+        Lesen Sie in der Vierfeldertafel die Zeile und Spalte ab, in der sich \(b\) befindet.
+        <br/>
+    </p>
+    <br/>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p dir="ltr">
+        Read the line and column in the four-field panel \(b\) located.
+        <br/>
+    </p>
+    <br/>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2b</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2b</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>-</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2b-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Es gilt \( P(C \cap D) = P(D) \cdot P(C \vert D) \).
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('zwischen2b');show('aufgabe2');hide('prtB-1');show('prtB-2');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+The following shall apply: \( P(C \cap D) = P(D) \cdot P(C \vert D) \).
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('zwischen2b');show('aufgabe2');hide('prtB-1');show('prtB-2');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2b-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p dir="ltr">
+        Es gilt \( P(C \cap D) = P(D) \cdot P(C \vert D) \). Was sind in diesem Fall \(C\) und \(D\)?
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p dir="ltr">
+        The following shall apply: \( P(C \cap D) = P(D) \cdot P(C \vert D) \). What are in this case \(C\) and \(D\)?
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2c</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2c</sans>
+                <tans>ta_b</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2c-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    Richtig. Sie rechnen \( {@p@} \cdot (1-{@q1@}) \).
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button onclick="hide('zwischen2c');show('aufgabe3');show('aufgabenstellung');hide('urspruenglicheaufgabe');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    Right. You expect \( {@p@} \cdot (1-{@q1@}) \).
+    <p>
+        To continue, click on the following button:
+        <button onclick="hide('zwischen2c');show('aufgabe3');show('aufgabenstellung');hide('urspruenglicheaufgabe');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2c-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr">
+        Rechnen Sie \( {@p@} \cdot (1-{@q1@}) \).
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr">
+        Recognition \( {@p@} \cdot (1-{@q1@}) \).
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>ta_c</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Sie rechnen \(P(\neg B) \cdot P(A \vert \neg B) = {@1-p@} \cdot {@q2@} \).
+    <p>
+        Klicken Sie zum Fortfahren mit Teil (d) bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('aufgabe3');show('aufgabe4');hide('aufgabenstellung');show('urspruenglicheaufgabe');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+You expect \(P(\neg B) \cdot P(A \vert \neg B) = {@1-p@} \cdot {@q2@} \).
+    <p>
+        Click To continue with part (d), please click the following button:
+        <button class="buttonweiter" onclick="hide('aufgabe3');show('aufgabe4');hide('aufgabenstellung');show('urspruenglicheaufgabe');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <div id="prtC-1">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+
+
+
+
+Dass Sie die Aufgabe nicht sofort l&#246;sen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in einzelne Schritte unterteilt.
+        <p>
+            Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+            <button class="buttonweiter" onclick="hide('aufgabe3');show('zwischen3a');hide('aufgabenstellung');show('urspruenglicheaufgabe');" type="button">
+                Weiter
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtC-2" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+        <p>
+            Versuchen Sie die Aufgabe nun noch einmal. Um die bedingte Wahrscheinlichkeit zu berechnen muss man nun die Wahrscheinlichkeit \( P(\neg B) = 1- P(B) = {@1-p@} \) mit der bedingten Wahrscheinlichkeit der Bedingung \( P(A \vert \neg B) = {@q2@} \) multiplizieren.
+        </p>
+    </div>
+</span>
+<span class="multilang" lang="en">
+    <div id="prtC-1">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+
+
+
+
+That you could not solve the task immediately is not a problem! In the following, the object is subdivided into individual steps.
+        <p>
+            To continue, click on the following button:
+            <button class="buttonweiter" onclick="hide('aufgabe3');show('zwischen3a');hide('aufgabenstellung');show('urspruenglicheaufgabe');" type="button">
+                Next
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtC-2" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+        <p>
+            Try the task again. In order to calculate the conditional probability, one must now calculate the probability \( P(\neg B) = 1- P(B) = {@1-p@} \) with the conditional probability of condition \( P(A \vert \neg B) = {@q2@} \) multiply.
+        </p>
+    </div>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ans3)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>prt3-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die angegebene Wahrscheinlichkeit liegt nicht zwischen 0 und 1. Bitte korrigieren Sie Ihre L&#246;sung.
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The specified probability is not between 0 and 1. Please correct your solution.
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3a</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3a</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>-</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3a-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+    <p dir="ltr" style="text-align: left;">
+        Sie lesen die Zeile und Spalte ab, in der sich \(c\) befindet.
+        <br/>
+    </p>
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('zwischen3a');show('zwischen3b');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+    <p dir="ltr" style="text-align: left;">
+        You read the line and column in which \(c\) located.
+        <br/>
+    </p>
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('zwischen3a');show('zwischen3b');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3a-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p dir="ltr">
+        Lesen Sie in der Vierfeldertafel die Zeile und Spalte ab, in der sich \(c\) befindet.
+        <br/>
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p dir="ltr">
+        Read the line and column in the four-field panel \(c\) located.
+        <br/>
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3b</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3b</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>-</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3b-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Es gilt lautet \( P(C \cap D) = P(D) \cdot P(C \vert D) \).
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('zwischen3b');show('aufgabe3');hide('prtC-1');show('prtC-2');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+It is \( P(C \cap D) = P(D) \cdot P(C \vert D) \).
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('zwischen3b');show('aufgabe3');hide('prtC-1');show('prtC-2');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3b-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p dir="ltr">
+        Es gilt lautet \( P(C \cap D) = P(D) \cdot P(C \vert D) \). Was sind in diesem Fall \(C\) und \(D\)?
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p dir="ltr">
+        It is \( P(C \cap D) = P(D) \cdot P(C \vert D) \). What are in this case \(C\) and \(D\)?
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3c</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3c</sans>
+                <tans>ta_c</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3c-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    Richtig. Sie rechnen \( (1-{@p@}) \cdot {@q2@} \).
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button onclick="hide('zwischen3c');show('aufgabe2');show('aufgabenstellung');hide('urspruenglicheaufgabe');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    Right. You expect \( (1-{@p@}) \cdot {@q2@} \).
+    <p>
+        To continue, click on the following button:
+        <button onclick="hide('zwischen3c');show('aufgabe2');show('aufgabenstellung');hide('urspruenglicheaufgabe');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3c-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr">
+        Rechnen Sie \( (1-{@p@}) \cdot {@q2@} \).
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr">
+        Recognition \( (1-{@p@}) \cdot {@q2@} \).
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>ta_d</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Sie rechnen \(P(\neg B) \cdot P(\neg A \vert \neg B) = {@1-p@} \cdot {@1-q2@} \).
+    <p>
+        Klicken Sie zum Fortfahren mit Teil (e) bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('aufgabe4');show('aufgabe5');hide('aufgabenstellung');show('urspruenglicheaufgabe');show('alteloesungen');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+You expect \(P(\neg B) \cdot P(\neg A \vert \neg B) = {@1-p@} \cdot {@1-q2@} \).
+    <p>
+        To continue with part (e), please click the following button:
+        <button class="buttonweiter" onclick="hide('aufgabe4');show('aufgabe5');hide('aufgabenstellung');show('urspruenglicheaufgabe');show('alteloesungen');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <div id="prtD-1">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+
+
+
+
+Dass Sie die Aufgabe nicht sofort l&#246;sen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in einzelne Schritte unterteilt.
+        <p>
+            Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+            <button class="buttonweiter" onclick="hide('aufgabe4');show('zwischen4a');hide('aufgabenstellung');show('urspruenglicheaufgabe');" type="button">
+                Weiter
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtD-2" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+        <p>
+            Versuchen Sie die Aufgabe nun noch einmal. Um die bedingte Wahrscheinlichkeit zu berechnen muss man nun die Wahrscheinlichkeit \( P(\neg B) = 1-P(B) = {@1-p@} \) mit der bedingten Wahrscheinlichkeit der Bedingung \( P(\neg A \vert \neg B) = 1- P( A \vert \neg B) = {@1-q2@} \) multiplizieren.
+        </p>
+    </div>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <div id="prtD-1">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+
+
+
+
+That you could not solve the task immediately is not a problem! In the following, the object is subdivided into individual steps.
+        <p>
+            To continue, click on the following button:
+            <button class="buttonweiter" onclick="hide('aufgabe4');show('zwischen4a');hide('aufgabenstellung');show('urspruenglicheaufgabe');" type="button">
+                Next
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtD-2" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+        <p>
+            Try the task again. In order to calculate the conditional probability, one must now calculate the probability \( P(\neg B) = 1-P(B) = {@1-p@} \) with the conditional probability of condition \( P(\neg A \vert \neg B) = 1- P( A \vert \neg B) = {@1-q2@} \) multiply.
+        </p>
+    </div>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ans4)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>prt4-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die angegebene Wahrscheinlichkeit liegt nicht zwischen 0 und 1. Bitte korrigieren Sie Ihre L&#246;sung.
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The specified probability is not between 0 and 1. Please correct your solution.
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4a</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4a</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>-</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4a-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+    <p dir="ltr" style="text-align: left;">
+        Sie lesen die Zeile und Spalte ab, in der sich \(d\) befindet.
+        <br/>
+    </p>
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('zwischen4a');show('zwischen4b');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+    <p dir="ltr" style="text-align: left;">
+        You read the line and column in which \(d\) located.
+        <br/>
+    </p>
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('zwischen4a');show('zwischen4b');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4a-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p dir="ltr">
+        Lesen Sie in der Vierfeldertafel die Zeile und Spalte ab, in der sich \(d\) befindet.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p dir="ltr">
+        Read the line and column in the four-field panel \(d\) located.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4b</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4b</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>-</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4b-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Es gilt lautet \( P(C \cap D) = P(D) \cdot P(C \vert D) \).
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('zwischen4b');show('aufgabe4');hide('prtD-1');show('prtD-2');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+It is \( P(C \cap D) = P(D) \cdot P(C \vert D) \).
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('zwischen4b');show('aufgabe4');hide('prtD-1');show('prtD-2');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4b-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p dir="ltr">
+        Es gilt lautet \( P(C \cap D) = P(D) \cdot P(C \vert D) \). Was sind in diesem Fall \(C\) und \(D\)?
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p dir="ltr">
+        It is \( P(C \cap D) = P(D) \cdot P(C \vert D) \). What are in this case \(C\) and \(D\)?
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4c</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4c</sans>
+                <tans>ta_d</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4c-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    Richtig. Sie rechnen \( (1-{@p@}) \cdot (1-{@q2@}) \).
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button onclick="hide('zwischen4c');show('aufgabe5');show('aufgabenstellung');hide('urspruenglicheaufgabe');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    Right. You expect \( (1-{@p@}) \cdot (1-{@q2@}) \).
+    <p>
+        To continue, click on the following button:
+        <button onclick="hide('zwischen4c');show('aufgabe5');show('aufgabenstellung');hide('urspruenglicheaufgabe');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4c-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr">
+        Rechnen Sie \( (1-{@p@}) \cdot (1-{@q2@}) \).
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr">
+        Recognition \( (1-{@p@}) \cdot (1-{@q2@}) \).
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt5</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans5</sans>
+                <tans>ta_e</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Sie rechnen \(a + c = {@ta_a@} + {@ta_c@} \).
+    <p>
+        Klicken Sie zum Fortfahren mit Teil (f) bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('aufgabe5');show('aufgabe6');hide('aufgabenstellung');show('urspruenglicheaufgabe');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+You expect \(a + c = {@ta_a@} + {@ta_c@} \).
+    <p>
+        Click To continue with part (f), please click the following button:
+        <button class="buttonweiter" onclick="hide('aufgabe5');show('aufgabe6');hide('aufgabenstellung');show('urspruenglicheaufgabe');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt5-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <div id="prtE-1">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+
+
+
+
+Dass Sie die Aufgabe nicht sofort l&#246;sen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in einzelne Schritte unterteilt.
+        <p>
+            Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+            <button class="buttonweiter" onclick="hide('aufgabe1');show('zwischen1a');hide('aufgabenstellung');show('urspruenglicheaufgabe');" type="button">
+                Weiter
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtE-2" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+        <p>
+            Versuchen Sie die Aufgabe nun noch einmal. Um die Wahrscheinlichkeit zu berechnen muss man nun die Wahrscheinlichkeit \( a = {@ta_a@}  \) und die Wahrscheinlichkeit \( c = {@ta_c@} \) addieren.
+        </p>
+    </div>
+</span>
+<span class="multilang" lang="en">
+    <div id="prtE-1">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+
+
+
+
+That you could not solve the task immediately is not a problem! In the following, the object is subdivided into individual steps.
+        <p>
+            To continue, click on the following button:
+            <button class="buttonweiter" onclick="hide('aufgabe1');show('zwischen1a');hide('aufgabenstellung');show('urspruenglicheaufgabe');" type="button">
+                Next
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtE-2" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+        <p>
+            Try the task again. In order to calculate the probability, you have to calculate the probability \( a = {@ta_a@}  \) and the probability \( c = {@ta_c@} \) add.
+        </p>
+    </div>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ans5)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>prt5-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt5-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die angegebene Wahrscheinlichkeit liegt nicht zwischen 0 und 1. Bitte korrigieren Sie Ihre L&#246;sung.
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The specified probability is not between 0 and 1. Please correct your solution.
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt5a</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans5a</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>-</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5a-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Sie lesen die Zeile ab, in der sich \(e\) befindet.
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('zwischen5a');show('zwischen5b');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+You read the line in which \(e\) located.
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('zwischen5a');show('zwischen5b');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt5a-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p dir="ltr">
+        Lesen Sie in der Vierfeldertafel die Zelle ab, in der sich \(e\) befindet.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p dir="ltr">
+        Read the cell in the four-field panel \(e\) located.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt5b</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans5b</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>-</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5b-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Sie rechnen \(a + c\).
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('zwischen5b');show('aufgabe5');hide('prtE-1');show('prtE-2');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+You expect \(a + c\).
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('zwischen5b');show('aufgabe5');hide('prtE-1');show('prtE-2');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt5b-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+
+
+
+
+In Vierfeldertafeln steht in der untersten Zeile die Summe der dar&#252;berliegenden Zellen.
+    <br/>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+
+
+
+
+In four-field panels, the sum of the cells above is in the lowest row.
+    <br/>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt5c</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans5c</sans>
+                <tans>ta_e</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5c-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    Richtig. Sie rechnen \( {@ta_a@} + {@ta_c@} \).
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button onclick="hide('zwischen5c');show('aufgabe6');show('aufgabenstellung');hide('urspruenglicheaufgabe');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    Right. You expect \( {@ta_a@} + {@ta_c@} \).
+    <p>
+        To continue, click on the following button:
+        <button onclick="hide('zwischen5c');show('aufgabe6');show('aufgabenstellung');hide('urspruenglicheaufgabe');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt5c-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr">
+        Rechnen Sie \( {@ta_a@} + {@ta_c@} \).
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr">
+        Recognition \( {@ta_a@} + {@ta_c@} \).
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt6</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans6</sans>
+                <tans>ta_f</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt6-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Sie rechnen \(b + d = {@ta_b@} + {@ta_d@} \). Sie haben die Aufgabe nun vollst&#228;ndig gel&#246;st.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+You expect \(b + d = {@ta_b@} + {@ta_d@} \). They have now completely solved the task.
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt6-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <div id="prtF-1">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+
+
+
+
+Dass Sie die Aufgabe nicht sofort l&#246;sen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in einzelne Schritte unterteilt.
+        <p>
+            Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+            <button class="buttonweiter" onclick="hide('aufgabe6');show('zwischen6a');hide('aufgabenstellung');show('urspruenglicheaufgabe');" type="button">
+                Weiter
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtF-2" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+        <p>
+            Versuchen Sie die Aufgabe nun noch einmal. Um die Wahrscheinlichkeit zu berechnen muss man nun die Wahrscheinlichkeit \( b = {@ta_b@}  \) und die Wahrscheinlichkeit \( d = {@ta_d@} \) addieren.
+        </p>
+    </div>
+</span>
+<span class="multilang" lang="en">
+    <div id="prtF-1">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+
+
+
+
+That you could not solve the task immediately is not a problem! In the following, the object is subdivided into individual steps.
+        <p>
+            To continue, click on the following button:
+            <button class="buttonweiter" onclick="hide('aufgabe6');show('zwischen6a');hide('aufgabenstellung');show('urspruenglicheaufgabe');" type="button">
+                Next
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtF-2" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+        <p>
+            Try the task again. In order to calculate the probability, you have to calculate the probability \( b = {@ta_b@}  \) and the probability \( d = {@ta_d@} \) add.
+        </p>
+    </div>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ans6)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>prt6-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt6-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die angegebene Wahrscheinlichkeit liegt nicht zwischen 0 und 1. Bitte korrigieren Sie Ihre L&#246;sung.
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The specified probability is not between 0 and 1. Please correct your solution.
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt6a</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans6a</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>-</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt6a-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Sie lesen die Zeile ab, in der sich \(f\) befindet.
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('zwischen6a');show('zwischen6b');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+You read the line in which \(f\) located.
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('zwischen6a');show('zwischen6b');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt6a-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p dir="ltr">
+        Lesen Sie in der Vierfeldertafel die Zelle ab, in der sich \(f\) befindet.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p dir="ltr">
+        Read the cell in the four-field panel \(f\) located.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt6b</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans6b</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>-</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt6b-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Sie rechnen \(b + d\).
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('zwischen6b');show('aufgabe6');hide('prtF-1');show('prtF-2');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+You expect \(b + d\).
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('zwischen6b');show('aufgabe6');hide('prtF-1');show('prtF-2');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt6b-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+
+
+
+
+In Vierfeldertafeln steht in der untersten Zeile die Summe der dar&#252;berliegenden Zellen.
+    <br/>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+
+
+
+
+In four-field panels, the sum of the cells above is in the lowest row.
+    <br/>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt6c</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans6c</sans>
+                <tans>ta_f</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt6c-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    Richtig. Sie rechnen \( {@ta_b@} + {@ta_d@} \). Sie haben die Aufgabe nun vollst&#228;ndig gel&#246;st.
+</span>
+<span class="multilang" lang="en">
+    Right. You expect \( {@ta_b@} + {@ta_d@} \). They have now completely solved the task.
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt6c-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr">
+        Rechnen Sie \( {@ta_b@} + {@ta_d@} \).
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr">
+        Recognition \( {@ta_b@} + {@ta_d@} \).
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+
+
+</quiz>

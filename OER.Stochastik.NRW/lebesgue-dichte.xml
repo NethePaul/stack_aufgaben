@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Lebesgue-Dichte</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <style>
+        .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.formulation details[open] {
+                padding: .5em;
+}
+.formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+} 
+table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+}
+.buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+    </style>
+    <div id="summarybox">
+        <details>
+            <summary>
+                Inhalt und Umfang dieser Aufgabe
+            </summary>
+            <p>
+                In dieser Aufgabe lernen Sie, wie Sie die Axiome f&#252;r eine Wahrscheinlichkeitsdichte &#252;berpr&#252;fen.
+            </p>
+        </details>
+        <hr/>
+    </div>
+    <div id="aufgabe" style="display:box;">
+        <div id="aufgabentitel">
+            <div>
+                <div>
+                    <p>
+                        <b>
+                            Lebesgue-Dichte
+                        </b>
+                    </p>
+                    <div>
+                        <b>
+                            <br/>
+                        </b>
+                        <p>
+                            Sei \(k\in \mathbb{Z}\) und \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) eine Funktion von \(\mathbb{R}\) nach&#160;\(\mathbb{R}\). Bestimmen Sie die kleinste nat&#252;rliche Zahl \(j\in \mathbb{N}\), sodass f&#252;r \(k \in \mathbb{N}\), \(k \geq j\),
+                                                                                                \(f_k\) eine Lebesgue-Dichte ist.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Die nat&#252;rliche Zahl \(j\) ist:
+                <span style="font-size: 0.9375rem;">
+                    [[input:ans1]] [[validation:ans1]]
+                </span>
+            </p>
+            [[feedback:prt1]]
+        </div>
+    </div>
+    <div id="zwischen1" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Urspr&#252;ngliche Fragestellung:
+                                    </u>
+                                    <div id="aufgabe" style="display:box;">
+                                        <b>
+                                            <br/>
+                                        </b>
+                                        <p>
+                                            Sei \(k\in \mathbb{Z}\) und \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) eine Funktion von \(\mathbb{R}\) nach \(\mathbb{R}\). Bestimmen Sie die nat&#252;rliche Zahl \(j\in \mathbb{N}\), sodass f&#252;r \(k \in \mathbb{N}\), \(k \geq j\), \(f_k\) eine Lebesgue-Dichte ist.
+                                        </p>
+                                    </div>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+            <br/>
+        </span>
+        <br/>
+        Die Funktion \(f_k\) ist positiv und messbar, da sie st&#252;ckweise stetig ist. Wir m&#252;ssen also nur noch betrachten, f&#252;r welche \(k\in \mathbb{N}\) gilt, dass \[\int_{\mathbb{R}}f_k(x)\lambda(dx)=1\] ist. Berechnen Sie also die
+                kleinste nat&#252;rliche Zahl \(j\), sodass f&#252;r \(k \geq j\), gilt, dass \(\int_{\mathbb{R}}f_k(x)\lambda(dx)=1\) ist.
+        <br/>
+        Die gesuchte Zahl \(j\in \mathbb{N}\) ist: [[input:ansZwischen1]] [[validation:ansZwischen1]]
+        <br/>
+        <br/>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prtZwischen1]]
+    </div>
+    <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <style>
+        .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.formulation details[open] {
+                padding: .5em;
+}
+.formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+} 
+table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+}
+.buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+    </style>
+    <div id="summarybox">
+        <details>
+            <summary>
+                Content and scope of this task
+            </summary>
+            <p>
+                In this task you will learn how to check the axioms for a probability density.
+            </p>
+        </details>
+        <hr/>
+    </div>
+    <div id="aufgabe" style="display:box;">
+        <div id="aufgabentitel">
+            <div>
+                <div>
+                    <p>
+                        <b>
+                            Lebesgue density
+                        </b>
+                    </p>
+                    <div>
+                        <b>
+                            <br/>
+                        </b>
+                        <p>
+                            Be careful \(k\in \mathbb{Z}\) and \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) a function of \(\mathbb{R}\) After\(\mathbb{R}\). Determine the smallest natural number \(j\in \mathbb{N}\)so that for \(k \in \mathbb{N}\), \(k \geq j\),
+    \(f_k\) is a Lebesgue density.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                The natural number \(j\) is:
+                <span style="font-size: 0.9375rem;">
+                    [[input:ans1]] [[validation:ans1]]
+                </span>
+            </p>
+            [[feedback:prt1]]
+        </div>
+    </div>
+    <div id="zwischen1" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Original question:
+                                    </u>
+                                    <div id="aufgabe" style="display:box;">
+                                        <b>
+                                            <br/>
+                                        </b>
+                                        <p>
+                                            Be careful \(k\in \mathbb{Z}\) and \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) a function of \(\mathbb{R}\) After \(\mathbb{R}\). Determine the natural number \(j\in \mathbb{N}\)so that for \(k \in \mathbb{N}\), \(k \geq j\), \(f_k\) is a Lebesgue density.
+                                        </p>
+                                    </div>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+            <br/>
+        </span>
+        <br/>
+        The function \(f_k\) is positive and measurable, as it is continuous in pieces. So we only have to look at which \(k\in \mathbb{N}\) that: \[\int_{\mathbb{R}}f_k(x)\lambda(dx)=1\] is. So calculate the
+smallest number \(j\)so that for \(k \geq j\), that: \(\int_{\mathbb{R}}f_k(x)\lambda(dx)=1\) is.
+        <br/>
+        The number sought \(j\in \mathbb{N}\) is: [[input:ansZwischen1]] [[validation:ansZwischen1]]
+        <br/>
+        <br/>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prtZwischen1]]
+    </div>
+    <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+    </script>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  Lebesgue-Dichte
+
+  wurde entwickelt von
+  
+    Riko Kelter <riko.kelter(at)uni-siegen.de>
+    Alexander Schnurr <schnurr(at)mathematik.uni-siegen.de>
+    Susanne Spies <spies(at)mathematik.uni-siegen.de>
+
+  nach einer Idee von
+  
+   Riko Kelter <riko.kelter(at)uni-siegen.de>
+   Alexander Schnurr <schnurr(at)mathematik.uni-siegen.de>
+   Susanne Spies <spies(at)mathematik.uni-siegen.de>
+
+  an der Universit&#228;t Siegen.
+
+  Dieses Werk ist lizenziert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+
+  Diese Aufgabe bindet das Skript &#8216;stackselbstlern.js&#8217; von Michael
+  Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+lsg1: 2;
+test01(x):= is(x>0) and integerp(x);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text/>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text/>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text/>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text/>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>lsg1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansZwischen1</name>
+            <type>algebraic</type>
+            <tans>lsg1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ans1)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr" style="text-align: left;">
+        Bitte geben Sie eine nat&#252;rliche Zahl ein!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr" style="text-align: left;">
+        Please enter a natural number!
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>lsg1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+    <p dir="ltr" style="text-align: left;">
+        Die Funktion \(f_k\) ist positiv und messbar, da sie st&#252;ckweise stetig ist. Man muss also nur noch betrachten, f&#252;r welche \(k\in \mathbb{N}\) gilt, dass \[\int_{\mathbb{R}}f_k(x)\lambda(dx)=1\] ist. Berechnet man dann die kleinste nat&#252;rliche Zahl \(j\), sodass f&#252;r \(k\geq j\) gilt, dass \(\int_{\mathbb{R}}f_k(x)\lambda(dx)=1\) ist, so ergibt sich gerade \(j=1\). Die angegebene Funktion ist damit f&#252;r alle nat&#252;rlichen Zahlen eine Lebesgue-Dichte.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+    <p dir="ltr" style="text-align: left;">
+        The function \(f_k\) is positive and measurable, as it is continuous in pieces. It is therefore only necessary to consider which \(k\in \mathbb{N}\) that: \[\int_{\mathbb{R}}f_k(x)\lambda(dx)=1\] is. Calculate the smallest natural number \(j\)so that for \(k\geq j\) that: \(\int_{\mathbb{R}}f_k(x)\lambda(dx)=1\) is, the result is \(j=1\). The specified function is therefore a Lebesgue density for all natural numbers.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+
+
+
+
+Die Funktion \(f_k\) ist positiv und messbar, da sie st&#252;ckweise stetig ist. Wir m&#252;ssen also nur noch betrachten, f&#252;r welche \(k\in \mathbb{N}\) gilt, dass \[\int_{\mathbb{R}}f_k(x)\lambda(dx)=1\] ist. Berechnen Sie also die kleinste nat&#252;rliche Zahl \(j\), sodass f&#252;r \(k\geq j\) gilt, dass \(\int_{\mathbb{R}}f_k(x)\lambda(dx)=1\) ist.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+
+
+
+
+The function \(f_k\) is positive and measurable, as it is continuous in pieces. So we only have to look at which \(k\in \mathbb{N}\) that: \[\int_{\mathbb{R}}f_k(x)\lambda(dx)=1\] is. So calculate the smallest natural number \(j\)so that for \(k\geq j\) that: \(\int_{\mathbb{R}}f_k(x)\lambda(dx)=1\) is.
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtZwischen1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansZwischen1</sans>
+                <tans>lsg1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtZwischen1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr" style="text-align: left;">
+        Prima, Sie haben die Aufgabe gel&#246;st! Die angegebene Funktion ist damit f&#252;r alle \(k\in \mathbb{N}\) eine Lebesgue-Dichte.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr" style="text-align: left;">
+        Great, you've solved the task! The specified function is therefore for all \(k\in \mathbb{N}\) a Lebesgue density.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtZwischen1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr" style="text-align: left;">
+        Leider falsch. Tipp: \(\int_{\mathbb{R}}f_k(x)d\lambda(x)=\int_{1}^{\infty} k(\frac{1}{x})^{k+1}dx\). &#220;berpr&#252;fen Sie, f&#252;r welches kleinste \(k\) dieses Integral den Wert \(1\) annimmt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr" style="text-align: left;">
+        Unfortunately wrong. Tip: \(\int_{\mathbb{R}}f_k(x)d\lambda(x)=\int_{1}^{\infty} k(\frac{1}{x})^{k+1}dx\). Check for the smallest \(k\) this integral value \(1\) ?
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ansZwischen1)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>prtZwischen1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtZwischen1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr" style="text-align: left;">
+        Bitte geben Sie eine nat&#252;rliche Zahl ein!
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr" style="text-align: left;">
+        Please enter a natural number!
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,3715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Summe unabh&#228;ngiger diskreter Zufallsvariablen</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <style>
+        .data-table {
+                        border-collapse: collapse;
+                        margin: 25px 0;
+                        font-size: 0.9em;
+                        min-width: 400px;
+                        border-radius: 5px 5px 0 0;
+                        overflow: hidden;
+                        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+  
+  
+  
+  .data-table thead tr {
+                        background-color: #17365c;
+                        color: #ffffff;
+                        text-align: left;
+                        font-weight: bold;
+        }
+
+  
+  
+  
+  .data-table th,
+        .data-table td {
+                        padding: 12px 15px;
+        }
+
+  
+  
+  
+  .data-table tbody tr {
+                        border-bottom: 1px solid #e7e7e7;
+        }
+
+  
+  
+  
+  .data-table tbody tr:nth-of-type(even) {
+                        background-color: #f3f3f3;
+        }
+
+  
+  
+  
+  .data-table tbody tr:last-of-type {
+                        border-bottom: 2px solid #17365c;
+        }
+
+  
+  
+  
+  .data-table tbody tr.active-row {
+                        font-weight: bold;
+                        color: #17365c;
+        }
+
+  
+  
+  
+  .flashback {
+                        border: 1px solid black;
+                        box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
+                        margin: 1rem 0;
+                        padding: 0.7rem;
+                        text-align: center;
+        }
+
+
+
+
+/* Style f&#252;r Details */
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+    </style>
+    <details>
+        <summary>
+            Inhalt und Umfang dieser Aufgabe
+        </summary>
+        <p>
+            Die Studierenden sollen In dieser Aufgabe erlangen Sie Sicherheit im
+        Umgang mit diskreten Verteilungen erlangen und vertiefen Ihr
+        Verst&#228;ndnis f&#252;r wichtige Konzepte, wie Erwartungswert, Varianz,
+        Faltungsformel, Kovarianz und Korrelationskoeffizient.  Sie besteht
+        aus den folgenden vier Teilaufgaben.
+        </p>
+        <ul>
+            <li>
+                In
+                <b>
+                    (a)
+                </b>
+                geben Sie die gemeinsame Verteilung von \(X\) und \(Y\) an.
+            </li>
+            <li>
+                In
+                <b>
+                    (b)
+                </b>
+                geben Sie die Verteilung von \(X+Y\) an.
+            </li>
+            <li>
+                In
+                <b>
+                    (c)
+                </b>
+                geben Sie die Verteilung von \(M := \mathrm{max}\{X, Y\}\) an.
+            </li>
+            <li>
+                In
+                <b>
+                    (d)
+                </b>
+                geben Sie den Korrelationskoeffizienten von \(X\) und \(Y\) an.
+            </li>
+        </ul>
+    </details>
+    <div class="question-view">
+        <p>
+            Seien \(X\) und \(Y\) unabh&#228;ngige diskrete Zufallsvariablen mit
+Wertebereich \(\{0, 1, 2, 3\}\) und der folgenden
+Wahrscheinlichkeitsfunktion
+
+
+
+
+\[
+p(k) = \begin{cases}
+{@ prob @} &amp; \text{f&#252;r } k = 0\\
+{@ (1 - prob)/3 @} &amp; \text{f&#252;r } k \in \{1,2,3\}\\
+0 &amp; \text{sonst}
+\end{cases}.
+                \]
+        </p>
+        <div class="question-view">
+            <div class="question-view">
+                <p>
+                    <b>
+                        (a)
+                    </b>
+                    Geben Sie die gemeinsame Verteilung von \(X\) und \(Y\) an.
+                </p>
+                <p>
+                    \(\bigg(P(X = i, Y = j)\bigg)_{i,j=0,\dots,3} = \) [[input:ans1]]
+                </p>
+                [[validation:ans1]]
+                        [[feedback:prt1]]
+            </div>
+            <div class="question-view">
+                <div class="flashback">
+                    <h5>
+                        Ziel
+                    </h5>
+                    <p>
+                        Wir wollen die gemeinsame Verteilung von \(X\) und \(Y\) bestimmen.
+                    </p>
+                </div>
+                <p>
+                    <b>
+                        (a.1)
+                    </b>
+                    Welche Formel f&#252;r die gemeinsame Verteilung von \(X\)
+                                und \(Y\) ist korrekt?
+                </p>
+                [[input:ans_a_1]]
+                        [[validation:ans_a_1]]
+                        [[feedback:prt_a_1]]
+            </div>
+            <div class="question-view">
+                <div class="flashback">
+                    <h5>
+                        Ziel
+                    </h5>
+                    <p>
+                        Wir wollen die gemeinsame Verteilung von \(X\) und \(Y\)
+                                mithilfe einer Matrix angeben
+                    </p>
+                </div>
+                <div id="prt-section">
+                    [[feedback:a_1_passed]]
+                </div>
+                <p>
+                    <b>
+                        (a.2)
+                    </b>
+                    Wir wollen nun den (2,2) Eintrag in der Matrix aus
+                                Aufgabenteil a) bestimmen. Dieser Eintrag steht f&#252;r die
+                                Wahrscheinlichkeit \(P(X={@x_values[2]@}, Y={@y_values[2]@})\).
+                </p>
+                <p>
+                    \(P(X={@x_values[2]@}, Y={@y_values[2]@}) = \) [[input:ans_a_2]]
+                </p>
+                [[validation:ans_a_2]]
+                        [[feedback:prt_a_2]]
+            </div>
+        </div>
+        <div class="question-view">
+            <div class="question-view">
+                <div id="jointDistribution">
+                    [[feedback:joint_dist]]
+                </div>
+                <p>
+                    <b>
+                        (b)
+                    </b>
+                    Bestimmen Sie die Wahrscheinlichkeitsfunktion von \(X + Y\).
+                </p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <td>
+                                <em>
+                                    k
+                                </em>
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                4
+                            </td>
+                            <td>
+                                5
+                            </td>
+                            <td>
+                                6
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                \(p_{X+Y}(k)\)
+                            </td>
+                            <td>
+                                [[input:ans3]][[validation:ans3]]
+                            </td>
+                            <td>
+                                [[input:ans4]][[validation:ans4]]
+                            </td>
+                            <td>
+                                [[input:ans5]][[validation:ans5]]
+                            </td>
+                            <td>
+                                [[input:ans6]][[validation:ans6]]
+                            </td>
+                            <td>
+                                [[input:ans7]] [[validation:ans7]]
+                            </td>
+                            <td>
+                                [[input:ans8]][[validation:ans8]]
+                            </td>
+                            <td>
+                                [[input:ans9]][[validation:ans9]]
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                [[feedback:prt_2_complete]]
+            </div>
+            <div class="question-view">
+                <p>
+                    <b>
+                        (b.1)
+                    </b>
+                    Wir wollen die m&#246;glichen Realisierungen von \(X\) und
+                                \(Y\) betrachten, die zum Ereignis \(\{X + Y = 3\}\)
+                                f&#252;hren. Geben Sie dazu die Menge aller Paare \((x, y)\) an,
+                                f&#252;r die \(x + y = 3\) gilt.  Beispielsweise so:
+                    <code>
+                        {[5,3], [1,5]}
+                    </code>
+                </p>
+                <p>
+                    Antwort: [[input:ans_b_1]]
+                </p>
+                [[validation:ans_b_1]]
+                        [[feedback:prt_b_1]]
+            </div>
+            <div class="question-view">
+                <div id="jointDistribution2">
+                    [[feedback:joint_dist2]]
+                </div>
+                <p>
+                    <b>
+                        (b.2)
+                    </b>
+                    Berechnen Sie die Wahrscheinlichkeit \(P(X+Y=3)\).
+                </p>
+                <p>
+                    \(P(X+Y=3) = \) [[input:ans_b_2]]
+                </p>
+                [[validation:ans_b_2]]
+                        [[feedback:prt_b_2]]
+            </div>
+        </div>
+        <div class="question-view">
+            <div class="question-view">
+                <p>
+                    <b>
+                        (c)
+                    </b>
+                    Bestimmen Sie die Wahrscheinlichkeitsfunktion von \(M := \mathrm{max}\{X, Y\}\).
+                </p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <td>
+                                \(k\)
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                3
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                \(P(M = k)\)
+                            </td>
+                            <td>
+                                [[input:ans_c_1]][[validation:ans_c_1]]
+                            </td>
+                            <td>
+                                [[input:ans_c_2]][[validation:ans_c_2]]
+                            </td>
+                            <td>
+                                [[input:ans_c_3]][[validation:ans_c_3]]
+                            </td>
+                            <td>
+                                [[input:ans_c_4]][[validation:ans_c_4]]
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                [[feedback:prt_c]]
+            </div>
+            <div class="question-view">
+                <p>
+                    <b>
+                        (c.1)
+                    </b>
+                    Wir wollen die m&#246;glichen Realisierungen von \(X\) und
+                                \(Y\) betrachten, die zum Ereignis \(\{\mathrm{max}\{X, Y\} =
+                                2\}\) f&#252;hren. Geben Sie dazu die Menge aller Paare \((x, y)\)
+                                an, f&#252;r die \(\mathrm{max}\{x,y\} = 2\) gilt.  Beispielsweise
+                                so:
+                    <code>
+                        {[5,3], [1,5]}
+                    </code>
+                </p>
+                <p>
+                    Antwort: [[input:ans_c1]]
+                </p>
+                [[validation:ans_c1]]
+                        [[feedback:prt_c1]]
+            </div>
+            <div class="question-view">
+                <div id="jointDistribution3">
+                    [[feedback:joint_dist3]]
+                </div>
+                <p>
+                    <b>
+                        (c.2)
+                    </b>
+                    Berechnen Sie die Wahrscheinlichkeit \(P(M=2)\).
+                </p>
+                <p>
+                    \(P(M=2) = \) [[input:ans_c2]]
+                </p>
+                [[validation:ans_c2]]
+                        [[feedback:prt_c2]]
+            </div>
+        </div>
+        <div class="question-view">
+            <p>
+                <b>
+                    (d)
+                </b>
+                Bestimmen Sie den Korrelationskoefizienten \(\mathrm{corr}(X, Y)\).
+            </p>
+            <p>
+                \(\mathrm{corr}(X, Y) = \) [[input:ans_d]]
+            </p>
+            [[validation:ans_d]]
+
+    
+    
+    
+    [[feedback:prt_d]]
+        </div>
+    </div>
+    <script>
+        /*
+    * This program is free software: you can redistribute it and/or
+    * modify it under the terms of the GNU General Public License as
+    * published by the Free Software Foundation, either version 3 of the
+    * License, or (at your option) any later version.
+    *
+    * This program is distributed in the hope that it will be useful, but
+    * WITHOUT ANY WARRANTY; without even the implied warranty of
+    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    * General Public License for more details.
+    *
+    * You should have received a copy of the GNU General Public License
+    * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    *
+    * Copyright (C) 2021 by Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>
+    * SPDX-License-Identifier: GPL-3.0-or-later
+    *
+    */
+
+
+
+
+/* @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later */
+
+
+
+
+(function () {
+/* Make sure to create QController instances only once even if the
+            script is loaded multiple times.  This is so that the script can
+            be included in more than one STACK question on the page and still
+            function properly. */
+if (window.QController === undefined) {
+        window.QController = QController;
+        document.addEventListener("DOMContentLoaded", event => {
+                const responseform = document.getElementById("responseform");
+                if (!responseform) {
+                        throw Error("Element with id responseform not found.");
+                }
+
+    
+    
+    
+    responseform.querySelectorAll(".stack.que").forEach(stackQue => {
+                        const rootElement = stackQue.querySelector(".question-view");
+
+      
+      
+      
+      if (!rootElement) {
+                                console.log("QController Warning: no elements with class question-view inside " + stackQue.id);
+                                return;
+                        }
+
+      
+      
+      
+      const controller = new QController(rootElement, stackQue.id);
+                        controller.installHandlers();
+                        controller.loadState();
+                        controller.update();
+                });
+        });
+}
+
+
+
+
+/* This class handles the navigation of a single STACK question */
+function QController(rootElement, questionId) {
+        this.rootElement = rootElement;
+        this.id = questionId;
+        this.views = rootElement.querySelectorAll(".question-view");
+        this.currentView = Array.prototype.findIndex.call(this.views, isLeaf);
+}
+
+
+
+
+/* Update view according to current controller state */
+QController.prototype.update = function() {
+        this.views.forEach(hide);
+
+  
+  
+  
+  const current = this.views[this.currentView];
+        if (isLeaf(current)) {
+                showView(current);
+        } else {
+                showFirstView(current);
+        }
+};
+
+
+
+
+/* Install event handlers for all buttons under root element */
+QController.prototype.installHandlers = function() {
+        const controller = this;
+        this.rootElement.querySelectorAll("button").forEach(button => {
+                button.addEventListener("click", ev => {
+                        const view = button.closest(".question-view");
+
+      
+      
+      
+      if (!view) {
+                                console.log("qcontroller: <button> not inside question view");
+                                return;
+                        }
+
+      
+      
+      
+      const classList = button.classList;
+                        let forward = null;
+
+      
+      
+      
+      if (classList.contains("next")) {
+                                forward = view.nextElementSibling;
+                        } else if (classList.contains("top-next")) {
+                                const parent = view.parentNode;
+                                if (parent) {
+                                        forward = parent.nextElementSibling;
+                                } else {
+                                        forward = null;
+                                }
+                        } else if (classList.contains("top")) {
+                                forward = containingView(view);
+                        } else if (classList.contains("prev")) {
+                                forward = view.previousElementSibling;
+                        }
+
+      
+      
+      
+      if (forward && forward.classList.contains("question-view")) {
+                                controller.currentView = Array.prototype.findIndex.call(
+                                        controller.views, x => x === forward);
+                                controller.saveState();
+                                controller.update();
+                        }
+                });
+        });
+};
+
+
+
+
+/* Save controller state to current session */
+QController.prototype.saveState = function() {
+        const key = this.id + "-controller-state";
+        window.sessionStorage.setItem(key, this.currentView);
+};
+
+
+
+
+/* Load controller state from current session */
+QController.prototype.loadState = function() {
+        const key = this.id + "-controller-state";
+        const state = window.sessionStorage.getItem(key);
+
+  
+  
+  
+  if (state) {
+                this.currentView = Number.parseInt(state);
+        }
+};
+
+
+
+
+/* Show the first leaf question view */
+function showFirstView(questionView) {
+        let view = questionView;
+
+  
+  
+  
+  while (view && !isLeaf(view)) {
+                view = view.querySelector(".question-view");
+        }
+
+  
+  
+  
+  showView(view);
+}
+
+
+
+
+function showView(view) {
+        /* show all containing views */
+        while (view) {
+                show(view);
+                view = containingView(view);
+        }
+}
+
+
+
+
+/* Return the view containing VIEW */
+function containingView(view) {
+        let parent = view.parentNode;
+
+  
+  
+  
+  if (parent) {
+                parent = parent.closest(".question-view");
+        }
+
+  
+  
+  
+  return parent;
+}
+
+
+
+
+function show(view) {
+        view.style.display = "block";
+}
+
+
+
+
+function isLeaf(view) {
+        return view.querySelector(".question-view") == null;
+}
+
+
+
+
+function isVisible(view) {
+        return view.style.display != "none";
+}
+
+
+
+
+function hide(view) {
+        view.style.display = "none";
+}
+})();
+/* @license-end */
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <style>
+        .data-table {
+                        border-collapse: collapse;
+                        margin: 25px 0;
+                        font-size: 0.9em;
+                        min-width: 400px;
+                        border-radius: 5px 5px 0 0;
+                        overflow: hidden;
+                        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+  
+  
+  
+  .data-table thead tr {
+                        background-color: #17365c;
+                        color: #ffffff;
+                        text-align: left;
+                        font-weight: bold;
+        }
+
+  
+  
+  
+  .data-table th,
+        .data-table td {
+                        padding: 12px 15px;
+        }
+
+  
+  
+  
+  .data-table tbody tr {
+                        border-bottom: 1px solid #e7e7e7;
+        }
+
+  
+  
+  
+  .data-table tbody tr:nth-of-type(even) {
+                        background-color: #f3f3f3;
+        }
+
+  
+  
+  
+  .data-table tbody tr:last-of-type {
+                        border-bottom: 2px solid #17365c;
+        }
+
+  
+  
+  
+  .data-table tbody tr.active-row {
+                        font-weight: bold;
+                        color: #17365c;
+        }
+
+  
+  
+  
+  .flashback {
+                        border: 1px solid black;
+                        box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
+                        margin: 1rem 0;
+                        padding: 0.7rem;
+                        text-align: center;
+        }
+
+
+
+
+/* Style f&#252;r Details */
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+    </style>
+    <details>
+        <summary>
+            Content and scope of this task
+        </summary>
+        <p>
+            Students are to gain in this task Your safety
+Handling discreet distributions gain and deepen your
+understanding of important concepts, such as expectation value, variance,
+Folding formula, covariance and correlation coefficient. It consists
+from the following four subtasks.
+        </p>
+        <ul>
+            <li>
+                In
+                <b>
+                    (a)
+                </b>
+                give the common distribution of \(X\) and \(Y\) on.
+            </li>
+            <li>
+                In
+                <b>
+                    (b)
+                </b>
+                give the distribution of \(X+Y\) on.
+            </li>
+            <li>
+                In
+                <b>
+                    (c)
+                </b>
+                give the distribution of \(M := \mathrm{max}\{X, Y\}\) on.
+            </li>
+            <li>
+                In
+                <b>
+                    (d)
+                </b>
+                give the correlation coefficient of \(X\) and \(Y\) on.
+            </li>
+        </ul>
+    </details>
+    <div class="question-view">
+        <p>
+            Be \(X\) and \(Y\) independent discrete random variables with
+Value range \(\{0, 1, 2, 3\}\) and the following
+Probability function
+
+
+
+
+\[
+p(k) = \begin{cases}
+{@ prob @} &amp; \text{f&#252;r } k = 0\\
+{@ (1 - prob)/3 @} &amp; \text{f&#252;r } k \in \{1,2,3\}\\
+0 &amp; \text{sonst}
+\end{cases}.
+                \]
+        </p>
+        <div class="question-view">
+            <div class="question-view">
+                <p>
+                    <b>
+                        (a)
+                    </b>
+                    Give the common distribution of \(X\) and \(Y\) on.
+                </p>
+                <p>
+                    \(\bigg(P(X = i, Y = j)\bigg)_{i,j=0,\dots,3} = \) [[input:ans1]]
+                </p>
+                [[validation:ans1]][[feedback:prt1]]
+            </div>
+            <div class="question-view">
+                <div class="flashback">
+                    <h5>
+                        Objective
+                    </h5>
+                    <p>
+                        We want the common distribution of \(X\) and \(Y\) to determine.
+                    </p>
+                </div>
+                <p>
+                    <b>
+                        (a)
+                    </b>
+                    What formula for the common distribution of \(X\)and \(Y\) is correct?
+                </p>
+                [[input:ans_a_1]][[validation:ans_a_1]][[feedback:prt_a_1]]
+            </div>
+            <div class="question-view">
+                <div class="flashback">
+                    <h5>
+                        Objective
+                    </h5>
+                    <p>
+                        We want the common distribution of \(X\) and \(Y\)Using a matrix
+                    </p>
+                </div>
+                <div id="prt-section">
+                    [[feedback:a_1_passed]]
+                </div>
+                <p>
+                    <b>
+                        (a.2)
+                    </b>
+                    We now want the (2.2) entry in the matrix
+(a). This entry stands for
+Probability \(P(X={@x_values[2]@}, Y={@y_values[2]@})\).
+                </p>
+                <p>
+                    \(P(X={@x_values[2]@}, Y={@y_values[2]@}) = \) [[input:ans_a_2]]
+                </p>
+                [[validation:ans_a_2]][[feedback:prt_a_2]]
+            </div>
+        </div>
+        <div class="question-view">
+            <div class="question-view">
+                <div id="jointDistribution">
+                    [[feedback:joint_dist]]
+                </div>
+                <p>
+                    <b>
+                        (b)
+                    </b>
+                    Determine the probability function of \(X + Y\).
+                </p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <td>
+                                <em>
+                                    :
+                                </em>
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                4
+                            </td>
+                            <td>
+                                5
+                            </td>
+                            <td>
+                                6
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                \(p_{X+Y}(k)\)
+                            </td>
+                            <td>
+                                [[input:ans3]][[validation:ans3]]
+                            </td>
+                            <td>
+                                [[input:ans4]][[validation:ans4]]
+                            </td>
+                            <td>
+                                [[input:ans5]][[validation:ans5]]
+                            </td>
+                            <td>
+                                [[input:ans6]][[validation:ans6]]
+                            </td>
+                            <td>
+                                [[input:ans7]] [[validation:ans7]]
+                            </td>
+                            <td>
+                                [[input:ans8]][[validation:ans8]]
+                            </td>
+                            <td>
+                                [[input:ans9]][[validation:ans9]]
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                [[feedback:prt_2_complete]]
+            </div>
+            <div class="question-view">
+                <p>
+                    <b>
+                        (b.1)
+                    </b>
+                    We want the possible realizations of \(X\) and
+    \(Y\) consider the event \(\{X + Y = 3\}\)lead. Add the quantity of all pairs \((x, y)\) on,
+for the \(x + y = 3\) Article 2 For example,
+                    <code>
+                        {[5,3], [1,5]}
+                    </code>
+                </p>
+                <p>
+                    Answer: [[input:ans_b_1]]
+                </p>
+                [[validation:ans_b_1]][[feedback:prt_b_1]]
+            </div>
+            <div class="question-view">
+                <div id="jointDistribution2">
+                    [[feedback:joint_dist2]]
+                </div>
+                <p>
+                    <b>
+                        (b.2)
+                    </b>
+                    Calculate the probability \(P(X+Y=3)\).
+                </p>
+                <p>
+                    \(P(X+Y=3) = \) [[input:ans_b_2]]
+                </p>
+                [[validation:ans_b_2]][[feedback:prt_b_2]]
+            </div>
+        </div>
+        <div class="question-view">
+            <div class="question-view">
+                <p>
+                    <b>
+                        (c)
+                    </b>
+                    Determine the probability function of \(M := \mathrm{max}\{X, Y\}\).
+                </p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <td>
+                                \(k\)
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                3
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                \(P(M = k)\)
+                            </td>
+                            <td>
+                                [[input:ans_c_1]][[validation:ans_c_1]]
+                            </td>
+                            <td>
+                                [[input:ans_c_2]][[validation:ans_c_2]]
+                            </td>
+                            <td>
+                                [[input:ans_c_3]][[validation:ans_c_3]]
+                            </td>
+                            <td>
+                                [[input:ans_c_4]][[validation:ans_c_4]]
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                [[feedback:prt_c]]
+            </div>
+            <div class="question-view">
+                <p>
+                    <b>
+                        (c.1)
+                    </b>
+                    We want the possible realizations of \(X\) and
+    \(Y\) consider the event \(\{\mathrm{max}\{X, Y\} =
+                                2\}\) lead. Add the quantity of all pairs \((x, y)\)for the \(\mathrm{max}\{x,y\} = 2\) Article 2 For example,
+So:
+                    <code>
+                        {[5,3], [1,5]}
+                    </code>
+                </p>
+                <p>
+                    Answer: [[input:ans_c1]]
+                </p>
+                [[validation:ans_c1]][[feedback:prt_c1]]
+            </div>
+            <div class="question-view">
+                <div id="jointDistribution3">
+                    [[feedback:joint_dist3]]
+                </div>
+                <p>
+                    <b>
+                        (c.2)
+                    </b>
+                    Calculate the probability \(P(M=2)\).
+                </p>
+                <p>
+                    \(P(M=2) = \) [[input:ans_c2]]
+                </p>
+                [[validation:ans_c2]][[feedback:prt_c2]]
+            </div>
+        </div>
+        <div class="question-view">
+            <p>
+                <b>
+                    (d)
+                </b>
+                Determine the correlation coefficient \(\mathrm{corr}(X, Y)\).
+            </p>
+            <p>
+                \(\mathrm{corr}(X, Y) = \) [[input:ans_d]]
+            </p>
+            [[validation:ans_d]][[feedback:prt_d]]
+        </div>
+    </div>
+    <script>
+        /*
+    * This program is free software: you can redistribute it and/or
+    * modify it under the terms of the GNU General Public License as
+    * published by the Free Software Foundation, either version 3 of the
+    * License, or (at your option) any later version.
+    *
+    * This program is distributed in the hope that it will be useful, but
+    * WITHOUT ANY WARRANTY; without even the implied warranty of
+    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    * General Public License for more details.
+    *
+    * You should have received a copy of the GNU General Public License
+    * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*
+* Copyright (C) 2021 by Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>* SPDX-License Identifier: GPL-3.0-or-later
+*
+*/
+
+
+
+
+/* @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-orLater */
+
+
+
+
+(function () {
+/* Make sure to create QController instances only once even if the
+            script is loaded multiple times.  This is so that the script can
+            be included in more than one STACK question on the page and still
+            function properly. */
+if (window.QController === undefined) {
+        window.QController = QController;
+        document.addEventListener("DOMContentLoaded", event => {
+                const responseform = document.getElementById("responseform");
+                if (!responseform) {
+                        throw Error("Element with id responseform not found.");
+                }
+
+    
+    
+    
+    responseform.querySelectorAll(".stack.que").forEach(stackQue => {
+                        const rootElement = stackQue.querySelector(".question-view");
+
+      
+      
+      
+      if (!rootElement) {
+                                console.log("QController Warning: no elements with class question-view inside " + stackQue.id);
+                                return;
+                        }
+
+      
+      
+      
+      const controller = new QController(rootElement, stackQue.id);
+                        controller.installHandlers();
+                        controller.loadState();
+                        controller.update();
+                });
+        });
+}
+
+
+
+
+/* This class handles the navigation of a single STACK question */
+function QController(rootElement, questionId) {
+        this.rootElement = rootElement;
+        this.id = questionId;
+        this.views = rootElement.querySelectorAll(".question-view");
+        this.currentView = Array.prototype.findIndex.call(this.views, isLeaf);
+}
+
+
+
+
+/* Update view according to current controller state */
+QController.prototype.update = function() {
+        this.views.forEach(hide);
+
+  
+  
+  
+  const current = this.views[this.currentView];
+        if (isLeaf(current)) {
+                showView(current);
+        } else {
+                showFirstView(current);
+        }
+};
+
+
+
+
+/* Install event handlers for all buttons under root element */
+QController.prototype.installHandlers = function() {
+        const controller = this;
+        this.rootElement.querySelectorAll("button").forEach(button => {
+                button.addEventListener("click", ev => {
+                        const view = button.closest(".question-view");
+
+      
+      
+      
+      if (!view) {
+                                console.log("qcontroller: <button> not inside question view");
+                                return;
+                        }
+
+      
+      
+      
+      const classList = button.classList;
+                        let forward = null;
+
+      
+      
+      
+      if (classList.contains("next")) {
+                                forward = view.nextElementSibling;
+                        } else if (classList.contains("top-next")) {
+                                const parent = view.parentNode;
+                                if (parent) {
+                                        forward = parent.nextElementSibling;
+                                } else {
+                                        forward = null;
+                                }
+                        } else if (classList.contains("top")) {
+                                forward = containingView(view);
+                        } else if (classList.contains("prev")) {
+                                forward = view.previousElementSibling;
+                        }
+
+      
+      
+      
+      if (forward && forward.classList.contains("question-view")) {
+                                controller.currentView = Array.prototype.findIndex.call(
+                                        controller.views, x => x === forward);
+                                controller.saveState();
+                                controller.update();
+                        }
+                });
+        });
+};
+
+
+
+
+/* Save controller state to current session */
+QController.prototype.saveState = function() {
+        const key = this.id + "-controller-state";
+        window.sessionStorage.setItem(key, this.currentView);
+};
+
+
+
+
+/* Load controller state from current session */
+QController.prototype.loadState = function() {
+        const key = this.id + "-controller-state";
+        const state = window.sessionStorage.getItem(key);
+
+  
+  
+  
+  if (state) {
+                this.currentView = Number.parseInt(state);
+        }
+};
+
+
+
+
+/* Show the first leaf question view */
+function showFirstView(questionView) {
+        let view = questionView;
+
+  
+  
+  
+  while (view && !isLeaf(view)) {
+                view = view.querySelector(".question-view");
+        }
+
+  
+  
+  
+  showView(view);
+}
+
+
+
+
+function showView(view) {
+        /* show all containing views */
+        while (view) {
+                show(view);
+                view = containingView(view);
+        }
+}
+
+
+
+
+/* Return the view containing VIEW */
+function containingView(view) {
+        let parent = view.parentNode;
+
+  
+  
+  
+  if (parent) {
+                parent = parent.closest(".question-view");
+        }
+
+  
+  
+  
+  return parent;
+}
+
+
+
+
+function show(view) {
+        view.style.display = "block";
+}
+
+
+
+
+function isLeaf(view) {
+        return view.querySelector(".question-view") == null;
+}
+
+
+
+
+function isVisible(view) {
+        return view.style.display != "none";
+}
+
+
+
+
+function hide(view) {
+        view.style.display = "none";
+}
+}),
+/* @license-end */
+    </script>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>10.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  Summe von zwei unabh&#228;ngigen Zufallsvariablen
+
+  wurde entwickelt von
+
+    Daniel Mei&#223;ner <daniel.meissner-i4k(at)ruhr-uni-bochum.de>
+
+  nach einer Idee von
+
+    Herold Dehling <herold.dehling(at)ruhr-uni-bochum.de>
+
+  an der Ruhr-Universit&#228;t Bochum.
+
+  Dieses Werk ist lizenziert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+
+  Diese Aufgabe ist eine mehrteilige Aufgabe, deren einzelne
+  Aufgabenteile mithilfe von JavaScript nacheinander sichtbar gemacht
+  werden.  Manchen Aufgabenteilen sind zus&#228;tzlich Hilfeschritte
+  beigef&#252;gt, die Studierende schrittweise durch den Aufgabenteil
+  f&#252;hren.
+*/
+
+/* utility functions */
+
+probabilityp (x) := is(numberp (x) and x >= 0 and x <= 1);
+normalizedp (list) := is(lsum(x, x, list) = 1);
+
+check_list_items (list, predicate) := block ([false_list: [], max: length(list)],
+  for i: 1 step 1 thru max do
+    if (not (predicate(list[i])))
+    then false_list: cons(i, false_list),
+  false_list
+);
+
+/* [List-of ITEM] -> ITEM
+ *
+ * Return index of first occurence of ELEMENT in LIST or false if no
+ * such element.
+ */
+find_index(list, element) := block([indices],
+  indices: sublist_indices(list, lambda([x], is(x = element))),
+  if emptyp(indices) then false else indices[1]);
+
+/* Matrix [List-of Number] [List-of Number] -> Matrix
+ *
+ * Compute the probability vector of max(X, Y) where X and Y are
+ * random variables with values X_VALUES resp. Y_VALUES with joint
+ * distribution given by JOINT_DIST.
+ */
+dist_maximum(joint_dist, x_values, y_values) := block([
+  union_values,
+  x_set,
+  y_set
+  ],
+  x_set: setify(x_values),
+  y_set: setify(y_values),
+  matrix(
+    makelist(
+      if member(a, intersection(x_set, y_set))
+      then
+      (lsum(joint_dist[find_index(x_values, a), j],
+          j, sublist_indices(y_values, lambda([y], y <= a))) +
+        lsum(joint_dist[j, find_index(y_values, a)],
+          j, sublist_indices(x_values, lambda([x], x < a))))
+      elseif member(a, x_set)
+      then
+      lsum(joint_dist[find_index(x_values, a), j], j,
+        sublist_indices(y_values, lambda([y], y <= a)))
+      else
+      /* i is in y_set */
+      lsum(joint_dist[j, find_index(y_values, a)],
+        j, sublist_indices(x_values, lambda([x], x <= a))),
+      a, listify(union(x_set, y_set)))));
+
+/* actual question variables */
+
+x_values: [0, 1, 2, 3];
+y_values: [0, 1, 2, 3];
+
+prob: rand([1/5, 1/3, 1/2])
+pp: [prob, (1 - prob)/3, (1-prob)/3, (1-prob)/3];
+
+pdf(k) := if member(k, [0, 1, 2, 3]) then pp[k + 1] else 0;
+pdf_sum(k) := sum(pdf(i)*pdf(k - i), i, 0, 3);
+
+Tans1: apply (matrix, makelist (makelist (pdf(i)*pdf(j), j, 0, 3), i, 0, 3));
+
+Tans_a_1: random_permutation([
+[P(X=k, Y=l) = P(X=k) * P(Y=l), true],
+[P(X=k, Y=l) = P(X=k) + P(Y=l), false],
+[P(X=k, Y=l) = P(X=l) * P(Y= k), false],
+[P(X=k, Y=l) = P(X=l) + P(Y=k), false]
+]);
+
+Tans_a_2: pdf(1) * pdf(1);
+
+Tans2: sum((k - Tans1)^2 * pdf(k), k, 0, 3);
+Tans3: pdf_sum(0);
+Tans4: pdf_sum(1);
+Tans5: pdf_sum(2);
+Tans6: pdf_sum(3);
+Tans7: pdf_sum(4);
+Tans8: pdf_sum(5);
+Tans9: pdf_sum(6);
+
+Tans_b_1: { [3, 0], [2, 1], [1, 2], [0, 3] };
+Tans_b_2: pdf_sum(3);
+
+Tans_c: dist_maximum(Tans1, x_values, y_values);
+
+Tans_c_1: { [2, 0], [2, 1], [2, 2], [1, 2], [0, 2] };
+Tans_c_2: Tans_c[1,3];]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{# prob #}</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>(</matrixparens>
+        <variantsselectionseed>i</variantsselectionseed>
+        <input>
+            <name>ans_a_1</name>
+            <type>radio</type>
+            <tans>Tans_a_1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans_a_2</name>
+            <type>numerical</type>
+            <tans>Tans_a_2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans_b_1</name>
+            <type>algebraic</type>
+            <tans>Tans_b_1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans_b_2</name>
+            <type>numerical</type>
+            <tans>Tans_b_2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans_c_1</name>
+            <type>numerical</type>
+            <tans>Tans_c[1,1]</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans_c_2</name>
+            <type>numerical</type>
+            <tans>Tans_c[1,2]</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans_c_3</name>
+            <type>numerical</type>
+            <tans>Tans_c[1,3]</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans_c_4</name>
+            <type>numerical</type>
+            <tans>Tans_c[1,4]</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans_c1</name>
+            <type>algebraic</type>
+            <tans>Tans_c_1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans_c2</name>
+            <type>numerical</type>
+            <tans>Tans_c_2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans_d</name>
+            <type>numerical</type>
+            <tans>0</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans1</name>
+            <type>matrix</type>
+            <tans>Tans1</tans>
+            <boxsize>4</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>numerical</type>
+            <tans>Tans3</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options>allowempty</options>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>numerical</type>
+            <tans>Tans4</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options>allowempty</options>
+        </input>
+        <input>
+            <name>ans5</name>
+            <type>numerical</type>
+            <tans>Tans5</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options>allowempty</options>
+        </input>
+        <input>
+            <name>ans6</name>
+            <type>numerical</type>
+            <tans>Tans6</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options>allowempty</options>
+        </input>
+        <input>
+            <name>ans7</name>
+            <type>numerical</type>
+            <tans>Tans7</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options>allowempty</options>
+        </input>
+        <input>
+            <name>ans8</name>
+            <type>numerical</type>
+            <tans>Tans8</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options>allowempty</options>
+        </input>
+        <input>
+            <name>ans9</name>
+            <type>numerical</type>
+            <tans>Tans9</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options>allowempty</options>
+        </input>
+        <prt>
+            <name>a_1_passed</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_a_1</sans>
+                <tans>first(mcq_correct(Tans_a_1))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>a_1_passed-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Im vorherigen Schritt haben Sie die folgende, korrekte Formel ausgew&#228;hlt:
+\[
+{@ans_a_1@}
+\]
+    </p>
+    <script>
+        var flashback = document.querySelector("#prt-section > div");
+        flashback.classList.remove("stackprtfeedback");
+        flashback.classList.add("flashback");
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        In the previous step, you have selected the following correct formula:
+\[
+{@ans_a_1@}
+\]
+    </p>
+    <script>
+        var flashback = document.querySelector("#prt-section > div");
+        flashback.classList.remove("stackprtfeedback");
+        flashback.classList.add("flashback");
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>a_1_passed-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>joint_dist</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>Tans1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>joint_dist-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <!-- \bigg(P(X = i, Y = j)\bigg)_{i,j=0,\dots,3} = {@ans1@} -->
+    <h5>
+        Zur Erinnerung
+    </h5>
+    <p>
+        Die gemeinsame Verteilung der beiden Zufallsvariablen ist gegeben durch:
+\[
+\begin{pmatrix}
+P(X = 0, Y = 0) &amp; \cdots &amp; P(X = 0, Y = 3)\\
+\vdots &amp; \ddots &amp; \vdots\\
+P(X = 3, Y = 0) &amp; \cdots &amp; P(X = 3, Y = 3)\\
+\end{pmatrix} = {@ans1@}
+\]
+    </p>
+    <script>
+        var flashback = document.querySelector("#jointDistribution > div");
+        flashback.classList.remove("stackprtfeedback");
+        flashback.classList.add("flashback");
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <!-- \bigg(P(X = i, Y = j)\bigg)_{i,j=0,\dots,3} = {@ans1@} -->
+    <h5>
+        To remember
+    </h5>
+    <p>
+        The common distribution of the two random variables is given by:
+\[
+\begin{pmatrix}
+P(X = 0, Y = 0) &amp; \cdots &amp; P(X = 0, Y = 3)\\
+\vdots &amp; \ddots &amp; \vdots\\
+P(X = 3, Y = 0) &amp; \cdots &amp; P(X = 3, Y = 3)\\
+\end{pmatrix} = {@ans1@}
+\]
+    </p>
+    <script>
+        var flashback = document.querySelector("#jointDistribution > div");
+        flashback.classList.remove("stackprtfeedback");
+        flashback.classList.add("flashback");
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>joint_dist-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>joint_dist2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>Tans1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>joint_dist2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <!-- \bigg(P(X = i, Y = j)\bigg)_{i,j=0,\dots,3} = {@ans1@} -->
+    <h5>
+        Zur Erinnerung
+    </h5>
+    <p>
+        Die gemeinsame Verteilung der beiden Zufallsvariablen ist gegeben durch:
+\[
+\begin{pmatrix}
+P(X = 0, Y = 0) &amp; \cdots &amp; P(X = 0, Y = 3)\\
+\vdots &amp; \ddots &amp; \vdots\\
+P(X = 3, Y = 0) &amp; \cdots &amp; P(X = 3, Y = 3)\\
+\end{pmatrix} = {@ans1@}
+\]
+    </p>
+    <script>
+        var flashback = document.querySelector("#jointDistribution2 > div");
+        flashback.classList.remove("stackprtfeedback");
+        flashback.classList.add("flashback");
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <!-- \bigg(P(X = i, Y = j)\bigg)_{i,j=0,\dots,3} = {@ans1@} -->
+    <h5>
+        To remember
+    </h5>
+    <p>
+        The common distribution of the two random variables is given by:
+\[
+\begin{pmatrix}
+P(X = 0, Y = 0) &amp; \cdots &amp; P(X = 0, Y = 3)\\
+\vdots &amp; \ddots &amp; \vdots\\
+P(X = 3, Y = 0) &amp; \cdots &amp; P(X = 3, Y = 3)\\
+\end{pmatrix} = {@ans1@}
+\]
+    </p>
+    <script>
+        var flashback = document.querySelector("#jointDistribution2 > div");
+        flashback.classList.remove("stackprtfeedback");
+        flashback.classList.add("flashback");
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>joint_dist2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_b_1</sans>
+                <tans>Tans_b_1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>joint_dist2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Im vorherigen Hilfe-Schritt haben Sie das Ereignis {@ans_b_1@} angegeben.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        In the previous help step you have the event {@ans_b_1@} specified.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>joint_dist2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>joint_dist3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>Tans1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>joint_dist3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <!-- \bigg(P(X = i, Y = j)\bigg)_{i,j=0,\dots,3} = {@ans1@} -->
+    <h5>
+        Zur Erinnerung
+    </h5>
+    <p>
+        Die gemeinsame Verteilung der beiden Zufallsvariablen ist gegeben durch:
+\[
+\begin{pmatrix}
+P(X = 0, Y = 0) &amp; \cdots &amp; P(X = 0, Y = 3)\\
+\vdots &amp; \ddots &amp; \vdots\\
+P(X = 3, Y = 0) &amp; \cdots &amp; P(X = 3, Y = 3)\\
+\end{pmatrix} = {@ans1@}
+\]
+Die Zufallsvariable \(M\) ist definiert durch
+\[
+M = \mathrm{max}\{X, Y\}.
+\]
+    </p>
+    <script>
+        var flashback = document.querySelector("#jointDistribution3 > div");
+        flashback.classList.remove("stackprtfeedback");
+        flashback.classList.add("flashback");
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <!-- \bigg(P(X = i, Y = j)\bigg)_{i,j=0,\dots,3} = {@ans1@} -->
+    <h5>
+        To remember
+    </h5>
+    <p>
+        The common distribution of the two random variables is given by:
+\[
+\begin{pmatrix}
+P(X = 0, Y = 0) &amp; \cdots &amp; P(X = 0, Y = 3)\\
+\vdots &amp; \ddots &amp; \vdots\\
+P(X = 3, Y = 0) &amp; \cdots &amp; P(X = 3, Y = 3)\\
+\end{pmatrix} = {@ans1@}
+\]The random variable \(M\) is defined by
+\[
+M = \mathrm{max}\{X, Y\}.
+\]
+    </p>
+    <script>
+        var flashback = document.querySelector("#jointDistribution3 > div");
+        flashback.classList.remove("stackprtfeedback");
+        flashback.classList.add("flashback");
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>joint_dist3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_c1</sans>
+                <tans>Tans_c_1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>joint_dist3-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Im vorherigen Hilfe-Schritt haben Sie das Ereignis {@ans_c1@} angegeben.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        In the previous help step you have the event {@ans_c1@} specified.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>joint_dist3-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_2_complete</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>probabilities: [ans3, ans4, ans5, ans6, ans7, ans8, ans9];
+solution: makelist(pdf_sum(i), i, 0, 6);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilities</sans>
+                <tans>solution</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_2_complete-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Wahrscheinlichkeiten erhalten Sie, indem Sie zun&#228;chst die Realisierungen f&#252;r \(X\) und \(Y\) nach ihrer Summe \(X+Y\) gruppieren und dann die Wahrscheinlichkeiten in jeder Gruppe aufsummieren. Beispielsweise ergibt sich der Eintrag f&#252;r \(p_{X+Y}(2)\) so
+
+
+
+
+\[
+p_{X+Y}(2) = p(2) \cdot p(0) + p(1) \cdot p(1) + p(0) \cdot p(2) = {@ pdf_sum(2) @}.
+\]
+    </p>
+    <p>
+        Klicken Sie auf
+        <button class="top-next" type="button">
+            Weiter
+        </button>
+        , um zum n&#228;chsten Aufgabenteil zu gelangen.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You will get the probabilities by first implementing the \(X\) and \(Y\) the sum \(X+Y\) group and then sum up the probabilities in each group. For example, the entry for \(p_{X+Y}(2)\) so
+
+
+
+
+\[
+p_{X+Y}(2) = p(2) \cdot p(0) + p(1) \cdot p(1) + p(0) \cdot p(2) = {@ pdf_sum(2) @}.
+\]
+    </p>
+    <p>
+        Click on
+        <button class="top-next" type="button">
+            Next
+        </button>
+        to get to the next task.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_2_complete-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Gruppieren Sie zun&#228;chst die Realisierungen f&#252;r \(X\) und \(Y\) nach ihrer Summe \(X+Y\). Addieren Sie danach die entsprechenden Wahrscheinlichkeiten in jeder Gruppe auf und f&#252;llen Sie die Werte in die obige Tabelle. Falls Sie Hilfe bei der Bearbeitung ben&#246;tigen, klicken Sie auf
+        <button class="next" type="button">
+            Hilfe
+        </button>
+        .
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        First group the realizations for \(X\) and \(Y\) the sum \(X+Y\). Then add the corresponding probabilities in each group and fill the values in the above table. If you need help when editing, click on
+        <button class="next" type="button">
+            Help
+        </button>
+        .
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>check_list_items(probabilities, probabilityp)</sans>
+                <tans>[]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prt_2_complete-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_2_complete-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Mindestens eine der eingegebenen Zahlen liegt nicht im Intervall [0,1] und stellt somit keine Wahrscheinlichkeit dar.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        At least one of the entered numbers is not in the interval [0,1] and thus represents no probability.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>lsum(x, x, probabilities)</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>prt_2_complete-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_2_complete-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Summe ihrer eingebenen Werte ist {#lsum(x, x, probabilities)#}. Sie sollte allerdings 1 sein. Falls Sie Hilfe bei der Bearbeitung ben&#246;tigen, klicken Sie auf
+        <button class="next" type="button">
+            Hilfe
+        </button>
+        .
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The sum of their input values is {#lsum(x, x, probabilities)#}. She should be one. If you need help when editing, click on
+        <button class="next" type="button">
+            Help
+        </button>
+        .
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member (EMPTYANSWER, probabilities)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_2_complete-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Bitte f&#252;llen Sie alle Felder in der Tabelle aus. Falls Sie Hilfe bei der Bearbeitung ben&#246;tigen, klicken Sie auf
+        <button class="next" type="button">
+            Hilfe
+        </button>
+        .
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Please fill out all fields in the table. If you need help when editing, click on
+        <button class="next" type="button">
+            Help
+        </button>
+        .
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt_2_complete-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_a_1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_a_1</sans>
+                <tans>first(mcq_correct(Tans_a_1))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_a_1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Da die Zufallsvariablen unabh&#228;ngig sind, ergibt sich die gesuchte Wahrscheinlichkeit aus dem Produkt der Wahrscheinlichkeiten \(P(X=k)\) und \(P(Y=l)\). Klicken Sie auf
+        <button class="next" type="button">
+            Weiter
+        </button>
+        , um mit der Hilfe fortzufahren. Wenn Sie zur urspr&#252;nglichen Aufgabenstellung zur&#252;ckkehren wollen, klicken Sie auf
+        <button class="top" type="button">
+            Zur&#252;ck
+        </button>
+        .
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        Since the random variables are independent, the desired probability results from the product of the probabilities \(P(X=k)\) and \(P(Y=l)\). Click on
+        <button class="next" type="button">
+            Next
+        </button>
+        to continue with the help. If you want to return to the original task, click on
+        <button class="top" type="button">
+            Back
+        </button>
+        .
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_a_1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_a_2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_a_2</sans>
+                <tans>Tans_a_2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_a_2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Durch Einsetzen der Werte in die Formel erhalten wir:
+\[
+P(X = 1, Y = 1) = P(X = 1) \cdot P(Y = 1) = p(1) \cdot p(1) = {@pdf(1)@}\cdot{@pdf(1)@} = {@pdf(1)*pdf(1)@}.
+\]
+    </p>
+    <p>
+        Wenn Sie soweit sind, klicken Sie auf
+        <button class="top" type="button">
+            Zur&#252;ck
+        </button>
+        , um zur urspr&#252;nglichen Aufgabenstellung zur&#252;ckzukehren. Dort k&#246;nnen Sie dann die gesamte Matrix nach demselben Schema ausf&#252;llen.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        By inserting the values into the formula, we obtain:
+\[
+P(X = 1, Y = 1) = P(X = 1) \cdot P(Y = 1) = p(1) \cdot p(1) = {@pdf(1)@}\cdot{@pdf(1)@} = {@pdf(1)*pdf(1)@}.
+\]
+    </p>
+    <p>
+        If you are ready, click on
+        <button class="top" type="button">
+            Back
+        </button>
+        to return to the original task. There you can then fill the entire matrix according to the same scheme.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_a_2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Beachten Sie, dass Sie die Werte f&#252;r \(P(X = 1)\) und \(P(Y = 1)\) in der obigen Formel mit der angegebenen Wahrscheinlichkeitsfunktion \(k \mapsto p(k)\) bestimmen k&#246;nnen. Bitte versuchen Sie es noch einmal.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        Note that you have the values for \(P(X = 1)\) and \(P(Y = 1)\) in the above formula with the specified probability function \(k \mapsto p(k)\) can determine. Please try again.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_b_1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_b_1</sans>
+                <tans>Tans_b_1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_b_1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Klicken Sie auf
+        <button class="btn btn-primary next" type="button">
+            Weiter
+        </button>
+        , um mit der Hilfe fortzufahren oder auf
+        <button class="btn btn-secondary top" type="button">
+            Zur&#252;ck
+        </button>
+        , um zum urspr&#252;nglichen Aufgabenteil zu gelangen.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        Click on
+        <button class="btn btn-primary next" type="button">
+            Next
+        </button>
+        to continue with help or to
+        <button class="btn btn-secondary top" type="button">
+            Back
+        </button>
+        to get to the original task.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt_b_1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>CasEqual</answertest>
+                <sans>subsetp(ans_b_1, Tans_b_1)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_b_1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:orange;">
+            <i class="fa fa-adjust">
+            </i>
+        </span>
+        Ihre Antwort ist teilweise korrekt.
+    </p>
+    <p>
+        Die von Ihnen angegebene Menge ist eine Teilmenge des korrekten Ereignisses. Das bedeutet, dass alle Elemente Ihrer Menge richtig sind, aber welche fehlen.
+    </p>
+    <p>
+        Gehen Sie strukturiert an die Sache heran und sortieren Sie die Ergebnisse (z.B. nach den m&#246;glichen Werten der Variable \(X\)). So vergessen Sie kein Ergebnis.
+        <br/>
+        Tipp: Insgesamt sind es {#length(Tans_b_1)#} Ergebnisse. Eines der fehlenden Elemente lautet {@listify(setdifference(Tans_b_1, ans_b_1))[1]@}.
+    </p>
+    <p>
+        Bitte korrigieren Sie Ihre Eingabe und klicken Sie dann erneut auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:orange;">
+            <i class="fa fa-adjust">
+            </i>
+        </span>
+        Your answer is partly correct.
+    </p>
+    <p>
+        The quantity you provide is a part of the correct event. This means that all elements of your amount are correct, but which are missing.
+    </p>
+    <p>
+        Go to the item in a structured manner and sort the results (e.g. by the possible values of the variable) \(X\)). So do not forget a result.
+        <br/>
+        Tip: Total {#length(Tans_b_1)#} Results. One of the missing elements is {@listify(setdifference(Tans_b_1, ans_b_1))[1]@}.
+    </p>
+    <p>
+        Please correct your input and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_b_1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Gehen Sie strukturiert an die Sache heran und sortieren Sie die Ergebnisse (z.B. nach den m&#246;glichen Werten der Variable \(X\)). Wenn \(X = 3\), was sind die m&#246;glichen Werte f&#252;r \(Y\)?
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        Go to the item in a structured manner and sort the results (e.g. by the possible values of the variable) \(X\)). If \(X = 3\), what are the possible values for \(Y\)?
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_b_2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_b_2</sans>
+                <tans>Tans_b_2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_b_2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Die gesuchte Wahrscheinlichkeit ergibt sich als
+\begin{align}
+P(X+Y=3) &amp;= P(X=3,Y=0) + P(X=2, Y=1) + P(X=1, Y=2) + P(X=0,Y=3)\\
+&amp;= {@pdf(3)*pdf(0)@} + {@pdf(2)*pdf(1)@} + {@pdf(1)*pdf(2)@} + {@pdf(0)*pdf(3)@} \\
+&amp;= {@pdf_sum(3)@}
+\end{align}
+        <p>
+            Klicken Sie auf
+            <button class="top" type="button">
+                Zur&#252;ck
+            </button>
+            , um zum urspr&#252;nglichen Aufgabenteil zu gelangen.
+        </p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        The probability sought is as follows:
+\begin{align}
+P(X+Y=3) &amp;= P(X=3,Y=0) + P(X=2, Y=1) + P(X=1, Y=2) + P(X=0,Y=3)\\
+&amp;= {@pdf(3)*pdf(0)@} + {@pdf(2)*pdf(1)@} + {@pdf(1)*pdf(2)@} + {@pdf(0)*pdf(3)@} \\
+&amp;= {@pdf_sum(3)@}
+\end{align}
+        <p>
+            Click on
+            <button class="top" type="button">
+                Back
+            </button>
+            to get to the original task.
+        </p>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_b_2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Sie haben im vorherigen Hilfe-Teil richtig erkannt, dass es vier M&#246;glichkeiten f&#252;r \(X\) und \(Y\) gibt, sodass \(X + Y = 3\) gilt. Sie m&#252;ssen die Wahrscheinlichkeiten f&#252;r diese M&#246;glichkeiten danach addieren.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        You have recognized correctly in the previous help part that there are four possibilities for \(X\) and \(Y\) so that \(X + Y = 3\) Article 2 You need to add the probabilities for these possibilities afterwards.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_c</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>sa_probabilities: matrix([ans_c_1, ans_c_2, ans_c_3, ans_c_4]);
+ta_probabilities: dist_maximum(Tans1, x_values, y_values);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>sa_probabilities</sans>
+                <tans>ta_probabilities</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_c-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Unten sehen Sie ein Stabdiagramm der Wahrscheinlichkeitsfunktion von \(\mathrm{max}\{X, Y\}\).
+    </p>
+    [[jsxgraph]]
+var board = JXG.JSXGraph.initBoard(BOARDID, {axis: true, boundingbox: [-0.5, 1, 5, -0.5]});
+
+
+
+
+var f = [
+{#float(Tans_c[1,1])#},
+{#float(Tans_c[1,2])#},
+{#float(Tans_c[1,3])#},
+{#float(Tans_c[1,4])#}
+];
+var chart = board.create('chart', f,
+                                                                {chartStyle:'bar',
+                                                                    width:0.05,
+                                                                    labels: [0, 1, 2, 3, 4],
+                                                                    label: {fontSize:30, display:'internal', anchorX:'left', rotate:90}
+                                                });
+[[/jsxgraph]]
+    <p>
+        Klicken Sie auf
+        <button class="top-next" type="button">
+            Weiter
+        </button>
+        , um zum n&#228;chsten Aufgabenteil zu gelangen.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Below you will see a bar chart of the probability function of \(\mathrm{max}\{X, Y\}\).
+    </p>
+    [[jsxgraph]]
+var board = JXG.JSXGraph.initBoard(BOARDID, {axis: true, boundingbox: [-0.5, 1, 5, -0.5]});
+
+
+
+
+var f = [
+{#float(Tans_c[1,1])#},
+{#float(Tans_c[1,2])#},
+{#float(Tans_c[1,3])#},
+{#float(Tans_c[1,4])#}
+];
+var chart = board.create('chart', f,
+                                                                {chartStyle:'bar',
+                                                                    width:0.05,
+                                                                    labels: [0, 1, 2, 3, 4],
+                                                                    label: {fontSize:30, display:'internal', anchorX:'left', rotate:90}
+                                                });
+[[/jsxgraph]]
+    <p>
+        Click on
+        <button class="top-next" type="button">
+            Next
+        </button>
+        to get to the next task.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_c-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Gruppieren Sie zun&#228;chst die Realisierungen f&#252;r \(X\) und \(Y\) nach dem Maximum \(\mathrm{max}\{X, Y\}\). Addieren Sie danach die entsprechenden Wahrscheinlichkeiten in jeder Gruppe auf und f&#252;llen Sie die Werte in die obige Tabelle. Falls Sie Hilfe bei der Bearbeitung ben&#246;tigen, klicken Sie auf
+        <button class="next" type="button">
+            Hilfe
+        </button>
+        .
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        First group the realizations for \(X\) and \(Y\) after maximum \(\mathrm{max}\{X, Y\}\). Then add the corresponding probabilities in each group and fill the values in the above table. If you need help when editing, click on
+        <button class="next" type="button">
+            Help
+        </button>
+        .
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_c1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_c1</sans>
+                <tans>Tans_c_1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_c1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Klicken Sie auf
+        <button class="btn btn-primary next" type="button">
+            Weiter
+        </button>
+        , um mit der Hilfe fortzufahren oder auf
+        <button class="btn btn-secondary top" type="button">
+            Zur&#252;ck
+        </button>
+        , um zum urspr&#252;nglichen Aufgabenteil zu gelangen.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        Click on
+        <button class="btn btn-primary next" type="button">
+            Next
+        </button>
+        to continue with help or to
+        <button class="btn btn-secondary top" type="button">
+            Back
+        </button>
+        to get to the original task.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt_c1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>CasEqual</answertest>
+                <sans>subsetp(ans_c1,Tans_c_1)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_c1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:orange;">
+            <i class="fa fa-adjust">
+            </i>
+        </span>
+        Ihre Antwort ist teilweise korrekt.
+    </p>
+    <p>
+        Die von Ihnen angegebene Menge ist eine Teilmenge des korrekten Ereignisses. Das bedeutet, dass alle Elemente Ihrer Menge richtig sind, aber welche fehlen.
+    </p>
+    <p>
+        Gehen Sie strukturiert an die Sache heran und sortieren Sie die Ergebnisse (z.B. danach, welche Variable das Maximum annimmt). So vergessen Sie kein Ergebnis.
+        <br/>
+        Tipp: Insgesamt sind es {#length(Tans_c_1)#} Ergebnisse. Eines der fehlenden Elemente lautet {@listify(setdifference(Tans_c_1, ans_c1))[1]@}.
+    </p>
+    <p>
+        Bitte korrigieren Sie Ihre Eingabe und klicken Sie dann erneut auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:orange;">
+            <i class="fa fa-adjust">
+            </i>
+        </span>
+        Your answer is partly correct.
+    </p>
+    <p>
+        The quantity you provide is a part of the correct event. This means that all elements of your amount are correct, but which are missing.
+    </p>
+    <p>
+        Go to the item in a structured manner and sort the results (e.g. after which the variable assumes the maximum). So do not forget a result.
+        <br/>
+        Tip: Total {#length(Tans_c_1)#} Results. One of the missing elements is {@listify(setdifference(Tans_c_1, ans_c1))[1]@}.
+    </p>
+    <p>
+        Please correct your input and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_c1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Gehen Sie strukturiert an die Sache heran und sortieren Sie die Ergebnisse (z.B. danach, welche Variable das Maximum annimmt). Wenn zum Beispiel \(X=2\), welche M&#246;glichkeiten gibt es f&#252;r \(Y\)?
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        Go to the item in a structured manner and sort the results (e.g. after which the variable assumes the maximum). For example \(X=2\), which possibilities exist for \(Y\)?
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_c2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_c2</sans>
+                <tans>Tans_c_2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_c2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Die gesuchte Wahrscheinlichkeit ergibt sich als
+\begin{align}
+P(M=2) &amp;= P(X=2,Y=0) + P(X=2, Y=1) + P(X=2, Y=2) + P(X=1,Y=2) +  P(X=0,Y=2)\\
+&amp;= {@pdf(2)*pdf(0)@} + {@pdf(2)*pdf(1)@} + {@pdf(2)*pdf(2)@} + {@pdf(1)*pdf(2)@} + {@pdf(0)*pdf(2)@} \\
+&amp;= {@Tans_c[1,3]@}
+\end{align}
+        <p>
+            Klicken Sie auf
+            <button class="top" type="button">
+                Zur&#252;ck
+            </button>
+            , um zum urspr&#252;nglichen Aufgabenteil zu gelangen.
+        </p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        The probability sought is as follows:
+\begin{align}
+P(M=2) &amp;= P(X=2,Y=0) + P(X=2, Y=1) + P(X=2, Y=2) + P(X=1,Y=2) +  P(X=0,Y=2)\\
+&amp;= {@pdf(2)*pdf(0)@} + {@pdf(2)*pdf(1)@} + {@pdf(2)*pdf(2)@} + {@pdf(1)*pdf(2)@} + {@pdf(0)*pdf(2)@} \\
+&amp;= {@Tans_c[1,3]@}
+\end{align}
+        <p>
+            Click on
+            <button class="top" type="button">
+                Back
+            </button>
+            to get to the original task.
+        </p>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_c2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Sie haben im vorherigen Hilfe-Teil richtig erkannt, dass es f&#252;nf M&#246;glichkeiten f&#252;r \(X\) und \(Y\) gibt, sodass \(\mathrm{max}\{X, Y\} = 2\) gilt. Sie m&#252;ssen die Wahrscheinlichkeiten f&#252;r diese M&#246;glichkeiten danach addieren.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        You have recognized correctly in the previous help part that there are five possibilities for \(X\) and \(Y\) so that \(\mathrm{max}\{X, Y\} = 2\) Article 2 You need to add the probabilities for these possibilities afterwards.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_d</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_d</sans>
+                <tans>0</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_d-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Da die Zufallsvariablen unabh&#228;ngig sind, gilt \(\mathrm{cov}(X, Y) = 0\) und daher
+\[
+\mathrm{corr}(X, Y) = \frac{\mathrm{cov}(X, Y)}{\sqrt{\mathrm{Var}(X) \mathrm{Var}(Y)}} = 0.
+\]
+    </p>
+    <p>
+        Alternativ k&#246;nnen Sie die Kovarianz \(\mathrm{cov}(X, Y)\) auch mithilfe der folgenden Formel berechnen:
+\[
+\mathrm{cov}(X, Y) = E(X\cdot Y) - E(X)E(Y)
+\]
+    </p>
+    <p>
+        Herzlichen Gl&#252;ckwunsch, Sie sind am Ende der Aufgabe angelangt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Since the random variables are independent, \(\mathrm{cov}(X, Y) = 0\) and therefore
+\[
+\mathrm{corr}(X, Y) = \frac{\mathrm{cov}(X, Y)}{\sqrt{\mathrm{Var}(X) \mathrm{Var}(Y)}} = 0.
+\]
+    </p>
+    <p>
+        Alternatively, you can use the covariance \(\mathrm{cov}(X, Y)\) also calculate using the following formula:
+\[
+\mathrm{cov}(X, Y) = E(X\cdot Y) - E(X)E(Y)
+\]
+    </p>
+    <p>
+        Congratulations, you have reached the end of the task.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_d-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Beachten Sie, dass die Zufallsvariablen \(X\) und \(Y\) unabh&#228;ngig sind, und &#252;berlegen Sie, was das f&#252;r die Kovarianz von \(X\) und \(Y\) bedeutet.
+    </p>
+    <details>
+        <summary>
+            Ich brauche noch einen Hinweis
+        </summary>
+        <p>
+            Der Korrelationskoeffizient berechnet sich unter anderem aus der Kovarianz:
+\[
+\mathrm{corr}(X, Y) = \frac{\mathrm{cov}(X, Y)}{\sqrt{\mathrm{Var}(X) \mathrm{Var}(Y)}}
+\]
+Die Kovarianz zweier unabh&#228;ngiger Zufallsvariablen ist gleich 0.
+        </p>
+    </details>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Note that the random variables \(X\) and \(Y\) are independent, and consider what the covariance of \(X\) and \(Y\) means.
+    </p>
+    <details>
+        <summary>
+            I need another hint
+        </summary>
+        <p>
+            The correlation coefficient is calculated, inter alia, from the covariance:
+\[
+\mathrm{corr}(X, Y) = \frac{\mathrm{cov}(X, Y)}{\sqrt{\mathrm{Var}(X) \mathrm{Var}(Y)}}
+\]The covariance of two independent random variables is equal to 0.
+        </p>
+    </details>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>/* Knoten 2: alle Eintr&#228;ge im Intervall [0, 1] */
+/* Knoten 3: Zeilensumme ist im Intervall [0, 1]? */
+/* Knoten 4: Spaltensumme ist im Intervall [0, 1]? */
+ 
+non_probability_entries: sublist_indices(apply (append, args (ans1)),
+                                                                lambda([aij], not(probabilityp(aij))));
+
+sum_is_not_probabilityp(list) := not(probabilityp (lsum (x, x, list)));
+non_normalized_rows: sublist_indices (args (ans1), sum_is_not_probabilityp);
+non_normalized_cols: sublist_indices (args (transpose (ans1)), sum_is_not_probabilityp);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>Tans1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Eintr&#228;ge der Matrix bestehen aus Produkten der Form \(p(i) \cdot p(j)\), da die Zufallsvariablen laut Aufgabenstellung unabh&#228;ngig sind. Es gilt daher:
+\[
+P(X = i, Y = j) = P(X = i) \cdot P(Y = j) = p(i) \cdot p(j).
+\]
+    </p>
+    <p>
+        Klicken Sie auf
+        <button class="top-next" type="button">
+            Weiter
+        </button>
+        , um zum n&#228;chsten Aufgabenteil zu gelangen.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The entries of the matrix consist of products of the form \(p(i) \cdot p(j)\), since the random variables are independent according to the task. It shall therefore apply:
+\[
+P(X = i, Y = j) = P(X = i) \cdot P(Y = j) = p(i) \cdot p(j).
+\]
+    </p>
+    <p>
+        Click on
+        <button class="top-next" type="button">
+            Next
+        </button>
+        to get to the next task.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Bitte versuchen Sie es noch einmal und dr&#252;cken Sie dann auf &#8222;Pr&#252;fen&#8220;. Falls Sie Hilfe bei der Bearbeitung ben&#246;tigen, klicken Sie auf
+        <button class="next" type="button">
+            Hilfe
+        </button>
+        .
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Please try again and then press &#8220;Check&#8221;. If you need help when editing, click on
+        <button class="next" type="button">
+            Help
+        </button>
+        .
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>non_probability_entries</sans>
+                <tans>[]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Mindestens ein Eintrag ist keine Wahrscheinlichkeit. Wahrscheinlichkeiten werden durch Zahlen im Intervall [0,1] beschrieben. {# non_probability_entries #}
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        At least one entry is not a probability. Probabilities are described by numbers in the interval [0,1]. {# non_probability_entries #}
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>non_normalized_rows</sans>
+                <tans>[]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>prt1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prt1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Summen der Zeile(n) {@ simplode(non_normalized_rows, ", ") @} liegen nicht im Intervall [0, 1].
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The sums of row(s) {@ simplode(non_normalized_rows, ", ") @} are not in the interval [0, 1].
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>non_normalized_cols</sans>
+                <tans>[]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>prt1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Summen der Spalte(n) {@ simplode(non_normalized_cols, ", ") @} liegen nicht im Intervall [0, 1].
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The sums of column(s) {@ simplode(non_normalized_cols, ", ") @} are not in the interval [0, 1].
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>2078265110</deployedseed>
+        <deployedseed>2143869829</deployedseed>
+        <deployedseed>1802784859</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <description/>
+            <testinput>
+                <name>ans3</name>
+                <value>Tans3</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>Tans4</value>
+            </testinput>
+            <testinput>
+                <name>ans5</name>
+                <value>Tans5</value>
+            </testinput>
+            <testinput>
+                <name>ans6</name>
+                <value>Tans6</value>
+            </testinput>
+            <testinput>
+                <name>ans7</name>
+                <value>Tans7</value>
+            </testinput>
+            <testinput>
+                <name>ans8</name>
+                <value>Tans8</value>
+            </testinput>
+            <testinput>
+                <name>ans9</name>
+                <value>Tans9</value>
+            </testinput>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <description/>
+            <testinput>
+                <name>ans3</name>
+                <value>2</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>2</value>
+            </testinput>
+            <testinput>
+                <name>ans5</name>
+                <value>2</value>
+            </testinput>
+            <testinput>
+                <name>ans6</name>
+                <value>2</value>
+            </testinput>
+            <testinput>
+                <name>ans7</name>
+                <value>2</value>
+            </testinput>
+            <testinput>
+                <name>ans8</name>
+                <value>2</value>
+            </testinput>
+            <testinput>
+                <name>ans9</name>
+                <value>2</value>
+            </testinput>
+        </qtest>
+    </question>
+    
+
+</quiz>

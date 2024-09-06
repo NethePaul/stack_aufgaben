@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Eiskunstlauf</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+        <b>
+            Eiskunstlauf
+        </b>
+    </p>
+    <p>
+        Beim Eiskunstlauf beurteilen \(n\) Richter die Leistungen von sechs L&#228;ufern. Jeder Richter darf dabei genau einmal jede der Noten \(1,...,6\) vergeben.
+    </p>
+    <p>
+        a) Geben Sie einen geeigneten Stichprobenraum \(\Omega\) an.
+    </p>
+    <p>
+        \begin{align*} \Omega_1:=&amp;\{\times_{i=1}^n (r_1^i,r_2^i,r_3^i,r_4^i,r_5^i,r_6^i )| r_j^i \neq r_k^i &#160;\forall j \neq k,&#160;\\&amp; \forall i\in \{1,...,n\}, r_j^i \in \{1,...,6\} \forall j\in \{1,...,6\},i\in \{1,...,n\}\}\end{align*}
+    </p>
+    <p>
+        <span style="font-size: 0.9375rem;">
+            \begin{align*} \Omega_2:=&amp;\{\times_{i=1}^{n/2} (r_1^i,r_2^i,r_3^i,r_4^i,r_5^i,r_6^i )| r_j^i \neq r_k^i &#160;\forall j \neq k,&#160;\\&amp; \forall i\in \{1,...,n\}, r_j^i \in \{1,...,6\} \forall j\in \{1,...,6\},i\in \{1,...,n\}\}\end{align*}
+        </span>
+    </p>
+    <p>
+        <span style="font-size: 0.9375rem;">
+            \begin{align*} \Omega_3:=&amp;\{\times_{i=1}^n (r_1^i,r_2^i,r_3^i,r_4^i,r_5^i,r_6^i )| r_j^i \neq r_k^i &#160;\forall j = k,&#160;\\&amp; \forall i\in \{1,...,n\}, r_j^i \in \{1,...,i\} \forall j\in \{1,...,6\},i\in \{1,...,n\}\}\end{align*}
+        </span>
+    </p>
+    <p>
+        \begin{align*} \Omega_4:=&amp;\{\times_{i=1}^n (r_1^i,r_2^i,r_3^i,r_4^i,r_5^i,r_6^i )| r_j^i \neq r_k^i &#160;\forall j \neq k,&#160;\\&amp; \forall i\in \{1,...,n\}, r_j^i \in \{1,...,6\} \forall j\in \{1,...,n\},i\in \{1,...,6\}\}\end{align*}
+        <br/>
+    </p>
+    <p>
+        Die Nummer \(i\) des geeigneten Stichprobenraums \(\Omega_i\) entspricht: [[input:ans1]] [[validation:ans1]]
+    </p>
+    <p>
+        b) Welches der folgenden Ereignisse entspricht dem Ereignis "ein L&#228;ufer erh&#228;lt von allen Richtern die Note 6"?
+    </p>
+    <p>
+    </p>
+    <p>
+        \begin{align*} A_1:=&amp;\{(r_1^i,r_2^i,r_3^i,r_4^i,r_5^i,r_6^i )| \exists j \in \{1,...,6\}: r_j^i = 6 &#160;\\&amp; \forall i\in \{1,...,j\}, r_j^i \in \{1,...,6\} \forall j\in \{1,...,6\},i\in \{1,...,n\}\}\end{align*}
+    </p>
+    <p>
+        \begin{align*} A_2:=&amp;\{(r_1^i,r_2^i,r_3^i,r_4^i,r_5^i,r_6^i )| \exists j \in \{1,...,6\}: r_j^i = 6 &#160;\\&amp; \forall i\in \{1,...,n\}, r_j^i \in \{1,...,6\} \forall j\in \{1,...,6\},i\in \{1,...,n\}\}\end{align*}
+    </p>
+    <p>
+        \begin{align*} A_3:=&amp;\{(r_1^i,r_2^i,r_3^i,r_4^i,r_5^i,r_6^i )| \exists j \in \{1,...,6\}: r_j^i \neq 6 &#160;\\&amp; \forall i\in \{1,...,n\}, r_j^i \in \{1,...,6\} \forall j\in \{1,...,6\},i\in \{1,...,n\}\}\end{align*}
+    </p>
+    Die Nummer \(i\) des korrekten Ereignisses \(A_i\) entspricht: [[input:ans2]] [[validation:ans2]]
+    <br/>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+        <b>
+            Ice cream
+        </b>
+    </p>
+    <p>
+        How to judge the skating \(n\) Judges the performance of six runners. Each judge is allowed exactly once each of the notes \(1,...,6\) in vain.
+    </p>
+    <p>
+        a) Specify a suitable sample area \(\Omega\) on.
+    </p>
+    <p>
+        \begin{align*} \Omega_1:=&amp;\{\times_{i=1}^n (r_1^i,r_2^i,r_3^i,r_4^i,r_5^i,r_6^i )| r_j^i \neq r_k^i &#160;\forall j \neq k,&#160;\\&amp; \forall i\in \{1,...,n\}, r_j^i \in \{1,...,6\} \forall j\in \{1,...,6\},i\in \{1,...,n\}\}\end{align*}
+    </p>
+    <p>
+        <span style="font-size: 0.9375rem;">
+            \begin{align*} \Omega_2:=&amp;\{\times_{i=1}^{n/2} (r_1^i,r_2^i,r_3^i,r_4^i,r_5^i,r_6^i )| r_j^i \neq r_k^i &#160;\forall j \neq k,&#160;\\&amp; \forall i\in \{1,...,n\}, r_j^i \in \{1,...,6\} \forall j\in \{1,...,6\},i\in \{1,...,n\}\}\end{align*}
+        </span>
+    </p>
+    <p>
+        <span style="font-size: 0.9375rem;">
+            \begin{align*} \Omega_3:=&amp;\{\times_{i=1}^n (r_1^i,r_2^i,r_3^i,r_4^i,r_5^i,r_6^i )| r_j^i \neq r_k^i &#160;\forall j = k,&#160;\\&amp; \forall i\in \{1,...,n\}, r_j^i \in \{1,...,i\} \forall j\in \{1,...,6\},i\in \{1,...,n\}\}\end{align*}
+        </span>
+    </p>
+    <p>
+        \begin{align*} \Omega_4:=&amp;\{\times_{i=1}^n (r_1^i,r_2^i,r_3^i,r_4^i,r_5^i,r_6^i )| r_j^i \neq r_k^i &#160;\forall j \neq k,&#160;\\&amp; \forall i\in \{1,...,n\}, r_j^i \in \{1,...,6\} \forall j\in \{1,...,n\},i\in \{1,...,6\}\}\end{align*}
+        <br/>
+    </p>
+    <p>
+        The number \(i\) the appropriate sample area \(\Omega_i\) corresponds to: [[input:ans1]] [[validation:ans1]]
+    </p>
+    <p>
+        (b) Which of the following events corresponds to the event "a runner receives the note 6 from all judges"?
+    </p>
+    <p>
+    </p>
+    <p>
+        \begin{align*} A_1:=&amp;\{(r_1^i,r_2^i,r_3^i,r_4^i,r_5^i,r_6^i )| \exists j \in \{1,...,6\}: r_j^i = 6 &#160;\\&amp; \forall i\in \{1,...,j\}, r_j^i \in \{1,...,6\} \forall j\in \{1,...,6\},i\in \{1,...,n\}\}\end{align*}
+    </p>
+    <p>
+        \begin{align*} A_2:=&amp;\{(r_1^i,r_2^i,r_3^i,r_4^i,r_5^i,r_6^i )| \exists j \in \{1,...,6\}: r_j^i = 6 &#160;\\&amp; \forall i\in \{1,...,n\}, r_j^i \in \{1,...,6\} \forall j\in \{1,...,6\},i\in \{1,...,n\}\}\end{align*}
+    </p>
+    <p>
+        \begin{align*} A_3:=&amp;\{(r_1^i,r_2^i,r_3^i,r_4^i,r_5^i,r_6^i )| \exists j \in \{1,...,6\}: r_j^i \neq 6 &#160;\\&amp; \forall i\in \{1,...,n\}, r_j^i \in \{1,...,6\} \forall j\in \{1,...,6\},i\in \{1,...,n\}\}\end{align*}
+    </p>
+    The number \(i\) the correct event \(A_i\) corresponds to: [[input:ans2]] [[validation:ans2]]
+    <br/>
+    <p>
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[lsg1: 1;
+lsg2: 2;
+test01(x):= is(x>=1) and (x<=4);
+test02(x):= is(x>=1) and (x<=3);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    [[feedback:prt1]][[feedback:prt2]]
+</span>
+<span class="multilang" lang="en">
+    [[feedback:prt1]][[feedback:prt2]]
+</span>
+]]></text>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text/>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <br/>
+</span>
+<span class="multilang" lang="en">
+    <br/>
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <br/>
+</span>
+<span class="multilang" lang="en">
+    <br/>
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<br/>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>lsg1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>lsg2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ans1)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Bitte geben Sie eine der Zahlen \(i=1,2,3,4\) ein, um den entsprechenden Grundraum \(\Omega_i\) anzugeben.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Please give one of the numbers \(i=1,2,3,4\) to the corresponding basic space \(\Omega_i\) indicate.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>lsg1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Richtige Antwort, prima!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Right answer, great!
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        &#220;berlegen Sie noch einmal, welche Werte die Variablen \(i\) und \(j\) annehmen k&#246;nnen. Wir haben \(n\) Richter, die jeweils die Noten 1 bis 6 vergeben k&#246;nnen.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Consider which values the variables \(i\) and \(j\) can accept. We have \(n\) Judges who can award the grades 1 to 6.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prt1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        &#220;berlegen Sie noch einmal, welche Werte die Bewertung \(r_j^i\) annehmen kann. Tipp: F&#252;r den 1-ten und n-ten Richter sollte diese Variable dieselben Werte annehmen k&#246;nnen.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Consider which values the evaluation \(r_j^i\) can accept. Tip: For the 1st and nth judge, this variable should be able to assume the same values.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prt1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        &#220;berlegen Sie noch einmal, bis zu welchem Index das Kreuzprodukt gebildet werden muss.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Consider once again to which index the cross product must be formed.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test02(ans2)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Bitte geben Sie eine der Zahlen \(i=1,2,3\) ein, um das Ereignis \(A_i\) anzugeben.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Please give one of the numbers \(i=1,2,3\) a to the event \(A_i\) indicate.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>lsg2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Richtige Antwort, prima!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Right answer, great!
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        &#220;berlegen Sie noch einmal, welche Werte die Variable \(i\) annehmen kann. Im Falle, dass \(j=1\) ist, reduziert sich die Aussage zu \(r_1^1 =1\), sodass nicht das gesuchte Ereignis modelliert wird.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Consider which values the variable \(i\) can accept. In the event that: \(j=1\) is, the statement is reduced \(r_1^1 =1\)so that the desired event is not modeled.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prt2-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        &#220;berlegen Sie noch einmal, welche Bedingung die Variable \(r_j^i\) erf&#252;llen muss.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Consider which condition the variable \(r_j^i\) must meet.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

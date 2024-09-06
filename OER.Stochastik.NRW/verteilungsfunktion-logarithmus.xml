@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Verteilungsfunktion Logarithmus</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <style>
+        .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.formulation details[open] {
+                padding: .5em;
+}
+.formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+} 
+table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+}
+.buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+    </style>
+    <div id="summarybox">
+        <details>
+            <summary>
+                Inhalt und Umfang dieser Aufgabe
+            </summary>
+            <p>
+                In dieser Aufgabe lernen Sie, wie Sie die Verteilungsfunktion einer Zufallsvariablen bestimmen, die durch Anwendung einer Funktion auf eine Zufallsvariable mit bekannter Verteilung entsteht.
+            </p>
+        </details>
+        <hr/>
+    </div>
+    <div id="aufgabe" style="display:box;">
+        <div id="aufgabentitel">
+            <div>
+                <div>
+                    <p>
+                        <b>
+                            Verteilungsfunktion Logarithmus
+                        </b>
+                    </p>
+                    <div>
+                        <b>
+                            <br/>
+                        </b>
+                        <p>
+                            Sei \(f(x):=log(x)\) und \(c&gt;0\). Sei \(X\sim \mathcal{N}(0,2^2)\) eine normalverteilte Zufallsvariable und \(Y:=-cf(|X|)\) eine weitere Zufallsvariable. Bestimmen Sie zun&#228;chst die Verteilungsfunktion \(F_Y(t):=P(Y\leq t)\) der
+                                                                                                Zufallsvariable \(Y\) mit Hilfe der Verteilungsfunktion \(\Phi(t)\) der Standardnormalverteilung, indem Sie \(F_Y(t)=P(Y\leq t)=P(-cf(|X|)\leq t)\) weiter umformen. Berechnen Sie dann den Wert der Verteilungsfunktion \(F_Y(t)\)
+                                                                                                an der Stelle \(t=1\) f&#252;r \(c=1\). Runden Sie Ihr Ergebnis auf 2 Nachkommastellen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Der Wert der Verteilungsfunktion \(F_Y(t)\) an der Stelle \(t=1\) f&#252;r \(c=1\) auf 2 Nachkommastellen gerundet betr&#228;gt:
+                <span style="font-size: 0.9375rem;">
+                    [[input:ans1]] [[validation:ans1]]
+                </span>
+            </p>
+            [[feedback:prt1]]
+        </div>
+    </div>
+    <div id="zwischen1" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Urspr&#252;ngliche Fragestellung:
+                                    </u>
+                                    <div id="aufgabe" style="display:box;">
+                                        <b>
+                                            <br/>
+                                        </b>
+                                        <p>
+                                            Sei \(f(x):=log(x)\) und \(c&gt;0\). Sei \(X\sim \mathcal{N}(0,2^2)\) eine normalverteilte Zufallsvariable und \(Y:=-cf(|X|)\) eine weitere Zufallsvariable. Bestimmen Sie zun&#228;chst die Verteilungsfunktion \(F_Y(t):=P(Y\leq t)\) der Zufallsvariable
+                                                                                                \(Y\) mit Hilfe der Verteilungsfunktion \(\Phi(t)\) der Standardnormalverteilung, indem Sie \(F_Y(t)=P(Y\leq t)=P(-cf(|X|)\leq t)\) weiter umformen. Berechnen Sie dann den Wert der Verteilungsfunktion \(F_Y(t)\) an der Stelle \(t=1\) f&#252;r
+                                                                                                \(c=1\). Runden Sie Ihr Ergebnis auf 2 Nachkommastellen.
+                                        </p>
+                                    </div>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+            <br/>
+        </span>
+        <br/>
+        Wir formen zun&#228;chst wie in der Aufgabenstellung beschrieben um: \[F_Y(t)=P(Y\leq t)=P(-cf(|X|)\leq t)=P(f(|X|)\geq -\frac{t}{c})\] Welche der folgenden weiteren Umformungen ist korrekt?
+                [[input:ansZwischen1]] [[validation:ansZwischen1]]
+        <br/>
+        <br/>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prtZwischen1]]
+    </div>
+    <div id="zwischen2" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Urspr&#252;ngliche Fragestellung:
+                                    </u>
+                                    <div id="aufgabe" style="display:box;">
+                                        <b>
+                                            <br/>
+                                        </b>
+                                        <p>
+                                            Sei \(f(x):=log(x)\) und \(c&gt;0\). Sei \(X\sim \mathcal{N}(0,2^2)\) eine normalverteilte Zufallsvariable und \(Y:=-cf(|X|)\) eine weitere Zufallsvariable. Bestimmen Sie zun&#228;chst die Verteilungsfunktion \(F_Y(t):=P(Y\leq t)\) der Zufallsvariable
+                                                                                                \(Y\) mit Hilfe der Verteilungsfunktion \(\Phi(t)\) der Standardnormalverteilung, indem Sie \(F_Y(t)=P(Y\leq t)=P(-cf(|X|)\leq t)\) weiter umformen. Berechnen Sie dann den Wert der Verteilungsfunktion \(F_Y(t)\) an der Stelle \(t=1\) f&#252;r
+                                                                                                \(c=1\). Runden Sie Ihr Ergebnis auf 2 Nachkommastellen.
+                                        </p>
+                                    </div>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+            <br/>
+        </span>
+        <br/>
+        Wir haben bereits wie folgt umgeformt: \[F_Y(t)=...=1-P(|X|&lt; f^{-1}(-\frac{t}{c}))\] Die rechte Seite k&#246;nnen wir umschreiben zu \[1-P(-f^{-1}(-\frac{t}{c}) \leq X \leq f^{-1}(-\frac{t}{c}))\] Dies k&#246;nnen wir weiter wie folgt umformen: \[=1-(P(X\leq
+                f^{-1}(-\frac{t}{c}))-P(X\leq -f^{-1}(-\frac{t}{c})))\] Dies entspricht: \[=1-(P(\frac{X}{2}\leq \frac{f^{-1}(-\frac{t}{c})}{2})-P(\frac{X}{2}\leq \frac{-f^{-1}(-\frac{t}{c})}{2}))\] Da \(\frac{X}{2}\sim \mathcal{N}(0,1)\) ist, k&#246;nnen wir nun die
+                Verteilungsfunktion \(\Phi\) der Standardnormalverteilung auf die Terme \(P(\frac{X}{2}\leq -\frac{f^{-1}(-\frac{t}{c})}{2})\) und \(P(\frac{X}{2}\leq \frac{-f^{-1}(-\frac{t}{c})}{2})\) anwenden. Wenden Sie die Verteilungsfunktion \(\Phi\) auf die
+                letzte Gleichung an und berechnen Sie so die gesuchte L&#246;sung. Achtung: Die Funktion \(f^{-1}\) ist hier die Exponentialfunktion, wir verwenden also den nat&#252;rlichen Logarithmus.
+        <br/>
+        Der Wert der Verteilungsfunktion \(F_Y(t)\) an der Stelle \(t=1\) f&#252;r \(c=1\) auf 2 Nachkommastellen gerundet betr&#228;gt: [[input:ansZwischen2]] [[validation:ansZwischen2]]
+        <br/>
+        <br/>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prtZwischen2]]
+    </div>
+    <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <style>
+        .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.formulation details[open] {
+                padding: .5em;
+}
+.formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+} 
+table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+}
+.buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+    </style>
+    <div id="summarybox">
+        <details>
+            <summary>
+                Content and scope of this task
+            </summary>
+            <p>
+                In this task, you will learn how to determine the distribution function of a random variable that is created by applying a function to a random variable with a known distribution.
+            </p>
+        </details>
+        <hr/>
+    </div>
+    <div id="aufgabe" style="display:box;">
+        <div id="aufgabentitel">
+            <div>
+                <div>
+                    <p>
+                        <b>
+                            Distribution function Logarithm
+                        </b>
+                    </p>
+                    <div>
+                        <b>
+                            <br/>
+                        </b>
+                        <p>
+                            Be careful \(f(x):=log(x)\) and \(c&gt;0\). Be careful \(X\sim \mathcal{N}(0,2^2)\) a normal distributed random variable and \(Y:=-cf(|X|)\) another random variable. First determine the distribution function \(F_Y(t):=P(Y\leq t)\) the
+Random variable \(Y\) with the help of the distribution function \(\Phi(t)\) the standard distribution by \(F_Y(t)=P(Y\leq t)=P(-cf(|X|)\leq t)\) continue to shape. Then calculate the value of the distribution function \(F_Y(t)\)in place \(t=1\) for \(c=1\). Round your result to 2 postage points.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                The value of the distribution function \(F_Y(t)\) in place \(t=1\) for \(c=1\) rounded to 2 descendants:
+                <span style="font-size: 0.9375rem;">
+                    [[input:ans1]] [[validation:ans1]]
+                </span>
+            </p>
+            [[feedback:prt1]]
+        </div>
+    </div>
+    <div id="zwischen1" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Original question:
+                                    </u>
+                                    <div id="aufgabe" style="display:box;">
+                                        <b>
+                                            <br/>
+                                        </b>
+                                        <p>
+                                            Be careful \(f(x):=log(x)\) and \(c&gt;0\). Be careful \(X\sim \mathcal{N}(0,2^2)\) a normal distributed random variable and \(Y:=-cf(|X|)\) another random variable. First determine the distribution function \(F_Y(t):=P(Y\leq t)\) the random variable
+    \(Y\) with the help of the distribution function \(\Phi(t)\) the standard distribution by \(F_Y(t)=P(Y\leq t)=P(-cf(|X|)\leq t)\) continue to shape. Then calculate the value of the distribution function \(F_Y(t)\) in place \(t=1\) for
+    \(c=1\). Round your result to 2 postage points.
+                                        </p>
+                                    </div>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+            <br/>
+        </span>
+        <br/>
+        We first form as described in the task: \[F_Y(t)=P(Y\leq t)=P(-cf(|X|)\leq t)=P(f(|X|)\geq -\frac{t}{c})\] Which of the following further deformations is correct?
+    [[input:ansZwischen1]] [[validation:ansZwischen1]]
+        <br/>
+        <br/>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prtZwischen1]]
+    </div>
+    <div id="zwischen2" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Original question:
+                                    </u>
+                                    <div id="aufgabe" style="display:box;">
+                                        <b>
+                                            <br/>
+                                        </b>
+                                        <p>
+                                            Be careful \(f(x):=log(x)\) and \(c&gt;0\). Be careful \(X\sim \mathcal{N}(0,2^2)\) a normal distributed random variable and \(Y:=-cf(|X|)\) another random variable. First determine the distribution function \(F_Y(t):=P(Y\leq t)\) the random variable
+    \(Y\) with the help of the distribution function \(\Phi(t)\) the standard distribution by \(F_Y(t)=P(Y\leq t)=P(-cf(|X|)\leq t)\) continue to shape. Then calculate the value of the distribution function \(F_Y(t)\) in place \(t=1\) for
+    \(c=1\). Round your result to 2 postage points.
+                                        </p>
+                                    </div>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+            <br/>
+        </span>
+        <br/>
+        We have already reshaped as follows: \[F_Y(t)=...=1-P(|X|&lt; f^{-1}(-\frac{t}{c}))\] The right side we can rewrite \[1-P(-f^{-1}(-\frac{t}{c}) \leq X \leq f^{-1}(-\frac{t}{c}))\] We can continue to shape this as follows: \[=1-(P(X\leq
+                f^{-1}(-\frac{t}{c}))-P(X\leq -f^{-1}(-\frac{t}{c})))\] This corresponds to: \[=1-(P(\frac{X}{2}\leq \frac{f^{-1}(-\frac{t}{c})}{2})-P(\frac{X}{2}\leq \frac{-f^{-1}(-\frac{t}{c})}{2}))\] There. \(\frac{X}{2}\sim \mathcal{N}(0,1)\) we can now
+Distribution function \(\Phi\) standard distribution on terms \(P(\frac{X}{2}\leq -\frac{f^{-1}(-\frac{t}{c})}{2})\) and \(P(\frac{X}{2}\leq \frac{-f^{-1}(-\frac{t}{c})}{2})\) apply. Turn the distribution function \(\Phi\) the
+last equation and calculate the desired solution. Attention: The function \(f^{-1}\) here is the exponential function, so we use the natural logarithm.
+        <br/>
+        The value of the distribution function \(F_Y(t)\) in place \(t=1\) for \(c=1\) rounded to 2 descendants: [[input:ansZwischen2]] [[validation:ansZwischen2]]
+        <br/>
+        <br/>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prtZwischen2]]
+    </div>
+    <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+    </script>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  Verteilungsfunktion Logarithmus
+
+  wurde entwickelt von
+  
+    Riko Kelter <riko.kelter(at)uni-siegen.de>
+    Alexander Schnurr <schnurr(at)mathematik.uni-siegen.de>
+    Susanne Spies <spies(at)mathematik.uni-siegen.de>
+
+  nach einer Idee von
+  
+   Riko Kelter <riko.kelter(at)uni-siegen.de>
+   Alexander Schnurr <schnurr(at)mathematik.uni-siegen.de>
+   Susanne Spies <spies(at)mathematik.uni-siegen.de>
+
+  an der Universit&#228;t Siegen.
+
+  Dieses Werk ist lizenziert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+
+  Diese Aufgabe bindet das Skript &#8216;stackselbstlern.js&#8217; von Michael
+  Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+lsg1: 0.85;
+Liste: [[1, false, "\\(P(f(|X|)\\geq -\\frac{t}{c})=P(|X|\\geq f^{-1}(-c^2 t))=1-P(|X|&lt; f^{-1}(-c^2 t))\\)"], [2, true, "\\(P(f(|X|)\\geq -\\frac{t}{c})=P(|X|\\geq f^{-1}(-\\frac{t}{c}))=1-P(|X|&lt; f^{-1}(-\\frac{t}{c}))\\)"], [3, false, "\\(P(f(|X|)\\geq -\\frac{t}{c})=P(|X|\\geq f^{-1}(-ct))=P(|X|&lt; f^{-1}(-ct))\\)"] ];
+lsgZwischen1: 2;
+test01(x):= is(x>=0) and is(x<=1);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text/>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text/>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text/>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text/>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>lsg1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansZwischen1</name>
+            <type>radio</type>
+            <tans>Liste</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ansZwischen2</name>
+            <type>algebraic</type>
+            <tans>lsg1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ans1)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr" style="text-align: left;">
+        Ihr Ergebnis muss zwischen 0 und 1 liegen. Bitte korrigieren Sie Ihre Eingabe.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr" style="text-align: left;">
+        Your result must be between 0 and 1. Please correct your input.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>lsg1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+    <p dir="ltr" style="text-align: left;">
+        Die korrekte Verteilungsfunktion zur Berechnung lautet \(2-2\Phi(\frac{f^{-1}(-t/c)}{2})\), was f&#252;r \(c=1\), \(t=1\) das Ergebnis \(0.85\) liefert, wenn man auf 2 Nachkommastellen rundet.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+    <p dir="ltr" style="text-align: left;">
+        The correct distribution function for calculation is \(2-2\Phi(\frac{f^{-1}(-t/c)}{2})\)what \(c=1\), \(t=1\) The result \(0.85\) if you turn to 2 decimal places.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <div id="prtA-1">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+        <p>
+            Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein Problem! Im Folgenden erhalten Sie einige Tipps, um die Aufgabe schrittweise zu l&#246;sen.
+        </p>
+        <p>
+            Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+            <button class="buttonweiter" onclick="hide('aufgabe');show('zwischen1');" type="button">
+                Weiter
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtA-2" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+        <br/>
+        Wir haben bereits wie folgt umgeformt: \[F_Y(t)=...=1-P(|X|&lt; f^{-1}(-\frac{t}{c}))\] Die rechte Seite k&#246;nnen wir umschreiben zu \[1-P(-f^{-1}(-\frac{t}{c}) \leq X \leq f^{-1}(-\frac{t}{c}))\]
+Formen Sie dies weiter um, bis Sie auf Ungleichungen f&#252;r \(\frac X 2\) kommen, denn diese Zufallsvariable ist standardnormalverteilt. Nutzen Sie deren Verteilungsfunktion \(\Phi\) um die gesuchte Wahrscheinlichkeit zu bestimmen.
+        <!-- Dies k&#246;nnen wir weiter wie folgt umformen: \[=1-(P(X\leq
+                f^{-1}(-\frac{t}{c}))-P(X\leq -f^{-1}(-\frac{t}{c})))\] Dies entspricht: \[=1-(P(\frac{X}{2}\leq \frac{f^{-1}(-\frac{t}{c})}{2})-P(\frac{X}{2}\leq \frac{-f^{-1}(-\frac{t}{c})}{2}))\] Da \(\frac{X}{2}\sim \mathcal{N}(0,1)\) ist, k&#246;nnen wir nun die
+                Verteilungsfunktion \(\Phi\) der Standardnormalverteilung auf die Terme \(P(\frac{X}{2}\leq -\frac{f^{-1}(-\frac{t}{c})}{2})\) und \(P(\frac{X}{2}\leq \frac{-f^{-1}(-\frac{t}{c})}{2})\) anwenden. Wenden Sie die Verteilungsfunktion \(\Phi\) auf die
+                letzte Gleichung an und berechnen Sie so die gesuchte L&#246;sung. Achtung: Die Funktion \(f^{-1}\) ist hier die Exponentialfunktion, wir verwenden also den nat&#252;rlichen Logarithmus. -->
+        Versuchen Sie mithilfe dieser &#220;berlegungen noch einmal die Aufgabe zu l&#246;sen.
+    </div>
+</span>
+<span class="multilang" lang="en">
+    <div id="prtA-1">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+        <p>
+            That you couldn't solve the task right away is no problem! Below you will get some tips to solve the task step by step.
+        </p>
+        <p>
+            To continue, click on the following button:
+            <button class="buttonweiter" onclick="hide('aufgabe');show('zwischen1');" type="button">
+                Next
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtA-2" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+        <br/>
+        We have already reshaped as follows: \[F_Y(t)=...=1-P(|X|&lt; f^{-1}(-\frac{t}{c}))\] The right side we can rewrite \[1-P(-f^{-1}(-\frac{t}{c}) \leq X \leq f^{-1}(-\frac{t}{c}))\]continue to shape this until you reconcile \(\frac X 2\) come, because this random variable is standard distributed. Use their distribution function \(\Phi\) to determine the desired probability.
+        <!-- Dies k&#246;nnen wir weiter wie folgt umformen: \[=1-(P(X\leq
+                f^{-1}(-\frac{t}{c}))-P(X\leq -f^{-1}(-\frac{t}{c})))\] Dies entspricht: \[=1-(P(\frac{X}{2}\leq \frac{f^{-1}(-\frac{t}{c})}{2})-P(\frac{X}{2}\leq \frac{-f^{-1}(-\frac{t}{c})}{2}))\] Da \(\frac{X}{2}\sim \mathcal{N}(0,1)\) ist, k&#246;nnen wir nun die
+                Verteilungsfunktion \(\Phi\) der Standardnormalverteilung auf die Terme \(P(\frac{X}{2}\leq -\frac{f^{-1}(-\frac{t}{c})}{2})\) und \(P(\frac{X}{2}\leq \frac{-f^{-1}(-\frac{t}{c})}{2})\) anwenden. Wenden Sie die Verteilungsfunktion \(\Phi\) auf die
+                letzte Gleichung an und berechnen Sie so die gesuchte L&#246;sung. Achtung: Die Funktion \(f^{-1}\) ist hier die Exponentialfunktion, wir verwenden also den nat&#252;rlichen Logarithmus. -->
+        Try to solve the task again with these considerations.
+    </div>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtZwischen1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansZwischen1</sans>
+                <tans>lsgZwischen1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtZwischen1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+    <p>
+        Klicken Sie zum fortfahren auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('zwischen1');show('aufgabe');hide('prtA-1');show('prtA-2');" type="button">
+            Weiter
+        </button>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+    <p>
+        To proceed, click on the following button:
+        <button class="buttonweiter" onclick="hide('zwischen1');show('aufgabe');hide('prtA-1');show('prtA-2');" type="button">
+            Next
+        </button>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtZwischen1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p dir="ltr" style="text-align: left;">
+        &#220;berpr&#252;fen Sie noch einmal, welche der drei Auswahlm&#246;glichkeiten A, B und C durch Umformungen erreicht werden kann.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p dir="ltr" style="text-align: left;">
+        Check again which of the three selection options A, B and C can be achieved by forming.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtZwischen2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ansZwischen2)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtZwischen2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtZwischen2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr" style="text-align: left;">
+        Ihr Ergebnis muss zwischen 0 und 1 liegen. Bitte korrigieren Sie Ihre Eingabe.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr" style="text-align: left;">
+        Your result must be between 0 and 1. Please correct your input.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansZwischen2</sans>
+                <tans>lsg1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtZwischen2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+    <p dir="ltr" style="text-align: left;">
+        Die korrekte Verteilungsfunktion zur Berechnung lautet \(2-2\Phi(\frac{f^{-1}(-t/c)}{2})\), was f&#252;r \(c=1\), \(t=1\) das Ergebnis \(0.85\) liefert, wenn man auf 2 Nachkommastellen rundet.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+    <p dir="ltr" style="text-align: left;">
+        The correct distribution function for calculation is \(2-2\Phi(\frac{f^{-1}(-t/c)}{2})\)what \(c=1\), \(t=1\) The result \(0.85\) if you turn to 2 decimal places.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtZwischen2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p dir="ltr" style="text-align: left;">
+        Tipp: Es gilt \(P(\frac{X}{2}\leq \frac{f^{-1}(-t/c)}{2})=\Phi(\frac{f^{-1}(-t/c)}{2})\). Wenden Sie diese Identit&#228;t f&#252;r die korrekten Werte von \(t\) und \(c\) auf die letzte Gleichung an.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p dir="ltr" style="text-align: left;">
+        Tip: It applies \(P(\frac{X}{2}\leq \frac{f^{-1}(-t/c)}{2})=\Phi(\frac{f^{-1}(-t/c)}{2})\). Apply this identity for the correct values of \(t\) and \(c\) to the last equation.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

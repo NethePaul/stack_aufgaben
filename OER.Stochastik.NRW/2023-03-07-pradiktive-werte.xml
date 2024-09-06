@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>2023-03-07 Pr&#228;diktive Werte</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <div id="oer-aufgabe-29-info">
+        <details>
+            <summary>
+                Inhalt und Umfang dieser Aufgabe
+            </summary>
+            <p>
+                In dieser Aufgabe lernen Sie, pr&#228;diktive Werte zu berechnen. Sie besteht aus den folgenden drei Teilaufgaben.
+            </p>
+            <ul>
+                <li>
+                    In
+                    <b>
+                        (a)
+                    </b>
+                    berechnen Sie eine Falsch-Positiv-Rate oder eine Falsch-Negativ-Rate.
+                </li>
+                <li>
+                    In
+                    <b>
+                        (b)
+                    </b>
+                    und
+                    <b>
+                        (c)
+                    </b>
+                    berechnen Sie den positiven pr&#228;diktiven Wert, die Falscherkennungsrate, die Falschauslassungsrate oder den negativen pr&#228;diktiven Wert.
+                </li>
+            </ul>
+        </details>
+        <hr/>
+    </div>
+    <div id="oer-aufgabe-29">
+        <p>
+            Ein Testverfahren habe die Sensitivit&#228;t \(p_{\text{se}}={@dp(sen)@}\) und die Spezifit&#228;t \(p_{\text{sp}}={@dp(spe)@}\).
+        </p>
+        <hr/>
+    </div>
+    <div id="oer-aufgabe-29a">
+        <p>
+            <b>
+                (a)
+            </b>
+            Berechnen Sie die {@textA[2]@}.
+        </p>
+        <p>
+            Die {@textA[2]@} betr&#228;gt [[input:ansA]]. [[validation:ansA]] [[feedback:prtA]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-29b" style="display:none;">
+        <p>
+            <b>
+                (b)
+            </b>
+            Berechnen Sie bei einer Pr&#228;valenz von \(q={@dp(pre)@}\) {@textB[2]@}.
+        </p>
+        <p>
+            {@textB[5]@} betr&#228;gt [[input:ansB]].
+            <i>
+                Geben Sie den exakten Wert als Formel ein oder runden Sie das Ergebnis auf mindestens drei Nachkommastellen.
+            </i>
+            [[validation:ansB]] [[feedback:prtB]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-29c" style="display:none;">
+        <p>
+            <b>
+                (c)
+            </b>
+            Berechnen Sie bei einer Pr&#228;valenz von \(q={@dp(pre)@}\) {@textC[2]@}.
+        </p>
+        <p>
+            {@textC[5]@} betr&#228;gt [[input:ansC]].
+            <i>
+                Geben Sie den exakten Wert als Formel ein oder runden Sie das Ergebnis auf mindestens drei Nachkommastellen.
+            </i>
+            [[validation:ansC]] [[feedback:prtC]]
+        </p>
+    </div>
+    <style>
+        .buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+    </style>
+    <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <div id="oer-aufgabe-29-info">
+        <details>
+            <summary>
+                Content and scope of this task
+            </summary>
+            <p>
+                In this task you will learn to calculate predictive values. It consists of the following three subtasks.
+            </p>
+            <ul>
+                <li>
+                    In
+                    <b>
+                        (a)
+                    </b>
+                    calculate a false positive rate or a false negative rate.
+                </li>
+                <li>
+                    In
+                    <b>
+                        (b)
+                    </b>
+                    and
+                    <b>
+                        (c)
+                    </b>
+                    calculate the positive predictive value, the false recognition rate, the false release rate or the negative predictive value.
+                </li>
+            </ul>
+        </details>
+        <hr/>
+    </div>
+    <div id="oer-aufgabe-29">
+        <p>
+            A test procedure has sensitivity \(p_{\text{se}}={@dp(sen)@}\) and the specificity \(p_{\text{sp}}={@dp(spe)@}\).
+        </p>
+        <hr/>
+    </div>
+    <div id="oer-aufgabe-29a">
+        <p>
+            <b>
+                (a)
+            </b>
+            Calculate the {@textA[2]@}.
+        </p>
+        <p>
+            The {@textA[2]@} is [[input:ansA]]. [[validation:ansA]] [[feedback:prtA]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-29b" style="display:none;">
+        <p>
+            <b>
+                (b)
+            </b>
+            Calculate at a prevalence of \(q={@dp(pre)@}\) {@textB[2]@}.
+        </p>
+        <p>
+            {@textB[5]@} is [[input:ansB]].
+            <i>
+                Enter the exact value as a formula or round the result to at least three decimal places.
+            </i>
+            [[validation:ansB]] [[feedback:prtB]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-29c" style="display:none;">
+        <p>
+            <b>
+                (c)
+            </b>
+            Calculate at a prevalence of \(q={@dp(pre)@}\) {@textC[2]@}.
+        </p>
+        <p>
+            {@textC[5]@} is [[input:ansC]].
+            <i>
+                Enter the exact value as a formula or round the result to at least three decimal places.
+            </i>
+            [[validation:ansC]] [[feedback:prtC]]
+        </p>
+    </div>
+    <style>
+        .buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+    </style>
+    <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+    </script>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>3.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+Pr&#228;diktive Werte
+
+wurde entwickelt von
+  
+Christian M&#252;ller <c.mueller(at)hhu.de>
+
+nach einer Idee von
+
+Axel B&#252;cher <axel.buecher(at)hhu.de>
+Peter Kern <kern(at)hhu.de>
+
+an der Heinrich-Heine-Universit&#228;t D&#252;sseldorf.
+
+Dieses Werk ist lizenziert unter einer Creative Commons Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie https://creativecommons.org/licenses/by-sa/4.0/.
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+
+Technische Informationen:
+
+Diese Aufgabe bindet das Skript 'stackselbstlern.js' von Michael Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+/* &#252;berpr&#252;fe, ob ans als Wahrscheinlichkeit interpretiert werden kann */
+probabilityp(ans) := is(numberp(float(ans)) and ans >= 0 and ans <= 1)
+/* runde x auf 3 Nachkommastellen */
+dp(x) := decimalplaces(x, 3)
+/* stelle x in wissenschaftlicher Notation dar */
+SCI(x) := scientific_notation(x, 2)
+/* Rundungsgenauigkeit bei numerischen Antworttests */
+epsilon: 0.001
+
+/* Sensitivit&#228;t */
+sen: dp(rand_with_step(0.50, 0.99, 0.01))
+/* Spezifit&#228;t */
+spe: dp(rand_with_step(0.50, 0.99, 0.01))
+/* Pr&#228;valenz */
+pre: dp(rand_with_step(0.05, 0.95, 0.05))
+/* Falsch-Positiv-Rate */
+FPR: dp(1 - spe)
+/* Falsch-Negativ-Rate */
+FNR: dp(1 - sen)
+/* positiver pr&#228;diktiver Wert */
+PPV: sen * pre / (sen * pre + (1 - spe) * (1 - pre))
+/* Falscherkennungsrate */
+FDR: (1 - spe) * (1 - pre) / (sen * pre + (1 - spe) * (1 - pre))
+/* Falschauslassungsrate */
+FOR: (1 - sen) * pre / ((1 - sen) * pre + spe * (1 - pre))
+/* negativer pr&#228;diktiver Wert */
+NPV: spe * (1 - pre) / ((1 - sen) * pre + spe * (1 - pre))
+
+/* Formulierung der Aufgabenstellungen */
+FPR_list: [1, "Falsch-Positiv-Rate", FPR]
+FNR_list: [2, "Falsch-Negativ-Rate", FNR]
+PPV_list: [1, "den positiv pr&#228;diktiven Wert", PPV, "Er", "Der positiv pr&#228;diktive Wert"]
+FDR_list: [2, "die Falscherkennungsrate", FDR, "Sie", "Die Falscherkennungsrate"]
+FOR_list: [3, "die Falschauslassungsrate", FOR, "Sie", "Die Falschauslassungsrate"]
+NPV_list: [4, "den negativ pr&#228;diktiven Wert", NPV, "Er", "Der negativ pr&#228;diktive Wert"]
+
+/* Auswahl der Aufgabenstellungen */
+textA: rand([FPR_list, FNR_list])
+textB: rand([PPV_list, FDR_list, FOR_list, NPV_list])
+textC: rand(delete(textB, [PPV_list, FDR_list, FOR_list, NPV_list]))
+
+/* L&#246;sungen */
+TansA: textA[3]
+TansB: textB[3]
+TansC: textC[3]]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\(p_{\text{se}}={@sen@}\), \(p_{\text{sp}}={@spe@}\), \(q={@pre@}\), A={@textA[1]@}, B={@textB[1]@}, C={@textC[1]@}</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ansA</name>
+            <type>numerical</type>
+            <tans>TansA</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB</name>
+            <type>numerical</type>
+            <tans>TansB</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC</name>
+            <type>numerical</type>
+            <tans>TansC</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prtA</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text><![CDATA[setA: set(dp(FPR), dp(FNR))
+
+textA1: if textA[1] = 1 then ["Spezifit&#228;t", "sp"] else ["Sensitivit&#228;t", "se"]
+
+textA2: if dp(ansA) = dp(FPR) then "Falsch-Positiv-Rate"
+elseif dp(ansA) = dp(FNR) then "Falsch-Negativ-Rate"]]></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ansA)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtA-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis liegt nicht im Intervall \([0,1]\) und kann daher nicht als Wahrscheinlichkeit interpretiert werden.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result is not in interval \([0,1]\) and therefore cannot be interpreted as probability.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA</sans>
+                <tans>TansA</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben die {@textA[2]@} richtig berechnet. Sie ist die Gegenwahrscheinlichkeit der {@textA1[1]@} und betr&#228;gt hier somit \(1-p_{\text{@textA1[2]@}}={@dp(textA[3])@}\).
+    </p>
+    <hr/>
+    <p>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-29a');
+show('oer-aufgabe-29b');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have {@textA[2]@} correctly calculated. It is the counter probability of {@textA1[1]@} and is thus \(1-p_{\text{@textA1[2]@}}={@dp(textA[3])@}\).
+    </p>
+    <hr/>
+    <p>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-29a');
+show('oer-aufgabe-29b');
+" type="button">
+            Next
+        </button>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtA-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(dp(ansA), setA)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben vermutlich die {@textA2@} berechnet. Erinnern Sie sich daran, dass die {@textA[2]@} die Gegenwahrscheinlichkeit der {@textA1[1]@} ist.
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You probably have {@textA2@} calculated. Remember that the {@textA[2]@} the counter probability of {@textA1[1]@} is.
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben die {@textA[2]@} falsch berechnet. Erinnern Sie sich daran, dass die {@textA[2]@} die Gegenwahrscheinlichkeit der {@textA1[1]@} ist.
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have {@textA[2]@} miscalculated. Remember that the {@textA[2]@} the counter probability of {@textA1[1]@} is.
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text><![CDATA[setB: set(dp(PPV), dp(FDR), dp(FOR), dp(NPV))
+
+textB1: if dp(ansB) = dp(PPV) then ["den positiv pr&#228;diktiven Wert", "Er"]
+elseif dp(ansB) = dp(FDR) then ["die Falscherkennungsrate", "Sie"]
+elseif dp(ansB) = dp(FOR) then ["die Falschauslassungsrate", "Sie"]
+elseif dp(ansB) = dp(NPV) then ["den negativ pr&#228;diktiven Wert", "Er"]
+
+formulaA2: if textB[1] = 1
+then "&#92dfrac{p_{&#92text{se}}q}{p_{&#92text{se}}q+(1-p_{&#92text{sp}})(1-q)}"
+elseif textB[1] = 2
+then "&#92dfrac{(1-p_{&#92text{sp}})(1-q)}{p_{&#92text{se}}q+(1-p_{&#92text{sp}})(1-q)}"
+elseif textB[1] = 3
+then "&#92dfrac{(1-p_{&#92text{se}})q}{(1-p_{&#92text{se}})q+p_{&#92text{sp}}(1-q)}"
+elseif textB[1] = 4
+then "&#92dfrac{p_{&#92text{sp}}(1-q)}{(1-p_{&#92text{se}})q+p_{&#92text{sp}}(1-q)}"]]></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ansB)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtB-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis liegt nicht im Intervall \([0,1]\) und kann daher nicht als Wahrscheinlichkeit interpretiert werden.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result is not in interval \([0,1]\) and therefore cannot be interpreted as probability.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansB</sans>
+                <tans>TansB</tans>
+                <testoptions>epsilon</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben {@textB[2]@} richtig berechnet. {@textB[4]@} berechnet sich durch die Formel \[{@formulaA2@}\approx{@dp(textB[3])@}.\]
+    </p>
+    <hr/>
+    <p>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-29b');
+show('oer-aufgabe-29c');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have {@textB[2]@} correctly calculated. {@textB[4]@} is calculated by the formula \[{@formulaA2@}\approx{@dp(textB[3])@}.\]
+    </p>
+    <hr/>
+    <p>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-29b');
+show('oer-aufgabe-29c');
+" type="button">
+            Next
+        </button>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtB-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(dp(ansB),setB)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben vermutlich {@textB1[1]@} berechnet. Schlagen Sie noch einmal die Formel f&#252;r {@textB[2]@} nach oder leiten Sie sich diese mithilfe des Satzes von Bayes her.
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You probably have {@textB1[1]@} calculated. Hit the formula for {@textB[2]@} or redirect them using the phrase of Bayes.
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Schlagen Sie noch einmal die Formel f&#252;r {@textB[2]@} nach oder leiten Sie sich diese mithilfe des Satzes von Bayes her.
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Hit the formula for {@textB[2]@} or redirect them using the phrase of Bayes.
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtC</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text><![CDATA[setC: set(dp(PPV), dp(FDR), dp(FOR), dp(NPV))
+
+textC1: if dp(ansC) = dp(PPV) then ["den positiv pr&#228;diktiven Wert", "Er"]
+elseif dp(ansC) = dp(FDR) then ["die Falscherkennungsrate", "Sie"]
+elseif dp(ansC) = dp(FOR) then ["die Falschauslassungsrate", "Sie"]
+elseif dp(ansC) = dp(NPV) then ["den negativ pr&#228;diktiven Wert", "Er"]
+
+formulaA3: if textC[1] = 1
+then "&#92dfrac{p_{&#92text{se}}q}{p_{&#92text{se}}q+(1-p_{&#92text{sp}})(1-q)}"
+elseif textC[1] = 2
+then "&#92dfrac{(1-p_{&#92text{sp}})(1-q)}{p_{&#92text{se}}q+(1-p_{&#92text{sp}})(1-q)}"
+elseif textC[1] = 3
+then "&#92dfrac{(1-p_{&#92text{se}})q}{(1-p_{&#92text{se}})q+p_{&#92text{sp}}(1-q)}"
+elseif textC[1] = 4
+then "&#92dfrac{p_{&#92text{sp}}(1-q)}{(1-p_{&#92text{se}})q+p_{&#92text{sp}}(1-q)}"]]></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ansB)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtC-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis liegt nicht im Intervall \([0,1]\) und kann daher nicht als Wahrscheinlichkeit interpretiert werden.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result is not in interval \([0,1]\) and therefore cannot be interpreted as probability.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC</sans>
+                <tans>TansC</tans>
+                <testoptions>epsilon</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben {@textC[2]@} richtig berechnet. {@textC[4]@} berechnet sich durch die Formel \[{@formulaA3@}\approx{@dp(textC[3])@}.\]
+    </p>
+    <hr/>
+    <p>
+        Sie haben die Aufgabe erfolgreich gel&#246;st! Jetzt sollten Sie pr&#228;diktive Werte sicher berechnen k&#246;nnen.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have {@textC[2]@} correctly calculated. {@textC[4]@} is calculated by the formula \[{@formulaA3@}\approx{@dp(textC[3])@}.\]
+    </p>
+    <hr/>
+    <p>
+        You have successfully solved the task! Now you should be able to calculate predictive values safely.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtC-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(dp(ansC),setC)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben vermutlich {@textC1[1]@} berechnet. Schlagen Sie noch einmal die Formel f&#252;r {@textC[2]@} nach oder leiten Sie sich diese mithilfe des Satzes von Bayes her.
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You probably have {@textC1[1]@} calculated. Hit the formula for {@textC[2]@} or redirect them using the phrase of Bayes.
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Schlagen Sie noch einmal die Formel f&#252;r {@textC[2]@} nach oder leiten Sie sich diese mithilfe des Satzes von Bayes her.
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Hit the formula for {@textC[2]@} or redirect them using the phrase of Bayes.
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

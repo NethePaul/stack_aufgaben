@@ -1,0 +1,1619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>M&#252;sliriegel zum Wandern (mittleres Gewicht und Gesamtgewicht)</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <style>
+        button.top-next,
+button.next {
+                border: 1px solid black;
+                background-color: #A9F5BC;
+}
+
+
+
+
+button.top-next:hover,
+button.next:hover {
+                background-color: #E0F8E6;
+}
+
+
+
+
+button.top,
+button.prev {
+                border: 1px solid black;
+                background-color: #DCB25E;
+}
+button.top:hover,
+button.prev:hover {
+                background-color: #E7D2A7;
+}
+
+
+
+
+/* Style f&#252;r Details */
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+    </style>
+    <details>
+        <summary>
+            Inhalt und Umfang dieser Aufgabe
+        </summary>
+        <p>
+            In dieser Aufgabe lernen Sie, Rechenregeln f&#252;r den Erwartungswert und die Varianz. Sie besteht aus den folgenden zwei
+Teilaufgaben .
+        </p>
+        <ul>
+            <li>
+                In
+                <b>
+                    (a)
+                </b>
+                Berechnen von Erwartungswert und Varianz der Summe von unabh&#228;ngigen Zufallsvariablen.
+            </li>
+            <li>
+                In
+                <b>
+                    (b)
+                </b>
+                Berechnen von Erwartungswert und Varianz des arithmetischen Mittels von unabh&#228;ngigen Zufallsvariablen.
+            </li>
+        </ul>
+    </details>
+    <div class="question-view">
+        <p>
+            Das Gewicht eines bei Wanderern beliebten M&#252;sliriegels ist
+normalverteilt mit Erwartungswert {# mean #}&#8201;g und Varianz {#
+std^2 #}&#8201;g
+            <sup>
+                2
+            </sup>
+            . Die M&#252;sliriegel werden im Supermarkt in {#nn#}er Packungen
+        verkauft. Die Gewichte der Riegel innerhalb der Packungen sind unabh&#228;ngig von einander.
+        </p>
+        <div class="question-view">
+            <p>
+                <b>
+                    (a)
+                </b>
+                Wir wollen das
+                <strong>
+                    Gesamtgewichts
+                </strong>
+                einer {#nn#}er Packung betrachten.
+            </p>
+            <ol>
+                <li>
+                    <p>
+                        Der Erwartungswert
+        des Gesamtgewichts einer {#nn#}er Packung betr&#228;gt
+        [[input:ans3]]g.
+                    </p>
+                    [[validation:ans3]]
+        [[feedback:prt3]]
+                </li>
+                <li>
+                    <p>
+                        Die Varianz
+                des Gesamtgewichts einer {#nn#}er Packung betr&#228;gt [[input:ans4]]g
+                        <sup>
+                            2
+                        </sup>
+                        .
+                    </p>
+                    [[validation:ans4]]
+        [[feedback:prt4]]
+                </li>
+            </ol>
+            [[feedback:sum_complete]]
+        </div>
+        <div class="question-view">
+            <p>
+                <b>
+                    (b)
+                </b>
+                Wir wollen nun das
+                <strong>
+                    arithmetische Mittel
+                </strong>
+                der Gewichte in einer {#nn#}er Packung M&#252;sliriegel betrachten.
+            </p>
+            <ol>
+                <li>
+                    <p>
+                        Der Erwartungswert des arithmetischen Mittels einer {#nn#}er Packung betr&#228;gt [[input:mean_exp]]g.
+                    </p>
+                    [[validation:mean_exp]]
+[[feedback:mean_exp]]
+                </li>
+                <li>
+                    <p>
+                        Die Varianz des arithmetischen Mittels einer {#nn#}er Packung betr&#228;gt [[input:mean_var]]g
+                        <sup>
+                            2
+                        </sup>
+                        .
+                    </p>
+                    [[validation:mean_var]]
+[[feedback:mean_var]]
+                </li>
+            </ol>
+            [[feedback:mean_complete]]
+        </div>
+        <script>
+            /*
+    * This program is free software: you can redistribute it and/or
+    * modify it under the terms of the GNU General Public License as
+    * published by the Free Software Foundation, either version 3 of the
+    * License, or (at your option) any later version.
+    *
+    * This program is distributed in the hope that it will be useful, but
+    * WITHOUT ANY WARRANTY; without even the implied warranty of
+    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    * General Public License for more details.
+    *
+    * You should have received a copy of the GNU General Public License
+    * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    *
+    * Copyright (C) 2021 by Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>
+    * SPDX-License-Identifier: GPL-3.0-or-later
+    *
+    */
+
+
+
+
+/* @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later */
+
+
+
+
+(function() {
+/* Make sure to create QController instances only once even if the
+            script is loaded multiple times.  This is so that the script can
+            be included in more than one STACK question on the page and still
+            function properly. */
+if (window.QController === undefined) {
+        window.QController = QController;
+        document.addEventListener("DOMContentLoaded", event => {
+                const responseform = document.getElementById("responseform");
+                if (!responseform) {
+                        throw Error("Element with id responseform not found.");
+                }
+
+    
+    
+    
+    responseform.querySelectorAll(".stack.que").forEach(stackQue => {
+                        const rootElement = stackQue.querySelector(".question-view");
+
+      
+      
+      
+      if (!rootElement) {
+                                console.log("QController Warning: no elements with class question-view inside " + stackQue.id);
+                                return;
+                        }
+
+      
+      
+      
+      const controller = new QController(rootElement, stackQue.id);
+                        controller.installHandlers();
+                        controller.loadState();
+                        controller.update();
+                });
+        });
+}
+
+
+
+
+/* This class handles the navigation of a single STACK question */
+function QController(rootElement, questionId) {
+        this.rootElement = rootElement;
+        this.id = questionId;
+        this.views = rootElement.querySelectorAll(".question-view");
+        this.currentView = Array.prototype.findIndex.call(this.views, isLeaf);
+}
+
+
+
+
+/* Update view according to current controller state */
+QController.prototype.update = function() {
+        this.views.forEach(hide);
+
+  
+  
+  
+  const current = this.views[this.currentView];
+        if (isLeaf(current)) {
+                showView(current);
+        } else {
+                showFirstView(current);
+        }
+};
+
+
+
+
+/* Install event handlers for all buttons under root element */
+QController.prototype.installHandlers = function() {
+        const controller = this;
+        this.rootElement.querySelectorAll("button").forEach(button => {
+                button.addEventListener("click", ev => {
+                        const view = button.closest(".question-view");
+
+      
+      
+      
+      if (!view) {
+                                console.log("qcontroller: <button> not inside question view");
+                                return;
+                        }
+
+      
+      
+      
+      const classList = button.classList;
+                        let forward = null;
+
+      
+      
+      
+      if (classList.contains("next")) {
+                                forward = view.nextElementSibling;
+                        } else if (classList.contains("top-next")) {
+                                const parent = view.parentNode;
+                                if (parent) {
+                                        forward = parent.nextElementSibling;
+                                } else {
+                                        forward = null;
+                                }
+                        } else if (classList.contains("top")) {
+                                forward = containingView(view);
+                        } else if (classList.contains("prev")) {
+                                forward = view.previousElementSibling;
+                        }
+
+      
+      
+      
+      if (forward && forward.classList.contains("question-view")) {
+                                controller.currentView = Array.prototype.findIndex.call(
+                                        controller.views, x => x === forward);
+                                controller.saveState();
+                                controller.update();
+                        }
+                });
+        });
+};
+
+
+
+
+/* Save controller state to current session */
+QController.prototype.saveState = function() {
+        const key = this.id + "-controller-state";
+        window.sessionStorage.setItem(key, this.currentView);
+};
+
+
+
+
+/* Load controller state from current session */
+QController.prototype.loadState = function() {
+        const key = this.id + "-controller-state";
+        const state = window.sessionStorage.getItem(key);
+
+  
+  
+  
+  if (state) {
+                this.currentView = Number.parseInt(state);
+        }
+};
+
+
+
+
+/* Show the first leaf question view */
+function showFirstView(questionView) {
+        let view = questionView;
+
+  
+  
+  
+  while (view && !isLeaf(view)) {
+                view = view.querySelector(".question-view");
+        }
+
+  
+  
+  
+  showView(view);
+}
+
+
+
+
+function showView(view) {
+        /* show all containing views */
+        while (view) {
+                show(view);
+                view = containingView(view);
+        }
+}
+
+
+
+
+/* Return the view containing VIEW */
+function containingView(view) {
+        let parent = view.parentNode;
+
+  
+  
+  
+  if (parent) {
+                parent = parent.closest(".question-view");
+        }
+
+  
+  
+  
+  return parent;
+}
+
+
+
+
+function show(view) {
+        view.style.display = "block";
+}
+
+
+
+
+function isLeaf(view) {
+        return view.querySelector(".question-view") == null;
+}
+
+
+
+
+function isVisible(view) {
+        return view.style.display != "none";
+}
+
+
+
+
+function hide(view) {
+        view.style.display = "none";
+}
+
+
+
+
+})();
+/* @license-end */
+        </script>
+    </div>
+</span>
+<span class="multilang" lang="en">
+    <style>
+        button.top-next,
+button.next {
+                border: 1px solid black;
+                background-color: #A9F5BC;
+}
+
+
+
+
+button.top-next:hover,
+button.next:hover {
+                background-color: #E0F8E6;
+}
+
+
+
+
+button.top,
+button.prev {
+                border: 1px solid black;
+                background-color: #DCB25E;
+}
+button.top:hover,
+button.prev:hover {
+                background-color: #E7D2A7;
+}
+
+
+
+
+/* Style f&#252;r Details */
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+    </style>
+    <details>
+        <summary>
+            Content and scope of this task
+        </summary>
+        <p>
+            In this task, you will learn calculation rules for the expected value and the variance. It consists of the following two
+Subtasks .
+        </p>
+        <ul>
+            <li>
+                In
+                <b>
+                    (a)
+                </b>
+                calculating expectation value and variance of the sum of independent random variables.
+            </li>
+            <li>
+                In
+                <b>
+                    (b)
+                </b>
+                calculating expectation value and variance of the arithmetic mean from independent random variables.
+            </li>
+        </ul>
+    </details>
+    <div class="question-view">
+        <p>
+            The weight of a muesli bar popular with hikers is
+normal distributed with expected value {# mean #}g and variance {#
+std^2 #}g
+            <sup>
+                2
+            </sup>
+            . The musli bars are in the supermarket {#nn#}he packs
+sold. The weights of the bolts within the packs are independent of one another.
+        </p>
+        <div class="question-view">
+            <p>
+                <b>
+                    (a)
+                </b>
+                We want
+                <strong>
+                    Total weight
+                </strong>
+                a {#nn#}see the pack.
+            </p>
+            <ol>
+                <li>
+                    <p>
+                        The expected value
+the total weight of {#nn#}it is packing
+    [[input:ans3]]g.
+                    </p>
+                    [[validation:ans3]][[feedback:prt3]]
+                </li>
+                <li>
+                    <p>
+                        The variance
+the total weight of {#nn#}it is packing [[input:ans4]]g
+                        <sup>
+                            2
+                        </sup>
+                        .
+                    </p>
+                    [[validation:ans4]][[feedback:prt4]]
+                </li>
+            </ol>
+            [[feedback:sum_complete]]
+        </div>
+        <div class="question-view">
+            <p>
+                <b>
+                    (b)
+                </b>
+                We want to
+                <strong>
+                    arithmetic means
+                </strong>
+                the weights in one {#nn#}he consider pack of muesli bars.
+            </p>
+            <ol>
+                <li>
+                    <p>
+                        The expected value of the arithmetic mean of a {#nn#}it is packing [[input:mean_exp]]g.
+                    </p>
+                    [[validation:mean_exp]][[feedback:mean_exp]]
+                </li>
+                <li>
+                    <p>
+                        The variance of the arithmetic means of {#nn#}it is packing [[input:mean_var]]g
+                        <sup>
+                            2
+                        </sup>
+                        .
+                    </p>
+                    [[validation:mean_var]][[feedback:mean_var]]
+                </li>
+            </ol>
+            [[feedback:mean_complete]]
+        </div>
+        <script>
+            /*
+    * This program is free software: you can redistribute it and/or
+    * modify it under the terms of the GNU General Public License as
+    * published by the Free Software Foundation, either version 3 of the
+    * License, or (at your option) any later version.
+    *
+    * This program is distributed in the hope that it will be useful, but
+    * WITHOUT ANY WARRANTY; without even the implied warranty of
+    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    * General Public License for more details.
+    *
+    * You should have received a copy of the GNU General Public License
+    * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*
+* Copyright (C) 2021 by Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>* SPDX-License Identifier: GPL-3.0-or-later
+*
+*/
+
+
+
+
+/* @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-orLater */
+
+
+
+
+(function() {
+/* Make sure to create QController instances only once even if the
+            script is loaded multiple times.  This is so that the script can
+            be included in more than one STACK question on the page and still
+            function properly. */
+if (window.QController === undefined) {
+        window.QController = QController;
+        document.addEventListener("DOMContentLoaded", event => {
+                const responseform = document.getElementById("responseform");
+                if (!responseform) {
+                        throw Error("Element with id responseform not found.");
+                }
+
+    
+    
+    
+    responseform.querySelectorAll(".stack.que").forEach(stackQue => {
+                        const rootElement = stackQue.querySelector(".question-view");
+
+      
+      
+      
+      if (!rootElement) {
+                                console.log("QController Warning: no elements with class question-view inside " + stackQue.id);
+                                return;
+                        }
+
+      
+      
+      
+      const controller = new QController(rootElement, stackQue.id);
+                        controller.installHandlers();
+                        controller.loadState();
+                        controller.update();
+                });
+        });
+}
+
+
+
+
+/* This class handles the navigation of a single STACK question */
+function QController(rootElement, questionId) {
+        this.rootElement = rootElement;
+        this.id = questionId;
+        this.views = rootElement.querySelectorAll(".question-view");
+        this.currentView = Array.prototype.findIndex.call(this.views, isLeaf);
+}
+
+
+
+
+/* Update view according to current controller state */
+QController.prototype.update = function() {
+        this.views.forEach(hide);
+
+  
+  
+  
+  const current = this.views[this.currentView];
+        if (isLeaf(current)) {
+                showView(current);
+        } else {
+                showFirstView(current);
+        }
+};
+
+
+
+
+/* Install event handlers for all buttons under root element */
+QController.prototype.installHandlers = function() {
+        const controller = this;
+        this.rootElement.querySelectorAll("button").forEach(button => {
+                button.addEventListener("click", ev => {
+                        const view = button.closest(".question-view");
+
+      
+      
+      
+      if (!view) {
+                                console.log("qcontroller: <button> not inside question view");
+                                return;
+                        }
+
+      
+      
+      
+      const classList = button.classList;
+                        let forward = null;
+
+      
+      
+      
+      if (classList.contains("next")) {
+                                forward = view.nextElementSibling;
+                        } else if (classList.contains("top-next")) {
+                                const parent = view.parentNode;
+                                if (parent) {
+                                        forward = parent.nextElementSibling;
+                                } else {
+                                        forward = null;
+                                }
+                        } else if (classList.contains("top")) {
+                                forward = containingView(view);
+                        } else if (classList.contains("prev")) {
+                                forward = view.previousElementSibling;
+                        }
+
+      
+      
+      
+      if (forward && forward.classList.contains("question-view")) {
+                                controller.currentView = Array.prototype.findIndex.call(
+                                        controller.views, x => x === forward);
+                                controller.saveState();
+                                controller.update();
+                        }
+                });
+        });
+};
+
+
+
+
+/* Save controller state to current session */
+QController.prototype.saveState = function() {
+        const key = this.id + "-controller-state";
+        window.sessionStorage.setItem(key, this.currentView);
+};
+
+
+
+
+/* Load controller state from current session */
+QController.prototype.loadState = function() {
+        const key = this.id + "-controller-state";
+        const state = window.sessionStorage.getItem(key);
+
+  
+  
+  
+  if (state) {
+                this.currentView = Number.parseInt(state);
+        }
+};
+
+
+
+
+/* Show the first leaf question view */
+function showFirstView(questionView) {
+        let view = questionView;
+
+  
+  
+  
+  while (view && !isLeaf(view)) {
+                view = view.querySelector(".question-view");
+        }
+
+  
+  
+  
+  showView(view);
+}
+
+
+
+
+function showView(view) {
+        /* show all containing views */
+        while (view) {
+                show(view);
+                view = containingView(view);
+        }
+}
+
+
+
+
+/* Return the view containing VIEW */
+function containingView(view) {
+        let parent = view.parentNode;
+
+  
+  
+  
+  if (parent) {
+                parent = parent.closest(".question-view");
+        }
+
+  
+  
+  
+  return parent;
+}
+
+
+
+
+function show(view) {
+        view.style.display = "block";
+}
+
+
+
+
+function isLeaf(view) {
+        return view.querySelector(".question-view") == null;
+}
+
+
+
+
+function isVisible(view) {
+        return view.style.display != "none";
+}
+
+
+
+
+function hide(view) {
+        view.style.display = "none";
+}
+
+
+
+
+}),
+/* @license-end */
+        </script>
+    </div>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>10.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  M&#252;sliriegel zum Wandern (mittleres Gewicht und Gesamtgewicht)
+
+  wurde entwickelt von
+
+    Daniel Mei&#223;ner <daniel.meissner-i4k(at)ruhr-uni-bochum.de>
+
+  nach einer Idee von
+
+    Herold Dehling <herold.dehling(at)ruhr-uni-bochum.de>
+
+  an der Ruhr-Universit&#228;t Bochum.
+
+  Dieses Werk ist lizenziert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+
+  Diese Aufgabe ist eine mehrteilige Aufgabe, deren einzelne
+  Aufgabenteile mithilfe von JavaScript nacheinander sichtbar
+  gemacht werden.
+*/
+nn: 4;
+mean: rand([42, 44, 46]);
+std: rand([2,3]);
+
+Tans3: nn*mean;
+Tans4: nn*std^2;]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>Erwartungswert: {# mean #}
+Varianz: {# std^2 #}
+Mindestgewicht: {# decimalplaces(min_weight, 1) #}
+Wahrscheinlichkeit: {# Tans1 #}</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Ihre Antwort ist nicht komplett falsch.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Your answer is not completely wrong.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed>i</variantsselectionseed>
+        <input>
+            <name>ans3</name>
+            <type>numerical</type>
+            <tans>Tans3</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>numerical</type>
+            <tans>Tans4</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>mean_exp</name>
+            <type>numerical</type>
+            <tans>mean</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>mean_var</name>
+            <type>numerical</type>
+            <tans>std^2 / nn</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>mean_complete</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>mean_exp</sans>
+                <tans>mean</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>mean_complete-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>mean_complete-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>mean_var</sans>
+                <tans>std^2 / nn</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>mean_complete-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Herzlichen Gl&#252;ckwunsch! Sie haben das Ende der Aufgabe erreicht.
+    </p>
+    <p>
+        Beachten Sie, dass die Varianz des
+        <em>
+            mittleren Gewichts
+        </em>
+        der Riegel in einer {#nn#}er Packung kleiner ist als die Varianz des Gewichts eines einzelnen Riegels.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Congratulations! They have reached the end of the task.
+    </p>
+    <p>
+        Note that the variance of the
+        <em>
+            Average weight
+        </em>
+        the bolt in one {#nn#}it pack is smaller than the variance of the weight of a single bolt.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>mean_complete-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>mean_exp</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>mean_exp</sans>
+                <tans>mean</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>mean_exp-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Wir bezeichnen das Gewicht des \(i\)-ten Riegels mit \(X_i\). Dann k&#246;nnen wir wieder die Linearit&#228;t des Erwartungswerts ausnutzen:
+\[
+\mathrm{E}\left(\frac{1}{{@nn@}}\sum_{i=1}^{{@nn@}} X_i \right) = \frac{1}{{@nn@}}\sum_{i=1}^{{@nn@}} \mathrm{E}(X_i) = {@nn@} \cdot \frac{1}{{@nn@}}\, \mathrm{E}(X_1),
+\]
+Das letzte Gleichheitszeichen ergibt sich, da alle Riegel die gleiche Verteilung haben.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        We call the weight of \(i\)-ten bolts with \(X_i\). Then we can use again the linearity of the expected value:
+\[
+\mathrm{E}\left(\frac{1}{{@nn@}}\sum_{i=1}^{{@nn@}} X_i \right) = \frac{1}{{@nn@}}\sum_{i=1}^{{@nn@}} \mathrm{E}(X_i) = {@nn@} \cdot \frac{1}{{@nn@}}\, \mathrm{E}(X_1),
+\]The last equality sign is obtained because all bars have the same distribution.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>mean_exp-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Versuchen Sie die Linearit&#228;t des Erwartungswerts zu benutzen:
+\[
+\mathrm{E}\left(\frac{1}{{@nn@}}\sum_{i=1}^{{@nn@}} X_i \right) = \frac{1}{{@nn@}} \sum_{i=1}^{{@nn@}} \mathrm{E}(X_i)
+\]
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Try to use the linearity of the expected value:
+\[
+\mathrm{E}\left(\frac{1}{{@nn@}}\sum_{i=1}^{{@nn@}} X_i \right) = \frac{1}{{@nn@}} \sum_{i=1}^{{@nn@}} \mathrm{E}(X_i)
+\]
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>mean_var</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>mean_var</sans>
+                <tans>std^2 / nn</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>mean_var-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Varianz einer Summe unabh&#228;ngiger Zufallsvariablen ist die Summe der Varianzen. Au&#223;erdem gilt \(\mathrm{Var}(a X) = a^2 \mathrm{Var}(X)\). In diesem Fall ergibt sich daher
+\[
+\mathrm{Var}\left(\frac{1}{{@nn@}}\sum_{i=1}^{{@nn@}} X_i \right) = \frac{1}{{@nn@}}\,\sum_{i=1}^{{@nn@}} \mathrm{Var}(X_i) = \frac{1}{{@nn@}} \, \mathrm{Var}(X_1),
+\]
+wenn wir das Gewicht des Riegels \(i\) mit \(X_i\) bezeichnen.  Das letzte Gleichheitszeichen ergibt sich, da alle Tafeln die gleiche Verteilung haben.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The variance of a sum of independent random variables is the sum of the variances. The following shall apply: \(\mathrm{Var}(a X) = a^2 \mathrm{Var}(X)\). In this case, therefore,
+\[
+\mathrm{Var}\left(\frac{1}{{@nn@}}\sum_{i=1}^{{@nn@}} X_i \right) = \frac{1}{{@nn@}}\,\sum_{i=1}^{{@nn@}} \mathrm{Var}(X_i) = \frac{1}{{@nn@}} \, \mathrm{Var}(X_1),
+\]if we have the weight of the bolt \(i\) with \(X_i\) the name. The last symbol of equality is given, since all the boards have the same distribution.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>mean_var-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Zur L&#246;sung dieser Aufgabe m&#252;ssen Sie zwei Eigenschaften der Varianz kombinieren.  Nutzen Sie zun&#228;chst, dass \(\mathrm{Var}(a X) = a^2 \mathrm{Var}(X)\). Dann versuchen Sie folgende Identit&#228;t zu benutzen:
+\[
+\mathrm{Var}\left(\sum_{i=1}^{{@nn@}} X_i \right) = \sum_{i=1}^{{@nn@}} \mathrm{Var}(X_i)
+\]
+&#220;berlegen Sie auch: Warum gilt die letzte Identit&#228;t?
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        To achieve this task, you must combine two properties of variance. First, use that \(\mathrm{Var}(a X) = a^2 \mathrm{Var}(X)\). Then try to use the following identity:
+\[
+\mathrm{Var}\left(\sum_{i=1}^{{@nn@}} X_i \right) = \sum_{i=1}^{{@nn@}} \mathrm{Var}(X_i)
+\]Also consider: Why is the last identity valid?
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans3</sans>
+                <tans>Tans3</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Der Erwartungswert einer Summe von Zufallsvariablen ist die Summe der Erwartungswerte.  In diesem Fall gilt daher
+\[
+\mathrm{E}\left(\sum_{i=1}^{{@nn@}} X_i \right) = \sum_{i=1}^{{@nn@}} \mathrm{E}(X_i) = {@nn@} \, \mathrm{E}(X_1) = {@ nn*mean @},
+\]
+wenn wir das Gewicht des \(i\)-ten Riegels mit \(X_i\) bezeichnen.  Das letzte Gleichheitszeichen ergibt sich, da alle Riegel die gleiche Verteilung haben.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The expected value of a sum of random variables is the sum of the expected values. In this case, therefore,
+\[
+\mathrm{E}\left(\sum_{i=1}^{{@nn@}} X_i \right) = \sum_{i=1}^{{@nn@}} \mathrm{E}(X_i) = {@nn@} \, \mathrm{E}(X_1) = {@ nn*mean @},
+\]if we have the weight of \(i\)-ten bolts with \(X_i\) the name. The last equality sign is obtained because all bars have the same distribution.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans3</sans>
+                <tans>mean</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Haben Sie m&#246;glicherweise &#8222;Gesamtgewicht&#8220; und &#8222;Durchschnittsgewicht&#8220; verwechselt? In diesem Aufgabenteil ist nach dem Erwartungswert des Gesamtgewichts gefragt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Have you possibly confused &#8220;total weight&#8221; and &#8220;average weight&#8221;? In this task, the expected value of the total weight is required.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Versuchen Sie folgende Identit&#228;t zu benutzen:
+\[
+\mathrm{E}\left(\sum_{i=1}^{{@nn@}} X_i \right) = \sum_{i=1}^{{@nn@}} \mathrm{E}(X_i)
+\]
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Try to use the following identity:
+\[
+\mathrm{E}\left(\sum_{i=1}^{{@nn@}} X_i \right) = \sum_{i=1}^{{@nn@}} \mathrm{E}(X_i)
+\]
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans4</sans>
+                <tans>Tans4</tans>
+                <testoptions>0.03</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Varianz einer Summe unabh&#228;ngiger Zufallsvariablen ist die Summe der Varianzen.  In diesem Fall gilt daher
+\[
+\mathrm{Var}\left(\sum_{i=1}^{{@nn@}} X_i \right) = \sum_{i=1}^{{@nn@}} \mathrm{Var}(X_i) = {@nn@} \, \mathrm{Var}(X_1) = {@ nn * std^2 @},
+\]
+wenn wir das Gewicht des Riegels \(i\) mit \(X_i\) bezeichnen.  Das
+letzte Gleichheitszeichen ergibt sich, da alle Riegel die gleiche
+Verteilung haben.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The variance of a sum of independent random variables is the sum of the variances. In this case, therefore,
+\[
+\mathrm{Var}\left(\sum_{i=1}^{{@nn@}} X_i \right) = \sum_{i=1}^{{@nn@}} \mathrm{Var}(X_i) = {@nn@} \, \mathrm{Var}(X_1) = {@ nn * std^2 @},
+\]if we have the weight of the bolt \(i\) with \(X_i\) the name. The
+last equality sign is obtained, since all the bars are the same
+distribution.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans4</sans>
+                <tans>sqrt(nn)*std</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Haben Sie vielleicht die Standardabweichung anstatt der Varianz ausgerechnet? Bitte &#252;berpr&#252;fen Sie ihr Ergebnis und versuchen Sie es noch einmal.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Did you calculate the standard deviation instead of the variance? Please check your result and try again.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Versuchen Sie folgende Identit&#228;t zu benutzen:
+\[
+\mathrm{Var}\left(\sum_{i=1}^{{@nn@}} X_i \right) = \sum_{i=1}^{{@nn@}} \mathrm{Var}(X_i)
+\]
+&#220;berlegen Sie auch: Unter welchen Bedingungen gilt diese Identit&#228;t?
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Try to use the following identity:
+\[
+\mathrm{Var}\left(\sum_{i=1}^{{@nn@}} X_i \right) = \sum_{i=1}^{{@nn@}} \mathrm{Var}(X_i)
+\]Also consider: Under what conditions does this identity apply?
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>sum_complete</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans3</sans>
+                <tans>Tans3</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>sum_complete-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>sum_complete-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans4</sans>
+                <tans>Tans4</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>sum_complete-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Klicken Sie auf
+        <button class="next" type="button">
+            Weiter
+        </button>
+        , um zum n&#228;chsten Aufgabenteil zu gelangen.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Click on
+        <button class="next" type="button">
+            Next
+        </button>
+        to get to the next task.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>sum_complete-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1035579669</deployedseed>
+        <deployedseed>1489871648</deployedseed>
+        <deployedseed>118429441</deployedseed>
+        <deployedseed>544202029</deployedseed>
+        <deployedseed>966521728</deployedseed>
+        <deployedseed>205833150</deployedseed>
+        <deployedseed>1140104951</deployedseed>
+        <deployedseed>177145653</deployedseed>
+        <deployedseed>968945518</deployedseed>
+        <deployedseed>872715898</deployedseed>
+        <deployedseed>743901615</deployedseed>
+        <deployedseed>577762856</deployedseed>
+        <deployedseed>200235602</deployedseed>
+        <deployedseed>245311224</deployedseed>
+        <deployedseed>115883786</deployedseed>
+        <deployedseed>430269634</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <description/>
+            <testinput>
+                <name>ans3</name>
+                <value>Tans3</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>Tans4</value>
+            </testinput>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt3-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt4-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <description/>
+            <testinput>
+                <name>ans3</name>
+                <value>Tans3+1</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>Tans4+1</value>
+            </testinput>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt3-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt4-1-F</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

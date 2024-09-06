@@ -1,0 +1,1967 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>2023-03-07 Unabh&#228;ngigkeit von diskreten Zufallsvariablen</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <div id="oer-aufgabe-14-info">
+        <details>
+            <summary>
+                Inhalt und Umfang dieser Aufgabe
+            </summary>
+            <p>
+                In dieser Aufgabe lernen Sie, die stochastische Unabh&#228;ngigkeit von zwei diskreten Zufallsvariablen \(X\) und \(Y\) nachzuweisen oder zu widerlegen. Sie besteht aus den folgenden drei Teilaufgaben.
+            </p>
+            <ul>
+                <li>
+                    In
+                    <b>
+                        (a)
+                    </b>
+                    berechnen Sie die Randverteilungen \(P_X\) und \(P_Y\).
+                </li>
+                <li>
+                    In
+                    <b>
+                        (b)
+                    </b>
+                    berechnen Sie die Verteilung des Produktma&#223;es \(P_X\otimes P_Y\).
+                </li>
+                <li>
+                    In
+                    <b>
+                        (c)
+                    </b>
+                    entscheiden Sie, ob \(X\) und \(Y\) stochastisch unabh&#228;ngig sind.
+                </li>
+            </ul>
+        </details>
+        <hr/>
+    </div>
+    <div id="oer-aufgabe-14">
+        <p>
+            Sei \(P\) das diskrete Wahrscheinlichkeitsma&#223; auf dem Grundraum \(\Omega=\{1,2,3\}^2\), dessen
+            <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "Wahrscheinlichkeitsfunktion"'>
+                Z&#228;hldichte
+            </span>
+            \((p_\omega)_{\omega\in\Omega}\) f&#252;r alle \(\omega=(\omega_1,\omega_2)\in\Omega\) in der folgenden Tabelle gegeben ist.
+        </p>
+        <p>
+            <table style="margin-left: auto; margin-right: auto; text-align: center;">
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(p_\omega\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(\omega_2=1\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(\omega_2=2\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(\omega_2=3\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(\omega_1=1\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrP[1,1]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrP[1,2]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrP[1,3]@}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(\omega_1=2\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrP[2,1]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrP[2,2]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrP[2,3]@}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(\omega_1=3\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrP[3,1]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrP[3,2]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrP[3,3]@}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        Au&#223;erdem seien \(X,Y:\Omega\longrightarrow\Omega'=\{1,2,3\}\) mit \(X(\omega)=\omega_1\) und \(Y(\omega)=\omega_2\) zwei Zufallsvariablen, die auf die erste bzw. zweite Komponente projizieren.
+        <hr/>
+    </div>
+    <div id="oer-aufgabe-14a">
+        <p>
+            <b>
+                (a)
+            </b>
+            Berechnen Sie die Randverteilungen \(P_X\) und \(P_Y\), d.h. berechnen Sie f&#252;r \(k\in\{1,2,3\}\) die Wahrscheinlichkeiten \(P(X=k)\) und \(P(Y=k)\).
+        </p>
+        <p>
+            <table style="margin-left: auto; margin-right: auto; text-align: center;">
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(k=1\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(k=2\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(k=3\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(P(X=k)\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX1]] [[validation:ansX1]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX2]] [[validation:ansX2]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX3]] [[validation:ansX3]]
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(P(Y=k)\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansY1]] [[validation:ansY1]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansY2]] [[validation:ansY2]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansY3]] [[validation:ansY3]]
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <p>
+            [[feedback:prt1]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-14b" style="display:none;">
+        <p>
+            <b>
+                (b)
+            </b>
+            Berechnen Sie die Verteilung des Produktma&#223;es \(P_X\otimes P_Y\), d.h. berechnen Sie f&#252;r \(k,l\in\{1,2,3\}\) die Wahrscheinlichkeiten \((P_X\otimes P_Y)(\{(k,l)\})=P(X=k)P(Y=l)\).
+        </p>
+        <p>
+            <table style="margin-left: auto; margin-right: auto; text-align: center;">
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(l=1\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(l=2\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(l=3\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(k=1\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX1Y1]] [[validation:ansX1Y1]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX1Y2]] [[validation:ansX1Y2]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX1Y3]] [[validation:ansX1Y3]]
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(k=2\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX2Y1]] [[validation:ansX2Y1]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX2Y2]] [[validation:ansX2Y2]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX2Y3]] [[validation:ansX2Y3]]
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(k=3\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX3Y1]] [[validation:ansX3Y1]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX3Y2]] [[validation:ansX3Y2]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX3Y3]] [[validation:ansX3Y3]]
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <p>
+            Zur Erinnerung: In (a) haben Sie die folgenden Randverteilungen von \(X\) und \(Y\) berechnet.
+            <table style="margin-left: auto; margin-right: auto; text-align: center;">
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(k=1\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(k=2\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(k=3\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(P(X=k)\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrX[1,1]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrX[1,2]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrX[1,3]@}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(P(Y=k)\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrY[1,1]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrY[1,2]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrY[1,3]@}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <p>
+            [[feedback:prt2]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-14c" style="display:none;">
+        <p>
+            <b>
+                (c)
+            </b>
+            Entscheiden Sie, ob die Zufallsvariablen \(X\) und \(Y\) \(P\)-stochastisch unabh&#228;ngig sind.
+        </p>
+        <p>
+            Zur Erinnerung: In (b) haben Sie die folgende Verteilung des Produktma&#223;es \(P_X\otimes P_Y\) berechnet.
+            <table style="margin-left: auto; margin-right: auto; text-align: center;">
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(l=1\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(l=2\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(l=3\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(k=1\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrXY[1,1]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrXY[1,2]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrXY[1,3]@}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(k=2\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrXY[2,1]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrXY[2,2]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrXY[2,3]@}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(k=3\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrXY[3,1]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrXY[3,2]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrXY[3,3]@}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <p>
+            \(X\) und \(Y\) sind [[input:ans3]]. [[validation:ans3]] [[feedback:prt3]]
+        </p>
+    </div>
+    <style>
+        .buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+    </style>
+    <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <div id="oer-aufgabe-14-info">
+        <details>
+            <summary>
+                Content and scope of this task
+            </summary>
+            <p>
+                In this task you will learn the stochastic independence of two discrete random variables \(X\) and \(Y\) to prove or refute. It consists of the following three subtasks.
+            </p>
+            <ul>
+                <li>
+                    In
+                    <b>
+                        (a)
+                    </b>
+                    calculate the edge distributions \(P_X\) and \(P_Y\).
+                </li>
+                <li>
+                    In
+                    <b>
+                        (b)
+                    </b>
+                    calculate the distribution of the product measure \(P_X\otimes P_Y\).
+                </li>
+                <li>
+                    In
+                    <b>
+                        (c)
+                    </b>
+                    decide whether \(X\) and \(Y\) are stochastic independent.
+                </li>
+            </ul>
+        </details>
+        <hr/>
+    </div>
+    <div id="oer-aufgabe-14">
+        <p>
+            Be careful \(P\) the discrete probability measure on the space \(\Omega=\{1,2,3\}^2\)the
+            <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "Wahrscheinlichkeitsfunktion"'>
+                Counting density
+            </span>
+            \((p_\omega)_{\omega\in\Omega}\) for all \(\omega=(\omega_1,\omega_2)\in\Omega\) in the following table.
+        </p>
+        <p>
+            <table style="margin-left: auto; margin-right: auto; text-align: center;">
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(p_\omega\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(\omega_2=1\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(\omega_2=2\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(\omega_2=3\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(\omega_1=1\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrP[1,1]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrP[1,2]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrP[1,3]@}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(\omega_1=2\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrP[2,1]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrP[2,2]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrP[2,3]@}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(\omega_1=3\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrP[3,1]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrP[3,2]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrP[3,3]@}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        In addition, \(X,Y:\Omega\longrightarrow\Omega'=\{1,2,3\}\) with \(X(\omega)=\omega_1\) and \(Y(\omega)=\omega_2\) two random variables which project onto the first or second component.
+        <hr/>
+    </div>
+    <div id="oer-aufgabe-14a">
+        <p>
+            <b>
+                (a)
+            </b>
+            Calculate the edge distributions \(P_X\) and \(P_Y\), i.e. calculate for \(k\in\{1,2,3\}\) the probabilities \(P(X=k)\) and \(P(Y=k)\).
+        </p>
+        <p>
+            <table style="margin-left: auto; margin-right: auto; text-align: center;">
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(k=1\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(k=2\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(k=3\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(P(X=k)\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX1]] [[validation:ansX1]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX2]] [[validation:ansX2]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX3]] [[validation:ansX3]]
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(P(Y=k)\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansY1]] [[validation:ansY1]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansY2]] [[validation:ansY2]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansY3]] [[validation:ansY3]]
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <p>
+            [[feedback:prt1]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-14b" style="display:none;">
+        <p>
+            <b>
+                (b)
+            </b>
+            Calculate the distribution of the product dimension \(P_X\otimes P_Y\), i.e. calculate for \(k,l\in\{1,2,3\}\) the probabilities \((P_X\otimes P_Y)(\{(k,l)\})=P(X=k)P(Y=l)\).
+        </p>
+        <p>
+            <table style="margin-left: auto; margin-right: auto; text-align: center;">
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(l=1\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(l=2\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(l=3\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(k=1\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX1Y1]] [[validation:ansX1Y1]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX1Y2]] [[validation:ansX1Y2]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX1Y3]] [[validation:ansX1Y3]]
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(k=2\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX2Y1]] [[validation:ansX2Y1]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX2Y2]] [[validation:ansX2Y2]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX2Y3]] [[validation:ansX2Y3]]
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(k=3\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX3Y1]] [[validation:ansX3Y1]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX3Y2]] [[validation:ansX3Y2]]
+                        </td>
+                        <td style="border: 1px solid black;">
+                            [[input:ansX3Y3]] [[validation:ansX3Y3]]
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <p>
+            To remember: In (a) you have the following marginal distributions of \(X\) and \(Y\) calculated.
+            <table style="margin-left: auto; margin-right: auto; text-align: center;">
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(k=1\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(k=2\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(k=3\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(P(X=k)\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrX[1,1]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrX[1,2]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrX[1,3]@}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(P(Y=k)\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrY[1,1]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrY[1,2]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrY[1,3]@}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <p>
+            [[feedback:prt2]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-14c" style="display:none;">
+        <p>
+            <b>
+                (c)
+            </b>
+            Decide whether the random variables \(X\) and \(Y\) \(P\)-stochastic independent.
+        </p>
+        <p>
+            To remember: In (b) you have the following distribution of the product measure \(P_X\otimes P_Y\) calculated.
+            <table style="margin-left: auto; margin-right: auto; text-align: center;">
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(l=1\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(l=2\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            \(l=3\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(k=1\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrXY[1,1]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrXY[1,2]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrXY[1,3]@}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(k=2\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrXY[2,1]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrXY[2,2]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrXY[2,3]@}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">
+                            \(k=3\)
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrXY[3,1]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrXY[3,2]@}
+                        </td>
+                        <td style="border: 1px solid black;">
+                            {@DistrXY[3,3]@}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <p>
+            \(X\) and \(Y\) are [[input:ans3]]. [[validation:ans3]] [[feedback:prt3]]
+        </p>
+    </div>
+    <style>
+        .buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+    </style>
+    <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+    </script>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="moodle_auto_format">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>3.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+Unabh&#228;ngigkeit von diskreten Zufallsvariablen
+
+wurde entwickelt von
+  
+Christian M&#252;ller <c.mueller(at)hhu.de>
+
+nach einer Idee von
+
+Axel B&#252;cher <axel.buecher(at)hhu.de>
+Peter Kern <kern(at)hhu.de>
+
+an der Heinrich-Heine-Universit&#228;t D&#252;sseldorf.
+
+Dieses Werk ist lizenziert unter einer Creative Commons Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie https://creativecommons.org/licenses/by-sa/4.0/.
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+
+Technische Informationen:
+
+Diese Aufgabe bindet das Skript 'stackselbstlern.js' von Michael Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+/* &#252;berpr&#252;fe, ob ans als Wahrscheinlichkeit interpretiert werden kann */
+probabilityp(ans) := is(numberp(float(ans)) and ans >= 0 and ans <= 1)
+/* runde x auf 3 Nachkommastellen */
+dp(x) := decimalplaces(x, 3)
+/* stelle x in wissenschaftlicher Notation dar */
+SCI(x) := scientific_notation(x, 2)
+/* Rundungsgenauigkeit bei numerischen Antworttests */
+epsilon: 0.001
+
+/* erzeuge zuf&#228;llige Verteilungen f&#252;r P */
+x: matrix([rand(5), rand(5), rand(5)]) + 1
+y: matrix([rand(5), rand(5), rand(5)]) + 1
+z: matrix([rand(9), rand(9), rand(9)], [rand(9), rand(9), rand(9)], [rand(9), rand(9), rand(9)]) + 1
+X: x / sum(x[1, j], j, 1, 3)
+Y: y / sum(y[1, j], j, 1, 3)
+Z: z / sum(sum(z[i, j], i, 1, 3), j, 1, 3)
+
+/* Randomisiere zwischen Unabh&#228;ngigkeit und Abh&#228;ngigkeit */
+/* Der Fall rand(2) = 0 ergibt immer Unabh&#228;ngigkeit. */
+/* Der Fall rand(2) = 1 ergibt h&#246;chstwahrscheinlich Abh&#228;ngigkeit. */
+if is(rand(2) = 0) then DistrP: transpose(X).Y else DistrP: Z
+
+/* Randverteilung von X */
+ProbX(k) := sum(DistrP[k, j], j, 1, 3)
+DistrX: matrix([ProbX(1), ProbX(2), ProbX(3)])
+/* Randverteilung von Y */
+ProbY(l) := sum(DistrP[i, l], i, 1, 3)
+DistrY: matrix([ProbY(1), ProbY(2), ProbY(3)])
+/* Produktverteilung von X und Y */
+ProbXY(k, l) := ProbX(k) * ProbY(l)
+DistrXY: transpose(DistrX).DistrY
+
+/* L&#246;sungen */
+Tans3: [["unabh&#228;ngig", is(equal(DistrP, DistrXY))], ["nicht unabh&#228;ngig", is(notequal(DistrP, DistrXY))]]]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{@DistrP@}</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans3</name>
+            <type>dropdown</type>
+            <tans>Tans3</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansX1</name>
+            <type>numerical</type>
+            <tans>ProbX(1)</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansX1Y1</name>
+            <type>numerical</type>
+            <tans>ProbXY(1,1)</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansX1Y2</name>
+            <type>numerical</type>
+            <tans>ProbXY(1,2)</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansX1Y3</name>
+            <type>numerical</type>
+            <tans>ProbXY(1,3)</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansX2</name>
+            <type>numerical</type>
+            <tans>ProbX(2)</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansX2Y1</name>
+            <type>numerical</type>
+            <tans>ProbXY(2,1)</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansX2Y2</name>
+            <type>numerical</type>
+            <tans>ProbXY(2,2)</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansX2Y3</name>
+            <type>numerical</type>
+            <tans>ProbXY(2,3)</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansX3</name>
+            <type>numerical</type>
+            <tans>ProbX(3)</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansX3Y1</name>
+            <type>numerical</type>
+            <tans>ProbXY(3,1)</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansX3Y2</name>
+            <type>numerical</type>
+            <tans>ProbXY(3,2)</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansX3Y3</name>
+            <type>numerical</type>
+            <tans>ProbXY(3,3)</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansY1</name>
+            <type>numerical</type>
+            <tans>ProbY(1)</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansY2</name>
+            <type>numerical</type>
+            <tans>ProbY(2)</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansY3</name>
+            <type>numerical</type>
+            <tans>ProbY(3)</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>SAns1: matrix([ansX1, ansX2, ansX3], [ansY1, ansY2, ansY3])
+TAns1: matrix([ProbX(1), ProbX(2), ProbX(3)], [ProbY(1), ProbY(2), ProbY(3)])
+f(x) := is(equal(x, 1))</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>every(probabilityp,SAns1)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Nicht alle Tabelleneintr&#228;ge liegen im Intervall \([0,1]\). Diese Werte k&#246;nnen daher nicht als Wahrscheinlichkeiten interpretiert werden.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Not all table entries are in interval \([0,1]\). These values cannot therefore be interpreted as probabilities.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>is(equal(ansX1+ansX2+ansX3,1))</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Werte f&#252;r \(P(X=1)\), \(P(X=2)\) und \(P(X=3)\) summieren sich nicht zu 1 auf. Das muss wegen \(P(X=1)+P(X=2)+P(X=3)=P(X\in\Omega')=P_X(\Omega')=1\) aber gelten.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your values for \(P(X=1)\), \(P(X=2)\) and \(P(X=3)\) do not add up to 1. That must be \(P(X=1)+P(X=2)+P(X=3)=P(X\in\Omega')=P_X(\Omega')=1\) but apply.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansX1)</sans>
+                <tans>ProbX(1)</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>prt1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prt1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Der Eintrag \(P(X=1)\) ist falsch. &#220;berlegen Sie sich, welche Elementarereignisse \(\{\omega\}\subseteq\Omega\) zu \(X(\omega)=1\) f&#252;hren und summieren Sie deren Wahrscheinlichkeiten \(p_\omega\) auf.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The entry \(P(X=1)\) is wrong. Consider which elementary events \(\{\omega\}\subseteq\Omega\) to \(X(\omega)=1\) lead and sum their probabilities \(p_\omega\) up.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansX2)</sans>
+                <tans>ProbX(2)</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>prt1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prt1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Der Eintrag \(P(X=2)\) ist falsch. &#220;berlegen Sie sich, welche Elementarereignisse \(\{\omega\}\subseteq\Omega\) zu \(X(\omega)=2\) f&#252;hren und summieren Sie deren Wahrscheinlichkeiten \(p_\omega\) auf.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The entry \(P(X=2)\) is wrong. Consider which elementary events \(\{\omega\}\subseteq\Omega\) to \(X(\omega)=2\) lead and sum their probabilities \(p_\omega\) up.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansX3)</sans>
+                <tans>ProbX(3)</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>prt1-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>prt1-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Der Eintrag \(P(X=3)\) ist falsch. &#220;berlegen Sie sich, welche Elementarereignisse \(\{\omega\}\subseteq\Omega\) zu \(X(\omega)=3\) f&#252;hren und summieren Sie deren Wahrscheinlichkeiten \(p_\omega\) auf.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The entry \(P(X=3)\) is wrong. Consider which elementary events \(\{\omega\}\subseteq\Omega\) to \(X(\omega)=3\) lead and sum their probabilities \(p_\omega\) up.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>is(equal(ansY1+ansY2+ansY3,1))</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>6</truenextnode>
+                <trueanswernote>prt1-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>6</falsenextnode>
+                <falseanswernote>prt1-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Werte f&#252;r \(P(Y=1)\), \(P(Y=2)\) und \(P(Y=3)\) summieren sich nicht zu 1 auf. Das muss wegen \(P(Y=1)+P(Y=2)+P(Y=3)=P(Y\in\Omega')=P_Y(\Omega')=1\) aber gelten.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your values for \(P(Y=1)\), \(P(Y=2)\) and \(P(Y=3)\) do not add up to 1. That must be \(P(Y=1)+P(Y=2)+P(Y=3)=P(Y\in\Omega')=P_Y(\Omega')=1\) but apply.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>6</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansY1)</sans>
+                <tans>ProbY(1)</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>7</truenextnode>
+                <trueanswernote>prt1-7-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>7</falsenextnode>
+                <falseanswernote>prt1-7-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Der Eintrag \(P(Y=1)\) ist falsch. &#220;berlegen Sie sich, welche Elementarereignisse \(\{\omega\}\subseteq\Omega\) zu \(Y(\omega)=1\) f&#252;hren und summieren Sie deren Wahrscheinlichkeiten \(p_\omega\) auf.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The entry \(P(Y=1)\) is wrong. Consider which elementary events \(\{\omega\}\subseteq\Omega\) to \(Y(\omega)=1\) lead and sum their probabilities \(p_\omega\) up.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>7</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansY2)</sans>
+                <tans>ProbY(2)</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>8</truenextnode>
+                <trueanswernote>prt1-8-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>8</falsenextnode>
+                <falseanswernote>prt1-8-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Der Eintrag \(P(Y=2)\) ist falsch. &#220;berlegen Sie sich, welche Elementarereignisse \(\{\omega\}\subseteq\Omega\) zu \(Y(\omega)=2\) f&#252;hren und summieren Sie deren Wahrscheinlichkeiten \(p_\omega\) auf.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The entry \(P(Y=2)\) is wrong. Consider which elementary events \(\{\omega\}\subseteq\Omega\) to \(Y(\omega)=2\) lead and sum their probabilities \(p_\omega\) up.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>8</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansY3)</sans>
+                <tans>ProbY(3)</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>9</truenextnode>
+                <trueanswernote>prt1-9-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>9</falsenextnode>
+                <falseanswernote>prt1-9-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Der Eintrag \(P(Y=3)\) ist falsch. &#220;berlegen Sie sich, welche Elementarereignisse \(\{\omega\}\subseteq\Omega\) zu \(Y(\omega)=3\) f&#252;hren und summieren Sie deren Wahrscheinlichkeiten \(p_\omega\) auf.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The entry \(P(Y=3)\) is wrong. Consider which elementary events \(\{\omega\}\subseteq\Omega\) to \(Y(\omega)=3\) lead and sum their probabilities \(p_\omega\) up.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>9</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(SAns1)</sans>
+                <tans>TAns1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-10-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben alle Wahrscheinlichkeiten richtig berechnet.
+    </p>
+    <hr/>
+    <p>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-14a');
+show('oer-aufgabe-14b');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have calculated all probability correctly.
+    </p>
+    <hr/>
+    <p>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-14a');
+show('oer-aufgabe-14b');
+" type="button">
+            Next
+        </button>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-10-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>SAns2: matrix([ansX1Y1, ansX1Y2, ansX1Y3], [ansX2Y1, ansX2Y2, ansX2Y3], [ansX3Y1, ansX3Y2, ansX3Y3])
+SDistrXY: transpose([ansX1, ansX2, ansX3]).matrix([ansY1, ansY2, ansY3])</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>every(probabilityp,SAns2)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Nicht alle Tabelleneintr&#228;ge liegen im Intervall \([0,1]\). Diese Werte k&#246;nnen daher nicht als Wahrscheinlichkeiten interpretiert werden.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Not all table entries are in interval \([0,1]\). These values cannot therefore be interpreted as probabilities.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(SAns2)</sans>
+                <tans>DistrXY</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben alle Wahrscheinlichkeiten richtig berechnet.
+    </p>
+    <hr/>
+    <p>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-14b');
+show('oer-aufgabe-14c');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have calculated all probability correctly.
+    </p>
+    <hr/>
+    <p>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-14b');
+show('oer-aufgabe-14c');
+" type="button">
+            Next
+        </button>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(SAns2)</sans>
+                <tans>transpose(DistrXY)</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben die richtige Formel angewendet, um die Tabelle auszuf&#252;llen. Allerdings haben Sie die Rollen von \(X\) und \(Y\) vertauscht und daher die Verteilung von \(P_Y\otimes P_X\) berechnet.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have applied the right formula to fill out the table. However you have the roles of \(X\) and \(Y\) and therefore the distribution of \(P_Y\otimes P_X\) calculated.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text><![CDATA[textA3: if is(equal(DistrP, DistrXY)) then ["unabh&#228;ngig", "alle"] else ["nicht unabh&#228;ngig", "nicht alle"]]]></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>textA3[1]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Zufallsvariablen \(X\) und \(Y\) sind genau dann unabh&#228;ngig, wenn \(P_{(X,Y)}=P_X\otimes P_Y\) gilt, d.h. wenn \(P(X=k,Y=l)=P_{(X,Y)}(\{(k,l)\})=(P_X\otimes P_Y)(\{(k,l)\})=P(X=k)P(Y=l)\) f&#252;r alle \(k,l\in\{1,2,3\}\) gilt.
+    </p>
+    <p>
+        Da in dieser Aufgabe \(X(\omega)=\omega_1\) die Projektion auf die erste Komponente und \(Y(\omega)=\omega_2\) die Projektion auf die zweite Komponente von \(\omega=(\omega_1,\omega_2)\) ist, gilt \(P(X=k,Y=l)=p_{(k,l)}\). Die Unabh&#228;ngigkeit von \(X\) und \(Y\) ist hier also &#228;quivalent zu \(p_{(k,l)}=P(X=k)P(Y=l)\) f&#252;r alle \(k,l\in\{1,2,3\}\).
+    </p>
+    <p>
+        Wie Sie in (b) berechnet haben, stimmen {@textA3[2]@} Werte von \(P(X=k)P(Y=l)\) mit dem entsprechenden Wert von \(p_{(k,l)}\) &#252;berein, sodass \(X\) und \(Y\) {@textA3[1]@} sind.
+    </p>
+    <hr/>
+    <p>
+        Sie haben die Aufgabe erfolgreich gel&#246;st! Jetzt sollten Sie sicher entscheiden k&#246;nnen, ob zwei diskrete Zufallsvariablen stochastisch unabh&#228;ngig sind.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The random variables \(X\) and \(Y\) are independent when \(P_{(X,Y)}=P_X\otimes P_Y\) where: \(P(X=k,Y=l)=P_{(X,Y)}(\{(k,l)\})=(P_X\otimes P_Y)(\{(k,l)\})=P(X=k)P(Y=l)\) for all \(k,l\in\{1,2,3\}\) Article 2
+    </p>
+    <p>
+        Since this task \(X(\omega)=\omega_1\) the projection onto the first component and \(Y(\omega)=\omega_2\) the projection on the second component of \(\omega=(\omega_1,\omega_2)\) is valid \(P(X=k,Y=l)=p_{(k,l)}\). The independence of \(X\) and \(Y\) is therefore equivalent to \(p_{(k,l)}=P(X=k)P(Y=l)\) for all \(k,l\in\{1,2,3\}\).
+    </p>
+    <p>
+        How you calculated in (b) {@textA3[2]@} Values of \(P(X=k)P(Y=l)\) with the corresponding value of \(p_{(k,l)}\) so that \(X\) and \(Y\) {@textA3[1]@} are.
+    </p>
+    <hr/>
+    <p>
+        You have successfully solved the task! Now you should be sure to decide whether two discrete random variables are stochastic independent.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Zufallsvariablen \(X\) und \(Y\) sind genau dann unabh&#228;ngig, wenn \(P_{(X,Y)}=P_X\otimes P_Y\) gilt, d.h. wenn \(P(X=k,Y=l)=P_{(X,Y)}(\{(k,l)\})=(P_X\otimes P_Y)(\{(k,l)\})=P(X=k)P(Y=l)\) f&#252;r alle \(k,l\in\{1,2,3\}\) gilt. &#220;berpr&#252;fen Sie, ob das hier der Fall ist.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The random variables \(X\) and \(Y\) are independent when \(P_{(X,Y)}=P_X\otimes P_Y\) where: \(P(X=k,Y=l)=P_{(X,Y)}(\{(k,l)\})=(P_X\otimes P_Y)(\{(k,l)\})=P(X=k)P(Y=l)\) for all \(k,l\in\{1,2,3\}\) Article 2 Check if this is the case.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>36</deployedseed>
+        <deployedseed>889838873</deployedseed>
+        <deployedseed>1099105720</deployedseed>
+        <deployedseed>284059039</deployedseed>
+        <deployedseed>570265722</deployedseed>
+        <deployedseed>2075758953</deployedseed>
+        <deployedseed>81647787</deployedseed>
+        <deployedseed>59171960</deployedseed>
+        <deployedseed>1618491781</deployedseed>
+        <deployedseed>1019280759</deployedseed>
+        <deployedseed>1792183520</deployedseed>
+        <deployedseed>973416723</deployedseed>
+        <deployedseed>2133019307</deployedseed>
+        <deployedseed>1050938857</deployedseed>
+        <deployedseed>1929173102</deployedseed>
+        <deployedseed>35872980</deployedseed>
+        <deployedseed>1392528642</deployedseed>
+        <deployedseed>677981380</deployedseed>
+        <deployedseed>1872414380</deployedseed>
+        <deployedseed>1918058464</deployedseed>
+        <deployedseed>1881528371</deployedseed>
+        <deployedseed>1666212882</deployedseed>
+        <deployedseed>1118461556</deployedseed>
+        <deployedseed>131167274</deployedseed>
+        <deployedseed>1389909524</deployedseed>
+        <deployedseed>484814166</deployedseed>
+        <deployedseed>806871193</deployedseed>
+        <deployedseed>506719512</deployedseed>
+        <deployedseed>1206027815</deployedseed>
+        <deployedseed>173357765</deployedseed>
+        <deployedseed>1370968067</deployedseed>
+        <deployedseed>1476570458</deployedseed>
+        <deployedseed>371772810</deployedseed>
+        <deployedseed>2089399976</deployedseed>
+        <deployedseed>843424621</deployedseed>
+        <deployedseed>234823684</deployedseed>
+        <deployedseed>1177759445</deployedseed>
+        <deployedseed>984309740</deployedseed>
+        <deployedseed>539614511</deployedseed>
+        <deployedseed>1533351950</deployedseed>
+        <deployedseed>1108821225</deployedseed>
+        <deployedseed>399553639</deployedseed>
+        <deployedseed>1514282480</deployedseed>
+        <deployedseed>1349590949</deployedseed>
+        <deployedseed>933752486</deployedseed>
+        <deployedseed>202207026</deployedseed>
+    </question>
+    
+
+</quiz>

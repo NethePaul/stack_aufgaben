@@ -1,0 +1,3867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>2023-03-07 Lotto 6aus49</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <div id="oer-aufgabe-5-info">
+        <details>
+            <summary>
+                Inhalt und Umfang dieser Aufgabe
+            </summary>
+            <p>
+                In dieser Aufgabe lernen Sie, die Gewinn- und Verlustwahrscheinlichkeiten beim Lotto 6aus49 zu berechnen. Sie besteht aus den folgenden drei Teilaufgaben.
+            </p>
+            <ul>
+                <li>
+                    In
+                    <b>
+                        (a)
+                    </b>
+                    modellieren Sie in 5 Schritten die Ziehung der Lottozahlen stochastisch und berechnen die Wahrscheinlichkeit f&#252;r 6 Richtige.
+                </li>
+                <li>
+                    In
+                    <b>
+                        (b)
+                    </b>
+                    berechnen Sie in 3 Schritten die Wahrscheinlichkeit f&#252;r das Erreichen einer bestimmten Gewinnklasse sowie die Wahrscheinlichkeit f&#252;r den Verlust des Spieleinsatzes.
+                </li>
+                <li>
+                    In
+                    <b>
+                        (c)
+                    </b>
+                    berechnen Sie in 3 Schritten die Gewinn- und Verlustwahrscheinlichkeiten beim Spiel mit einem Lotto-Vollsystem.
+                </li>
+            </ul>
+        </details>
+        <hr/>
+    </div>
+    <div id="oer-aufgabe-5">
+        <p>
+            Falls Sie die Regeln des Lotto 6aus49 nicht genau kennen, erhalten Sie durch einen Klick auf den folgenden Kasten einen kurzen &#220;berblick.
+        </p>
+        <details>
+            <summary>
+                Lotto 6aus49
+            </summary>
+            <p>
+                Beim Lotto 6aus49 werden auf einem Lottoschein sechs verschiedene Zahlen in einem Spielfeld mit den Zahlen von 1 bis 49 angekreuzt, die letzte Ziffer der siebenstelligen Spielscheinnummer ist die pers&#246;nliche Superzahl. Bei der Ziehung der Lottozahlen werden dann aus einer Trommel nacheinander sechs verschiedene Gewinnzahlen \(z_1,\ldots,z_6\in\{1,\ldots,49\}\) und anschlie&#223;end aus einer separaten Trommel noch eine Superzahl \(s\in\{0,\ldots,9\}\) gezogen. Die der Gr&#246;&#223;e nach sortierten Gewinnzahlen zusammen mit der Superzahl bilden das Ziehungsergebnis. Je nachdem, wie viele der in der Ziehung gezogenen Zahlen mit den eigenen Zahlen auf dem Lottoschein &#252;bereinstimmen, winkt ein Geldgewinn.
+            </p>
+            <p>
+                Mit Hilfe der Superzahl werden insgesamt neun verschiedene Gewinnklassen unterschieden. Die niedrigste Gewinnklasse 9 erreicht man mit 2 richtigen Gewinnzahlen und der richtigen Superzahl, die Gewinnklasse 8 mit 3 richtigen Gewinnzahlen, aber der falschen Superzahl, usw. bis zur Gewinnklasse 1 mit 6 richtigen Gewinnzahlen und der richtigen Superzahl, bei der man den Jackpot knackt.
+            </p>
+            <p>
+                Lotto kann auch mit System gespielt werden. Bei einem sogenannten Lotto-Vollsystem k&#246;nnen pro Spielfeld mehr als sechs Zahlen angekreuzt werden, aus denen dann alle m&#246;glichen Spielreihen bestehend aus genau sechs der angekreuzten Zahlen gebildet werden. In Nordrhein-Westfalen sind die Vollsysteme 007, 008, 009 und 010 spielbar, in anderen Bundesl&#228;ndern sind auch die Vollsysteme 011 und 012 m&#246;glich. Hier k&#246;nnen pro Spielfeld also zwischen 7 und 12 Zahlen auf einmal angekreuzt werden und alle Spielreihen, die sich aus genau 6 dieser Zahlen bilden lassen, werden gleichzeitig gespielt.
+            </p>
+        </details>
+        <hr/>
+    </div>
+    <div id="oer-aufgabe-5.A1">
+        <p>
+            <b>
+                (a) [1/5]
+            </b>
+            Wir ignorieren vorerst die Superzahl und schauen uns nur die sechs Gewinnzahlen an. Durch welches kombinatorische Modell kann die Ziehung der sechs Gewinnzahlen sinnvoll beschrieben werden?
+        </p>
+        <p>
+            [[input:ansA1]] [[validation:ansA1]] [[feedback:prtA1]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.A2" style="display:none;">
+        <p>
+            <b>
+                (a) [2/5]
+            </b>
+            Zuerst m&#252;ssen wir die Parameter \(N\) und \(n\) des kombinatorischen Modells identifizieren. Hierbei gibt \(N\) an, wie viele Kugeln bei Ziehungsbeginn in der Urne bzw. Trommel sind, und \(n\) ist die Anzahl der Ziehungen. Welche Werte haben \(N\) und \(n\) also bei der Ziehung der Gewinnzahlen im Lotto 6aus49?
+        </p>
+        <p>
+            <b>
+                (1)
+            </b>
+            Es wird aus \(N=\)[[input:ansA21]] Kugeln gezogen. [[validation:ansA21]]
+        </p>
+        <p>
+            <b>
+                (2)
+            </b>
+            Es wird \(n=\)[[input:ansA22]] mal gezogen. [[validation:ansA22]]
+        </p>
+        <p>
+            [[feedback:prtA2]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.A3" style="display:none;">
+        <p>
+            <b>
+                (a) [3/5]
+            </b>
+            Mit den Werten \(N=49\) und \(n=6\) k&#246;nnen wir nun die M&#228;chtigkeit des Grundraums berechnen.
+        </p>
+        <p>
+            Das Modell Ziehen ohne Zur&#252;cklegen und ohne Reihenfolge als Grundraum hat die M&#228;chtigkeit [[input:ansA3]]. [[validation:ansA3]]
+        </p>
+        <p>
+            [[feedback:prtA3]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.A4" style="display:none;">
+        <p>
+            <b>
+                (a) [4/5]
+            </b>
+            Die Wahrscheinlichkeit, dass eine konkrete Zahlenfolge, sagen wir {@z@}, als Gewinnzahlen gezogen wird, berechnet sich in einem Laplace-Modell bekanntlich als Quotient aus der Anzahl der g&#252;nstigen Ergebnisse und der M&#228;chtigkeit des Grundraums. Letztere haben wir in der vorherigen Aufgabe berechnet. Wir m&#252;ssen jetzt also noch die g&#252;nstigen Ergebnisse z&#228;hlen.
+        </p>
+        <p>
+            Das Ereignis, dass {@z@} die 6 Richtigen sind, besteht im Modell Ziehen ohne Zur&#252;cklegen und ohne Reihenfolge aus [[input:ansA4]] Elementen. [[validation:ansA4]]
+        </p>
+        <p>
+            [[feedback:prtA4]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.A5" style="display:none;">
+        <p>
+            <b>
+                (a) [5/5]
+            </b>
+            Wir kennen nun die Anzahl der g&#252;nstigen Ergebnisse f&#252;r 6 Richtige und die M&#228;chtigkeit des Grundraums. Berechnen Sie daraus die Wahrscheinlichkeit, dass alle getippten Zahlen tats&#228;chlich als Gewinnzahlen gezogen werden.
+        </p>
+        <p>
+            Die Wahrscheinlichkeit f&#252;r 6 Richtige ist gleich [[input:ansA5]].
+            <i>
+                Geben Sie das exakte Ergebnis als Formel ein.
+            </i>
+            [[validation:ansA5]]
+        </p>
+        <p>
+            [[feedback:prtA5]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.B1" style="display:none;">
+        <p>
+            <b>
+                (b) [1/3]
+            </b>
+            Statt kombinatorische Modelle zu verwenden, k&#246;nnen die Gewinnwahrscheinlichkeiten beim Lotto 6aus49 auch mit einem geeigneten diskreten Wahrscheinlichkeitsma&#223; berechnet werden. Welches dieser diskreten Wahrscheinlichkeitsma&#223;e beschreibt die Verteilung der richtig getippten Zahlen unter den tats&#228;chlich gezogenen Gewinnzahlen?
+        </p>
+        <p>
+            [[input:ansB1]] [[validation:ansB1]] [[feedback:prtB1]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.B2" style="display:none;">
+        <p>
+            <b>
+                (b) [2/3]
+            </b>
+            Eine hypergeometrische Verteilung hat drei Parameter: die Anzahl \(N\) der Kugeln, aus denen gezogen wird, die Anzahl \(K\) an Kugeln der ersten Sorte und die Anzahl \(n\) der Versuchswiederholungen. Welche Werte haben diese Parameter bei der Ziehung der Gewinnzahlen im Lotto 6aus49?
+        </p>
+        <p>
+            <b>
+                (1)
+            </b>
+            Es gibt insgesamt \(N=\) [[input:ansB21]] Kugeln. [[validation:ansB21]]
+        </p>
+        <p>
+            <b>
+                (2)
+            </b>
+            Von diesen Kugeln geh&#246;ren \(K=\) [[input:ansB22]] zu den getippten Zahlen. [[validation:ansB22]]
+        </p>
+        <p>
+            <b>
+                (3)
+            </b>
+            Es wird \(n=\) [[input:ansB23]] mal eine Kugel gezogen. [[validation:ansB23]]
+        </p>
+        <p>
+            [[feedback:prtB2]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.B3" style="display:none;">
+        <p>
+            <b>
+                (b) [3/3]
+            </b>
+            Berechnen Sie mithilfe der hypergeometrischen Verteilung die folgenden Wahrscheinlichkeiten.
+            <i>
+                Geben Sie die exakten Ergebnisse als Formel ein.
+            </i>
+        </p>
+        <p>
+            <b>
+                (1)
+            </b>
+            Die Wahrscheinlichkeit, dass genau {@k@} der getippten Zahlen, egal bei welcher Superzahl, gezogen {@k_text[1]@}, ist [[input:ansB31]]. [[validation:ansB31]] [[feedback:prtB31]]
+        </p>
+        <p>
+            <b>
+                (2)
+            </b>
+            Die Wahrscheinlichkeit, dass genau {@k@} der getippten Zahlen, aber nicht die pers&#246;nliche Superzahl gezogen {@k_text[1]@}, ist [[input:ansB32]]. [[validation:ansB32]] [[feedback:prtB32]]
+        </p>
+        <p>
+            <b>
+                (3)
+            </b>
+            Die Wahrscheinlichkeit, dass genau {@k@} der getippten Zahlen zusammen mit der pers&#246;nlichen Superzahl gezogen {@k_text[1]@}, ist [[input:ansB33]]. [[validation:ansB33]] [[feedback:prtB33]]
+        </p>
+        <p>
+            <b>
+                (4)
+            </b>
+            Die Wahrscheinlichkeit, dass mit einer Spielreihe &#252;berhaupt kein Gewinn erzielt wird, ist [[input:ansB34]]. [[validation:ansB34]] [[feedback:prtB34]]
+        </p>
+        <p>
+            [[feedback:prtB3]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.C1" style="display:none;">
+        <p>
+            <b>
+                (c) [1/3]
+            </b>
+            Bei einem Lotto-Vollsystem werden viele verschiedene Spielreihen gleichzeitig gespielt. Wie viele verschiedene Spielreihen bestehend aus sechs Zahlen k&#246;nnen bei einem Lotto-Vollsystem mit {@K@} angekreuzten Zahlen gebildet werden?
+        </p>
+        <p>
+            Die Anzahl der Spielreihen ist [[input:ansC1]]. [[validation:ansC1]] [[feedback:prtC1]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.C2" style="display:none;">
+        <p>
+            <b>
+                (c) [2/3]
+            </b>
+            Mit welcher Wahrscheinlichkeit {@l_text[1]@} bei einem Lotto-Vollsystem mit {@K@} angekreuzten Zahlen genau {@l@} Gewinnzahl{@l_text[2]@} richtig getippt?
+        </p>
+        <p>
+            Die Wahrscheinlichkeit ist [[input:ansC2]].
+            <i>
+                Geben Sie das exakte Ergebnis als Formel ein.
+            </i>
+            [[validation:ansC2]] [[feedback:prtC2]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.C3" style="display:none;">
+        <p>
+            <b>
+                (c) [3/3]
+            </b>
+            Mit welcher Wahrscheinlichkeit wird bei einem Lotto-Vollsystem mit {@K@} angekreuzten Zahlen &#252;berhaupt kein Gewinn erzielt?
+        </p>
+        <p>
+            Die Wahrscheinlichkeit ist [[input:ansC3]].
+            <i>
+                Geben Sie das exakte Ergebnis als Formel ein.
+            </i>
+            [[validation:ansC3]] [[feedback:prtC3]]
+        </p>
+    </div>
+    <style>
+        .buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+    </style>
+    <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <div id="oer-aufgabe-5-info">
+        <details>
+            <summary>
+                Content and scope of this task
+            </summary>
+            <p>
+                In this task you will learn to calculate the winning and loss probabilities at Lotto 6aus49. It consists of the following three subtasks.
+            </p>
+            <ul>
+                <li>
+                    In
+                    <b>
+                        (a)
+                    </b>
+                    in 5 steps model the drawing of the lottery numbers stochastic and calculate the probability for 6 correct ones.
+                </li>
+                <li>
+                    In
+                    <b>
+                        (b)
+                    </b>
+                    in 3 steps calculate the probability of reaching a certain winning class as well as the probability of loss of the game bet.
+                </li>
+                <li>
+                    In
+                    <b>
+                        (c)
+                    </b>
+                    in 3 steps calculate the winning and loss probabilities when playing with a lottery full system.
+                </li>
+            </ul>
+        </details>
+        <hr/>
+    </div>
+    <div id="oer-aufgabe-5">
+        <p>
+            If you do not know exactly the rules of the Lotto 6aus49, you will get a brief overview by clicking on the following box.
+        </p>
+        <details>
+            <summary>
+                Lotto 6aus49
+            </summary>
+            <p>
+                At Lotto 6aus49, six different numbers are crossed on a lottery ticket in a field with numbers from 1 to 49, the last digit of the seven-digit ticket number is the personal super number. When drawing the lottery numbers, six different winning numbers are then successively taken from one drum \(z_1,\ldots,z_6\in\{1,\ldots,49\}\) and then from a separate drum a supernumber \(s\in\{0,\ldots,9\}\) drawn. The number of winnings sorted by size together with the super number form the drawing result. Depending on how many of the numbers drawn in the draw match their own numbers on the lottery ticket, a win win win wins.
+            </p>
+            <p>
+                With the help of the supernumber, a total of nine different winning classes are distinguished. The lowest winning class 9 is achieved with 2 correct winning numbers and the right super number, the winning class 8 with 3 correct winning numbers, but the wrong super number, etc. to the winning class 1 with 6 correct winning numbers and the right super number where you can crack the jackpot.
+            </p>
+            <p>
+                Lotto can also be played with system. In a so-called full lottery system, more than six numbers can be crossed per field, from which all possible rows of games consisting of exactly six of the crossed numbers are formed. In North Rhine-Westphalia, full systems 007, 008, 009 and 010 are playable, in other federal states, full systems 011 and 012 are also possible. In this case, between 7 and 12 numbers can be crossed at once per field of play and all rows of games that can be formed from exactly 6 of these numbers are played simultaneously.
+            </p>
+        </details>
+        <hr/>
+    </div>
+    <div id="oer-aufgabe-5.A1">
+        <p>
+            <b>
+                (a) [1/5]
+            </b>
+            We are ignoring the super number for the first time and only look at the six winning numbers. Which combinatorial model makes it possible to describe the drawing of the six winning numbers?
+        </p>
+        <p>
+            [[input:ansA1]] [[validation:ansA1]] [[feedback:prtA1]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.A2" style="display:none;">
+        <p>
+            <b>
+                (a) [2/5)
+            </b>
+            First, we need the parameters \(N\) and \(n\) identify the combinatorial model. Here, \(N\) how many balls at the start of drawing in the urn or drums, and \(n\) is the number of draws. What values have \(N\) and \(n\) So when drawing the winning numbers in the lottery 6aus49?
+        </p>
+        <p>
+            <b>
+                (1)
+            </b>
+            It gets out \(N=\)[[input:ansA21]] Shots. [[validation:ansA21]]
+        </p>
+        <p>
+            <b>
+                (2)
+            </b>
+            It will \(n=\)[[input:ansA22]] pull. [[validation:ansA22]]
+        </p>
+        <p>
+            [[feedback:prtA2]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.A3" style="display:none;">
+        <p>
+            <b>
+                (a) [3/5]
+            </b>
+            With the values \(N=49\) and \(n=6\) we can now calculate the power of the space.
+        </p>
+        <p>
+            The drawing model without laying back and without order as a basic space has the power [[input:ansA3]]. [[validation:ansA3]]
+        </p>
+        <p>
+            [[feedback:prtA3]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.A4" style="display:none;">
+        <p>
+            <b>
+                (a) [4/5]
+            </b>
+            The probability that a concrete sequence of figures, we say {@z@}In a Laplace model, it is known to be calculated as a quotient from the number of favorable results and the width of the basic space. We calculated the latter in the previous task. So we have to count on the favourable results.
+        </p>
+        <p>
+            The event that {@z@} the 6 are correct, consists in the model drawing without resetting and without order [[input:ansA4]] Elements. [[validation:ansA4]]
+        </p>
+        <p>
+            [[feedback:prtA4]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.A5" style="display:none;">
+        <p>
+            <b>
+                (a) [5/5]
+            </b>
+            We now know the number of favorable results for 6 correct and the strength of the space. Calculate from this the probability that all the typified numbers are actually drawn as winning numbers.
+        </p>
+        <p>
+            The probability for 6 correct is equal [[input:ansA5]].
+            <i>
+                Enter the exact result as formula.
+            </i>
+            [[validation:ansA5]]
+        </p>
+        <p>
+            [[feedback:prtA5]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.B1" style="display:none;">
+        <p>
+            <b>
+                (b) [1/3]
+            </b>
+            Instead of using combinatorial models, the winning probabilities in Lotto 6aus49 can also be calculated with a suitable discrete probability measure. Which of these discreet probability measures describes the distribution of the correctly ribbed numbers among the actual winning figures?
+        </p>
+        <p>
+            [[input:ansB1]] [[validation:ansB1]] [[feedback:prtB1]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.B2" style="display:none;">
+        <p>
+            <b>
+                (b) [2/3)
+            </b>
+            Hypergeometric distribution has three parameters: the number \(N\) the number of balls from which the number is drawn \(K\) at first grade balls and the number \(n\) repetitions. What values do these parameters have when drawing the winning numbers in the Lotto 6aus49?
+        </p>
+        <p>
+            <b>
+                (1)
+            </b>
+            There are \(N=\) [[input:ansB21]] Balls. [[validation:ansB21]]
+        </p>
+        <p>
+            <b>
+                (2)
+            </b>
+            Of these balls \(K=\) [[input:ansB22]] to the dialed numbers. [[validation:ansB22]]
+        </p>
+        <p>
+            <b>
+                (3)
+            </b>
+            It will \(n=\) [[input:ansB23]] a bullet. [[validation:ansB23]]
+        </p>
+        <p>
+            [[feedback:prtB2]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.B3" style="display:none;">
+        <p>
+            <b>
+                (b) [3/3]
+            </b>
+            Calculate the following probabilities using hypergeometric distribution.
+            <i>
+                Enter the exact results as formula.
+            </i>
+        </p>
+        <p>
+            <b>
+                (1)
+            </b>
+            The probability that {@k@} the number that has been tipped, no matter what supernumber, {@k_text[1]@}is [[input:ansB31]]. [[validation:ansB31]] [[feedback:prtB31]]
+        </p>
+        <p>
+            <b>
+                (2)
+            </b>
+            The probability that {@k@} the typified numbers, but not the personal supernumber drawn {@k_text[1]@}is [[input:ansB32]]. [[validation:ansB32]] [[feedback:prtB32]]
+        </p>
+        <p>
+            <b>
+                (3)
+            </b>
+            The probability that {@k@} the typified numbers drawn together with the personal supernumber {@k_text[1]@}is [[input:ansB33]]. [[validation:ansB33]] [[feedback:prtB33]]
+        </p>
+        <p>
+            <b>
+                (4)
+            </b>
+            The probability that a game series will not achieve any profit at all is [[input:ansB34]]. [[validation:ansB34]] [[feedback:prtB34]]
+        </p>
+        <p>
+            [[feedback:prtB3]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.C1" style="display:none;">
+        <p>
+            <b>
+                (c) [1/3]
+            </b>
+            With a full lottery system many different game series are played simultaneously. How many different game series consisting of six numbers can be used in a full lottery system with {@K@} are crossed numbers formed?
+        </p>
+        <p>
+            The number of game series is [[input:ansC1]]. [[validation:ansC1]] [[feedback:prtC1]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.C2" style="display:none;">
+        <p>
+            <b>
+                (c) [2/3)
+            </b>
+            With what probability {@l_text[1]@} with a full lottery system with {@K@} crossed numbers exactly {@l@} Total{@l_text[2]@} right?
+        </p>
+        <p>
+            The probability is [[input:ansC2]].
+            <i>
+                Enter the exact result as formula.
+            </i>
+            [[validation:ansC2]] [[feedback:prtC2]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-5.C3" style="display:none;">
+        <p>
+            <b>
+                (c) [3/3]
+            </b>
+            With what probability a lottery full system will have {@K@} is there no profit at all?
+        </p>
+        <p>
+            The probability is [[input:ansC3]].
+            <i>
+                Enter the exact result as formula.
+            </i>
+            [[validation:ansC3]] [[feedback:prtC3]]
+        </p>
+    </div>
+    <style>
+        .buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+    </style>
+    <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+    </script>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="moodle_auto_format">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>3.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+Lotto 6aus49
+
+wurde entwickelt von
+  
+Christian M&#252;ller <c.mueller(at)hhu.de>
+
+nach einer Idee von
+
+Axel B&#252;cher <axel.buecher(at)hhu.de>
+Peter Kern <kern(at)hhu.de>
+
+an der Heinrich-Heine-Universit&#228;t D&#252;sseldorf.
+
+Dieses Werk ist lizenziert unter einer Creative Commons Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie https://creativecommons.org/licenses/by-sa/4.0/.
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+
+Technische Informationen:
+
+Diese Aufgabe bindet das Skript 'stackselbstlern.js' von Michael Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+/* &#252;berpr&#252;fe, ob ans als Wahrscheinlichkeit interpretiert werden kann */
+probabilityp(ans) := is(numberp(float(ans)) and ans >= 0 and ans <= 1)
+/* runde x auf 3 Nachkommastellen */
+dp(x) := decimalplaces(x, 3)
+/* stelle x in wissenschaftlicher Notation dar */
+SCI(x) := scientific_notation(x, 2)
+/* Rundungsgenauigkeit bei numerischen Antworttests (relativer Fehler) */
+epsilon: 0.1
+
+/* zuf&#228;llige Lottozahlen */
+z1: rand(49) + 1
+z2: rand_with_prohib(1, 49, [z1])
+z3: rand_with_prohib(1, 49, [z1, z2])
+z4: rand_with_prohib(1, 49, [z1, z2, z3])
+z5: rand_with_prohib(1, 49, [z1, z2, z3, z4])
+z6: rand_with_prohib(1, 49, [z1, z2, z3, z4, z5])
+z: set(z1, z2, z3, z4, z5, z6)
+
+/* k richtige Zahlen (ohne System) */
+k: rand(6)
+/* K angekreuzte Zahlen (mit System) */
+K: rand_with_step(7, 12, 1)
+/* l richtige Zahlen (mit System) */
+l: rand(6)
+
+/* Singular bzw. Plural je nach Wert von k und l */
+k_text: if k=1 then ["wird", ""] else ["werden", "en"]
+l_text: if l=1 then ["wird", ""] else ["werden", "en"]
+
+/* Formeln f&#252;r Urnenmodelle */
+mZmR(N, n) := N^n
+oZmR(N, n) := N! / (N - n)!
+mZoR(N, n) := binomial(N + n - 1, n)
+oZoR(N, n) := binomial(N, n)
+
+/* Abk&#252;rzungen f&#252;r Urnenmodelle */
+mZmR: "Ziehen mit Zur&#252;cklegen und mit Reihenfolge"
+oZmR: "Ziehen ohne Zur&#252;cklegen und mit Reihenfolge"
+mZoR: "Ziehen mit Zur&#252;cklegen und ohne Reihenfolge"
+oZoR: "Ziehen ohne Zur&#252;cklegen und ohne Reihenfolge"
+
+/* Formeln f&#252;r Verteilungen */
+Hyp(N, K, n, k) := binomial(K, k) * binomial(N - K, n - k) / binomial(N, n)
+
+/* Abk&#252;rzungen f&#252;r Verteilungen */
+Bin: "Binomialverteilung"
+Mul: "Multinomialverteilung"
+Hyp: "Hypergeometrische Verteilung"
+MHyp: "Multivariate hypergeometrische Verteilung"
+
+/* L&#246;sungen */
+TansA1: [[mZmR, false], [oZmR, false], [mZoR, false], [oZoR, true]]
+TansA21: 49
+TansA22: 6
+TansA3: oZoR(49, 6)
+TansA4: 1
+TansA5: 1 / oZoR(49, 6)
+TansB1: [[Bin, false], [Mul, false], [Hyp, true], [MHyp, false]]
+TansB21: 49
+TansB22: 6
+TansB23: 6
+TansB31: Hyp(49, 6, 6, k)
+TansB32: 9/10 * Hyp(49, 6, 6, k)
+TansB33: 1/10 * Hyp(49, 6, 6, k)
+TansB34: Hyp(49, 6, 6, 0) + Hyp(49, 6, 6, 1) + 9/10 * Hyp(49, 6, 6, 2)
+TansC1: oZoR(K, 6)
+TansC2: Hyp(49, K, 6, l)
+TansC3: Hyp(49, K, 6, 0) + Hyp(49, K, 6, 1) + 9/10 * Hyp(49, K, 6, 2)]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\(k={@k@}\), \(K={@K@}\), \(l={@l@}\)</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ansA1</name>
+            <type>dropdown</type>
+            <tans>TansA1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansA21</name>
+            <type>numerical</type>
+            <tans>TansA21</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansA22</name>
+            <type>numerical</type>
+            <tans>TansA22</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansA3</name>
+            <type>numerical</type>
+            <tans>TansA3</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansA4</name>
+            <type>numerical</type>
+            <tans>TansA4</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansA5</name>
+            <type>numerical</type>
+            <tans>TansA5</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB1</name>
+            <type>dropdown</type>
+            <tans>TansB1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB21</name>
+            <type>numerical</type>
+            <tans>TansB21</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB22</name>
+            <type>numerical</type>
+            <tans>TansB22</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB23</name>
+            <type>numerical</type>
+            <tans>TansB23</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB31</name>
+            <type>numerical</type>
+            <tans>TansB31</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB32</name>
+            <type>numerical</type>
+            <tans>TansB32</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB33</name>
+            <type>numerical</type>
+            <tans>TansB33</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB34</name>
+            <type>numerical</type>
+            <tans>TansB34</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC1</name>
+            <type>numerical</type>
+            <tans>TansC1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC2</name>
+            <type>numerical</type>
+            <tans>TansC2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC3</name>
+            <type>numerical</type>
+            <tans>TansC3</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prtA1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA1</sans>
+                <tans>oZoR</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+    <p>
+        Sie haben ein sinnvolles kombinatorisches Modell ausgew&#228;hlt. Da eine Lottozahl nicht mehrfach gezogen werden kann, muss auf jeden Fall ohne Zur&#252;cklegen gezogen werden. Jedoch ist die Reihenfolge der gezogenen Zahlen nicht von Interesse, die Ziehung ohne Ber&#252;cksichtigung der Reihenfolge macht also Sinn.
+    </p>
+    <hr/>
+    <p>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.A1');
+show('oer-aufgabe-5.A2');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+    <p>
+        You have selected a meaningful combinatorial model. Since a lottery number cannot be pulled several times, it is necessary to be pulled without being reset. However, the order of the drawn numbers is not of interest, the drawing without taking into account the order makes sense.
+    </p>
+    <hr/>
+    <p>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.A1');
+show('oer-aufgabe-5.A2');
+" type="button">
+            Next
+        </button>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtA1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA1</sans>
+                <tans>oZmR</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p>
+        Dieses kombinatorische Modell ist nicht geeignet, da die Reihenfolge der gezogenen Zahlen nicht von Interesse ist. Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p>
+        This combinatorial model is not suitable since the order of the numbers drawn is not of interest. Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtA1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA1</sans>
+                <tans>mZoR</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p>
+        Dieses kombinatorische Modell ist nicht geeignet, da keine Lottozahl mehrfach gezogen werden kann. Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p>
+        This combinatorial model is not suitable because no lottery number can be pulled several times. Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p>
+        Dieses kombinatorische Modell ist nicht geeignet, da keine Lottozahl mehrfach gezogen werden kann und die Reihenfolge der gezogenen Zahlen nicht von Interesse ist. Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p>
+        This combinatorial model is not suitable because no lottery number can be pulled several times and the order of the drawn numbers is not of interest. Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtA2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA21</sans>
+                <tans>TansA21</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtA2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben den Parameter \(N=49\) richtig angegeben.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have the parameter \(N=49\) correctly stated.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtA2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben den Parameter \(N\) falsch angegeben. &#220;berlegen Sie sich, aus wie vielen Zahlen beim Lotto 6aus49 die Gewinnzahlen gezogen werden.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have the parameter \(N\) incorrectly stated. Consider how many numbers the Lotto 6aus49 pays.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA22</sans>
+                <tans>TansA22</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prtA2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben den Parameter \(n=6\) richtig angegeben.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have the parameter \(n=6\) correctly stated.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtA2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben den Parameter \(n\) falsch angegeben. &#220;berlegen Sie sich, wie viele Gewinnzahlen beim Lotto 6aus49 gezogen werden.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have the parameter \(n\) incorrectly stated. Consider how many winning numbers are taken at Lotto 6aus49.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ansA21,ansA22]</sans>
+                <tans>[TansA21,TansA22]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA2-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+    <hr/>
+    <p>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.A2');
+show('oer-aufgabe-5.A3');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+    <hr/>
+    <p>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.A2');
+show('oer-aufgabe-5.A3');
+" type="button">
+            Next
+        </button>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA2-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtA3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA3</sans>
+                <tans>oZoR(49,6)</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+    <p>
+        Die M&#228;chtigkeit des Grundraums im Modell Ziehen ohne Zur&#252;cklegen und ohne Reihenfolge ist \[\binom{N}{n}=\binom{49}{6}=\frac{49!}{6!\cdot43!}={@oZoR(49,6)@}.\]
+    </p>
+    <hr/>
+    <p>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.A3');
+show('oer-aufgabe-5.A4');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+    <p>
+        The thickness of the basic space in the model drawing without laying back and without order is \[\binom{N}{n}=\binom{49}{6}=\frac{49!}{6!\cdot43!}={@oZoR(49,6)@}.\]
+    </p>
+    <hr/>
+    <p>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.A3');
+show('oer-aufgabe-5.A4');
+" type="button">
+            Next
+        </button>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtA3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA3</sans>
+                <tans>mZoR(49,6)</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA3-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p>
+        Sie haben vermutlich die Formel f&#252;r das Modell Ziehen mit Zur&#252;cklegen und ohne Reihenfolge benutzt. Setzen Sie die Werte f&#252;r \(N\) und \(n\) stattdessen in die Formel f&#252;r die Anzahl der Elemente des Modells Ziehen ohne Zur&#252;cklegen und ohne Reihenfolge ein.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p>
+        You have probably used the formula for the model drawing with resetting and without order. Set the values for \(N\) and \(n\) instead, drag into the formula for the number of elements of the model without resetting and without order.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtA3-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA3</sans>
+                <tans>oZmR(49,6)</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA3-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p>
+        Sie haben vermutlich die Formel f&#252;r das Modell Ziehen ohne Zur&#252;cklegen und mit Reihenfolge benutzt. Setzen Sie die Werte f&#252;r \(N\) und \(n\) stattdessen in die Formel f&#252;r die Anzahl der Elemente des Modells Ziehen ohne Zur&#252;cklegen und ohne Reihenfolge ein.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p>
+        They probably used the formula for the model drawing without laying back and with order. Set the values for \(N\) and \(n\) instead, drag into the formula for the number of elements of the model without resetting and without order.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prtA3-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA3</sans>
+                <tans>mZmR(49,6)</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA3-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p>
+        Sie haben vermutlich die Formel f&#252;r das Modell Ziehen mit Zur&#252;cklegen und mit Reihenfolge benutzt. Setzen Sie die Werte f&#252;r \(N\) und \(n\) stattdessen in die Formel f&#252;r die Anzahl der Elemente des Modells Ziehen ohne Zur&#252;cklegen und ohne Reihenfolge ein.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p>
+        They probably used the formula for the model drawing with resetting and with order. Set the values for \(N\) and \(n\) instead, drag into the formula for the number of elements of the model without resetting and without order.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA3-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p>
+        Setzen Sie die Werte f&#252;r \(N\) und \(n\) in die Formel f&#252;r die Anzahl der Elemente des Modells Ziehen ohne Zur&#252;cklegen und ohne Reihenfolge ein.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p>
+        Set the values for \(N\) and \(n\) in the formula for the number of elements of the model draw without resetting and without order.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtA4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA4</sans>
+                <tans>TansA4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+    <p>
+        Da wir in diesem Modell keine Permutationen der gezogenen Zahlen ber&#252;cksichtigen m&#252;ssen, gibt es nur eine M&#246;glichkeit, dass {@z@} die 6 Richtigen sind.
+    </p>
+    <hr/>
+    <p>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.A4');
+show('oer-aufgabe-5.A5');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+    <p>
+        Since we do not have to take into account any permutations of the figures drawn in this model, there is only one possibility that {@z@} the 6 are right.
+    </p>
+    <hr/>
+    <p>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.A4');
+show('oer-aufgabe-5.A5');
+" type="button">
+            Next
+        </button>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p>
+        Im Modell Ziehen ohne Zur&#252;cklegen und ohne Reihenfolge wird nicht zwischen verschiedenen Permutationen der Zahlen {@z@} unterschieden, sondern die Zahlen werden einfach der Gr&#246;&#223;e nach angeordnet. Wie viele M&#246;glichkeiten daf&#252;r gibt es?
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p>
+        In model drawing without resetting and without order will not be between different permutations of numbers {@z@} differentiated, but the numbers are simply arranged according to size. How many options are there?
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtA5</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ansA5)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtA5-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA5-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis liegt nicht im Intervall \([0,1]\) und kann daher nicht als Wahrscheinlichkeit interpretiert werden.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result is not in interval \([0,1]\) and therefore cannot be interpreted as probability.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA5</sans>
+                <tans>TansA5</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA5-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben die Wahrscheinlichkeit f&#252;r 6 Richtige korrekt berechnet. Sie ist gleich dem Quotienten aus der Anzahl der g&#252;nstigen Ergebnisse f&#252;r 6 Richtige und der M&#228;chtigkeit des Grundraums und betr&#228;gt gerade einmal \[\frac{1}{\binom{49}{6}}=\frac{1}{13983816}\approx{@SCI(binomial(49,6)^-1)@}.\] Im Modell Ziehen ohne Zur&#252;cklegen und mit Reihenfolge ergibt sich &#252;brigens dasselbe Ergebnis.
+    </p>
+    <hr/>
+    <p>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.A5');
+show('oer-aufgabe-5.B1');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have calculated the probability for 6 correct. It is equal to the quotient from the number of favorable results for 6 correct and the strength of the basic space and is just once \[\frac{1}{\binom{49}{6}}=\frac{1}{13983816}\approx{@SCI(binomial(49,6)^-1)@}.\] The same result is obtained in the drawing model without laying back and with order.
+    </p>
+    <hr/>
+    <p>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.A5');
+show('oer-aufgabe-5.B1');
+" type="button">
+            Next
+        </button>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA5-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Erinnern Sie sich: Es gibt 1 g&#252;nstiges Ergebnis bei insgesamt \(\dbinom{49}{6}\) m&#246;glichen Ergebnissen.
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Remember: There are 1 cheap result with total \(\dbinom{49}{6}\) possible results.
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB1</sans>
+                <tans>Hyp</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+    <p>
+        Die hypergeometrische Verteilung beschreibt wiederholtes Ziehen ohne Zur&#252;cklegen und mit zwei m&#246;glichen Ausg&#228;ngen. Das entspricht genau der Fragestellung.
+    </p>
+    <hr/>
+    <p>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.B1');
+show('oer-aufgabe-5.B2');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+    <p>
+        The hypergeometric distribution describes repeated drawing without laying back and with two possible outputs. That is exactly the question.
+    </p>
+    <hr/>
+    <p>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.B1');
+show('oer-aufgabe-5.B2');
+" type="button">
+            Next
+        </button>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtB1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB1</sans>
+                <tans>Bin</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p>
+        Die Binomialverteilung beschreibt wiederholtes Ziehen mit Zur&#252;cklegen und mit zwei m&#246;glichen Ausg&#228;ngen. Das entspricht nicht der Fragestellung.
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p>
+        The binomial distribution describes repeated pulling with resetting and with two possible outputs. This does not correspond to the question.
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtB1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB1</sans>
+                <tans>Mul</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p>
+        Die Multinomialverteilung beschreibt wiederholtes Ziehen mit Zur&#252;cklegen und mit mehr als zwei m&#246;glichen Ausg&#228;ngen. Das entspricht nicht der Fragestellung.
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p>
+        The multinomial distribution describes repeated pulling with resetting and with more than two possible outputs. This does not correspond to the question.
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prtB1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB1</sans>
+                <tans>MHyp</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p>
+        Die multivariate hypergeometrische Verteilung beschreibt wiederholtes Ziehen ohne Zur&#252;cklegen und mit mehr als zwei m&#246;glichen Ausg&#228;ngen. Das entspricht nicht der Fragestellung.
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p>
+        The multivariate hypergeometric distribution describes repeated drawing without laying back and with more than two possible outputs. This does not correspond to the question.
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB21</sans>
+                <tans>TansB21</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtB2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben den Parameter \(N=49\) richtig angegeben.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have the parameter \(N=49\) correctly stated.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtB2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben den Parameter \(N\) falsch angegeben. &#220;berlegen Sie sich, aus wie vielen Zahlen beim Lotto 6aus49 die Gewinnzahlen gezogen werden.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have the parameter \(N\) incorrectly stated. Consider how many numbers the Lotto 6aus49 pays.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB22</sans>
+                <tans>TansB22</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prtB2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben den Parameter \(K=6\) richtig angegeben.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have the parameter \(K=6\) correctly stated.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtB2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben den Parameter \(K\) falsch angegeben. &#220;berlegen Sie sich, wie viele Zahlen beim Lotto 6aus49 getippt werden.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have the parameter \(K\) incorrectly stated. Consider how many numbers are tipped at the Lotto 6aus49.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB23</sans>
+                <tans>TansB23</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>prtB2-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben den Parameter \(n=6\) richtig angegeben.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have the parameter \(n=6\) correctly stated.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prtB2-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben den Parameter \(n\) falsch angegeben. &#220;berlegen Sie sich, wie viele Gewinnzahlen beim Lotto 6aus49 gezogen werden.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have the parameter \(n\) incorrectly stated. Consider how many winning numbers are taken at Lotto 6aus49.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ansB21,ansB22,ansB23]</sans>
+                <tans>[TansB21,TansB22,TansB23]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB2-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+    <hr/>
+    <p>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.B2');
+show('oer-aufgabe-5.B3');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+    <hr/>
+    <p>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.B2');
+show('oer-aufgabe-5.B3');
+" type="button">
+            Next
+        </button>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB2-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansB31)</sans>
+                <tans>TansB31</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtB3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (1) ist richtig.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result (1) is correct.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>7</falsenextnode>
+                <falseanswernote>prtB3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (1) ist falsch.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result (1) is wrong.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansB32)</sans>
+                <tans>TansB32</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prtB3-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (2) ist richtig.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result (2) is correct.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>prtB3-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (2) ist falsch.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result (2) is wrong.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansB33)</sans>
+                <tans>TansB33</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>prtB3-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (3) ist richtig.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result (3) is correct.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prtB3-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (3) ist falsch.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result from (3) is wrong.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansB34)</sans>
+                <tans>TansB34</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB3-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (4) ist richtig.
+    </p>
+    <p>
+        Sie haben alle Wahrscheinlichkeiten richtig berechnet!
+    </p>
+    <hr/>
+    <p>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.B3');
+show('oer-aufgabe-5.C1');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result from (4) is correct.
+    </p>
+    <p>
+        You have calculated all probability correctly!
+    </p>
+    <hr/>
+    <p>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.B3');
+show('oer-aufgabe-5.C1');
+" type="button">
+            Next
+        </button>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB3-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (4) ist falsch.
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result from (4) is wrong.
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansB34)</sans>
+                <tans>TansB34</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB3-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (4) ist richtig.
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result from (4) is correct.
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB3-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (4) ist falsch.
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result from (4) is wrong.
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansB33)</sans>
+                <tans>TansB33</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>prtB3-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (3) ist richtig.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result (3) is correct.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>6</falsenextnode>
+                <falseanswernote>prtB3-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (3) ist falsch.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result from (3) is wrong.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>6</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansB34)</sans>
+                <tans>TansB34</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB3-7-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (4) ist richtig.
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result from (4) is correct.
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB3-7-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (4) ist falsch.
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result from (4) is wrong.
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>7</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansB32)</sans>
+                <tans>TansB32</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>prtB3-8-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (2) ist richtig.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result (2) is correct.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>8</falsenextnode>
+                <falseanswernote>prtB3-8-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (2) ist falsch.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result (2) is wrong.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>8</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansB33)</sans>
+                <tans>TansB33</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>6</truenextnode>
+                <trueanswernote>prtB3-9-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (3) ist richtig.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result (3) is correct.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>9</falsenextnode>
+                <falseanswernote>prtB3-9-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (3) ist falsch.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result from (3) is wrong.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>9</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansB34)</sans>
+                <tans>TansB34</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB3-10-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (4) ist richtig.
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result from (4) is correct.
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB3-10-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (4) ist falsch.
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result from (4) is wrong.
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB31</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ansB31)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtB31-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB31-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (1) liegt nicht im Intervall \([0,1]\) und kann daher nicht als Wahrscheinlichkeit interpretiert werden.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result from (1) is not in interval \([0,1]\) and therefore cannot be interpreted as probability.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansB31)</sans>
+                <tans>TansB31</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB31-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben die Wahrscheinlichkeit aus (1) richtig berechnet. Sie ist gleich \[\text{Hyp}(49,6,6)(\{{@k@}\})\approx{@SCI(TansB31)@}.\]
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have calculated the probability from (1) correctly. She's the same \[\text{Hyp}(49,6,6)(\{{@k@}\})\approx{@SCI(TansB31)@}.\]
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB31-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (1) ist falsch. Die Wahrscheinlichkeit f&#252;r {@k@} richtig getippte Zahl{@k_text[2]@} k&#246;nnen Sie berechnen, indem Sie {@k@} in die
+        <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "Wahrscheinlichkeitsfunktion"'>
+            Z&#228;hldichte
+        </span>
+        der hypergeometrischen Verteilung einsetzen, deren Parameter Sie in der vorherigen Aufgabe bestimmt haben.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result (1) is wrong. The probability of {@k@} correct number{@k_text[2]@} you can calculate by {@k@} the
+        <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "Wahrscheinlichkeitsfunktion"'>
+            Counting density
+        </span>
+        use hypergeometric distribution, whose parameters you have determined in the previous task.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB32</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ansB32)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtB32-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB32-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (2) liegt nicht im Intervall \([0,1]\) und kann daher nicht als Wahrscheinlichkeit interpretiert werden.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result (2) is not in interval \([0,1]\) and therefore cannot be interpreted as probability.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansB32)</sans>
+                <tans>TansB32</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB32-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben die Wahrscheinlichkeit aus (2) richtig berechnet. Sie ist gleich \[\frac{9}{10}\text{Hyp}(49,6,6)(\{{@k@}\})\approx{@SCI(TansB32)@}.\]
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have calculated the probability from (2) correctly. She's the same \[\frac{9}{10}\text{Hyp}(49,6,6)(\{{@k@}\})\approx{@SCI(TansB32)@}.\]
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB32-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (2) ist falsch. Die Ziehung der Superzahl findet unabh&#228;ngig von der Ziehung der Gewinnzahlen statt. Sie m&#252;ssen die Wahrscheinlichkeit f&#252;r {@k@} richtig getippte Zahl{@k_text[2]@} also nur mit der Chance auf eine falsche Superzahl multiplizieren.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result (2) is wrong. The drawing of the supernumber takes place independently of the drawing of the winning numbers. You must have the probability of {@k@} correct number{@k_text[2]@} so only multiply with the chance of a false supernumber.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB33</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ansB33)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtB33-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB33-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (3) liegt nicht im Intervall \([0,1]\) und kann daher nicht als Wahrscheinlichkeit interpretiert werden.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result (3) is not in interval \([0,1]\) and therefore cannot be interpreted as probability.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansB33)</sans>
+                <tans>TansB33</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB33-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben die Wahrscheinlichkeit aus (3) richtig berechnet. Sie ist gleich \[\frac{1}{10}\text{Hyp}(49,6,6)(\{{@k@}\})\approx{@SCI(TansB33)@}.\]
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have calculated the probability from (3) correctly. She's the same \[\frac{1}{10}\text{Hyp}(49,6,6)(\{{@k@}\})\approx{@SCI(TansB33)@}.\]
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB33-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (3) ist falsch. Die Ziehung der Superzahl findet unabh&#228;ngig von der Ziehung der Gewinnzahlen statt. Sie m&#252;ssen die Wahrscheinlichkeit f&#252;r {@k@} richtig getippte Zahl{@k_text[2]@} also nur mit der Chance auf die richtige Superzahl multiplizieren.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result from (3) is wrong. The drawing of the supernumber takes place independently of the drawing of the winning numbers. You must have the probability of {@k@} correct number{@k_text[2]@} thus only multiply with the chance of the correct supernumber.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB34</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ansB34)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtB34-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB34-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (4) liegt nicht im Intervall \([0,1]\) und kann daher nicht als Wahrscheinlichkeit interpretiert werden.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result from (4) is not in interval \([0,1]\) and therefore cannot be interpreted as probability.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansB34)</sans>
+                <tans>TansB34</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB34-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben die Wahrscheinlichkeit aus (4) richtig berechnet. Sie ist gleich \[\text{Hyp}(49,6,6)(\{0\})+\text{Hyp}(49,6,6)(\{1\})+\frac{9}{10}\text{Hyp}(49,6,6)(\{2\})\approx{@dp(TansB34)@}.\]
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have calculated the probability from (4) correctly. She's the same \[\text{Hyp}(49,6,6)(\{0\})+\text{Hyp}(49,6,6)(\{1\})+\frac{9}{10}\text{Hyp}(49,6,6)(\{2\})\approx{@dp(TansB34)@}.\]
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB34-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis aus (4) ist falsch. Erinnern Sie sich f&#252;r die Berechnung der Verlustwahrscheinlichkeit daran, dass nur in den folgenden F&#228;llen &#252;berhaupt kein Gewinn erzielt wird: Es werden entweder genau 0 oder genau 1 der getippten Zahlen gezogen, egal bei welcher Superzahl, oder es werden genau 2 der getippten Zahlen, aber nicht die pers&#246;nliche Superzahl, gezogen. Wie Sie jeweils die Wahrscheinlichkeiten daf&#252;r berechnen, wissen Sie aus den vorherigen Aufgabenteilen. Die erhaltenen Zahlenwerte m&#252;ssen Sie nur addieren.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result from (4) is wrong. Remember for calculating the probability of loss that no profit will be achieved at all in the following cases: either exactly 0 or exactly 1 of the number is drawn, no matter what super number, or exactly 2 of the number you have given, but not the personal super number. As you calculate the probabilities, you know from the previous tasks. You only need to add the received numerical values.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtC1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansC1</sans>
+                <tans>oZoR(K,6)</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+    <p>
+        Gesucht ist die Anzahl der M&#246;glichkeiten, aus {@K@} Zahlen genau \(6\) Zahlen auszuw&#228;hlen, die dann eine Spielreihe bilden. Das entspricht dem kombinatorischen Modell Ziehen ohne Zur&#252;cklegen und ohne Reihenfolge. Daher k&#246;nnen aus den {@K@} angekreuzten Zahlen \(\dbinom{{@K@}}{6}={@oZoR(K,6)@}\) verschiedene Spielreihen gebildet werden.
+    </p>
+    <hr/>
+    <p>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.C1');
+show('oer-aufgabe-5.C2');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+    <p>
+        The number of options selected is {@K@} Figures \(6\) Select numbers that then form a series of games. This corresponds to the combinatorial model drawing without laying back and without order. Therefore, {@K@} Numbers crossed \(\dbinom{{@K@}}{6}={@oZoR(K,6)@}\) different game series are formed.
+    </p>
+    <hr/>
+    <p>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.C1');
+show('oer-aufgabe-5.C2');
+" type="button">
+            Next
+        </button>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtC1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansC1</sans>
+                <tans>mZmR(K,6)</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prtC1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p>
+        Sie haben vermutlich die Formel f&#252;r das Modell Ziehen mit Zur&#252;cklegen und mit Reihenfolge verwendet. Das entspricht nicht der vorliegenden Situation. W&#228;hlen Sie ein geeigneteres kombinatorische Modell.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p>
+        They have probably used the formula for the model drawing with resetting and with order. This does not correspond to the present situation. Choose a more suitable combination model.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtC1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansC1</sans>
+                <tans>oZmR(K,6)</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>prtC1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p>
+        Sie haben vermutlich die Formel f&#252;r das Modell Ziehen ohne Zur&#252;cklegen und mit Reihenfolge verwendet. Das entspricht nicht der vorliegenden Situation. W&#228;hlen Sie ein geeigneteres kombinatorische Modell.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p>
+        They have probably used the formula for the model drawing without laying back and with order. This does not correspond to the present situation. Choose a more suitable combination model.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prtC1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansC1</sans>
+                <tans>mZoR(K,6)</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p>
+        Sie haben vermutlich die Formel f&#252;r das Modell Ziehen mit Zur&#252;cklegen und ohne Reihenfolge verwendet. Das entspricht nicht der vorliegenden Situation. W&#228;hlen Sie ein geeigneteres kombinatorische Modell.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p>
+        They have probably used the formula for the model drawing with resetting and without order. This does not correspond to the present situation. Choose a more suitable combination model.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p>
+        &#220;berlegen Sie sich, mit welchem kombinatorischen Modell die Erstellung der Spielreihen beschrieben werden kann, und verwenden Sie die Formel f&#252;r die Anzahl der Elemente in diesem Modell.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p>
+        Consider which combinatorial model can describe the creation of the game series, and use the formula for the number of elements in this model.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtC2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ansC2)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtC2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p>
+        Ihr Ergebnis liegt nicht im Intervall \([0,1]\) und kann daher nicht als Wahrscheinlichkeit interpretiert werden.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p>
+        Your result is not in interval \([0,1]\) and therefore cannot be interpreted as probability.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansC2)</sans>
+                <tans>TansC2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+    <p>
+        Die Wahrscheinlichkeit, dass bei {@K@} angekreuzten Zahlen genau {@l@} Gewinnzahl{@l_text[2]@} gezogen {@l_text[1]@}, ist \[\text{Hyp}(49,{@K@},6)(\{{@l@}\})=\frac{\binom{{@K@}}{{@l@}}\binom{49-{@K@}}{6-{@l@}}}{\binom{49}{6}}\approx{@SCI(TansC2)@}.\]
+    </p>
+    <hr/>
+    <p>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.C2');
+show('oer-aufgabe-5.C3');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+    <p>
+        The probability that {@K@} crossed numbers exactly {@l@} Total{@l_text[2]@} drawn {@l_text[1]@}is \[\text{Hyp}(49,{@K@},6)(\{{@l@}\})=\frac{\binom{{@K@}}{{@l@}}\binom{49-{@K@}}{6-{@l@}}}{\binom{49}{6}}\approx{@SCI(TansC2)@}.\]
+    </p>
+    <hr/>
+    <p>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-5.C2');
+show('oer-aufgabe-5.C3');
+" type="button">
+            Next
+        </button>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtC2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansC2)</sans>
+                <tans>Hyp(49,6,6,l)</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC2-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p>
+        Sie haben vermutlich den Parameter \(K\) der hypergeometrischen Verteilung nicht an das Lotto-Spiel mit System angepasst. Statt 6 Zahlen werden nun {@K@} Zahlen angekreuzt.
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p>
+        You probably have the parameter \(K\) the hypergeometric distribution not adapted to the lottery game with system. Instead of 6 figures, {@K@} Numbers crossed.
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC2-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p>
+        Erinnern Sie sich an die hypergeometrische Verteilung aus dem zweiten Abschnitt dieser Aufgabe. &#196;ndern sich deren Parameter beim Lotto-Spiel mit System?
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p>
+        Remember the hypergeometric distribution from the second section of this task. Do their parameters change in the lottery game with system?
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtC3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ansC3)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtC3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Ergebnis liegt nicht im Intervall \([0,1]\) und kann daher nicht als Wahrscheinlichkeit interpretiert werden.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your result is not in interval \([0,1]\) and therefore cannot be interpreted as probability.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>fullratsimp(ansC3)</sans>
+                <tans>TansC3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC3-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Wahrscheinlichkeit, dass bei {@K@} angekreuzten Zahlen &#252;berhaupt kein Gewinn erzielt wird, ist \[\text{Hyp}(49,{@K@},6)(\{0\})+\text{Hyp}(49,{@K@},6)(\{1\})+\frac{9}{10}\text{Hyp}(49,{@K@},6)(\{2\})\approx{@dp(TansC3)@}.\]
+    </p>
+    <hr/>
+    <p>
+        Sie haben die Aufgabe erfolgreich gel&#246;st! Jetzt sollten Sie Ihre Gewinn- und Verlustwahrscheinlichkeiten beim Lotto 6aus49 besser einsch&#228;tzen k&#246;nnen.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The probability that {@K@} no profit is obtained at all, is \[\text{Hyp}(49,{@K@},6)(\{0\})+\text{Hyp}(49,{@K@},6)(\{1\})+\frac{9}{10}\text{Hyp}(49,{@K@},6)(\{2\})\approx{@dp(TansC3)@}.\]
+    </p>
+    <hr/>
+    <p>
+        You have successfully solved the task! Now you should be able to better estimate your winning and loss probabilities at Lotto 6aus49.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC3-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Erinnern Sie sich daran, dass nur in den folgenden F&#228;llen &#252;berhaupt kein Gewinn erzielt wird: Es werden entweder genau 0 oder genau 1 der getippten Zahlen gezogen, egal bei welcher Superzahl, oder es werden genau 2 der getippten Zahlen, aber nicht die pers&#246;nliche Superzahl, gezogen. Diese Wahrscheinlichkeiten k&#246;nnen Sie wieder mit einer hypergeometrischen Verteilung berechnen.
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Remember that only in the following cases is no profit at all: There are drawn either exactly 0 or exactly 1 of the dialed numbers, no matter what super number, or there are drawn exactly 2 of the dialed numbers, but not the personal super number. You can calculate these probabilities again with a hypergeometric distribution.
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>100</deployedseed>
+        <deployedseed>569879939</deployedseed>
+        <deployedseed>1225880295</deployedseed>
+        <deployedseed>1543663624</deployedseed>
+        <deployedseed>974799663</deployedseed>
+        <deployedseed>114766404</deployedseed>
+        <deployedseed>115294887</deployedseed>
+        <deployedseed>1949651974</deployedseed>
+        <deployedseed>129625607</deployedseed>
+        <deployedseed>2115796758</deployedseed>
+        <deployedseed>1369085769</deployedseed>
+        <deployedseed>1416550247</deployedseed>
+        <deployedseed>180654149</deployedseed>
+        <deployedseed>1358889631</deployedseed>
+        <deployedseed>588114212</deployedseed>
+        <deployedseed>586865149</deployedseed>
+        <deployedseed>981070534</deployedseed>
+        <deployedseed>1037645479</deployedseed>
+        <deployedseed>461115535</deployedseed>
+        <deployedseed>164745889</deployedseed>
+        <deployedseed>175066248</deployedseed>
+        <deployedseed>861923015</deployedseed>
+        <deployedseed>1665159370</deployedseed>
+        <deployedseed>340050697</deployedseed>
+        <deployedseed>1388196260</deployedseed>
+        <deployedseed>1379837796</deployedseed>
+        <deployedseed>953956058</deployedseed>
+        <deployedseed>38759319</deployedseed>
+    </question>
+    
+
+</quiz>

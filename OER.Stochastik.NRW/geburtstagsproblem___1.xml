@@ -1,0 +1,3731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Geburtstagsproblem</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <style>
+        .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #a9f5bc;
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #e0f8e6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #dcb25e;
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #e7d2a7;
+                }
+
+    
+    
+    
+    .buttontipp {
+                                border: 1px solid black;
+                                background-color: #c9d3f6;
+                }
+
+    
+    
+    
+    .buttontipp:hover {
+                                background-color: #dbe1f9;
+                }
+
+    
+    
+    
+    .divtipp {
+                                background-color: #dbe1f9;
+                                border: 1px black solid;
+                                border-radius: 4px;
+                                padding: 20px;
+                                width: 60%;
+                                text-align: center;
+                }
+
+    
+    
+    
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                                margin: 5px;
+                                margin-bottom: 10px;
+                }
+
+    
+    
+    
+    .divanmerkung {
+                                background-color: #f5e7f3;
+                                border: 1px black solid;
+                                border-radius: 4px;
+                                padding: 20px;
+                                width: 100%;
+                }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: .5em .5em 0;
+                }
+    
+        
+        
+        
+    .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -.5em -.5em 0;
+                                padding: .5em;
+                }
+    
+        
+        
+        
+    .que.stack .formulation details[open] {
+                                padding: .5em;
+                }
+    
+        
+        
+        
+    .que.stack .formulation details[open] summary {
+                                border-bottom: 1px solid #aaa;
+                                margin-bottom: .5em;
+                }
+    </style>
+    <div id="oer-aufgabe-25_erinnerungsbox" style="display: none">
+        <div class="erinnerungsbox">
+            <div id="oer-aufgabe-25_erinnerungsbox_aufgabenstellung">
+                <p>
+                    <u>
+                        Urspr&#252;ngliche Fragestellung:
+                    </u>
+                </p>
+                <p>
+                    Wir stellen uns vor, dass \(n\) Personen in einem Raum sind. Wie
+                                                                gro&#223; ist die Wahrscheinlichkeit, dass von \(n\) Personen
+                                                                mindestens zwei am selben Tag Geburtstag haben?
+                </p>
+            </div>
+            <div id="oer-aufgabe-25_erinnerungsbox_items_div" style="display: none">
+                <p>
+                    Folgendes wissen Sie schon aus den Zwischenschrittsaufgaben:
+                </p>
+                <ul id="oer-aufgabe-25_erinnerungsbox_items">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="oer-aufgabe-25_aufgabe_ende" style="display: none">
+        <p>
+            Jetzt haben Sie einiges an Vorarbeit geleistet. Sie haben sich Gedanken
+                                &#252;ber Urnenmodelle und einen Ergebnisraum, Gegenereignisse und die
+                                Laplace-Verteilung gemacht. Mithilfe dieser Vorarbeit k&#246;nnen Sie nun
+                                noch einmal die folgende Frage beantworten:
+        </p>
+    </div>
+    <div id="oer-aufgabe-25_aufgabe" style="display: box">
+        <p>
+            Wir stellen uns vor, dass \(n\) Personen in einem Raum sind. Wie gro&#223;
+                                ist die Wahrscheinlichkeit, dass von diesen Personen mindestens zwei am
+                                selben Tag Geburtstag haben? Bitte geben Sie Ihre Antwort in das Feld
+                                ein und klicken dann auf den Button "Pr&#252;fen".
+        </p>
+        <p id="oer-aufgabe-25_stack_input1">
+            Antwort: Die Wahrscheinlichkeit betr&#228;gt [[input:ans1]]
+                                [[validation:ans1]]
+        </p>
+        <div id="oer-aufgabe-25_stack_input1_copy" style="display: none">
+            [[input:ans1_copy]] [[validation:ans1_copy]]
+        </div>
+        <p>
+            <i>
+                Hinweis: Wir gehen davon aus, dass ein Jahr 365 Tage hat, das hei&#223;t
+                                                den 29. Februar beachten wir nicht.
+            </i>
+        </p>
+        <!-- Weiter-Buttons, wenn Hilfeschleife abgebrochen wurde -->
+        <div id="oer-aufgabe-25_fragetext-buttons">
+            <div id="oer-aufgabe-25_fragetext-button-zu-2">
+            </div>
+            <div id="oer-aufgabe-25_fragetext-button-zu-3">
+            </div>
+            <div id="oer-aufgabe-25_fragetext-button-zu-4">
+            </div>
+            <div id="oer-aufgabe-25_fragetext-button-zu-5">
+            </div>
+        </div>
+        [[feedback:prt1]]
+    </div>
+    <div id="oer-aufgabe-25_zwischen1" style="display: none">
+        <p>
+            <b>
+                Zwischenschritt 1:
+            </b>
+            Im Folgenden wird angenommen, dass die Geburtstage von \(n\) Personen
+                                Realisierungen unabh&#228;ngiger, identisch verteilter Zufallsvariablen mit
+                                Werten in der 365-elementigen Menge {1. Januar, 2. Januar, ..., 31.
+                                Dezember} sind. Der 29. Februar wird dabei vernachl&#228;ssigt.
+        </p>
+        <p>
+            Im Urnenmodell entspricht diese Annahme ...
+        </p>
+        <p>
+            [[input:ans2]] [[validation:ans2]]
+        </p>
+        [[feedback:prt2_1]]
+        <br/>
+        <p>
+            Durch welche der folgenden formalen Darstellungen von Urnenmodellen
+                                l&#228;sst sich der zugeh&#246;rige Ergebnisraum beschreiben?
+        </p>
+        <p>
+            [[input:ans3]] [[validation:ans3]]
+        </p>
+        [[feedback:prt2_2]]
+        <br/>
+        <p>
+            Bitte klicken Sie, nachdem Sie geantwortet haben, auf den Button
+                                "Pr&#252;fen".
+        </p>
+        <p>
+            [[feedback:prt2_weiter]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-25_zwischen2" style="display: none">
+        <p>
+            <b>
+                Zwischenschritt 2:
+            </b>
+            In diesem Schritt geht es um Ereignisse und Gegenereignisse.
+        </p>
+        <p>
+            Das Ereignis, dass von den \(n\) Personen in einem Raum mindestens zwei
+                                am selben Tag Geburtstag haben, nennen wir ab jetzt \(A\).
+        </p>
+        <p>
+            Wie l&#228;sst sich das Gegenereignis zu \(A\) beschreiben?
+            <br/>
+            Antwort:
+                                \(A^C =\) [[input:ans4]] [[validation:ans4]]
+        </p>
+        [[feedback:prt3_1]]
+        <br/>
+        <p>
+            Wie l&#228;sst sich \(A^C\) als Menge notieren?
+            <br/>
+            Antwort: \(A^C =\)
+                                [[input:ans5]] [[validation:ans5]]
+        </p>
+        [[feedback:prt3_2]]
+        <br/>
+        <p>
+            Bitte klicken Sie, nachdem Sie geantwortet haben, auf den Button
+                                "Pr&#252;fen".
+        </p>
+        [[feedback:prt3_weiter]]
+    </div>
+    <div id="oer-aufgabe-25_zwischen3" style="display: none">
+        <p>
+            <b>
+                Zwischenschritt 3:
+            </b>
+            Im vorherigen Schritt haben Sie sich &#252;berlegt, was das Gegenereignis von
+                                \(A\) (also dem Ereignis, dass von den \(n\) Personen in einem Raum
+                                mindestens zwei am selben Tag Geburtstag haben) ist.
+        </p>
+        <p>
+            Die Idee ist, dass man die Wahrscheinlichkeit von \(A\) bestimmen kann,
+                                wenn man die Wahrscheinlichkeit von \(A^C\) kennt.
+        </p>
+        <p>
+            Es sei \(\Omega\) ein Ergebnisraum, \(A\subset \Omega\) ein Ereignis und
+                                \(A^C\) das entsprechende Gegenereignis.
+            <br/>
+            Welche der folgenden
+                                Ausdr&#252;cke stimmen mit \(P(A^C)\) &#252;berein?
+        </p>
+        <p>
+            [[input:ans6]] [[validation:ans6]]
+        </p>
+        [[feedback:prt4]]
+    </div>
+    <div id="oer-aufgabe-25_zwischen4" style="display: none">
+        <p>
+            <b>
+                Zwischenschritt 4:
+            </b>
+            In diesem Schritt geht es um Laplace-Experimente. Welche der folgenden
+                                Aussagen zu Laplace-Experimenten sind richtig?
+        </p>
+        [[input:ans7]] [[validation:ans7]]
+        <p>
+            Bitte klicken Sie, nachdem Sie geantwortet haben, auf den Button
+                                "Pr&#252;fen".
+        </p>
+        <br/>
+        [[feedback:prt5]]
+    </div>
+    <div id="oer-aufgabe-25_zwischen5" style="display: none">
+        <p>
+            <b>
+                Zwischenschritt 5:
+            </b>
+            Dies hier ist der letzte Schritt, der n&#246;tig ist, um die urspr&#252;ngliche
+                                Frage beantworten zu k&#246;nnen. Denken Sie an verschiedene (Urnen-)Modelle
+                                der Kombinatorik und &#252;berlegen Sie:
+        </p>
+        <p>
+            <b>
+                (i)
+            </b>
+            Wie gro&#223; ist die Anzahl
+            <i>
+                aller
+            </i>
+            m&#246;glichen Geburtstagskombinationen
+                                in einer Gruppe von \(n\) Personen (wenn die Reihenfolge ber&#252;cksichtigt
+                                wird)?
+            <br/>
+            Antwort: [[input:ans8]] [[validation:ans8]]
+        </p>
+        [[feedback:prt6_1]]
+        <br/>
+        <p>
+            <b>
+                (ii)
+            </b>
+            Wie gro&#223; ist die Anzahl aller Geburtstagskombinationen, in denen alle
+                                Personen
+            <i>
+                an unterschiedlichen Tagen
+            </i>
+            Geburtstag haben, in einer
+                                Gruppe von \(n\) Personen (wenn die Reihenfolge ber&#252;cksichtigt wird)?
+            <br/>
+            [[input:ans9]] [[validation:ans9]]
+        </p>
+        [[feedback:prt6_2]]
+        <br/>
+        <p>
+            <b>
+                (iii)
+            </b>
+            Wie gro&#223; ist die Wahrscheinlichkeit, dass in einer Gruppe von \(n\)
+                                Personen alle
+            <i>
+                an unterschiedlichen Tagen
+            </i>
+            Geburtstag haben?
+            <br/>
+            [[input:ans10]] [[validation:ans10]]
+        </p>
+        [[feedback:prt6_3]]
+        <br/>
+        <p>
+            Bitte klicken Sie, nachdem Sie geantwortet haben, auf den Button
+                                "Pr&#252;fen".
+        </p>
+        [[feedback:prt6_weiter]]
+    </div>
+    <div id="oer-aufgabe-25_state" style="display: none">
+        <hr/>
+        [[input:state]] [[validation:state]]
+    </div>
+    <script>
+        document
+                                .querySelector("#oer-aufgabe-25_stack_input1 > input")
+                                .addEventListener("input", (event) => {
+                                                document.querySelector(
+                                                                "#oer-aufgabe-25_stack_input1_copy > input"
+                                                ).value = document.querySelector(
+                                                                "#oer-aufgabe-25_stack_input1 > input"
+                                                ).value;
+                                });
+    </script>
+    <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <style>
+        .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #a9f5bc;
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #e0f8e6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #dcb25e;
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #e7d2a7;
+                }
+
+    
+    
+    
+    .buttontipp {
+                                border: 1px solid black;
+                                background-color: #c9d3f6;
+                }
+
+    
+    
+    
+    .buttontipp:hover {
+                                background-color: #dbe1f9;
+                }
+
+    
+    
+    
+    .divtipp {
+                                background-color: #dbe1f9;
+                                border: 1px black solid;
+                                border-radius: 4px;
+                                padding: 20px;
+                                width: 60%;
+                                text-align: center;
+                }
+
+    
+    
+    
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                                margin: 5px;
+                                margin-bottom: 10px;
+                }
+
+    
+    
+    
+    .divanmerkung {
+                                background-color: #f5e7f3;
+                                border: 1px black solid;
+                                border-radius: 4px;
+                                padding: 20px;
+                                width: 100%;
+                }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: .5em .5em 0;
+                }
+    
+        
+        
+        
+    .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -.5em -.5em 0;
+                                padding: .5em;
+                }
+    
+        
+        
+        
+    .que.stack .formulation details[open] {
+                                padding: .5em;
+                }
+    
+        
+        
+        
+    .que.stack .formulation details[open] summary {
+                                border-bottom: 1px solid #aaa;
+                                margin-bottom: .5em;
+                }
+    </style>
+    <div id="oer-aufgabe-25_erinnerungsbox" style="display: none">
+        <div class="erinnerungsbox">
+            <div id="oer-aufgabe-25_erinnerungsbox_aufgabenstellung">
+                <p>
+                    <u>
+                        Original question:
+                    </u>
+                </p>
+                <p>
+                    We imagine that \(n\) People in a room are. How
+is the probability that of \(n\) Persons
+have at least two birthdays on the same day?
+                </p>
+            </div>
+            <div id="oer-aufgabe-25_erinnerungsbox_items_div" style="display: none">
+                <p>
+                    You already know the following from the intermediate step tasks:
+                </p>
+                <ul id="oer-aufgabe-25_erinnerungsbox_items">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="oer-aufgabe-25_aufgabe_ende" style="display: none">
+        <p>
+            Now you have done some preparatory work. You have thoughts
+on urn models and a result room, counter events and
+Laplace distribution made. With the help of this preparatory work you can now
+answer the following question again:
+        </p>
+    </div>
+    <div id="oer-aufgabe-25_aufgabe" style="display: box">
+        <p>
+            We imagine that \(n\) People in a room are. How big
+is the probability that at least two of these persons
+have the same day birthday? Please enter your reply in the field
+and then click the "Check" button.
+        </p>
+        <p id="oer-aufgabe-25_stack_input1">
+            Answer: The probability is [[input:ans1]][[validation:ans1]]
+        </p>
+        <div id="oer-aufgabe-25_stack_input1_copy" style="display: none">
+            [[input:ans1_copy]] [[validation:ans1_copy]]
+        </div>
+        <p>
+            <i>
+                Note: We assume that a year has 365 days, that is
+29 February we do not note.
+            </i>
+        </p>
+        <!-- Weiter-Buttons, wenn Hilfeschleife abgebrochen wurde -->
+        <div id="oer-aufgabe-25_fragetext-buttons">
+            <div id="oer-aufgabe-25_fragetext-button-zu-2">
+            </div>
+            <div id="oer-aufgabe-25_fragetext-button-zu-3">
+            </div>
+            <div id="oer-aufgabe-25_fragetext-button-zu-4">
+            </div>
+            <div id="oer-aufgabe-25_fragetext-button-zu-5">
+            </div>
+        </div>
+        [[feedback:prt1]]
+    </div>
+    <div id="oer-aufgabe-25_zwischen1" style="display: none">
+        <p>
+            <b>
+                Intermediate step 1:
+            </b>
+            In the following it is assumed that the birthdays of \(n\) Persons
+realizations of independent, identically distributed random variables with
+Values in the 365-element quantity {1. Januar, 2. Januar, ..., 31.
+                                Dezember} are. 29 February is neglected.
+        </p>
+        <p>
+            In the original model, this assumption corresponds to ...
+        </p>
+        <p>
+            [[input:ans2]] [[validation:ans2]]
+        </p>
+        [[feedback:prt2_1]]
+        <br/>
+        <p>
+            By which of the following formal representations of urn models
+can the associated result space be described?
+        </p>
+        <p>
+            [[input:ans3]] [[validation:ans3]]
+        </p>
+        [[feedback:prt2_2]]
+        <br/>
+        <p>
+            Please click on the button after you have replied
+"Check."
+        </p>
+        <p>
+            [[feedback:prt2_weiter]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-25_zwischen2" style="display: none">
+        <p>
+            <b>
+                Intermediate step 2:
+            </b>
+            This step is about events and counter events.
+        </p>
+        <p>
+            The event that of the \(n\) Persons in one room at least two
+on the same day, we will call from now on \(A\).
+        </p>
+        <p>
+            How to get the counter event \(A\) describe?
+            <br/>
+            Answer:
+    \(A^C =\) [[input:ans4]] [[validation:ans4]]
+        </p>
+        [[feedback:prt3_1]]
+        <br/>
+        <p>
+            How to leave \(A^C\) as a lot?
+            <br/>
+            Answer: \(A^C =\)[[input:ans5]] [[validation:ans5]]
+        </p>
+        [[feedback:prt3_2]]
+        <br/>
+        <p>
+            Please click on the button after you have replied
+"Check."
+        </p>
+        [[feedback:prt3_weiter]]
+    </div>
+    <div id="oer-aufgabe-25_zwischen3" style="display: none">
+        <p>
+            <b>
+                Intermediate step 3:
+            </b>
+            In the previous step, you have considered what the counter event of
+    \(A\) (so the event that of the \(n\) Persons in a room
+have at least two birthdays on the same day).
+        </p>
+        <p>
+            The idea is that the probability of \(A\) can determine,
+if you have the probability of \(A^C\) know.
+        </p>
+        <p>
+            It is \(\Omega\) a result room, \(A\subset \Omega\) an event and
+    \(A^C\) the corresponding counter event.
+            <br/>
+            Which of the following
+Expressions vote with \(P(A^C)\) in?
+        </p>
+        <p>
+            [[input:ans6]] [[validation:ans6]]
+        </p>
+        [[feedback:prt4]]
+    </div>
+    <div id="oer-aufgabe-25_zwischen4" style="display: none">
+        <p>
+            <b>
+                Step 4:
+            </b>
+            This step is about Laplace experiments. Which of the following
+Statements about Laplace experiments are correct?
+        </p>
+        [[input:ans7]] [[validation:ans7]]
+        <p>
+            Please click on the button after you have replied
+"Check."
+        </p>
+        <br/>
+        [[feedback:prt5]]
+    </div>
+    <div id="oer-aufgabe-25_zwischen5" style="display: none">
+        <p>
+            <b>
+                Interim step 5:
+            </b>
+            This is the last step that is necessary to the original
+Question to be answered. Think of different (Urn) models
+the combination and consider:
+        </p>
+        <p>
+            <b>
+                (i)
+            </b>
+            How large is the number
+            <i>
+                All
+            </i>
+            possible birthday combinations
+in a group of \(n\) Persons (if taken into account)
+will you?
+            <br/>
+            Answer: [[input:ans8]] [[validation:ans8]]
+        </p>
+        [[feedback:prt6_1]]
+        <br/>
+        <p>
+            <b>
+                (ii)
+            </b>
+            How big is the number of birthday combinations in which all
+Persons
+            <i>
+                on different days
+            </i>
+            birthday, in a
+Group of \(n\) Persons (if the order is taken into account)?
+            <br/>
+            [[input:ans9]] [[validation:ans9]]
+        </p>
+        [[feedback:prt6_2]]
+        <br/>
+        <p>
+            <b>
+                (iii)
+            </b>
+            How great is the probability that in a group of \(n\)Persons all
+            <i>
+                on different days
+            </i>
+            have your birthday?
+            <br/>
+            [[input:ans10]] [[validation:ans10]]
+        </p>
+        [[feedback:prt6_3]]
+        <br/>
+        <p>
+            Please click on the button after you have replied
+"Check."
+        </p>
+        [[feedback:prt6_weiter]]
+    </div>
+    <div id="oer-aufgabe-25_state" style="display: none">
+        <hr/>
+        [[input:state]] [[validation:state]]
+    </div>
+    <script>
+        document
+                                .querySelector("#oer-aufgabe-25_stack_input1 > input")
+                                .addEventListener("input", (event) => {
+                                                document.querySelector(
+                                                                "#oer-aufgabe-25_stack_input1_copy > input"
+                                                ).value = document.querySelector(
+                                                                "#oer-aufgabe-25_stack_input1 > input"
+                                                ).value;
+                                });
+    </script>
+    <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+    </script>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  Geburtstagsproblem
+
+  wurde entwickelt von
+  
+    Jonas Lache <jonas.lache[at]ruhr-uni-bochum.de>
+
+  nach einer Idee von
+  
+    Herold Dehling <herold.dehling[at]ruhr-uni-bochum.de>
+
+  an der Ruhr-Universit&#228;t Bochum.
+
+  Dieses Werk ist lizenziert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+
+  Diese Aufgabe bindet das Skript &#8216;stackselbstlern.js&#8217; von Michael
+  Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+/*Stellt sicher, dass beispielsweise 365! im Feedback nicht als (sehr gro&#223;e) Zahl angezeigt wird */
+factlim:10;
+
+/*Richtige L&#246;sung f&#252;r das Hauptproblem:*/
+TA1: 1-365!/( (365-n)!*365^n );
+
+/*Gegenwahrscheinlichkeit:*/
+TAf1: 365!/( (365-n)!*365^n ); 
+
+/* Wahrscheinlichkeitsraum bzw. Urnenmodell (geschlossene Fragen):*/
+Liste1: [
+    [1, true, "... einer Ziehung von n Kugeln mit Zur&#252;cklegen aus einer Urne, die 365 Kugeln mit der Beschriftung '1. Januar', '2. Januar', ..., '31. Dezember' enth&#228;lt."],
+    [2, false, "... einer Ziehung von n Kugeln ohne Zur&#252;cklegen aus einer Urne, die 365 Kugeln mit der Beschriftung '1. Januar', '2. Januar', ..., '31. Dezember' enth&#228;lt."],
+    [3, false, "... einer Ziehung von 365 Kugeln mit Zur&#252;cklegen aus einer Urne, die n Kugeln mit der Beschriftung '1', '2', ..., 'n' enth&#228;lt."],
+    [4, false, "... einer Ziehung von 365 Kugeln ohne Zur&#252;cklegen aus einer Urne, die n Kugeln mit der Beschriftung '1', '2', ..., 'n' enth&#228;lt."]
+];
+Liste1: random_permutation(Liste1);
+
+Liste2: [
+    [1, true, "{(&#969;1,&#8230;,&#969;n) : 1&#8804;&#969;i&#8804;365}"],
+    [2, false, "{(&#969;1,&#8230;,&#969;365) : 1&#8804;&#969;i&#8804;n}"],
+    [3, false, "{A&#8834;{1,2,&#8230;,365} : |A|=n}"]
+];
+Liste2: random_permutation(Liste2);
+
+
+/*Gegenereignis von A (geschlossene Fragen):*/
+Liste3: [
+    [1, true, "Alle Personen haben an unterschiedlichen Tagen Geburtstag."],
+    [2, false, "Es gibt Personen, die an unterschiedlichen Tagen Geburtstag haben."],
+    [3, false, "Es gibt genau 2 Personen, die an unterschiedlichen Tagen Geburtstag haben."],
+    [4, false, "Alle Personen haben am selben Tag Geburtstag."],
+    [5, false, "n-2 Personen haben an unterschiedlichen Tagen Geburtstag."]
+];
+Liste3: random_permutation(Liste3);
+
+Liste4: [
+    [1, true, "{(&#969;1,&#8230;,&#969;n) : 1&#8804;&#969;i&#8804;365, &#969;i&#8800;&#969;j&#160;falls&#160;i&#8800;j}"],
+    [2, false, "{(&#969;1,&#8230;,&#969;365) : 1&#8804;&#969;i&#8804;n, &#969;i&#8800;&#969;j&#160;falls&#160;i&#8800;j}"],
+    [3, false, "{A&#8834;{1,2,&#8230;,365} : |A|=n}"]
+];
+Liste4: random_permutation(Liste4);
+
+
+/* Formel f&#252;r P(A^C) (geschlossene Frage): */
+Liste5: [
+    [1, true, " \\(1-P(A)\\)"],
+    [2, true, " \\(P(\\Omega\\setminus A)\\)"],
+    [3, false, " \\(P(A)^{-1}\\)"],
+    [4, false, " \\((P(A))^C\\)"]
+];
+Liste5: random_permutation(Liste5);
+TAns4: set(1,2);
+
+
+/* Laplace-Experimente (geschlossene Frage): */
+Liste6: [
+    [1, true, "Laplace-Experimente sind Zufallsexperimente mit endlich vielen, gleich wahrscheinlichen Ergebnissen."],
+    [2, true, sconcat("Es sei \\(\\Omega\\) ein endlicher Ergebnisraum. Die Laplace-Verteilung auf \\(\\Omega\\) ist definiert durch \\[P(A)=\\frac{|A|}{|\\Omega|}\\] f&#252;r ein Ereignis \\(A\\subset \\Omega\\).")],
+    [3, true, sconcat("Die Laplace-Verteilung hat die Eigenschaft\\[
+P(A\\cup B) =P(A) +P(B)\\]
+f&#252;r disjunkte Ereignisse \\(A\\) und \\(B\\).")],
+    [4, false, sconcat("Es sei \\(\\Omega\\) ein endlicher Ergebnisraum. Die Laplace-Verteilung auf \\(\\Omega\\) ist definiert durch \\[P(A)=\\frac{1}{|\\Omega|}\\] f&#252;r ein Ereignis \\(A\\subset \\Omega\\).")]
+];
+Liste6: random_permutation(Liste6);
+TAns5: set(1,2,3);
+
+/* M&#246;gliche und g&#252;nstige Ereignisse: */
+TA8: 365^n;
+TA9: (365!)/((365-n)!);
+TA10: (365!)/((365-n)!*365^n);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{#TA1#}</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>TA1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans1_copy</name>
+            <type>algebraic</type>
+            <tans>TA1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans10</name>
+            <type>algebraic</type>
+            <tans>TA10</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>dropdown</type>
+            <tans>Liste1</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>dropdown</type>
+            <tans>Liste2</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>dropdown</type>
+            <tans>Liste3</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans5</name>
+            <type>dropdown</type>
+            <tans>Liste4</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans6</name>
+            <type>checkbox</type>
+            <tans>Liste5</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>LaTeX</options>
+        </input>
+        <input>
+            <name>ans7</name>
+            <type>checkbox</type>
+            <tans>Liste6</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>LaTeX</options>
+        </input>
+        <input>
+            <name>ans8</name>
+            <type>algebraic</type>
+            <tans>TA8</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans9</name>
+            <type>algebraic</type>
+            <tans>TA9</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>state</name>
+            <type>algebraic</type>
+            <tans>1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>allowempty</options>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>/* === Erkl&#228;rung der Knoten: ===
+Knoten 1: Wurde als Variable nur n angegeben?
+Knoten 2: Ist die Wahrscheinlichkleit richtig?
+Knoten 3: Wurde die Gegenwahrscheinlichkeit angegeben?
+*/
+
+/*In ans1 verwendete Variablen:*/
+ans1_par: listofvars(ans1);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1_par</sans>
+                <tans>[n]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    [[ if test="member(n,ans1_par)" ]]
+    <p>
+        Ihre Antwort sollte nur den Parameter \(n\) enthalten, enth&#228;lt aber noch die folgenden: {@sequenceify(delete(n,ans1_par))@}
+    </p>
+    [[ else ]]
+    <p>
+        Ihre Antwort sollte den Parameter \(n\) enthalten, sie tut es aber nicht.
+    </p>
+    [[/ if ]]
+    <p>
+        Bitte probieren Sie es noch einmal und klicken Sie dann auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    [[ if test="member(n,ans1_par)" ]]
+    <p>
+        Your answer should only be the parameter \(n\) but contains the following: {@sequenceify(delete(n,ans1_par))@}
+    </p>
+    [[ else ]]
+    <p>
+        Your answer should be the parameter \(n\) they do not.
+    </p>
+    [[/ if ]]
+    <p>
+        Please try it again and then click "Check".
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>TA1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    [[ if test="is(state=EMPTYANSWER)" ]]
+    <p>
+        Herzlichen Gl&#252;ckwunsch! Sie haben die Wahrscheinlichkeit richtig berechnet und sind somit am Ende der Aufgabe angelangt. Beachten Sie aber noch die Box unten.
+    </p>
+    [[/ if ]]
+
+
+
+
+[[ if test="is(state=1) or is(state=2)" ]]
+    <p>
+        Herzlichen Gl&#252;ckwunsch, Sie haben es geschafft! Mithilfe der Zwischenschritte, die die Aufgabe in mehrere Teilaufgaben unterteilt haben, haben Sie die Aufgabe gel&#246;st und sind somit am Ende der Aufgabe angelangt. Beachten Sie aber noch die Box unten.
+    </p>
+    [[/ if ]]
+    <details>
+        <summary>
+            Musterl&#246;sungsweg anzeigen
+        </summary>
+        <p>
+            Diese Aufgabe kann z. B. mithilfe der Laplace-Verteilung und der Formel f&#252;r die Wahrscheinlichkeit des Gegenereignisses gel&#246;st werden.
+        </p>
+        <p>
+            Gesucht ist die Wahrscheinlichkeit, dass von den \(n\) Personen in einem Raum mindestens zwei am selben Tag Geburtstag haben. Dieses Ereignis k&#246;nnen wir mit \(A\) bezeichnen. Die Wahrscheinlichkeit \(P(A)\) k&#246;nnen wir &#252;ber das Gegenereignis \(A^C\) von \(A\) bestimmen: Es gilt \(P(A) = 1-P(A^C)\).
+        </p>
+        <p>
+            Die Annahme, dass die Geburtstage von \(n\) Personen Realisierungen unabh&#228;ngiger, identisch verteilter Zufallsvariablen mit Werten in der 365-elementigen Menge {1. Januar, 2. Januar, ..., 31. Dezember} sind, entspricht dem Urnenmodell einer Ziehung von \(n\) Kugeln mit Zur&#252;cklegen aus einer Urne, die 365 Kugeln mit der Beschriftung "1. Januar", "2. Januar", ..., "31. Dezember" enth&#228;lt. Der Ergebnisraum l&#228;sst sich dann durch die Menge \(\Omega = \{(\omega_1,&#8230;,\omega_n) \colon 1\le\omega_i\le365\}\) ausdr&#252;cken.
+        </p>
+        <p>
+            Die Anzahl
+            <i>
+                aller
+            </i>
+            m&#246;glichen Geburtstagskombinationen in einer Gruppe von \(n\) Personen (wenn die Reihenfolge ber&#252;cksichtigt wird) entspricht {@TA8@} (\(n\)-fachen Ziehen aus einer Urne mit 365 Kugeln
+            <i>
+                mit
+            </i>
+            Zur&#252;cklegen und unter Beachtung der Reihenfolge). Die Anzahl aller Geburtstagskombinationen, in denen alle Personen (in einer Gruppe von \(n\) Personen)
+            <i>
+                an unterschiedlichen Tagen
+            </i>
+            Geburtstag haben (wenn die Reihenfolge ber&#252;cksichtigt wird), entspricht {@TA9@} (\(n\)-fachen Ziehen aus einer Urne mit 365 Kugeln
+            <i>
+                ohne
+            </i>
+            Zur&#252;cklegen und unter Beachtung der Reihenfolge). Die Wahrscheinlichkeit, dass in einer Gruppe von \(n\) Personen alle
+            <i>
+                an unterschiedlichen Tagen
+            </i>
+            Geburtstag haben, ergibt sich durch die Anwendung der Formel \(P(B)=\frac{|B|}{|\Omega|}\) (Laplace-Verteilung). Division von {@TA9@} durch {@TA8@} liefert, dass die Wahrscheinlichkeit genau {@TA10@} betr&#228;gt.
+        </p>
+        <p>
+            Wendet man nun die Formel f&#252;r die Gegenwahrscheinlichkeit an, ergibt sich f&#252;r die gesuchte Wahrscheinlichkeit, dass von den \(n\) Personen in einem Raum mindestens zwei am selben Tag Geburtstag haben, durch \(P(A)=1-P(A^C) = {@TA1@}\).
+        </p>
+    </details>
+    <br/>
+    <div class="divanmerkung">
+        <h4>
+            Was Sie aus diesem Beispiel mitnehmen k&#246;nnen:
+        </h4>
+        <p>
+            Das mathematische Problem, um das es in dieser Aufgabe ging, hei&#223;t "Geburtstagsproblem" oder auch "Geburtstagsparadoxon". Es ist ein Beispiel daf&#252;r, dass wir Wahrscheinlichkeiten im Alltag oft falsch einsch&#228;tzen.
+        </p>
+        <p>
+            Klarer wird das, wenn wir die Wahrscheinlichkeit \(p(n)\), also dass von \(n\) Personen in einem Raum mindestens zwei am selben Tag Geburtstag haben, mal f&#252;r konkrete Werte von \(n\) betrachten. Dazu k&#246;nnen Sie die folgende
+            <strong>
+                interaktive Anwendung
+            </strong>
+            verwenden. Mit dem Ver&#228;ndern des Schiebereglers k&#246;nnen Sie den Wert von \(n\) variieren und bekommen dann die entsprechende Wahrscheinlichkeit \(p(n)\) angezeigt.
+        </p>
+        [[jsxgraph width="500px" height="500px"]]
+                window.addEventListener('load', function (){
+                                hide('oer-aufgabe-25_fragetext-buttons');
+                });
+                var wsk_liste = [0.0,0.003,0.008,0.016,0.027,0.04,0.056,0.074,0.095,0.117,
+                                0.141,0.167,0.194,0.223,0.253,0.284,0.315,0.347,0.379,0.411,0.444,0.476,
+                                0.507,0.538,0.569,0.598,0.627,0.654,0.681,0.706,0.73,0.753,0.775,0.795,
+                                0.814,0.832,0.849,0.864,0.878,0.891,0.903,0.914,0.924,0.933,0.941,0.948,
+                                0.955,0.961,0.966,0.97,0.974,0.978,0.981,0.984,0.986,0.988,0.99,0.992,
+                                0.993,0.994,0.995,0.996,0.997,0.997,0.998,0.998,0.998,0.999,0.999,0.999,
+                                0.999,0.999,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+                ];
+      
+          
+          
+          
+    JXG.Options.text.useMathJax = true;
+                const board = JXG.JSXGraph.initBoard(divid, {
+                                boundingbox: [-5, 5, 5, -5],
+                                showNavigation:false,
+                                showCopyright:false,
+                                pan:{enabled:false},
+                                zoom:{enabled:false}
+                                });
+
+    
+    
+    
+    var s = board.create('slider',[[-4.7,-4.5],[3.7,-4.5],[1,1,365]],{
+                                snapWidth:1,
+                                precision:0,
+                                name:"n"
+                });
+    
+        
+        
+        
+    var chart_array = [
+                                function(){return wsk_liste[s.Value()-1]},
+                                function(){return 1-wsk_liste[s.Value()-1]}
+                ];
+    
+        
+        
+        
+    var diagram = board.create('chart',[chart_array], {
+                                chartStyle:'pie',
+                                startAngle:0,
+                                withLabel:true,
+                                labels:[chart_array[0],''],
+                                fixed:true,
+                                highlight:false
+                });
+                [[/jsxgraph]]
+        <p>
+            Sie sehen, dass \(p(n)\) f&#252;r relativ kleine \(n\) ziemlich klein ist, aber schnell w&#228;chst. Beispielsweise ist die Wahrscheinlichkeit bereits f&#252;r \(n=23\) gr&#246;&#223;er als 50 Prozent. In einer Schulklasse mit 30 Sch&#252;ler:innen liegt die Wahrscheinlichkeit, dass mindestens zwei von ihnen am gleichen Tag Geburtstag haben, sogar bei &#252;ber 70 Prozent. H&#228;tten Sie das gedacht?
+        </p>
+        <p>
+            <strong>
+                &#220;berpr&#252;fen Sie doch mal, ab welchem \(n\) die Wahrscheinlichkeit bei &#252;ber 99 Prozent liegt.
+            </strong>
+        </p>
+    </div>
+</span>
+<span class="multilang" lang="en">
+    [[ if test="is(state=EMPTYANSWER)" ]]
+    <p>
+        Congratulations! They have calculated the likelihood correctly and are therefore at the end of the task. Keep in mind the box below.
+    </p>
+    [[/ if ]][[ if test="is(state=1) or is(state=2)" ]]
+    <p>
+        Congratulations, you made it! With the help of the intermediate steps, which have divided the task into several subtasks, you have solved the task and are therefore at the end of the task. Keep in mind the box below.
+    </p>
+    [[/ if ]]
+    <details>
+        <summary>
+            View sample solution path
+        </summary>
+        <p>
+            This task can e.g. by means of the Laplace distribution and the formula for the probability of the counter event.
+        </p>
+        <p>
+            sought is the probability that of the \(n\) Persons in a room have at least two birthdays on the same day. This event we can \(A\) the name. Probability \(P(A)\) we can use the counter event \(A^C\) of \(A\) Determine: It applies \(P(A) = 1-P(A^C)\).
+        </p>
+        <p>
+            The assumption that the birthdays of \(n\) Individual realizations of independent, identically distributed random variables with values in the 365-element quantity {1. Januar, 2. Januar, ..., 31. Dezember} the original model corresponds to a drawing of \(n\) Spheres with back from a urn containing 365 bullets with the label "1 January", "2 January", "31 December". The result room can then be passed through the quantity \(\Omega = \{(\omega_1,&#8230;,\omega_n) \colon 1\le\omega_i\le365\}\) express.
+        </p>
+        <p>
+            The number
+            <i>
+                All
+            </i>
+            possible birthday combinations in a group of \(n\) Persons (if taken into account) equals {@TA8@} (\(n\)-time drawing from a urn with 365 balls
+            <i>
+                with
+            </i>
+            Reset and follow the order). The number of birthday combinations in which all persons (in a group of \(n\) Persons
+            <i>
+                on different days
+            </i>
+            have birthday (if the order is taken into account), corresponding {@TA9@} (\(n\)-time drawing from a urn with 365 balls
+            <i>
+                Other
+            </i>
+            Reset and follow the order). The probability that in a group of \(n\) Persons all
+            <i>
+                on different days
+            </i>
+            having a birthday, results from the application of the formula \(P(B)=\frac{|B|}{|\Omega|}\) (Laplace distribution). Division of {@TA9@} by {@TA8@} provides that the probability is accurate {@TA10@} is.
+        </p>
+        <p>
+            If one applies the formula for the counter-probability, it results for the desired probability that \(n\) persons in one room have at least two birthdays on the same day, by \(P(A)=1-P(A^C) = {@TA1@}\).
+        </p>
+    </details>
+    <br/>
+    <div class="divanmerkung">
+        <h4>
+            What you can take from this example:
+        </h4>
+        <p>
+            The mathematical problem to be addressed in this task is called "birth-day problem" or "birth-day-sparadoxon". It is an example that we often misjudge probabilities in everyday life.
+        </p>
+        <p>
+            It becomes clearer if we have the probability \(p(n)\)so that of \(n\) people in a room have at least two birthdays on the same day, sometimes for specific values of \(n\) see. To do this, you can:
+            <strong>
+                interactive application
+            </strong>
+            use. By changing the slider you can adjust the value of \(n\) vary and get the corresponding probability \(p(n)\) displayed.
+        </p>
+        [[jsxgraph width="500px" height="500px"]]
+                window.addEventListener('load', function (){
+                                hide('oer-aufgabe-25_fragetext-buttons');
+                });
+                var wsk_liste = [0.0,0.003,0.008,0.016,0.027,0.04,0.056,0.074,0.095,0.117,
+                                0.141,0.167,0.194,0.223,0.253,0.284,0.315,0.347,0.379,0.411,0.444,0.476,
+                                0.507,0.538,0.569,0.598,0.627,0.654,0.681,0.706,0.73,0.753,0.775,0.795,
+                                0.814,0.832,0.849,0.864,0.878,0.891,0.903,0.914,0.924,0.933,0.941,0.948,
+                                0.955,0.961,0.966,0.97,0.974,0.978,0.981,0.984,0.986,0.988,0.99,0.992,
+                                0.993,0.994,0.995,0.996,0.997,0.997,0.998,0.998,0.998,0.999,0.999,0.999,
+                                0.999,0.999,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+                                1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+                ];
+      
+          
+          
+          
+    JXG.Options.text.useMathJax = true;
+                const board = JXG.JSXGraph.initBoard(divid, {
+                                boundingbox: [-5, 5, 5, -5],
+                                showNavigation:false,
+                                showCopyright:false,
+                                pan:{enabled:false},
+                                zoom:{enabled:false}
+                                });
+
+    
+    
+    
+    var s = board.create('slider',[[-4.7,-4.5],[3.7,-4.5],[1,1,365]],{
+                                snapWidth:1,
+                                precision:0,
+                                name:"n"
+                });
+    
+        
+        
+        
+    var chart_array = [
+                                function(){return wsk_liste[s.Value()-1]},
+                                function(){return 1-wsk_liste[s.Value()-1]}
+                ];
+    
+        
+        
+        
+    var diagram = board.create('chart',[chart_array], {
+                                chartStyle:'pie',
+                                startAngle:0,
+                                withLabel:true,
+                                labels:[chart_array[0],''],
+                                fixed:true,
+                                highlight:false
+                });
+                [[/jsxgraph]]
+        <p>
+            You see that \(p(n)\) for relatively small \(n\) is quite small, but quickly grows. For example, the probability is already \(n=23\) more than 50 percent. In a school class with 30 pupils, there is the probability that at least two of them have a birthday on the same day, even over 70 percent. Would you have thought that?
+        </p>
+        <p>
+            <strong>
+                Check out what \(n\) the probability is over 99 percent.
+            </strong>
+        </p>
+    </div>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>1-TA1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben die Gegenwahrscheinlichkeit angegeben. Bitte probieren Sie es noch einmal und klicken Sie dann auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        They indicated the counter probability. Please try it again and then click "Check".
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    [[ if test="is(state=1)" ]]
+    <p>
+        Bitte beantworten Sie die Frage nun erneut. Benutzen Sie daf&#252;r die Informationen, die Sie in den Zwischenschritten erhalten haben.
+    </p>
+    <p>
+        Im Eingabefeld sehen Sie die Antwort aus Ihrem vorherigen Versuch.
+    </p>
+    [[/ if ]]
+
+
+
+
+[[ if test="is(state=2)" ]]
+    <p>
+        Sie k&#246;nnen die Aufgabe noch einmal probiereren und dann auf "Pr&#252;fen" klicken.
+    </p>
+    <div id="oer-aufgabe-25_tipp_prt1_button">
+        <p>
+            Vielleicht hilft Ihnen dieser Tipp:
+            <button class="buttontipp" onclick="show('oer-aufgabe-25_tipp_prt1');hide('oer-aufgabe-25_tipp_prt1_button');" type="button">
+                Tipp anzeigen
+            </button>
+        </p>
+    </div>
+    <div class="divtipp" id="oer-aufgabe-25_tipp_prt1" style="display:none;">
+        <p>
+            Tipp: Aus dem letzten Zwischenschritt wissen wir, dass die Wahrscheinlichkeit, dass in einer Gruppe von \(n\) Personen alle an unterschiedlichen Tagen Geburtstag haben, genau {@TA10@} betr&#228;gt. Denken Sie jetzt an den Zwischenschritt, in dem es um Gegenereignisse und die Berechnung von \(P(A^C)\) ging!
+        </p>
+    </div>
+    [[/ if ]]
+
+
+
+
+[[ if test="is(state=EMPTYANSWER)" ]]
+    <p>
+        Dass Sie Aufgabe nicht auf Anhieb l&#246;sen konnten, ist aber kein Problem!
+    </p>
+    <p>
+        Damit es ein bisschen einfacher wird, wird die Aufgabe im Folgenden in mehrere kleinere und einfacherere Teilaufgaben unterteilt. Wenn Sie diese alle l&#246;sen, ist die urspr&#252;ngliche Aufgabe bestimmt kein Problem mehr ;-)
+    </p>
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="
+                            hide('oer-aufgabe-25_aufgabe');
+                            show('oer-aufgabe-25_zwischen1');
+                            show('oer-aufgabe-25_erinnerungsbox');
+                            document.querySelector('#oer-aufgabe-25_state &gt; input').value=1;
+                " type="button">
+            Weiter
+        </button>
+    </p>
+    [[/ if ]]
+</span>
+<span class="multilang" lang="en">
+    [[ if test="is(state=1)" ]]
+    <p>
+        Please answer the question again. Use the information you received in the intermediate steps.
+    </p>
+    <p>
+        In the input field you will see the answer from your previous attempt.
+    </p>
+    [[/ if ]][[ if test="is(state=2)" ]]
+    <p>
+        You can try again and then click on "Check".
+    </p>
+    <div id="oer-aufgabe-25_tipp_prt1_button">
+        <p>
+            Maybe this tip will help you:
+            <button class="buttontipp" onclick="show('oer-aufgabe-25_tipp_prt1');hide('oer-aufgabe-25_tipp_prt1_button');" type="button">
+                View
+            </button>
+        </p>
+    </div>
+    <div class="divtipp" id="oer-aufgabe-25_tipp_prt1" style="display:none;">
+        <p>
+            Tip: From the last intermediate step we know that the probability that in a group of \(n\) people all have birthdays on different days, exactly {@TA10@} is. Consider now the intermediate step in which it involves counter events and the calculation of \(P(A^C)\) go!
+        </p>
+    </div>
+    [[/ if ]][[ if test="is(state=EMPTYANSWER)" ]]
+    <p>
+        That you couldn't solve your task right now, but it's not a problem!
+    </p>
+    <p>
+        In order to make it a bit easier, the task is subdivided below into several smaller and simpler subtasks. If you solve these all, the original task is no longer a problem;-)
+    </p>
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="
+                            hide('oer-aufgabe-25_aufgabe');
+                            show('oer-aufgabe-25_zwischen1');
+                            show('oer-aufgabe-25_erinnerungsbox');
+                            document.querySelector('#oer-aufgabe-25_state &gt; input').value=1;
+                " type="button">
+            Next
+        </button>
+    </p>
+    [[/ if ]]
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2_1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p class="correct">
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Man kann die gegebene Situation, dass sich \(n\) Personen in einem Raum befinden und jeder Person ihr Geburtstag zugeordnet wird (eine Zahl zwischen 1 und 365) mit einer \(n\)-fachen Ziehung aus einer Urne mit 365 Kugeln (mit Zur&#252;cklegen und mit Beachtung der Reihenfolge) assoziieren.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p class="correct">
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        One can see the given situation that \(n\) Persons in a room and assigned to each person their birthday (a number between 1 and 365) with a \(n\)-time drawing from a urn with 365 balls (with resetting and observing the order) associating.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p class="incorrect">
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Denken Sie noch einmal nach, welchem Urnenmodell es entspricht, wenn sich \(n\) Personen in einem Raum befinden und jeder Person ihr Geburtstag zugeordnet wird (eine Zahl zwischen 1 und 365).
+    </p>
+    <p>
+        Antworten Sie einfach noch einmal und klicken Sie dann auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p class="incorrect">
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        Think again what urn model it corresponds to when \(n\) Persons in one room and each person is assigned their birthday (a number between 1 and 365).
+    </p>
+    <p>
+        Just answer again and then click on "Check".
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2_2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2_2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p class="correct">
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Das passende Urnenmodell f&#252;hrt zu dem Ergebnisraum \(\Omega = \{ (\omega_1, \dots , \omega_n) \mid 1\le \omega_i \le 365 \}\).
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p class="correct">
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        The matching urn model leads to the result space \(\Omega = \{ (\omega_1, \dots , \omega_n) \mid 1\le \omega_i \le 365 \}\).
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2_2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p class="incorrect">
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Die formale Mengenschreibweise lautet anders, als Sie es angegeben haben.
+    </p>
+    <p>
+        Versuchen Sie es einfach noch einmal und klicken Sie dann auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p class="incorrect">
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        The formal quantity spelling is different than you specified.
+    </p>
+    <p>
+        Just try again and then click "Check".
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2_weiter</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ans2,ans3]</sans>
+                <tans>[1,1]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2_weiter-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Wenn Sie einen weiteren Zwischenschritt bearbeiten m&#246;chten, klicken Sie bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('oer-aufgabe-25_zwischen1');show('oer-aufgabe-25_zwischen2');" type="button">
+            Zum n&#228;chsten Zwischenschritt
+        </button>
+    </p>
+    <p>
+        Wenn Sie bereits zur&#252;ck zur urspr&#252;nglichen Aufgabe zur&#252;ckkehren m&#246;chten, dann klicken Sie bitte auf diesen Button:
+        <button class="buttonzurueck" onclick="hide('oer-aufgabe-25_zwischen1');show('oer-aufgabe-25_aufgabe');" type="button">
+            Zur&#252;ck zur urspr&#252;nglichen Aufgabe
+        </button>
+    </p>
+    <script>
+        (function(){
+				const ansDiv = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items_div");
+				const ansDivItems = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items");
+				ansDiv.style.display = "block";
+				var listitem = document.createElement("li");
+				listitem.append("Dass sich " + "\\" + "(n" + "\\"+") Personen in einem Raum befinden und jeder Person ihr Geburtstag zugeordnet wird (eine Zahl zwischen 1 und 365), l&#228;sst sich mit einer " + "\\" + "(n" +"\\" + ")-fachen Ziehung aus einer Urne mit 365 Kugeln (mit Zur&#252;cklegen und mit Beachtung der Reihenfolge) assoziieren.");
+				ansDivItems.append(listitem);
+				var listitem = document.createElement("li");
+				listitem.append("Das passende Urnenmodell f&#252;hrt zu dem Ergebnisraum " + "\\" + "("+"\\"+"Omega = "+"\\"+"{ ("+"\\"+"omega_1, "+"\\"+"dots , "+"\\"+"omega_n) "+"\\"+"mid 1"+"\\"+"le "+"\\"+"omega_i "+"\\"+"le 365"+"\\"+"}"+"\\"+").");
+				ansDivItems.append(listitem);
+})();
+(function(){
+                const div = document.querySelector("#oer-aufgabe-25_fragetext-button-zu-2");
+                div.style.display = "block";
+                const paragraph = document.createElement("p");
+                paragraph.innerHTML="Wenn Sie doch noch einen weiteren Zwischenschritt w&#252;nschen, klicken Sie bitte hier: "
+                const button = document.createElement("button");
+                button.type="button";
+                button.classList.add("buttonweiter");
+                button.innerHTML="Zu einem weiteren Zwischenschritt";
+                button.addEventListener("click", evt =>{
+                                hide('oer-aufgabe-25_aufgabe');
+                                show('oer-aufgabe-25_zwischen2');
+                                hide('oer-aufgabe-25_fragetext-button-zu-2');
+                });
+                paragraph.append(button);
+                div.append(paragraph);
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        If you want to edit another step, please click the following button:
+        <button class="buttonweiter" onclick="hide('oer-aufgabe-25_zwischen1');show('oer-aufgabe-25_zwischen2');" type="button">
+            The next step
+        </button>
+    </p>
+    <p>
+        If you want to return to the original task, please click on this button:
+        <button class="buttonzurueck" onclick="hide('oer-aufgabe-25_zwischen1');show('oer-aufgabe-25_aufgabe');" type="button">
+            Back to the original task
+        </button>
+    </p>
+    <script>
+        (function(){
+				const ansDiv = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items_div");
+				const ansDivItems = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items");
+				ansDiv.style.display = "block";
+				var listitem = document.createElement("li");
+				listitem.append("Dass sich " + "\\" + "(n" + "\\"+") Personen in einem Raum befinden und jeder Person ihr Geburtstag zugeordnet wird (eine Zahl zwischen 1 und 365), l&#228;sst sich mit einer " + "\\" + "(n" +"\\" + ")-fachen Ziehung aus einer Urne mit 365 Kugeln (mit Zur&#252;cklegen und mit Beachtung der Reihenfolge) assoziieren.");
+				ansDivItems.append(listitem);
+				var listitem = document.createElement("li");
+				listitem.append("Das passende Urnenmodell f&#252;hrt zu dem Ergebnisraum " + "\\" + "("+"\\"+"Omega = "+"\\"+"{ ("+"\\"+"omega_1, "+"\\"+"dots , "+"\\"+"omega_n) "+"\\"+"mid 1"+"\\"+"le "+"\\"+"omega_i "+"\\"+"le 365"+"\\"+"}"+"\\"+").");
+				ansDivItems.append(listitem);
+})();
+(function(){
+                const div = document.querySelector("#oer-aufgabe-25_fragetext-button-zu-2");
+                div.style.display = "block";
+                const paragraph = document.createElement("p");
+                paragraph.innerHTML="Wenn Sie doch noch einen weiteren Zwischenschritt w&#252;nschen, klicken Sie bitte hier: "
+                const button = document.createElement("button");
+                button.type="button";
+                button.classList.add("buttonweiter");
+                button.innerHTML="Zu einem weiteren Zwischenschritt";
+                button.addEventListener("click", evt =>{
+                                hide('oer-aufgabe-25_aufgabe');
+                                show('oer-aufgabe-25_zwischen2');
+                                hide('oer-aufgabe-25_fragetext-button-zu-2');
+                });
+                paragraph.append(button);
+                div.append(paragraph);
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2_weiter-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3_1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p class="correct">
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Das Gegenereignis zu \(A\) ist, dass alle Personen an unterschiedlichen Tagen Geburtstag haben.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p class="correct">
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        The counter event \(A\) is that all people have birthdays on different days.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p class="incorrect">
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    [[ if test='is(ans4=2)' ]]
+    <p>
+        Zu Ihrer ausgew&#228;hlten Option: Wenn es Personen gibt, die an unterschiedlichen Tagen Geburtstag haben, kann es immer noch sein, dass es ebenfalls Personen gibt, die am gleichen Tag Geburtstag haben.
+    </p>
+    [[ elif test='is(ans4=3)']]
+    <p>
+        Zu Ihrer ausgew&#228;hlten Option: Wenn es genau zwei Personen gibt, die an unterschiedlichen Tagen Geburtstag haben, gibt es im Fall \(n&gt;2\) noch immer Personen, die am gleichen Tag Geburtstag haben.
+    </p>
+    [[ elif test='is(ans4=4)']]
+    <p>
+        Zu Ihrer ausgew&#228;hlten Option: Dies ist ein Teilereignis von \(A\) und nicht sein Gegenereignis \(A^C\).
+    </p>
+    [[ else ]]
+    <p>
+        Zu Ihrer ausgew&#228;hlten Option: Wenn \(n-2\) der \(n\) Personen an unterschiedlichen Tagen Geburtstag haben, gibt es immer noch Personen, die am gleichen Tag Geburtstag haben.
+    </p>
+    [[/ if ]]
+    <p>
+        Bitte w&#228;hlen Sie eine der anderen Optionen aus. Klicken Sie dann erneut auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p class="incorrect">
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    [[ if test='is(ans4=2)' ]]
+    <p>
+        For your selected option: If there are people who have a birthday on different days, it can still be that there are also people who have a birthday on the same day.
+    </p>
+    [[ elif test='is(ans4=3)']]
+    <p>
+        For your selected option: If there are exactly two people who have a birthday on different days, there is a case \(n&gt;2\) still people who have their birthday the same day.
+    </p>
+    [[ elif test='is(ans4=4)']]
+    <p>
+        To your selected option: This is a partial event of \(A\) and not his counter event \(A^C\).
+    </p>
+    [[ else ]]
+    <p>
+        To your selected option: \(n-2\) the \(n\) People on different days have their birthday, there are still people who have their birthday on the same day.
+    </p>
+    [[/ if ]]
+    <p>
+        Please select one of the other options. Then click "Check" again.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3_2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans5</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3_2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p class="correct">
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Das Gegenereignis zu \(A\) kann man wie folgt als Menge schreiben: \(A^C = \{ (\omega_1,\dots,\omega_n) \mid 1 \le \omega_i \le 365,\; \omega_i\ne \omega_j \text{ falls } i\ne j \} \)
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p class="correct">
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        The counter event \(A\) can be written as follows: \(A^C = \{ (\omega_1,\dots,\omega_n) \mid 1 \le \omega_i \le 365,\; \omega_i\ne \omega_j \text{ falls } i\ne j \} \)
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3_2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p class="incorrect">
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Denken Sie noch einmal nach, wie man das Gegenereignis zu \(A\) als Menge schreiben kann. Antworten Sie einfach noch einmal und klicken Sie dann erneut auf "Pr&#252;fen".
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p class="incorrect">
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        Think again how to get the counter event \(A\) can write as a lot. Just answer again and then click "Check".
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3_weiter</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ans4,ans5]</sans>
+                <tans>[1,1]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3_weiter-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Wenn Sie einen weiteren Zwischenschritt bearbeiten m&#246;chten, klicken Sie bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('oer-aufgabe-25_zwischen2');show('oer-aufgabe-25_zwischen3');" type="button">
+            Zum n&#228;chsten Zwischenschritt
+        </button>
+    </p>
+    <p>
+        Wenn Sie bereits zur&#252;ck zur urspr&#252;nglichen Aufgabe zur&#252;ckkehren m&#246;chten, dann klicken Sie bitte auf diesen Button:
+        <button class="buttonzurueck" onclick="hide('oer-aufgabe-25_zwischen2');show('oer-aufgabe-25_aufgabe');" type="button">
+            Zur&#252;ck zur urspr&#252;nglichen Aufgabe
+        </button>
+    </p>
+    <script>
+        (function(){
+				const ansDiv = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items_div");
+				const ansDivItems = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items");
+				ansDiv.style.display = "block";
+				var listitem = document.createElement("li");
+				listitem.append("Das Gegenereignis zu "+"\\"+"(A"+"\\"+") ist, dass alle Personen an unterschiedlichen Tagen Geburtstag haben.");
+				ansDivItems.append(listitem);
+				var listitem = document.createElement("li");
+				listitem.append("Das Gegenereignis zu "+"\\"+"(A"+"\\"+") kann man wie folgt als Menge schreiben: "+"\\"+"(A^C = "+"\\"+"{ ("+"\\"+"omega_1,"+"\\"+"dots,"+"\\"+"omega_n) "+"\\"+"mid 1 "+"\\"+"le "+"\\"+"omega_i "+"\\"+"le 365,"+"\\"+"; "+"\\"+"omega_i"+"\\"+"ne "+"\\"+"omega_j "+"\\"+"text{ falls } i"+"\\"+"ne j "+"\\"+"} "+"\\"+")");
+				ansDivItems.append(listitem);
+})();
+(function(){
+                window.addEventListener('load', function (){
+                                hide('oer-aufgabe-25_fragetext-button-zu-2');
+                                show('oer-aufgabe-25_fragetext-button-zu-3');
+                });
+                const div = document.querySelector("#oer-aufgabe-25_fragetext-button-zu-3");
+                div.style.display = "block";
+                const paragraph = document.createElement("p");
+                paragraph.innerHTML="Wenn Sie doch noch einen weiteren Zwischenschritt w&#252;nschen, klicken Sie bitte hier: "
+                const button = document.createElement("button");
+                button.type="button";
+                button.classList.add("buttonweiter");
+                button.innerHTML="Zu einem weiteren Zwischenschritt";
+                button.addEventListener("click", evt =>{
+                                hide('oer-aufgabe-25_aufgabe');
+                                show('oer-aufgabe-25_zwischen3');
+                                hide('oer-aufgabe-25_fragetext-button-zu-3');
+                });
+                paragraph.append(button);
+                div.append(paragraph);
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        If you want to edit another step, please click the following button:
+        <button class="buttonweiter" onclick="hide('oer-aufgabe-25_zwischen2');show('oer-aufgabe-25_zwischen3');" type="button">
+            The next step
+        </button>
+    </p>
+    <p>
+        If you want to return to the original task, please click on this button:
+        <button class="buttonzurueck" onclick="hide('oer-aufgabe-25_zwischen2');show('oer-aufgabe-25_aufgabe');" type="button">
+            Back to the original task
+        </button>
+    </p>
+    <script>
+        (function(){
+				const ansDiv = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items_div");
+				const ansDivItems = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items");
+				ansDiv.style.display = "block";
+				var listitem = document.createElement("li");
+				listitem.append("Das Gegenereignis zu "+"\\"+"(A"+"\\"+") ist, dass alle Personen an unterschiedlichen Tagen Geburtstag haben.");
+				ansDivItems.append(listitem);
+				var listitem = document.createElement("li");
+				listitem.append("Das Gegenereignis zu "+"\\"+"(A"+"\\"+") kann man wie folgt als Menge schreiben: "+"\\"+"(A^C = "+"\\"+"{ ("+"\\"+"omega_1,"+"\\"+"dots,"+"\\"+"omega_n) "+"\\"+"mid 1 "+"\\"+"le "+"\\"+"omega_i "+"\\"+"le 365,"+"\\"+"; "+"\\"+"omega_i"+"\\"+"ne "+"\\"+"omega_j "+"\\"+"text{ falls } i"+"\\"+"ne j "+"\\"+"} "+"\\"+")");
+				ansDivItems.append(listitem);
+})();
+(function(){
+                window.addEventListener('load', function (){
+                                hide('oer-aufgabe-25_fragetext-button-zu-2');
+                                show('oer-aufgabe-25_fragetext-button-zu-3');
+                });
+                const div = document.querySelector("#oer-aufgabe-25_fragetext-button-zu-3");
+                div.style.display = "block";
+                const paragraph = document.createElement("p");
+                paragraph.innerHTML="Wenn Sie doch noch einen weiteren Zwischenschritt w&#252;nschen, klicken Sie bitte hier: "
+                const button = document.createElement("button");
+                button.type="button";
+                button.classList.add("buttonweiter");
+                button.innerHTML="Zu einem weiteren Zwischenschritt";
+                button.addEventListener("click", evt =>{
+                                hide('oer-aufgabe-25_aufgabe');
+                                show('oer-aufgabe-25_zwischen3');
+                                hide('oer-aufgabe-25_fragetext-button-zu-3');
+                });
+                paragraph.append(button);
+                div.append(paragraph);
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3_weiter-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text><![CDATA[/* === Erkl&#228;rung der Knoten: ===
+Knoten 1: Wurde alles korrekt angekreuzt?
+Knoten 2: Ist die Anzahl der angekreuzten Optionen richtig?
+Knoten 3: Wurden zu wenige oder zu viele Optionen angekreuzt?
+    Knoten 4: (Wenn zu wenige) Sind die angekreuzten Optionen denn richtig?
+    Knoten 5: (Wenn zu viele) Sind die angekreuzten Optionen denn richtig?
+Knoten 6: Feedback zu den Distraktoren:
+*/
+
+/* ans6 als Menge, d. h. alle angekreuzten Optionen: */
+SAns4: setify(ans6);
+
+/* Alle angekreuzten Optionen, die nicht korrekt sind: */
+falscheOptionen: sublist(ans6, lambda([x], is(x>2)));]]></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>SAns4</sans>
+                <tans>TAns4</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p class="correct">
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Die Wahrscheinlichkeit \(P(A^C)\) entspricht (laut Definition von \(A^C\)) der Wahrscheinlichkeit \(P(\Omega \setminus A)\). Au&#223;erdem gilt die Gleichung \(P(A^C)=1-P(A)\).
+    </p>
+    <p>
+        Vor allem die Gleichung wird gleich noch einmal wichtig.
+    </p>
+    <hr/>
+    <p>
+        Wenn Sie einen weiteren Zwischenschritt bearbeiten m&#246;chten, klicken Sie bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('oer-aufgabe-25_zwischen3');show('oer-aufgabe-25_zwischen4');" type="button">
+            Zum n&#228;chsten Zwischenschritt
+        </button>
+    </p>
+    <p>
+        Wenn Sie bereits zur&#252;ck zur urspr&#252;nglichen Aufgabe zur&#252;ckkehren m&#246;chten, dann klicken Sie bitte auf diesen Button:
+        <button class="buttonzurueck" onclick="hide('oer-aufgabe-25_zwischen3');show('oer-aufgabe-25_aufgabe');" type="button">
+            Zur&#252;ck zur urspr&#252;nglichen Aufgabe
+        </button>
+    </p>
+    <script>
+        (function(){
+				const ansDiv = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items_div");
+				const ansDivItems = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items");
+				ansDiv.style.display = "block";
+				var listitem = document.createElement("li");
+				listitem.append("Es gilt "+"\\"+"(P(A^C)=P("+"\\"+"Omega"+"\\"+"setminus A) = 1-P(A)"+"\\"+")");
+				ansDivItems.append(listitem);
+})();
+(function(){
+                window.addEventListener('load', function (){
+                                hide('oer-aufgabe-25_fragetext-button-zu-2');
+                                hide('oer-aufgabe-25_fragetext-button-zu-3');
+                                show('oer-aufgabe-25_fragetext-button-zu-4');
+                });
+                const div = document.querySelector("#oer-aufgabe-25_fragetext-button-zu-4");
+                div.style.display = "block";
+                const paragraph = document.createElement("p");
+                paragraph.innerHTML="Wenn Sie doch noch einen weiteren Zwischenschritt w&#252;nschen, klicken Sie bitte hier: "
+                const button = document.createElement("button");
+                button.type="button";
+                button.classList.add("buttonweiter");
+                button.innerHTML="Zu einem weiteren Zwischenschritt";
+                button.addEventListener("click", evt =>{
+                                hide('oer-aufgabe-25_aufgabe');
+                                show('oer-aufgabe-25_zwischen4');
+                                hide('oer-aufgabe-25_fragetext-button-zu-4');
+                });
+                paragraph.append(button);
+                div.append(paragraph);
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <p class="correct">
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        Probability \(P(A^C)\) (according to definition of \(A^C\)) the probability \(P(\Omega \setminus A)\). In addition, the equation \(P(A^C)=1-P(A)\).
+    </p>
+    <p>
+        Above all, the equation becomes important again.
+    </p>
+    <hr/>
+    <p>
+        If you want to edit another step, please click the following button:
+        <button class="buttonweiter" onclick="hide('oer-aufgabe-25_zwischen3');show('oer-aufgabe-25_zwischen4');" type="button">
+            The next step
+        </button>
+    </p>
+    <p>
+        If you want to return to the original task, please click on this button:
+        <button class="buttonzurueck" onclick="hide('oer-aufgabe-25_zwischen3');show('oer-aufgabe-25_aufgabe');" type="button">
+            Back to the original task
+        </button>
+    </p>
+    <script>
+        (function(){
+				const ansDiv = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items_div");
+				const ansDivItems = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items");
+				ansDiv.style.display = "block";
+				var listitem = document.createElement("li");
+				listitem.append("Es gilt "+"\\"+"(P(A^C)=P("+"\\"+"Omega"+"\\"+"setminus A) = 1-P(A)"+"\\"+")");
+				ansDivItems.append(listitem);
+})();
+(function(){
+                window.addEventListener('load', function (){
+                                hide('oer-aufgabe-25_fragetext-button-zu-2');
+                                hide('oer-aufgabe-25_fragetext-button-zu-3');
+                                show('oer-aufgabe-25_fragetext-button-zu-4');
+                });
+                const div = document.querySelector("#oer-aufgabe-25_fragetext-button-zu-4");
+                div.style.display = "block";
+                const paragraph = document.createElement("p");
+                paragraph.innerHTML="Wenn Sie doch noch einen weiteren Zwischenschritt w&#252;nschen, klicken Sie bitte hier: "
+                const button = document.createElement("button");
+                button.type="button";
+                button.classList.add("buttonweiter");
+                button.innerHTML="Zu einem weiteren Zwischenschritt";
+                button.addEventListener("click", evt =>{
+                                hide('oer-aufgabe-25_aufgabe');
+                                show('oer-aufgabe-25_zwischen4');
+                                hide('oer-aufgabe-25_fragetext-button-zu-4');
+                });
+                paragraph.append(button);
+                div.append(paragraph);
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p class="incorrect">
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p class="incorrect">
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>length(SAns4)</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>prt4-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben die richtige Anzahl an Auswahlm&#246;glichkeiten ausgew&#228;hlt, aber mindestens eine von denen ist falsch.
+    </p>
+    <p>
+        Probieren Sie es noch einmal!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have selected the correct number of choices, but at least one of them is wrong.
+    </p>
+    <p>
+        Try it again!
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt4-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans><![CDATA[is(length(SAns4)<2)]]></sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>prt4-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prt4-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>union(SAns4,TAns4)</sans>
+                <tans>TAns4</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>prt4-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben zu wenige Antwortm&#246;glichkeiten ausgew&#228;hlt. Die, die Sie ausgew&#228;hlt haben, sind aber richtig.
+    </p>
+    <p>
+        Versuchen Sie es einfach nochmal!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have selected too few answers. The ones you selected are correct.
+    </p>
+    <p>
+        Just try again!
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>prt4-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben zu wenige Antwortm&#246;glichkeiten ausgew&#228;hlt. Von denen, die Sie ausgew&#228;hlt haben, ist auch mindestens eine falsch.
+    </p>
+    <p>
+        Versuchen Sie es einfach nochmal!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have selected too few answers. Of those you have selected is also at least one wrong.
+    </p>
+    <p>
+        Just try again!
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>intersection(SAns4,TAns4)</sans>
+                <tans>TAns4</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>prt4-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben zu viele Antwortm&#246;glichkeiten ausgew&#228;hlt. Die korrekten Antwortm&#246;glichkeiten sind aber alle dabei.
+    </p>
+    <p>
+        Versuchen Sie es einfach nochmal!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have selected too many answers. The correct response options are all included.
+    </p>
+    <p>
+        Just try again!
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>prt4-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben zu viele Antwortm&#246;glichkeiten ausgew&#228;hlt. Au&#223;erdem fehlt mindestens eine der korrekten Antwortm&#246;glichkeiten.
+    </p>
+    <p>
+        Versuchen Sie es einfach nochmal!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have selected too many answers. In addition, at least one of the correct response options is missing.
+    </p>
+    <p>
+        Just try again!
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>GT</answertest>
+                <sans>length(falscheOptionen)</sans>
+                <tans>0</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <hr/>
+    <p>
+        Zu Ihren ausgew&#228;hlten Optionen:
+    </p>
+    <ul>
+        [[ if test='is(member(3,falscheOptionen))']]
+        <li>
+            F&#252;r das Gegenereignis eines Ereignisses \(A\) gilt im Allgemeinen
+                \(P(A^C)\color{red}{\ne} P(A)^{-1} = \frac{1}{P(A)}\). Dies kann &#252;brigens schon alleine
+                deshalb nicht stimmen, weil f&#252;r jedes Ereignis \(A\) mit \(P(A)\in(0,1)\)
+                dann \(P(A^C)&gt;1\) gelten w&#252;rde, was f&#252;r Wahrscheinlichkeiten unm&#246;glich ist.
+        </li>
+        [[/ if ]]
+[[ if test='is(member(4,falscheOptionen))']]
+        <li>
+            <p>
+                F&#252;r das Gegenereignis eines Ereignisses \(A\) gilt
+                                \(P(A^C)\color{red}{\ne} (P(A))^C\).
+            </p>
+            <p>
+                \(A^C\) bezeichnet das mengentheoretische Komplement der Ereignismenge
+                                \(A\) als Teilmenge des Ergebnisraums \(\Omega\) (d. h.
+                                \(A^C=\Omega\setminus A\)). Da die Wahrscheinlichkeit \(P(A)\) aber eine
+                                Zahl und keine Menge ist, ergibt der Ausdruck \((P(A))^C\) keinen Sinn.
+            </p>
+        </li>
+        [[/ if ]]
+    </ul>
+</span>
+<span class="multilang" lang="en">
+    <hr/>
+    <p>
+        To your selected options:
+    </p>
+    <ul>
+        [[ if test='is(member(3,falscheOptionen))']]
+        <li>
+            For the counter event of an event \(A\) in general
+    \(P(A^C)\color{red}{\ne} P(A)^{-1} = \frac{1}{P(A)}\). This can be done by itself
+because for every event \(A\) with \(P(A)\in(0,1)\)then \(P(A^C)&gt;1\) which is impossible for probabilities.
+        </li>
+        [[/ if ]][[ if test='is(member(4,falscheOptionen))']]
+        <li>
+            <p>
+                For the counter event of an event \(A\) Date
+    \(P(A^C)\color{red}{\ne} (P(A))^C\).
+            </p>
+            <p>
+                \(A^C\) denotes the quantity-theoretical complement of the event quantity
+    \(A\) as a subset of the result area \(\Omega\) (i.e.
+    \(A^C=\Omega\setminus A\)). Since the probability \(P(A)\) but a
+number and no quantity is, gives the expression \((P(A))^C\) no sense.
+            </p>
+        </li>
+        [[/ if ]]
+    </ul>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt5</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text>/* === Erkl&#228;rung der Knoten: ===
+Knoten 1: Wurde alles korrekt angekreuzt?
+Knoten 2: Ist die Anzahl der angekreuzten Optionen richtig?
+Knoten 3: Wurden zu wenige oder zu viele Optionen angekreuzt?
+    Knoten 4: (Wenn zu wenige) Sind die angekreuzten Optionen denn richtig?
+Knoten 5: Wurde die (einzige) falsche Option ausgew&#228;hlt?
+*/
+
+/*ans7 als Menge, d. h. alle angekreuzten Optionen: */
+SAns5: setify(ans7);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>SAns5</sans>
+                <tans>TAns5</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p class="correct">
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Laplace-Experimente sind Zufallsexperimente mit endlich vielen, gleich wahrscheinlichen Ergebnissen. F&#252;r einen endlichen Ergebnisraum \(\Omega\) und ein Ereignis \(A\) gilt \(P(A)=\frac{|A|}{|\Omega|}\). Zudem gilt f&#252;r disjunkte Ereignisse \(A\) und \(B\) die Formel \(P(A\cup B) = P(A)+P(B)\).
+    </p>
+    <hr/>
+    <p>
+        Wenn Sie noch einen letzten Zwischenschritt bearbeiten m&#246;chten, klicken Sie bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('oer-aufgabe-25_zwischen4');show('oer-aufgabe-25_zwischen5');" type="button">
+            Zum n&#228;chsten Zwischenschritt
+        </button>
+    </p>
+    <p>
+        Wenn Sie bereits zur&#252;ck zur urspr&#252;nglichen Aufgabe zur&#252;ckkehren m&#246;chten, dann klicken Sie bitte auf diesen Button:
+        <button class="buttonzurueck" onclick="hide('oer-aufgabe-25_zwischen4');show('oer-aufgabe-25_aufgabe');" type="button">
+            Zur&#252;ck zur urspr&#252;nglichen Aufgabe
+        </button>
+    </p>
+    <script>
+        (function(){
+				const ansDiv = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items_div");
+				const ansDivItems = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items");
+				ansDiv.style.display = "block";
+				var listitem = document.createElement("li");
+				listitem.append("Laplace-Experimente sind Zufallsexperimente mit endlich vielen, gleich wahrscheinlichen Ergebnissen. F&#252;r einen endlichen Ergebnisraum "+"\\"+"("+"\\"+"Omega"+"\\"+") und ein Ereignis "+"\\"+"(A"+"\\"+") gilt "+"\\"+"(P(A)="+"\\"+"frac{|A|}{|"+"\\"+"Omega|}"+"\\"+") und f&#252;r disjunkte Ereignisse "+"\\"+"(A"+"\\"+") und "+"\\"+"(B"+"\\"+") die Formel "+"\\"+"(P(A"+"\\"+"cup B) = P(A)+P(B)"+"\\"+").");
+				ansDivItems.append(listitem);
+})();
+(function(){
+                window.addEventListener('load', function (){
+                                hide('oer-aufgabe-25_fragetext-button-zu-2');
+                                hide('oer-aufgabe-25_fragetext-button-zu-3');
+                                hide('oer-aufgabe-25_fragetext-button-zu-4');
+                                show('oer-aufgabe-25_fragetext-button-zu-5');
+                });
+                const div = document.querySelector("#oer-aufgabe-25_fragetext-button-zu-5");
+                div.style.display = "block";
+                const paragraph = document.createElement("p");
+                paragraph.innerHTML="Wenn Sie doch noch einen letzten Zwischenschritt w&#252;nschen, klicken Sie bitte hier: "
+                const button = document.createElement("button");
+                button.type="button";
+                button.classList.add("buttonweiter");
+                button.innerHTML="Zu einem weiteren Zwischenschritt";
+                button.addEventListener("click", evt =>{
+                                hide('oer-aufgabe-25_aufgabe');
+                                show('oer-aufgabe-25_zwischen5');
+                                hide('oer-aufgabe-25_fragetext-button-zu-5');
+                });
+                paragraph.append(button);
+                div.append(paragraph);
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <p class="correct">
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        Laplace experiments are random experiments with finally many, equally probable results. For a finite outcome room \(\Omega\) and an event \(A\) Date \(P(A)=\frac{|A|}{|\Omega|}\). In addition, disjunctive events \(A\) and \(B\) the formula \(P(A\cup B) = P(A)+P(B)\).
+    </p>
+    <hr/>
+    <p>
+        If you want to edit a last intermediate step, please click the following button:
+        <button class="buttonweiter" onclick="hide('oer-aufgabe-25_zwischen4');show('oer-aufgabe-25_zwischen5');" type="button">
+            The next step
+        </button>
+    </p>
+    <p>
+        If you want to return to the original task, please click on this button:
+        <button class="buttonzurueck" onclick="hide('oer-aufgabe-25_zwischen4');show('oer-aufgabe-25_aufgabe');" type="button">
+            Back to the original task
+        </button>
+    </p>
+    <script>
+        (function(){
+				const ansDiv = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items_div");
+				const ansDivItems = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items");
+				ansDiv.style.display = "block";
+				var listitem = document.createElement("li");
+				listitem.append("Laplace-Experimente sind Zufallsexperimente mit endlich vielen, gleich wahrscheinlichen Ergebnissen. F&#252;r einen endlichen Ergebnisraum "+"\\"+"("+"\\"+"Omega"+"\\"+") und ein Ereignis "+"\\"+"(A"+"\\"+") gilt "+"\\"+"(P(A)="+"\\"+"frac{|A|}{|"+"\\"+"Omega|}"+"\\"+") und f&#252;r disjunkte Ereignisse "+"\\"+"(A"+"\\"+") und "+"\\"+"(B"+"\\"+") die Formel "+"\\"+"(P(A"+"\\"+"cup B) = P(A)+P(B)"+"\\"+").");
+				ansDivItems.append(listitem);
+})();
+(function(){
+                window.addEventListener('load', function (){
+                                hide('oer-aufgabe-25_fragetext-button-zu-2');
+                                hide('oer-aufgabe-25_fragetext-button-zu-3');
+                                hide('oer-aufgabe-25_fragetext-button-zu-4');
+                                show('oer-aufgabe-25_fragetext-button-zu-5');
+                });
+                const div = document.querySelector("#oer-aufgabe-25_fragetext-button-zu-5");
+                div.style.display = "block";
+                const paragraph = document.createElement("p");
+                paragraph.innerHTML="Wenn Sie doch noch einen letzten Zwischenschritt w&#252;nschen, klicken Sie bitte hier: "
+                const button = document.createElement("button");
+                button.type="button";
+                button.classList.add("buttonweiter");
+                button.innerHTML="Zu einem weiteren Zwischenschritt";
+                button.addEventListener("click", evt =>{
+                                hide('oer-aufgabe-25_aufgabe');
+                                show('oer-aufgabe-25_zwischen5');
+                                hide('oer-aufgabe-25_fragetext-button-zu-5');
+                });
+                paragraph.append(button);
+                div.append(paragraph);
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt5-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p class="incorrect">
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p class="incorrect">
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>length(SAns5)</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>prt5-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben die richtige Anzahl an Auswahlm&#246;glichkeiten ausgew&#228;hlt, aber mindestens eine von ihnen ist falsch.
+    </p>
+    <p>
+        Probieren Sie es noch einmal!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have selected the correct number of choices, but at least one of them is wrong.
+    </p>
+    <p>
+        Try it again!
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt5-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans><![CDATA[is(length(SAns5)<3)]]></sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>prt5-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prt5-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben zu viele Antwortm&#246;glichkeiten ausgew&#228;hlt.
+    </p>
+    <p>
+        Versuchen Sie es einfach nochmal!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have selected too many answers.
+    </p>
+    <p>
+        Just try again!
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>union(SAns5,TAns5)</sans>
+                <tans>TAns5</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>prt5-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben zu wenige Antwortm&#246;glichkeiten ausgew&#228;hlt. Die, die Sie ausgew&#228;hlt haben, sind aber richtig.
+    </p>
+    <p>
+        Versuchen Sie es einfach nochmal!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have selected too few answers. The ones you selected are correct.
+    </p>
+    <p>
+        Just try again!
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prt5-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben zu wenige Antwortm&#246;glichkeiten ausgew&#228;hlt. Von denen, die Sie ausgew&#228;hlt haben, ist auch mindestens eine falsch.
+    </p>
+    <p>
+        Versuchen Sie es einfach nochmal!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have selected too few answers. Of those you have selected is also at least one wrong.
+    </p>
+    <p>
+        Just try again!
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(4,ans7)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <hr/>
+    <p>
+        Zu Ihren ausgew&#228;hlten Optionen:
+    </p>
+    <p>
+        Die Gleichung \(P(A)=\frac{1}{|\Omega|}\) gilt nur, wenn \(A\) ein Elementarereignis ist, d. h. ein Ereignis, das nur ein Ergebnis enth&#228;lt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <hr/>
+    <p>
+        To your selected options:
+    </p>
+    <p>
+        The equation \(P(A)=\frac{1}{|\Omega|}\) only if: \(A\) is an elementary event, i.e. an event that contains only one result.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt5-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt6_1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans8</sans>
+                <tans>TA8</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt6-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p class="correct">
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Es gibt in einer Gruppe von \(n\) Personen insgesamt {@TA8@} m&#246;gliche Geburtstagskombinationen (wenn die Reihenfolge ber&#252;cksichtigt wird). Dieses kombinatorische Problem entspricht dem \(n\)-fachen Ziehen aus einer Urne mit 365 Kugeln
+        <i>
+            mit
+        </i>
+        Zur&#252;cklegen und unter Beachtung der Reihenfolge.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p class="correct">
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        There are in a group of \(n\) Total persons {@TA8@} possible birthday combinations (if the order is taken into account). This combination problem corresponds to \(n\)-time drawing from a urn with 365 balls
+        <i>
+            with
+        </i>
+        Reset and follow the order.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt6-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p class="incorrect">
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Probieren Sie es doch noch einmal.
+        <p>
+            <div id="oer-aufgabe-25_tipp_prt6_1_button">
+                <p>
+                    Wenn Sie einen Tipp ben&#246;tigen, klicken Sie bitte hier:
+                    <button class="buttontipp" onclick="show('oer-aufgabe-25_tipp_prt6_1');hide('oer-aufgabe-25_tipp_prt6_1_button');" type="button">
+                        Tipp anzeigen
+                    </button>
+                </p>
+            </div>
+            <div class="divtipp" id="oer-aufgabe-25_tipp_prt6_1" style="display:none;">
+                <p>
+                    Tipp: Dieses kombinatorische Problem entspricht dem \(n\)-fachen Ziehen aus einer Urne mit 365 Kugeln mit Zur&#252;cklegen und unter Beachtung der Reihenfolge.
+                </p>
+            </div>
+        </p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p class="incorrect">
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        Try it again.
+        <p>
+            <div id="oer-aufgabe-25_tipp_prt6_1_button">
+                <p>
+                    If you need a tip, please click here:
+                    <button class="buttontipp" onclick="show('oer-aufgabe-25_tipp_prt6_1');hide('oer-aufgabe-25_tipp_prt6_1_button');" type="button">
+                        View
+                    </button>
+                </p>
+            </div>
+            <div class="divtipp" id="oer-aufgabe-25_tipp_prt6_1" style="display:none;">
+                <p>
+                    Tip: This combination problem corresponds to the \(n\)-time drawing from a urn with 365 balls with laying back and taking into account the order.
+                </p>
+            </div>
+        </p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt6_2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans9</sans>
+                <tans>TA9</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt6_2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p class="correct">
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Es gibt in einer Gruppe von \(n\) Personen insgesamt {@TA9@} m&#246;gliche Geburtstagskombinationen, in denen alle Personen
+        <i>
+            an unterschiedlichen Tagen
+        </i>
+        Geburtstag haben (wenn die Reihenfolge ber&#252;cksichtigt wird). Dieses kombinatorische Problem entspricht dem \(n\)-fachen Ziehen aus einer Urne mit 365 Kugeln
+        <i>
+            ohne
+        </i>
+        Zur&#252;cklegen und unter Beachtung der Reihenfolge.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p class="correct">
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        There are in a group of \(n\) Total persons {@TA9@} possible birthday combinations in which all persons
+        <i>
+            on different days
+        </i>
+        have birthday (if the order is taken into account). This combination problem corresponds to \(n\)-time drawing from a urn with 365 balls
+        <i>
+            Other
+        </i>
+        Reset and follow the order.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt6_2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p class="incorrect">
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Probieren Sie es doch noch einmal.
+    </p>
+    <div id="oer-aufgabe-25_tipp_prt6_2_button">
+        <p>
+            Wenn Sie einen Tipp ben&#246;tigen, klicken Sie bitte hier:
+            <button class="buttontipp" onclick="show('oer-aufgabe-25_tipp_prt6_2');hide('oer-aufgabe-25_tipp_prt6_2_button');" type="button">
+                Tipp anzeigen
+            </button>
+        </p>
+    </div>
+    <div class="divtipp" id="oer-aufgabe-25_tipp_prt6_2" style="display:none;">
+        <p>
+            Tipp: Dieses kombinatorische Problem entspricht dem \(n\)-fachen Ziehen aus einer Urne mit 365 Kugeln
+            <i>
+                ohne
+            </i>
+            Zur&#252;cklegen und unter Beachtung der Reihenfolge.
+        </p>
+    </div>
+</span>
+<span class="multilang" lang="en">
+    <p class="incorrect">
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        Try it again.
+    </p>
+    <div id="oer-aufgabe-25_tipp_prt6_2_button">
+        <p>
+            If you need a tip, please click here:
+            <button class="buttontipp" onclick="show('oer-aufgabe-25_tipp_prt6_2');hide('oer-aufgabe-25_tipp_prt6_2_button');" type="button">
+                View
+            </button>
+        </p>
+    </div>
+    <div class="divtipp" id="oer-aufgabe-25_tipp_prt6_2" style="display:none;">
+        <p>
+            Tip: This combination problem corresponds to the \(n\)-time drawing from a urn with 365 balls
+            <i>
+                Other
+            </i>
+            Reset and follow the order.
+        </p>
+    </div>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt6_3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans10</sans>
+                <tans>TA10</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt6_3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p class="correct">
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Richtige Antwort, gut gemacht!
+    </p>
+    <p>
+        Durch Anwendung der Formel \(P(A)=\frac{|A|}{|\Omega|}\) (Laplace-Verteilung) ergibt sich, dass die Wahrscheinlichkeit, dass in einer Gruppe von \(n\) Personen alle
+        <i>
+            an unterschiedlichen Tagen
+        </i>
+        Geburtstag haben durch die Division von {@TA9@} durch {@TA8@}, das hei&#223;t die Wahrscheinlichkeit betr&#228;gt genau {@TA10@}.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p class="correct">
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        By applying the formula \(P(A)=\frac{|A|}{|\Omega|}\) (Laplace distribution) shows that the probability that in a group of \(n\) Persons all
+        <i>
+            on different days
+        </i>
+        have a birthday by the division of {@TA9@} by {@TA8@}, i.e. the probability is exact {@TA10@}.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt6_3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p class="incorrect">
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+    </p>
+    <p>
+        Probieren Sie es doch noch einmal.
+    </p>
+    <div id="oer-aufgabe-25_tipp_prt6_3_button">
+        <p>
+            Wenn Sie einen Tipp ben&#246;tigen, klicken Sie bitte hier:
+            <button class="buttontipp" onclick="show('oer-aufgabe-25_tipp_prt6_3');hide('oer-aufgabe-25_tipp_prt6_3_button');" type="button">
+                Tipp anzeigen
+            </button>
+        </p>
+    </div>
+    <div class="divtipp" id="oer-aufgabe-25_tipp_prt6_3" style="display:none;">
+        <p>
+            Tipp: Probieren Sie zun&#228;chst, die ersten beiden Teilfragen zu beantworten und verwenden Sie dann die  Formel f&#252;r die Laplace-Verteilung (\(P(A)=\frac{|A|}{|\Omega|}\)).
+        </p>
+    </div>
+</span>
+<span class="multilang" lang="en">
+    <p class="incorrect">
+        <span style="font-size: 1.5em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+    </p>
+    <p>
+        Try it again.
+    </p>
+    <div id="oer-aufgabe-25_tipp_prt6_3_button">
+        <p>
+            If you need a tip, please click here:
+            <button class="buttontipp" onclick="show('oer-aufgabe-25_tipp_prt6_3');hide('oer-aufgabe-25_tipp_prt6_3_button');" type="button">
+                View
+            </button>
+        </p>
+    </div>
+    <div class="divtipp" id="oer-aufgabe-25_tipp_prt6_3" style="display:none;">
+        <p>
+            Tip: First try to answer the first two questions and then use the formula for the Laplace distribution (\(P(A)=\frac{|A|}{|\Omega|}\)).
+        </p>
+    </div>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt6_weiter</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ans8,ans9,ans10]</sans>
+                <tans>[TA8,TA9,TA10]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt6_weiter-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben nun erfolgreich alle Zwischenschritte durchlaufen. Nun sind Sie bereit, noch einmal die urspr&#252;ngliche Aufgabe zu bearbeiten!
+    </p>
+    <p>
+        Bitte klicken Sie auf den folgenden Button, um zur urspr&#252;nglichen Aufgabe zur&#252;ckzukehren:
+        <button class="buttonzurueck" onclick="
+            hide('oer-aufgabe-25_zwischen5');
+            show('oer-aufgabe-25_aufgabe');
+            hide('oer-aufgabe-25_erinnerungsbox_aufgabenstellung');
+            show('oer-aufgabe-25_aufgabe_ende');
+            hide('oer-aufgabe-25_fragetext-buttons');
+            document.querySelector('#oer-aufgabe-25_state &gt; input').value=2;
+" type="button">
+            Zur&#252;ck zur urspr&#252;nglichen Frage
+        </button>
+    </p>
+    <script>
+        (function(){
+				const ansDiv = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items_div");
+				const ansDivItems = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items");
+				ansDiv.style.display = "block";
+				var listitem = document.createElement("li");
+				listitem.append("Es gibt in einer Gruppe von "+"\\"+"(n"+"\\"+") Personen insgesamt "+"\\"+"("+ {#tex1(TA8)#} +"\\"+") m&#246;gliche Geburtstagskombinationen (wenn die Reihenfolge ber&#252;cksichtigt wird).");
+				ansDivItems.append(listitem);
+				var listitem = document.createElement("li");
+				listitem.append("Es gibt in einer Gruppe von "+"\\"+"(n"+"\\"+") Personen insgesamt "+"\\"+"("+{#tex1(TA9)#}+"\\"+") m&#246;gliche Geburtstagskombinationen, in denen alle Personen an unterschiedlichen Tagen Geburtstag haben (wenn die Reihenfolge ber&#252;cksichtigt wird).");
+				ansDivItems.append(listitem);
+				var listitem = document.createElement("li");
+				listitem.append("Die Wahrscheinlichkeit, dass in einer Gruppe von "+"\\"+"(n"+"\\"+") Personen alle an unterschiedlichen Tagen Geburtstag betr&#228;gt genau "+"\\"+"("+{#tex1(TA10)#}+"\\"+").");
+				ansDivItems.append(listitem);
+})();
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have now successfully completed all intermediate steps. Now you are ready to work on the original task again!
+    </p>
+    <p>
+        Please click the following button to return to the original task:
+        <button class="buttonzurueck" onclick="
+            hide('oer-aufgabe-25_zwischen5');
+            show('oer-aufgabe-25_aufgabe');
+            hide('oer-aufgabe-25_erinnerungsbox_aufgabenstellung');
+            show('oer-aufgabe-25_aufgabe_ende');
+            hide('oer-aufgabe-25_fragetext-buttons');
+            document.querySelector('#oer-aufgabe-25_state &gt; input').value=2;
+" type="button">
+            Back to the original question
+        </button>
+    </p>
+    <script>
+        (function(){
+				const ansDiv = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items_div");
+				const ansDivItems = document.querySelector("#oer-aufgabe-25_erinnerungsbox_items");
+				ansDiv.style.display = "block";
+				var listitem = document.createElement("li");
+				listitem.append("Es gibt in einer Gruppe von "+"\\"+"(n"+"\\"+") Personen insgesamt "+"\\"+"("+ {#tex1(TA8)#} +"\\"+") m&#246;gliche Geburtstagskombinationen (wenn die Reihenfolge ber&#252;cksichtigt wird).");
+				ansDivItems.append(listitem);
+				var listitem = document.createElement("li");
+				listitem.append("Es gibt in einer Gruppe von "+"\\"+"(n"+"\\"+") Personen insgesamt "+"\\"+"("+{#tex1(TA9)#}+"\\"+") m&#246;gliche Geburtstagskombinationen, in denen alle Personen an unterschiedlichen Tagen Geburtstag haben (wenn die Reihenfolge ber&#252;cksichtigt wird).");
+				ansDivItems.append(listitem);
+				var listitem = document.createElement("li");
+				listitem.append("Die Wahrscheinlichkeit, dass in einer Gruppe von "+"\\"+"(n"+"\\"+") Personen alle an unterschiedlichen Tagen Geburtstag betr&#228;gt genau "+"\\"+"("+{#tex1(TA10)#}+"\\"+").");
+				ansDivItems.append(listitem);
+})();
+    </script>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt6_weiter-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1832199638</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <description/>
+            <testinput>
+                <name>ans1</name>
+                <value>TA1</value>
+            </testinput>
+            <testinput>
+                <name>ans1_copy</name>
+                <value>TA1</value>
+            </testinput>
+            <testinput>
+                <name>ans10</name>
+                <value>TA10</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>first(mcq_correct(Liste1))</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>first(mcq_correct(Liste2))</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>first(mcq_correct(Liste3))</value>
+            </testinput>
+            <testinput>
+                <name>ans5</name>
+                <value>first(mcq_correct(Liste4))</value>
+            </testinput>
+            <testinput>
+                <name>ans6</name>
+                <value>mcq_correct(Liste5)</value>
+            </testinput>
+            <testinput>
+                <name>ans7</name>
+                <value>mcq_correct(Liste6)</value>
+            </testinput>
+            <testinput>
+                <name>ans8</name>
+                <value>TA8</value>
+            </testinput>
+            <testinput>
+                <name>ans9</name>
+                <value>TA9</value>
+            </testinput>
+            <testinput>
+                <name>state</name>
+                <value>1</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-2-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2_1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2_2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2_2-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2_weiter</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2_weiter-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3_1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt3-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3_2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt3_2-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3_weiter</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt3_weiter-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt4-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt5</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt5-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt6_1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt6-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt6_2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt6_2-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt6_3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt6_3-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt6_weiter</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt6_weiter-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

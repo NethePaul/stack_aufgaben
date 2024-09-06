@@ -1,0 +1,1446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Vierfeldertafel 1</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <style>
+        .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #a9f5bc;
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #e0f8e6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #dcb25e;
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #e7d2a7;
+                }
+
+    
+    
+    
+    .buttontipp {
+                                border: 1px solid black;
+                                background-color: #c9d3f6;
+                }
+
+    
+    
+    
+    .buttontipp:hover {
+                                background-color: #dbe1f9;
+                }
+
+    
+    
+    
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                                margin: 5px;
+                }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: .5em .5em 0;
+                }
+
+    
+    
+    
+    .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -.5em -.5em 0;
+                                padding: .5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] {
+                                padding: .5em;
+                }
+    </style>
+    <div id="summarybox">
+        <details>
+            <summary>
+                Inhalt und Umfang dieser Aufgabe
+            </summary>
+            <p>
+                In dieser Aufgabe lernen Sie anhand zweier Beispiele, wie Sie bedingte Wahrscheinlichkeiten mithilfe einer Vierfeldertafel bestimmen.
+            </p>
+        </details>
+        <hr/>
+    </div>
+    <div id="aufgabenstellung" style="display:box;">
+        <b>
+            Vierfeldertafel 1
+        </b>
+        <p>
+        </p>
+        <p>
+            Berechnen Sie die bedingten Wahrscheinlichkeiten anhand der folgenden Vierfeldertafel.
+        </p>
+        <p>
+            \begin{array} {|r|r|}\hline &amp; A &amp; \neg A &amp; \Sigma \\ \hline B &amp; \frac{1}{16} &amp; \frac{1}{8} &amp; \frac{3}{16} \\ \hline \neg B &amp; \frac{1}{4}&amp; \frac{9}{16} &amp; \frac{13}{16} \\ \hline \Sigma &amp; \frac{5}{16} &amp; \frac{11}{16}
+                                &amp; 1 \\ \hline&#160; \end{array}
+            <br/>
+        </p>
+        <p>
+            <b>
+                (a)
+            </b>
+            Berechnen Sie \( P(A \vert B) \).
+        </p>
+        <p>
+            <b>
+                (b)
+            </b>
+            Berechnen Sie \( P(B \vert A) \).
+        </p>
+    </div>
+    <div id="urspruenglicheaufgabe" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Urspr&#252;ngliche Fragestellung:
+                                    </u>
+                                    <b>
+                                        Vierfeldertafel 1
+                                    </b>
+                                    <p>
+                                        Berechnen Sie die bedingten Wahrscheinlichkeiten anhand der folgenden Vierfeldertafel.
+                                    </p>
+                                    <p>
+                                        \begin{array} {|r|r|}\hline &amp; A &amp; \neg A &amp; \Sigma \\ \hline B &amp; \frac{1}{16} &amp; \frac{1}{8} &amp; \frac{3}{16} \\ \hline \neg B &amp; \frac{1}{4}&amp; \frac{9}{16} &amp; \frac{13}{16} \\ \hline \Sigma &amp; \frac{5}{16} &amp; \frac{11}{16}
+                &amp; 1 \\ \hline&#160; \end{array}
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (a)
+                                        </b>
+                                        Berechnen Sie \( P(A \vert B) \).
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (b)
+                                        </b>
+                                        Berechnen Sie \( P(B \vert A) \).
+                                    </p>
+                                    <div style="display:box;">
+                                        <br/>
+                                    </div>
+                                    <div style="display:box;">
+                                    </div>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </span>
+    </div>
+    <div id="aufgabe1" style="display:box;">
+        <br/>
+        <p>
+            <u>
+                Antwort zu Teil (a):
+            </u>
+            Die Wahrscheinlichkeit betr&#228;gt [[input:ans1]]. [[validation:ans1]]
+            <br/>
+        </p>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt1]]
+    </div>
+    <div id="zwischenA1" style="display:none;">
+        Welches Ereignis beschreibt die Bedingung, unter der die Wahrscheinlichkeit in Teil (a) ermittelt werden soll?
+        <br/>
+        [[input:ansA1]] [[validation:ansA1]]
+        <br/>
+        <br/>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prtA1]]
+    </div>
+    <div id="zwischenA2" style="display:none;">
+        Welches Ereignis ist das Teilereignis von \( B \), dass sowohl das Eintreten der Bedingung als auch das Eintreten des Ereignisses, dessen bedingte Wahrscheinlichkeit ermittelt werden soll, beschreibt?
+        <br/>
+        [[input:ansA2]] [[validation:ansA2]]
+        <br/>
+        <br/>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prtA2]]
+    </div>
+    <div id="aufgabe2" style="display:none;">
+        <b>
+            <br/>
+        </b>
+        <br/>
+        <p>
+            <u>
+                Antwort zu Teil (b):
+            </u>
+            Die Wahrscheinlichkeit betr&#228;gt [[input:ans2]]. [[validation:ans2]]
+            <br/>
+        </p>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prt2]]
+    </div>
+    <div id="zwischenB1" style="display:none;">
+        Welches Ereignis beschreibt hier die Bedingung, unter der die Wahrscheinlichkeit in Teil (b) ermittelt werden soll?
+        <br/>
+        [[input:ansB1]] [[validation:ansB1]]
+        <br/>
+        <br/>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prtB1]]
+    </div>
+    <div id="zwischenB2" style="display:none;">
+        Welches Ereignis ist das Teilereignis von \( A \), dass sowohl das Eintreten der Bedingung als auch das Eintreten des Ereignisses, dessen bedingte Wahrscheinlichkeit ermittelt werden soll, beschreibt?
+        <br/>
+        [[input:ansB2]] [[validation:ansB2]]
+        <br/>
+        <br/>
+        Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+        <br/>
+        [[feedback:prtB2]]
+    </div>
+    <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <style>
+        .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #a9f5bc;
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #e0f8e6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #dcb25e;
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #e7d2a7;
+                }
+
+    
+    
+    
+    .buttontipp {
+                                border: 1px solid black;
+                                background-color: #c9d3f6;
+                }
+
+    
+    
+    
+    .buttontipp:hover {
+                                background-color: #dbe1f9;
+                }
+
+    
+    
+    
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                                margin: 5px;
+                }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: .5em .5em 0;
+                }
+
+    
+    
+    
+    .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -.5em -.5em 0;
+                                padding: .5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] {
+                                padding: .5em;
+                }
+    </style>
+    <div id="summarybox">
+        <details>
+            <summary>
+                Content and scope of this task
+            </summary>
+            <p>
+                In this task, you will learn how to determine conditional probabilities using a four-field panel.
+            </p>
+        </details>
+        <hr/>
+    </div>
+    <div id="aufgabenstellung" style="display:box;">
+        <b>
+            Four-field board 1
+        </b>
+        <p>
+        </p>
+        <p>
+            Calculate the conditional probabilities using the following four-field panel.
+        </p>
+        <p>
+            \begin{array} {|r|r|}\hline &amp; A &amp; \neg A &amp; \Sigma \\ \hline B &amp; \frac{1}{16} &amp; \frac{1}{8} &amp; \frac{3}{16} \\ \hline \neg B &amp; \frac{1}{4}&amp; \frac{9}{16} &amp; \frac{13}{16} \\ \hline \Sigma &amp; \frac{5}{16} &amp; \frac{11}{16}
+                                &amp; 1 \\ \hline&#160; \end{array}
+            <br/>
+        </p>
+        <p>
+            <b>
+                (a)
+            </b>
+            Calculate \( P(A \vert B) \).
+        </p>
+        <p>
+            <b>
+                (b)
+            </b>
+            Calculate \( P(B \vert A) \).
+        </p>
+    </div>
+    <div id="urspruenglicheaufgabe" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Original question:
+                                    </u>
+                                    <b>
+                                        Four-field board 1
+                                    </b>
+                                    <p>
+                                        Calculate the conditional probabilities using the following four-field panel.
+                                    </p>
+                                    <p>
+                                        \begin{array} {|r|r|}\hline &amp; A &amp; \neg A &amp; \Sigma \\ \hline B &amp; \frac{1}{16} &amp; \frac{1}{8} &amp; \frac{3}{16} \\ \hline \neg B &amp; \frac{1}{4}&amp; \frac{9}{16} &amp; \frac{13}{16} \\ \hline \Sigma &amp; \frac{5}{16} &amp; \frac{11}{16}
+                &amp; 1 \\ \hline&#160; \end{array}
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (a)
+                                        </b>
+                                        Calculate \( P(A \vert B) \).
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (b)
+                                        </b>
+                                        Calculate \( P(B \vert A) \).
+                                    </p>
+                                    <div style="display:box;">
+                                        <br/>
+                                    </div>
+                                    <div style="display:box;">
+                                    </div>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </span>
+    </div>
+    <div id="aufgabe1" style="display:box;">
+        <br/>
+        <p>
+            <u>
+                Answer to Part (a):
+            </u>
+            The probability is [[input:ans1]]. [[validation:ans1]]
+            <br/>
+        </p>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt1]]
+    </div>
+    <div id="zwischenA1" style="display:none;">
+        What event describes the condition under which the probability in part (a) is to be determined?
+        <br/>
+        [[input:ansA1]] [[validation:ansA1]]
+        <br/>
+        <br/>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prtA1]]
+    </div>
+    <div id="zwischenA2" style="display:none;">
+        What event is the part event of \( B \)that both the occurrence of the condition and the occurrence of the event whose conditional probability is to be determined are described?
+        <br/>
+        [[input:ansA2]] [[validation:ansA2]]
+        <br/>
+        <br/>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prtA2]]
+    </div>
+    <div id="aufgabe2" style="display:none;">
+        <b>
+            <br/>
+        </b>
+        <br/>
+        <p>
+            <u>
+                Answer to Part (b):
+            </u>
+            The probability is [[input:ans2]]. [[validation:ans2]]
+            <br/>
+        </p>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prt2]]
+    </div>
+    <div id="zwischenB1" style="display:none;">
+        What event is the condition under which the probability in part (b) is to be determined?
+        <br/>
+        [[input:ansB1]] [[validation:ansB1]]
+        <br/>
+        <br/>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prtB1]]
+    </div>
+    <div id="zwischenB2" style="display:none;">
+        What event is the part event of \( A \)that both the occurrence of the condition and the occurrence of the event whose conditional probability is to be determined are described?
+        <br/>
+        [[input:ansB2]] [[validation:ansB2]]
+        <br/>
+        <br/>
+        Please click the "Check" button after entering the solution.
+        <br/>
+        [[feedback:prtB2]]
+    </div>
+    <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+    </script>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>2.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  Vierfeldertafel 1
+
+  wurde entwickelt von
+  
+    Riko Kelter <riko.kelter(at)uni-siegen.de>
+    Alexander Schnurr <schnurr(at)mathematik.uni-siegen.de>
+    Susanne Spies <spies(at)mathematik.uni-siegen.de>
+
+  nach einer Idee von
+  
+   Riko Kelter <riko.kelter(at)uni-siegen.de>
+   Alexander Schnurr <schnurr(at)mathematik.uni-siegen.de>
+   Susanne Spies <spies(at)mathematik.uni-siegen.de>
+
+  an der Universit&#228;t Siegen.
+
+  Dieses Werk ist lizenziert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+
+  Diese Aufgabe bindet das Skript &#8216;stackselbstlern.js&#8217; von Michael
+  Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+
+a: rand_with_step(1,11,1)/24;
+b: rand_with_step(1,11,1)/24;
+c: 1/2-b;
+d: 1/2-a;
+
+test01(x):= is(x>=0) and (x<=1);
+ListeA1: [[1, false, "A"], [2, false, "nicht A"], [3, true, "B"], [4, false, "nicht B"] ];
+ListeA2: [[1, false, "A"], [2, false, "nicht A und B"], [3, true, "A und B"], [4, false, "A und nicht B"] ];
+
+ListeB1: [[1, true, "A"], [2, false, "nicht A"], [3, false, "B"], [4, false, "nicht B"] ];
+ListeB2: [[1, false, "A"], [2, false, "nicht A und B"], [3, true, "A und B"], [4, false, "A und nicht B"] ];]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>[a,b,c,d]</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text/>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text/>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>1/3</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>1/5</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansA1</name>
+            <type>dropdown</type>
+            <tans>ListeA1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansA2</name>
+            <type>dropdown</type>
+            <tans>ListeA2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB1</name>
+            <type>dropdown</type>
+            <tans>ListeB1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB2</name>
+            <type>dropdown</type>
+            <tans>ListeB2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>1/3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Sie teilen \(P(A\cap B) = \frac 1 {16}\) durch \(P(B) = \frac 3 {16} \).
+    <p>
+        Klicken Sie zum Fortfahren mit Teil (b) bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('aufgabe1');show('aufgabe2');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+Share \(P(A\cap B) = \frac 1 {16}\) by \(P(B) = \frac 3 {16} \).
+    <p>
+        Click To continue with part (b), please click the following button:
+        <button class="buttonweiter" onclick="hide('aufgabe1');show('aufgabe2');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>+</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <div id="prtA-1">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+
+
+
+
+Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in kleinere Teilaufgaben unterteilt. Wenn Sie diese Aufgaben alle gel&#246;st haben, k&#246;nnen Sie die urspr&#252;ngliche Aufgabe sicherlich l&#246;sen.
+        <p>
+            Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+            <button class="buttonweiter" onclick="hide('aufgabenstellung');show('urspruenglicheaufgabe');hide('aufgabe1');show('zwischenA1');" type="button">
+                Weiter
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtA-2" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+        <p>
+            Versuchen Sie nun noch einmal Teilaufgabe (a)! Um die bedingte Wahrscheinlichkeit in Teil (a) zu berechnen muss man nun die Wahrscheinlichkeit des Teilereignisses \( A \cap B \) durch die Wahrscheinlichkeit der Bedingung \( B \) teilen.
+        </p>
+    </div>
+</span>
+<span class="multilang" lang="en">
+    <div id="prtA-1">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+
+
+
+
+That you couldn't solve the task right away is no problem! In the following, the task is subdivided into smaller subtasks. If you have all solved these tasks, you can certainly solve the original task.
+        <p>
+            To continue, click on the following button:
+            <button class="buttonweiter" onclick="hide('aufgabenstellung');show('urspruenglicheaufgabe');hide('aufgabe1');show('zwischenA1');" type="button">
+                Next
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtA-2" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+        <p>
+            Try Partial Task (a) again! In order to calculate the conditional probability in part (a), the probability of the partial event must now be \( A \cap B \) by the probability of the condition \( B \) share.
+        </p>
+    </div>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ans1)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die angegebene Wahrscheinlichkeit liegt nicht zwischen 0 und 1. Bitte korrigieren Sie Ihre L&#246;sung.
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The specified probability is not between 0 and 1. Please correct your solution.
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>1/5</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Sie teilen \(P(A\cap B) = \frac 1 {16}\) durch \(P(A) = \frac 5 {16} \). Sie haben die Aufgabe nun vollst&#228;ndig gel&#246;st.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+Share \(P(A\cap B) = \frac 1 {16}\) by \(P(A) = \frac 5 {16} \). They have now completely solved the task.
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>+</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <div id="prtB-1">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+
+
+
+
+Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in kleinere Teilaufgaben unterteilt. Wenn Sie diese Aufgaben alle gel&#246;st haben, k&#246;nnen Sie die urspr&#252;ngliche Aufgabe sicherlich l&#246;sen.
+        <p>
+            Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+            <button class="buttonweiter" onclick="hide('aufgabenstellung');hide('aufgabe2');show('urspruenglicheaufgabe');show('zwischenB1');" type="button">
+                Weiter
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtB-2" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+        <p>
+            Um die bedingte Wahrscheinlichkeit in Teil (b) zu berechnen muss man nun die Wahrscheinlichkeit des Teilereignisses \( A \cap B \) durch die Wahrscheinlichkeit der Bedingung \( A \) teilen. Versuchen Sie nun noch einmal Teilaufgabe (b)!
+        </p>
+    </div>
+    <div id="prtB-3" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+
+
+
+
+Teilen Sie &#228;hnlich wie zuvor die Wahrscheinlichkeit des Teilereignisses \(A \cap B \) durch die Wahrscheinlichkeit der Bedingung \(A\).
+    </div>
+</span>
+<span class="multilang" lang="en">
+    <div id="prtB-1">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+
+
+
+
+That you couldn't solve the task right away is no problem! In the following, the task is subdivided into smaller subtasks. If you have all solved these tasks, you can certainly solve the original task.
+        <p>
+            To continue, click on the following button:
+            <button class="buttonweiter" onclick="hide('aufgabenstellung');hide('aufgabe2');show('urspruenglicheaufgabe');show('zwischenB1');" type="button">
+                Next
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtB-2" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+        <p>
+            In order to calculate the conditional probability in part (b), the probability of the partial event must now be \( A \cap B \) by the probability of the condition \( A \) share. Try Partial Task (b) again!
+        </p>
+    </div>
+    <div id="prtB-3" style="display:none">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+
+
+
+
+Share similar to the previously the probability of the partial event \(A \cap B \) by the probability of the condition \(A\).
+    </div>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ans2)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>prt2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die angegebene Wahrscheinlichkeit liegt nicht zwischen 0 und 1. Bitte korrigieren Sie Ihre L&#246;sung.
+    </p>
+    <p>
+    </p>
+    <br/>
+    <p>
+    </p>
+    <br/>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The specified probability is not between 0 and 1. Please correct your solution.
+    </p>
+    <p>
+    </p>
+    <br/>
+    <p>
+    </p>
+    <br/>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtA1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA1</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>-</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Das Ereignis B steht hinter dem senkrechten Strich und beschreibt deswegen die Bedingung.
+    <br/>
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('zwischenA1');show('zwischenA2');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+The event B stands behind the vertical line and therefore describes the condition.
+    <br/>
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('zwischenA1');show('zwischenA2');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p dir="ltr" style="text-align: left;">
+        Hinweis: Die Bedingung steht zwischen den Klammern hinter dem senkrechten Strich.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p dir="ltr" style="text-align: left;">
+        Note: The condition is behind the vertical line between the brackets.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtA2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA2</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>-</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Das Ereignis "A und B" ist die Schnittmenge des vorderen und des hinteren Ereignisses und beschreibt deswegen das Teilereignis von B, dessen bedingte Wahrscheinlichkeit bestimmt werden soll.
+    <br/>
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button "="" class="buttonweiter" onclick="hide('zwischenA2');show('aufgabe1');hide('prtA-1');show('prtA-2');hide('prtB-1');show('prtB-3');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    Translation Error
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p dir="ltr" style="text-align: left;">
+        Hinweis: Die Bedingung muss auch im Teilereignis erf&#252;llt sein. Es muss sich also um ein Teilereignis von B handeln.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p dir="ltr" style="text-align: left;">
+        Note: The condition must also be fulfilled in the partial event. It must therefore be a partial event of B.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB1</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>-</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Das Ereignis A steht hier hinter dem senkrechten Strich und beschreibt deswegen die Bedingung.
+    <br/>
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('zwischenB1');show('zwischenB2');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+The event A here stands behind the vertical line and therefore describes the condition.
+    <br/>
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('zwischenB1');show('zwischenB2');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p dir="ltr">
+        Hinweis: Die Bedingung steht zwischen den Klammern hinter dem senkrechten Strich.
+        <br/>
+    </p>
+    <br/>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p dir="ltr">
+        Note: The condition is behind the vertical line between the clamps.
+        <br/>
+    </p>
+    <br/>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB2</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>-</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+
+
+
+
+Das Ereignis "A und B" ist die Schnittmenge des vorderen und des hinteren Ereignisses und beschreibt deswegen das Teilereignis von B, dessen bedingte Wahrscheinlichkeit bestimmt werden soll.
+    <br/>
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('zwischenB2');show('aufgabe2');hide('prtB-1');show('prtB-2');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+
+
+
+
+The event &#8220;A and B&#8221; is the cut quantity of the front and rear events and therefore describes the partial event of B, whose conditional probability is to be determined.
+    <br/>
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('zwischenB2');show('aufgabe2');hide('prtB-1');show('prtB-2');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p dir="ltr">
+        Hinweis: Die Bedingung muss auch im Teilereignis erf&#252;llt sein. Es muss sich also um ein Teilereignis von A handeln.
+        <br/>
+    </p>
+    <br/>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p dir="ltr">
+        Note: The condition must also be fulfilled in the partial event. It must therefore be a partial event of A.
+        <br/>
+    </p>
+    <br/>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>
