@@ -40,6 +40,7 @@ Installiere libretranslate,lxml, und beautifulsoup4 mit pip
  "pip install beautifulsoup4"
  In Linux und Mac: "pip install libretranslate" (nur für automatische Übersetzung notwendig) (Die Installation kann lange dauern)
  In Windows: Folge die Anleitung von  https://github.com/nuttolum/LibreOnWindows
+  Alternativ in Windows: Installiere "WSL" wie nach  https://learn.microsoft.com/de-de/windows/wsl/install , dann installiere Debian in WSL, dann in Debian installiere pipx mit "sudo apt install pipx", und dann installiere libretranslate in Debian mit "pipx install libretranslate".
  In Linux und Mac können manche von diesen auch mit den Package Manager bzw. App Store installiert werden.
  In Linux und Mac kann es sein, dass man pipx anstelle von pip verwenden muss.
 
