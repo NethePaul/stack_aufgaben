@@ -54,7 +54,8 @@ Es startet dann ein Download für die .xml Datei.
 Erstelle ein Ordner für die Übersetzung. 
 Kopiere die .xml Datei in den Ordner.
 Kopiere die Python-scripte(.py Datein) von  https://github.com/NethePaul/stack_aufgaben/tree/main/python in den Ordner.
-Navigiere zu den Ordner in CMD oder in einer Shell mithilfe von den "cd" Befehl. (Alle Befehle müssen in diesen Ordner ausgeführt werden.)
+Navigiere zu den Ordner in CMD oder in einer Shell mithilfe von den "cd" Befehl, oder den File Explorer. (Alle Befehle müssen in diesen Ordner ausgeführt werden.)
+ Im File Explorer: Öffne den Ordner, und dann mit ein rechts-Klick im Ordner öffnet sich ein Menu, in den Menu klicke "Im Terminal öffnen" oder etwas ähnliches.
  In CMD:
   Mit den "dir" Befehl können alle Datein und Ordner(als <DIR> markiert) gelistet werden.
  In einer POSIX-compliant Shell (zb. Windows Powershell, oder Bash)
