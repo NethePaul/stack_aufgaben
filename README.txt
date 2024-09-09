@@ -66,32 +66,31 @@ Erstelle die .csv und .xml.template datein mit den Befehl "python xml2csv.py"
 Achtung: In allen weiteren Schritten wird eine wiederholte Ausführung eines der xml2csv Skripten die bisherigen Übersetzungen in der .csv Datei löschen!
 
 4. Übersetzung
-Öffnen sie die .csv Datei
+
+4.1 (nur für die automatische Überestzung)
+Öffne ein 2. Terminal/CMD und geben Sie dort den Befehl "libretranslate --load-only de,en"
+ Warte bis der Befehl die Ausgabe "Running on http://127.0.0.1:5000" in den Terminal schreibt.
+ Beende den Befehl nicht. Lass das Terminal/CMD im Hintergrund offen.
+Geben Sie den Befehl "python autotranslate.py" ein. (Der Befehl kann mehrere Stunden brauchen bei vollständiger CPU-Auslastung)
+Wenn der Befehl unterbrochen wird, kann die Übersetzung weitergeführt werden duch einer wiederholten Eingabe des Befehls, während der libretranslate Befehl im Hintergrund läuft.
+Sobald der Befehl endet kann das 2. Terminal/CMD mit den libretranslate Befehl geschlossen werden.
+Automatische Übersetzung kann häufig Fehler machen, selbst wenn der vorherige Befehl ohne Fehlermeldungen endete, und besonders mit Fachsprache und wenn Text mit LaTeX oder Maxima Code unterbrochen ist.
+Daher ist es wichtig die .csv Datei vollständig manuell nach Fehlern zu durchsuchen.
+Achtung: Wenn text innerhalb von Mathematischen Ausdrücken in LaTeX (zb. "\(\text{Beispiel}\)") oder in Maxima Code (zb. "{@'Beispiel'@}") steht, wird es nicht automatisch übersetzt.
+
+4.2
+Wenn Sie Excel verwenden, geben Sie den Befehl "python csv4excel.py" ein.
+Öffnen Sie die .csv Datei
 Wenn Sie bei den Öffnen gefragt werden, setzen Sie den Delimiter bzw. Trennzeichen auf ein Komma(",") und nichts anderes.
 Sie sollten dann eine Tabelle mit drei Spalten sehen.
 Im Header der Tabelle steht links "Nummer", mittig "de", und rechts "en".
 Verändern Sie an der "Nummer" Spalte und dem Header nichts.
 Dann muss man die "en" Spalte bearbeiten bis in jeder Zeile die "en" Spalte die Übersetzung der "de" Spalte ist.
 
-4.1 ohne automatischer Übersetzung
-Es kann sich empfehlen die "de" Spalte (ausser Header) zu Beginn in die "en" Spalte zu kopieren.
-Mit Search&Replace in der "en" Spalte kann man häufig wiederholte Ausdrücke alle auf einmal übersetzen.
-
-4.2 mit automatischer Überestzung
-Öffne ein 2. Terminal/CMD und gebe dort den Befehl "libretranslate --load-only de,en"
- Warte bis der Befehl die Ausgabe "Running on http://127.0.0.1:5000" in den Terminal schreibt.
- Beende den Befehl nicht. Lass das Terminal/CMD im Hintergrund offen.
-Gebe den Befehl "python autotranslate.py" ein. (Der Befehl kann mehrere Stunden brauchen bei vollständiger CPU-Auslastung)
-Wenn der Befehl unterbrochen wird, kann die Übersetzung weitergeführt werden duch einer wiederholten Eingabe des Befehls, während der libretranslate Befehl im Hintergrund läuft.
-Sobald der Befehl endet kann das 2. Terminal/CMD mit den libretranslate Befehl geschlossen werden.
-
-Automatische Übersetzung kann häufig Fehler machen, selbst wenn der vorherige Befehl ohne Fehlermeldungen endete, und besonders mit Fachsprache und wenn Text mit LaTeX oder Maxima Code unterbrochen ist.
-Daher ist es wichtig die .csv Datei vollständig manuell nach Fehlern zu durchsuchen.
-Achtung: Wenn text innerhalb von Mathematischen Ausdrücken in LaTeX (zb. "\(\text{Beispiel}\)") oder in Maxima Code (zb. "{@'Beispiel'@}") steht, wird es nicht automatisch übersetzt.
 
 5. Import in Moodle
-Gebe den Befehl "python fix_template.py" ein.
-Gebe den Befehl "python csv2xml.py" ein.
+Geben Sie den Befehl "python fix_template.py" ein.
+Geben Sie den Befehl "python csv2xml.py" ein.
 Es wird dann eine neue _new.xml Datei im Ordner erstellt.
 Dann in Moodle, im selben Menu wo "Export" stand neben "Fragensammlung", klicke auf "Import".
 Wähle "Moodle-XML-Format" als Dateiformat und die _new.xml Datei als Datei.
@@ -108,7 +107,7 @@ Oder von allen Quizzen müssen alle Fragen entfernt werden und mit den übersetz
 
 7. (optional) Hochladen der Fragen in Git
 zum Teilen mit anderen Universitäten
-Gebe den Befehl "python prettyfy_cli [Name der _new.csv Datei]" und danach "python split_exported_xml [Name der _new.csv Datei]" ein.
+Geben Sie den Befehl "python prettyfy_cli [Name der _new.csv Datei]" und danach "python split_exported_xml [Name der _new.csv Datei]" ein.
 Es sollte dann ein neuer Ordner namens "separate_questions" erscheinen mit allen Fragen als separate .xml Datein.
 Diese .xml Datein können dann in ein Git Repository hochgeladen werden.
 

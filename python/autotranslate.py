@@ -158,8 +158,24 @@ for filename in filenames:
             zeilen.append(zeile)
         csvfile.close()
 
-    csvfile=open(filename,'r',newline='',encoding='utf8')
-    reader=csv.DictReader(csvfile)
+    
+    csvfile=open(filename,encoding="UTF-8")
+    line1=csvfile.readline()
+    if line1.startswith('Nummer;de;en'):
+        deli=';'
+        csvfile.seek(0)
+    elif line1.startswith('Nummer,de,en'):
+        deli=','
+        csvfile.seek(0)
+    elif line1.startswith('sep='):
+        deli=line1[4]
+    else:
+        deli=' '
+        print("Delimiter konnte nicht bestimmt werden")
+    
+    
+    #encoding="ISO-8859-1")
+    reader = csv.DictReader(csvfile, delimiter=deli)
     i=len(zeilen)
     for zeile in reader:
         if i>0:
