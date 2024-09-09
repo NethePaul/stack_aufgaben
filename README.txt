@@ -34,16 +34,20 @@ Installiere Python und pip
  Validiere, dass das beides richtig installiert ist, indem Sie CMD, oder eine Shell im Terminal öffnen und den Befehl "python --version" und "pip --version" eingeben.
  Die Befehle sollten dann die installierten Versionen von Python und pip ausgeben.
 
-Installiere libretranslate,lxml, und beautifulsoup4 mit pip
+Installiere lxml, und beautifulsoup4 mit pip
+In Linux und Mac können manche von diesen auch mit den Package Manager bzw. App Store installiert werden.
+In Linux und Mac kann es sein, dass man pipx anstelle von pip verwenden muss.
  Befehle:
  "pip install lxml"
  "pip install beautifulsoup4"
- In Linux und Mac: "pip install libretranslate" (nur für automatische Übersetzung notwendig) (Die Installation kann lange dauern)
+Installiere libretranslate:(nur für automatische Übersetzung notwendig) (Die Installation kann lange dauern)
+ In Linux und Mac: "pipx install libretranslate"
  In Windows: Folge die Anleitung von  https://github.com/nuttolum/LibreOnWindows
-  Alternativ in Windows: Installiere "WSL" wie nach  https://learn.microsoft.com/de-de/windows/wsl/install , dann installiere Debian in WSL, dann in Debian installiere pipx mit "sudo apt install pipx", und dann installiere libretranslate in Debian mit "pipx install libretranslate".
- In Linux und Mac können manche von diesen auch mit den Package Manager bzw. App Store installiert werden.
- In Linux und Mac kann es sein, dass man pipx anstelle von pip verwenden muss.
-
+  Alternativ in Windows:
+   Installiere "WSL" wie nach  https://learn.microsoft.com/de-de/windows/wsl/install.
+   Dann in WSL installiere pipx mit "sudo apt install python-pipx"
+   Dann installiere libretranslate in WSL mit "pipx install libretranslate".
+ 
 
 2. Export der Fragen aus Moodle
 Navigiere zu den Moodle Kurs.
@@ -82,8 +86,10 @@ Mit Search&Replace in der "en" Spalte kann man häufig wiederholte Ausdrücke al
 
 4.2 mit automatischer Überestzung
 Öffne ein 2. Terminal/CMD und gebe dort den Befehl "libretranslate --load-only de,en"
- Warte bis der Befehl die Ausgabe "Running on http://127.0.0.1:5000" in den Terminal schreibt.
- Beende den Befehl nicht. Lass das Terminal/CMD im Hintergrund offen.
+In Windows: Wenn libretranslate unter WSL installiert ist, muss der Befehl in WSL ausgeführt werden.
+Warte bis der Befehl die Ausgabe "Running on http://127.0.0.1:5000" in den Terminal schreibt.
+Beende den Befehl nicht. Lass das Terminal/CMD im Hintergrund offen.
+
 Gebe den Befehl "python autotranslate.py" ein. (Der Befehl kann mehrere Stunden brauchen bei vollständiger CPU-Auslastung)
 Wenn der Befehl unterbrochen wird, kann die Übersetzung weitergeführt werden duch einer wiederholten Eingabe des Befehls, während der libretranslate Befehl im Hintergrund läuft.
 Sobald der Befehl endet kann das 2. Terminal/CMD mit den libretranslate Befehl geschlossen werden.
