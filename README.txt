@@ -36,9 +36,10 @@ Installiere Python und pip
 
 Installiere libretranslate,lxml, und beautifulsoup4 mit pip
  Befehle:
- "pip install libretranslate" (nur für automatische Übersetzung notwendig) (Die Installation kann lange dauern)
  "pip install lxml"
  "pip install beautifulsoup4"
+ In Linux und Mac: "pip install libretranslate" (nur für automatische Übersetzung notwendig) (Die Installation kann lange dauern)
+ In Windows: Folge die Anleitung von  https://github.com/nuttolum/LibreOnWindows
  In Linux und Mac können manche von diesen auch mit den Package Manager bzw. App Store installiert werden.
  In Linux und Mac kann es sein, dass man pipx anstelle von pip verwenden muss.
 
