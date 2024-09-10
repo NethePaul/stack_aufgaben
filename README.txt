@@ -54,6 +54,7 @@ Navigiere zu den Moodle Kurs.
 In der Top-bar, klicke auf das Zahnrad, dann im Menu klicke auf "Mehr".
 Dann neben "Fragensammlung" klicke auf Export und wähle "Moodle-XML-Format" als Dateiformat und klicke "Fragen in Datei exportieren"
 Es startet dann ein Download für die .xml Datei.
+In Windows: aktiviere Dateinamenerweiterungen, wie nach:  https://support.microsoft.com/de-de/windows/allgemeine-dateierweiterungen-in-windows-da4a4430-8e76-89c5-59f7-1cdbbc75cb01
 
 3. Vorbereitung für die Übersetzung
 Erstelle ein Ordner für die Übersetzung. 
