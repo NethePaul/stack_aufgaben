@@ -19,6 +19,7 @@ Installiere Python und pip
   Beide Varianten sollten auch pip mit beinhalten.
   Für mehr Info siehe:  https://learn.microsoft.com/de-de/windows/python/beginner
   Es kann sein, dass die Pfäde, unter dem Python und pip installiert sind, manuell zu der "PATH" Enviournment Variable hinzugefühgt werden müssen.
+   Python ist standardmäßig unter "%ProgramFiles%\Python X.Y" oder "%ProgramFiles(x86)%\Python X.Y" oder "%LocalAppData%\Programs\Python\PythonXY" oder "%LocalAppData%\Programs\Python\PythonXY-32" oder "%LocalAppData%\Programs\Python\PythonXY-64" installiert.  (ersetze X.Y durch die installierte Python version)
    Um PATH zu ändern:
     Öffne regedit.exe
     Navigiere zu: "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment"
@@ -26,7 +27,6 @@ Installiere Python und pip
     Ansonsten füge hinten an den Wert der Variable PATH ein ";" an und danach den Pfad zu der Python Installation.
      Danach füge hinten an den Wert der Variable PATH ein ";" an und danach den Pfad zu den "Script" Ordner in der Python Installation.
      Der Wert der PATH variable sollte danach ungefähr wie folgt aussehen: "%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\system32\wbem;%SystemRoot%\system32\WindowsPowershell\v1.0;C:\Program Files\dotnet\;C:\Program Files\Python312\;C:\Program Files\Python312\Scripts\"
-    Python ist standardmäßig unter "%ProgramFiles%\Python X.Y" oder "%ProgramFiles(x86)%\Python X.Y" oder "%LocalAppData%\Programs\Python\PythonXY" oder "%LocalAppData%\Programs\Python\PythonXY-32" oder "%LocalAppData%\Programs\Python\PythonXY-64" installiert.
     
     
  In Linux und Mac kann Python und pip einfach mit den Package Manager bzw. App Store installiert werden.
