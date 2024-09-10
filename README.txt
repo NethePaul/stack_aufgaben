@@ -34,14 +34,20 @@ Installiere Python und pip
  Validiere, dass das beides richtig installiert ist, indem Sie CMD, oder eine Shell im Terminal öffnen und den Befehl "python --version" und "pip --version" eingeben.
  Die Befehle sollten dann die installierten Versionen von Python und pip ausgeben.
 
-Installiere libretranslate,lxml, und beautifulsoup4 mit pip
+Installiere lxml, und beautifulsoup4 mit pip
+In Linux und Mac können manche von diesen auch mit den Package Manager bzw. App Store installiert werden.
+In Linux und Mac kann es sein, dass man pipx anstelle von pip verwenden muss.
  Befehle:
- "pip install libretranslate" (nur für automatische Übersetzung notwendig) (Die Installation kann lange dauern)
  "pip install lxml"
  "pip install beautifulsoup4"
- In Linux und Mac können manche von diesen auch mit den Package Manager bzw. App Store installiert werden.
- In Linux und Mac kann es sein, dass man pipx anstelle von pip verwenden muss.
-
+Installiere libretranslate:(nur für automatische Übersetzung notwendig) (Die Installation kann lange dauern)
+ In Linux und Mac: "pipx install libretranslate"
+ In Windows: Folge die Anleitung von  https://github.com/nuttolum/LibreOnWindows
+  Alternativ in Windows:
+   Installiere "WSL" wie nach  https://learn.microsoft.com/de-de/windows/wsl/install.
+   Dann in WSL installiere pipx mit "sudo apt install python-pipx"
+   Dann installiere libretranslate in WSL mit "pipx install libretranslate".
+ 
 
 2. Export der Fragen aus Moodle
 Navigiere zu den Moodle Kurs.
@@ -52,8 +58,9 @@ Es startet dann ein Download für die .xml Datei.
 3. Vorbereitung für die Übersetzung
 Erstelle ein Ordner für die Übersetzung. 
 Kopiere die .xml Datei in den Ordner.
-Kopiere die Python-scripte(.py Datein) von  https://github.com/NethePaul/stack_aufgaben/python in den Ordner.
-Navigiere zu den Ordner in CMD oder in einer Shell mithilfe von den "cd" Befehl. (Alle Befehle müssen in diesen Ordner ausgeführt werden.)
+Kopiere die Python-scripte(.py Datein) von  https://github.com/NethePaul/stack_aufgaben/tree/main/python in den Ordner.
+Navigiere zu den Ordner in CMD oder in einer Shell mithilfe von den "cd" Befehl, oder den File Explorer. (Alle Befehle müssen in diesen Ordner ausgeführt werden.)
+ Im File Explorer: Öffne den Ordner, und dann mit ein rechts-Klick im Ordner öffnet sich ein Menu, in den Menu klicke "Im Terminal öffnen" oder etwas ähnliches.
  In CMD:
   Mit den "dir" Befehl können alle Datein und Ordner(als <DIR> markiert) gelistet werden.
  In einer POSIX-compliant Shell (zb. Windows Powershell, oder Bash)
@@ -68,10 +75,12 @@ Achtung: In allen weiteren Schritten wird eine wiederholte Ausführung eines der
 4. Übersetzung
 
 4.1 (nur für die automatische Überestzung)
-Öffne ein 2. Terminal/CMD und geben Sie dort den Befehl "libretranslate --load-only de,en"
- Warte bis der Befehl die Ausgabe "Running on http://127.0.0.1:5000" in den Terminal schreibt.
- Beende den Befehl nicht. Lass das Terminal/CMD im Hintergrund offen.
-Geben Sie den Befehl "python autotranslate.py" ein. (Der Befehl kann mehrere Stunden brauchen bei vollständiger CPU-Auslastung)
+Öffne ein 2. Terminal/CMD und gebe dort den Befehl "libretranslate --load-only de,en"
+In Windows: Wenn libretranslate unter WSL installiert ist, muss der Befehl in WSL ausgeführt werden.
+Warte bis der Befehl die Ausgabe "Running on http://127.0.0.1:5000" in den Terminal schreibt.
+Beende den Befehl nicht. Lass das Terminal/CMD im Hintergrund offen.
+
+Gebe den Befehl "python autotranslate.py" ein. (Der Befehl kann mehrere Stunden brauchen bei vollständiger CPU-Auslastung)
 Wenn der Befehl unterbrochen wird, kann die Übersetzung weitergeführt werden duch einer wiederholten Eingabe des Befehls, während der libretranslate Befehl im Hintergrund läuft.
 Sobald der Befehl endet kann das 2. Terminal/CMD mit den libretranslate Befehl geschlossen werden.
 Automatische Übersetzung kann häufig Fehler machen, selbst wenn der vorherige Befehl ohne Fehlermeldungen endete, und besonders mit Fachsprache und wenn Text mit LaTeX oder Maxima Code unterbrochen ist.
@@ -79,6 +88,13 @@ Daher ist es wichtig die .csv Datei vollständig manuell nach Fehlern zu durchsu
 Achtung: Wenn text innerhalb von Mathematischen Ausdrücken in LaTeX (zb. "\(\text{Beispiel}\)") oder in Maxima Code (zb. "{@'Beispiel'@}") steht, wird es nicht automatisch übersetzt.
 
 4.2
+Öffnen sie die .csv Datei
+Wenn Sie bei den Öffnen gefragt werden, setzen Sie den Delimiter bzw. Trennzeichen auf ein Komma(",") und nichts anderes.
+Sie sollten dann eine Tabelle mit drei Spalten sehen.
+Im Header der Tabelle steht links "Nummer", mittig "de", und rechts "en".
+Verändern Sie an der "Nummer" Spalte und dem Header nichts.
+Dann muss man die "en" Spalte bearbeiten bis in jeder Zeile die "en" Spalte die Übersetzung der "de" Spalte ist.
+
 Wenn Sie Excel verwenden, geben Sie den Befehl "python csv4excel.py" ein.
 Öffnen Sie die .csv Datei
 Wenn Sie bei den Öffnen gefragt werden, setzen Sie den Delimiter bzw. Trennzeichen auf ein Komma(",") und nichts anderes.
@@ -86,7 +102,6 @@ Sie sollten dann eine Tabelle mit drei Spalten sehen.
 Im Header der Tabelle steht links "Nummer", mittig "de", und rechts "en".
 Verändern Sie an der "Nummer" Spalte und dem Header nichts.
 Dann muss man die "en" Spalte bearbeiten bis in jeder Zeile die "en" Spalte die Übersetzung der "de" Spalte ist.
-
 
 5. Import in Moodle
 Geben Sie den Befehl "python fix_template.py" ein.
