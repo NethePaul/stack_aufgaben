@@ -45,8 +45,9 @@ Installiere libretranslate:(nur für automatische Übersetzung notwendig) (Die I
  In Windows: Folge die Anleitung von  https://github.com/nuttolum/LibreOnWindows
   Alternativ in Windows:
    Installiere "WSL" wie nach  https://learn.microsoft.com/de-de/windows/wsl/install.
-   Dann in WSL installiere pipx mit "sudo apt install python-pipx"
-   Dann installiere libretranslate in WSL mit "pipx install libretranslate".
+   Dann starte WSL mit den Befehl "wsl ~".
+   Dann in WSL installiere pipx mit den Befehl "sudo apt install python-pipx".
+   Dann installiere libretranslate in WSL mit den Befehl "pipx install libretranslate".
  
 
 2. Export der Fragen aus Moodle
