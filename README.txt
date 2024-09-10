@@ -117,10 +117,12 @@ Die Frage werden in einer Neuen Unterkategorie namens "übersetzt" importiert.
 Davon abgesehen bleibt die Kategorienstruktur erhalten.
 Die alten Fragen bleiben unverändert.
 
-6. Aktualisiere Quizzes
+6. Aktualisiere Quizzes und CAS-Felder
 Alle Quizze werden danach noch die alten Fragen referenzieren.
 Daher müssen entweder alle Quizzes neu erstellt werden mit den neuen Fragen.
 Oder von allen Quizzen müssen alle Fragen entfernt werden und mit den übersetzten Fragen ersetzt werden.
+Text unter "Questionvariables" oder "Aufgabenvariablen" wird nicht in der .csv Datei zum Übersetzen auftauchen. Daher muss der Text noch manuell übersetzt werden.
+Hierfür kann die Maxima-Funktion " tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]"); "  hilfreich sein. Sie wird wie folt aufgerufen:  " tr("Beispiel","Example") ".
 
 7. (optional) Hochladen der Fragen in Git
 zum Teilen mit anderen Universitäten
