@@ -908,7 +908,7 @@ function hide(view) {
         </stackversion>
         <questionvariables>
             <text><![CDATA[/* This question uses the Maxima package distrib */
-
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 /* render number as percentages */
 texaspercent (e) := block([num: first (args (e))], sconcat(tex1(ev(num*100, simp)), "\\,\\%"));
 texput(aspercent, texaspercent);
@@ -958,8 +958,8 @@ choices: block([vals, correct, incorrect],
 TAns1: random_permutation(choices);
 TAns2: ev(statistic, simp);
 TAns3: critical;
-TAns4: random_permutation([["Hypothese verwerfen", if statistic >= critical then true else false ],
-  ["Hypothese nicht verwerfen", if statistic < critical then true else false]]);]]></text>
+TAns4: random_permutation([[tr("Hypothese verwerfen","discard hypothesis"), if statistic >= critical then true else false ],
+  [tr("Hypothese nicht verwerfen","don't discard hypothesis"), if statistic < critical then true else false]]);]]></text>
         </questionvariables>
         <specificfeedback format="html">
             <text/>

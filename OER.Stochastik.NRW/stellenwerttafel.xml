@@ -795,7 +795,8 @@ lsg1: 56;
 lsg2: 120;
 test01(x):= is(x>0) and integerp(x);
 test02(x):= is(x=1 or x=2) and integerp(x);
-ListeZwischen1: [[1, false, "Mit Beachtung der Reihenfolge"], [2, true, "Ohne Beachtung der Reihenfolge"] ];
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+ListeZwischen1: [[1, false, tr("Mit Beachtung der Reihenfolge","with order")], [2, true, tr("Ohne Beachtung der Reihenfolge","without order")] ];
 lsgZwischen1: 2;
 lsgZwischen2: 8;
 lsgZwischen4: 1;]]></text>

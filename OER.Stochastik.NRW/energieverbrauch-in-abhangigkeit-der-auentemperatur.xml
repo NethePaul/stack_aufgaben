@@ -722,14 +722,14 @@ Tans_f: random_permutation(
         [a, if a <= length(correct) then true else false, stack_disp(b,"id")]),
       vals, append(correct, incorrect))));
 simp: true;
-
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 block([
   tQuantile: quantile_student_t(0.95, nn-2),
   statistic: std_y / std_x * corr_xy * sqrt((nn-2)*var_x / ((1 - corr_xy^2)*var_y))],
 Tans_g1: statistic,
 Tans_g2: random_permutation([
-  ["verworfen", is(statistic <= -tQuantile)],
-  ["beibehalten", is(statistic > -tQuantile)]
+  [tr("verworfen","discarded"), is(statistic <= -tQuantile)],
+  [tr("beibehalten","kept"), is(statistic > -tQuantile)]
 ]));]]></text>
         </questionvariables>
         <specificfeedback format="html">

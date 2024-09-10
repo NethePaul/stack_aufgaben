@@ -369,9 +369,9 @@ fX: prefactorX * exp(exponentX)
 prefactorY: 1 / sqrt(2 * %pi * sY^2)
 exponentY: -(y - muY)^2 / (2 * sY^2)
 fY: prefactorY * exp(exponentY)
-
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 /* L&#246;sungen */
-Tans3: [["unabh&#228;ngig", is(equal(r, 0))], ["nicht unabh&#228;ngig", is(notequal(r, 0))]]]]></text>
+Tans3: [[tr("unabh&#228;ngig","independent"), is(equal(r, 0))], [tr("nicht unabh&#228;ngig","dependent"), is(notequal(r, 0))]]]]></text>
         </questionvariables>
         <specificfeedback format="html">
             <text/>

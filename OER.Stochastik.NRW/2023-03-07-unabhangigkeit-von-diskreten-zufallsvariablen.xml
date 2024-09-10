@@ -467,7 +467,7 @@ span.stack-tooltip {
     </div>
     <div id="oer-aufgabe-14">
         <p>
-            Be careful \(P\) the discrete probability measure on the space \(\Omega=\{1,2,3\}^2\)the
+            Let \(P\) the discrete probability measure on the space \(\Omega=\{1,2,3\}^2\)the
             <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "Wahrscheinlichkeitsfunktion"'>
                 Counting density
             </span>
@@ -921,9 +921,9 @@ DistrY: matrix([ProbY(1), ProbY(2), ProbY(3)])
 /* Produktverteilung von X und Y */
 ProbXY(k, l) := ProbX(k) * ProbY(l)
 DistrXY: transpose(DistrX).DistrY
-
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 /* L&#246;sungen */
-Tans3: [["unabh&#228;ngig", is(equal(DistrP, DistrXY))], ["nicht unabh&#228;ngig", is(notequal(DistrP, DistrXY))]]]]></text>
+Tans3: [[tr("unabh&#228;ngig","independent"), is(equal(DistrP, DistrXY))], [tr("nicht unabh&#228;ngig","debendent"), is(notequal(DistrP, DistrXY))]]]]></text>
         </questionvariables>
         <specificfeedback format="html">
             <text/>

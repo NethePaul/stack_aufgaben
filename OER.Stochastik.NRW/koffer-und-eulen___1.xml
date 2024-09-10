@@ -550,8 +550,9 @@ TA1: n1*n2*n3*n4*n5; /*Korrekte Antwort f&#252;r Hauptaufgabe*/
 /* Schritt 1a - L&#252;ckentext (ans2*/
 TA3: abt1;
 TA4: gep;
-Liste5: [[1,true,"ohne"],[2,false,"mit"]]; /*"ohne" Zur&#252;cklegen*/
-Liste6: [[1,true,"ohne"],[2,false,"mit"]]; /*"ohne" Beachtung der Reihenfolge*/
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+Liste5: [[1,true,tr("ohne,"without")],[2,false,tr("mit","with")]]; /*"ohne" Zur&#252;cklegen*/
+Liste6: [[1,true,tr("ohne,"without")],[2,false,tr("mit","with")]]; /*"ohne" Beachtung der Reihenfolge*/
 
 /*Single Choice f&#252;r Schritt 1b (ans7, prt4)*/
 /*Liste7: [[1,true,sconcat(" \\(","\\binom{",gep,"}{",abt1,"}","\\)")],[2,false,sconcat(" \\(",gep,"^{",abt1,"}","\\)")],[3,false,sconcat(" \\(","\\binom{",gep,"+",abt1,"-1","}{",abt1,"}","\\)")], [4,false,sconcat(" \\(",   "\\frac{",  gep,  "!}{(",  gep,  "-",  abt1, ")!}"  ,"\\)")]]; */

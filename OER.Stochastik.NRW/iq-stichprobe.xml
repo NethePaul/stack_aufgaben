@@ -876,11 +876,11 @@ LSG3: (sqrt(15)*(x-100))/15;
 sigFigs:3;
 LSG4:is(abs(LSG3)>=1.96);
 LSGf:(x-100)/(std1(data)/sqrt(15));
-
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 tans3 : gaussStatistics(data, mean, variance, length(data));
 tans4 : [
-  ["verworfen", is(abs(tans3) >= 1.96)],
-  ["beibehalten", is(not(abs(tans3) >= 1.96)) ]];
+  [tr("verworfen","discarded"), is(abs(tans3) >= 1.96)],
+  [tr("beibehalten","kept"), is(not(abs(tans3) >= 1.96)) ]];
 
 simp:false;]]></text>
         </questionvariables>

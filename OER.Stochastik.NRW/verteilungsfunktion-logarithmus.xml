@@ -291,7 +291,7 @@ span.stack-tooltip {
                             <br/>
                         </b>
                         <p>
-                            Be careful \(f(x):=log(x)\) and \(c&gt;0\). Be careful \(X\sim \mathcal{N}(0,2^2)\) a normal distributed random variable and \(Y:=-cf(|X|)\) another random variable. First determine the distribution function \(F_Y(t):=P(Y\leq t)\) the
+                            Let \(f(x):=log(x)\) and \(c&gt;0\). Let \(X\sim \mathcal{N}(0,2^2)\) a normal distributed random variable and \(Y:=-cf(|X|)\) another random variable. First determine the distribution function \(F_Y(t):=P(Y\leq t)\) the
 Random variable \(Y\) with the help of the distribution function \(\Phi(t)\) the standard distribution by \(F_Y(t)=P(Y\leq t)=P(-cf(|X|)\leq t)\) continue to shape. Then calculate the value of the distribution function \(F_Y(t)\)in place \(t=1\) for \(c=1\). Round your result to 2 postage points.
                         </p>
                     </div>
@@ -323,7 +323,7 @@ Random variable \(Y\) with the help of the distribution function \(\Phi(t)\) the
                                             <br/>
                                         </b>
                                         <p>
-                                            Be careful \(f(x):=log(x)\) and \(c&gt;0\). Be careful \(X\sim \mathcal{N}(0,2^2)\) a normal distributed random variable and \(Y:=-cf(|X|)\) another random variable. First determine the distribution function \(F_Y(t):=P(Y\leq t)\) the random variable
+                                            Let \(f(x):=log(x)\) and \(c&gt;0\). Let \(X\sim \mathcal{N}(0,2^2)\) a normal distributed random variable and \(Y:=-cf(|X|)\) another random variable. First determine the distribution function \(F_Y(t):=P(Y\leq t)\) the random variable
     \(Y\) with the help of the distribution function \(\Phi(t)\) the standard distribution by \(F_Y(t)=P(Y\leq t)=P(-cf(|X|)\leq t)\) continue to shape. Then calculate the value of the distribution function \(F_Y(t)\) in place \(t=1\) for
     \(c=1\). Round your result to 2 postage points.
                                         </p>
@@ -362,7 +362,7 @@ Random variable \(Y\) with the help of the distribution function \(\Phi(t)\) the
                                             <br/>
                                         </b>
                                         <p>
-                                            Be careful \(f(x):=log(x)\) and \(c&gt;0\). Be careful \(X\sim \mathcal{N}(0,2^2)\) a normal distributed random variable and \(Y:=-cf(|X|)\) another random variable. First determine the distribution function \(F_Y(t):=P(Y\leq t)\) the random variable
+                                            Let \(f(x):=log(x)\) and \(c&gt;0\). Let \(X\sim \mathcal{N}(0,2^2)\) a normal distributed random variable and \(Y:=-cf(|X|)\) another random variable. First determine the distribution function \(F_Y(t):=P(Y\leq t)\) the random variable
     \(Y\) with the help of the distribution function \(\Phi(t)\) the standard distribution by \(F_Y(t)=P(Y\leq t)=P(-cf(|X|)\leq t)\) continue to shape. Then calculate the value of the distribution function \(F_Y(t)\) in place \(t=1\) for
     \(c=1\). Round your result to 2 postage points.
                                         </p>

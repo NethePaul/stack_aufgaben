@@ -675,14 +675,15 @@ n1: rand_with_step(200,600,50);
 /* Anzahl aus Aufgabenteil (e): */
 m1: 4;
 
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 /* Optionen f&#252;r Frage nach der Verteilung: */
 TA1_Liste: [
-    ["Laplace-Verteilung",false],
-    ["Bernoulli-Verteilung",false],
-    ["Binomialverteilung",true],
-    ["hypergeometrische Verteilung",false],
-    ["Poisson-Verteilung",true],
-    ["geometrische Verteilung",false]
+    [tr("Laplace-Verteilung","laplace distribution"),false],
+    [tr("Bernoulli-Verteilung","bernoulli distribution"),false],
+    [tr("Binomialverteilung","binomial distribution"),true],
+    [tr("hypergeometrische Verteilung","hypergeometric distribution"),false],
+    [tr("Poisson-Verteilung","poisson distribution"),true],
+    [tr("geometrische Verteilung","geometric distribution"),false]
 ];
 
 /*
@@ -696,7 +697,7 @@ TA1_Liste: [
 */
 
 /* Verteilung: */
-bin: "Binomialverteilung";
+bin: tr("Binomialverteilung","binomial distribution");
 
 /* Wahrscheinlichkeitsfunktion: */
 P1(k):=binomial(n1,k)*p1^k*(1-p1)^(n1-k);
@@ -720,7 +721,7 @@ P2_1: P1(0);
 
 
 /* Verteilung: */
-pois: "Poisson-Verteilung";
+pois: tr("Poisson-Verteilung","poisson distribution");
 
 /* Parameter der Poisson-Verteilung = EW = Var: */
 lambda: if integerp(n1*p1) then round(n1*p1) else n1*p1;

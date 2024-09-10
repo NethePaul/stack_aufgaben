@@ -776,13 +776,21 @@ TA1: 1-365!/( (365-n)!*365^n );
 
 /*Gegenwahrscheinlichkeit:*/
 TAf1: 365!/( (365-n)!*365^n ); 
-
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 /* Wahrscheinlichkeitsraum bzw. Urnenmodell (geschlossene Fragen):*/
 Liste1: [
-    [1, true, "... einer Ziehung von n Kugeln mit Zur&#252;cklegen aus einer Urne, die 365 Kugeln mit der Beschriftung '1. Januar', '2. Januar', ..., '31. Dezember' enth&#228;lt."],
-    [2, false, "... einer Ziehung von n Kugeln ohne Zur&#252;cklegen aus einer Urne, die 365 Kugeln mit der Beschriftung '1. Januar', '2. Januar', ..., '31. Dezember' enth&#228;lt."],
-    [3, false, "... einer Ziehung von 365 Kugeln mit Zur&#252;cklegen aus einer Urne, die n Kugeln mit der Beschriftung '1', '2', ..., 'n' enth&#228;lt."],
-    [4, false, "... einer Ziehung von 365 Kugeln ohne Zur&#252;cklegen aus einer Urne, die n Kugeln mit der Beschriftung '1', '2', ..., 'n' enth&#228;lt."]
+    [1, true,  tr("... einer Ziehung von n Kugeln mit Zur&#252;cklegen aus einer Urne, die 365 Kugeln mit der Beschriftung '1. Januar', '2. Januar', ..., '31. Dezember' enth&#228;lt.",
+                  "... of a pull of n balls with put back from an urn containing 365 balls with the labels '1. January', '2. January', ..., '31. December'.")    
+    ],
+    [2, false, tr("... einer Ziehung von n Kugeln ohne Zur&#252;cklegen aus einer Urne, die 365 Kugeln mit der Beschriftung '1. Januar', '2. Januar', ..., '31. Dezember' enth&#228;lt.",
+                  "... of a pull of n balls without put back from an urn containing 365 balls with the labels '1. January', '2. January', ..., '31. December'.")    
+    ],
+    [3, false, tr("... einer Ziehung von 365 Kugeln mit Zur&#252;cklegen aus einer Urne, die n Kugeln mit der Beschriftung '1', '2', ..., 'n' enth&#228;lt.",
+                  "... of a pull of 365 balls with put back from an urn containing n balls with the labels '1', '2', ..., 'n' enth&#228;lt.")    
+    ],
+    [4, false, tr("... einer Ziehung von 365 Kugeln ohne Zur&#252;cklegen aus einer Urne, die n Kugeln mit der Beschriftung '1', '2', ..., 'n' enth&#228;lt.",
+                  "... of a pull of 365 balls without put back from an urn containing n balls with the labels '1', '2', ..., 'n' enth&#228;lt.")   
+    ]
 ];
 Liste1: random_permutation(Liste1);
 
@@ -796,11 +804,11 @@ Liste2: random_permutation(Liste2);
 
 /*Gegenereignis von A (geschlossene Fragen):*/
 Liste3: [
-    [1, true, "Alle Personen haben an unterschiedlichen Tagen Geburtstag."],
-    [2, false, "Es gibt Personen, die an unterschiedlichen Tagen Geburtstag haben."],
-    [3, false, "Es gibt genau 2 Personen, die an unterschiedlichen Tagen Geburtstag haben."],
-    [4, false, "Alle Personen haben am selben Tag Geburtstag."],
-    [5, false, "n-2 Personen haben an unterschiedlichen Tagen Geburtstag."]
+    [1, true,  tr("Alle Personen haben an unterschiedlichen Tagen Geburtstag.","Everyone has a birthday on a different day.")],
+    [2, false, tr("Es gibt Personen, die an unterschiedlichen Tagen Geburtstag haben.","There are people who have birthdays on different days.")],
+    [3, false, tr("Es gibt genau 2 Personen, die an unterschiedlichen Tagen Geburtstag haben.","There are exactly 2 people who have birthdays on different days.")],
+    [4, false, tr("Alle Personen haben am selben Tag Geburtstag.","Everyone has a birthday on the same day.")],
+    [5, false, tr("n-2 Personen haben an unterschiedlichen Tagen Geburtstag.","n-2 people have birthdays on different days.")]
 ];
 Liste3: random_permutation(Liste3);
 
@@ -825,12 +833,19 @@ TAns4: set(1,2);
 
 /* Laplace-Experimente (geschlossene Frage): */
 Liste6: [
-    [1, true, "Laplace-Experimente sind Zufallsexperimente mit endlich vielen, gleich wahrscheinlichen Ergebnissen."],
-    [2, true, sconcat("Es sei \\(\\Omega\\) ein endlicher Ergebnisraum. Die Laplace-Verteilung auf \\(\\Omega\\) ist definiert durch \\[P(A)=\\frac{|A|}{|\\Omega|}\\] f&#252;r ein Ereignis \\(A\\subset \\Omega\\).")],
-    [3, true, sconcat("Die Laplace-Verteilung hat die Eigenschaft\\[
+    [1, true, tr("Laplace-Experimente sind Zufallsexperimente mit endlich vielen, gleich wahrscheinlichen Ergebnissen.","Laplace-Experiments are random experiments with a finite number of equaly probable results.")],
+    [2, true, tr(sconcat("Es sei \\(\\Omega\\) ein endlicher Ergebnisraum. Die Laplace-Verteilung auf \\(\\Omega\\) ist definiert durch \\[P(A)=\\frac{|A|}{|\\Omega|}\\] f&#252;r ein Ereignis \\(A\\subset \\Omega\\)."),
+                 sconcat("Let \\(\\Omega\\) be a finite result space. The Laplace distribution \\(\\Omega\\) is defined as \\[P(A)=\\frac{|A|}{|\\Omega|}\\] for a result \\(A\\subset \\Omega\\)."))],
+    [3, true, tr(sconcat("Die Laplace-Verteilung hat die Eigenschaft\\[
 P(A\\cup B) =P(A) +P(B)\\]
-f&#252;r disjunkte Ereignisse \\(A\\) und \\(B\\).")],
-    [4, false, sconcat("Es sei \\(\\Omega\\) ein endlicher Ergebnisraum. Die Laplace-Verteilung auf \\(\\Omega\\) ist definiert durch \\[P(A)=\\frac{1}{|\\Omega|}\\] f&#252;r ein Ereignis \\(A\\subset \\Omega\\).")]
+f&#252;r disjunkte Ereignisse \\(A\\) und \\(B\\)."),
+sconcat("The Laplace-Distribution has the property\\[
+P(A\\cup B) =P(A) +P(B)\\]
+for the disjunct results \\(A\\) and \\(B\\).")
+)],
+    [4, false, tr(sconcat("Es sei \\(\\Omega\\) ein endlicher Ergebnisraum. Die Laplace-Verteilung auf \\(\\Omega\\) ist definiert durch \\[P(A)=\\frac{1}{|\\Omega|}\\] f&#252;r ein Ereignis \\(A\\subset \\Omega\\)."),
+                  sconcat("Let \\(\\Omega\\) be a finite result space. The Laplace distribution \\(\\Omega\\) is defined as \\[P(A)=\\frac{1}{|\\Omega|}\\] fof a result in \\(A\\subset \\Omega\\)."))
+]
 ];
 Liste6: random_permutation(Liste6);
 TAns5: set(1,2,3);

@@ -41,8 +41,11 @@
             <text>2019090200</text>
         </stackversion>
         <questionvariables>
-            <text><![CDATA[ZL: rand([[1,"mit"],[2,"ohne"]]);
-RF: rand([[1,"mit"],[2,"ohne"]]);
+            <text><![CDATA[
+
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+ZL: rand([[1,tr("mit","with")],[2,tr("ohne","without")]]);
+RF: rand([[1,tr("mit","with")],[2,tr("ohne","without")]]);
 fall: [ZL[1],RF[1]];
 
 n1: rand_with_step(5,10,1);

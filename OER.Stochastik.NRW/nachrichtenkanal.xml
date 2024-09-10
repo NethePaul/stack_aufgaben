@@ -584,7 +584,7 @@ Enter rounded decimal number and then click on
             <b>
                 Two. Interim step:
             </b>
-            Be careful \(A\) an event. How can
+            Let \(A\) an event. How can
 Probability of the counter event of \(A\) will be determined? Please
 Select one of the following options and then click on
 "Check."
@@ -2567,7 +2567,7 @@ gives the expression \((P(A))^C\) no sense.
     \(P(A^C)\color{red}{\ne} \frac{\#A}{\#\Omega}\).
     </p>
     <p>
-        Be careful \(\Omega\) a finite outcome and \(A\subseteq \Omega\) a
+        Let \(\Omega\) a finite outcome and \(A\subseteq \Omega\) a
 Event. If one can assume that there is a uniform distribution,
 then with the Laplace formula \(P(A)=\frac{\#A}{\#\Omega}\) the
 Probability \(A\) are calculated. For

@@ -349,16 +349,16 @@ the basic formula to determine the number of combinations.
 
 n: rand([19, 20, 21]) /* Anzahl der Sorten */
 k: rand([6, 12, 20]) /* Anzahl der Flaschen */
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+mZmR: tr("Ziehen mit Zur&#252;cklegen unter Beachtung der Reihenfolge","pull with put back and with order")
+mZoR: tr("Ziehen mit Zur&#252;cklegen ohne Beachtung der Reihenfolge","pull with put back and without order")
+oZmR: tr("Ziehen ohne Zur&#252;cklegen unter Beachtung der Reihenfolge","pull without put back and with order")
+oZoR: tr("Ziehen ohne Zur&#252;cklegen ohne Beachtung der Reihenfolge","pull without put back and without order")
 
-mZmR: "Ziehen mit Zur&#252;cklegen unter Beachtung der Reihenfolge"
-mZoR: "Ziehen mit Zur&#252;cklegen ohne Beachtung der Reihenfolge"
-oZmR: "Ziehen ohne Zur&#252;cklegen unter Beachtung der Reihenfolge"
-oZoR: "Ziehen ohne Zur&#252;cklegen ohne Beachtung der Reihenfolge"
-
-mZ: "Ziehen mit Zur&#252;cklegen"
-oZ: "Ziehen ohne Zur&#252;cklegen"
-mR: "unter Beachtung der Reihenfolge"
-oR: "ohne Beachtung der Reihenfolge"
+mZ: tr("Ziehen mit Zur&#252;cklegen","pull with put back")
+oZ: tr("Ziehen ohne Zur&#252;cklegen","pull without put back")
+mR: tr("unter Beachtung der Reihenfolge","pull with order")
+oR: tr("ohne Beachtung der Reihenfolge","pull without order")
 
 mZmR_Formel: "\\(n^k\\)"
 mZoR_Formel: "\\(\\dbinom{n + k - 1}{k}\\)"

@@ -357,14 +357,14 @@ FDR: (1 - spe) * (1 - pre) / (sen * pre + (1 - spe) * (1 - pre))
 FOR: (1 - sen) * pre / ((1 - sen) * pre + spe * (1 - pre))
 /* negativer pr&#228;diktiver Wert */
 NPV: spe * (1 - pre) / ((1 - sen) * pre + spe * (1 - pre))
-
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 /* Formulierung der Aufgabenstellungen */
-FPR_list: [1, "Falsch-Positiv-Rate", FPR]
-FNR_list: [2, "Falsch-Negativ-Rate", FNR]
-PPV_list: [1, "den positiv pr&#228;diktiven Wert", PPV, "Er", "Der positiv pr&#228;diktive Wert"]
-FDR_list: [2, "die Falscherkennungsrate", FDR, "Sie", "Die Falscherkennungsrate"]
-FOR_list: [3, "die Falschauslassungsrate", FOR, "Sie", "Die Falschauslassungsrate"]
-NPV_list: [4, "den negativ pr&#228;diktiven Wert", NPV, "Er", "Der negativ pr&#228;diktive Wert"]
+FPR_list: [1, tr("Falsch-Positiv-Rate","false positive rate"), FPR]
+FNR_list: [2, tr("Falsch-Negativ-Rate","false negative rate"), FNR]
+PPV_list: [1, tr("den positiv pr&#228;diktiven Wert","the positive predictive value"), PPV, tr("Er","It"), tr("Der positiv pr&#228;diktive Wert","The positive predictive value")]
+FDR_list: [2, tr("die Falscherkennungsrate","the false detection rate"), FDR, tr("Sie","It"), tr("Die Falscherkennungsrate","The false detection rate")]
+FOR_list: [3, tr("die Falschauslassungsrate","the false omission rate"), FOR, tr("Sie","It"), tr("Die Falschauslassungsrate","The false omission rate")]
+NPV_list: [4, tr("den negativ pr&#228;diktiven Wert","the negative prediction value"), NPV, tr("Er","It"), tr("Der negativ pr&#228;diktive Wert","The negative prediction value")]
 
 /* Auswahl der Aufgabenstellungen */
 textA: rand([FPR_list, FNR_list])

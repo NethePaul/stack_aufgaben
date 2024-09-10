@@ -1614,24 +1614,24 @@ total: sum (nn[j], j, 1, kk);
 
 statistic: sum ((nn[i] - total*theta0[i])^2 / (total * theta0[i]), i, 1, kk);
 critical: quantile_chi2 (1 - alpha, kk - 1);
-
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 correct_ans: [
-"Chi-Quadrat-Anpassungstest"
+tr("Chi-Quadrat-Anpassungstest","Chi-Square qoodness-of-fit test")
 ];
 
 incorrect_ans: [
-"Zweiseitiger Test f&#252;r den Erwartungswert bei einer Stichprobe",
-"Einseitiger Test f&#252;r den Erwartungswert bei einer Stichprobe",
-"Einseitiger Test f&#252;r die Varianz bei einer Stichprobe",
-"Zweiseitiger Test f&#252;r die Varianz bei einer Stichprobe"
+tr("Zweiseitiger Test f&#252;r den Erwartungswert bei einer Stichprobe","two-sided test for the expected value of a sample"),
+tr("Einseitiger Test f&#252;r den Erwartungswert bei einer Stichprobe","One-sided test for the expected value of a sample"),
+tr("Einseitiger Test f&#252;r die Varianz bei einer Stichprobe","One-sided test for the variance of a sample"),
+tr("Zweiseitiger Test f&#252;r die Varianz bei einer Stichprobe","two-sided test for the variance of a sample")
 ];
 
 appropiate_tests: append (maplist (lambda([t], [t, true]), correct_ans),
                 maplist (lambda ([t], [t, false]), incorrect_ans));
 
 test_result: [
-["Hypothese verwerfen", is(statistic >= critical)],
-["Hypothese nicht verwerfen", is(statistic < critical)]];
+[tr("Hypothese verwerfen","discard hypothesis"), is(statistic >= critical)],
+[tr("Hypothese nicht verwerfen","don't discard hypothesis"), is(statistic < critical)]];
 
 Tans1: random_permutation (appropiate_tests);
 Tans2: statistic;

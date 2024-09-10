@@ -522,7 +522,7 @@ Use of the parameter \(\lambda={@TA1@}\) on.
             <b>
                 (c.2)
             </b>
-            Be careful \(A\) an event. How can the probability
+            Let \(A\) an event. How can the probability
 the counter event of \(A\) will be determined? Please cross one
 the following options.
         </p>
@@ -585,14 +585,15 @@ poisson_vert(k, lambda):=exp(-1*lambda)*(lambda^k)/k!;
 n1: rand([1000, 2000, 3000, 4000]);
 p1: if n1=3000 then rand([1/1000, 1/2000, 1/3000, 1/4000]) else rand([1/1000, 1/2000, 1/4000]);
 
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 /* Optionen in Dropdownliste zur Verteilung: */
 Liste: [
-    [1,true,"Poisson-Verteilung"],
-    [2,false,"Binomialverteilung"],
-    [3,false,"Geometrische Verteilung"],
-    [4,false,"Hypergeometrische Verteilung"],
-    [5,false,"Bernoulli-Verteilung"],
-    [6,false,"Laplace-Verteilung"]
+    [1,true, tr("Poisson-Verteilung","poisson distribution")],
+    [2,false,tr("Binomialverteilung","binomial distribution")],
+    [3,false,tr("Geometrische Verteilung","geometric distribution")],
+    [4,false,tr("Hypergeometrische Verteilung","hypergeometric distribution")],
+    [5,false,tr("Bernoulli-Verteilung","bernoulli distribution")],
+    [6,false,tr("Laplace-Verteilung","laplace distribution")]
 ]; 
 Liste: random_permutation(Liste);
 
@@ -2207,7 +2208,7 @@ gives the expression \((P(A))^C\) no sense.
     \(P(A^C)\color{red}{\ne} \frac{\#A}{\#\Omega}\).
     </p>
     <p>
-        Be careful \(\Omega\) a finite outcome and \(A\subseteq \Omega\) a
+        Let \(\Omega\) a finite outcome and \(A\subseteq \Omega\) a
 Event. If one can assume that there is a uniform distribution,
 then with the Laplace formula \(P(A)=\frac{\#A}{\#\Omega}\) the
 Probability \(A\) are calculated. For

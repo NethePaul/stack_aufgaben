@@ -404,11 +404,12 @@ mag(x) := floor(log(x) / log(10))
 /* Rundungsgenauigkeit bei numerischen Antworttests */
 epsilon: 10^(mag(err(n, p, k)))
 
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 /* Abk&#252;rzungen f&#252;r Verteilungen */
-Bin: "Binomialverteilung"
-Hyp: "Hypergeometrische Verteilung"
-U: "Laplace-Verteilung"
-Geo: "Geometrische Verteilung"
+Bin: tr("Binomialverteilung","binomial distribution")
+Hyp: tr("Hypergeometrische Verteilung","hypergeometric distribution")
+U:   tr("Laplace-Verteilung","laplace distribution")
+Geo: tr("Geometrische Verteilung","geometric distribution")
 
 /* L&#246;sungen */
 TansA: binprob(n, p, k)

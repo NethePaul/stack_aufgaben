@@ -1018,20 +1018,20 @@ ta_c: (1-p)*q2;
 ta_d: (1-p)*(1-q2);
 ta_e: ta_a+ta_c;
 ta_f: ta_b+ta_d;
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+Liste1a: [[1, false, "A"], [2, true, tr("A und B","A and B")], [3, false, tr("A und nicht B","A and not B")], [4, false, "B"] ];
+Liste1b: [[1, false, tr("Man rechnet \\(P(A) \\cdot P(B)\\).","One calculates \\(P(A) \\cdot P(B)\\).")], [2, true, tr("Man rechnet \\(P(B) \\cdot P(A \\vert B) \\).","One calculates \\(P(B) \\cdot P(A \\vert B) \\).")], [3, false, tr("Man rechnet \\(\\frac {P(A \\cap B)} {P(B)} \\).","One calculates \\(\\frac {P(A \\cap B)} {P(B)} \\).")] ];
+Liste2a: [[1, false, tr("nicht A","not A")], [2, true, tr("nicht A und B","not A and B")], [3, false, tr("nicht A und nicht B","not A and not B")], [4, false, "B"] ];
+Liste2b: [[1, false, tr("Man rechnet \\(P(\\neg A) \\cdot P(B)\\).","One calculates \\(P(\\neg A) \\cdot P(B)\\).")], [2, true, tr("Man rechnet \\(P(B) \\cdot P(\\neg A \\vert B) \\).","One calculates \\(P(B) \\cdot P(\\neg A \\vert B) \\).")], [3, false, tr("Man rechnet  \\(\\frac {P((\\neg A) \\cap B)} {P(B)} \\).","One calculates \\(\\frac {P((\\neg A) \\cap B)} {P(B)} \\).")] ];
+Liste3a: [[1, false, "A"], [2, false, tr("A und B","A and B")], [3, true, tr("A und nicht B","A and not B")], [4, false, "B"] ];
+Liste3b: [[1, false, tr("Man rechnet \\(P(\\neg B) \\cdot P(A) \\).","One calculates \\(P(\\neg B) \\cdot P(A) \\).")], [2, true, tr("Man rechnet \\(P(\\neg B) \\cdot P(A \\vert \\neg B) \\).","One calculates \\(P(\\neg B) \\cdot P(A \\vert \\neg B) \\).")], [3, false, tr("Man rechnet \\(\\frac {P(A \\cap (\\neg B))} {P(\\neg B)} \\).","One calculates \\(\\frac {P(A \\cap (\\neg B))} {P(\\neg B)} \\).")] ];
+Liste4a: [[1, false, tr("nicht A","not A")], [2, false, tr("nicht A und B","not A and B")], [3, true, tr("nicht A und nicht B","not A and not B")], [4, false, "B"] ];
+Liste4b: [[1, false, tr("Man rechnet \\(P(\\neg A) \\cdot P(\\neg B)\\).","One calculates \\(P(\\neg A) \\cdot P(\\neg B)\\).")], [2, true, tr("Man rechnet \\(P(\\neg B) \\cdot P(\\neg A \\vert \\neg B) \\)."," One calculates \\(P(\\neg B) \\cdot P(\\neg A \\vert \\neg B) \\).")], [3, false, tr("Man rechnet \\(\\frac {P((\\neg A) \\cap (\\neg B))} {P(\\neg B)} \\).","One calculates \\(\\frac {P((\\neg A) \\cap (\\neg B))} {P(\\neg B)} \\).")] ];
 
-Liste1a: [[1, false, "A"], [2, true, "A und B"], [3, false, "A und nicht B"], [4, false, "B"] ];
-Liste1b: [[1, false, "Man rechnet \\(P(A) \\cdot P(B)\\)."], [2, true, "Man rechnet \\(P(B) \\cdot P(A \\vert B) \\)."], [3, false, "Man rechnet \\(\\frac {P(A \\cap B)} {P(B)} \\)."] ];
-Liste2a: [[1, false, "nicht A"], [2, true, "nicht A und B"], [3, false, "nicht A und nicht B"], [4, false, "B"] ];
-Liste2b: [[1, false, "Man rechnet \\(P(\\neg A) \\cdot P(B)\\)."], [2, true, "Man rechnet \\(P(B) \\cdot P(\\neg A \\vert B) \\)."], [3, false, "Man rechnet  \\(\\frac {P((\\neg A) \\cap B)} {P(B)} \\)."] ];
-Liste3a: [[1, false, "A"], [2, false, "A und B"], [3, true, "A und nicht B"], [4, false, "B"] ];
-Liste3b: [[1, false, "Man rechnet \\(P(\\neg B) \\cdot P(A) \\)."], [2, true, "Man rechnet \\(P(\\neg B) \\cdot P(A \\vert \\neg B) \\)."], [3, false, "Man rechnet \\(\\frac {P(A \\cap (\\neg B))} {P(\\neg B)} \\)."] ];
-Liste4a: [[1, false, "nicht A"], [2, false, "nicht A und B"], [3, true, "nicht A und nicht B"], [4, false, "B"] ];
-Liste4b: [[1, false, "Man rechnet \\(P(\\neg A) \\cdot P(\\neg B)\\)."], [2, true, "Man rechnet \\(P(\\neg B) \\cdot P(\\neg A \\vert \\neg B) \\)."], [3, false, "Man rechnet \\(\\frac {P((\\neg A) \\cap (\\neg B))} {P(\\neg B)} \\)."] ];
-
-Liste5a: [[1, true, "A"], [2, false, "nicht A und B"], [3, false, "nicht A und nicht B"], [4, false, "B"] ];
-Liste5b: [[1, true, "Man rechnet \\(a+c}\)."], [2, false, "Man rechnet \\(a \\cdot c \\)."], [3, false, "Man rechnet \\(\\frac a c \\)."] ];
-Liste6a: [[1, true, "nicht A"], [2, false, "nicht A und B"], [3, false, "nicht A und nicht B"], [4, false, "B"] ];
-Liste6b: [[1, true, "Man rechnet \\(b + d\\)."], [2, false, "Man rechnet \\(b \\cdot c \\)."], [3, false, "Man rechnet \\(\\frac b d \\)."] ];]]></text>
+Liste5a: [[1, true, "A"], [2, false, tr("nicht A und B","not A and B")], [3, false, tr("nicht A und nicht B","not A and not B")], [4, false, "B"] ];
+Liste5b: [[1, true, tr("Man rechnet \\(a+c}\).","One calculates \\(a+c}\).")], [2, false, tr("Man rechnet \\(a \\cdot c \\).","One calculates \\(a \\cdot c \\).")], [3, false, tr("Man rechnet \\(\\frac a c \\).","One calculates \\(\\frac a c \\).")] ];
+Liste6a: [[1, true, tr("nicht A","not A")], [2, false, tr("nicht A und B","not A and not B")], [3, false, tr("nicht A und nicht B","not A and not B")], [4, false, "B"] ];
+Liste6b: [[1, true, tr("Man rechnet \\(b + d\\).","One calculates \\(b + d\\).")], [2, false, tr("Man rechnet \\(b \\cdot c \\).","One calculates \\(b \\cdot c \\).")], [3, false, tr("Man rechnet \\(\\frac b d \\).","One calculates \\(\\frac b d \\).")] ];]]></text>
         </questionvariables>
         <specificfeedback format="html">
             <text/>

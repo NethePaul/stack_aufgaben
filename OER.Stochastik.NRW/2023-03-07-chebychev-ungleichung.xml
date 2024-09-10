@@ -407,11 +407,12 @@ c: rand([50, 100, 150, 200])
 a: -c + n * p
 b: c + n * p
 
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 /* Abk&#252;rzungen f&#252;r Verteilungen */
-Bin: "Binomialverteilung"
-Ber: "Bernoulli-Verteilung"
-U: "Laplace-Verteilung"
-Geo: "Geometrische Verteilung"
+Bin: tr("Binomialverteilung","binomial distribution")
+Ber: tr("Bernoulli-Verteilung","bernoulli distribution")
+U:   tr("Laplace-Verteilung","laplace distribution")
+Geo: tr("Geometrische Verteilung","geometric distribution")
 
 /* L&#246;sungen */
 TansA: random_permutation([[1, true, Bin], [2, false, Ber], [3, false, Geo], [4, false, U]])

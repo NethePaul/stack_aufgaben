@@ -611,11 +611,17 @@ ta_diffloglikelihood: [
  [2, false, sconcat("\\(l'(\\lambda) = ", nn, " -\\sum_{i=1}^{", nn, "} \\frac{1}{x_i!}\\)")],
  [3, false, "\\(l'(\\lambda) =&#8239;-1 +&#8239;x_1 \\frac{1}{\\lambda}\\)"]
 ];
-
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 Tanse: random_permutation([
-[1, true, "Wenn wir die oben genannte Faustregel anwenden, machen wir in ca. 95% aller F&#228;lle eine korrekte Aussage"],
-[2, false, "Wir k&#246;nnen mit 100% Sicherheit sagen, dass der wahre Parameterwert \\(\\lambda\\) im angegebenen Intervall liegt."],
-[3, false, "Die Zahl der Verkehrstoten im kommenden Jahr wird zwischen 3 und 6 liegen."]
+[1, true,  tr("Wenn wir die oben genannte Faustregel anwenden, machen wir in ca. 95% aller F&#228;lle eine korrekte Aussage",
+              "If we use the aforementioned rule of thumb, we will make a correct statement in ca.95% of all cases"
+              ],
+[2, false, tr("Wir k&#246;nnen mit 100% Sicherheit sagen, dass der wahre Parameterwert \\(\\lambda\\) im angegebenen Intervall liegt.",
+              "We can say with 100% security, that the true parameter value of \\(\\lambda\\) is in the given intervall."
+              ],
+[3, false, tr("Die Zahl der Verkehrstoten im kommenden Jahr wird zwischen 3 und 6 liegen.",
+              "The Number of traffic deaths in the next year will be between 3 and 6."
+              ]
 ]);]]></text>
         </questionvariables>
         <specificfeedback format="html">

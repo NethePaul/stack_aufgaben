@@ -841,14 +841,15 @@ q1: decimalplaces(1-p1,2);
 /* Stichprobengr&#246;&#223;e: */
 n1: 100;
 
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 /* Optionen in der Dropdown-Liste in (a): */
 Liste1: [
-    [1,true," Binomialverteilung"],
-    [2,false," Laplace-Verteilung"],
-    [3,false," Bernoulli-Verteilung"],
-    [4,false," hypergeometrische Verteilung"],
-    [5,false," Poisson-Verteilung"],
-    [6,false," geometrische Verteilung"]
+    [1,true, tr(" Binomialverteilung"," binomial distribution")],
+    [2,false,tr(" Laplace-Verteilung"," laplace distribution")],
+    [3,false,tr(" Bernoulli-Verteilung"," bernoulli distribution")],
+    [4,false,tr(" hypergeometrische Verteilung"," hypergeometric distribution")],
+    [5,false,tr(" Poisson-Verteilung"," poisson distribution")],
+    [6,false,tr(" geometrische Verteilung"," geometric distribution")]
 ];
 Liste1: random_permutation(Liste1);
 

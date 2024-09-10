@@ -1058,14 +1058,16 @@ nichtnegativp(L):=freeof(false,makelist(not(is(L[k]<0)),k,1,length(L)));
 aktuellstes_Jahr: 2021;
 Jahre: reverse(makelist(aktuellstes_Jahr-i,i,0,4)); 
 
+
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 /* Optionen f&#252;r die Aufgabe zur Verteilung: */
 Liste2: [
-    [1,true,"Poisson-Verteilung"],
-    [2,false,"Binomialverteilung"],
-    [3,false,"Bernoulli-Verteilung"],
-    [4,false,"Laplace-Verteilung"],
-    [5,false,"hypergeometrische Verteilung"],
-    [6,false,"geometrische Verteilung"]
+    [1,true, tr("Poisson-Verteilung","poisson distribution")],
+    [2,false,tr("Binomialverteilung","binomial distribution")],
+    [3,false,tr("Bernoulli-Verteilung","bernoulli distribution")],
+    [4,false,tr("Laplace-Verteilung","laplace distribution")],
+    [5,false,tr("hypergeometrische Verteilung","hypergeometric distribution")],
+    [6,false,tr("geometrische Verteilung","geometric distribution")]
 ];
 Liste2: random_permutation(Liste2);
 TA2: 1;

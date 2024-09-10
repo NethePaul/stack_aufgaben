@@ -913,14 +913,15 @@ AListe: [5,3,8,5,2,5,3,2,6,4];
 /* Anzahl der Verkehrstoten im gesamten Zeitraum: */
 sumA:  apply("+", AListe);
 
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 /* Liste der Optionen f&#252;r Aufgabenteil (a): */
 Liste1: [
-    [1,true,"Poisson-Verteilung"],
-    [2,false,"Binomialverteilung"],
-    [3,false,"Bernoulli-Verteilung"],
-    [4,false,"Laplace-Verteilung"],
-    [5,false,"hypergeometrische Verteilung"],
-    [6,false,"geometrische Verteilung"]
+    [1,true, tr("Poisson-Verteilung","poisson distribution")],
+    [2,false,tr("Binomialverteilung","binomial distribution")],
+    [3,false,tr("Bernoulli-Verteilung","bernoulli distribution")],
+    [4,false,tr("Laplace-Verteilung","laplace distribution")],
+    [5,false,tr("hypergeometrische Verteilung","hypergeometric distribution")],
+    [6,false,tr("geometrische Verteilung","geometric distribution")]
 ];
 Liste1: random_permutation(Liste1);
 TA2: 1;

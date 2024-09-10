@@ -342,7 +342,7 @@ span.stack-tooltip {
     </div>
     <div id="oer-aufgabe-20">
         <p>
-            In the case of parcel delivery, it may be probable for each package \(p={@p@}\) to delays in delivery. Every day \(n={@n@}\) Packages sent. Be careful \(X\) the random number of packages that cannot be delivered in time.
+            In the case of parcel delivery, it may be probable for each package \(p={@p@}\) to delays in delivery. Every day \(n={@n@}\) Packages sent. Let \(X\) the random number of packages that cannot be delivered in time.
         </p>
         <hr/>
     </div>

@@ -247,7 +247,7 @@ span.stack-tooltip {
                             <br/>
                         </b>
                         <p>
-                            Be careful \(k\in \mathbb{Z}\) and \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) a function of \(\mathbb{R}\) After\(\mathbb{R}\). Determine the smallest natural number \(j\in \mathbb{N}\)so that for \(k \in \mathbb{N}\), \(k \geq j\),
+                            Let \(k\in \mathbb{Z}\) and \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) a function of \(\mathbb{R}\) After\(\mathbb{R}\). Determine the smallest natural number \(j\in \mathbb{N}\)so that for \(k \in \mathbb{N}\), \(k \geq j\),
     \(f_k\) is a Lebesgue density.
                         </p>
                     </div>
@@ -279,7 +279,7 @@ span.stack-tooltip {
                                             <br/>
                                         </b>
                                         <p>
-                                            Be careful \(k\in \mathbb{Z}\) and \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) a function of \(\mathbb{R}\) After \(\mathbb{R}\). Determine the natural number \(j\in \mathbb{N}\)so that for \(k \in \mathbb{N}\), \(k \geq j\), \(f_k\) is a Lebesgue density.
+                                            Let \(k\in \mathbb{Z}\) and \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) a function of \(\mathbb{R}\) After \(\mathbb{R}\). Determine the natural number \(j\in \mathbb{N}\)so that for \(k \in \mathbb{N}\), \(k \geq j\), \(f_k\) is a Lebesgue density.
                                         </p>
                                     </div>
                                 </span>

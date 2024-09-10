@@ -704,10 +704,10 @@ k: rand(6)
 K: rand_with_step(7, 12, 1)
 /* l richtige Zahlen (mit System) */
 l: rand(6)
-
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 /* Singular bzw. Plural je nach Wert von k und l */
-k_text: if k=1 then ["wird", ""] else ["werden", "en"]
-l_text: if l=1 then ["wird", ""] else ["werden", "en"]
+k_text: if k=1 then [tr("wird","becomes"), ""] else [tr("werden","become"), "en"]
+l_text: if l=1 then [tr("wird","becomes"), ""] else [tr("werden","become"), "en"]
 
 /* Formeln f&#252;r Urnenmodelle */
 mZmR(N, n) := N^n
@@ -716,19 +716,19 @@ mZoR(N, n) := binomial(N + n - 1, n)
 oZoR(N, n) := binomial(N, n)
 
 /* Abk&#252;rzungen f&#252;r Urnenmodelle */
-mZmR: "Ziehen mit Zur&#252;cklegen und mit Reihenfolge"
-oZmR: "Ziehen ohne Zur&#252;cklegen und mit Reihenfolge"
-mZoR: "Ziehen mit Zur&#252;cklegen und ohne Reihenfolge"
-oZoR: "Ziehen ohne Zur&#252;cklegen und ohne Reihenfolge"
+mZmR: tr("Ziehen mit Zur&#252;cklegen und mit Reihenfolge","pull with put back and with order")
+oZmR: tr("Ziehen ohne Zur&#252;cklegen und mit Reihenfolge","pull without put back and with order")
+mZoR: tr("Ziehen mit Zur&#252;cklegen und ohne Reihenfolge","pull with put back and without order")
+oZoR: tr("Ziehen ohne Zur&#252;cklegen und ohne Reihenfolge","pull without put back and without order")
 
 /* Formeln f&#252;r Verteilungen */
 Hyp(N, K, n, k) := binomial(K, k) * binomial(N - K, n - k) / binomial(N, n)
 
 /* Abk&#252;rzungen f&#252;r Verteilungen */
-Bin: "Binomialverteilung"
-Mul: "Multinomialverteilung"
-Hyp: "Hypergeometrische Verteilung"
-MHyp: "Multivariate hypergeometrische Verteilung"
+Bin:  tr("Binomialverteilung","binomial distribution")
+Mul:  tr("Multinomialverteilung","multinomial distribution")
+Hyp:  tr("Hypergeometrische Verteilung","hypergeometric distribution")
+MHyp: tr("Multivariate hypergeometrische Verteilung","multivariate hypergeometric distribution")
 
 /* L&#246;sungen */
 TansA1: [[mZmR, false], [oZmR, false], [mZoR, false], [oZoR, true]]

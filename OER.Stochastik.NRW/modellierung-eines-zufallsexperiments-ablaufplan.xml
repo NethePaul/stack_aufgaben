@@ -370,11 +370,11 @@ Omega_part1: listify(subset(Omega,lambda([li],is(li[1]=1))));
 Omega_part2: listify(subset(Omega,lambda([li],is(li[1]=2))));
 Omega_part3: listify(subset(Omega,lambda([li],is(li[1]=3))));
 Omega_part4: listify(subset(Omega,lambda([li],is(li[1]=4))));
-
-summe_produkt_string: rand(["die Summe","das Produkt"]);
-n1: if summe_produkt_string="die Summe" then rand_with_step(6,9,1) else rand([6,8,12,24]);
-rechenzeichen: if summe_produkt_string="die Summe" then "+" else "*";
-rechenzeichen_symbol: if summe_produkt_string="die Summe" then "+" else "\\cdot";
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+summe_produkt_string: rand([tr("die Summe","the sum"),tr("das Produkt","the product")]);
+n1: if summe_produkt_string=tr("die Summe","the sum") then rand_with_step(6,9,1) else rand([6,8,12,24]);
+rechenzeichen: if summe_produkt_string=tr("die Summe","the sum") then "+" else "*";
+rechenzeichen_symbol: if summe_produkt_string=tr("die Summe","the sum") then "+" else "\\cdot";
 A1: setify(sublist(listify(Omega),lambda([Liste],apply(rechenzeichen,Liste)=n1)));
 p1: length(A1)/length(Omega);
 

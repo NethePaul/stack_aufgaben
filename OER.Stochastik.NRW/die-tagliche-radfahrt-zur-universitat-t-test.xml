@@ -1087,10 +1087,10 @@ choices: block([vals, correct, incorrect],
     lambda([a, b],
     [a, if a <= length(correct) then true else false, stack_disp(b,"id")]),
   vals, append(correct, incorrect)));
-
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 test_result: [
-  ["Hypothese verwerfen", is(statistic >= critical)],
-  ["Hypothese nicht verwerfen", is(statistic < critical)]];
+  [tr("Hypothese verwerfen","discard hypothesis"), is(statistic >= critical)],
+  [tr("Hypothese nicht verwerfen","don't discard hypothesis"), is(statistic < critical)]];
 
 Tans1: random_permutation (choices);
 Tans2: statistic;

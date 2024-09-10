@@ -198,7 +198,7 @@
             </p>
         </div>
         <p>
-            Be careful \(f\colon\mathbb{R}\to\mathbb{R}\) a function with \(x\mapsto     
+            Let \(f\colon\mathbb{R}\to\mathbb{R}\) a function with \(x\mapsto     
                                 \begin{cases}
                                                 g(x), \text{ wenn } {@aa@}\le x \le {@bb@} \\
                                                 0, \text{ sonst}
@@ -215,7 +215,7 @@
             </u>
         </p>
         <p>
-            Be careful \(f\colon\mathbb{R}\to\mathbb{R}\) a function with \(x\mapsto
+            Let \(f\colon\mathbb{R}\to\mathbb{R}\) a function with \(x\mapsto
                                 \begin{cases}
                                                     g(x), \text{ wenn } {@aa@}\le x \le {@bb@} \\
                                                     0, \text{ sonst}\end{cases} \).
@@ -348,22 +348,22 @@ Extrema(f,a,b):= if diff(f,x)=0 then [[],[]] else block([L1,L2,L3,L4,L5],
     L5: [sublist(L4,lambda([t],t[3]>0)),sublist(L4,lambda([t],t[3]<0))], 
     return(L5)
 );
-
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 /*Variable f&#252;r die erste Multiple-Choice-Aufgabe:*/
 Liste_mc: [
-    [1,true,"Es gilt \\(f(x)\\ge0\\) f&#252;r alle \\(x\\in \\mathbb{R}\\)"],
-    [2,false,"Es existiert mindestens ein \\(x\\in \\mathbb{R}\\) mit \\(f(x)<0\\)"],
-    [3,true,"Es gilt \\(\\int_{-\\infty}^{\\infty}f(x)\\, dx =1\\)"],
-    [4,false,"Es gilt \\(\\int_{-\\infty}^{\\infty}f(x)\\, dx >1\\)"],
-    [5,false,"Es gilt \\(\\int_{-\\infty}^{\\infty}f(x)\\, dx <1\\)"]
+    [1,true, tr("Es gilt \\(f(x)\\ge0\\) f&#252;r alle \\(x\\in \\mathbb{R}\\)","It applies \\(f(x)\\ge0\\) for all \\(x\\in \\mathbb{R}\\)")],
+    [2,false,tr("Es existiert mindestens ein \\(x\\in \\mathbb{R}\\) mit \\(f(x)<0\\)","There exists a \\(x\\in \\mathbb{R}\\) with \\(f(x)<0\\)")],
+    [3,true, tr("Es gilt \\(\\int_{-\\infty}^{\\infty}f(x)\\, dx =1\\)","It applies \\(\\int_{-\\infty}^{\\infty}f(x)\\, dx =1\\)")],
+    [4,false,tr("Es gilt \\(\\int_{-\\infty}^{\\infty}f(x)\\, dx >1\\)","It applies \\(\\int_{-\\infty}^{\\infty}f(x)\\, dx >1\\)")],
+    [5,false,tr("Es gilt \\(\\int_{-\\infty}^{\\infty}f(x)\\, dx <1\\)","It applies \\(\\int_{-\\infty}^{\\infty}f(x)\\, dx <1\\)")]
 ];
 /*Variable f&#252;r die zweite Multiple-Choice-Aufgabe:*/
 Liste_mc_2: [
-    [1,true,"Es muss gelten \\(h(x)\\ge0\\) f&#252;r alle \\(x\\in \\mathbb{R}\\)"],
-    [2,false,"Es muss mindestens ein \\(x\\in \\mathbb{R}\\) mit \\(h(x)<0\\) existieren"],
-    [3,true,"Es muss gelten \\(\\int_{-\\infty}^{\\infty}h(x)\\, dx =1\\)"],
-    [4,false,"Es muss gelten \\(\\int_{-\\infty}^{\\infty}h(x)\\, dx >1\\)"],
-    [5,false,"Es muss gelten \\(\\int_{-\\infty}^{\\infty}h(x)\\, dx <1\\)"]
+    [1,true, tr("Es muss gelten \\(h(x)\\ge0\\) f&#252;r alle \\(x\\in \\mathbb{R}\\)","It must apply \\(h(x)\\ge0\\) for all \\(x\\in \\mathbb{R}\\)")],
+    [2,false,tr("Es muss mindestens ein \\(x\\in \\mathbb{R}\\) mit \\(h(x)<0\\) existieren","There must exists a \\(x\\in \\mathbb{R}\\) with \\(h(x)<0\\)")],
+    [3,true, tr("Es muss gelten \\(\\int_{-\\infty}^{\\infty}h(x)\\, dx =1\\)","It must apply \\(\\int_{-\\infty}^{\\infty}h(x)\\, dx =1\\)")],
+    [4,false,tr("Es muss gelten \\(\\int_{-\\infty}^{\\infty}h(x)\\, dx >1\\)","It must apply \\(\\int_{-\\infty}^{\\infty}h(x)\\, dx >1\\)")],
+    [5,false,tr("Es muss gelten \\(\\int_{-\\infty}^{\\infty}h(x)\\, dx <1\\)","It must apply \\(\\int_{-\\infty}^{\\infty}h(x)\\, dx <1\\)")]
 ];]]></text>
         </questionvariables>
         <specificfeedback format="html">

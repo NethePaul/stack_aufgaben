@@ -528,11 +528,12 @@ c: 1/2-b;
 d: 1/2-a;
 
 test01(x):= is(x>=0) and (x<=1);
-ListeA1: [[1, false, "A"], [2, false, "nicht A"], [3, true, "B"], [4, false, "nicht B"] ];
-ListeA2: [[1, false, "A"], [2, false, "nicht A und B"], [3, true, "A und B"], [4, false, "A und nicht B"] ];
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+ListeA1: [[1, false, "A"], [2, false, tr("nicht A","not A")], [3, true, "B"], [4, false, tr("nicht B","not B")] ];
+ListeA2: [[1, false, "A"], [2, false, tr("nicht A und B","not A and B")], [3, true, tr("A und B","A and B")], [4, false, tr("A und nicht B","A and not B")] ];
 
-ListeB1: [[1, true, "A"], [2, false, "nicht A"], [3, false, "B"], [4, false, "nicht B"] ];
-ListeB2: [[1, false, "A"], [2, false, "nicht A und B"], [3, true, "A und B"], [4, false, "A und nicht B"] ];]]></text>
+ListeB1: [[1, true, "A"], [2, false, tr("nicht A","not A")], [3, false, "B"], [4, false, tr("nicht B","not B")] ];
+ListeB2: [[1, false, "A"], [2, false, tr("nicht A und B","not A and B")], [3, true, tr("A und B","A and B")], [4, false, tr("A und nicht B","A and not B")] ];]]></text>
         </questionvariables>
         <specificfeedback format="html">
             <text/>

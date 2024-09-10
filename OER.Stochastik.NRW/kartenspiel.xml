@@ -630,7 +630,8 @@ N: 32; /*Anzahl Karten*/
 n: 16; /*Stichprobenumfang*/
 r: 16; /*Anzahl der roten Karten im Ausgabestapel*/
 k: rand_with_step(6,10,1); /*Anzahl der roten Karten im ersten Stapel*/
-Liste: [[1, false, "Die Binomialverteilung"], [2, false, "Die Poisson-Verteilung"], [3, false, "Die Gamma-Verteilung"], [4, true, "Die hypergeometrische Verteilung"] ];
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+Liste: [[1, false, tr("Die Binomialverteilung","The binomial distribution")], [2, false, tr("Die Poisson-Verteilung","the poisson distribution")], [3, false, tr("Die Gamma-Verteilung","the gamma distribution")], [4, true, tr("Die hypergeometrische Verteilung","the hypergeometric distribution")] ];
 
 test01(x):= is(x>=0) and (x<=1);
 /*L&#246;sung der Aufgabe*/

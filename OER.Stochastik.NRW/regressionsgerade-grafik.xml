@@ -722,13 +722,17 @@ x2_links: last(sublist(Daten, lambda([P], is(P[1]<x2))));
 
 /* N&#228;chst gr&#246;&#223;erer Wert aus der Liste: */
 x2_rechts: first(sublist(Daten, lambda([P], is(P[1]>x2))));
-
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 /* Auswahloptionen f&#252;r die Single-Choice-Frage zu (c): */
 Liste_mc: [
-    [1,true,sconcat("Der Punkt an der Stelle \\(x=", x2, "\\) liegt nicht auf der Regressionsgeraden.")],
-    [2, false, sconcat("Der Punkt an der Stelle \\(x=", x2, "\\) stimmt mit keinem der Datenpunkte &#252;berein.")],
-    [3,false, sconcat("Der Punkt an der Stelle \\(x=", x2, "\\) liegt auf der gestrichelten vertikalen Linie.")],
-    [4,false, sconcat("Der Abstand des Punktes an der Stelle \\(x=", x2, "\\) von der Regressionsgeraden ist null.")]
+    [1,true,  tr(sconcat("Der Punkt an der Stelle \\(x=", x2, "\\) liegt nicht auf der Regressionsgeraden.")
+              ,sconcat("The point at \\(x=", x2, "\\) is not on the regression line."))],
+    [2,false, tr(sconcat("Der Punkt an der Stelle \\(x=", x2, "\\) stimmt mit keinem der Datenpunkte &#252;berein.")
+              ,sconcat("The point at \\(x=", x2, "\\) does not match any datapoint."))],
+    [3,false, tr(sconcat("Der Punkt an der Stelle \\(x=", x2, "\\) liegt auf der gestrichelten vertikalen Linie.")
+              ,sconcat("The point at \\(x=", x2, "\\) is on the dotted vertical line."))],
+    [4,false, tr(sconcat("Der Abstand des Punktes an der Stelle \\(x=", x2, "\\) von der Regressionsgeraden ist null.")
+              ,sconcat("The Distance of the Point at \\(x=", x2, "\\) to the regression line is zero."))]
 ];
 Liste_mc: random_permutation(Liste_mc);]]></text>
         </questionvariables>

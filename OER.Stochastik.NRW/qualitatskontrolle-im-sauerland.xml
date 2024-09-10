@@ -1617,15 +1617,22 @@ tans2b: [["&#8804;", false], ["=", false], ["&#8805;", false], [">", true], ["<"
 /* (c) Type 1 error */
 
 type1Error: 1 - cdf_binomial(trashThreshold - 1, sampleSize, defectRatioThreshold);
-
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 tans3: decimalplaces(type1Error, 3);
 tans3h1: random_permutation([
-  [1, true, sconcat("\\(\\displaystyle \\alpha = \\sup_{\\theta\\in\\Theta_0} ", stack_disp(Prob(theta, X >= trashThreshold), ""), "\\)")],
-  [2, true, "Der Fehler erster Art besteht darin, die Hypothese zu verwerfen, obwohl sie zutrifft."],
-  [3, true, sconcat("Die Produktionscharge wird entsorgt, obwohl die tats&#228;chliche Fehlerquote ", defectRatioThreshold, " betr&#228;gt.  Die Qualit&#228;tskontrolle macht dabei einen Fehler erster Art.")],
-  [4, false, sconcat("\\(\\alpha = \\sup_{\\theta\\in\\Theta_0} ", stack_disp(Prob(theta, X < trashThreshold), ""), "\\)")],
-  [5, false, "Der Fehler erster Art besteht darin, die Hypothese nicht zu verwerfen, obwohl die Alternative zutrifft."],
-  [6, false, sconcat("Die Produktionscharge wird nicht entsorgt, obwohl die tats&#228;chliche Fehlerquote gr&#246;&#223;er als ", defectRatioThreshold, " ist. Die Qualit&#228;tskontrolle macht dabei einen Fehler erster Art.")]]);
+[1, true,  tr(sconcat("\\(\\displaystyle \\alpha = \\sup_{\\theta\\in\\Theta_0} ", stack_disp(Prob(theta, X >= trashThreshold), ""), "\\)")
+             ,sconcat("\\(\\displaystyle \\alpha = \\sup_{\\theta\\in\\Theta_0} ", stack_disp(Prob(theta, X >= trashThreshold), ""), "\\)"))],
+[2, true,  tr("Der Fehler erster Art besteht darin, die Hypothese zu verwerfen, obwohl sie zutrifft."
+             ,"A type 1 error is to discard an applicable hypothesis.")],
+[3, true,  tr(sconcat("Die Produktionscharge wird entsorgt, obwohl die tats&#228;chliche Fehlerquote ", defectRatioThreshold, " betr&#228;gt.  Die Qualit&#228;tskontrolle macht dabei einen Fehler erster Art.")
+             ,sconcat("The production batch is disposed of despite the actual error quota being ", defectRatioThreshold, ". The Quality assurance makes a type 1 error."))],
+[4, false, tr(sconcat("\\(\\alpha = \\sup_{\\theta\\in\\Theta_0} ", stack_disp(Prob(theta, X < trashThreshold), ""), "\\)")
+             ,sconcat("\\(\\alpha = \\sup_{\\theta\\in\\Theta_0} ", stack_disp(Prob(theta, X < trashThreshold), ""), "\\)"))],
+[5, false, tr("Der Fehler erster Art besteht darin, die Hypothese nicht zu verwerfen, obwohl die Alternative zutrifft."
+             ,"A type 1 error is to not discard a hypothesis, despite an alternative being applicable.")],
+[6, false, tr(sconcat("Die Produktionscharge wird nicht entsorgt, obwohl die tats&#228;chliche Fehlerquote gr&#246;&#223;er als ", defectRatioThreshold, " ist. Die Qualit&#228;tskontrolle macht dabei einen Fehler erster Art.")
+             ,sconcat("The production bath is not disposed, despite the actual error quota being greater than", defectRatioThreshold, ". The Quality assurance makes a type 1 error.")]
+]);
 tans3h2: binomial(sampleSize, k) * defectRatioThreshold^k * (1 - defectRatioThreshold)^(sampleSize - k),simp:false;
 
 /* (d) Power of the test */

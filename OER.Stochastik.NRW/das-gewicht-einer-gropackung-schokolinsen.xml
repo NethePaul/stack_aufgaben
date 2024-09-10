@@ -267,11 +267,11 @@ button.prev:hover, button.top:hover {
     </details>
     <div class="question-view">
         <p>
-            Staff:in the Chair of Mathematics XII have {# nn #} Large packages weighed by chocolates. The average weight was {# mean #}g. {@ if variance_given then sconcat("die Stichprobenvarianz war ", var, "&#160;g
+            The Staff in the Chair of Mathematics XII have weighed {# nn #} Large packages of chocolates. The average weight was {# mean #}g. {@ if variance_given then sconcat("the sample variance was ", var, "&#160;g
             <sup>
                 2
             </sup>
-            ") else sconcat("die empirische Standardabweichung war ", std, "&#160;g") @}. We assume that the weight of a randomly selected package \(\mathcal{N}(\mu, \sigma^2)\)is distributed, \(\mu\) and \(\sigma^2\) are unrecognized parameters.
+            ") else sconcat("the empirical standard deviation was ", std, "&#160;g") @}. We assume that the weight of a randomly selected package \(\mathcal{N}(\mu, \sigma^2)\)is distributed, \(\mu\) and \(\sigma^2\) are unrecognized parameters.
         </p>
         <div class="question-view">
             <div class="question-view">
@@ -455,10 +455,12 @@ eepsilon: ta_t_quantile * sqrt(var / nn);
 conf_interval_mu: [mean - eepsilon, mean +&#8239;eepsilon];
 
 conf_interval_variance: [(nn-1)*var/quantile_chi2(1 - alpha/2, nn-1), (nn-1)*var/quantile_chi2(alpha/2, nn-1)];
-
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 Tans3: [
-[1, false, "Wir k&#246;nnen sicher sein, dass der unbekannte Parameter \\(\\mu\\) in dem Konfidenzintervall liegt."], 
-[2, true, sconcat("Wenn wir das von uns verwendete Verfahren immer wieder auf jedes mal neue Packungen anwenden, so wird der unbekannte Parameter \\(\\mu\\) in ", stack_disp(aspercent(1 - alpha), "i"), " aller F&#228;lle im Konfidenzintervall liegen.")]];
+[1, false, tr("Wir k&#246;nnen sicher sein, dass der unbekannte Parameter \\(\\mu\\) in dem Konfidenzintervall liegt.","We can be sure that, the unknown parameter \\(\\mu\\) is in the confidence intervall.")], 
+[2, true, tr(sconcat("Wenn wir das von uns verwendete Verfahren immer wieder auf jedes mal neue Packungen anwenden, so wird der unbekannte Parameter \\(\\mu\\) in ", stack_disp(aspercent(1 - alpha), "i"), " aller F&#228;lle im Konfidenzintervall liegen.")
+            ,sconcat("If we repeat this procedure for several new packages, the unknown parameter \\(\\mu\\) will be in the confidence intervall in ", stack_disp(aspercent(1 - alpha), "i"), " of all cases."))]
+];
 
 ta_formula: random_permutation([
 [1, true, sconcat("\\(\\left[ \\bar{X} - t_{n-1;",

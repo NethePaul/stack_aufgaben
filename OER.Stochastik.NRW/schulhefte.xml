@@ -1084,8 +1084,9 @@ How many draws \(k\) will we do?
 test01(x):= is(x>0) and integerp(x);
 test02(x):= is(x>=1 and x<=2) and integerp(x);
 test03(x):= is(x>=0 and x<=4) and integerp(x);
-ListeZwischen1: [[1, true, "Ziehen mit Beachtung der Reihenfolge"], [2, false, "Ziehen ohne Beachtung der Reihenfolge"] ];
-ListeZwischen3: [[1, true, "Ziehen mit Zur&#252;cklegen"], [2, false, "Ziehen ohne Zur&#252;cklegen"] ];
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+ListeZwischen1: [[1, true, tr("Ziehen mit Beachtung der Reihenfolge","pull with order")], [2, false, tr("Ziehen ohne Beachtung der Reihenfolge","pull without order")] ];
+ListeZwischen3: [[1, true, tr("Ziehen mit Zur&#252;cklegen","pull with put back")], [2, false, tr("Ziehen ohne Zur&#252;cklegen","pull without put back")] ];
 ListeZwischen4: [[1, false, " \\({n\\choose k}\\)"], [2, true, "\\(n^k\\)"], [3, false, "\\(\\frac{n!}{(n-k)!}\\)"], [4, false, "\\({n+k-1\\choose k}\\)"] ];
 lsg1: 7!;
 lsg2: 7^6;

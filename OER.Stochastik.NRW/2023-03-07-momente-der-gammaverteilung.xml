@@ -249,7 +249,7 @@ span.stack-tooltip {
     </div>
     <div id="oer-aufgabe-18">
         <p>
-            Be careful \(X\) a random variable which has the following density function \(f:\mathbb{R}\to[0,\infty)\) owns: \[f(x)={@Gam_f(alpha, beta)@}\textbf{1}_{(0,\infty)}(x).\]
+            Let \(X\) a random variable which has the following density function \(f:\mathbb{R}\to[0,\infty)\) owns: \[f(x)={@Gam_f(alpha, beta)@}\textbf{1}_{(0,\infty)}(x).\]
         </p>
         <hr/>
     </div>

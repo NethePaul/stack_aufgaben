@@ -351,7 +351,7 @@ span.stack-tooltip {
     </div>
     <div id="oer-aufgabe-30">
         <p>
-            An incoming email is likely to be {@dp(probS)@} a spammail. If an email is a spammail, it contains a probability of {@dp(probWS)@} the word "winning". If an email is not a spammail, it contains the word "winning" only with a probability of {@dp(probWSc)@}. Be careful \(S\) the event that a spammail enters, and \(W\) the event that an email contains the word "winning".
+            An incoming email is likely to be {@dp(probS)@} a spammail. If an email is a spammail, it contains a probability of {@dp(probWS)@} the word "winning". If an email is not a spammail, it contains the word "winning" only with a probability of {@dp(probWSc)@}. Let \(S\) the event that a spammail enters, and \(W\) the event that an email contains the word "winning".
         </p>
         <hr/>
     </div>
@@ -686,12 +686,12 @@ probSW: probWS * probS / (probWS * probS + probWSc * probSc)
 probScW: probWSc * probSc / (probWS * probS + probWSc * probSc)
 probSWc: probWcS * probS / (probWcS * probS + probWcSc * probSc)
 probScWc: probWcSc * probSc / (probWcS * probS + probWcSc * probSc)
-
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 /* Formulierung der Aufgabenstellungen */
-listB1: [1, "um eine Spammail", probSW, "P(S|W)", "P(W|S)P(S)", probWS, probS]
-listB2: [2, "nicht um eine Spammail", probScW, "P(S^c|W)", "P(W|S^c)P(S^c)", probWSc, probSc]
-listC1: [1, "um eine Spammail", probSWc, "P(S|W^c)", "P(W^c|S)P(S)", probWcS, probS]
-listC2: [2, "nicht um eine Spammail", probScWc, "P(S^c|W^c)", "P(W^c|S^c)P(S^c)", probWcSc, probSc]
+listB1: [1, tr("um eine Spammail","for a spammail"), probSW, "P(S|W)", "P(W|S)P(S)", probWS, probS]
+listB2: [2, tr("nicht um eine Spammail","not for a spammail"), probScW, "P(S^c|W)", "P(W|S^c)P(S^c)", probWSc, probSc]
+listC1: [1, tr("um eine Spammail","for a spammail"), probSWc, "P(S|W^c)", "P(W^c|S)P(S)", probWcS, probS]
+listC2: [2, tr("nicht um eine Spammail","not for a spammail"), probScWc, "P(S^c|W^c)", "P(W^c|S^c)P(S^c)", probWcSc, probSc]
 
 /* Auswahl der Aufgabenstellungen */
 listB: rand([listB1, listB2])

@@ -637,7 +637,7 @@ Information in the above box.
             <b>
                 (d)
             </b>
-            Be careful \(Z\) now a geometrically distributed random variable
+            Let \(Z\) now a geometrically distributed random variable
 with parameters \(p\). Enter using \(p\) the
             <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='Auch bekannt unter "Z&#228;hldichte"'>
                 Probability function
@@ -758,14 +758,15 @@ rnd(x):= if (log(abs(x))/log(10))>=0 then decimalplaces(x,2) else significantfig
 /*Korrekte L&#246;sung f&#252;r Teil 1:*/
 TA1:1-(5/6)^3;
 
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 /*Optionen f&#252;r Auswahl der Verteilung:*/
 Liste2: [
-    [1,true,"geometrisch verteilt"],
-    [2,false,"hypergeometrisch verteilt"],
-    [3,false,"Bernoulli-verteilt"],
-    [4,false,"Laplace-verteilt"],
-    [5,false,"Poisson-verteilt"],
-    [6,false,"binomialverteilt"]
+    [1,true, tr("geometrisch verteilt","geometricly distributed")],
+    [2,false,tr("hypergeometrisch verteilt","hypergeometricly distributed ")],
+    [3,false,tr("Bernoulli-verteilt","Bernoulli-distributed")],
+    [4,false,tr("Laplace-verteilt","Laplace-distributed")],
+    [5,false,tr("Poisson-verteilt","Poisson-distributed")],
+    [6,false,tr("binomialverteilt","binomially distributed")]
 ];
 Liste2: random_permutation(Liste2);
 

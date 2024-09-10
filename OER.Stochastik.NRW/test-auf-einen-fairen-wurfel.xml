@@ -1576,19 +1576,24 @@ statisticChoice: block([vals, correct, incorrect],
       [a, if a <= length(correct) then true else false, stack_disp(b,"id")]),
     vals, append(correct, incorrect)));
 simp:true;
-
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
 test_result: [
-["Hypothese verwerfen", is(statistic >= critical) ],
-["Hypothese nicht verwerfen", is(statistic < critical)]];
+[tr("Hypothese verwerfen","discard hypothesis"), is(statistic >= critical) ],
+[tr("Hypothese nicht verwerfen","don't discard hypothesis"), is(statistic < critical)]];
 
 testContext: block([vals, correct, incorrect],
   correct: [
-    sconcat("Die Wahrscheinlichkeit, einen fairen W&#252;rfel f&#252;r unfair zu halten, ist h&#246;chstens ", stack_disp(aspercent(alpha), "i"), "."),
-    sconcat("Bei diesem Verfahren halten wir in ", stack_disp(aspercent(alpha), "i"), " der F&#228;lle einen fairen W&#252;rfel f&#252;r unfair.")
+    tr(sconcat("Die Wahrscheinlichkeit, einen fairen W&#252;rfel f&#252;r unfair zu halten, ist h&#246;chstens ", stack_disp(aspercent(alpha), "i"), "."),
+       sconcat("The probability to consider a fair die as unfair is at most ", stack_disp(aspercent(alpha), "i"), ".")),      
+    tr(sconcat("Bei diesem Verfahren halten wir in ", stack_disp(aspercent(alpha), "i"), " der F&#228;lle einen fairen W&#252;rfel f&#252;r unfair."),
+       sconcat("In this procedure, we consider a fair die as unfair in ", stack_disp(aspercent(alpha), "i"), " of all cases."))
   ],
   incorrect: [
-    sconcat("Die Wahrscheinlichkeit, dass wir eine Fehlentscheidung treffen, ist h&#246;chstens ", stack_disp(aspercent(alpha), "i"), "."),
-  sconcat("Die Wahrscheinlichkeit, einen unfairen W&#252;rfel zu entdecken, ist mindestens ", stack_disp(aspercent(1 - alpha), "i"), ".")],
+    tr(sconcat("Die Wahrscheinlichkeit, dass wir eine Fehlentscheidung treffen, ist h&#246;chstens ", stack_disp(aspercent(alpha), "i"), "."),
+       sconcat("The probability of a wrong decision is at most ", stack_disp(aspercent(alpha), "i"), ".")),
+    tr(sconcat("Die Wahrscheinlichkeit, einen unfairen W&#252;rfel zu entdecken, ist mindestens ", stack_disp(aspercent(1 - alpha), "i"), "."),
+       sconcat("The probability to detect an unfair die is at least", stack_disp(aspercent(1 - alpha), "i"), "."))
+  ],
   vals: makelist(i, i, ev(length(correct) + length(incorrect), simp)),
   zip_with(lambda([a, b],
       [a, if a <= length(correct) then true else false, b]),
@@ -1600,13 +1605,13 @@ Tans3: decimalplaces(critical,1);
 Tans3h1: random_permutation(
   block([vals, correct, incorrect],
     correct: [
-    "Chi-Quadrat-Verteilung"
+    tr("Chi-Quadrat-Verteilung","chi-square distribution")
     ],
     incorrect: [
-    "Normalverteilung",
-    "Student-t-Verteilung",
-    "Binomialverteilung",
-    "Exponentialverteilung"],
+    tr("Normalverteilung","normal distribution"),
+    tr("Student-t-Verteilung","student-t distribution"),
+    tr("Binomialverteilung","binomial distribution"),
+    tr("Exponentialverteilung","exponential distribution")],
     vals: makelist(i, i, ev(length(correct) + length(incorrect), simp)),
     zip_with(lambda([a, b],
         [a, if a <= length(correct) then true else false, b]),

@@ -637,7 +637,7 @@ and thus determine an empirical value.
     <div>
         <div id="oer-aufgabe-27_aufgabenstellung_teil1">
             <p>
-                Be careful \(X\) a random variable, which the cubed eye number at
+                Let \(X\) a random variable, which the cubed eye number at
 Throw with a (unfair) six-sided cube describes. The
 expectation value of these random variables is to be
     \(\text{E}(X)={@dp(EW)@}\) lie.
@@ -656,7 +656,7 @@ so that \(P(X=k)=0\) for a maximum of \(k\) Article 2
                 </u>
             </p>
             <p>
-                Be careful \(X\) a random variable, which the cubed eye number at
+                Let \(X\) a random variable, which the cubed eye number at
 Throw with a (unfair) six-sided cube describes. The
 expectation value of these random variables is to be
     \(\text{E}(X)={@dp(EW)@}\) lie.
