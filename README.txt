@@ -90,13 +90,6 @@ Daher ist es wichtig die .csv Datei vollständig manuell nach Fehlern zu durchsu
 Achtung: Wenn text innerhalb von Mathematischen Ausdrücken in LaTeX (zb. "\(\text{Beispiel}\)") oder in Maxima Code (zb. "{@'Beispiel'@}") steht, wird es nicht automatisch übersetzt.
 
 4.2
-Öffnen sie die .csv Datei
-Wenn Sie bei den Öffnen gefragt werden, setzen Sie den Delimiter bzw. Trennzeichen auf ein Komma(",") und nichts anderes.
-Sie sollten dann eine Tabelle mit drei Spalten sehen.
-Im Header der Tabelle steht links "Nummer", mittig "de", und rechts "en".
-Verändern Sie an der "Nummer" Spalte und dem Header nichts.
-Dann muss man die "en" Spalte bearbeiten bis in jeder Zeile die "en" Spalte die Übersetzung der "de" Spalte ist.
-
 Wenn Sie Excel verwenden, geben Sie den Befehl "python csv4excel.py" ein.
 Öffnen Sie die .csv Datei
 Wenn Sie bei den Öffnen gefragt werden, setzen Sie den Delimiter bzw. Trennzeichen auf ein Komma(",") und nichts anderes.
