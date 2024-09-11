@@ -45,8 +45,9 @@ Installiere libretranslate:(nur für automatische Übersetzung notwendig) (Die I
  In Windows: Folge die Anleitung von  https://github.com/nuttolum/LibreOnWindows
   Alternativ in Windows:
    Installiere "WSL" wie nach  https://learn.microsoft.com/de-de/windows/wsl/install.
-   Dann in WSL installiere pipx mit "sudo apt install python-pipx"
-   Dann installiere libretranslate in WSL mit "pipx install libretranslate".
+   Dann starte WSL mit den Befehl "wsl ~".
+   Dann in WSL installiere pipx mit den Befehl "sudo apt install python-pipx".
+   Dann installiere libretranslate in WSL mit den Befehl "pipx install libretranslate".
  
 
 2. Export der Fragen aus Moodle
@@ -54,6 +55,7 @@ Navigiere zu den Moodle Kurs.
 In der Top-bar, klicke auf das Zahnrad, dann im Menu klicke auf "Mehr".
 Dann neben "Fragensammlung" klicke auf Export und wähle "Moodle-XML-Format" als Dateiformat und klicke "Fragen in Datei exportieren"
 Es startet dann ein Download für die .xml Datei.
+In Windows: aktiviere Dateinamenerweiterungen, wie nach:  https://support.microsoft.com/de-de/windows/allgemeine-dateierweiterungen-in-windows-da4a4430-8e76-89c5-59f7-1cdbbc75cb01
 
 3. Vorbereitung für die Übersetzung
 Erstelle ein Ordner für die Übersetzung. 
@@ -88,13 +90,6 @@ Daher ist es wichtig die .csv Datei vollständig manuell nach Fehlern zu durchsu
 Achtung: Wenn text innerhalb von Mathematischen Ausdrücken in LaTeX (zb. "\(\text{Beispiel}\)") oder in Maxima Code (zb. "{@'Beispiel'@}") steht, wird es nicht automatisch übersetzt.
 
 4.2
-Öffnen sie die .csv Datei
-Wenn Sie bei den Öffnen gefragt werden, setzen Sie den Delimiter bzw. Trennzeichen auf ein Komma(",") und nichts anderes.
-Sie sollten dann eine Tabelle mit drei Spalten sehen.
-Im Header der Tabelle steht links "Nummer", mittig "de", und rechts "en".
-Verändern Sie an der "Nummer" Spalte und dem Header nichts.
-Dann muss man die "en" Spalte bearbeiten bis in jeder Zeile die "en" Spalte die Übersetzung der "de" Spalte ist.
-
 Wenn Sie Excel verwenden, geben Sie den Befehl "python csv4excel.py" ein.
 Öffnen Sie die .csv Datei
 Wenn Sie bei den Öffnen gefragt werden, setzen Sie den Delimiter bzw. Trennzeichen auf ein Komma(",") und nichts anderes.
@@ -115,10 +110,12 @@ Die Frage werden in einer Neuen Unterkategorie namens "übersetzt" importiert.
 Davon abgesehen bleibt die Kategorienstruktur erhalten.
 Die alten Fragen bleiben unverändert.
 
-6. Aktualisiere Quizzes
+6. Aktualisiere Quizzes und CAS-Felder
 Alle Quizze werden danach noch die alten Fragen referenzieren.
 Daher müssen entweder alle Quizzes neu erstellt werden mit den neuen Fragen.
 Oder von allen Quizzen müssen alle Fragen entfernt werden und mit den übersetzten Fragen ersetzt werden.
+Text unter "Questionvariables" oder "Aufgabenvariablen" wird nicht in der .csv Datei zum Übersetzen auftauchen. Daher muss der Text noch manuell übersetzt werden.
+Hierfür kann die Maxima-Funktion " tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]"); "  hilfreich sein. Sie wird wie folt aufgerufen:  " tr("Beispiel","Example") ".
 
 7. (optional) Hochladen der Fragen in Git
 zum Teilen mit anderen Universitäten
