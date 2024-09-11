@@ -10,11 +10,11 @@ for filename in filenames:
     if filename.endswith("_new.xml"):
         continue
     print(filename) 
-    templatefile=open(filename+'.template')
+    templatefile=open(filename+'.template',newline='',encoding='utf8')
     inhalt=templatefile.read()
     templatefile.close()
     
-    csvfile=open(filename+'.csv',encoding="UTF-8")
+    csvfile=open(filename+'.csv',newline='',encoding='utf8')
     line1=csvfile.readline()
     if line1.startswith('Nummer;de;en'):
         deli=';'
@@ -34,6 +34,6 @@ for filename in filenames:
         inhalt=inhalt.replace(row['Nummer'],new_str)
     csvfile.close()
 
-    newfile=open(filename[:-4]+'_new.xml','w',encoding='utf8')
+    newfile=open(filename[:-4]+'_new.xml','w',newline='',encoding='utf8')
     newfile.write(inhalt)
     newfile.close()
