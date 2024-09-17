@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Funktionen: Umkehrfunktionen von y=x^d+a und y=bx+c [{"DOMAINUID":"1758CD0"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Bestimmen Sie die Umkehrfunktion von
+        <span style="font-size: 0.9375rem;">
+            \(f(x)={@f@}\) und \(g(x)={@g@}\).
+        </span>
+    </p>
+    <p>
+        a) \(f^{-1}(x)\,=\,\) [[input:ans1]]&#160; [[validation:ans1]] [[feedback:prt1]]
+    </p>
+    <p>
+        b) \(g^{-1}(x)\,=\,\) [[input:ans2]]&#160; [[validation:ans2]] [[feedback:prt2]]
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Determine the reversing function of
+        <span style="font-size: 0.9375rem;">
+            \(f(x)={@f@}\) and \(g(x)={@g@}\).
+        </span>
+    </p>
+    <p>
+        (a) \(f^{-1}(x)\,=\,\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+    </p>
+    <p>
+        (b) \(g^{-1}(x)\,=\,\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr">
+        <strong>
+            L&#246;sungsweg:
+        </strong>
+    </p>
+    <p dir="ltr">
+    </p>
+    <p dir="ltr">
+        a) Wir setzen \(y={@f@}\) und versuchen diese Gleichung nach \(x\) umzustellen.
+    </p>
+    <p dir="ltr">
+        \(\quad \Longleftrightarrow \quad {@0=a*x+b-y@}\)
+    </p>
+    <p dir="ltr">
+        \(\quad \Longleftrightarrow \quad {@-a*x=b-y@}\)
+    </p>
+    <p dir="ltr">
+        \(\quad \Longleftrightarrow \quad \displaystyle {@x=(y-b)/(a)@}\)
+    </p>
+    <p dir="ltr">
+    </p>
+    <p dir="ltr">
+        Somit ist die Umkehrfunktion&#160;\(\displaystyle f^{-1}(x) = {@fu@}\). (Ersetzung von \(y\) durch \(x\) und umgekehrt.)
+    </p>
+    <p dir="ltr">
+        b) Wir setzen \(z={@g@}\) und versuchen diese Gleichung nach \(x\) umzustellen.
+    </p>
+    <p dir="ltr">
+        \(\quad \Longleftrightarrow \quad {@0=b*x^d+c-z@}\)
+    </p>
+    <p dir="ltr">
+        \(\quad \Longleftrightarrow \quad {@-b*x^d=c-z@}\)
+    </p>
+    <p dir="ltr">
+        \(\quad \Longleftrightarrow \quad \displaystyle {@x^d=(z-c)/b@}\)
+    </p>
+    <p dir="ltr">
+    </p>
+    <p dir="ltr">
+        \(\quad \Longleftrightarrow \quad \displaystyle {@x=((z-c)/b)^(1/d)@}\)
+    </p>
+    <p dir="ltr">
+    </p>
+    Somit ist die Umkehrfunktion&#160;\(\displaystyle f^{-1}(x) = {@gu@}\). (Ersetzung von \(z\) durch \(x\) und umgekehrt.)
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr">
+        <strong>
+            Solution:
+        </strong>
+    </p>
+    <p dir="ltr">
+    </p>
+    <p dir="ltr">
+        (a) We set \(y={@f@}\) and try this equation \(x\) to change.
+    </p>
+    <p dir="ltr">
+        \(\quad \Longleftrightarrow \quad {@0=a*x+b-y@}\)
+    </p>
+    <p dir="ltr">
+        \(\quad \Longleftrightarrow \quad {@-a*x=b-y@}\)
+    </p>
+    <p dir="ltr">
+        \(\quad \Longleftrightarrow \quad \displaystyle {@x=(y-b)/(a)@}\)
+    </p>
+    <p dir="ltr">
+    </p>
+    <p dir="ltr">
+        Thus, the reversing function\(\displaystyle f^{-1}(x) = {@fu@}\). (Replacement of \(y\) by \(x\) and vice versa.)
+    </p>
+    <p dir="ltr">
+        (b) We set \(z={@g@}\) and try this equation \(x\) to change.
+    </p>
+    <p dir="ltr">
+        \(\quad \Longleftrightarrow \quad {@0=b*x^d+c-z@}\)
+    </p>
+    <p dir="ltr">
+        \(\quad \Longleftrightarrow \quad {@-b*x^d=c-z@}\)
+    </p>
+    <p dir="ltr">
+        \(\quad \Longleftrightarrow \quad \displaystyle {@x^d=(z-c)/b@}\)
+    </p>
+    <p dir="ltr">
+    </p>
+    <p dir="ltr">
+        \(\quad \Longleftrightarrow \quad \displaystyle {@x=((z-c)/b)^(1/d)@}\)
+    </p>
+    <p dir="ltr">
+    </p>
+    Thus, the reversing function\(\displaystyle f^{-1}(x) = {@gu@}\). (Replacement of \(z\) by \(x\) and vice versa.)
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2021120900</text>
+        </stackversion>
+        <questionvariables>
+            <text>a: rand_with_step(1,10,1);
+b: rand_with_step(1,10,1);
+c: rand_with_step(1,10,1);
+d: rand([3,5,7]);
+f: a*x+b;
+g: b*x^d+c;
+fu: (1/a)*(x-b);
+gu: ((x-c)/b)^(1/d);</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\(f(x)={@f@}\)  und  \(g(x)={@g@}\)
+\(f^{-1}\,=\,{@fu@}\) und \(g^{-1}\,=\,{@gu@}\)</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Richtige Antwort, gut gemacht!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Right answer, well done!
+    </p>
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Antwort ist teilweise korrekt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your answer is partly correct.
+    </p>
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Antwort ist nicht richtig.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The answer is not correct.
+    </p>
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>fu</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>gu</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>fu</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>gu</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1807906738</deployedseed>
+        <deployedseed>777131464</deployedseed>
+        <deployedseed>1638192468</deployedseed>
+        <deployedseed>1086285218</deployedseed>
+        <deployedseed>1474267696</deployedseed>
+        <deployedseed>1139157673</deployedseed>
+        <deployedseed>1406773819</deployedseed>
+        <deployedseed>1742500332</deployedseed>
+        <deployedseed>1369029722</deployedseed>
+        <deployedseed>650228877</deployedseed>
+        <deployedseed>228078155</deployedseed>
+        <deployedseed>142727748</deployedseed>
+        <deployedseed>1111854395</deployedseed>
+        <deployedseed>1308823414</deployedseed>
+        <deployedseed>818711145</deployedseed>
+        <deployedseed>1893992635</deployedseed>
+        <deployedseed>1177155220</deployedseed>
+        <deployedseed>1243410469</deployedseed>
+        <deployedseed>1979696465</deployedseed>
+        <deployedseed>459055370</deployedseed>
+        <deployedseed>899403087</deployedseed>
+        <deployedseed>2015450096</deployedseed>
+        <deployedseed>137517235</deployedseed>
+        <deployedseed>1399142551</deployedseed>
+        <deployedseed>23005391</deployedseed>
+        <deployedseed>1466211249</deployedseed>
+        <deployedseed>379312837</deployedseed>
+        <deployedseed>256947918</deployedseed>
+        <deployedseed>1001575059</deployedseed>
+        <deployedseed>46973913</deployedseed>
+        <deployedseed>1158294441</deployedseed>
+        <deployedseed>680061473</deployedseed>
+        <deployedseed>626047758</deployedseed>
+        <deployedseed>2006068091</deployedseed>
+        <deployedseed>656827189</deployedseed>
+        <deployedseed>1905730321</deployedseed>
+        <deployedseed>2040681907</deployedseed>
+        <deployedseed>208513538</deployedseed>
+        <deployedseed>1692835783</deployedseed>
+        <deployedseed>1013582786</deployedseed>
+        <deployedseed>587253199</deployedseed>
+        <deployedseed>1551841383</deployedseed>
+        <deployedseed>1423276401</deployedseed>
+        <deployedseed>956437247</deployedseed>
+        <deployedseed>1605050829</deployedseed>
+        <deployedseed>892162976</deployedseed>
+        <deployedseed>1896497617</deployedseed>
+        <deployedseed>992165593</deployedseed>
+        <deployedseed>123953995</deployedseed>
+        <deployedseed>2007171460</deployedseed>
+        <tags>
+            <tag>
+                <text>Musterl&#246;sung</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

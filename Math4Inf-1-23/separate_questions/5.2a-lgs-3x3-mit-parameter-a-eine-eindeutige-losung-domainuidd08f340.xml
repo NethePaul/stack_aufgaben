@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[5.2a  LGS 3x3 mit Parameter a, eine eindeutige L&#246;sung [{"DOMAINUID":"D08F340"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Gegeben ist das lineare Gleichungssystem
+    </p>
+    <p>
+        \(\begin{matrix}
+    </p>
+    <span>
+        {@pm11@}&#160; {@abs11*x1@} &amp; {@pm12@} &amp; {@abs12*x2@} &amp; {@pm13@} &amp; {@abs13*x3@} &amp; = &amp; {@A[1][4]@} \\
+        <br/>
+    </span>
+    {@pm21@}&#160; {@abs21*x1@} &amp; {@pm22@} &amp; {@abs22*x2@} &amp; + &amp; {@A[2][3]*x3@} &amp; = &amp; {@A[2][4]@} \\
+    <br/>
+    {@pm31@}&#160; {@abs31*x1@} &amp; + &amp; {@A[3][2]*x2@} &amp; {@pm33@} &amp; {@abs33*x3@} &amp; = &amp; {@A[3][4]@}
+    <p>
+        <span style="font-size: 0.9375rem;">
+            \end{matrix}\)
+        </span>
+    </p>
+    <p>
+        <span style="font-size: 0.9375rem;">
+            mit der Konstante \(a \in \mathbb{R}\).
+            <br/>
+        </span>
+    </p>
+    <p>
+        F&#252;r welche Werte des Parameters \(a \in \mathbb{R}\) besitzt das Gleichungssystem eine eindeutige L&#246;sung:
+    </p>
+    <p>
+    </p>
+    <span style="font-size: 0.9375rem;">
+        \(a \neq\)&#160;[[input:ans2]]&#160;[[validation:ans2]] und \(a \neq\) [[input:ans3]] [[validation:ans3]]
+    </span>
+    <span style="font-size: 0.9375rem;">
+        [[feedback:prt2]]
+    </span>
+    <br/>
+    <p>
+    </p>
+    <p>
+        Geben Sie diese L&#246;sung in Abh&#228;ngigkeit des Parameters \(a\) an.
+    </p>
+    <p>
+        <strong>
+        </strong>
+    </p>
+    <strong>
+        Hinweis:
+        <span style="font-size: 0.9375rem; font-weight: 400;">
+            Geben Sie die L&#246;sung in der Form eines transponierten Vektors: \(\vec{x}^T =\) [\(x_1, x_2, x_3\)] ein.
+        </span>
+        <br/>
+    </strong>
+    <span>
+        <br/>
+    </span>
+    <p>
+        \(\vec{x}^T=\,\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The linear equation
+    </p>
+    <p>
+        \(\begin{matrix}
+    </p>
+    <span>
+        {@pm11@}&#160; {@abs11*x1@} &amp; {@pm12@} &amp; {@abs12*x2@} &amp; {@pm13@} &amp; {@abs13*x3@} &amp; = &amp; {@A[1][4]@} \\
+        <br/>
+    </span>
+    {@pm21@}&#160; {@abs21*x1@} &amp; {@pm22@} &amp; {@abs22*x2@} &amp; + &amp; {@A[2][3]*x3@} &amp; = &amp; {@A[2][4]@} \\
+    <br/>
+    {@pm31@}&#160; {@abs31*x1@} &amp; + &amp; {@A[3][2]*x2@} &amp; {@pm33@} &amp; {@abs33*x3@} &amp; = &amp; {@A[3][4]@}
+    <p>
+        <span style="font-size: 0.9375rem;">
+            \end{matrix}\)
+        </span>
+    </p>
+    <p>
+        <span style="font-size: 0.9375rem;">
+            with the constant \(a \in \mathbb{R}\).
+            <br/>
+        </span>
+    </p>
+    <p>
+        For which values of the parameter \(a \in \mathbb{R}\) the equation has a clear solution:
+    </p>
+    <p>
+    </p>
+    <span style="font-size: 0.9375rem;">
+        \(a \neq\)[[input:ans2]][[validation:ans2]] and \(a \neq\) [[input:ans3]] [[validation:ans3]]
+    </span>
+    <span style="font-size: 0.9375rem;">
+        [[feedback:prt2]]
+    </span>
+    <br/>
+    <p>
+    </p>
+    <p>
+        Specify this solution depending on the parameter \(a\) on.
+    </p>
+    <p>
+        <strong>
+        </strong>
+    </p>
+    <strong>
+        Note:
+        <span style="font-size: 0.9375rem; font-weight: 400;">
+            Type the solution in the form of a transposed vector: \(\vec{x}^T =\) [\(x_1, x_2, x_3\)].
+        </span>
+        <br/>
+    </strong>
+    <span>
+        <br/>
+    </span>
+    <p>
+        \(\vec{x}^T=\,\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr">
+        <strong>
+            L&#246;sungsweg:
+        </strong>
+    </p>
+    <p dir="ltr">
+        Das vorgegebene Gleichungssystem l&#228;sst sich als erweiterte Matrix \((\mathbf{A}|\mathbf{b}) = {@erwA@}\) aufschreiben.
+    </p>
+    <p dir="ltr">
+        Mit Hilfe des Eleminationsverfahren von Gau&#223; wird diese Matrix auf folgende Dreiecksform &#252;berf&#252;hrt:
+    </p>
+    <p dir="ltr">
+        \((\mathbf{\tilde{A}}|\mathbf{\tilde{b}})={@trA@}\).
+    </p>
+    <p dir="ltr">
+        Wir betrachten die dritte Gleichung&#160;\(({@trA[3,3]@}) \cdot x_3 = {@trA[3,4]@} \).
+    </p>
+    <p dir="ltr">
+        Falls \({@trA[3,3]@} \neq 0 \quad \Longleftrightarrow \quad a \neq {@v1@}\) bzw. \(a \neq {@v2@}\), so&#160;besitzt das Gleichungssystem eine eindeutige L&#246;sung.
+    </p>
+    <p dir="ltr">
+    </p>
+    Aus der dritten Gleichung mit \({@trA[3,3]@} \neq 0\) ist \(\qquad ({@trA[3,3]@}) \cdot x_3 = {@trA[3,4]@} \) \(\qquad \Longleftrightarrow \qquad x_3 = \dfrac{{@trA[3,4]@}}{{@trA[3,3]@}} = \displaystyle {@expand(rhs(ls[1][3]))@}\)
+    <br/>
+    <br/>
+    <p dir="ltr">
+        Aus der zweiten Gleichung mit der Einsetzung von \(x_3\) ist \(\qquad&#160;{@trA[2,2]@} \cdot x_2 + \left({@trA[2,3]@}\right) \cdot \left({@expand(rhs(ls[1][3]))@}\right) = {@trA[2,4]@} \) \(\qquad \Longleftrightarrow \qquad x_2 = \dfrac{{@trA[2,4]@} - \left({@trA[2,3]@}\right) \cdot \left({@expand(rhs(ls[1][3]))@}\right)}{{@trA[2,2]@}} = \dfrac{{@trA[2,4]-trA[2,3]*expand(rhs(ls[1][3]))@}}{{@trA[2,2]@}} = \displaystyle {@expand(rhs(ls[1][2]))@}\)
+        <br/>
+    </p>
+    <p dir="ltr">
+        Aus der ersten Gleichung mit der Einsetzung von \(x_2\) und \(x_3\) ist \(\qquad&#160;{@trA[1,1]@} \cdot x_1 + \left({@trA[1,2]@}\right) \cdot \left({@expand(rhs(ls[1][2]))@}\right) + \left({@trA[1,3]@}\right) \cdot \left({@expand(rhs(ls[1][3]))@}\right) = {@trA[1,4]@} \) \(\qquad \Longleftrightarrow \qquad x_1 = \dfrac{{@trA[1,4]@} - \left({@trA[1,2]@}\right) \cdot \left({@expand(rhs(ls[1][2]))@}\right) - \left({@trA[1,3]@}\right) \cdot \left({@expand(rhs(ls[1][3]))@}\right)}{{@trA[1,1]@}} = \dfrac{{@trA[1,4]-trA[1,2]*expand(rhs(ls[1][2]))-trA[1,3]*expand(rhs(ls[1][3]))@}}{{@trA[1,1]@}} = \displaystyle {@expand(rhs(ls[1][1]))@}\)
+    </p>
+    <p dir="ltr">
+        <span style="font-size: 0.9375rem;">
+            Somit ergibt sich in Abh&#228;ngigkeit des Parameters \(a\) den L&#246;sungsvektor&#160;\(\vec{x} = {@matrix([expand(rhs(ls[1][1]))],[expand(rhs(ls[1][2]))],[expand(rhs(ls[1][3]))])@}\) und die Antwort \(\vec{x}^T = {@loes@}\).
+        </span>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr">
+        <strong>
+            Solution:
+        </strong>
+    </p>
+    <p dir="ltr">
+        The predefined equation system can be used as an expanded matrix \((\mathbf{A}|\mathbf{b}) = {@erwA@}\) write down.
+    </p>
+    <p dir="ltr">
+        With the aid of the elimination process of Gauss, this matrix is converted to the following triangular form:
+    </p>
+    <p dir="ltr">
+        \((\mathbf{\tilde{A}}|\mathbf{\tilde{b}})={@trA@}\).
+    </p>
+    <p dir="ltr">
+        We consider the third equation\(({@trA[3,3]@}) \cdot x_3 = {@trA[3,4]@} \).
+    </p>
+    <p dir="ltr">
+        In the event of a failure to comply with this Regulation, the competent authorities of the Member State concerned shall inform the competent authorities of the Member State concerned. \({@trA[3,3]@} \neq 0 \quad \Longleftrightarrow \quad a \neq {@v1@}\) and \(a \neq {@v2@}\)The equation has a clear solution.
+    </p>
+    <p dir="ltr">
+    </p>
+    From the third equation with \({@trA[3,3]@} \neq 0\) is \(\qquad ({@trA[3,3]@}) \cdot x_3 = {@trA[3,4]@} \) \(\qquad \Longleftrightarrow \qquad x_3 = \dfrac{{@trA[3,4]@}}{{@trA[3,3]@}} = \displaystyle {@expand(rhs(ls[1][3]))@}\)
+    <br/>
+    <br/>
+    <p dir="ltr">
+        From the second equation with the establishment of \(x_3\) is \(\qquad&#160;{@trA[2,2]@} \cdot x_2 + \left({@trA[2,3]@}\right) \cdot \left({@expand(rhs(ls[1][3]))@}\right) = {@trA[2,4]@} \) \(\qquad \Longleftrightarrow \qquad x_2 = \dfrac{{@trA[2,4]@} - \left({@trA[2,3]@}\right) \cdot \left({@expand(rhs(ls[1][3]))@}\right)}{{@trA[2,2]@}} = \dfrac{{@trA[2,4]-trA[2,3]*expand(rhs(ls[1][3]))@}}{{@trA[2,2]@}} = \displaystyle {@expand(rhs(ls[1][2]))@}\)
+        <br/>
+    </p>
+    <p dir="ltr">
+        From the first equation with the establishment of \(x_2\) and \(x_3\) is \(\qquad&#160;{@trA[1,1]@} \cdot x_1 + \left({@trA[1,2]@}\right) \cdot \left({@expand(rhs(ls[1][2]))@}\right) + \left({@trA[1,3]@}\right) \cdot \left({@expand(rhs(ls[1][3]))@}\right) = {@trA[1,4]@} \) \(\qquad \Longleftrightarrow \qquad x_1 = \dfrac{{@trA[1,4]@} - \left({@trA[1,2]@}\right) \cdot \left({@expand(rhs(ls[1][2]))@}\right) - \left({@trA[1,3]@}\right) \cdot \left({@expand(rhs(ls[1][3]))@}\right)}{{@trA[1,1]@}} = \dfrac{{@trA[1,4]-trA[1,2]*expand(rhs(ls[1][2]))-trA[1,3]*expand(rhs(ls[1][3]))@}}{{@trA[1,1]@}} = \displaystyle {@expand(rhs(ls[1][1]))@}\)
+    </p>
+    <p dir="ltr">
+        <span style="font-size: 0.9375rem;">
+            Thus, depending on the parameter \(a\) the solution vector\(\vec{x} = {@matrix([expand(rhs(ls[1][1]))],[expand(rhs(ls[1][2]))],[expand(rhs(ls[1][3]))])@}\) and the answer \(\vec{x}^T = {@loes@}\).
+        </span>
+        <br/>
+    </p>
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023072101</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[v2: rand_with_prohib(-4,4,[0,-1]);
+v3: rand_with_prohib(-2,2,[0,-1-v2]);
+v1: -1-v2-v3;
+
+a11: 1;
+a12: 1;
+a13: -1;
+
+a21: 0;
+a22: 1;
+a23: a+1;
+
+a31: 0;
+a32: 0;
+a33: (a-v1)*(a-v2);
+
+
+b1: 1;
+b2: 1;
+b3: a-v1;
+
+A1: matrix([a11,a12,a13,b1],[a21,a22,a23,b2],[a31,a32,a33,b3]);
+
+A2: rowop(A1,3,2,(a+v3));
+A3: rowop(A2,3,1,-v3);
+A4: rowop(A3,2,1,-1); 
+A: expand( rowop(A4,3,3,2) );
+
+gl1: A[1][1]*x1+A[1][2]*x2+A[1][3]*x3=A[1][4];
+gl2: A[2][1]*x1+A[2][2]*x2+A[2][3]*x3=A[2][4];
+gl3: A[3][1]*x1+A[3][2]*x2+A[3][3]*x3=A[3][4];
+ls: solve([gl1,gl2,gl3],[x1,x2,x3]);
+
+matA: submatrix(A,4);
+vektorB: col(A,4);
+
+pm11: if signum(A[1][1])<0 then "- " else " "; 
+abs11: abs(A[1][1]);
+pm21: if signum(A[2][1])<0 then "- " else " "; 
+abs21: abs(A[2][1]);
+pm31: if signum(A[3][1])<0 then "- " else " "; 
+abs31: abs(A[3][1]);
+pm12: if signum(A[1][2])>0 then "+" else "-"; 
+abs12: abs(A[1][2]);
+pm13: if signum(A[1][3])>0 then "+" else "-"; 
+abs13: abs(A[1][3]);
+pm22: if signum(A[2][2])>0 then "+" else "-"; 
+abs22: abs(A[2][2]);
+pm23: if signum(A[2][3])>0 then "+" else "-"; 
+abs23: abs(A[2][3]);
+pm32: if signum(A[3][2])>0 then "+" else "-"; 
+abs32: abs(A[3][2]);
+pm33: if signum(A[3][3])>0 then "+" else "-"; 
+abs33: abs(A[3][3]);
+
+gl1: A[1][1]*x1+A[1][2]*x2+A[1][3]*x3=A[1][4];
+gl2: A[2][1]*x1+A[2][2]*x2+A[2][3]*x3=A[2][4];
+gl3: A[3][1]*x1+A[3][2]*x2+A[3][3]*x3=A[3][4];
+ls: solve([gl1,gl2,gl3],[x1,x2,x3]);
+
+loes: expand( [ rhs(ls[1][1]) , rhs(ls[1][2]), rhs(ls[1][3]) ] );
+
+erwA: matrix( [A[1,1],A[1,2],A[1,3],A[1,4]],[A[2,1],A[2,2],A[2,3],A[2,4]],[A[3,1],A[3,2],A[3,3],A[3,4]]);
+trA: triangularize(erwA);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\[{@A@}\]
+Eindeutige L&#246;sung f&#252;r \(a\neq{@v1@}\) und \(a \neq {@v2@}\), L&#246;sung: \({@loes@}\)</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Richtige Antwort, gut gemacht!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Right answer, well done!
+    </p>
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Antwort ist teilweise korrekt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your answer is partly correct.
+    </p>
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Falsche Antwort.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Wrong answer.
+    </p>
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>(</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>loes</tans>
+            <boxsize>40</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>1</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>v1</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>v2</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>ansm: if length(ans1)=3 then matrix([ans1[1]],[ans1[2]],[ans1[3]]);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>matA.ansm</sans>
+                <tans>vektorB</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>listofvars(ansm)</sans>
+                <tans>[a]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>{ans2,ans3}</sans>
+                <tans>{v1,v2}</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-0-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-0-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1788287284</deployedseed>
+        <deployedseed>576492072</deployedseed>
+        <deployedseed>1476357967</deployedseed>
+        <deployedseed>1268122836</deployedseed>
+        <deployedseed>1371991493</deployedseed>
+        <deployedseed>655297154</deployedseed>
+        <deployedseed>186710872</deployedseed>
+        <deployedseed>1281589498</deployedseed>
+        <deployedseed>525493515</deployedseed>
+        <deployedseed>1563792141</deployedseed>
+        <deployedseed>801802172</deployedseed>
+        <deployedseed>2078093997</deployedseed>
+        <deployedseed>1192076959</deployedseed>
+        <deployedseed>1336833604</deployedseed>
+        <tags>
+            <tag>
+                <text>Musterl&#246;sung</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

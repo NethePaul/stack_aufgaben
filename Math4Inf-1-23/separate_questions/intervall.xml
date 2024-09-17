@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Intervall</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+        Geben Sie die entsprechenden Intervalle in die Eingabefelder ein, z.B. \(x \in \) oo(a,b) statt \(a&lt;x&lt;b \).
+        <br/>
+    </p>
+    <p>
+        \(x &lt; {@a@} \)&#160; oder&#160; \(x \in \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+    </p>
+    <p>
+        \({@a@} &lt; x \leq {@a1@} \)&#160; oder&#160; \(x \in \) [[input:ans2]] [[validation:ans2]][[feedback:prt2]]
+    </p>
+    <p>
+        \(x \geq {@a@} \)&#160; oder&#160; \(x \in \) [[input:ans3]] [[validation:ans3]][[feedback:prt3]]
+    </p>
+    <p>
+        \({@a@} \leq x \leq {@a2@} \)&#160; oder&#160; \(x \in \) [[input:ans4]] [[validation:ans4]][[feedback:prt4]]
+        <br/>
+    </p>
+    <p>
+        <strong>
+            Hinweise:
+            <br/>
+        </strong>
+    </p>
+    <ul>
+        <li>
+            Schreiben Sie: "
+            <strong>
+                minf
+            </strong>
+            "&#160;f&#252;r \(-\infty\) und "
+            <strong>
+                inf
+            </strong>
+            " f&#252;r \(+\infty\)
+        </li>
+        <li>
+            Schreiben Sie: "
+            <strong>
+                oo(1,5)
+            </strong>
+            "&#160;f&#252;r \((1,5)\), "
+            <strong>
+                cc(1,5)
+            </strong>
+            "&#160;f&#252;r \([1,5]\), "
+            <strong>
+                oc(1,5)
+            </strong>
+            "&#160;f&#252;r \((1,5]\), "
+            <strong>
+                co(1,5)
+            </strong>
+            "&#160;f&#252;r \([1,5)\)
+            <br/>
+        </li>
+    </ul>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+        Enter the appropriate intervals into the input fields, e.g. \(x \in \) oo(a,b) instead \(a&lt;x&lt;b \).
+        <br/>
+    </p>
+    <p>
+        \(x &lt; {@a@} \)or \(x \in \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+    </p>
+    <p>
+        \({@a@} &lt; x \leq {@a1@} \)or \(x \in \) [[input:ans2]] [[validation:ans2]][[feedback:prt2]]
+    </p>
+    <p>
+        \(x \geq {@a@} \)or \(x \in \) [[input:ans3]] [[validation:ans3]][[feedback:prt3]]
+    </p>
+    <p>
+        \({@a@} \leq x \leq {@a2@} \)or \(x \in \) [[input:ans4]] [[validation:ans4]][[feedback:prt4]]
+        <br/>
+    </p>
+    <p>
+        <strong>
+            Notes:
+            <br/>
+        </strong>
+    </p>
+    <ul>
+        <li>
+            Write: "
+            <strong>
+                min.
+            </strong>
+            for \(-\infty\) and
+            <strong>
+                inf
+            </strong>
+            for \(+\infty\)
+        </li>
+        <li>
+            Write: "
+            <strong>
+                oo(1,5)
+            </strong>
+            for \((1,5)\)"
+            <strong>
+                cc(1,5)
+            </strong>
+            for \([1,5]\)"
+            <strong>
+                oc(1,5)
+            </strong>
+            for \((1,5]\)"
+            <strong>
+                co(1,5)
+            </strong>
+            for \([1,5)\)
+            <br/>
+        </li>
+    </ul>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023072101</text>
+        </stackversion>
+        <questionvariables>
+            <text>a:rand_with_step(1,5,1);
+a1: rand([5,7,8,9,10]);
+a2: rand([11,17,18,19,20]);
+i1:oo(minf,a);
+i2: oc(a,a1);
+i3: co(a,inf);
+i4: cc(a,a2);</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>@a@</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>i1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>i2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>i3</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>algebraic</type>
+            <tans>i4</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>i1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>i2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>i3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>i4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

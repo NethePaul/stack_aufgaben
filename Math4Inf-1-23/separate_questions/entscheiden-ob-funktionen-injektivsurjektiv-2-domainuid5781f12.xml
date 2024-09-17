@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Entscheiden, ob Funktionen injektiv/surjektiv (2)  [{"DOMAINUID":"5781F12"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Entscheiden Sie bei folgenden Funktionen, ob sie injektiv oder surjektiv sind, indem Sie den Wahrheitsgehalt folgender Aussagen beurteilen.
+        <br/>
+    </p>
+    [[validation:ans1]]
+
+
+
+
+[[validation:ans2]]
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    Die Funktion \(f:\mathbb{R}\to\mathbb{R}\) mit \(f(x)={@f(x)@}\) ist injektiv.
+                </td>
+                <td>
+                    [[input:ans1]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Die Funktion \(g:\mathbb{R}\to\mathbb{R}\) mit \(g(x)={@g(x)@}\) ist surjektiv.
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans2]]
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        In the following functions, decide whether they are subjective or surjective by assessing the truth content of the following statements.
+        <br/>
+    </p>
+    [[validation:ans1]][[validation:ans2]]
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    The function \(f:\mathbb{R}\to\mathbb{R}\) with \(f(x)={@f(x)@}\) is injective.
+                </td>
+                <td>
+                    [[input:ans1]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    The function \(g:\mathbb{R}\to\mathbb{R}\) with \(g(x)={@g(x)@}\) is surjective.
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans2]]
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+        <b>
+            Hinweis:
+        </b>
+    </p>
+    <p>
+        Eine Funktion \(f\colon A\to B, \; \; x\mapsto f(x)\) hei&#223;t...
+        <br/>
+    </p>
+    <ul>
+        <li>
+            ...
+            <u>
+                surjektiv
+            </u>
+            , falls es f&#252;r alle \(b\in B\) ein \(a\in A\) gibt, sodass \(f(a)=b\) gilt.
+            <br/>
+        </li>
+        <li>
+            ...
+            <u>
+                injektiv
+            </u>
+            , falls f&#252;r alle \(a_1,a_2\in A\) mit \(f(a_1)=f(a_2)\) gilt, dass \(a_1=a_2\) ist.
+            <br/>
+        </li>
+    </ul>
+    <br/>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+        <b>
+            Note:
+        </b>
+    </p>
+    <p>
+        A function \(f\colon A\to B, \; \; x\mapsto f(x)\) is...
+        <br/>
+    </p>
+    <ul>
+        <li>
+            ...
+            <u>
+                surjectiv
+            </u>
+            if it is for all \(b\in B\) a \(a\in A\) so that \(f(a)=b\) Article 2
+            <br/>
+        </li>
+        <li>
+            ...
+            <u>
+                injectiv
+            </u>
+            if for all \(a_1,a_2\in A\) with \(f(a_1)=f(a_2)\) that: \(a_1=a_2\) is.
+            <br/>
+        </li>
+    </ul>
+    <br/>
+    <p>
+    </p>
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>2.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023072101</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[nf:5+rand(4);
+ng:5+rand(4);
+c:-5+rand(10);
+f(x):=x^nf-c;
+g(x):=x^ng+x^2;
+f_injective:is(mod(nf,2)=1);
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+f_text:[tr("nicht injektiv","not injective"),tr("injectiv")][1+mod(nf,2)];
+g_surjective:is(mod(ng,2)=1);
+g_text:[tr("nicht surjektiv","not surjective"),tr("surjektiv","surjective")][1+mod(ng,2)];]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    [[feedback:prt1]]
+</span>
+<span class="multilang" lang="en">
+    [[feedback:prt1]]
+</span>
+]]></text>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\(f(x)={@f(x)@}\)
+\(g(x)={@g(x)@}\)</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    <strong>
+        Richtige Antwort, gut gemacht!
+    </strong>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    <strong>
+        Right answer, well done!
+    </strong>
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    <strong>
+        Ihre Antwort ist teilweise korrekt.
+    </strong>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    <strong>
+        Your answer is partly correct.
+    </strong>
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    <strong>
+        Falsche Antwort.
+    </strong>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    <strong>
+        Wrong answer.
+    </strong>
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>boolean</type>
+            <tans>f_injective</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>boolean</type>
+            <tans>g_surjective</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>2.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>f_injective</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.5</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Funktion \(f(x)={@f(x)@}\) ist {@f_text@}. Das haben Sie richtig gemacht.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The function \(f(x)={@f(x)@}\) is {@f_text@}. You did that right.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Funktion \(f(x)={@f(x)@}\) ist {@f_text@}. Das haben Sie leider falsch gemacht.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The function \(f(x)={@f(x)@}\) is {@f_text@}. You've done that wrong.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>g_surjective</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Funktion \(g(x)={@g(x)@}\) ist {@g_text@}. Das haben Sie richtig gemacht.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The function \(g(x)={@g(x)@}\) is {@g_text@}. You did that right.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Funktion \(g(x)={@g(x)@}\) ist {@g_text@}. Das haben Sie leider falsch gemacht.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The function \(g(x)={@g(x)@}\) is {@g_text@}. You've done that wrong.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

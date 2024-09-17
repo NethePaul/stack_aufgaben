@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="truefalse">
+        <name>
+            <text>Aufgabe_4</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr" style="text-align: left;">
+        Ich habe die vierte Aufgabe gel&#246;st und kann auch die Aufgabe vorstellen.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr" style="text-align: left;">
+        I have achieved the fourth task and can also imagine the task.
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>1.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <answer fraction="100" format="moodle_auto_format">
+            <text>true</text>
+            <feedback format="html">
+                <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr" style="text-align: left;">
+        Du bekommst 1 Punkt
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr" style="text-align: left;">
+        You get 1 point
+    </p>
+</span>
+]]></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="moodle_auto_format">
+            <text>false</text>
+            <feedback format="html">
+                <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr" style="text-align: left;">
+        Leider bekommst du keine Punkte
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr" style="text-align: left;">
+        Unfortunately you get no points
+    </p>
+</span>
+]]></text>
+            </feedback>
+        </answer>
+    </question>
+    
+
+</quiz>

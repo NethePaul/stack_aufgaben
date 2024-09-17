@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Lineare Algebra: Erzeugendensystem, Basis</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+        Es werden die folgenden Vektoren betrachtet
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \(v_1={@v1@}\),&#160; \(v_2={@v2@}\),&#160; \(v_3={@v3@}\)
+        </p>
+        <p>
+            <br/>
+        </p>
+    </div>
+    <p>
+        <b>
+            (a)
+        </b>
+        Entscheiden Sie:
+    </p>
+    <p>
+    </p>
+    <ul>
+        <li>
+            Die Vektoren \(v_1,v_2\) und \(v_3\) bilden [[input:ans1]]&#160; Erzeugendensystem des \(\mathbb{R}^2\).[[validation:ans1]][[feedback:prt1]]
+        </li>
+        <li>
+            Die Vektoren&#160; &#160; &#160;\(v_1\) und \(v_2\)&#160; &#160; bilden [[input:ans2]]&#160; Erzeugendensystem des \(\mathbb{R}^2\).[[validation:ans2]][[feedback:prt2]]
+        </li>
+        <li>
+            Die Vektoren&#160; &#160; &#160; \(v_1\) und \(v_3\)&#160; &#160;bilden [[input:ans3]]&#160; Erzeugendensystem des \(\mathbb{R}^2\). [[validation:ans3]][[feedback:prt3]]
+        </li>
+    </ul>
+    <p>
+        <b>
+            (b)
+        </b>
+        Entscheiden Sie:
+    </p>
+    <p>
+    </p>
+    <ul>
+        <li>
+            Die Vektoren \(v_1,v_2\) und \(v_3\) bilden [[input:ans4]]&#160; Basis des \(\mathbb{R}^2\).[[validation:ans4]][[feedback:prt4]]
+        </li>
+        <li>
+            Die Vektoren&#160; &#160; \(v_1\) und \(v_2\)&#160; &#160; &#160;bilden [[input:ans5]]&#160; Basis des \(\mathbb{R}^2\).[[validation:ans5]][[feedback:prt5]]
+        </li>
+        <li>
+            Die Vektoren&#160; &#160; \(v_1\) und \(v_3\)&#160; &#160; &#160;bilden [[input:ans6]]&#160; Basis des \(\mathbb{R}^2\).[[validation:ans6]][[feedback:prt6]]
+        </li>
+    </ul>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+        The following vectors are considered
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \(v_1={@v1@}\), \(v_2={@v2@}\), \(v_3={@v3@}\)
+        </p>
+        <p>
+            <br/>
+        </p>
+    </div>
+    <p>
+        <b>
+            (a)
+        </b>
+        Choose:
+    </p>
+    <p>
+    </p>
+    <ul>
+        <li>
+            The vectors \(v_1,v_2\) and \(v_3\) form [[input:ans1]]generating system of the \(\mathbb{R}^2\).[[validation:ans1]][[feedback:prt1]]
+        </li>
+        <li>
+            The vectors\(v_1\) and \(v_2\)form [[input:ans2]]generating system of the \(\mathbb{R}^2\).[[validation:ans2]][[feedback:prt2]]
+        </li>
+        <li>
+            The vectors \(v_1\) and \(v_3\)form [[input:ans3]]generating system of the \(\mathbb{R}^2\). [[validation:ans3]][[feedback:prt3]]
+        </li>
+    </ul>
+    <p>
+        <b>
+            (b)
+        </b>
+        Choose:
+    </p>
+    <p>
+    </p>
+    <ul>
+        <li>
+            The vectors \(v_1,v_2\) and \(v_3\) form [[input:ans4]]Based on \(\mathbb{R}^2\).[[validation:ans4]][[feedback:prt4]]
+        </li>
+        <li>
+            The vectors \(v_1\) and \(v_2\)form [[input:ans5]]Based on \(\mathbb{R}^2\).[[validation:ans5]][[feedback:prt5]]
+        </li>
+        <li>
+            The vectors \(v_1\) and \(v_3\)form [[input:ans6]]Based on \(\mathbb{R}^2\).[[validation:ans6]][[feedback:prt6]]
+        </li>
+    </ul>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <h4>
+        <strong>
+            L&#246;sung
+        </strong>
+    </h4>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <strong>
+            (a)
+        </strong>
+        F&#252;r ein Erzeugendensystem des \(\mathbb{R}^2\) m&#252;ssen
+        <strong>
+            zwei
+        </strong>
+        Vektoren linear unabh&#228;ngig sein.
+    </p>
+    <p>
+        (Es d&#252;rfen zus&#228;tzlich auch linear abh&#228;ngige Vektoren enthalten sein.)
+    </p>
+    <p>
+        Hier ist \(v_1\), \(v_3\) kolinear und \(v_1\), \(v_2\), bzw. \(v_1\), \(v_3\) sind linear unabh&#228;ngig.
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+    </p>
+    <ul>
+        <li>
+            Die Vektoren \(v_1,v_2\) und \(v_3\) bilden ein&#160; &#160; Erzeugendensystem des \(\mathbb{R}^2\). (Zwei linear unabh&#228;ngige Vektoren)
+        </li>
+    </ul>
+    <ul>
+        <li>
+            Die Vektoren&#160; &#160; &#160;\(v_1\) und \(v_2\)&#160; &#160; bilden ein&#160; &#160; Erzeugendensystem des \(\mathbb{R}^2\).&#160;(Zwei linear unabh&#228;ngige Vektoren)
+        </li>
+    </ul>
+    <ul>
+        <li>
+            Die Vektoren&#160; &#160; &#160; \(v_1\) und \(v_3\)&#160; &#160;bilden kein&#160; Erzeugendensystem des \(\mathbb{R}^2\).&#160;(Kolineare Vektoren)
+        </li>
+    </ul>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <strong>
+            (b)
+        </strong>
+        Im Gegensatz zum Erzeugendensystem m&#252;ssen die Vektoren einer Basis alle linear unabh&#228;ngig sein.
+    </p>
+    <p>
+        Das hei&#223;t eine Basis des&#160; \(\mathbb{R}^2\) wird durch
+        <strong>
+            genau zwei linear unabh&#228;ngige Vektoren
+        </strong>
+        gebildet.
+    </p>
+    <p>
+        <br/>
+    </p>
+    <ul>
+        <li>
+            Die Vektoren \(v_1,v_2\) und \(v_3\) bilden keine&#160; Basis des \(\mathbb{R}^2\). (Ein linear abh&#228;ngiger Vektor zu viel)
+        </li>
+    </ul>
+    <ul>
+        <li>
+            Die Vektoren&#160; &#160; \(v_1\) und \(v_2\)&#160; &#160; &#160;bilden eine&#160; Basis des \(\mathbb{R}^2\). (Zwei linear unabh&#228;ngige Vektoren)
+        </li>
+    </ul>
+    <ul>
+        <li>
+            Die Vektoren&#160; &#160; \(v_1\) und \(v_3\)&#160; &#160; &#160;bilden keine&#160; Basis des \(\mathbb{R}^2\).&#160;(Kolineare Vektoren)
+        </li>
+    </ul>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <h4>
+        <strong>
+            Solution
+        </strong>
+    </h4>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <strong>
+            (a)
+        </strong>
+        For a generating system of \(\mathbb{R}^2\) have to
+        <strong>
+            two
+        </strong>
+        Vectors are linearly independent.
+    </p>
+    <p>
+        (In addition, linearly dependent vectors may also be present.)
+    </p>
+    <p>
+        Here we go \(v_1\), \(v_3\) colinear and \(v_1\), \(v_2\), and \(v_1\), \(v_3\) are linearly independent.
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+    </p>
+    <ul>
+        <li>
+            The vectors \(v_1,v_2\) and \(v_3\) forming a generating system of the \(\mathbb{R}^2\). (Two linear independent vectors)
+        </li>
+    </ul>
+    <ul>
+        <li>
+            The vectors\(v_1\) and \(v_2\)forming a generating system of the \(\mathbb{R}^2\). (Two linear independent vectors)
+        </li>
+    </ul>
+    <ul>
+        <li>
+            The vectors \(v_1\) and \(v_3\)do not form a generating system of \(\mathbb{R}^2\). (colinear vectors)
+        </li>
+    </ul>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <strong>
+            (b)
+        </strong>
+        In contrast to the generating system, the vectors of a base must all be linearly independent.
+    </p>
+    <p>
+        This means a basis of \(\mathbb{R}^2\) by
+        <strong>
+            exactly two linearly independent vectors
+        </strong>
+        formed.
+    </p>
+    <p>
+        <br/>
+    </p>
+    <ul>
+        <li>
+            The vectors \(v_1,v_2\) and \(v_3\) do not form a basis of \(\mathbb{R}^2\). (A linearly dependent vector too much)
+        </li>
+    </ul>
+    <ul>
+        <li>
+            The vectors \(v_1\) and \(v_2\)form a base of \(\mathbb{R}^2\). (Two linear independent vectors)
+        </li>
+    </ul>
+    <ul>
+        <li>
+            The vectors \(v_1\) and \(v_3\)do not form a basis of \(\mathbb{R}^2\). (colinear vectors)
+        </li>
+    </ul>
+    <p>
+    </p>
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2021120900</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[a: 1+rand(5)
+b: rand_with_prohib(2,4,[b])
+c: rand_with_prohib(2,4,[a,b])
+d:-1-rand(5)
+
+v1: matrix([a],[b])
+v2: matrix([c],[d])
+v3: matrix([-3*a],[-3*b])
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+Tans1: 1;
+AnsList1: [[1, true, tr("ein","one")], [2, false, tr("kein","none")]];
+Tans2 : 1;
+AnsList2: [[1, true, tr("ein","one")], [2, false, tr("kein","none")]];
+Tans3: 2;
+AnsList3: [[1, false, tr("ein","one")], [2, true, tr("kein","none")]];
+Tans4: 2;
+AnsList4: [[1, false, tr("eine","one")], [2, true, tr("keine","none")]];
+Tans5: 1;
+AnsList5: [[1, true, tr("eine","one")], [2, false, tr("keine","none")]];
+Tans6: 2;
+AnsList6: [[1, false, tr("eine","one")], [2, true, tr("keine","none")]];]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>Basis, Erzeugendensystem</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>(</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>dropdown</type>
+            <tans>AnsList1</tans>
+            <boxsize>2</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>dropdown</type>
+            <tans>AnsList2</tans>
+            <boxsize>2</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>dropdown</type>
+            <tans>AnsList3</tans>
+            <boxsize>2</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>dropdown</type>
+            <tans>AnsList4</tans>
+            <boxsize>2</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans5</name>
+            <type>dropdown</type>
+            <tans>AnsList5</tans>
+            <boxsize>2</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans6</name>
+            <type>dropdown</type>
+            <tans>AnsList6</tans>
+            <boxsize>2</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>Tans1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>Tans2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>Tans3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>Tans4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt5</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans5</sans>
+                <tans>Tans5</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt5-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt6</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans6</sans>
+                <tans>Tans6</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt6-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt6-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <tags>
+            <tag>
+                <text>TE:1:Lineare Algebra</text>
+            </tag>
+            <tag>
+                <text>te:2:Vektorraum</text>
+            </tag>
+            <tag>
+                <text>TE:3:Basis</text>
+            </tag>
+            <tag>
+                <text>TE:3:Erzeugendensystem</text>
+            </tag>
+            <tag>
+                <text>TE:3:Lineare Unabh&#228;ngigkeit</text>
+            </tag>
+            <tag>
+                <text>src:F07-INT</text>
+            </tag>
+            <tag>
+                <text>Bloom:2</text>
+            </tag>
+            <tag>
+                <text>Maier:1:3</text>
+            </tag>
+            <tag>
+                <text>Maier:2:2</text>
+            </tag>
+            <tag>
+                <text>Maier:3:1</text>
+            </tag>
+            <tag>
+                <text>Maier:4:1</text>
+            </tag>
+            <tag>
+                <text>Maier:5:1</text>
+            </tag>
+            <tag>
+                <text>Maier:6:1</text>
+            </tag>
+            <tag>
+                <text>Maier:7:1</text>
+            </tag>
+            <tag>
+                <text>praxiserprobt</text>
+            </tag>
+            <tag>
+                <text>qs:visuellGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:sprachlichGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:TaggingGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:importIliasGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:importMoodleGeprueft</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Entscheiden ob \phi Gruppenhomomorphismus ist [{"DOMAINUID":"871B2B9"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Untersuchen Sie, welche der folgenden Abbildungen Gruppenhomomorphismen sind.
+        <br/>
+        (Hinweis: \( + \) und \( * \) meint die komponentenweise Addition und Multiplikation.)
+    </p>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    a)
+                </td>
+                <td>
+                    \(\varphi_1: (\mathbb{R}^2,+)\to(\mathbb{R}^2,+) \)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    \(\varphi_1(x,y)=({@p11@},{@p12@}) \)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td style="text-align: right;">
+                    \( \varphi_1 \) ist Gruppenhomomorphismus:
+                </td>
+                <td>
+                    [[input:ans1]]
+                </td>
+                <td>
+                    [[validation:ans1]]
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td>
+                    b)
+                </td>
+                <td>
+                    \(\varphi_2: (\mathbb{Q}^2,+)\to(\mathbb{Q}^2,+) \)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    \(\varphi_2(x,y)=({@p21@},{@p22@}) \)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td style="text-align: right;">
+                    \( \varphi_2 \) ist Gruppenhomomorphismus:
+                </td>
+                <td>
+                    [[input:ans2]]
+                </td>
+                <td>
+                    [[validation:ans2]]
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td>
+                    c)
+                </td>
+                <td>
+                    \(\varphi_3: (\mathbb{Z}^2,+)\to(\mathbb{Z}^2,+) \)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    \(\varphi_3(x,y)=({@p31@},{@p32@}) \)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td style="text-align: right;">
+                    \( \varphi_3 \) ist Gruppenhomomorphismus:
+                </td>
+                <td>
+                    [[input:ans3]]
+                </td>
+                <td>
+                    [[validation:ans3]]
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td>
+                    d)
+                </td>
+                <td>
+                    \(\varphi_4: ((\mathbb{Q}\setminus\{0\})^2,*)\to((\mathbb{R}\setminus\{0\})^2,*) \)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    \(\varphi_4(x,y)=({@p41@},{@p42@}) \)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td style="text-align: right;">
+                    \( \varphi_4 \) ist Gruppenhomomorphismus:
+                </td>
+                <td>
+                    [[input:ans4]]
+                </td>
+                <td>
+                    [[validation:ans4]]
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Check which of the following images are group homomorphisms.
+        <br/>
+        (Note: \( + \) and \( * \) means the component-wise addition and multiplication.)
+    </p>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    (a)
+                </td>
+                <td>
+                    \(\varphi_1: (\mathbb{R}^2,+)\to(\mathbb{R}^2,+) \)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    \(\varphi_1(x,y)=({@p11@},{@p12@}) \)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td style="text-align: right;">
+                    \( \varphi_1 \) is group homomorphism:
+                </td>
+                <td>
+                    [[input:ans1]]
+                </td>
+                <td>
+                    [[validation:ans1]]
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td>
+                    (b)
+                </td>
+                <td>
+                    \(\varphi_2: (\mathbb{Q}^2,+)\to(\mathbb{Q}^2,+) \)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    \(\varphi_2(x,y)=({@p21@},{@p22@}) \)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td style="text-align: right;">
+                    \( \varphi_2 \) is group homomorphism:
+                </td>
+                <td>
+                    [[input:ans2]]
+                </td>
+                <td>
+                    [[validation:ans2]]
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td>
+                    (c)
+                </td>
+                <td>
+                    \(\varphi_3: (\mathbb{Z}^2,+)\to(\mathbb{Z}^2,+) \)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    \(\varphi_3(x,y)=({@p31@},{@p32@}) \)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td style="text-align: right;">
+                    \( \varphi_3 \) is group homomorphism:
+                </td>
+                <td>
+                    [[input:ans3]]
+                </td>
+                <td>
+                    [[validation:ans3]]
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td>
+                    (d)
+                </td>
+                <td>
+                    \(\varphi_4: ((\mathbb{Q}\setminus\{0\})^2,*)\to((\mathbb{R}\setminus\{0\})^2,*) \)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    \(\varphi_4(x,y)=({@p41@},{@p42@}) \)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td style="text-align: right;">
+                    \( \varphi_4 \) is group homomorphism:
+                </td>
+                <td>
+                    [[input:ans4]]
+                </td>
+                <td>
+                    [[validation:ans4]]
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>2.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2021120900</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[p11:apply("+",makelist(rand_with_prohib(-5,5,[0])*x^(k-1),k,2))+apply("+",makelist(rand_with_prohib(-5,5,[0])*y^(k-1),k,3));
+p12:apply("+",makelist(rand_with_prohib(-5,5,[0])*x^(k-1),k,2))+apply("+",makelist(rand(6)*y^(k-1),k,3));
+psol1:false;
+
+p21:rand_with_prohib(-5,5,[0])*x;
+p22:rand_with_prohib(-5,5,[0])*y;
+psol2:true;
+
+t1:rand_with_prohib(-5,5,[0])*x+rand_with_prohib(-5,5,[0])*y;
+t2:rand_with_prohib(-5,5,[0])*x+rand_with_prohib(-5,5,[0])*y;
+p31:rand([t1,t2]);
+p32:delete(p31,[t1,t2])[1]+rand_with_prohib(-5,5,[0]);
+psol3:false;
+
+e1:1+rand(4);
+e2:1+rand(4);
+s:rand(2);
+sc:rand_with_prohib(-5,5,[0]);
+i1:rand([1,2]);
+i2:delete(i1,[1,2])[1];
+sx:[s*sc,0][i1];
+sy:[s*sc,0][i2];
+p41:(x+sx)^e1*(y+sy)^e2;
+p42:rand([x,y]);
+psol4:is(s=0);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    [[feedback:prt1]]
+</span>
+<span class="multilang" lang="en">
+    [[feedback:prt1]]
+</span>
+]]></text>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{@p11@},{@p12@}
+{@p21@},{@p22@}
+{@p31@},{@p32@}
+{@p41@},{@p42@}</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>boolean</type>
+            <tans>psol1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>boolean</type>
+            <tans>psol2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>boolean</type>
+            <tans>psol3</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>boolean</type>
+            <tans>psol4</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>2.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>psol1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+        \( \varphi_1\) ist kein Gruppenhomomorphismus, denn es existieren \( v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in \mathbb{R}^2\) mit
+    </p>
+    <p>
+        \(\begin{align}\varphi_1(v+w) &amp;= ({@subst((v1+w1),x,subst((v2+w2),y,p11))@},\;\ {@subst((v1+w1),x,subst((v2+w2),y,p12))@}) \\ &amp;\neq({@subst(v1,x,subst(v2,y,p11))@},\;\ {@subst(v1,x,subst(v2,y,p12))@})+({@subst(w1,x,subst(w2,y,p11))@},\;\ {@subst(w1,x,subst(w2,y,p12))@}) \\ &amp;= \varphi_1(v)+\varphi_1(w) \end{align} \)
+    </p>
+    <br/>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+        \( \varphi_1\) is not a group homomorphism, because there exist \( v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in \mathbb{R}^2\) with
+    </p>
+    <p>
+        \(\begin{align}\varphi_1(v+w) &amp;= ({@subst((v1+w1),x,subst((v2+w2),y,p11))@},\;\ {@subst((v1+w1),x,subst((v2+w2),y,p12))@}) \\ &amp;\neq({@subst(v1,x,subst(v2,y,p11))@},\;\ {@subst(v1,x,subst(v2,y,p12))@})+({@subst(w1,x,subst(w2,y,p11))@},\;\ {@subst(w1,x,subst(w2,y,p12))@}) \\ &amp;= \varphi_1(v)+\varphi_1(w) \end{align} \)
+    </p>
+    <br/>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>psol2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+        \( \varphi_2\) ist ein Gruppenhomomorphismus, denn es gilt
+    </p>
+    <p>
+        \(\begin{align}\varphi_2(v+w) &amp;= ({@subst((v1+w1),x,subst((v2+w2),y,p21))@},\;\ {@subst((v1+w1),x,subst((v2+w2),y,p22))@}) \\ &amp;=({@subst(v1,x,subst(v2,y,p21))@},\;\ {@subst(v1,x,subst(v2,y,p22))@})+({@subst(w1,x,subst(w2,y,p21))@},\;\ {@subst(w1,x,subst(w2,y,p22))@}) \\ &amp;= \varphi_2(v)+\varphi_2(w) \end{align}&#160;\\ \forall\ v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in \mathbb{Q}^2&#160; \)
+    </p>
+    <br/>
+    <p>
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+        \( \varphi_2\) is a group homomorphism, because it applies
+    </p>
+    <p>
+        \(\begin{align}\varphi_2(v+w) &amp;= ({@subst((v1+w1),x,subst((v2+w2),y,p21))@},\;\ {@subst((v1+w1),x,subst((v2+w2),y,p22))@}) \\ &amp;=({@subst(v1,x,subst(v2,y,p21))@},\;\ {@subst(v1,x,subst(v2,y,p22))@})+({@subst(w1,x,subst(w2,y,p21))@},\;\ {@subst(w1,x,subst(w2,y,p22))@}) \\ &amp;= \varphi_2(v)+\varphi_2(w) \end{align}&#160;\\ \forall\ v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in \mathbb{Q}^2&#160; \)
+    </p>
+    <br/>
+    <p>
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>psol3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>prt1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prt1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+        \( \varphi_3\) ist kein Gruppenhomomorphismus, denn es existieren \( v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in \mathbb{Z}^2\) mit
+    </p>
+    <p>
+        \(\begin{align}\varphi_3(v+w) &amp;= ({@subst((v1+w1),x,subst((v2+w2),y,p31))@},\;\ {@subst((v1+w1),x,subst((v2+w2),y,p32))@}) \\ &amp;\neq({@subst(v1,x,subst(v2,y,p31))@},\;\ {@subst(v1,x,subst(v2,y,p32))@})+({@subst(w1,x,subst(w2,y,p31))@},\;\ {@subst(w1,x,subst(w2,y,p32))@}) \\ &amp;= \varphi_3(v)+\varphi_3(w) \end{align} \)
+    </p>
+    <br/>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+        \( \varphi_3\) is not a group homomorphism, because there exist \( v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in \mathbb{Z}^2\) with
+    </p>
+    <p>
+        \(\begin{align}\varphi_3(v+w) &amp;= ({@subst((v1+w1),x,subst((v2+w2),y,p31))@},\;\ {@subst((v1+w1),x,subst((v2+w2),y,p32))@}) \\ &amp;\neq({@subst(v1,x,subst(v2,y,p31))@},\;\ {@subst(v1,x,subst(v2,y,p32))@})+({@subst(w1,x,subst(w2,y,p31))@},\;\ {@subst(w1,x,subst(w2,y,p32))@}) \\ &amp;= \varphi_3(v)+\varphi_3(w) \end{align} \)
+    </p>
+    <br/>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>psol4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prt1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>psol4</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+        \( \varphi_4\) ist ein Gruppenhomomorphismus, denn es gilt
+    </p>
+    <p>
+        \(\begin{align}\varphi_4(v*w) &amp;= ({@subst((v1*w1),x,subst((v2*w2),y,p41))@},\;\ {@subst((v1*w1),x,subst((v2*w2),y,p42))@}) \\ &amp;=({@subst(v1,x,subst(v2,y,p41))@},\;\ {@subst(v1,x,subst(v2,y,p42))@})*({@subst(w1,x,subst(w2,y,p41))@},\;\ {@subst(w1,x,subst(w2,y,p42))@}) \\ &amp;= \varphi_4(v)*\varphi_4(w) \end{align}&#160;\\ \forall\ v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in (\mathbb{Q}\setminus\{0\})^2&#160; \)
+    </p>
+    <br/>
+    <br/>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+        \( \varphi_4\) is a group homomorphism, because it applies
+    </p>
+    <p>
+        \(\begin{align}\varphi_4(v*w) &amp;= ({@subst((v1*w1),x,subst((v2*w2),y,p41))@},\;\ {@subst((v1*w1),x,subst((v2*w2),y,p42))@}) \\ &amp;=({@subst(v1,x,subst(v2,y,p41))@},\;\ {@subst(v1,x,subst(v2,y,p42))@})*({@subst(w1,x,subst(w2,y,p41))@},\;\ {@subst(w1,x,subst(w2,y,p42))@}) \\ &amp;= \varphi_4(v)*\varphi_4(w) \end{align}&#160;\\ \forall\ v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in (\mathbb{Q}\setminus\{0\})^2&#160; \)
+    </p>
+    <br/>
+    <br/>
+    <p>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+        \( \varphi_4\) ist kein Gruppenhomomorphismus, denn es existieren \( v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in (\mathbb{Q}\setminus\{0\})^2\) mit
+    </p>
+    <p>
+        \(\begin{align}\varphi_4(v*w) &amp;= ({@subst((v1*w1),x,subst((v2*w2),y,p41))@},\;\ {@subst((v1*w1),x,subst((v2*w2),y,p42))@}) \\ &amp;\neq({@subst(v1,x,subst(v2,y,p41))@},\;\ {@subst(v1,x,subst(v2,y,p42))@})*({@subst(w1,x,subst(w2,y,p41))@},\;\ {@subst(w1,x,subst(w2,y,p42))@}) \\ &amp;= \varphi_4(v)*\varphi_4(w) \end{align} \)
+    </p>
+    <br/>
+    <br/>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+        \( \varphi_4\) is not a group homomorphism, because there exist \( v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in (\mathbb{Q}\setminus\{0\})^2\) with
+    </p>
+    <p>
+        \(\begin{align}\varphi_4(v*w) &amp;= ({@subst((v1*w1),x,subst((v2*w2),y,p41))@},\;\ {@subst((v1*w1),x,subst((v2*w2),y,p42))@}) \\ &amp;\neq({@subst(v1,x,subst(v2,y,p41))@},\;\ {@subst(v1,x,subst(v2,y,p42))@})*({@subst(w1,x,subst(w2,y,p41))@},\;\ {@subst(w1,x,subst(w2,y,p42))@}) \\ &amp;= \varphi_4(v)*\varphi_4(w) \end{align} \)
+    </p>
+    <br/>
+    <br/>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

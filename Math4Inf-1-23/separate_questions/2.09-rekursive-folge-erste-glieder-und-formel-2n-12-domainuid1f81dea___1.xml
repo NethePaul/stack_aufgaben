@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[2.09 Rekursive Folge - erste Glieder und Formel (2n-1)^2 [{"DOMAINUID":"1F81DEA"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Eine Zahlenfolge \(a_1,a_2,a_3, \ldots \) ist durch die folgende Vorschrift gegeben:
+\[ a_1 = 1, \quad a_{n+1} = a_n + 8n \mbox{ f&#252;r } n \ge 1. \]
+Berechnen Sie die Folgenglieder \(a_2\),  \(a_3\),  \(a_4\) und \(a_5\).
+    <br/>
+    <br/>
+    \(a_2 = \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+    <br/>
+    \(a_3 = \) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
+    <br/>
+    \(a_4 = \) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]
+    <br/>
+    \(a_5 = \) [[input:ans4]] [[validation:ans4]] [[feedback:prt4]]
+    <br/>
+    <br/>
+    Welche Vermutung &#252;ber die Gestalt der Zahlenfolge k&#246;nnte man an den ersten f&#252;nf Folgengliedern ablesen? (Geben Sie also einen Ausdruck an, der \( a_n\) allein in Abh&#228;ngigkeit von \( n\) beschreibt, also einen sogenannten geschlossenen Ausdruck.)
+    <br/>
+    <br/>
+    \(a_n = \)[[input:ans5]] [[validation:ans5]] [[feedback:prt5]]
+</span>
+<span class="multilang" lang="en">
+    A sequence of numbers \(a_1,a_2,a_3, \ldots \) is given by the following provision:
+\[ a_1 = 1, \quad a_{n+1} = a_n + 8n \mbox{ f&#252;r } n \ge 1. \]Calculate the sequences \(a_2\), \(a_3\), \(a_4\) and \(a_5\).
+    <br/>
+    <br/>
+    \(a_2 = \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+    <br/>
+    \(a_3 = \) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
+    <br/>
+    \(a_4 = \) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]
+    <br/>
+    \(a_5 = \) [[input:ans4]] [[validation:ans4]] [[feedback:prt4]]
+    <br/>
+    <br/>
+    What assumption about the shape of the sequence of numbers could one read at the first five sequences? (So add an expression to \( a_n\) only depending on \( n\) describes a so-called closed expression.)
+    <br/>
+    <br/>
+    \(a_n = \)[[input:ans5]] [[validation:ans5]] [[feedback:prt5]]
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>2.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text>/* authors: Frauke Sprengel, Hs Hannover, Peter Riegler, Ostfalia */
+lcmdlvar0: 9;
+lcmdlvar1: 25;
+lcmdlvar2: 49;
+lcmdlvar3: 81;
+lcmdlvar4: ((2*n-1)^2);</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>lc2mdl-converter_2020-01-20_15-20-44, This question is based on the LON-CAPA problem /res/fhwf/riegler/MapleTA/LineareAlgebra/eingangstest2_4.problem</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>arccos</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>(</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>lcmdlvar0</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>lcmdlvar1</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>lcmdlvar2</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>algebraic</type>
+            <tans>lcmdlvar3</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans5</name>
+            <type>algebraic</type>
+            <tans>lcmdlvar4</tans>
+            <boxsize>20</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>0.2500000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>lcmdlvar0</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    &#220;berpr&#252;fen Sie \( a_2. \)
+</span>
+<span class="multilang" lang="en">
+    Check \( a_2. \)
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>0.2500000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>lcmdlvar1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    &#220;berpr&#252;fen Sie \( a_3. \)
+</span>
+<span class="multilang" lang="en">
+    Check \( a_3. \)
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>0.2500000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>lcmdlvar2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    &#220;berpr&#252;fen Sie \( a_4. \)
+</span>
+<span class="multilang" lang="en">
+    Check \( a_4. \)
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4</name>
+            <value>0.2500000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>lcmdlvar3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    &#220;berpr&#252;fen Sie \( a_5. \)
+</span>
+<span class="multilang" lang="en">
+    Check \( a_5. \)
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt5</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans5</sans>
+                <tans>lcmdlvar4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt5-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    &#220;berpr&#252;fen Sie die geschlossene Formel.
+</span>
+<span class="multilang" lang="en">
+    Check the closed formula.
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <qtest>
+            <testcase>1</testcase>
+            <description/>
+            <testinput>
+                <name>ans1</name>
+                <value>lcmdlvar0</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>lcmdlvar1</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>lcmdlvar2</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>lcmdlvar3</value>
+            </testinput>
+            <testinput>
+                <name>ans5</name>
+                <value>lcmdlvar4</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt3-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt4-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt5</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt5-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <tags>
+            <tag>
+                <text>lc2mdl</text>
+            </tag>
+            <tag>
+                <text>Folgen</text>
+            </tag>
+            <tag>
+                <text>Mathematik</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

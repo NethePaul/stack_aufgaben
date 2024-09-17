@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Komplexe Zahlen: (z1^a*z2^b)/z3^c [{"DOMAINUID":"DE18D40"}] [{"DOMAINUID":"DE18D40"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Gegeben sind die drei komplexen Zahlen \(\,z_1= {@z1@}\), \(\,z_2&#160;= {@z2@}\,\)&#160;und \(\,z_3&#160;= {@z3@}\,\).
+    </p>
+    <p>
+        Berechnen Sie&#160;den folgenden Ausdruck und schreiben Sie die resultierende komplexe Zahl als arithmetische Darstellung (z.B. \(a+b\cdot\mathrm{i}\) mit \(a,b \in \mathbb{R}\)).
+    </p>
+    <p>
+    </p>
+    <p>
+        <span style="font-size: 0.9375rem;">
+            \(\dfrac{z_1^{@c1@}\cdot z_2^{@c2@}}{z_3^{@c3_abs@}}=\,\) [[input:ans1]]&#160;[[validation:ans1]] [[feedback:prt1]]
+        </span>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The three complex numbers are given \(\,z_1= {@z1@}\), \(\,z_2&#160;= {@z2@}\,\)and \(\,z_3&#160;= {@z3@}\,\).
+    </p>
+    <p>
+        Calculate the following expression and write the resulting complex number as an arithmetic representation (e.g. \(a+b\cdot\mathrm{i}\) with \(a,b \in \mathbb{R}\)).
+    </p>
+    <p>
+    </p>
+    <p>
+        <span style="font-size: 0.9375rem;">
+            \(\dfrac{z_1^{@c1@}\cdot z_2^{@c2@}}{z_3^{@c3_abs@}}=\,\) [[input:ans1]][[validation:ans1]] [[feedback:prt1]]
+        </span>
+        <br/>
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <strong>
+        L&#246;sungsweg:
+        <br/>
+    </strong>
+    <br/>
+    Um den Ausdruck \(\dfrac{z_1^{@c1@}\cdot z_2^{@c2@}}{z_3^{@c3_abs@}}\) zu berechnen, werden die einzelnen Potenzen der drei komplexen Zahlen ermittelt.
+    <br/>
+    <br/>
+    (1) Die komplexe Zahl \(z_1= {@z1@}\), die im \(1\).Quadranten liegt, wird in die trigonometrische Form &#252;berf&#252;hrt.
+    <br/>
+    Es ist \(|z_1| = \sqrt{(\mathrm{Re}(z_1))^2+(\mathrm{Im}(z_1))^2}\) \(= \displaystyle \sqrt{\left({@z1_re@}\right)^{\!2} + \left({@z1_im@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@z1_re^2@}+{@z1_im^2@}}\) \(= \displaystyle \sqrt{{@z1_re^2+z1_im^2@}} = {@abs(z1)@}\).
+    <br/>
+    Ferner ist \(\varphi_1 =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z_1)}{\mathrm{Re}(z_1)}\right)\) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@z1_im@}}{{@z1_re@}}\right)\)&#160;\(=&#160;\displaystyle&#160; \arctan\!\left({@z1_im/z1_re@}\right)= {@phi1@}\).
+    <br/>
+    Nach der Formel von Moivre gilt:
+    <br/>
+    \(z_1^{@c1@} = |z_1|^{@c1@} \cdot \left(\cos\left({@c1@} \cdot \varphi_1\right) + \mathrm{i} \cdot \sin\left({@c1@} \cdot \varphi_1\right)\right)\) \(= \displaystyle \left({@abs(z1)@}\right)^{\!{@c1@}} \cdot \left(\cos\left({@c1@} \cdot {@phi1@}\right) + \mathrm{i} \cdot \sin\left({@c1@} \cdot {@phi1@}\right)\right)\)&#160;\(= \displaystyle {@abs(z1)^c1@} \cdot \left(\cos\left({@c1*phi1@}\right) + \mathrm{i} \cdot \sin\left({@c1*phi1@}\right)\right)\)&#160;\(= \displaystyle {@abs(z1)^c1@} \cdot \left({@cos(c1*phi1)+ %i*sin(c1*phi1)@}\right)\)
+    <br/>
+    <p>
+    </p>
+    (2) Die komplexe Zahl \(z_2= {@z2@}\), die im \(1\).Quadranten liegt, wird in die trigonometrische Form &#252;berf&#252;hrt.
+    <br/>
+    <span>
+        Es ist \(|z_2| = \sqrt{(\mathrm{Re}(z_2))^2+(\mathrm{Im}(z_2))^2}\) \(= \displaystyle \sqrt{\left({@z2_re@}\right)^{\!2} + \left({@z2_im@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@z2_re^2@}+{@z2_im^2@}}\) \(= \displaystyle \sqrt{{@z2_re^2+z2_im^2@}} = {@abs(z2)@}\).
+        <br/>
+        Ferner ist \(\varphi_2 =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z_2)}{\mathrm{Re}(z_2)}\right)\) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@z2_im@}}{{@z2_re@}}\right)\)&#160;\(=&#160;\displaystyle&#160; \arctan\!\left({@z2_im/z2_re@}\right)&#160;= {@phi2@}\).
+        <br/>
+    </span>
+    <p dir="ltr">
+        Nach der Formel von Moivre gilt:
+        <br/>
+        \(z_2^{@c2@} = |z_2|^{@c2@} \cdot \left(\cos\left({@c2@} \cdot \varphi_2\right) + \mathrm{i} \cdot \sin\left({@c2@} \cdot \varphi_2\right)\right)\) \(= \displaystyle \left({@abs(z2)@}\right)^{\!{@c2@}} \cdot \left(\cos\left({@c2@} \cdot {@phi2@}\right) + \mathrm{i} \cdot \sin\left({@c2@} \cdot {@phi2@}\right)\right)\)&#160;\(= \displaystyle {@abs(z2)^c2@} \cdot \left(\cos\left({@c2*phi2@}\right) + \mathrm{i} \cdot \sin\left({@c2*phi2@}\right)\right)\)&#160;\(= \displaystyle {@abs(z2)^c2@} \cdot \left({@cos(c2*phi2)+ %i*sin(c2*phi2)@}\right)\)
+    </p>
+    <p dir="ltr">
+    </p>
+    (3) Die komplexe Zahl \(z_3= {@z3@}\), die im \(1\).Quadranten liegt, wird in die trigonometrische Form &#252;berf&#252;hrt.
+    <br/>
+    Es ist \(|z_3| = \sqrt{(\mathrm{Re}(z_3))^2+(\mathrm{Im}(z_3))^2}\) \(= \displaystyle \sqrt{\left({@z3_re@}\right)^{\!2} + \left({@z3_im@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@z3_re^2@}+{@z3_im^2@}}\) \(= \displaystyle \sqrt{{@z3_re^2+z3_im^2@}} = {@abs(z3)@}\).
+    <br/>
+    Ferner ist \(\varphi_3 =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z_3)}{\mathrm{Re}(z_3)}\right)\) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@z3_im@}}{{@z3_re@}}\right)\)&#160;\(=&#160;\displaystyle&#160; \arctan\!\left({@z3_im/z3_re@}\right)&#160;= {@phi3@}\).
+    <br/>
+    <p dir="ltr">
+        Nach der Formel von Moivre gilt:
+        <br/>
+        \(z_3^{@c3@} = |z_3|^{@c3@} \cdot \left(\cos\left({@c3@} \cdot \varphi_3\right) + \mathrm{i} \cdot \sin\left({@c3@} \cdot \varphi_3\right)\right)\) \(= \displaystyle \left({@abs(z3)@}\right)^{\!{@c3@}} \cdot \left(\cos\left({@c3@} \cdot {@phi3@}\right) + \mathrm{i} \cdot \sin\left({@c3@} \cdot {@phi3@}\right)\right)\)&#160;\(= \displaystyle {@abs(z3)^c3@} \cdot \left(\cos\left({@c3*phi3@}\right) + \mathrm{i} \cdot \sin\left({@c3*phi3@}\right)\right)\)&#160;\(= \displaystyle {@abs(z3)^c3@} \cdot \left({@cos(c3*phi3)+ %i*sin(c3*phi3)@}\right)\)
+    </p>
+    Somit ist&#160;&#160;\(\dfrac{z_1^{@c1@}\cdot z_2^{@c2@}}{z_3^{@c3_abs@}} = z_1^{@c1@}\cdot z_2^{@c2@} \cdot z_3^{@c3@}\) \(= \displaystyle {@abs(z1)^c1@} \cdot \left({@cos(c1*phi1)+ %i*sin(c1*phi1)@}\right) \cdot {@abs(z2)^c2@} \cdot \left({@cos(c2*phi2)+ %i*sin(c2*phi2)@}\right) \cdot {@abs(z3)^c3@} \cdot \left({@cos(c3*phi3)+ %i*sin(c3*phi3)@}\right)\) \(= \displaystyle {@abs(z1)^c1*abs(z2)^c2*abs(z3)^c3@} \cdot \left({@cos(c1*phi1)+ %i*sin(c1*phi1)@}\right) \cdot \left({@cos(c2*phi2)+ %i*sin(c2*phi2)@}\right) \cdot \left({@cos(c3*phi3)+ %i*sin(c3*phi3)@}\right)\)&#160;\(= \displaystyle {@loes@}\)
+</span>
+<span class="multilang" lang="en">
+    <strong>
+        Solution:
+        <br/>
+    </strong>
+    <br/>
+    To the expression \(\dfrac{z_1^{@c1@}\cdot z_2^{@c2@}}{z_3^{@c3_abs@}}\) the individual potencies of the three complex numbers are determined.
+    <br/>
+    <br/>
+    (1) The complex number \(z_1= {@z1@}\)in the \(1\).Quadrants are transferred to trigonometric form.
+    <br/>
+    It is \(|z_1| = \sqrt{(\mathrm{Re}(z_1))^2+(\mathrm{Im}(z_1))^2}\) \(= \displaystyle \sqrt{\left({@z1_re@}\right)^{\!2} + \left({@z1_im@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@z1_re^2@}+{@z1_im^2@}}\) \(= \displaystyle \sqrt{{@z1_re^2+z1_im^2@}} = {@abs(z1)@}\).
+    <br/>
+    Furthermore, \(\varphi_1 =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z_1)}{\mathrm{Re}(z_1)}\right)\) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@z1_im@}}{{@z1_re@}}\right)\)\(=&#160;\displaystyle&#160; \arctan\!\left({@z1_im/z1_re@}\right)= {@phi1@}\).
+    <br/>
+    According to the formula of Moivre:
+    <br/>
+    \(z_1^{@c1@} = |z_1|^{@c1@} \cdot \left(\cos\left({@c1@} \cdot \varphi_1\right) + \mathrm{i} \cdot \sin\left({@c1@} \cdot \varphi_1\right)\right)\) \(= \displaystyle \left({@abs(z1)@}\right)^{\!{@c1@}} \cdot \left(\cos\left({@c1@} \cdot {@phi1@}\right) + \mathrm{i} \cdot \sin\left({@c1@} \cdot {@phi1@}\right)\right)\)\(= \displaystyle {@abs(z1)^c1@} \cdot \left(\cos\left({@c1*phi1@}\right) + \mathrm{i} \cdot \sin\left({@c1*phi1@}\right)\right)\)\(= \displaystyle {@abs(z1)^c1@} \cdot \left({@cos(c1*phi1)+ %i*sin(c1*phi1)@}\right)\)
+    <br/>
+    <p>
+    </p>
+    (2) The complex number \(z_2= {@z2@}\)in the \(1\).Quadrants are transferred to trigonometric form.
+    <br/>
+    <span>
+        It is \(|z_2| = \sqrt{(\mathrm{Re}(z_2))^2+(\mathrm{Im}(z_2))^2}\) \(= \displaystyle \sqrt{\left({@z2_re@}\right)^{\!2} + \left({@z2_im@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@z2_re^2@}+{@z2_im^2@}}\) \(= \displaystyle \sqrt{{@z2_re^2+z2_im^2@}} = {@abs(z2)@}\).
+        <br/>
+        Furthermore, \(\varphi_2 =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z_2)}{\mathrm{Re}(z_2)}\right)\) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@z2_im@}}{{@z2_re@}}\right)\)\(=&#160;\displaystyle&#160; \arctan\!\left({@z2_im/z2_re@}\right)&#160;= {@phi2@}\).
+        <br/>
+    </span>
+    <p dir="ltr">
+        According to the formula of Moivre:
+        <br/>
+        \(z_2^{@c2@} = |z_2|^{@c2@} \cdot \left(\cos\left({@c2@} \cdot \varphi_2\right) + \mathrm{i} \cdot \sin\left({@c2@} \cdot \varphi_2\right)\right)\) \(= \displaystyle \left({@abs(z2)@}\right)^{\!{@c2@}} \cdot \left(\cos\left({@c2@} \cdot {@phi2@}\right) + \mathrm{i} \cdot \sin\left({@c2@} \cdot {@phi2@}\right)\right)\)\(= \displaystyle {@abs(z2)^c2@} \cdot \left(\cos\left({@c2*phi2@}\right) + \mathrm{i} \cdot \sin\left({@c2*phi2@}\right)\right)\)\(= \displaystyle {@abs(z2)^c2@} \cdot \left({@cos(c2*phi2)+ %i*sin(c2*phi2)@}\right)\)
+    </p>
+    <p dir="ltr">
+    </p>
+    (3) The complex number \(z_3= {@z3@}\)in the \(1\).Quadrants are transferred to trigonometric form.
+    <br/>
+    It is \(|z_3| = \sqrt{(\mathrm{Re}(z_3))^2+(\mathrm{Im}(z_3))^2}\) \(= \displaystyle \sqrt{\left({@z3_re@}\right)^{\!2} + \left({@z3_im@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@z3_re^2@}+{@z3_im^2@}}\) \(= \displaystyle \sqrt{{@z3_re^2+z3_im^2@}} = {@abs(z3)@}\).
+    <br/>
+    Furthermore, \(\varphi_3 =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z_3)}{\mathrm{Re}(z_3)}\right)\) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@z3_im@}}{{@z3_re@}}\right)\)\(=&#160;\displaystyle&#160; \arctan\!\left({@z3_im/z3_re@}\right)&#160;= {@phi3@}\).
+    <br/>
+    <p dir="ltr">
+        According to the formula of Moivre:
+        <br/>
+        \(z_3^{@c3@} = |z_3|^{@c3@} \cdot \left(\cos\left({@c3@} \cdot \varphi_3\right) + \mathrm{i} \cdot \sin\left({@c3@} \cdot \varphi_3\right)\right)\) \(= \displaystyle \left({@abs(z3)@}\right)^{\!{@c3@}} \cdot \left(\cos\left({@c3@} \cdot {@phi3@}\right) + \mathrm{i} \cdot \sin\left({@c3@} \cdot {@phi3@}\right)\right)\)\(= \displaystyle {@abs(z3)^c3@} \cdot \left(\cos\left({@c3*phi3@}\right) + \mathrm{i} \cdot \sin\left({@c3*phi3@}\right)\right)\)\(= \displaystyle {@abs(z3)^c3@} \cdot \left({@cos(c3*phi3)+ %i*sin(c3*phi3)@}\right)\)
+    </p>
+    Thus,\(\dfrac{z_1^{@c1@}\cdot z_2^{@c2@}}{z_3^{@c3_abs@}} = z_1^{@c1@}\cdot z_2^{@c2@} \cdot z_3^{@c3@}\) \(= \displaystyle {@abs(z1)^c1@} \cdot \left({@cos(c1*phi1)+ %i*sin(c1*phi1)@}\right) \cdot {@abs(z2)^c2@} \cdot \left({@cos(c2*phi2)+ %i*sin(c2*phi2)@}\right) \cdot {@abs(z3)^c3@} \cdot \left({@cos(c3*phi3)+ %i*sin(c3*phi3)@}\right)\) \(= \displaystyle {@abs(z1)^c1*abs(z2)^c2*abs(z3)^c3@} \cdot \left({@cos(c1*phi1)+ %i*sin(c1*phi1)@}\right) \cdot \left({@cos(c2*phi2)+ %i*sin(c2*phi2)@}\right) \cdot \left({@cos(c3*phi3)+ %i*sin(c3*phi3)@}\right)\)\(= \displaystyle {@loes@}\)
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2021120900</text>
+        </stackversion>
+        <questionvariables>
+            <text>zahl: rand_with_step(1,3,1);
+liste: [0,pi/2,pi];
+phi: liste[zahl];
+
+sel: rand([1,2]);
+
+liste_at1:[pi/3,pi/6];
+at1: liste_at1[sel];
+
+liste_at2: [pi/6,pi/3];
+at2: liste_at2[sel];
+
+at3: pi/6;
+
+c2: rand_with_step(3,9,1);
+c1: rand_with_prohib(3,9,[c2]);
+
+c3: (phi-at1*c1-at2*c2)/at3;
+c3_abs: abs(c3);
+
+
+liste_z1_re: [1,3];
+z1_re: liste_z1_re[sel];
+z1_im: sqrt(3);
+phi1: atan(z1_im/z1_re);
+
+liste_z2_re: [3,1];
+z2_re: liste_z2_re[sel];
+z2_im: sqrt(3);
+phi2: atan(z2_im/z2_re);
+
+z3_re: sqrt(3);
+z3_im: 1;
+phi3: atan(z3_im/z3_re);
+
+z1: (z1_re)+(z1_im)*%i;
+z2: (z2_re)+(z2_im)*%i;
+z3: (z3_re)+(z3_im)*%i;
+
+fi: rectform(cos(c1*phi1)+ %i*sin(c1*phi1))*(cos(c2*phi2)+ %i*sin(c2*phi2))*(cos(c3*phi3)+ %i*sin(c3*phi3));
+
+loes: rectform(abs(z1)^c1*abs(z2)^c2*abs(z3)^c3*(cos(phi)+sin(phi)*%i));</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\(\large\displaystyle\frac{z_1^{@c1@}\cdot z_2^{@c2@}}{z_3^{@c3_abs@}}={@loes@}\)</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Richtige Antwort, gut gemacht!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Right answer, well done!
+    </p>
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Antwort ist teilweise korrekt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your answer is partly correct.
+    </p>
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Falsche Antwort.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Wrong answer.
+    </p>
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>loes</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>1</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>EqualComAss</answertest>
+                <sans>ans1</sans>
+                <tans>loes</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>958900598</deployedseed>
+        <deployedseed>1549612237</deployedseed>
+        <deployedseed>1144923090</deployedseed>
+        <deployedseed>1664730300</deployedseed>
+        <deployedseed>1714140641</deployedseed>
+        <deployedseed>295949200</deployedseed>
+        <deployedseed>394476400</deployedseed>
+        <deployedseed>700024709</deployedseed>
+        <deployedseed>731258350</deployedseed>
+        <deployedseed>1612979658</deployedseed>
+        <deployedseed>1134075804</deployedseed>
+        <deployedseed>1367261578</deployedseed>
+        <deployedseed>1236672255</deployedseed>
+        <deployedseed>2024316252</deployedseed>
+        <deployedseed>190754077</deployedseed>
+        <deployedseed>50315384</deployedseed>
+        <deployedseed>244489689</deployedseed>
+        <deployedseed>1071102892</deployedseed>
+        <deployedseed>956508864</deployedseed>
+        <deployedseed>1415162257</deployedseed>
+        <deployedseed>1027287280</deployedseed>
+        <deployedseed>2113477732</deployedseed>
+        <deployedseed>1625088862</deployedseed>
+        <deployedseed>100742001</deployedseed>
+        <deployedseed>950891863</deployedseed>
+        <deployedseed>171885033</deployedseed>
+        <deployedseed>1731011989</deployedseed>
+        <deployedseed>577167285</deployedseed>
+        <deployedseed>1696711766</deployedseed>
+        <deployedseed>629129878</deployedseed>
+        <deployedseed>1752518550</deployedseed>
+        <deployedseed>1357656182</deployedseed>
+        <deployedseed>341432873</deployedseed>
+        <deployedseed>327698032</deployedseed>
+        <deployedseed>1573357056</deployedseed>
+        <deployedseed>1024503443</deployedseed>
+        <deployedseed>572841104</deployedseed>
+        <deployedseed>1456901375</deployedseed>
+        <tags>
+            <tag>
+                <text>Musterl&#246;sung</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

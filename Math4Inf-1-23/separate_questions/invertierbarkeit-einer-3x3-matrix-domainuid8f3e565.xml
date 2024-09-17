@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Invertierbarkeit einer 3x3 Matrix [{"DOMAINUID":"8F3E565"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Gegeben ist die Matrix \(\mathbf{A}\) in Abh&#228;ngigkeit von Parameter \(p\).
+    </p>
+    <p>
+        \(\mathbf{A}\,=\, \left({@B@}\right) \)
+    </p>
+    <p>
+        F&#252;r welche \(p\) besitzt \(\mathbf{A}\) keine Inverse \(\mathbf{A}^{-1}\)&#160;?
+    </p>
+    <p>
+        <em>
+        </em>
+    </p>
+    <p>
+        <strong>
+            Hinweis:
+        </strong>
+        Geben Sie die Antwort komma-getrennt mit geschweiften Klammern in der Form einer L&#246;sungsmenge \(\mathbb{L}_{p} = \{p_1, p_2, p_3\}\) ein.
+    </p>
+    <p>
+        \(\mathbb{L}_{p} = \)&#160;[[input:ans1]]&#160;[[validation:ans1]] [[feedback:prt1]]
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The Matrix \(\mathbf{A}\) depending on parameters \(p\).
+    </p>
+    <p>
+        \(\mathbf{A}\,=\, \left({@B@}\right) \)
+    </p>
+    <p>
+        For which \(p\) has \(\mathbf{A}\) No inverse \(\mathbf{A}^{-1}\)?
+    </p>
+    <p>
+        <em>
+        </em>
+    </p>
+    <p>
+        <strong>
+            Note:
+        </strong>
+        Give the answer comma-separated with softened clamps in the form of a solution quantity \(\mathbb{L}_{p} = \{p_1, p_2, p_3\}\) one.
+    </p>
+    <p>
+        \(\mathbb{L}_{p} = \)[[input:ans1]][[validation:ans1]] [[feedback:prt1]]
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <strong>
+            L&#246;sungsweg:
+        </strong>
+    </p>
+    <p>
+        F&#252;r die Inverse einer Matrix&#160;\( \mathbf{A} \) gilt:
+        <span style="font-size: 0.9375rem;">
+            \(\mathbf{A}^{-1}\) existiert \(\Leftrightarrow \det(\mathbf{A}) \neq 0 \).
+        </span>
+    </p>
+    <p>
+        Folglich m&#252;ssen wir alle Werte berechnen, f&#252;r die \(&#160;\det(\mathbf{A}) = 0 \) gilt, da f&#252;r diese entsprechend keine Inverse existiert.
+    </p>
+    <p>
+        Wir berechnen die Determinante mithilfe des Satzes von Sarrus:
+    </p>
+    <p>
+        \(\qquad \det(\mathbf{A}) = \left( {@p+a11+q@} \cdot ({@p+a22+q@}) \cdot ({@p+a33+q@}) \right) + \left( {@a12@} \cdot ({@a23@}) \cdot ({@a31@}) \right) + \left( {@a13@} \cdot ({@a21@}) \cdot ({@a32@}) \right) \) \(- \left( {@a31@} \cdot ({@p+a22+q@}) \cdot ({@a13@}) \right) - \left( {@a32@} \cdot ({@a23@}) \cdot ({@p+a11+q@}) \right) - \left( {@p+a33+q@} \cdot ({@a21@}) \cdot ({@a12@}) \right) \) \(= {@a@} + {@b@} +&#160;{@c@} - {@d@} - {@e@} - {@f@} \) \( = {@simplify(a+b+c-d-e-f)@}\)
+    </p>
+    <p>
+        Wir l&#246;sen nun folgende Gleichung:
+    </p>
+    <p>
+        \(\qquad \det(\mathbf{A}) =&#160;{@simplify(a+b+c-d-e-f)@} = 0 \)
+    </p>
+    <p>
+        Durch Ausprobieren erhalten wir als eine m&#246;gliche L&#246;sung \( p_{1} = {@loes1@} \). Mithilfe der Polynomdivision k&#246;nnen wir nun die restlichen Nullstellen berechnen:
+    </p>
+    <p>
+        \(\qquad ( {@simplify(a+b+c-d-e-f)@}) : ({@p-loes1@}) =&#160; {@poly@} \)
+    </p>
+    <p>
+        Mithilfe der \(pq-Formel \) oder \(abc-Formel\) k&#246;nnen die restlichen L&#246;sungen berechnet werden:
+    </p>
+    <p>
+        \( \qquad p_{2} = {@loes2@} \)
+    </p>
+    <p>
+        \( \qquad &#160;p_{3} = {@loes3@}&#160;\)
+    </p>
+    <p>
+        Damit existiert f&#252;r \( p = {@loesung@} \) keine Inverse \(&#160;\mathbf{A}^{-1} \).
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <strong>
+            Solution:
+        </strong>
+    </p>
+    <p>
+        For the inverse of a matrix\( \mathbf{A} \) the following:
+        <span style="font-size: 0.9375rem;">
+            \(\mathbf{A}^{-1}\) exists \(\Leftrightarrow \det(\mathbf{A}) \neq 0 \).
+        </span>
+    </p>
+    <p>
+        Consequently, we must calculate all values for which \(&#160;\det(\mathbf{A}) = 0 \) because there is no inverse for these accordingly.
+    </p>
+    <p>
+        We calculate the determinant using the sentence of Sarrus:
+    </p>
+    <p>
+        \(\qquad \det(\mathbf{A}) = \left( {@p+a11+q@} \cdot ({@p+a22+q@}) \cdot ({@p+a33+q@}) \right) + \left( {@a12@} \cdot ({@a23@}) \cdot ({@a31@}) \right) + \left( {@a13@} \cdot ({@a21@}) \cdot ({@a32@}) \right) \) \(- \left( {@a31@} \cdot ({@p+a22+q@}) \cdot ({@a13@}) \right) - \left( {@a32@} \cdot ({@a23@}) \cdot ({@p+a11+q@}) \right) - \left( {@p+a33+q@} \cdot ({@a21@}) \cdot ({@a12@}) \right) \) \(= {@a@} + {@b@} +&#160;{@c@} - {@d@} - {@e@} - {@f@} \) \( = {@simplify(a+b+c-d-e-f)@}\)
+    </p>
+    <p>
+        We now solve the following equation:
+    </p>
+    <p>
+        \(\qquad \det(\mathbf{A}) =&#160;{@simplify(a+b+c-d-e-f)@} = 0 \)
+    </p>
+    <p>
+        By testing we get as a possible solution \( p_{1} = {@loes1@} \). With the help of the polynomial division we can now calculate the remaining zeros:
+    </p>
+    <p>
+        \(\qquad ( {@simplify(a+b+c-d-e-f)@}) : ({@p-loes1@}) =&#160; {@poly@} \)
+    </p>
+    <p>
+        With the help of \(pq-Formel \) or \(abc-Formel\) the remaining solutions can be calculated:
+    </p>
+    <p>
+        \( \qquad p_{2} = {@loes2@} \)
+    </p>
+    <p>
+        \( \qquad &#160;p_{3} = {@loes3@}&#160;\)
+    </p>
+    <p>
+        So there is \( p = {@loesung@} \) No inverse \(&#160;\mathbf{A}^{-1} \).
+    </p>
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2021120900</text>
+        </stackversion>
+        <questionvariables>
+            <text>a11: -1;a12: -1;a13: 1;a21: 5;a22: -7;a23: 1;a31: 2;a32: -2;a33: rand(2);q: rand_with_step(-4,4,1);B: matrix( [a11+p+q,a12,a13], [a21,a22+p+q,a23], [a31,a32,a33+p+q ]);a: simplify((p+a11+q)*(p+a22+q)*(p+a33+q));b: simplify(a12*a23*a31);c: simplify(a13*a21*a32);d: simplify(a31*(p+a22+q)*a13);e: simplify(a32*a23*(p+a11+q));f: simplify((p+a33+q)*a21*a12);detB: determinant(B);loes: solve( [detB] , [p] );loes1: rhs(loes[1]);loes2: rhs(loes[2]);loes3: rhs(loes[3]);loesung: {loes1,loes2,loes3};poly: lhs(divide(simplify(a+b+c-d-e-f),(p-loes1))[1]);</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\(\mathbf{A}\,=\, {@B@} \)\(L&#246;sungen={@loesung@}\)</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <em>
+            <strong>
+                Ihre Antwort ist korrekt.
+            </strong>
+        </em>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <em>
+            <strong>
+                Your answer is correct.
+            </strong>
+        </em>
+    </p>
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <em>
+            <strong>
+                Ihre Antwort ist teilweise korrekt.
+            </strong>
+        </em>
+    </p>
+    <p>
+        <strong>
+            L&#246;sung:
+        </strong>
+    </p>
+    <p>
+        \(p\,=\,\) {@loesung@}
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <em>
+            <strong>
+                Your answer is partly correct.
+            </strong>
+        </em>
+    </p>
+    <p>
+        <strong>
+            Solution:
+        </strong>
+    </p>
+    <p>
+        \(p\,=\,\) {@loesung@}
+    </p>
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <em>
+            <strong>
+                Ihre Antwort ist nicht korrekt.
+            </strong>
+        </em>
+    </p>
+    <p>
+        <strong>
+            L&#246;sung:
+        </strong>
+    </p>
+    <p>
+        \(p\,=\,\) {@loesung@}
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <em>
+            <strong>
+                Your answer is not correct.
+            </strong>
+        </em>
+    </p>
+    <p>
+        <strong>
+            Solution:
+        </strong>
+    </p>
+    <p>
+        \(p\,=\,\) {@loesung@}
+    </p>
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens/>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>loesung</tans>
+            <boxsize>40</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>2</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>mengeans:ans1;
+mengetans:{loes1,loes2,loes3};
+schnitt:intersection(mengeans,mengetans);
+anzahlans:cardinality(schnitt);</text>
+            </feedbackvariables>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>anzahlans</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.6700000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>anzahlans</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.3300000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>{loes1,loes2,loes3}</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>3858772</deployedseed>
+        <deployedseed>58885936</deployedseed>
+        <deployedseed>120043604</deployedseed>
+        <deployedseed>497076192</deployedseed>
+        <deployedseed>527844555</deployedseed>
+        <deployedseed>843152400</deployedseed>
+        <deployedseed>1017529452</deployedseed>
+        <deployedseed>1087281775</deployedseed>
+        <deployedseed>1211510016</deployedseed>
+        <deployedseed>1435663474</deployedseed>
+        <deployedseed>1435858504</deployedseed>
+        <deployedseed>1502168211</deployedseed>
+        <deployedseed>1723052341</deployedseed>
+        <deployedseed>1839609200</deployedseed>
+        <deployedseed>1863563988</deployedseed>
+        <deployedseed>2032444744</deployedseed>
+        <tags>
+            <tag>
+                <text>Musterl&#246;sung</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

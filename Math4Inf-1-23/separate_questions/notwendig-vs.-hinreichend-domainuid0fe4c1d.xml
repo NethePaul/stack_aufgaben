@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Notwendig vs. hinreichend [{"DOMAINUID":"0FE4C1D"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+        Wir betrachten die folgenden zwei Aussagen:
+        <br/>
+    </p>
+    <p>
+        <i>
+            Aussage \(A\): "Person X ist Student/in"
+        </i>
+    </p>
+    <p>
+        <i>
+            Aussage \(B\): "Person X nimmt an MathePlus teil"
+        </i>
+        <br/>
+    </p>
+    <p>
+        Welche der folgenden Aussagen treffen zu? Kreuzen Sie eine oder mehrere Antwortm&#246;glichkeiten an.
+        <br/>
+    </p>
+    <p>
+        [[input:ans1]] [[validation:ans1]]
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+        We consider the following two statements:
+        <br/>
+    </p>
+    <p>
+        <i>
+            Statement \(A\): "Person X is a student"
+        </i>
+    </p>
+    <p>
+        <i>
+            Statement \(B\): "Person X participates in MathePlus"
+        </i>
+        <br/>
+    </p>
+    <p>
+        Which of the following statements apply? Cross one or more response options.
+        <br/>
+    </p>
+    <p>
+        [[input:ans1]] [[validation:ans1]]
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <b>
+            Hinweis:
+        </b>
+    </p>
+    <ul>
+        <li>
+            Zum Begriff "notwendige Bedingung":
+            <br/>
+            Ist \(A\) eine notwendige Bedingung f&#252;r \(B\), bedeutet das, dass \(A\) eintreten muss, damit \(B\) eintreten kann. Wenn schon klar ist, dass \(B\) eingetreten ist, hei&#223;t dies dann automatisch, dass \(A\) auch gelten muss. Daher schreibt man in diesem
+                Fall \(B\Rightarrow A\).
+            <br/>
+            <br/>
+            <u>
+                Beispiel:
+            </u>
+            Die Aussage
+            <i>
+                "Person X ist Student/in"
+            </i>
+            ist eine notwendige Bedingung f&#252;r die Aussage
+            <i>
+                "Person X nimmt an MathePlus teil"
+            </i>
+            , denn man muss studieren um an MathePlus teilnehmen zu k&#246;nnen.
+            <br/>
+        </li>
+    </ul>
+    <p>
+        <br/>
+    </p>
+    <ul>
+        <li>
+            Zum Begriff "hinreichende Bedingung":
+            <br/>
+            Ist \(A\) eine hinreichende Bedingung f&#252;r \(B\), bedeutet das, dass \(A\)
+            <u>
+                eine
+            </u>
+            Ursache f&#252;r \(B\) ist, aber nicht notwendigerweise die einzige: Wenn \(A\) eintritt, bedeutet dies, dass \(B\) ebenfalls eintritt. Allerdings bedeutet umgekehrt das Eintreten von \(B\) nicht immer, dass auch \(A\) eingetreten sein muss.
+                Man schreibt \(A\Rightarrow B\)
+                .
+            <br/>
+            <div>
+                <br/>
+                <u>
+                    Beispiel:
+                </u>
+                Die Aussage
+                <i>
+                    "Person X nimmt an MathePlus teil"
+                </i>
+                ist eine hinreichende Bedingung f&#252;r die Aussage
+                <i>
+                    "Person X ist Student/in"
+                </i>
+                , denn wenn Person X an MathePlus teilnimmt, dann muss er/sie auch Student/in sein.
+                <br/>
+                Umgekehrt folgt aus der Aussage, dass Person X Student/in ist noch nicht, dass er/sie auch an MathePlus teilnimmt.
+                <br/>
+            </div>
+        </li>
+    </ul>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <b>
+            Note:
+        </b>
+    </p>
+    <ul>
+        <li>
+            To the term "necessary condition":
+            <br/>
+            I \(A\) a necessary condition for \(B\), that means that \(A\) so that \(B\) can enter. If it's clear that \(B\) then automatically means that \(A\) must also apply. This is why
+Case \(B\Rightarrow A\).
+            <br/>
+            <br/>
+            <u>
+                Example:
+            </u>
+            The statement
+            <i>
+                "Person X is a student"
+            </i>
+            is a necessary condition for the statement
+            <i>
+                "Person X participates in MathePlus"
+            </i>
+            , because you need to study to participate in MathePlus.
+            <br/>
+        </li>
+    </ul>
+    <p>
+        <br/>
+    </p>
+    <ul>
+        <li>
+            To the term "subject condition":
+            <br/>
+            I \(A\) a sufficient condition for \(B\), that means that \(A\)
+            <u>
+                a
+            </u>
+            Cause of \(B\) is, but not necessarily the only: if \(A\) enters, this means that \(B\) too. However, the ingress of \(B\) not always that \(A\) must have entered.
+Man writes \(A\Rightarrow B\).
+            <br/>
+            <div>
+                <br/>
+                <u>
+                    Example:
+                </u>
+                The statement
+                <i>
+                    "Person X participates in MathePlus"
+                </i>
+                is a sufficient condition for the statement
+                <i>
+                    "Person X is a student"
+                </i>
+                , because if person X participates in MathePlus, he/she must also be a student.
+                <br/>
+                Conversely, it follows from the statement that person X Student is not yet participating in MathePlus.
+                <br/>
+            </div>
+        </li>
+    </ul>
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2021120900</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*Erstellt von Jonas Lache, Ruhr-Universit&#228;t Bochum*/
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+Liste: 
+[[1,true,tr(" A ist eine notwendige Bedingung f&#252;r B"," A is a necessary condition for B")],
+[2,false,tr(" B ist eine notwendige Bedingung f&#252;r A"," B is a necessary condition for A")],
+[3,false,tr(" A ist eine hinreichende Bedingung f&#252;r B"," A is a sufficent condition for B")],
+[4,true, tr(" B ist eine hinreichende Bedingung f&#252;r A"," B is a sufficent condition for A")],
+[5,false,tr(" A und B sind &#228;quivalente Aussagen"," A and B are equivalent statements")]];
+
+TAnsMenge: set(1,4);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    [[feedback:prt1]]
+</span>
+<span class="multilang" lang="en">
+    [[feedback:prt1]]
+</span>
+]]></text>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text/>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>checkbox</type>
+            <tans>Liste</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>SAnsMenge: setify(ans1);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>SAnsMenge</sans>
+                <tans>TAnsMenge</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(1,SAnsMenge)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        \(A\) ist eine notwendige Bedingung f&#252;r \(B\), denn man muss Student/in sein um an MathePlus teilzunehmen.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        \(A\) is a necessary condition for \(B\), because you must be a student to participate in MathePlus.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(2,SAnsMenge)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>prt1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prt1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        \(B\) ist keine notwendige Bedingung f&#252;r \(A\), denn man muss nicht bei MathePlus teilnehmen, um ein/e Student/in zu sein.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        \(B\) is no necessary condition for \(A\), because you don't have to attend MathePlus to be a student.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(3,SAnsMenge)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>prt1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prt1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        \(A\) ist keine hinreichende Bedingung f&#252;r \(B\), denn wenn Person X 
+Student/in ist folgt daraus noch nicht, dass sie auch bei MathePlus 
+teilnimmt.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        \(A\) is not a sufficient condition for \(B\), because if person X
+Student is not yet following that at MathePlus
+participation.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(4,SAnsMenge)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>prt1-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>prt1-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        \(B\) ist eine hinreichende Bedingung f&#252;r \(A\), denn wenn Person X bei MathePlus teilnimmt, folgt daraus, dass sie Student/in sein muss.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        \(B\) a sufficient condition for \(A\), because if Person X participates at MathePlus, it follows that she must be a student.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(3,SAnsMenge)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        \(A\) und \(B\) sind nicht &#228;quivalent zu einander, denn dann m&#252;sste \(B\) aus \(A\) und \(A\) aus \(B\) folgen, was hier nicht der Fall ist.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        \(A\) and \(B\) are not equivalent to each other, because then \(B\) Of which: \(A\) and \(A\) Of which: \(B\) follow what is not the case here.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

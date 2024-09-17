@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="multichoice">
+        <name>
+            <text>Lineare Gleichungssysteme: L&#246;sbarkeit</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Sei \[A = \begin{pmatrix} 1 &amp; 2 &amp; 2\\ -2 &amp; 5 &amp; 1\\ 4 &amp; 8 &amp; 8 \end{pmatrix}\] und \[b= \begin{pmatrix} 1\\ 1\\ 4\end{pmatrix}.\]
+    <br/>
+    <br/>
+    Was k&#246;nnen Sie &#252;ber die L&#246;sungsmenge \(\mathbb{L}\) des LGS \(Ax=b\) aussagen?
+    <br/>
+</span>
+<span class="multilang" lang="en">
+    Be careful \[A = \begin{pmatrix} 1 &amp; 2 &amp; 2\\ -2 &amp; 5 &amp; 1\\ 4 &amp; 8 &amp; 8 \end{pmatrix}\] and \[b= \begin{pmatrix} 1\\ 1\\ 4\end{pmatrix}.\]
+    <br/>
+    <br/>
+    What can you do about the solution quantity \(\mathbb{L}\) the LGS \(Ax=b\) testify?
+    <br/>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <h4>
+        <strong>
+            L&#246;sung
+        </strong>
+    </h4>
+    <p>
+        <br/>
+    </p>
+    <p>
+        Mit Gauss:
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        \(\left(\begin{array}{ccc|c} 1 &amp; 2 &amp; 2 &amp; 1 \\ -2 &amp; 5 &amp; 1 &amp; 1 \\ 4 &amp; 8 &amp; 8 &amp; 4 \end{array}\right) \xrightarrow{II+2I, III-4I} \left(\begin{array}{ccc|c} 1 &amp; 2 &amp; 2 &amp; 1 \\ 0 &amp; 9 &amp; 5 &amp; 3 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right)\)
+        <br/>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        Daraus folgt, dass es eine freie Variable gibt und somit unendlich viele L&#246;sungen existieren.
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <h4>
+        <strong>
+            Solution
+        </strong>
+    </h4>
+    <p>
+        <br/>
+    </p>
+    <p>
+        With Gauss:
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        \(\left(\begin{array}{ccc|c} 1 &amp; 2 &amp; 2 &amp; 1 \\ -2 &amp; 5 &amp; 1 &amp; 1 \\ 4 &amp; 8 &amp; 8 &amp; 4 \end{array}\right) \xrightarrow{II+2I, III-4I} \left(\begin{array}{ccc|c} 1 &amp; 2 &amp; 2 &amp; 1 \\ 0 &amp; 9 &amp; 5 &amp; 3 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right)\)
+        <br/>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        It follows that there is a free variable and thus infinitely many solutions exist.
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <br/>
+    </p>
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>none</answernumbering>
+        <showstandardinstruction>1</showstandardinstruction>
+        <correctfeedback format="html">
+            <text/>
+        </correctfeedback>
+        <partiallycorrectfeedback format="moodle_auto_format">
+            <text>1</text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text/>
+        </incorrectfeedback>
+        <answer fraction="0" format="moodle_auto_format">
+            <text>Es existiert eine eindeutige L&#246;sung.</text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <answer fraction="100" format="moodle_auto_format">
+            <text>Es existieren undendlich viele L&#246;sungen.</text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="moodle_auto_format">
+            <text>Es existiert keine L&#246;sung.</text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <tags>
+            <tag>
+                <text>TE:1:Lineare Algebra</text>
+            </tag>
+            <tag>
+                <text>TE:2:Lineare Gleichungssysteme</text>
+            </tag>
+            <tag>
+                <text>TE:3:L&#246;sbarkeit</text>
+            </tag>
+            <tag>
+                <text>src:F07-INT</text>
+            </tag>
+            <tag>
+                <text>Bloom:2</text>
+            </tag>
+            <tag>
+                <text>Maier:1:3</text>
+            </tag>
+            <tag>
+                <text>Maier:2:2</text>
+            </tag>
+            <tag>
+                <text>Maier:3:1</text>
+            </tag>
+            <tag>
+                <text>Maier:4:1</text>
+            </tag>
+            <tag>
+                <text>Maier:5:1</text>
+            </tag>
+            <tag>
+                <text>Maier:6:1</text>
+            </tag>
+            <tag>
+                <text>Maier:7:1</text>
+            </tag>
+            <tag>
+                <text>praxiserprobt</text>
+            </tag>
+            <tag>
+                <text>ILIAS-Import-Error</text>
+            </tag>
+            <tag>
+                <text>qs:visuellGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:sprachlichGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:TaggingGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:importMoodleGeprueft</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Gruppenhomomorphismus (R^2,+)->(R,+) angeben [{"DOMAINUID":"FE22FF2"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Geben Sie einen Gruppenhomomorphismus \(\varphi: (\mathbb{R}^2,+)\to(\mathbb{R},+)\) an.
+        <br/>
+    </p>
+    <p>
+        \(\varphi(x; y) = \) [[input:ans1]]
+        <span style="font-size: 0.9375rem;">
+            [[validation:ans1]]
+        </span>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Give a group homomorphism \(\varphi: (\mathbb{R}^2,+)\to(\mathbb{R},+)\) on.
+        <br/>
+    </p>
+    <p>
+        \(\varphi(x; y) = \) [[input:ans1]]
+        <span style="font-size: 0.9375rem;">
+            [[validation:ans1]]
+        </span>
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2021120900</text>
+        </stackversion>
+        <questionvariables>
+            <text/>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    [[feedback:prt1]]
+</span>
+<span class="multilang" lang="en">
+    [[feedback:prt1]]
+</span>
+]]></text>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text/>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>x*y</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>f1:subst([x=x1,y=y1],ans1);
+f2:subst([x=x2,y=y2],ans1);
+f12:subst([x=x1+x2,y=y1+y2],ans1);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>f1*f2</sans>
+                <tans>f12</tans>
+                <testoptions>0</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    Es gilt: \( f(x_1+x_2,y_1+y_2) = {@f12@} = {@f1@}+{@f2@} = f(x_1,y_1)+f(x_2,y_2) \)
+    <br/>
+</span>
+<span class="multilang" lang="en">
+    It shall apply: \( f(x_1+x_2,y_1+y_2) = {@f12@} = {@f1@}+{@f2@} = f(x_1,y_1)+f(x_2,y_2) \)
+    <br/>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Es gilt: \( f(x_1+x_2,y_1+y_2) = {@f12@} \neq {@f1+f2@} = f(x_1,y_1)+f(x_2,y_2) \)
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        It shall apply: \( f(x_1+x_2,y_1+y_2) = {@f12@} \neq {@f1+f2@} = f(x_1,y_1)+f(x_2,y_2) \)
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

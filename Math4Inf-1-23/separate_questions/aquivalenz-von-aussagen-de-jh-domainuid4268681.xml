@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="gapselect">
+        <name>
+            <text><![CDATA[&#196;quivalenz von Aussagen [DE] (JH) [{"DOMAINUID":"4268681"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Verifizieren Sie anhand der folgenden Wahrheitstafel, dass die beiden Aussagen \((A\Rightarrow B)\Rightarrow B\) und \(A\vee B\) &#228;quivalent zueinander sind.
+    </p>
+    <table style="border: 3px solid; border-spacing:10px;">
+        <tbody>
+            <tr style="border: 2px solid">
+                <td style="border: 2px solid">
+                    \(\; \; A\; \;\)
+                </td>
+                <td style="border: 2px solid">
+                    \(\; \; B\; \;\)
+                </td>
+                <td style="border: 2px solid">
+                    \(\; \; A\Rightarrow B\; \;\)
+                </td>
+                <td style="border: 2px solid">
+                    \(\; \; (A\Rightarrow B)\Rightarrow B\; \;\)
+                </td>
+                <td style="border: 2px solid">
+                    \(\; \; A\vee B\; \;\)
+                </td>
+            </tr>
+            <tr style="border: 2px solid">
+                <td style="border: 2px solid">
+                    wahr
+                </td>
+                <td style="border: 2px solid">
+                    wahr
+                </td>
+                <td style="border: 2px solid">
+                    [[1]]
+                </td>
+                <td style="border: 2px solid">
+                    [[5]]
+                </td>
+                <td style="border: 2px solid">
+                    [[1]]
+                </td>
+            </tr>
+            <tr style="border: 2px solid">
+                <td style="border: 2px solid">
+                    wahr
+                </td>
+                <td style="border: 2px solid">
+                    falsch
+                </td>
+                <td style="border: 2px solid">
+                    [[2]]
+                </td>
+                <td style="border: 2px solid">
+                    [[1]]
+                </td>
+                <td style="border: 2px solid">
+                    [[5]]
+                </td>
+            </tr>
+            <tr style="border: 2px solid">
+                <td style="border: 2px solid">
+                    falsch
+                </td>
+                <td style="border: 2px solid">
+                    wahr
+                </td>
+                <td style="border: 2px solid">
+                    [[1]]
+                </td>
+                <td style="border: 2px solid">
+                    [[5]]
+                </td>
+                <td style="border: 2px solid">
+                    [[1]]
+                </td>
+            </tr>
+            <tr style="border: 2px solid">
+                <td style="border: 2px solid">
+                    falsch
+                </td>
+                <td style="border: 2px solid">
+                    falsch
+                </td>
+                <td style="border: 2px solid">
+                    [[5]]
+                </td>
+                <td style="border: 2px solid">
+                    [[8]]
+                </td>
+                <td style="border: 2px solid">
+                    [[2]]
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Verify on the basis of the following truth board that the two statements \((A\Rightarrow B)\Rightarrow B\) and \(A\vee B\) are equivalent to each other.
+    </p>
+    <table style="border: 3px solid; border-spacing:10px;">
+        <tbody>
+            <tr style="border: 2px solid">
+                <td style="border: 2px solid">
+                    \(\; \; A\; \;\)
+                </td>
+                <td style="border: 2px solid">
+                    \(\; \; B\; \;\)
+                </td>
+                <td style="border: 2px solid">
+                    \(\; \; A\Rightarrow B\; \;\)
+                </td>
+                <td style="border: 2px solid">
+                    \(\; \; (A\Rightarrow B)\Rightarrow B\; \;\)
+                </td>
+                <td style="border: 2px solid">
+                    \(\; \; A\vee B\; \;\)
+                </td>
+            </tr>
+            <tr style="border: 2px solid">
+                <td style="border: 2px solid">
+                    true
+                </td>
+                <td style="border: 2px solid">
+                    true
+                </td>
+                <td style="border: 2px solid">
+                    [[1]]
+                </td>
+                <td style="border: 2px solid">
+                    [[5]]
+                </td>
+                <td style="border: 2px solid">
+                    [[1]]
+                </td>
+            </tr>
+            <tr style="border: 2px solid">
+                <td style="border: 2px solid">
+                    true
+                </td>
+                <td style="border: 2px solid">
+                    False
+                </td>
+                <td style="border: 2px solid">
+                    [[2]]
+                </td>
+                <td style="border: 2px solid">
+                    [[1]]
+                </td>
+                <td style="border: 2px solid">
+                    [[5]]
+                </td>
+            </tr>
+            <tr style="border: 2px solid">
+                <td style="border: 2px solid">
+                    False
+                </td>
+                <td style="border: 2px solid">
+                    true
+                </td>
+                <td style="border: 2px solid">
+                    [[1]]
+                </td>
+                <td style="border: 2px solid">
+                    [[5]]
+                </td>
+                <td style="border: 2px solid">
+                    [[1]]
+                </td>
+            </tr>
+            <tr style="border: 2px solid">
+                <td style="border: 2px solid">
+                    False
+                </td>
+                <td style="border: 2px solid">
+                    False
+                </td>
+                <td style="border: 2px solid">
+                    [[5]]
+                </td>
+                <td style="border: 2px solid">
+                    [[8]]
+                </td>
+                <td style="border: 2px solid">
+                    [[2]]
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>3.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <shuffleanswers>1</shuffleanswers>
+        <correctfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Alle Antworten sind richtig, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    All answers are right, well done!
+</span>
+]]></text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Ihre Antworten sind teilweise richtig.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Your answers are partly correct.
+</span>
+]]></text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Alle Antworten sind falsch.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    All answers are wrong.
+</span>
+]]></text>
+        </incorrectfeedback>
+        <shownumcorrect/>
+        <selectoption>
+            <text>wahr</text>
+            <group>1</group>
+        </selectoption>
+        <selectoption>
+            <text>falsch</text>
+            <group>2</group>
+        </selectoption>
+        <selectoption>
+            <text>falsch</text>
+            <group>1</group>
+        </selectoption>
+        <selectoption>
+            <text>wahr</text>
+            <group>2</group>
+        </selectoption>
+        <selectoption>
+            <text>wahr</text>
+            <group>3</group>
+        </selectoption>
+        <selectoption>
+            <text>falsch</text>
+            <group>3</group>
+        </selectoption>
+        <selectoption>
+            <text>wahr</text>
+            <group>4</group>
+        </selectoption>
+        <selectoption>
+            <text>falsch</text>
+            <group>4</group>
+        </selectoption>
+        <hint format="html">
+            <text/>
+            <shownumcorrect/>
+        </hint>
+        <hint format="html">
+            <text/>
+            <shownumcorrect/>
+        </hint>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Teilmengen angeben [{"DOMAINUID":"EE99FC3"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Geben Sie sechs unterschiedliche Teilmengen der Menge \(M={@MA@}\) an.
+    </p>
+    <p>
+        \(M_1=\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+    </p>
+    <p>
+        \(M_2=\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
+    </p>
+    <p>
+        \(M_3=\) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]
+    </p>
+    <p>
+        \(M_4=\) [[input:ans4]] [[validation:ans4]] [[feedback:prt4]]
+    </p>
+    <p>
+        \(M_5=\) [[input:ans5]] [[validation:ans5]] [[feedback:prt5]]
+    </p>
+    <p>
+        \(M_6=\) [[input:ans6]] [[validation:ans6]] [[feedback:prt6]]
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Give six different subsets of quantity \(M={@MA@}\) on.
+    </p>
+    <p>
+        \(M_1=\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+    </p>
+    <p>
+        \(M_2=\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
+    </p>
+    <p>
+        \(M_3=\) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]
+    </p>
+    <p>
+        \(M_4=\) [[input:ans4]] [[validation:ans4]] [[feedback:prt4]]
+    </p>
+    <p>
+        \(M_5=\) [[input:ans5]] [[validation:ans5]] [[feedback:prt5]]
+    </p>
+    <p>
+        \(M_6=\) [[input:ans6]] [[validation:ans6]] [[feedback:prt6]]
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <b>
+            L&#246;sungsweg:
+        </b>
+    </p>
+    <p>
+        F&#252;r jede endliche Menge \(M\) mit \(| M|=m\) (Anzahl der Elemente der Menge \(M\)) gilt, dass sie genau \(2^m\) Teilmengen hat.
+        <br/>
+        Dazu geh&#246;rt immer die leere Menge \(\emptyset=\{\}\) sowie \(M\) selbst. Dazu kommen dann alle Teilmengen mit \(k\) Elementen \(\left(k\in \{1,\ldots,m-1\}\right)\).
+    </p>
+    <p>
+        In diesem Beispiel ist \(M={@MA@}\) gegeben. Da \(|M|=3\) gilt, folgt, dass \(M\) genau \(2^3=8\) unterschiedliche Teilmengen hat, n&#228;mlich die Folgenden:
+    </p>
+    <ul>
+        <li>
+            \(0\)-elementige Teilmengen: \(\emptyset=\{\}\);
+        </li>
+        <li>
+            \(1\)-elementige Teilmengen: \( \{ {@a1@} \} \), \( \{ {@a2@} \} \) und \( \{ {@a3@} \} \);
+        </li>
+        <li>
+            \(2\)-elementige Teilmengen: \( \{ {@a1@},{@a2@} \} \), \( \{ {@a1@},{@a3@} \} \) und \( \{ {@a2@},{@a3@} \} \);
+        </li>
+        <li>
+            \(3\)-elementige Teilmengen: \(M={@MA@}\).
+        </li>
+    </ul>
+    <p>
+        Die Menge, die alle Teilmengen einer Menge \(M\) enth&#228;lt, hei&#223;t &#252;brigens Potenzmenge von \(M\) und man bezeichnet sie mit \(\mathcal{P}(M)\).
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <b>
+            Solution:
+        </b>
+    </p>
+    <p>
+        For every finite quantity \(M\) with \(| M|=m\) (Number of elements of quantity \(M\)) that it applies precisely \(2^m\) has subsets.
+        <br/>
+        This always includes the empty quantity \(\emptyset=\{\}\) and \(M\) yourself. All subsets are then added \(k\) Elements \(\left(k\in \{1,\ldots,m-1\}\right)\).
+    </p>
+    <p>
+        In this example, \(M={@MA@}\) given. There. \(|M|=3\) the following applies: \(M\) exactly \(2^3=8\) has different subsets, namely the following:
+    </p>
+    <ul>
+        <li>
+            \(0\)-elementary subsets: \(\emptyset=\{\}\);
+        </li>
+        <li>
+            \(1\)-elementary subsets: \( \{ {@a1@} \} \), \( \{ {@a2@} \} \) and \( \{ {@a3@} \} \);
+        </li>
+        <li>
+            \(2\)-elementary subsets: \( \{ {@a1@},{@a2@} \} \), \( \{ {@a1@},{@a3@} \} \) and \( \{ {@a2@},{@a3@} \} \);
+        </li>
+        <li>
+            \(3\)-elementary subsets: \(M={@MA@}\).
+        </li>
+    </ul>
+    <p>
+        The amount that all partial amounts of a quantity \(M\) contains, by the way, the amount of potency of \(M\) and they are called \(\mathcal{P}(M)\).
+        <br/>
+    </p>
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023072101</text>
+        </stackversion>
+        <questionvariables>
+            <text>/*Erstellt von Jonas Lache, Ruhr-Universit&#228;t Bochum*/
+
+a1: rand_with_step(11,99,1);
+a2: rand_with_prohib(11,99,[a1]);
+a3: rand_with_prohib(11,99,[a1,a2]);
+
+MA: set(a1,a2,a3);
+leereMenge:setify([]);</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\(M={@M1@}\)</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Deine Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>leereMenge</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint>{?, ?, ?, ...}</syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>set(a1)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint>{?, ?, ?, ...}</syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>set(a2)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint>{?, ?, ?, ...}</syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>algebraic</type>
+            <tans>set(a3)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint>{?, ?, ?, ...}</syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans5</name>
+            <type>algebraic</type>
+            <tans>set(a1,a2)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint>{?, ?, ?, ...}</syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans6</name>
+            <type>algebraic</type>
+            <tans>set(a1,a3)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint>{?, ?, ?, ...}</syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>subsetp(ans1,MA)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    Ihre Menge \(M_1={@ans1@}\) ist leider keine Teilmenge von \(M\).
+    <br/>
+</span>
+<span class="multilang" lang="en">
+    Your quantity \(M_1={@ans1@}\) is unfortunately not a subset \(M\).
+    <br/>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>is(ans1=ans2)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Diese Menge haben Sie bereits zuvor genannt!
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        This quantity you have already mentioned before!
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>subsetp(ans2,MA)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Menge \(M_2={@ans2@}\) ist leider keine Teilmenge von \(M\).
+        <br/>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your quantity \(M_2={@ans2@}\) is unfortunately not a subset \(M\).
+        <br/>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>bisherige3: set(ans1,ans2);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(ans3,bisherige3)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Diese Menge haben Sie bereits zuvor genannt!
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        This quantity you have already mentioned before!
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>subsetp(ans3,MA)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Menge \(M_3={@ans3@}\) ist leider keine Teilmenge von \(M\).
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your quantity \(M_3={@ans3@}\) is unfortunately not a subset \(M\).
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>bisherige4: set(ans1,ans2,ans3);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(ans4,bisherige4)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    Diese Menge haben Sie bereits zuvor genannt!
+    <br/>
+</span>
+<span class="multilang" lang="en">
+    This quantity you have already mentioned before!
+    <br/>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>subsetp(ans4,MA)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Menge \(M_4={@ans4@}\) ist leider keine Teilmenge von \(M\).
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your quantity \(M_4={@ans4@}\) is unfortunately not a subset \(M\).
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt5</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>bisherige5: set(ans1,ans2,ans3,ans4);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(ans5,bisherige5)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Diese Menge haben Sie bereits zuvor genannt!
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        This quantity you have already mentioned before!
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt5-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>subsetp(ans5,MA)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt5-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    Ihre Menge \(M_5={@ans5@}\) ist leider keine Teilmenge von \(M\).
+    <br/>
+</span>
+<span class="multilang" lang="en">
+    Your quantity \(M_5={@ans5@}\) is unfortunately not a subset \(M\).
+    <br/>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt6</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>bisherige6: set(ans1,ans2,ans3,ans4,ans5);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(ans6,bisherige6)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt6-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+        Diese Menge haben Sie bereits zuvor genannt!
+        <br/>
+    </p>
+    <br/>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+        This quantity you have already mentioned before!
+        <br/>
+    </p>
+    <br/>
+    <p>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt6-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>subsetp(ans6,MA)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt6-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt6-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Menge \(M_6={@ans6@}\) ist leider keine Teilmenge von \(M\).
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your quantity \(M_6={@ans6@}\) is unfortunately not a subset \(M\).
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <tags>
+            <tag>
+                <text>Musterl&#246;sung</text>
+            </tag>
+            <tag>
+                <text>R&#252;ckmeldebaum</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

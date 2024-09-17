@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Konjugiert komplexe Zahl von Zahl in Exponentialform [{"DOMAINUID":"1B85502"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Gegeben ist in der komplexen Zahlenebene die Zahl \( z_1 = {@z1@} \)
+    </p>
+    <p>
+        Verschieben Sie den blauen Punkt (\(z_2\))  so, dass \(z_2\,\) die
+konjugierte komplexe Zahl von \(z_1\,\) ist.
+    </p>
+    [[jsxgraph input-ref-ans1="stateRef"]]
+// Create the board
+var board = JXG.JSXGraph.initBoard(divid, {boundingbox: [-1.7, 1.5, 1.7, -1.5], axis: false, showNavigation: false, keepaspectratio: true, showCopyright:false });
+
+
+
+
+// Create the JSXGraph-elements
+var xaxis = board.create('axis', [[0,0], [1,0]], {name:'Re', withLabel: true, label: {position: 'rt',  offset: [-15, 20] }	});
+var yaxis = board.create('axis', [[0,0], [0,1]], {name:'Im', withLabel: true, label: {position: 'rt', offset: [-20, 0] } });
+var z1 = board.create('point', [{#var1#},{#var2#}],{style:5,color:'red',name:'z_1',fixed:true});
+var z2 = board.create('point', [1,1], {style:5,color:'blue',name:'z_2', snapToGrid:false, snapSizeX:1, snapSizeY:1});
+stack_jxg.bind_point(stateRef, z2);
+var p = board.create('point', [0,0],{name:' ',size:0});
+var q = board.create('point', [0,1],{name:' ',size:0});
+var circ = board.create('circle', [p, q]);
+// Create an empty curve
+var ticks = board.create('curve', [[0], [0]], {strokeWidth: 1, 
+                                                        strokeColor: 'blue',
+                                                        strokeOpacity: 0.5});
+
+
+
+
+// Make ticks out of the curve 
+ticks.updateDataArray = function() {
+                var cx = circ.center.X(),
+                                cy = circ.center.Y(),
+                                r = circ.Radius(),
+                                i, 
+                                ticklen = 0.07,           // Length of ticks in user space coordinates
+                                steps = 24,              // Number of ticks
+                                d = ticklen * 0.5,
+                                alpha = 2 * Math.PI / steps;
+
+    
+    
+    
+    this.dataX = [];
+                this.dataY = [];
+                for (i = 0; i &lt; steps; i++) {
+                                // Start of a tick
+                                this.dataX.push( cx + (r - d)* Math.cos(i * alpha) );
+                                this.dataY.push( cy + (r - d) * Math.sin(i * alpha) );
+                                // End of tick
+                                this.dataX.push( cx + (r + d) * Math.cos(i * alpha) );
+                                this.dataY.push( cy + (r + d) * Math.sin(i * alpha) );
+                                // Interrupt the curve
+                                this.dataX.push( NaN );
+                                this.dataY.push( NaN );
+                }
+};
+board.update();
+board.unsuspendUpdate();
+[[/jsxgraph]]
+    <div style="display:none;">
+        [[input:ans1]][[validation:ans1]]
+    </div>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The number is given in the complex number level \( z_1 = {@z1@} \)
+    </p>
+    <p>
+        Move the blue dot (\(z_2\)) so that \(z_2\,\) the
+conjugated complex number of \(z_1\,\) is.
+    </p>
+    [[jsxgraph input-ref-ans1="stateRef"]]
+// Create the board
+var board = JXG.JSXGraph.initBoard(divid, {boundingbox: [-1.7, 1.5, 1.7, -1.5], axis: false, showNavigation: false, keepaspectratio: true, showCopyright:false });
+
+
+
+
+// Create the JSXGraph-elements
+var xaxis = board.create('axis', [[0,0], [1,0]], {name:'Re', withLabel: true, label: {position: 'rt',  offset: [-15, 20] }	});
+var yaxis = board.create('axis', [[0,0], [0,1]], {name:'Im', withLabel: true, label: {position: 'rt', offset: [-20, 0] } });
+var z1 = board.create('point', [{#var1#},{#var2#}],{style:5,color:'red',name:'z_1',fixed:true});
+var z2 = board.create('point', [1,1], {style:5,color:'blue',name:'z_2', snapToGrid:false, snapSizeX:1, snapSizeY:1});
+stack_jxg.bind_point(stateRef, z2);
+var p = board.create('point', [0,0],{name:' ',size:0});
+var q = board.create('point', [0,1],{name:' ',size:0});
+var circ = board.create('circle', [p, q]);
+// Create an empty curve
+var ticks = board.create('curve', [[0], [0]], {strokeWidth: 1, 
+                                                        strokeColor: 'blue',
+                                                        strokeOpacity: 0.5});
+
+
+
+
+// Make ticks out of the curve 
+ticks.updateDataArray = function() {
+                var cx = circ.center.X(),
+                                cy = circ.center.Y(),
+                                r = circ.Radius(),
+                                i, 
+                                ticklen = 0.07,           // Length of ticks in user space coordinates
+                                steps = 24,              // Number of ticks
+                                d = ticklen * 0.5,
+                                alpha = 2 * Math.PI / steps;
+
+    
+    
+    
+    this.dataX = [];
+                this.dataY = [];
+                for (i = 0; i &lt; steps; i++) {
+                                // Start of a tick
+                                this.dataX.push( cx + (r - d)* Math.cos(i * alpha) );
+                                this.dataY.push( cy + (r - d) * Math.sin(i * alpha) );
+                                // End of tick
+                                this.dataX.push( cx + (r + d) * Math.cos(i * alpha) );
+                                this.dataY.push( cy + (r + d) * Math.sin(i * alpha) );
+                                // Interrupt the curve
+                                this.dataX.push( NaN );
+                                this.dataY.push( NaN );
+                }
+};
+board.update();
+board.unsuspendUpdate();
+[[/jsxgraph]]
+    <div style="display:none;">
+        [[input:ans1]][[validation:ans1]]
+    </div>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Die konjugiert komplexe Zahl zu \( z_1 = {@z1@}\) ist \( z_2 = {@z2@}\)
+</span>
+<span class="multilang" lang="en">
+    The conjugated complex number to \( z_1 = {@z1@}\) is \( z_2 = {@z2@}\)
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2019090200</text>
+        </stackversion>
+        <questionvariables>
+            <text>/* author: Frauke Sprengel, Hs Hannover */
+simp : true;
+phi : rand([1/3,1/4,1/6]);
+phi : rand_with_step(-1,1,2)*(rand_with_step(0,1,1)-rand_with_step(0,1,1)/2+rand_with_step(-1,1,2)*phi);
+simp : false;
+z1 : e^(phi*pi*i);
+z2 : e^(-phi*pi*i);
+simp : true;
+var1: float(cos(phi*pi));
+var2: float(sin(phi*pi));
+simp : false;
+loesung: [var1,-var2];</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    [[feedback:prt1]]
+</span>
+<span class="multilang" lang="en">
+    [[feedback:prt1]]
+</span>
+]]></text>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{@phi@}</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>0</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>(</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>numerical</type>
+            <tans>loesung</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumRelative</answertest>
+                <sans>ans1</sans>
+                <tans>loesung</tans>
+                <testoptions>0.05</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <tags>
+            <tag>
+                <text>Mathematik</text>
+            </tag>
+            <tag>
+                <text>Komplexe Zahlen</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

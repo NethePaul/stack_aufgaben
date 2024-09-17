@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="multichoice">
+        <name>
+            <text>Inverse ex nicht 2</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Welche der folgenden Matrizen ist invers zu \(A\)?
+        <br/>
+    </p>
+    $$A=\begin{pmatrix} 1 &amp; 0 &amp; 0\\ 0 &amp; 2 &amp; 2\\ 1 &amp; 0 &amp; 1\end{pmatrix}$$
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Which of the following matrices is inverse to \(A\)?
+        <br/>
+    </p>
+    $A=\begin{pmatrix} 1 &amp; 0 &amp; 0\\ 0 &amp; 2 &amp; 2\\ 1 &amp; 0 &amp; 1\end{pmatrix}$$
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <h4>
+        L&#246;sung
+    </h4>
+    <p>
+        <br/>
+    </p>
+    <p>
+        \(\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;2&amp;2&amp;0&amp;1&amp;0\\1&amp;0&amp;1&amp;0&amp;0&amp;1\end{array}\right)\xrightarrow{III-I}\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;2&amp;2&amp;0&amp;1&amp;0\\0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right)\)
+    </p>
+    <p>
+        \(\xrightarrow{II:2}\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;1&amp;1&amp;0&amp;\frac{1}{2}&amp;0\\0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right)\xrightarrow{II-III}\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;1&amp;0&amp;1&amp;\frac{1}{2}&amp;-1\\0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right)\)
+        <br/>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        \(A^{-1}=\left(\begin{matrix} 1 &amp;0 &amp; 0 \\1 &amp; \frac{1}{2} &amp; -1\\-1 &amp;0 &amp;1 \end{matrix}\right)\)
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        Alternativ \(A \cdot A^{-1}=A^{-1} \cdot A=E\) &#252;berpr&#252;fen!
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <h4>
+        Solution
+    </h4>
+    <p>
+        <br/>
+    </p>
+    <p>
+        \(\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;2&amp;2&amp;0&amp;1&amp;0\\1&amp;0&amp;1&amp;0&amp;0&amp;1\end{array}\right)\xrightarrow{III-I}\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;2&amp;2&amp;0&amp;1&amp;0\\0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right)\)
+    </p>
+    <p>
+        \(\xrightarrow{II:2}\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;1&amp;1&amp;0&amp;\frac{1}{2}&amp;0\\0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right)\xrightarrow{II-III}\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;1&amp;0&amp;1&amp;\frac{1}{2}&amp;-1\\0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right)\)
+        <br/>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        \(A^{-1}=\left(\begin{matrix} 1 &amp;0 &amp; 0 \\1 &amp; \frac{1}{2} &amp; -1\\-1 &amp;0 &amp;1 \end{matrix}\right)\)
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        Alternative \(A \cdot A^{-1}=A^{-1} \cdot A=E\) Check!
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <br/>
+    </p>
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>none</answernumbering>
+        <showstandardinstruction>1</showstandardinstruction>
+        <correctfeedback format="html">
+            <text/>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text/>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text/>
+        </incorrectfeedback>
+        <answer fraction="100" format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        \(\begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 1 &amp; \frac{1}{2} &amp; -1 \\ -1 &amp; 0 &amp; 1 \end{pmatrix}\)
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        \(\begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 1 &amp; \frac{1}{2} &amp; -1 \\ -1 &amp; 0 &amp; 1 \end{pmatrix}\)
+    </p>
+</span>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        \(\begin{pmatrix} 1 &amp; 0 &amp; 0\\ 2 &amp; 1 &amp; -2\\ 1 &amp; 0 &amp; -1\end{pmatrix}\)
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        \(\begin{pmatrix} 1 &amp; 0 &amp; 0\\ 2 &amp; 1 &amp; -2\\ 1 &amp; 0 &amp; -1\end{pmatrix}\)
+    </p>
+</span>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        \(\begin{pmatrix} 1 &amp; 0&amp; 0\\ 0 &amp; 1 &amp; 0\\ 0 &amp; 0 &amp; 1 \end{pmatrix}\)
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        \(\begin{pmatrix} 1 &amp; 0&amp; 0\\ 0 &amp; 1 &amp; 0\\ 0 &amp; 0 &amp; 1 \end{pmatrix}\)
+    </p>
+</span>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    \(\begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; \frac{1}{2} &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix}\)
+</span>
+<span class="multilang" lang="en">
+    \(\begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; \frac{1}{2} &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix}\)
+</span>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <tags>
+            <tag>
+                <text>TE:1:Lineare Algebra</text>
+            </tag>
+            <tag>
+                <text>TE:2:Matrizen</text>
+            </tag>
+            <tag>
+                <text>TE:3:Multiplikation</text>
+            </tag>
+            <tag>
+                <text>TE:3:Inverse Matrix</text>
+            </tag>
+            <tag>
+                <text>src:F07-INT</text>
+            </tag>
+            <tag>
+                <text>Bloom:3</text>
+            </tag>
+            <tag>
+                <text>Maier:1:2</text>
+            </tag>
+            <tag>
+                <text>Maier:2:2</text>
+            </tag>
+            <tag>
+                <text>Maier:3:1</text>
+            </tag>
+            <tag>
+                <text>Maier:4:1</text>
+            </tag>
+            <tag>
+                <text>Maier:5:1</text>
+            </tag>
+            <tag>
+                <text>Maier:6:1</text>
+            </tag>
+            <tag>
+                <text>Maier:7:1</text>
+            </tag>
+            <tag>
+                <text>praxiserprobt</text>
+            </tag>
+            <tag>
+                <text>ILIAS-Import-Error</text>
+            </tag>
+            <tag>
+                <text>qs:visuellGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:sprachlichGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:TaggingGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:importMoodleGeprueft</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

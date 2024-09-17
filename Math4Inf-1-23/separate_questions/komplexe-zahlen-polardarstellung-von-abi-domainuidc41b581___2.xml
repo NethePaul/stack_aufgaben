@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Komplexe Zahlen: Polardarstellung von a+bi [{"DOMAINUID":"C41B581"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Schreiben Sie \(z\) in der Polardarstellung.
+    </p>
+    <p>
+    </p>
+    <p>
+        \(z\,=\,@z@\)
+    </p>
+    <p>
+    </p>
+    <p>
+        <strong>
+            Hinweise:
+        </strong>
+    </p>
+    <ul>
+        <li>
+            Geben Sie die exakte Antwort ein (keine Dezimalzahlen).
+        </li>
+        <li>
+            Falls n&#246;tig, schreiben Sie &#160;\(\pi\)&#160; als
+            <strong>
+                pi
+            </strong>
+            und &#160; \(\sqrt{a}\)&#160; als
+            <strong>
+                sqrt(a)
+            </strong>
+            .
+        </li>
+        <li>
+            Geben Sie \(\varphi\) im Intervall von&#160;\( (-\pi;\pi ] \) ein.
+        </li>
+    </ul>
+    <p>
+        <br/>
+        \( z=(r,\varphi ) \)
+    </p>
+    <p>
+        <br/>
+        \(r=\,\)&#160; [[input:ans1]] [[validation:ans1]]
+    </p>
+    <p>
+        \(\varphi=\,\)&#160;&#160;[[input:ans2]] [[validation:ans2]]
+    </p>
+    <p>
+        [[feedback:prt1]]
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Write \(z\) in the polar representation.
+    </p>
+    <p>
+    </p>
+    <p>
+        \(z\,=\,@z@\)
+    </p>
+    <p>
+    </p>
+    <p>
+        <strong>
+            Notes:
+        </strong>
+    </p>
+    <ul>
+        <li>
+            Enter the exact answer (no decimal numbers).
+        </li>
+        <li>
+            If necessary, write\(\pi\)as
+            <strong>
+                pi
+            </strong>
+            and \(\sqrt{a}\)as
+            <strong>
+                sqrt(a)
+            </strong>
+            .
+        </li>
+        <li>
+            Enter \(\varphi\) in the interval of\( (-\pi;\pi ] \) one.
+        </li>
+    </ul>
+    <p>
+        <br/>
+        \( z=(r,\varphi ) \)
+    </p>
+    <p>
+        <br/>
+        \(r=\,\) [[input:ans1]] [[validation:ans1]]
+    </p>
+    <p>
+        \(\varphi=\,\)[[input:ans2]] [[validation:ans2]]
+    </p>
+    <p>
+        [[feedback:prt1]]
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text/>
+        </stackversion>
+        <questionvariables>
+            <text>s: rand_with_step(1,4,1);
+n: rand_with_step(1,6,1);
+
+liste_r: [2,3,5,6,7,8];
+r: liste_r[n];
+
+r3: 3*r;
+
+liste_t: [1,5,-5,-1];
+t: liste_t[s];
+
+liste_z: [sqrt(r3)+sqrt(r)*%i, -sqrt(r3)+sqrt(r)*%i, -sqrt(r3)-sqrt(r)*%i, sqrt(r3)-sqrt(r)*%i ];
+z: liste_z[s];
+
+liste_tp: [%pi/6, (5*%pi)/6, -1*(5*%pi)/6, -(%pi/6) ];
+tp: liste_tp[s];
+
+loes_r: sqrt(r+r3);</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\(z\,=\,@z@,  (r,\varphi ) = (@loes_r@,@tp@)\)</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Richtige Antwort, gut gemacht!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Right answer, well done!
+    </p>
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Antwort ist teilweise korrekt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your answer is partly correct.
+    </p>
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Falsche Antwort.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Wrong answer.
+    </p>
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>j</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>loes_r</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>tp</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ans1,ans2]</sans>
+                <tans>[loes_r,tp]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1882708376</deployedseed>
+        <deployedseed>2100283198</deployedseed>
+        <deployedseed>176146169</deployedseed>
+        <deployedseed>171496437</deployedseed>
+        <deployedseed>591928281</deployedseed>
+        <deployedseed>555577362</deployedseed>
+        <deployedseed>1879863618</deployedseed>
+        <deployedseed>276774745</deployedseed>
+        <deployedseed>1337626174</deployedseed>
+        <deployedseed>1580442860</deployedseed>
+        <deployedseed>402296995</deployedseed>
+        <deployedseed>774466248</deployedseed>
+        <deployedseed>687648338</deployedseed>
+        <deployedseed>460085769</deployedseed>
+        <deployedseed>2078906329</deployedseed>
+        <deployedseed>715395454</deployedseed>
+        <deployedseed>129361002</deployedseed>
+        <deployedseed>1773346470</deployedseed>
+    </question>
+    
+
+</quiz>

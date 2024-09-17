@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Lineare Algebra: Determinante 4x4</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Bestimmen Sie die Determinante der folgenden Matrix:
+    <br/>
+    <p>
+        <br/>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            {@(A)@} = {@A1@}
+        </p>
+    </div>
+    <p>
+        <br/>
+    </p>
+    <p>
+        \( \det(A)= \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    Determine the determinant of the following matrix:
+    <br/>
+    <p>
+        <br/>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            {@(A)@} = {@A1@}
+        </p>
+    </div>
+    <p>
+        <br/>
+    </p>
+    <p>
+        \( \det(A)= \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <h4>
+        <b>
+            L&#246;sung
+        </b>
+    </h4>
+    <p>
+        <br/>
+    </p>
+    <p>
+        \(\det(A)=\det\left({@A1@}\right)\)
+    </p>
+    <p>
+        \(=-({@C@}) \cdot \det\left({@a1@}\right)-\det\left({@a2@}\right)\)
+    </p>
+    <p>
+        (Laplace Entwicklung nach der zweiten Zeile)
+    </p>
+    <p>
+        \(=-({@C@})\Big(({@a3@}-5)-({@a4@}-4)\Big)-\Big((-15+48)-({@a5@}-30)\Big)\)
+    </p>
+    <p>
+        (Regel von Sarrus)
+    </p>
+    <p>
+        \(={@a6@}\)
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <h4>
+        <b>
+            Solution
+        </b>
+    </h4>
+    <p>
+        <br/>
+    </p>
+    <p>
+        \(\det(A)=\det\left({@A1@}\right)\)
+    </p>
+    <p>
+        \(=-({@C@}) \cdot \det\left({@a1@}\right)-\det\left({@a2@}\right)\)
+    </p>
+    <p>
+        (Laplace development after the second line)
+    </p>
+    <p>
+        \(=-({@C@})\Big(({@a3@}-5)-({@a4@}-4)\Big)-\Big((-15+48)-({@a5@}-30)\Big)\)
+    </p>
+    <p>
+        (Rule of Sarrus)
+    </p>
+    <p>
+        \(={@a6@}\)
+    </p>
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2021120900</text>
+        </stackversion>
+        <questionvariables>
+            <text>C:rand_with_step(-3,5,1);
+B:rand_with_step(-3,5,1);
+z2: if(notequal(B,0)) then 1 else 0;
+E1:B*z2;
+D:(-E1)*C-6*E1+C+33;
+A1:matrix([3,-1,4,1],[C,0,0,-1],[6,-1,E1,0],[0,-2,5,1]);
+
+a1: matrix([-1,4,1],[-1,E1,0],[-2,5,1])
+a2: matrix([3,-1,4],[6,-1,E1],[0,-2,5])
+a3: -E1
+a4: -2*E1
+a5: -6*E1
+a6: -C*((a3-5)-(a4-4))-((-15-48)-(a5-30))</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>1</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>(</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>D</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>D</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <tags>
+            <tag>
+                <text>TE:1:Lineare Algebra</text>
+            </tag>
+            <tag>
+                <text>TE:2:Matrizen</text>
+            </tag>
+            <tag>
+                <text>TE:3:Determinante</text>
+            </tag>
+            <tag>
+                <text>src:F07-INT</text>
+            </tag>
+            <tag>
+                <text>Bloom:3</text>
+            </tag>
+            <tag>
+                <text>Maier:1:2</text>
+            </tag>
+            <tag>
+                <text>Maier:2:2</text>
+            </tag>
+            <tag>
+                <text>Maier:3:1</text>
+            </tag>
+            <tag>
+                <text>Maier:4:1</text>
+            </tag>
+            <tag>
+                <text>Maier:5:1</text>
+            </tag>
+            <tag>
+                <text>Maier:6:1</text>
+            </tag>
+            <tag>
+                <text>Maier:7:1</text>
+            </tag>
+            <tag>
+                <text>praxiserprobt</text>
+            </tag>
+            <tag>
+                <text>qs:visuellGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:sprachlichGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:TaggingGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:importIliasGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:importMoodleGeprueft</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

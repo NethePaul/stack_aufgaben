@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="multichoice">
+        <name>
+            <text>linaear unabh</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Vektoren $$v_1,v_2,v_3 \in \mathbb{R}^3$$ sind genau dann linear unabh&#228;ngig, wenn das lineare Gleichungssystem $$x_1 v_1 + x_2 v_2 + x_3v_3 = 0$$
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The vectors $$v_1,v_2,v_3 \in \mathbb{R}^3$$ are linearly independent when the linear equation $$x_1 v_1 + x_2 v_2 + x_3v_3 = 0$
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <h4>
+        <b>
+            L&#246;sung
+        </b>
+    </h4>
+    <p>
+        <b>
+            <br/>
+        </b>
+    </p>
+    <p>
+    </p>
+    <ul>
+        <li>
+            <span>
+                unendlich viele L&#246;sungen&#160; \(\Leftrightarrow\)&#160; &#160;\(v_1,v_2,v_3\) linear abh&#228;ngig
+            </span>
+        </li>
+    </ul>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+        </p>
+    </div>
+    <ul>
+        <li>
+            <span style="">
+                nur die triviale L&#246;sung&#160; \(\Leftrightarrow\)&#160; &#160;\(v_1,v_2,v_3\) linear unabh&#228;ngig.
+            </span>
+        </li>
+    </ul>
+    <p>
+        (triviale L&#246;sung: \(x_1=x_2=x_3=0\))
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <h4>
+        <b>
+            Solution
+        </b>
+    </h4>
+    <p>
+        <b>
+            <br/>
+        </b>
+    </p>
+    <p>
+    </p>
+    <ul>
+        <li>
+            <span>
+                endless solutions \(\Leftrightarrow\)\(v_1,v_2,v_3\) linear
+            </span>
+        </li>
+    </ul>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+        </p>
+    </div>
+    <ul>
+        <li>
+            <span style="">
+                only the triviale solution \(\Leftrightarrow\)\(v_1,v_2,v_3\) linear independent.
+            </span>
+        </li>
+    </ul>
+    <p>
+        (triviale solution: \(x_1=x_2=x_3=0\))
+    </p>
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>none</answernumbering>
+        <showstandardinstruction>1</showstandardinstruction>
+        <correctfeedback format="html">
+            <text/>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text/>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text/>
+        </incorrectfeedback>
+        <answer fraction="100" format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        ... nur die triviale L&#246;sung hat.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        ... only has the triviale solution.
+    </p>
+</span>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        ... unendlich viele L&#246;sungen hat.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        ... has infinitely many solutions.
+    </p>
+</span>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        ... ein Parallelogramm ist.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        ... is a parallelogram.
+    </p>
+</span>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        ... einen rechten Winkel bildet.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        ... forms a right angle.
+    </p>
+</span>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <tags>
+            <tag>
+                <text>TE:1:Lineare Algebra</text>
+            </tag>
+            <tag>
+                <text>TE:2:Lineare Unabh&#228;ngigkeit</text>
+            </tag>
+            <tag>
+                <text>TE:3:Definition</text>
+            </tag>
+            <tag>
+                <text>src:F07-INT</text>
+            </tag>
+            <tag>
+                <text>Bloom:1</text>
+            </tag>
+            <tag>
+                <text>Maier:1:1</text>
+            </tag>
+            <tag>
+                <text>Maier:2:2</text>
+            </tag>
+            <tag>
+                <text>Maier:3:1</text>
+            </tag>
+            <tag>
+                <text>Maier:4:1</text>
+            </tag>
+            <tag>
+                <text>Maier:5:1</text>
+            </tag>
+            <tag>
+                <text>Maier:6:1</text>
+            </tag>
+            <tag>
+                <text>Maier:7:1</text>
+            </tag>
+            <tag>
+                <text>praxiserprobt</text>
+            </tag>
+            <tag>
+                <text>ILIAS-Import-Error</text>
+            </tag>
+            <tag>
+                <text>qs:visuellGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:sprachlichGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:TaggingGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:importMoodleGeprueft</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

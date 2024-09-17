@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Lineare Algebra: Eigenvektoren 2x2</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Gegeben ist die Matrix \( A \)
+        <br/>
+    </p>
+    <p>
+    </p>
+    <p>
+        \(A\,=\,{@M@} \)
+    </p>
+    <p>
+    </p>
+    <p>
+        Die Eigenwerte von \(\,A\,\) sind \(\,\lambda_1={@l1@}\, \) und \(\,\lambda_2={@l2@} \,\).
+    </p>
+    <p>
+        Berechnen Sie die Eigenvektoren der Matrix \( \,A\,\)
+    </p>
+    <p>
+    </p>
+    <ul>
+        <li>
+            Ein Eigenvektor zum Eigenwert&#160;\(\,\lambda_1={@l1@} \,\) ist
+        </li>
+    </ul>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \( {v_1}=\) [[input:ans1]]&#160;[[validation:ans1]] [[feedback:prt1]]
+        </p>
+    </div>
+    <p>
+    </p>
+    <p>
+    </p>
+    <ul>
+        <li>
+            Ein Eigenvektor zum Eigenwert \(\,\lambda_2={@l2@} \,\) ist
+        </li>
+    </ul>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \({v_2}=\) [[input:ans2]]&#160;[[validation:ans2]] [[feedback:prt2]]
+        </p>
+    </div>
+    <p>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The Matrix \( A \)
+        <br/>
+    </p>
+    <p>
+    </p>
+    <p>
+        \(A\,=\,{@M@} \)
+    </p>
+    <p>
+    </p>
+    <p>
+        The own values of \(\,A\,\) are \(\,\lambda_1={@l1@}\, \) and \(\,\lambda_2={@l2@} \,\).
+    </p>
+    <p>
+        Calculate the eigenvectors of the matrix \( \,A\,\)
+    </p>
+    <p>
+    </p>
+    <ul>
+        <li>
+            An eigenvector for the eigenvalue\(\,\lambda_1={@l1@} \,\) is
+        </li>
+    </ul>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \( {v_1}=\) [[input:ans1]][[validation:ans1]] [[feedback:prt1]]
+        </p>
+    </div>
+    <p>
+    </p>
+    <p>
+    </p>
+    <ul>
+        <li>
+            An eigenvector for the eigenvalue \(\,\lambda_2={@l2@} \,\) is
+        </li>
+    </ul>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \({v_2}=\) [[input:ans2]][[validation:ans2]] [[feedback:prt2]]
+        </p>
+    </div>
+    <p>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <h4>
+        <b>
+            L&#246;sung
+        </b>
+    </h4>
+    <p>
+        <br/>
+    </p>
+    <p>
+        Der Eigenvektor \({v_i}\) liegt im \(\text{ker}(A-\lambda_i \cdot E)\)
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+    </p>
+    <ul>
+        <li>
+            F&#252;r \(\lambda_1={@l1@}\):
+        </li>
+    </ul>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \(A-({@l1@})E={@C@}\)
+        </p>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            Ein m&#246;glicher Eigenvektor ist \({v_1}={@loes1@}\) (oder jedes Vielfache davon).
+        </p>
+    </div>
+    <p>
+        <br/>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <ul>
+        <li>
+            F&#252;r \(\lambda_2={@l2@}\):
+        </li>
+    </ul>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \(A-({@l2@})E={@E@}\)
+        </p>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            Ein m&#246;glicher Eigenvektor ist \({v_2}={@loes2@}\) (oder jedes Vielfache davon).
+        </p>
+    </div>
+    <br/>
+    <p>
+    </p>
+    <p>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <h4>
+        <b>
+            Solution
+        </b>
+    </h4>
+    <p>
+        <br/>
+    </p>
+    <p>
+        The eigenvector \({v_i}\) the \(\text{ker}(A-\lambda_i \cdot E)\)
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+    </p>
+    <ul>
+        <li>
+            For \(\lambda_1={@l1@}\):
+        </li>
+    </ul>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \(A-({@l1@})E={@C@}\)
+        </p>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            A possible eigenvector is \({v_1}={@loes1@}\) (or any multiple thereof).
+        </p>
+    </div>
+    <p>
+        <br/>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <ul>
+        <li>
+            For \(\lambda_2={@l2@}\):
+        </li>
+    </ul>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \(A-({@l2@})E={@E@}\)
+        </p>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            A possible eigenvector is \({v_2}={@loes2@}\) (or any multiple thereof).
+        </p>
+    </div>
+    <br/>
+    <p>
+    </p>
+    <p>
+        <br/>
+    </p>
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2021120900</text>
+        </stackversion>
+        <questionvariables>
+            <text>a11: rand_with_prohib(-1,1,[0]);
+a12: rand_with_prohib(-3,3,[0]);
+a21: rand_with_prohib(-3,3,[0]);
+a22: rand([(a21*a12-1)/a11,(1+a21*a12)/a11]);
+
+P: matrix([a11,a12],[a21,a22]);
+
+InvP: invert(P);
+
+m11: rand_with_step(3,6,1);
+m22: rand_with_step(-5,2,1);
+m: rand_with_step(1,3,1);
+
+A: matrix( [m11,m],[0,m22] );
+
+M: InvP.A.P;
+
+EV: eigenvectors(M);
+
+l1: EV[1][1][1];
+l2: EV[1][1][2];
+
+
+loes1: EV[2][1][1];
+
+loes2: EV[2][2][1];
+
+B: matrix([(1/(a11*a22-a12*a21))*(m11*a22*a11+a21*(m*a22-a12*m22)), (1/(a11*a22-a12*a21))*(a12*m11*a22+a22*(m*a22-a12*m22))],[(1/(a11*a22-a12*a21))*(-a11*m11*a21-a21*(m*a21-a11*m22)), (1/(a11*a22-a12*a21))*(-m11*a21*a12-a22*(m*a21-a11*m22))])
+C: matrix([(1/(a11*a22-a12*a21))*(m11*a22*a11+a21*(m*a22-a12*m22))-l1, (1/(a11*a22-a12*a21))*(a12*m11*a22+a22*(m*a22-a12*m22))],[(1/(a11*a22-a12*a21))*(-a11*m11*a21-a21*(m*a21-a11*m22)), (1/(a11*a22-a12*a21))*(-m11*a21*a12-a22*(m*a21-a11*m22))-l1])
+a:(1/(a11*a22-a12*a21))*(m11*a22*a11+a21*(m*a22-a12*m22))-l1
+b:(1/(a11*a22-a12*a21))*(-a11*m11*a21-a21*(m*a21-a11*m22))
+D: matrix([(1/(a11*a22-a12*a21))*(m11*a22*a11+a21*(m*a22-a12*m22))-l1, (1/(a11*a22-a12*a21))*(a12*m11*a22+a22*(m*a22-a12*m22))],[0, a*((1/(a11*a22-a12*a21))*(-m11*a21*a12-a22*(m*a21-a11*m22))-l1)-b*((1/(a11*a22-a12*a21))*(a12*m11*a22+a22*(m*a22-a12*m22)))])
+E: matrix([(1/(a11*a22-a12*a21))*(m11*a22*a11+a21*(m*a22-a12*m22))-l2, (1/(a11*a22-a12*a21))*(a12*m11*a22+a22*(m*a22-a12*m22))],[(1/(a11*a22-a12*a21))*(-a11*m11*a21-a21*(m*a21-a11*m22)), (1/(a11*a22-a12*a21))*(-m11*a21*a12-a22*(m*a21-a11*m22))-l2])
+c:(1/(a11*a22-a12*a21))*(m11*a22*a11+a21*(m*a22-a12*m22))-l2
+d:(1/(a11*a22-a12*a21))*(-a11*m11*a21-a21*(m*a21-a11*m22))
+F: matrix([(1/(a11*a22-a12*a21))*(m11*a22*a11+a21*(m*a22-a12*m22))-l2, (1/(a11*a22-a12*a21))*(a12*m11*a22+a22*(m*a22-a12*m22))],[0, c*((1/(a11*a22-a12*a21))*(-m11*a21*a12-a22*(m*a21-a11*m22))-l2)-d*((1/(a11*a22-a12*a21))*(a12*m11*a22+a22*(m*a22-a12*m22)))])</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\(x_1={@loes1@}, x_2={@loes2@}, Det={@PDet@}\)</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Richtige Antwort, gut gemacht!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Right answer, well done!
+    </p>
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Antwort ist teilweise korrekt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your answer is partly correct.
+    </p>
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Falsche Antwort.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Wrong answer.
+    </p>
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>(</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>loes1</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint>Eingabe: [x,y]</syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>1</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>loes2</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint>Eingabe: [x,y]</syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>1</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>antwort1: if length(ans1)=2 then matrix([ans1[1]],[ans1[2]]) else matrix([0],[0]);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>antwort1</sans>
+                <tans>matrix([0],[0])</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>M.antwort1</sans>
+                <tans>l1*antwort1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>antwort2: if length(ans2)=2 then matrix([ans2[1]],[ans2[2]]) else matrix([0],[0]);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>antwort2</sans>
+                <tans>matrix([0],[0])</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>M.antwort2</sans>
+                <tans>l2*antwort2</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1139376245</deployedseed>
+        <deployedseed>241000578</deployedseed>
+        <deployedseed>1342908307</deployedseed>
+        <deployedseed>974339208</deployedseed>
+        <deployedseed>1226168287</deployedseed>
+        <deployedseed>957426053</deployedseed>
+        <deployedseed>1828751649</deployedseed>
+        <deployedseed>1947125647</deployedseed>
+        <deployedseed>600184703</deployedseed>
+        <deployedseed>1811034052</deployedseed>
+        <deployedseed>1851537315</deployedseed>
+        <deployedseed>359077273</deployedseed>
+        <deployedseed>1779592266</deployedseed>
+        <deployedseed>47211128</deployedseed>
+        <deployedseed>262883724</deployedseed>
+        <deployedseed>1685936390</deployedseed>
+        <deployedseed>794306857</deployedseed>
+        <deployedseed>61993483</deployedseed>
+        <deployedseed>175064787</deployedseed>
+        <deployedseed>1887266250</deployedseed>
+        <deployedseed>1006575217</deployedseed>
+        <deployedseed>773711109</deployedseed>
+        <deployedseed>1866806584</deployedseed>
+        <deployedseed>681533595</deployedseed>
+        <deployedseed>761214514</deployedseed>
+        <deployedseed>966854315</deployedseed>
+        <deployedseed>667830092</deployedseed>
+        <deployedseed>513993272</deployedseed>
+        <deployedseed>271827004</deployedseed>
+        <deployedseed>680864935</deployedseed>
+        <deployedseed>802046733</deployedseed>
+        <deployedseed>955106210</deployedseed>
+        <deployedseed>320535836</deployedseed>
+        <deployedseed>788922957</deployedseed>
+        <deployedseed>1026824250</deployedseed>
+        <deployedseed>771133417</deployedseed>
+        <deployedseed>77621235</deployedseed>
+        <deployedseed>1437833847</deployedseed>
+        <deployedseed>627531140</deployedseed>
+        <deployedseed>2101568091</deployedseed>
+        <deployedseed>384661986</deployedseed>
+        <deployedseed>914712274</deployedseed>
+        <deployedseed>704751969</deployedseed>
+        <deployedseed>2034440845</deployedseed>
+        <deployedseed>1529838455</deployedseed>
+        <deployedseed>1896698473</deployedseed>
+        <deployedseed>1680769883</deployedseed>
+        <deployedseed>1018610101</deployedseed>
+        <deployedseed>603555479</deployedseed>
+        <deployedseed>1236305365</deployedseed>
+        <deployedseed>121887391</deployedseed>
+        <deployedseed>1964685854</deployedseed>
+        <deployedseed>980475701</deployedseed>
+        <deployedseed>1696294575</deployedseed>
+        <deployedseed>987540258</deployedseed>
+        <deployedseed>860931862</deployedseed>
+        <deployedseed>1874937481</deployedseed>
+        <deployedseed>400307614</deployedseed>
+        <deployedseed>1912961460</deployedseed>
+        <deployedseed>1972352955</deployedseed>
+        <deployedseed>1211875671</deployedseed>
+        <deployedseed>492497260</deployedseed>
+        <deployedseed>2070639259</deployedseed>
+        <deployedseed>1148537694</deployedseed>
+        <deployedseed>895736101</deployedseed>
+        <deployedseed>1507145602</deployedseed>
+        <deployedseed>1588512846</deployedseed>
+        <deployedseed>972003639</deployedseed>
+        <deployedseed>715626154</deployedseed>
+        <deployedseed>59745266</deployedseed>
+        <deployedseed>2092011603</deployedseed>
+        <deployedseed>644413443</deployedseed>
+        <deployedseed>205439637</deployedseed>
+        <deployedseed>1504823697</deployedseed>
+        <deployedseed>1844869105</deployedseed>
+        <deployedseed>1202432599</deployedseed>
+        <deployedseed>1411400625</deployedseed>
+        <deployedseed>1704935929</deployedseed>
+        <deployedseed>357184199</deployedseed>
+        <deployedseed>1546756517</deployedseed>
+        <deployedseed>2147256553</deployedseed>
+        <deployedseed>1894164356</deployedseed>
+        <deployedseed>1203426245</deployedseed>
+        <deployedseed>1289974493</deployedseed>
+        <deployedseed>1486838300</deployedseed>
+        <deployedseed>50447606</deployedseed>
+        <deployedseed>1680644188</deployedseed>
+        <deployedseed>1493090397</deployedseed>
+        <deployedseed>509029874</deployedseed>
+        <deployedseed>586817041</deployedseed>
+        <deployedseed>575364568</deployedseed>
+        <deployedseed>1241453584</deployedseed>
+        <deployedseed>550775487</deployedseed>
+        <deployedseed>261983096</deployedseed>
+        <deployedseed>803091209</deployedseed>
+        <deployedseed>1620922595</deployedseed>
+        <deployedseed>758769322</deployedseed>
+        <deployedseed>1150250026</deployedseed>
+        <deployedseed>1590896068</deployedseed>
+        <deployedseed>857026708</deployedseed>
+        <deployedseed>391549316</deployedseed>
+        <deployedseed>250883743</deployedseed>
+        <deployedseed>1020544608</deployedseed>
+        <deployedseed>1816316840</deployedseed>
+        <deployedseed>1084044724</deployedseed>
+        <deployedseed>1393328409</deployedseed>
+        <deployedseed>1642769905</deployedseed>
+        <deployedseed>1780650254</deployedseed>
+        <deployedseed>711601003</deployedseed>
+        <deployedseed>1982153524</deployedseed>
+        <tags>
+            <tag>
+                <text>TE:1:Lineare Algebra</text>
+            </tag>
+            <tag>
+                <text>TE:2:Matrizen</text>
+            </tag>
+            <tag>
+                <text>TE:3:Eigenvektoren</text>
+            </tag>
+            <tag>
+                <text>TE:3:Eigenwerte</text>
+            </tag>
+            <tag>
+                <text>src:F07-INT</text>
+            </tag>
+            <tag>
+                <text>Bloom:3</text>
+            </tag>
+            <tag>
+                <text>Maier:1:2</text>
+            </tag>
+            <tag>
+                <text>Maier:2:3</text>
+            </tag>
+            <tag>
+                <text>Maier:3:1</text>
+            </tag>
+            <tag>
+                <text>Maier:4:1</text>
+            </tag>
+            <tag>
+                <text>Maier:5:1</text>
+            </tag>
+            <tag>
+                <text>Maier:6:1</text>
+            </tag>
+            <tag>
+                <text>Maier:7:1</text>
+            </tag>
+            <tag>
+                <text>praxiserprobt</text>
+            </tag>
+            <tag>
+                <text>qs:visuellGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:sprachlichGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:TaggingGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:importIliasGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:importMoodleGeprueft</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,1108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Pincode</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <style>
+        .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #a9f5bc;
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #e0f8e6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #dcb25e;
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #e7d2a7;
+                }
+
+    
+    
+    
+    .buttontipp {
+                                border: 1px solid black;
+                                background-color: #c9d3f6;
+                }
+
+    
+    
+    
+    .buttontipp:hover {
+                                background-color: #dbe1f9;
+                }
+
+    
+    
+    
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                                margin: 5px;
+                }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: .5em .5em 0;
+                }
+
+    
+    
+    
+    .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -.5em -.5em 0;
+                                padding: .5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] {
+                                padding: .5em;
+                }
+    </style>
+    <div id="summarybox">
+        <details>
+            <summary>
+                Inhalt und Umfang dieser Aufgabe
+            </summary>
+            <p>
+                In dieser Aufgabe lernen Sie anhand zweier kurzer Beispiele, wie Sie einfache kombinatorische Formeln verwenden.
+            </p>
+        </details>
+        <hr/>
+    </div>
+    <p>
+    </p>
+    <p>
+    </p>
+    <div id="aufgabe" style="display:box;">
+        <div title="Page 1">
+            <span style="font-size: 0.9375rem;">
+                <b>
+                    Ziffernfolge 2
+                </b>
+            </span>
+        </div>
+        <div title="Page 1">
+            <span style="font-size: 0.9375rem;">
+                <br/>
+            </span>
+        </div>
+        <div title="Page 1">
+            <span style="font-size: 0.9375rem;">
+                <b>
+                    (a)
+                </b>
+                Wie viele M&#246;glichkeiten gibt es, aus den Ziffern &#8222;0&#8220; bis &#8222;9&#8220; unterschiedliche \({@n@}\)-stellige Zahlen zu bilden, wenn Ziffern mehrfach vorkommen d&#252;rfen?
+            </span>
+            <br/>
+            <b>
+                (b)
+            </b>
+            Aus technischen Gr&#252;nden darf die Ziffer "0" nicht als erste Ziffer auftauchen. Wieviele M&#246;glichkeiten gibt es, den \({@n@}\)-stelligen Pincode in Teilaufgabe (a) zu w&#228;hlen, wenn die f&#252;hrende Ziffer nur aus den Ziffern &#8222;1&#8220; bis &#8222;9&#8220; gew&#228;hlt
+                                werden darf?
+        </div>
+        <div title="Page 1">
+            <span style="font-size: 0.9375rem;">
+                <br/>
+            </span>
+        </div>
+        <div title="Page 1">
+            <span style="font-size: 0.9375rem;">
+                Widmen wir uns zun&#228;chst Teilaufgabe
+                <b>
+                    (a)
+                </b>
+                . Bitte geben Sie hier Ihre L&#246;sung ein und klicken anschlie&#223;end auf Pr&#252;fen:
+            </span>
+        </div>
+        [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+        <p>
+        </p>
+    </div>
+    <div id="teilaufgabe_b" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Urspr&#252;ngliche Fragestellung:
+                                    </u>
+                                    <div title="Page 1">
+                                        <span style="font-size: 0.9375rem;">
+                                            <b>
+                                                Ziffernfolge 2
+                                            </b>
+                                        </span>
+                                    </div>
+                                    <div title="Page 1">
+                                        <span style="font-size: 0.9375rem;">
+                                            <br/>
+                                        </span>
+                                    </div>
+                                    <div title="Page 1">
+                                        <span style="font-size: 0.9375rem;">
+                                            <b>
+                                                (a)
+                                            </b>
+                                            Wie viele M&#246;glichkeiten gibt es, aus den Ziffern &#8222;0&#8220; bis &#8222;9&#8220; unterschiedliche \({@n@}\)-stellige Zahlen zu bilden, wenn Ziffern mehrfach vorkommen d&#252;rfen?
+                                        </span>
+                                        <br/>
+                                        <b>
+                                            (b)
+                                        </b>
+                                        Aus technischen Gr&#252;nden darf die Ziffer "0" nicht als erste Ziffer auftauchen. Wieviele M&#246;glichkeiten gibt es, den \({@n@}\)-stelligen Pincode in Teilaufgabe (a) zu w&#228;hlen, wenn die f&#252;hrende Ziffer nur aus den Ziffern &#8222;1&#8220; bis &#8222;9&#8220; gew&#228;hlt
+                werden darf?
+                                    </div>
+                                    <div title="Page 1">
+                                        <span style="font-size: 0.9375rem;">
+                                            <br/>
+                                        </span>
+                                    </div>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </span>
+        <br/>
+        Widmen wir uns nun Teilaufgabe
+        <b>
+            (b)
+        </b>
+        .
+        <p>
+        </p>
+        <p>
+            Die Anzahl der M&#246;glichkeiten f&#252;r Teilaufgabe
+            <b>
+                (b)
+            </b>
+            betr&#228;gt:&#160;[[input:teilaufgabe_b]] [[validation:teilaufgabe_b]]
+            <br/>
+        </p>
+        [[feedback:teilaufgabe_b]]
+    </div>
+    <div id="zwischen1" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Urspr&#252;ngliche Fragestellung:
+                                    </u>
+                                    <div>
+                                        <div>
+                                            <div title="Page 1">
+                                                <span style="font-size: 0.9375rem;">
+                                                    <b>
+                                                        Ziffernfolge 2
+                                                    </b>
+                                                </span>
+                                            </div>
+                                            <div title="Page 1">
+                                                <span style="font-size: 0.9375rem;">
+                                                    <br/>
+                                                </span>
+                                            </div>
+                                            <div title="Page 1">
+                                                <span style="font-size: 0.9375rem;">
+                                                    <b>
+                                                        (a)
+                                                    </b>
+                                                    Wie viele M&#246;glichkeiten gibt es, aus den Ziffern &#8222;0&#8220; bis &#8222;9&#8220; unterschiedliche \({@n@}\)-stellige Zahlen zu bilden, wenn Ziffern mehrfach vorkommen d&#252;rfen?
+                                                </span>
+                                                <br/>
+                                                <b>
+                                                    (b)
+                                                </b>
+                                                Aus technischen Gr&#252;nden darf die Ziffer "0" nicht als erste Ziffer auftauchen. Wieviele M&#246;glichkeiten gibt es, den \({@n@}\)-stelligen Pincode in Teilaufgabe (a) zu w&#228;hlen, wenn die f&#252;hrende Ziffer nur aus den Ziffern &#8222;1&#8220; bis &#8222;9&#8220; gew&#228;hlt
+                werden darf?
+                                            </div>
+                                            <div title="Page 1">
+                                                <span style="font-size: 0.9375rem;">
+                                                    <br/>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </span>
+        <br/>
+        Wenn die Ziffern "0" bis "9" mehrfach vorkommen d&#252;rfen, bedeutet dies, dass wir f&#252;r jede Stelle des \({@n@}\)-stelligen Pincodes wieviele M&#246;glichkeiten haben, eine Ziffer zu w&#228;hlen?
+        <p>
+        </p>
+        <p>
+            Es ergeben sich damit:&#160;[[input:zwischen1]] [[validation:zwischen1]] M&#246;glichkeiten f&#252;r jede Stelle.
+            <br/>
+        </p>
+        [[feedback:zwischen1]]
+    </div>
+    <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+    </script>
+</span>
+<span class="multilang" lang="en">
+    <style>
+        .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #a9f5bc;
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #e0f8e6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #dcb25e;
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #e7d2a7;
+                }
+
+    
+    
+    
+    .buttontipp {
+                                border: 1px solid black;
+                                background-color: #c9d3f6;
+                }
+
+    
+    
+    
+    .buttontipp:hover {
+                                background-color: #dbe1f9;
+                }
+
+    
+    
+    
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                                margin: 5px;
+                }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: .5em .5em 0;
+                }
+
+    
+    
+    
+    .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -.5em -.5em 0;
+                                padding: .5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] {
+                                padding: .5em;
+                }
+    </style>
+    <div id="summarybox">
+        <details>
+            <summary>
+                Content and scope of this task
+            </summary>
+            <p>
+                In this task you will learn how to use simple combinatorial formulas using two short examples.
+            </p>
+        </details>
+        <hr/>
+    </div>
+    <p>
+    </p>
+    <p>
+    </p>
+    <div id="aufgabe" style="display:box;">
+        <div title="Page 1">
+            <span style="font-size: 0.9375rem;">
+                <b>
+                    Number order 2
+                </b>
+            </span>
+        </div>
+        <div title="Page 1">
+            <span style="font-size: 0.9375rem;">
+                <br/>
+            </span>
+        </div>
+        <div title="Page 1">
+            <span style="font-size: 0.9375rem;">
+                <b>
+                    (a)
+                </b>
+                How many possibilities exist, from the numbers &#8220;0&#8221; to &#8220;9&#8221; different \({@n@}\)- to form digits when digits may occur several times?
+            </span>
+            <br/>
+            <b>
+                (b)
+            </b>
+            For technical reasons, the number "0" must not appear as the first digit. How many possibilities exist, \({@n@}\)--digit pin code in sub-task (a) if the leading digit is selected only from the digits &#8220;1&#8221; to &#8220;9&#8221;
+are you allowed?
+        </div>
+        <div title="Page 1">
+            <span style="font-size: 0.9375rem;">
+                <br/>
+            </span>
+        </div>
+        <div title="Page 1">
+            <span style="font-size: 0.9375rem;">
+                Let's first take part
+                <b>
+                    (a)
+                </b>
+                . Please enter your solution here and then click Check:
+            </span>
+        </div>
+        [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+        <p>
+        </p>
+    </div>
+    <div id="teilaufgabe_b" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Original question:
+                                    </u>
+                                    <div title="Page 1">
+                                        <span style="font-size: 0.9375rem;">
+                                            <b>
+                                                Number order 2
+                                            </b>
+                                        </span>
+                                    </div>
+                                    <div title="Page 1">
+                                        <span style="font-size: 0.9375rem;">
+                                            <br/>
+                                        </span>
+                                    </div>
+                                    <div title="Page 1">
+                                        <span style="font-size: 0.9375rem;">
+                                            <b>
+                                                (a)
+                                            </b>
+                                            How many possibilities exist, from the numbers &#8220;0&#8221; to &#8220;9&#8221; different \({@n@}\)- to form digits when digits may occur several times?
+                                        </span>
+                                        <br/>
+                                        <b>
+                                            (b)
+                                        </b>
+                                        For technical reasons, the number "0" must not appear as the first digit. How many possibilities exist, \({@n@}\)--digit pin code in sub-task (a) if the leading digit is selected only from the digits &#8220;1&#8221; to &#8220;9&#8221;
+are you allowed?
+                                    </div>
+                                    <div title="Page 1">
+                                        <span style="font-size: 0.9375rem;">
+                                            <br/>
+                                        </span>
+                                    </div>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </span>
+        <br/>
+        Let's get involved
+        <b>
+            (b)
+        </b>
+        .
+        <p>
+        </p>
+        <p>
+            The number of options for partial task
+            <b>
+                (b)
+            </b>
+            is:[[input:teilaufgabe_b]] [[validation:teilaufgabe_b]]
+            <br/>
+        </p>
+        [[feedback:teilaufgabe_b]]
+    </div>
+    <div id="zwischen1" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Original question:
+                                    </u>
+                                    <div>
+                                        <div>
+                                            <div title="Page 1">
+                                                <span style="font-size: 0.9375rem;">
+                                                    <b>
+                                                        Number order 2
+                                                    </b>
+                                                </span>
+                                            </div>
+                                            <div title="Page 1">
+                                                <span style="font-size: 0.9375rem;">
+                                                    <br/>
+                                                </span>
+                                            </div>
+                                            <div title="Page 1">
+                                                <span style="font-size: 0.9375rem;">
+                                                    <b>
+                                                        (a)
+                                                    </b>
+                                                    How many possibilities exist, from the numbers &#8220;0&#8221; to &#8220;9&#8221; different \({@n@}\)- to form digits when digits may occur several times?
+                                                </span>
+                                                <br/>
+                                                <b>
+                                                    (b)
+                                                </b>
+                                                For technical reasons, the number "0" must not appear as the first digit. How many possibilities exist, \({@n@}\)--digit pin code in sub-task (a) if the leading digit is selected only from the digits &#8220;1&#8221; to &#8220;9&#8221;
+are you allowed?
+                                            </div>
+                                            <div title="Page 1">
+                                                <span style="font-size: 0.9375rem;">
+                                                    <br/>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </span>
+        <br/>
+        If the numbers "0" to "9" are allowed to occur several times, this means that we have the \({@n@}\)-digit pin codes how many ways to choose a digit?
+        <p>
+        </p>
+        <p>
+            This results in:[[input:zwischen1]] [[validation:zwischen1]] Possibilities for each place.
+            <br/>
+        </p>
+        [[feedback:zwischen1]]
+    </div>
+    <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+    </script>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>2.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  Ziffernfolge 2
+
+  wurde entwickelt von
+  
+    Riko Kelter <riko.kelter(at)uni-siegen.de>
+    Alexander Schnurr <schnurr(at)mathematik.uni-siegen.de>
+    Susanne Spies <spies(at)mathematik.uni-siegen.de>
+
+  nach einer Idee von
+  
+   Riko Kelter <riko.kelter(at)uni-siegen.de>
+   Alexander Schnurr <schnurr(at)mathematik.uni-siegen.de>
+   Susanne Spies <spies(at)mathematik.uni-siegen.de>
+
+  an der Universit&#228;t Siegen.
+
+  Dieses Werk ist lizenziert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+
+  Diese Aufgabe bindet das Skript &#8216;stackselbstlern.js&#8217; von Michael
+  Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+test01(x):= integerp(x) and is(x>0);
+n: rand_with_step(3,6,1);
+lsg: 10^n;
+lsg_b: 9*10^(n-1);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>Zahl der Ziffern \({@n@}\).</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text/>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text/>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text/>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>lsg</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>teilaufgabe_b</name>
+            <type>algebraic</type>
+            <tans>lsg_b</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>zwischen1</name>
+            <type>algebraic</type>
+            <tans>10</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>lsg</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+Sie haben Teilaufgabe
+    <b>
+        (a)
+    </b>
+    gel&#246;st. Wir ziehen mit Zur&#252;cklegen unter Beachtung der Reihenfolge, womit sich \(10^{@n@}\) M&#246;glichkeiten ergeben, einen \({@n@}\)-stelligen Pincode zu w&#228;hlen.
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('aufgabe');show('teilaufgabe_b');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+You have partial task
+    <b>
+        (a)
+    </b>
+    dissolved. We are moving backwards in compliance with the order, with which \(10^{@n@}\) , a \({@n@}\)-digit pin code to choose.
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('aufgabe');show('teilaufgabe_b');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <div id="prtA-1">
+        Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in kleinere Teilaufgaben unterteilt.
+        <p>
+            Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+            <button class="buttonweiter" onclick="hide('aufgabe');show('zwischen1');" type="button">
+                Weiter
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtA-2" style="display:none;">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+        <p>
+            Versuchen Sie nun erneut Teilaufgabe
+            <b>
+                (a)
+            </b>
+            . Wenn f&#252;r jede Stelle des Pincodes 10 M&#246;glichkeiten existieren, und der Code \({@n@}\) Stellen hat, k&#246;nnen Sie nun leicht die Anzahl aller M&#246;glichkeiten ausrechnen, einen Pincode zu w&#228;hlen.
+        </p>
+    </div>
+</span>
+<span class="multilang" lang="en">
+    <div id="prtA-1">
+        That you couldn't solve the task right away is no problem! In the following, the task is subdivided into smaller subtasks.
+        <p>
+            To continue, click on the following button:
+            <button class="buttonweiter" onclick="hide('aufgabe');show('zwischen1');" type="button">
+                Next
+            </button>
+            <br/>
+        </p>
+    </div>
+    <div id="prtA-2" style="display:none;">
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+        <p>
+            Try Submission again
+            <b>
+                (a)
+            </b>
+            . If there are 10 possibilities for each place of the pin code, and the code \({@n@}\) You can now easily calculate the number of possibilities to choose a pin code.
+        </p>
+    </div>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ans1)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die angegebene Zahl muss eine nat&#252;rliche Zahl sein. Bitte geben Sie eine nat&#252;rliche Zahl ein.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The given number must be a natural number. Please enter a natural number.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>teilaufgabe_b</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(lsg_b)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>teilaufgabe_b-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>teilaufgabe_b-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die angegebene Zahl muss eine nat&#252;rliche Zahl sein. Bitte geben Sie eine nat&#252;rliche Zahl ein.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The given number must be a natural number. Please enter a natural number.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>teilaufgabe_b</sans>
+                <tans>lsg_b</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>teilaufgabe_b-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+Sie haben Teilaufgabe
+    <b>
+        (b)
+    </b>
+    und damit die gesamte Aufgabe gel&#246;st. F&#252;r die ersten beiden Stellen des Pincodes verbleiben noch 9 M&#246;glichkeiten, eine Ziffer zu w&#228;hlen. F&#252;r die dritte Stelle verbleiben weiterhin 10 M&#246;glichkeiten, sodass sich insgesamt \(9\cdot 9\cdot 10 = 810\) M&#246;glichkeiten ergeben.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+You have partial task
+    <b>
+        (b)
+    </b>
+    and thus the entire task is solved. For the first two positions of the pin code, there are still 9 possibilities to choose a digit. 10 possibilities remain for the third place, so that the overall \(9\cdot 9\cdot 10 = 810\) There are possibilities.
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>teilaufgabe_b-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+
+
+
+
+&#220;berlegen Sie noch einmal, wieviele M&#246;glichkeiten f&#252;r die erste und zweite Ziffer existieren. Im Vergleich zu Teilaufgabe
+    <b>
+        (a)
+    </b>
+    m&#252;ssen Sie nun die nun pro Stelle m&#246;glicherweise verschiedenen M&#246;glichkeiten eine Ziffer zu w&#228;hlen miteinander multiplizieren.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+
+
+
+
+Consider how many options exist for the first and second digits. Compared to partial task
+    <b>
+        (a)
+    </b>
+    now you need to multiply the possibilities that may be different for each place to choose a digit with each other.
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>zwischen1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(zwischen1)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>zwischen1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>zwischen1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr" style="text-align: left;">
+        Ihre Antwort muss eine nat&#252;rliche Zahl sein. Bitte geben Sie eine nat&#252;rliche Zahl ein.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr" style="text-align: left;">
+        Your answer must be a natural number. Please enter a natural number.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>zwischen1</sans>
+                <tans>10</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>zwischen1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+    <p>
+        Sie k&#246;nnen nun Teilaufgabe
+        <b>
+            (a)
+        </b>
+        erneut versuchen. Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('zwischen1');show('aufgabe');hide('prtA-1');show('prtA-2');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+    <p>
+        You can now share
+        <b>
+            (a)
+        </b>
+        try again. To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('zwischen1');show('aufgabe');hide('prtA-1');show('prtA-2');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>zwischen1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <p dir="ltr" style="text-align: left;">
+        &#220;berlegen Sie noch einmal gr&#252;ndlich, wieviele M&#246;glichkeiten es gibt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <p dir="ltr" style="text-align: left;">
+        Consider how many possibilities there are.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

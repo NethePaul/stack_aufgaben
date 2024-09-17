@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Komplexe Zahlen (Inverse) [DE] (AP_EG) [{"DOMAINUID":"37296FC"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Wir betrachten die komplexe Zahl \( z={@z@}\).
+    </p>
+    <p>
+        Bestimmen Sie Realteil \( x\) und Imagin&#228;rteil \( y\) der komplexen Zahl \[\dfrac{1}{z} = x + \mathrm{i} \cdot y\].
+    </p>
+    <p>
+    </p>
+    <span style="font-size: 0.9375rem;">
+        \( x = \) [[input:ans1]] [[validation:ans1]] und \( y = \) [[input:ans2]]. [[validation:ans2]]
+    </span>
+    <br/>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        We consider the complex number \( z={@z@}\).
+    </p>
+    <p>
+        Determine real part \( x\) and imaginary part \( y\) the complex number \[\dfrac{1}{z} = x + \mathrm{i} \cdot y\].
+    </p>
+    <p>
+    </p>
+    <span style="font-size: 0.9375rem;">
+        \( x = \) [[input:ans1]] [[validation:ans1]] and \( y = \) [[input:ans2]]. [[validation:ans2]]
+    </span>
+    <br/>
+    <p>
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr" style="text-align: left;">
+        <strong>
+            L&#246;sungsweg:
+        </strong>
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        Wegen \(|z|^2 = z \cdot \overline{z}\) gilt&#160;\(\dfrac{1}{z} = \dfrac{\overline{z}}{|z|^2}\).
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        \(\overline{z}= \overline{{@z@}} = {@zq@}\)
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        \(|z|^2 = ({@x@})^2+({@y@})^2&#160;= {@x^2@}+{@y^2@} = {@x^2+y^2@}\)
+        <br/>
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        Also ist \(\dfrac{1}{z} = \dfrac{@zq@}{{@x^2+y^2@}} = \displaystyle {@zi@}\), womit \(x = \displaystyle {@xi@}\) und \(y = \displaystyle {@yi@}\).
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr" style="text-align: left;">
+        <strong>
+            Solution:
+        </strong>
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        About \(|z|^2 = z \cdot \overline{z}\) Date\(\dfrac{1}{z} = \dfrac{\overline{z}}{|z|^2}\).
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        \(\overline{z}= \overline{{@z@}} = {@zq@}\)
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        \(|z|^2 = ({@x@})^2+({@y@})^2&#160;= {@x^2@}+{@y^2@} = {@x^2+y^2@}\)
+        <br/>
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        So... \(\dfrac{1}{z} = \dfrac{@zq@}{{@x^2+y^2@}} = \displaystyle {@zi@}\)with \(x = \displaystyle {@xi@}\) and \(y = \displaystyle {@yi@}\).
+    </p>
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2021120900</text>
+        </stackversion>
+        <questionvariables>
+            <text>x : rand(10)-5;
+y : (rand(5)+1)*(2*rand(2)-1);
+z : x+%i*y;
+zi : rectform(1/z);
+xi : realpart(zi);
+yi : imagpart(zi);
+zq: conjugate(z);</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    [[feedback:prt1]]
+    <p>
+        [[feedback:prt2]]
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    [[feedback:prt1]]
+    <p>
+        [[feedback:prt2]]
+        <br/>
+    </p>
+</span>
+]]></text>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>z</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>xi</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>yi</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>xi</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Der Realteil ist korrekt berechnet.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The real part is calculated correctly.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Der Realteil ist falsch.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The real part is wrong.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>yi</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Der Imagin&#228;rteil ist richtig.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The imaginary part is correct.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Der Imagin&#228;rteil ist falsch.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The imaginary part is wrong.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>%i*yi</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Imagin&#228;rteil enth&#228;lt f&#228;lschlicherweise noch das \(i\).
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your imaginary part contains incorrectly the \(i\).
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <tags>
+            <tag>
+                <text>Musterl&#246;sung</text>
+            </tag>
+            <tag>
+                <text>R&#252;ckmeldebaum</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

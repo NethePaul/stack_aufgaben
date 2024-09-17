@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Lineare Gleichungssysteme: L&#246;sbarkeit</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        <b>
+            (a)
+        </b>
+        Bestimmen Sie f&#252;r
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            <span>
+                {@(B)@} = {@B1@} &#160; &#160;und &#160; &#160;\(b\) ={@b1@}
+            </span>
+        </p>
+        <p>
+            <span>
+                die L&#246;sung des linearen Gleichungssystems
+            </span>
+        </p>
+        <p>
+            <span>
+                \( B\cdot x=b\).
+            </span>
+        </p>
+        <p>
+            <span>
+                Das Gleichungssystem besitzt
+            </span>
+        </p>
+        <p>
+            [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+        </p>
+    </div>
+    <p>
+        <br/>
+        <span>
+        </span>
+    </p>
+    <p>
+        <b>
+            (b)
+        </b>
+        Bestimmen Sie f&#252;r
+        <br/>
+    </p>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            {@(C)@} = {@C1@} &#160; &#160;und &#160; &#160;\(b\) ={@b1@}
+        </p>
+        <p>
+            die L&#246;sung des linearen Gleichungssystems
+        </p>
+        <p>
+            \( C\cdot x= b\).
+        </p>
+        <p>
+            Das Gleichungssystem besitzt
+        </p>
+        <p>
+            [[input:ans2]] [[validation:ans2]][[feedback:prt2]]
+        </p>
+    </div>
+    <p>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <b>
+            (c)
+        </b>
+        Bestimmen Sie f&#252;r
+        <br/>
+    </p>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            {@(D)@} = {@D1@} &#160; &#160;und &#160; &#160;\(b\) ={@b1@}
+        </p>
+        <p>
+            die L&#246;sung des linearen Gleichungssystems
+        </p>
+        <p>
+            \( D\cdot x = b\).
+        </p>
+        <p>
+            Das Gleichungssystem besitzt
+        </p>
+        <p>
+            [[input:ans3]] [[validation:ans3]][[feedback:prt3]]
+        </p>
+    </div>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        <b>
+            (a)
+        </b>
+        Choose for
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            <span>
+                {@(B)@} = {@B1@} and\(b\) ={@b1@}
+            </span>
+        </p>
+        <p>
+            <span>
+                the solution of the linear equation system
+            </span>
+        </p>
+        <p>
+            <span>
+                \( B\cdot x=b\).
+            </span>
+        </p>
+        <p>
+            <span>
+                The equation
+            </span>
+        </p>
+        <p>
+            [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+        </p>
+    </div>
+    <p>
+        <br/>
+        <span>
+        </span>
+    </p>
+    <p>
+        <b>
+            (b)
+        </b>
+        Choose for
+        <br/>
+    </p>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            {@(C)@} = {@C1@} and\(b\) ={@b1@}
+        </p>
+        <p>
+            the solution of the linear equation system
+        </p>
+        <p>
+            \( C\cdot x= b\).
+        </p>
+        <p>
+            The equation
+        </p>
+        <p>
+            [[input:ans2]] [[validation:ans2]][[feedback:prt2]]
+        </p>
+    </div>
+    <p>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <b>
+            (c)
+        </b>
+        Choose for
+        <br/>
+    </p>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            {@(D)@} = {@D1@} and\(b\) ={@b1@}
+        </p>
+        <p>
+            the solution of the linear equation system
+        </p>
+        <p>
+            \( D\cdot x = b\).
+        </p>
+        <p>
+            The equation
+        </p>
+        <p>
+            [[input:ans3]] [[validation:ans3]][[feedback:prt3]]
+        </p>
+    </div>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <h4>
+        <strong>
+            L&#246;sung
+        </strong>
+    </h4>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <strong>
+            (a)
+        </strong>
+        <br/>
+    </p>
+    <span style="">
+        \(\left(\begin{array}{ccc|c} {@A@} &amp; {@B2@}&amp; {@C2@} &amp; 1\\ 4&amp; 5 &amp; 6 &amp; 1 \\{@D2@} &amp; {@E@} &amp; {@F@} &amp;2 \end{array}\right) \xrightarrow{{@A@}II-4I, {@A@}III-{@D2@}I}\left(\begin{array}{ccc|c} {@A@} &amp; {@B2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*A-B2*4@} &amp; {@6*A-4*C2@} &amp; {@A-4@} \\0&amp; {@E*A-B2*D2@} &amp; {@F*A-D2*C2@} &amp; {@2*A-D2@} \end{array}\right)\xrightarrow{{@5*A-B2*4@}III-({@E*A-B2*D2@})II}\left(\begin{array}{ccc|c} {@A@} &amp; {@B2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*A-B2*4@} &amp; {@6*A-4*C2@} &amp; {@A-4@} \\0&amp; 0 &amp; {@(F*A-D2*C2)*(5*A-B2*4)-(E*A-B2*D2)*(6*A-4*C2)@} &amp; {@(5*A-B2*4)*(2*A-D2)-(E*A-B2*D2)*(A-4)@} \end{array}\right)\)
+    </span>
+    <br/>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            <br/>
+        </p>
+        <p>
+            Es gibt eine freie Variable (beispielsweise \(x_3\)).
+        </p>
+        <p>
+            Daraus folgt: Das LGS besitzt unendlich viele L&#246;sungen.
+        </p>
+    </div>
+    <p>
+        <br/>
+    </p>
+    <p>
+    </p>
+    <p>
+        <strong>
+            (b)
+        </strong>
+        <br/>
+    </p>
+    <span style="">
+        \(\left(\begin{array}{ccc|c} {@F@} &amp; {@D2@}&amp; {@C2@} &amp; 1\\ 4&amp; 5 &amp; 6 &amp; 1 \\{@B2@} &amp; {@E@} &amp; {@A@} &amp;2 \end{array}\right) \xrightarrow{{@F@}II-4I, {@F@}III-{@B2@}I}\left(\begin{array}{ccc|c} {@F@} &amp; {@D2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*F-D2*4@} &amp; {@6*F-4*C2@} &amp; {@F-4@} \\0&amp; {@E*F-D2*B2@} &amp; {@F*A-B2*C2@} &amp; {@2*F-B2@} \end{array}\right)\xrightarrow{{@5*F-D2*4@}III-({@E*F-B2*D2@})II}\left(\begin{array}{ccc|c} {@F@} &amp; {@D2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*F-D2*4@} &amp; {@6*F-4*C2@} &amp; {@F-4@} \\0&amp; 0 &amp; {@(F*A-B2*C2)*(5*F-D2*4)-(E*F-B2*D2)*(6*F-4*C2)@} &amp; {@(5*F-D2*4)*(2*F-B2)-(E*F-B2*D2)*(F-4)@} \end{array}\right)\)
+    </span>
+    <br/>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <br/>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <span>
+            \(x_1,x_2,x_3\) k&#246;nnen eindeutig bestimmt werden.
+        </span>
+        <br/>
+        <p>
+            Daraus folgt: Das LGS besitzt genau eine L&#246;sung.
+        </p>
+    </div>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+    </p>
+    <p>
+        <strong>
+            (c)
+        </strong>
+        <br/>
+    </p>
+    <span style="">
+        \(\left(\begin{array}{ccc|c} {@F3@} &amp; {@E3@}&amp; {@D3@} &amp; 1\\ 6&amp; 5 &amp; 4 &amp; 1 \\{@C3@} &amp; {@B3@} &amp; {@A3@} &amp;2 \end{array}\right) \xrightarrow{{@F3@}II-6I, {@F3@}III-{@C3@}I}\left(\begin{array}{ccc|c} {@F3@} &amp; {@E3@}&amp; {@D3@} &amp; 1\\ 0&amp; {@5*F3-E3*6@} &amp; {@4*F3-6*D3@} &amp; {@F3-6@} \\0&amp; {@B3*F3-E3*C3@} &amp; {@F3*A3-C3*D3@} &amp; {@2*F3-C3@} \end{array}\right)\xrightarrow{{@5*F3-E3*6@}III-({@B3*F3-C3*E3@})II}\left(\begin{array}{ccc|c} {@F3@} &amp; {@E3@}&amp; {@D3@} &amp; 1\\ 0&amp; {@5*F3-E3*6@} &amp; {@4*F3-6*D3@} &amp; {@F3-6@} \\0&amp; 0 &amp; {@(F3*A3-C3*D3)*(5*F3-E3*6)-(B3*F3-C3*E3)*(4*F3-6*D3)@} &amp; {@(5*F3-E3*6)*(2*F3-C3)-(B3*F3-C3*E3)*(F3-6)@} \end{array}\right)\)
+    </span>
+    <br/>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+        </p>
+        <p>
+            <br/>
+        </p>
+        <p>
+            <strong>
+                III:
+            </strong>
+            \(0x_1+0x_2+0x_3={@(5*F3-E3*6)*(2*F3-C3)-(B3*F3-C3*E3)*(F3-6)@}\) ist f&#252;r kein \(x_1,x_2,x_3\) erf&#252;llt.
+        </p>
+        <p>
+            Daraus folgt: Das LGS besitzt keine L&#246;sung.
+        </p>
+    </div>
+</span>
+<span class="multilang" lang="en">
+    <h4>
+        <strong>
+            Solution
+        </strong>
+    </h4>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <strong>
+            (a)
+        </strong>
+        <br/>
+    </p>
+    <span style="">
+        \(\left(\begin{array}{ccc|c} {@A@} &amp; {@B2@}&amp; {@C2@} &amp; 1\\ 4&amp; 5 &amp; 6 &amp; 1 \\{@D2@} &amp; {@E@} &amp; {@F@} &amp;2 \end{array}\right) \xrightarrow{{@A@}II-4I, {@A@}III-{@D2@}I}\left(\begin{array}{ccc|c} {@A@} &amp; {@B2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*A-B2*4@} &amp; {@6*A-4*C2@} &amp; {@A-4@} \\0&amp; {@E*A-B2*D2@} &amp; {@F*A-D2*C2@} &amp; {@2*A-D2@} \end{array}\right)\xrightarrow{{@5*A-B2*4@}III-({@E*A-B2*D2@})II}\left(\begin{array}{ccc|c} {@A@} &amp; {@B2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*A-B2*4@} &amp; {@6*A-4*C2@} &amp; {@A-4@} \\0&amp; 0 &amp; {@(F*A-D2*C2)*(5*A-B2*4)-(E*A-B2*D2)*(6*A-4*C2)@} &amp; {@(5*A-B2*4)*(2*A-D2)-(E*A-B2*D2)*(A-4)@} \end{array}\right)\)
+    </span>
+    <br/>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            <br/>
+        </p>
+        <p>
+            There is a free variable (for example \(x_3\)).
+        </p>
+        <p>
+            This follows: The LGS has infinitely many solutions.
+        </p>
+    </div>
+    <p>
+        <br/>
+    </p>
+    <p>
+    </p>
+    <p>
+        <strong>
+            (b)
+        </strong>
+        <br/>
+    </p>
+    <span style="">
+        \(\left(\begin{array}{ccc|c} {@F@} &amp; {@D2@}&amp; {@C2@} &amp; 1\\ 4&amp; 5 &amp; 6 &amp; 1 \\{@B2@} &amp; {@E@} &amp; {@A@} &amp;2 \end{array}\right) \xrightarrow{{@F@}II-4I, {@F@}III-{@B2@}I}\left(\begin{array}{ccc|c} {@F@} &amp; {@D2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*F-D2*4@} &amp; {@6*F-4*C2@} &amp; {@F-4@} \\0&amp; {@E*F-D2*B2@} &amp; {@F*A-B2*C2@} &amp; {@2*F-B2@} \end{array}\right)\xrightarrow{{@5*F-D2*4@}III-({@E*F-B2*D2@})II}\left(\begin{array}{ccc|c} {@F@} &amp; {@D2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*F-D2*4@} &amp; {@6*F-4*C2@} &amp; {@F-4@} \\0&amp; 0 &amp; {@(F*A-B2*C2)*(5*F-D2*4)-(E*F-B2*D2)*(6*F-4*C2)@} &amp; {@(5*F-D2*4)*(2*F-B2)-(E*F-B2*D2)*(F-4)@} \end{array}\right)\)
+    </span>
+    <br/>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <br/>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <span>
+            \(x_1,x_2,x_3\) can be clearly determined.
+        </span>
+        <br/>
+        <p>
+            This follows: The LGS has exactly one solution.
+        </p>
+    </div>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+    </p>
+    <p>
+        <strong>
+            (c)
+        </strong>
+        <br/>
+    </p>
+    <span style="">
+        \(\left(\begin{array}{ccc|c} {@F3@} &amp; {@E3@}&amp; {@D3@} &amp; 1\\ 6&amp; 5 &amp; 4 &amp; 1 \\{@C3@} &amp; {@B3@} &amp; {@A3@} &amp;2 \end{array}\right) \xrightarrow{{@F3@}II-6I, {@F3@}III-{@C3@}I}\left(\begin{array}{ccc|c} {@F3@} &amp; {@E3@}&amp; {@D3@} &amp; 1\\ 0&amp; {@5*F3-E3*6@} &amp; {@4*F3-6*D3@} &amp; {@F3-6@} \\0&amp; {@B3*F3-E3*C3@} &amp; {@F3*A3-C3*D3@} &amp; {@2*F3-C3@} \end{array}\right)\xrightarrow{{@5*F3-E3*6@}III-({@B3*F3-C3*E3@})II}\left(\begin{array}{ccc|c} {@F3@} &amp; {@E3@}&amp; {@D3@} &amp; 1\\ 0&amp; {@5*F3-E3*6@} &amp; {@4*F3-6*D3@} &amp; {@F3-6@} \\0&amp; 0 &amp; {@(F3*A3-C3*D3)*(5*F3-E3*6)-(B3*F3-C3*E3)*(4*F3-6*D3)@} &amp; {@(5*F3-E3*6)*(2*F3-C3)-(B3*F3-C3*E3)*(F3-6)@} \end{array}\right)\)
+    </span>
+    <br/>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+        </p>
+        <p>
+            <br/>
+        </p>
+        <p>
+            <strong>
+                III:
+            </strong>
+            \(0x_1+0x_2+0x_3={@(5*F3-E3*6)*(2*F3-C3)-(B3*F3-C3*E3)*(F3-6)@}\) is not \(x_1,x_2,x_3\) met.
+        </p>
+        <p>
+            This follows: the LGS has no solution.
+        </p>
+    </div>
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2021120900</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[A:rand([1,2,3,5])
+B2:A+1;
+C2:A+2;
+D2:2*A-3;
+E:2*(A+1)-3;
+F:2*(A+2)-3;
+
+B1:matrix([A,B2,C2],[4,5,6],[D2,E,F]);
+b1:matrix([1],[1],[2]);
+
+C1:matrix([F,D2,C2],[4,5,6],[B2,E,A]);
+A3:4+rand(5);
+B3:A3+1;
+C3:A3+2;
+D3:2*A3-3;
+E3:2*(A3+1)-3;
+F3:2*(A3+2)-3;
+D1:matrix([F3,E3,D3],[6,5,4],[C3,B3,A3]);
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+ta: [[1, false, tr("genau eine Loesung","exactly one solution")], [2, false, tr("keine Loesung","no solution")], [3, true,  tr("unendlich viele Loesungen","infinitely many solutions")]]
+ta:random_permutation(ta);
+tb: [[1, true,  tr("genau eine Loesung","exactly one solution")], [2, false, tr("keine Loesung","no solution")], [3, false, tr("unendlich viele Loesungen","infinitely many solutions")]]
+tb:random_permutation(tb);
+tc: [[1, false, tr("genau eine Loesung","exactly one solution")], [2, true,  tr("keine Loesung","no solution")], [3, false, tr("unendlich viele Loesungen","infinitely many solutions")]]
+tc:random_permutation(tc);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <h4>
+        <br/>
+    </h4>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <h4>
+        <br/>
+    </h4>
+    <p>
+    </p>
+</span>
+]]></text>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>n</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>radio</type>
+            <tans>ta</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>latex</options>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>radio</type>
+            <tans>tb</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>latex</options>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>radio</type>
+            <tans>tc</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>latex</options>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <tags>
+            <tag>
+                <text>TE:1:Lineare Algebra</text>
+            </tag>
+            <tag>
+                <text>TE:2:Lineare Gleichungssysteme</text>
+            </tag>
+            <tag>
+                <text>TE:3:L&#246;sbarkeit</text>
+            </tag>
+            <tag>
+                <text>src:F07-INT</text>
+            </tag>
+            <tag>
+                <text>Bloom:2</text>
+            </tag>
+            <tag>
+                <text>Maier:1:3</text>
+            </tag>
+            <tag>
+                <text>Maier:2:2</text>
+            </tag>
+            <tag>
+                <text>Maier:3:1</text>
+            </tag>
+            <tag>
+                <text>Maier:4:1</text>
+            </tag>
+            <tag>
+                <text>Maier:5:1</text>
+            </tag>
+            <tag>
+                <text>Maier:6:1</text>
+            </tag>
+            <tag>
+                <text>Maier:7:1</text>
+            </tag>
+            <tag>
+                <text>praxiserprobt</text>
+            </tag>
+            <tag>
+                <text>qs:visuellGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:sprachlichGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:TaggingGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:importIliasGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:importMoodleGeprueft</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

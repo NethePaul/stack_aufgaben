@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Komplexe Zahlen: Summe, Produkt, konjugiert [{"DOMAINUID":"3326AB4"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Gegeben sind die komplexen Zahlen&#160;\(z_1 = {@z1@}\) und \(z_2 = {@z2@}\).
+    </p>
+    <p>
+    </p>
+    <p>
+        Berechnen Sie die folgenden Ausdr&#252;cke und schreiben Sie diese als arithmetische Darstellung (z.B. \(a+b\cdot\mathrm{i}\) mit \(a,b \in \mathbb{R}\)).
+    </p>
+    <p>
+        (1) \( z_1 + z_2 =\,\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+    </p>
+    <p>
+        (2) \(z_1 - z_2=\,\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
+    </p>
+    <p>
+        (3) \(z_1 \cdot z_2=\,\) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]
+    </p>
+    <p>
+        (4) \(\dfrac{z_1}{z_2}=\,\) [[input:ans4]] [[validation:ans4]] [[feedback:prt4]]
+    </p>
+    <p>
+        (5) \(\overline{z_1}=\,\) [[input:ans5]] [[validation:ans5]] [[feedback:prt5]]
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The complex figures\(z_1 = {@z1@}\) and \(z_2 = {@z2@}\).
+    </p>
+    <p>
+    </p>
+    <p>
+        Calculate the following expressions and write them as arithmetic representation (e.g. \(a+b\cdot\mathrm{i}\) with \(a,b \in \mathbb{R}\)).
+    </p>
+    <p>
+        (1) \( z_1 + z_2 =\,\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+    </p>
+    <p>
+        (2) \(z_1 - z_2=\,\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
+    </p>
+    <p>
+        (3) \(z_1 \cdot z_2=\,\) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]
+    </p>
+    <p>
+        (4) \(\dfrac{z_1}{z_2}=\,\) [[input:ans4]] [[validation:ans4]] [[feedback:prt4]]
+    </p>
+    <p>
+        (5) \(\overline{z_1}=\,\) [[input:ans5]] [[validation:ans5]] [[feedback:prt5]]
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr" style="text-align: left;">
+        <strong>
+            L&#246;sungsweg:
+        </strong>
+    </p>
+    <p dir="ltr" style="text-align: left;">
+    </p>
+    <p>
+        (1) \( z_1 + z_2 =&#160; ({@z1@}) + ({@z2@}) = {@loes1@}\)
+    </p>
+    <p>
+        (2) \(z_1 - z_2 =&#160;({@z1@}) - ({@z2@}) =&#160; ({@z1@}) + ({@-z2@}) = {@loes2@}\)
+    </p>
+    <p>
+        (3) \(z_1 \cdot z_2 = ({@z1@}) \cdot ({@z2@}) =&#160;({@b*i*d*i+b*i*c@}) +&#160;({@a*d*i+a*c@})&#160;= {@loes3@}\)
+    </p>
+    <p>
+        (4) Mit \(\overline{z_2} =&#160;\overline{{@z2@}} = {@z2q@}\) und \(|z_2|^2 = ({@d@})^2+({@c@})^2 = {@d^2@}+{@c^2@} = {@d^2+c^2@}\)&#160;gilt:
+    </p>
+    <p>
+    </p>
+    <p>
+        \(\dfrac{z_1}{z_2} = \dfrac{z_1\cdot \overline{z_2}}{z_2 \cdot \overline{z_2}} = \dfrac{z_1\cdot \overline{z_2}}{|z_2|^2}=\dfrac{({@z1@})\cdot ({@z2q@})}{{@d^2+c^2@}}= \dfrac{{@-b*i*d*i+b*i*c@} + {@-a*d*i+a*c@}}{{@d^2+c^2@}}=\displaystyle {@loes4@}\)
+    </p>
+    <p>
+        (5) \(\overline{z_1}&#160;=&#160;\overline{{@z1@}} = {@loes5@}\)
+    </p>
+    <br/>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr" style="text-align: left;">
+        <strong>
+            Solution:
+        </strong>
+    </p>
+    <p dir="ltr" style="text-align: left;">
+    </p>
+    <p>
+        (1) \( z_1 + z_2 =&#160; ({@z1@}) + ({@z2@}) = {@loes1@}\)
+    </p>
+    <p>
+        (2) \(z_1 - z_2 =&#160;({@z1@}) - ({@z2@}) =&#160; ({@z1@}) + ({@-z2@}) = {@loes2@}\)
+    </p>
+    <p>
+        (3) \(z_1 \cdot z_2 = ({@z1@}) \cdot ({@z2@}) =&#160;({@b*i*d*i+b*i*c@}) +&#160;({@a*d*i+a*c@})&#160;= {@loes3@}\)
+    </p>
+    <p>
+        (4) With \(\overline{z_2} =&#160;\overline{{@z2@}} = {@z2q@}\) and \(|z_2|^2 = ({@d@})^2+({@c@})^2 = {@d^2@}+{@c^2@} = {@d^2+c^2@}\)the following:
+    </p>
+    <p>
+    </p>
+    <p>
+        \(\dfrac{z_1}{z_2} = \dfrac{z_1\cdot \overline{z_2}}{z_2 \cdot \overline{z_2}} = \dfrac{z_1\cdot \overline{z_2}}{|z_2|^2}=\dfrac{({@z1@})\cdot ({@z2q@})}{{@d^2+c^2@}}= \dfrac{{@-b*i*d*i+b*i*c@} + {@-a*d*i+a*c@}}{{@d^2+c^2@}}=\displaystyle {@loes4@}\)
+    </p>
+    <p>
+        (5) \(\overline{z_1}&#160;=&#160;\overline{{@z1@}} = {@loes5@}\)
+    </p>
+    <br/>
+    <p>
+    </p>
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023072101</text>
+        </stackversion>
+        <questionvariables>
+            <text>a: rand_with_prohib(-4,4,[0]);
+b: rand_with_prohib(-9,9,[0]);
+
+c: rand_with_prohib(-4,4,[0]);
+d: rand_with_prohib(-9,9,[0]);
+
+z1: b*%i + a;
+
+z2: d*%i + c;
+z2q: rectform(conjugate(z2));
+
+loes1: rectform((z1)+(z2));
+loes2: rectform((z1)-(z2));
+loes3: rectform((z1)*(z2));
+loes4: rectform( (z1)/(z2) );
+loes41: combine(loes4);
+loes5: rectform(conjugate(z1));</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\[({@z1@})+({@z2@})={@loes1@}\]
+\[({@z1@})-({@z2@})={@loes2@}\]
+\[({@z1@})*({@z2@})={@loes3@}\]
+\[({@z1@})/({@z2@})={@loes4@}\]
+\[\overline{{@z1@}}={@loes5@}\]</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Richtige Antwort, gut gemacht!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Right answer, well done!
+    </p>
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Antwort ist teilweise korrekt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your answer is partly correct.
+    </p>
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Falsche Antwort.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Wrong answer.
+    </p>
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>loes1</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>1</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>loes2</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>1</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>loes3</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>1</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>algebraic</type>
+            <tans>loes41</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>1</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans5</name>
+            <type>algebraic</type>
+            <tans>loes5</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>1</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>EqualComAss</answertest>
+                <sans>ans1</sans>
+                <tans>loes1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(i,listofvars(ans1))</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>EqualComAss</answertest>
+                <sans>ans2</sans>
+                <tans>loes2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(i,listofvars(ans1))</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>EqualComAss</answertest>
+                <sans>ans3</sans>
+                <tans>loes3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(i,listofvars(ans1))</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>EqualComAss</answertest>
+                <sans>ans4</sans>
+                <tans>loes4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>EqualComAss</answertest>
+                <sans>ans4</sans>
+                <tans>loes41</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt4-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(i,listofvars(ans1))</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt5</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>EqualComAss</answertest>
+                <sans>ans5</sans>
+                <tans>loes5</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt5-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(i,listofvars(ans1))</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt5-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1383212669</deployedseed>
+        <deployedseed>352628027</deployedseed>
+        <deployedseed>955024823</deployedseed>
+        <deployedseed>41396105</deployedseed>
+        <deployedseed>722213416</deployedseed>
+        <deployedseed>1538677150</deployedseed>
+        <deployedseed>1982178503</deployedseed>
+        <deployedseed>447570440</deployedseed>
+        <deployedseed>1309904247</deployedseed>
+        <deployedseed>2046594420</deployedseed>
+        <deployedseed>1741211229</deployedseed>
+        <deployedseed>1704330068</deployedseed>
+        <deployedseed>715932749</deployedseed>
+        <deployedseed>1809274355</deployedseed>
+        <deployedseed>16422770</deployedseed>
+        <deployedseed>158035824</deployedseed>
+        <deployedseed>129036300</deployedseed>
+        <deployedseed>787492258</deployedseed>
+        <deployedseed>1383720776</deployedseed>
+        <deployedseed>1488989221</deployedseed>
+        <deployedseed>1884811243</deployedseed>
+        <deployedseed>1735073238</deployedseed>
+        <deployedseed>1400279207</deployedseed>
+        <deployedseed>853397073</deployedseed>
+        <deployedseed>1142383278</deployedseed>
+        <deployedseed>1198405001</deployedseed>
+        <deployedseed>1756227866</deployedseed>
+        <deployedseed>305946352</deployedseed>
+        <deployedseed>1746253211</deployedseed>
+        <deployedseed>479253829</deployedseed>
+        <deployedseed>818073895</deployedseed>
+        <deployedseed>1706476828</deployedseed>
+        <deployedseed>1069200220</deployedseed>
+        <deployedseed>1372355046</deployedseed>
+        <deployedseed>169721995</deployedseed>
+        <deployedseed>31550986</deployedseed>
+        <deployedseed>884032109</deployedseed>
+        <deployedseed>1069758784</deployedseed>
+        <deployedseed>1594468931</deployedseed>
+        <deployedseed>838094929</deployedseed>
+        <deployedseed>2064273711</deployedseed>
+        <deployedseed>730469881</deployedseed>
+        <deployedseed>287503949</deployedseed>
+        <deployedseed>237011209</deployedseed>
+        <deployedseed>528720951</deployedseed>
+        <deployedseed>357668111</deployedseed>
+        <deployedseed>1994599890</deployedseed>
+        <tags>
+            <tag>
+                <text>Musterl&#246;sung</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

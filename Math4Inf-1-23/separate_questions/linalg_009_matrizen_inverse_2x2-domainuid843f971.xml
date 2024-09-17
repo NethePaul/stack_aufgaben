@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[LinAlg_009_Matrizen_Inverse_2x2 [{"DOMAINUID":"843F971"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Bestimmen Sie die inverse Matrix zu \(\mathbf{M} = {@M@}\).
+    </p>
+    <p>
+    </p>
+    <span style="font-size: 0.9375rem;">
+        \(\mathbf{M}^{-1} = \) [[input:ans1]] [[validation:ans1]]
+    </span>
+    <br/>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Determine the inverse matrix \(\mathbf{M} = {@M@}\).
+    </p>
+    <p>
+    </p>
+    <span style="font-size: 0.9375rem;">
+        \(\mathbf{M}^{-1} = \) [[input:ans1]] [[validation:ans1]]
+    </span>
+    <br/>
+    <p>
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr" style="text-align: left;">
+        <strong>
+            L&#246;sungsweg:
+        </strong>
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        Man kann die inverse Matrix \(\mathbf{M}^{-1}\) z.B. mit Hilfe der&#160;Unterdeterminanten-Methode bestimmen.
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        (1) Berechnung der Determinante der urspr&#252;nglichen Matrix \(\mathbf{M}\).
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        \(\det(\mathbf{M}) = {@M[1][1]@} \cdot ({@M[2][2]@}) - ({@M[2][1]@}) \cdot ({@M[1][2]@})\) \(= {@M[1][1]*M[2][2]@} - ({@M[2][1]*M[1][2]@})\) \(= {@determinant(M)@}\)
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        (2) Bestimmung aller Unterdeterminanten&#160;der urspr&#252;nglichen Matrix \(\mathbf{M}\).
+    </p>
+    <p dir="ltr" style="text-align: left;">
+    </p>
+    <ul>
+        <li>
+            \(M_{11} = (-1)^{1+1} \cdot&#160;({@M[2][2]@}) = {@M[2][2]@}\)
+        </li>
+        <li>
+            \(M_{12} = (-1)^{1+2} \cdot&#160;({@M[2][1]@}) = {@-M[2][1]@}\)
+        </li>
+        <li>
+            \(M_{21} = (-1)^{2+1} \cdot&#160;({@M[1][2]@}) = {@-M[1][2]@}\)
+        </li>
+        <li>
+            \(M_{22} = (-1)^{2+2} \cdot&#160;({@M[1][1]@}) = {@M[1][1]@}\)
+        </li>
+    </ul>
+    <p>
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        (3) Bestimmung der gesuchten&#160;inversen Matrix \(\mathbf{M}^{-1}\).
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        \(\mathbf{M}^{-1} = \dfrac{1}{{@determinant(M)@}} \cdot {@Trans@}^T\) \(= {@1/determinant(M)@} \cdot {@TransT@}\) \(={@LSG@}\)
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr" style="text-align: left;">
+        <strong>
+            Solution:
+        </strong>
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        You can use the inverse matrix \(\mathbf{M}^{-1}\) e.g. by means of the subdeterminant method.
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        (1) Calculation of the determinant of the original matrix \(\mathbf{M}\).
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        \(\det(\mathbf{M}) = {@M[1][1]@} \cdot ({@M[2][2]@}) - ({@M[2][1]@}) \cdot ({@M[1][2]@})\) \(= {@M[1][1]*M[2][2]@} - ({@M[2][1]*M[1][2]@})\) \(= {@determinant(M)@}\)
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        (2) Determination of all subdeterminants of the original matrix \(\mathbf{M}\).
+    </p>
+    <p dir="ltr" style="text-align: left;">
+    </p>
+    <ul>
+        <li>
+            \(M_{11} = (-1)^{1+1} \cdot&#160;({@M[2][2]@}) = {@M[2][2]@}\)
+        </li>
+        <li>
+            \(M_{12} = (-1)^{1+2} \cdot&#160;({@M[2][1]@}) = {@-M[2][1]@}\)
+        </li>
+        <li>
+            \(M_{21} = (-1)^{2+1} \cdot&#160;({@M[1][2]@}) = {@-M[1][2]@}\)
+        </li>
+        <li>
+            \(M_{22} = (-1)^{2+2} \cdot&#160;({@M[1][1]@}) = {@M[1][1]@}\)
+        </li>
+    </ul>
+    <p>
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        (3) Determination of the sought inverse matrix \(\mathbf{M}^{-1}\).
+    </p>
+    <p dir="ltr" style="text-align: left;">
+        \(\mathbf{M}^{-1} = \dfrac{1}{{@determinant(M)@}} \cdot {@Trans@}^T\) \(= {@1/determinant(M)@} \cdot {@TransT@}\) \(={@LSG@}\)
+        <br/>
+    </p>
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2021120900</text>
+        </stackversion>
+        <questionvariables>
+            <text>a:rand_with_step(-4,4,1);
+b:rand_with_step(-4,4,1);
+Tri1:matrix([1,a],[0,1]);
+Tri2:matrix([1,0],[b,1]);
+d1:rand_with_prohib(-1,1,[0]);
+d2:rand_with_prohib(-1,1,[0]);
+D:matrix([d1,0],[0,d2]);
+M:D.Tri1.Tri2;
+LSG:invert(M);
+Trans:matrix([M[2][2],-M[2][1]],[-M[1][2],M[1][1]]);
+TransT:transpose(Trans);</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    [[feedback:prt1]]
+</span>
+<span class="multilang" lang="en">
+    [[feedback:prt1]]
+</span>
+]]></text>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>Rand aktiv</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtig.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right.
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Teilweise richtig.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+    </span>
+    Partly right.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsch.
+</span>
+<span class="multilang" lang="en">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>(</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>matrix</type>
+            <tans>LSG</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>N:ans1.M;
+I:matrix([1,0],[0,1]);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>LSG</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Korrekt!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Correct!
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Matrix \({@ans1@}\) ist nicht die Inverse von \({@M@}\), denn
+    </p>
+    <p>
+        \({@ans1@} \cdot {@M@} = {@N@} \neq {@I@} \).
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The matrix \({@ans1@}\) is not the inverse of \({@M@}\)for
+    </p>
+    <p>
+        \({@ans1@} \cdot {@M@} = {@N@} \neq {@I@} \).
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <tags>
+            <tag>
+                <text>Musterl&#246;sung</text>
+            </tag>
+            <tag>
+                <text>R&#252;ckmeldebaum</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

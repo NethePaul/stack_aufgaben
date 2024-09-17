@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[5.2d LGS 3x3 mit Parameter a, Eine eindeutige L&#246;sung [{"DOMAINUID":"4A80009"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Gegeben ist das lineare Gleichungssystem
+    </p>
+    <p>
+        \[&#160;\begin{matrix} @a11*x1@ &amp; + &amp;&#160; @a12*x2@ &amp; + &amp;&#160;@a13*x3@ &amp; = &amp; @a14@ \\ @a21*x1@ &amp;+ &amp; @a22*x2@ &amp; + &amp;&#160;@a23*x3@ &amp; = &amp; @a24@ \\
+        <br/>
+        @a31*x1@ &amp;+ &amp; @a32*x2@ &amp; + &amp;&#160;@a33*x3@ &amp; = &amp; @a34@ \\&#160;\end{matrix} \]
+    </p>
+    <p>
+        mit der Konstante \(a \in \mathbb{R}\).
+    </p>
+    <p>
+    </p>
+    <p>
+        F&#252;r welchen Wert des Parameters \(a \in \mathbb{R}\) ist das System unl&#246;sbar?
+    </p>
+    <p>
+        \(a = \) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+    </p>
+    <p>
+    </p>
+    <p>
+        L&#246;sen Sie das Gleichungssystem und geben Sie die L&#246;sung in Abh&#228;ngigkeit des Parameters \(a\) an.
+    </p>
+    <p>
+        \(x_1=\) [[input:ans2]] [[validation:ans2]]
+    </p>
+    <p>
+        \(x_2=\) [[input:ans3]] [[validation:ans3]]
+    </p>
+    <p>
+        \(x_3=\)&#160;[[input:ans4]] [[validation:ans4]]
+    </p>
+    <p>
+        [[feedback:prt2]]
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The linear equation
+    </p>
+    <p>
+        \[&#160;\begin{matrix} @a11*x1@ &amp; + &amp;&#160; @a12*x2@ &amp; + &amp;&#160;@a13*x3@ &amp; = &amp; @a14@ \\ @a21*x1@ &amp;+ &amp; @a22*x2@ &amp; + &amp;&#160;@a23*x3@ &amp; = &amp; @a24@ \\
+        <br/>
+        @a31*x1@ &amp;+ &amp; @a32*x2@ &amp; + &amp;&#160;@a33*x3@ &amp; = &amp; @a34@ \\&#160;\end{matrix} \]
+    </p>
+    <p>
+        with the constant \(a \in \mathbb{R}\).
+    </p>
+    <p>
+    </p>
+    <p>
+        For which parameter value \(a \in \mathbb{R}\) is the system unreleasable?
+    </p>
+    <p>
+        \(a = \) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+    </p>
+    <p>
+    </p>
+    <p>
+        Solve the equation and give the solution depending on the parameter \(a\) on.
+    </p>
+    <p>
+        \(x_1=\) [[input:ans2]] [[validation:ans2]]
+    </p>
+    <p>
+        \(x_2=\) [[input:ans3]] [[validation:ans3]]
+    </p>
+    <p>
+        \(x_3=\)[[input:ans4]] [[validation:ans4]]
+    </p>
+    <p>
+        [[feedback:prt2]]
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text/>
+        </stackversion>
+        <questionvariables>
+            <text>ansa: rand_with_step(-5,5,1);
+b11: a;
+b12: rand_with_step(-4,-1,1);
+b13: 1;
+b14: 0;
+b21: 0;
+b22: a-ansa;
+b23: 0;
+b24: rand_with_prohib(-5,5,[0]);
+b31: 1;
+b32: 0;
+b33: 0;
+b34: rand([1,2])
+B: matrix([b11,b12,b13,b14],[b21,b22,b23,b24],[b31,b32,b33,b34]);
+m1: rand_with_step(1,3,1);
+B2: rowop(B,2,3,m1);
+m2: rand_with_step(-4,-2,1);
+B3: rowop(B2,3,2,m2);
+m3: rand_with_step(1,3,1);
+B4: rowop(B3,2,1,m3);
+a11:B4[1,1];
+a12:B4[1,2];
+a13: B4[1,3];
+a14: B4[1,4];
+a21: B4[2,1];
+a22: B4[2,2];
+a23: B4[2,3];
+a24: B4[2,4];
+a31: B4[3,1];
+a32: B4[3,2];
+a33: B4[3,3];
+a34: B4[3,4];
+g1: a11*x1+a12*x2+a13*x3=a14;
+g2: a21*x1+a22*x2+a23*x3=a24;
+g3: a31*x1+a32*x2+a33*x3=a34;
+solx: b34;
+soly: b24/(a-ansa);
+solz: -1*a*solx-b12*soly;</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\(@g1@\)
+\(@g2@\)
+\(@g3@\)
+
+Nicht l&#246;sbar, wenn \(a=@ansa@\)
+
+L&#246;sung: 
+\(x_1=@solx@\)
+\(x_2=@soly@\)
+\(x_3=@solz@\)</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Richtige Antwort, gut gemacht!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Right answer, well done!
+    </p>
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Antwort ist teilweise korrekt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your answer is partly correct.
+    </p>
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Falsche Antwort.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Wrong answer.
+    </p>
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>ansa</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>solx</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>soly</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>algebraic</type>
+            <tans>solz</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>ansa</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>studa: [ans2,ans3,ans4];
+loes: [solx,soly,solz];</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>studa</sans>
+                <tans>loes</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>762981691</deployedseed>
+        <deployedseed>615494245</deployedseed>
+        <deployedseed>1912087001</deployedseed>
+        <deployedseed>388899144</deployedseed>
+        <deployedseed>1114383343</deployedseed>
+        <deployedseed>1982915372</deployedseed>
+        <deployedseed>1821015661</deployedseed>
+        <deployedseed>202362039</deployedseed>
+        <deployedseed>436605394</deployedseed>
+        <deployedseed>631539845</deployedseed>
+        <deployedseed>146497151</deployedseed>
+        <deployedseed>713044638</deployedseed>
+        <deployedseed>252521667</deployedseed>
+        <deployedseed>309749402</deployedseed>
+        <deployedseed>685240683</deployedseed>
+        <deployedseed>2103346159</deployedseed>
+        <deployedseed>341589404</deployedseed>
+        <deployedseed>1171178770</deployedseed>
+        <deployedseed>185748767</deployedseed>
+        <deployedseed>677616056</deployedseed>
+        <deployedseed>249875737</deployedseed>
+        <deployedseed>1562091133</deployedseed>
+        <deployedseed>246487514</deployedseed>
+        <deployedseed>116140804</deployedseed>
+        <deployedseed>683422375</deployedseed>
+        <deployedseed>276795014</deployedseed>
+        <deployedseed>1588101762</deployedseed>
+        <deployedseed>1538277379</deployedseed>
+        <deployedseed>1250306008</deployedseed>
+        <deployedseed>1660916988</deployedseed>
+        <deployedseed>741760401</deployedseed>
+        <deployedseed>178877753</deployedseed>
+        <deployedseed>1532564938</deployedseed>
+        <deployedseed>1805996623</deployedseed>
+        <deployedseed>1989042334</deployedseed>
+        <deployedseed>1480720917</deployedseed>
+        <deployedseed>1142288497</deployedseed>
+        <deployedseed>1843659555</deployedseed>
+        <deployedseed>1061111534</deployedseed>
+        <deployedseed>1787858709</deployedseed>
+        <deployedseed>579006402</deployedseed>
+        <deployedseed>112894164</deployedseed>
+        <deployedseed>1035928632</deployedseed>
+        <deployedseed>999443945</deployedseed>
+        <deployedseed>984819812</deployedseed>
+        <deployedseed>84206640</deployedseed>
+        <deployedseed>1191304256</deployedseed>
+        <deployedseed>1881434225</deployedseed>
+        <deployedseed>1216909269</deployedseed>
+        <deployedseed>1074029547</deployedseed>
+    </question>
+    
+
+</quiz>

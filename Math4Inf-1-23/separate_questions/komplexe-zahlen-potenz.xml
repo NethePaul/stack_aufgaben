@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Komplexe Zahlen: Potenz</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+        Sei die folgende komplexe Zahl gegeben
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \(z=-{@a@}+{@a@}i\),
+        </p>
+    </div>
+    <span style="">
+        <span>
+            deren Argument im Intervall \(]-\pi,\pi]\) liegt.
+            <br/>
+            <br/>
+            <strong>
+                Hinweis:
+            </strong>
+        </span>
+        Benutzen Sie f&#252;r \(\sqrt{a}\) die Eingabeform
+        <strong>
+            sqrt(a)
+        </strong>
+        sowie f&#252;r \(\pi \) die Eingabeform
+        <strong>
+            pi
+        </strong>
+        .
+    </span>
+    <p>
+        <br/>
+    </p>
+    <p>
+        Berechnen Sie
+        <br/>
+    </p>
+    <p>
+        <span style="">
+        </span>
+    </p>
+    <p>
+    </p>
+    <p>
+        <strong>
+            (a)
+        </strong>
+        \(z\) in Exponentialform:
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <div>
+            <p>
+                \(z=\) [[input:ans1]] \(\cdot \text{exp}\big(\)[[input:ans2]]\(\big)\) [[validation:ans1]][[validation:ans2]][[feedback:prt1]][[feedback:prt2]]
+            </p>
+        </div>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+        </p>
+    </div>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <strong>
+            (b)
+        </strong>
+        \(z^4\) in Exponentialform:
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \(z^4=\) [[input:ans3]] \(\cdot \text{exp}\big(\)[[input:ans4]]\(\big)\) [[validation:ans3]][[validation:ans4]][[feedback:prt3]][[feedback:prt4]]
+        </p>
+        <p>
+            <br/>
+        </p>
+    </div>
+    <span style="">
+        <p style="">
+            <strong>
+                (c)
+            </strong>
+            \(z^4\) in Standardform:
+        </p>
+    </span>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            <span style="">
+            </span>
+        </p>
+        <p style="">
+            <strong>
+                Hinweis:
+            </strong>
+            <span>
+                F&#252;r den Fall, dass kein Real-/Imagin&#228;rteil existiert, tragen Sie in das entsprechende Feld
+                <strong>
+                    0
+                </strong>
+                ein.
+            </span>
+        </p>
+        <p>
+        </p>
+    </div>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <span style="">
+            <div style="">
+                <p style="">
+                    \(z^4=\) [[input:ans5]] \(+i\cdot\) [[input:ans6]] [[validation:ans5]][[validation:ans6]][[feedback:prt5]][[feedback:prt6]]
+                </p>
+            </div>
+        </span>
+    </div>
+    <span style="">
+        <br/>
+    </span>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+        Be given the following complex number
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \(z=-{@a@}+{@a@}i\),
+        </p>
+    </div>
+    <span style="">
+        <span>
+            their argument in interval \(]-\pi,\pi]\) ,
+            <br/>
+            <br/>
+            <strong>
+                Note:
+            </strong>
+        </span>
+        Use for \(\sqrt{a}\) the input form
+        <strong>
+            sqrt(a)
+        </strong>
+        and \(\pi \) the input form
+        <strong>
+            pi
+        </strong>
+        .
+    </span>
+    <p>
+        <br/>
+    </p>
+    <p>
+        Calculate
+        <br/>
+    </p>
+    <p>
+        <span style="">
+        </span>
+    </p>
+    <p>
+    </p>
+    <p>
+        <strong>
+            (a)
+        </strong>
+        \(z\) in exponential form:
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <div>
+            <p>
+                \(z=\) [[input:ans1]] \(\cdot \text{exp}\big(\)[[input:ans2]]\(\big)\) [[validation:ans1]][[validation:ans2]][[feedback:prt1]][[feedback:prt2]]
+            </p>
+        </div>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+        </p>
+    </div>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <strong>
+            (b)
+        </strong>
+        \(z^4\) in exponential form:
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \(z^4=\) [[input:ans3]] \(\cdot \text{exp}\big(\)[[input:ans4]]\(\big)\) [[validation:ans3]][[validation:ans4]][[feedback:prt3]][[feedback:prt4]]
+        </p>
+        <p>
+            <br/>
+        </p>
+    </div>
+    <span style="">
+        <p style="">
+            <strong>
+                (c)
+            </strong>
+            \(z^4\) in standard form:
+        </p>
+    </span>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            <span style="">
+            </span>
+        </p>
+        <p style="">
+            <strong>
+                Note:
+            </strong>
+            <span>
+                In the event that no real/imaginary part exists, enter the corresponding field
+                <strong>
+                    0
+                </strong>
+                one.
+            </span>
+        </p>
+        <p>
+        </p>
+    </div>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <span style="">
+            <div style="">
+                <p style="">
+                    \(z^4=\) [[input:ans5]] \(+i\cdot\) [[input:ans6]] [[validation:ans5]][[validation:ans6]][[feedback:prt5]][[feedback:prt6]]
+                </p>
+            </div>
+        </span>
+    </div>
+    <span style="">
+        <br/>
+    </span>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <h4>
+        <strong>
+            L&#246;sung
+        </strong>
+    </h4>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <span>
+        </span>
+    </p>
+    <p style="">
+        <strong style="font-weight: bold;">
+            (a)
+        </strong>
+        \(z\) in Exponentialform:
+    </p>
+    <p style="">
+    </p>
+    <ul>
+        <li>
+            <span>
+                <p style="">
+                    \(r=|z|=\sqrt{(-{@a@})^2+{@a@}^2}={@l1@}\)
+                </p>
+            </span>
+        </li>
+        <li>
+            <p style="">
+                \(\varphi=\text{arg}(z)=\arctan(\frac{-{@a@}}{{@a@}})+\pi=\frac{3 \pi}{4}\)
+            </p>
+        </li>
+    </ul>
+    <p>
+    </p>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            <span>
+            </span>
+        </p>
+        <div style="">
+            <p style="">
+                \(z=re^{\varphi i}={@l1@}e^{{@l2@}}\)
+            </p>
+        </div>
+        <p>
+        </p>
+    </div>
+    <p>
+        <span>
+        </span>
+    </p>
+    <p style="font-weight: bold;">
+        <br/>
+    </p>
+    <p style="">
+    </p>
+    <p>
+        <strong>
+            (b)
+        </strong>
+        \(z^4\) in Exponentialform:
+    </p>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <div>
+            <div>
+                <p>
+                    \(z^4=({@l1@}e^{{@l2@}})^4=({@l1@})^4e^{{@l2@}\cdot 4}={@l3@}e^{3\pi i}={@l3@}e^{{@l4@}}\)
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p>
+        </p>
+        <div>
+            <p>
+                <br/>
+            </p>
+        </div>
+        <p>
+        </p>
+    </div>
+    <p>
+    </p>
+    <div>
+        <p>
+        </p>
+        <p>
+            <strong>
+                (c)
+            </strong>
+            \(z^4\) in Normalform:
+        </p>
+        <div>
+            <p>
+            </p>
+        </div>
+        <p>
+        </p>
+        <p>
+        </p>
+        <p>
+        </p>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <div>
+            <p>
+            </p>
+            <div>
+                <div>
+                    <div>
+                        <p>
+                            \(z^4={@l3@}e^{{@l4@}}={@l3@}\big(\cos(\pi)+i\sin(\pi)\big)=-{@l3@}\)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+            </p>
+        </div>
+    </div>
+    <div>
+        <p>
+        </p>
+        <div>
+            <p>
+            </p>
+        </div>
+    </div>
+    <p>
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <h4>
+        <strong>
+            Solution
+        </strong>
+    </h4>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <span>
+        </span>
+    </p>
+    <p style="">
+        <strong style="font-weight: bold;">
+            (a)
+        </strong>
+        \(z\) in exponential form:
+    </p>
+    <p style="">
+    </p>
+    <ul>
+        <li>
+            <span>
+                <p style="">
+                    \(r=|z|=\sqrt{(-{@a@})^2+{@a@}^2}={@l1@}\)
+                </p>
+            </span>
+        </li>
+        <li>
+            <p style="">
+                \(\varphi=\text{arg}(z)=\arctan(\frac{-{@a@}}{{@a@}})+\pi=\frac{3 \pi}{4}\)
+            </p>
+        </li>
+    </ul>
+    <p>
+    </p>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            <span>
+            </span>
+        </p>
+        <div style="">
+            <p style="">
+                \(z=re^{\varphi i}={@l1@}e^{{@l2@}}\)
+            </p>
+        </div>
+        <p>
+        </p>
+    </div>
+    <p>
+        <span>
+        </span>
+    </p>
+    <p style="font-weight: bold;">
+        <br/>
+    </p>
+    <p style="">
+    </p>
+    <p>
+        <strong>
+            (b)
+        </strong>
+        \(z^4\) in exponential form:
+    </p>
+    <p>
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <div>
+            <div>
+                <p>
+                    \(z^4=({@l1@}e^{{@l2@}})^4=({@l1@})^4e^{{@l2@}\cdot 4}={@l3@}e^{3\pi i}={@l3@}e^{{@l4@}}\)
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p>
+        </p>
+        <div>
+            <p>
+                <br/>
+            </p>
+        </div>
+        <p>
+        </p>
+    </div>
+    <p>
+    </p>
+    <div>
+        <p>
+        </p>
+        <p>
+            <strong>
+                (c)
+            </strong>
+            \(z^4\) in normal form:
+        </p>
+        <div>
+            <p>
+            </p>
+        </div>
+        <p>
+        </p>
+        <p>
+        </p>
+        <p>
+        </p>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <div>
+            <p>
+            </p>
+            <div>
+                <div>
+                    <div>
+                        <p>
+                            \(z^4={@l3@}e^{{@l4@}}={@l3@}\big(\cos(\pi)+i\sin(\pi)\big)=-{@l3@}\)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+            </p>
+        </div>
+    </div>
+    <div>
+        <p>
+        </p>
+        <div>
+            <p>
+            </p>
+        </div>
+    </div>
+    <p>
+        <br/>
+    </p>
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023072101</text>
+        </stackversion>
+        <questionvariables>
+            <text>a: 2+rand(4)
+
+l1: sqrt(2*a^2)
+l2: 3*pi/4*%i
+l3: sqrt(2*a^2)^4
+l4: pi*%i
+l5: -l3
+l6: 0</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>Potenz</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>(</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>l1</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>l2</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>l3</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>algebraic</type>
+            <tans>l4</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans5</name>
+            <type>algebraic</type>
+            <tans>l5</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans6</name>
+            <type>algebraic</type>
+            <tans>l6</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>l1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>l2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>3*pi/4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.5</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>l3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>l4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>pi</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.5</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt5</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans5</sans>
+                <tans>l5</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt5-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt6</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans6</sans>
+                <tans>l6</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt6-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt6-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <tags>
+            <tag>
+                <text>praxiserprobt</text>
+            </tag>
+            <tag>
+                <text>te:3:polarform</text>
+            </tag>
+            <tag>
+                <text>TE:1:Komplexe Zahlen</text>
+            </tag>
+            <tag>
+                <text>te:2:Rechenregeln</text>
+            </tag>
+            <tag>
+                <text>TE:3:Potenzen</text>
+            </tag>
+            <tag>
+                <text>te:3:Normalform</text>
+            </tag>
+            <tag>
+                <text>src:F07-INT</text>
+            </tag>
+            <tag>
+                <text>Bloom:3</text>
+            </tag>
+            <tag>
+                <text>Maier:1:2</text>
+            </tag>
+            <tag>
+                <text>Maier:2:2</text>
+            </tag>
+            <tag>
+                <text>Maier:3:1</text>
+            </tag>
+            <tag>
+                <text>Maier:4:1</text>
+            </tag>
+            <tag>
+                <text>Maier:5:1</text>
+            </tag>
+            <tag>
+                <text>Maier:6:1</text>
+            </tag>
+            <tag>
+                <text>Maier:7:1</text>
+            </tag>
+            <tag>
+                <text>qs:visuellGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:sprachlichGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:TaggingGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:importIliasGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:importMoodleGeprueft</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

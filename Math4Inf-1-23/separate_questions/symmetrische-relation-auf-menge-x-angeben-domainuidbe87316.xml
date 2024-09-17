@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Symmetrische Relation auf Menge X angeben [{"DOMAINUID":"BE87316"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Geben Sie eine symmetrische Relation \(R\) auf \(X={@setify(X)@}\) mit \(|R|\ge 2\) an.
+        <br/>
+    </p>
+    <p>
+        \(R = \) [[input:ans1]][[validation:ans1]]
+        <br/>
+    </p>
+    <div>
+        <em>
+            <strong>
+                Hinweis zur Eingabe:
+            </strong>
+            Z.B. \(R=\{(1,1),(1,2)\}\) wird als
+            <code>
+                {[1,1],[1,2]}
+            </code>
+            eingegeben.
+        </em>
+    </div>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Specify a symmetrical relation \(R\) on \(X={@setify(X)@}\) with \(|R|\ge 2\) on.
+        <br/>
+    </p>
+    <p>
+        \(R = \) [[input:ans1]][[validation:ans1]]
+        <br/>
+    </p>
+    <div>
+        <em>
+            <strong>
+                Note to input:
+            </strong>
+            e.g. \(R=\{(1,1),(1,2)\}\) as
+            <code>
+                {[1,1],[1,2]}
+            </code>
+            entered.
+        </em>
+    </div>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023072101</text>
+        </stackversion>
+        <questionvariables>
+            <text>range9:makelist(i,i,1,9);
+liste:random_permutation(range9);
+n1:3+rand(3);
+X:rest(liste,-length(liste)+n1);</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    [[feedback:prt1]]
+</span>
+<span class="multilang" lang="en">
+    [[feedback:prt1]]
+</span>
+]]></text>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{@X@}</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>{[X[1],X[1]],[X[2],X[2]]}</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>lans1:listify(ans1);
+nums_ans1:setify(flatten(lans1));
+p:makelist(member(reverse(lans1[i]),lans1),i,1,length(lans1));
+false_i:sublist_indices(p,lambda([x],x=false));
+len_i:length(false_i);
+nicht_in_X:setdifference(nums_ans1,setify(X));</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>len_i</sans>
+                <tans>0</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    Ihre Relation ist symmetrisch.
+    <br/>
+</span>
+<span class="multilang" lang="en">
+    Their relationship is symmetrical.
+    <br/>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Relation ist nicht symmetrisch. So ist zwar \({@lans1[false_i[1]]@}\in R\), aber \({@reverse(lans1[false_i[1]])@}\not\in R\)
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Their relationship is not symmetrical. That's right. \({@lans1[false_i[1]]@}\in R\)but \({@reverse(lans1[false_i[1]])@}\not\in R\)
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>GTE</answertest>
+                <sans>length(lans1)</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>1</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Relation enth&#228;lt nur ein Paar! Es soll aber \(|R|\ge 2\) sein.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your relationship contains only one pair! It is \(|R|\ge 2\) be.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>length(nicht_in_X)</sans>
+                <tans>0</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.25</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben Zahlen in Ihre Relation aufgenommen, die keine Elemente von \(X\) sind: \( {@nicht_in_X@} \).
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You have recorded numbers in your relation that do not include elements of \(X\) are: \( {@nicht_in_X@} \).
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

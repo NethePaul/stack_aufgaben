@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Vektorr&#228;ume: Lineare Unabh&#228;ngigkeit und Abh&#228;ngigkeit (R3) [{"DOMAINUID":"68AE421"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Gegeben sind die Vektoren
+    </p>
+    <p>
+        \(\vec{a}_1= @av@, \quad \vec{a}_2= @bv@&#160; \)
+    </p>
+    <p>
+        Geben Sie einen vom Nullvektor verschiedenen Vektor \(\vec{x}_1\) ein, so dass die Vektoren \(\vec{a}_1,&#160;\vec{a}_2\) und&#160;\(\vec{x}_1\) linear abh&#228;ngig sind, und \(\vec{x_1}\neq\vec{a_1}\) und&#160;\(\vec{x_1}\neq\vec{a_2}\).
+    </p>
+    <p>
+    </p>
+    <p>
+        \(\vec{x_1}=\)&#160;[[input:ans1]]&#160;[[validation:ans1]] [[feedback:prt1]]
+    </p>
+    <p>
+    </p>
+    <p>
+        Geben Sie einen Vektor \(\vec{x_2}\) ein, so dass die Vektoren&#160;\(\vec{a}_1,&#160;\vec{a}_2\) und&#160;\(\vec{x_2}\) linear unabh&#228;ngig sind.
+    </p>
+    <p>
+    </p>
+    <p>
+        \(\vec{x_2}=\)&#160;[[input:ans2]]&#160;[[validation:ans2]] [[feedback:prt2]]
+    </p>
+    <p>
+    </p>
+    <p>
+        <strong>
+            Hinweis:
+        </strong>
+        Geben Sie die Koordinaten mit&#160;Klammern in der Form
+        <strong>
+            [a,b,c]
+        </strong>
+        ein.
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The vectors are given
+    </p>
+    <p>
+        \(\vec{a}_1= @av@, \quad \vec{a}_2= @bv@&#160; \)
+    </p>
+    <p>
+        Specify a vector different from the zero vector \(\vec{x}_1\) so that the vectors \(\vec{a}_1,&#160;\vec{a}_2\) and\(\vec{x}_1\) are linearly dependent, and \(\vec{x_1}\neq\vec{a_1}\) and\(\vec{x_1}\neq\vec{a_2}\).
+    </p>
+    <p>
+    </p>
+    <p>
+        \(\vec{x_1}=\)[[input:ans1]][[validation:ans1]] [[feedback:prt1]]
+    </p>
+    <p>
+    </p>
+    <p>
+        Enter a vector \(\vec{x_2}\) so that the vectors\(\vec{a}_1,&#160;\vec{a}_2\) and\(\vec{x_2}\) are linearly independent.
+    </p>
+    <p>
+    </p>
+    <p>
+        \(\vec{x_2}=\)[[input:ans2]][[validation:ans2]] [[feedback:prt2]]
+    </p>
+    <p>
+    </p>
+    <p>
+        <strong>
+            Note:
+        </strong>
+        Enter the coordinates with brackets in the form
+        <strong>
+            [a,b,c]
+        </strong>
+        one.
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text/>
+        </stackversion>
+        <questionvariables>
+            <text>a1: rand_with_prohib(-5,5,[0]);
+a2: rand_with_step(-5,5,1);
+a3: rand_with_step(-5,5,1);
+b1: rand_with_prohib(-5,5,[a1]);
+b2: rand_with_prohib(-5,5,[a2,0]);
+b3: rand_with_step(-5,5,1);
+
+av: matrix([a1],[a2],[a3]);
+bv: matrix([b1],[b2],[b3]);
+
+a: [a1,a2,a3];
+b: [b1,b2,b3];
+
+M1: matrix ([a1,a2,a3],[b1,b2,b3]);
+R1: rank(M1);
+
+x11: 2*a1;
+x12: 2*a2;
+x13: 2*a3;
+
+x1: [x11,x12,x13];
+
+
+x21: a1;
+x22: a2;
+x23: 6;
+
+x2: [x21,x22,x23];
+
+M3: matrix([a1,a2,a3], [b1,b2,b3], [x21,x22,x23]);
+R3: rank(M3);</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\(\vec{a}_1= @av@, \vec{a}_2= @bv@  \)</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Richtige Antwort, gut gemacht!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Right answer, well done!
+    </p>
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Antwort ist teilweise korrekt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your answer is partly correct.
+    </p>
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Falsche Antwort.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Wrong answer.
+    </p>
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>x1</tans>
+            <boxsize>40</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>1</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>x2</tans>
+            <boxsize>40</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>1</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>M2: if length(ans1)=3 then matrix([a1,a2,a3], [b1,b2,b3], ans1);
+R2: if length(ans1)=3 then rank(M2) else 3;</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>R2</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>[a1,a2,a3]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>[b1,b2,b3]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prt1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>[0,0,0]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>1.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>M3: if length(ans2)=3 then matrix([a1,a2,a3], [b1,b2,b3], ans2);
+R3: if length(ans2)=3 then  rank(M3);
+numtest1:  if length(ans2)=3 then numberp(ans2[1]*ans2[2]*ans2[3]);
+numtest2: if numtest1 then 1 else 0;</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>R3</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>numtest2</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

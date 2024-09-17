@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Vektorr&#228;ume: Linearkombination (R3) [{"DOMAINUID":"AC1DE4B"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Im Raum \(\,\mathbb{R}^3\,\) soll der Vektor \(\,\vec{b}\,\) aus den Vektoren \(\,\vec{v}_1, \, \vec{v}_2\,\) und \(\, \vec{v}_3 \, \) linear kombiniert werden, so dass
+    </p>
+    <p>
+        \(\vec{b} = c_1 \cdot \vec{v}_1 + c_2 \cdot \vec{v}_2&#160;+ c_3 \cdot \vec{v}_3\).
+    </p>
+    <p>
+    </p>
+    <p>
+        \(\vec{v}_1 =\begin{matrixb}&#160;1\\0\\3&#160;\end{matrixb},\quad \vec{v}_2 =\begin{matrix} -1\\1\\1 \end{matrix},\quad&#160;\vec{v}_3 =\begin{matrix} 2\\2\\1 \end{matrix},\)
+    </p>
+    <p>
+        \(\quad \vec{b} =\begin{matrix} {@a@} \\ {@b@} \\{@c@} \end{matrix}&#160;&#160;\)
+    </p>
+    <p>
+    </p>
+    <p>
+        Geben Sie die Werte \(\,c_1, \,c_2\,\) und \(\,c_3\,\) ein.
+    </p>
+    <p>
+        <strong>
+            Hinweis:
+        </strong>
+        Geben Sie die exakten Antworten ein. Keine Dezimalzahlen.
+    </p>
+    <p>
+    </p>
+    <p>
+        \(c_1 = \)&#160;[[input:ans1]]&#160;[[validation:ans1]]
+    </p>
+    <p>
+        \(c_2 = \)&#160;[[input:ans2]]&#160;[[validation:ans2]]
+    </p>
+    <p>
+        \(c_3 = \)&#160;[[input:ans3]]&#160;[[validation:ans3]]
+    </p>
+    <p>
+        [[feedback:prt1]]
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        In the room \(\,\mathbb{R}^3\,\) the vector \(\,\vec{b}\,\) from the vectors \(\,\vec{v}_1, \, \vec{v}_2\,\) and \(\, \vec{v}_3 \, \) linearly combined so that
+    </p>
+    <p>
+        \(\vec{b} = c_1 \cdot \vec{v}_1 + c_2 \cdot \vec{v}_2&#160;+ c_3 \cdot \vec{v}_3\).
+    </p>
+    <p>
+    </p>
+    <p>
+        \(\vec{v}_1 =\begin{matrixb}&#160;1\\0\\3&#160;\end{matrixb},\quad \vec{v}_2 =\begin{matrix} -1\\1\\1 \end{matrix},\quad&#160;\vec{v}_3 =\begin{matrix} 2\\2\\1 \end{matrix},\)
+    </p>
+    <p>
+        \(\quad \vec{b} =\begin{matrix} {@a@} \\ {@b@} \\{@c@} \end{matrix}&#160;&#160;\)
+    </p>
+    <p>
+    </p>
+    <p>
+        Enter the values \(\,c_1, \,c_2\,\) and \(\,c_3\,\) one.
+    </p>
+    <p>
+        <strong>
+            Note:
+        </strong>
+        Enter the exact answers. No decimal numbers.
+    </p>
+    <p>
+    </p>
+    <p>
+        \(c_1 = \)[[input:ans1]][[validation:ans1]]
+    </p>
+    <p>
+        \(c_2 = \)[[input:ans2]][[validation:ans2]]
+    </p>
+    <p>
+        \(c_3 = \)[[input:ans3]][[validation:ans3]]
+    </p>
+    <p>
+        [[feedback:prt1]]
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023072101</text>
+        </stackversion>
+        <questionvariables>
+            <text>a: rand_with_step(1,4,1);
+b: a+rand_with_step(2,4,1);
+c: a+1;
+loes1: (a+4*c-3*b)/13;
+loes2: (5*b-6*a+2*c)/13;
+loes3: (4*b+3*a-c)/13;</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\(c_1=@loes1@, c_2=@loes2@, c_3=@loes3@  \)</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Richtige Antwort, gut gemacht!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Right answer, well done!
+    </p>
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Antwort ist teilweise korrekt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your answer is partly correct.
+    </p>
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Falsche Antwort.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Wrong answer.
+    </p>
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>loes1</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>loes2</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>loes3</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>antwort: [ans1,ans2,ans3];
+loesung: [loes1,loes2,loes3];</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>antwort</sans>
+                <tans>loesung</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

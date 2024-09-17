@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Komplexe Zahlen: Wurzel [{"DOMAINUID":"684855D"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Gegeben sind die komplexen Zahlen:
+    </p>
+    <p>
+        \[z_1=@z1@\]
+    </p>
+    <p>
+        \[z_2=@z2@\]
+    </p>
+    <p>
+    </p>
+    <p>
+        Berechnen Sie den folgenden Ausdruck.
+    </p>
+    <p>
+        \[\Large\sqrt[@w@]{z_1\cdot z_2}\]
+    </p>
+    <p>
+    </p>
+    <p>
+        Berechnen Sie die Antwort in der Polarform \[\large z= r\cdot e^{\,j\cdot(\varphi+\alpha\cdot k)}, k=0,1,...\] und geben Sie \(\,r\,\), \(\,\varphi\,\) und \(\,\alpha\,\) ein.
+    </p>
+    <p>
+    </p>
+    <p>
+        <strong>
+            Hinweise:
+        </strong>
+    </p>
+    <ul>
+        <li>
+            Geben Sie die exakte Antworten ein. Keine Dezimalzahlen.
+        </li>
+        <li>
+            Schreiben Sie \(\pi\) als
+            <strong>
+                pi
+            </strong>
+            .
+        </li>
+        <li>
+            Schreiben Sie \(\large\sqrt[n]{a}\) als
+            <strong>
+                a^(1/n)
+            </strong>
+        </li>
+    </ul>
+    <p>
+    </p>
+    <p>
+        \(r=\,\)[[input:ans1]] [[validation:ans1]]
+    </p>
+    <p>
+        \(\varphi=\,\)[[input:ans2]] [[validation:ans2]]
+    </p>
+    <p>
+        \(\alpha=\,\)[[input:ans3]] [[validation:ans3]]
+    </p>
+    <p>
+        [[feedback:prt1]]
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The complex figures are given:
+    </p>
+    <p>
+        \[z_1=@z1@\]
+    </p>
+    <p>
+        \[z_2=@z2@\]
+    </p>
+    <p>
+    </p>
+    <p>
+        Calculate the following expression.
+    </p>
+    <p>
+        \[\Large\sqrt[@w@]{z_1\cdot z_2}\]
+    </p>
+    <p>
+    </p>
+    <p>
+        Calculate the answer in the polar form \[\large z= r\cdot e^{\,j\cdot(\varphi+\alpha\cdot k)}, k=0,1,...\] and give \(\,r\,\), \(\,\varphi\,\) and \(\,\alpha\,\) one.
+    </p>
+    <p>
+    </p>
+    <p>
+        <strong>
+            Notes:
+        </strong>
+    </p>
+    <ul>
+        <li>
+            Enter the exact answers. No decimal numbers.
+        </li>
+        <li>
+            Write \(\pi\) as
+            <strong>
+                pi
+            </strong>
+            .
+        </li>
+        <li>
+            Write \(\large\sqrt[n]{a}\) as
+            <strong>
+                ^(1/n)
+            </strong>
+        </li>
+    </ul>
+    <p>
+    </p>
+    <p>
+        \(r=\,\)[[input:ans1]] [[validation:ans1]]
+    </p>
+    <p>
+        \(\varphi=\,\)[[input:ans2]] [[validation:ans2]]
+    </p>
+    <p>
+        \(\alpha=\,\)[[input:ans3]] [[validation:ans3]]
+    </p>
+    <p>
+        [[feedback:prt1]]
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text/>
+        </stackversion>
+        <questionvariables>
+            <text>w: rand_with_step(3,4,1);
+
+z1_re: rand_with_prohib(-5,5,[0]);
+z1_im: rand([z1_re,-1*z1_re])
+z1: (z1_re)+(z1_im)*%i;
+
+z2_re: rand_with_prohib(-5,5,[0,z1_re,-z1_re]);
+z2_im: rand([z2_re,-1*z2_re])
+z2: (z2_re)+(z2_im)*%i;
+
+z1_arg: carg(z1);
+z1_abs: abs(z1);
+z2_arg: carg(z2);
+z2_abs: abs(z2);
+labs: (z2_abs*(z1_abs))^(1/w);
+larg: (1/w)*(z1_arg+z2_arg);
+abstand: (1/w)*2*%pi;</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\(\sqrt[@w@]{@z1@\cdot @z2@}=(@labs@,@larg@,@abstand@)\)</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Richtige Antwort, gut gemacht!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Right answer, well done!
+    </p>
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Antwort ist teilweise korrekt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your answer is partly correct.
+    </p>
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Falsche Antwort.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Wrong answer.
+    </p>
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>j</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>labs</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>larg</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>abstand</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>p: 0;
+h: for i:-4 step 1 thru 4 do if larg+i*abstand-ans2=0 then p:1;</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>labs</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        \(r\) ist korrekt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        \(r\) is correct.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        \(r\) ist falsch.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        \(r\) is wrong.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>p</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        \(\varphi\) ist korrekt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        \(\varphi\) is correct.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        \(\varphi\) ist falsch.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        \(\varphi\) is wrong.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>abstand</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>prt1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        \(\alpha\) ist korrekt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        \(\alpha\) is correct.
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prt1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        \(\alpha\) ist falsch.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        \(\alpha\) is wrong.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ans1,p,ans3]</sans>
+                <tans>[labs,1,abstand]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>319186769</deployedseed>
+        <deployedseed>808332005</deployedseed>
+        <deployedseed>1144714592</deployedseed>
+        <deployedseed>108697833</deployedseed>
+        <deployedseed>126793266</deployedseed>
+        <deployedseed>2126030096</deployedseed>
+        <deployedseed>1017678581</deployedseed>
+        <deployedseed>891774482</deployedseed>
+        <deployedseed>1909395835</deployedseed>
+        <deployedseed>684225392</deployedseed>
+        <deployedseed>638345987</deployedseed>
+        <deployedseed>624883714</deployedseed>
+        <deployedseed>674345996</deployedseed>
+        <deployedseed>1778103106</deployedseed>
+        <deployedseed>354046804</deployedseed>
+        <deployedseed>754883998</deployedseed>
+        <deployedseed>1026054642</deployedseed>
+        <deployedseed>1289137452</deployedseed>
+        <deployedseed>791122487</deployedseed>
+        <deployedseed>583588491</deployedseed>
+        <deployedseed>833006904</deployedseed>
+        <deployedseed>856991826</deployedseed>
+        <deployedseed>1928469458</deployedseed>
+        <deployedseed>2103001651</deployedseed>
+        <deployedseed>1685831077</deployedseed>
+        <deployedseed>1357178056</deployedseed>
+        <deployedseed>865493349</deployedseed>
+        <deployedseed>14228774</deployedseed>
+        <deployedseed>179784383</deployedseed>
+        <deployedseed>1340676804</deployedseed>
+        <deployedseed>1850742726</deployedseed>
+    </question>
+    
+
+</quiz>

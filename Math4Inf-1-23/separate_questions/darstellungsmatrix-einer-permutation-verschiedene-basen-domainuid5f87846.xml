@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Darstellungsmatrix einer Permutation (verschiedene Basen) [{"DOMAINUID":"5F87846"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sei \(K\) ein K&#246;rper und sei \(B=\{b_1,b_2,b_3\}\) eine Basis f&#252;r \(K^3\).
+        <br/>
+        Betrachten Sie die Basis \(C:=\{c_1,c_2,c_3\}\) mit \(c_1:={@vzs11@} b_1\), \(c_2:={@vzs21@} b_1&#160; {@vzs22@} b_2\) und \(c_3:={@vzs31@} b_1&#160; {@vzs32@} b_2&#160; {@vzs33@} b_3\).
+        <br/>
+        Weiter sei \(f:K^3\to K^3\) die Identit&#228;tsabbildung, d.h. es ist \(f(v)=v\ \forall v \in K^3\).
+        <br/>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        a) Geben Sie die Darstellungsmatrix von \(f\) bez&#252;glich der Basis \(B\) im Quellraum und der Basis \(C\) im Zielraum an.
+    </p>
+    <p>
+        \(A_B^C(f) = \) [[input:ans1]] [[validation:ans1]]
+    </p>
+    <p>
+        [[feedback:prt1]]
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        b) Geben Sie die Darstellungsmatrix von \(f\) bez&#252;glich der Basis \(C\) im Quellraum und der Basis \(B\) im Zielraum an.
+        <br/>
+    </p>
+    <p>
+        \(A_C^B(f) = \) [[input:ans2]] [[validation:ans2]]
+        <br/>
+    </p>
+    <p>
+        [[feedback:prt2]]
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Be careful \(K\) a body and be \(B=\{b_1,b_2,b_3\}\) a basis for \(K^3\).
+        <br/>
+        View the base \(C:=\{c_1,c_2,c_3\}\) with \(c_1:={@vzs11@} b_1\), \(c_2:={@vzs21@} b_1&#160; {@vzs22@} b_2\) and \(c_3:={@vzs31@} b_1&#160; {@vzs32@} b_2&#160; {@vzs33@} b_3\).
+        <br/>
+        Date \(f:K^3\to K^3\) the identity image, i.e. it is \(f(v)=v\ \forall v \in K^3\).
+        <br/>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        a) Specify the display matrix of \(f\) with regard to the base \(B\) in the source room and the base \(C\) in the target room.
+    </p>
+    <p>
+        \(A_B^C(f) = \) [[input:ans1]] [[validation:ans1]]
+    </p>
+    <p>
+        [[feedback:prt1]]
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        (b) Specify the display matrix of \(f\) with regard to the base \(C\) in the source room and the base \(B\) in the target room.
+        <br/>
+    </p>
+    <p>
+        \(A_C^B(f) = \) [[input:ans2]] [[validation:ans2]]
+        <br/>
+    </p>
+    <p>
+        [[feedback:prt2]]
+        <br/>
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>3.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text/>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[vzi11:rand([1,2]); vzs11:["-"," "][vzi11]; vz11:[-1,1][vzi11];
+vzi21:rand([1,2]); vzs21:["-"," "][vzi21]; vz21:[-1,1][vzi21];
+vzi22:rand([1,2]); vzs22:["-","+"][vzi22]; vz22:[-1,1][vzi22];
+vzi31:rand([1,2]); vzs31:["-"," "][vzi31]; vz31:[-1,1][vzi31];
+vzi32:rand([1,2]); vzs32:["-","+"][vzi32]; vz32:[-1,1][vzi32];
+vzi33:rand([1,2]); vzs33:["-","+"][vzi33]; vz33:[-1,1][vzi33];
+M2:transpose(matrix([vz11,0,0],[vz21,vz22,0],[vz31,vz32,vz33]));
+M1:invert(M2);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <br/>
+    <br/>
+</span>
+<span class="multilang" lang="en">
+    <br/>
+    <br/>
+</span>
+]]></text>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{@vz11@},{@vz21@},{@vz22@},{@vz31@},{@vz32@},{@vz33@}</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>matrix</type>
+            <tans>M1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords>a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z</forbidwords>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>2</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>matrix</type>
+            <tans>M2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords>a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z</forbidwords>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>2</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.5000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>M1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>M2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben in Aufgabenteil a) leider die Darstellungsmatrix \(A_C^B(f)\) angegeben.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You unfortunately have the representation matrix in task part a) \(A_C^B(f)\) specified.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.5000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>M2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>M1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Sie haben in Aufgabenteil b) leider die Darstellungsmatrix \(A_B^C(f)\) angegeben.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        You unfortunately have the representation matrix in task part b) \(A_B^C(f)\) specified.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

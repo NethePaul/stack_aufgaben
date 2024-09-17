@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Komplexe Zahlen: Polardarstellung von a+bi [{"DOMAINUID":"C41B581"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Schreiben Sie die komplexe Zahl \(z = \displaystyle {@z@}\) als trigonometrische Darstellung und geben Sie die beschreibenden Gr&#246;&#223;en (also Betrag \(r\) sowie Argument/Phasenwinkel
+    <span>
+        \(\varphi\)) dieser Zahl an.
+        <br/>
+        <br/>
+        \(r=\,\) [[input:ans1]] [[validation:ans1]] und \(\varphi=\,\) [[input:ans2]] [[validation:ans2]] [[feedback:prt1]]
+    </span>
+    <br/>
+    <p>
+    </p>
+    <p>
+        <strong>
+            Hinweise:
+        </strong>
+    </p>
+    <ul>
+        <li>
+            Geben Sie die exakte Antwort ein (keine Dezimalzahlen).
+        </li>
+        <li>
+            Falls n&#246;tig, schreiben Sie \(\pi\) als
+            <strong>
+                pi
+            </strong>
+            und \(\sqrt{a}\) als
+            <strong>
+                sqrt(a)
+            </strong>
+            .
+        </li>
+        <li>
+            Geben Sie \(\varphi\) im Intervall von \((0; 2 \cdot \pi]\) ein.
+        </li>
+    </ul>
+</span>
+<span class="multilang" lang="en">
+    Write the complex number \(z = \displaystyle {@z@}\) as trigonometric representation and specify the descriptive variables (so amount \(r\) as well as argument/phase angles
+    <span>
+        \(\varphi\)) this number.
+        <br/>
+        <br/>
+        \(r=\,\) [[input:ans1]] [[validation:ans1]] and \(\varphi=\,\) [[input:ans2]] [[validation:ans2]] [[feedback:prt1]]
+    </span>
+    <br/>
+    <p>
+    </p>
+    <p>
+        <strong>
+            Notes:
+        </strong>
+    </p>
+    <ul>
+        <li>
+            Enter the exact answer (no decimal numbers).
+        </li>
+        <li>
+            If necessary, write \(\pi\) as
+            <strong>
+                pi
+            </strong>
+            and \(\sqrt{a}\) as
+            <strong>
+                sqrt(a)
+            </strong>
+            .
+        </li>
+        <li>
+            Enter \(\varphi\) in the interval of \((0; 2 \cdot \pi]\) one.
+        </li>
+    </ul>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr">
+        <strong>
+            L&#246;sungsweg:
+        </strong>
+    </p>
+    <p dir="ltr">
+        Die komplexe Zahl \(z = \displaystyle {@z@}\) besteht aus \(\mathrm{Re}(z) = \displaystyle {@x@}\) und \(\mathrm{Im}(z) = \displaystyle {@y@}\) und liegt somit im {@s@}.Quadranten.
+    </p>
+    <p dir="ltr">
+        Dann ist \(r = \sqrt{(\mathrm{Re}(z))^2+(\mathrm{Im}(z))^2}\) \(= \displaystyle \sqrt{\left({@x@}\right)^{\!2}+\left({@y@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@x^2@}+{@y^2@}}\) \(= \displaystyle \sqrt{{@x^2+y^2@}} = {@loes_r@}\).
+    </p>
+    <p dir="ltr">
+        Da die komplexe Zahl \(z\) im {@s@}.Quadranten liegt, gilt:
+    </p>
+    <p dir="ltr">
+        \(\varphi =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z)}{\mathrm{Re}(z)}\right) + {@plus@} \) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@y@}}{{@x@}}\right) + {@plus@} \)&#160;\(=&#160;\displaystyle&#160; \arctan\!\left({@y_x@}\right) + {@plus@} \) \(= \displaystyle&#160;{@phi_y_x@} + {@plus@} = {@phi_y_x+plus@}\).
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr">
+        <strong>
+            Solution:
+        </strong>
+    </p>
+    <p dir="ltr">
+        The complex number \(z = \displaystyle {@z@}\) consists of: \(\mathrm{Re}(z) = \displaystyle {@x@}\) and \(\mathrm{Im}(z) = \displaystyle {@y@}\) and thus lies in {@s@}.Quadrants.
+    </p>
+    <p dir="ltr">
+        Then \(r = \sqrt{(\mathrm{Re}(z))^2+(\mathrm{Im}(z))^2}\) \(= \displaystyle \sqrt{\left({@x@}\right)^{\!2}+\left({@y@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@x^2@}+{@y^2@}}\) \(= \displaystyle \sqrt{{@x^2+y^2@}} = {@loes_r@}\).
+    </p>
+    <p dir="ltr">
+        Since the complex number \(z\) the {@s@}.Quadranten is:
+    </p>
+    <p dir="ltr">
+        \(\varphi =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z)}{\mathrm{Re}(z)}\right) + {@plus@} \) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@y@}}{{@x@}}\right) + {@plus@} \)\(=&#160;\displaystyle&#160; \arctan\!\left({@y_x@}\right) + {@plus@} \) \(= \displaystyle&#160;{@phi_y_x@} + {@plus@} = {@phi_y_x+plus@}\).
+    </p>
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2021120900</text>
+        </stackversion>
+        <questionvariables>
+            <text>s: rand_with_step(1,4,1);
+n: rand_with_step(1,6,1);
+
+liste_r: [2,3,5,6,7,8];
+r: liste_r[n];
+
+liste_t: [1,5,-5,-1];
+t: liste_t[s];
+
+liste_z: [sqrt(3*r)+sqrt(r)*%i, -sqrt(3*r)+sqrt(r)*%i, -sqrt(3*r)-sqrt(r)*%i, sqrt(3*r)-sqrt(r)*%i ];
+z: liste_z[s];
+
+liste_tp: [%pi/6, (5*%pi)/6, (7*%pi)/6, (11*%pi)/6 ];
+tp: liste_tp[s];
+
+loes_r: sqrt(r+3*r);
+
+x : realpart(z);
+y : imagpart(z);
+phi: atan(y/x);
+liste_plus: [0,pi,pi,2*%pi];
+plus: liste_plus[s];
+y_x_liste: [1/sqrt(3),-1/sqrt(3),1/sqrt(3),-1/sqrt(3)];
+y_x: y_x_liste[s];
+phi_y_x: atan(y_x);</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\(z\,=\,{@z@},  (r,\varphi ) = ({@loes_r@},{@tp@})\)</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Richtige Antwort, gut gemacht!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Right answer, well done!
+    </p>
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihre Antwort ist teilweise korrekt.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your answer is partly correct.
+    </p>
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Falsche Antwort.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Wrong answer.
+    </p>
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>loes_r</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>tp</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ans1,ans2]</sans>
+                <tans>[loes_r,tp]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1882708376</deployedseed>
+        <deployedseed>2100283198</deployedseed>
+        <deployedseed>176146169</deployedseed>
+        <deployedseed>171496437</deployedseed>
+        <deployedseed>591928281</deployedseed>
+        <deployedseed>555577362</deployedseed>
+        <deployedseed>1879863618</deployedseed>
+        <deployedseed>276774745</deployedseed>
+        <deployedseed>1337626174</deployedseed>
+        <deployedseed>1580442860</deployedseed>
+        <deployedseed>402296995</deployedseed>
+        <deployedseed>774466248</deployedseed>
+        <deployedseed>687648338</deployedseed>
+        <deployedseed>460085769</deployedseed>
+        <deployedseed>2078906329</deployedseed>
+        <deployedseed>715395454</deployedseed>
+        <deployedseed>129361002</deployedseed>
+        <deployedseed>1773346470</deployedseed>
+        <tags>
+            <tag>
+                <text>Musterl&#246;sung</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

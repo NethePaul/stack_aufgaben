@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Gleichungen (6)</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        L&#246;sen Sie die Gleichung \[\displaystyle {@gl@} \].
+    </p>
+    <p>
+        <strong>
+            Hinweise:
+        </strong>
+    </p>
+    <ul>
+        <li>
+            Schreiben Sie die Menge mit geschweiften Klammern und trennen Sie die L&#246;sungen mit Komma, z.B. {1,3}
+        </li>
+        <li>
+            Schreiben Sie leere Menge als
+            <strong>
+                { }
+            </strong>
+            .
+        </li>
+    </ul>
+    <p>
+        [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Solve the equation \[\displaystyle {@gl@} \].
+    </p>
+    <p>
+        <strong>
+            Notes:
+        </strong>
+    </p>
+    <ul>
+        <li>
+            Write the amount with curly clips and separate the solutions with comma, e.g. {1,3}
+        </li>
+        <li>
+            Letter You empty quantity as
+            <strong>
+                { }
+            </strong>
+            .
+        </li>
+    </ul>
+    <p>
+        [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+    </p>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p dir="ltr" style="text-align: left;">
+        <strong>
+            L&#246;sungsweg:
+        </strong>
+    </p>
+    <p dir="ltr">
+        \(\displaystyle {@gl@}\)
+    </p>
+    <p dir="ltr">
+        <span style="font-size: 0.9375rem;">
+            \(\quad&#160;\Longleftrightarrow \quad \displaystyle {@x+b/a=1/(a*(x-c))@}\)
+        </span>
+    </p>
+    <p dir="ltr">
+        <span style="font-size: 0.9375rem;">
+            \(\quad&#160;\Longleftrightarrow \quad \displaystyle \left({@x+b/a@}\right) \cdot \left({@a*(x-c)@}\right) =1\)
+        </span>
+    </p>
+    <p dir="ltr">
+        <span style="font-size: 0.9375rem;">
+            \(\quad&#160;\Longleftrightarrow \quad \displaystyle {@(a*x+b)*(x-c)@} = {@a*x^2+(b-a*c)*x-b*c@}=1\)
+        </span>
+    </p>
+    <p dir="ltr">
+        <span style="font-size: 0.9375rem;">
+            \(\quad&#160;\Longleftrightarrow \quad \displaystyle {@x^2+(b-a*c)/a*x-b*c/a=1/a@}\)
+        </span>
+    </p>
+    <p dir="ltr">
+        <span style="font-size: 0.9375rem;">
+            \(\quad&#160;\Longleftrightarrow \quad \displaystyle {@x^2+(b-a*c)/a*x-b*c/a-1/a=0@}\)
+        </span>
+    </p>
+    <p dir="ltr">
+        <span style="font-size: 0.9375rem;">
+            \(\quad&#160;\Longleftrightarrow \quad \displaystyle x_{1;2} = {@-(b-a*c)/(2*a)@} \pm \sqrt{{@abs((b-a*c)/(2*a))@}^2 + {@b*c/a+1/a@}} = {@-(b-a*c)/(2*a)@} \pm {@sqrt((b-a*c)^2/(4*a^2)+b*c/a+1/a)@}\)
+        </span>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p dir="ltr" style="text-align: left;">
+        <strong>
+            Solution:
+        </strong>
+    </p>
+    <p dir="ltr">
+        \(\displaystyle {@gl@}\)
+    </p>
+    <p dir="ltr">
+        <span style="font-size: 0.9375rem;">
+            \(\quad&#160;\Longleftrightarrow \quad \displaystyle {@x+b/a=1/(a*(x-c))@}\)
+        </span>
+    </p>
+    <p dir="ltr">
+        <span style="font-size: 0.9375rem;">
+            \(\quad&#160;\Longleftrightarrow \quad \displaystyle \left({@x+b/a@}\right) \cdot \left({@a*(x-c)@}\right) =1\)
+        </span>
+    </p>
+    <p dir="ltr">
+        <span style="font-size: 0.9375rem;">
+            \(\quad&#160;\Longleftrightarrow \quad \displaystyle {@(a*x+b)*(x-c)@} = {@a*x^2+(b-a*c)*x-b*c@}=1\)
+        </span>
+    </p>
+    <p dir="ltr">
+        <span style="font-size: 0.9375rem;">
+            \(\quad&#160;\Longleftrightarrow \quad \displaystyle {@x^2+(b-a*c)/a*x-b*c/a=1/a@}\)
+        </span>
+    </p>
+    <p dir="ltr">
+        <span style="font-size: 0.9375rem;">
+            \(\quad&#160;\Longleftrightarrow \quad \displaystyle {@x^2+(b-a*c)/a*x-b*c/a-1/a=0@}\)
+        </span>
+    </p>
+    <p dir="ltr">
+        <span style="font-size: 0.9375rem;">
+            \(\quad&#160;\Longleftrightarrow \quad \displaystyle x_{1;2} = {@-(b-a*c)/(2*a)@} \pm \sqrt{{@abs((b-a*c)/(2*a))@}^2 + {@b*c/a+1/a@}} = {@-(b-a*c)/(2*a)@} \pm {@sqrt((b-a*c)^2/(4*a^2)+b*c/a+1/a)@}\)
+        </span>
+    </p>
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2021120900</text>
+        </stackversion>
+        <questionvariables>
+            <text>vl: rand( [[1/3,1],[-1/3,2],[1/5,2],[-1/5,3],[1/7,3],[-1/7,4],[1/9,4],[-1/9,5]  ] );
+a: vl[1];
+c: vl[2];
+b: c*ak: rand([2,3]);
+gl: expand((k/a)*(a*x+b)=(k/a)*1/(x-c));
+check: solve(gl,x);
+loes: {rhs(check[1]),rhs(check[2])};</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{@gl@}, L&#246;sung: {@check@}</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Richtig!
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Right!
+    </p>
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Antwort ist teilweise richtig.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        The answer is partly correct.
+    </p>
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Die Antwort ist leider falsch.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Unfortunately, the answer is wrong.
+    </p>
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>loes</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords>solve </forbidwords>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>1</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>loes</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-0-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-0-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>2112178668</deployedseed>
+        <deployedseed>2130435045</deployedseed>
+        <deployedseed>2234368827</deployedseed>
+        <deployedseed>2479621589</deployedseed>
+        <deployedseed>2915652752</deployedseed>
+        <deployedseed>3151992701</deployedseed>
+        <deployedseed>3490695663</deployedseed>
+        <deployedseed>3596202943</deployedseed>
+        <deployedseed>3836530432</deployedseed>
+        <deployedseed>5726719350</deployedseed>
+        <deployedseed>6604247511</deployedseed>
+        <deployedseed>6708678376</deployedseed>
+        <deployedseed>7076575686</deployedseed>
+        <deployedseed>7741111882</deployedseed>
+        <deployedseed>8429885943</deployedseed>
+        <tags>
+            <tag>
+                <text>Musterl&#246;sung</text>
+            </tag>
+            <tag>
+                <text>TE:1:Grundlagen</text>
+            </tag>
+            <tag>
+                <text>TE:2:Gleichungen</text>
+            </tag>
+            <tag>
+                <text>te:3:L&#246;sungsmenge</text>
+            </tag>
+            <tag>
+                <text>src:F09-IPK</text>
+            </tag>
+            <tag>
+                <text>Bloom:3</text>
+            </tag>
+            <tag>
+                <text>Maier:1:2</text>
+            </tag>
+            <tag>
+                <text>Maier:2:2</text>
+            </tag>
+            <tag>
+                <text>Maier:3:1</text>
+            </tag>
+            <tag>
+                <text>Maier:4:1</text>
+            </tag>
+            <tag>
+                <text>Maier:5:1</text>
+            </tag>
+            <tag>
+                <text>Maier:6:1</text>
+            </tag>
+            <tag>
+                <text>Maier:7:1</text>
+            </tag>
+            <tag>
+                <text>qs:visuellGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:sprachlichGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:TaggingGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:importIliasGeprueft</text>
+            </tag>
+            <tag>
+                <text>qs:importMoodleGeprueft</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>

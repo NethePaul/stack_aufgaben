@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Polynomdivision durchf&#252;hren [{"DOMAINUID":"5EACA68"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Berechnen Sie mittels Polynomdivision:
+    <p>
+        a)
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \( ({@P3@} ) : ({@P2@}) \)
+            <br/>
+            \(= \) [[input:ans1]] [[validation:ans1]]
+        </p>
+        <p>
+            [[feedback:prt1]]
+            <br/>
+        </p>
+    </div>
+    <p>
+        b)
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \( ({@P6@} ) : ({@P5@}) \)
+            <br/>
+            \(= \) [[input:ans2]] [[validation:ans2]]
+        </p>
+        <p>
+            [[feedback:prt2]]
+            <br/>
+        </p>
+    </div>
+    <p>
+        c)
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \( ({@P9@} ) : ({@P8@}) \)
+            <br/>
+            \(= \) [[input:ans3]] [[validation:ans3]]
+            <br/>
+        </p>
+        <p>
+            [[feedback:prt3]]
+            <br/>
+        </p>
+    </div>
+</span>
+<span class="multilang" lang="en">
+    Calculate using polynomial division:
+    <p>
+        (a)
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \( ({@P3@} ) : ({@P2@}) \)
+            <br/>
+            \(= \) [[input:ans1]] [[validation:ans1]]
+        </p>
+        <p>
+            [[feedback:prt1]]
+            <br/>
+        </p>
+    </div>
+    <p>
+        (b)
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \( ({@P6@} ) : ({@P5@}) \)
+            <br/>
+            \(= \) [[input:ans2]] [[validation:ans2]]
+        </p>
+        <p>
+            [[feedback:prt2]]
+            <br/>
+        </p>
+    </div>
+    <p>
+        (c)
+    </p>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \( ({@P9@} ) : ({@P8@}) \)
+            <br/>
+            \(= \) [[input:ans3]] [[validation:ans3]]
+            <br/>
+        </p>
+        <p>
+            [[feedback:prt3]]
+            <br/>
+        </p>
+    </div>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>4.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text/>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[P1:apply("+",makelist(rand_with_prohib(-5,5,[0])*x^(k-1),k,5));
+P2:apply("+",makelist(rand_with_prohib(-5,5,[0])*x^(k-1),k,3));
+P3:expand(P1*P2);
+
+P4:apply("+",makelist(rand_with_prohib(-5,5,[0])*x^(k-1),k,5));
+P5:apply("+",makelist(rand_with_prohib(-5,5,[0])*x^(k-1),k,2));
+P6:expand(P4*P5);
+
+P7:c*x^4+apply("+",makelist(rand_with_step(-3,3,1)*x^(k-1),k,2,3))+rand_with_prohib(-5,5,[0])*c;
+P8:apply("+",makelist(rand_with_prohib(-5,5,[0])*x^(k-1),k,3));
+P9:ratsimp(P7*P8);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <br/>
+    <br/>
+    <br/>
+</span>
+<span class="multilang" lang="en">
+    <br/>
+    <br/>
+    <br/>
+</span>
+]]></text>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{@P1@}, {@P2@}, {@P3@}
+{@P4@}, {@P5@}, {@P6@}
+{@P7@}, {@P8@}, {@P9@}</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>P1</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>2</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>P4</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>2</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>P7</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>2</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>P1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Ihr Polynom in Aufgabenteil a) ist leider falsch.
+        <br/>
+        Es gilt: \( ({@ans1@})\cdot({@P2@})=({@ratsimp(ans1*P2)@})\neq ({@P3@}) \).
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Your polynomial in task a) is unfortunately incorrect.
+        <br/>
+        It shall apply: \( ({@ans1@})\cdot({@P2@})=({@ratsimp(ans1*P2)@})\neq ({@P3@}) \).
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>P4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+        Ihr Polynom in Aufgabenteil b) ist leider falsch.
+        <br/>
+        Es gilt: \( ({@ans2@})\cdot({@P5@})=({@ratsimp(ans2*P5)@})\neq ({@P6@}) \).
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+        Your polynomial in task b) is unfortunately incorrect.
+        <br/>
+        It shall apply: \( ({@ans2@})\cdot({@P5@})=({@ratsimp(ans2*P5)@})\neq ({@P6@}) \).
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>2.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>P7</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+        Ihr Polynom in Aufgabenteil c) ist leider falsch.
+        <br/>
+        Es gilt: \( ({@ans3@})\cdot({@P8@})=({@ratsimp(ans3*P8)@})\neq ({@P9@}) \).
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+        Your polynomial in task c) is unfortunately incorrect.
+        <br/>
+        It shall apply: \( ({@ans3@})\cdot({@P8@})=({@ratsimp(ans3*P8)@})\neq ({@P9@}) \).
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,1327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text><![CDATA[Ist x ein Element/Teilmenge der Menge?  [{"DOMAINUID":"635F157"}]]]></text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Beantworten Sie folgende Fragen:
+    </p>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    a)
+                </td>
+                <td>
+                    Ist \(0\) ein Element von \(\mathbb{Z}\)?
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans1]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt1]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    b)
+                </td>
+                <td>
+                    Ist \(\emptyset\) ein Element von \(\mathbb{Z}\)?
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans2]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt2]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    c)
+                </td>
+                <td>
+                    Ist \(\{\emptyset\}\) ein Element von \(\mathbb{Z}\)?
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans3]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt3]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    d)
+                </td>
+                <td>
+                    Ist \(0\) eine Teilmenge von \(\mathbb{Z}\)?
+                </td>
+                <td>
+                    [[input:ans4]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt4]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    e)
+                </td>
+                <td>
+                    Ist \(\emptyset\) eine Teilmenge von \(\mathbb{Z}\)?
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans5]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt5]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    f)
+                </td>
+                <td>
+                    Ist \(\{\emptyset\}\) eine Teilmenge von \(\mathbb{Z}\)?
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans6]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt6]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    g)
+                </td>
+                <td>
+                    Ist \(\emptyset\) ein Element von \(\emptyset\)?
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans7]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt7]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    h)
+                </td>
+                <td>
+                    Ist \(\emptyset\) ein Element von \(\{\emptyset\}\)?
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans8]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt8]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    i)
+                </td>
+                <td>
+                    Ist \(\emptyset\) ein Element von \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\)?
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans9]]
+                    <br/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt9]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    j)
+                </td>
+                <td>
+                    Ist \(\emptyset\) eine Teilmenge von \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\)?
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans10]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt10]]
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+    </p>
+    [[validation:ans1]] [[validation:ans2]] [[validation:ans3]] [[validation:ans4]] [[validation:ans5]] [[validation:ans6]] [[validation:ans7]] [[validation:ans8]] [[validation:ans9]] [[validation:ans10]]
+    <br/>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Answer the following questions:
+    </p>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    (a)
+                </td>
+                <td>
+                    I \(0\) an element of \(\mathbb{Z}\)?
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans1]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt1]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (b)
+                </td>
+                <td>
+                    I \(\emptyset\) an element of \(\mathbb{Z}\)?
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans2]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt2]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (c)
+                </td>
+                <td>
+                    I \(\{\emptyset\}\) an element of \(\mathbb{Z}\)?
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans3]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt3]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (d)
+                </td>
+                <td>
+                    I \(0\) a subset of \(\mathbb{Z}\)?
+                </td>
+                <td>
+                    [[input:ans4]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt4]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (e)
+                </td>
+                <td>
+                    I \(\emptyset\) a subset of \(\mathbb{Z}\)?
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans5]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt5]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (f)
+                </td>
+                <td>
+                    I \(\{\emptyset\}\) a subset of \(\mathbb{Z}\)?
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans6]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt6]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    g)
+                </td>
+                <td>
+                    I \(\emptyset\) an element of \(\emptyset\)?
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans7]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt7]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    h)
+                </td>
+                <td>
+                    I \(\emptyset\) an element of \(\{\emptyset\}\)?
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans8]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt8]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    (i)
+                </td>
+                <td>
+                    I \(\emptyset\) an element of \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\)?
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans9]]
+                    <br/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt9]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    j)
+                </td>
+                <td>
+                    I \(\emptyset\) a subset of \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\)?
+                    <br/>
+                </td>
+                <td>
+                    [[input:ans10]]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td colspan="2">
+                    [[feedback:prt10]]
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+    </p>
+    [[validation:ans1]] [[validation:ans2]] [[validation:ans3]] [[validation:ans4]] [[validation:ans5]] [[validation:ans6]] [[validation:ans7]] [[validation:ans8]] [[validation:ans9]] [[validation:ans10]]
+    <br/>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2021120900</text>
+        </stackversion>
+        <questionvariables>
+            <text>n1:rand(10);
+n2:15+rand(10);</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{@n1@},{@n2@}</text>
+        </questionnote>
+        <questiondescription format="html">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Richtige Antwort, gut gemacht!
+</span>
+<span class="multilang" lang="en">
+    Right answer, well done!
+</span>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Ihre Antwort ist teilweise korrekt.
+</span>
+<span class="multilang" lang="en">
+    Your answer is partly correct.
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span class="multilang" lang="de">
+    Falsche Antwort.
+</span>
+<span class="multilang" lang="en">
+    Wrong answer.
+</span>
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>boolean</type>
+            <tans>true</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans10</name>
+            <type>boolean</type>
+            <tans>true</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>boolean</type>
+            <tans>false</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>boolean</type>
+            <tans>false</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>boolean</type>
+            <tans>false</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans5</name>
+            <type>boolean</type>
+            <tans>true</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans6</name>
+            <type>boolean</type>
+            <tans>false</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans7</name>
+            <type>boolean</type>
+            <tans>false</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans8</name>
+            <type>boolean</type>
+            <tans>true</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans9</name>
+            <type>boolean</type>
+            <tans>false</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    Denn: Die Menge \(\mathbb{Z}\) umfasst alle Zahlen \(\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\).
+    <br/>
+</span>
+<span class="multilang" lang="en">
+    Because: The crowd \(\mathbb{Z}\) All numbers \(\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\).
+    <br/>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Denn: Die Menge&#160;\(\mathbb{Z}\) umfasst alle Zahlen \(\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\).
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Because: The crowd\(\mathbb{Z}\) All numbers \(\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\).
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt10</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans10</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt10-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+        Denn: Die leere Menge \(\emptyset\) ist eine Teilmenge von jeder Menge.
+        <br/>
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+        For: The empty quantity \(\emptyset\) is a part of a lot.
+        <br/>
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt10-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+        Denn: Die leere Menge \(\emptyset\) ist eine Teilmenge von jeder Menge.
+        <br/>
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+        For: The empty quantity \(\emptyset\) is a part of a lot.
+        <br/>
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Denn: \(\emptyset\) ist eine Menge und \(\mathbb{Z}=\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\) hat nur Zahlen und nicht die
+    Menge \(\emptyset\) als Elemente.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Because: \(\emptyset\) is a lot and \(\mathbb{Z}=\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\) has only numbers and not the
+Quantity \(\emptyset\) as elements.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Denn: \(\emptyset\) ist eine Menge und \(\mathbb{Z}=\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\) hat nur Zahlen und nicht die
+    Menge \(\emptyset\) als Elemente.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Because: \(\emptyset\) is a lot and \(\mathbb{Z}=\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\) has only numbers and not the
+Quantity \(\emptyset\) as elements.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Denn: \(\{\emptyset\}\) ist eine Menge, die als Element nur die leere Menge \(\emptyset\) als Element enth&#228;lt. Diese Menge ist nicht als Element in \(\mathbb{Z}=\{&#160; 
+\dots,-5,-4,-3,-2,-1,0,1,2,3,4,5,\dots \}\) enthalten.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Because: \(\{\emptyset\}\) is a quantity that as an element only the empty quantity \(\emptyset\) as an element. This quantity is not as an element in \(\mathbb{Z}=\{&#160; 
+\dots,-5,-4,-3,-2,-1,0,1,2,3,4,5,\dots \}\) included.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Denn: \(\{\emptyset\}\) ist eine 
+Menge, die als Element nur die leere Menge \(\emptyset\) als Element enth&#228;lt. Diese 
+Menge ist nicht als Element in \(\mathbb{Z}=\{&#160; 
+\dots,-5,-4,-3,-2,-1,0,1,2,3,4,5,\dots \}\) enthalten.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Because: \(\{\emptyset\}\) is a
+quantity that as element only the empty quantity \(\emptyset\) as an element. These
+Quantity is not as an element in \(\mathbb{Z}=\{&#160; 
+\dots,-5,-4,-3,-2,-1,0,1,2,3,4,5,\dots \}\) included.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Denn: \(0\) ist eine Zahl und keine Menge und kann daher keine Teilmenge von \(\mathbb{Z}\) sein.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Because: \(0\) is a number and no quantity and therefore cannot be a subset \(\mathbb{Z}\) be.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Denn: \(0\) ist eine Zahl und keine Menge und kann daher keine Teilmenge von \(\mathbb{Z}\) sein.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Because: \(0\) is a number and no quantity and therefore cannot be a subset \(\mathbb{Z}\) be.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt5</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans5</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Denn: Die leere Menge \(\emptyset\) ist eine Teilmenge von jeder Menge.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        For: The empty quantity \(\emptyset\) is a part of a lot.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt5-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Denn: Die leere Menge \(\emptyset\) ist eine Teilmenge von jeder Menge.
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        For: The empty quantity \(\emptyset\) is a part of a lot.
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt6</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans6</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt6-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Denn: \(\{\emptyset\}\) ist eine Menge, die nur die leere Menge \(\emptyset\) als Element enth&#228;lt. Diese Menge ist keine Teilmenge von \(\mathbb{Z}\), denn \(\mathbb{Z}\) enth&#228;lt \(\emptyset\) nicht als Element.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Because: \(\{\emptyset\}\) is a quantity that only the empty quantity \(\emptyset\) as an element. This quantity is not a subset of \(\mathbb{Z}\)for \(\mathbb{Z}\) Containing by weight: \(\emptyset\) not as an element.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt6-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Denn: \(\{\emptyset\}\) ist eine
+                Menge, die nur die leere Menge \(\emptyset\) als Element enth&#228;lt. Diese
+                Menge ist keine Teilmenge von \(\mathbb{Z}\), denn \(\mathbb{Z}\)
+                enth&#228;lt \(\emptyset\) nicht als Element.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Because: \(\{\emptyset\}\) is a
+quantity that only the empty quantity \(\emptyset\) as an element. These
+Quantity is not a subset \(\mathbb{Z}\)for \(\mathbb{Z}\)Containing by weight: \(\emptyset\) not as an element.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt7</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans7</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt7-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+        Denn: \(\emptyset\) ist die leere Menge und enth&#228;lt daher keine Elemente (auch nicht sich selbst).
+        <br/>
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+        Because: \(\emptyset\) is the empty quantity and therefore contains no elements (also not itself).
+        <br/>
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt7-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Denn: \(\emptyset\) ist die leere Menge und enth&#228;lt daher keine Elemente (auch nicht sich selbst).
+        <br/>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <br/>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Because: \(\emptyset\) is the empty quantity and therefore contains no elements (also not itself).
+        <br/>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <br/>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt8</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans8</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt8-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Denn: \(\{\emptyset\}\) ist die Menge, die die leere Menge \(\emptyset\) als Element enth&#228;lt. Somit gilt \(\emptyset \in \{\emptyset\}\).
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Because: \(\{\emptyset\}\) is the amount that the empty quantity \(\emptyset\) as an element. This applies \(\emptyset \in \{\emptyset\}\).
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt8-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+    </p>
+    <p>
+        Denn: \(\{\emptyset\}\) ist die Menge, die die leere Menge \(\emptyset\) als Element enth&#228;lt. Somit gilt \(\emptyset \in \{\emptyset\}\).
+        <br/>
+    </p>
+    <p>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+    </p>
+    <p>
+        Because: \(\{\emptyset\}\) is the amount that the empty quantity \(\emptyset\) as an element. This applies \(\emptyset \in \{\emptyset\}\).
+        <br/>
+    </p>
+    <p>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt9</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans9</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt9-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Denn: Die Menge \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\) besteht aus allen Tupeln \((x,y)\), mit \(x\in \{{@n1@},\ldots,{@n2@}\}\) und \(y \in \mathbb{Z}\). Daher ist die leere Menge \(\emptyset\) kein Element dieser Menge.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Because: The crowd \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\) consists of all tuples \((x,y)\)with \(x\in \{{@n1@},\ldots,{@n2@}\}\) and \(y \in \mathbb{Z}\). Therefore, the empty quantity \(\emptyset\) no element of this amount.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt9-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<span class="multilang" lang="de">
+    <p>
+        Denn: Die Menge \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\) besteht aus 
+allen Tupeln \((x,y)\), mit \(x\in \{{@n1@},\ldots,{@n2@}\}\) und \(y \in
+    \mathbb{Z}\). Daher ist die leere Menge \(\emptyset\) kein Element 
+dieser Menge.
+        <br/>
+    </p>
+</span>
+<span class="multilang" lang="en">
+    <p>
+        Because: The crowd \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\) consists of:
+all tuples \((x,y)\)with \(x\in \{{@n1@},\ldots,{@n2@}\}\) and \(y \in
+    \mathbb{Z}\). Therefore, the empty quantity \(\emptyset\) no element
+this amount.
+        <br/>
+    </p>
+</span>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <tags>
+            <tag>
+                <text>R&#252;ckmeldebaum</text>
+            </tag>
+        </tags>
+    </question>
+    
+
+</quiz>
