@@ -57,7 +57,7 @@ for question in questions:
             i+=1
             print(colored("Error: File exists: "+path,"red"))
             path=os.path.join(folder,filename+'___'+str(i)+'.xml')
-        f=open(path,'wb',newline='',encoding='utf8')
+        f=open(path,'wb')
         f.write(b'<?xml version="1.0" encoding="UTF-8"?>\n<quiz>\n')
         f.write(ET.tostring(question,pretty_print=True))
         f.write(b'\n</quiz>')
