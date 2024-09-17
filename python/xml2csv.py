@@ -6,7 +6,7 @@ from lxml import etree as ET
 from bs4 import BeautifulSoup
 import csv
 from bs4.formatter import HTMLFormatter
-
+import os.path;
 
 class UnsortedAttributes(HTMLFormatter):
     def attributes(self, tag):
@@ -19,6 +19,9 @@ filenames=glob.glob('*.xml')
 fieldnames=["Nummer","de","en"]
 
 for filename in filenames:
+    if filename.endswith("_new.xml"):
+        continue
+    print(filename)
     tree = ET.parse(filename)
     root = tree.getroot()
     texte=root.findall('.//*[@format="html"]/text')
@@ -29,7 +32,10 @@ for filename in filenames:
     inhalt=infile.read()
     infile.close()
 
-    category=root.find('.//question[@type="category"]/category/text').text
+    categories=[i.text for i in root.findall('.//question[@type="category"]/category/text')]
+    category=os.path.commonpath(categories)
+    print(f"Neue Fragen stehen unter: {category}/überstzt")
+    
     inhalt=inhalt.replace(category,category+"/übersetzt")
     inhalt=inhalt.replace('<quiz>',f"""<quiz>
 <!-- question: 0  -->
@@ -47,8 +53,15 @@ for filename in filenames:
     for text in texte:
         if text.text:
             orig=text.text
-            number+=1
-            inhalt=inhalt.replace(orig,"###"+str(number)+"###",1)
+
+            if orig not in inhalt:
+                print(f"Potentieller Fehler bei Nummer: ###{number+1}###")
+                # print(orig)
+                # print("")
+                continue
+            else:
+                number+=1
+                inhalt=inhalt.replace(orig,"###"+str(number)+"###",1)
             text.text='<span class="multilang" lang="de">'+orig+'</span>'
             soup = BeautifulSoup(text.text,'html.parser')
             spans = soup.findAll("span",{"class":"multilang"})
