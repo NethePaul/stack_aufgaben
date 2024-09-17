@@ -25,7 +25,7 @@ for filename in filenames:
 
     groups=[]
     texts=[]
-    infile=open(filename,newline='',encoding='utf8')
+    infile=open(filename,encoding='utf8')
     inhalt=infile.read()
     infile.close()
 
