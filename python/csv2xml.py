@@ -11,7 +11,7 @@ ptn=r"""\[\[(?:validation|input|feedback):[a-zA-Z0-9_]*\]\]"""
 
 
 def wrap(str,lang):
-    return f'<span lang="{lang}" class="multilang">{str}</span>'
+    return f'[[lang code="{lang}"]]{str}[[/lang]]'
 
 for filename in filenames:
     if filename.endswith("_new.xml"):
@@ -47,7 +47,6 @@ for filename in filenames:
             print("Abbruch!")
             error=True
             break
-        print(len(found_de))
         found_de.append('')
         z=zip(found_de,split_de,split_en)        
         
