@@ -43,7 +43,7 @@ for filename in filenames:
         split_de=[wrap(i,"de") for i in re.split(ptn,row['de'])]
         split_en=[wrap(i,"en") for i in re.split(ptn,row['en'])]
         if found_de!=found_en or len(split_de)!=len(split_en):
-            print(f"Fehler bei Nummer {row['Nummer']} : die [[validation:?]], [[input:?]], oder [[feedback:?]] passen nicht in beiden Übersetzungen zusammen")
+            print(f"Fehler bei Nummer {row['Nummer']} : die [[validation:?]], [[input:?]], oder [[feedback:?]] passen nicht in beiden Übersetzungen zusammen\nIm Deutsche:{found_de}\nImEnglischen:{found_en}")
             print("Abbruch!")
             error=True
             break
