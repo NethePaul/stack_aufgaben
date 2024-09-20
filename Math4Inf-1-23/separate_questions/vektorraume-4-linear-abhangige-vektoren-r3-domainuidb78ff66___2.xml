@@ -6,38 +6,35 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Betrachten Sie den Vektorraum \(\mathbb{R}^3\).
-    </p>
-    <p>
-        <br/>
-        Die Vektoren
-    </p>
-    <p>
-        \(@uv@\, , \, @vv@\, , \, @wv@\, , \, @xv@\)
-    </p>
-    <p>
-        sind linear abh&#228;ngig.
-    </p>
-    <p>
-        <br/>
-        Geben Sie vier Zahlen \(a_1,a_2,a_3\) und \(a_4 \) an, die nicht Null sind mit
-    </p>
-    <p>
-        <br/>
-        \( a_1 \cdot @uv@ + a_2 \cdot @vv@ + a_3 \cdot @wv@ + a_4 \cdot @xv@ = 0 \)
-    </p>
-    <p>
-        <br/>
-        Hinweis: Geben Sie die Zahlen kommagetrennt in diesem Format ein \( [a_1,a_2,a_3,a_4] \).
-    </p>
-    <p>
-        <br/>
-        \( [a_1,a_2,a_3,a_4] \ = \ \)[[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
-    </p>
-</span>
-<span class="multilang" lang="en">
+[[lang code="de"]]
+<p>
+    Betrachten Sie den Vektorraum \(\mathbb{R}^3\).
+</p>
+<p>
+    <br/>
+    Die Vektoren
+</p>
+<p>
+    \(@uv@\, , \, @vv@\, , \, @wv@\, , \, @xv@\)
+</p>
+<p>
+    sind linear abh&#228;ngig.
+</p>
+<p>
+    <br/>
+    Geben Sie vier Zahlen \(a_1,a_2,a_3\) und \(a_4 \) an, die nicht Null sind mit
+</p>
+<p>
+    <br/>
+    \( a_1 \cdot @uv@ + a_2 \cdot @vv@ + a_3 \cdot @wv@ + a_4 \cdot @xv@ = 0 \)
+</p>
+<p>
+    <br/>
+    Hinweis: Geben Sie die Zahlen kommagetrennt in diesem Format ein \( [a_1,a_2,a_3,a_4] \).
+</p>
+<p>
+    <br/>
+    \( [a_1,a_2,a_3,a_4] \ = \ \)[[/lang]][[lang code="en"]]
     <p>
         View the vector space \(\mathbb{R}^3\).
     </p>
@@ -65,9 +62,11 @@
     </p>
     <p>
         <br/>
-        \( [a_1,a_2,a_3,a_4] \ = \ \)[[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+        \( [a_1,a_2,a_3,a_4] \ = \ \)[[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -126,44 +125,41 @@ loes: [a1,a2,a3,a4];</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Richtige Antwort, gut gemacht!
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Right answer, well done!
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Richtige Antwort, gut gemacht!
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Right answer, well done!
+</p>
+[[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihre Antwort ist teilweise korrekt.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your answer is partly correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Ihre Antwort ist teilweise korrekt.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer is partly correct.
+</p>
+[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Falsche Antwort.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Wrong answer.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Falsche Antwort.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Wrong answer.
+</p>
+[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -217,16 +213,15 @@ prod: if length(ans1)=4 then ans1[1]*uv+ans1[2]*vv+ans1[3]*wv+ans1[4]*xv else ma
                 <trueanswernote>prt1-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Keine der Zahlen \(a_1,a_2,a_3,a_4 \) darf null sein.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        No numbers \(a_1,a_2,a_3,a_4 \) must be zero.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Keine der Zahlen \(a_1,a_2,a_3,a_4 \) darf null sein.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    No numbers \(a_1,a_2,a_3,a_4 \) must be zero.
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>

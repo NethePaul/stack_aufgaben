@@ -6,130 +6,126 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    Bestimmen Sie die Umkehrfunktion von
+    <span style="font-size: 0.9375rem;">
+        \(f(x)={@f@}\) und \(g(x)={@g@}\).
+    </span>
+</p>
+<p>
+    a) \(f^{-1}(x)\,=\,\) [[/lang]][[lang code="en"]]
     <p>
-        Bestimmen Sie die Umkehrfunktion von
-        <span style="font-size: 0.9375rem;">
-            \(f(x)={@f@}\) und \(g(x)={@g@}\).
-        </span>
-    </p>
-    <p>
-        a) \(f^{-1}(x)\,=\,\) [[input:ans1]]&#160; [[validation:ans1]] [[feedback:prt1]]
-    </p>
-    <p>
-        b) \(g^{-1}(x)\,=\,\) [[input:ans2]]&#160; [[validation:ans2]] [[feedback:prt2]]
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Determine the reversing function of
+        Determine the inverse function of
         <span style="font-size: 0.9375rem;">
             \(f(x)={@f@}\) and \(g(x)={@g@}\).
         </span>
     </p>
     <p>
-        (a) \(f^{-1}(x)\,=\,\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+        (a) \(f^{-1}(x)\,=\,\) [[/lang]][[input:ans1]][[lang code="de"]]&#160; [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
     <p>
-        (b) \(g^{-1}(x)\,=\,\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
+        b) \(g^{-1}(x)\,=\,\) [[/lang]][[lang code="en"]]
     </p>
-</span>
+    <p>
+        (b) \(g^{-1}(x)\,=\,\) [[/lang]][[input:ans2]][[lang code="de"]]&#160; [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt2]][[lang code="de"]]
+    </p>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p dir="ltr">
-        <strong>
-            L&#246;sungsweg:
-        </strong>
-    </p>
-    <p dir="ltr">
-    </p>
-    <p dir="ltr">
-        a) Wir setzen \(y={@f@}\) und versuchen diese Gleichung nach \(x\) umzustellen.
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad {@0=a*x+b-y@}\)
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad {@-a*x=b-y@}\)
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad \displaystyle {@x=(y-b)/(a)@}\)
-    </p>
-    <p dir="ltr">
-    </p>
-    <p dir="ltr">
-        Somit ist die Umkehrfunktion&#160;\(\displaystyle f^{-1}(x) = {@fu@}\). (Ersetzung von \(y\) durch \(x\) und umgekehrt.)
-    </p>
-    <p dir="ltr">
-        b) Wir setzen \(z={@g@}\) und versuchen diese Gleichung nach \(x\) umzustellen.
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad {@0=b*x^d+c-z@}\)
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad {@-b*x^d=c-z@}\)
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad \displaystyle {@x^d=(z-c)/b@}\)
-    </p>
-    <p dir="ltr">
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad \displaystyle {@x=((z-c)/b)^(1/d)@}\)
-    </p>
-    <p dir="ltr">
-    </p>
-    Somit ist die Umkehrfunktion&#160;\(\displaystyle f^{-1}(x) = {@gu@}\). (Ersetzung von \(z\) durch \(x\) und umgekehrt.)
-</span>
-<span class="multilang" lang="en">
-    <p dir="ltr">
-        <strong>
-            Solution:
-        </strong>
-    </p>
-    <p dir="ltr">
-    </p>
-    <p dir="ltr">
-        (a) We set \(y={@f@}\) and try this equation \(x\) to change.
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad {@0=a*x+b-y@}\)
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad {@-a*x=b-y@}\)
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad \displaystyle {@x=(y-b)/(a)@}\)
-    </p>
-    <p dir="ltr">
-    </p>
-    <p dir="ltr">
-        Thus, the reversing function\(\displaystyle f^{-1}(x) = {@fu@}\). (Replacement of \(y\) by \(x\) and vice versa.)
-    </p>
-    <p dir="ltr">
-        (b) We set \(z={@g@}\) and try this equation \(x\) to change.
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad {@0=b*x^d+c-z@}\)
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad {@-b*x^d=c-z@}\)
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad \displaystyle {@x^d=(z-c)/b@}\)
-    </p>
-    <p dir="ltr">
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad \displaystyle {@x=((z-c)/b)^(1/d)@}\)
-    </p>
-    <p dir="ltr">
-    </p>
-    Thus, the reversing function\(\displaystyle f^{-1}(x) = {@gu@}\). (Replacement of \(z\) by \(x\) and vice versa.)
-</span>
+[[lang code="de"]]
+<p dir="ltr">
+    <strong>
+        L&#246;sungsweg:
+    </strong>
+</p>
+<p dir="ltr">
+</p>
+<p dir="ltr">
+    a) Wir setzen \(y={@f@}\) und versuchen diese Gleichung nach \(x\) umzustellen.
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad {@0=a*x+b-y@}\)
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad {@-a*x=b-y@}\)
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad \displaystyle {@x=(y-b)/(a)@}\)
+</p>
+<p dir="ltr">
+</p>
+<p dir="ltr">
+    Somit ist die Umkehrfunktion&#160;\(\displaystyle f^{-1}(x) = {@fu@}\). (Ersetzung von \(y\) durch \(x\) und umgekehrt.)
+</p>
+<p dir="ltr">
+    b) Wir setzen \(z={@g@}\) und versuchen diese Gleichung nach \(x\) umzustellen.
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad {@0=b*x^d+c-z@}\)
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad {@-b*x^d=c-z@}\)
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad \displaystyle {@x^d=(z-c)/b@}\)
+</p>
+<p dir="ltr">
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad \displaystyle {@x=((z-c)/b)^(1/d)@}\)
+</p>
+<p dir="ltr">
+</p>
+Somit ist die Umkehrfunktion&#160;\(\displaystyle f^{-1}(x) = {@gu@}\). (Ersetzung von \(z\) durch \(x\) und umgekehrt.)[[/lang]][[lang code="en"]]
+<p dir="ltr">
+    <strong>
+        Solution:
+    </strong>
+</p>
+<p dir="ltr">
+</p>
+<p dir="ltr">
+    (a) We set \(y={@f@}\) and try this equation \(x\) to change.
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad {@0=a*x+b-y@}\)
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad {@-a*x=b-y@}\)
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad \displaystyle {@x=(y-b)/(a)@}\)
+</p>
+<p dir="ltr">
+</p>
+<p dir="ltr">
+    Thus, the inverse function\(\displaystyle f^{-1}(x) = {@fu@}\). (Replacement of \(y\) by \(x\) and vice versa.)
+</p>
+<p dir="ltr">
+    (b) We set \(z={@g@}\) and try this equation \(x\) to change.
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad {@0=b*x^d+c-z@}\)
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad {@-b*x^d=c-z@}\)
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad \displaystyle {@x^d=(z-c)/b@}\)
+</p>
+<p dir="ltr">
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad \displaystyle {@x=((z-c)/b)^(1/d)@}\)
+</p>
+<p dir="ltr">
+</p>
+Thus, the inverse function\(\displaystyle f^{-1}(x) = {@gu@}\). (Replacement of \(z\) by \(x\) and vice versa.)[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -164,44 +160,41 @@ gu: ((x-c)/b)^(1/d);</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Richtige Antwort, gut gemacht!
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Right answer, well done!
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Richtige Antwort, gut gemacht!
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Right answer, well done!
+</p>
+[[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihre Antwort ist teilweise korrekt.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your answer is partly correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Ihre Antwort ist teilweise korrekt.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer is partly correct.
+</p>
+[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Antwort ist nicht richtig.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The answer is not correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Antwort ist nicht richtig.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The answer is not correct.
+</p>
+[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

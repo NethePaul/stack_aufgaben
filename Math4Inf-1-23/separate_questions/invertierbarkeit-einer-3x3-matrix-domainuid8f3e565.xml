@@ -6,33 +6,28 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Gegeben ist die Matrix \(\mathbf{A}\) in Abh&#228;ngigkeit von Parameter \(p\).
-    </p>
-    <p>
-        \(\mathbf{A}\,=\, \left({@B@}\right) \)
-    </p>
-    <p>
-        F&#252;r welche \(p\) besitzt \(\mathbf{A}\) keine Inverse \(\mathbf{A}^{-1}\)&#160;?
-    </p>
-    <p>
-        <em>
-        </em>
-    </p>
-    <p>
-        <strong>
-            Hinweis:
-        </strong>
-        Geben Sie die Antwort komma-getrennt mit geschweiften Klammern in der Form einer L&#246;sungsmenge \(\mathbb{L}_{p} = \{p_1, p_2, p_3\}\) ein.
-    </p>
-    <p>
-        \(\mathbb{L}_{p} = \)&#160;[[input:ans1]]&#160;[[validation:ans1]] [[feedback:prt1]]
-    </p>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
+[[lang code="de"]]
+<p>
+    Gegeben ist die Matrix \(\mathbf{A}\) in Abh&#228;ngigkeit von Parameter \(p\).
+</p>
+<p>
+    \(\mathbf{A}\,=\, \left({@B@}\right) \)
+</p>
+<p>
+    F&#252;r welche \(p\) besitzt \(\mathbf{A}\) keine Inverse \(\mathbf{A}^{-1}\)&#160;?
+</p>
+<p>
+    <em>
+    </em>
+</p>
+<p>
+    <strong>
+        Hinweis:
+    </strong>
+    Geben Sie die Antwort komma-getrennt mit geschweiften Klammern in der Form einer L&#246;sungsmenge \(\mathbb{L}_{p} = \{p_1, p_2, p_3\}\) ein.
+</p>
+<p>
+    \(\mathbb{L}_{p} = \)&#160;[[/lang]][[lang code="en"]]
     <p>
         The Matrix \(\mathbf{A}\) depending on parameters \(p\).
     </p>
@@ -50,110 +45,113 @@
         <strong>
             Note:
         </strong>
-        Give the answer comma-separated with softened clamps in the form of a solution quantity \(\mathbb{L}_{p} = \{p_1, p_2, p_3\}\) one.
+        Give the answer comma-separated with softened clamps in the form of a solution set \(\mathbb{L}_{p} = \{p_1, p_2, p_3\}\) one.
     </p>
     <p>
-        \(\mathbb{L}_{p} = \)[[input:ans1]][[validation:ans1]] [[feedback:prt1]]
+        \(\mathbb{L}_{p} = \)[[/lang]][[input:ans1]][[lang code="de"]]&#160;[[/lang]][[lang code="en"]][[/lang]][[validation:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
     <p>
     </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        <strong>
-            L&#246;sungsweg:
-        </strong>
-    </p>
-    <p>
-        F&#252;r die Inverse einer Matrix&#160;\( \mathbf{A} \) gilt:
-        <span style="font-size: 0.9375rem;">
-            \(\mathbf{A}^{-1}\) existiert \(\Leftrightarrow \det(\mathbf{A}) \neq 0 \).
-        </span>
-    </p>
-    <p>
-        Folglich m&#252;ssen wir alle Werte berechnen, f&#252;r die \(&#160;\det(\mathbf{A}) = 0 \) gilt, da f&#252;r diese entsprechend keine Inverse existiert.
-    </p>
-    <p>
-        Wir berechnen die Determinante mithilfe des Satzes von Sarrus:
-    </p>
-    <p>
-        \(\qquad \det(\mathbf{A}) = \left( {@p+a11+q@} \cdot ({@p+a22+q@}) \cdot ({@p+a33+q@}) \right) + \left( {@a12@} \cdot ({@a23@}) \cdot ({@a31@}) \right) + \left( {@a13@} \cdot ({@a21@}) \cdot ({@a32@}) \right) \) \(- \left( {@a31@} \cdot ({@p+a22+q@}) \cdot ({@a13@}) \right) - \left( {@a32@} \cdot ({@a23@}) \cdot ({@p+a11+q@}) \right) - \left( {@p+a33+q@} \cdot ({@a21@}) \cdot ({@a12@}) \right) \) \(= {@a@} + {@b@} +&#160;{@c@} - {@d@} - {@e@} - {@f@} \) \( = {@simplify(a+b+c-d-e-f)@}\)
-    </p>
-    <p>
-        Wir l&#246;sen nun folgende Gleichung:
-    </p>
-    <p>
-        \(\qquad \det(\mathbf{A}) =&#160;{@simplify(a+b+c-d-e-f)@} = 0 \)
-    </p>
-    <p>
-        Durch Ausprobieren erhalten wir als eine m&#246;gliche L&#246;sung \( p_{1} = {@loes1@} \). Mithilfe der Polynomdivision k&#246;nnen wir nun die restlichen Nullstellen berechnen:
-    </p>
-    <p>
-        \(\qquad ( {@simplify(a+b+c-d-e-f)@}) : ({@p-loes1@}) =&#160; {@poly@} \)
-    </p>
-    <p>
-        Mithilfe der \(pq-Formel \) oder \(abc-Formel\) k&#246;nnen die restlichen L&#246;sungen berechnet werden:
-    </p>
-    <p>
-        \( \qquad p_{2} = {@loes2@} \)
-    </p>
-    <p>
-        \( \qquad &#160;p_{3} = {@loes3@}&#160;\)
-    </p>
-    <p>
-        Damit existiert f&#252;r \( p = {@loesung@} \) keine Inverse \(&#160;\mathbf{A}^{-1} \).
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        <strong>
-            Solution:
-        </strong>
-    </p>
-    <p>
-        For the inverse of a matrix\( \mathbf{A} \) the following:
-        <span style="font-size: 0.9375rem;">
-            \(\mathbf{A}^{-1}\) exists \(\Leftrightarrow \det(\mathbf{A}) \neq 0 \).
-        </span>
-    </p>
-    <p>
-        Consequently, we must calculate all values for which \(&#160;\det(\mathbf{A}) = 0 \) because there is no inverse for these accordingly.
-    </p>
-    <p>
-        We calculate the determinant using the sentence of Sarrus:
-    </p>
-    <p>
-        \(\qquad \det(\mathbf{A}) = \left( {@p+a11+q@} \cdot ({@p+a22+q@}) \cdot ({@p+a33+q@}) \right) + \left( {@a12@} \cdot ({@a23@}) \cdot ({@a31@}) \right) + \left( {@a13@} \cdot ({@a21@}) \cdot ({@a32@}) \right) \) \(- \left( {@a31@} \cdot ({@p+a22+q@}) \cdot ({@a13@}) \right) - \left( {@a32@} \cdot ({@a23@}) \cdot ({@p+a11+q@}) \right) - \left( {@p+a33+q@} \cdot ({@a21@}) \cdot ({@a12@}) \right) \) \(= {@a@} + {@b@} +&#160;{@c@} - {@d@} - {@e@} - {@f@} \) \( = {@simplify(a+b+c-d-e-f)@}\)
-    </p>
-    <p>
-        We now solve the following equation:
-    </p>
-    <p>
-        \(\qquad \det(\mathbf{A}) =&#160;{@simplify(a+b+c-d-e-f)@} = 0 \)
-    </p>
-    <p>
-        By testing we get as a possible solution \( p_{1} = {@loes1@} \). With the help of the polynomial division we can now calculate the remaining zeros:
-    </p>
-    <p>
-        \(\qquad ( {@simplify(a+b+c-d-e-f)@}) : ({@p-loes1@}) =&#160; {@poly@} \)
-    </p>
-    <p>
-        With the help of \(pq-Formel \) or \(abc-Formel\) the remaining solutions can be calculated:
-    </p>
-    <p>
-        \( \qquad p_{2} = {@loes2@} \)
-    </p>
-    <p>
-        \( \qquad &#160;p_{3} = {@loes3@}&#160;\)
-    </p>
-    <p>
-        So there is \( p = {@loesung@} \) No inverse \(&#160;\mathbf{A}^{-1} \).
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    <strong>
+        L&#246;sungsweg:
+    </strong>
+</p>
+<p>
+    F&#252;r die Inverse einer Matrix&#160;\( \mathbf{A} \) gilt:
+    <span style="font-size: 0.9375rem;">
+        \(\mathbf{A}^{-1}\) existiert \(\Leftrightarrow \det(\mathbf{A}) \neq 0 \).
+    </span>
+</p>
+<p>
+    Folglich m&#252;ssen wir alle Werte berechnen, f&#252;r die \(&#160;\det(\mathbf{A}) = 0 \) gilt, da f&#252;r diese entsprechend keine Inverse existiert.
+</p>
+<p>
+    Wir berechnen die Determinante mithilfe des Satzes von Sarrus:
+</p>
+<p>
+    \(\qquad \det(\mathbf{A}) = \left( {@p+a11+q@} \cdot ({@p+a22+q@}) \cdot ({@p+a33+q@}) \right) + \left( {@a12@} \cdot ({@a23@}) \cdot ({@a31@}) \right) + \left( {@a13@} \cdot ({@a21@}) \cdot ({@a32@}) \right) \) \(- \left( {@a31@} \cdot ({@p+a22+q@}) \cdot ({@a13@}) \right) - \left( {@a32@} \cdot ({@a23@}) \cdot ({@p+a11+q@}) \right) - \left( {@p+a33+q@} \cdot ({@a21@}) \cdot ({@a12@}) \right) \) \(= {@a@} + {@b@} +&#160;{@c@} - {@d@} - {@e@} - {@f@} \) \( = {@simplify(a+b+c-d-e-f)@}\)
+</p>
+<p>
+    Wir l&#246;sen nun folgende Gleichung:
+</p>
+<p>
+    \(\qquad \det(\mathbf{A}) =&#160;{@simplify(a+b+c-d-e-f)@} = 0 \)
+</p>
+<p>
+    Durch Ausprobieren erhalten wir als eine m&#246;gliche L&#246;sung \( p_{1} = {@loes1@} \). Mithilfe der Polynomdivision k&#246;nnen wir nun die restlichen Nullstellen berechnen:
+</p>
+<p>
+    \(\qquad ( {@simplify(a+b+c-d-e-f)@}) : ({@p-loes1@}) =&#160; {@poly@} \)
+</p>
+<p>
+    Mithilfe der \(pq-Formel \) oder \(abc-Formel\) k&#246;nnen die restlichen L&#246;sungen berechnet werden:
+</p>
+<p>
+    \( \qquad p_{2} = {@loes2@} \)
+</p>
+<p>
+    \( \qquad &#160;p_{3} = {@loes3@}&#160;\)
+</p>
+<p>
+    Damit existiert f&#252;r \( p = {@loesung@} \) keine Inverse \(&#160;\mathbf{A}^{-1} \).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <strong>
+        Solution:
+    </strong>
+</p>
+<p>
+    For the inverse of a matrix\( \mathbf{A} \) the following:
+    <span style="font-size: 0.9375rem;">
+        \(\mathbf{A}^{-1}\) exists \(\Leftrightarrow \det(\mathbf{A}) \neq 0 \).
+    </span>
+</p>
+<p>
+    Consequently, we must calculate all values for which \(&#160;\det(\mathbf{A}) = 0 \) because there is no inverse for these accordingly.
+</p>
+<p>
+    We calculate the determinant using the sentence of Sarrus:
+</p>
+<p>
+    \(\qquad \det(\mathbf{A}) = \left( {@p+a11+q@} \cdot ({@p+a22+q@}) \cdot ({@p+a33+q@}) \right) + \left( {@a12@} \cdot ({@a23@}) \cdot ({@a31@}) \right) + \left( {@a13@} \cdot ({@a21@}) \cdot ({@a32@}) \right) \) \(- \left( {@a31@} \cdot ({@p+a22+q@}) \cdot ({@a13@}) \right) - \left( {@a32@} \cdot ({@a23@}) \cdot ({@p+a11+q@}) \right) - \left( {@p+a33+q@} \cdot ({@a21@}) \cdot ({@a12@}) \right) \) \(= {@a@} + {@b@} +&#160;{@c@} - {@d@} - {@e@} - {@f@} \) \( = {@simplify(a+b+c-d-e-f)@}\)
+</p>
+<p>
+    We now solve the following equation:
+</p>
+<p>
+    \(\qquad \det(\mathbf{A}) =&#160;{@simplify(a+b+c-d-e-f)@} = 0 \)
+</p>
+<p>
+    By testing we get as a possible solution \( p_{1} = {@loes1@} \). With the help of the polynomial division we can now calculate the remaining zeros:
+</p>
+<p>
+    \(\qquad ( {@simplify(a+b+c-d-e-f)@}) : ({@p-loes1@}) =&#160; {@poly@} \)
+</p>
+<p>
+    With the help of \(pq-Formel \) or \(abc-Formel\) the remaining solutions can be calculated:
+</p>
+<p>
+    \( \qquad p_{2} = {@loes2@} \)
+</p>
+<p>
+    \( \qquad &#160;p_{3} = {@loes3@}&#160;\)
+</p>
+<p>
+    So there is \( p = {@loesung@} \) No inverse \(&#160;\mathbf{A}^{-1} \).
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -180,100 +178,97 @@
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        <em>
-            <strong>
-                Ihre Antwort ist korrekt.
-            </strong>
-        </em>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        <em>
-            <strong>
-                Your answer is correct.
-            </strong>
-        </em>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    <em>
+        <strong>
+            Ihre Antwort ist korrekt.
+        </strong>
+    </em>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <em>
+        <strong>
+            Your answer is correct.
+        </strong>
+    </em>
+</p>
+[[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        <em>
-            <strong>
-                Ihre Antwort ist teilweise korrekt.
-            </strong>
-        </em>
-    </p>
-    <p>
+[[lang code="de"]]
+<p>
+    <em>
         <strong>
-            L&#246;sung:
+            Ihre Antwort ist teilweise korrekt.
         </strong>
-    </p>
-    <p>
-        \(p\,=\,\) {@loesung@}
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        <em>
-            <strong>
-                Your answer is partly correct.
-            </strong>
-        </em>
-    </p>
-    <p>
+    </em>
+</p>
+<p>
+    <strong>
+        L&#246;sung:
+    </strong>
+</p>
+<p>
+    \(p\,=\,\) {@loesung@}
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <em>
         <strong>
-            Solution:
+            Your answer is partly correct.
         </strong>
-    </p>
-    <p>
-        \(p\,=\,\) {@loesung@}
-    </p>
-</span>
+    </em>
+</p>
+<p>
+    <strong>
+        Solution:
+    </strong>
+</p>
+<p>
+    \(p\,=\,\) {@loesung@}
+</p>
+[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        <em>
-            <strong>
-                Ihre Antwort ist nicht korrekt.
-            </strong>
-        </em>
-    </p>
-    <p>
+[[lang code="de"]]
+<p>
+    <em>
         <strong>
-            L&#246;sung:
+            Ihre Antwort ist nicht korrekt.
         </strong>
-    </p>
-    <p>
-        \(p\,=\,\) {@loesung@}
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        <em>
-            <strong>
-                Your answer is not correct.
-            </strong>
-        </em>
-    </p>
-    <p>
+    </em>
+</p>
+<p>
+    <strong>
+        L&#246;sung:
+    </strong>
+</p>
+<p>
+    \(p\,=\,\) {@loesung@}
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <em>
         <strong>
-            Solution:
+            Your answer is not correct.
         </strong>
-    </p>
-    <p>
-        \(p\,=\,\) {@loesung@}
-    </p>
-</span>
+    </em>
+</p>
+<p>
+    <strong>
+        Solution:
+    </strong>
+</p>
+<p>
+    \(p\,=\,\) {@loesung@}
+</p>
+[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

@@ -6,546 +6,544 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        <span style="font-size: 14px; font-weight: normal;">
-            Welche der folgenden Mengen sind Untervektorr&#228;ume des \(\mathbb{R}^2\)
-        </span>
-        <br/>
-    </h4>
-</span>
-<span class="multilang" lang="en">
-    <h4>
-        <span style="font-size: 14px; font-weight: normal;">
-            Which of the following quantities are sub-vector spaces \(\mathbb{R}^2\)
-        </span>
-        <br/>
-    </h4>
-</span>
+[[lang code="de"]]
+<h4>
+    <span style="font-size: 14px; font-weight: normal;">
+        Welche der folgenden Mengen sind Untervektorr&#228;ume des \(\mathbb{R}^2\)
+    </span>
+    <br/>
+</h4>
+[[/lang]][[lang code="en"]]
+<h4>
+    <span style="font-size: 14px; font-weight: normal;">
+        Which of the following sets are sub-vector spaces \(\mathbb{R}^2\)
+    </span>
+    <br/>
+</h4>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
+[[lang code="de"]]
+<h4>
+    <b>
+        L&#246;sung
+    </b>
+</h4>
+<p>
+    <b>
+        <br/>
+    </b>
+</p>
+<p>
+    <span>
+        Definition eines Untervektorraums (f&#252;r \(\mathbb{R}\)):
+    </span>
+</p>
+<p>
+    <span>
+        Eine nichtleere Teilmenge \(M_i\) eines \(\mathbb{R}\)-Vektorraums \(\mathbb{R}^2\) hei&#223;t Untervektorraum, falls gilt:
+    </span>
+</p>
+<p>
+    <span>
         <b>
-            L&#246;sung
+            (a)
         </b>
-    </h4>
-    <p>
+        \(u_1\), \(u_2 \in M_i \Rightarrow u_1+u_2 \in M_i\)
+    </span>
+</p>
+<p>
+    <span>
         <b>
-            <br/>
+            (b)
         </b>
-    </p>
-    <p>
-        <span>
-            Definition eines Untervektorraums (f&#252;r \(\mathbb{R}\)):
-        </span>
-    </p>
-    <p>
-        <span>
-            Eine nichtleere Teilmenge \(M_i\) eines \(\mathbb{R}\)-Vektorraums \(\mathbb{R}^2\) hei&#223;t Untervektorraum, falls gilt:
-        </span>
-    </p>
-    <p>
-        <span>
-            <b>
-                (a)
-            </b>
-            \(u_1\), \(u_2 \in M_i \Rightarrow u_1+u_2 \in M_i\)
-        </span>
-    </p>
-    <p>
-        <span>
-            <b>
-                (b)
-            </b>
-            \(\lambda \in \mathbb{R}\), \(u \in M_i \Rightarrow \lambda \cdot u \in M_i\)
-        </span>
-    </p>
-    <p>
-        <span>
-            <br/>
-        </span>
-    </p>
-    <p>
-        Um zu zeigen, dass \(M_i\) ein Untervektorraum von \(\mathbb{R}^2\) ist, m&#252;ssen die Eigenschaften allgemein nachgepr&#252;ft werden.
-    </p>
-    <p>
-        L&#228;sst sich ein Gegenbeispiel finden, ist \(M_i\) kein Untervektorraum von \(\mathbb{R}^2\).
-    </p>
-    <p>
+        \(\lambda \in \mathbb{R}\), \(u \in M_i \Rightarrow \lambda \cdot u \in M_i\)
+    </span>
+</p>
+<p>
+    <span>
         <br/>
-    </p>
-    <p>
-        \(M_1=\Big\{\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix} \Big\}\)
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            (a)&#160; \(\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}+\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}\)
-        </p>
-        <p>
-            Da die Menge nur ein Element besitzt, ist die erste Eigenschaft erf&#252;llt.
-        </p>
-        <p>
-            (b) \(\lambda\cdot\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}\in M_1\) f&#252;r alle \(\lambda \in \mathbb{R}\)
-        </p>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                Die Menge hat kein weiteres Element und damit ist auch diese Eigenschaft &#252;berpr&#252;ft.
-            </p>
-        </div>
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                Die Menge, die nur den Nullvektor enth&#228;lt, beschreibt immer den kleinsten Untervektorraum. Allgemein muss der Nullvektor in jedem Untervektorraum enthalten sein.
-            </p>
-        </div>
-    </div>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(M_2=\Big\{\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix} \Big\}\)
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            Gegenbeispiel zu (b):
-        </p>
-        <p>
-            F&#252;r \(\lambda=0: \ 0\cdot\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}\notin M_2\)
-        </p>
-        <p>
-            Damit ist \(M_2\) kein Untervektorraum des \(\mathbb{R}^2\).
-        </p>
-    </div>
-    <p>
-    </p>
-    <p>
-        \(M_3=\Big\{\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix},\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix} \Big\}\)
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            Gebenbeispiel zu (b):
-        </p>
-        <p>
-        </p>
-        <p>
-            F&#252;r \(\lambda=3: \ 3\cdot\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix}=\begin{pmatrix} 6 \\ 6 \\ \end{pmatrix}\notin M_3\)
-        </p>
-        <p>
-        </p>
-        <p>
-        </p>
-        <p>
-            Damit ist \(M_3\) kein Untervektorraum des \(\mathbb{R}^2\).
-        </p>
-        <p>
-        </p>
-    </div>
-    <p>
-    </p>
-    <p>
-        \(M_4=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-x^2 \Big\}\)
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            Gegenbeispiel zu (a):
-        </p>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            Die Vektoren&#160;\(\begin{pmatrix} 1 \\ -1 \\ \end{pmatrix}, \ \begin{pmatrix} -1 \\ -1 \\ \end{pmatrix}\) sind beides Elemente von \(M_4\). Aber \(\begin{pmatrix} 1 \\ -1 \\ \end{pmatrix}+\begin{pmatrix} -1 \\ -1 \\ \end{pmatrix}=\begin{pmatrix} 0 \\ -2 \\ \end{pmatrix}\) liegt nicht in der Menge (\(-2 \neq-(0)^2\)).
-        </p>
-        <p>
-            Damit ist \(M_4\) kein Untervektorraum des \(\mathbb{R}^2\).
-        </p>
-    </div>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(M_5=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-2x \Big\}\)
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            (a) Seien \(\begin{pmatrix} x_1 \\ y_1 \\ \end{pmatrix},\begin{pmatrix} x_2 \\ y_2 \\ \end{pmatrix} \in M_5\).
-        </p>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                Damit gilt&#160; \(y_1=-2x_1\) und \(y_2=-2x_2\).
-            </p>
-        </div>
-        <div class="editor-indent" style="margin-left: 30px;">
-            <span style="">
-                Nun wird &#252;berpr&#252;ft, ob der Vektor \(\begin{pmatrix} x_1 \\ y_1 \\ \end{pmatrix}+\begin{pmatrix} x_2 \\ y_2 \\ \end{pmatrix}=\begin{pmatrix} x_1+x_2 \\ y_1+y_2 \\ \end{pmatrix}\) auch wieder in \(M_5\) liegt:
-            </span>
-        </div>
-        <div class="editor-indent" style="margin-left: 30px;">
-            <span style="">
-                <br/>
-            </span>
-        </div>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
-            <div class="editor-indent" style="margin-left: 30px;">
-                \((y_1+y_2)=-2(x_1+x_2)=-2x_1-2x_2=y_1+y_2\)
-            </div>
-        </div>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
-            <br/>
-        </div>
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                Die Menge ist bez&#252;glich der Addition abgeschlossen. (Es macht keinen Unterschied, ob man erst die Vektoren addiert und dann in die Bedingung einsetzt oder die Vektoren einzeln in die Bedingung einsetzt und danach addiert.)
-            </p>
-        </div>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            (b) Sei \(\lambda \in \mathbb{R}\) und&#160;\(\begin{pmatrix} x \\ y \\ \end{pmatrix} \in M_5\) (Es gilt also \(y=-2x\)).
-        </p>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                &#196;quivalent zu (a):
-            </p>
-        </div>
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                Es wird &#252;berpr&#252;ft, ob f&#252;r \(\lambda \in \mathbb{R}\) der Vektor \(\lambda \cdot \begin{pmatrix} x \\ y \\ \end{pmatrix}=\begin{pmatrix} \lambda \cdot x \\ \lambda \cdot y \\ \end{pmatrix}\) wieder in \(M_5\) liegt:
-            </p>
-            <p>
-                <br/>
-            </p>
-        </div>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
-            <div class="editor-indent" style="margin-left: 30px;">
-                <p>
-                    \((\lambda \cdot y)=-2(\lambda \cdot x)=\lambda \cdot (-2x)=\lambda \cdot (y)\)
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                <br/>
-            </p>
-        </div>
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                Die Menge ist auch bez&#252;glich der Skalarmultiplikation abgeschlossen. (Es macht wieder keinen Unterschied, ob man den Vektor erst mit \(\lambda\) multipliziert und danach in die Bedingung einsetzt oder ob man den Vektor einsetzt und anschlie&#223;end mit \(\lambda\) multipliziert.)
-            </p>
-        </div>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            Damit ist \(M_5\) ein Untervektorraum des \(\mathbb{R}^2\).
-        </p>
-    </div>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(M_6=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-2x+1 \Big\}\)
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            Gegenbeispiel zu (a):
-        </p>
-        <div>
-            <p>
-                Die Vektoren&#160;\(\begin{pmatrix} 0 \\ 1 \\ \end{pmatrix}, \ \begin{pmatrix} 1 \\ -1 \\ \end{pmatrix}\) sind beides Elemente von \(M_6\). Aber \(\begin{pmatrix} 0 \\ 1 \\ \end{pmatrix}+\begin{pmatrix} 1 \\ -1 \\ \end{pmatrix}=\begin{pmatrix} 1 \\ 0 \\ \end{pmatrix}\) liegt nicht in der Menge (\(0 \neq-2\cdot 1+1\)).
-            </p>
-        </div>
-        <div>
-            <p>
-                Damit ist \(M_6\) kein Untervektorraum des \(\mathbb{R}^2\)
-            </p>
-        </div>
-    </div>
-    <p>
-    </p>
+    </span>
+</p>
+<p>
+    Um zu zeigen, dass \(M_i\) ein Untervektorraum von \(\mathbb{R}^2\) ist, m&#252;ssen die Eigenschaften allgemein nachgepr&#252;ft werden.
+</p>
+<p>
+    L&#228;sst sich ein Gegenbeispiel finden, ist \(M_i\) kein Untervektorraum von \(\mathbb{R}^2\).
+</p>
+<p>
     <br/>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <h4>
-        <b>
-            Solution
-        </b>
-    </h4>
-    <p>
-        <b>
-            <br/>
-        </b>
-    </p>
-    <p>
-        <span>
-            Definition of a subvector space (for \(\mathbb{R}\):
-        </span>
-    </p>
-    <p>
-        <span>
-            A non-empty subset \(M_i\) of \(\mathbb{R}\)-vector room \(\mathbb{R}^2\) means subvector space, if applicable:
-        </span>
-    </p>
-    <p>
-        <span>
-            <b>
-                (a)
-            </b>
-            \(u_1\), \(u_2 \in M_i \Rightarrow u_1+u_2 \in M_i\)
-        </span>
-    </p>
-    <p>
-        <span>
-            <b>
-                (b)
-            </b>
-            \(\lambda \in \mathbb{R}\), \(u \in M_i \Rightarrow \lambda \cdot u \in M_i\)
-        </span>
-    </p>
-    <p>
-        <span>
-            <br/>
-        </span>
-    </p>
-    <p>
-        To show that \(M_i\) a subvector space of \(\mathbb{R}^2\) the properties must be generally checked.
-    </p>
-    <p>
-        If a counter-example can be found, \(M_i\) no subvector space of \(\mathbb{R}^2\).
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(M_1=\Big\{\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix} \Big\}\)
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            (a) \(\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}+\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}\)
-        </p>
-        <p>
-            Since the amount has only one element, the first property is fulfilled.
-        </p>
-        <p>
-            (b) \(\lambda\cdot\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}\in M_1\) for all \(\lambda \in \mathbb{R}\)
-        </p>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                The quantity has no further element and thus this property is also checked.
-            </p>
-        </div>
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                The amount that contains only the zero vector always describes the smallest subvector space. Generally, the zero vector must be contained in each subvector space.
-            </p>
-        </div>
-    </div>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(M_2=\Big\{\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix} \Big\}\)
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            Comparative Example to (b):
-        </p>
-        <p>
-            For \(\lambda=0: \ 0\cdot\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}\notin M_2\)
-        </p>
-        <p>
-            This \(M_2\) no sub-vector space \(\mathbb{R}^2\).
-        </p>
-    </div>
-    <p>
-    </p>
-    <p>
-        \(M_3=\Big\{\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix},\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix} \Big\}\)
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            Example of (b):
-        </p>
-        <p>
-        </p>
-        <p>
-            For \(\lambda=3: \ 3\cdot\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix}=\begin{pmatrix} 6 \\ 6 \\ \end{pmatrix}\notin M_3\)
-        </p>
-        <p>
-        </p>
-        <p>
-        </p>
-        <p>
-            This \(M_3\) no sub-vector space \(\mathbb{R}^2\).
-        </p>
-        <p>
-        </p>
-    </div>
-    <p>
-    </p>
-    <p>
-        \(M_4=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-x^2 \Big\}\)
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            Comparative Example to (a):
-        </p>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            The vectors\(\begin{pmatrix} 1 \\ -1 \\ \end{pmatrix}, \ \begin{pmatrix} -1 \\ -1 \\ \end{pmatrix}\) are both elements of \(M_4\). But \(\begin{pmatrix} 1 \\ -1 \\ \end{pmatrix}+\begin{pmatrix} -1 \\ -1 \\ \end{pmatrix}=\begin{pmatrix} 0 \\ -2 \\ \end{pmatrix}\) is not in quantity (\(-2 \neq-(0)^2\)).
-        </p>
-        <p>
-            This \(M_4\) no sub-vector space \(\mathbb{R}^2\).
-        </p>
-    </div>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(M_5=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-2x \Big\}\)
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            (a) Be \(\begin{pmatrix} x_1 \\ y_1 \\ \end{pmatrix},\begin{pmatrix} x_2 \\ y_2 \\ \end{pmatrix} \in M_5\).
-        </p>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                This applies \(y_1=-2x_1\) and \(y_2=-2x_2\).
-            </p>
-        </div>
-        <div class="editor-indent" style="margin-left: 30px;">
-            <span style="">
-                Now it is checked whether the vector \(\begin{pmatrix} x_1 \\ y_1 \\ \end{pmatrix}+\begin{pmatrix} x_2 \\ y_2 \\ \end{pmatrix}=\begin{pmatrix} x_1+x_2 \\ y_1+y_2 \\ \end{pmatrix}\) also in \(M_5\) lies:
-            </span>
-        </div>
-        <div class="editor-indent" style="margin-left: 30px;">
-            <span style="">
-                <br/>
-            </span>
-        </div>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
-            <div class="editor-indent" style="margin-left: 30px;">
-                \((y_1+y_2)=-2(x_1+x_2)=-2x_1-2x_2=y_1+y_2\)
-            </div>
-        </div>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
-            <br/>
-        </div>
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                The amount is complete with respect to the addition. (It makes no difference whether the vectors are first added and then inserted into the condition or the vectors are inserted individually into the condition and then added.)
-            </p>
-        </div>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            (b) Be careful \(\lambda \in \mathbb{R}\) and\(\begin{pmatrix} x \\ y \\ \end{pmatrix} \in M_5\) (This is the case) \(y=-2x\)).
-        </p>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                Equivalent to (a):
-            </p>
-        </div>
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                It is checked whether \(\lambda \in \mathbb{R}\) the vector \(\lambda \cdot \begin{pmatrix} x \\ y \\ \end{pmatrix}=\begin{pmatrix} \lambda \cdot x \\ \lambda \cdot y \\ \end{pmatrix}\) again \(M_5\) lies:
-            </p>
-            <p>
-                <br/>
-            </p>
-        </div>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
-            <div class="editor-indent" style="margin-left: 30px;">
-                <p>
-                    \((\lambda \cdot y)=-2(\lambda \cdot x)=\lambda \cdot (-2x)=\lambda \cdot (y)\)
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                <br/>
-            </p>
-        </div>
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                The quantity is also complete with respect to scalar multiplication. (It doesn't make any difference again whether the vector is not \(\lambda\) multiplied and then inserted into the condition or whether the vector is used and then with \(\lambda\) multiplied.)
-            </p>
-        </div>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            This \(M_5\) a subvector space of \(\mathbb{R}^2\).
-        </p>
-    </div>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(M_6=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-2x+1 \Big\}\)
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            Comparative Example to (a):
-        </p>
-        <div>
-            <p>
-                The vectors\(\begin{pmatrix} 0 \\ 1 \\ \end{pmatrix}, \ \begin{pmatrix} 1 \\ -1 \\ \end{pmatrix}\) are both elements of \(M_6\). But \(\begin{pmatrix} 0 \\ 1 \\ \end{pmatrix}+\begin{pmatrix} 1 \\ -1 \\ \end{pmatrix}=\begin{pmatrix} 1 \\ 0 \\ \end{pmatrix}\) is not in quantity (\(0 \neq-2\cdot 1+1\)).
-            </p>
-        </div>
-        <div>
-            <p>
-                This \(M_6\) no sub-vector space \(\mathbb{R}^2\)
-            </p>
-        </div>
-    </div>
-    <p>
-    </p>
+</p>
+<p>
+    \(M_1=\Big\{\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix} \Big\}\)
     <br/>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        (a)&#160; \(\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}+\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}\)
+    </p>
+    <p>
+        Da die Menge nur ein Element besitzt, ist die erste Eigenschaft erf&#252;llt.
+    </p>
+    <p>
+        (b) \(\lambda\cdot\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}\in M_1\) f&#252;r alle \(\lambda \in \mathbb{R}\)
+    </p>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            Die Menge hat kein weiteres Element und damit ist auch diese Eigenschaft &#252;berpr&#252;ft.
+        </p>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            Die Menge, die nur den Nullvektor enth&#228;lt, beschreibt immer den kleinsten Untervektorraum. Allgemein muss der Nullvektor in jedem Untervektorraum enthalten sein.
+        </p>
+    </div>
+</div>
+<p>
+    <br/>
+</p>
+<p>
+    \(M_2=\Big\{\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix} \Big\}\)
+    <br/>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        Gegenbeispiel zu (b):
+    </p>
+    <p>
+        F&#252;r \(\lambda=0: \ 0\cdot\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}\notin M_2\)
+    </p>
+    <p>
+        Damit ist \(M_2\) kein Untervektorraum des \(\mathbb{R}^2\).
+    </p>
+</div>
+<p>
+</p>
+<p>
+    \(M_3=\Big\{\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix},\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix} \Big\}\)
+    <br/>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        Gebenbeispiel zu (b):
+    </p>
     <p>
     </p>
-</span>
+    <p>
+        F&#252;r \(\lambda=3: \ 3\cdot\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix}=\begin{pmatrix} 6 \\ 6 \\ \end{pmatrix}\notin M_3\)
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+        Damit ist \(M_3\) kein Untervektorraum des \(\mathbb{R}^2\).
+    </p>
+    <p>
+    </p>
+</div>
+<p>
+</p>
+<p>
+    \(M_4=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-x^2 \Big\}\)
+    <br/>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        Gegenbeispiel zu (a):
+    </p>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        Die Vektoren&#160;\(\begin{pmatrix} 1 \\ -1 \\ \end{pmatrix}, \ \begin{pmatrix} -1 \\ -1 \\ \end{pmatrix}\) sind beides Elemente von \(M_4\). Aber \(\begin{pmatrix} 1 \\ -1 \\ \end{pmatrix}+\begin{pmatrix} -1 \\ -1 \\ \end{pmatrix}=\begin{pmatrix} 0 \\ -2 \\ \end{pmatrix}\) liegt nicht in der Menge (\(-2 \neq-(0)^2\)).
+    </p>
+    <p>
+        Damit ist \(M_4\) kein Untervektorraum des \(\mathbb{R}^2\).
+    </p>
+</div>
+<p>
+    <br/>
+</p>
+<p>
+    \(M_5=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-2x \Big\}\)
+    <br/>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        (a) Seien \(\begin{pmatrix} x_1 \\ y_1 \\ \end{pmatrix},\begin{pmatrix} x_2 \\ y_2 \\ \end{pmatrix} \in M_5\).
+    </p>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            Damit gilt&#160; \(y_1=-2x_1\) und \(y_2=-2x_2\).
+        </p>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <span style="">
+            Nun wird &#252;berpr&#252;ft, ob der Vektor \(\begin{pmatrix} x_1 \\ y_1 \\ \end{pmatrix}+\begin{pmatrix} x_2 \\ y_2 \\ \end{pmatrix}=\begin{pmatrix} x_1+x_2 \\ y_1+y_2 \\ \end{pmatrix}\) auch wieder in \(M_5\) liegt:
+        </span>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <span style="">
+            <br/>
+        </span>
+    </div>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <div class="editor-indent" style="margin-left: 30px;">
+        <div class="editor-indent" style="margin-left: 30px;">
+            \((y_1+y_2)=-2(x_1+x_2)=-2x_1-2x_2=y_1+y_2\)
+        </div>
+    </div>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <div class="editor-indent" style="margin-left: 30px;">
+        <br/>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            Die Menge ist bez&#252;glich der Addition abgeschlossen. (Es macht keinen Unterschied, ob man erst die Vektoren addiert und dann in die Bedingung einsetzt oder die Vektoren einzeln in die Bedingung einsetzt und danach addiert.)
+        </p>
+    </div>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        (b) Sei \(\lambda \in \mathbb{R}\) und&#160;\(\begin{pmatrix} x \\ y \\ \end{pmatrix} \in M_5\) (Es gilt also \(y=-2x\)).
+    </p>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            &#196;quivalent zu (a):
+        </p>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            Es wird &#252;berpr&#252;ft, ob f&#252;r \(\lambda \in \mathbb{R}\) der Vektor \(\lambda \cdot \begin{pmatrix} x \\ y \\ \end{pmatrix}=\begin{pmatrix} \lambda \cdot x \\ \lambda \cdot y \\ \end{pmatrix}\) wieder in \(M_5\) liegt:
+        </p>
+        <p>
+            <br/>
+        </p>
+    </div>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <div class="editor-indent" style="margin-left: 30px;">
+        <div class="editor-indent" style="margin-left: 30px;">
+            <p>
+                \((\lambda \cdot y)=-2(\lambda \cdot x)=\lambda \cdot (-2x)=\lambda \cdot (y)\)
+            </p>
+        </div>
+    </div>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            <br/>
+        </p>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            Die Menge ist auch bez&#252;glich der Skalarmultiplikation abgeschlossen. (Es macht wieder keinen Unterschied, ob man den Vektor erst mit \(\lambda\) multipliziert und danach in die Bedingung einsetzt oder ob man den Vektor einsetzt und anschlie&#223;end mit \(\lambda\) multipliziert.)
+        </p>
+    </div>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        Damit ist \(M_5\) ein Untervektorraum des \(\mathbb{R}^2\).
+    </p>
+</div>
+<p>
+    <br/>
+</p>
+<p>
+    \(M_6=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-2x+1 \Big\}\)
+    <br/>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        Gegenbeispiel zu (a):
+    </p>
+    <div>
+        <p>
+            Die Vektoren&#160;\(\begin{pmatrix} 0 \\ 1 \\ \end{pmatrix}, \ \begin{pmatrix} 1 \\ -1 \\ \end{pmatrix}\) sind beides Elemente von \(M_6\). Aber \(\begin{pmatrix} 0 \\ 1 \\ \end{pmatrix}+\begin{pmatrix} 1 \\ -1 \\ \end{pmatrix}=\begin{pmatrix} 1 \\ 0 \\ \end{pmatrix}\) liegt nicht in der Menge (\(0 \neq-2\cdot 1+1\)).
+        </p>
+    </div>
+    <div>
+        <p>
+            Damit ist \(M_6\) kein Untervektorraum des \(\mathbb{R}^2\)
+        </p>
+    </div>
+</div>
+<p>
+</p>
+<br/>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<h4>
+    <b>
+        Solution
+    </b>
+</h4>
+<p>
+    <b>
+        <br/>
+    </b>
+</p>
+<p>
+    <span>
+        Definition of a subvector space (for \(\mathbb{R}\):
+    </span>
+</p>
+<p>
+    <span>
+        A non-empty subset \(M_i\) of \(\mathbb{R}\)-vector space \(\mathbb{R}^2\) means subvector space, if applicable:
+    </span>
+</p>
+<p>
+    <span>
+        <b>
+            (a)
+        </b>
+        \(u_1\), \(u_2 \in M_i \Rightarrow u_1+u_2 \in M_i\)
+    </span>
+</p>
+<p>
+    <span>
+        <b>
+            (b)
+        </b>
+        \(\lambda \in \mathbb{R}\), \(u \in M_i \Rightarrow \lambda \cdot u \in M_i\)
+    </span>
+</p>
+<p>
+    <span>
+        <br/>
+    </span>
+</p>
+<p>
+    To show that \(M_i\) a subvector space of \(\mathbb{R}^2\) the properties must be generally checked.
+</p>
+<p>
+    If a counter-example can be found, \(M_i\) no subvector space of \(\mathbb{R}^2\).
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    \(M_1=\Big\{\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix} \Big\}\)
+    <br/>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        (a) \(\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}+\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}\)
+    </p>
+    <p>
+        Since the set has only one element, the first property is fulfilled.
+    </p>
+    <p>
+        (b) \(\lambda\cdot\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}\in M_1\) for all \(\lambda \in \mathbb{R}\)
+    </p>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            The set has no further element and thus this property is also checked.
+        </p>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            The set that contains only the zero vector always describes the smallest subvector space. Generally, the zero vector must be contained in each subvector space.
+        </p>
+    </div>
+</div>
+<p>
+    <br/>
+</p>
+<p>
+    \(M_2=\Big\{\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix} \Big\}\)
+    <br/>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        Comparative Example to (b):
+    </p>
+    <p>
+        For \(\lambda=0: \ 0\cdot\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix}\notin M_2\)
+    </p>
+    <p>
+        This \(M_2\) no sub-vector space \(\mathbb{R}^2\).
+    </p>
+</div>
+<p>
+</p>
+<p>
+    \(M_3=\Big\{\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix},\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix} \Big\}\)
+    <br/>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        Example of (b):
+    </p>
+    <p>
+    </p>
+    <p>
+        For \(\lambda=3: \ 3\cdot\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix}=\begin{pmatrix} 6 \\ 6 \\ \end{pmatrix}\notin M_3\)
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+        This \(M_3\) no sub-vector space \(\mathbb{R}^2\).
+    </p>
+    <p>
+    </p>
+</div>
+<p>
+</p>
+<p>
+    \(M_4=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-x^2 \Big\}\)
+    <br/>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        Comparative Example to (a):
+    </p>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        The vectors\(\begin{pmatrix} 1 \\ -1 \\ \end{pmatrix}, \ \begin{pmatrix} -1 \\ -1 \\ \end{pmatrix}\) are both elements of \(M_4\). But \(\begin{pmatrix} 1 \\ -1 \\ \end{pmatrix}+\begin{pmatrix} -1 \\ -1 \\ \end{pmatrix}=\begin{pmatrix} 0 \\ -2 \\ \end{pmatrix}\) is not in set (\(-2 \neq-(0)^2\)).
+    </p>
+    <p>
+        This \(M_4\) no sub-vector space \(\mathbb{R}^2\).
+    </p>
+</div>
+<p>
+    <br/>
+</p>
+<p>
+    \(M_5=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-2x \Big\}\)
+    <br/>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        (a) Be \(\begin{pmatrix} x_1 \\ y_1 \\ \end{pmatrix},\begin{pmatrix} x_2 \\ y_2 \\ \end{pmatrix} \in M_5\).
+    </p>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            This applies \(y_1=-2x_1\) and \(y_2=-2x_2\).
+        </p>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <span style="">
+            Now it is checked whether the vector \(\begin{pmatrix} x_1 \\ y_1 \\ \end{pmatrix}+\begin{pmatrix} x_2 \\ y_2 \\ \end{pmatrix}=\begin{pmatrix} x_1+x_2 \\ y_1+y_2 \\ \end{pmatrix}\) also in \(M_5\) lies:
+        </span>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <span style="">
+            <br/>
+        </span>
+    </div>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <div class="editor-indent" style="margin-left: 30px;">
+        <div class="editor-indent" style="margin-left: 30px;">
+            \((y_1+y_2)=-2(x_1+x_2)=-2x_1-2x_2=y_1+y_2\)
+        </div>
+    </div>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <div class="editor-indent" style="margin-left: 30px;">
+        <br/>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            The set is complete with respect to the addition. (It makes no difference whether the vectors are first added and then inserted into the condition or the vectors are inserted individually into the condition and then added.)
+        </p>
+    </div>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        (b) Let \(\lambda \in \mathbb{R}\) and\(\begin{pmatrix} x \\ y \\ \end{pmatrix} \in M_5\) (This is the case) \(y=-2x\)).
+    </p>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            Equivalent to (a):
+        </p>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            It is checked whether \(\lambda \in \mathbb{R}\) the vector \(\lambda \cdot \begin{pmatrix} x \\ y \\ \end{pmatrix}=\begin{pmatrix} \lambda \cdot x \\ \lambda \cdot y \\ \end{pmatrix}\) again \(M_5\) lies:
+        </p>
+        <p>
+            <br/>
+        </p>
+    </div>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <div class="editor-indent" style="margin-left: 30px;">
+        <div class="editor-indent" style="margin-left: 30px;">
+            <p>
+                \((\lambda \cdot y)=-2(\lambda \cdot x)=\lambda \cdot (-2x)=\lambda \cdot (y)\)
+            </p>
+        </div>
+    </div>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            <br/>
+        </p>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            The set is also complete with respect to scalar multiplication. (It doesn't make any difference again whether the vector is not \(\lambda\) multiplied and then inserted into the condition or whether the vector is used and then with \(\lambda\) multiplied.)
+        </p>
+    </div>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        This \(M_5\) a subvector space of \(\mathbb{R}^2\).
+    </p>
+</div>
+<p>
+    <br/>
+</p>
+<p>
+    \(M_6=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-2x+1 \Big\}\)
+    <br/>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        Comparative Example to (a):
+    </p>
+    <div>
+        <p>
+            The vectors\(\begin{pmatrix} 0 \\ 1 \\ \end{pmatrix}, \ \begin{pmatrix} 1 \\ -1 \\ \end{pmatrix}\) are both elements of \(M_6\). But \(\begin{pmatrix} 0 \\ 1 \\ \end{pmatrix}+\begin{pmatrix} 1 \\ -1 \\ \end{pmatrix}=\begin{pmatrix} 1 \\ 0 \\ \end{pmatrix}\) is not in set (\(0 \neq-2\cdot 1+1\)).
+        </p>
+    </div>
+    <div>
+        <p>
+            This \(M_6\) no sub-vector space \(\mathbb{R}^2\)
+        </p>
+    </div>
+</div>
+<p>
+</p>
+<br/>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>2.0000000</defaultgrade>
@@ -558,47 +556,31 @@
         <showstandardinstruction>1</showstandardinstruction>
         <correctfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Die Antwort ist richtig.
-</span>
-<span class="multilang" lang="en">
-    The answer is correct.
-</span>
+[[lang code="de"]]Die Antwort ist richtig.[[/lang]][[lang code="en"]]The answer is correct.[[/lang]]
 ]]></text>
         </correctfeedback>
         <partiallycorrectfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Die Antwort ist teilweise richtig.
-</span>
-<span class="multilang" lang="en">
-    The answer is partly correct.
-</span>
+[[lang code="de"]]Die Antwort ist teilweise richtig.[[/lang]][[lang code="en"]]The answer is partly correct.[[/lang]]
 ]]></text>
         </partiallycorrectfeedback>
         <incorrectfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Die Antwort ist falsch.
-</span>
-<span class="multilang" lang="en">
-    The answer is wrong.
-</span>
+[[lang code="de"]]Die Antwort ist falsch.[[/lang]][[lang code="en"]]The answer is wrong.[[/lang]]
 ]]></text>
         </incorrectfeedback>
         <shownumcorrect/>
         <answer fraction="50" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(M_1=\Big\{\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix} \Big\}\)
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(M_1=\Big\{\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix} \Big\}\)
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(M_1=\Big\{\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix} \Big\}\)
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(M_1=\Big\{\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix} \Big\}\)
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text/>
@@ -606,18 +588,17 @@
         </answer>
         <answer fraction="-25" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(M_2=\Big\{\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix} \Big\}\)
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(M_2=\Big\{\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix} \Big\}\)
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(M_2=\Big\{\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix} \Big\}\)
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(M_2=\Big\{\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix} \Big\}\)
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text/>
@@ -625,18 +606,17 @@
         </answer>
         <answer fraction="-25" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(M_3=\Big\{\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix},\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix} \Big\}\)
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(M_3=\Big\{\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix},\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix} \Big\}\)
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(M_3=\Big\{\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix},\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix} \Big\}\)
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(M_3=\Big\{\begin{pmatrix} 0 \\ 0 \\ \end{pmatrix},\begin{pmatrix} 2 \\ 2 \\ \end{pmatrix} \Big\}\)
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text/>
@@ -644,16 +624,15 @@
         </answer>
         <answer fraction="-25" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(M_4=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-x^2 \Big\}\)
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(M_4=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-x^2 \Big\}\)
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(M_4=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-x^2 \Big\}\)
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(M_4=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-x^2 \Big\}\)
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text/>
@@ -661,18 +640,17 @@
         </answer>
         <answer fraction="50" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(M_5=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-2x \Big\}\)
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(M_5=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-2x \Big\}\)
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(M_5=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-2x \Big\}\)
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(M_5=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-2x \Big\}\)
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text/>
@@ -680,18 +658,17 @@
         </answer>
         <answer fraction="-25" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(M_6=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-2x+1 \Big\}\)
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(M_6=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-2x+1 \Big\}\)
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(M_6=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-2x+1 \Big\}\)
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(M_6=\Big\{\begin{pmatrix} x \\ y \\ \end{pmatrix} \in \mathbb{R}^2 | \ y=-2x+1 \Big\}\)
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text/>

@@ -6,18 +6,15 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Wie wahrscheinlich ist es, beim Zahlenlotto "6 aus 49" genau {@n@} Richtige zu haben?
-    </p>
-    <p>
-        Bitte runden Sie Ihr Ergebnis kaufm&#228;nnisch auf sechs Dezimalstellen und verwenden Sie einen Punkt als Dezimaltrennzeichen.
-    </p>
-    <p>
-        [[input:ans1]] [[validation:ans1]]
-    </p>
-</span>
-<span class="multilang" lang="en">
+[[lang code="de"]]
+<p>
+    Wie wahrscheinlich ist es, beim Zahlenlotto "6 aus 49" genau {@n@} Richtige zu haben?
+</p>
+<p>
+    Bitte runden Sie Ihr Ergebnis kaufm&#228;nnisch auf sechs Dezimalstellen und verwenden Sie einen Punkt als Dezimaltrennzeichen.
+</p>
+<p>
+    [[/lang]][[lang code="en"]]
     <p>
         How likely it is, with the numberlotto "6 out of 49" exactly {@n@} Right?
     </p>
@@ -25,9 +22,11 @@
         Please complete your result commercially on six decimal places and use a point as a decimal separator.
     </p>
     <p>
-        [[input:ans1]] [[validation:ans1]]
+        [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
     </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -46,16 +45,15 @@ ta1:decimalplaces((binomial(6,n)*binomial(43,6-n))/binomial(49,6),6);</text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    [[/lang]][[lang code="en"]]
     <p>
-        [[feedback:prt1]]
+        [[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        [[feedback:prt1]]
-    </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">

@@ -6,96 +6,94 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        <span style="font-size: 14px; font-weight: normal;">
-            Sei $$z^5=1+i.$$
-        </span>
-        <br/>
-    </h4>
-    <p>
-        Geben Sie den Hauptwert von \(z\) an.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <h4>
-        <span style="font-size: 14px; font-weight: normal;">
-            Be $$z^5=1+i.$
-        </span>
-        <br/>
-    </h4>
-    <p>
-        Enter the main value of \(z\) on.
-    </p>
-</span>
+[[lang code="de"]]
+<h4>
+    <span style="font-size: 14px; font-weight: normal;">
+        Sei $$z^5=1+i.$$
+    </span>
+    <br/>
+</h4>
+<p>
+    Geben Sie den Hauptwert von \(z\) an.
+</p>
+[[/lang]][[lang code="en"]]
+<h4>
+    <span style="font-size: 14px; font-weight: normal;">
+        Be $$z^5=1+i.$
+    </span>
+    <br/>
+</h4>
+<p>
+    Enter the main value of \(z\) on.
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4 style="text-align: left;">
-        <strong>
-            L&#246;sung
-        </strong>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(z^5=1+i\)
-    </p>
-    <p>
-        F&#252;r die komplexe Zahl \(1+i\) gilt
-    </p>
-    <p>
-        \(r=\sqrt{1^2+1^2}=\sqrt{2}\)&#160; &#160;und&#160; &#160;\(\varphi=\arctan\left(\frac{1}{1}\right)=\frac{\pi}{4}\).
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        Der Hauptwert von \(z\) ist gegeben durch&#160; &#160;\(z_0=\sqrt[n]{r}e^{i\frac{\varphi}{n}}\)
-    </p>
-    <p>
-        Hier ist \(n=5\), also
-    </p>
-    <p>
-        \(z_0=\sqrt[5]{\sqrt{2}}e^{\frac{i\frac{\pi}{4}}{5}}=\sqrt[10]{2}e^{i\frac{\pi}{20}}\)
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <h4 style="text-align: left;">
-        <strong>
-            Solution
-        </strong>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(z^5=1+i\)
-    </p>
-    <p>
-        For complex numbers \(1+i\) Date
-    </p>
-    <p>
-        \(r=\sqrt{1^2+1^2}=\sqrt{2}\)and\(\varphi=\arctan\left(\frac{1}{1}\right)=\frac{\pi}{4}\).
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        The main value of \(z\) is given by\(z_0=\sqrt[n]{r}e^{i\frac{\varphi}{n}}\)
-    </p>
-    <p>
-        Here we go \(n=5\)So
-    </p>
-    <p>
-        \(z_0=\sqrt[5]{\sqrt{2}}e^{\frac{i\frac{\pi}{4}}{5}}=\sqrt[10]{2}e^{i\frac{\pi}{20}}\)
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<h4 style="text-align: left;">
+    <strong>
+        L&#246;sung
+    </strong>
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    \(z^5=1+i\)
+</p>
+<p>
+    F&#252;r die komplexe Zahl \(1+i\) gilt
+</p>
+<p>
+    \(r=\sqrt{1^2+1^2}=\sqrt{2}\)&#160; &#160;und&#160; &#160;\(\varphi=\arctan\left(\frac{1}{1}\right)=\frac{\pi}{4}\).
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    Der Hauptwert von \(z\) ist gegeben durch&#160; &#160;\(z_0=\sqrt[n]{r}e^{i\frac{\varphi}{n}}\)
+</p>
+<p>
+    Hier ist \(n=5\), also
+</p>
+<p>
+    \(z_0=\sqrt[5]{\sqrt{2}}e^{\frac{i\frac{\pi}{4}}{5}}=\sqrt[10]{2}e^{i\frac{\pi}{20}}\)
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<h4 style="text-align: left;">
+    <strong>
+        Solution
+    </strong>
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    \(z^5=1+i\)
+</p>
+<p>
+    For complex numbers \(1+i\) Date
+</p>
+<p>
+    \(r=\sqrt{1^2+1^2}=\sqrt{2}\)and\(\varphi=\arctan\left(\frac{1}{1}\right)=\frac{\pi}{4}\).
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    The main value of \(z\) is given by\(z_0=\sqrt[n]{r}e^{i\frac{\varphi}{n}}\)
+</p>
+<p>
+    Here we go \(n=5\)So
+</p>
+<p>
+    \(z_0=\sqrt[5]{\sqrt{2}}e^{\frac{i\frac{\pi}{4}}{5}}=\sqrt[10]{2}e^{i\frac{\pi}{20}}\)
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -108,16 +106,15 @@
         <showstandardinstruction>1</showstandardinstruction>
         <correctfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p dir="ltr" style="text-align: left;">
-        Die Antwort ist richtig.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p dir="ltr" style="text-align: left;">
-        The answer is correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    Die Antwort ist richtig.
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    The answer is correct.
+</p>
+[[/lang]]
 ]]></text>
         </correctfeedback>
         <partiallycorrectfeedback format="moodle_auto_format">
@@ -125,16 +122,15 @@
         </partiallycorrectfeedback>
         <incorrectfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p dir="ltr" style="text-align: left;">
-        Die Antwort ist falsch.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p dir="ltr" style="text-align: left;">
-        The answer is wrong.
-    </p>
-</span>
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    Die Antwort ist falsch.
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    The answer is wrong.
+</p>
+[[/lang]]
 ]]></text>
         </incorrectfeedback>
         <answer fraction="100" format="moodle_auto_format">

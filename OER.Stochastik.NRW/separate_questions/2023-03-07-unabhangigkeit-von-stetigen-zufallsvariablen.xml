@@ -1,0 +1,1418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>2023-03-07 Unabh&#228;ngigkeit von stetigen Zufallsvariablen</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-aufgabe-15-info">
+    <details>
+        <summary>
+            Inhalt und Umfang dieser Aufgabe
+        </summary>
+        <p>
+            In dieser Aufgabe lernen Sie, die stochastische Unabh&#228;ngigkeit von zwei stetigen Zufallsvariablen \(X\) und \(Y\) nachzuweisen oder zu widerlegen. Sie besteht aus den folgenden drei Teilaufgaben.
+        </p>
+        <ul>
+            <li>
+                In
+                <b>
+                    (a)
+                </b>
+                berechnen Sie die Randverteilungen \(P_X\) und \(P_Y\).
+            </li>
+            <li>
+                In
+                <b>
+                    (b)
+                </b>
+                berechnen Sie die Verteilung des Produktma&#223;es \(P_X\otimes P_Y\).
+            </li>
+            <li>
+                In
+                <b>
+                    (c)
+                </b>
+                entscheiden Sie, ob \(X\) und \(Y\) stochastisch unabh&#228;ngig sind.
+            </li>
+        </ul>
+    </details>
+    <hr/>
+</div>
+<div id="oer-aufgabe-15">
+    <p>
+        Seien \(X\) und \(Y\) zwei Zufallsvariablen, deren gemeinsame Verteilung \(P_{(X,Y)}\) die folgende Dichtefunktion \(f:\mathbb{R}^2\to(0,\infty)\) besitzt:
+\begin{equation*}
+f(x,y)={@expand(prefactor)@}\exp\left({@expand(exponent)@}\right).
+\end{equation*}
+    </p>
+    <hr/>
+</div>
+<div id="oer-aufgabe-15a">
+    <p>
+        <b>
+            (a)
+        </b>
+        Berechnen Sie die Randdichte \(f_X\) von \(X\) und die Randdichte \(f_Y\) von \(Y\).
+    </p>
+    <p>
+        Die Randdichte von \(X\) ist \(f_X(x)=\) [[/lang]][[lang code="en"]]
+        <div id="oer-aufgabe-15-info">
+            <details>
+                <summary>
+                    Content and scope of this task
+                </summary>
+                <p>
+                    In this task you will learn the stochastic independence of two constant random variables \(X\) and \(Y\) to prove or refute. It consists of the following three subtasks.
+                </p>
+                <ul>
+                    <li>
+                        In
+                        <b>
+                            (a)
+                        </b>
+                        calculate the edge distributions \(P_X\) and \(P_Y\).
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (b)
+                        </b>
+                        calculate the distribution of the product measure \(P_X\otimes P_Y\).
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (c)
+                        </b>
+                        decide whether \(X\) and \(Y\) are stochastic independent.
+                    </li>
+                </ul>
+            </details>
+            <hr/>
+        </div>
+        <div id="oer-aufgabe-15">
+            <p>
+                Be \(X\) and \(Y\) two random variables, their common distribution \(P_{(X,Y)}\) the following density function \(f:\mathbb{R}^2\to(0,\infty)\) owns:
+\begin{equation*}
+f(x,y)={@expand(prefactor)@}\exp\left({@expand(exponent)@}\right).
+\end{equation*}
+            </p>
+            <hr/>
+        </div>
+        <div id="oer-aufgabe-15a">
+            <p>
+                <b>
+                    (a)
+                </b>
+                Calculate the edge density \(f_X\) of \(X\) and edge density \(f_Y\) of \(Y\).
+            </p>
+            <p>
+                The edge density of \(X\) is \(f_X(x)=\) [[/lang]][[input:ansfX]][[lang code="de"]]. [[/lang]][[lang code="en"]]. [[/lang]][[validation:ansfX]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtfX]][[lang code="de"]]
+            </p>
+            <p>
+                Die Randdichte von \(Y\) ist \(f_Y(y)=\) [[/lang]][[lang code="en"]]
+            </p>
+            <p>
+                The edge density of \(Y\) is \(f_Y(y)=\) [[/lang]][[input:ansfY]][[lang code="de"]]. [[/lang]][[lang code="en"]]. [[/lang]][[validation:ansfY]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtfY]][[lang code="de"]]
+            </p>
+            [[/lang]][[lang code="en"]]
+        </div>
+    </p>
+    [[/lang]][[feedback:prtfXfY]][[lang code="de"]]
+</div>
+<div id="oer-aufgabe-15b" style="display:none;">
+    <p>
+        <b>
+            (b)
+        </b>
+        Berechnen Sie die Dichtefunktion \(\widetilde{f}\) des Produktma&#223;es \(P_X\otimes P_Y\).
+    </p>
+    <p>
+        Zur Erinnerung: In (a) haben Sie die Randdichten \(\displaystyle f_X(x)={@prefactorX@}\exp\left({@exponentX@}\right)\) und \(\displaystyle f_Y(y)={@prefactorY@}\exp\left({@exponentY@}\right)\) berechnet.
+    </p>
+    <p>
+        Die Dichtefunktion des Produktma&#223;es ist \(\widetilde{f}(x,y)=\) [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<div id="oer-aufgabe-15b" style="display:none;">
+    <p>
+        <b>
+            (b)
+        </b>
+        Calculate the density function \(\widetilde{f}\) the product dimension \(P_X\otimes P_Y\).
+    </p>
+    <p>
+        To remember: In (a) you have the edge densities \(\displaystyle f_X(x)={@prefactorX@}\exp\left({@exponentX@}\right)\) and \(\displaystyle f_Y(y)={@prefactorY@}\exp\left({@exponentY@}\right)\) calculated.
+    </p>
+    <p>
+        The density function of the product dimension is \(\widetilde{f}(x,y)=\) [[/lang]][[input:ansfXY]][[lang code="de"]]. [[/lang]][[lang code="en"]]. [[/lang]][[validation:ansfXY]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtfXY]][[lang code="de"]]
+    </p>
+</div>
+<div id="oer-aufgabe-15c" style="display:none;">
+    <p>
+        <b>
+            (c)
+        </b>
+        Entscheiden Sie, ob die Zufallsvariablen \(X\) und \(Y\) stochastisch unabh&#228;ngig sind.
+    </p>
+    <p>
+        Zur Erinnerung: In (b) haben Sie die Dichtefunktion \(\displaystyle\widetilde{f}(x,y)={@prefactorX*prefactorY@}\exp\left({@exponentX+exponentY@}\right)\) des Produktma&#223;es \(P_X\otimes P_Y\) berechnet.
+    </p>
+    <p>
+        \(X\) und \(Y\) sind [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<div id="oer-aufgabe-15c" style="display:none;">
+    <p>
+        <b>
+            (c)
+        </b>
+        Decide whether the random variables \(X\) and \(Y\) are stochastic independent.
+    </p>
+    <p>
+        To remember: In (b) you have the density function \(\displaystyle\widetilde{f}(x,y)={@prefactorX*prefactorY@}\exp\left({@exponentX+exponentY@}\right)\) the product dimension \(P_X\otimes P_Y\) calculated.
+    </p>
+    <p>
+        \(X\) and \(Y\) are [[/lang]][[input:ans3]][[lang code="de"]]. [[/lang]][[lang code="en"]]. [[/lang]][[validation:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt3]][[lang code="de"]]
+    </p>
+</div>
+<style>
+    .buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+</style>
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]][[lang code="en"]]
+<style>
+    .buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+</style>
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="moodle_auto_format">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>3.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+Unabh&#228;ngigkeit von stetigen Zufallsvariablen
+
+wurde entwickelt von
+  
+Christian M&#252;ller <c.mueller(at)hhu.de>
+
+nach einer Idee von
+
+Axel B&#252;cher <axel.buecher(at)hhu.de>
+Peter Kern <kern(at)hhu.de>
+
+an der Heinrich-Heine-Universit&#228;t D&#252;sseldorf.
+
+Dieses Werk ist lizenziert unter einer Creative Commons Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie https://creativecommons.org/licenses/by-sa/4.0/.
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+
+Technische Informationen:
+
+Diese Aufgabe bindet das Skript 'stackselbstlern.js' von Michael Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+/* Erwartungswert von X und Y */
+muX: rand(5) - 2
+muY: rand(5) - 2
+/* Standardabweichung von X und Y */
+sX: rand([1, 2, 3])
+sY: rand([1, 2, 3])
+/* Korrelationskoeffizient zwischen X und Y */
+r: rand([-1 / 2, 0, 1 / 2])
+
+/* Dichtefunktion der gemeinsamen Verteilung */
+prefactor: 1 / (2 * %pi * sX * sY * sqrt(1 - r^2))
+exponent: -1/(2 * (1 - r^2)) * ((x - muX)^2 / sX^2 + (y - muY)^2 / sY^2 - 2 * r * (x - muX) * (y - muY)  /(sX * sY))
+f: prefactor * exp(exponent)
+
+/* Randdichte von X */
+prefactorX: 1 / sqrt(2 * %pi * sX^2)
+exponentX: -(x - muX)^2 / (2 * sX^2)
+fX: prefactorX * exp(exponentX)
+
+/* Randdichte von Y */
+prefactorY: 1 / sqrt(2 * %pi * sY^2)
+exponentY: -(y - muY)^2 / (2 * sY^2)
+fY: prefactorY * exp(exponentY)
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+/* L&#246;sungen */
+Tans3: [[tr("unabh&#228;ngig","independent"), is(equal(r, 0))], [tr("nicht unabh&#228;ngig","dependent"), is(notequal(r, 0))]]]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\(\mu_X={@muX@}\), \(\mu_Y={@muY@}\), \(s_X={@sX@}\), \(s_Y={@sY@}\), \(r={@r@}\)</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partly correct.[[/lang]]
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.[[/lang]]
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans3</name>
+            <type>dropdown</type>
+            <tans>Tans3</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansfX</name>
+            <type>algebraic</type>
+            <tans>fX</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords>integrate</forbidwords>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansfXY</name>
+            <type>algebraic</type>
+            <tans>fX * fY</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords>integrate</forbidwords>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansfY</name>
+            <type>algebraic</type>
+            <tans>fY</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords>integrate</forbidwords>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text><![CDATA[textA3: if is(equal(r, 0)) then ["unabh&#228;ngig", ""] else ["nicht unabh&#228;ngig", "nicht"]]]></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>textA3[1]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Die Zufallsvariablen \(X\) und \(Y\) sind genau dann unabh&#228;ngig, wenn \(P_{(X,Y)}=P_X\otimes P_Y\) gilt, d.h. wenn \(f(x,y)=\widetilde{f}(x,y)\) f&#252;r alle \((x,y)\in\mathbb{R}^2\) gilt.
+</p>
+<p>
+    Wie Sie in (b) berechnet haben, stimmt das Produkt \(\widetilde{f}=f_Xf_Y\) der Dichtefunktionen von \(X\) und \(Y\) {@textA3[2]@} mit der gemeinsamen Dichtefunktion \(f\) von \((X,Y)\) &#252;berein, sodass \(X\) und \(Y\) {@textA3[1]@} sind.
+</p>
+<p>
+    Die Entscheidung &#252;ber Unabh&#228;ngigkeit ist auch ohne Berechnung der Randdichten m&#246;glich. Sofern die gemeinsame Dichte \(f\) faktorisiert, d.h. als Produkt einer Funktion von \(x\) und einer Funktion von \(y\) dargestellt werden kann, sind \(X\) und \(Y\) unabh&#228;ngig.
+</p>
+<hr/>
+<p>
+    Sie haben die Aufgabe erfolgreich gel&#246;st! Jetzt sollten Sie sicher entscheiden k&#246;nnen, ob zwei stetige Zufallsvariablen stochastisch unabh&#228;ngig sind.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The random variables \(X\) and \(Y\) are independent when \(P_{(X,Y)}=P_X\otimes P_Y\) where: \(f(x,y)=\widetilde{f}(x,y)\) for all \((x,y)\in\mathbb{R}^2\) Article 2
+</p>
+<p>
+    As you calculated in (b), the product is correct \(\widetilde{f}=f_Xf_Y\) the density functions of \(X\) and \(Y\) {@textA3[2]@} with the common density function \(f\) of \((X,Y)\) so that \(X\) and \(Y\) {@textA3[1]@} are.
+</p>
+<p>
+    The decision on independence is also possible without calculating the edge densities. If the common density \(f\) factorized, i.e. as a product of a function of \(x\) and a function of \(y\) can be represented, \(X\) and \(Y\) independent.
+</p>
+<hr/>
+<p>
+    You have successfully solved the task! Now you should be able to decide whether two constant random variables are stochastic independent.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Die Zufallsvariablen \(X\) und \(Y\) sind genau dann unabh&#228;ngig, wenn \(P_{(X,Y)}=P_X\otimes P_Y\) gilt, d.h. wenn \(f(x,y)=\widetilde{f}(x,y)\) f&#252;r alle \((x,y)\in\mathbb{R}^2\) gilt. &#220;berpr&#252;fen Sie, ob das hier der Fall ist.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The random variables \(X\) and \(Y\) are independent when \(P_{(X,Y)}=P_X\otimes P_Y\) where: \(f(x,y)=\widetilde{f}(x,y)\) for all \((x,y)\in\mathbb{R}^2\) Article 2 Check if this is the case.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtfX</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>is(member(sign(ansfX), [pos, pz]))</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtfX-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtfX-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Ihre Funktion \(f_X\) ist keine nichtnegative Funktion und kann daher nicht die Dichtefunktion eines Wahrscheinlichkeitsma&#223;es auf \(\mathbb{R}\) sein.
+</p>
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    Your function \(f_X\) is not a non-negative function and therefore cannot have the density function of a probability measure on \(\mathbb{R}\) be.
+</p>
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ldefint(ansfX, x, minf, inf)</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prtfX-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtfX-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Ihre Funktion \(f_X\) ist zwar nichtnegativ, erf&#252;llt aber nicht die Bedingung \(\displaystyle\int_{-\infty}^\infty f_X(x)\text{ d}x=1\) und kann daher nicht die Dichtefunktion eines Wahrscheinlichkeitsma&#223;es auf \(\mathbb{R}\) sein.
+</p>
+<p>
+    Die Randdichte \(f_X\) wird berechnet, indem aus der gemeinsamen Dichte \(f\) das zweite Argument \(y\) ausintegriert wird. Berechnen Sie also das Integral
+\begin{align*}
+f_X(x)
+&amp;=\int_{-\infty}^\infty f(x,y)\text{ d}y\\
+&amp;=\int_{-\infty}^\infty {@expand(prefactor)@}\exp\left({@expand(exponent)@}\right)\text{ d}y.
+\end{align*}
+Ein hilfreicher Trick dabei ist, den Integranden mithilfe einer quadratischen Erg&#228;nzung im Exponenten so umzuschreiben, dass Sie ein Integral &#252;ber die Dichtefunktion einer Normalverteilung erhalten. Dieses Integral ist dann nach Definition einer Dichtefunktion gleich 1.
+</p>
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    Your function \(f_X\) is not negative, but does not meet the condition \(\displaystyle\int_{-\infty}^\infty f_X(x)\text{ d}x=1\) and therefore cannot the density function of a probability measure on \(\mathbb{R}\) be.
+</p>
+<p>
+    The edge density \(f_X\) is calculated by \(f\) the second argument \(y\) is integrated. So calculate the integral
+\begin{align*}
+f_X(x)
+&amp;=\int_{-\infty}^\infty f(x,y)\text{ d}y\\
+&amp;=\int_{-\infty}^\infty {@expand(prefactor)@}\exp\left({@expand(exponent)@}\right)\text{ d}y.
+\end{align*}A helpful trick is to rewrite the integrande using a square supplement in the exponent to get an integral over the density function of a normal distribution. This integral is then equal to 1.
+</p>
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansfX</sans>
+                <tans>fX</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtfX-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Sie haben die Randdichte \(f_X\) von \(X\) richtig berechnet. Sie ergibt sich als Integral der gemeinsamen Dichte \(f\) bez&#252;glich dem zweiten Argument \(y\):
+\begin{align*}
+f_X(x)
+&amp;=\int_{-\infty}^\infty f(x,y)\text{ d}y\\
+&amp;=\int_{-\infty}^\infty {@expand(prefactor)@}\exp\left({@expand(exponent)@}\right)\text{ d}y\\
+&amp;={@prefactorX@}\exp\left({@exponentX@}\right).
+\end{align*}
+Dies ist die Dichtefunktion der Normalverteilung mit Erwartungswert \(\mu_X={@muX@}\) und Varianz \(\sigma_X^2={@sX^2@}\). In diesem Beispiel gilt also \(P_X=\text{N}({@muX@},{@sX^2@})\).
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    You have the edge density \(f_X\) of \(X\) correctly calculated. It results as an integral of the common density \(f\) with regard to the second argument \(y\):
+\begin{align*}
+f_X(x)
+&amp;=\int_{-\infty}^\infty f(x,y)\text{ d}y\\
+&amp;=\int_{-\infty}^\infty {@expand(prefactor)@}\exp\left({@expand(exponent)@}\right)\text{ d}y\\
+&amp;={@prefactorX@}\exp\left({@exponentX@}\right).
+\end{align*}This is the density function of the normal distribution with an expected value \(\mu_X={@muX@}\) and Variance \(\sigma_X^2={@sX^2@}\). This example therefore applies \(P_X=\text{N}({@muX@},{@sX^2@})\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtfX-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Ihre Funktion \(f_X\) ist zwar nichtnegativ und erf&#252;llt die Bedingung \(\displaystyle\int_{-\infty}^\infty f_X(x)\text{ d}x=1\), ist aber keine Dichtefunktion von \(P_X\).
+</p>
+<p>
+    Die Randdichte \(f_X\) wird berechnet, indem aus der gemeinsamen Dichte \(f\) das zweite Argument \(y\) ausintegriert wird. Berechnen Sie also das Integral
+\begin{align*}
+f_X(x)
+&amp;=\int_{-\infty}^\infty f(x,y)\text{ d}y\\
+&amp;=\int_{-\infty}^\infty {@expand(prefactor)@}\exp\left({@expand(exponent)@}\right)\text{ d}y.
+\end{align*}
+Ein hilfreicher Trick dabei ist, den Integranden mithilfe einer quadratischen Erg&#228;nzung im Exponenten so umzuschreiben, dass Sie ein Integral &#252;ber die Dichtefunktion einer Normalverteilung erhalten. Dieses Integral ist dann nach Definition einer Dichtefunktion gleich 1.
+</p>
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    Your function \(f_X\) is not negative and meets the condition \(\displaystyle\int_{-\infty}^\infty f_X(x)\text{ d}x=1\), but is not a density function \(P_X\).
+</p>
+<p>
+    The edge density \(f_X\) is calculated by \(f\) the second argument \(y\) is integrated. So calculate the integral
+\begin{align*}
+f_X(x)
+&amp;=\int_{-\infty}^\infty f(x,y)\text{ d}y\\
+&amp;=\int_{-\infty}^\infty {@expand(prefactor)@}\exp\left({@expand(exponent)@}\right)\text{ d}y.
+\end{align*}A helpful trick is to rewrite the integrande using a square supplement in the exponent to get an integral over the density function of a normal distribution. This integral is then equal to 1.
+</p>
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtfXfY</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansfX</sans>
+                <tans>fX</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtfXfY-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihr Ergebnis f&#252;r \(f_X\) ist richtig.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your result for \(f_X\) is correct.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtfXfY-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihr Ergebnis f&#252;r \(f_X\) ist falsch.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your result for \(f_X\) is wrong.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansfY</sans>
+                <tans>fY</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prtfXfY-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihr Ergebnis f&#252;r \(f_Y\) ist richtig.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your result for \(f_Y\) is correct.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtfXfY-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihr Ergebnis f&#252;r \(f_Y\) ist falsch.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your result for \(f_Y\) is wrong.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ansfX,ansfY]</sans>
+                <tans>[fX,fY]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtfXfY-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<hr/>
+<p>
+    Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-15a');
+show('oer-aufgabe-15b');
+" type="button">
+        Weiter
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<hr/>
+<p>
+    To get to the next task, click on
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-15a');
+show('oer-aufgabe-15b');
+" type="button">
+        Next
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtfXfY-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtfXY</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>is(member(sign(ansfXY), [pos, pz]))</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtfXY-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtfXY-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Funktion \(\widetilde{f}\) ist keine nichtnegative Funktion und kann daher nicht die Dichtefunktion eines Wahrscheinlichkeitsma&#223;es auf \(\mathbb{R}^2\) sein.
+</p>
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your function \(\widetilde{f}\) is not a non-negative function and therefore cannot have the density function of a probability measure on \(\mathbb{R}^2\) be.
+</p>
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ldefint(ldefint(ansfXY, x, minf, inf), y, minf, inf)</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prtfXY-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtfXY-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Funktion \(\widetilde{f}\) ist zwar nichtnegativ, erf&#252;llt aber nicht die Bedingung \(\displaystyle\int_{-\infty}^\infty\int_{-\infty}^\infty\widetilde{f}(x,y)\text{ d}x\text{ d}y=1\) und kann daher nicht die Dichtefunktion eines Wahrscheinlichkeitsma&#223;es auf \(\mathbb{R}^2\) sein.
+</p>
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your function \(\widetilde{f}\) is not negative, but does not meet the condition \(\displaystyle\int_{-\infty}^\infty\int_{-\infty}^\infty\widetilde{f}(x,y)\text{ d}x\text{ d}y=1\) and therefore cannot the density function of a probability measure on \(\mathbb{R}^2\) be.
+</p>
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansfXY</sans>
+                <tans>fX * fY</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtfXY-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die Dichtefunktion \(\widetilde{f}\) des Produktma&#223;es \(P_X\otimes P_Y\) richtig berechnet. Sie lautet
+\begin{align*}
+\widetilde{f}(x,y)
+&amp;=f_X( x ) f_Y( y )\\
+&amp;={@prefactorX@}\exp\left({@exponentX@}\right)\cdot {@prefactorY@}\exp\left({@exponentY@}\right)\\
+&amp;={@prefactorX*prefactorY@}\exp\left({@exponentX+exponentY@}\right).
+\end{align*}
+</p>
+<hr/>
+<p>
+    Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-15b');
+show('oer-aufgabe-15c');
+" type="button">
+        Weiter
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have the density function \(\widetilde{f}\) the product dimension \(P_X\otimes P_Y\) correctly calculated. It is
+\begin{align*}
+\widetilde{f}(x,y)
+&amp;=f_X( x ) f_Y( y )\\
+&amp;={@prefactorX@}\exp\left({@exponentX@}\right)\cdot {@prefactorY@}\exp\left({@exponentY@}\right)\\
+&amp;={@prefactorX*prefactorY@}\exp\left({@exponentX+exponentY@}\right).
+\end{align*}
+</p>
+<hr/>
+<p>
+    To get to the next task, click on
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-15b');
+show('oer-aufgabe-15c');
+" type="button">
+        Next
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtfXY-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Funktion \(\widetilde{f}\) ist zwar nichtnegativ und erf&#252;llt die Bedingung \(\displaystyle\int_{-\infty}^\infty\int_{-\infty}^\infty\widetilde{f}(x,y)\text{ d}x\text{ d}y=1\), ist aber keine Dichtefunktion von \(P_X\otimes P_Y\).
+</p>
+<p>
+    Eine Dichtefunktion des Produktma&#223;es \(P_X\otimes P_Y\) erh&#228;lt man durch das Produkt der Randdichten von \(X\) und \(Y\). Diese Randdichten haben Sie bereits in (a) berechnet.
+</p>
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your function \(\widetilde{f}\) is not negative and meets the condition \(\displaystyle\int_{-\infty}^\infty\int_{-\infty}^\infty\widetilde{f}(x,y)\text{ d}x\text{ d}y=1\), but is not a density function \(P_X\otimes P_Y\).
+</p>
+<p>
+    A density function of the product dimension \(P_X\otimes P_Y\) the product of the edge densities of \(X\) and \(Y\). You have already calculated these edge densities in (a).
+</p>
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtfY</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>is(member(sign(ansfY), [pos, pz]))</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtfY-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtfY-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Ihre Funktion \(f_Y\) ist keine nichtnegative Funktion und kann daher nicht die Dichtefunktion eines Wahrscheinlichkeitsma&#223;es auf \(\mathbb{R}\) sein.
+</p>
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    Your function \(f_Y\) is not a non-negative function and therefore cannot have the density function of a probability measure on \(\mathbb{R}\) be.
+</p>
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ldefint(ansfY, y, minf, inf)</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prtfY-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtfY-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Ihre Funktion \(f_Y\) ist zwar nichtnegativ, erf&#252;llt aber nicht die Bedingung \(\displaystyle\int_{-\infty}^\infty f_Y(y)\text{ d}y=1\) und kann daher nicht die Dichtefunktion eines Wahrscheinlichkeitsma&#223;es auf \(\mathbb{R}\) sein.
+</p>
+<p>
+    Die Randdichte \(f_Y\) wird berechnet, indem aus der gemeinsamen Dichte \(f\) das erste Argument \(x\) ausintegriert wird. Berechnen Sie also das Integral
+\begin{align*}
+f_Y(y)
+&amp;=\int_{-\infty}^\infty f(x,y)\text{ d}x\\
+&amp;=\int_{-\infty}^\infty {@expand(prefactor)@}\exp\left({@expand(exponent)@}\right)\text{ d}x.
+\end{align*}
+Ein hilfreicher Trick dabei ist, den Integranden mithilfe einer quadratischen Erg&#228;nzung im Exponenten so umzuschreiben, dass Sie ein Integral &#252;ber die Dichtefunktion einer Normalverteilung erhalten. Dieses Integral ist dann nach Definition einer Dichtefunktion gleich 1.
+</p>
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    Your function \(f_Y\) is not negative, but does not meet the condition \(\displaystyle\int_{-\infty}^\infty f_Y(y)\text{ d}y=1\) and therefore cannot the density function of a probability measure on \(\mathbb{R}\) be.
+</p>
+<p>
+    The edge density \(f_Y\) is calculated by \(f\) the first argument \(x\) is integrated. So calculate the integral
+\begin{align*}
+f_Y(y)
+&amp;=\int_{-\infty}^\infty f(x,y)\text{ d}x\\
+&amp;=\int_{-\infty}^\infty {@expand(prefactor)@}\exp\left({@expand(exponent)@}\right)\text{ d}x.
+\end{align*}A helpful trick is to rewrite the integrande using a square supplement in the exponent to get an integral over the density function of a normal distribution. This integral is then equal to 1.
+</p>
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansfY</sans>
+                <tans>fY</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtfY-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Sie haben die Randdichte \(f_Y\) von \(Y\) richtig berechnet. Sie ergibt sich als Integral der gemeinsamen Dichte \(f\) bez&#252;glich dem ersten Argument \(x\):
+\begin{align*}
+f_Y(y)
+&amp;=\int_{-\infty}^\infty f(x,y)\text{ d}x\\
+&amp;=\int_{-\infty}^\infty {@expand(prefactor)@}\exp\left({@expand(exponent)@}\right)\text{ d}x\\
+&amp;={@prefactorY@}\exp\left({@exponentY@}\right).
+\end{align*}
+Dies ist die Dichtefunktion der Normalverteilung mit Erwartungswert \(\mu_Y={@muY@}\) und Varianz \(\sigma_Y^2={@sY^2@}\). In diesem Beispiel gilt also \(P_Y=\text{N}({@muY@},{@sY^2@})\).
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    You have the edge density \(f_Y\) of \(Y\) correctly calculated. It results as an integral of the common density \(f\) with regard to the first argument \(x\):
+\begin{align*}
+f_Y(y)
+&amp;=\int_{-\infty}^\infty f(x,y)\text{ d}x\\
+&amp;=\int_{-\infty}^\infty {@expand(prefactor)@}\exp\left({@expand(exponent)@}\right)\text{ d}x\\
+&amp;={@prefactorY@}\exp\left({@exponentY@}\right).
+\end{align*}This is the density function of the normal distribution with an expected value \(\mu_Y={@muY@}\) and Variance \(\sigma_Y^2={@sY^2@}\). This example therefore applies \(P_Y=\text{N}({@muY@},{@sY^2@})\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtfY-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Ihre Funktion \(f_Y\) ist zwar nichtnegativ und erf&#252;llt die Bedingung \(\displaystyle\int_{-\infty}^\infty f_Y(y)\text{ d}y=1\), ist aber keine Dichtefunktion von \(P_Y\).
+</p>
+<p>
+    Die Randdichte \(f_Y\) wird berechnet, indem aus der gemeinsamen Dichte \(f\) das erste Argument \(x\) ausintegriert wird. Berechnen Sie also das Integral
+\begin{align*}
+f_Y(y)
+&amp;=\int_{-\infty}^\infty f(x,y)\text{ d}x\\
+&amp;=\int_{-\infty}^\infty {@expand(prefactor)@}\exp\left({@expand(exponent)@}\right)\text{ d}x.
+\end{align*}
+Ein hilfreicher Trick dabei ist, den Integranden mithilfe einer quadratischen Erg&#228;nzung im Exponenten so umzuschreiben, dass Sie ein Integral &#252;ber die Dichtefunktion einer Normalverteilung erhalten. Dieses Integral ist dann nach Definition einer Dichtefunktion gleich 1.
+</p>
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    Your function \(f_Y\) is not negative and meets the condition \(\displaystyle\int_{-\infty}^\infty f_Y(y)\text{ d}y=1\), but is not a density function \(P_Y\).
+</p>
+<p>
+    The edge density \(f_Y\) is calculated by \(f\) the first argument \(x\) is integrated. So calculate the integral
+\begin{align*}
+f_Y(y)
+&amp;=\int_{-\infty}^\infty f(x,y)\text{ d}x\\
+&amp;=\int_{-\infty}^\infty {@expand(prefactor)@}\exp\left({@expand(exponent)@}\right)\text{ d}x.
+\end{align*}A helpful trick is to rewrite the integrande using a square supplement in the exponent to get an integral over the density function of a normal distribution. This integral is then equal to 1.
+</p>
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>380293503</deployedseed>
+        <deployedseed>1016180068</deployedseed>
+        <deployedseed>1331935442</deployedseed>
+        <deployedseed>1021575881</deployedseed>
+        <deployedseed>1978268286</deployedseed>
+        <deployedseed>2126724835</deployedseed>
+        <deployedseed>653886414</deployedseed>
+        <deployedseed>1216301658</deployedseed>
+        <deployedseed>844583135</deployedseed>
+        <deployedseed>1076925708</deployedseed>
+        <deployedseed>779509931</deployedseed>
+        <deployedseed>893068034</deployedseed>
+        <deployedseed>1483547878</deployedseed>
+        <deployedseed>1166739957</deployedseed>
+        <deployedseed>1272249632</deployedseed>
+        <deployedseed>1045305141</deployedseed>
+        <deployedseed>313405417</deployedseed>
+        <deployedseed>1113597811</deployedseed>
+        <deployedseed>1012810756</deployedseed>
+        <deployedseed>315540088</deployedseed>
+        <deployedseed>1169796642</deployedseed>
+        <deployedseed>175979127</deployedseed>
+        <deployedseed>1434797025</deployedseed>
+        <deployedseed>747586707</deployedseed>
+        <deployedseed>933836890</deployedseed>
+        <deployedseed>175610397</deployedseed>
+        <deployedseed>2108204747</deployedseed>
+        <deployedseed>970681001</deployedseed>
+        <deployedseed>510446237</deployedseed>
+        <deployedseed>1304260025</deployedseed>
+        <deployedseed>1425408578</deployedseed>
+        <deployedseed>55576528</deployedseed>
+        <deployedseed>759790845</deployedseed>
+        <deployedseed>1979314177</deployedseed>
+        <deployedseed>492899997</deployedseed>
+        <deployedseed>1359937883</deployedseed>
+        <deployedseed>690803583</deployedseed>
+        <deployedseed>1714417040</deployedseed>
+        <deployedseed>1057537171</deployedseed>
+        <deployedseed>1970052156</deployedseed>
+        <deployedseed>1273825365</deployedseed>
+        <deployedseed>448094188</deployedseed>
+    </question>
+    
+
+</quiz>

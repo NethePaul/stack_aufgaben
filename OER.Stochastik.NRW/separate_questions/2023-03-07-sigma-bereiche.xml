@@ -1,0 +1,3871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>2023-03-07 Sigma-Bereiche</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-aufgabe-21-info">
+    <details>
+        <summary>
+            Inhalt und Umfang dieser Aufgabe
+        </summary>
+        <p>
+            In dieser Aufgabe lernen Sie, Wahrscheinlichkeiten bei normalverteilten Zufallsvariablen zu berechnen. Sie besteht aus den folgenden drei Teilaufgaben.
+        </p>
+        <ul>
+            <li>
+                In
+                <b>
+                    (a)
+                </b>
+                berechnen Sie die Wahrscheinlichkeit, dass eine zuf&#228;llige Beobachtung um ein Vielfaches der Standardabweichung vom Erwartungswert abweicht.
+            </li>
+            <li>
+                In
+                <b>
+                    (b)
+                </b>
+                bestimmen Sie die Verteilung des arithmetischen Mittels einer Versuchsreihe von Beobachtungen.
+            </li>
+            <li>
+                In
+                <b>
+                    (c)
+                </b>
+                berechnen Sie die Wahrscheinlichkeit, dass das arithmetische Mittel um ein Vielfaches der Standardabweichung vom Erwartungswert abweicht.
+            </li>
+        </ul>
+    </details>
+    <hr/>
+</div>
+<div id="oer-aufgabe-21">
+    <p>
+        Bei einer einzeldosierten Arzneiform mit einem Sollgewicht von \(\mu={@mu@}\text{ mg}\) gibt der Hersteller als Standardabweichung den Wert \(\sigma={@sigma@}\text{ mg}\) an. Zur Qualit&#228;tskontrolle einer produzierten Charge werden von \({@n@}\) ausgew&#228;hlten Tabletten die Gewichte \(x_1,\ldots,x_{{@n@}}\) mittels einer Analysenwaage gewogen und das arithmetische Mittel \(\overline{x}_{{@n@}}=\frac{1}{{@n@}}\sum_{i=1}^{{@n@}}x_i\) als Pr&#252;fgr&#246;&#223;e herangezogen. Es wird angenommen, dass die gemessenen Gewichte Realisierungen von unabh&#228;ngigen und identisch \(\text{N}({@mu@},{@sigma^2@})\)-verteilten Zufallsvariablen \(X_1,\ldots,X_{{@n@}}\) sind.
+    </p>
+    <hr/>
+</div>
+<div id="oer-aufgabe-21a">
+    <p>
+        <b>
+            (a)
+        </b>
+        Berechnen Sie die Wahrscheinlichkeit, dass das zuf&#228;llige Gewicht \(X_1\) einer einzelnen Tablette um h&#246;chstens {@M[1]@} Standardabweichung{@M[2]@} \(\sigma\) vom Sollgewicht \(\mu\) abweicht.
+    </p>
+    <p>
+        Die Wahrscheinlichkeit betr&#228;gt \(P(|X_1-\mu|\leq {@M[3]@}\sigma)=P(|X_1-{@mu@}|\leq {@m*sigma@})\approx\) [[/lang]][[lang code="en"]]
+        <div id="oer-aufgabe-21-info">
+            <details>
+                <summary>
+                    Content and scope of this task
+                </summary>
+                <p>
+                    In this task, you will learn to calculate probabilities for normal distributed random variables. It consists of the following three subtasks.
+                </p>
+                <ul>
+                    <li>
+                        In
+                        <b>
+                            (a)
+                        </b>
+                        calculate the probability that a random observation deviates from the expected value by a multiple of the standard deviation.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (b)
+                        </b>
+                        determine the distribution of the arithmetic means of a series of observations.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (c)
+                        </b>
+                        calculate the probability that the arithmetic mean deviates from the expected value by a multiple of the standard deviation.
+                    </li>
+                </ul>
+            </details>
+            <hr/>
+        </div>
+        <div id="oer-aufgabe-21">
+            <p>
+                In the case of a single-dosed pharmaceutical form with a nominal weight of \(\mu={@mu@}\text{ mg}\) gives the manufacturer as standard deviation the value \(\sigma={@sigma@}\text{ mg}\) on. For quality control of a produced batch, \({@n@}\) selected tablets weights \(x_1,\ldots,x_{{@n@}}\) weighed by means of an analytical scale and the arithmetic mean \(\overline{x}_{{@n@}}=\frac{1}{{@n@}}\sum_{i=1}^{{@n@}}x_i\) used as a test variable. It is assumed that the measured weights realizations of independent and identical \(\text{N}({@mu@},{@sigma^2@})\)-distributed random variables \(X_1,\ldots,X_{{@n@}}\) are.
+            </p>
+            <hr/>
+        </div>
+        <div id="oer-aufgabe-21a">
+            <p>
+                <b>
+                    (a)
+                </b>
+                Calculate the probability that the random weight \(X_1\) a single tablet, not more than {@M[1]@} Standard deviation{@M[2]@} \(\sigma\) Of the nominal weight \(\mu\) deviates.
+            </p>
+            <p>
+                The probability is \(P(|X_1-\mu|\leq {@M[3]@}\sigma)=P(|X_1-{@mu@}|\leq {@m*sigma@})\approx\) [[/lang]][[input:ansA]][[lang code="de"]].
+                <i>
+                    Runden Sie das Ergebnis auf mindestens drei Nachkommastellen.
+                </i>
+                [[/lang]][[lang code="en"]].
+                <i>
+                    Round the result to at least three descending points.
+                </i>
+                [[/lang]][[validation:ansA]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:ansA]][[lang code="de"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-21a1" style="display:none;">
+            <p>
+                <b>
+                    (a1)
+                </b>
+                Das Ziel ist, die gesuchte Wahrscheinlichkeit mithilfe der Verteilungsfunktion \(\Phi\) der Standardnormalverteilung zu berechnen. Dazu muss zuerst die das Ereignis beschreibende Betragsungleichung aufgel&#246;st und als Ungleichungskette geschrieben werden.
+            </p>
+            <p>
+                Formen Sie den folgenden Term so um, dass weiterhin Gleichheit gilt: \(P(|X_1-{@mu@}|\leq {@m*sigma@})=P(\) [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-21a1" style="display:none;">
+            <p>
+                <b>
+                    (a1)
+                </b>
+                The aim is to obtain the desired probability by using the distribution function \(\Phi\) the standard distribution. To this end, the amount inequality describing the event must first be resolved and written as a non-equalification chain.
+            </p>
+            <p>
+                Form the following term to continue equality: \(P(|X_1-{@mu@}|\leq {@m*sigma@})=P(\) [[/lang]][[input:ansA11]][[lang code="de"]] \(\leq X_1\leq\) [[/lang]][[lang code="en"]] \(\leq X_1\leq\) [[/lang]][[input:ansA12]][[lang code="de"]] \()\).
+            </p>
+            [[/lang]][[lang code="en"]] \()\).
+        </div>
+    </p>
+    [[/lang]][[validation:ansA11]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansA12]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:ansA1]][[lang code="de"]]
+</div>
+<div id="oer-aufgabe-21a2" style="display:none;">
+    <p>
+        <b>
+            (a2)
+        </b>
+        Die Rechnung lautet bis jetzt:
+\begin{equation*}
+P(|X_1-{@mu@}|\leq {@m*sigma@})
+=P({@mu-m*sigma@}\leq X_1\leq {@mu+m*sigma@}).
+\end{equation*}
+Um auf die Verteilungsfunktion der Standardnormalverteilung zu kommen, wird eine standardnormalverteilte Zufallsvariable gebraucht. \(X_1\) ist zwar normalverteilt, aber nicht standardnormalverteilt, sodass \(X_1\) nun zu \(X_1^*\) standardisiert werden muss.
+    </p>
+    <p>
+        Formen Sie den folgenden Term so um, dass weiterhin Gleichheit gilt: \(P({@mu-m*sigma@}\leq X_1\leq {@mu+m*sigma@})=P(\) [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<div id="oer-aufgabe-21a2" style="display:none;">
+    <p>
+        <b>
+            (a2)
+        </b>
+        The invoice is now:
+\begin{equation*}
+P(|X_1-{@mu@}|\leq {@m*sigma@})
+=P({@mu-m*sigma@}\leq X_1\leq {@mu+m*sigma@}).
+\end{equation*}In order to get to the distribution function of the standard distribution, a standard random variable is used. \(X_1\) is normal distributed, but not standard distributed, so \(X_1\) now \(X_1^*\) must be standardized.
+    </p>
+    <p>
+        Form the following term to continue equality: \(P({@mu-m*sigma@}\leq X_1\leq {@mu+m*sigma@})=P(\) [[/lang]][[input:ansA21]][[lang code="de"]] \(\leq X_1^*\leq\) [[/lang]][[lang code="en"]] \(\leq X_1^*\leq\) [[/lang]][[input:ansA22]][[lang code="de"]] \()\).
+        <i>
+            Geben Sie jeweils das Ergebnis als Formel ein oder runden Sie auf mindestens zwei Nachkommastellen.
+        </i>
+    </p>
+    <p>
+        <i>
+            Hinweis:
+        </i>
+        Die
+        <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "Z-Transformation"'>
+            Standardisierung
+        </span>
+        einer Zufallsvariablen \(X\) ist die Zufallsvariable \(X^*=\dfrac{X-\text{E}(X)}{\sqrt{\text{Var}(X)}}\). Um \(X\) zu standardisieren, muss somit zuerst der Erwartungswert subtrahiert und anschlie&#223;end durch die Standardabweichung dividiert werden.
+    </p>
+    [[/lang]][[lang code="en"]] \()\).
+    <i>
+        In each case, type the result as a formula or round to at least two descending points.
+    </i>
+    <p>
+        <i>
+            Note:
+        </i>
+        The
+        <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "Z-Transformation"'>
+            Standardization
+        </span>
+        a random variable \(X\) is the random variable \(X^*=\dfrac{X-\text{E}(X)}{\sqrt{\text{Var}(X)}}\). Um... \(X\) thus first the expected value must be subtracted and then divided by the standard deviation.
+    </p>
+    [[/lang]][[validation:ansA21]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansA22]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:ansA2]][[lang code="de"]]
+</div>
+<div id="oer-aufgabe-21a3" style="display:none;">
+    <p>
+        <b>
+            (a3)
+        </b>
+        Die Rechnung lautet bis jetzt:
+\begin{align*}
+P(|X_1-{@mu@}|\leq {@m*sigma@})
+&amp;=P({@mu-m*sigma@}\leq X_1\leq {@mu+m*sigma@})\\
+&amp;=P({@-m@}\leq X_1^*\leq {@m@}).
+\end{align*}
+Mit der standardnormalverteilten Zufallsvariablen \(X_1^*\) kann die Wahrscheinlichkeit nun mithilfe der Verteilungsfunktion \(\Phi\) der Standardnormalverteilung aufgeschrieben werden.
+    </p>
+    <p>
+        Formen Sie den folgenden Term so um, dass weiterhin Gleichheit gilt: \(P({@-m@}\leq X_1^*\leq {@m@})=\Phi(\) [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<div id="oer-aufgabe-21a3" style="display:none;">
+    <p>
+        <b>
+            (a3)
+        </b>
+        The invoice is now:
+\begin{align*}
+P(|X_1-{@mu@}|\leq {@m*sigma@})
+&amp;=P({@mu-m*sigma@}\leq X_1\leq {@mu+m*sigma@})\\
+&amp;=P({@-m@}\leq X_1^*\leq {@m@}).
+\end{align*}With the standard distributed random variables \(X_1^*\) the probability can now be used with the distribution function \(\Phi\) the standard distribution.
+    </p>
+    <p>
+        Form the following term to continue equality: \(P({@-m@}\leq X_1^*\leq {@m@})=\Phi(\) [[/lang]][[input:ansA31]][[lang code="de"]] \()-\Phi(\) [[/lang]][[lang code="en"]] \()-\Phi(\) [[/lang]][[input:ansA32]][[lang code="de"]] \()\).
+    </p>
+    [[/lang]][[lang code="en"]] \()\).
+    [[/lang]][[validation:ansA31]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansA32]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:ansA3]][[lang code="de"]]
+</div>
+<div id="oer-aufgabe-21b" style="display:none;">
+    <p>
+        <b>
+            (b)
+        </b>
+        Als Pr&#252;fgr&#246;&#223;e bei der Qualit&#228;tskontrolle wird nicht das Gewicht einer einzelnen Tablette, sondern das mittlere Gewicht von {@n@} Tabletten ermittelt. Man kann zeigen, dass die Zufallsvariable \(\overline{X}_{{@n@}}\), die das arithmetische Mittel der Gewichte beschreibt, wieder eine Normalverteilung besitzt. Berechnen Sie die Parameter dieser Normalverteilung, also den Erwartungswert \(\overline{\mu}=\text{E}(\overline{X}_{{@n@}})\) und die Varianz \(\overline{\sigma}^2=\text{Var}(\overline{X}_{{@n@}})\).
+    </p>
+    <p>
+        Das arithmetische Mittel hat die Verteilung \(\overline{X}_{{@n@}}\sim\text{N}(\overline{\mu},\overline{\sigma}^2)=\text{N}(\) [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<div id="oer-aufgabe-21b" style="display:none;">
+    <p>
+        <b>
+            (b)
+        </b>
+        As a test variable in quality control, not the weight of a single tablet, but the average weight of {@n@} Tablets determined. You can show that the random variable \(\overline{X}_{{@n@}}\), which describes the arithmetic mean of the weights, has again a normal distribution. Calculate the parameters of this normal distribution, i.e. the expected value \(\overline{\mu}=\text{E}(\overline{X}_{{@n@}})\) and the variance \(\overline{\sigma}^2=\text{Var}(\overline{X}_{{@n@}})\).
+    </p>
+    <p>
+        The arithmetic means has the distribution \(\overline{X}_{{@n@}}\sim\text{N}(\overline{\mu},\overline{\sigma}^2)=\text{N}(\) [[/lang]][[input:ansB1]][[lang code="de"]] , [[/lang]][[lang code="en"]] , [[/lang]][[input:ansB2]][[lang code="de"]]\()\).
+    </p>
+    [[/lang]][[lang code="en"]]\()\).
+    [[/lang]][[validation:ansB1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansB2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:ansB]][[lang code="de"]]
+</div>
+<div id="oer-aufgabe-21c" style="display:none;">
+    <p>
+        <b>
+            (c)
+        </b>
+        Es gilt \(\overline{X}_{{@n@}}\sim\text{N}({@mu_bar@},{@sigma_bar^2@})\). Berechnen Sie die Wahrscheinlichkeit, dass das arithmetische Mittel \(\overline{X}_{{@n@}}\) um h&#246;chstens {@M[1]@} Standardabweichung{@M[2]@} \(\overline{\sigma}\) vom Mittelwert \(\overline{\mu}\) abweicht.
+    </p>
+    <p>
+        Die Wahrscheinlichkeit betr&#228;gt \(P(|\overline{X}_{{@n@}}-\overline{\mu}|\leq {@M[3]@}\overline{\sigma})=P(|\overline{X}_{{@n@}}-{@mu_bar@}|\leq {@m*sigma_bar@})\approx\) [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<div id="oer-aufgabe-21c" style="display:none;">
+    <p>
+        <b>
+            (c)
+        </b>
+        The following shall apply: \(\overline{X}_{{@n@}}\sim\text{N}({@mu_bar@},{@sigma_bar^2@})\). Calculate the probability that the arithmetic mean \(\overline{X}_{{@n@}}\) Not more than {@M[1]@} Standard deviation{@M[2]@} \(\overline{\sigma}\) of the mean value \(\overline{\mu}\) deviates.
+    </p>
+    <p>
+        The probability is \(P(|\overline{X}_{{@n@}}-\overline{\mu}|\leq {@M[3]@}\overline{\sigma})=P(|\overline{X}_{{@n@}}-{@mu_bar@}|\leq {@m*sigma_bar@})\approx\) [[/lang]][[input:ansC]][[lang code="de"]].
+        <i>
+            Runden Sie das Ergebnis auf mindestens drei Nachkommastellen.
+        </i>
+        [[/lang]][[lang code="en"]].
+        <i>
+            Round the result to at least three descending points.
+        </i>
+        [[/lang]][[validation:ansC]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:ansC]][[lang code="de"]]
+    </p>
+</div>
+<div id="oer-aufgabe-21c1" style="display:none;">
+    <p>
+        <b>
+            (c1)
+        </b>
+        Das Ziel ist wieder, die gesuchte Wahrscheinlichkeit mithilfe der Verteilungsfunktion \(\Phi\) der Standardnormalverteilung zu berechnen. Dazu muss zuerst die das Ereignis beschreibende Betragsungleichung aufgel&#246;st und als Ungleichungskette geschrieben werden.
+    </p>
+    <p>
+        Formen Sie den folgenden Term so um, dass weiterhin Gleichheit gilt: \(P(|\overline{X}_{{@n@}}-{@mu_bar@}|\leq {@m*sigma_bar@})=P(\) [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<div id="oer-aufgabe-21c1" style="display:none;">
+    <p>
+        <b>
+            (c1)
+        </b>
+        The aim is to restore the desired probability by using the distribution function \(\Phi\) the standard distribution. To this end, the amount inequality describing the event must first be resolved and written as a non-equalification chain.
+    </p>
+    <p>
+        Form the following term to continue equality: \(P(|\overline{X}_{{@n@}}-{@mu_bar@}|\leq {@m*sigma_bar@})=P(\) [[/lang]][[input:ansC11]][[lang code="de"]] \(\leq \overline{X}_{{@n@}}\leq\) [[/lang]][[lang code="en"]] \(\leq \overline{X}_{{@n@}}\leq\) [[/lang]][[input:ansC12]][[lang code="de"]] \()\).
+    </p>
+    [[/lang]][[lang code="en"]] \()\).
+    [[/lang]][[validation:ansC11]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansC12]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:ansC1]][[lang code="de"]]
+</div>
+<div id="oer-aufgabe-21c2" style="display:none;">
+    <p>
+        <b>
+            (c2)
+        </b>
+        Die Rechnung lautet bis jetzt:
+\begin{equation*}
+P\left(|\overline{X}_{{@n@}}-{@mu_bar@}|\leq {@m*sigma_bar@}\right)
+=P\left({@mu_bar-m*sigma_bar@}\leq\overline{X}_{{@n@}}\leq {@mu_bar+m*sigma_bar@}\right).
+\end{equation*}
+Um auf die Verteilungsfunktion der Standardnormalverteilung zu kommen, wird eine standardnormalverteilte Zufallsvariable gebraucht. \(\overline{X}_{{@n@}}\) ist zwar normalverteilt, aber nicht standardnormalverteilt, sodass \(\overline{X}_{{@n@}}\) nun zu \(\overline{X}_{{@n@}}^*\) standardisiert werden muss.
+    </p>
+    <p>
+        Formen Sie den folgenden Term so um, dass weiterhin Gleichheit gilt: \(P({@mu_bar-m*sigma_bar@}\leq \overline{X}_{{@n@}}\leq {@mu_bar+m*sigma_bar@})=P(\) [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<div id="oer-aufgabe-21c2" style="display:none;">
+    <p>
+        <b>
+            (c2)
+        </b>
+        The invoice is now:
+\begin{equation*}
+P\left(|\overline{X}_{{@n@}}-{@mu_bar@}|\leq {@m*sigma_bar@}\right)
+=P\left({@mu_bar-m*sigma_bar@}\leq\overline{X}_{{@n@}}\leq {@mu_bar+m*sigma_bar@}\right).
+\end{equation*}In order to get to the distribution function of the standard distribution, a standard random variable is used. \(\overline{X}_{{@n@}}\) is normal distributed, but not standard distributed, so \(\overline{X}_{{@n@}}\) now \(\overline{X}_{{@n@}}^*\) must be standardized.
+    </p>
+    <p>
+        Form the following term to continue equality: \(P({@mu_bar-m*sigma_bar@}\leq \overline{X}_{{@n@}}\leq {@mu_bar+m*sigma_bar@})=P(\) [[/lang]][[input:ansC21]][[lang code="de"]] \(\leq \overline{X}_{{@n@}}^*\leq\) [[/lang]][[lang code="en"]] \(\leq \overline{X}_{{@n@}}^*\leq\) [[/lang]][[input:ansC22]][[lang code="de"]] \()\).
+        <i>
+            Geben Sie jeweils das Ergebnis als Formel ein oder runden Sie auf mindestens zwei Nachkommastellen.
+        </i>
+    </p>
+    <p>
+        <i>
+            Hinweis:
+        </i>
+        Die
+        <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "Z-Transformation"'>
+            Standardisierung
+        </span>
+        einer Zufallsvariablen \(X\) ist die Zufallsvariable \(X^*=\dfrac{X-\text{E}(X)}{\sqrt{\text{Var}(X)}}\). Um \(X\) zu standardisieren, muss somit zuerst der Erwartungswert subtrahiert und anschlie&#223;end durch die Standardabweichung dividiert werden.
+    </p>
+    [[/lang]][[lang code="en"]] \()\).
+    <i>
+        In each case, type the result as a formula or round to at least two descending points.
+    </i>
+    <p>
+        <i>
+            Note:
+        </i>
+        The
+        <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "Z-Transformation"'>
+            Standardization
+        </span>
+        a random variable \(X\) is the random variable \(X^*=\dfrac{X-\text{E}(X)}{\sqrt{\text{Var}(X)}}\). Um... \(X\) thus first the expected value must be subtracted and then divided by the standard deviation.
+    </p>
+    [[/lang]][[validation:ansC21]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansC22]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:ansC2]][[lang code="de"]]
+</div>
+<div id="oer-aufgabe-21c3" style="display:none;">
+    <p>
+        <b>
+            (c3)
+        </b>
+        Die Rechnung lautet bis jetzt:
+\begin{align*}
+P\left(|\overline{X}_{{@n@}}-{@mu_bar@}|\leq {@m*sigma_bar@}\right)
+&amp;=P\left({@mu_bar-m*sigma_bar@}\leq\overline{X}_{{@n@}}\leq {@mu_bar+m*sigma_bar@}\right)\\
+&amp;=P({@-m@}\leq\overline{X}_{{@n@}}^*\leq {@m@}).
+\end{align*}
+Mit der standardnormalverteilten Zufallsvariablen \(\overline{X}_{{@n@}}^*\) kann die Wahrscheinlichkeit nun mithilfe der Verteilungsfunktion \(\Phi\) der Standardnormalverteilung aufgeschrieben werden.
+    </p>
+    <p>
+        Formen Sie den folgenden Term so um, dass weiterhin Gleichheit gilt: \(P({@-m@}\leq \overline{X}_{{@n@}}^*\leq {@m@})=\Phi(\) [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<div id="oer-aufgabe-21c3" style="display:none;">
+    <p>
+        <b>
+            (c3)
+        </b>
+        The invoice is now:
+\begin{align*}
+P\left(|\overline{X}_{{@n@}}-{@mu_bar@}|\leq {@m*sigma_bar@}\right)
+&amp;=P\left({@mu_bar-m*sigma_bar@}\leq\overline{X}_{{@n@}}\leq {@mu_bar+m*sigma_bar@}\right)\\
+&amp;=P({@-m@}\leq\overline{X}_{{@n@}}^*\leq {@m@}).
+\end{align*}With the standard distributed random variables \(\overline{X}_{{@n@}}^*\) the probability can now be used with the distribution function \(\Phi\) the standard distribution.
+    </p>
+    <p>
+        Form the following term to continue equality: \(P({@-m@}\leq \overline{X}_{{@n@}}^*\leq {@m@})=\Phi(\) [[/lang]][[input:ansC31]][[lang code="de"]] \()-\Phi(\) [[/lang]][[lang code="en"]] \()-\Phi(\) [[/lang]][[input:ansC32]][[lang code="de"]] \()\).
+    </p>
+    [[/lang]][[lang code="en"]] \()\).
+    [[/lang]][[validation:ansC31]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansC32]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:ansC3]][[lang code="de"]]
+</div>
+<style>
+    .buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+</style>
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]][[lang code="en"]]
+<style>
+    .buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+</style>
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="moodle_auto_format">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>3.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+Sigma-Bereiche
+
+wurde entwickelt von
+  
+Christian M&#252;ller <c.mueller(at)hhu.de>
+
+nach einer Idee von
+
+Axel B&#252;cher <axel.buecher(at)hhu.de>
+Peter Kern <kern(at)hhu.de>
+
+an der Heinrich-Heine-Universit&#228;t D&#252;sseldorf.
+
+Dieses Werk ist lizenziert unter einer Creative Commons Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie https://creativecommons.org/licenses/by-sa/4.0/.
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+
+Technische Informationen:
+
+Diese Aufgabe verwendet das Maxima Paket 'distrib'.
+
+Diese Aufgabe bindet das Skript 'stackselbstlern.js' von Michael Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+/* &#252;berpr&#252;fe, ob ans als Wahrscheinlichkeit interpretiert werden kann */
+probabilityp(ans) := is(numberp(float(ans)) and ans >= 0 and ans <= 1)
+/* runde x auf 3 bzw. 4 Nachkommastellen */
+dp3(x) := decimalplaces(x, 3)
+dp4(x) := decimalplaces(x, 4)
+/* stelle x in wissenschaftlicher Notation dar */
+SCI(x) := scientific_notation(x, 2)
+/* Rundungsgenauigkeit bei numerischen Antworttests */
+epsilon2: 0.01
+epsilon3: 0.001
+
+/* Stichprobenumfang */
+n: rand([10, 20, 30])
+/* Erwartungswert und Standardabweichung */
+mu: rand([20, 50, 100])
+sigma: rand([1.5, 2, 2.5])
+/* Erwartungswert und Standardabweichung des arithmetischen Mittels */
+mu_bar: mu
+sigma_bar: sigma / sqrt(n)
+/* Breite des Sigma-Bereichs */
+m: rand([1, 2, 3])
+M: if m=1 then ["eine", "", ""] else if m=2 then ["zwei", "en", 2] else if m=3 then ["drei", "en", 3]
+
+/* Verteilungsfunktion von N(0,1) */
+Phi(x) := cdf_normal(x, 0, 1)
+/* Standardisierung */
+ZGS(x, ev, sd) := (x - ev) / sd
+/* keine Division durch Standardabweichung */
+ZGS_error1(x, ev, sd) := x - ev
+/* Division durch Varianz */
+ZGS_error2(x, ev, sd) := (x - ev) / sd^2
+/* keine Zentrierung */
+ZGS_error3(x, ev, sd) := x / sd
+/* keine Zentrierung und Division durch Varianz */
+ZGS_error4(x, ev, sd) := x / sd^2
+
+/* L&#246;sungen */
+TansA: dp3(2 * Phi(m) - 1)
+TansA11: mu - m * sigma
+TansA12: mu + m * sigma
+TansA21: -m
+TansA22: m
+TansA31: m
+TansA32: -m
+TansB1: mu_bar
+TansB2: sigma_bar^2
+TansC: dp3(2 * Phi(m) - 1)
+TansC11: mu_bar - m * sigma_bar
+TansC12: mu_bar + m * sigma_bar
+TansC21: -m
+TansC22: m
+TansC31: m
+TansC32: -m]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\(n={@n@}\), \(\mu={@mu@}\), \(\sigma={@sigma@}\), \(m={@m@}\)</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partly correct.[[/lang]]
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.[[/lang]]
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ansA</name>
+            <type>numerical</type>
+            <tans>TansA</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansA11</name>
+            <type>numerical</type>
+            <tans>TansA11</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansA12</name>
+            <type>numerical</type>
+            <tans>TansA12</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansA21</name>
+            <type>numerical</type>
+            <tans>TansA21</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansA22</name>
+            <type>numerical</type>
+            <tans>TansA22</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansA31</name>
+            <type>numerical</type>
+            <tans>TansA31</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansA32</name>
+            <type>numerical</type>
+            <tans>TansA32</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB1</name>
+            <type>numerical</type>
+            <tans>TansB1</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB2</name>
+            <type>numerical</type>
+            <tans>TansB2</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC</name>
+            <type>numerical</type>
+            <tans>TansC</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC11</name>
+            <type>numerical</type>
+            <tans>TansC11</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC12</name>
+            <type>numerical</type>
+            <tans>TansC12</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC21</name>
+            <type>numerical</type>
+            <tans>TansC21</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC22</name>
+            <type>numerical</type>
+            <tans>TansC22</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC31</name>
+            <type>numerical</type>
+            <tans>TansC31</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC32</name>
+            <type>numerical</type>
+            <tans>TansC32</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>ansA</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ansA)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>ansA-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ansA-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihr Ergebnis liegt nicht im Intervall \([0,1]\) und kann daher nicht als Wahrscheinlichkeit interpretiert werden.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your result is not in interval \([0,1]\) and therefore cannot be interpreted as probability.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansA</sans>
+                <tans>TansA</tans>
+                <testoptions>epsilon3</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansA-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die Wahrscheinlichkeit richtig berechnet. Eine m&#246;gliche Rechnung sieht vollst&#228;ndig aufgeschrieben folgenderma&#223;en aus:
+\begin{align*}
+P(|X_1-\mu|\leq {@M[3]@}\sigma)
+&amp;=P(|X_1-{@mu@}|\leq {@m*sigma@})\\
+&amp;=P({@mu-m*sigma@}\leq X_1\leq {@mu+m*sigma@})\\
+&amp;=P\left(\frac{{@mu-m*sigma@}-\mu}{\sigma}\leq\frac{X_1-\mu}{\sigma}\leq\frac{{@mu+m*sigma@}-\mu}{\sigma}\right)\\
+&amp;=P\left(\frac{{@mu-m*sigma@}-{@mu@}}{{@sigma@}}\leq X_1^*\leq\frac{{@mu+m*sigma@}-{@mu@}}{{@sigma@}}\right)\\
+&amp;=P({@-m@}\leq X_1^*\leq {@m@})\\
+&amp;=\Phi({@m@})-\Phi({@-m@})\\
+&amp;=2\Phi({@m@})-1\\
+&amp;\approx {@TansA@}.
+\end{align*}
+</p>
+<hr/>
+<p>
+    Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21a');
+show('oer-aufgabe-21b');
+" type="button">
+        Weiter
+    </button>
+    [[/lang]][[lang code="en"]]
+    <p>
+        You have calculated the probability correctly. A possible invoice looks fully written as follows:
+\begin{align*}
+P(|X_1-\mu|\leq {@M[3]@}\sigma)
+&amp;=P(|X_1-{@mu@}|\leq {@m*sigma@})\\
+&amp;=P({@mu-m*sigma@}\leq X_1\leq {@mu+m*sigma@})\\
+&amp;=P\left(\frac{{@mu-m*sigma@}-\mu}{\sigma}\leq\frac{X_1-\mu}{\sigma}\leq\frac{{@mu+m*sigma@}-\mu}{\sigma}\right)\\
+&amp;=P\left(\frac{{@mu-m*sigma@}-{@mu@}}{{@sigma@}}\leq X_1^*\leq\frac{{@mu+m*sigma@}-{@mu@}}{{@sigma@}}\right)\\
+&amp;=P({@-m@}\leq X_1^*\leq {@m@})\\
+&amp;=\Phi({@m@})-\Phi({@-m@})\\
+&amp;=2\Phi({@m@})-1\\
+&amp;\approx {@TansA@}.
+\end{align*}
+    </p>
+    <hr/>
+    <p>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21a');
+show('oer-aufgabe-21b');
+" type="button">
+            Next
+        </button>
+        [[/lang]]
+    </p>
+</p>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ansA-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-aufgabe-21a-PRT1">
+    <p>
+        Dass Sie die Wahrscheinlichkeit nicht auf Anhieb berechnen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in drei kleinere Teilaufgaben unterteilt. Wenn Sie diese alle gel&#246;st haben, k&#246;nnen Sie sicherlich auch die urspr&#252;ngliche Aufgabe l&#246;sen. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21a');
+show('oer-aufgabe-21a1');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-21a-PRT2" style="display:none;">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Die Rechnung lautet bis jetzt:
+\begin{equation*}
+P(|X_1-{@mu@}|\leq {@m*sigma@})
+=P({@mu-m*sigma@}\leq X_1\leq {@mu+m*sigma@}).
+\end{equation*}
+Als N&#228;chstes m&#252;ssen Sie \(X_1\) standardisieren, um dann die Wahrscheinlichkeit mithilfe der Verteilungsfunktion \(\Phi\) der Standardnormalverteilung berechnen zu k&#246;nnen.
+    </p>
+    <hr/>
+    <p>
+        Wenn Sie bei der Umformung nicht weiterkommen, l&#246;sen Sie zus&#228;tzlich noch die zweite Teilaufgabe. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21a');
+show('oer-aufgabe-21a2');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-21a-PRT3" style="display:none;">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Die Rechnung lautet bis jetzt:
+\begin{align*}
+P(|X_1-{@mu@}|\leq {@m*sigma@})
+&amp;=P({@mu-m*sigma@}\leq X_1\leq {@mu+m*sigma@})\\
+&amp;=P({@-m@}\leq X_1^*\leq {@m@}).
+\end{align*}
+Schreiben Sie die Wahrscheinlichkeit als N&#228;chstes mithilfe der Verteilungsfunktion \(\Phi\) der Standardnormalverteilung auf und bestimmen Sie dann die auftretenden Funktionswerte von \(\Phi\).
+    </p>
+    <hr/>
+    <p>
+        Wenn Sie bei der Umformung nicht weiterkommen, l&#246;sen Sie zus&#228;tzlich noch die dritte Teilaufgabe. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21a');
+show('oer-aufgabe-21a3');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-21a-PRT4" style="display:none;">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Die Rechnung lautet bis jetzt:
+\begin{align*}
+P(|X_1-{@mu@}|\leq {@m*sigma@})
+&amp;=P({@mu-m*sigma@}\leq X_1\leq {@mu+m*sigma@})\\
+&amp;=P\left({@-m@}\leq X_1^*\leq {@m@}\right)\\
+&amp;=\Phi({@m@})-\Phi({@-m@}).
+\end{align*}
+Bestimmen Sie nun noch die auftretenden Funktionswerte von \(\Phi\) aus einer geeigneten Tabelle. Hierbei ist die Identit&#228;t \(\Phi(-t)=1-\Phi(t)\) f&#252;r \(t\in\mathbb{R}\) hilfreich.
+    </p>
+</div>
+[[/lang]][[lang code="en"]]
+<div id="oer-aufgabe-21a-PRT1">
+    <p>
+        That you couldn't calculate the likelihood right away is no problem! In the following, the task is divided into three smaller subtasks. If you have solved these all, you can also solve the original task. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21a');
+show('oer-aufgabe-21a1');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-21a-PRT2" style="display:none;">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        The invoice is now:
+\begin{equation*}
+P(|X_1-{@mu@}|\leq {@m*sigma@})
+=P({@mu-m*sigma@}\leq X_1\leq {@mu+m*sigma@}).
+\end{equation*}Next you need \(X_1\) to then standardize the probability using the distribution function \(\Phi\) the standard distribution.
+    </p>
+    <hr/>
+    <p>
+        If you do not proceed during the forming process, you will also solve the second part task. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21a');
+show('oer-aufgabe-21a2');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-21a-PRT3" style="display:none;">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        The invoice is now:
+\begin{align*}
+P(|X_1-{@mu@}|\leq {@m*sigma@})
+&amp;=P({@mu-m*sigma@}\leq X_1\leq {@mu+m*sigma@})\\
+&amp;=P({@-m@}\leq X_1^*\leq {@m@}).
+\end{align*}Write the probability next by using the distribution function \(\Phi\) the standard normal distribution and then determine the occurring functional values of \(\Phi\).
+    </p>
+    <hr/>
+    <p>
+        If you do not proceed during the forming process, you will also solve the third part task. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21a');
+show('oer-aufgabe-21a3');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-21a-PRT4" style="display:none;">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        The invoice is now:
+\begin{align*}
+P(|X_1-{@mu@}|\leq {@m*sigma@})
+&amp;=P({@mu-m*sigma@}\leq X_1\leq {@mu+m*sigma@})\\
+&amp;=P\left({@-m@}\leq X_1^*\leq {@m@}\right)\\
+&amp;=\Phi({@m@})-\Phi({@-m@}).
+\end{align*}Determine the functional values of \(\Phi\) from a suitable table. Here is the identity \(\Phi(-t)=1-\Phi(t)\) for \(t\in\mathbb{R}\) helpful.
+    </p>
+</div>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>ansA1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ansA11,ansA12]</sans>
+                <tans>[TansA11,TansA12]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansA1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Sie haben die Betragsungleichung richtig aufgel&#246;st.
+</p>
+<hr/>
+<ul>
+    <li>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21a1');
+show('oer-aufgabe-21a2');
+" type="button">
+            Weiter
+        </button>
+    </li>
+    <li>
+        Um zur urspr&#252;nglichen Aufgabe zu gelangen, klicken Sie auf
+        <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-21a1');
+hide('oer-aufgabe-21a-PRT1');
+show('oer-aufgabe-21a');
+show('oer-aufgabe-21a-PRT2');
+" type="button">
+            Zur&#252;ck
+        </button>
+    </li>
+</ul>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    You have properly resolved the amount inequality.
+</p>
+<hr/>
+<ul>
+    <li>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21a1');
+show('oer-aufgabe-21a2');
+" type="button">
+            Next
+        </button>
+    </li>
+    <li>
+        To get to the original task, click on
+        <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-21a1');
+hide('oer-aufgabe-21a-PRT1');
+show('oer-aufgabe-21a');
+show('oer-aufgabe-21a-PRT2');
+" type="button">
+            Back
+        </button>
+    </li>
+</ul>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>ansA1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>GT</answertest>
+                <sans>ansA11</sans>
+                <tans>ansA12</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansA1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Die linke Seite der Ungleichungskette ist gr&#246;&#223;er als die rechte Seite. Das resultiert in einem leeren Ereignis mit der Wahrscheinlichkeit 0.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    The left side of the unequalification chain is larger than the right side. This results in an empty event with probability 0.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>ansA1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA11</sans>
+                <tans>TansA11</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>ansA1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>ansA1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Die linke Seite der Ungleichungskette ist falsch.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The left side of the unequalification chain is wrong.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA12</sans>
+                <tans>TansA12</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>ansA1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>ansA1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Die rechte Seite der Ungleichungskette ist falsch.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The right side of the inequality chain is wrong.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>0</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansA1-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ansA1-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>ansA2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ansA21,ansA22]</sans>
+                <tans>[TansA21,TansA22]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansA2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Auf allen Seiten der Ungleichungskette \(P({@mu-m*sigma@}\leq X_1\leq {@mu+m*sigma@})\) muss der Erwartungswert \(\text{E}(X_1)=\mu={@mu@}\) subtrahiert und anschlie&#223;end durch die Standardabweichung \(\sqrt{\text{Var}(X_1)}=\sigma={@sigma@}\) dividiert werden. Das ergibt
+\begin{align*}
+P({@mu-m*sigma@}\leq X_1\leq {@mu+m*sigma@})
+&amp;=P\left(\frac{{@mu-m*sigma@}-{@mu@}}{{@sigma@}}\leq\frac{X_1-{@mu@}}{{@sigma@}}\leq\frac{{@mu+m*sigma@}-{@mu@}}{{@sigma@}}\right)\\
+&amp;=P({@-m@}\leq X_1^*\leq {@m@}).
+\end{align*}
+</p>
+<hr/>
+<ul>
+    <li>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21a2');
+show('oer-aufgabe-21a3');
+" type="button">
+            Weiter
+        </button>
+    </li>
+    <li>
+        Um zur urspr&#252;nglichen Aufgabe zu gelangen, klicken Sie auf
+        <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-21a2');
+hide('oer-aufgabe-21a-PRT1');
+hide('oer-aufgabe-21a-PRT2');
+show('oer-aufgabe-21a');
+show('oer-aufgabe-21a-PRT3');
+" type="button">
+            Zur&#252;ck
+        </button>
+    </li>
+</ul>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    On all sides of the inequality chain \(P({@mu-m*sigma@}\leq X_1\leq {@mu+m*sigma@})\) the expected value \(\text{E}(X_1)=\mu={@mu@}\) subtracted and subsequently by the standard deviation \(\sqrt{\text{Var}(X_1)}=\sigma={@sigma@}\) to be divided. This results
+\begin{align*}
+P({@mu-m*sigma@}\leq X_1\leq {@mu+m*sigma@})
+&amp;=P\left(\frac{{@mu-m*sigma@}-{@mu@}}{{@sigma@}}\leq\frac{X_1-{@mu@}}{{@sigma@}}\leq\frac{{@mu+m*sigma@}-{@mu@}}{{@sigma@}}\right)\\
+&amp;=P({@-m@}\leq X_1^*\leq {@m@}).
+\end{align*}
+</p>
+<hr/>
+<ul>
+    <li>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21a2');
+show('oer-aufgabe-21a3');
+" type="button">
+            Next
+        </button>
+    </li>
+    <li>
+        To get to the original task, click on
+        <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-21a2');
+hide('oer-aufgabe-21a-PRT1');
+hide('oer-aufgabe-21a-PRT2');
+show('oer-aufgabe-21a');
+show('oer-aufgabe-21a-PRT3');
+" type="button">
+            Back
+        </button>
+    </li>
+</ul>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>ansA2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>GT</answertest>
+                <sans>ansA21</sans>
+                <tans>ansA22</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansA2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Die linke Seite der Ungleichungskette ist gr&#246;&#223;er als die rechte Seite. Das resultiert in einem leeren Ereignis mit der Wahrscheinlichkeit 0.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    The left side of the unequalification chain is larger than the right side. This results in an empty event with probability 0.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>ansA2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>10</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansA22</sans>
+                <tans>ZGS_error3(mu+m*sigma,mu,sigma)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>11</truenextnode>
+                <trueanswernote>ansA2-11-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der rechten Seite vergessen, zuerst den Erwartungswert zu subtrahieren, bevor Sie durch die Standardabweichung dividieren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You probably forgot to subtract the expected value at the right hand side before dividing by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>11</falsenextnode>
+                <falseanswernote>ansA2-11-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>11</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansA22</sans>
+                <tans>ZGS_error4(mu+m*sigma,mu,sigma)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>12</truenextnode>
+                <trueanswernote>ansA2-12-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der rechten Seite vergessen, zuerst den Erwartungswert zu subtrahieren, und haben durch die Varianz dividiert anstatt durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you forgot to subtract the expected value at the right hand side, and have divided by the variance instead of by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>12</falsenextnode>
+                <falseanswernote>ansA2-12-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>12</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>0</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansA2-13-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ansA2-13-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA21</sans>
+                <tans>TansA21</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>7</truenextnode>
+                <trueanswernote>ansA2-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die linke Seite der Ungleichungskette richtig standardisiert.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have correctly standardized the left side of the unequalification chain.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>ansA2-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die linke Seite der Ungleichungskette falsch standardisiert. Subtrahieren Sie von \({@mu-sigma@}\) den Erwartungswert und dividieren Sie anschlie&#223;end durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have incorrectly standardized the left side of the unequalification chain. Subtract from \({@mu-sigma@}\) the expected value and then divide by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansA21</sans>
+                <tans>ZGS_error1(mu-m*sigma,mu,sigma)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>ansA2-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der linken Seite vergessen, durch die Standardabweichung zu dividieren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you forgot to divide by the standard deviation on the left.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>ansA2-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansA21</sans>
+                <tans>ZGS_error2(mu-m*sigma,mu,sigma)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>ansA2-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der linken Seite durch die Varianz dividiert anstatt durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you have divided by the variance at the left side instead of by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>ansA2-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansA21</sans>
+                <tans>ZGS_error3(mu-m*sigma,mu,sigma)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>6</truenextnode>
+                <trueanswernote>ansA2-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der linken Seite vergessen, zuerst den Erwartungswert zu subtrahieren, bevor Sie durch die Standardabweichung dividieren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You probably forgot to subtract the expected value first from the left hand side before dividing by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>6</falsenextnode>
+                <falseanswernote>ansA2-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>6</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansA21</sans>
+                <tans>ZGS_error4(mu-m*sigma,mu,sigma)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>7</truenextnode>
+                <trueanswernote>ansA2-7-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der linken Seite vergessen, zuerst den Erwartungswert zu subtrahieren, und haben durch die Varianz dividiert anstatt durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you forgot to subtract the expected value from the left, and have divided by the variance instead of by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>7</falsenextnode>
+                <falseanswernote>ansA2-7-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>7</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA22</sans>
+                <tans>TansA22</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>12</truenextnode>
+                <trueanswernote>ansA2-8-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die rechte Seite der Ungleichungskette richtig standardisiert.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    They have properly standardized the right side of the unequalification chain.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>8</falsenextnode>
+                <falseanswernote>ansA2-8-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die rechte Seite der Ungleichungskette falsch standardisiert. Subtrahieren Sie von \({@mu+sigma@}\) den Erwartungswert und dividieren Sie anschlie&#223;end durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    They have incorrectly standardized the right side of the unequalification chain. Subtract from \({@mu+sigma@}\) the expected value and then divide by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>8</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansA22</sans>
+                <tans>ZGS_error1(mu+m*sigma,mu,sigma)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>9</truenextnode>
+                <trueanswernote>ansA2-9-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der rechten Seite vergessen, durch die Standardabweichung zu dividieren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you forgot to divide by the standard deviation at the right side.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>9</falsenextnode>
+                <falseanswernote>ansA2-9-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>9</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansA22</sans>
+                <tans>ZGS_error2(mu+m*sigma,mu,sigma)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>10</truenextnode>
+                <trueanswernote>ansA2-10-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der rechten Seite durch die Varianz dividiert anstatt durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you have divided by the variance on the right side instead of the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>10</falsenextnode>
+                <falseanswernote>ansA2-10-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>ansA3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ansA31,ansA32]</sans>
+                <tans>[TansA31,TansA32]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansA3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Da \(X_1^*\) standardnormalverteilt ist, gilt
+\begin{equation*}
+P({@-m@}\leq X_1^*\leq {@m@})
+=\Phi({@m@})-\Phi({@-m@}).
+\end{equation*}
+</p>
+<p>
+    Jetzt k&#246;nnen Sie die urspr&#252;ngliche Aufgabe noch einmal versuchen. Klicken Sie dazu auf
+    <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-21a3');
+hide('oer-aufgabe-21a-PRT1');
+hide('oer-aufgabe-21a-PRT2');
+hide('oer-aufgabe-21a-PRT3');
+show('oer-aufgabe-21a');
+show('oer-aufgabe-21a-PRT4');
+" type="button">
+        Zur&#252;ck
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    There. \(X_1^*\) standard distributed, applies
+\begin{equation*}
+P({@-m@}\leq X_1^*\leq {@m@})
+=\Phi({@m@})-\Phi({@-m@}).
+\end{equation*}
+</p>
+<p>
+    Now you can try the original task again. Click on
+    <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-21a3');
+hide('oer-aufgabe-21a-PRT1');
+hide('oer-aufgabe-21a-PRT2');
+hide('oer-aufgabe-21a-PRT3');
+show('oer-aufgabe-21a');
+show('oer-aufgabe-21a-PRT4');
+" type="button">
+        Back
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>ansA3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ansA31,ansA32]</sans>
+                <tans>[TansA32,TansA31]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansA3-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Ihre Ergebnisse sind richtig, aber Sie haben beide Eingaben miteinander vertauscht.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    Your results are correct, but you have interchanged both inputs.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ansA3-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Setzen Sie die linke bzw. rechte Seite der Ungleichungskette in die Verteilungsfunktion \(\Phi\) der Standardnormalverteilung ein.
+</p>
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    Set the left or right side of the non-uniform chain into the distribution function \(\Phi\) the standard distribution.
+</p>
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>ansB</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB1</sans>
+                <tans>TansB1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>ansB-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben den Parameter \(\overline{\mu}\) richtig berechnet. Aufgrund der Linearit&#228;t des Erwartungswerts gilt
+\begin{align*}
+\overline{\mu}
+&amp;=\text{E}(\overline{X}_{{@n@}})\\
+&amp;=\text{E}\Bigg(\frac{1}{{@n@}}\sum_{i=1}^{{@n@}}X_i\Bigg)\\
+&amp;=\frac{1}{{@n@}}\sum_{i=1}^{{@n@}}\text{E}(X_i)\\
+&amp;=\frac{1}{{@n@}}\sum_{i=1}^{{@n@}}\mu\\
+&amp;=\mu\\
+&amp;={@TansB1@}.
+\end{align*}
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have the parameter \(\overline{\mu}\) correctly calculated. Due to the linearity of the expected value
+\begin{align*}
+\overline{\mu}
+&amp;=\text{E}(\overline{X}_{{@n@}})\\
+&amp;=\text{E}\Bigg(\frac{1}{{@n@}}\sum_{i=1}^{{@n@}}X_i\Bigg)\\
+&amp;=\frac{1}{{@n@}}\sum_{i=1}^{{@n@}}\text{E}(X_i)\\
+&amp;=\frac{1}{{@n@}}\sum_{i=1}^{{@n@}}\mu\\
+&amp;=\mu\\
+&amp;={@TansB1@}.
+\end{align*}
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>ansB-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben den Parameter \(\overline{\mu}=\text{E}(\overline{X}_{{@n@}})\) falsch berechnet. Setzen Sie die Definition von \(\overline{X}_{{@n@}}\) ein und wenden Sie Rechenregeln f&#252;r den Erwartungswert an.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have the parameter \(\overline{\mu}=\text{E}(\overline{X}_{{@n@}})\) miscalculated. Set the definition of \(\overline{X}_{{@n@}}\) and apply calculation rules for the expected value.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansB2</sans>
+                <tans>TansB2</tans>
+                <testoptions>epsilon3</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>ansB-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben den Parameter \(\overline{\sigma}^2\) richtig berechnet. Da die Zufallsvariablen \(X_1,\ldots,X_{{@n@}}\) unabh&#228;ngig sind, gilt
+\begin{align*}
+\overline{\sigma}^2
+&amp;=\text{Var}(\overline{X}_{{@n@}})\\
+&amp;=\text{Var}\Bigg(\frac{1}{{@n@}}\sum_{i=1}^{{@n@}}X_i\Bigg)\\
+&amp;=\frac{1}{{@n@}^2}\sum_{i=1}^{{@n@}}\text{Var}(X_i)\\
+&amp;=\frac{1}{{@n@}^2}\sum_{i=1}^{{@n@}}\sigma^2\\
+&amp;=\frac{\sigma^2}{{@n@}}\\
+&amp;={@dp4(TansB2)@}.
+\end{align*}
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have the parameter \(\overline{\sigma}^2\) correctly calculated. Since the random variables \(X_1,\ldots,X_{{@n@}}\) are independent;
+\begin{align*}
+\overline{\sigma}^2
+&amp;=\text{Var}(\overline{X}_{{@n@}})\\
+&amp;=\text{Var}\Bigg(\frac{1}{{@n@}}\sum_{i=1}^{{@n@}}X_i\Bigg)\\
+&amp;=\frac{1}{{@n@}^2}\sum_{i=1}^{{@n@}}\text{Var}(X_i)\\
+&amp;=\frac{1}{{@n@}^2}\sum_{i=1}^{{@n@}}\sigma^2\\
+&amp;=\frac{\sigma^2}{{@n@}}\\
+&amp;={@dp4(TansB2)@}.
+\end{align*}
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>ansB-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben den Parameter \(\overline{\sigma}^2=\text{Var}(\overline{X}_{{@n@}})\) falsch berechnet. Setzen Sie die Definition von \(\overline{X}_{{@n@}}\) ein und wenden Sie Rechenregeln f&#252;r die Varianz an.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have the parameter \(\overline{\sigma}^2=\text{Var}(\overline{X}_{{@n@}})\) miscalculated. Set the definition of \(\overline{X}_{{@n@}}\) and apply calculation rules for the variance.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans><![CDATA[is(ansB2<=0)]]></sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>ansB-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben als zweiten Parameter keine positive Zahl eingegeben. Die Varianz einer normalverteilten Zufallsvariablen muss aber positiv sein.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You did not enter a positive number as the second parameter. However, the variance of a normally distributed random variable must be positive.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>ansB-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB2</sans>
+                <tans>sigma^2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>ansB-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben als zweiten Parameter den Wert von \(\sigma^2=\text{Var}(X_1)\) eingegeben. Die Varianzen von \(X_1\) und \(\overline{X}_{{@n@}}\) sind jedoch unterschiedlich. Vermutlich haben Sie bei Ihrer Rechnung &#252;bersehen, dass der Vorfaktor \(\frac{1}{{@n@}}\) quadratisch aus der Varianz gezogen werden muss.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have the value of \(\sigma^2=\text{Var}(X_1)\) entered. The Variances of \(X_1\) and \(\overline{X}_{{@n@}}\) are however different. Presumably, you have overlooked that the prefactor \(\frac{1}{{@n@}}\) must be drawn squarely from the variance.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>ansB-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB2^2</sans>
+                <tans>TansB2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>ansB-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben als zweiten Parameter die Standardabweichung eingegeben. &#220;blicherweise gibt man aber die Varianz an, also das Quadrat der Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    They entered the standard deviation as the second parameter. Usually, however, the variance is given, i.e. the square of the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>ansB-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ansB1,ansB2]</sans>
+                <tans>[TansB1,TansB2]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansB-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<hr/>
+<p>
+    Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21b');
+show('oer-aufgabe-21c');
+" type="button">
+        Weiter
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<hr/>
+<p>
+    To get to the next task, click on
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21b');
+show('oer-aufgabe-21c');
+" type="button">
+        Next
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ansB-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>ansC</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ansC)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>ansC-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ansC-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihr Ergebnis liegt nicht im Intervall \([0,1]\) und kann daher nicht als Wahrscheinlichkeit interpretiert werden.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your result is not in interval \([0,1]\) and therefore cannot be interpreted as probability.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC</sans>
+                <tans>TansC</tans>
+                <testoptions>epsilon3</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansC-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die Wahrscheinlichkeit richtig berechnet. Eine m&#246;gliche Rechnung sieht vollst&#228;ndig aufgeschrieben folgenderma&#223;en aus:
+\begin{align*}
+P(|\overline{X}_{{@n@}}-\overline{\mu}|\leq {@M[3]@}\overline{\sigma})
+&amp;=P\left(|\overline{X}_{{@n@}}-{@mu_bar@}|\leq {@m*sigma_bar@}\right)\\
+&amp;=P\left({@mu_bar-m*sigma_bar@}\leq\overline{X}_{{@n@}}\leq {@mu_bar+m*sigma_bar@}\right)\\
+&amp;=P\left(\frac{{@mu_bar-m*sigma_bar@}-\overline{\mu}}{\overline{\sigma}}\leq\frac{\overline{X}_{{@n@}}-\overline{\mu}}{\overline{\sigma}}\leq\frac{{@mu_bar+m*sigma_bar@}-\overline{\mu}}{\overline{\sigma}}\right)\\
+&amp;=P\left(\frac{{@mu_bar-m*sigma_bar@}-{@mu_bar@}}{{@sigma_bar@}}\leq\overline{X}_{{@n@}}^*\leq\frac{{@mu_bar+m*sigma_bar@}-{@mu_bar@}}{{@sigma_bar@}}\right)\\
+&amp;=P({@-m@}\leq\overline{X}_{{@n@}}^*\leq {@m@})\\
+&amp;=\Phi({@m@})-\Phi({@-m@})\\
+&amp;=2\Phi({@m@})-1\\
+&amp;\approx {@TansC@}.
+\end{align*}
+</p>
+<p>
+    Dieses Ergebnis ist dasselbe wie in (a), obwohl dort die Zufallsvariable \(X_1\sim\text{N}({@mu@},{@sigma^2@})\) andere Parameter hatte als hier die Zufallsvariable \(\overline{X}_{{@n@}}\sim\text{N}({@mu_bar@},{@sigma_bar^2@})\). Die Wahrscheinlichkeit f&#252;r Abweichungen um h&#246;chstens {@M[1]@} Standardabweichung{@M[2]@} vom Mittelwert ist in beiden F&#228;llen ungef&#228;hr gleich {@TansA@}.
+</p>
+<p>
+    Allgemein ist bei unabh&#228;ngigen und identisch normalverteilten Zufallsvariablen \(X_1,\ldots,X_n\) die Wahrscheinlichkeit, dass das arithmetische Mittel \(\overline{X}_n\) um h&#246;chstens \(m\) Standardabweichungen \(\overline{\sigma}=\frac{\sigma}{\sqrt{n}}\) vom Mittelwert \(\overline{\mu}=\mu\) abweicht, gleich
+\begin{align*}
+P(|\overline{X}_n-\overline{\mu}|\leq m\overline{\sigma})
+&amp;=P\left(|\overline{X}_n-\mu|\leq\frac{m\sigma}{\sqrt{n}}\right)\\
+&amp;=P\left(\mu-\frac{m\sigma}{\sqrt{n}}\leq\overline{X}_n\leq\mu+\frac{m\sigma}{\sqrt{n}}\right)\\
+&amp;=P\left(-m\leq\frac{\overline{X}_n-\mu}{\sigma/\sqrt{n}}\leq m\right)\\
+&amp;=P(-m\leq\overline{X}_n^*\leq m)\\
+&amp;=\Phi(m)-\Phi(-m)\\
+&amp;=2\Phi(m)-1.
+\end{align*}
+Entscheidend ist hierbei die Reskalierung der Standardabweichung (bzw. Varianz) um den Faktor \(\frac{1}{\sqrt{n}}\) (bzw. \(\frac{1}{n}\)), denn sonst vergr&#246;&#223;ert sich die Wahrscheinlichkeit mit wachsendem \(n\). (Rechnen Sie das mit den Zahlenwerten aus dieser Aufgabe konkret nach!) Deswegen ist das durch \(\overline{\sigma}\) definierte Intervall \([\overline{\mu}-m\overline{\sigma},\overline{\mu}+m\overline{\sigma}]=[\mu-\frac{m\sigma}{\sqrt{n}},\mu+\frac{m\sigma}{\sqrt{n}}]\) viel kleiner als das durch \(\sigma\) definierte Intervall \([\mu-m\sigma,\mu+m\sigma]\).
+</p>
+<p>
+    Aus obiger Rechnung folgen die sogenannten
+    <b>
+        Sigma-Regeln
+    </b>
+    :
+    <ul>
+        <li>
+            F&#252;r \(m=1\) erhalten wir die
+            <b>
+                \(1\sigma\)-Regel
+            </b>
+            : Rund \(68.3\%\) aller Realisierungen weichen um h&#246;chstens eine Standardabweichung vom Mittelwert ab, denn \[P(|\overline{X}_n-\overline{\mu}|\leq\overline{\sigma})=2\Phi(1)-1\approx {@decimalplaces(2*Phi(1)-1,3)@}.\]
+        </li>
+        <li>
+            F&#252;r \(m=2\) erhalten wir die
+            <b>
+                \(2\sigma\)-Regel
+            </b>
+            : Rund \(95.4\%\) aller Realisierungen weichen um h&#246;chstens zwei Standardabweichungen vom Mittelwert ab, denn \[P(|\overline{X}_n-\overline{\mu}|\leq2\overline{\sigma})=2\Phi(2)-1\approx {@decimalplaces(2*Phi(2)-1,3)@}.\]
+        </li>
+        <li>
+            F&#252;r \(m=3\) erhalten wir die
+            <b>
+                \(3\sigma\)-Regel
+            </b>
+            : Rund \(99.7\%\) aller Realisierungen weichen um h&#246;chstens drei Standardabweichungen vom Mittelwert ab, denn \[P(|\overline{X}_n-\overline{\mu}|\leq3\overline{\sigma})=2\Phi(3)-1\approx {@decimalplaces(2*Phi(3)-1,3)@}.\]
+        </li>
+    </ul>
+    Aufgrund des zentralen Grenzwertsatzes gelten diese Sigma-Regeln approximativ auch f&#252;r das arithmetische Mittel von unabh&#228;ngigen und identisch verteilten Zufallsvariablen, die selbst nicht normalverteilt sind.
+</p>
+<hr/>
+<p>
+    Sie haben die Aufgabe erfolgreich gel&#246;st! Jetzt sollten Sie Wahrscheinlichkeiten bei normalverteilten Zufallsvariablen sicher berechnen k&#246;nnen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have calculated the probability correctly. A possible invoice looks fully written as follows:
+\begin{align*}
+P(|\overline{X}_{{@n@}}-\overline{\mu}|\leq {@M[3]@}\overline{\sigma})
+&amp;=P\left(|\overline{X}_{{@n@}}-{@mu_bar@}|\leq {@m*sigma_bar@}\right)\\
+&amp;=P\left({@mu_bar-m*sigma_bar@}\leq\overline{X}_{{@n@}}\leq {@mu_bar+m*sigma_bar@}\right)\\
+&amp;=P\left(\frac{{@mu_bar-m*sigma_bar@}-\overline{\mu}}{\overline{\sigma}}\leq\frac{\overline{X}_{{@n@}}-\overline{\mu}}{\overline{\sigma}}\leq\frac{{@mu_bar+m*sigma_bar@}-\overline{\mu}}{\overline{\sigma}}\right)\\
+&amp;=P\left(\frac{{@mu_bar-m*sigma_bar@}-{@mu_bar@}}{{@sigma_bar@}}\leq\overline{X}_{{@n@}}^*\leq\frac{{@mu_bar+m*sigma_bar@}-{@mu_bar@}}{{@sigma_bar@}}\right)\\
+&amp;=P({@-m@}\leq\overline{X}_{{@n@}}^*\leq {@m@})\\
+&amp;=\Phi({@m@})-\Phi({@-m@})\\
+&amp;=2\Phi({@m@})-1\\
+&amp;\approx {@TansC@}.
+\end{align*}
+</p>
+<p>
+    This result is the same as in (a), although there the random variable \(X_1\sim\text{N}({@mu@},{@sigma^2@})\) other parameters than here had the random variable \(\overline{X}_{{@n@}}\sim\text{N}({@mu_bar@},{@sigma_bar^2@})\). The probability of deviations by at most {@M[1]@} Standard deviation{@M[2]@} the mean value is approximately equal in both cases {@TansA@}.
+</p>
+<p>
+    Generally, for independent and identically distributed random variables \(X_1,\ldots,X_n\) the probability that the arithmetic means \(\overline{X}_n\) Not more than \(m\) Standard deviations \(\overline{\sigma}=\frac{\sigma}{\sqrt{n}}\) of the mean value \(\overline{\mu}=\mu\) deviates, equal
+\begin{align*}
+P(|\overline{X}_n-\overline{\mu}|\leq m\overline{\sigma})
+&amp;=P\left(|\overline{X}_n-\mu|\leq\frac{m\sigma}{\sqrt{n}}\right)\\
+&amp;=P\left(\mu-\frac{m\sigma}{\sqrt{n}}\leq\overline{X}_n\leq\mu+\frac{m\sigma}{\sqrt{n}}\right)\\
+&amp;=P\left(-m\leq\frac{\overline{X}_n-\mu}{\sigma/\sqrt{n}}\leq m\right)\\
+&amp;=P(-m\leq\overline{X}_n^*\leq m)\\
+&amp;=\Phi(m)-\Phi(-m)\\
+&amp;=2\Phi(m)-1.
+\end{align*}The decisive factor here is the rescaling of the standard deviation (or variance) by \(\frac{1}{\sqrt{n}}\) (or \(\frac{1}{n}\)), because otherwise the probability increases with increasing \(n\). (Review this with the numerical values from this task!) That is why \(\overline{\sigma}\) defined interval \([\overline{\mu}-m\overline{\sigma},\overline{\mu}+m\overline{\sigma}]=[\mu-\frac{m\sigma}{\sqrt{n}},\mu+\frac{m\sigma}{\sqrt{n}}]\) much smaller than by \(\sigma\) defined interval \([\mu-m\sigma,\mu+m\sigma]\).
+</p>
+<p>
+    From the above invoice follow the so-called
+    <b>
+        Sigma rules
+    </b>
+    :
+    <ul>
+        <li>
+            For \(m=1\) we get
+            <b>
+                \(1\sigma\)Rule
+            </b>
+            : Round \(68.3\%\) all realizations deviate from the average by at most one standard deviation, because \[P(|\overline{X}_n-\overline{\mu}|\leq\overline{\sigma})=2\Phi(1)-1\approx {@decimalplaces(2*Phi(1)-1,3)@}.\]
+        </li>
+        <li>
+            For \(m=2\) we get
+            <b>
+                \(2\sigma\)Rule
+            </b>
+            : Round \(95.4\%\) all realizations differ from the average by at most two standard deviations, because \[P(|\overline{X}_n-\overline{\mu}|\leq2\overline{\sigma})=2\Phi(2)-1\approx {@decimalplaces(2*Phi(2)-1,3)@}.\]
+        </li>
+        <li>
+            For \(m=3\) we get
+            <b>
+                \(3\sigma\)Rule
+            </b>
+            : Round \(99.7\%\) all realizations differ from the average by at most three standard deviations, because \[P(|\overline{X}_n-\overline{\mu}|\leq3\overline{\sigma})=2\Phi(3)-1\approx {@decimalplaces(2*Phi(3)-1,3)@}.\]
+        </li>
+    </ul>
+    Due to the central limit value set, these Sigma rules apply approximately also to the arithmetic mean of independent and identically distributed random variables which themselves are not normally distributed.
+</p>
+<hr/>
+<p>
+    You have successfully solved the task! Now you should be able to securely calculate probabilities in normal distributed random variables.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ansC-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-aufgabe-21c-PRT1">
+    <p>
+        Dass Sie die Wahrscheinlichkeit nicht auf Anhieb berechnen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in drei kleinere Teilaufgaben unterteilt. Wenn Sie diese alle gel&#246;st haben, k&#246;nnen Sie sicherlich auch die urspr&#252;ngliche Aufgabe l&#246;sen. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21c');
+show('oer-aufgabe-21c1');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-21c-PRT2" style="display:none;">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Die Rechnung lautet bis jetzt:
+\begin{equation*}
+P\left(|\overline{X}_{{@n@}}-{@mu_bar@}|\leq {@m*sigma_bar@}\right)
+=P\left({@mu_bar-m*sigma_bar@}\leq\overline{X}_{{@n@}}\leq {@mu_bar+m*sigma_bar@}\right).
+\end{equation*}
+Als N&#228;chstes m&#252;ssen Sie \(\overline{X}_{{@n@}}\) standardisieren, um dann die Wahrscheinlichkeit mithilfe der Verteilungsfunktion \(\Phi\) der Standardnormalverteilung berechnen zu k&#246;nnen.
+    </p>
+    <hr/>
+    <p>
+        Wenn Sie bei der Umformung nicht weiterkommen, l&#246;sen Sie zus&#228;tzlich noch die zweite Teilaufgabe. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21c');
+show('oer-aufgabe-21c2');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-21c-PRT3" style="display:none;">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Die Rechnung lautet bis jetzt:
+\begin{align*}
+P\left(|\overline{X}_{{@n@}}-{@mu_bar@}|\leq {@m*sigma_bar@}\right)
+&amp;=P\left({@mu_bar-m*sigma_bar@}\leq\overline{X}_{{@n@}}\leq {@mu_bar+m*sigma_bar@}\right)\\
+&amp;=P({@-m@}\leq\overline{X}_{{@n@}}^*\leq {@m@}).
+\end{align*}
+Schreiben Sie die Wahrscheinlichkeit als N&#228;chstes mithilfe der Verteilungsfunktion \(\Phi\) der Standardnormalverteilung auf und bestimmen Sie dann die auftretenden Funktionswerte von \(\Phi\).
+    </p>
+    <hr/>
+    <p>
+        Wenn Sie bei der Umformung nicht weiterkommen, l&#246;sen Sie zus&#228;tzlich noch die dritte Teilaufgabe. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21c');
+show('oer-aufgabe-21c3');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-21c-PRT4" style="display:none;">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Die Rechnung lautet bis jetzt:
+\begin{align*}
+P\left(|\overline{X}_{{@n@}}-{@mu_bar@}|\leq {@m*sigma_bar@}\right)
+&amp;=P\left({@mu_bar-m*sigma_bar@}\leq\overline{X}_{{@n@}}\leq {@mu_bar+m*sigma_bar@}\right)\\
+&amp;=P({@-m@}\leq\overline{X}_{{@n@}}^*\leq {@m@})\\
+&amp;=\Phi({@m@})-\Phi({@-m@}).
+\end{align*}
+Bestimmen Sie nun noch die auftretenden Funktionswerte von \(\Phi\) aus einer geeigneten Tabelle. Hierbei ist die Identit&#228;t \(\Phi(-t)=1-\Phi(t)\) f&#252;r \(t\in\mathbb{R}\) hilfreich.
+    </p>
+</div>
+[[/lang]][[lang code="en"]]
+<div id="oer-aufgabe-21c-PRT1">
+    <p>
+        That you couldn't calculate the likelihood right away is no problem! In the following, the task is divided into three smaller subtasks. If you have solved these all, you can also solve the original task. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21c');
+show('oer-aufgabe-21c1');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-21c-PRT2" style="display:none;">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        The invoice is now:
+\begin{equation*}
+P\left(|\overline{X}_{{@n@}}-{@mu_bar@}|\leq {@m*sigma_bar@}\right)
+=P\left({@mu_bar-m*sigma_bar@}\leq\overline{X}_{{@n@}}\leq {@mu_bar+m*sigma_bar@}\right).
+\end{equation*}Next you need \(\overline{X}_{{@n@}}\) to then standardize the probability using the distribution function \(\Phi\) the standard distribution.
+    </p>
+    <hr/>
+    <p>
+        If you do not proceed during the forming process, you will also solve the second part task. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21c');
+show('oer-aufgabe-21c2');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-21c-PRT3" style="display:none;">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        The invoice is now:
+\begin{align*}
+P\left(|\overline{X}_{{@n@}}-{@mu_bar@}|\leq {@m*sigma_bar@}\right)
+&amp;=P\left({@mu_bar-m*sigma_bar@}\leq\overline{X}_{{@n@}}\leq {@mu_bar+m*sigma_bar@}\right)\\
+&amp;=P({@-m@}\leq\overline{X}_{{@n@}}^*\leq {@m@}).
+\end{align*}Write the probability next by using the distribution function \(\Phi\) the standard normal distribution and then determine the occurring functional values of \(\Phi\).
+    </p>
+    <hr/>
+    <p>
+        If you do not proceed during the forming process, you will also solve the third part task. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21c');
+show('oer-aufgabe-21c3');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-21c-PRT4" style="display:none;">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        The invoice is now:
+\begin{align*}
+P\left(|\overline{X}_{{@n@}}-{@mu_bar@}|\leq {@m*sigma_bar@}\right)
+&amp;=P\left({@mu_bar-m*sigma_bar@}\leq\overline{X}_{{@n@}}\leq {@mu_bar+m*sigma_bar@}\right)\\
+&amp;=P({@-m@}\leq\overline{X}_{{@n@}}^*\leq {@m@})\\
+&amp;=\Phi({@m@})-\Phi({@-m@}).
+\end{align*}Determine the functional values of \(\Phi\) from a suitable table. Here is the identity \(\Phi(-t)=1-\Phi(t)\) for \(t\in\mathbb{R}\) helpful.
+    </p>
+</div>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>ansC1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>[ansC11,ansC12]</sans>
+                <tans>[TansC11,TansC12]</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansC1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Sie haben die Betragsungleichung richtig aufgel&#246;st.
+</p>
+<hr/>
+<ul>
+    <li>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21c1');
+show('oer-aufgabe-21c2');
+" type="button">
+            Weiter
+        </button>
+    </li>
+    <li>
+        Um zur urspr&#252;nglichen Aufgabe zu gelangen, klicken Sie auf
+        <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-21c1');
+hide('oer-aufgabe-21c-PRT1');
+show('oer-aufgabe-21c');
+show('oer-aufgabe-21c-PRT2');
+" type="button">
+            Zur&#252;ck
+        </button>
+    </li>
+</ul>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    You have properly resolved the amount inequality.
+</p>
+<hr/>
+<ul>
+    <li>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21c1');
+show('oer-aufgabe-21c2');
+" type="button">
+            Next
+        </button>
+    </li>
+    <li>
+        To get to the original task, click on
+        <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-21c1');
+hide('oer-aufgabe-21c-PRT1');
+show('oer-aufgabe-21c');
+show('oer-aufgabe-21c-PRT2');
+" type="button">
+            Back
+        </button>
+    </li>
+</ul>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>ansC1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>GT</answertest>
+                <sans>ansC11</sans>
+                <tans>ansC12</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansC1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Die linke Seite der Ungleichungskette ist gr&#246;&#223;er als die rechte Seite. Das resultiert in einem leeren Ereignis mit der Wahrscheinlichkeit 0.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    The left side of the unequalification chain is larger than the right side. This results in an empty event with probability 0.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>ansC1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC11</sans>
+                <tans>TansC11</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>ansC1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>ansC1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Die linke Seite der Ungleichungskette ist falsch.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The left side of the unequalification chain is wrong.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC12</sans>
+                <tans>TansC12</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>ansC1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>ansC1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Die rechte Seite der Ungleichungskette ist falsch.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The right side of the inequality chain is wrong.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>0</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansC1-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ansC1-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>ansC2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ansC21,ansC22]</sans>
+                <tans>[TansC21,TansC22]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansC2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Auf allen Seiten der Ungleichungskette \(P({@mu_bar-m*sigma_bar@}\leq \overline{X}_{{@n@}}\leq {@mu_bar+m*sigma_bar@})\) muss der Erwartungswert \(\text{E}(\overline{X}_{{@n@}})=\bar{\mu}={@mu_bar@}\) subtrahiert und anschlie&#223;end durch die Standardabweichung \(\sqrt{\text{Var}(\overline{X}_{{@n@}})}=\bar{\sigma}={@sigma_bar@}\) dividiert werden. Das ergibt
+\begin{align*}
+P\left({@mu_bar-m*sigma_bar@}\leq\overline{X}_{{@n@}}\leq {@mu_bar+m*sigma_bar@}\right)
+&amp;=P\left(\frac{{@mu_bar-m*sigma_bar@}-{@mu_bar@}}{{@sigma_bar@}}\leq\frac{\overline{X}_{{@n@}}-{@mu_bar@}}{{@sigma_bar@}}\leq\frac{{@mu_bar+m*sigma_bar@}-{@mu_bar@}}{{@sigma_bar@}}\right)\\
+&amp;=P({@-m@}\leq\overline{X}_{{@n@}}^*\leq {@m@}).
+\end{align*}
+</p>
+<hr/>
+<ul>
+    <li>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21c2');
+show('oer-aufgabe-21c3');
+" type="button">
+            Weiter
+        </button>
+    </li>
+    <li>
+        Um zur urspr&#252;nglichen Aufgabe zu gelangen, klicken Sie auf
+        <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-21c2');
+hide('oer-aufgabe-21c-PRT1');
+hide('oer-aufgabe-21c-PRT2');
+show('oer-aufgabe-21c');
+show('oer-aufgabe-21c-PRT3');
+" type="button">
+            Zur&#252;ck
+        </button>
+    </li>
+</ul>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    On all sides of the inequality chain \(P({@mu_bar-m*sigma_bar@}\leq \overline{X}_{{@n@}}\leq {@mu_bar+m*sigma_bar@})\) the expected value \(\text{E}(\overline{X}_{{@n@}})=\bar{\mu}={@mu_bar@}\) subtracted and subsequently by the standard deviation \(\sqrt{\text{Var}(\overline{X}_{{@n@}})}=\bar{\sigma}={@sigma_bar@}\) to be divided. This results
+\begin{align*}
+P\left({@mu_bar-m*sigma_bar@}\leq\overline{X}_{{@n@}}\leq {@mu_bar+m*sigma_bar@}\right)
+&amp;=P\left(\frac{{@mu_bar-m*sigma_bar@}-{@mu_bar@}}{{@sigma_bar@}}\leq\frac{\overline{X}_{{@n@}}-{@mu_bar@}}{{@sigma_bar@}}\leq\frac{{@mu_bar+m*sigma_bar@}-{@mu_bar@}}{{@sigma_bar@}}\right)\\
+&amp;=P({@-m@}\leq\overline{X}_{{@n@}}^*\leq {@m@}).
+\end{align*}
+</p>
+<hr/>
+<ul>
+    <li>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-21c2');
+show('oer-aufgabe-21c3');
+" type="button">
+            Next
+        </button>
+    </li>
+    <li>
+        To get to the original task, click on
+        <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-21c2');
+hide('oer-aufgabe-21c-PRT1');
+hide('oer-aufgabe-21c-PRT2');
+show('oer-aufgabe-21c');
+show('oer-aufgabe-21c-PRT3');
+" type="button">
+            Back
+        </button>
+    </li>
+</ul>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>ansC2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>GT</answertest>
+                <sans>ansC21</sans>
+                <tans>ansC22</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansC2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Die linke Seite der Ungleichungskette ist gr&#246;&#223;er als die rechte Seite. Das resultiert in einem leeren Ereignis mit der Wahrscheinlichkeit 0.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    The left side of the unequalification chain is larger than the right side. This results in an empty event with probability 0.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>ansC2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>10</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC22</sans>
+                <tans>ZGS_error3(mu_bar+m*sigma_bar,mu_bar,sigma_bar)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>11</truenextnode>
+                <trueanswernote>ansC2-11-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der rechten Seite vergessen, zuerst den Erwartungswert zu subtrahieren, bevor Sie durch die Standardabweichung dividieren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You probably forgot to subtract the expected value at the right hand side before dividing by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>11</falsenextnode>
+                <falseanswernote>ansC2-11-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>11</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC22</sans>
+                <tans>ZGS_error4(mu_bar+m*sigma_bar,mu_bar,sigma_bar)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>12</truenextnode>
+                <trueanswernote>ansC2-12-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der rechten Seite vergessen, zuerst den Erwartungswert zu subtrahieren, und haben durch die Varianz dividiert anstatt durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you forgot to subtract the expected value at the right hand side, and have divided by the variance instead of by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>12</falsenextnode>
+                <falseanswernote>ansC2-12-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>12</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>0</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansC2-13-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ansC2-13-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansC21</sans>
+                <tans>TansC21</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>7</truenextnode>
+                <trueanswernote>ansC2-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die linke Seite der Ungleichungskette richtig standardisiert.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have correctly standardized the left side of the unequalification chain.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>ansC2-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die linke Seite der Ungleichungskette falsch standardisiert. Subtrahieren Sie von \({@mu_bar-sigma_bar@}\) den Erwartungswert und dividieren Sie anschlie&#223;end durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have incorrectly standardized the left side of the unequalification chain. Subtract from \({@mu_bar-sigma_bar@}\) the expected value and then divide by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC21</sans>
+                <tans>ZGS_error1(mu_bar-m*sigma_bar,mu_bar,sigma_bar)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>ansC2-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der linken Seite vergessen, durch die Standardabweichung zu dividieren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you forgot to divide by the standard deviation on the left.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>ansC2-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC21</sans>
+                <tans>ZGS_error2(mu_bar-m*sigma_bar,mu_bar,sigma_bar)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>ansC2-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der linken Seite durch die Varianz dividiert anstatt durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you have divided by the variance at the left side instead of by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>ansC2-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC21</sans>
+                <tans>ZGS_error3(mu_bar-m*sigma_bar,mu_bar,sigma_bar)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>6</truenextnode>
+                <trueanswernote>ansC2-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der linken Seite vergessen, zuerst den Erwartungswert zu subtrahieren, bevor Sie durch die Standardabweichung dividieren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You probably forgot to subtract the expected value first from the left hand side before dividing by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>6</falsenextnode>
+                <falseanswernote>ansC2-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>6</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC21</sans>
+                <tans>ZGS_error4(mu_bar-m*sigma_bar,mu_bar,sigma_bar)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>7</truenextnode>
+                <trueanswernote>ansC2-7-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der linken Seite vergessen, zuerst den Erwartungswert zu subtrahieren, und haben durch die Varianz dividiert anstatt durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you forgot to subtract the expected value from the left, and have divided by the variance instead of by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>7</falsenextnode>
+                <falseanswernote>ansC2-7-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>7</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansC22</sans>
+                <tans>TansC22</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>12</truenextnode>
+                <trueanswernote>ansC2-8-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die rechte Seite der Ungleichungskette richtig standardisiert.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    They have properly standardized the right side of the unequalification chain.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>8</falsenextnode>
+                <falseanswernote>ansC2-8-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die rechte Seite der Ungleichungskette falsch standardisiert. Subtrahieren Sie von \({@mu_bar+sigma_bar@}\) den Erwartungswert und dividieren Sie anschlie&#223;end durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    They have incorrectly standardized the right side of the unequalification chain. Subtract from \({@mu_bar+sigma_bar@}\) the expected value and then divide by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>8</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC22</sans>
+                <tans>ZGS_error1(mu_bar+m*sigma_bar,mu_bar,sigma_bar)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>9</truenextnode>
+                <trueanswernote>ansC2-9-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der rechten Seite vergessen, durch die Standardabweichung zu dividieren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you forgot to divide by the standard deviation at the right side.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>9</falsenextnode>
+                <falseanswernote>ansC2-9-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>9</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC22</sans>
+                <tans>ZGS_error2(mu_bar+m*sigma_bar,mu_bar,sigma_bar)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>10</truenextnode>
+                <trueanswernote>ansC2-10-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der rechten Seite durch die Varianz dividiert anstatt durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you have divided by the variance on the right side instead of the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>10</falsenextnode>
+                <falseanswernote>ansC2-10-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>ansC3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ansC31,ansC32]</sans>
+                <tans>[TansC31,TansC32]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansC3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Da \(\overline{X}_{{@n@}}^*\) standardnormalverteilt ist, gilt
+\begin{equation*}
+P({@-m@}\leq\overline{X}_{{@n@}}^*\leq {@m@})
+=\Phi({@m@})-\Phi({@-m@}).
+\end{equation*}
+</p>
+<p>
+    Jetzt k&#246;nnen Sie die urspr&#252;ngliche Aufgabe noch einmal versuchen. Klicken Sie dazu auf
+    <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-21c3');
+hide('oer-aufgabe-21c-PRT1');
+hide('oer-aufgabe-21c-PRT2');
+hide('oer-aufgabe-21c-PRT3');
+show('oer-aufgabe-21c');
+show('oer-aufgabe-21c-PRT4');
+" type="button">
+        Zur&#252;ck
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    There. \(\overline{X}_{{@n@}}^*\) standard distributed, applies
+\begin{equation*}
+P({@-m@}\leq\overline{X}_{{@n@}}^*\leq {@m@})
+=\Phi({@m@})-\Phi({@-m@}).
+\end{equation*}
+</p>
+<p>
+    Now you can try the original task again. Click on
+    <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-21c3');
+hide('oer-aufgabe-21c-PRT1');
+hide('oer-aufgabe-21c-PRT2');
+hide('oer-aufgabe-21c-PRT3');
+show('oer-aufgabe-21c');
+show('oer-aufgabe-21c-PRT4');
+" type="button">
+        Back
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>ansC3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ansC31,ansC32]</sans>
+                <tans>[TansC32,TansC31]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansC3-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Ihre Ergebnisse sind richtig, aber Sie haben beide Eingaben miteinander vertauscht.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    Your results are correct, but you have interchanged both inputs.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ansC3-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Setzen Sie die linke bzw. rechte Seite der Ungleichungskette in die Verteilungsfunktion \(\Phi\) der Standardnormalverteilung ein.
+</p>
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    Set the left or right side of the non-uniform chain into the distribution function \(\Phi\) the standard distribution.
+</p>
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

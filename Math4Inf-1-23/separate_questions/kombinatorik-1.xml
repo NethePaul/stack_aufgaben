@@ -6,52 +6,50 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    Am Ende einer Konferenz (... noch vor Corona ...) sch&#252;ttelten sich \({@n@}\) Teilnehmer pressegerecht die H&#228;nde.
+</p>
+<p>
+    Wie viele Sch&#252;ttelvorg&#228;nge gab es?
+</p>
+<p>
+    [[/lang]][[lang code="en"]]
     <p>
-        Am Ende einer Konferenz (... noch vor Corona ...) sch&#252;ttelten sich \({@n@}\) Teilnehmer pressegerecht die H&#228;nde.
+        At the end of a conference (... still before Corona...) \({@n@}\) participants shake their hands properly.
     </p>
     <p>
-        Wie viele Sch&#252;ttelvorg&#228;nge gab es?
+        How many handshakes were there?
     </p>
     <p>
-        [[input:ans1]] [[validation:ans1]]
+        [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
     </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        At the end of a conference (... still before Corona...) \({@n@}\) Participants press their hands properly.
-    </p>
-    <p>
-        How many shaking processes were there?
-    </p>
-    <p>
-        [[input:ans1]] [[validation:ans1]]
-    </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p dir="ltr" style="text-align: left;">
-        <strong>
-            L&#246;sungsweg:
-        </strong>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        \(&#160; &#160;\dfrac{{@n@}!}{2! \cdot ({@n@}-2)!}=&#160;&#160;\dfrac{{@n@}!}{2! \cdot {@t@}!}&#160; =&#160;\dfrac{{@t@}! \cdot {@n1@}\cdot {@n@}}{2! \cdot {@t@}!}&#160; =&#160; {@ta1@}\)
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p dir="ltr" style="text-align: left;">
-        <strong>
-            Solution:
-        </strong>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        \(&#160; &#160;\dfrac{{@n@}!}{2! \cdot ({@n@}-2)!}=&#160;&#160;\dfrac{{@n@}!}{2! \cdot {@t@}!}&#160; =&#160;\dfrac{{@t@}! \cdot {@n1@}\cdot {@n@}}{2! \cdot {@t@}!}&#160; =&#160; {@ta1@}\)
-    </p>
-</span>
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    <strong>
+        L&#246;sungsweg:
+    </strong>
+</p>
+<p dir="ltr" style="text-align: left;">
+    \(&#160; &#160;\dfrac{{@n@}!}{2! \cdot ({@n@}-2)!}=&#160;&#160;\dfrac{{@n@}!}{2! \cdot {@t@}!}&#160; =&#160;\dfrac{{@t@}! \cdot {@n1@}\cdot {@n@}}{2! \cdot {@t@}!}&#160; =&#160; {@ta1@}\)
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    <strong>
+        Solution:
+    </strong>
+</p>
+<p dir="ltr" style="text-align: left;">
+    \(&#160; &#160;\dfrac{{@n@}!}{2! \cdot ({@n@}-2)!}=&#160;&#160;\dfrac{{@n@}!}{2! \cdot {@t@}!}&#160; =&#160;\dfrac{{@t@}! \cdot {@n1@}\cdot {@n@}}{2! \cdot {@t@}!}&#160; =&#160; {@ta1@}\)
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -69,16 +67,15 @@ n1:n-1;</text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    [[/lang]][[lang code="en"]]
     <p>
-        [[feedback:prt1]]
+        [[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        [[feedback:prt1]]
-    </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -92,68 +89,65 @@ n1:n-1;</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    <strong>
-        Richtige Antwort, gut gemacht!
-    </strong>
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    <strong>
-        Right answer, well done!
-    </strong>
+<strong>
+    Richtige Antwort, gut gemacht!
+</strong>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
+<strong>
+    Right answer, well done!
+</strong>
+[[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-adjust">
-        </i>
-    </span>
-    <strong>
-        Ihre Antwort ist teilweise korrekt.
-    </strong>
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-adjust">
-        </i>
-    </span>
-    <strong>
-        Your answer is partly correct.
-    </strong>
+<strong>
+    Ihre Antwort ist teilweise korrekt.
+</strong>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
 </span>
+<strong>
+    Your answer is partly correct.
+</strong>
+[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    <strong>
-        Falsche Antwort.
-    </strong>
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    <strong>
-        Wrong answer.
-    </strong>
+<strong>
+    Falsche Antwort.
+</strong>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
+<strong>
+    Wrong answer.
+</strong>
+[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

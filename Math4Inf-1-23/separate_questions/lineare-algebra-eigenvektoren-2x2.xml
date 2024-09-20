@@ -6,252 +6,250 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    Gegeben ist die Matrix \( A \)
+    <br/>
+</p>
+<p>
+</p>
+<p>
+    \(A\,=\,{@M@} \)
+</p>
+<p>
+</p>
+<p>
+    Die Eigenwerte von \(\,A\,\) sind \(\,\lambda_1={@l1@}\, \) und \(\,\lambda_2={@l2@} \,\).
+</p>
+<p>
+    Berechnen Sie die Eigenvektoren der Matrix \( \,A\,\)
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        Ein Eigenvektor zum Eigenwert&#160;\(\,\lambda_1={@l1@} \,\) ist
+    </li>
+</ul>
+<p>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
-        Gegeben ist die Matrix \( A \)
-        <br/>
-    </p>
-    <p>
-    </p>
-    <p>
-        \(A\,=\,{@M@} \)
-    </p>
-    <p>
-    </p>
-    <p>
-        Die Eigenwerte von \(\,A\,\) sind \(\,\lambda_1={@l1@}\, \) und \(\,\lambda_2={@l2@} \,\).
-    </p>
-    <p>
-        Berechnen Sie die Eigenvektoren der Matrix \( \,A\,\)
-    </p>
-    <p>
-    </p>
-    <ul>
-        <li>
-            Ein Eigenvektor zum Eigenwert&#160;\(\,\lambda_1={@l1@} \,\) ist
-        </li>
-    </ul>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
+        \( {v_1}=\) [[/lang]][[lang code="en"]]
         <p>
-            \( {v_1}=\) [[input:ans1]]&#160;[[validation:ans1]] [[feedback:prt1]]
+            The Matrix \( A \)
+            <br/>
         </p>
-    </div>
-    <p>
-    </p>
-    <p>
-    </p>
-    <ul>
-        <li>
-            Ein Eigenvektor zum Eigenwert \(\,\lambda_2={@l2@} \,\) ist
-        </li>
-    </ul>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
         <p>
-            \({v_2}=\) [[input:ans2]]&#160;[[validation:ans2]] [[feedback:prt2]]
         </p>
-    </div>
-    <p>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The Matrix \( A \)
-        <br/>
-    </p>
-    <p>
-    </p>
-    <p>
-        \(A\,=\,{@M@} \)
-    </p>
-    <p>
-    </p>
-    <p>
-        The own values of \(\,A\,\) are \(\,\lambda_1={@l1@}\, \) and \(\,\lambda_2={@l2@} \,\).
-    </p>
-    <p>
-        Calculate the eigenvectors of the matrix \( \,A\,\)
-    </p>
-    <p>
-    </p>
-    <ul>
-        <li>
-            An eigenvector for the eigenvalue\(\,\lambda_1={@l1@} \,\) is
-        </li>
-    </ul>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
         <p>
-            \( {v_1}=\) [[input:ans1]][[validation:ans1]] [[feedback:prt1]]
+            \(A\,=\,{@M@} \)
         </p>
-    </div>
-    <p>
-    </p>
-    <p>
-    </p>
-    <ul>
-        <li>
-            An eigenvector for the eigenvalue \(\,\lambda_2={@l2@} \,\) is
-        </li>
-    </ul>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
         <p>
-            \({v_2}=\) [[input:ans2]][[validation:ans2]] [[feedback:prt2]]
         </p>
-    </div>
-    <p>
+        <p>
+            The own values of \(\,A\,\) are \(\,\lambda_1={@l1@}\, \) and \(\,\lambda_2={@l2@} \,\).
+        </p>
+        <p>
+            Calculate the eigenvectors of the matrix \( \,A\,\)
+        </p>
+        <p>
+        </p>
+        <ul>
+            <li>
+                An eigenvector for the eigenvalue\(\,\lambda_1={@l1@} \,\) is
+            </li>
+        </ul>
+        <p>
+        </p>
+        <div class="editor-indent" style="margin-left: 30px;">
+            <p>
+                \( {v_1}=\) [[/lang]][[input:ans1]][[lang code="de"]]&#160;[[/lang]][[lang code="en"]][[/lang]][[validation:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt1]][[lang code="de"]]
+            </p>
+        </div>
+        <p>
+        </p>
+        <p>
+        </p>
+        <ul>
+            <li>
+                Ein Eigenvektor zum Eigenwert \(\,\lambda_2={@l2@} \,\) ist
+            </li>
+        </ul>
+        <p>
+        </p>
+        <div class="editor-indent" style="margin-left: 30px;">
+            <p>
+                \({v_2}=\) [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <p>
+        </p>
+        <p>
+        </p>
+        <ul>
+            <li>
+                An eigenvector for the eigenvalue \(\,\lambda_2={@l2@} \,\) is
+            </li>
+        </ul>
+        <p>
+        </p>
+        <div class="editor-indent" style="margin-left: 30px;">
+            <p>
+                \({v_2}=\) [[/lang]][[input:ans2]][[lang code="de"]]&#160;[[/lang]][[lang code="en"]][[/lang]][[validation:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt2]][[lang code="de"]]
+            </p>
+        </div>
+        <p>
+        </p>
+        <p>
+            <br/>
+        </p>
+        <p>
+        </p>
+        [[/lang]][[lang code="en"]]
     </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-</span>
+</div>
+<p>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        <b>
-            L&#246;sung
-        </b>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        Der Eigenvektor \({v_i}\) liegt im \(\text{ker}(A-\lambda_i \cdot E)\)
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-    <ul>
-        <li>
-            F&#252;r \(\lambda_1={@l1@}\):
-        </li>
-    </ul>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \(A-({@l1@})E={@C@}\)
-        </p>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            Ein m&#246;glicher Eigenvektor ist \({v_1}={@loes1@}\) (oder jedes Vielfache davon).
-        </p>
-    </div>
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <ul>
-        <li>
-            F&#252;r \(\lambda_2={@l2@}\):
-        </li>
-    </ul>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \(A-({@l2@})E={@E@}\)
-        </p>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            Ein m&#246;glicher Eigenvektor ist \({v_2}={@loes2@}\) (oder jedes Vielfache davon).
-        </p>
-    </div>
+[[lang code="de"]]
+<h4>
+    <b>
+        L&#246;sung
+    </b>
+</h4>
+<p>
     <br/>
-    <p>
-    </p>
-    <p>
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <h4>
-        <b>
-            Solution
-        </b>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        The eigenvector \({v_i}\) the \(\text{ker}(A-\lambda_i \cdot E)\)
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-    <ul>
-        <li>
-            For \(\lambda_1={@l1@}\):
-        </li>
-    </ul>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \(A-({@l1@})E={@C@}\)
-        </p>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            A possible eigenvector is \({v_1}={@loes1@}\) (or any multiple thereof).
-        </p>
-    </div>
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <ul>
-        <li>
-            For \(\lambda_2={@l2@}\):
-        </li>
-    </ul>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \(A-({@l2@})E={@E@}\)
-        </p>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            A possible eigenvector is \({v_2}={@loes2@}\) (or any multiple thereof).
-        </p>
-    </div>
+</p>
+<p>
+    Der Eigenvektor \({v_i}\) liegt im \(\text{ker}(A-\lambda_i \cdot E)\)
+</p>
+<p>
     <br/>
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        F&#252;r \(\lambda_1={@l1@}\):
+    </li>
+</ul>
+<p>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
+        \(A-({@l1@})E={@C@}\)
     </p>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
-        <br/>
+        Ein m&#246;glicher Eigenvektor ist \({v_1}={@loes1@}\) (oder jedes Vielfache davon).
     </p>
-</span>
+</div>
+<p>
+    <br/>
+</p>
+<p>
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        F&#252;r \(\lambda_2={@l2@}\):
+    </li>
+</ul>
+<p>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        \(A-({@l2@})E={@E@}\)
+    </p>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        Ein m&#246;glicher Eigenvektor ist \({v_2}={@loes2@}\) (oder jedes Vielfache davon).
+    </p>
+</div>
+<br/>
+<p>
+</p>
+<p>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<h4>
+    <b>
+        Solution
+    </b>
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    The eigenvector \({v_i}\) the \(\text{ker}(A-\lambda_i \cdot E)\)
+</p>
+<p>
+    <br/>
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        For \(\lambda_1={@l1@}\):
+    </li>
+</ul>
+<p>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        \(A-({@l1@})E={@C@}\)
+    </p>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        A possible eigenvector is \({v_1}={@loes1@}\) (or any multiple thereof).
+    </p>
+</div>
+<p>
+    <br/>
+</p>
+<p>
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        For \(\lambda_2={@l2@}\):
+    </li>
+</ul>
+<p>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        \(A-({@l2@})E={@E@}\)
+    </p>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        A possible eigenvector is \({v_2}={@loes2@}\) (or any multiple thereof).
+    </p>
+</div>
+<br/>
+<p>
+</p>
+<p>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -313,44 +311,41 @@ F: matrix([(1/(a11*a22-a12*a21))*(m11*a22*a11+a21*(m*a22-a12*m22))-l2, (1/(a11*a
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Richtige Antwort, gut gemacht!
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Right answer, well done!
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Richtige Antwort, gut gemacht!
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Right answer, well done!
+</p>
+[[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihre Antwort ist teilweise korrekt.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your answer is partly correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Ihre Antwort ist teilweise korrekt.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer is partly correct.
+</p>
+[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Falsche Antwort.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Wrong answer.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Falsche Antwort.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Wrong answer.
+</p>
+[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

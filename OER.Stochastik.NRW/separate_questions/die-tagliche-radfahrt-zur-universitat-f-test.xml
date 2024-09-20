@@ -1,0 +1,1895 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Die t&#228;gliche Radfahrt zur Universit&#228;t (F-Test)</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<style>
+    button.top-next,
+button.next {
+                border: 1px solid black;
+                background-color: #A9F5BC;
+}
+
+
+
+
+button.top-next:hover,
+button.next:hover {
+                background-color: #E0F8E6;
+}
+
+
+
+
+button.top,
+button.prev {
+                border: 1px solid black;
+                background-color: #DCB25E;
+}
+button.top:hover,
+button.prev:hover {
+                background-color: #E7D2A7;
+}
+
+
+
+
+hr.partsep {
+        border-top: thin solid black;
+        width: 80%;
+}
+
+
+
+
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+</style>
+<details>
+    <summary>
+        Inhalt und Umfang dieser Aufgabe
+    </summary>
+    <p>
+        In dieser Aufgabe lernen Sie, wie Sie einen F-Test mit zwei Stichproben durchf&#252;hren. In diesem Test werden die Varianzen zweier Verteilungen verglichen.
+    </p>
+    <ul>
+        <li>
+            <b>
+                (a)
+            </b>
+            Wahl einer geeigneten Teststatistik
+        </li>
+        <li>
+            <b>
+                (b)
+            </b>
+            Wert der Teststatistik berechnen
+        </li>
+        <li>
+            <b>
+                (c)
+            </b>
+            Kritischen Wert bestimmen
+        </li>
+        <li>
+            <b>
+                (d)
+            </b>
+            Testentscheidung treffen
+        </li>
+    </ul>
+</details>
+<div class="question-view" style="margin-top: 0.5rem">
+    <p>
+        Ein Professor f&#228;hrt t&#228;glich mit dem Fahrrad die 8.8 km lange Strecke
+        von seiner Wohnung zur Universit&#228;t.  Im Januar 2020 ist er an
+        {@ size_x @} Tagen gefahren; dabei war die mittlere Fahrzeit \(\bar{x} =
+        {@ mean_x @} \mathrm{min}\) und die Stichprobenvarianz \({s_x}^2 =
+        {@ var_x @} \mathrm{min}^2\).  Im August 2020 ist er an
+        {@ size_y @} Tagen gefahren; diesmal war die mittlere Fahrzeit \(\bar{y} =
+        {@ mean_y @} \mathrm{min}\) und die Stichprobenvarianz \({s_y}^2 =
+        {@ var_y @} \mathrm{min}^2\).  Wir gehen davon aus, dass die
+        Fahrzeiten unabh&#228;ngig und normalverteilt sind. Wir wollen die Hypothese
+        testen, dass die Varianz in beiden Monaten gleich war gegen die
+        Alternative, dass die Varianz im August 2020 gr&#246;&#223;er war.
+    </p>
+    <hr class="partsep"/>
+    <div class="question-view">
+        <p>
+            <b>
+                (a)
+            </b>
+            W&#228;hlen Sie eine geeignete Teststatistik f&#252;r dieses Testproblem
+        aus.
+        </p>
+        [[/lang]][[lang code="en"]]
+        <style>
+            button.top-next,
+button.next {
+                border: 1px solid black;
+                background-color: #A9F5BC;
+}
+
+
+
+
+button.top-next:hover,
+button.next:hover {
+                background-color: #E0F8E6;
+}
+
+
+
+
+button.top,
+button.prev {
+                border: 1px solid black;
+                background-color: #DCB25E;
+}
+button.top:hover,
+button.prev:hover {
+                background-color: #E7D2A7;
+}
+
+
+
+
+hr.partsep {
+        border-top: thin solid black;
+        width: 80%;
+}
+
+
+
+
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+        </style>
+        <details>
+            <summary>
+                Content and scope of this task
+            </summary>
+            <p>
+                In this task, you will learn how to perform an F test with two samples. In this test, the variances of two distributions are compared.
+            </p>
+            <ul>
+                <li>
+                    <b>
+                        (a)
+                    </b>
+                    Choice of suitable test statistics
+                </li>
+                <li>
+                    <b>
+                        (b)
+                    </b>
+                    Calculate value of test statistics
+                </li>
+                <li>
+                    <b>
+                        (c)
+                    </b>
+                    Determine critical value
+                </li>
+                <li>
+                    <b>
+                        (d)
+                    </b>
+                    Making a decision
+                </li>
+            </ul>
+        </details>
+        <div class="question-view" style="margin-top: 0.5rem">
+            <p>
+                A professor drives the 8.8 km long route by bike daily
+from his apartment to the university. in January 2020
+    {@ size_x @} driving days; the average driving time \(\bar{x} =
+        {@ mean_x @} \mathrm{min}\) and the sample variance \({s_x}^2 =
+        {@ var_x @} \mathrm{min}^2\). in August 2020
+    {@ size_y @} driving days; this time was the middle driving time \(\bar{y} =
+        {@ mean_y @} \mathrm{min}\) and the sample variance \({s_y}^2 =
+        {@ var_y @} \mathrm{min}^2\). We assume that the
+Driving times are independent and normally distributed. We want the hypothesis
+test that the variance was the same in both months against the
+Alternative that the variance was greater in August 2020.
+            </p>
+            <hr class="partsep"/>
+            <div class="question-view">
+                <p>
+                    <b>
+                        (a)
+                    </b>
+                    Select a suitable test statistics for this test problem
+out.
+                </p>
+                [[/lang]][[input:SAns1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:SAns1]][[lang code="de"]]
+  
+    
+    
+    
+  [[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]]
+            </div>
+            <div class="question-view">
+                [[/lang]][[lang code="en"]]
+            </div>
+            <div class="question-view">
+                [[/lang]][[feedback:ergebnisAuswahl]][[lang code="de"]]
+                <p>
+                    <b>
+                        (b)
+                    </b>
+                    Bestimmen Sie den Wert Ihrer Teststatistik.
+                    <br/>
+                    Antwort: [[/lang]][[lang code="en"]]
+                    <p>
+                        <b>
+                            (b)
+                        </b>
+                        Determine the value of your test statistics.
+                        <br/>
+                        Answer: [[/lang]][[input:SAns2]][[lang code="de"]]  [[/lang]][[lang code="en"]] [[/lang]][[validation:SAns2]][[lang code="de"]]
+                    </p>
+                    <p>
+                        <em>
+                            Hinweis: Wenn Sie gerundete Werte eingeben, dann runden Sie bitte auf zwei Nachkommastellen.
+                        </em>
+                    </p>
+                    [[/lang]][[lang code="en"]]
+                </p>
+                <p>
+                    <em>
+                        Note: If you enter rounded values, please turn to two descendants.
+                    </em>
+                </p>
+                [[/lang]][[feedback:prt2]][[lang code="de"]]
+            </div>
+            <div class="question-view">
+                <div class="question-view">
+                    <p>
+                        <b>
+                            (c)
+                        </b>
+                        Bestimmen Sie den kritischen Wert zu Ihrer Teststatistik zum
+        Niveau {@ alpha = aspercent(niveau) @}.
+                        <br/>
+                        Antwort: [[/lang]][[lang code="en"]]
+                    </p>
+                </div>
+                <div class="question-view">
+                    <div class="question-view">
+                        <p>
+                            <b>
+                                (c)
+                            </b>
+                            Determine the critical value for your test statistics
+Level {@ alpha = aspercent(niveau) @}.
+                            <br/>
+                            Answer: [[/lang]][[input:SAns3]][[lang code="de"]]
+        [[/lang]][[lang code="en"]][[/lang]][[validation:SAns3]][[lang code="de"]]
+                        </p>
+                        <p>
+                            <em>
+                                Hinweis: Wenn Sie gerundete Werte eingeben, dann runden Sie bitte auf zwei Nachkommastellen.
+                            </em>
+                        </p>
+                        [[/lang]][[lang code="en"]]
+                        <p>
+                            <em>
+                                Note: If you enter rounded values, please turn to two descendants.
+                            </em>
+                        </p>
+                        [[/lang]][[feedback:prt3]][[lang code="de"]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            Da es sich um eine einseitige Alternative handelt, ist der
+        kritische Wert durch das {@aspercent(1 - niveau)@}-Quantil der
+        {@F[size_y-1,size_x-1]@}-Verteilung gegeben.  Diesen Wert k&#246;nnen Sie
+        aus der entsprechenden Tabelle ablesen oder mithilfe eines
+        Statistikprogrammes wie
+                            <a href="https://www.r-project.org">
+                                R
+                            </a>
+                            berechnen.
+                        </p>
+                        {@ rejectionPlot @}
+                        <button class="prev" type="button">
+                            Zur&#252;ck zum Aufgabenteil
+                        </button>
+                    </div>
+                </div>
+                <div class="question-view">
+                    [[/lang]][[lang code="en"]]
+                </div>
+                <div class="question-view">
+                    <p>
+                        This is a one-sided alternative.
+critical value due to the {@aspercent(1 - niveau)@}-Quality of
+    {@F[size_y-1,size_x-1]@}- Distribution. This value you can
+read from the relevant table or by means of
+Statistics programmes such as
+                        <a href="https://www.r-project.org">
+                            R
+                        </a>
+                        calculate.
+                    </p>
+                    {@ rejectionPlot @}
+                    <button class="prev" type="button">
+                        Back to the task
+                    </button>
+                </div>
+            </div>
+            <div class="question-view">
+                [[/lang]][[feedback:vorinfos]][[lang code="de"]]
+                <p>
+                    <b>
+                        (d)
+                    </b>
+                    Wie lautet Ihre Testentscheidung, wenn zum Niveau {@ alpha =
+        aspercent(niveau) @} getestet werden soll?
+                    <br/>
+                    [[/lang]][[lang code="en"]]
+                    <p>
+                        <b>
+                            (d)
+                        </b>
+                        What is your test decision if to the level {@ alpha =
+        aspercent(niveau) @} to be tested?
+                        <br/>
+                        [[/lang]][[input:SAns4]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:SAns4]][[lang code="de"]]
+                    </p>
+                    [[/lang]][[lang code="en"]]
+                </p>
+                [[/lang]][[feedback:prt4]][[lang code="de"]]
+            </div>
+            <script>
+                /*
+    * This program is free software: you can redistribute it and/or
+    * modify it under the terms of the GNU General Public License as
+    * published by the Free Software Foundation, either version 3 of the
+    * License, or (at your option) any later version.
+    *
+    * This program is distributed in the hope that it will be useful, but
+    * WITHOUT ANY WARRANTY; without even the implied warranty of
+    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    * General Public License for more details.
+    *
+    * You should have received a copy of the GNU General Public License
+    * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    *
+    * Copyright (C) 2021 by Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>
+    * SPDX-License-Identifier: GPL-3.0-or-later
+    *
+    */
+
+
+
+
+/* @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later */
+
+
+
+
+(function() {
+/* Make sure to create QController instances only once even if the
+            script is loaded multiple times.  This is so that the script can
+            be included in more than one STACK question on the page and still
+            function properly. */
+if (window.QController === undefined) {
+        window.QController = QController;
+        document.addEventListener("DOMContentLoaded", event => {
+                const responseform = document.getElementById("responseform");
+                if (!responseform) {
+                        throw Error("Element with id responseform not found.");
+                }
+
+    
+    
+    
+    responseform.querySelectorAll(".stack.que").forEach(stackQue => {
+                        const rootElement = stackQue.querySelector(".question-view");
+
+      
+      
+      
+      if (!rootElement) {
+                                console.log("QController Warning: no elements with class question-view inside " + stackQue.id);
+                                return;
+                        }
+
+      
+      
+      
+      const controller = new QController(rootElement, stackQue.id);
+                        controller.installHandlers();
+                        controller.loadState();
+                        controller.update();
+                });
+        });
+}
+
+
+
+
+/* This class handles the navigation of a single STACK question */
+function QController(rootElement, questionId) {
+        this.rootElement = rootElement;
+        this.id = questionId;
+this.views = rootElement.querySelectorAll(".question-view");
+        this.currentView = Array.prototype.findIndex.call(this.views, isLeaf);
+}
+
+
+
+
+/* Update view according to current controller state */
+QController.prototype.update = function() {
+        this.views.forEach(hide);
+
+  
+  
+  
+  const current = this.views[this.currentView];
+        if (isLeaf(current)) {
+                showView(current);
+        } else {
+                showFirstView(current);
+        }
+};
+
+
+
+
+/* Install event handlers for all buttons under root element */
+QController.prototype.installHandlers = function() {
+        const controller = this;
+        this.rootElement.querySelectorAll("button").forEach(button => {
+                button.addEventListener("click", ev => {
+                        const view = button.closest(".question-view");
+
+      
+      
+      
+      if (!view) {
+                                console.log("qcontroller: <button> not inside question view");
+                                return;
+                        }
+
+      
+      
+      
+      const classList = button.classList;
+                        let forward = null;
+
+      
+      
+      
+      if (classList.contains("next")) {
+                                forward = view.nextElementSibling;
+                        } else if (classList.contains("top-next")) {
+                                const parent = view.parentNode;
+                                if (parent) {
+                                        forward = parent.nextElementSibling;
+                                } else {
+                                        forward = null;
+                                }
+                        } else if (classList.contains("top")) {
+                                forward = containingView(view);
+                        } else if (classList.contains("prev")) {
+                                forward = view.previousElementSibling;
+                        }
+
+      
+      
+      
+      if (forward && forward.classList.contains("question-view")) {
+                                controller.currentView = Array.prototype.findIndex.call(
+                                        controller.views, x => x === forward);
+                                controller.saveState();
+                                controller.update();
+                        }
+                });
+        });
+};
+
+
+
+
+/* Save controller state to current session */
+QController.prototype.saveState = function() {
+        const key = this.id + "-controller-state";
+        window.sessionStorage.setItem(key, this.currentView);
+};
+
+
+
+
+/* Load controller state from current session */
+QController.prototype.loadState = function() {
+        const key = this.id + "-controller-state";
+        const state = window.sessionStorage.getItem(key);
+
+  
+  
+  
+  if (state) {
+                this.currentView = Number.parseInt(state);
+        }
+};
+
+
+
+
+/* Show the first leaf question view */
+function showFirstView(questionView) {
+        let view = questionView;
+
+  
+  
+  
+  while (view && !isLeaf(view)) {
+                view = view.querySelector(".question-view");
+        }
+
+  
+  
+  
+  showView(view);
+}
+
+
+
+
+function showView(view) {
+        /* show all containing views */
+        while (view) {
+                show(view);
+                view = containingView(view);
+        }
+}
+
+
+
+
+/* Return the view containing VIEW */
+function containingView(view) {
+        let parent = view.parentNode;
+
+  
+  
+  
+  if (parent) {
+                parent = parent.closest(".question-view");
+        }
+
+  
+  
+  
+  return parent;
+}
+
+
+
+
+function show(view) {
+        view.style.display = "block";
+}
+
+
+
+
+function isLeaf(view) {
+        return view.querySelector(".question-view") == null;
+}
+
+
+
+
+function isVisible(view) {
+        return view.style.display != "none";
+}
+
+
+
+
+function hide(view) {
+        view.style.display = "none";
+}
+})();
+/* @license-end */
+            </script>
+        </div>
+        [[/lang]][[lang code="en"]]
+    </div>
+    <script>
+        /*
+    * This program is free software: you can redistribute it and/or
+    * modify it under the terms of the GNU General Public License as
+    * published by the Free Software Foundation, either version 3 of the
+    * License, or (at your option) any later version.
+    *
+    * This program is distributed in the hope that it will be useful, but
+    * WITHOUT ANY WARRANTY; without even the implied warranty of
+    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    * General Public License for more details.
+    *
+    * You should have received a copy of the GNU General Public License
+    * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*
+* Copyright (C) 2021 by Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>* SPDX-License Identifier: GPL-3.0-or-later
+*
+*/
+
+
+
+
+/* @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-orLater */
+
+
+
+
+(function() {
+/* Make sure to create QController instances only once even if the
+            script is loaded multiple times.  This is so that the script can
+            be included in more than one STACK question on the page and still
+            function properly. */
+if (window.QController === undefined) {
+        window.QController = QController;
+        document.addEventListener("DOMContentLoaded", event => {
+                const responseform = document.getElementById("responseform");
+                if (!responseform) {
+                        throw Error("Element with id responseform not found.");
+                }
+
+    
+    
+    
+    responseform.querySelectorAll(".stack.que").forEach(stackQue => {
+                        const rootElement = stackQue.querySelector(".question-view");
+
+      
+      
+      
+      if (!rootElement) {
+                                console.log("QController Warning: no elements with class question-view inside " + stackQue.id);
+                                return;
+                        }
+
+      
+      
+      
+      const controller = new QController(rootElement, stackQue.id);
+                        controller.installHandlers();
+                        controller.loadState();
+                        controller.update();
+                });
+        });
+}
+
+
+
+
+/* This class handles the navigation of a single STACK question */
+function QController(rootElement, questionId) {
+        this.rootElement = rootElement;
+        this.id = questionId;
+this.views = rootElement.querySelectorAll(".question-view");
+        this.currentView = Array.prototype.findIndex.call(this.views, isLeaf);
+}
+
+
+
+
+/* Update view according to current controller state */
+QController.prototype.update = function() {
+        this.views.forEach(hide);
+
+  
+  
+  
+  const current = this.views[this.currentView];
+        if (isLeaf(current)) {
+                showView(current);
+        } else {
+                showFirstView(current);
+        }
+};
+
+
+
+
+/* Install event handlers for all buttons under root element */
+QController.prototype.installHandlers = function() {
+        const controller = this;
+        this.rootElement.querySelectorAll("button").forEach(button => {
+                button.addEventListener("click", ev => {
+                        const view = button.closest(".question-view");
+
+      
+      
+      
+      if (!view) {
+                                console.log("qcontroller: <button> not inside question view");
+                                return;
+                        }
+
+      
+      
+      
+      const classList = button.classList;
+                        let forward = null;
+
+      
+      
+      
+      if (classList.contains("next")) {
+                                forward = view.nextElementSibling;
+                        } else if (classList.contains("top-next")) {
+                                const parent = view.parentNode;
+                                if (parent) {
+                                        forward = parent.nextElementSibling;
+                                } else {
+                                        forward = null;
+                                }
+                        } else if (classList.contains("top")) {
+                                forward = containingView(view);
+                        } else if (classList.contains("prev")) {
+                                forward = view.previousElementSibling;
+                        }
+
+      
+      
+      
+      if (forward && forward.classList.contains("question-view")) {
+                                controller.currentView = Array.prototype.findIndex.call(
+                                        controller.views, x => x === forward);
+                                controller.saveState();
+                                controller.update();
+                        }
+                });
+        });
+};
+
+
+
+
+/* Save controller state to current session */
+QController.prototype.saveState = function() {
+        const key = this.id + "-controller-state";
+        window.sessionStorage.setItem(key, this.currentView);
+};
+
+
+
+
+/* Load controller state from current session */
+QController.prototype.loadState = function() {
+        const key = this.id + "-controller-state";
+        const state = window.sessionStorage.getItem(key);
+
+  
+  
+  
+  if (state) {
+                this.currentView = Number.parseInt(state);
+        }
+};
+
+
+
+
+/* Show the first leaf question view */
+function showFirstView(questionView) {
+        let view = questionView;
+
+  
+  
+  
+  while (view && !isLeaf(view)) {
+                view = view.querySelector(".question-view");
+        }
+
+  
+  
+  
+  showView(view);
+}
+
+
+
+
+function showView(view) {
+        /* show all containing views */
+        while (view) {
+                show(view);
+                view = containingView(view);
+        }
+}
+
+
+
+
+/* Return the view containing VIEW */
+function containingView(view) {
+        let parent = view.parentNode;
+
+  
+  
+  
+  if (parent) {
+                parent = parent.closest(".question-view");
+        }
+
+  
+  
+  
+  return parent;
+}
+
+
+
+
+function show(view) {
+        view.style.display = "block";
+}
+
+
+
+
+function isLeaf(view) {
+        return view.querySelector(".question-view") == null;
+}
+
+
+
+
+function isVisible(view) {
+        return view.style.display != "none";
+}
+
+
+
+
+function hide(view) {
+        view.style.display = "none";
+}
+}),
+/* @license-end */
+    </script>
+</div>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>10.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/* This question uses the Maxima package distrib */
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+/* render number as percentages */
+texaspercent (e) := block([num: first (args (e))], sconcat(tex1(ev(num*100, simp)), "\\,\\%"));
+texput(aspercent, texaspercent);
+
+texqf(e) := block([q: first(args(e)), df1: second(args(e)), df2: third(args(e))],
+  sconcat("F_{", tex1(df1), ", ", tex1(df2), "; ", tex1(q), "}"));
+texput (qf, texqf);
+
+/* bars for means of X and Y*/
+texput(Xbar, "\\bar{X}");
+texput(Ybar, "\\bar{Y}");
+
+mean_x: 26;
+mean_y: 29;
+variances: sort(rand_selection([8,9,10,12], 2));
+var_x: variances[1];
+var_y: variances[2];
+size_x: 20;
+size_y: 20;
+niveau: 5/100;
+alternative: rand({'onesided, 'twosided});
+
+simp: true;
+statistic: var_y / var_x;
+critical: quantile_f(1 - niveau, size_y - 1, size_x - 1);
+simp: false;
+
+rejectionPlot: plot(
+  [[discrete, [critical, critical], [0, 1]],
+  pdf_f(x, size_y, size_x)],
+  [x, 0, mean_f(size_y, size_x) + 6*var_f(size_y, size_x)],
+  [xlabel, "x"],
+  [ylabel, sconcat("F_{", size_y - 1, ", ", size_x - 1, "}(x)")]);
+
+choices: block([vals, correct, incorrect],
+  correct: [F = s_Y^2 / s_X^2],
+  incorrect: [
+  F = s_Y / s_X,
+  T = (n-1)* s_X^2 / sigma_0^2,
+  T = (Ybar - Xbar) / sqrt((1/m + 1/n) *s_P^2),
+  X = sum((N[i] - n*theta[i])^2 / (n*theta[i]), i, 1, k)],
+  vals: makelist(i, i, ev(length(correct) + length(incorrect), simp)),
+  zip_with(lambda([a, b],
+      [a, if a <= length(correct) then true else false, stack_disp(b,"id")]),
+    vals, append(correct, incorrect)));
+
+TAns1: random_permutation(choices);
+TAns2: ev(statistic, simp);
+TAns3: critical;
+TAns4: random_permutation([[tr("Hypothese verwerfen","discard hypothesis"), if statistic >= critical then true else false ],
+  [tr("Hypothese nicht verwerfen","don't discard hypothesis"), if statistic < critical then true else false]]);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{@var_x@}, {@var_y@}</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>0</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Ihre Antwort ist nicht komplett falsch.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is not completely wrong.[[/lang]]
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.[[/lang]]
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed>i</variantsselectionseed>
+        <input>
+            <name>SAns1</name>
+            <type>radio</type>
+            <tans>TAns1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered,latexdisplaystyle</options>
+        </input>
+        <input>
+            <name>SAns2</name>
+            <type>numerical</type>
+            <tans>TAns2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>2</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>SAns3</name>
+            <type>numerical</type>
+            <tans>TAns3</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>2</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>SAns4</name>
+            <type>dropdown</type>
+            <tans>TAns4</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>ergebnisAuswahl</name>
+            <value>1.0000000</value>
+            <autosimplify>0</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>SAns1</sans>
+                <tans>first(mcq_correct(TAns1))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ergebnisAuswahl-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<div class="card">
+    <div class="card-body">
+        <p class="card-text">
+            Im vorherigen Aufgabenteil haben Sie die folgende Teststatistik
+                        ausgew&#228;hlt:
+            <br/>
+            {@ choices[SAns1][3] @}
+        </p>
+    </div>
+</div>
+<script>
+    (function(){
+        document.currentScript.closest('.stackprtfeedback').classList.remove('stackprtfeedback');
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<div class="card">
+    <div class="card-body">
+        <p class="card-text">
+            In the previous section you have the following test statistics
+selected:
+            <br/>
+            {@ choices[SAns1][3] @}
+        </p>
+    </div>
+</div>
+<script>
+    (function(){
+        document.currentScript.closest('.stackprtfeedback').classList.remove('stackprtfeedback');
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ergebnisAuswahl-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>SAns1</sans>
+                <tans>first(mcq_correct(TAns1))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    In dieser Aufgabe wollen wir die Varianzen zweier Stichproben vergleichen.  Dazu verwenden wir den sogenannten F-Test.
+</p>
+<p>
+    Klicken Sie auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    ,
+um zum n&#228;chsten Aufgabenteil zu gelangen
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    In this task we want to compare the variances of two samples. We use the so-called F-Test.
+</p>
+<p>
+    Click on
+    <button class="next" type="button">
+        Next
+    </button>
+    ,
+to get to the next task
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]][[if test="is(SAns1 = 2)"]]
+<p>
+    Die ausgew&#228;hlte Formel ist fast richtig.  Es m&#252;ssen allerdings die
+empirische Varianzen anstatt der empirischen Standardabweichungen
+        verwendet werden.
+</p>
+[[elif test="is(SAns1 = 3)"]]
+<p>
+    Dies ist zwar ein Test f&#252;r die Varianz, allerdings wird hier die
+Varianz einer Stichprobe mit einem vorgegebenen Wert \(\sigma_0^2\)
+verglichen.  In unserem Beispiel wollen wir die Varianzen zweier
+        Stichproben vergleichen.
+</p>
+[[elif test="is(SAns1 = 4)"]]
+<p>
+    Der ausgew&#228;hlte Test testet Hypothesen, die den Erwartungswert
+zweier Stichproben vergleichen.  Lesen Sie noch einmal den
+Einleitungstext und achten Sie darauf, welcher Parameter in der
+Hypothese vorkommt.
+</p>
+[[elif test="is(SAns1 = 5)"]]
+<p>
+    Der ausgew&#228;hlte Test testet Hypothesen &#252;ber die Verteilung einer
+        vorliegenden Stichprobe.  Lesen Sie noch einmal den Einleitungstext
+        und achten Sie darauf, welcher Parameter in der Hypothese vorkommt.
+</p>
+[[/if]][[/lang]][[lang code="en"]][[if test="is(SAns1 = 2)"]]
+<p>
+    The selected formula is almost correct. However,
+empirical variances instead of empirical standard deviations
+are used.
+</p>
+[[elif test="is(SAns1 = 3)"]]
+<p>
+    This is a test for the variance, but here the
+Variance of a sample with a given value \(\sigma_0^2\)compared. In our example we want the variances of two
+Comparative sampling.
+</p>
+[[elif test="is(SAns1 = 4)"]]
+<p>
+    The selected test tests hypotheses that test the expected value
+compare two samples. Read again the
+Introductory text and make sure which parameters in the
+Hypothesis occurs.
+</p>
+[[elif test="is(SAns1 = 5)"]]
+<p>
+    The selected test tests hypotheses on the distribution of a
+this sample. Read the introduction text again
+and make sure which parameter is present in the hypothesis.
+</p>
+[[/if]][[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>0</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>swappedStatistic: var_x / var_y;</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>SAns2</sans>
+                <tans>TAns2</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Wir setzen die in der Aufgabe gegebenen Angaben in die Formel f&#252;r
+        die passende Teststatistik ein:
+</p>
+\[
+{@ F = s_y^2 / s_x^2 @} = {@ var_y / var_x @} = {@ decimalplaces(TAns2, 2) @}
+\]
+<p>
+    Klicken Sie auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    ,
+        um zum n&#228;chsten Aufgabenteil zu gelangen
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    We put the information given in the task in the formula for
+the appropriate test statistics:
+</p>
+\[
+{@ F = s_y^2 / s_x^2 @} = {@ var_y / var_x @} = {@ decimalplaces(TAns2, 2) @}
+\]
+<p>
+    Click on
+    <button class="next" type="button">
+        Next
+    </button>
+    ,
+to get to the next task
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>SAns2</sans>
+                <tans>swappedStatistic</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Haben Sie vielleicht Z&#228;hler und Nenner in der Formel f&#252;r die Teststatistik vertauscht? Die richtige Formel lautet:
+\[
+F = \frac{s_Y^2}{s_X^2}
+\]
+Bitte versuchen Sie es noch einmal.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Have you perhaps exchanged counters and denominators in the formula for test statistics? The right formula is:
+\[
+F = \frac{s_Y^2}{s_X^2}
+\]Please try again.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie m&#252;ssen die im Text gegebenen Daten f&#252;r die empirischen Varianzen in die Formel f&#252;r die Teststatistik einsetzen.  Die richtige Formel lautet:
+\[
+F = \frac{s_Y^2}{s_X^2}
+\]
+Bitte versuchen Sie es noch einmal.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You must use the data given in the text for empirical variances in the formula for test statistics. The right formula is:
+\[
+F = \frac{s_Y^2}{s_X^2}
+\]Please try again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>SAns3</sans>
+                <tans>TAns3</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Der kritische Wert ist durch das {@aspercent(1-niveau)@}-Quantil der
+        {@F[size_y-1,size_x-1]@}-Verteilung gegeben.
+        \[
+{@qf(decimalplaces(1-niveau,2), size_y-1, size_x-1) = SAns3 @}
+        \]
+</p>
+<p>
+    Klicken Sie auf
+    <button class="top-next" type="button">
+        Weiter
+    </button>
+    ,
+        um zum n&#228;chsten Aufgabenteil zu gelangen
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The critical value is due to {@aspercent(1-niveau)@}-Quality of
+    {@F[size_y-1,size_x-1]@}- Distribution.
+    \[
+{@qf(decimalplaces(1-niveau,2), size_y-1, size_x-1) = SAns3 @}
+        \]
+</p>
+<p>
+    Click on
+    <button class="top-next" type="button">
+        Next
+    </button>
+    ,
+to get to the next task
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Lesen Sie noch einmal den Einleitungstext und achten Sie besonders
+darauf, welche Alternative genannt wird.  Handelt es sich um eine
+einseitige oder zweiseitige Alternative?  Schauen Sie dann ggf. noch
+einmal ins Vorlesungsskript oder in die Literatur.
+</p>
+<p>
+    Falls Sie mehr Hilfe bei der Antwort ben&#246;tigen, klicken Sie
+auf
+    <button class="next" type="button">
+        Hilfe
+    </button>
+    .
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Read the introduction text again and pay particular attention
+what alternative is called. It is about
+one-sided or two-side alternative? See if necessary
+once in the lecture script or in the literature.
+</p>
+<p>
+    If you need more help in the answer, click
+on
+    <button class="next" type="button">
+        Help
+    </button>
+    .
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4</name>
+            <value>1.0000000</value>
+            <autosimplify>0</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>SAns4</sans>
+                <tans>first(mcq_correct(TAns4))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Herzlichen Gl&#252;ckwunsch, Sie sind am Ende der Aufgabe angelangt!
+</p>
+<h5>
+    Zusammenfassung
+</h5>
+<p>
+    In dieser Aufgabe wurde der F-Test zum Vergleich der Varianzen
+        zweier Stichproben thematisiert.  Es sollte die Hypothese getestet
+        werden, dass die Varianz der Fahrzeiten in beiden Monaten gleich
+        gro&#223; war, gegen die Alternative, dass die Varianz im August gr&#246;&#223;er
+        war.  Im ersten Aufgabenteil haben Sie die daf&#252;r notwendige
+        Teststatistik ausgew&#228;hlt:
+
+  
+  
+  
+  \[
+        F = \frac{s_Y^2}{s_X^2}
+        \]
+
+  
+  
+  
+  Als n&#228;chstes mussten Sie den Wert dieser Teststatistik
+        ausrechnen. Sie haben dazu die entsprechenden Zahlenwerte aus dem
+        Einleitungstext herausgelesen und in die Formel eingesetzt:
+
+  
+  
+  
+  \[
+        {@ F = s_y^2 / s_x^2 @} = {@ var_y / var_x @} = {@ decimalplaces(TAns2, 2) @}
+        \]
+
+  
+  
+  
+  Um im letzten Aufgabenteil die Testentscheidung treffen zu k&#246;nnen,
+        wird der kritische Wert ben&#246;tigt. Hierbei kommt es auf die
+        Alternative an.  In unserer Aufgabe haben wir es mit
+        einer
+    <em>
+        einseitigen
+    </em>
+    Alternative zu tun. Daher ist der
+        kritische Wert durch das \((1-\alpha)\)-Quantil der {@F[size_y-1,
+        size_x-1]@}-Verteilung gegeben. Diesen k&#246;nnen Sie aus einer
+        passenden Tabelle ablesen:
+
+  
+  
+  
+  \[
+        F_{{@size_y-1@}, {@size_x-1@}; {@niveau@}} = {@decimalplaces(TAns3, 2)@}
+        \]
+
+  
+  
+  
+  Am Ende verwerfen Sie also die Hypothese, falls {@F &gt;=
+        decimalplaces(TAns3, 2)@} ist. Wir [[if test="statistic &gt;=
+        critical"]] verwerfen [[else]] behalten [[/if]] also die
+        Hypothese[[if test="statistic &gt;= critical"]].[[else]]
+        bei.[[/if]]
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Congratulations, you have reached the end of the task!
+</p>
+<h5>
+    Summary
+</h5>
+<p>
+    In this task, the F test was used to compare the variances
+two samples thematized. It should be tested the hypothesis
+that the variance of driving times in both months is equal
+large, against the alternative that the variance in August was greater
+was. In the first part you have the necessary
+Test statistics selected:
+
+ 
+ 
+ 
+ \[
+        F = \frac{s_Y^2}{s_X^2}
+        \]Next, you had the value of this test statistics
+Calculate. You have the corresponding numerical values from
+Introductory text read out and used in the formula:
+
+ 
+ 
+ 
+ \[
+        {@ F = s_y^2 / s_x^2 @} = {@ var_y / var_x @} = {@ decimalplaces(TAns2, 2) @}
+        \]In order to be able to make the test decision in the last part of the task,
+the critical value is required. In this case,
+Alternative. In our task we have
+a
+    <em>
+        single side
+    </em>
+    Alternative to do. Therefore,
+critical value due to the \((1-\alpha)\)-Quality of {@F[size_y-1,
+        size_x-1]@}- Distribution. You can use this from a
+suitable table:
+
+ 
+ 
+ 
+ \[
+        F_{{@size_y-1@}, {@size_x-1@}; {@niveau@}} = {@decimalplaces(TAns3, 2)@}
+        \]In the end you will discard the hypothesis if {@F &gt;=
+        decimalplaces(TAns3, 2)@} is. We [[if test="statistic &gt;=
+        critical"]] torment [[else]] Keeping [[/if]] the
+Hypothesis[[if test="statistic &gt;= critical"]].[[else]].[[/if]]
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Schauen Sie noch einmal in den Vorlesungsnotizen bzw. in der Literatur nach dem Verwerfungsbereich des Tests. Aus dem vorherigen Aufgabenteil wissen Sie bereits, dass es sich hier um eine einseitige Alternative handelt.
+</p>
+<p>
+    Bitte versuchen Sie es noch einmal.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Check again in the lecture notes or in the literature for the rejection area of the test. From the previous task you already know that this is a one-sided alternative.
+</p>
+<p>
+    Please try again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>vorinfos</name>
+            <value>1.0000000</value>
+            <autosimplify>0</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>[SAns2, SAns3]</sans>
+                <tans>[TAns2, TAns3]</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>vorinfos-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<div class="card">
+    <div class="card-body">
+        <p class="card-text">
+            In den vorherigen Aufgabenteilen haben Sie
+                den Wert der Teststatistik und den kritischen Wert wie folgt
+                        bestimmt:
+                        \begin{align*}
+                        {@ F = SAns2 @} \\
+                                F_{{@ev(size_y-1, simp)@}, {@ev(size_x-1,simp)@}; {@decimalplaces(niveau,2)@}} = {@decimalplaces(TAns3,2)@}
+                        \end{align*}
+        </p>
+    </div>
+</div>
+<script>
+    (function(){
+        const script = document.currentScript;
+        script.closest('.stackprtfeedback').classList.remove('stackprtfeedback');
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<div class="card">
+    <div class="card-body">
+        <p class="card-text">
+            In the previous tasks you have
+the value of the test statistics and the critical value as follows:
+intended:
+    \begin{align*}
+                        {@ F = SAns2 @} \\
+                                F_{{@ev(size_y-1, simp)@}, {@ev(size_x-1,simp)@}; {@decimalplaces(niveau,2)@}} = {@decimalplaces(TAns3,2)@}
+                        \end{align*}
+        </p>
+    </div>
+</div>
+<script>
+    (function(){
+        const script = document.currentScript;
+        script.closest('.stackprtfeedback').classList.remove('stackprtfeedback');
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>vorinfos-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>293863236</deployedseed>
+        <deployedseed>1508375402</deployedseed>
+        <deployedseed>174271077</deployedseed>
+        <deployedseed>1478261779</deployedseed>
+        <deployedseed>1724987941</deployedseed>
+        <deployedseed>1261470137</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <description/>
+            <testinput>
+                <name>SAns1</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>SAns2</name>
+                <value>var_y / var_x</value>
+            </testinput>
+            <testinput>
+                <name>SAns3</name>
+                <value>niveau</value>
+            </testinput>
+            <testinput>
+                <name>SAns4</name>
+                <value/>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt3-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <description/>
+            <testinput>
+                <name>SAns1</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>SAns2</name>
+                <value>var_x/var_y</value>
+            </testinput>
+            <testinput>
+                <name>SAns3</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>SAns4</name>
+                <value/>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt2-2-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>3</testcase>
+            <description/>
+            <testinput>
+                <name>SAns1</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>SAns2</name>
+                <value>var_x</value>
+            </testinput>
+            <testinput>
+                <name>SAns3</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>SAns4</name>
+                <value/>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt2-2-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

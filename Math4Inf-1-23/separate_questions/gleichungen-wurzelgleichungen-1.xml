@@ -6,12 +6,17 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    Bestimmen Sie die L&#246;sungsmenge der Gleichung {@gl@}
+</p>
+<p>
+    \(\mathbb{L} = \) [[/lang]][[lang code="en"]]
     <p>
-        Bestimmen Sie die L&#246;sungsmenge der Gleichung {@gl@}
+        Determine the solution of the equation {@gl@}
     </p>
     <p>
-        \(\mathbb{L} = \) [[input:ans]] [[validation:ans]][[feedback:prt1]]
+        \(\mathbb{L} = \) [[/lang]][[input:ans]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
     <p>
     </p>
@@ -31,85 +36,78 @@
             Geben Sie die exakte L&#246;sung (keine Dezimalzahlen) ein.
         </li>
     </ul>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Determine the solution of the equation {@gl@}
-    </p>
-    <p>
-        \(\mathbb{L} = \) [[input:ans]] [[validation:ans]][[feedback:prt1]]
-    </p>
-    <p>
-    </p>
-    <p>
-        <strong>
-            Notes:
-        </strong>
-    </p>
-    <ul>
-        <li>
-            Write the amount with curly clips and separate the solutions with comma, e.g. {1, 3}
-        </li>
-        <li>
-            Letter You empty quantity as {}.
-        </li>
-        <li>
-            Enter the exact solution (no decimal numbers).
-        </li>
-    </ul>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+<p>
+</p>
+<p>
+    <strong>
+        Notes:
+    </strong>
+</p>
+<ul>
+    <li>
+        Write the set with curly braces and separate the solutions with comma, e.g. {1, 3}
+    </li>
+    <li>
+        Write the empty set as {}.
+    </li>
+    <li>
+        Enter the exact solution (no decimal numbers).
+    </li>
+</ul>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p dir="ltr">
-        <strong>
-            L&#246;sungsweg:
-        </strong>
-    </p>
-    <p dir="ltr">
-        Die vorgegebene Gleichung&#160;\({@sqrt(x^2+v1)=x+v2@}\) kann beidseitig quadriert werden, unter der beiden Voraussetzungen:
-    </p>
-    <p dir="ltr">
-    </p>
-    <ul>
-        <li>
-            \({@x^2+v1@} \geq 0\), was f&#252;r alle \(x \in \mathbb{R}\) gilt.
-        </li>
-        <li>
-            \({@x+v2@} \geq 0 \quad \Longleftrightarrow&#160;\quad x \geq {@-v2@}\)
-        </li>
-    </ul>
-    \(x^2+{@v1@} = x^2 + {@2*x*v2+v2*v2@}\) \(\quad \Longleftrightarrow&#160;\quad {@v1 = 2*x*v2+v2*v2@}\)&#160;\(\quad \Longleftrightarrow&#160;\quad {@2*x*v2+v2*v2-v1=0@}\)&#160;\(\quad \Longleftrightarrow&#160;\quad {@2*x*v2=-v2^2+v1@}\)&#160;\(\quad \Longleftrightarrow&#160;\quad \displaystyle x={@(-v2*v2+v1)/(2*v2)@}\) ist die L&#246;sung, weil \(\displaystyle {@l1@} \geq {@-v2@}\).
-    <br/>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p dir="ltr">
-        <strong>
-            Solution:
-        </strong>
-    </p>
-    <p dir="ltr">
-        The given equation\({@sqrt(x^2+v1)=x+v2@}\) can be squared on both sides, under the two conditions:
-    </p>
-    <p dir="ltr">
-    </p>
-    <ul>
-        <li>
-            \({@x^2+v1@} \geq 0\), what for all \(x \in \mathbb{R}\) Article 2
-        </li>
-        <li>
-            \({@x+v2@} \geq 0 \quad \Longleftrightarrow&#160;\quad x \geq {@-v2@}\)
-        </li>
-    </ul>
-    \(x^2+{@v1@} = x^2 + {@2*x*v2+v2*v2@}\) \(\quad \Longleftrightarrow&#160;\quad {@v1 = 2*x*v2+v2*v2@}\)\(\quad \Longleftrightarrow&#160;\quad {@2*x*v2+v2*v2-v1=0@}\)\(\quad \Longleftrightarrow&#160;\quad {@2*x*v2=-v2^2+v1@}\)\(\quad \Longleftrightarrow&#160;\quad \displaystyle x={@(-v2*v2+v1)/(2*v2)@}\) is the solution because \(\displaystyle {@l1@} \geq {@-v2@}\).
-    <br/>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<p dir="ltr">
+    <strong>
+        L&#246;sungsweg:
+    </strong>
+</p>
+<p dir="ltr">
+    Die vorgegebene Gleichung&#160;\({@sqrt(x^2+v1)=x+v2@}\) kann beidseitig quadriert werden, unter der beiden Voraussetzungen:
+</p>
+<p dir="ltr">
+</p>
+<ul>
+    <li>
+        \({@x^2+v1@} \geq 0\), was f&#252;r alle \(x \in \mathbb{R}\) gilt.
+    </li>
+    <li>
+        \({@x+v2@} \geq 0 \quad \Longleftrightarrow&#160;\quad x \geq {@-v2@}\)
+    </li>
+</ul>
+\(x^2+{@v1@} = x^2 + {@2*x*v2+v2*v2@}\) \(\quad \Longleftrightarrow&#160;\quad {@v1 = 2*x*v2+v2*v2@}\)&#160;\(\quad \Longleftrightarrow&#160;\quad {@2*x*v2+v2*v2-v1=0@}\)&#160;\(\quad \Longleftrightarrow&#160;\quad {@2*x*v2=-v2^2+v1@}\)&#160;\(\quad \Longleftrightarrow&#160;\quad \displaystyle x={@(-v2*v2+v1)/(2*v2)@}\) ist die L&#246;sung, weil \(\displaystyle {@l1@} \geq {@-v2@}\).
+<br/>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr">
+    <strong>
+        Solution:
+    </strong>
+</p>
+<p dir="ltr">
+    The given equation\({@sqrt(x^2+v1)=x+v2@}\) can be squared on both sides, under the two conditions:
+</p>
+<p dir="ltr">
+</p>
+<ul>
+    <li>
+        \({@x^2+v1@} \geq 0\), what for all \(x \in \mathbb{R}\) Article 2
+    </li>
+    <li>
+        \({@x+v2@} \geq 0 \quad \Longleftrightarrow&#160;\quad x \geq {@-v2@}\)
+    </li>
+</ul>
+\(x^2+{@v1@} = x^2 + {@2*x*v2+v2*v2@}\) \(\quad \Longleftrightarrow&#160;\quad {@v1 = 2*x*v2+v2*v2@}\)\(\quad \Longleftrightarrow&#160;\quad {@2*x*v2+v2*v2-v1=0@}\)\(\quad \Longleftrightarrow&#160;\quad {@2*x*v2=-v2^2+v1@}\)\(\quad \Longleftrightarrow&#160;\quad \displaystyle x={@(-v2*v2+v1)/(2*v2)@}\) is the solution because \(\displaystyle {@l1@} \geq {@-v2@}\).
+<br/>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -128,20 +126,19 @@ loesung: {l1};</text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p dir="ltr">
-    </p>
-    <br/>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p dir="ltr">
-    </p>
-    <br/>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<p dir="ltr">
+</p>
+<br/>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr">
+</p>
+<br/>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -155,56 +152,47 @@ loesung: {l1};</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Richtige Antwort, gut gemacht!
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Right answer, well done!
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
+Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-adjust">
-        </i>
-    </span>
-    Ihre Antwort ist teilweise richtig.
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-adjust">
-        </i>
-    </span>
-    Your answer is partly correct.
+Ihre Antwort ist teilweise richtig.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
 </span>
+Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Falsche Antwort.
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Wrong answer.
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
+Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -265,16 +253,15 @@ loesung: {l1};</text>
                 <falseanswernote>1-0-F </falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Quadrieren Sie die Gleichung zuerst auf beiden Seiten, um die Quadradwurzel aufzul&#246;sen.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Quadrants First, use the equation on both sides to dissolve the quadricycle root.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Quadrieren Sie die Gleichung zuerst auf beiden Seiten, um die Quadradwurzel aufzul&#246;sen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Quadrants First, use the equation on both sides to dissolve the quadricycle root.
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>

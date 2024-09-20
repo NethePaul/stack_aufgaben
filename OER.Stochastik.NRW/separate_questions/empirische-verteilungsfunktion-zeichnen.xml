@@ -1,0 +1,2343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Empirische Verteilungsfunktion zeichnen</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<style>
+    .data-table {
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 0.9em;
+                min-width: 400px;
+                border-radius: 5px 5px 0 0;
+                overflow: hidden;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+                background-color: #ffffff;
+                color: #17365c;
+}
+
+
+
+
+.data-table thead tr {
+                background-color: #17365c;
+                color: #ffffff;
+                text-align: left;
+                font-weight: bold;
+}
+
+
+
+
+.data-table th,
+.data-table td {
+                padding: 12px 15px;
+}
+
+
+
+
+.data-table tbody tr {
+                border-bottom: 1px solid #e7e7e7;
+}
+
+
+
+
+.data-table tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+}
+
+
+
+
+.data-table tbody tr:last-of-type {
+                border-bottom: 2px solid #17365c;
+}
+
+
+
+
+.data-table tbody tr.active-row {
+                font-weight: bold;
+                color: #17365c;
+}
+</style>
+<p>
+    Eine Klimastation f&#252;hrt eine Statistik &#252;ber die Jahresmitteltemperatur der Stadt. Die Jahresmitteltemperatur in den Jahren {#Jahre[1]#} bis {#Jahre[10]#} ist wie folgt verteilt:
+</p>
+<div style="overflow-x:auto;">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>
+                    Jahr
+                </th>
+                <td>
+                    {#Jahre[1]#}
+                </td>
+                <td>
+                    {#Jahre[2]#}
+                </td>
+                <td>
+                    {#Jahre[3]#}
+                </td>
+                <td>
+                    {#Jahre[4]#}
+                </td>
+                <td>
+                    {#Jahre[5]#}
+                </td>
+                <td>
+                    {#Jahre[6]#}
+                </td>
+                <td>
+                    {#Jahre[7]#}
+                </td>
+                <td>
+                    {#Jahre[8]#}
+                </td>
+                <td>
+                    {#Jahre[9]#}
+                </td>
+                <td>
+                    {#Jahre[10]#}
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    Temperatur [&#176;C]
+                </th>
+                <td>
+                    {#a1#}
+                </td>
+                <td>
+                    {#a2#}
+                </td>
+                <td>
+                    {#a3#}
+                </td>
+                <td>
+                    {#a4#}
+                </td>
+                <td>
+                    {#a5#}
+                </td>
+                <td>
+                    {#a6#}
+                </td>
+                <td>
+                    {#a7#}
+                </td>
+                <td>
+                    {#a8#}
+                </td>
+                <td>
+                    {#a9#}
+                </td>
+                <td>
+                    {#a10#}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br/>
+<p>
+    Zeichnen Sie die empirische Verteilungsfunktion dieser Datenpunkte, indem Sie an den Sprungstellen der Funktion per Mausklick Punkte zum Koordinatensystem hinzuf&#252;gen. Sie k&#246;nnen einen bereits hinzugef&#252;gten Punkt entfernen, indem Sie auf ihn klicken.
+</p>
+[[jsxgraph]]
+Array.prototype.remove = function ( index ) {
+                return this.filter(item =&gt; item !== value);
+};  
+
+
+
+
+Array.prototype.insert = function ( index, item ) {
+                this.splice( index, 0, item );
+};        
+
+
+
+
+Array.prototype.insertPos = function ( item ) {
+                var pos=this.findIndex(function(number) {
+                                                return number &gt; item;
+                                });
+                if(pos&gt;-1) return pos; else return this.length;
+};
+
+
+
+
+
+
+
+
+JXG.Options.point.snapToGrid = true;
+JXG.Options.point.snapSizeX = 0.1;
+JXG.Options.point.snapSizeY = 0.1;
+JXG.Options.point.withLabel = false;
+var liste=[];
+var stackliste=[];
+const ques_id = document.querySelectorAll('input[id^=q]')[0]['id'].split('_')[0];
+
+
+
+
+const board = JXG.JSXGraph.initBoard(divid, {
+                showCopyright: false,
+                boundingbox: [7.5,1.09,11,-0.1],
+                axis: true,
+                showNavigation:false,
+                pan:{enabled:false},
+                zoom:{enabled:false}
+});
+
+
+
+
+board.defaultAxes.y.setAttribute({visible:'false'});
+board.defaultAxes.x.setAttribute({visible:'false'});
+
+
+
+
+var newXAxis = board.create('axis',[[0,0],[1,0]],{
+                ticks:{
+                                drawZero:true,
+                                label: {offset: [0,-3], anchorX: 'middle', anchorY: 'top'}
+                }
+});
+
+
+
+
+var newYAxis = board.create('axis',[[8,0],[8,1]],{
+                ticks:{
+                                label: {offset: [-3,0], anchorX: 'right', anchorY: 'middle'}
+                }
+});
+
+
+
+
+var linienende=1000;
+var listeX=[-1000.1];
+var listeY=[0];
+var listeP=[];
+var listeS=[];
+
+
+
+
+loadState();
+
+
+
+
+for (var i=0;i
+<listex.length;i++) [x,="" const="" liste="listeP.map(p=" listep.push(p);="" nextx="0;" p="board.create('point'," var="" x="JXG._round10(listeX[i],-1);" y="JXG._round10(listeY[i],-1);" y]);="" {="">
+    [p.X(),p.Y()]);
+                stackliste="["+liste.map(x=&gt;
+                                "["+x[0].toFixed(2)+","+x[1].toFixed(2)+"]").join()+"]";
+                document.querySelector("#stackinput &gt; input").value=stackliste;
+                if(i
+    <listex.length-1){ !="null)" &&="" (e[jxg.touchproperty])="" (el="" (state="" *="" [[x,y],[nextx,="" [dx,="" abspos="JXG.getPosition(e," board);="" board.objects)="" board.objects[el].haspoint(coords.scrcoords[1],="" cancreate="true," const="" coordinates="" coords="getMouseCoords(e," coords,="" coords.scrcoords[2]))="" cpos="board.getCoordsTopLeftCorner(e," current="" do="" down(e)="" dx="absPos[0]-cPos[0]," dy="absPos[1]-cPos[1];" dy],="" el;="" else="" exists.="" extract="" finger="" for="" from="" function="" getmousecoords="function(e," highlight:false="" i="listeX.indexOf(board.objects[el].X());" i)="" i),="" i);="" i,="" if="" if(i="" if(jxg.ispoint(board.objects[el])="" in="" index="" into="" is="" it="" json.stringify({="" jxg.coords(jxg.coords_by_screen,="" key="" listes.push(s);="" listex="state.listeX;" listex,="" listex:="" listey="state.listeY;" listey:="" load="" loadstate()="" new="" nextx="linienende;" nothing.*="" of="" otherwise,="" ques_id="" return="" s="board.create('segment'," save="" savestate()="" sessionstorage="" sessionstorage.setitem(ques_id,="" state="JSON.parse(sessionStorage.getItem(ques_id));" that="" the="" to="" under="" used="" var="" y]],{="" {="" }="" }));="" });="" };="">
+        -1){
+                                                                canCreate = false;
+                                                                board.removeObject(listeP[i]);
+                                                                board.removeObject(listeS[i]);
+                                                                if(i&gt;0){
+                                                                                board.removeObject(listeS[i-1]);
+                                                                                if(i
+        <listex.length-1){ [[listex[i-1],listey[i-1]],[nextx,="" const="" else="" highlight:false="" liste="listeP.map(p=" listep.splice(i,1);="" listes.splice(i,1);="" listes[i-1]="s;" listex.splice(i,1);="" listey.splice(i,1);="" listey[i-1]]],{="" nextx="linienende;" s="board.create('segment'," {="" }="" });="" };="">
+            [p.X(),p.Y()]);
+                                                                stackliste="["+liste.map(x=&gt;
+                                                                                "["+x[0].toFixed(2)+","+x[1].toFixed(2)+"]").join()+"]";
+                                                document.querySelector("#stackinput &gt; input").value=stackliste;
+                                                break;
+                                };
+                };
+};
+
+
+
+
+if(canCreate &amp;&amp; coords.usrCoords[2]&gt;=0 &amp;&amp; coords.usrCoords[2]&lt;=1){
+                const p=board.create('point', [coords.usrCoords[1], coords.usrCoords[2]]);
+                if(listeX.indexOf(p.X())==-1) {
+                                i=listeX.insertPos(p.X())
+                                                if(i&gt;0){
+                                                                board.removeObject(listeS[i-1]);
+                                                                const s=board.create('segment',
+                                                                                [[listeX[i-1],listeY[i-1]],[p.X(), listeY[i-1]]],{
+                                                                                                highlight:false
+                                                                });
+                                                                listeS[i-1]=s;
+                                                };  
+
+            
+            
+            
+            listeX.insert(i,p.X());
+                                                listeY.insert(i,p.Y());
+                                                listeP.insert(i,p);
+                                                if(i
+            <listex.length-1){ [[p.x(),p.y()],[nextx,="" const="" else="" highlight:false="" liste="listeP.map(p=" listes.insert(i,s);="" nextx="linienende;" p.y()]],{="" s="board.create('segment'," {="" }="" });="" };="">
+                [p.X(),p.Y()]);
+                                                stackliste="["+liste.map(x=&gt;
+                                                                "["+x[0].toFixed(2)+","+x[1].toFixed(2)+"]").join()+"]";
+                                                document.querySelector("#stackinput &gt; input").value=stackliste;              
+                
+                        
+                        
+                        
+        } else {
+                                                i=listeX.indexOf(p.X());
+                                                board.removeObject(listeP[i]);
+                                                board.removeObject(listeS[i]);
+                                                if(i
+                <listex.length-1){ [[p.x(),p.y()],[nextx,="" const="" else="" liste="listeP.map(p=" listep[i]="p;" listes[i]="s;" listey[i]="p.Y();" nextx="linienende;" p.y()]]);="" s="board.create('segment'," {="" }="" };="">
+                    [p.X(),p.Y()]);
+                                                stackliste="["+liste.map(x=&gt;
+                                                                "["+x[0].toFixed(2)+","+x[1].toFixed(2)+"]").join()+"]";
+                                                document.querySelector("#stackinput &gt; input").value=stackliste;
+                                };
+                };
+                saveState();
+};
+
+
+
+
+board.on('down', down);
+[[/jsxgraph]]
+                    <p>
+                        Bitte klicken Sie nach dem Zeichnen auf "Pr&#252;fen".
+                    </p>
+                    <div id="stackinput" style="display:none;">
+                        [[/lang]][[lang code="en"]]
+                        <style>
+                            .data-table {
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 0.9em;
+                min-width: 400px;
+                border-radius: 5px 5px 0 0;
+                overflow: hidden;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+                background-color: #ffffff;
+                color: #17365c;
+}
+
+
+
+
+.data-table thead tr {
+                background-color: #17365c;
+                color: #ffffff;
+                text-align: left;
+                font-weight: bold;
+}
+
+
+
+
+.data-table th,
+.data-table td {
+                padding: 12px 15px;
+}
+
+
+
+
+.data-table tbody tr {
+                border-bottom: 1px solid #e7e7e7;
+}
+
+
+
+
+.data-table tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+}
+
+
+
+
+.data-table tbody tr:last-of-type {
+                border-bottom: 2px solid #17365c;
+}
+
+
+
+
+.data-table tbody tr.active-row {
+                font-weight: bold;
+                color: #17365c;
+}
+                        </style>
+                        <p>
+                            A climate station carries statistics on the average annual temperature of the city. Annual average temperature in the years {#Jahre[1]#} to {#Jahre[10]#} is distributed as follows:
+                        </p>
+                        <div style="overflow-x:auto;">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Year
+                                        </th>
+                                        <td>
+                                            {#Jahre[1]#}
+                                        </td>
+                                        <td>
+                                            {#Jahre[2]#}
+                                        </td>
+                                        <td>
+                                            {#Jahre[3]#}
+                                        </td>
+                                        <td>
+                                            {#Jahre[4]#}
+                                        </td>
+                                        <td>
+                                            {#Jahre[5]#}
+                                        </td>
+                                        <td>
+                                            {#Jahre[6]#}
+                                        </td>
+                                        <td>
+                                            {#Jahre[7]#}
+                                        </td>
+                                        <td>
+                                            {#Jahre[8]#}
+                                        </td>
+                                        <td>
+                                            {#Jahre[9]#}
+                                        </td>
+                                        <td>
+                                            {#Jahre[10]#}
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            Temperature [&#176;C]
+                                        </th>
+                                        <td>
+                                            {#a1#}
+                                        </td>
+                                        <td>
+                                            {#a2#}
+                                        </td>
+                                        <td>
+                                            {#a3#}
+                                        </td>
+                                        <td>
+                                            {#a4#}
+                                        </td>
+                                        <td>
+                                            {#a5#}
+                                        </td>
+                                        <td>
+                                            {#a6#}
+                                        </td>
+                                        <td>
+                                            {#a7#}
+                                        </td>
+                                        <td>
+                                            {#a8#}
+                                        </td>
+                                        <td>
+                                            {#a9#}
+                                        </td>
+                                        <td>
+                                            {#a10#}
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br/>
+                        <p>
+                            Draw the empirical distribution function of these data points by adding points to the coordinate system at the jump points of the function by mouse click. You can remove an already added point by clicking on it.
+                        </p>
+                        [[jsxgraph]]
+Array.prototype.remove = function ( index ) {
+                return this.filter(item =&gt; item !== value);
+};  
+
+
+
+
+Array.prototype.insert = function ( index, item ) {
+                this.splice( index, 0, item );
+};        
+
+
+
+
+Array.prototype.insertPos = function ( item ) {
+                var pos=this.findIndex(function(number) {
+                                                return number &gt; item;
+                                });
+                if(pos&gt;-1) return pos; else return this.length;
+};
+
+
+
+
+
+
+
+
+JXG.Options.point.snapToGrid = true;
+JXG.Options.point.snapSizeX = 0.1;
+JXG.Options.point.snapSizeY = 0.1;
+JXG.Options.point.withLabel = false;
+var liste=[];
+var stackliste=[];
+const ques_id = document.querySelectorAll('input[id^=q]')[0]['id'].split('_')[0];
+
+
+
+
+const board = JXG.JSXGraph.initBoard(divid, {
+                showCopyright: false,
+                boundingbox: [7.5,1.09,11,-0.1],
+                axis: true,
+                showNavigation:false,
+                pan:{enabled:false},
+                zoom:{enabled:false}
+});
+
+
+
+
+board.defaultAxes.y.setAttribute({visible:'false'});
+board.defaultAxes.x.setAttribute({visible:'false'});
+
+
+
+
+var newXAxis = board.create('axis',[[0,0],[1,0]],{
+                ticks:{
+                                drawZero:true,
+                                label: {offset: [0,-3], anchorX: 'middle', anchorY: 'top'}
+                }
+});
+
+
+
+
+var newYAxis = board.create('axis',[[8,0],[8,1]],{
+                ticks:{
+                                label: {offset: [-3,0], anchorX: 'right', anchorY: 'middle'}
+                }
+});
+
+
+
+
+var linienende=1000;
+var listeX=[-1000.1];
+var listeY=[0];
+var listeP=[];
+var listeS=[];
+
+
+
+
+loadState();
+
+
+
+
+for (var i=0;i
+                        <listex.length;i++) [x,="" const="" liste="listeP.map(p=" listep.push(p);="" nextx="0;" p="board.create('point'," var="" x="JXG._round10(listeX[i],-1);" y="JXG._round10(listeY[i],-1);" y]);="" {="">
+                            [p.X(),p.Y()]);
+                stackliste="["+liste.map(x=&gt;
+                                "["+x[0].toFixed(2)+","+x[1].toFixed(2)+"]").join()+"]";
+                document.querySelector("#stackinput &gt; input").value=stackliste;
+                if(i
+                            <listex.length-1){ !="null)" &&="" (e[jxg.touchproperty])="" (el="" (state="" *="" [[x,y],[nextx,="" [dx,="" abspos="JXG.getPosition(e," board);="" board.objects)="" board.objects[el].haspoint(coords.scrcoords[1],="" cancreate="true," const="" coordinates="" coords="getMouseCoords(e," coords,="" coords.scrcoords[2]))="" cpos="board.getCoordsTopLeftCorner(e," current="" do="" down(e)="" dx="absPos[0]-cPos[0]," dy="absPos[1]-cPos[1];" dy],="" el;="" else="" exists.="" extract="" finger="" for="" from="" function="" getmousecoords="function(e," highlight:false="" i="listeX.indexOf(board.objects[el].X());" i)="" i),="" i);="" i,="" if="" if(i="" if(jxg.ispoint(board.objects[el])="" in="" index="" into="" is="" it="" json.stringify({="" jxg.coords(jxg.coords_by_screen,="" key="" listes.push(s);="" listex="state.listeX;" listex,="" listex:="" listey="state.listeY;" listey:="" load="" loadstate()="" new="" nextx="linienende;" nothing.*="" of="" otherwise,="" ques_id="" return="" s="board.create('segment'," save="" savestate()="" sessionstorage="" sessionstorage.setitem(ques_id,="" state="JSON.parse(sessionStorage.getItem(ques_id));" that="" the="" to="" under="" used="" var="" y]],{="" {="" }="" }));="" });="" };="">
+                                -1){
+                                                                canCreate = false;
+                                                                board.removeObject(listeP[i]);
+                                                                board.removeObject(listeS[i]);
+                                                                if(i&gt;0){
+                                                                                board.removeObject(listeS[i-1]);
+                                                                                if(i
+                                <listex.length-1){ [[listex[i-1],listey[i-1]],[nextx,="" const="" else="" highlight:false="" liste="listeP.map(p=" listep.splice(i,1);="" listes.splice(i,1);="" listes[i-1]="s;" listex.splice(i,1);="" listey.splice(i,1);="" listey[i-1]]],{="" nextx="linienende;" s="board.create('segment'," {="" }="" });="" };="">
+                                    [p.X(),p.Y()]);
+                                                                stackliste="["+liste.map(x=&gt;
+                                                                                "["+x[0].toFixed(2)+","+x[1].toFixed(2)+"]").join()+"]";
+                                                document.querySelector("#stackinput &gt; input").value=stackliste;
+                                                break;
+                                };
+                };
+};
+
+
+
+
+if(canCreate &amp;&amp; coords.usrCoords[2]&gt;=0 &amp;&amp; coords.usrCoords[2]&lt;=1){
+                const p=board.create('point', [coords.usrCoords[1], coords.usrCoords[2]]);
+                if(listeX.indexOf(p.X())==-1) {
+                                i=listeX.insertPos(p.X())
+                                                if(i&gt;0){
+                                                                board.removeObject(listeS[i-1]);
+                                                                const s=board.create('segment',
+                                                                                [[listeX[i-1],listeY[i-1]],[p.X(), listeY[i-1]]],{
+                                                                                                highlight:false
+                                                                });
+                                                                listeS[i-1]=s;
+                                                };  
+
+            
+            
+            
+            listeX.insert(i,p.X());
+                                                listeY.insert(i,p.Y());
+                                                listeP.insert(i,p);
+                                                if(i
+                                    <listex.length-1){ [[p.x(),p.y()],[nextx,="" const="" else="" highlight:false="" liste="listeP.map(p=" listes.insert(i,s);="" nextx="linienende;" p.y()]],{="" s="board.create('segment'," {="" }="" });="" };="">
+                                        [p.X(),p.Y()]);
+                                                stackliste="["+liste.map(x=&gt;
+                                                                "["+x[0].toFixed(2)+","+x[1].toFixed(2)+"]").join()+"]";
+                                                document.querySelector("#stackinput &gt; input").value=stackliste;              
+                
+                        
+                        
+                        
+        } else {
+                                                i=listeX.indexOf(p.X());
+                                                board.removeObject(listeP[i]);
+                                                board.removeObject(listeS[i]);
+                                                if(i
+                                        <listex.length-1){ [[p.x(),p.y()],[nextx,="" const="" else="" liste="listeP.map(p=" listep[i]="p;" listes[i]="s;" listey[i]="p.Y();" nextx="linienende;" p.y()]]);="" s="board.create('segment'," {="" }="" };="">
+                                            [p.X(),p.Y()]);
+                                                stackliste="["+liste.map(x=&gt;
+                                                                "["+x[0].toFixed(2)+","+x[1].toFixed(2)+"]").join()+"]";
+                                                document.querySelector("#stackinput &gt; input").value=stackliste;
+                                };
+                };
+                saveState();
+};
+
+
+
+
+board.on('down', down);
+[[/jsxgraph]]
+                                            <p>
+                                                Please click "Check" after drawing.
+                                            </p>
+                                            <div id="stackinput" style="display:none;">
+                                                [[/lang]][[input:jsxvar]][[lang code="de"]]
+                                                <br/>
+                                                [[/lang]][[lang code="en"]]
+                                                <br/>
+                                                [[/lang]][[validation:jsxvar]][[lang code="de"]]
+                                            </div>
+                                            [[/lang]][[lang code="en"]]
+                                        </listex.length-1){>
+                                    </listex.length-1){>
+                                </listex.length-1){>
+                            </listex.length-1){>
+                        </listex.length;i++)>
+                    </div>
+                    [[/lang]][[feedback:prt1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]]
+                </listex.length-1){>
+            </listex.length-1){>
+        </listex.length-1){>
+    </listex.length-1){>
+</listex.length;i++)>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  Empirische Verteilungsfunktion zeichnen
+
+  wurde entwickelt von
+  
+    Jonas Lache <jonas.lache[at]ruhr-uni-bochum.de>
+    Michael Kallweit <michael.kallweit[at]ruhr-uni-bochum.de>
+
+  unter Mithilfe von
+
+    Daniel Mei&#223;ner <daniel.meissner-i4k[at]ruhr-uni-bochum.de>
+
+  an der Ruhr-Universit&#228;t Bochum.
+
+  Dieses Werk ist lizenziert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+  
+  Der Fragetext dieser Aufgabe enth&#228;lt Jahreszahlen. Es empfiehlt sich,
+  die entsprechende Maxima-Variable `Jahre` zu aktualisieren, damit die
+  Jahreszahlen nicht veraltet wirken.
+
+  Die interaktive Grafik enth&#228;lt Teile des Codes der Universit&#228;t Bayreuth, siehe 
+  https://jsxgraph.uni-bayreuth.de/wiki/index.php?title=Browser_event_and_coordinates
+*/
+
+/*ALLGEMEINE FUNKTIONEN/EINSTELLUNGEN:*/
+fpprintprec: 4; /*Anzahl der gedruckten Stellen*/
+summe(L):=sum(L[k],k,1,length(L)); /*Funktion f&#252;r Summe der Elemente der Liste "L"*/
+dp(x):=decimalplaces(x,2);
+dpM(M):=setify(map(dp, listify(M)));
+/*&#220;berpr&#252;ft, ob eine Antwort mit Sprungstellen in der Liste L monoton steigend ist:*/
+monotonp(L):=is(sort(makelist((sort(L))[k][2],k,1,length(sort(L))))=makelist((sort(L))[k][2],k,1,length(sort(L))));
+/*H&#228;ufigkeit von x in der Liste L:*/
+haeuf(L,x):=length(sublist(L,lambda([z],z=x)));
+
+/*AUFGABENSTELLUNG:*/
+/*Folgende Variable ggf. aktualisieren, damit die Daten nicht veraltet wirken*/
+Jahre: makelist(2013+i,i,0,9);
+/*Eindeutige Datenwerte:*/
+wert1: rand_with_step(85,105,1); /*Ein Wert kommt dreimal vor*/
+wert2: rand_with_prohib(85,105,[wert1]); /*Ein Wert kommt zweimal vor*/
+wert3: rand_with_prohib(85,105,[wert1,wert2]); /*Auch dieser Wert kommt zweimal vor*/
+wert4: rand_with_prohib(85,105,[wert1,wert2,wert3]); /*usw.*/
+wert5: rand_with_prohib(85,105,[wert1,wert2,wert3,wert4]);
+wert6: rand_with_prohib(85,105,[wert1,wert2,wert3,wert4,wert5]);
+/*Die endg&#252;ltigen Datenwerte (doppelt m&#246;glich):*/
+AListe:decimalplaces([wert1,wert1,wert1,wert2,wert2,wert3,wert3,wert4,wert5,wert6]/10,2);
+AListe: random_permutation(AListe);
+a1: AListe[1]; /*Wert Jahr 1*/
+a2: AListe[2]; /*Wert Jahr 2*/
+a3: AListe[3]; /*Wert Jahr 3*/
+a4: AListe[4]; /*Wert Jahr 4*/
+a5: AListe[5]; /*Wert Jahr 5*/
+a6: AListe[6]; /*Wert Jahr 6*/
+a7: AListe[7]; /*Wert Jahr 7*/
+a8: AListe[8]; /*Wert Jahr 8*/
+a9: AListe[9]; /*Wert Jahr 9*/
+a10: AListe[10]; /*Wert Jahr 10*/
+A:  summe(AListe); /*Summe*/
+
+/*BERECHNUNG DER KORREKTEN FUNKTION*/
+
+/* Liste mit Listen [i, f(i)], wobei i alle Zahlen vom kleinsten bis zum gr&#246;&#223;ten Datenwert in 0.1-Schritten sind. f(i) ist die absolute H&#228;ufigkeit dieser Zahlen im Datensatz. */
+Ahaeuf1: makelist(
+    [k/10, haeuf(AListe,k/10)],
+    k,
+    10*lmin(AListe),
+    10*lmax(AListe)
+);
+
+/* Aus Ahaeuf1 werden alle Elemente [i,f(i)] entfernt, bei denen f(i)=0 ist */
+Ahaeuf2: sort(
+    sublist(Ahaeuf1,lambda([L],is(L[2]#0)))
+);
+
+/* Ahaeuf2 wird so umgewandelt, dass die Liste nun Elemente [i,p(i)] enth&#228;lt, wobei p(i) relative H&#228;ufigkeiten sind */
+Ahaeuf3: makelist([Ahaeuf2[k][1], float(Ahaeuf2[k][2]/length(AListe))],k,1,length(Ahaeuf2));
+
+/* Ahaeuf3 wird so umgewandelt, dass die Liste nun Elemente [i,P(i)] enth&#228;lt, wobei P(i) kumulierte relative H&#228;ufigkeiten sind */
+Ahaeuf4: makelist([Ahaeuf3[k][1], sum(Ahaeuf3[i][2],i,1,k)],k,1,length(Ahaeuf3));
+
+/* Es wird noch eine Rundungsfunktion angewendet, damit es keine Probleme mit FLie&#223;kommazahlen gibt */
+empVert:map(lambda([x],decimalplaces(x,2)),Ahaeuf4);
+
+/* Unwandeln in eine Menge: */
+TAns1: setify( map(lambda([x], decimalplaces(x,2)), empVert));]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{#AListe#}</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partly correct.[[/lang]]
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.[[/lang]]
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>jsxvar</name>
+            <type>algebraic</type>
+            <tans>empVert</tans>
+            <boxsize>40</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text><![CDATA[/* === Erkl&#228;rung der Knoten ====
+Knoten 1: Wurde mindestens ein Punkt gezeichnet?
+Knoten 2: Ist die empirische Verteilungsfunktion komplett richtig?
+Knoten 3: Sind alle Punkte richtig, aber noch &#252;berfl&#252;ssige hinzugef&#252;gt?
+Knoten 4: Ist die Funktion monoton wachsend?
+Knoten 5: Erreicht die Funktion die 1?
+Knoten 6: Ist die Anzahl der Datenwerte, f&#252;r die es keinen Punkt gibt, =0?
+Knoten 7: Sind Punkte dabei, deren x-Koordinate keinem Datenwert entspricht?
+Knoten 8: Entsprechen die y-Werte den relativen H&#228;ufigkeiten?
+*/
+
+/* Punkt [-1000.00,0.00] aus der Antwort l&#246;schen, weil dieser nur f&#252;r das Zeichnen der Linie aus dem negativen Unendlichen da war: */
+SAns: delete([-1000.00,0.00],jsxvar);
+/* Umwandlung der Antwort in Dezimalzahlen: */
+SAns: decimalplaces(SAns,2);
+
+/*Unwandeln der Antwort in eine Menge*/
+SAns1: setify( map(lambda([x], decimalplaces(x,2)), SAns));
+
+/*Liste, in denen nur die y-Werte der Punkte vorhanden sind:*/
+SAns1_y: makelist(sort(listify(SAns1))[k][2],k,1,length(SAns1));
+
+/* &#220;berpr&#252;fen, ob die Funktion im Limes 1 erreicht: */
+erreicht_eins: is(last(SAns1_y)=1.0);
+
+/* ============================
+Analyse der Antwort der Studierenden:
+ ============================ */
+
+/* ==== TEIL 1: Angegebene Punkte, die nicht in empVert vorkommen ==== */
+/*Punkte, deren x-Werte nicht in AListe vorkommen*/
+SAnsFalscherXWert: sublist(SAns,lambda([L],not member(L[1],AListe)));
+
+/*Gibt den eigentlich korrekten y-Wert f&#252;r den gegebenen x-Wert zur&#252;ck*/
+korr_y(pkt):=block([L,el],
+	/*Liste aller korrekten Punkte, deren x-Wert
+	kleiner als der angegebene Punkt p sind:*/
+	L: sublist(empVert,lambda([L],L[1]<pkt[1])),
+	/*Wenn Liste nicht leer, dann gib den y-Wert
+	dieses Punkts zur&#252;ck (sonst 0):*/
+	el: if L#[] then last(sort(L))[2] else 0,
+	return(el)
+);
+
+/*Alle &#252;berfl&#252;ssigen Punkte (d. h. alle, deren y-Wert mit dem des korrekten Punkts &#252;bereinstimmt, dessen x-Wert der n&#228;chstkleinere aus der Liste der korrekten Antworten ist):*/
+ueberfluessige_Punkte: sublist(SAnsFalscherXWert, lambda([L],decimalplaces(korr_y(L),2)=L[2]));
+
+/* Punke, deren x-Wert nicht im Datensatz enthalten ist: */
+Punkte_falscher_x_Wert: sublist(SAnsFalscherXWert, lambda([L], not member(L, ueberfluessige_Punkte)));
+
+/* ==== TEIL 2: Punkte, die in empVert vorkommen, aber in SAns fehlen ==== */
+/*Alle richtig genannten Punkte:*/
+richtige_Punkte: sublist(SAns, lambda([L], member(L, empVert)));
+richtige_Punkte: decimalplaces(richtige_Punkte,2);
+
+/*Datenpunkte, die evtl. nicht als x-Werte vorkommen:*/
+evtl_fehlende_Datenwerte: sublist(unique(AListe), lambda([el], length(sublist(richtige_Punkte, lambda([L],L[1]=el)))=0));
+
+/*x-Wert aus den Daten, aber falscher y-Wert:*/
+Punkte_falscher_y_Wert: sublist(SAns, lambda([L], member(L[1], evtl_fehlende_Datenwerte)));
+
+/*Datenwert, f&#252;r den gar kein Punkt angegeben wurde:*/
+tatsaechlich_fehlende_Datenwerte: block([L, L2],
+    L: evtl_fehlende_Datenwerte,
+    L2: makelist(Punkte_falscher_y_Wert[i][1],i,1,length(Punkte_falscher_y_Wert)),
+    for i:1 thru length(L2) do L: delete(L2[i], L),
+    return(L)
+);
+
+/*String f&#252;r den Feedbacktext:*/
+string_punkte_ueberfluessig: if length(ueberfluessige_Punkte)>1 then "die Punkte" else "den Punkt";]]></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans><![CDATA[is(length(SAns1)>0)]]></sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>jsxgraph-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>jsxgraph-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]][[ comment ]] Es wurden keine Punkte platziert, [[/ comment ]]
+<p>
+    Bitte zeichnen Sie Punkte ein, indem Sie per Mausklick Punkte zum Koordinatensystem hinzuf&#252;gen. Klicken Sie dann erneut auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]][[ comment ]] No points were placed, [[/ comment ]]
+<p>
+    Please enter points by adding points to the coordinate system by mouse click. Then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>SAns1</sans>
+                <tans>TAns1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>jsxgraph-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]][[ comment ]] Funktion ist korrekt. [[/ comment ]]
+<p>
+    Hier ist noch einmal Ihre Funktion &#8211; sie ist korrekt.
+</p>
+[[jsxgraph]]
+const board = JXG.JSXGraph.initBoard(divid, {
+                showCopyright: false,
+                boundingbox: [7.5,1.09,11,-0.1],
+                axis: true,
+                showNavigation:false,
+                pan:{enabled:false},
+                zoom:{enabled:false}
+});
+
+
+
+
+board.defaultAxes.y.setAttribute({visible:'false'});
+board.defaultAxes.x.setAttribute({visible:'false'});
+
+
+
+
+var newXAxis = board.create('axis',[[0,0],[1,0]],{
+                ticks:{
+                                drawZero:true,
+                                label: {offset: [0,-3], anchorX: 'middle', anchorY: 'top'}
+                }
+});
+
+
+
+
+var newYAxis = board.create('axis',[[8,0],[8,1]],{
+                ticks:{
+                                label: {offset: [-3,0], anchorX: 'right', anchorY: 'middle'}
+                }
+});
+
+
+
+
+var ans = {#SAns#};
+
+
+
+
+var punkte = [];
+var strecken = [];
+
+
+
+
+//Punkte hinzuf&#252;gen:
+for(let p of ans){
+                punkte.push(
+                                board.create('point',p,{
+                                                fixed:true,
+                                                highlight:false
+                                })
+                );
+};
+
+
+
+
+strecken.push(
+                board.create('segment',[
+                                [-1000,0],
+                                [punkte[0].X(), 0]
+                ],{
+                                fixed:true,
+                                highlight:false
+                })
+);
+
+
+
+
+for(let i=1; i
+<punkte.length; );="" <hr="" [="" [1000,="" [[="" [punkte[i].x(),="" ],{="" board.create('segment',="" board.create('segment',[="" highlight:false="" i++){="" jsxgraph]]="" punkte[i-1],="" punkte[i-1].y()]="" punkte[punkte.length-1],="" punkte[punkte.length-1].y()]="" strecken.push(="" })="" };="">
+    <p>
+        Herzlichen Gl&#252;ckwunsch, Sie sind am Ende der Aufgabe angelangt! Sie sollten nun eine empirische Verteilungsfunktion aus einem gegebenen Datensatz zeichnen k&#246;nnen.
+    </p>
+    [[/lang]][[lang code="en"]][[ comment ]] Function is correct. [[/ comment ]]
+    <p>
+        Here is your function again &#8211; it is correct.
+    </p>
+    [[jsxgraph]]
+const board = JXG.JSXGraph.initBoard(divid, {
+                showCopyright: false,
+                boundingbox: [7.5,1.09,11,-0.1],
+                axis: true,
+                showNavigation:false,
+                pan:{enabled:false},
+                zoom:{enabled:false}
+});
+
+
+
+
+board.defaultAxes.y.setAttribute({visible:'false'});
+board.defaultAxes.x.setAttribute({visible:'false'});
+
+
+
+
+var newXAxis = board.create('axis',[[0,0],[1,0]],{
+                ticks:{
+                                drawZero:true,
+                                label: {offset: [0,-3], anchorX: 'middle', anchorY: 'top'}
+                }
+});
+
+
+
+
+var newYAxis = board.create('axis',[[8,0],[8,1]],{
+                ticks:{
+                                label: {offset: [-3,0], anchorX: 'right', anchorY: 'middle'}
+                }
+});
+
+
+
+
+var ans = {#SAns#};
+
+
+
+
+var punkte = [];
+var strecken = [];
+
+
+
+
+//Punkte hinzuf&#252;gen:
+for(let p of ans){
+                punkte.push(
+                                board.create('point',p,{
+                                                fixed:true,
+                                                highlight:false
+                                })
+                );
+};
+
+
+
+
+strecken.push(
+                board.create('segment',[
+                                [-1000,0],
+                                [punkte[0].X(), 0]
+                ],{
+                                fixed:true,
+                                highlight:false
+                })
+);
+
+
+
+
+for(let i=1; i
+    <punkte.length; );="" [="" [1000,="" [[="" [punkte[i].x(),="" ],{="" board.create('segment',="" board.create('segment',[="" highlight:false="" i++){="" jsxgraph]]<hr="" punkte[i-1],="" punkte[i-1].y()]="" punkte[punkte.length-1],="" punkte[punkte.length-1].y()]="" strecken.push(="" })="" };="">
+        <p>
+            Congratulations, you have reached the end of the task! You should now be able to draw an empirical distribution function from a given data set.
+        </p>
+        [[/lang]]
+    </punkte.length;>
+</punkte.length;>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>jsxgraph-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>setdifference(SAns1, setify(ueberfluessige_Punkte))</sans>
+                <tans>TAns1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>jsxgraph-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]][[ comment ]] Funktion ist richtig bis auf "unn&#246;tige" Punkte au&#223;erhalb der Sprungstellen. [[/ comment ]]
+<p>
+    Ihre Funktion ist grunds&#228;tzlich richtig, aber enth&#228;lt mindestens einen Punkt, ohne den die Funktion ebenfalls richtig gewesen w&#228;re:
+</p>
+<p>
+    Wenn Sie {@string_punkte_ueberfluessig@} {@sequenceify(ueberfluessige_Punkte)@} weglassen, &#228;ndert sich die Funktion nicht. In der folgenden Grafik sind diese Punkte mit einer schwarzen Box umrandet.
+</p>
+[[jsxgraph]]
+const board = JXG.JSXGraph.initBoard(divid, {
+                showCopyright: false,
+                boundingbox: [7.5,1.09,11,-0.1],
+                axis: true,
+                showNavigation:false,
+                pan:{enabled:false},
+                zoom:{enabled:false}
+});
+
+
+
+
+board.defaultAxes.y.setAttribute({visible:'false'});
+board.defaultAxes.x.setAttribute({visible:'false'});
+
+
+
+
+var newXAxis = board.create('axis',[[0,0],[1,0]],{
+                ticks:{
+                                drawZero:true,
+                                label: {offset: [0,-3], anchorX: 'middle', anchorY: 'top'}
+                }
+});
+
+
+
+
+var newYAxis = board.create('axis',[[8,0],[8,1]],{
+                ticks:{
+                                label: {offset: [-3,0], anchorX: 'right', anchorY: 'middle'}
+                }
+});
+
+
+
+
+var ans = {#empVert#};
+var ueberfluessig = {#ueberfluessige_Punkte#};
+
+
+
+
+var punkte = [];
+var ueberfluessige_punkte = [];
+var strecken = [];
+
+
+
+
+//Punkte hinzuf&#252;gen:
+for(let p of ans){
+                punkte.push(
+                                board.create('point',p,{
+                                                fixed:true,
+                                                highlight:false
+                                })
+                );
+};
+
+
+
+
+strecken.push(
+                board.create('segment',[
+                                [-1000,0],
+                                [punkte[0].X(), 0]
+                ],{
+                                fixed:true,
+                                highlight:false
+                })
+);
+
+
+
+
+for(let i=1; i
+<punkte.length; );="" <p="" [="" [1000,="" [[="" [punkte[i].x(),="" ],{="" board.create('point',p,{="" board.create('segment',="" board.create('segment',[="" face:'[]',="" fillcolor:'transparent',="" fixed:true,="" for(let="" highlight:false="" highlight:false,="" hinzuf&#252;gen:="" i++){="" jsxgraph]]="" of="" p="" punkte="" punkte[i-1],="" punkte[i-1].y()]="" punkte[punkte.length-1],="" punkte[punkte.length-1].y()]="" size:7="" strecken.push(="" strokecolor:'black',="" ueberfluessig){="" ueberfluessige_punkte.push(="" })="" });="" };="" &#252;berfl&#252;ssige="">
+    Bitte entfernen Sie die &#252;berfl&#252;ssigen Punkte in der Grafik im Fragetext und klicken Sie dann erneut auf "Pr&#252;fen".
+    [[/lang]][[lang code="en"]][[ comment ]] Function is right up to "unnecessary" points outside the jumping points. [[/ comment ]]
+    <p>
+        Their function is basically correct, but contains at least one point without which the function would also have been correct:
+    </p>
+    <p>
+        If {@string_punkte_ueberfluessig@} {@sequenceify(ueberfluessige_Punkte)@} Leave, the function does not change. In the following graphics, these points are bordered with a black box.
+    </p>
+    [[jsxgraph]]
+const board = JXG.JSXGraph.initBoard(divid, {
+                showCopyright: false,
+                boundingbox: [7.5,1.09,11,-0.1],
+                axis: true,
+                showNavigation:false,
+                pan:{enabled:false},
+                zoom:{enabled:false}
+});
+
+
+
+
+board.defaultAxes.y.setAttribute({visible:'false'});
+board.defaultAxes.x.setAttribute({visible:'false'});
+
+
+
+
+var newXAxis = board.create('axis',[[0,0],[1,0]],{
+                ticks:{
+                                drawZero:true,
+                                label: {offset: [0,-3], anchorX: 'middle', anchorY: 'top'}
+                }
+});
+
+
+
+
+var newYAxis = board.create('axis',[[8,0],[8,1]],{
+                ticks:{
+                                label: {offset: [-3,0], anchorX: 'right', anchorY: 'middle'}
+                }
+});
+
+
+
+
+var ans = {#empVert#};
+var ueberfluessig = {#ueberfluessige_Punkte#};
+
+
+
+
+var punkte = [];
+var ueberfluessige_punkte = [];
+var strecken = [];
+
+
+
+
+//Punkte hinzuf&#252;gen:
+for(let p of ans){
+                punkte.push(
+                                board.create('point',p,{
+                                                fixed:true,
+                                                highlight:false
+                                })
+                );
+};
+
+
+
+
+strecken.push(
+                board.create('segment',[
+                                [-1000,0],
+                                [punkte[0].X(), 0]
+                ],{
+                                fixed:true,
+                                highlight:false
+                })
+);
+
+
+
+
+for(let i=1; i
+    <punkte.length; );="" [="" [1000,="" [[="" [punkte[i].x(),="" ],{="" board.create('point',p,{="" board.create('segment',="" board.create('segment',[="" face:'[]',="" fillcolor:'transparent',="" fixed:true,="" for(let="" highlight:false="" highlight:false,="" hinzuf&#252;gen:="" i++){="" jsxgraph]]<p="" of="" p="" punkte="" punkte[i-1],="" punkte[i-1].y()]="" punkte[punkte.length-1],="" punkte[punkte.length-1].y()]="" size:7="" strecken.push(="" strokecolor:'black',="" ueberfluessig){="" ueberfluessige_punkte.push(="" })="" });="" };="" &#252;berfl&#252;ssige="">
+        Please remove the unnecessary points in the graphic in question text and then click "Check".
+        [[/lang]]
+    </punkte.length;>
+</punkte.length;>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>jsxgraph-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>monotonp(jsxvar)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>jsxgraph-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>jsxgraph-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]][[ comment ]] Funktion ist nicht monoton wachsend. [[/ comment ]]
+<p>
+    Ihre Funktion ist nicht monoton wachsend. Eine empirische Verteilungsfunktion muss aber immer monoton wachsend sein.
+</p>
+[[/lang]][[lang code="en"]][[ comment ]] Function is not monotonously growing. [[/ comment ]]
+<p>
+    Their function is not monotonously growing. However, an empirical distribution function must always be monotonously growing.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>erreicht_eins</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>jsxgraph-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>jsxgraph-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]][[ comment ]] Funktion erreicht nicht die 1. [[/ comment ]]
+
+
+
+
+[[ if test='is(monotonp(jsxvar))']]
+<p>
+    Ihre Funktion erf&#252;llt nicht die Eigenschaft, dass sie f&#252;r \(x\rightarrow\infty\) den Wert 1 annimmt. Eine empirische Verteilungsfunktion muss sich im Limes aber immer 1 ann&#228;hern.
+</p>
+[[ else ]]
+<p>
+    Zudem erf&#252;llt sie nicht die Eigenschaft, dass sie f&#252;r \(x\rightarrow\infty\) den Wert 1 annimmt. Eine empirische Verteilungsfunktion muss sich im Limes aber immer 1 ann&#228;hern.
+</p>
+[[/ if ]][[/lang]][[lang code="en"]][[ comment ]] Function does not reach 1. [[/ comment ]][[ if test='is(monotonp(jsxvar))']]
+<p>
+    Your function does not fulfill the property that it has for \(x\rightarrow\infty\) assumes the value 1. However, an empirical distribution function must always approach 1 in the lime.
+</p>
+[[ else ]]
+<p>
+    In addition, it does not fulfil the property of \(x\rightarrow\infty\) assumes the value 1. However, an empirical distribution function must always approach 1 in the lime.
+</p>
+[[/ if ]][[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>length(tatsaechlich_fehlende_Datenwerte)</sans>
+                <tans>0</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>6</truenextnode>
+                <trueanswernote>jsxgraph-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]][[ comment ]] D. h. f&#252;r jeden der Datenwerte gibt es einen Punkt [[/ comment ]][[/lang]][[lang code="en"]][[ comment ]] This means that for each of the data values there is one point [[/ comment ]][[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>jsxgraph-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]][[ comment ]] D. h. es gibt mindestens einen Datenwert ohne Punkt [[/ comment ]]
+<p>
+    Wenn eine empirische Verteilungsfunktion gezeichnet wird, dann muss f&#252;r jeden Wert \(x_i\), der in den zugrundeliegenden Daten vorhanden ist, ein Punkt \([x_i, y_i]\) gezeichnet werden.
+</p>
+<p>
+    Allerdings gibt es mindestens einen Datenwert, f&#252;r den Sie einen solchen Punkt nicht eingezeichnet haben.
+    <!--, n&#228;mlich die folgenden: {@sequenceify(tatsaechlich_fehlende_Datenwerte)@}-->
+</p>
+<p>
+    In der folgenden Grafik sehen Sie noch einmal Ihre empirische Verteilungsfunktion.
+    <br/>
+    Die x-Stellen, an denen ein Datenwert liegt, Sie aber keinen Punkt gezeichnet haben, sind durch gestrichelte vertikale Linien markiert.
+</p>
+[[jsxgraph]]
+const board = JXG.JSXGraph.initBoard(divid, {
+                showCopyright: false,
+                boundingbox: [7.5,1.09,11,-0.1],
+                axis: true,
+                showNavigation:false,
+                pan:{enabled:false},
+                zoom:{enabled:false}
+});
+
+
+
+
+board.defaultAxes.y.setAttribute({visible:'false'});
+board.defaultAxes.x.setAttribute({visible:'false'});
+
+
+
+
+var newXAxis = board.create('axis',[[0,0],[1,0]],{
+                ticks:{
+                                drawZero:true,
+                                label: {offset: [0,-3], anchorX: 'middle', anchorY: 'top'}
+                }
+});
+
+
+
+
+var newYAxis = board.create('axis',[[8,0],[8,1]],{
+                ticks:{
+                                label: {offset: [-3,0], anchorX: 'right', anchorY: 'middle'}
+                }
+});
+
+
+
+
+var ans = {#SAns#};
+
+
+
+
+var punkte = [];
+var strecken = [];
+
+
+
+
+//Punkte hinzuf&#252;gen:
+for(let p of ans){
+                punkte.push(
+                                board.create('point',p,{
+                                                fixed:true,
+                                                highlight:false
+                                })
+                );
+};
+
+
+
+
+strecken.push(
+                board.create('segment',[
+                                [-1000,0],
+                                [punkte[0].X(), 0]
+                ],{
+                                fixed:true,
+                                highlight:false
+                })
+);
+
+
+
+
+for(let i=1; i
+<punkte.length; );="" <p="" [="" [1000,="" [[="" [punkte[i].x(),="" ],{="" board.create('line',[[x,-1],[x,1]],{="" board.create('segment',="" board.create('segment',[="" color:'black',="" dash:2,="" datenwert="" dort="" existiert="" fehlendedatenwerte="{#tatsaechlich_fehlende_Datenwerte#};" fehlendedatenwerte){="" fixed:true,="" for(let="" highlight:false="" highlight:false,="" i++){="" jsxgraph]]="" keine="" obwohl="" of="" punkte="" punkte[i-1],="" punkte[i-1].y()]="" punkte[punkte.length-1],="" punkte[punkte.length-1].y()]="" sind,="" stellen="" strecken.push(="" strokewidth:1="" var="" werten,="" wo="" x="" })="" };="">
+    Bitte korrigieren Sie Ihre L&#246;sung in der Grafik im Fragetext und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    [[/lang]][[lang code="en"]][[ comment ]] i.e. there is at least one data value without point [[/ comment ]]
+    <p>
+        If an empirical distribution function is drawn, then for each value \(x_i\), which is present in the underlying data, a point \([x_i, y_i]\) to be drawn.
+    </p>
+    <p>
+        However, there is at least one data value for which you have not entered such a point.
+        <!--, n&#228;mlich die folgenden: {@sequenceify(tatsaechlich_fehlende_Datenwerte)@}-->
+    </p>
+    <p>
+        In the following graph you will see your empirical distribution function again.
+        <br/>
+        The x-positions at which a data value is present, but you have not drawn a point, are marked by dashed vertical lines.
+    </p>
+    [[jsxgraph]]
+const board = JXG.JSXGraph.initBoard(divid, {
+                showCopyright: false,
+                boundingbox: [7.5,1.09,11,-0.1],
+                axis: true,
+                showNavigation:false,
+                pan:{enabled:false},
+                zoom:{enabled:false}
+});
+
+
+
+
+board.defaultAxes.y.setAttribute({visible:'false'});
+board.defaultAxes.x.setAttribute({visible:'false'});
+
+
+
+
+var newXAxis = board.create('axis',[[0,0],[1,0]],{
+                ticks:{
+                                drawZero:true,
+                                label: {offset: [0,-3], anchorX: 'middle', anchorY: 'top'}
+                }
+});
+
+
+
+
+var newYAxis = board.create('axis',[[8,0],[8,1]],{
+                ticks:{
+                                label: {offset: [-3,0], anchorX: 'right', anchorY: 'middle'}
+                }
+});
+
+
+
+
+var ans = {#SAns#};
+
+
+
+
+var punkte = [];
+var strecken = [];
+
+
+
+
+//Punkte hinzuf&#252;gen:
+for(let p of ans){
+                punkte.push(
+                                board.create('point',p,{
+                                                fixed:true,
+                                                highlight:false
+                                })
+                );
+};
+
+
+
+
+strecken.push(
+                board.create('segment',[
+                                [-1000,0],
+                                [punkte[0].X(), 0]
+                ],{
+                                fixed:true,
+                                highlight:false
+                })
+);
+
+
+
+
+for(let i=1; i
+    <punkte.length; );="" [="" [1000,="" [[="" [punkte[i].x(),="" ],{="" board.create('line',[[x,-1],[x,1]],{="" board.create('segment',="" board.create('segment',[="" color:'black',="" dash:2,="" datenwert="" dort="" existiert="" fehlendedatenwerte="{#tatsaechlich_fehlende_Datenwerte#};" fehlendedatenwerte){="" fixed:true,="" for(let="" highlight:false="" highlight:false,="" i++){="" jsxgraph]]<p="" keine="" obwohl="" of="" punkte="" punkte[i-1],="" punkte[i-1].y()]="" punkte[punkte.length-1],="" punkte[punkte.length-1].y()]="" sind,="" stellen="" strecken.push(="" strokewidth:1="" var="" werten,="" wo="" x="" })="" };="">
+        Please correct your solution in the graphic in the question text and then click "Check".
+        [[/lang]]
+    </punkte.length;>
+</punkte.length;>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>6</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>length(SAnsFalscherXWert)</sans>
+                <tans>0</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>7</truenextnode>
+                <trueanswernote>jsxgraph-7-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>jsxgraph-7-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]][[ comment ]] Es gibt mindestens einen Punkt, dessen x-Koordinate keinem Datenwert entspricht [[/ comment ]]
+<p>
+    Ihre Funktion enth&#228;lt mindestens einen Punkt, dessen x-Koordinate nicht mit einem Wert aus dem Datensatz &#252;bereinstimmt.
+</p>
+<p>
+    In der folgenden Grafik sehen Sie noch einmal Ihre empirische Verteilungsfunktion.
+    <br/>
+    Die Punkte, die an x-Stellen liegen, die keinem Datenwert entsprechen, sind mit einer schwarzen Box umrandet.
+</p>
+[[jsxgraph]]
+const board = JXG.JSXGraph.initBoard(divid, {
+                showCopyright: false,
+                boundingbox: [7.5,1.09,11,-0.1],
+                axis: true,
+                showNavigation:false,
+                pan:{enabled:false},
+                zoom:{enabled:false}
+});
+
+
+
+
+board.defaultAxes.y.setAttribute({visible:'false'});
+board.defaultAxes.x.setAttribute({visible:'false'});
+
+
+
+
+var newXAxis = board.create('axis',[[0,0],[1,0]],{
+                ticks:{
+                                drawZero:true,
+                                label: {offset: [0,-3], anchorX: 'middle', anchorY: 'top'}
+                }
+});
+
+
+
+
+var newYAxis = board.create('axis',[[8,0],[8,1]],{
+                ticks:{
+                                label: {offset: [-3,0], anchorX: 'right', anchorY: 'middle'}
+                }
+});
+
+
+
+
+var ans = {#SAns#};
+
+
+
+
+var punkte = [];
+var strecken = [];
+
+
+
+
+//Punkte hinzuf&#252;gen:
+for(let p of ans){
+				punkte.push(
+                                board.create('point',p,{
+                                                fixed:true,
+                                                highlight:false
+                                })
+                );
+};
+
+
+
+
+strecken.push(
+                board.create('segment',[
+                                [-1000,0],
+                                [punkte[0].X(), 0]
+                ],{
+                                fixed:true,
+                                highlight:false
+                })
+);
+
+
+
+
+for(let i=1; i
+<punkte.length; );="" <p="" [="" [1000,="" [[="" [punkte[i].x(),="" ],{="" an="" board.create('point',p,{="" board.create('segment',="" board.create('segment',[="" datenwert="" denen="" face:'[]',="" fillcolor:'transparent',="" fixed:true,="" for(let="" highlight:false="" highlight:false,="" i++){="" jsxgraph]]="" kein="" liegt:="" markieren,="" of="" p="" punkte="" punkte[i-1],="" punkte[i-1].y()]="" punkte[punkte.length-1],="" punkte[punkte.length-1].y()]="" punktekeindatenwert="{#SAnsFalscherXWert#};" punktekeindatenwert){="" size:7="" strecken.push(="" strokecolor:'black',="" var="" })="" });="" };="">
+    Bitte korrigieren Sie Ihre L&#246;sung in der Grafik im Fragetext und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    [[/lang]][[lang code="en"]][[ comment ]] There is at least one point whose x coordinate does not correspond to any data value [[/ comment ]]
+    <p>
+        Their function contains at least one point whose x coordinate does not match a value from the data set.
+    </p>
+    <p>
+        In the following graph you will see your empirical distribution function again.
+        <br/>
+        The points at x positions that do not correspond to any data value are bordered with a black box.
+    </p>
+    [[jsxgraph]]
+const board = JXG.JSXGraph.initBoard(divid, {
+                showCopyright: false,
+                boundingbox: [7.5,1.09,11,-0.1],
+                axis: true,
+                showNavigation:false,
+                pan:{enabled:false},
+                zoom:{enabled:false}
+});
+
+
+
+
+board.defaultAxes.y.setAttribute({visible:'false'});
+board.defaultAxes.x.setAttribute({visible:'false'});
+
+
+
+
+var newXAxis = board.create('axis',[[0,0],[1,0]],{
+                ticks:{
+                                drawZero:true,
+                                label: {offset: [0,-3], anchorX: 'middle', anchorY: 'top'}
+                }
+});
+
+
+
+
+var newYAxis = board.create('axis',[[8,0],[8,1]],{
+                ticks:{
+                                label: {offset: [-3,0], anchorX: 'right', anchorY: 'middle'}
+                }
+});
+
+
+
+
+var ans = {#SAns#};
+
+
+
+
+var punkte = [];
+var strecken = [];
+
+
+
+
+//Punkte hinzuf&#252;gen:
+for(let p of ans){
+				punkte.push(
+                                board.create('point',p,{
+                                                fixed:true,
+                                                highlight:false
+                                })
+                );
+};
+
+
+
+
+strecken.push(
+                board.create('segment',[
+                                [-1000,0],
+                                [punkte[0].X(), 0]
+                ],{
+                                fixed:true,
+                                highlight:false
+                })
+);
+
+
+
+
+for(let i=1; i
+    <punkte.length; );="" [="" [1000,="" [[="" [punkte[i].x(),="" ],{="" an="" board.create('point',p,{="" board.create('segment',="" board.create('segment',[="" datenwert="" denen="" face:'[]',="" fillcolor:'transparent',="" fixed:true,="" for(let="" highlight:false="" highlight:false,="" i++){="" jsxgraph]]<p="" kein="" liegt:="" markieren,="" of="" p="" punkte="" punkte[i-1],="" punkte[i-1].y()]="" punkte[punkte.length-1],="" punkte[punkte.length-1].y()]="" punktekeindatenwert="{#SAnsFalscherXWert#};" punktekeindatenwert){="" size:7="" strecken.push(="" strokecolor:'black',="" var="" })="" });="" };="">
+        Please correct your solution in the graphic in the question text and then click "Check".
+        [[/lang]]
+    </punkte.length;>
+</punkte.length;>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>7</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>SAns1</sans>
+                <tans>setify(Ahaeuf3)</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>jsxgraph-8-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]][[ comment ]] x-Stellen der Punkte sind korrekt, aber scheinbar entsprechen die y-Werte den relativen H&#228;ufigkeiten [[/ comment ]]
+<p>
+    Ihre Funktion enth&#228;lt Punkte an allen Stellen, die Werten im gegebenen Datensatz entsprechen. Allerdings gibt es mindestens einen Punkt, der eine falsche y-Koordinate besitzt.
+</p>
+<p>
+    Kann es sein, dass Sie als y-Koordinaten die relative H&#228;ufigkeit des jeweilgen Datenwertes verwendet haben? Bei einer empirischen Verteilungsfunktion m&#252;ssen allerdings die
+    <em>
+        kumulierten
+    </em>
+    relativen H&#228;ufigkeiten verwendet werden, d. h. die Summe der relativen H&#228;ufigkeiten aller Werte, die kleiner als der betrachtete Wert oder gleich ihm sind.
+</p>
+<p>
+    In der folgenden Grafik sehen Sie noch einmal Ihre empirische Verteilungsfunktion. Die Punkte, die an einem korrekten Datenwert liegen, aber einen falschen y-Wert haben, sind schwarz umkreist.
+</p>
+[[jsxgraph]]
+const board = JXG.JSXGraph.initBoard(divid, {
+                showCopyright: false,
+                boundingbox: [7.5,1.09,11,-0.1],
+                axis: true,
+                showNavigation:false,
+                pan:{enabled:false},
+                zoom:{enabled:false}
+});
+
+
+
+
+board.defaultAxes.y.setAttribute({visible:'false'});
+board.defaultAxes.x.setAttribute({visible:'false'});
+
+
+
+
+var newXAxis = board.create('axis',[[0,0],[1,0]],{
+                ticks:{
+                                drawZero:true,
+                                label: {offset: [0,-3], anchorX: 'middle', anchorY: 'top'}
+                }
+});
+
+
+
+
+var newYAxis = board.create('axis',[[8,0],[8,1]],{
+                ticks:{
+                                label: {offset: [-3,0], anchorX: 'right', anchorY: 'middle'}
+                }
+});
+
+
+
+
+var ans = {#SAns#};
+
+
+
+
+var punkte = [];
+var strecken = [];
+
+
+
+
+//Punkte hinzuf&#252;gen:
+for(let p of ans){
+                punkte.push(
+                                board.create('point',p,{
+                                                fixed:true,
+                                                highlight:false
+                                })
+                );
+};
+
+
+
+
+strecken.push(
+                board.create('segment',[
+                                [-1000,0],
+                                [punkte[0].X(), 0]
+                ],{
+                                fixed:true,
+                                highlight:false
+                })
+);
+
+
+
+
+for(let i=1; i
+<punkte.length; );="" *var="" <p="" [="" [1000,="" [[="" [punkte[i].x(),="" ],{="" bei="" board.create('line',[[x,-1],[x,1]],{="" board.create('point',p,{="" board.create('segment',="" board.create('segment',[="" color:'black',="" dash:2,="" datenwert="" denen="" der="" dort="" existiert="" face:'o',="" falsch="" fehlendedatenwerte="{#tatsaechlich_fehlende_Datenwerte#};" fehlendedatenwerte){="" fillcolor:'transparent',="" fixed:true,="" for(let="" highlight:false="" highlight:false,="" i++){="" ist:="" jsxgraph]]="" keine="" markieren,="" obwohl="" of="" p="" punkte="" punkte[i-1],="" punkte[i-1].y()]="" punkte[punkte.length-1],="" punkte[punkte.length-1].y()]="" punktefalscherxwert="{#Punkte_falscher_y_Wert#};" punktefalscherxwert){="" sind,="" size:7="" stellen="" strecken.push(="" strokecolor:'black',="" strokewidth:1="" var="" werten,="" wo="" x="" y-wert="" })="" });="" };="" };*="">
+    Bitte korrigieren Sie Ihre L&#246;sung in der Grafik im Fragetext und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    [[/lang]][[lang code="en"]][[ comment ]] x positions of the points are correct, but apparently the y values correspond to the relative frequencies [[/ comment ]]
+    <p>
+        Their function contains points at all places that correspond to values in the given dataset. However, there is at least one point that has a false y coordinate.
+    </p>
+    <p>
+        Can it be that you used the relative frequency of the respective data value as y coordinates? In an empirical distribution function, however, the
+        <em>
+            cumulative
+        </em>
+        relative frequencies are used, i.e. the sum of the relative frequencies of all values which are smaller than the value considered or equal to it.
+    </p>
+    <p>
+        In the following graph you will see your empirical distribution function again. The points that lie at a correct data value but have a false y value are black-circled.
+    </p>
+    [[jsxgraph]]
+const board = JXG.JSXGraph.initBoard(divid, {
+                showCopyright: false,
+                boundingbox: [7.5,1.09,11,-0.1],
+                axis: true,
+                showNavigation:false,
+                pan:{enabled:false},
+                zoom:{enabled:false}
+});
+
+
+
+
+board.defaultAxes.y.setAttribute({visible:'false'});
+board.defaultAxes.x.setAttribute({visible:'false'});
+
+
+
+
+var newXAxis = board.create('axis',[[0,0],[1,0]],{
+                ticks:{
+                                drawZero:true,
+                                label: {offset: [0,-3], anchorX: 'middle', anchorY: 'top'}
+                }
+});
+
+
+
+
+var newYAxis = board.create('axis',[[8,0],[8,1]],{
+                ticks:{
+                                label: {offset: [-3,0], anchorX: 'right', anchorY: 'middle'}
+                }
+});
+
+
+
+
+var ans = {#SAns#};
+
+
+
+
+var punkte = [];
+var strecken = [];
+
+
+
+
+//Punkte hinzuf&#252;gen:
+for(let p of ans){
+                punkte.push(
+                                board.create('point',p,{
+                                                fixed:true,
+                                                highlight:false
+                                })
+                );
+};
+
+
+
+
+strecken.push(
+                board.create('segment',[
+                                [-1000,0],
+                                [punkte[0].X(), 0]
+                ],{
+                                fixed:true,
+                                highlight:false
+                })
+);
+
+
+
+
+for(let i=1; i
+    <punkte.length; );="" *var="" [="" [1000,="" [[="" [punkte[i].x(),="" ],{="" bei="" board.create('line',[[x,-1],[x,1]],{="" board.create('point',p,{="" board.create('segment',="" board.create('segment',[="" color:'black',="" dash:2,="" datenwert="" denen="" der="" dort="" existiert="" face:'o',="" falsch="" fehlendedatenwerte="{#tatsaechlich_fehlende_Datenwerte#};" fehlendedatenwerte){="" fillcolor:'transparent',="" fixed:true,="" for(let="" highlight:false="" highlight:false,="" i++){="" ist:="" jsxgraph]]<p="" keine="" markieren,="" obwohl="" of="" p="" punkte="" punkte[i-1],="" punkte[i-1].y()]="" punkte[punkte.length-1],="" punkte[punkte.length-1].y()]="" punktefalscherxwert="{#Punkte_falscher_y_Wert#};" punktefalscherxwert){="" sind,="" size:7="" stellen="" strecken.push(="" strokecolor:'black',="" strokewidth:1="" var="" werten,="" wo="" x="" y-wert="" })="" });="" };="" };*="">
+        Please correct your solution in the graphic in the question text and then click "Check".
+        [[/lang]]
+    </punkte.length;>
+</punkte.length;>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>jsxgraph-8-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]][[ comment ]] x-Stellen der Punkte sind korrekt, aber mindestens ein falscher y-Wert [[/ comment ]]
+<p>
+    Ihre Funktion enth&#228;lt Punkte an allen Stellen, die Werten im gegebenen Datensatz entsprechen. Allerdings gibt es mindestens einen Punkt, der eine falsche y-Koordinate besitzt.
+</p>
+<p>
+    In der folgenden Grafik sehen Sie noch einmal Ihre empirische Verteilungsfunktion. Die Punkte, die an einem korrekten Datenwert liegen, aber einen falschen y-Wert haben, sind schwarz umkreist.
+</p>
+[[jsxgraph]]
+const board = JXG.JSXGraph.initBoard(divid, {
+                showCopyright: false,
+                boundingbox: [7.5,1.09,11,-0.1],
+                axis: true,
+                showNavigation:false,
+                pan:{enabled:false},
+                zoom:{enabled:false}
+});
+
+
+
+
+board.defaultAxes.y.setAttribute({visible:'false'});
+board.defaultAxes.x.setAttribute({visible:'false'});
+
+
+
+
+var newXAxis = board.create('axis',[[0,0],[1,0]],{
+                ticks:{
+                                drawZero:true,
+                                label: {offset: [0,-3], anchorX: 'middle', anchorY: 'top'}
+                }
+});
+
+
+
+
+var newYAxis = board.create('axis',[[8,0],[8,1]],{
+                ticks:{
+                                label: {offset: [-3,0], anchorX: 'right', anchorY: 'middle'}
+                }
+});
+
+
+
+
+var ans = {#SAns#};
+
+
+
+
+var punkte = [];
+var strecken = [];
+
+
+
+
+//Punkte hinzuf&#252;gen:
+for(let p of ans){
+                punkte.push(
+                                board.create('point',p,{
+                                                fixed:true,
+                                                highlight:false
+                                })
+                );
+};
+
+
+
+
+strecken.push(
+                board.create('segment',[
+                                [-1000,0],
+                                [punkte[0].X(), 0]
+                ],{
+                                fixed:true,
+                                highlight:false
+                })
+);
+
+
+
+
+for(let i=1; i
+<punkte.length; );="" *var="" <p="" [="" [1000,="" [[="" [punkte[i].x(),="" ],{="" bei="" board.create('line',[[x,-1],[x,1]],{="" board.create('point',p,{="" board.create('segment',="" board.create('segment',[="" color:'black',="" dash:2,="" datenwert="" denen="" der="" dort="" existiert="" face:'o',="" falsch="" fehlendedatenwerte="{#tatsaechlich_fehlende_Datenwerte#};" fehlendedatenwerte){="" fillcolor:'transparent',="" fixed:true,="" for(let="" highlight:false="" highlight:false,="" i++){="" ist:="" jsxgraph]]="" keine="" markieren,="" obwohl="" of="" p="" punkte="" punkte[i-1],="" punkte[i-1].y()]="" punkte[punkte.length-1],="" punkte[punkte.length-1].y()]="" punktefalscherxwert="{#Punkte_falscher_y_Wert#};" punktefalscherxwert){="" sind,="" size:7="" stellen="" strecken.push(="" strokecolor:'black',="" strokewidth:1="" var="" werten,="" wo="" x="" y-wert="" })="" });="" };="" };*="">
+    Bitte korrigieren Sie Ihre L&#246;sung in der Grafik im Fragetext und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    [[/lang]][[lang code="en"]][[ comment ]] x-points are correct, but at least one false y-value [[/ comment ]]
+    <p>
+        Their function contains points at all places that correspond to values in the given dataset. However, there is at least one point that has a false y coordinate.
+    </p>
+    <p>
+        In the following graph you will see your empirical distribution function again. The points that lie at a correct data value but have a false y value are black-circled.
+    </p>
+    [[jsxgraph]]
+const board = JXG.JSXGraph.initBoard(divid, {
+                showCopyright: false,
+                boundingbox: [7.5,1.09,11,-0.1],
+                axis: true,
+                showNavigation:false,
+                pan:{enabled:false},
+                zoom:{enabled:false}
+});
+
+
+
+
+board.defaultAxes.y.setAttribute({visible:'false'});
+board.defaultAxes.x.setAttribute({visible:'false'});
+
+
+
+
+var newXAxis = board.create('axis',[[0,0],[1,0]],{
+                ticks:{
+                                drawZero:true,
+                                label: {offset: [0,-3], anchorX: 'middle', anchorY: 'top'}
+                }
+});
+
+
+
+
+var newYAxis = board.create('axis',[[8,0],[8,1]],{
+                ticks:{
+                                label: {offset: [-3,0], anchorX: 'right', anchorY: 'middle'}
+                }
+});
+
+
+
+
+var ans = {#SAns#};
+
+
+
+
+var punkte = [];
+var strecken = [];
+
+
+
+
+//Punkte hinzuf&#252;gen:
+for(let p of ans){
+                punkte.push(
+                                board.create('point',p,{
+                                                fixed:true,
+                                                highlight:false
+                                })
+                );
+};
+
+
+
+
+strecken.push(
+                board.create('segment',[
+                                [-1000,0],
+                                [punkte[0].X(), 0]
+                ],{
+                                fixed:true,
+                                highlight:false
+                })
+);
+
+
+
+
+for(let i=1; i
+    <punkte.length; );="" *var="" [="" [1000,="" [[="" [punkte[i].x(),="" ],{="" bei="" board.create('line',[[x,-1],[x,1]],{="" board.create('point',p,{="" board.create('segment',="" board.create('segment',[="" color:'black',="" dash:2,="" datenwert="" denen="" der="" dort="" existiert="" face:'o',="" falsch="" fehlendedatenwerte="{#tatsaechlich_fehlende_Datenwerte#};" fehlendedatenwerte){="" fillcolor:'transparent',="" fixed:true,="" for(let="" highlight:false="" highlight:false,="" i++){="" ist:="" jsxgraph]]<p="" keine="" markieren,="" obwohl="" of="" p="" punkte="" punkte[i-1],="" punkte[i-1].y()]="" punkte[punkte.length-1],="" punkte[punkte.length-1].y()]="" punktefalscherxwert="{#Punkte_falscher_y_Wert#};" punktefalscherxwert){="" sind,="" size:7="" stellen="" strecken.push(="" strokecolor:'black',="" strokewidth:1="" var="" werten,="" wo="" x="" y-wert="" })="" });="" };="" };*="">
+        Please correct your solution in the graphic in the question text and then click "Check".
+        [[/lang]]
+    </punkte.length;>
+</punkte.length;>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>2113543810</deployedseed>
+        <deployedseed>518728290</deployedseed>
+        <deployedseed>977686642</deployedseed>
+        <deployedseed>625392613</deployedseed>
+        <deployedseed>419613540</deployedseed>
+        <deployedseed>546541248</deployedseed>
+        <deployedseed>901152908</deployedseed>
+        <deployedseed>2114373628</deployedseed>
+        <deployedseed>473415785</deployedseed>
+        <deployedseed>1319798863</deployedseed>
+        <deployedseed>1827996118</deployedseed>
+        <deployedseed>1377738284</deployedseed>
+        <deployedseed>1146938707</deployedseed>
+        <deployedseed>1649252600</deployedseed>
+        <deployedseed>1340042614</deployedseed>
+        <deployedseed>1806623013</deployedseed>
+        <deployedseed>175594256</deployedseed>
+        <deployedseed>1935287162</deployedseed>
+        <deployedseed>1232219398</deployedseed>
+        <deployedseed>632400565</deployedseed>
+        <deployedseed>1887803909</deployedseed>
+        <deployedseed>922667474</deployedseed>
+        <deployedseed>127099428</deployedseed>
+        <deployedseed>1888683775</deployedseed>
+        <deployedseed>559817050</deployedseed>
+        <deployedseed>221847889</deployedseed>
+        <deployedseed>149940121</deployedseed>
+        <deployedseed>156905201</deployedseed>
+        <deployedseed>710540382</deployedseed>
+        <deployedseed>800091485</deployedseed>
+        <deployedseed>1526168687</deployedseed>
+        <deployedseed>557180573</deployedseed>
+        <deployedseed>1642629653</deployedseed>
+        <deployedseed>594727517</deployedseed>
+        <deployedseed>1606422572</deployedseed>
+        <deployedseed>864119331</deployedseed>
+        <deployedseed>1780065340</deployedseed>
+        <deployedseed>842347566</deployedseed>
+        <deployedseed>1172114908</deployedseed>
+        <deployedseed>459727824</deployedseed>
+        <deployedseed>140001064</deployedseed>
+        <deployedseed>261129400</deployedseed>
+        <deployedseed>1248514742</deployedseed>
+        <deployedseed>2110534384</deployedseed>
+        <deployedseed>2064177855</deployedseed>
+        <deployedseed>98547081</deployedseed>
+        <deployedseed>18662775</deployedseed>
+        <deployedseed>402877091</deployedseed>
+        <deployedseed>2143584712</deployedseed>
+        <deployedseed>1438659174</deployedseed>
+        <deployedseed>332256278</deployedseed>
+        <deployedseed>823811409</deployedseed>
+        <deployedseed>2048176229</deployedseed>
+        <deployedseed>752099367</deployedseed>
+        <deployedseed>1041438219</deployedseed>
+        <deployedseed>968141737</deployedseed>
+        <deployedseed>1956112194</deployedseed>
+        <deployedseed>1838836537</deployedseed>
+        <deployedseed>1320409124</deployedseed>
+        <deployedseed>138669644</deployedseed>
+        <deployedseed>288815200</deployedseed>
+        <deployedseed>607887934</deployedseed>
+        <deployedseed>1448362307</deployedseed>
+        <deployedseed>2137251412</deployedseed>
+        <deployedseed>840792350</deployedseed>
+        <deployedseed>1338370660</deployedseed>
+        <deployedseed>1800316761</deployedseed>
+        <deployedseed>1509530448</deployedseed>
+        <deployedseed>1895991643</deployedseed>
+        <deployedseed>1564636420</deployedseed>
+        <deployedseed>1169742506</deployedseed>
+        <deployedseed>1354145323</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <description/>
+            <testinput>
+                <name>jsxvar</name>
+                <value>empVert</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>jsxgraph-2-T</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

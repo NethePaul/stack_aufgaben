@@ -6,264 +6,263 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Untersuchen Sie, welche der folgenden Abbildungen Gruppenhomomorphismen sind.
-        <br/>
-        (Hinweis: \( + \) und \( * \) meint die komponentenweise Addition und Multiplikation.)
-    </p>
-    <table>
-        <tbody>
-            <tr>
-                <td>
-                    a)
-                </td>
-                <td>
-                    \(\varphi_1: (\mathbb{R}^2,+)\to(\mathbb{R}^2,+) \)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    \(\varphi_1(x,y)=({@p11@},{@p12@}) \)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td style="text-align: right;">
-                    \( \varphi_1 \) ist Gruppenhomomorphismus:
-                </td>
-                <td>
-                    [[input:ans1]]
-                </td>
-                <td>
-                    [[validation:ans1]]
-                </td>
-            </tr>
-            <tr>
-            </tr>
-            <tr>
-                <td>
-                    b)
-                </td>
-                <td>
-                    \(\varphi_2: (\mathbb{Q}^2,+)\to(\mathbb{Q}^2,+) \)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    \(\varphi_2(x,y)=({@p21@},{@p22@}) \)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td style="text-align: right;">
-                    \( \varphi_2 \) ist Gruppenhomomorphismus:
-                </td>
-                <td>
-                    [[input:ans2]]
-                </td>
-                <td>
-                    [[validation:ans2]]
-                </td>
-            </tr>
-            <tr>
-            </tr>
-            <tr>
-                <td>
-                    c)
-                </td>
-                <td>
-                    \(\varphi_3: (\mathbb{Z}^2,+)\to(\mathbb{Z}^2,+) \)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    \(\varphi_3(x,y)=({@p31@},{@p32@}) \)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td style="text-align: right;">
-                    \( \varphi_3 \) ist Gruppenhomomorphismus:
-                </td>
-                <td>
-                    [[input:ans3]]
-                </td>
-                <td>
-                    [[validation:ans3]]
-                </td>
-            </tr>
-            <tr>
-            </tr>
-            <tr>
-                <td>
-                    d)
-                </td>
-                <td>
-                    \(\varphi_4: ((\mathbb{Q}\setminus\{0\})^2,*)\to((\mathbb{R}\setminus\{0\})^2,*) \)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    \(\varphi_4(x,y)=({@p41@},{@p42@}) \)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td style="text-align: right;">
-                    \( \varphi_4 \) ist Gruppenhomomorphismus:
-                </td>
-                <td>
-                    [[input:ans4]]
-                </td>
-                <td>
-                    [[validation:ans4]]
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Check which of the following images are group homomorphisms.
-        <br/>
-        (Note: \( + \) and \( * \) means the component-wise addition and multiplication.)
-    </p>
-    <table>
-        <tbody>
-            <tr>
-                <td>
-                    (a)
-                </td>
-                <td>
-                    \(\varphi_1: (\mathbb{R}^2,+)\to(\mathbb{R}^2,+) \)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    \(\varphi_1(x,y)=({@p11@},{@p12@}) \)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td style="text-align: right;">
-                    \( \varphi_1 \) is group homomorphism:
-                </td>
-                <td>
-                    [[input:ans1]]
-                </td>
-                <td>
-                    [[validation:ans1]]
-                </td>
-            </tr>
-            <tr>
-            </tr>
-            <tr>
-                <td>
-                    (b)
-                </td>
-                <td>
-                    \(\varphi_2: (\mathbb{Q}^2,+)\to(\mathbb{Q}^2,+) \)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    \(\varphi_2(x,y)=({@p21@},{@p22@}) \)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td style="text-align: right;">
-                    \( \varphi_2 \) is group homomorphism:
-                </td>
-                <td>
-                    [[input:ans2]]
-                </td>
-                <td>
-                    [[validation:ans2]]
-                </td>
-            </tr>
-            <tr>
-            </tr>
-            <tr>
-                <td>
-                    (c)
-                </td>
-                <td>
-                    \(\varphi_3: (\mathbb{Z}^2,+)\to(\mathbb{Z}^2,+) \)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    \(\varphi_3(x,y)=({@p31@},{@p32@}) \)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td style="text-align: right;">
-                    \( \varphi_3 \) is group homomorphism:
-                </td>
-                <td>
-                    [[input:ans3]]
-                </td>
-                <td>
-                    [[validation:ans3]]
-                </td>
-            </tr>
-            <tr>
-            </tr>
-            <tr>
-                <td>
-                    (d)
-                </td>
-                <td>
-                    \(\varphi_4: ((\mathbb{Q}\setminus\{0\})^2,*)\to((\mathbb{R}\setminus\{0\})^2,*) \)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    \(\varphi_4(x,y)=({@p41@},{@p42@}) \)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td style="text-align: right;">
-                    \( \varphi_4 \) is group homomorphism:
-                </td>
-                <td>
-                    [[input:ans4]]
-                </td>
-                <td>
-                    [[validation:ans4]]
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</span>
+[[lang code="de"]]
+<p>
+    Untersuchen Sie, welche der folgenden Abbildungen Gruppenhomomorphismen sind.
+    <br/>
+    (Hinweis: \( + \) und \( * \) meint die komponentenweise Addition und Multiplikation.)
+</p>
+<table>
+    <tbody>
+        <tr>
+            <td>
+                a)
+            </td>
+            <td>
+                \(\varphi_1: (\mathbb{R}^2,+)\to(\mathbb{R}^2,+) \)
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                \(\varphi_1(x,y)=({@p11@},{@p12@}) \)
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td style="text-align: right;">
+                \( \varphi_1 \) ist Gruppenhomomorphismus:
+            </td>
+            <td>
+                [[/lang]][[lang code="en"]]
+                <p>
+                    Check which of the following images are group homomorphisms.
+                    <br/>
+                    (Note: \( + \) and \( * \) means the component-wise addition and multiplication.)
+                </p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                (a)
+                            </td>
+                            <td>
+                                \(\varphi_1: (\mathbb{R}^2,+)\to(\mathbb{R}^2,+) \)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                \(\varphi_1(x,y)=({@p11@},{@p12@}) \)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td style="text-align: right;">
+                                \( \varphi_1 \) is group homomorphism:
+                            </td>
+                            <td>
+                                [[/lang]][[input:ans1]][[lang code="de"]]
+                            </td>
+                            <td>
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                            <td>
+                                [[/lang]][[validation:ans1]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                        </tr>
+                        <tr>
+                            <td>
+                                b)
+                            </td>
+                            <td>
+                                \(\varphi_2: (\mathbb{Q}^2,+)\to(\mathbb{Q}^2,+) \)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                \(\varphi_2(x,y)=({@p21@},{@p22@}) \)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td style="text-align: right;">
+                                \( \varphi_2 \) ist Gruppenhomomorphismus:
+                            </td>
+                            <td>
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                        </tr>
+                        <tr>
+                            <td>
+                                (b)
+                            </td>
+                            <td>
+                                \(\varphi_2: (\mathbb{Q}^2,+)\to(\mathbb{Q}^2,+) \)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                \(\varphi_2(x,y)=({@p21@},{@p22@}) \)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td style="text-align: right;">
+                                \( \varphi_2 \) is group homomorphism:
+                            </td>
+                            <td>
+                                [[/lang]][[input:ans2]][[lang code="de"]]
+                            </td>
+                            <td>
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                            <td>
+                                [[/lang]][[validation:ans2]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                        </tr>
+                        <tr>
+                            <td>
+                                c)
+                            </td>
+                            <td>
+                                \(\varphi_3: (\mathbb{Z}^2,+)\to(\mathbb{Z}^2,+) \)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                \(\varphi_3(x,y)=({@p31@},{@p32@}) \)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td style="text-align: right;">
+                                \( \varphi_3 \) ist Gruppenhomomorphismus:
+                            </td>
+                            <td>
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                        </tr>
+                        <tr>
+                            <td>
+                                (c)
+                            </td>
+                            <td>
+                                \(\varphi_3: (\mathbb{Z}^2,+)\to(\mathbb{Z}^2,+) \)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                \(\varphi_3(x,y)=({@p31@},{@p32@}) \)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td style="text-align: right;">
+                                \( \varphi_3 \) is group homomorphism:
+                            </td>
+                            <td>
+                                [[/lang]][[input:ans3]][[lang code="de"]]
+                            </td>
+                            <td>
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                            <td>
+                                [[/lang]][[validation:ans3]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                        </tr>
+                        <tr>
+                            <td>
+                                d)
+                            </td>
+                            <td>
+                                \(\varphi_4: ((\mathbb{Q}\setminus\{0\})^2,*)\to((\mathbb{R}\setminus\{0\})^2,*) \)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                \(\varphi_4(x,y)=({@p41@},{@p42@}) \)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td style="text-align: right;">
+                                \( \varphi_4 \) ist Gruppenhomomorphismus:
+                            </td>
+                            <td>
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                        </tr>
+                        <tr>
+                            <td>
+                                (d)
+                            </td>
+                            <td>
+                                \(\varphi_4: ((\mathbb{Q}\setminus\{0\})^2,*)\to((\mathbb{R}\setminus\{0\})^2,*) \)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                \(\varphi_4(x,y)=({@p41@},{@p42@}) \)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td style="text-align: right;">
+                                \( \varphi_4 \) is group homomorphism:
+                            </td>
+                            <td>
+                                [[/lang]][[input:ans4]][[lang code="de"]]
+                            </td>
+                            <td>
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                            <td>
+                                [[/lang]][[validation:ans4]][[lang code="de"]]
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                [[/lang]][[lang code="en"]]
+            </td>
+        </tr>
+    </tbody>
+</table>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -305,12 +304,7 @@ psol4:is(s=0);]]></text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    [[feedback:prt1]]
-</span>
-<span class="multilang" lang="en">
-    [[feedback:prt1]]
-</span>
+[[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -327,32 +321,17 @@ psol4:is(s=0);]]></text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -467,32 +446,31 @@ psol4:is(s=0);]]></text>
                 <falseanswernote>prt1-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-        \( \varphi_1\) ist kein Gruppenhomomorphismus, denn es existieren \( v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in \mathbb{R}^2\) mit
-    </p>
-    <p>
-        \(\begin{align}\varphi_1(v+w) &amp;= ({@subst((v1+w1),x,subst((v2+w2),y,p11))@},\;\ {@subst((v1+w1),x,subst((v2+w2),y,p12))@}) \\ &amp;\neq({@subst(v1,x,subst(v2,y,p11))@},\;\ {@subst(v1,x,subst(v2,y,p12))@})+({@subst(w1,x,subst(w2,y,p11))@},\;\ {@subst(w1,x,subst(w2,y,p12))@}) \\ &amp;= \varphi_1(v)+\varphi_1(w) \end{align} \)
-    </p>
-    <br/>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-        \( \varphi_1\) is not a group homomorphism, because there exist \( v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in \mathbb{R}^2\) with
-    </p>
-    <p>
-        \(\begin{align}\varphi_1(v+w) &amp;= ({@subst((v1+w1),x,subst((v2+w2),y,p11))@},\;\ {@subst((v1+w1),x,subst((v2+w2),y,p12))@}) \\ &amp;\neq({@subst(v1,x,subst(v2,y,p11))@},\;\ {@subst(v1,x,subst(v2,y,p12))@})+({@subst(w1,x,subst(w2,y,p11))@},\;\ {@subst(w1,x,subst(w2,y,p12))@}) \\ &amp;= \varphi_1(v)+\varphi_1(w) \end{align} \)
-    </p>
-    <br/>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    \( \varphi_1\) ist kein Gruppenhomomorphismus, denn es existieren \( v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in \mathbb{R}^2\) mit
+</p>
+<p>
+    \(\begin{align}\varphi_1(v+w) &amp;= ({@subst((v1+w1),x,subst((v2+w2),y,p11))@},\;\ {@subst((v1+w1),x,subst((v2+w2),y,p12))@}) \\ &amp;\neq({@subst(v1,x,subst(v2,y,p11))@},\;\ {@subst(v1,x,subst(v2,y,p12))@})+({@subst(w1,x,subst(w2,y,p11))@},\;\ {@subst(w1,x,subst(w2,y,p12))@}) \\ &amp;= \varphi_1(v)+\varphi_1(w) \end{align} \)
+</p>
+<br/>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<p>
+    \( \varphi_1\) is not a group homomorphism, because there exist \( v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in \mathbb{R}^2\) with
+</p>
+<p>
+    \(\begin{align}\varphi_1(v+w) &amp;= ({@subst((v1+w1),x,subst((v2+w2),y,p11))@},\;\ {@subst((v1+w1),x,subst((v2+w2),y,p12))@}) \\ &amp;\neq({@subst(v1,x,subst(v2,y,p11))@},\;\ {@subst(v1,x,subst(v2,y,p12))@})+({@subst(w1,x,subst(w2,y,p11))@},\;\ {@subst(w1,x,subst(w2,y,p12))@}) \\ &amp;= \varphi_1(v)+\varphi_1(w) \end{align} \)
+</p>
+<br/>
+<p>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -511,24 +489,23 @@ psol4:is(s=0);]]></text>
                 <trueanswernote>prt1-2-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>-</falsescoremode>
@@ -538,40 +515,39 @@ psol4:is(s=0);]]></text>
                 <falseanswernote>prt1-2-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-        \( \varphi_2\) ist ein Gruppenhomomorphismus, denn es gilt
-    </p>
-    <p>
-        \(\begin{align}\varphi_2(v+w) &amp;= ({@subst((v1+w1),x,subst((v2+w2),y,p21))@},\;\ {@subst((v1+w1),x,subst((v2+w2),y,p22))@}) \\ &amp;=({@subst(v1,x,subst(v2,y,p21))@},\;\ {@subst(v1,x,subst(v2,y,p22))@})+({@subst(w1,x,subst(w2,y,p21))@},\;\ {@subst(w1,x,subst(w2,y,p22))@}) \\ &amp;= \varphi_2(v)+\varphi_2(w) \end{align}&#160;\\ \forall\ v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in \mathbb{Q}^2&#160; \)
-    </p>
-    <br/>
-    <p>
-    </p>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-        \( \varphi_2\) is a group homomorphism, because it applies
-    </p>
-    <p>
-        \(\begin{align}\varphi_2(v+w) &amp;= ({@subst((v1+w1),x,subst((v2+w2),y,p21))@},\;\ {@subst((v1+w1),x,subst((v2+w2),y,p22))@}) \\ &amp;=({@subst(v1,x,subst(v2,y,p21))@},\;\ {@subst(v1,x,subst(v2,y,p22))@})+({@subst(w1,x,subst(w2,y,p21))@},\;\ {@subst(w1,x,subst(w2,y,p22))@}) \\ &amp;= \varphi_2(v)+\varphi_2(w) \end{align}&#160;\\ \forall\ v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in \mathbb{Q}^2&#160; \)
-    </p>
-    <br/>
-    <p>
-    </p>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+</p>
+<p>
+</p>
+<p>
+    \( \varphi_2\) ist ein Gruppenhomomorphismus, denn es gilt
+</p>
+<p>
+    \(\begin{align}\varphi_2(v+w) &amp;= ({@subst((v1+w1),x,subst((v2+w2),y,p21))@},\;\ {@subst((v1+w1),x,subst((v2+w2),y,p22))@}) \\ &amp;=({@subst(v1,x,subst(v2,y,p21))@},\;\ {@subst(v1,x,subst(v2,y,p22))@})+({@subst(w1,x,subst(w2,y,p21))@},\;\ {@subst(w1,x,subst(w2,y,p22))@}) \\ &amp;= \varphi_2(v)+\varphi_2(w) \end{align}&#160;\\ \forall\ v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in \mathbb{Q}^2&#160; \)
+</p>
+<br/>
+<p>
+</p>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<p>
+</p>
+<p>
+    \( \varphi_2\) is a group homomorphism, because it applies
+</p>
+<p>
+    \(\begin{align}\varphi_2(v+w) &amp;= ({@subst((v1+w1),x,subst((v2+w2),y,p21))@},\;\ {@subst((v1+w1),x,subst((v2+w2),y,p22))@}) \\ &amp;=({@subst(v1,x,subst(v2,y,p21))@},\;\ {@subst(v1,x,subst(v2,y,p22))@})+({@subst(w1,x,subst(w2,y,p21))@},\;\ {@subst(w1,x,subst(w2,y,p22))@}) \\ &amp;= \varphi_2(v)+\varphi_2(w) \end{align}&#160;\\ \forall\ v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in \mathbb{Q}^2&#160; \)
+</p>
+<br/>
+<p>
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -598,32 +574,31 @@ psol4:is(s=0);]]></text>
                 <falseanswernote>prt1-3-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-        \( \varphi_3\) ist kein Gruppenhomomorphismus, denn es existieren \( v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in \mathbb{Z}^2\) mit
-    </p>
-    <p>
-        \(\begin{align}\varphi_3(v+w) &amp;= ({@subst((v1+w1),x,subst((v2+w2),y,p31))@},\;\ {@subst((v1+w1),x,subst((v2+w2),y,p32))@}) \\ &amp;\neq({@subst(v1,x,subst(v2,y,p31))@},\;\ {@subst(v1,x,subst(v2,y,p32))@})+({@subst(w1,x,subst(w2,y,p31))@},\;\ {@subst(w1,x,subst(w2,y,p32))@}) \\ &amp;= \varphi_3(v)+\varphi_3(w) \end{align} \)
-    </p>
-    <br/>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-        \( \varphi_3\) is not a group homomorphism, because there exist \( v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in \mathbb{Z}^2\) with
-    </p>
-    <p>
-        \(\begin{align}\varphi_3(v+w) &amp;= ({@subst((v1+w1),x,subst((v2+w2),y,p31))@},\;\ {@subst((v1+w1),x,subst((v2+w2),y,p32))@}) \\ &amp;\neq({@subst(v1,x,subst(v2,y,p31))@},\;\ {@subst(v1,x,subst(v2,y,p32))@})+({@subst(w1,x,subst(w2,y,p31))@},\;\ {@subst(w1,x,subst(w2,y,p32))@}) \\ &amp;= \varphi_3(v)+\varphi_3(w) \end{align} \)
-    </p>
-    <br/>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    \( \varphi_3\) ist kein Gruppenhomomorphismus, denn es existieren \( v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in \mathbb{Z}^2\) mit
+</p>
+<p>
+    \(\begin{align}\varphi_3(v+w) &amp;= ({@subst((v1+w1),x,subst((v2+w2),y,p31))@},\;\ {@subst((v1+w1),x,subst((v2+w2),y,p32))@}) \\ &amp;\neq({@subst(v1,x,subst(v2,y,p31))@},\;\ {@subst(v1,x,subst(v2,y,p32))@})+({@subst(w1,x,subst(w2,y,p31))@},\;\ {@subst(w1,x,subst(w2,y,p32))@}) \\ &amp;= \varphi_3(v)+\varphi_3(w) \end{align} \)
+</p>
+<br/>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<p>
+    \( \varphi_3\) is not a group homomorphism, because there exist \( v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in \mathbb{Z}^2\) with
+</p>
+<p>
+    \(\begin{align}\varphi_3(v+w) &amp;= ({@subst((v1+w1),x,subst((v2+w2),y,p31))@},\;\ {@subst((v1+w1),x,subst((v2+w2),y,p32))@}) \\ &amp;\neq({@subst(v1,x,subst(v2,y,p31))@},\;\ {@subst(v1,x,subst(v2,y,p32))@})+({@subst(w1,x,subst(w2,y,p31))@},\;\ {@subst(w1,x,subst(w2,y,p32))@}) \\ &amp;= \varphi_3(v)+\varphi_3(w) \end{align} \)
+</p>
+<br/>
+<p>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -667,34 +642,33 @@ psol4:is(s=0);]]></text>
                 <trueanswernote>prt1-5-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-        \( \varphi_4\) ist ein Gruppenhomomorphismus, denn es gilt
-    </p>
-    <p>
-        \(\begin{align}\varphi_4(v*w) &amp;= ({@subst((v1*w1),x,subst((v2*w2),y,p41))@},\;\ {@subst((v1*w1),x,subst((v2*w2),y,p42))@}) \\ &amp;=({@subst(v1,x,subst(v2,y,p41))@},\;\ {@subst(v1,x,subst(v2,y,p42))@})*({@subst(w1,x,subst(w2,y,p41))@},\;\ {@subst(w1,x,subst(w2,y,p42))@}) \\ &amp;= \varphi_4(v)*\varphi_4(w) \end{align}&#160;\\ \forall\ v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in (\mathbb{Q}\setminus\{0\})^2&#160; \)
-    </p>
-    <br/>
-    <br/>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-        \( \varphi_4\) is a group homomorphism, because it applies
-    </p>
-    <p>
-        \(\begin{align}\varphi_4(v*w) &amp;= ({@subst((v1*w1),x,subst((v2*w2),y,p41))@},\;\ {@subst((v1*w1),x,subst((v2*w2),y,p42))@}) \\ &amp;=({@subst(v1,x,subst(v2,y,p41))@},\;\ {@subst(v1,x,subst(v2,y,p42))@})*({@subst(w1,x,subst(w2,y,p41))@},\;\ {@subst(w1,x,subst(w2,y,p42))@}) \\ &amp;= \varphi_4(v)*\varphi_4(w) \end{align}&#160;\\ \forall\ v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in (\mathbb{Q}\setminus\{0\})^2&#160; \)
-    </p>
-    <br/>
-    <br/>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    \( \varphi_4\) ist ein Gruppenhomomorphismus, denn es gilt
+</p>
+<p>
+    \(\begin{align}\varphi_4(v*w) &amp;= ({@subst((v1*w1),x,subst((v2*w2),y,p41))@},\;\ {@subst((v1*w1),x,subst((v2*w2),y,p42))@}) \\ &amp;=({@subst(v1,x,subst(v2,y,p41))@},\;\ {@subst(v1,x,subst(v2,y,p42))@})*({@subst(w1,x,subst(w2,y,p41))@},\;\ {@subst(w1,x,subst(w2,y,p42))@}) \\ &amp;= \varphi_4(v)*\varphi_4(w) \end{align}&#160;\\ \forall\ v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in (\mathbb{Q}\setminus\{0\})^2&#160; \)
+</p>
+<br/>
+<br/>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<p>
+    \( \varphi_4\) is a group homomorphism, because it applies
+</p>
+<p>
+    \(\begin{align}\varphi_4(v*w) &amp;= ({@subst((v1*w1),x,subst((v2*w2),y,p41))@},\;\ {@subst((v1*w1),x,subst((v2*w2),y,p42))@}) \\ &amp;=({@subst(v1,x,subst(v2,y,p41))@},\;\ {@subst(v1,x,subst(v2,y,p42))@})*({@subst(w1,x,subst(w2,y,p41))@},\;\ {@subst(w1,x,subst(w2,y,p42))@}) \\ &amp;= \varphi_4(v)*\varphi_4(w) \end{align}&#160;\\ \forall\ v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in (\mathbb{Q}\setminus\{0\})^2&#160; \)
+</p>
+<br/>
+<br/>
+<p>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>-</falsescoremode>
@@ -704,34 +678,33 @@ psol4:is(s=0);]]></text>
                 <falseanswernote>prt1-5-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-        \( \varphi_4\) ist kein Gruppenhomomorphismus, denn es existieren \( v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in (\mathbb{Q}\setminus\{0\})^2\) mit
-    </p>
-    <p>
-        \(\begin{align}\varphi_4(v*w) &amp;= ({@subst((v1*w1),x,subst((v2*w2),y,p41))@},\;\ {@subst((v1*w1),x,subst((v2*w2),y,p42))@}) \\ &amp;\neq({@subst(v1,x,subst(v2,y,p41))@},\;\ {@subst(v1,x,subst(v2,y,p42))@})*({@subst(w1,x,subst(w2,y,p41))@},\;\ {@subst(w1,x,subst(w2,y,p42))@}) \\ &amp;= \varphi_4(v)*\varphi_4(w) \end{align} \)
-    </p>
-    <br/>
-    <br/>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-        \( \varphi_4\) is not a group homomorphism, because there exist \( v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in (\mathbb{Q}\setminus\{0\})^2\) with
-    </p>
-    <p>
-        \(\begin{align}\varphi_4(v*w) &amp;= ({@subst((v1*w1),x,subst((v2*w2),y,p41))@},\;\ {@subst((v1*w1),x,subst((v2*w2),y,p42))@}) \\ &amp;\neq({@subst(v1,x,subst(v2,y,p41))@},\;\ {@subst(v1,x,subst(v2,y,p42))@})*({@subst(w1,x,subst(w2,y,p41))@},\;\ {@subst(w1,x,subst(w2,y,p42))@}) \\ &amp;= \varphi_4(v)*\varphi_4(w) \end{align} \)
-    </p>
-    <br/>
-    <br/>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    \( \varphi_4\) ist kein Gruppenhomomorphismus, denn es existieren \( v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in (\mathbb{Q}\setminus\{0\})^2\) mit
+</p>
+<p>
+    \(\begin{align}\varphi_4(v*w) &amp;= ({@subst((v1*w1),x,subst((v2*w2),y,p41))@},\;\ {@subst((v1*w1),x,subst((v2*w2),y,p42))@}) \\ &amp;\neq({@subst(v1,x,subst(v2,y,p41))@},\;\ {@subst(v1,x,subst(v2,y,p42))@})*({@subst(w1,x,subst(w2,y,p41))@},\;\ {@subst(w1,x,subst(w2,y,p42))@}) \\ &amp;= \varphi_4(v)*\varphi_4(w) \end{align} \)
+</p>
+<br/>
+<br/>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<p>
+    \( \varphi_4\) is not a group homomorphism, because there exist \( v=(v_1,v_2)^T,\ w=(w_1,\ w_2)^T&#160; \in (\mathbb{Q}\setminus\{0\})^2\) with
+</p>
+<p>
+    \(\begin{align}\varphi_4(v*w) &amp;= ({@subst((v1*w1),x,subst((v2*w2),y,p41))@},\;\ {@subst((v1*w1),x,subst((v2*w2),y,p42))@}) \\ &amp;\neq({@subst(v1,x,subst(v2,y,p41))@},\;\ {@subst(v1,x,subst(v2,y,p42))@})*({@subst(w1,x,subst(w2,y,p41))@},\;\ {@subst(w1,x,subst(w2,y,p42))@}) \\ &amp;= \varphi_4(v)*\varphi_4(w) \end{align} \)
+</p>
+<br/>
+<br/>
+<p>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>

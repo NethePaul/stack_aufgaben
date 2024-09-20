@@ -6,51 +6,21 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    Geben Sie zu dem folgenden Paar von Mengen an, welche der vier Relationen gelten
+</p>
+<p>
+    <span style="font-size: 0.9375rem;">
+        \(\emptyset\) und \(\left\{\emptyset\right\}\)
+    </span>
+</p>
+<p>
+</p>
+<span style="font-size: 0.9375rem;">
+    \(\subset\) [[/lang]][[lang code="en"]]
     <p>
-        Geben Sie zu dem folgenden Paar von Mengen an, welche der vier Relationen gelten
-    </p>
-    <p>
-        <span style="font-size: 0.9375rem;">
-            \(\emptyset\) und \(\left\{\emptyset\right\}\)
-        </span>
-    </p>
-    <p>
-    </p>
-    <span style="font-size: 0.9375rem;">
-        \(\subset\) [[input:ans1]]
-    </span>
-    <span style="font-size: 0.9375rem;">
-        [[validation:ans1]]
-    </span>
-    <br/>
-    <span style="font-size: 0.9375rem;">
-        \(\supset\) [[input:ans2]]
-    </span>
-    <span style="font-size: 0.9375rem;">
-        [[validation:ans2]]
-    </span>
-    <br/>
-    <span style="font-size: 0.9375rem;">
-        \(\in\) [[input:ans3]]
-    </span>
-    <span style="font-size: 0.9375rem;">
-        [[validation:ans3]]
-    </span>
-    <br/>
-    <span style="font-size: 0.9375rem;">
-        \(=\) [[input:ans4]]
-    </span>
-    <span style="font-size: 0.9375rem;">
-        [[validation:ans4]]
-    </span>
-    <br/>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Specify to the following pair of quantities that apply to the four relations
+        Specify to the following pair of sets that apply to the four relations
     </p>
     <p>
         <span style="font-size: 0.9375rem;">
@@ -60,80 +30,108 @@
     <p>
     </p>
     <span style="font-size: 0.9375rem;">
-        \(\subset\) [[input:ans1]]
+        \(\subset\) [[/lang]][[input:ans1]][[lang code="de"]]
     </span>
     <span style="font-size: 0.9375rem;">
-        [[validation:ans1]]
-    </span>
-    <br/>
-    <span style="font-size: 0.9375rem;">
-        \(\supset\) [[input:ans2]]
+        [[/lang]][[lang code="en"]]
     </span>
     <span style="font-size: 0.9375rem;">
-        [[validation:ans2]]
+        [[/lang]][[validation:ans1]][[lang code="de"]]
     </span>
     <br/>
     <span style="font-size: 0.9375rem;">
-        \(\in\) [[input:ans3]]
-    </span>
-    <span style="font-size: 0.9375rem;">
-        [[validation:ans3]]
+        \(\supset\) [[/lang]][[lang code="en"]]
     </span>
     <br/>
     <span style="font-size: 0.9375rem;">
-        \(=\) [[input:ans4]]
+        \(\supset\) [[/lang]][[input:ans2]][[lang code="de"]]
     </span>
     <span style="font-size: 0.9375rem;">
-        [[validation:ans4]]
+        [[/lang]][[lang code="en"]]
+    </span>
+    <span style="font-size: 0.9375rem;">
+        [[/lang]][[validation:ans2]][[lang code="de"]]
+    </span>
+    <br/>
+    <span style="font-size: 0.9375rem;">
+        \(\in\) [[/lang]][[lang code="en"]]
+    </span>
+    <br/>
+    <span style="font-size: 0.9375rem;">
+        \(\in\) [[/lang]][[input:ans3]][[lang code="de"]]
+    </span>
+    <span style="font-size: 0.9375rem;">
+        [[/lang]][[lang code="en"]]
+    </span>
+    <span style="font-size: 0.9375rem;">
+        [[/lang]][[validation:ans3]][[lang code="de"]]
+    </span>
+    <br/>
+    <span style="font-size: 0.9375rem;">
+        \(=\) [[/lang]][[lang code="en"]]
+    </span>
+    <br/>
+    <span style="font-size: 0.9375rem;">
+        \(=\) [[/lang]][[input:ans4]][[lang code="de"]]
+    </span>
+    <span style="font-size: 0.9375rem;">
+        [[/lang]][[lang code="en"]]
+    </span>
+    <span style="font-size: 0.9375rem;">
+        [[/lang]][[validation:ans4]][[lang code="de"]]
     </span>
     <br/>
     <p>
     </p>
+    [[/lang]][[lang code="en"]]
 </span>
+<br/>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <pr>
-        <strong>
-            L&#246;sungsweg:
-            <br/>
-        </strong>
+[[lang code="de"]]
+<pr>
+    <strong>
+        L&#246;sungsweg:
         <br/>
-        \(\emptyset = \{\} \subset \left\{\emptyset\right\}\), weil leere Menge immer eine Teilmenge jeder Menge ist.
+    </strong>
+    <br/>
+    \(\emptyset = \{\} \subset \left\{\emptyset\right\}\), weil leere Menge immer eine Teilmenge jeder Menge ist.
+    <br/>
+    <br/>
+    \(\emptyset = \{\} \not\supset \left\{\emptyset\right\}\), weil \(\emptyset \in \left\{\emptyset\right\}\).
+    <br/>
+    <br/>
+    \(\emptyset \in \left\{\emptyset\right\}\).
+    <br/>
+    <br/>
+    \(\emptyset&#160;= \{\} \not= \left\{\emptyset\right\}\), weil \(\emptyset \in \left\{\emptyset\right\}\).
+    <br/>
+</pr>
+[[/lang]][[lang code="en"]]
+<pr>
+    <strong>
+        Solution:
         <br/>
-        <br/>
-        \(\emptyset = \{\} \not\supset \left\{\emptyset\right\}\), weil \(\emptyset \in \left\{\emptyset\right\}\).
-        <br/>
-        <br/>
-        \(\emptyset \in \left\{\emptyset\right\}\).
-        <br/>
-        <br/>
-        \(\emptyset&#160;= \{\} \not= \left\{\emptyset\right\}\), weil \(\emptyset \in \left\{\emptyset\right\}\).
-        <br/>
-    </pr>
-</span>
-<span class="multilang" lang="en">
-    <pr>
-        <strong>
-            Solution:
-            <br/>
-        </strong>
-        <br/>
-        \(\emptyset = \{\} \subset \left\{\emptyset\right\}\)because empty quantity is always a subset of a lot.
-        <br/>
-        <br/>
-        \(\emptyset = \{\} \not\supset \left\{\emptyset\right\}\)because \(\emptyset \in \left\{\emptyset\right\}\).
-        <br/>
-        <br/>
-        \(\emptyset \in \left\{\emptyset\right\}\).
-        <br/>
-        <br/>
-        \(\emptyset&#160;= \{\} \not= \left\{\emptyset\right\}\)because \(\emptyset \in \left\{\emptyset\right\}\).
-        <br/>
-    </pr>
-</span>
+    </strong>
+    <br/>
+    \(\emptyset = \{\} \subset \left\{\emptyset\right\}\)because empty set is always a subset of any set.
+    <br/>
+    <br/>
+    \(\emptyset = \{\} \not\supset \left\{\emptyset\right\}\)because \(\emptyset \in \left\{\emptyset\right\}\).
+    <br/>
+    <br/>
+    \(\emptyset \in \left\{\emptyset\right\}\).
+    <br/>
+    <br/>
+    \(\emptyset&#160;= \{\} \not= \left\{\emptyset\right\}\)because \(\emptyset \in \left\{\emptyset\right\}\).
+    <br/>
+</pr>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -148,12 +146,7 @@
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    [[feedback:prt1]]
-</span>
-<span class="multilang" lang="en">
-    [[feedback:prt1]]
-</span>
+[[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -167,32 +160,17 @@
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

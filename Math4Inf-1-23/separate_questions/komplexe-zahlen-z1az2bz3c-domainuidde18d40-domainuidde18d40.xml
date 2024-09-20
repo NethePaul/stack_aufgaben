@@ -6,140 +6,136 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Gegeben sind die drei komplexen Zahlen \(\,z_1= {@z1@}\), \(\,z_2&#160;= {@z2@}\,\)&#160;und \(\,z_3&#160;= {@z3@}\,\).
-    </p>
-    <p>
-        Berechnen Sie&#160;den folgenden Ausdruck und schreiben Sie die resultierende komplexe Zahl als arithmetische Darstellung (z.B. \(a+b\cdot\mathrm{i}\) mit \(a,b \in \mathbb{R}\)).
-    </p>
-    <p>
-    </p>
-    <p>
-        <span style="font-size: 0.9375rem;">
-            \(\dfrac{z_1^{@c1@}\cdot z_2^{@c2@}}{z_3^{@c3_abs@}}=\,\) [[input:ans1]]&#160;[[validation:ans1]] [[feedback:prt1]]
-        </span>
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The three complex numbers are given \(\,z_1= {@z1@}\), \(\,z_2&#160;= {@z2@}\,\)and \(\,z_3&#160;= {@z3@}\,\).
-    </p>
-    <p>
-        Calculate the following expression and write the resulting complex number as an arithmetic representation (e.g. \(a+b\cdot\mathrm{i}\) with \(a,b \in \mathbb{R}\)).
-    </p>
-    <p>
-    </p>
-    <p>
-        <span style="font-size: 0.9375rem;">
-            \(\dfrac{z_1^{@c1@}\cdot z_2^{@c2@}}{z_3^{@c3_abs@}}=\,\) [[input:ans1]][[validation:ans1]] [[feedback:prt1]]
-        </span>
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Gegeben sind die drei komplexen Zahlen \(\,z_1= {@z1@}\), \(\,z_2&#160;= {@z2@}\,\)&#160;und \(\,z_3&#160;= {@z3@}\,\).
+</p>
+<p>
+    Berechnen Sie&#160;den folgenden Ausdruck und schreiben Sie die resultierende komplexe Zahl als arithmetische Darstellung (z.B. \(a+b\cdot\mathrm{i}\) mit \(a,b \in \mathbb{R}\)).
+</p>
+<p>
+</p>
+<p>
+    <span style="font-size: 0.9375rem;">
+        \(\dfrac{z_1^{@c1@}\cdot z_2^{@c2@}}{z_3^{@c3_abs@}}=\,\) [[/lang]][[lang code="en"]]
+        <p>
+            The three complex numbers are given \(\,z_1= {@z1@}\), \(\,z_2&#160;= {@z2@}\,\)and \(\,z_3&#160;= {@z3@}\,\).
+        </p>
+        <p>
+            Calculate the following expression and write the resulting complex number as an arithmetic representation (e.g. \(a+b\cdot\mathrm{i}\) with \(a,b \in \mathbb{R}\)).
+        </p>
+        <p>
+        </p>
+        <p>
+            <span style="font-size: 0.9375rem;">
+                \(\dfrac{z_1^{@c1@}\cdot z_2^{@c2@}}{z_3^{@c3_abs@}}=\,\) [[/lang]][[input:ans1]][[lang code="de"]]&#160;[[/lang]][[lang code="en"]][[/lang]][[validation:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt1]][[lang code="de"]]
+            </span>
+            <br/>
+        </p>
+        [[/lang]][[lang code="en"]]
+    </span>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <strong>
-        L&#246;sungsweg:
-        <br/>
-    </strong>
+[[lang code="de"]]
+<strong>
+    L&#246;sungsweg:
     <br/>
-    Um den Ausdruck \(\dfrac{z_1^{@c1@}\cdot z_2^{@c2@}}{z_3^{@c3_abs@}}\) zu berechnen, werden die einzelnen Potenzen der drei komplexen Zahlen ermittelt.
+</strong>
+<br/>
+Um den Ausdruck \(\dfrac{z_1^{@c1@}\cdot z_2^{@c2@}}{z_3^{@c3_abs@}}\) zu berechnen, werden die einzelnen Potenzen der drei komplexen Zahlen ermittelt.
+<br/>
+<br/>
+(1) Die komplexe Zahl \(z_1= {@z1@}\), die im \(1\).Quadranten liegt, wird in die trigonometrische Form &#252;berf&#252;hrt.
+<br/>
+Es ist \(|z_1| = \sqrt{(\mathrm{Re}(z_1))^2+(\mathrm{Im}(z_1))^2}\) \(= \displaystyle \sqrt{\left({@z1_re@}\right)^{\!2} + \left({@z1_im@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@z1_re^2@}+{@z1_im^2@}}\) \(= \displaystyle \sqrt{{@z1_re^2+z1_im^2@}} = {@abs(z1)@}\).
+<br/>
+Ferner ist \(\varphi_1 =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z_1)}{\mathrm{Re}(z_1)}\right)\) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@z1_im@}}{{@z1_re@}}\right)\)&#160;\(=&#160;\displaystyle&#160; \arctan\!\left({@z1_im/z1_re@}\right)= {@phi1@}\).
+<br/>
+Nach der Formel von Moivre gilt:
+<br/>
+\(z_1^{@c1@} = |z_1|^{@c1@} \cdot \left(\cos\left({@c1@} \cdot \varphi_1\right) + \mathrm{i} \cdot \sin\left({@c1@} \cdot \varphi_1\right)\right)\) \(= \displaystyle \left({@abs(z1)@}\right)^{\!{@c1@}} \cdot \left(\cos\left({@c1@} \cdot {@phi1@}\right) + \mathrm{i} \cdot \sin\left({@c1@} \cdot {@phi1@}\right)\right)\)&#160;\(= \displaystyle {@abs(z1)^c1@} \cdot \left(\cos\left({@c1*phi1@}\right) + \mathrm{i} \cdot \sin\left({@c1*phi1@}\right)\right)\)&#160;\(= \displaystyle {@abs(z1)^c1@} \cdot \left({@cos(c1*phi1)+ %i*sin(c1*phi1)@}\right)\)
+<br/>
+<p>
+</p>
+(2) Die komplexe Zahl \(z_2= {@z2@}\), die im \(1\).Quadranten liegt, wird in die trigonometrische Form &#252;berf&#252;hrt.
+<br/>
+<span>
+    Es ist \(|z_2| = \sqrt{(\mathrm{Re}(z_2))^2+(\mathrm{Im}(z_2))^2}\) \(= \displaystyle \sqrt{\left({@z2_re@}\right)^{\!2} + \left({@z2_im@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@z2_re^2@}+{@z2_im^2@}}\) \(= \displaystyle \sqrt{{@z2_re^2+z2_im^2@}} = {@abs(z2)@}\).
     <br/>
+    Ferner ist \(\varphi_2 =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z_2)}{\mathrm{Re}(z_2)}\right)\) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@z2_im@}}{{@z2_re@}}\right)\)&#160;\(=&#160;\displaystyle&#160; \arctan\!\left({@z2_im/z2_re@}\right)&#160;= {@phi2@}\).
     <br/>
-    (1) Die komplexe Zahl \(z_1= {@z1@}\), die im \(1\).Quadranten liegt, wird in die trigonometrische Form &#252;berf&#252;hrt.
-    <br/>
-    Es ist \(|z_1| = \sqrt{(\mathrm{Re}(z_1))^2+(\mathrm{Im}(z_1))^2}\) \(= \displaystyle \sqrt{\left({@z1_re@}\right)^{\!2} + \left({@z1_im@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@z1_re^2@}+{@z1_im^2@}}\) \(= \displaystyle \sqrt{{@z1_re^2+z1_im^2@}} = {@abs(z1)@}\).
-    <br/>
-    Ferner ist \(\varphi_1 =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z_1)}{\mathrm{Re}(z_1)}\right)\) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@z1_im@}}{{@z1_re@}}\right)\)&#160;\(=&#160;\displaystyle&#160; \arctan\!\left({@z1_im/z1_re@}\right)= {@phi1@}\).
-    <br/>
+</span>
+<p dir="ltr">
     Nach der Formel von Moivre gilt:
     <br/>
-    \(z_1^{@c1@} = |z_1|^{@c1@} \cdot \left(\cos\left({@c1@} \cdot \varphi_1\right) + \mathrm{i} \cdot \sin\left({@c1@} \cdot \varphi_1\right)\right)\) \(= \displaystyle \left({@abs(z1)@}\right)^{\!{@c1@}} \cdot \left(\cos\left({@c1@} \cdot {@phi1@}\right) + \mathrm{i} \cdot \sin\left({@c1@} \cdot {@phi1@}\right)\right)\)&#160;\(= \displaystyle {@abs(z1)^c1@} \cdot \left(\cos\left({@c1*phi1@}\right) + \mathrm{i} \cdot \sin\left({@c1*phi1@}\right)\right)\)&#160;\(= \displaystyle {@abs(z1)^c1@} \cdot \left({@cos(c1*phi1)+ %i*sin(c1*phi1)@}\right)\)
+    \(z_2^{@c2@} = |z_2|^{@c2@} \cdot \left(\cos\left({@c2@} \cdot \varphi_2\right) + \mathrm{i} \cdot \sin\left({@c2@} \cdot \varphi_2\right)\right)\) \(= \displaystyle \left({@abs(z2)@}\right)^{\!{@c2@}} \cdot \left(\cos\left({@c2@} \cdot {@phi2@}\right) + \mathrm{i} \cdot \sin\left({@c2@} \cdot {@phi2@}\right)\right)\)&#160;\(= \displaystyle {@abs(z2)^c2@} \cdot \left(\cos\left({@c2*phi2@}\right) + \mathrm{i} \cdot \sin\left({@c2*phi2@}\right)\right)\)&#160;\(= \displaystyle {@abs(z2)^c2@} \cdot \left({@cos(c2*phi2)+ %i*sin(c2*phi2)@}\right)\)
+</p>
+<p dir="ltr">
+</p>
+(3) Die komplexe Zahl \(z_3= {@z3@}\), die im \(1\).Quadranten liegt, wird in die trigonometrische Form &#252;berf&#252;hrt.
+<br/>
+Es ist \(|z_3| = \sqrt{(\mathrm{Re}(z_3))^2+(\mathrm{Im}(z_3))^2}\) \(= \displaystyle \sqrt{\left({@z3_re@}\right)^{\!2} + \left({@z3_im@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@z3_re^2@}+{@z3_im^2@}}\) \(= \displaystyle \sqrt{{@z3_re^2+z3_im^2@}} = {@abs(z3)@}\).
+<br/>
+Ferner ist \(\varphi_3 =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z_3)}{\mathrm{Re}(z_3)}\right)\) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@z3_im@}}{{@z3_re@}}\right)\)&#160;\(=&#160;\displaystyle&#160; \arctan\!\left({@z3_im/z3_re@}\right)&#160;= {@phi3@}\).
+<br/>
+<p dir="ltr">
+    Nach der Formel von Moivre gilt:
     <br/>
-    <p>
-    </p>
-    (2) Die komplexe Zahl \(z_2= {@z2@}\), die im \(1\).Quadranten liegt, wird in die trigonometrische Form &#252;berf&#252;hrt.
+    \(z_3^{@c3@} = |z_3|^{@c3@} \cdot \left(\cos\left({@c3@} \cdot \varphi_3\right) + \mathrm{i} \cdot \sin\left({@c3@} \cdot \varphi_3\right)\right)\) \(= \displaystyle \left({@abs(z3)@}\right)^{\!{@c3@}} \cdot \left(\cos\left({@c3@} \cdot {@phi3@}\right) + \mathrm{i} \cdot \sin\left({@c3@} \cdot {@phi3@}\right)\right)\)&#160;\(= \displaystyle {@abs(z3)^c3@} \cdot \left(\cos\left({@c3*phi3@}\right) + \mathrm{i} \cdot \sin\left({@c3*phi3@}\right)\right)\)&#160;\(= \displaystyle {@abs(z3)^c3@} \cdot \left({@cos(c3*phi3)+ %i*sin(c3*phi3)@}\right)\)
+</p>
+Somit ist&#160;&#160;\(\dfrac{z_1^{@c1@}\cdot z_2^{@c2@}}{z_3^{@c3_abs@}} = z_1^{@c1@}\cdot z_2^{@c2@} \cdot z_3^{@c3@}\) \(= \displaystyle {@abs(z1)^c1@} \cdot \left({@cos(c1*phi1)+ %i*sin(c1*phi1)@}\right) \cdot {@abs(z2)^c2@} \cdot \left({@cos(c2*phi2)+ %i*sin(c2*phi2)@}\right) \cdot {@abs(z3)^c3@} \cdot \left({@cos(c3*phi3)+ %i*sin(c3*phi3)@}\right)\) \(= \displaystyle {@abs(z1)^c1*abs(z2)^c2*abs(z3)^c3@} \cdot \left({@cos(c1*phi1)+ %i*sin(c1*phi1)@}\right) \cdot \left({@cos(c2*phi2)+ %i*sin(c2*phi2)@}\right) \cdot \left({@cos(c3*phi3)+ %i*sin(c3*phi3)@}\right)\)&#160;\(= \displaystyle {@loes@}\)[[/lang]][[lang code="en"]]
+<strong>
+    Solution:
     <br/>
-    <span>
-        Es ist \(|z_2| = \sqrt{(\mathrm{Re}(z_2))^2+(\mathrm{Im}(z_2))^2}\) \(= \displaystyle \sqrt{\left({@z2_re@}\right)^{\!2} + \left({@z2_im@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@z2_re^2@}+{@z2_im^2@}}\) \(= \displaystyle \sqrt{{@z2_re^2+z2_im^2@}} = {@abs(z2)@}\).
-        <br/>
-        Ferner ist \(\varphi_2 =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z_2)}{\mathrm{Re}(z_2)}\right)\) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@z2_im@}}{{@z2_re@}}\right)\)&#160;\(=&#160;\displaystyle&#160; \arctan\!\left({@z2_im/z2_re@}\right)&#160;= {@phi2@}\).
-        <br/>
-    </span>
-    <p dir="ltr">
-        Nach der Formel von Moivre gilt:
-        <br/>
-        \(z_2^{@c2@} = |z_2|^{@c2@} \cdot \left(\cos\left({@c2@} \cdot \varphi_2\right) + \mathrm{i} \cdot \sin\left({@c2@} \cdot \varphi_2\right)\right)\) \(= \displaystyle \left({@abs(z2)@}\right)^{\!{@c2@}} \cdot \left(\cos\left({@c2@} \cdot {@phi2@}\right) + \mathrm{i} \cdot \sin\left({@c2@} \cdot {@phi2@}\right)\right)\)&#160;\(= \displaystyle {@abs(z2)^c2@} \cdot \left(\cos\left({@c2*phi2@}\right) + \mathrm{i} \cdot \sin\left({@c2*phi2@}\right)\right)\)&#160;\(= \displaystyle {@abs(z2)^c2@} \cdot \left({@cos(c2*phi2)+ %i*sin(c2*phi2)@}\right)\)
-    </p>
-    <p dir="ltr">
-    </p>
-    (3) Die komplexe Zahl \(z_3= {@z3@}\), die im \(1\).Quadranten liegt, wird in die trigonometrische Form &#252;berf&#252;hrt.
+</strong>
+<br/>
+To the expression \(\dfrac{z_1^{@c1@}\cdot z_2^{@c2@}}{z_3^{@c3_abs@}}\) the individual potencies of the three complex numbers are determined.
+<br/>
+<br/>
+(1) The complex number \(z_1= {@z1@}\)in the \(1\).Quadrants are transferred to trigonometric form.
+<br/>
+It is \(|z_1| = \sqrt{(\mathrm{Re}(z_1))^2+(\mathrm{Im}(z_1))^2}\) \(= \displaystyle \sqrt{\left({@z1_re@}\right)^{\!2} + \left({@z1_im@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@z1_re^2@}+{@z1_im^2@}}\) \(= \displaystyle \sqrt{{@z1_re^2+z1_im^2@}} = {@abs(z1)@}\).
+<br/>
+Furthermore, \(\varphi_1 =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z_1)}{\mathrm{Re}(z_1)}\right)\) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@z1_im@}}{{@z1_re@}}\right)\)\(=&#160;\displaystyle&#160; \arctan\!\left({@z1_im/z1_re@}\right)= {@phi1@}\).
+<br/>
+According to the formula of Moivre:
+<br/>
+\(z_1^{@c1@} = |z_1|^{@c1@} \cdot \left(\cos\left({@c1@} \cdot \varphi_1\right) + \mathrm{i} \cdot \sin\left({@c1@} \cdot \varphi_1\right)\right)\) \(= \displaystyle \left({@abs(z1)@}\right)^{\!{@c1@}} \cdot \left(\cos\left({@c1@} \cdot {@phi1@}\right) + \mathrm{i} \cdot \sin\left({@c1@} \cdot {@phi1@}\right)\right)\)\(= \displaystyle {@abs(z1)^c1@} \cdot \left(\cos\left({@c1*phi1@}\right) + \mathrm{i} \cdot \sin\left({@c1*phi1@}\right)\right)\)\(= \displaystyle {@abs(z1)^c1@} \cdot \left({@cos(c1*phi1)+ %i*sin(c1*phi1)@}\right)\)
+<br/>
+<p>
+</p>
+(2) The complex number \(z_2= {@z2@}\)in the \(1\).Quadrants are transferred to trigonometric form.
+<br/>
+<span>
+    It is \(|z_2| = \sqrt{(\mathrm{Re}(z_2))^2+(\mathrm{Im}(z_2))^2}\) \(= \displaystyle \sqrt{\left({@z2_re@}\right)^{\!2} + \left({@z2_im@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@z2_re^2@}+{@z2_im^2@}}\) \(= \displaystyle \sqrt{{@z2_re^2+z2_im^2@}} = {@abs(z2)@}\).
     <br/>
-    Es ist \(|z_3| = \sqrt{(\mathrm{Re}(z_3))^2+(\mathrm{Im}(z_3))^2}\) \(= \displaystyle \sqrt{\left({@z3_re@}\right)^{\!2} + \left({@z3_im@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@z3_re^2@}+{@z3_im^2@}}\) \(= \displaystyle \sqrt{{@z3_re^2+z3_im^2@}} = {@abs(z3)@}\).
+    Furthermore, \(\varphi_2 =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z_2)}{\mathrm{Re}(z_2)}\right)\) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@z2_im@}}{{@z2_re@}}\right)\)\(=&#160;\displaystyle&#160; \arctan\!\left({@z2_im/z2_re@}\right)&#160;= {@phi2@}\).
     <br/>
-    Ferner ist \(\varphi_3 =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z_3)}{\mathrm{Re}(z_3)}\right)\) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@z3_im@}}{{@z3_re@}}\right)\)&#160;\(=&#160;\displaystyle&#160; \arctan\!\left({@z3_im/z3_re@}\right)&#160;= {@phi3@}\).
-    <br/>
-    <p dir="ltr">
-        Nach der Formel von Moivre gilt:
-        <br/>
-        \(z_3^{@c3@} = |z_3|^{@c3@} \cdot \left(\cos\left({@c3@} \cdot \varphi_3\right) + \mathrm{i} \cdot \sin\left({@c3@} \cdot \varphi_3\right)\right)\) \(= \displaystyle \left({@abs(z3)@}\right)^{\!{@c3@}} \cdot \left(\cos\left({@c3@} \cdot {@phi3@}\right) + \mathrm{i} \cdot \sin\left({@c3@} \cdot {@phi3@}\right)\right)\)&#160;\(= \displaystyle {@abs(z3)^c3@} \cdot \left(\cos\left({@c3*phi3@}\right) + \mathrm{i} \cdot \sin\left({@c3*phi3@}\right)\right)\)&#160;\(= \displaystyle {@abs(z3)^c3@} \cdot \left({@cos(c3*phi3)+ %i*sin(c3*phi3)@}\right)\)
-    </p>
-    Somit ist&#160;&#160;\(\dfrac{z_1^{@c1@}\cdot z_2^{@c2@}}{z_3^{@c3_abs@}} = z_1^{@c1@}\cdot z_2^{@c2@} \cdot z_3^{@c3@}\) \(= \displaystyle {@abs(z1)^c1@} \cdot \left({@cos(c1*phi1)+ %i*sin(c1*phi1)@}\right) \cdot {@abs(z2)^c2@} \cdot \left({@cos(c2*phi2)+ %i*sin(c2*phi2)@}\right) \cdot {@abs(z3)^c3@} \cdot \left({@cos(c3*phi3)+ %i*sin(c3*phi3)@}\right)\) \(= \displaystyle {@abs(z1)^c1*abs(z2)^c2*abs(z3)^c3@} \cdot \left({@cos(c1*phi1)+ %i*sin(c1*phi1)@}\right) \cdot \left({@cos(c2*phi2)+ %i*sin(c2*phi2)@}\right) \cdot \left({@cos(c3*phi3)+ %i*sin(c3*phi3)@}\right)\)&#160;\(= \displaystyle {@loes@}\)
 </span>
-<span class="multilang" lang="en">
-    <strong>
-        Solution:
-        <br/>
-    </strong>
-    <br/>
-    To the expression \(\dfrac{z_1^{@c1@}\cdot z_2^{@c2@}}{z_3^{@c3_abs@}}\) the individual potencies of the three complex numbers are determined.
-    <br/>
-    <br/>
-    (1) The complex number \(z_1= {@z1@}\)in the \(1\).Quadrants are transferred to trigonometric form.
-    <br/>
-    It is \(|z_1| = \sqrt{(\mathrm{Re}(z_1))^2+(\mathrm{Im}(z_1))^2}\) \(= \displaystyle \sqrt{\left({@z1_re@}\right)^{\!2} + \left({@z1_im@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@z1_re^2@}+{@z1_im^2@}}\) \(= \displaystyle \sqrt{{@z1_re^2+z1_im^2@}} = {@abs(z1)@}\).
-    <br/>
-    Furthermore, \(\varphi_1 =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z_1)}{\mathrm{Re}(z_1)}\right)\) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@z1_im@}}{{@z1_re@}}\right)\)\(=&#160;\displaystyle&#160; \arctan\!\left({@z1_im/z1_re@}\right)= {@phi1@}\).
-    <br/>
+<p dir="ltr">
     According to the formula of Moivre:
     <br/>
-    \(z_1^{@c1@} = |z_1|^{@c1@} \cdot \left(\cos\left({@c1@} \cdot \varphi_1\right) + \mathrm{i} \cdot \sin\left({@c1@} \cdot \varphi_1\right)\right)\) \(= \displaystyle \left({@abs(z1)@}\right)^{\!{@c1@}} \cdot \left(\cos\left({@c1@} \cdot {@phi1@}\right) + \mathrm{i} \cdot \sin\left({@c1@} \cdot {@phi1@}\right)\right)\)\(= \displaystyle {@abs(z1)^c1@} \cdot \left(\cos\left({@c1*phi1@}\right) + \mathrm{i} \cdot \sin\left({@c1*phi1@}\right)\right)\)\(= \displaystyle {@abs(z1)^c1@} \cdot \left({@cos(c1*phi1)+ %i*sin(c1*phi1)@}\right)\)
+    \(z_2^{@c2@} = |z_2|^{@c2@} \cdot \left(\cos\left({@c2@} \cdot \varphi_2\right) + \mathrm{i} \cdot \sin\left({@c2@} \cdot \varphi_2\right)\right)\) \(= \displaystyle \left({@abs(z2)@}\right)^{\!{@c2@}} \cdot \left(\cos\left({@c2@} \cdot {@phi2@}\right) + \mathrm{i} \cdot \sin\left({@c2@} \cdot {@phi2@}\right)\right)\)\(= \displaystyle {@abs(z2)^c2@} \cdot \left(\cos\left({@c2*phi2@}\right) + \mathrm{i} \cdot \sin\left({@c2*phi2@}\right)\right)\)\(= \displaystyle {@abs(z2)^c2@} \cdot \left({@cos(c2*phi2)+ %i*sin(c2*phi2)@}\right)\)
+</p>
+<p dir="ltr">
+</p>
+(3) The complex number \(z_3= {@z3@}\)in the \(1\).Quadrants are transferred to trigonometric form.
+<br/>
+It is \(|z_3| = \sqrt{(\mathrm{Re}(z_3))^2+(\mathrm{Im}(z_3))^2}\) \(= \displaystyle \sqrt{\left({@z3_re@}\right)^{\!2} + \left({@z3_im@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@z3_re^2@}+{@z3_im^2@}}\) \(= \displaystyle \sqrt{{@z3_re^2+z3_im^2@}} = {@abs(z3)@}\).
+<br/>
+Furthermore, \(\varphi_3 =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z_3)}{\mathrm{Re}(z_3)}\right)\) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@z3_im@}}{{@z3_re@}}\right)\)\(=&#160;\displaystyle&#160; \arctan\!\left({@z3_im/z3_re@}\right)&#160;= {@phi3@}\).
+<br/>
+<p dir="ltr">
+    According to the formula of Moivre:
     <br/>
-    <p>
-    </p>
-    (2) The complex number \(z_2= {@z2@}\)in the \(1\).Quadrants are transferred to trigonometric form.
-    <br/>
-    <span>
-        It is \(|z_2| = \sqrt{(\mathrm{Re}(z_2))^2+(\mathrm{Im}(z_2))^2}\) \(= \displaystyle \sqrt{\left({@z2_re@}\right)^{\!2} + \left({@z2_im@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@z2_re^2@}+{@z2_im^2@}}\) \(= \displaystyle \sqrt{{@z2_re^2+z2_im^2@}} = {@abs(z2)@}\).
-        <br/>
-        Furthermore, \(\varphi_2 =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z_2)}{\mathrm{Re}(z_2)}\right)\) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@z2_im@}}{{@z2_re@}}\right)\)\(=&#160;\displaystyle&#160; \arctan\!\left({@z2_im/z2_re@}\right)&#160;= {@phi2@}\).
-        <br/>
-    </span>
-    <p dir="ltr">
-        According to the formula of Moivre:
-        <br/>
-        \(z_2^{@c2@} = |z_2|^{@c2@} \cdot \left(\cos\left({@c2@} \cdot \varphi_2\right) + \mathrm{i} \cdot \sin\left({@c2@} \cdot \varphi_2\right)\right)\) \(= \displaystyle \left({@abs(z2)@}\right)^{\!{@c2@}} \cdot \left(\cos\left({@c2@} \cdot {@phi2@}\right) + \mathrm{i} \cdot \sin\left({@c2@} \cdot {@phi2@}\right)\right)\)\(= \displaystyle {@abs(z2)^c2@} \cdot \left(\cos\left({@c2*phi2@}\right) + \mathrm{i} \cdot \sin\left({@c2*phi2@}\right)\right)\)\(= \displaystyle {@abs(z2)^c2@} \cdot \left({@cos(c2*phi2)+ %i*sin(c2*phi2)@}\right)\)
-    </p>
-    <p dir="ltr">
-    </p>
-    (3) The complex number \(z_3= {@z3@}\)in the \(1\).Quadrants are transferred to trigonometric form.
-    <br/>
-    It is \(|z_3| = \sqrt{(\mathrm{Re}(z_3))^2+(\mathrm{Im}(z_3))^2}\) \(= \displaystyle \sqrt{\left({@z3_re@}\right)^{\!2} + \left({@z3_im@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@z3_re^2@}+{@z3_im^2@}}\) \(= \displaystyle \sqrt{{@z3_re^2+z3_im^2@}} = {@abs(z3)@}\).
-    <br/>
-    Furthermore, \(\varphi_3 =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z_3)}{\mathrm{Re}(z_3)}\right)\) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@z3_im@}}{{@z3_re@}}\right)\)\(=&#160;\displaystyle&#160; \arctan\!\left({@z3_im/z3_re@}\right)&#160;= {@phi3@}\).
-    <br/>
-    <p dir="ltr">
-        According to the formula of Moivre:
-        <br/>
-        \(z_3^{@c3@} = |z_3|^{@c3@} \cdot \left(\cos\left({@c3@} \cdot \varphi_3\right) + \mathrm{i} \cdot \sin\left({@c3@} \cdot \varphi_3\right)\right)\) \(= \displaystyle \left({@abs(z3)@}\right)^{\!{@c3@}} \cdot \left(\cos\left({@c3@} \cdot {@phi3@}\right) + \mathrm{i} \cdot \sin\left({@c3@} \cdot {@phi3@}\right)\right)\)\(= \displaystyle {@abs(z3)^c3@} \cdot \left(\cos\left({@c3*phi3@}\right) + \mathrm{i} \cdot \sin\left({@c3*phi3@}\right)\right)\)\(= \displaystyle {@abs(z3)^c3@} \cdot \left({@cos(c3*phi3)+ %i*sin(c3*phi3)@}\right)\)
-    </p>
-    Thus,\(\dfrac{z_1^{@c1@}\cdot z_2^{@c2@}}{z_3^{@c3_abs@}} = z_1^{@c1@}\cdot z_2^{@c2@} \cdot z_3^{@c3@}\) \(= \displaystyle {@abs(z1)^c1@} \cdot \left({@cos(c1*phi1)+ %i*sin(c1*phi1)@}\right) \cdot {@abs(z2)^c2@} \cdot \left({@cos(c2*phi2)+ %i*sin(c2*phi2)@}\right) \cdot {@abs(z3)^c3@} \cdot \left({@cos(c3*phi3)+ %i*sin(c3*phi3)@}\right)\) \(= \displaystyle {@abs(z1)^c1*abs(z2)^c2*abs(z3)^c3@} \cdot \left({@cos(c1*phi1)+ %i*sin(c1*phi1)@}\right) \cdot \left({@cos(c2*phi2)+ %i*sin(c2*phi2)@}\right) \cdot \left({@cos(c3*phi3)+ %i*sin(c3*phi3)@}\right)\)\(= \displaystyle {@loes@}\)
-</span>
+    \(z_3^{@c3@} = |z_3|^{@c3@} \cdot \left(\cos\left({@c3@} \cdot \varphi_3\right) + \mathrm{i} \cdot \sin\left({@c3@} \cdot \varphi_3\right)\right)\) \(= \displaystyle \left({@abs(z3)@}\right)^{\!{@c3@}} \cdot \left(\cos\left({@c3@} \cdot {@phi3@}\right) + \mathrm{i} \cdot \sin\left({@c3@} \cdot {@phi3@}\right)\right)\)\(= \displaystyle {@abs(z3)^c3@} \cdot \left(\cos\left({@c3*phi3@}\right) + \mathrm{i} \cdot \sin\left({@c3*phi3@}\right)\right)\)\(= \displaystyle {@abs(z3)^c3@} \cdot \left({@cos(c3*phi3)+ %i*sin(c3*phi3)@}\right)\)
+</p>
+Thus,\(\dfrac{z_1^{@c1@}\cdot z_2^{@c2@}}{z_3^{@c3_abs@}} = z_1^{@c1@}\cdot z_2^{@c2@} \cdot z_3^{@c3@}\) \(= \displaystyle {@abs(z1)^c1@} \cdot \left({@cos(c1*phi1)+ %i*sin(c1*phi1)@}\right) \cdot {@abs(z2)^c2@} \cdot \left({@cos(c2*phi2)+ %i*sin(c2*phi2)@}\right) \cdot {@abs(z3)^c3@} \cdot \left({@cos(c3*phi3)+ %i*sin(c3*phi3)@}\right)\) \(= \displaystyle {@abs(z1)^c1*abs(z2)^c2*abs(z3)^c3@} \cdot \left({@cos(c1*phi1)+ %i*sin(c1*phi1)@}\right) \cdot \left({@cos(c2*phi2)+ %i*sin(c2*phi2)@}\right) \cdot \left({@cos(c3*phi3)+ %i*sin(c3*phi3)@}\right)\)\(= \displaystyle {@loes@}\)[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -207,44 +203,41 @@ loes: rectform(abs(z1)^c1*abs(z2)^c2*abs(z3)^c3*(cos(phi)+sin(phi)*%i));</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Richtige Antwort, gut gemacht!
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Right answer, well done!
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Richtige Antwort, gut gemacht!
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Right answer, well done!
+</p>
+[[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihre Antwort ist teilweise korrekt.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your answer is partly correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Ihre Antwort ist teilweise korrekt.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer is partly correct.
+</p>
+[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Falsche Antwort.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Wrong answer.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Falsche Antwort.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Wrong answer.
+</p>
+[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

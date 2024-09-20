@@ -6,68 +6,66 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Wir betrachten die folgenden Teilmengen der Menge der reellen Zahlen:
-    </p>
-    <p>
-        \( A=\{x\in\mathbb{R}\;|\;&#160; x\geq 1\}\) und \( B=\{x\in\mathbb{R}\;|\;&#160; x&lt; 5\}\)
-    </p>
-    <p>
-        Bestimmen Sie die folgenden Mengen.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        We look at the following subsets of real numbers:
-    </p>
-    <p>
-        \( A=\{x\in\mathbb{R}\;|\;&#160; x\geq 1\}\) and \( B=\{x\in\mathbb{R}\;|\;&#160; x&lt; 5\}\)
-    </p>
-    <p>
-        Determine the following quantities.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Wir betrachten die folgenden Teilmengen der Menge der reellen Zahlen:
+</p>
+<p>
+    \( A=\{x\in\mathbb{R}\;|\;&#160; x\geq 1\}\) und \( B=\{x\in\mathbb{R}\;|\;&#160; x&lt; 5\}\)
+</p>
+<p>
+    Bestimmen Sie die folgenden Mengen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    We look at the following subsets of real numbers:
+</p>
+<p>
+    \( A=\{x\in\mathbb{R}\;|\;&#160; x\geq 1\}\) and \( B=\{x\in\mathbb{R}\;|\;&#160; x&lt; 5\}\)
+</p>
+<p>
+    Determine the following sets.
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p dir="ltr" style="text-align: left;">
-        \(A \cup B = \{x\in\mathbb{R}\;|\; x\geq 1 \text{ oder } x &lt; 5\} = (-\infty;\ +\infty) = \mathbb{R}\)
-        <br/>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        \(A \cap B = \{x\in\mathbb{R}\;|\; x\geq 1 \text{ und } x &lt; 5\} = [1;\ 5)\)
-        <br/>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        \(A \setminus B = \{x\in\mathbb{R}\;|\; x\geq 1 \text{ und } x \geq 5\} = [5;\ +\infty)\)
-        <br/>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        \(B \setminus A = \{x\in\mathbb{R}\;|\;&#160;x &lt; 5 \text{ und } x &lt; 1\} = (-\infty;\ 1)\)
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p dir="ltr" style="text-align: left;">
-        \(A \cup B = \{x\in\mathbb{R}\;|\; x\geq 1 \text{ oder } x &lt; 5\} = (-\infty;\ +\infty) = \mathbb{R}\)
-        <br/>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        \(A \cap B = \{x\in\mathbb{R}\;|\; x\geq 1 \text{ und } x &lt; 5\} = [1;\ 5)\)
-        <br/>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        \(A \setminus B = \{x\in\mathbb{R}\;|\; x\geq 1 \text{ und } x \geq 5\} = [5;\ +\infty)\)
-        <br/>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        \(B \setminus A = \{x\in\mathbb{R}\;|\;&#160;x &lt; 5 \text{ und } x &lt; 1\} = (-\infty;\ 1)\)
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    \(A \cup B = \{x\in\mathbb{R}\;|\; x\geq 1 \text{ oder } x &lt; 5\} = (-\infty;\ +\infty) = \mathbb{R}\)
+    <br/>
+</p>
+<p dir="ltr" style="text-align: left;">
+    \(A \cap B = \{x\in\mathbb{R}\;|\; x\geq 1 \text{ und } x &lt; 5\} = [1;\ 5)\)
+    <br/>
+</p>
+<p dir="ltr" style="text-align: left;">
+    \(A \setminus B = \{x\in\mathbb{R}\;|\; x\geq 1 \text{ und } x \geq 5\} = [5;\ +\infty)\)
+    <br/>
+</p>
+<p dir="ltr" style="text-align: left;">
+    \(B \setminus A = \{x\in\mathbb{R}\;|\;&#160;x &lt; 5 \text{ und } x &lt; 1\} = (-\infty;\ 1)\)
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    \(A \cup B = \{x\in\mathbb{R}\;|\; x\geq 1 \text{ oder } x &lt; 5\} = (-\infty;\ +\infty) = \mathbb{R}\)
+    <br/>
+</p>
+<p dir="ltr" style="text-align: left;">
+    \(A \cap B = \{x\in\mathbb{R}\;|\; x\geq 1 \text{ und } x &lt; 5\} = [1;\ 5)\)
+    <br/>
+</p>
+<p dir="ltr" style="text-align: left;">
+    \(A \setminus B = \{x\in\mathbb{R}\;|\; x\geq 1 \text{ und } x \geq 5\} = [5;\ +\infty)\)
+    <br/>
+</p>
+<p dir="ltr" style="text-align: left;">
+    \(B \setminus A = \{x\in\mathbb{R}\;|\;&#160;x &lt; 5 \text{ und } x &lt; 1\} = (-\infty;\ 1)\)
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -77,61 +75,57 @@
         <shuffleanswers>false</shuffleanswers>
         <correctfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Antwort ist richtig
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The answer is correct
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Antwort ist richtig
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The answer is correct
+</p>
+[[/lang]]
 ]]></text>
         </correctfeedback>
         <partiallycorrectfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Antwort ist teilweise richtig.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The answer is partly correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Antwort ist teilweise richtig.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The answer is partly correct.
+</p>
+[[/lang]]
 ]]></text>
         </partiallycorrectfeedback>
         <incorrectfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Antwort ist falsch
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The answer is wrong
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Antwort ist falsch
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The answer is wrong
+</p>
+[[/lang]]
 ]]></text>
         </incorrectfeedback>
         <shownumcorrect/>
         <subquestion format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(A \cup B = \)
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(A \cup B = \)
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(A \cup B = \)
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(A \cup B = \)
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
             <answer>
                 <text><![CDATA[(-&infin;; +&infin;)]]></text>
@@ -139,18 +133,17 @@
         </subquestion>
         <subquestion format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(A \cap B = \)
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(A \cap B = \)
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(A \cap B = \)
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(A \cap B = \)
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
             <answer>
                 <text>[1; 5)</text>
@@ -158,18 +151,17 @@
         </subquestion>
         <subquestion format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(A \setminus B = \)
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(A \setminus B = \)
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(A \setminus B = \)
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(A \setminus B = \)
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
             <answer>
                 <text><![CDATA[[5; +&infin;)]]></text>
@@ -177,18 +169,17 @@
         </subquestion>
         <subquestion format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(B \setminus A = \)
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(B \setminus A = \)
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(B \setminus A = \)
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(B \setminus A = \)
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
             <answer>
                 <text><![CDATA[(-&infin;; 1)]]></text>
@@ -214,16 +205,15 @@
         </subquestion>
         <hint format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Achten Sie darauf, ob es sich um echte Ungleichungen handelt oder nicht.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Make sure that these are real disparities or not.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Achten Sie darauf, ob es sich um echte Ungleichungen handelt oder nicht.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Make sure that these are real disparities or not.
+</p>
+[[/lang]]
 ]]></text>
             <clearwrong/>
         </hint>

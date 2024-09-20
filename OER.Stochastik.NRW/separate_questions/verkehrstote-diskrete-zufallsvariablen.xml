@@ -1,0 +1,2350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Verkehrstote (diskrete Zufallsvariablen)</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<style>
+    .data-table {
+                                border-collapse: collapse;
+                                margin: 25px 0;
+                                font-size: 0.9em;
+                                min-width: 400px;
+                                border-radius: 5px 5px 0 0;
+                                overflow: hidden;
+                                box-shadow: 0 0 20px rgba(0, 0, 0, 0maxima cas emode
+.15);
+                                background-color: #ffffff;
+                                color: #17365c;
+                }
+
+    
+    
+    
+    .data-table thead tr {
+                                background-color: #17365c;
+                                color: #ffffff;
+                                font-weight: bold;
+                }
+
+    
+    
+    
+    .data-table th,
+                .data-table td {
+                                padding: 12px 15px;
+                }
+
+    
+    
+    
+    .data-table td:not(:first-child),
+                .data-table th:not(:first-child) {
+                        text-align: center;
+                }
+
+    
+    
+    
+    .data-table tbody tr {
+                                border-bottom: 1px solid #e7e7e7;
+                }
+
+    
+    
+    
+    .data-table tbody tr:nth-of-type(even) {
+                                background-color: #f3f3f3;
+                }
+
+    
+    
+    
+    .data-table tbody tr:last-of-type {
+                                border-bottom: 2px solid #17365c;
+                }
+
+    
+    
+    
+    .data-table tbody tr.active-row {
+                                font-weight: bold;
+                                color: #17365c;
+                }
+
+    
+    
+    
+    .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #a9f5bc;
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #e0f8e6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #dcb25e;
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #e7d2a7;
+                }
+
+    
+    
+    
+    .buttontipp {
+                                border: 1px solid black;
+                                background-color: #c9d3f6;
+                }
+
+    
+    
+    
+    .buttontipp:hover {
+                                background-color: #dbe1f9;
+                }
+
+    
+    
+    
+    .divtipp {
+                                background-color: #dbe1f9;
+                                border: 1px black solid;
+                                border-radius: 4px;
+                                padding: 20px;
+                                width: 60%;
+                                text-align: center;
+                }
+
+    
+    
+    
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                                margin-bottom: 1rem;
+                }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: .5em .5em 0;
+                }
+
+    
+    
+    
+    .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -.5em -.5em 0;
+                                padding: .5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] {
+                                padding: .5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] summary {
+                                border-bottom: 1px solid #aaa;
+                                margin-bottom: .5em;
+                }
+
+    
+    
+    
+    span.stack-tooltip {
+                                text-decoration-line:underline;
+                                text-decoration-style:dotted;
+                                cursor: help;
+                }
+</style>
+<div>
+    <details>
+        <summary>
+            Inhalt und Umfang dieser Aufgabe
+        </summary>
+        <p>
+            In dieser Aufgabe geht es um die Beschreibung von Daten mithilfe einer diskreten Wahrscheinlichkeitsverteilung. Die Aufgabe besteht aus den folgenden vier Teilaufgaben:
+        </p>
+        <ul>
+            <li>
+                In
+                <b>
+                    (a)
+                </b>
+                entscheiden Sie, mit welcher diskreten Verteilung die gegebenen Daten am besten beschrieben werden k&#246;nnen.
+            </li>
+            <li>
+                In
+                <b>
+                    (b)
+                </b>
+                bestimmen Sie einen Sch&#228;tzwert f&#252;r einen Parameter dieser Verteilung und ihre
+                <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='Auch bekannt unter "Z&#228;hldichte"'>
+                    Wahrscheinlichkeitsfunktion
+                </span>
+                .
+            </li>
+            <li>
+                In
+                <b>
+                    (c)
+                </b>
+                bestimmen Sie einen Sch&#228;tzwert f&#252;r den Erwartungswert und die Varianz der Verteilung.
+            </li>
+            <li>
+                In
+                <b>
+                    (d)
+                </b>
+                bestimmen Sie einen Sch&#228;tzwert f&#252;r eine Wahrscheinlichkeit.
+            </li>
+        </ul>
+    </details>
+    <hr/>
+</div>
+<!-- Aufgabenstellung -->
+<div id="oer-aufgabe-2_aufgabenstellung" style="display: box">
+    <p>
+        Laut Polizeistatistik gab es in der Stadt Bochum im 10-Jahreszeitraum
+                                von {#first(Jahre)#} bis {#last(Jahre)#} insgesamt {#sumA#}
+                                Verkehrstote. Diese verteilen sich wie folgt auf die einzelnen Jahre:
+    </p>
+    <div style="overflow-x: auto">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>
+                        Jahr
+                    </th>
+                    <th>
+                        {#Jahre[1]#}
+                    </th>
+                    <th>
+                        {#Jahre[2]#}
+                    </th>
+                    <th>
+                        {#Jahre[3]#}
+                    </th>
+                    <th>
+                        {#Jahre[4]#}
+                    </th>
+                    <th>
+                        {#Jahre[5]#}
+                    </th>
+                    <th>
+                        {#Jahre[6]#}
+                    </th>
+                    <th>
+                        {#Jahre[7]#}
+                    </th>
+                    <th>
+                        {#Jahre[8]#}
+                    </th>
+                    <th>
+                        {#Jahre[9]#}
+                    </th>
+                    <th>
+                        {#Jahre[10]#}
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Anzahl Verkehrstote in diesem Jahr
+                    </td>
+                    <td>
+                        {#AListe[1]#}
+                    </td>
+                    <td>
+                        {#AListe[2]#}
+                    </td>
+                    <td>
+                        {#AListe[3]#}
+                    </td>
+                    <td>
+                        {#AListe[4]#}
+                    </td>
+                    <td>
+                        {#AListe[5]#}
+                    </td>
+                    <td>
+                        {#AListe[6]#}
+                    </td>
+                    <td>
+                        {#AListe[7]#}
+                    </td>
+                    <td>
+                        {#AListe[8]#}
+                    </td>
+                    <td>
+                        {#AListe[9]#}
+                    </td>
+                    <td>
+                        {#AListe[10]#}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>
+        Wir fassen die Daten als Realisierungen unabh&#228;ngiger Zufallsvariablen
+                                auf.
+    </p>
+</div>
+<div id="oer-aufgabe-2_hinweis" style="display: none">
+    <p>
+        Als Verteilung, die die empirischen Daten beschreiben k&#246;nnte, haben Sie
+                                die Poisson-Verteilung ausgew&#228;hlt. Bitte verwenden Sie im Folgenden
+                                daher die Formeln f&#252;r die Poisson-Verteilung.
+    </p>
+</div>
+<div class="erinnerungsbox" id="oer-aufgabe-2_erinnerung" style="display:none;">
+    <p>
+        Folgendes wissen Sie bereits aus den vorherigen Aufgabenteilen:
+    </p>
+    <ul>
+    </ul>
+</div>
+<!-- a) Verteilung ausw&#228;hlen -->
+<div id="oer-aufgabe-2_aufgabe2" style="display: block">
+    <p>
+        <b>
+            (a)
+        </b>
+        Welche Verteilung eignet sich am besten, um die
+                                Daten zu beschreiben? Bitte w&#228;hlen
+                                Sie eine Option aus und klicken dann auf "Pr&#252;fen".
+    </p>
+    <p>
+        Antwort: Die [[/lang]][[lang code="en"]]
+        <style>
+            .data-table {
+                                border-collapse: collapse;
+                                margin: 25px 0;
+                                font-size: 0.9em;
+                                min-width: 400px;
+                                border-radius: 5px 5px 0 0;
+                                overflow: hidden;
+                                box-shadow: 0 0 20px rgba(0, 0, 0, 0maxima cas emode
+.15);
+                                background-color: #ffffff;
+                                color: #17365c;
+                }
+
+    
+    
+    
+    .data-table thead tr {
+                                background-color: #17365c;
+                                color: #ffffff;
+                                font-weight: bold;
+                }
+
+    
+    
+    
+    .data-table th,
+                .data-table td {
+                                padding: 12px 15px;
+                }
+
+    
+    
+    
+    .data-table td:not(:first-child),
+                .data-table th:not(:first-child) {
+                        text-align: center;
+                }
+
+    
+    
+    
+    .data-table tbody tr {
+                                border-bottom: 1px solid #e7e7e7;
+                }
+
+    
+    
+    
+    .data-table tbody tr:nth-of-type(even) {
+                                background-color: #f3f3f3;
+                }
+
+    
+    
+    
+    .data-table tbody tr:last-of-type {
+                                border-bottom: 2px solid #17365c;
+                }
+
+    
+    
+    
+    .data-table tbody tr.active-row {
+                                font-weight: bold;
+                                color: #17365c;
+                }
+
+    
+    
+    
+    .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #a9f5bc;
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #e0f8e6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #dcb25e;
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #e7d2a7;
+                }
+
+    
+    
+    
+    .buttontipp {
+                                border: 1px solid black;
+                                background-color: #c9d3f6;
+                }
+
+    
+    
+    
+    .buttontipp:hover {
+                                background-color: #dbe1f9;
+                }
+
+    
+    
+    
+    .divtipp {
+                                background-color: #dbe1f9;
+                                border: 1px black solid;
+                                border-radius: 4px;
+                                padding: 20px;
+                                width: 60%;
+                                text-align: center;
+                }
+
+    
+    
+    
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                                margin-bottom: 1rem;
+                }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: .5em .5em 0;
+                }
+
+    
+    
+    
+    .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -.5em -.5em 0;
+                                padding: .5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] {
+                                padding: .5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] summary {
+                                border-bottom: 1px solid #aaa;
+                                margin-bottom: .5em;
+                }
+
+    
+    
+    
+    span.stack-tooltip {
+                                text-decoration-line:underline;
+                                text-decoration-style:dotted;
+                                cursor: help;
+                }
+        </style>
+        <div>
+            <details>
+                <summary>
+                    Content and scope of this task
+                </summary>
+                <p>
+                    This task is about the description of data using a discrete probability distribution. The task consists of the following four subtasks:
+                </p>
+                <ul>
+                    <li>
+                        In
+                        <b>
+                            (a)
+                        </b>
+                        decide with which discrete distribution the given data can best be described.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (b)
+                        </b>
+                        determine an estimate for a parameter of this distribution and its
+                        <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='Auch bekannt unter "Z&#228;hldichte"'>
+                            Probability function
+                        </span>
+                        .
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (c)
+                        </b>
+                        determine an estimated value for the expected value and the variance of the distribution.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (d)
+                        </b>
+                        determine an estimated value for a probability.
+                    </li>
+                </ul>
+            </details>
+            <hr/>
+        </div>
+        <!-- Aufgabenstellung -->
+        <div id="oer-aufgabe-2_aufgabenstellung" style="display: box">
+            <p>
+                According to police statistics, there were 10 years in the city of Bochum
+of {#first(Jahre)#} to {#last(Jahre)#} Total {#sumA#}Traffic dead. These are distributed as follows:
+            </p>
+            <div style="overflow-x: auto">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>
+                                Year
+                            </th>
+                            <th>
+                                {#Jahre[1]#}
+                            </th>
+                            <th>
+                                {#Jahre[2]#}
+                            </th>
+                            <th>
+                                {#Jahre[3]#}
+                            </th>
+                            <th>
+                                {#Jahre[4]#}
+                            </th>
+                            <th>
+                                {#Jahre[5]#}
+                            </th>
+                            <th>
+                                {#Jahre[6]#}
+                            </th>
+                            <th>
+                                {#Jahre[7]#}
+                            </th>
+                            <th>
+                                {#Jahre[8]#}
+                            </th>
+                            <th>
+                                {#Jahre[9]#}
+                            </th>
+                            <th>
+                                {#Jahre[10]#}
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Number of traffic deaths this year
+                            </td>
+                            <td>
+                                {#AListe[1]#}
+                            </td>
+                            <td>
+                                {#AListe[2]#}
+                            </td>
+                            <td>
+                                {#AListe[3]#}
+                            </td>
+                            <td>
+                                {#AListe[4]#}
+                            </td>
+                            <td>
+                                {#AListe[5]#}
+                            </td>
+                            <td>
+                                {#AListe[6]#}
+                            </td>
+                            <td>
+                                {#AListe[7]#}
+                            </td>
+                            <td>
+                                {#AListe[8]#}
+                            </td>
+                            <td>
+                                {#AListe[9]#}
+                            </td>
+                            <td>
+                                {#AListe[10]#}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>
+                We take the data as realizations of independent random variables
+up.
+            </p>
+        </div>
+        <div id="oer-aufgabe-2_hinweis" style="display: none">
+            <p>
+                As a distribution that could describe the empirical data, you have
+the Poisson distribution selected. Please use the following
+therefore the formulas for the Poisson distribution.
+            </p>
+        </div>
+        <div class="erinnerungsbox" id="oer-aufgabe-2_erinnerung" style="display:none;">
+            <p>
+                You already know the following from the previous tasks:
+            </p>
+            <ul>
+            </ul>
+        </div>
+        <!-- a) Verteilung ausw&#228;hlen -->
+        <div id="oer-aufgabe-2_aufgabe2" style="display: block">
+            <p>
+                <b>
+                    (a)
+                </b>
+                What distribution is best for the
+Descriptive data? Please choose
+Select an option and then click "Check".
+            </p>
+            <p>
+                Answer: The [[/lang]][[input:ans_vert]][[lang code="de"]] ist die beste Wahl zur Beschreibung der Daten.
+                                [[/lang]][[lang code="en"]] is the best choice to describe the data.
+    [[/lang]][[validation:ans_vert]][[lang code="de"]]
+            </p>
+            [[/lang]][[lang code="en"]]
+        </div>
+    </p>
+    [[/lang]][[feedback:prt_a_vert]][[lang code="de"]]
+</div>
+<!-- b) Sch&#228;tzwert und W-Funktion -->
+<div id="oer-aufgabe-2_aufgabe3" style="display: none">
+    <p>
+        <b>
+            (b)
+        </b>
+        Geben Sie einen geeigneten Sch&#228;tzwert f&#252;r den Parameter der
+                                Verteilung an und bestimmen Sie die
+        <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='Auch bekannt unter "Z&#228;hldichte"'>
+            Wahrscheinlichkeitsfunktion
+        </span>
+        . Tipp:
+                                Gesetz der gro&#223;en Zahlen.
+    </p>
+    <p>
+        Antwort: Der Sch&#228;tzwert [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<!-- b) Sch&#228;tzwert und W-Funktion -->
+<div id="oer-aufgabe-2_aufgabe3" style="display: none">
+    <p>
+        <b>
+            (b)
+        </b>
+        Specify a suitable estimate for the parameter of the
+distribution and determine the
+        <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='Auch bekannt unter "Z&#228;hldichte"'>
+            Probability function
+        </span>
+        . Tip:
+Law of great numbers.
+    </p>
+    <p>
+        Answer: The estimated value [[/lang]][[input:ans_lambda]][[lang code="de"]] ist eine Ann&#228;herung an den
+                                Parameter der Verteilung.
+                                [[/lang]][[lang code="en"]] is an approach to
+Parameters of distribution.
+    [[/lang]][[validation:ans_lambda]][[lang code="de"]]
+    </p>
+    [[/lang]][[lang code="en"]]
+    [[/lang]][[feedback:prt_b_lambda]][[lang code="de"]]
+    <p>
+        Die
+        <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='Auch bekannt unter "Z&#228;hldichte"'>
+            Wahrscheinlichkeitsfunktion
+        </span>
+        in Abh&#228;ngigkeit dieses Sch&#228;tzwerts
+                                lautet \(p(k)=\) [[/lang]][[lang code="en"]]
+        <p>
+            The
+            <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='Auch bekannt unter "Z&#228;hldichte"'>
+                Probability function
+            </span>
+            as a function of this estimated value
+read: \(p(k)=\) [[/lang]][[input:ans_wfkt]][[lang code="de"]].
+                                [[/lang]][[lang code="en"]].
+    [[/lang]][[validation:ans_wfkt]][[lang code="de"]]
+        </p>
+        <p>
+            <i>
+                Bitte verwenden Sie ungerundete Werte und klicken Sie nach der
+                                    Eingabe auf "Pr&#252;fen".
+            </i>
+        </p>
+        [[/lang]][[lang code="en"]]
+    </p>
+    <p>
+        <i>
+            Please use unrounded values and click on the
+Input on "Check".
+        </i>
+    </p>
+    [[/lang]][[feedback:prt_b_wkft]][[lang code="de"]]
+    <br/>
+    [[/lang]][[lang code="en"]]
+    <br/>
+    [[/lang]][[feedback:prt_b_weiter]][[lang code="de"]]
+</div>
+<!-- c) EW, Varianz -->
+<div id="oer-aufgabe-2_aufgabe4" style="display: none">
+    <p>
+        <b>
+            (c)
+        </b>
+        Bestimmen Sie den Erwartungswert und die Varianz dieser
+                                Verteilung. Bitte geben Sie ungerundete Werte ein und klicken Sie
+                                dann auf "Pr&#252;fen".
+    </p>
+    <p>
+        \(\text{E}(X)=\) [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<!-- c) EW, Varianz -->
+<div id="oer-aufgabe-2_aufgabe4" style="display: none">
+    <p>
+        <b>
+            (c)
+        </b>
+        Determine the expected value and the variance of this
+Distribution. Please enter unrounded values and click
+then on "Check".
+    </p>
+    <p>
+        \(\text{E}(X)=\) [[/lang]][[input:ans_ew]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans_ew]][[lang code="de"]]
+    </p>
+    [[/lang]][[lang code="en"]]
+    [[/lang]][[feedback:prt_c_ew]][[lang code="de"]]
+    <p>
+        \(\text{Var}(X)=\) [[/lang]][[lang code="en"]]
+        <p>
+            \(\text{Var}(X)=\) [[/lang]][[input:ans_var]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans_var]][[lang code="de"]]
+        </p>
+        [[/lang]][[lang code="en"]]
+    </p>
+    [[/lang]][[feedback:prt_c_var]][[lang code="de"]]
+    <br/>
+    [[/lang]][[lang code="en"]]
+    <br/>
+    [[/lang]][[feedback:prt_c_weiter]][[lang code="de"]]
+</div>
+<!-- d) P(Y&#8804;2) -->
+<div id="oer-aufgabe-2_aufgabe5" style="display: none">
+    <p>
+        <b>
+            (d)
+        </b>
+        Geben Sie einen geeigneten Sch&#228;tzwert f&#252;r die
+                                Wahrscheinlichkeit an, dass es im folgenden Jahr h&#246;chstens zwei
+                                Verkehrstote geben wird.
+    </p>
+    <p>
+        <i>
+            Bitte geben Sie f&#252;r den Sch&#228;tzwert einen exakten Ausdruck oder
+                                eine auf mindestens zwei Nachkommastellen gerundete Dezimalzahl ein
+                                und klicken Sie dann auf "Pr&#252;fen".
+        </i>
+    </p>
+    <p>
+        Antwort: \(P(X\le 2)\approx\) [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<!-- d) P(Y&#8804;2) -->
+<div id="oer-aufgabe-2_aufgabe5" style="display: none">
+    <p>
+        <b>
+            (d)
+        </b>
+        Enter a suitable estimate for
+Probability that in the following year it is not more than two
+It will be a death of traffic.
+    </p>
+    <p>
+        <i>
+            Please provide an exact expression for the estimated value; or
+a decimal number rounded to at least two decimal places,
+and then click on "Check".
+        </i>
+    </p>
+    <p>
+        Answer: \(P(X\le 2)\approx\) [[/lang]][[input:ans_wsk]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans_wsk]][[lang code="de"]]
+    </p>
+    [[/lang]][[lang code="en"]]
+    [[/lang]][[feedback:prt_d_wsk]][[lang code="de"]]
+</div>
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]][[lang code="en"]]
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>7.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  Verkehrstote (diskrete Zufallsvariablen)
+
+  wurde entwickelt von
+  
+    Jonas Lache <jonas.lache[at]ruhr-uni-bochum.de>
+
+  nach einer Idee von
+  
+    Herold Dehling <herold.dehling[at]ruhr-uni-bochum.de>
+
+  an der Ruhr-Universit&#228;t Bochum.
+
+  Dieses Werk ist lizenziert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+
+  Diese Aufgabe bindet das Skript &#8216;stackselbstlern.js&#8217; von Michael
+  Kallweit f&#252;r die Aufgabennavigation ein.
+
+  Die Aufgabe enth&#228;lt authentische Daten, die ggf. aktualisiert werden
+  sollten.
+*/
+
+/* Anzahl der gedruckten Stellen: */
+fpprintprec: 4;
+
+/* Jahreszahlen (ggf. aktualisieren): */
+Jahre: makelist(2012+i,i,0,9);
+
+/* Daten (kann auch randomisiert werden): */
+AListe: [5,3,8,5,2,5,3,2,6,4];
+
+/* Anzahl der Verkehrstoten im gesamten Zeitraum: */
+sumA:  apply("+", AListe);
+
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+/* Liste der Optionen f&#252;r Aufgabenteil (a): */
+Liste1: [
+    [1,true, tr("Poisson-Verteilung","poisson distribution")],
+    [2,false,tr("Binomialverteilung","binomial distribution")],
+    [3,false,tr("Bernoulli-Verteilung","bernoulli distribution")],
+    [4,false,tr("Laplace-Verteilung","laplace distribution")],
+    [5,false,tr("hypergeometrische Verteilung","hypergeometric distribution")],
+    [6,false,tr("geometrische Verteilung","geometric distribution")]
+];
+Liste1: random_permutation(Liste1);
+TA2: 1;
+
+/* Durchschnittliche Anzahl Verkehrstoter pro Jahr = EW = geeigneter Sch&#228;tzer f&#252;r Parameter: */
+lambda: sumA/10; 
+EW: lambda;
+Var: lambda;
+
+/* Wahrscheinlichkeitsfunktion: */
+Fkt: exp((-1)*lambda)*((lambda)^k/( k!)), %emode:false;
+/* Als Funktion: */
+p(k):=exp((-1)*lambda)*((lambda)^k/( k!));
+/* Wahrscheinlichkeitsfunktion ohne e-Funktion-Teil: */ 
+p2(k):=((lambda)^k/( k!));
+TA5: p(0)+p(1)+p(2);
+fTA5: float(TA5);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>Daten: {#AListe#}</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partly correct.[[/lang]]
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.[[/lang]]
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans_ew</name>
+            <type>algebraic</type>
+            <tans>EW</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>1</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans_lambda</name>
+            <type>algebraic</type>
+            <tans>lambda</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>1</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans_var</name>
+            <type>algebraic</type>
+            <tans>Var</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>1</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans_vert</name>
+            <type>dropdown</type>
+            <tans>Liste1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans_wfkt</name>
+            <type>algebraic</type>
+            <tans>Fkt</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>1</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans_wsk</name>
+            <type>algebraic</type>
+            <tans>TA5</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>1</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt_a_vert</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>/* === Erkl&#228;rung der Knoten: Wurde die ... ausgew&#228;hlt? ===
+1. Knoten: Poisson-Verteilung
+2. Knoten: Binomialverteilung
+3. Knoten: Bernoulli-Verteilung
+4. Knoten: Laplace-Verteilung
+5. Knoten: Hypergeometrische Verteilung
+6. Knoten: Geometrische Verteilung
+*/</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_vert</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_a_vert-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Die Poisson-Verteilung wird dann verwendet, wenn in einem festen Zeitraum
+                oder r&#228;umlichen Gebiet Ereignisse unabh&#228;ngig voneinander auftreten. Zur
+                Begr&#252;ndung f&#252;r die Poisson-Verteilung kann man sich den Zeitraum (oder das
+                r&#228;umliche Gebiet) in \(n\) kleinste Teile aufgeteilt denken, in denen
+                jeweils mit sehr kleiner Wahrscheinlichkeit \(p_n\) ein Ereignis auftritt
+                (und mit Wahrscheinlichkeit \(1-p_n\) kein Ereignis). Im Limes stets kleiner
+                werdender Teilgebiete erh&#228;lt man so eine Poisson-Verteilung, deren Parameter
+                im Allgemeinen unbekannt sein wird und mit statistischen Verfahren gesch&#228;tzt
+                werden muss.
+</p>
+<hr/>
+<p>
+    Bitte klicken Sie auf den folgenden Button, um zur n&#228;chsten Teilaufgabe zu
+                gelangen:
+    <button class="buttonweiter" onclick="hide('oer-aufgabe-2_aufgabe2');
+                                                                    show('oer-aufgabe-2_aufgabe3');
+                                                                    show('oer-aufgabe-2_hinweis');" type="button">
+        Weiter
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The Poisson distribution is used when in a fixed period
+or spatial area events occur independently of one another. To
+The reason for the Poisson distribution can be the period (or
+) in \(n\) small parts divided think in which
+in each case with very low probability \(p_n\) an event occurs
+(and with probability) \(1-p_n\) no event). In the lime always smaller
+a Poisson distribution, whose parameters
+is generally unknown and is estimated using statistical methods
+must be.
+</p>
+<hr/>
+<p>
+    Please click on the following button to enter the next part task
+to:
+    <button class="buttonweiter" onclick="hide('oer-aufgabe-2_aufgabe2');
+                                                                    show('oer-aufgabe-2_aufgabe3');
+                                                                    show('oer-aufgabe-2_hinweis');" type="button">
+        Next
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt_a_vert-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_vert</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_a_vert-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Mit der Binomialverteilung wird die Zahl der Erfolge in \(n\) unabh&#228;ngigen
+                Bernoulli-Experimenten modelliert. Bei dieser Aufgabe k&#246;nnte man
+                argumentieren, dass jede:r Einwohner:in der Stadt Bochum im Laufe eines
+                Jahres Opfer eines t&#246;dlichen Verkehrsunfalls werden kann, und wir damit so
+                viele Bernoulli-Experimente haben wie die Stadt Bochum Einwohner:innen hat.
+</p>
+<p>
+    Es gibt mehrere Argumente, die gegen diesen Modellierungsansatz sprechen:
+</p>
+<ol type="a">
+    <li>
+        In der Statistik der Verkehrstoten werden nicht nur Einwohner:innen der
+                                Stadt Bochum aufgenommen, sodass wir \(n\) nicht kennen.
+    </li>
+    <li>
+        In jedem Fall ist \(n\) sehr gro&#223;, sodass eine geeignete Approximation
+                                angebracht ist.
+    </li>
+</ol>
+<p>
+    Ein anderer Modellierungsansatz, der diese Probleme vermeidet, geht wie
+                folgt: Wir k&#246;nnen uns vorstellen, dass an jedem Tag des Jahres ein Los
+                gezogen wird, das dar&#252;ber entscheidet, ob es an diesem Tag einen t&#246;dlichen
+                Verkehrsunfall gibt oder nicht. Die Zahl der Verkehrstoten h&#228;tte dann eine
+                Binomialverteilung mit Parameter \(n = 365\) und sehr kleiner
+                Wahrscheinlichkeit \(p\). Wir k&#246;nnen diese Idee weiterdenken und die Tage
+                durch Stunden, Minuten oder Sekunden ersetzen, wobei wir nat&#252;rlich ein stets
+                kleineres \(p\) nehmen.
+</p>
+<p>
+    &#220;berlegen Sie mal, welche Verteilung sich hier im Limes ergibt.
+</p>
+<script>
+    document.querySelector(".stackprtfeedback-prt_a_vert > div").innerHTML =
+                                '<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Ihre Antwort ist nicht komplett falsch.';
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    With the binomial distribution, the number of successes in \(n\) independent
+Bernoulli experiments modeled. This task could be
+argue that any:r inhabitants:in the city of Bochum over one
+It is also important to note that the Commission's proposal for a directive on the approximation of the laws of the Member States relating to the approximation of the laws of the Member
+many Bernoulli experiments like the city of Bochum have inhabitants:inside.
+</p>
+<p>
+    There are several arguments against this modeling approach:
+</p>
+<ol type="a">
+    <li>
+        In the statistics of road deaths, not only are residents:
+City of Bochum, so we \(n\) not knowing.
+    </li>
+    <li>
+        In any case, \(n\) very large, so that a suitable approximation
+is attached.
+    </li>
+</ol>
+<p>
+    Another modelling approach that avoids these problems goes as
+follows: We can imagine that every day of the year a lot
+that decides whether it is a deadly one on that day
+There is a traffic accident or not. The number of road deaths would then have
+Binomial distribution with parameters \(n = 365\) and very small
+Probability \(p\). We can keep thinking about this idea and the days
+replace with hours, minutes or seconds, of course,
+smaller \(p\) take.
+</p>
+<p>
+    Think about the distribution here in the lime.
+</p>
+<script>
+    document.querySelector(".stackprtfeedback-prt_a_vert > div").innerHTML =
+                                '<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Ihre Antwort ist nicht komplett falsch.';
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt_a_vert-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Mit der von Ihnen ausgew&#228;hlten Verteilung werden die Daten nicht sinnvoll
+                modelliert.
+</p>
+<p>
+    W&#228;ren die empirischen Daten ohne Zusammenhang pr&#228;sentiert, k&#246;nnte
+                theoretisch jede Verteilung zur Modellierung verwendet werden. Da die Daten
+                in der Aufgabenstellung aber einen bestimmten Kontext erhalten, kann man
+                sicher sagen, dass die von Ihnen gew&#228;hlte Verteilung keine sinnvolle Wahl
+                ist.
+</p>
+<p>
+    Bitte w&#228;hlen Sie eine andere, passende Verteilung aus und klicken Sie dann
+                erneut auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    With the distribution you select, the data will not make sense
+modelled.
+</p>
+<p>
+    If the empirical data were presented in no context, it could
+theoretically any distribution is used for modelling. Since the data
+but in the task a specific context can be obtained,
+surely say that the distribution you choose does not make a meaningful choice
+is.
+</p>
+<p>
+    Please select another, matching distribution and then click
+again on "Check".
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_vert</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_a_vert-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Zu Ihrer ausgew&#228;hlten Option: Bernoulli-verteilte Zufallsvariablen k&#246;nnen
+                nur die Werte 0 oder 1 annehmen. Die Bernoulli-Verteilung hat den Parameter
+                \(p = P(X = 1)\). Solche Zufallsvariablen treten im Zusammenhang mit
+                Experimenten auf, die nur zwei m&#246;gliche Ergebnisse haben (Kopf oder Zahl
+                beim M&#252;nzwurf, Schaden oder kein Schaden bei einer Versicherung), oder bei
+                denen man sich nur daf&#252;r interessiert, ob ein bestimmtes Ereignis eintritt
+                oder nicht (eine 6 beim W&#252;rfeln, ein 3-er Pasch beim 3-fachen W&#252;rfeln). Oft
+                verwendet man die Begriffe "Erfolg" und "Misserfolg" f&#252;r die beiden
+                Ergebnisse, obwohl diese Bezeichnung in vielen Anwendungen unpassend oder
+                gar irref&#252;hrend ist.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    To your selected option: Bernoulli distributed random variables can
+only assume the values 0 or 1. The Bernoulli distribution has the parameter
+    \(p = P(X = 1)\). Such random variables are related to
+Experiments that have only two possible results (head or number)
+in the case of a coin, damage or damage to an insurance company), or
+who are only interested in whether a particular event occurs
+or not (a 6 at the dice, a 3 pash at 3 times the dice). Often
+use the terms "success" and "success" for the two
+results, although this name is inappropriate in many applications; or
+is even misleading.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prt_a_vert-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_vert</sans>
+                <tans>4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_a_vert-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Zu Ihrer ausgew&#228;hlten Option: Die Laplace-Verteilung (auch diskrete
+                Gleichverteilung genannt) wird dann verwendet, wenn eine Zufallsvariable
+                \(X\) einen endlichen Wertebereich hat und jeder m&#246;gliche Wert mit derselben
+                Wahrscheinlichkeit angenommen wird. Bezeichnet \(N\) die Anzahl der
+                m&#246;glichen Werte, so gilt \(p(k)=\frac{1}{N}\) f&#252;r jedes \(k\) aus dem
+                Wertebereich von \(X\). Beispiele sind die Augenzahl beim einmaligen Werfen
+                eines fairen W&#252;rfels oder die Nummer, die beim einmaligen Ziehen aus einer
+                Urne mit \(N\) nummerierten Kugeln gezogen wird.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    To your selected option: Laplace distribution (also discrete)
+DC distribution) is used when a random variable
+    \(X\) has a finite value range and any possible value with the same
+Probability is assumed. Reference \(N\) the number of
+possible values, so applies \(p(k)=\frac{1}{N}\) for each \(k\) from
+Value range of \(X\). Examples are the number of eyes in single throwing
+a fair cube or the number that comes from a single draw
+Urne with \(N\) numbered balls are pulled.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prt_a_vert-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_vert</sans>
+                <tans>5</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_a_vert-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Zu Ihrer ausgew&#228;hlten Option: Die hypergeometrische Verteilung tritt auf,
+                wenn eine Stichprobe (der Gr&#246;&#223;e \(n\)) aus einer endlichen Grundgesamtheit
+                (der M&#228;chtigkeit \(N\)), von der ein bestimmter Teil (\(R\) Elemente) eine
+                gewisse Eigenschaft besitzt, ohne Zur&#252;cklegen gezogen wird. Die Anzahl der
+                Elemente in der Stichprobe mit der gesuchten Eigenschaft hat dann eine
+                hypergeometrische Verteilung (mit Parametern \((n,R,N)\)).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    To your selected option: The hypergeometric distribution occurs,
+if a sample (the size) \(n\)) from a finite population
+(The Powerfulness) \(N\)), of which a certain part (\(R\) Elements)
+has certain property, without being withdrawn. The number
+elements in the sample with the property sought then has a
+hypergeometric distribution (with parameters) \((n,R,N)\)).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>prt_a_vert-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_vert</sans>
+                <tans>6</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_a_vert-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Zu Ihrer ausgew&#228;hlten Option: Wird ein Zufallsexperiment mehrfach unabh&#228;ngig
+                durchgef&#252;hrt und so lange wiederholt, bis ein bestimmtes Ereignis \(A\)
+                erstmals eingetreten ist (etwa ein Erfolg bei einem Bernoulli-Experiment,
+                eine 6 beim W&#252;rfeln, oder ein 3-er Pasch beim Werfen mit drei W&#252;rfeln), so
+                hat die Anzahl der Fehlversuche vor dem ersten Eintreten des Ereignisses eine
+                geometrische Verteilung mit Parameter \(p = P(A)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    To your selected option: Will a random experiment be multiple independent
+performed and repeated until a certain event \(A\)for the first time (a success with a Bernoulli experiment,
+a 6 in the dice, or a 3 in the case of throwing with three cubes),
+the number of failures before the first occurrence of the event
+Geometric distribution with parameters \(p = P(A)\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_a_vert-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Bitte w&#228;hlen Sie eine der Optionen aus.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Please select one of the options.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_b_lambda</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans_lambda</sans>
+                <tans>lambda</tans>
+                <testoptions>0.00001</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_b_lambda-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben den Sch&#228;tzwert f&#252;r den Parameter richtig angegeben. Dieser 
+entspricht der durchschnittlichen Anzahl an Verkehrstoten pro Jahr im 
+Gesamtzeitraum.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have correctly specified the estimated value for the parameter. This
+corresponds to the average number of road deaths per year
+Total period.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_b_lambda-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben den Sch&#228;tzwert leider nicht korrekt angegeben.
+</p>
+<div id="oer-aufgabe-2_tipp_button_prt2a">
+    <p>
+        Wenn Sie nicht weiterkommen, k&#246;nnen Sie auf den folgenden Button
+                                klicken:
+        <button class="buttontipp" onclick="hide('oer-aufgabe-2_tipp_button_prt2a');
+                                                                                    show('oer-aufgabe-2_tipp_div_prt2a');" type="button">
+            Zeige einen Tipp
+        </button>
+    </p>
+</div>
+<div class="divtipp" id="oer-aufgabe-2_tipp_div_prt2a" style="display: none">
+    <p>
+        Tipp:
+    </p>
+    <p>
+        Der Parameter der Poisson-Verteilung ist gleichzeitig der
+                                Erwartungswert. Bei der Suche nach einem Sch&#228;tzer f&#252;r den Erwartungswert
+                                hilft das Gesetz der gro&#223;en Zahlen. Es sagt aus, dass das
+                                arithmetische Mittel unabh&#228;ngiger Zufallsvariablen gegen den
+                                Erwartungswert konvergiert.
+    </p>
+    <p>
+        Dies motiviert die Wahl des arithmetischen Mittels als Sch&#228;tzer f&#252;r
+                                den Erwartungswert. Es handelt sich hier um einen Spezialfall der
+                                Momentenmethode.
+    </p>
+</div>
+<p>
+    Bitte probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Unfortunately, you did not correctly specify the estimated value.
+</p>
+<div id="oer-aufgabe-2_tipp_button_prt2a">
+    <p>
+        If you do not proceed, you can click on the following button
+click:
+        <button class="buttontipp" onclick="hide('oer-aufgabe-2_tipp_button_prt2a');
+                                                                                    show('oer-aufgabe-2_tipp_div_prt2a');" type="button">
+            Show a tip
+        </button>
+    </p>
+</div>
+<div class="divtipp" id="oer-aufgabe-2_tipp_div_prt2a" style="display: none">
+    <p>
+        Tip:
+    </p>
+    <p>
+        The parameter of the Poisson distribution is the
+Expected value. Looking for an estimate for the expected value
+helps the law of great numbers. It says that
+arithmetic means of independent random variables against
+expected value converged.
+    </p>
+    <p>
+        This motivates the choice of arithmetic means as an estimator for
+the expected value. This is a special case of
+Moment method.
+    </p>
+</div>
+<p>
+    Please try it again and then click "Check".
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_b_weiter</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text>/* Folgendes ist n&#246;tig, da MAXIMA %e^z ausrechnet, wenn z eine Flie&#223;kommazahl ist. mit `emode:false` wird hier sichergestellt, dass STACK auch in diesen F&#228;llen die Antwort als richtig bewertet: */
+%emode:false;
+
+/* Absolute Differenz von SAns und TAns (da sonst die Antwort&#252;berpr&#252;fung fehleranf&#228;llig ist): */
+diff_ans3: abs(float(ans_wfkt)-float(Fkt));
+
+/* Folgefehler mit falschem Sch&#228;tzwert: */
+TAns3_2_ff: exp((-1)*ans_lambda)*((ans_lambda)^k/( k!));  
+
+/* Absolute Differenz von SAns und TAns3_2_ff (da sonst die Antwort&#252;berpr&#252;fung fehleranf&#228;llig ist): */
+diff_ans3_ff: abs(float(ans_wfkt)-float(TAns3_2_ff));</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans><![CDATA[is(diff_ans3<0.0001)]]></sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt_b_weiter-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt_b_weiter-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans_lambda</sans>
+                <tans>lambda</tans>
+                <testoptions>0.00001</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_b_weiter-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Bitte klicken Sie auf den folgenden Button, um zum n&#228;chsten Aufgabenteil zu
+                gelangen:
+    <button class="buttonweiter" onclick="hide('oer-aufgabe-2_aufgabe3');
+                                                                    show('oer-aufgabe-2_aufgabe4');" type="button">
+        Weiter
+    </button>
+</p>
+<script>
+    (function(){
+                                const ansDiv = document.querySelector("#oer-aufgabe-2_erinnerung");
+                                const ansDiv_ul = document.querySelector("#oer-aufgabe-2_erinnerung > ul");
+                                ansDiv.style.display = "block";
+                                const listitem1 = document.createElement("li");
+                                listitem1.append("Der Parameter der Poisson-verteilten Zufallsvariablen lautet "+"\\"+"("+"\\"+"lambda ="+{#tex1(ans_lambda)#}+"\\"+")");
+                                const listitem2 = document.createElement("li");
+                                listitem2.append("Die Wahrscheinlichkeitsfunktion der Poisson-verteilten Zufallsvariablen lautet "+"\\"+"( P(X=k) = e^{{#-1*decimalplaces(lambda,2)#}}"+"\\"+ "cdot"+"\\"+"frac{{#decimalplaces(lambda,2)#}^k}{k!}"+"\\"+")");
+                                ansDiv_ul.append(listitem1);
+                                ansDiv_ul.append(listitem2);
+                })();
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    Please click on the following button to get to the next task
+to:
+    <button class="buttonweiter" onclick="hide('oer-aufgabe-2_aufgabe3');
+                                                                    show('oer-aufgabe-2_aufgabe4');" type="button">
+        Next
+    </button>
+</p>
+<script>
+    (function(){
+                                const ansDiv = document.querySelector("#oer-aufgabe-2_erinnerung");
+                                const ansDiv_ul = document.querySelector("#oer-aufgabe-2_erinnerung > ul");
+                                ansDiv.style.display = "block";
+                                const listitem1 = document.createElement("li");
+                                listitem1.append("Der Parameter der Poisson-verteilten Zufallsvariablen lautet "+"\\"+"("+"\\"+"lambda ="+{#tex1(ans_lambda)#}+"\\"+")");
+                                const listitem2 = document.createElement("li");
+                                listitem2.append("Die Wahrscheinlichkeitsfunktion der Poisson-verteilten Zufallsvariablen lautet "+"\\"+"( P(X=k) = e^{{#-1*decimalplaces(lambda,2)#}}"+"\\"+ "cdot"+"\\"+"frac{{#decimalplaces(lambda,2)#}^k}{k!}"+"\\"+")");
+                                ansDiv_ul.append(listitem1);
+                                ansDiv_ul.append(listitem2);
+                })();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_b_weiter-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans><![CDATA[is(diff_ans3_ff<0.00001)]]></sans>
+                <tans>true</tans>
+                <testoptions>0.00001</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_b_weiter-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben einen Folgefehler eingebaut, n&#228;mlich Ihren falschen Sch&#228;tzwert korrekt in die Formel f&#252;r die
+    <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='Auch bekannt unter "Z&#228;hldichte"'>
+        Wahrscheinlichkeitsfunktion
+    </span>
+    einer Poisson-verteilten Zufallsvariablen eingesetzt.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have incorporated a follow-up error, namely your wrong estimate correctly into the formula for
+    <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='Auch bekannt unter "Z&#228;hldichte"'>
+        Probability function
+    </span>
+    a Poisson-distributed random variables.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_b_weiter-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_b_wkft</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>/* Folgendes ist n&#246;tig, da MAXIMA %e^z ausrechnet, wenn z eine Flie&#223;kommazahl ist. Mit `emode:false` wird hier sichergestellt, dass STACK auch in diesen F&#228;llen die Antwort als richtig bewertet: */
+%emode:false;
+
+/* Absolute Differenz von SAns und TAns (da sonst die Antwort&#252;berpr&#252;fung fehleranf&#228;llig ist): */
+diff_ans3: abs(float(ans_wfkt)-float(Fkt));</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans><![CDATA[is(diff_ans3<0.0001)]]></sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_b_wkft-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die
+    <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='Auch bekannt unter "Z&#228;hldichte"'>
+        Wahrscheinlichkeitsfunktion
+    </span>
+    \(p(k)=P(X=k)\) richtig angegeben.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have
+    <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='Auch bekannt unter "Z&#228;hldichte"'>
+        Probability function
+    </span>
+    \(p(k)=P(X=k)\) correctly stated.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_b_wkft-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die
+    <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='Auch bekannt unter "Z&#228;hldichte"'>
+        Wahrscheinlichkeitsfunktion
+    </span>
+    leider nicht korrekt angegeben.
+</p>
+<p>
+    Bitte probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+<div id="oer-aufgabe-2_tipp_button_prt2b">
+    <p>
+        Wenn Sie nicht weiterkommen, k&#246;nnen Sie auf den folgenden Button
+                                klicken:
+        <button class="buttontipp" onclick="hide('oer-aufgabe-2_tipp_button_prt2b');
+                                                                                    show('oer-aufgabe-2_tipp_div_prt2b');" type="button">
+            Zeige einen Tipp
+        </button>
+    </p>
+</div>
+<div class="divtipp" id="oer-aufgabe-2_tipp_div_prt2b" style="display: none">
+    <p>
+        Tipp:
+    </p>
+    <p>
+        Gesucht ist hier die
+        <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='Auch bekannt unter "Z&#228;hldichte"'>
+            Wahrscheinlichkeitsfunktion
+        </span>
+        \(p(k)=P(X=k)\) einer
+                                Poisson-verteilten Zufallsvariablen. Der Parameter ist dabei der
+                                Sch&#228;tzwert aus dem obigen Aufgabenteil.
+    </p>
+</div>
+[[/lang]][[lang code="en"]]
+<p>
+    You have
+    <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='Auch bekannt unter "Z&#228;hldichte"'>
+        Probability function
+    </span>
+    unfortunately not correctly stated.
+</p>
+<p>
+    Please try it again and then click "Check".
+</p>
+<div id="oer-aufgabe-2_tipp_button_prt2b">
+    <p>
+        If you do not proceed, you can click on the following button
+click:
+        <button class="buttontipp" onclick="hide('oer-aufgabe-2_tipp_button_prt2b');
+                                                                                    show('oer-aufgabe-2_tipp_div_prt2b');" type="button">
+            Show a tip
+        </button>
+    </p>
+</div>
+<div class="divtipp" id="oer-aufgabe-2_tipp_div_prt2b" style="display: none">
+    <p>
+        Tip:
+    </p>
+    <p>
+        The
+        <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='Auch bekannt unter "Z&#228;hldichte"'>
+            Probability function
+        </span>
+        \(p(k)=P(X=k)\) a
+Poisson-distributed random variables. The parameter is
+Estimated value from the above task.
+    </p>
+</div>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_c_ew</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans_ew</sans>
+                <tans>EW</tans>
+                <testoptions>0.00001</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_c_ew-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben den Erwartungswert richtig bestimmt. Der Erwartungswert einer Poisson-verteilten Zufallsvariablen entspricht immer dem Parameter der Verteilung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have determined the expected value correctly. The expected value of a Poisson-distributed random variable always corresponds to the parameter of the distribution.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_c_ew-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben den Erwartungswert leider nicht korrekt bestimmt.
+</p>
+<p>
+    Bitte probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+<p>
+    Wenn Sie m&#246;chten, k&#246;nnen Sie im Internet oder der Literatur nachschauen, was der Erwartungswert einer Poisson-verteilten Zufallsvariablen ist.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Unfortunately, you did not determine the expected value correctly.
+</p>
+<p>
+    Please try it again and then click "Check".
+</p>
+<p>
+    If you want, you can check on the internet or literature what is the expected value of a Poisson distributed random variables.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_c_var</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans_var</sans>
+                <tans>Var</tans>
+                <testoptions>0.00001</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_c_var-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die Varianz richtig bestimmt. Die Varianz einer Poisson-verteilten Zufallsvariablen entspricht immer dem Parameter der Verteilung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You've determined the variance. The variance of a Poisson-distributed random variables always corresponds to the parameter of the distribution.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_c_var-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die Varianz leider nicht korrekt bestimmt.
+</p>
+[[ if test='is(ans_var&lt;0)' ]]
+<p>
+    Ihr Wert ist eine negative Zahl. Eine Varianz kann aber niemals negativ sein.
+</p>
+[[/ if ]]
+<p>
+    Bitte probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+<p>
+    Wenn Sie m&#246;chten k&#246;nnen Sie im Internet oder der Literatur nachschauen, was die Varianz einer Poisson-verteilten Zufallsvariablen ist.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Unfortunately, you did not determine the variance correctly.
+</p>
+[[ if test='is(ans_var&lt;0)' ]]
+<p>
+    Their value is a negative number. A variance can never be negative.
+</p>
+[[/ if ]]
+<p>
+    Please try it again and then click "Check".
+</p>
+<p>
+    If you would like to see on the internet or literature what is the variance of a Poisson distributed random variables.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_c_weiter</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>[ans_ew,ans_var]</sans>
+                <tans>[EW, Var]</tans>
+                <testoptions>0.00001</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_c_weiter-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Bitte klicken Sie auf den folgenden Button, um zur n&#228;chsten Teilaufgabe zu
+                gelangen:
+    <button class="buttonweiter" onclick="hide('oer-aufgabe-2_aufgabe4');show('oer-aufgabe-2_aufgabe5');" type="button">
+        Weiter
+    </button>
+</p>
+<script>
+    (function(){
+                                const ansDiv = document.querySelector("#oer-aufgabe-2_erinnerung");
+                                const ansDiv_ul = document.querySelector("#oer-aufgabe-2_erinnerung > ul");
+                                ansDiv.style.display = "block";
+                                const listitem = document.createElement("li");
+                                listitem.append("Es gilt "+"\\"+"("+"\\"+"text{E}(X)="+"\\"+"text{Var}(X)="+"\\"+"lambda ="+{#tex1(ans_ew)#}+"\\"+")");
+                                ansDiv_ul.append(listitem);
+                })();
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    Please click on the following button to enter the next part task
+to:
+    <button class="buttonweiter" onclick="hide('oer-aufgabe-2_aufgabe4');show('oer-aufgabe-2_aufgabe5');" type="button">
+        Next
+    </button>
+</p>
+<script>
+    (function(){
+                                const ansDiv = document.querySelector("#oer-aufgabe-2_erinnerung");
+                                const ansDiv_ul = document.querySelector("#oer-aufgabe-2_erinnerung > ul");
+                                ansDiv.style.display = "block";
+                                const listitem = document.createElement("li");
+                                listitem.append("Es gilt "+"\\"+"("+"\\"+"text{E}(X)="+"\\"+"text{Var}(X)="+"\\"+"lambda ="+{#tex1(ans_ew)#}+"\\"+")");
+                                ansDiv_ul.append(listitem);
+                })();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_c_weiter-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_d_wsk</name>
+            <value>2.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>/* === Erkl&#228;rung der Knoten: ===
+1. Knoten: Ist die Antwort richtig?
+2. Knoten: Ist die angegebene Wahrscheinlichkeit im Intervall [0,1]?
+*/</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans_wsk</sans>
+                <tans>TA5</tans>
+                <testoptions>0.005</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_d_wsk-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Wir k&#246;nnen diese Wahrscheinlichkeit sch&#228;tzen, indem wir die
+                Wahrscheinlichkeiten \(P(X= k)\) f&#252;r \(k=0,1,2\) aufsummieren.
+</p>
+<p>
+    Formal korrekt und vollst&#228;ndig schreibt man dies wie folgt auf:
+</p>
+<p>
+    \[ \begin{align} P(X\le 2)&amp;=\sum_{k=0}^{2}\ P(X=k) \\&#160; &amp;=
+                \sum_{k=0}^{2}\ e^{-{@float(lambda)@}}\cdot \frac{{@float(lambda)@}^k}{k!}
+                \\ &amp;= e^{-{@float(lambda)@}}\cdot
+                \sum_{k=0}^{2}\&#160;\frac{{@float(lambda)@}^k}{k!}&#160; \\ &amp;=
+                e^{-{@float(lambda)@}}\cdot
+                ({@float(p2(0))@}+{@float(p2(1))@}+{@float(p2(2))@}) \\ &amp;\approx
+                {@fTA5@}&#160; \end{align}\]
+</p>
+<hr/>
+<p>
+    Herzlichen Gl&#252;ckwunsch, Sie sind am Ende der Aufgabe angekommen. Sie sollten
+                nun Daten mithilfe der Poisson-Verteilung beschreiben
+                und einen Sch&#228;tzwert f&#252;r den Erwartungswert, die Varianz und
+                Wahrscheinlichkeiten bestimmen k&#246;nnen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    We can estimate this likelihood by
+Probabilities \(P(X= k)\) for \(k=0,1,2\) to sum up.
+</p>
+<p>
+    Formally correct and complete this is described as follows:
+</p>
+<p>
+    \[ \begin{align} P(X\le 2)&amp;=\sum_{k=0}^{2}\ P(X=k) \\&#160; &amp;=
+                \sum_{k=0}^{2}\ e^{-{@float(lambda)@}}\cdot \frac{{@float(lambda)@}^k}{k!}
+                \\ &amp;= e^{-{@float(lambda)@}}\cdot
+                \sum_{k=0}^{2}\&#160;\frac{{@float(lambda)@}^k}{k!}&#160; \\ &amp;=
+                e^{-{@float(lambda)@}}\cdot
+                ({@float(p2(0))@}+{@float(p2(1))@}+{@float(p2(2))@}) \\ &amp;\approx
+                {@fTA5@}&#160; \end{align}\]
+</p>
+<hr/>
+<p>
+    Congratulations, you arrived at the end of the task. You should
+now describe data using the Poisson distribution
+and an estimated value for the expected value, the variance and
+Probabilities can be determined.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt_d_wsk-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans><![CDATA[is(ans_wsk>=0 and ans_wsk<=1)]]></sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_d_wsk-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben den Sch&#228;tzwert f&#252;r \(P(X\le 2)\) leider nicht korrekt angegeben.
+</p>
+<div id="oer-aufgabe-2_tipp_button_prt4">
+    <p>
+        Wenn Sie nicht weiterkommen, k&#246;nnen Sie auf den folgenden Button
+                                klicken:
+        <button class="buttontipp" onclick="hide('oer-aufgabe-2_tipp_button_prt4');
+                                                                                    show('oer-aufgabe-2_tipp_div_prt4');" type="button">
+            Zeige einen Tipp
+        </button>
+    </p>
+</div>
+<div class="divtipp" id="oer-aufgabe-2_tipp_div_prt4" style="display: none">
+    <p>
+        Tipp:
+    </p>
+    <p>
+        Es gilt \(P(X\le 2)=\sum_{k=0}^{2}\,P(X=k)\). Beachten Sie auch die Box
+                                oben, in der die Erkenntnisse aus den bisherigen Teilaufgaben
+                                aufgelistet sind.
+    </p>
+</div>
+<p>
+    Bitte probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have the estimated value for \(P(X\le 2)\) unfortunately not correctly stated.
+</p>
+<div id="oer-aufgabe-2_tipp_button_prt4">
+    <p>
+        If you do not proceed, you can click on the following button
+click:
+        <button class="buttontipp" onclick="hide('oer-aufgabe-2_tipp_button_prt4');
+                                                                                    show('oer-aufgabe-2_tipp_div_prt4');" type="button">
+            Show a tip
+        </button>
+    </p>
+</div>
+<div class="divtipp" id="oer-aufgabe-2_tipp_div_prt4" style="display: none">
+    <p>
+        Tip:
+    </p>
+    <p>
+        The following shall apply: \(P(X\le 2)=\sum_{k=0}^{2}\,P(X=k)\). Also note the box
+above, in which the findings from the previous subtasks
+are listed.
+    </p>
+</div>
+<p>
+    Please try it again and then click "Check".
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_d_wsk-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antwort liegt nicht im Intervall \([0,1]\). Wahrscheinlichkeit m&#252;ssen
+                aber immer in diesem Intervall liegen!
+</p>
+<p>
+    Bitte geben Sie eine Zahl zwischen 0 und 1 an und klicken Sie dann auf
+                "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer is not in interval \([0,1]\). Probability must
+but always in this interval!
+</p>
+<p>
+    Please specify a number between 0 and 1 and then click on
+"Check."
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

@@ -6,422 +6,420 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    <b>
+        (a)
+    </b>
+    Bestimmen Sie f&#252;r
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
-        <b>
-            (a)
-        </b>
-        Bestimmen Sie f&#252;r
+        <span>
+            {@(B)@} = {@B1@} &#160; &#160;und &#160; &#160;\(b\) ={@b1@}
+        </span>
     </p>
-    <div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        <span>
+            die L&#246;sung des linearen Gleichungssystems
+        </span>
+    </p>
+    <p>
+        <span>
+            \( B\cdot x=b\).
+        </span>
+    </p>
+    <p>
+        <span>
+            Das Gleichungssystem besitzt
+        </span>
+    </p>
+    <p>
+        [[/lang]][[lang code="en"]]
         <p>
+            <b>
+                (a)
+            </b>
+            Choose for
+        </p>
+        <div class="editor-indent" style="margin-left: 30px;">
+            <p>
+                <span>
+                    {@(B)@} = {@B1@} and\(b\) ={@b1@}
+                </span>
+            </p>
+            <p>
+                <span>
+                    the solution of the linear equation system
+                </span>
+            </p>
+            <p>
+                <span>
+                    \( B\cdot x=b\).
+                </span>
+            </p>
+            <p>
+                <span>
+                    The equation
+                </span>
+            </p>
+            <p>
+                [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]]
+            </p>
+        </div>
+        <p>
+            <br/>
             <span>
-                {@(B)@} = {@B1@} &#160; &#160;und &#160; &#160;\(b\) ={@b1@}
             </span>
         </p>
         <p>
-            <span>
+            <b>
+                (b)
+            </b>
+            Bestimmen Sie f&#252;r
+            <br/>
+        </p>
+        <p>
+        </p>
+        <div class="editor-indent" style="margin-left: 30px;">
+            <p>
+                {@(C)@} = {@C1@} &#160; &#160;und &#160; &#160;\(b\) ={@b1@}
+            </p>
+            <p>
                 die L&#246;sung des linearen Gleichungssystems
-            </span>
-        </p>
-        <p>
-            <span>
-                \( B\cdot x=b\).
-            </span>
-        </p>
-        <p>
-            <span>
+            </p>
+            <p>
+                \( C\cdot x= b\).
+            </p>
+            <p>
                 Das Gleichungssystem besitzt
+            </p>
+            <p>
+                [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <p>
+            <br/>
+            <span>
             </span>
         </p>
         <p>
-            [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
-        </p>
-    </div>
-    <p>
-        <br/>
-        <span>
-        </span>
-    </p>
-    <p>
-        <b>
-            (b)
-        </b>
-        Bestimmen Sie f&#252;r
-        <br/>
-    </p>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            {@(C)@} = {@C1@} &#160; &#160;und &#160; &#160;\(b\) ={@b1@}
+            <b>
+                (b)
+            </b>
+            Choose for
+            <br/>
         </p>
         <p>
-            die L&#246;sung des linearen Gleichungssystems
         </p>
-        <p>
-            \( C\cdot x= b\).
-        </p>
-        <p>
-            Das Gleichungssystem besitzt
-        </p>
-        <p>
-            [[input:ans2]] [[validation:ans2]][[feedback:prt2]]
-        </p>
-    </div>
-    <p>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <b>
-            (c)
-        </b>
-        Bestimmen Sie f&#252;r
-        <br/>
-    </p>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            {@(D)@} = {@D1@} &#160; &#160;und &#160; &#160;\(b\) ={@b1@}
-        </p>
-        <p>
-            die L&#246;sung des linearen Gleichungssystems
-        </p>
-        <p>
-            \( D\cdot x = b\).
-        </p>
-        <p>
-            Das Gleichungssystem besitzt
-        </p>
-        <p>
-            [[input:ans3]] [[validation:ans3]][[feedback:prt3]]
-        </p>
-    </div>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        <b>
-            (a)
-        </b>
-        Choose for
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            <span>
-                {@(B)@} = {@B1@} and\(b\) ={@b1@}
-            </span>
-        </p>
-        <p>
-            <span>
+        <div class="editor-indent" style="margin-left: 30px;">
+            <p>
+                {@(C)@} = {@C1@} and\(b\) ={@b1@}
+            </p>
+            <p>
                 the solution of the linear equation system
-            </span>
-        </p>
-        <p>
-            <span>
-                \( B\cdot x=b\).
-            </span>
-        </p>
-        <p>
-            <span>
+            </p>
+            <p>
+                \( C\cdot x= b\).
+            </p>
+            <p>
                 The equation
-            </span>
+            </p>
+            <p>
+                [[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt2]][[lang code="de"]]
+            </p>
+        </div>
+        <p>
         </p>
         <p>
-            [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
-        </p>
-    </div>
-    <p>
-        <br/>
-        <span>
-        </span>
-    </p>
-    <p>
-        <b>
-            (b)
-        </b>
-        Choose for
-        <br/>
-    </p>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            {@(C)@} = {@C1@} and\(b\) ={@b1@}
+            <br/>
         </p>
         <p>
-            the solution of the linear equation system
+            <b>
+                (c)
+            </b>
+            Bestimmen Sie f&#252;r
+            <br/>
         </p>
         <p>
-            \( C\cdot x= b\).
+        </p>
+        <div class="editor-indent" style="margin-left: 30px;">
+            <p>
+                {@(D)@} = {@D1@} &#160; &#160;und &#160; &#160;\(b\) ={@b1@}
+            </p>
+            <p>
+                die L&#246;sung des linearen Gleichungssystems
+            </p>
+            <p>
+                \( D\cdot x = b\).
+            </p>
+            <p>
+                Das Gleichungssystem besitzt
+            </p>
+            <p>
+                [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <p>
         </p>
         <p>
-            The equation
+            <br/>
         </p>
         <p>
-            [[input:ans2]] [[validation:ans2]][[feedback:prt2]]
-        </p>
-    </div>
-    <p>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <b>
-            (c)
-        </b>
-        Choose for
-        <br/>
-    </p>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            {@(D)@} = {@D1@} and\(b\) ={@b1@}
+            <b>
+                (c)
+            </b>
+            Choose for
+            <br/>
         </p>
         <p>
-            the solution of the linear equation system
+        </p>
+        <div class="editor-indent" style="margin-left: 30px;">
+            <p>
+                {@(D)@} = {@D1@} and\(b\) ={@b1@}
+            </p>
+            <p>
+                the solution of the linear equation system
+            </p>
+            <p>
+                \( D\cdot x = b\).
+            </p>
+            <p>
+                The equation
+            </p>
+            <p>
+                [[/lang]][[input:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans3]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt3]][[lang code="de"]]
+            </p>
+        </div>
+        <p>
         </p>
         <p>
-            \( D\cdot x = b\).
         </p>
         <p>
-            The equation
         </p>
         <p>
-            [[input:ans3]] [[validation:ans3]][[feedback:prt3]]
         </p>
-    </div>
-    <p>
+        <p>
+        </p>
+        <p>
+            <br/>
+        </p>
+        <p>
+            <br/>
+        </p>
+        <p>
+        </p>
+        [[/lang]][[lang code="en"]]
     </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-</span>
+</div>
+<p>
+</p>
+<p>
+</p>
+<p>
+</p>
+<p>
+</p>
+<p>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        <strong>
-            L&#246;sung
-        </strong>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <strong>
-            (a)
-        </strong>
-        <br/>
-    </p>
-    <span style="">
-        \(\left(\begin{array}{ccc|c} {@A@} &amp; {@B2@}&amp; {@C2@} &amp; 1\\ 4&amp; 5 &amp; 6 &amp; 1 \\{@D2@} &amp; {@E@} &amp; {@F@} &amp;2 \end{array}\right) \xrightarrow{{@A@}II-4I, {@A@}III-{@D2@}I}\left(\begin{array}{ccc|c} {@A@} &amp; {@B2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*A-B2*4@} &amp; {@6*A-4*C2@} &amp; {@A-4@} \\0&amp; {@E*A-B2*D2@} &amp; {@F*A-D2*C2@} &amp; {@2*A-D2@} \end{array}\right)\xrightarrow{{@5*A-B2*4@}III-({@E*A-B2*D2@})II}\left(\begin{array}{ccc|c} {@A@} &amp; {@B2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*A-B2*4@} &amp; {@6*A-4*C2@} &amp; {@A-4@} \\0&amp; 0 &amp; {@(F*A-D2*C2)*(5*A-B2*4)-(E*A-B2*D2)*(6*A-4*C2)@} &amp; {@(5*A-B2*4)*(2*A-D2)-(E*A-B2*D2)*(A-4)@} \end{array}\right)\)
-    </span>
+[[lang code="de"]]
+<h4>
+    <strong>
+        L&#246;sung
+    </strong>
+</h4>
+<p>
     <br/>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            <br/>
-        </p>
-        <p>
-            Es gibt eine freie Variable (beispielsweise \(x_3\)).
-        </p>
-        <p>
-            Daraus folgt: Das LGS besitzt unendlich viele L&#246;sungen.
-        </p>
-    </div>
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-    <p>
-        <strong>
-            (b)
-        </strong>
-        <br/>
-    </p>
-    <span style="">
-        \(\left(\begin{array}{ccc|c} {@F@} &amp; {@D2@}&amp; {@C2@} &amp; 1\\ 4&amp; 5 &amp; 6 &amp; 1 \\{@B2@} &amp; {@E@} &amp; {@A@} &amp;2 \end{array}\right) \xrightarrow{{@F@}II-4I, {@F@}III-{@B2@}I}\left(\begin{array}{ccc|c} {@F@} &amp; {@D2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*F-D2*4@} &amp; {@6*F-4*C2@} &amp; {@F-4@} \\0&amp; {@E*F-D2*B2@} &amp; {@F*A-B2*C2@} &amp; {@2*F-B2@} \end{array}\right)\xrightarrow{{@5*F-D2*4@}III-({@E*F-B2*D2@})II}\left(\begin{array}{ccc|c} {@F@} &amp; {@D2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*F-D2*4@} &amp; {@6*F-4*C2@} &amp; {@F-4@} \\0&amp; 0 &amp; {@(F*A-B2*C2)*(5*F-D2*4)-(E*F-B2*D2)*(6*F-4*C2)@} &amp; {@(5*F-D2*4)*(2*F-B2)-(E*F-B2*D2)*(F-4)@} \end{array}\right)\)
-    </span>
+</p>
+<p>
+    <strong>
+        (a)
+    </strong>
     <br/>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <br/>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <span>
-            \(x_1,x_2,x_3\) k&#246;nnen eindeutig bestimmt werden.
-        </span>
-        <br/>
-        <p>
-            Daraus folgt: Das LGS besitzt genau eine L&#246;sung.
-        </p>
-    </div>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-    <p>
-        <strong>
-            (c)
-        </strong>
-        <br/>
-    </p>
-    <span style="">
-        \(\left(\begin{array}{ccc|c} {@F3@} &amp; {@E3@}&amp; {@D3@} &amp; 1\\ 6&amp; 5 &amp; 4 &amp; 1 \\{@C3@} &amp; {@B3@} &amp; {@A3@} &amp;2 \end{array}\right) \xrightarrow{{@F3@}II-6I, {@F3@}III-{@C3@}I}\left(\begin{array}{ccc|c} {@F3@} &amp; {@E3@}&amp; {@D3@} &amp; 1\\ 0&amp; {@5*F3-E3*6@} &amp; {@4*F3-6*D3@} &amp; {@F3-6@} \\0&amp; {@B3*F3-E3*C3@} &amp; {@F3*A3-C3*D3@} &amp; {@2*F3-C3@} \end{array}\right)\xrightarrow{{@5*F3-E3*6@}III-({@B3*F3-C3*E3@})II}\left(\begin{array}{ccc|c} {@F3@} &amp; {@E3@}&amp; {@D3@} &amp; 1\\ 0&amp; {@5*F3-E3*6@} &amp; {@4*F3-6*D3@} &amp; {@F3-6@} \\0&amp; 0 &amp; {@(F3*A3-C3*D3)*(5*F3-E3*6)-(B3*F3-C3*E3)*(4*F3-6*D3)@} &amp; {@(5*F3-E3*6)*(2*F3-C3)-(B3*F3-C3*E3)*(F3-6)@} \end{array}\right)\)
-    </span>
-    <br/>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-        </p>
-        <p>
-            <br/>
-        </p>
-        <p>
-            <strong>
-                III:
-            </strong>
-            \(0x_1+0x_2+0x_3={@(5*F3-E3*6)*(2*F3-C3)-(B3*F3-C3*E3)*(F3-6)@}\) ist f&#252;r kein \(x_1,x_2,x_3\) erf&#252;llt.
-        </p>
-        <p>
-            Daraus folgt: Das LGS besitzt keine L&#246;sung.
-        </p>
-    </div>
+</p>
+<span style="">
+    \(\left(\begin{array}{ccc|c} {@A@} &amp; {@B2@}&amp; {@C2@} &amp; 1\\ 4&amp; 5 &amp; 6 &amp; 1 \\{@D2@} &amp; {@E@} &amp; {@F@} &amp;2 \end{array}\right) \xrightarrow{{@A@}II-4I, {@A@}III-{@D2@}I}\left(\begin{array}{ccc|c} {@A@} &amp; {@B2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*A-B2*4@} &amp; {@6*A-4*C2@} &amp; {@A-4@} \\0&amp; {@E*A-B2*D2@} &amp; {@F*A-D2*C2@} &amp; {@2*A-D2@} \end{array}\right)\xrightarrow{{@5*A-B2*4@}III-({@E*A-B2*D2@})II}\left(\begin{array}{ccc|c} {@A@} &amp; {@B2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*A-B2*4@} &amp; {@6*A-4*C2@} &amp; {@A-4@} \\0&amp; 0 &amp; {@(F*A-D2*C2)*(5*A-B2*4)-(E*A-B2*D2)*(6*A-4*C2)@} &amp; {@(5*A-B2*4)*(2*A-D2)-(E*A-B2*D2)*(A-4)@} \end{array}\right)\)
 </span>
-<span class="multilang" lang="en">
-    <h4>
-        <strong>
-            Solution
-        </strong>
-    </h4>
+<br/>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
         <br/>
     </p>
     <p>
-        <strong>
-            (a)
-        </strong>
-        <br/>
+        Es gibt eine freie Variable (beispielsweise \(x_3\)).
     </p>
-    <span style="">
-        \(\left(\begin{array}{ccc|c} {@A@} &amp; {@B2@}&amp; {@C2@} &amp; 1\\ 4&amp; 5 &amp; 6 &amp; 1 \\{@D2@} &amp; {@E@} &amp; {@F@} &amp;2 \end{array}\right) \xrightarrow{{@A@}II-4I, {@A@}III-{@D2@}I}\left(\begin{array}{ccc|c} {@A@} &amp; {@B2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*A-B2*4@} &amp; {@6*A-4*C2@} &amp; {@A-4@} \\0&amp; {@E*A-B2*D2@} &amp; {@F*A-D2*C2@} &amp; {@2*A-D2@} \end{array}\right)\xrightarrow{{@5*A-B2*4@}III-({@E*A-B2*D2@})II}\left(\begin{array}{ccc|c} {@A@} &amp; {@B2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*A-B2*4@} &amp; {@6*A-4*C2@} &amp; {@A-4@} \\0&amp; 0 &amp; {@(F*A-D2*C2)*(5*A-B2*4)-(E*A-B2*D2)*(6*A-4*C2)@} &amp; {@(5*A-B2*4)*(2*A-D2)-(E*A-B2*D2)*(A-4)@} \end{array}\right)\)
-    </span>
+    <p>
+        Daraus folgt: Das LGS besitzt unendlich viele L&#246;sungen.
+    </p>
+</div>
+<p>
     <br/>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            <br/>
-        </p>
-        <p>
-            There is a free variable (for example \(x_3\)).
-        </p>
-        <p>
-            This follows: The LGS has infinitely many solutions.
-        </p>
-    </div>
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-    <p>
-        <strong>
-            (b)
-        </strong>
-        <br/>
-    </p>
-    <span style="">
-        \(\left(\begin{array}{ccc|c} {@F@} &amp; {@D2@}&amp; {@C2@} &amp; 1\\ 4&amp; 5 &amp; 6 &amp; 1 \\{@B2@} &amp; {@E@} &amp; {@A@} &amp;2 \end{array}\right) \xrightarrow{{@F@}II-4I, {@F@}III-{@B2@}I}\left(\begin{array}{ccc|c} {@F@} &amp; {@D2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*F-D2*4@} &amp; {@6*F-4*C2@} &amp; {@F-4@} \\0&amp; {@E*F-D2*B2@} &amp; {@F*A-B2*C2@} &amp; {@2*F-B2@} \end{array}\right)\xrightarrow{{@5*F-D2*4@}III-({@E*F-B2*D2@})II}\left(\begin{array}{ccc|c} {@F@} &amp; {@D2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*F-D2*4@} &amp; {@6*F-4*C2@} &amp; {@F-4@} \\0&amp; 0 &amp; {@(F*A-B2*C2)*(5*F-D2*4)-(E*F-B2*D2)*(6*F-4*C2)@} &amp; {@(5*F-D2*4)*(2*F-B2)-(E*F-B2*D2)*(F-4)@} \end{array}\right)\)
-    </span>
+</p>
+<p>
+</p>
+<p>
+    <strong>
+        (b)
+    </strong>
     <br/>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <br/>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <span>
-            \(x_1,x_2,x_3\) can be clearly determined.
-        </span>
-        <br/>
-        <p>
-            This follows: The LGS has exactly one solution.
-        </p>
-    </div>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-    <p>
-        <strong>
-            (c)
-        </strong>
-        <br/>
-    </p>
-    <span style="">
-        \(\left(\begin{array}{ccc|c} {@F3@} &amp; {@E3@}&amp; {@D3@} &amp; 1\\ 6&amp; 5 &amp; 4 &amp; 1 \\{@C3@} &amp; {@B3@} &amp; {@A3@} &amp;2 \end{array}\right) \xrightarrow{{@F3@}II-6I, {@F3@}III-{@C3@}I}\left(\begin{array}{ccc|c} {@F3@} &amp; {@E3@}&amp; {@D3@} &amp; 1\\ 0&amp; {@5*F3-E3*6@} &amp; {@4*F3-6*D3@} &amp; {@F3-6@} \\0&amp; {@B3*F3-E3*C3@} &amp; {@F3*A3-C3*D3@} &amp; {@2*F3-C3@} \end{array}\right)\xrightarrow{{@5*F3-E3*6@}III-({@B3*F3-C3*E3@})II}\left(\begin{array}{ccc|c} {@F3@} &amp; {@E3@}&amp; {@D3@} &amp; 1\\ 0&amp; {@5*F3-E3*6@} &amp; {@4*F3-6*D3@} &amp; {@F3-6@} \\0&amp; 0 &amp; {@(F3*A3-C3*D3)*(5*F3-E3*6)-(B3*F3-C3*E3)*(4*F3-6*D3)@} &amp; {@(5*F3-E3*6)*(2*F3-C3)-(B3*F3-C3*E3)*(F3-6)@} \end{array}\right)\)
-    </span>
-    <br/>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-        </p>
-        <p>
-            <br/>
-        </p>
-        <p>
-            <strong>
-                III:
-            </strong>
-            \(0x_1+0x_2+0x_3={@(5*F3-E3*6)*(2*F3-C3)-(B3*F3-C3*E3)*(F3-6)@}\) is not \(x_1,x_2,x_3\) met.
-        </p>
-        <p>
-            This follows: the LGS has no solution.
-        </p>
-    </div>
+</p>
+<span style="">
+    \(\left(\begin{array}{ccc|c} {@F@} &amp; {@D2@}&amp; {@C2@} &amp; 1\\ 4&amp; 5 &amp; 6 &amp; 1 \\{@B2@} &amp; {@E@} &amp; {@A@} &amp;2 \end{array}\right) \xrightarrow{{@F@}II-4I, {@F@}III-{@B2@}I}\left(\begin{array}{ccc|c} {@F@} &amp; {@D2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*F-D2*4@} &amp; {@6*F-4*C2@} &amp; {@F-4@} \\0&amp; {@E*F-D2*B2@} &amp; {@F*A-B2*C2@} &amp; {@2*F-B2@} \end{array}\right)\xrightarrow{{@5*F-D2*4@}III-({@E*F-B2*D2@})II}\left(\begin{array}{ccc|c} {@F@} &amp; {@D2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*F-D2*4@} &amp; {@6*F-4*C2@} &amp; {@F-4@} \\0&amp; 0 &amp; {@(F*A-B2*C2)*(5*F-D2*4)-(E*F-B2*D2)*(6*F-4*C2)@} &amp; {@(5*F-D2*4)*(2*F-B2)-(E*F-B2*D2)*(F-4)@} \end{array}\right)\)
 </span>
+<br/>
+<div class="editor-indent" style="margin-left: 30px;">
+    <br/>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <span>
+        \(x_1,x_2,x_3\) k&#246;nnen eindeutig bestimmt werden.
+    </span>
+    <br/>
+    <p>
+        Daraus folgt: Das LGS besitzt genau eine L&#246;sung.
+    </p>
+</div>
+<p>
+</p>
+<p>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+</p>
+<p>
+    <strong>
+        (c)
+    </strong>
+    <br/>
+</p>
+<span style="">
+    \(\left(\begin{array}{ccc|c} {@F3@} &amp; {@E3@}&amp; {@D3@} &amp; 1\\ 6&amp; 5 &amp; 4 &amp; 1 \\{@C3@} &amp; {@B3@} &amp; {@A3@} &amp;2 \end{array}\right) \xrightarrow{{@F3@}II-6I, {@F3@}III-{@C3@}I}\left(\begin{array}{ccc|c} {@F3@} &amp; {@E3@}&amp; {@D3@} &amp; 1\\ 0&amp; {@5*F3-E3*6@} &amp; {@4*F3-6*D3@} &amp; {@F3-6@} \\0&amp; {@B3*F3-E3*C3@} &amp; {@F3*A3-C3*D3@} &amp; {@2*F3-C3@} \end{array}\right)\xrightarrow{{@5*F3-E3*6@}III-({@B3*F3-C3*E3@})II}\left(\begin{array}{ccc|c} {@F3@} &amp; {@E3@}&amp; {@D3@} &amp; 1\\ 0&amp; {@5*F3-E3*6@} &amp; {@4*F3-6*D3@} &amp; {@F3-6@} \\0&amp; 0 &amp; {@(F3*A3-C3*D3)*(5*F3-E3*6)-(B3*F3-C3*E3)*(4*F3-6*D3)@} &amp; {@(5*F3-E3*6)*(2*F3-C3)-(B3*F3-C3*E3)*(F3-6)@} \end{array}\right)\)
+</span>
+<br/>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <strong>
+            III:
+        </strong>
+        \(0x_1+0x_2+0x_3={@(5*F3-E3*6)*(2*F3-C3)-(B3*F3-C3*E3)*(F3-6)@}\) ist f&#252;r kein \(x_1,x_2,x_3\) erf&#252;llt.
+    </p>
+    <p>
+        Daraus folgt: Das LGS besitzt keine L&#246;sung.
+    </p>
+</div>
+[[/lang]][[lang code="en"]]
+<h4>
+    <strong>
+        Solution
+    </strong>
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    <strong>
+        (a)
+    </strong>
+    <br/>
+</p>
+<span style="">
+    \(\left(\begin{array}{ccc|c} {@A@} &amp; {@B2@}&amp; {@C2@} &amp; 1\\ 4&amp; 5 &amp; 6 &amp; 1 \\{@D2@} &amp; {@E@} &amp; {@F@} &amp;2 \end{array}\right) \xrightarrow{{@A@}II-4I, {@A@}III-{@D2@}I}\left(\begin{array}{ccc|c} {@A@} &amp; {@B2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*A-B2*4@} &amp; {@6*A-4*C2@} &amp; {@A-4@} \\0&amp; {@E*A-B2*D2@} &amp; {@F*A-D2*C2@} &amp; {@2*A-D2@} \end{array}\right)\xrightarrow{{@5*A-B2*4@}III-({@E*A-B2*D2@})II}\left(\begin{array}{ccc|c} {@A@} &amp; {@B2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*A-B2*4@} &amp; {@6*A-4*C2@} &amp; {@A-4@} \\0&amp; 0 &amp; {@(F*A-D2*C2)*(5*A-B2*4)-(E*A-B2*D2)*(6*A-4*C2)@} &amp; {@(5*A-B2*4)*(2*A-D2)-(E*A-B2*D2)*(A-4)@} \end{array}\right)\)
+</span>
+<br/>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        <br/>
+    </p>
+    <p>
+        There is a free variable (for example \(x_3\)).
+    </p>
+    <p>
+        This follows: The LGS has infinitely many solutions.
+    </p>
+</div>
+<p>
+    <br/>
+</p>
+<p>
+</p>
+<p>
+    <strong>
+        (b)
+    </strong>
+    <br/>
+</p>
+<span style="">
+    \(\left(\begin{array}{ccc|c} {@F@} &amp; {@D2@}&amp; {@C2@} &amp; 1\\ 4&amp; 5 &amp; 6 &amp; 1 \\{@B2@} &amp; {@E@} &amp; {@A@} &amp;2 \end{array}\right) \xrightarrow{{@F@}II-4I, {@F@}III-{@B2@}I}\left(\begin{array}{ccc|c} {@F@} &amp; {@D2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*F-D2*4@} &amp; {@6*F-4*C2@} &amp; {@F-4@} \\0&amp; {@E*F-D2*B2@} &amp; {@F*A-B2*C2@} &amp; {@2*F-B2@} \end{array}\right)\xrightarrow{{@5*F-D2*4@}III-({@E*F-B2*D2@})II}\left(\begin{array}{ccc|c} {@F@} &amp; {@D2@}&amp; {@C2@} &amp; 1\\ 0&amp; {@5*F-D2*4@} &amp; {@6*F-4*C2@} &amp; {@F-4@} \\0&amp; 0 &amp; {@(F*A-B2*C2)*(5*F-D2*4)-(E*F-B2*D2)*(6*F-4*C2)@} &amp; {@(5*F-D2*4)*(2*F-B2)-(E*F-B2*D2)*(F-4)@} \end{array}\right)\)
+</span>
+<br/>
+<div class="editor-indent" style="margin-left: 30px;">
+    <br/>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <span>
+        \(x_1,x_2,x_3\) can be clearly determined.
+    </span>
+    <br/>
+    <p>
+        This follows: The LGS has exactly one solution.
+    </p>
+</div>
+<p>
+</p>
+<p>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+</p>
+<p>
+    <strong>
+        (c)
+    </strong>
+    <br/>
+</p>
+<span style="">
+    \(\left(\begin{array}{ccc|c} {@F3@} &amp; {@E3@}&amp; {@D3@} &amp; 1\\ 6&amp; 5 &amp; 4 &amp; 1 \\{@C3@} &amp; {@B3@} &amp; {@A3@} &amp;2 \end{array}\right) \xrightarrow{{@F3@}II-6I, {@F3@}III-{@C3@}I}\left(\begin{array}{ccc|c} {@F3@} &amp; {@E3@}&amp; {@D3@} &amp; 1\\ 0&amp; {@5*F3-E3*6@} &amp; {@4*F3-6*D3@} &amp; {@F3-6@} \\0&amp; {@B3*F3-E3*C3@} &amp; {@F3*A3-C3*D3@} &amp; {@2*F3-C3@} \end{array}\right)\xrightarrow{{@5*F3-E3*6@}III-({@B3*F3-C3*E3@})II}\left(\begin{array}{ccc|c} {@F3@} &amp; {@E3@}&amp; {@D3@} &amp; 1\\ 0&amp; {@5*F3-E3*6@} &amp; {@4*F3-6*D3@} &amp; {@F3-6@} \\0&amp; 0 &amp; {@(F3*A3-C3*D3)*(5*F3-E3*6)-(B3*F3-C3*E3)*(4*F3-6*D3)@} &amp; {@(5*F3-E3*6)*(2*F3-C3)-(B3*F3-C3*E3)*(F3-6)@} \end{array}\right)\)
+</span>
+<br/>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <strong>
+            III:
+        </strong>
+        \(0x_1+0x_2+0x_3={@(5*F3-E3*6)*(2*F3-C3)-(B3*F3-C3*E3)*(F3-6)@}\) is not \(x_1,x_2,x_3\) met.
+    </p>
+    <p>
+        This follows: the LGS has no solution.
+    </p>
+</div>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -460,24 +458,23 @@ tc:random_permutation(tc);]]></text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <h4>
-        <br/>
-    </h4>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <h4>
-        <br/>
-    </h4>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+</p>
+<h4>
+    <br/>
+</h4>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<h4>
+    <br/>
+</h4>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -491,32 +488,17 @@ tc:random_permutation(tc);]]></text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

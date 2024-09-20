@@ -1,0 +1,2853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Energieverbrauch in Abh&#228;ngigkeit der Au&#223;entemperatur</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<style type="text/css">
+    button.next, button.top-next {
+                        border: 1px solid black;
+                        background-color: #A9F5BC; 
+        }
+        button.next:hover, button.top-next:hover {
+                        background-color: #E0F8E6;
+        }
+        button.prev, button.top {
+                        border: 1px solid black;
+                        background-color: #DCB25E; 
+        }
+        button.prev:hover, button.top:hover {
+                        background-color: #E7D2A7;
+        }
+        .data-table {
+                        border-collapse: collapse;
+                        margin: 25px 0;
+                        font-size: 0.9em;
+                        min-width: 400px;
+                        border-radius: 5px 5px 0 0;
+                        overflow: hidden;
+                        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+  
+  
+  
+  .data-table thead tr {
+                        background-color: #17365c;
+                        color: #ffffff;
+                        text-align: left;
+                        font-weight: bold;
+        }
+
+  
+  
+  
+  .data-table th,
+        .data-table td {
+                        padding: 12px 15px;
+        }
+
+  
+  
+  
+  .data-table tbody tr {
+                        border-bottom: 1px solid #e7e7e7;
+        }
+
+  
+  
+  
+  .data-table tbody tr:nth-of-type(even) {
+                        background-color: #f3f3f3;
+        }
+
+  
+  
+  
+  .data-table tbody tr:last-of-type {
+                        border-bottom: 2px solid #17365c;
+        }
+
+  
+  
+  
+  .data-table tbody tr.active-row {
+                        font-weight: bold;
+                        color: #17365c;
+        }
+
+  
+  
+  
+  .question-view > .question-view {
+                margin-top: 1rem;
+                padding-top: 1rem;
+                border-top: 1px solid lightgray;
+        }
+        .prev-answers {
+                        border: 1px solid gray;
+                        border-radius: 10px;
+                        padding: 5px;
+                        display: none;
+        }
+/* Style f&#252;r Details */
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+</style>
+<details>
+    <summary>
+        Inhalt und Umfang dieser Aufgabe
+    </summary>
+    <p>
+        In
+dieser Aufgabe lernen Sie, wie Sie eine Regressionsgerade bestimmen, in dem Sie die Steigung und den \(y\)-Achsenabschnitt aus zusammengefassten Daten sch&#228;tzen. Weiter lernen Sie, wie man Konfidenzintervalle f&#252;r die Parameter bestimmt und einen Hypothesentest zum Einfluss der unabh&#228;ngigen Variable auf die abh&#228;ngige Variable durchf&#252;hrt. Sie besteht aus den folgenden 7
+Teilaufgaben .
+    </p>
+    <ul>
+        <li>
+            <b>
+                (a)
+            </b>
+            Bestimmen Sie die Kleinste-Quadrate Regressionsgerade
+                        \(y=\hat{\alpha}+\hat{\beta}\, x\).
+        </li>
+        <li>
+            <b>
+                (b)
+            </b>
+            Machen Sie mithilfe des Modells eine Vorhersage f&#252;r den
+                        Energieverbrauch.
+        </li>
+        <li>
+            <b>
+                (c)
+            </b>
+            Geben Sie eine Sch&#228;tzung f&#252;r die Varianz \(\sigma^2\) des
+                        Zufallsterms im linearen Regressionsmodell.
+        </li>
+        <li>
+            <b>
+                (d)
+            </b>
+            Bestimmen Sie nun 95%-Konfidenzintervalle f&#252;r die Gr&#246;&#223;en
+                \(\alpha, \beta\) und \(\sigma^2\).
+        </li>
+        <li>
+            <b>
+                (e)
+            </b>
+            Geben Sie die Hypothese und Alternative in Formeln an.
+        </li>
+        <li>
+            <b>
+                (f)
+            </b>
+            W&#228;hlen Sie die passende Teststatistik aus.
+        </li>
+        <li>
+            <b>
+                (g)
+            </b>
+            Berechnen Sie den Wert der Teststatistik und treffen Sie die Testentscheidung.
+        </li>
+    </ul>
+</details>
+<div class="question-view">
+    <p>
+        Zur Bestimmung der Abh&#228;ngigkeit des Energieverbrauchs von der
+                Au&#223;entemperatur hat Professor D. an {# nn #} Tagen den
+                Energieverbrauch&#160;\(y\) in kWh und die morgendliche
+                Au&#223;entemperatur&#160;\(x\) in &#8451; notiert.  Die Rohdaten lieferten
+                folgende Werte:
+
+    
+    
+    
+    \[
+                        \bar{x}= {# mean_x #},\; \bar{y}={# mean_y #}, \;
+                        s_x={# std_x #}, \; s_y={# std_y #},\; r_{x,y}={# corr_xy #}
+                \]
+    </p>
+    <p>
+        Wir fassen die Datenpunkte \(y_i\) als Realisierungen einer Zufallsvariablen \(Y = \alpha +&#8239;\beta x + \epsilon\) auf, wobei \(\epsilon\) eine \(N(0, \sigma^2)\)-verteilte Zufallsvariable ist.
+    </p>
+    <p>
+        <em>
+            Hinweis:
+        </em>
+        Bitte geben Sie alle Zahlenwerte auf mindestens
+                eine Nachkommastelle genau an.
+    </p>
+    <div class="prev-answers">
+        <p>
+            Vorherige Ergebnisse:
+        </p>
+    </div>
+    <div class="question-view">
+        <p>
+            a) Bestimmen Sie die Kleinste-Quadrate Regressionsgerade
+                        \(y=\hat{\alpha}+\hat{\beta}\, x\).
+        </p>
+        <p>
+            \(\hat{\alpha} = \) [[/lang]][[lang code="en"]]
+            <style type="text/css">
+                button.next, button.top-next {
+                        border: 1px solid black;
+                        background-color: #A9F5BC; 
+        }
+        button.next:hover, button.top-next:hover {
+                        background-color: #E0F8E6;
+        }
+        button.prev, button.top {
+                        border: 1px solid black;
+                        background-color: #DCB25E; 
+        }
+        button.prev:hover, button.top:hover {
+                        background-color: #E7D2A7;
+        }
+        .data-table {
+                        border-collapse: collapse;
+                        margin: 25px 0;
+                        font-size: 0.9em;
+                        min-width: 400px;
+                        border-radius: 5px 5px 0 0;
+                        overflow: hidden;
+                        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+  
+  
+  
+  .data-table thead tr {
+                        background-color: #17365c;
+                        color: #ffffff;
+                        text-align: left;
+                        font-weight: bold;
+        }
+
+  
+  
+  
+  .data-table th,
+        .data-table td {
+                        padding: 12px 15px;
+        }
+
+  
+  
+  
+  .data-table tbody tr {
+                        border-bottom: 1px solid #e7e7e7;
+        }
+
+  
+  
+  
+  .data-table tbody tr:nth-of-type(even) {
+                        background-color: #f3f3f3;
+        }
+
+  
+  
+  
+  .data-table tbody tr:last-of-type {
+                        border-bottom: 2px solid #17365c;
+        }
+
+  
+  
+  
+  .data-table tbody tr.active-row {
+                        font-weight: bold;
+                        color: #17365c;
+        }
+
+  
+  
+  
+  .question-view > .question-view {
+                margin-top: 1rem;
+                padding-top: 1rem;
+                border-top: 1px solid lightgray;
+        }
+        .prev-answers {
+                        border: 1px solid gray;
+                        border-radius: 10px;
+                        padding: 5px;
+                        display: none;
+        }
+/* Style f&#252;r Details */
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+            </style>
+            <details>
+                <summary>
+                    Content and scope of this task
+                </summary>
+                <p>
+                    In
+this task you will learn how to determine a regression line in which you will see the slope and the \(y\)-Axis section from combined data. Learn how to determine confidence intervals for the parameters and perform a hypothesis test to influence the independent variable on the dependent variable. It consists of the following 7
+Subtasks .
+                </p>
+                <ul>
+                    <li>
+                        <b>
+                            (a)
+                        </b>
+                        Determine the smallest square Regressionsgerade
+    \(y=\hat{\alpha}+\hat{\beta}\, x\).
+                    </li>
+                    <li>
+                        <b>
+                            (b)
+                        </b>
+                        Make a prediction for the model
+Energy consumption.
+                    </li>
+                    <li>
+                        <b>
+                            (c)
+                        </b>
+                        Enter an estimate for the variance \(\sigma^2\) the
+Random terms in the linear regression model.
+                    </li>
+                    <li>
+                        <b>
+                            (d)
+                        </b>
+                        now determine 95% confidence intervals for the sizes
+    \(\alpha, \beta\) and \(\sigma^2\).
+                    </li>
+                    <li>
+                        <b>
+                            (e)
+                        </b>
+                        Specify the hypothesis and alternative in formulas.
+                    </li>
+                    <li>
+                        <b>
+                            (f)
+                        </b>
+                        Select the appropriate test statistics.
+                    </li>
+                    <li>
+                        <b>
+                            (g)
+                        </b>
+                        Calculate the value of the test statistics and make the test decision.
+                    </li>
+                </ul>
+            </details>
+            <div class="question-view">
+                <p>
+                    To determine the dependency of energy consumption on
+outside temperature Professor D. {# nn #} Days of
+Energy consumption\(y\) in kWh and the morning
+External temperature\(x\) in &#176;C. The raw data provided
+the following values:
+
+ 
+ 
+ 
+ \[
+                        \bar{x}= {# mean_x #},\; \bar{y}={# mean_y #}, \;
+                        s_x={# std_x #}, \; s_y={# std_y #},\; r_{x,y}={# corr_xy #}
+                \]
+                </p>
+                <p>
+                    We take the data points \(y_i\) as realizations of a random variable \(Y = \alpha +&#8239;\beta x + \epsilon\) where \(\epsilon\) a \(N(0, \sigma^2)\)-distributed random variable.
+                </p>
+                <p>
+                    <em>
+                        Note:
+                    </em>
+                    Please specify all numerical values at least
+a post office exactly.
+                </p>
+                <div class="prev-answers">
+                    <p>
+                        Previous results:
+                    </p>
+                </div>
+                <div class="question-view">
+                    <p>
+                        a) Determine the smallest quadrate regression line
+    \(y=\hat{\alpha}+\hat{\beta}\, x\).
+                    </p>
+                    <p>
+                        \(\hat{\alpha} = \) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
+                    </p>
+                    [[/lang]][[lang code="en"]]
+                </div>
+            </div>
+        </p>
+        [[/lang]][[feedback:prt_ans1]][[lang code="de"]]
+        <p>
+            \(\hat{\beta} = \) [[/lang]][[lang code="en"]]
+            <p>
+                \(\hat{\beta} = \) [[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]]
+            </p>
+            [[/lang]][[lang code="en"]]
+        </p>
+        [[/lang]][[feedback:prt_ans2]][[lang code="de"]]
+        <div>
+            [[/lang]][[lang code="en"]]
+            <div>
+                [[/lang]][[feedback:prt_a_complet]][[lang code="de"]]
+            </div>
+        </div>
+        <div class="question-view">
+            <p>
+                b) Die Au&#223;entemperatur in &#8451; betr&#228;gt \(x = {@ eval_x @}\).
+                        Machen Sie mithilfe des Modells eine Vorhersage f&#252;r den
+                        Energieverbrauch&#160;\(y\).
+            </p>
+            <p>
+                \(\hat{y} = \) [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+    </div>
+    <div class="question-view">
+        <p>
+            (b) The outside temperature in &#176;C is \(x = {@ eval_x @}\).
+Make a prediction for the model
+Energy consumption\(y\).
+        </p>
+        <p>
+            \(\hat{y} = \) [[/lang]][[input:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans3]][[lang code="de"]]
+        </p>
+        [[/lang]][[lang code="en"]]
+        [[/lang]][[feedback:prt_ans3]][[lang code="de"]]
+    </div>
+    <div class="question-view">
+        <p>
+            c) Geben Sie eine Sch&#228;tzung f&#252;r die Varianz \(\sigma^2\) des
+                        Zufallsterms im linearen Regressionsmodell.
+        </p>
+        <p>
+            Sch&#228;tzung f&#252;r \(\sigma^2\): [[/lang]][[lang code="en"]]
+        </p>
+    </div>
+    <div class="question-view">
+        <p>
+            c) Specify an estimate for the variance \(\sigma^2\) the
+Random terms in the linear regression model.
+        </p>
+        <p>
+            Estimate for \(\sigma^2\): [[/lang]][[input:ans4]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans4]][[lang code="de"]]
+        </p>
+        [[/lang]][[lang code="en"]]
+        [[/lang]][[feedback:prt_ans4]][[lang code="de"]]
+    </div>
+    <div class="question-view">
+        <p>
+            d) Bestimmen Sie nun 95%-Konfidenzintervalle f&#252;r die Gr&#246;&#223;en
+                \(\alpha, \beta\) und \(\sigma^2\).  Sie k&#246;nnen die Intervalle so
+                eingeben:
+            <code>
+                [a, b]
+            </code>
+            .
+        </p>
+        <p>
+            <em>
+                Hinweis: Bitte f&#252;llen Sie alle Felder der Tabelle aus, um
+                Feedback zu Ihrer L&#246;sung zu erhalten.
+            </em>
+        </p>
+        <p>
+            Konfidenzintervall f&#252;r \(\alpha\): [[/lang]][[lang code="en"]]
+        </p>
+    </div>
+    <div class="question-view">
+        <p>
+            d) Now determine 95% confidence intervals for the sizes
+    \(\alpha, \beta\) and \(\sigma^2\). You can adjust the intervals
+Enter:
+            <code>
+                [a]
+            </code>
+            .
+        </p>
+        <p>
+            <em>
+                Note: Please fill out all fields of the table to
+Get feedback on your solution.
+            </em>
+        </p>
+        <p>
+            Confidence interval \(\alpha\): [[/lang]][[input:ans5]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans5]][[lang code="de"]]
+        </p>
+        [[/lang]][[lang code="en"]]
+        [[/lang]][[feedback:prt_ans5]][[lang code="de"]]
+        <p>
+            Konfidenzintervall f&#252;r \(\beta\): [[/lang]][[lang code="en"]]
+            <p>
+                Confidence interval \(\beta\): [[/lang]][[input:ans6]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans6]][[lang code="de"]]
+            </p>
+            [[/lang]][[lang code="en"]]
+        </p>
+        [[/lang]][[feedback:prt_ans6]][[lang code="de"]]
+        <p>
+            Konfidenzintervall f&#252;r \(\sigma^2\): [[/lang]][[lang code="en"]]
+            <p>
+                Confidence interval \(\sigma^2\): [[/lang]][[input:ans7]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans7]][[lang code="de"]]
+            </p>
+            [[/lang]][[lang code="en"]]
+        </p>
+        [[/lang]][[feedback:prt_ans7]][[lang code="de"]]
+        <div>
+            [[/lang]][[lang code="en"]]
+            <div>
+                [[/lang]][[feedback:prt_d_complet]][[lang code="de"]]
+            </div>
+        </div>
+        <div class="question-view">
+            <p>
+                Wir wollen nun die Hypothese, dass die Au&#223;entemperatur keinen Einfluss auf den Energieverbrauch hat, gegen die Alternative testen, dass eine geringere Au&#223;entemperatur einen h&#246;heren Energieverbrauch nach sich zieht.
+            </p>
+            <p>
+                e) Geben Sie die Hypothese und Alternative in Formeln an.
+            </p>
+            <p>
+                Hypothese [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+    </div>
+    <div class="question-view">
+        <p>
+            We now want to test the hypothesis that the external temperature has no influence on energy consumption, against the alternative that a lower external temperature will result in higher energy consumption.
+        </p>
+        <p>
+            e) Specify the hypothesis and alternative in formulas.
+        </p>
+        <p>
+            Hypothesis [[/lang]][[input:ans_e1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans_e1]][[lang code="de"]]
+        </p>
+        [[/lang]][[lang code="en"]]
+        [[/lang]][[feedback:prt_ans_e1]][[lang code="de"]]
+        <p>
+            Alternative [[/lang]][[lang code="en"]]
+            <p>
+                Alternative [[/lang]][[input:ans_e2]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans_e2]][[lang code="de"]]
+            </p>
+            [[/lang]][[lang code="en"]]
+        </p>
+        [[/lang]][[feedback:prt_ans_e2]][[lang code="de"]]
+        <div>
+            [[/lang]][[lang code="en"]]
+            <div>
+                [[/lang]][[feedback:prt_e_complet]][[lang code="de"]]
+            </div>
+        </div>
+        <div class="question-view">
+            <p>
+                Wir wollen nun die Hypothese, dass die Au&#223;entemperatur keinen Einfluss auf den Energieverbrauch hat, gegen die Alternative testen, dass eine geringere Au&#223;entemperatur einen h&#246;heren Energieverbrauch nach sich zieht.
+            </p>
+            <p>
+                f) W&#228;hlen Sie die passende Teststatistik aus.
+            </p>
+            [[/lang]][[lang code="en"]]
+        </div>
+    </div>
+    <div class="question-view">
+        <p>
+            We now want to test the hypothesis that the external temperature has no influence on energy consumption, against the alternative that a lower external temperature will result in higher energy consumption.
+        </p>
+        <p>
+            f) Select the appropriate test statistics.
+        </p>
+        [[/lang]][[input:ans_f]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans_f]][[lang code="de"]]
+                [[/lang]][[lang code="en"]][[/lang]][[feedback:ans_f]][[lang code="de"]]
+    </div>
+    <div class="question-view">
+        <p>
+            Wir wollen nun die Hypothese, dass die Au&#223;entemperatur keinen Einfluss auf den Energieverbrauch hat, gegen die Alternative testen, dass eine geringere Au&#223;entemperatur einen h&#246;heren Energieverbrauch nach sich zieht.
+        </p>
+        <p>
+            g) Berechnen Sie den Wert der Teststatistik und treffen Sie die Testentscheidung.
+        </p>
+        <p>
+            Wert der Teststatistik: [[/lang]][[lang code="en"]]
+        </p>
+    </div>
+    <div class="question-view">
+        <p>
+            We now want to test the hypothesis that the external temperature has no influence on energy consumption, against the alternative that a lower external temperature will result in higher energy consumption.
+        </p>
+        <p>
+            g) Calculate the value of the test statistics and make the test decision.
+        </p>
+        <p>
+            Value of test statistics: [[/lang]][[input:ans_g1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans_g1]][[lang code="de"]]
+        </p>
+        [[/lang]][[lang code="en"]]
+        [[/lang]][[feedback:ans_g1]][[lang code="de"]]
+        <p>
+            Die Hypothese wird aufgrund des Werts der Teststatistik [[/lang]][[lang code="en"]]
+            <p>
+                The hypothesis is based on the value of the test statistics [[/lang]][[input:ans_g2]][[lang code="de"]].
+            </p>
+            [[/lang]][[lang code="en"]].
+        </p>
+        [[/lang]][[validation:ans_g2]][[lang code="de"]]
+                [[/lang]][[lang code="en"]][[/lang]][[feedback:ans_g2]][[lang code="de"]]
+        <div>
+            [[/lang]][[lang code="en"]]
+            <div>
+                [[/lang]][[feedback:prt_g_complet]][[lang code="de"]]
+            </div>
+        </div>
+    </div>
+    <script>
+        /* This script is responsible for the question navigation. 
+/ @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later */
+(()=>{function e(e,t){this.rootElement=e,this.id=t,this.views=e.querySelectorAll(".question-view"),this.currentView=Array.prototype.findIndex.call(this.views,i)}function t(e){for(;e;)o(e),e=n(e)}function n(e){let t=e.parentNode;return t&&(t=t.closest(".question-view")),t}function o(e){e.style.display="block"}function i(e){return null==e.querySelector(".question-view")}function s(e){e.style.display="none"}
+void 0===window.QController&&(window.QController=e,document.addEventListener("DOMContentLoaded",(t=>{const n=document.getElementById("responseform");if(!n)throw Error("Element with id responseform not found.");n.querySelectorAll(".stack.que").forEach((t=>{const n=t.querySelector(".question-view");if(!n)return void console.log("QController Warning: no elements with class question-view inside "+t.id);const o=new e(n,t.id);o.installHandlers(),o.loadState(),o.update()}))}))),e.prototype.update=function(){this.views.forEach(s);const e=this.views[this.currentView];i(e)?t(e):function(e){let n=e;for(;n&&!i(n);)n=n.querySelector(".question-view");t(n)}(e)},e.prototype.installHandlers=function(){const e=this;this.rootElement.querySelectorAll("button").forEach((t=>{t.addEventListener("click",(o=>{const i=t.closest(".question-view");if(!i)return void console.log("qcontroller: <button> not inside question view");const s=t.classList;let r=null;if(s.contains("next"))r=i.nextElementSibling;else if(s.contains("top-next")){const e=i.parentNode;r=e?e.nextElementSibling:null}else s.contains("top")?r=n(i):s.contains("prev")&&(r=i.previousElementSibling);r&&r.classList.contains("question-view")&&(e.currentView=Array.prototype.findIndex.call(e.views,(e=>e===r)),e.saveState(),e.update())}))}))},e.prototype.saveState=function(){const e=this.id+"-controller-state";window.sessionStorage.setItem(e,this.currentView)},e.prototype.loadState=function(){const e=this.id+"-controller-state",t=window.sessionStorage.getItem(e);t&&(this.currentView=Number.parseInt(t))}})();
+/*# sourceMappingURL=qcontroller.js.map
+            @license-end */
+    </script>
+    [[/lang]][[lang code="en"]]
+</div>
+<script>
+    /* This script is responsible for the question navigation. 
+/ @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later */
+(()=>{function e(e,t){this.rootElement=e,this.id=t,this.views=e.querySelectorAll(".question-view"),this.currentView=Array.prototype.findIndex.call(this.views,i)}function t(e){for(;e;)o(e),e=n(e)}function n(e){let t=e.parentNode;return t&&(t=t.closest(".question-view")),t}function o(e){e.style.display="block"}function i(e){return null==e.querySelector(".question-view")}function s(e){e.style.display="none"}
+void 0===window.QController&&(window.QController=e,document.addEventListener("DOMContentLoaded",(t=>{const n=document.getElementById("responseform");if(!n)throw Error("Element with id responseform not found.");n.querySelectorAll(".stack.que").forEach((t=>{const n=t.querySelector(".question-view");if(!n)return void console.log("QController Warning: no elements with class question-view inside "+t.id);const o=new e(n,t.id);o.installHandlers(),o.loadState(),o.update()}))}))),e.prototype.update=function(){this.views.forEach(s);const e=this.views[this.currentView];i(e)?t(e):function(e){let n=e;for(;n&&!i(n);)n=n.querySelector(".question-view");t(n)}(e)},e.prototype.installHandlers=function(){const e=this;this.rootElement.querySelectorAll("button").forEach((t=>{t.addEventListener("click",(o=>{const i=t.closest(".question-view");if(!i)return void console.log("qcontroller: <button> not inside question view");const s=t.classList;let r=null;if(s.contains("next"))r=i.nextElementSibling;else if(s.contains("top-next")){const e=i.parentNode;r=e?e.nextElementSibling:null}else s.contains("top")?r=n(i):s.contains("prev")&&(r=i.previousElementSibling);r&&r.classList.contains("question-view")&&(e.currentView=Array.prototype.findIndex.call(e.views,(e=>e===r)),e.saveState(),e.update())}))}))},e.prototype.saveState=function(){const e=this.id+"-controller-state";window.sessionStorage.setItem(e,this.currentView)},e.prototype.loadState=function(){const e=this.id+"-controller-state",t=window.sessionStorage.getItem(e);t&&(this.currentView=Number.parseInt(t))}})();
+/*# sourceMappingURL=qcontroller.js.map
+            @license-end */
+</script>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>10.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/* Tweak the LaTeX rendering */
+texput(Xbar, "\\bar{X}");
+texput(Ybar, "\\bar{Y}");
+texput(r_xy, "r_{x,y}");
+
+texqt(e) := block([q: first(args(e)), df: second(args(e))],
+  sconcat("t_{", tex1(df), "; ", tex1(q), "}"));
+texput(qt, texqt);
+
+texqchisq(e) := block([q : first(args(e)), df : second(args(e))],
+  sconcat("\\chi^2_{", tex1(df), "; ", tex1(q), "}"));
+texput(qchisq, texqchisq);
+nn:  rand([20, 30, 40]);
+
+mean_x: 7.5;/* nn * 9 / 10;*/
+mean_y: 95;/*nn * 12;*/
+
+corr_xy: -0.6;
+eval_x: rand([6, 8]);
+
+std_x: 3;
+std_y: 20;/*mean_y / 4*/
+
+var_x: std_x^2;
+var_y: std_y^2;
+
+slope: std_y / std_x * corr_xy;
+intercept: mean_y - slope * mean_x;
+est_var: (nn - 1)/(nn - 2) * (1 - corr_xy^2) * var_y;
+
+conf_alpha: intercept + quantile_student_t(0.975, nn-2)*sqrt(est_var*((nn-1)*var_x + nn*mean_x^2)/(nn*(nn-1)*var_x))*[-1, 1];
+conf_beta: slope + quantile_student_t(0.975, nn-2)*sqrt(est_var/((nn-1)*var_x))*[-1, 1];
+conf_sigma2: (nn - 1)*(1 - corr_xy^2)*var_y*[1 / quantile_chi2(0.975, nn - 2), 1 / quantile_chi2(0.025, nn - 2)];
+
+Tans1: intercept;
+Tans2: slope;
+Tans3: intercept + slope*eval_x;
+Tans4: est_var;
+Tans5: conf_alpha;
+Tans6: conf_beta;
+Tans7: conf_sigma2;
+
+simp: false;
+Tans_f: random_permutation(
+  block([vals, correct, incorrect],
+    correct: [T = s_y / s_x * r_xy * sqrt(((n-2)*s_x^2)/((1-r_xy^2)*s_y^2))],
+    incorrect: [
+    T = sum(X[i] - mu[0], i, 1, n)/sqrt(n * s_X^2),
+    T = (n-1)* s_X^2 / sigma_0^2,
+    F = s_Y^2 / s_X^2,
+    T = (Ybar - Xbar) / sqrt((1/m + 1/n) *s_P^2)],
+    vals: makelist(i, i, ev(length(correct) + length(incorrect), simp)),
+    zip_with(
+      lambda([a, b],
+        [a, if a <= length(correct) then true else false, stack_disp(b,"id")]),
+      vals, append(correct, incorrect))));
+simp: true;
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+block([
+  tQuantile: quantile_student_t(0.95, nn-2),
+  statistic: std_y / std_x * corr_xy * sqrt((nn-2)*var_x / ((1 - corr_xy^2)*var_y))],
+Tans_g1: statistic,
+Tans_g2: random_permutation([
+  [tr("verworfen","discarded"), is(statistic <= -tQuantile)],
+  [tr("beibehalten","kept"), is(statistic > -tQuantile)]
+]));]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text><![CDATA[<code>nn =&#8239;{#nn#}, eval_x =&#8239;{#eval_x#}</code>]]></text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Ihre Antwort ist nur teilweise richtig.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is only partly correct.[[/lang]]
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.[[/lang]]
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed>i</variantsselectionseed>
+        <input>
+            <name>ans_e1</name>
+            <type>algebraic</type>
+            <tans>beta = 0</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans_e2</name>
+            <type>algebraic</type>
+            <tans><![CDATA[beta < 0]]></tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans_f</name>
+            <type>radio</type>
+            <tans>Tans_f</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans_g1</name>
+            <type>numerical</type>
+            <tans>Tans_g1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans_g2</name>
+            <type>dropdown</type>
+            <tans>Tans_g2</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans1</name>
+            <type>numerical</type>
+            <tans>decimalplaces(Tans1, 2)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>numerical</type>
+            <tans>decimalplaces(Tans2, 2)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>numerical</type>
+            <tans>decimalplaces(Tans3, 2)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>numerical</type>
+            <tans>decimalplaces(Tans4,2)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans5</name>
+            <type>numerical</type>
+            <tans>decimalplaces(Tans5,2)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans6</name>
+            <type>numerical</type>
+            <tans>decimalplaces(Tans6,2)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans7</name>
+            <type>numerical</type>
+            <tans>decimalplaces(Tans7,2)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>ans_f</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_f</sans>
+                <tans>first(mcq_correct(Tans_f))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ans_f-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Klicken Sie auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    , um zum n&#228;chsten Aufgabenteil zu gelangen.
+</p>
+<script>
+    (function(){
+const ansDiv = document.querySelector(".prev-answers");
+ansDiv.style.display = "block";
+const paragraph = document.createElement("p");
+paragraph.append("\\" + "[T = \\frac{s_y}{s_x} r_{xy} \\sqrt{\\frac{(n-2)s_x^2}{(1-r_{xy}^2)s_y^2}}\\"+"]");
+ansDiv.append(paragraph);
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    Click on
+    <button class="next" type="button">
+        Next
+    </button>
+    to get to the next task.
+</p>
+<script>
+    (function(){
+const ansDiv = document.querySelector(".prev-answers");
+ansDiv.style.display = "block";
+const paragraph = document.createElement("p");
+paragraph.append("\\" + "[T = \\frac{s_y}{s_x} r_{xy} \\sqrt{\\frac{(n-2)s_x^2}{(1-r_{xy}^2)s_y^2}}\\"+"]");
+ansDiv.append(paragraph);
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ans_f-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    [[if test="is(ans_f=2)"]]
+
+
+
+
+Dies ist ein Test, der den Erwartungswert einer Stichprobe mit einem
+vorgegebenen Wert \(\mu_0\) vergleicht.  Dieser Test ist hier nicht angebracht.
+Lesen Sie noch einmal den Einleitungstext und achten Sie darauf,
+welcher Parameter in der Hypothese vorkommt.
+
+
+
+
+[[elif test="ans_f=3"]]
+
+
+
+
+Dies ist ein Test, der die Varianz einer Stichprobe mit einem
+vorgegebenen Wert \(\sigma_0^2\) vergleicht.  Dieser Test ist hier nicht angebracht.
+Lesen Sie noch einmal den Einleitungstext und achten Sie darauf,
+welcher Parameter in der Hypothese vorkommt.
+
+
+
+
+[[elif test="ans_f=4"]]
+
+
+
+
+Diese Teststatistik geh&#246;rt zum F-Test zum Vergleich der Varianzen
+zweier Stichproben.  Dieser Test ist hier nicht angebracht.
+Lesen Sie noch einmal den Einleitungstext und achten Sie darauf,
+welcher Parameter in der Hypothese vorkommt.
+
+
+
+
+[[elif test="ans_f=5"]]
+
+
+
+
+Der ausgew&#228;hlte Test testet Hypothesen &#252;ber die Verteilung einer
+vorliegenden Stichprobe.  Dieser Test ist hier nicht angebracht.
+Lesen Sie noch einmal den Einleitungstext und achten Sie darauf,
+welcher Parameter in der Hypothese vorkommt.
+
+
+
+
+[[/if]]
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    [[if test="is(ans_f=2)"]]This is a test that shows the expected value of a sample with a
+predefined value \(\mu_0\) compares. This test is not appropriate here.
+Read the introduction text again and make sure
+which parameter occurs in the hypothesis.
+
+
+
+
+[[elif test="ans_f=3"]]This is a test that shows the variance of a sample with a
+predefined value \(\sigma_0^2\) compares. This test is not appropriate here.
+Read the introduction text again and make sure
+which parameter occurs in the hypothesis.
+
+
+
+
+[[elif test="ans_f=4"]]These test statistics are part of the F test for comparing the variances
+two samples. This test is not appropriate here.
+Read the introduction text again and make sure
+which parameter occurs in the hypothesis.
+
+
+
+
+[[elif test="ans_f=5"]]The selected test tests hypotheses on the distribution of a
+this sample. This test is not appropriate here.
+Read the introduction text again and make sure
+which parameter occurs in the hypothesis.
+
+
+
+
+[[/if]]
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>ans_g1</name>
+            <value>1.0000000</value>
+            <autosimplify>0</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans_g1</sans>
+                <tans>Tans_g1</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ans_g1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Mit den im Text genannten zusammengefassten Daten ergibt sich:
+\begin{align*}
+T &amp;= {@s_y / s_x * r_xy * sqrt(((n-2)*s_x^2)/((1-r_xy^2)*s_y^2))@} \\
+&amp;= {@std_y / std_x * corr_xy * sqrt(((nn-2)*std_x^2)/((1-corr_xy^2)*std_y^2))@} \\
+&amp;= {@ev(decimalplaces(std_y / std_x * corr_xy * sqrt(((nn-2)*std_x^2)/((1-corr_xy^2)*std_y^2)), 2), simp)@}
+\end{align*}
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The summarized data mentioned in the text shows:
+\begin{align*}
+T &amp;= {@s_y / s_x * r_xy * sqrt(((n-2)*s_x^2)/((1-r_xy^2)*s_y^2))@} \\
+&amp;= {@std_y / std_x * corr_xy * sqrt(((nn-2)*std_x^2)/((1-corr_xy^2)*std_y^2))@} \\
+&amp;= {@ev(decimalplaces(std_y / std_x * corr_xy * sqrt(((nn-2)*std_x^2)/((1-corr_xy^2)*std_y^2)), 2), simp)@}
+\end{align*}
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ans_g1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Haben Sie sich verrechnet? Sie m&#252;ssen die im Text genannten zusammengefassten Daten in die Formel f&#252;r die Test-Statistik einsetzen. Bitte versuchen Sie es noch einmal.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Have you made a mistake? You must use the combined data mentioned in the text in the formula for test statistics. Please try again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>ans_g2</name>
+            <value>1.0000000</value>
+            <autosimplify>0</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_g2</sans>
+                <tans>first(mcq_correct(Tans_g2))</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ans_g2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Wir verwerfen die Hypothese zugunsten der Alternative, da f&#252;r den Wert der Teststatistik \({@T = ev(decimalplaces(Tans_g1, 2), simp)@} \le {@-qt(0.95, nn-2) = ev(decimalplaces(-quantile_student_t(0.95, nn-2), 2), simp)@}\) gilt.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    We reject the hypothesis in favour of the alternative, as for the value of test statistics \({@T = ev(decimalplaces(Tans_g1, 2), simp)@} \le {@-qt(0.95, nn-2) = ev(decimalplaces(-quantile_student_t(0.95, nn-2), 2), simp)@}\) Article 2
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ans_g2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sehen Sie im Skript noch einmal nach dem Verwerfungsbereich des Tests f&#252;r die gegebene einseitige Hypothese nach.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    See the script again after the rejection range of the test for the given one-sided hypothesis.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_a_complet</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text>/* Ergebnisse in a) vertauscht? */</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans1</sans>
+                <tans>Tans2</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt_a_complet-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_a_complet-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans2</sans>
+                <tans>Tans1</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_a_complet-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Haben Sie m&#246;glicherweise die Werte f&#252;r \(\hat{\alpha}\) und \(\hat{\beta}\) vertauscht?
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You may have the values for \(\hat{\alpha}\) and \(\hat{\beta}\) exchanged?
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_a_complet-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans1</sans>
+                <tans>Tans1</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>prt_a_complet-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>0</falsenextnode>
+                <falseanswernote>prt_a_complet-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans2</sans>
+                <tans>Tans2</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_a_complet-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Klicken Sie auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    , um zum n&#228;chsten Aufgabenteil zu gelangen.
+</p>
+<script>
+    (function(){
+const ansDiv = document.querySelector(".prev-answers");
+ansDiv.style.display = "block";
+const paragraph = document.createElement("p");
+paragraph.append("\\" + "begin{align*}\\hat{\\alpha} &= {#decimalplaces(intercept,1)#}\\\\ ");
+paragraph.append("\\hat{\\beta} &= {#decimalplaces(slope,1)#}\\" + "end{align*}");
+ansDiv.append(paragraph);
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    Click on
+    <button class="next" type="button">
+        Next
+    </button>
+    to get to the next task.
+</p>
+<script>
+    (function(){
+const ansDiv = document.querySelector(".prev-answers");
+ansDiv.style.display = "block";
+const paragraph = document.createElement("p");
+paragraph.append("\\" + "begin{align*}\\hat{\\alpha} &= {#decimalplaces(intercept,1)#}\\\\ ");
+paragraph.append("\\hat{\\beta} &= {#decimalplaces(slope,1)#}\\" + "end{align*}");
+ansDiv.append(paragraph);
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_a_complet-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans_e1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_e1</sans>
+                <tans>beta = 0</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans_e1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Die Hypothese, dass die Au&#223;entemperatur keinen Einfluss auf den Energieverbrauch hat, bedeutet, dass die Regressionsgerade \(y = \alpha + \beta x\) waagerecht verl&#228;uft.  Der Parameter \(\beta\), der die Steigung beschreibt, hat also den Wert Null. In Formeln lautet unsere Hypothese also \(\beta = 0\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The hypothesis that the outside temperature has no influence on energy consumption means that the regression line \(y = \alpha + \beta x\) horizontal. The parameter \(\beta\), which describes the gradient, thus has the value zero. So our hypothesis is \(\beta = 0\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt_ans_e1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>listofvars(ans_e1)</sans>
+                <tans>[beta]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans_e1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans_e1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Versuchen Sie die Hypothese mithilfe des Parameters \(\beta\) auszudr&#252;cken.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Try the hypothesis using the parameter \(\beta\) to express.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans_e2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_e2</sans>
+                <tans><![CDATA[beta < 0]]></tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans_e2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Die Alternative, dass eine geringere Au&#223;entemperatur einen h&#246;heren Energieverbrauch nach sich zieht, bedeutet, dass die Regressionsgerade \(y = \alpha + \beta x\) monoton fallend ist. Der Parameter \(\beta\), der die Steigung beschreibt, ist also negativ.  In Formeln lautet die Alternative daher \(\beta &lt; 0\).[[/lang]][[lang code="en"]]
+    <p>
+        The alternative that a lower external temperature will result in higher energy consumption means that the regression line \(y = \alpha + \beta x\) monotonically falling. The parameter \(\beta\), which describes the gradient, is thus negative. In formulae, therefore, the alternative \(\beta &lt; 0\).[[/lang]]
+    </p>
+</p>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt_ans_e2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_e2</sans>
+                <tans><![CDATA[beta > 0]]></tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans_e2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    &#220;berlegen Sie noch einmal, wie der Graph der Regressionsgerade verl&#228;uft, falls die oben beschriebene Alternative eintritt. Der Parameter \(\beta\) beschreibt die Steigung der Geraden.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Consider how the graph of the regression line runs if the above-described alternative occurs. The parameter \(\beta\) describes the gradient of the straight lines.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt_ans_e2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>listofvars(ans_e2)</sans>
+                <tans>[beta]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans_e2-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans_e2-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Versuchen Sie die Alternative mithilfe des Parameters \(\beta\) auszudr&#252;cken.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Try the alternative using the parameter \(\beta\) to express.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans1</name>
+            <value>1.0000000</value>
+            <autosimplify>0</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans1</sans>
+                <tans>Tans1</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>0-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Nachdem \(\hat{\beta}\) bestimmt wurde, kann \(\hat{\alpha}\) wie folgt ausgerechnet werden:
+</p>
+\[\hat{\alpha} = \bar{y} - \hat{\beta}\bar{x} = {@ mean_y - slope * mean_x@} = {@ ans1 @}\][[/lang]][[lang code="en"]]
+<p>
+    After \(\hat{\beta}\) has been determined, can \(\hat{\alpha}\) as follows:
+</p>
+\[\hat{\alpha} = \bar{y} - \hat{\beta}\bar{x} = {@ mean_y - slope * mean_x@} = {@ ans1 @}\][[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>0-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Bitte &#252;berpr&#252;fen Sie noch einmal Ihre Rechnung. Falls Sie keinen Fehler finden k&#246;nnen, klicken Sie auf den Hinweis.
+</p>
+<details>
+    <summary>
+        Hinweis
+    </summary>
+    Eine Sch&#228;tzung f&#252;r \(\alpha\) kann mit folgender Formel bestimmt werden:
+\[
+\hat{\alpha} = \bar{y} - \hat{\beta}\bar{x}
+\]
+</details>
+[[/lang]][[lang code="en"]]
+<p>
+    Please check your invoice again. If you cannot find an error, click the hint.
+</p>
+<details>
+    <summary>
+        Note
+    </summary>
+    An estimate for \(\alpha\) can be determined with the following formula:
+\[
+\hat{\alpha} = \bar{y} - \hat{\beta}\bar{x}
+\]
+</details>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans1</sans>
+                <tans>Tans2</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans2</name>
+            <value>1.0000000</value>
+            <autosimplify>0</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans2</sans>
+                <tans>Tans2</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>0-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Mithilfe der zusammengefassten Daten kann \(\hat{\beta}\) wie folgt bestimmt werden:
+</p>
+\[\hat{\beta} = \frac{s_y}{s_x} r_{x,y} ={@ std_y / std_x * corr_xy@} = {@ ans2 @}\][[/lang]][[lang code="en"]]
+<p>
+    The combined data can be used \(\hat{\beta}\) as follows:
+</p>
+\[\hat{\beta} = \frac{s_y}{s_x} r_{x,y} ={@ std_y / std_x * corr_xy@} = {@ ans2 @}\][[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>0-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans2</sans>
+                <tans>Tans1</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty>0</truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty>0</falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Bitte &#252;berpr&#252;fen Sie noch einmal Ihre Rechnung. Falls Sie keinen Fehler finden k&#246;nnen, klicken Sie auf den Hinweis.
+</p>
+<details>
+    <summary>
+        Hinweis
+    </summary>
+    Eine Sch&#228;tzung f&#252;r \(\beta\) kann mit folgender Formel bestimmt werden:
+\[
+\hat{\beta} = \frac{s_y}{s_x} r_{x,y}
+\]
+</details>
+[[/lang]][[lang code="en"]]
+<p>
+    Please check your invoice again. If you cannot find an error, click the hint.
+</p>
+<details>
+    <summary>
+        Note
+    </summary>
+    An estimate for \(\beta\) can be determined with the following formula:
+\[
+\hat{\beta} = \frac{s_y}{s_x} r_{x,y}
+\]
+</details>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans3</name>
+            <value>1.0000000</value>
+            <autosimplify>0</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans3</sans>
+                <tans>Tans3</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>0-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie k&#246;nnen eine Vorhersage des Modells erhalten, wenn Sie {@ x = eval_x @} in die Gleichung der Regressionsgerade einsetzen:
+</p>
+\[y = {@intercept + slope*eval_x@} = {@ev(ans3,simp)@}\]
+<p>
+    Klicken Sie auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    , um zum n&#228;chsten Aufgabenteil zu gelangen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You can get a prediction of the model if you {@ x = eval_x @} use the equation of the regression line:
+</p>
+\[y = {@intercept + slope*eval_x@} = {@ev(ans3,simp)@}\]
+<p>
+    Click on
+    <button class="next" type="button">
+        Next
+    </button>
+    to get to the next task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>0-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>slope + intercept*eval_x</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans3-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Haben Sie vielleicht \(\hat{\alpha}\) und \(\hat{\beta}\) vertauscht?
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You may have \(\hat{\alpha}\) and \(\hat{\beta}\) exchanged?
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt_ans3-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>intercept - slope*eval_x</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans3-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Haben Sie vielleicht das Vorzeichen von \(\hat{\beta} = {@slope@}\) vergessen?
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You may have the sign of \(\hat{\beta} = {@slope@}\) forget?
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans3-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Bitte &#252;berpr&#252;fen Sie noch einmal Ihre Rechnung. Falls Sie keinen Fehler finden k&#246;nnen, klicken Sie auf den Hinweis.
+</p>
+<details>
+    <summary>
+        Hinweis
+    </summary>
+    <p>
+        Die Regressionsgerade \(y = \alpha + \beta x\) gibt uns das erwartete Ergebnis des Experiments
+in Abh&#228;ngigkeit vom Wert der erkl&#228;renden Variablen. Dieser Wert ist zugleich die beste
+Vorhersage f&#252;r das Ergebnis des Experiments, wenn die erkl&#228;rende Variable den Wert \(x\)
+hat. Setzen Sie den Wert \(x = {@eval_x@}\) in die Formel f&#252;r die von Ihnen errechnete Regressionsgerade ein: \(y = \hat{\alpha} + \hat{\beta}x\)
+    </p>
+</details>
+[[/lang]][[lang code="en"]]
+<p>
+    Please check your invoice again. If you cannot find an error, click the hint.
+</p>
+<details>
+    <summary>
+        Note
+    </summary>
+    <p>
+        The regression line \(y = \alpha + \beta x\) gives us the expected result of the experiment
+depending on the value of the explaining variables. This value is also the best
+Forecast for the result of the experiment if the explaining variable is the value \(x\)has. Set the value \(x = {@eval_x@}\) in the formula for the regression line you calculate: \(y = \hat{\alpha} + \hat{\beta}x\)
+    </p>
+</details>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans4</name>
+            <value>1.0000000</value>
+            <autosimplify>0</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans4</sans>
+                <tans>Tans4</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ein Sch&#228;tzer f&#252;r die Varianz des Zufallsterms ist gegeben durch die Formel \(s_{y|x}^2 = \frac{n-1}{n-2}\cdot(1 - r_{xy}^2)\cdot {s_y}^2\).  Einsetzen der jeweiligen Werte ergibt dann:
+</p>
+\[s_{y|x}^2  = {@ (nn-1)/(nn-2) * (1 - corr_xy^2) * (std_y)^2@} \approx {@ decimalplaces(Tans4, 2) @}\]
+<p>
+    Klicken Sie auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    , um zum n&#228;chsten Aufgabenteil zu gelangen.
+</p>
+<script>
+    (function(){
+const ansDiv = document.querySelector(".prev-answers");
+ansDiv.style.display = "block";
+const paragraph = document.createElement("p");
+paragraph.append("\\" + "[s_{y|x}^2 = {#decimalplaces(Tans4,1)#}\\" + "]");
+ansDiv.append(paragraph);
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    An estimate of the variance of the random term is given by the formula \(s_{y|x}^2 = \frac{n-1}{n-2}\cdot(1 - r_{xy}^2)\cdot {s_y}^2\). Inserting the respective values then results:
+</p>
+\[s_{y|x}^2  = {@ (nn-1)/(nn-2) * (1 - corr_xy^2) * (std_y)^2@} \approx {@ decimalplaces(Tans4, 2) @}\]
+<p>
+    Click on
+    <button class="next" type="button">
+        Next
+    </button>
+    to get to the next task.
+</p>
+<script>
+    (function(){
+const ansDiv = document.querySelector(".prev-answers");
+ansDiv.style.display = "block";
+const paragraph = document.createElement("p");
+paragraph.append("\\" + "[s_{y|x}^2 = {#decimalplaces(Tans4,1)#}\\" + "]");
+ansDiv.append(paragraph);
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Bitte &#252;berpr&#252;fen Sie noch einmal Ihre Rechnung. Falls Sie keinen Fehler finden k&#246;nnen, klicken Sie auf den Hinweis.
+</p>
+<details>
+    <summary>
+        Hinweis
+    </summary>
+    Eine Sch&#228;tzung f&#252;r die Varianz des Zufallsterms kann aus den zusammengefassten Daten mithilfe der folgenden Formel berechnet werden:
+\[
+s_{y|x}^2 = \frac{n-1}{n-2} (1 - r_{x,y}^2) s_y^2
+\]
+</details>
+[[/lang]][[lang code="en"]]
+<p>
+    Please check your invoice again. If you cannot find an error, click the hint.
+</p>
+<details>
+    <summary>
+        Note
+    </summary>
+    An estimate for the variance of the random term can be calculated from the combined data using the following formula:
+\[
+s_{y|x}^2 = \frac{n-1}{n-2} (1 - r_{x,y}^2) s_y^2
+\]
+</details>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans5</name>
+            <value>1.0000000</value>
+            <autosimplify>0</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>estVarOneDecimal: ev(decimalplaces(est_var, 1), simp);
+tQuantile: ev(decimalplaces(quantile_student_t(0.975, nn-2), 2), simp);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans5</sans>
+                <tans>Tans5</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans5-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Das Konfidenzintervall f&#252;r \(\alpha\) berechnet sich wie folgt:
+\begin{align*}
+\left[
+\hat{\alpha} - {@qt(0.975, n-2)@} \sqrt{
+\frac{
+s_{y|x}^2((n-1)s_x^2 + n\bar{x}^2)
+}{
+n(n-1)s_x^2
+}},
+\hat{\alpha} + {@qt(0.975, n-2)@} \sqrt{
+\frac{
+s_{y|x}^2((n-1)s_x^2 + n\bar{x}^2)
+}{
+n(n-1)s_x^2
+}}\right]
+&amp;= {@[ans1 - qt(0.975, nn-2) * sqrt(estVarOneDecimal*((nn-1) * std_x^2 + nn*mean_x^2)/(nn*(nn-1)*std_x^2)),
+ans1 + qt(0.975, nn-2) * sqrt(estVarOneDecimal*((nn-1) * std_x^2 + nn*mean_x^2)/(nn*(nn-1)*std_x^2))
+]@} \\
+&amp;= {@[ans1 - tQuantile * sqrt(ev(decimalplaces(estVarOneDecimal*((nn-1) * std_x^2 + nn*mean_x^2)/(nn*(nn-1)*std_x^2), 2), simp)),
+ans1 + tQuantile * sqrt(ev(decimalplaces(estVarOneDecimal*((nn-1) * std_x^2 + nn*mean_x^2)/(nn*(nn-1)*std_x^2), 2), simp))
+]@} \\
+&amp;= {@ev(decimalplaces(Tans5, 1), simp)@}
+\end{align*}
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The confidence interval for \(\alpha\) is calculated as follows:
+\begin{align*}
+\left[
+\hat{\alpha} - {@qt(0.975, n-2)@} \sqrt{
+\frac{
+s_{y|x}^2((n-1)s_x^2 + n\bar{x}^2)
+}{
+n(n-1)s_x^2
+}},
+\hat{\alpha} + {@qt(0.975, n-2)@} \sqrt{
+\frac{
+s_{y|x}^2((n-1)s_x^2 + n\bar{x}^2)
+}{
+n(n-1)s_x^2
+}}\right]
+&amp;= {@[ans1 - qt(0.975, nn-2) * sqrt(estVarOneDecimal*((nn-1) * std_x^2 + nn*mean_x^2)/(nn*(nn-1)*std_x^2)),
+ans1 + qt(0.975, nn-2) * sqrt(estVarOneDecimal*((nn-1) * std_x^2 + nn*mean_x^2)/(nn*(nn-1)*std_x^2))
+]@} \\
+&amp;= {@[ans1 - tQuantile * sqrt(ev(decimalplaces(estVarOneDecimal*((nn-1) * std_x^2 + nn*mean_x^2)/(nn*(nn-1)*std_x^2), 2), simp)),
+ans1 + tQuantile * sqrt(ev(decimalplaces(estVarOneDecimal*((nn-1) * std_x^2 + nn*mean_x^2)/(nn*(nn-1)*std_x^2), 2), simp))
+]@} \\
+&amp;= {@ev(decimalplaces(Tans5, 1), simp)@}
+\end{align*}
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans5-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Bitte &#252;berpr&#252;fen Sie noch einmal Ihre Rechnung. Falls Sie keinen Fehler finden k&#246;nnen, klicken Sie auf den Hinweis.
+</p>
+<details>
+    <summary>
+        Hinweis
+    </summary>
+    Die Formel f&#252;r das Konfidenzintervall f&#252;r \(\alpha\) lautet:
+\[
+\left[
+\hat{\alpha} - {@qt(0.975, n-2)@} \sqrt{
+\frac{
+s_{y|x}^2((n-1)s_x^2 + n\bar{x}^2)
+}{
+n(n-1)s_x^2
+}},
+\hat{\alpha} + {@qt(0.975, n-2)@} \sqrt{
+\frac{
+s_{y|x}^2((n-1)s_x^2 + n\bar{x}^2)
+}{
+n(n-1)s_x^2
+}}\right]
+\]
+</details>
+[[/lang]][[lang code="en"]]
+<p>
+    Please check your invoice again. If you cannot find an error, click the hint.
+</p>
+<details>
+    <summary>
+        Note
+    </summary>
+    The formula for the confidence interval for \(\alpha\) reads:
+\[
+\left[
+\hat{\alpha} - {@qt(0.975, n-2)@} \sqrt{
+\frac{
+s_{y|x}^2((n-1)s_x^2 + n\bar{x}^2)
+}{
+n(n-1)s_x^2
+}},
+\hat{\alpha} + {@qt(0.975, n-2)@} \sqrt{
+\frac{
+s_{y|x}^2((n-1)s_x^2 + n\bar{x}^2)
+}{
+n(n-1)s_x^2
+}}\right]
+\]
+</details>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans6</name>
+            <value>1.0000000</value>
+            <autosimplify>0</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>tQuantile: ev(decimalplaces(quantile_student_t(0.975, nn-2), 2), simp);
+estVarOneDecimal: ev(decimalplaces(est_var, 1), simp);
+delta: sqrt(estVarOneDecimal/((nn-1)*std_x^2));</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans6</sans>
+                <tans>Tans6</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans6-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Das Konfidenzintervall f&#252;r \(\beta\) berechnet sich wie folgt:
+</p>
+\begin{align*}
+\left[
+\hat{\beta} - {@qt(0.975, n-2)@} \sqrt{\frac{{s_{y|x}}^2}{(n-1)\cdot{s_x}^2}},
+\hat{\beta} + {@qt(0.975, n-2)@}\sqrt{\frac{{s_{y|x}}^2}{(n-1)\cdot{s_x}^2}}
+\right] &amp;= {@ [slope - qt(0.975, nn-2) * delta,  slope + qt(0.975, nn-2) * delta] @} \\
+&amp;= {@ [slope - tQuantile * ev(decimalplaces(delta,2),simp),  slope + tQuantile* ev(decimalplaces(delta, 2), simp)] @} \\
+&amp;= {@ev(decimalplaces(Tans6, 1), simp)@}
+\end{align*}[[/lang]][[lang code="en"]]
+<p>
+    The confidence interval for \(\beta\) is calculated as follows:
+</p>
+\begin{align*}
+\left[
+\hat{\beta} - {@qt(0.975, n-2)@} \sqrt{\frac{{s_{y|x}}^2}{(n-1)\cdot{s_x}^2}},
+\hat{\beta} + {@qt(0.975, n-2)@}\sqrt{\frac{{s_{y|x}}^2}{(n-1)\cdot{s_x}^2}}
+\right] &amp;= {@ [slope - qt(0.975, nn-2) * delta,  slope + qt(0.975, nn-2) * delta] @} \\
+&amp;= {@ [slope - tQuantile * ev(decimalplaces(delta,2),simp),  slope + tQuantile* ev(decimalplaces(delta, 2), simp)] @} \\
+&amp;= {@ev(decimalplaces(Tans6, 1), simp)@}
+\end{align*}[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans6-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Bitte &#252;berpr&#252;fen Sie noch einmal Ihre Rechnung. Falls Sie keinen Fehler finden k&#246;nnen, klicken Sie auf den Hinweis.
+</p>
+<details>
+    <summary>
+        Hinweis
+    </summary>
+    Die Formel f&#252;r das Konfidenzintervall f&#252;r \(\beta\) lautet:
+\[
+\left[
+\hat{\beta} - {@qt(0.975, n-2)@} \sqrt{
+\frac{s_{y|x}^2}{(n-1)s_x^2}},
+\hat{\beta} + {@qt(0.975, n-2)@} \sqrt{
+\frac{s_{y|x}^2}{(n-1)s_x^2}}\right]
+\]
+</details>
+[[/lang]][[lang code="en"]]
+<p>
+    Please check your invoice again. If you cannot find an error, click the hint.
+</p>
+<details>
+    <summary>
+        Note
+    </summary>
+    The formula for the confidence interval for \(\beta\) reads:
+\[
+\left[
+\hat{\beta} - {@qt(0.975, n-2)@} \sqrt{
+\frac{s_{y|x}^2}{(n-1)s_x^2}},
+\hat{\beta} + {@qt(0.975, n-2)@} \sqrt{
+\frac{s_{y|x}^2}{(n-1)s_x^2}}\right]
+\]
+</details>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans7</name>
+            <value>1.0000000</value>
+            <autosimplify>0</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>lowQuantile: ev(decimalplaces(quantile_chi2(0.975, nn - 2),1), simp);
+highQuantile: ev(decimalplaces(quantile_chi2(0.025, nn - 2),1), simp);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans7</sans>
+                <tans>Tans7</tans>
+                <testoptions>0.5</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans7-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Das Konfidenzintervall f&#252;r \(\sigma^2\) berechnet sich wie folgt:
+</p>
+\begin{align*}
+\left[
+\frac{(n-1)(1 - {r_{xy}}^2){s_y}^2}{{@qchisq(0.975, n-2)@}},
+\frac{(n-1)(1 - {r_{xy}}^2){s_y}^2}{{@qchisq(0.025, n-2)@}}
+\right] &amp;=
+{@[
+    (nn - 1)*(1 - corr_xy^2)*std_y^2 / qchisq(0.975, nn-2),
+    (nn - 1)*(1 - corr_xy^2)*std_y^2 / qchisq(0.025, nn-2)
+]@}
+\\
+&amp;=
+{@[
+    ev((nn - 1)*(1 - corr_xy^2)*std_y^2, simp) / lowQuantile,
+    ev((nn - 1)*(1 - corr_xy^2)*std_y^2, simp) / highQuantile
+]@}
+\\
+&amp;= {@ev(decimalplaces(Tans7, 1), simp)@}
+\end{align*}[[/lang]][[lang code="en"]]
+<p>
+    The confidence interval for \(\sigma^2\) is calculated as follows:
+</p>
+\begin{align*}
+\left[
+\frac{(n-1)(1 - {r_{xy}}^2){s_y}^2}{{@qchisq(0.975, n-2)@}},
+\frac{(n-1)(1 - {r_{xy}}^2){s_y}^2}{{@qchisq(0.025, n-2)@}}
+\right] &amp;=
+{@[
+    (nn - 1)*(1 - corr_xy^2)*std_y^2 / qchisq(0.975, nn-2),
+    (nn - 1)*(1 - corr_xy^2)*std_y^2 / qchisq(0.025, nn-2)
+]@}
+\\
+&amp;=
+{@[
+    ev((nn - 1)*(1 - corr_xy^2)*std_y^2, simp) / lowQuantile,
+    ev((nn - 1)*(1 - corr_xy^2)*std_y^2, simp) / highQuantile
+]@}
+\\
+&amp;= {@ev(decimalplaces(Tans7, 1), simp)@}
+\end{align*}[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans7-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Bitte &#252;berpr&#252;fen Sie noch einmal Ihre Rechnung. Falls Sie keinen Fehler finden k&#246;nnen, klicken Sie auf den Hinweis.
+</p>
+<details>
+    <summary>
+        Hinweis
+    </summary>
+    Die Formel f&#252;r das Konfidenzintervall f&#252;r \(\sigma^2\) lautet:
+\[
+\left[
+(n-2)\frac{s_{y|x}^2}{{@qchisq(0.975, n-2)@}},
+(n-2)\frac{s_{y|x}^2}{{@qchisq(0.025, n-2)@}}
+\right]
+\]
+</details>
+[[/lang]][[lang code="en"]]
+<p>
+    Please check your invoice again. If you cannot find an error, click the hint.
+</p>
+<details>
+    <summary>
+        Note
+    </summary>
+    The formula for the confidence interval for \(\sigma^2\) reads:
+\[
+\left[
+(n-2)\frac{s_{y|x}^2}{{@qchisq(0.975, n-2)@}},
+(n-2)\frac{s_{y|x}^2}{{@qchisq(0.025, n-2)@}}
+\right]
+\]
+</details>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_d_complet</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans5</sans>
+                <tans>Tans5</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt_d_complet-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_d_complet-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans6</sans>
+                <tans>Tans6</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prt_d_complet-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_d_complet-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans7</sans>
+                <tans>Tans7</tans>
+                <testoptions>0.5</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_d_complet-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Klicken Sie auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    , um zum n&#228;chsten Aufgabenteil zu gelangen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Click on
+    <button class="next" type="button">
+        Next
+    </button>
+    to get to the next task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_d_complet-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_e_complet</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_e1</sans>
+                <tans>beta=0</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt_e_complet-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt_e_complet-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_e2</sans>
+                <tans><![CDATA[beta<0]]></tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_e_complet-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Klicken Sie auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    , um zum n&#228;chsten Aufgabenteil zu gelangen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Click on
+    <button class="next" type="button">
+        Next
+    </button>
+    to get to the next task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_e_complet-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_g_complet</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans_g1</sans>
+                <tans>Tans_g1</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt_g_complet-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_g_complet-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_g2</sans>
+                <tans>first(mcq_correct(Tans_g2))</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_g_complet-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Herzlichen Gl&#252;ckwunsch! Sie sind am Ende der Aufgabe angelangt.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Congratulations! They reached the end of the task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_g_complet-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1820319934</deployedseed>
+        <deployedseed>177378212</deployedseed>
+        <deployedseed>1242140157</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <description/>
+            <testinput>
+                <name>ans1</name>
+                <value>decimalplaces(mean_y - (std_y/std_x)*corr_xy*mean_x, 1)</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>decimalplaces((std_y/std_x)*corr_xy,1)</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>decimalplaces(mean_y - (std_y/std_x)*corr_xy*mean_x +&#8239;((std_y/std_x)*corr_xy)*eval_x,1)</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>decimalplaces((nn-1)/(nn-2)*(1 - corr_xy^2)*var_y,1)</value>
+            </testinput>
+            <testinput>
+                <name>ans5</name>
+                <value>decimalplaces(mean_y - (std_y/std_x)*corr_xy*mean_x + quantile_student_t(0.975, nn-2)*sqrt(((1-corr_xy^2)*var_y*((nn-1)*var_x +&#8239;nn*mean_x^2))/nn/(nn-2)/var_x)*[-1, 1], 1)</value>
+            </testinput>
+            <testinput>
+                <name>ans6</name>
+                <value>decimalplaces((std_y/std_x)*corr_xy +&#8239;quantile_student_t(0.975, nn-2)*sqrt((1 - corr_xy^2)*var_y/(nn-2)/var_x)*[-1,1], 1)</value>
+            </testinput>
+            <testinput>
+                <name>ans7</name>
+                <value/>
+            </testinput>
+            <expected>
+                <name>prt_ans1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>0-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>0-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>0-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans4</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans5</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans6</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans7</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <description/>
+            <testinput>
+                <name>ans1</name>
+                <value>Tans2</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>Tans1</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>Tans3</value>
+            </testinput>
+            <expected>
+                <name>prt_ans1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt_ans1-2-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt_ans2-2-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>0-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>3</testcase>
+            <description/>
+            <testinput>
+                <name>ans1</name>
+                <value>Tans2</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>0</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>Tans3</value>
+            </testinput>
+            <expected>
+                <name>prt_ans1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt_ans1-2-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans2</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt_ans2-2-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>0-T</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

@@ -6,90 +6,88 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Vektoren $$v_1,v_2,v_3 \in \mathbb{R}^3$$ sind genau dann linear unabh&#228;ngig, wenn das lineare Gleichungssystem $$x_1 v_1 + x_2 v_2 + x_3v_3 = 0$$
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The vectors $$v_1,v_2,v_3 \in \mathbb{R}^3$$ are linearly independent when the linear equation $$x_1 v_1 + x_2 v_2 + x_3v_3 = 0$
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Vektoren $$v_1,v_2,v_3 \in \mathbb{R}^3$$ sind genau dann linear unabh&#228;ngig, wenn das lineare Gleichungssystem $$x_1 v_1 + x_2 v_2 + x_3v_3 = 0$$
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The vectors $$v_1,v_2,v_3 \in \mathbb{R}^3$$ are linearly independent when the linear equation $$x_1 v_1 + x_2 v_2 + x_3v_3 = 0$
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        <b>
-            L&#246;sung
-        </b>
-    </h4>
-    <p>
-        <b>
-            <br/>
-        </b>
-    </p>
-    <p>
-    </p>
-    <ul>
-        <li>
-            <span>
-                unendlich viele L&#246;sungen&#160; \(\Leftrightarrow\)&#160; &#160;\(v_1,v_2,v_3\) linear abh&#228;ngig
-            </span>
-        </li>
-    </ul>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-        </p>
-    </div>
-    <ul>
-        <li>
-            <span style="">
-                nur die triviale L&#246;sung&#160; \(\Leftrightarrow\)&#160; &#160;\(v_1,v_2,v_3\) linear unabh&#228;ngig.
-            </span>
-        </li>
-    </ul>
-    <p>
-        (triviale L&#246;sung: \(x_1=x_2=x_3=0\))
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <h4>
-        <b>
-            Solution
-        </b>
-    </h4>
-    <p>
-        <b>
-            <br/>
-        </b>
-    </p>
+[[lang code="de"]]
+<h4>
+    <b>
+        L&#246;sung
+    </b>
+</h4>
+<p>
+    <b>
+        <br/>
+    </b>
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        <span>
+            unendlich viele L&#246;sungen&#160; \(\Leftrightarrow\)&#160; &#160;\(v_1,v_2,v_3\) linear abh&#228;ngig
+        </span>
+    </li>
+</ul>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
     </p>
-    <ul>
-        <li>
-            <span>
-                endless solutions \(\Leftrightarrow\)\(v_1,v_2,v_3\) linear
-            </span>
-        </li>
-    </ul>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-        </p>
-    </div>
-    <ul>
-        <li>
-            <span style="">
-                only the triviale solution \(\Leftrightarrow\)\(v_1,v_2,v_3\) linear independent.
-            </span>
-        </li>
-    </ul>
+</div>
+<ul>
+    <li>
+        <span style="">
+            nur die triviale L&#246;sung&#160; \(\Leftrightarrow\)&#160; &#160;\(v_1,v_2,v_3\) linear unabh&#228;ngig.
+        </span>
+    </li>
+</ul>
+<p>
+    (triviale L&#246;sung: \(x_1=x_2=x_3=0\))
+</p>
+[[/lang]][[lang code="en"]]
+<h4>
+    <b>
+        Solution
+    </b>
+</h4>
+<p>
+    <b>
+        <br/>
+    </b>
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        <span>
+            endless solutions \(\Leftrightarrow\)\(v_1,v_2,v_3\) linear
+        </span>
+    </li>
+</ul>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
-        (triviale solution: \(x_1=x_2=x_3=0\))
     </p>
-</span>
+</div>
+<ul>
+    <li>
+        <span style="">
+            only the triviale solution \(\Leftrightarrow\)\(v_1,v_2,v_3\) linear independent.
+        </span>
+    </li>
+</ul>
+<p>
+    (triviale solution: \(x_1=x_2=x_3=0\))
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -111,16 +109,15 @@
         </incorrectfeedback>
         <answer fraction="100" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        ... nur die triviale L&#246;sung hat.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        ... only has the triviale solution.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    ... nur die triviale L&#246;sung hat.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    ... only has the triviale solution.
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text/>
@@ -128,16 +125,15 @@
         </answer>
         <answer fraction="0" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        ... unendlich viele L&#246;sungen hat.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        ... has infinitely many solutions.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    ... unendlich viele L&#246;sungen hat.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    ... has infinitely many solutions.
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text/>
@@ -145,16 +141,15 @@
         </answer>
         <answer fraction="0" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        ... ein Parallelogramm ist.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        ... is a parallelogram.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    ... ein Parallelogramm ist.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    ... is a parallelogram.
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text/>
@@ -162,16 +157,15 @@
         </answer>
         <answer fraction="0" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        ... einen rechten Winkel bildet.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        ... forms a right angle.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    ... einen rechten Winkel bildet.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    ... forms a right angle.
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text/>

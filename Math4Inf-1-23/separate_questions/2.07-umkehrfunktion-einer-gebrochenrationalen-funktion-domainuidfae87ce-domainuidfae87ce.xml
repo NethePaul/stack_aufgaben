@@ -6,24 +6,18 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Gegeben sei die Funktion
-        <span style="font-size: 0.9375rem;">
-            \(f(x)=\dfrac{{@z@}}{{@n@}}\) mit dem Parameter \(a \in \mathbb{R}\).
-        </span>
-    </p>
-    <p>
-        Bilden Sie die Umkehrfunktion von \(f\) und bestimmen Sie anschlie&#223;end \(a\) so, dass beide Funktionen \(f\) und \(f^{-1}\) durch den Koordinatenursprung verlaufen.
-    </p>
-    <p>
-        \(f^{-1}(x)\,=\,\) [[input:ans1]][[validation:ans1]] [[feedback:prt1]]
-    </p>
-    <p>
-        \(a\,=\,\) [[input:ans2]][[validation:ans2]] [[feedback:prt2]]
-    </p>
-</span>
-<span class="multilang" lang="en">
+[[lang code="de"]]
+<p>
+    Gegeben sei die Funktion
+    <span style="font-size: 0.9375rem;">
+        \(f(x)=\dfrac{{@z@}}{{@n@}}\) mit dem Parameter \(a \in \mathbb{R}\).
+    </span>
+</p>
+<p>
+    Bilden Sie die Umkehrfunktion von \(f\) und bestimmen Sie anschlie&#223;end \(a\) so, dass beide Funktionen \(f\) und \(f^{-1}\) durch den Koordinatenursprung verlaufen.
+</p>
+<p>
+    \(f^{-1}(x)\,=\,\) [[/lang]][[lang code="en"]]
     <p>
         the function
         <span style="font-size: 0.9375rem;">
@@ -34,112 +28,116 @@
         Create the reverse function of \(f\) and then determine \(a\) so that both functions \(f\) and \(f^{-1}\) run through the coordinate origin.
     </p>
     <p>
-        \(f^{-1}(x)\,=\,\) [[input:ans1]][[validation:ans1]] [[feedback:prt1]]
+        \(f^{-1}(x)\,=\,\) [[/lang]][[input:ans1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
     <p>
-        \(a\,=\,\) [[input:ans2]][[validation:ans2]] [[feedback:prt2]]
+        \(a\,=\,\) [[/lang]][[lang code="en"]]
     </p>
-</span>
+    <p>
+        \(a\,=\,\) [[/lang]][[input:ans2]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt2]][[lang code="de"]]
+    </p>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p dir="ltr" style="text-align: left;">
-        <strong>
-            L&#246;sungsweg:
-        </strong>
-    </p>
-    <p dir="ltr">
-        Wir setzen \(y=\dfrac{{@z@}}{{@n@}}\) und versuchen diese Gleichung nach \(x\) umzustellen.
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad {@y*(f*x+c*a*x-a*d+e)=a1*x-a*x+a*b+c@}\)
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad {@f*x*y+c*a*x*y-a*d*y+e*y=a1*x-a*x+a*b+c@}\)
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad {@f*x*y+c*a*x*y=a1*x-a*x+a*b+c+a*d*y-e*y@}\)
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad {@f*x*y+c*a*x*y-a1*x+a*x=a*b+c+a*d*y-e*y@}\)
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad {@x*(f*y+c*a*y-a1+a)=a*b+c+a*d*y-e*y@}\)
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad \displaystyle {@x=(a*b+c+a*d*y-e*y)/(f*y+c*a*y-a1+a)@}\)
-    </p>
-    <p dir="ltr">
-        Somit ist die Umkehrfunktion&#160;\(\displaystyle f^{-1}(x) = {@loes1@}\). (Ersetzung von \(y\) durch \(x\) und umgekehrt.)
-    </p>
-    <p dir="ltr">
-        Ferner&#160;verlaufen die beiden Funktionen \(f\) und \(f^{-1}\) durch den Koordinatenursprung, wenn es gilt:
-        <span style="font-size: 0.9375rem;">
-            \(f(0) = f^{-1}(0) = 0\).
-        </span>
-    </p>
-    <p dir="ltr">
-    </p>
-    <p dir="ltr">
-        \(\displaystyle f(0) = {@(a*b+c)/(-a*d+e)@} = 0\) und&#160;\(\displaystyle f^{-1}(0) = {@(a*b+c)/(-a1+a)@} = 0\).
-    </p>
-    <p dir="ltr">
-        Somit gilt: \(\displaystyle {@a*b+c=0@}\) mit \({@-a*d+e@}\not=0\) und \({@-a1+a@} \not=0\).
-    </p>
-    <p dir="ltr">
-        Also ist&#160;\(\displaystyle a=&#160;{@-c/b@}\) mit \(\displaystyle a \not= {@e/d@}\) und \(a \not= {@a1@}\).
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p dir="ltr" style="text-align: left;">
-        <strong>
-            Solution:
-        </strong>
-    </p>
-    <p dir="ltr">
-        We set \(y=\dfrac{{@z@}}{{@n@}}\) and try this equation \(x\) to change.
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad {@y*(f*x+c*a*x-a*d+e)=a1*x-a*x+a*b+c@}\)
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad {@f*x*y+c*a*x*y-a*d*y+e*y=a1*x-a*x+a*b+c@}\)
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad {@f*x*y+c*a*x*y=a1*x-a*x+a*b+c+a*d*y-e*y@}\)
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad {@f*x*y+c*a*x*y-a1*x+a*x=a*b+c+a*d*y-e*y@}\)
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad {@x*(f*y+c*a*y-a1+a)=a*b+c+a*d*y-e*y@}\)
-    </p>
-    <p dir="ltr">
-        \(\quad \Longleftrightarrow \quad \displaystyle {@x=(a*b+c+a*d*y-e*y)/(f*y+c*a*y-a1+a)@}\)
-    </p>
-    <p dir="ltr">
-        Thus, the reversing function\(\displaystyle f^{-1}(x) = {@loes1@}\). (Replacement of \(y\) by \(x\) and vice versa.)
-    </p>
-    <p dir="ltr">
-        Furthermore, the two functions run \(f\) and \(f^{-1}\) by the origin of coordinates, if:
-        <span style="font-size: 0.9375rem;">
-            \(f(0) = f^{-1}(0) = 0\).
-        </span>
-    </p>
-    <p dir="ltr">
-    </p>
-    <p dir="ltr">
-        \(\displaystyle f(0) = {@(a*b+c)/(-a*d+e)@} = 0\) and\(\displaystyle f^{-1}(0) = {@(a*b+c)/(-a1+a)@} = 0\).
-    </p>
-    <p dir="ltr">
-        This shall apply: \(\displaystyle {@a*b+c=0@}\) with \({@-a*d+e@}\not=0\) and \({@-a1+a@} \not=0\).
-    </p>
-    <p dir="ltr">
-        So...\(\displaystyle a=&#160;{@-c/b@}\) with \(\displaystyle a \not= {@e/d@}\) and \(a \not= {@a1@}\).
-    </p>
-</span>
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    <strong>
+        L&#246;sungsweg:
+    </strong>
+</p>
+<p dir="ltr">
+    Wir setzen \(y=\dfrac{{@z@}}{{@n@}}\) und versuchen diese Gleichung nach \(x\) umzustellen.
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad {@y*(f*x+c*a*x-a*d+e)=a1*x-a*x+a*b+c@}\)
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad {@f*x*y+c*a*x*y-a*d*y+e*y=a1*x-a*x+a*b+c@}\)
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad {@f*x*y+c*a*x*y=a1*x-a*x+a*b+c+a*d*y-e*y@}\)
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad {@f*x*y+c*a*x*y-a1*x+a*x=a*b+c+a*d*y-e*y@}\)
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad {@x*(f*y+c*a*y-a1+a)=a*b+c+a*d*y-e*y@}\)
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad \displaystyle {@x=(a*b+c+a*d*y-e*y)/(f*y+c*a*y-a1+a)@}\)
+</p>
+<p dir="ltr">
+    Somit ist die Umkehrfunktion&#160;\(\displaystyle f^{-1}(x) = {@loes1@}\). (Ersetzung von \(y\) durch \(x\) und umgekehrt.)
+</p>
+<p dir="ltr">
+    Ferner&#160;verlaufen die beiden Funktionen \(f\) und \(f^{-1}\) durch den Koordinatenursprung, wenn es gilt:
+    <span style="font-size: 0.9375rem;">
+        \(f(0) = f^{-1}(0) = 0\).
+    </span>
+</p>
+<p dir="ltr">
+</p>
+<p dir="ltr">
+    \(\displaystyle f(0) = {@(a*b+c)/(-a*d+e)@} = 0\) und&#160;\(\displaystyle f^{-1}(0) = {@(a*b+c)/(-a1+a)@} = 0\).
+</p>
+<p dir="ltr">
+    Somit gilt: \(\displaystyle {@a*b+c=0@}\) mit \({@-a*d+e@}\not=0\) und \({@-a1+a@} \not=0\).
+</p>
+<p dir="ltr">
+    Also ist&#160;\(\displaystyle a=&#160;{@-c/b@}\) mit \(\displaystyle a \not= {@e/d@}\) und \(a \not= {@a1@}\).
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    <strong>
+        Solution:
+    </strong>
+</p>
+<p dir="ltr">
+    We set \(y=\dfrac{{@z@}}{{@n@}}\) and try this equation \(x\) to change.
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad {@y*(f*x+c*a*x-a*d+e)=a1*x-a*x+a*b+c@}\)
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad {@f*x*y+c*a*x*y-a*d*y+e*y=a1*x-a*x+a*b+c@}\)
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad {@f*x*y+c*a*x*y=a1*x-a*x+a*b+c+a*d*y-e*y@}\)
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad {@f*x*y+c*a*x*y-a1*x+a*x=a*b+c+a*d*y-e*y@}\)
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad {@x*(f*y+c*a*y-a1+a)=a*b+c+a*d*y-e*y@}\)
+</p>
+<p dir="ltr">
+    \(\quad \Longleftrightarrow \quad \displaystyle {@x=(a*b+c+a*d*y-e*y)/(f*y+c*a*y-a1+a)@}\)
+</p>
+<p dir="ltr">
+    Thus, the inverse function\(\displaystyle f^{-1}(x) = {@loes1@}\). (Replacement of \(y\) by \(x\) and vice versa.)
+</p>
+<p dir="ltr">
+    Furthermore, the two functions run \(f\) and \(f^{-1}\) by the origin of coordinates, if:
+    <span style="font-size: 0.9375rem;">
+        \(f(0) = f^{-1}(0) = 0\).
+    </span>
+</p>
+<p dir="ltr">
+</p>
+<p dir="ltr">
+    \(\displaystyle f(0) = {@(a*b+c)/(-a*d+e)@} = 0\) and\(\displaystyle f^{-1}(0) = {@(a*b+c)/(-a1+a)@} = 0\).
+</p>
+<p dir="ltr">
+    Therefore this applies: \(\displaystyle {@a*b+c=0@}\) with \({@-a*d+e@}\not=0\) and \({@-a1+a@} \not=0\).
+</p>
+<p dir="ltr">
+    So...\(\displaystyle a=&#160;{@-c/b@}\) with \(\displaystyle a \not= {@e/d@}\) and \(a \not= {@a1@}\).
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -178,44 +176,41 @@ loes2:-c0;</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Richtig. Gut gemacht.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Right. Well done.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Richtig. Gut gemacht.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Right. Well done.
+</p>
+[[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Antwort ist teilweise richtig.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The answer is partly correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Antwort ist teilweise richtig.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The answer is partly correct.
+</p>
+[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Antwort ist nicht richtig.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The answer is not correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Antwort ist nicht richtig.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The answer is not correct.
+</p>
+[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

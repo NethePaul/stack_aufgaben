@@ -6,88 +6,86 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Auf&#160; die Menge \( M= \{a,b,c\} \) ist die Relation \( R= \{&#160; (a,b), (a,c), (a,a), (b,b), (c,c) \} \) gegeben. F&#252;gen Sie m&#246;glichst wenige weitere Paare hinzu, sodass eine totale Ordnung entsteht.
-    </p>
-    <p>
-        <span style="font-size: 0.9375rem;">
-            Gesuchte Element: [[input:ans1]][[validation:ans1]]
-        </span>
-    </p>
-    <p>
-        <span style="font-size: 0.9375rem;">
-            <br/>
-        </span>
-    </p>
-    <p>
-        <span style="font-size: 0.9375rem;">
-            <em>
-                <strong>
-                    Hinweis zur Eingabe:
-                </strong>
-                Z.B.&#160; [1,2]&#160; wird als
-                <code>
-                    cc(1,2)
-                </code>
-                eingegeben.
-            </em>
-            <br/>
-        </span>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        To the amount \( M= \{a,b,c\} \) is the relationship \( R= \{&#160; (a,b), (a,c), (a,a), (b,b), (c,c) \} \) given. Add as few more pairs as possible, so that a total order is created.
-    </p>
-    <p>
-        <span style="font-size: 0.9375rem;">
-            Selected element: [[input:ans1]][[validation:ans1]]
-        </span>
-    </p>
-    <p>
-        <span style="font-size: 0.9375rem;">
-            <br/>
-        </span>
-    </p>
-    <p>
-        <span style="font-size: 0.9375rem;">
-            <em>
-                <strong>
-                    Note to input:
-                </strong>
-                For example [1,2],
-                <code>
-                    cc(1,2)
-                </code>
-                entered.
-            </em>
-            <br/>
-        </span>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Auf&#160; die Menge \( M= \{a,b,c\} \) ist die Relation \( R= \{&#160; (a,b), (a,c), (a,a), (b,b), (c,c) \} \) gegeben. F&#252;gen Sie m&#246;glichst wenige weitere Paare hinzu, sodass eine totale Ordnung entsteht.
+</p>
+<p>
+    <span style="font-size: 0.9375rem;">
+        Gesuchte Element: [[/lang]][[lang code="en"]]
+        <p>
+            To the set \( M= \{a,b,c\} \) is the relation \( R= \{&#160; (a,b), (a,c), (a,a), (b,b), (c,c) \} \) given. Add as few more pairs as possible, so that a total order is created.
+        </p>
+        <p>
+            <span style="font-size: 0.9375rem;">
+                Selected element: [[/lang]][[input:ans1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans1]][[lang code="de"]]
+            </span>
+        </p>
+        <p>
+            <span style="font-size: 0.9375rem;">
+                <br/>
+            </span>
+        </p>
+        <p>
+            <span style="font-size: 0.9375rem;">
+                <em>
+                    <strong>
+                        Hinweis zur Eingabe:
+                    </strong>
+                    Z.B.&#160; [1,2]&#160; wird als
+                    <code>
+                        cc(1,2)
+                    </code>
+                    eingegeben.
+                </em>
+                <br/>
+            </span>
+        </p>
+        [[/lang]][[lang code="en"]]
+    </span>
+</p>
+<p>
+    <span style="font-size: 0.9375rem;">
+        <br/>
+    </span>
+</p>
+<p>
+    <span style="font-size: 0.9375rem;">
+        <em>
+            <strong>
+                Note to input:
+            </strong>
+            For example [1,2],
+            <code>
+                cc(1,2)
+            </code>
+            entered.
+        </em>
+        <br/>
+    </span>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p dir="ltr" style="text-align: left;">
-        Antwortm&#246;glichkeiten sind:
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        Der gesuchte Element ist: \( [b,c]\) oder eben &#160;\(&#160;[c,b]\). &#160;Man kann sich oben noch aussuchen, wie \(b\) und \(c\) in Relation stehen.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p dir="ltr" style="text-align: left;">
-        Answer options are:
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        The searched element is: \( [b,c]\) or even\(&#160;[c,b]\). You can still look at the top as \(b\) and \(c\) in relation.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    Antwortm&#246;glichkeiten sind:
+</p>
+<p dir="ltr" style="text-align: left;">
+    Der gesuchte Element ist: \( [b,c]\) oder eben &#160;\(&#160;[c,b]\). &#160;Man kann sich oben noch aussuchen, wie \(b\) und \(c\) in Relation stehen.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    Answer options are:
+</p>
+<p dir="ltr" style="text-align: left;">
+    The searched element is: \( [b,c]\) or even\(&#160;[c,b]\). You can still look at the top as \(b\) and \(c\) in relation.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -107,12 +105,7 @@ R1:cc(c,b);</text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    [[feedback:prt1]]
-</span>
-<span class="multilang" lang="en">
-    [[feedback:prt1]]
-</span>
+[[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -126,32 +119,17 @@ R1:cc(c,b);</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

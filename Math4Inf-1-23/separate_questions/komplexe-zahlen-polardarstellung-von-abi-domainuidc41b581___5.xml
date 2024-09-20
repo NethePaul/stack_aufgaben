@@ -6,57 +6,48 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Schreiben Sie \(z\) in der Polardarstellung.
-    </p>
-    <p>
-    </p>
-    <p>
-        \(z\,=\,@z@\)
-    </p>
-    <p>
-    </p>
-    <p>
+[[lang code="de"]]
+<p>
+    Schreiben Sie \(z\) in der Polardarstellung.
+</p>
+<p>
+</p>
+<p>
+    \(z\,=\,@z@\)
+</p>
+<p>
+</p>
+<p>
+    <strong>
+        Hinweise:
+    </strong>
+</p>
+<ul>
+    <li>
+        Geben Sie die exakte Antwort ein (keine Dezimalzahlen).
+    </li>
+    <li>
+        Falls n&#246;tig, schreiben Sie &#160;\(\pi\)&#160; als
         <strong>
-            Hinweise:
+            pi
         </strong>
-    </p>
-    <ul>
-        <li>
-            Geben Sie die exakte Antwort ein (keine Dezimalzahlen).
-        </li>
-        <li>
-            Falls n&#246;tig, schreiben Sie &#160;\(\pi\)&#160; als
-            <strong>
-                pi
-            </strong>
-            und &#160; \(\sqrt{a}\)&#160; als
-            <strong>
-                sqrt(a)
-            </strong>
-            .
-        </li>
-        <li>
-            Geben Sie \(\varphi\) im Intervall von&#160;\( (-\pi;\pi ] \) ein.
-        </li>
-    </ul>
-    <p>
-        <br/>
-        \( z=(r,\varphi ) \)
-    </p>
-    <p>
-        <br/>
-        \(r=\,\)&#160; [[input:ans1]] [[validation:ans1]]
-    </p>
-    <p>
-        \(\varphi=\,\)&#160;&#160;[[input:ans2]] [[validation:ans2]]
-    </p>
-    <p>
-        [[feedback:prt1]]
-    </p>
-</span>
-<span class="multilang" lang="en">
+        und &#160; \(\sqrt{a}\)&#160; als
+        <strong>
+            sqrt(a)
+        </strong>
+        .
+    </li>
+    <li>
+        Geben Sie \(\varphi\) im Intervall von&#160;\( (-\pi;\pi ] \) ein.
+    </li>
+</ul>
+<p>
+    <br/>
+    \( z=(r,\varphi ) \)
+</p>
+<p>
+    <br/>
+    \(r=\,\)&#160; [[/lang]][[lang code="en"]]
     <p>
         Write \(z\) in the polar representation.
     </p>
@@ -97,15 +88,23 @@
     </p>
     <p>
         <br/>
-        \(r=\,\) [[input:ans1]] [[validation:ans1]]
+        \(r=\,\) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
     </p>
     <p>
-        \(\varphi=\,\)[[input:ans2]] [[validation:ans2]]
+        \(\varphi=\,\)&#160;&#160;[[/lang]][[lang code="en"]]
     </p>
     <p>
-        [[feedback:prt1]]
+        \(\varphi=\,\)[[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]]
     </p>
-</span>
+    <p>
+        [[/lang]][[lang code="en"]]
+    </p>
+    <p>
+        [[/lang]][[feedback:prt1]][[lang code="de"]]
+    </p>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -140,18 +139,17 @@ loes_r: sqrt(r+r3);</text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+</p>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -165,44 +163,41 @@ loes_r: sqrt(r+r3);</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Richtige Antwort, gut gemacht!
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Right answer, well done!
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Richtige Antwort, gut gemacht!
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Right answer, well done!
+</p>
+[[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihre Antwort ist teilweise korrekt.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your answer is partly correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Ihre Antwort ist teilweise korrekt.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer is partly correct.
+</p>
+[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Falsche Antwort.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Wrong answer.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Falsche Antwort.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Wrong answer.
+</p>
+[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

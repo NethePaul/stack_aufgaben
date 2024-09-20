@@ -6,8 +6,26 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Bestimmen Sie die Determinante der Matrix.
+[[lang code="de"]]Bestimmen Sie die Determinante der Matrix.
+<p>
+    <br/>
+</p>
+<p>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p style="">
+    </p>
+    <p>
+        \( A= \) {@A1@}
+    </p>
+    <p>
+    </p>
+</div>
+<p style="">
+    <br/>
+</p>
+<p>
+    \( \det(A)= \) [[/lang]][[lang code="en"]]Determine the determinant of the matrix.
     <p>
         <br/>
     </p>
@@ -26,100 +44,78 @@
         <br/>
     </p>
     <p>
-        \( \det(A)= \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+        \( \det(A)= \) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
-</span>
-<span class="multilang" lang="en">
-    Determine the determinant of the matrix.
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p style="">
-        </p>
-        <p>
-            \( A= \) {@A1@}
-        </p>
-        <p>
-        </p>
-    </div>
-    <p style="">
-        <br/>
-    </p>
-    <p>
-        \( \det(A)= \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
-    </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        <b>
-            Musterl&#246;sung:
-        </b>
-    </p>
-    <p>
-        <b>
-            <br/>
-        </b>
-    </p>
-    <p>
-        <span>
-            \(\det(A)=\det\left({@A1@}\right)\)
-        </span>
-    </p>
-    <p>
-        <span>
-            \(=({@a@}-9-12)-({@b@}-1+36)\)
-        </span>
-    </p>
-    <p>
-        <span>
-            (Regel von Sarrus, gilt nur f&#252;r 3x3 Matrizen)
-        </span>
-    </p>
-    <p>
-        <span>
-            \(={@c@}\)
-        </span>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        <b>
-            Sample solution:
-        </b>
-    </p>
-    <p>
-        <b>
-            <br/>
-        </b>
-    </p>
-    <p>
-        <span>
-            \(\det(A)=\det\left({@A1@}\right)\)
-        </span>
-    </p>
-    <p>
-        <span>
-            \(=({@a@}-9-12)-({@b@}-1+36)\)
-        </span>
-    </p>
-    <p>
-        <span>
-            (Regulation of Sarrus, applies only to 3x3 dies)
-        </span>
-    </p>
-    <p>
-        <span>
-            \(={@c@}\)
-        </span>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    <b>
+        Musterl&#246;sung:
+    </b>
+</p>
+<p>
+    <b>
+        <br/>
+    </b>
+</p>
+<p>
+    <span>
+        \(\det(A)=\det\left({@A1@}\right)\)
+    </span>
+</p>
+<p>
+    <span>
+        \(=({@a@}-9-12)-({@b@}-1+36)\)
+    </span>
+</p>
+<p>
+    <span>
+        (Regel von Sarrus, gilt nur f&#252;r 3x3 Matrizen)
+    </span>
+</p>
+<p>
+    <span>
+        \(={@c@}\)
+    </span>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <b>
+        Sample solution:
+    </b>
+</p>
+<p>
+    <b>
+        <br/>
+    </b>
+</p>
+<p>
+    <span>
+        \(\det(A)=\det\left({@A1@}\right)\)
+    </span>
+</p>
+<p>
+    <span>
+        \(=({@a@}-9-12)-({@b@}-1+36)\)
+    </span>
+</p>
+<p>
+    <span>
+        (Regulation of Sarrus, applies only to 3x3 matrices)
+    </span>
+</p>
+<p>
+    <span>
+        \(={@c@}\)
+    </span>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -151,32 +147,17 @@ c: (a-9-12)-(b-1+36)</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

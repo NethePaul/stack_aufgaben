@@ -6,50 +6,44 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Die Gleichung der Umkehrfunktion zu $$f(x)=\dfrac{1}{x}$$ ist:
-</span>
-<span class="multilang" lang="en">
-    The Reverse function equation to $$f(x)=\dfrac{1}{x}$$ is:
-</span>
+[[lang code="de"]]Die Gleichung der Umkehrfunktion zu $$f(x)=\dfrac{1}{x}$$ ist:[[/lang]][[lang code="en"]]The Reverse function equation to $$f(x)=\dfrac{1}{x}$$ is:[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        <strong>
-            L&#246;sungsweg:
-        </strong>
-    </p>
-    <p>
-        L&#246;se die Gleichung \(y=\dfrac{1}{x}\) nach \(x\) auf:
-    </p>
-    <p>
-        \(y=\dfrac{1}{x} \quad \Longleftrightarrow \quad x=\dfrac{1}{y}\)&#160; &#160; (f&#252;r \(y \neq 0\))
-        <br/>
-    </p>
-    <p>
-        Daraus folgt \(f^{-1}(x)=\dfrac{1}{x}\).
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        <strong>
-            Solution:
-        </strong>
-    </p>
-    <p>
-        Solve the equation \(y=\dfrac{1}{x}\) After \(x\) on:
-    </p>
-    <p>
-        \(y=\dfrac{1}{x} \quad \Longleftrightarrow \quad x=\dfrac{1}{y}\)(for \(y \neq 0\))
-        <br/>
-    </p>
-    <p>
-        This follows \(f^{-1}(x)=\dfrac{1}{x}\).
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    <strong>
+        L&#246;sungsweg:
+    </strong>
+</p>
+<p>
+    L&#246;se die Gleichung \(y=\dfrac{1}{x}\) nach \(x\) auf:
+</p>
+<p>
+    \(y=\dfrac{1}{x} \quad \Longleftrightarrow \quad x=\dfrac{1}{y}\)&#160; &#160; (f&#252;r \(y \neq 0\))
+    <br/>
+</p>
+<p>
+    Daraus folgt \(f^{-1}(x)=\dfrac{1}{x}\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <strong>
+        Solution:
+    </strong>
+</p>
+<p>
+    Solve the equation \(y=\dfrac{1}{x}\) After \(x\) on:
+</p>
+<p>
+    \(y=\dfrac{1}{x} \quad \Longleftrightarrow \quad x=\dfrac{1}{y}\)(for \(y \neq 0\))
+    <br/>
+</p>
+<p>
+    This follows \(f^{-1}(x)=\dfrac{1}{x}\).
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>

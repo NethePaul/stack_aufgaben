@@ -6,46 +6,28 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Sind die angegebenen Vektoren linear abh&#228;ngig voneinander?
-        <span style="font-size: 20px;">
-            <b>
-                <br/>
-            </b>
-        </span>
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
+[[lang code="de"]]
+<p>
+    Sind die angegebenen Vektoren linear abh&#228;ngig voneinander?
+    <span style="font-size: 20px;">
         <b>
-            (a)
+            <br/>
         </b>
-        \(\begin{bmatrix} {@a@} \\ {@b@}\\ {@c@}\\ \end{bmatrix} ,\begin{bmatrix} {@aplus1@} \\ {@bminus1@}\\ {@c@}\\ \end{bmatrix} , \begin{bmatrix} {@aplus2@} \\ {@b@}\\ {@cplus2@}\\ \end{bmatrix} \)
-        <br/>
-    </p>
-    <p>
-        [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
-        <br/>
-    </p>
-    <p>
-        <b>
-            (b)
-        </b>
-        \( \begin{bmatrix} {@a@} \\ {@b@}\\ {@c@}\\ \end{bmatrix} ,\begin{bmatrix} {@d@} \\ {@e@}\\ {@f@}\\ \end{bmatrix} , \begin{bmatrix} {@aminus2@} \\ {@bminus2@}\\ {@cminus2@}\\ \end{bmatrix} \)
-        <br/>
-    </p>
-    <p>
-        [[input:ans2]] [[validation:ans2]][[feedback:prt2]]
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
+    </span>
+</p>
+<p>
+</p>
+<p>
+</p>
+<p>
+    <b>
+        (a)
+    </b>
+    \(\begin{bmatrix} {@a@} \\ {@b@}\\ {@c@}\\ \end{bmatrix} ,\begin{bmatrix} {@aplus1@} \\ {@bminus1@}\\ {@c@}\\ \end{bmatrix} , \begin{bmatrix} {@aplus2@} \\ {@b@}\\ {@cplus2@}\\ \end{bmatrix} \)
+    <br/>
+</p>
+<p>
+    [[/lang]][[lang code="en"]]
     <p>
         Are the specified vectors linearly dependent on each other?
         <span style="font-size: 20px;">
@@ -66,7 +48,7 @@
         <br/>
     </p>
     <p>
-        [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+        [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]]
         <br/>
     </p>
     <p>
@@ -77,127 +59,143 @@
         <br/>
     </p>
     <p>
-        [[input:ans2]] [[validation:ans2]][[feedback:prt2]]
+        [[/lang]][[lang code="en"]]
+        <br/>
+    </p>
+    <p>
+        <b>
+            (b)
+        </b>
+        \( \begin{bmatrix} {@a@} \\ {@b@}\\ {@c@}\\ \end{bmatrix} ,\begin{bmatrix} {@d@} \\ {@e@}\\ {@f@}\\ \end{bmatrix} , \begin{bmatrix} {@aminus2@} \\ {@bminus2@}\\ {@cminus2@}\\ \end{bmatrix} \)
+        <br/>
+    </p>
+    <p>
+        [[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt2]][[lang code="de"]]
     </p>
     <p>
     </p>
     <p>
     </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+<p>
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        <b>
-            L&#246;sung
-        </b>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-    <p>
-        Es wird eine Umformung der Matrix mit den Vektoren als Spalten in Zeilenstufenform durchgef&#252;hrt.
-    </p>
-    <p>
-        Ist der Rang voll (also keine Nullzeile am Ende), sind die Vektoren linear unabh&#228;ngig, anderenfalls sind sie linear abh&#228;ngig.
-    </p>
+[[lang code="de"]]
+<h4>
+    <b>
+        L&#246;sung
+    </b>
+</h4>
+<p>
     <br/>
-    <p>
-    </p>
-    <p>
+</p>
+<p>
+</p>
+<p>
+    Es wird eine Umformung der Matrix mit den Vektoren als Spalten in Zeilenstufenform durchgef&#252;hrt.
+</p>
+<p>
+    Ist der Rang voll (also keine Nullzeile am Ende), sind die Vektoren linear unabh&#228;ngig, anderenfalls sind sie linear abh&#228;ngig.
+</p>
+<br/>
+<p>
+</p>
+<p>
+    <b>
         <b>
-            <b>
-                (a)
-            </b>
+            (a)
         </b>
-        \(\begin{bmatrix} {@a@} \\ {@b@}\\ {@c@}\\ \end{bmatrix} ,\begin{bmatrix} {@aplus1@} \\ {@bminus1@}\\ {@c@}\\ \end{bmatrix} , \begin{bmatrix} {@aplus2@} \\ {@b@}\\ {@cplus2@}\\ \end{bmatrix} \)
-        <br/>
-    </p>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \({@A@} \xrightarrow{{@a@}II-{@b@}I, {@a@}III- {@c@}I} {@B@} \xrightarrow{{@a1@}III+({@a2@})II} {@C@}\)
-        </p>
-    </div>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <b>
-            (b)
-        </b>
-        \( \begin{bmatrix} {@a@} \\ {@b@}\\ {@c@}\\ \end{bmatrix} ,\begin{bmatrix} {@d@} \\ {@e@}\\ {@f@}\\ \end{bmatrix} , \begin{bmatrix} {@aminus2@} \\ {@bminus2@}\\ {@cminus2@}\\ \end{bmatrix} \)
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \({@D@} \xrightarrow{{@a@}II-{@b@}I, {@a@}III- {@c@}I} {@E@} \xrightarrow{{@b1@}III+({@b2@})II} {@F@}\)
-        </p>
-    </div>
-</span>
-<span class="multilang" lang="en">
-    <h4>
-        <b>
-            Solution
-        </b>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-    <p>
-        A shaping of the matrix with the vectors is carried out as columns in row step form.
-    </p>
-    <p>
-        If the rank is full (i.e. no zero line at the end), the vectors are linearly independent, otherwise they are linearly dependent.
-    </p>
+    </b>
+    \(\begin{bmatrix} {@a@} \\ {@b@}\\ {@c@}\\ \end{bmatrix} ,\begin{bmatrix} {@aplus1@} \\ {@bminus1@}\\ {@c@}\\ \end{bmatrix} , \begin{bmatrix} {@aplus2@} \\ {@b@}\\ {@cplus2@}\\ \end{bmatrix} \)
     <br/>
+</p>
+<p>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
+        \({@A@} \xrightarrow{{@a@}II-{@b@}I, {@a@}III- {@c@}I} {@B@} \xrightarrow{{@a1@}III+({@a2@})II} {@C@}\)
     </p>
+</div>
+<p>
+    <br/>
+</p>
+<p>
+    <b>
+        (b)
+    </b>
+    \( \begin{bmatrix} {@a@} \\ {@b@}\\ {@c@}\\ \end{bmatrix} ,\begin{bmatrix} {@d@} \\ {@e@}\\ {@f@}\\ \end{bmatrix} , \begin{bmatrix} {@aminus2@} \\ {@bminus2@}\\ {@cminus2@}\\ \end{bmatrix} \)
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
+        \({@D@} \xrightarrow{{@a@}II-{@b@}I, {@a@}III- {@c@}I} {@E@} \xrightarrow{{@b1@}III+({@b2@})II} {@F@}\)
+    </p>
+</div>
+[[/lang]][[lang code="en"]]
+<h4>
+    <b>
+        Solution
+    </b>
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+</p>
+<p>
+    A transformation of the matrix with the vectors is carried out as columns in row step form.
+</p>
+<p>
+    If the rank is full (i.e. no zero line at the end), the vectors are linearly independent, otherwise they are linearly dependent.
+</p>
+<br/>
+<p>
+</p>
+<p>
+    <b>
         <b>
-            <b>
-                (a)
-            </b>
+            (a)
         </b>
-        \(\begin{bmatrix} {@a@} \\ {@b@}\\ {@c@}\\ \end{bmatrix} ,\begin{bmatrix} {@aplus1@} \\ {@bminus1@}\\ {@c@}\\ \end{bmatrix} , \begin{bmatrix} {@aplus2@} \\ {@b@}\\ {@cplus2@}\\ \end{bmatrix} \)
-        <br/>
-    </p>
+    </b>
+    \(\begin{bmatrix} {@a@} \\ {@b@}\\ {@c@}\\ \end{bmatrix} ,\begin{bmatrix} {@aplus1@} \\ {@bminus1@}\\ {@c@}\\ \end{bmatrix} , \begin{bmatrix} {@aplus2@} \\ {@b@}\\ {@cplus2@}\\ \end{bmatrix} \)
+    <br/>
+</p>
+<p>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
+        \({@A@} \xrightarrow{{@a@}II-{@b@}I, {@a@}III- {@c@}I} {@B@} \xrightarrow{{@a1@}III+({@a2@})II} {@C@}\)
     </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \({@A@} \xrightarrow{{@a@}II-{@b@}I, {@a@}III- {@c@}I} {@B@} \xrightarrow{{@a1@}III+({@a2@})II} {@C@}\)
-        </p>
-    </div>
+</div>
+<p>
+    <br/>
+</p>
+<p>
+    <b>
+        (b)
+    </b>
+    \( \begin{bmatrix} {@a@} \\ {@b@}\\ {@c@}\\ \end{bmatrix} ,\begin{bmatrix} {@d@} \\ {@e@}\\ {@f@}\\ \end{bmatrix} , \begin{bmatrix} {@aminus2@} \\ {@bminus2@}\\ {@cminus2@}\\ \end{bmatrix} \)
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
-        <br/>
+        \({@D@} \xrightarrow{{@a@}II-{@b@}I, {@a@}III- {@c@}I} {@E@} \xrightarrow{{@b1@}III+({@b2@})II} {@F@}\)
     </p>
-    <p>
-        <b>
-            (b)
-        </b>
-        \( \begin{bmatrix} {@a@} \\ {@b@}\\ {@c@}\\ \end{bmatrix} ,\begin{bmatrix} {@d@} \\ {@e@}\\ {@f@}\\ \end{bmatrix} , \begin{bmatrix} {@aminus2@} \\ {@bminus2@}\\ {@cminus2@}\\ \end{bmatrix} \)
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \({@D@} \xrightarrow{{@a@}II-{@b@}I, {@a@}III- {@c@}I} {@E@} \xrightarrow{{@b1@}III+({@b2@})II} {@F@}\)
-        </p>
-    </div>
-</span>
+</div>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -258,32 +256,17 @@ b2: a*f-c*d]]></text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

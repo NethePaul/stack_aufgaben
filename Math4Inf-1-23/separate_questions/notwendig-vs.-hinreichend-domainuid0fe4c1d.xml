@@ -6,33 +6,30 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-        Wir betrachten die folgenden zwei Aussagen:
-        <br/>
-    </p>
-    <p>
-        <i>
-            Aussage \(A\): "Person X ist Student/in"
-        </i>
-    </p>
-    <p>
-        <i>
-            Aussage \(B\): "Person X nimmt an MathePlus teil"
-        </i>
-        <br/>
-    </p>
-    <p>
-        Welche der folgenden Aussagen treffen zu? Kreuzen Sie eine oder mehrere Antwortm&#246;glichkeiten an.
-        <br/>
-    </p>
-    <p>
-        [[input:ans1]] [[validation:ans1]]
-    </p>
-</span>
-<span class="multilang" lang="en">
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    Wir betrachten die folgenden zwei Aussagen:
+    <br/>
+</p>
+<p>
+    <i>
+        Aussage \(A\): "Person X ist Student/in"
+    </i>
+</p>
+<p>
+    <i>
+        Aussage \(B\): "Person X nimmt an MathePlus teil"
+    </i>
+    <br/>
+</p>
+<p>
+    Welche der folgenden Aussagen treffen zu? Kreuzen Sie eine oder mehrere Antwortm&#246;glichkeiten an.
+    <br/>
+</p>
+<p>
+    [[/lang]][[lang code="en"]]
     <p>
     </p>
     <p>
@@ -55,142 +52,143 @@
         <br/>
     </p>
     <p>
-        [[input:ans1]] [[validation:ans1]]
+        [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
     </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        <b>
-            Hinweis:
-        </b>
-    </p>
-    <ul>
-        <li>
-            Zum Begriff "notwendige Bedingung":
-            <br/>
-            Ist \(A\) eine notwendige Bedingung f&#252;r \(B\), bedeutet das, dass \(A\) eintreten muss, damit \(B\) eintreten kann. Wenn schon klar ist, dass \(B\) eingetreten ist, hei&#223;t dies dann automatisch, dass \(A\) auch gelten muss. Daher schreibt man in diesem
+[[lang code="de"]]
+<p>
+    <b>
+        Hinweis:
+    </b>
+</p>
+<ul>
+    <li>
+        Zum Begriff "notwendige Bedingung":
+        <br/>
+        Ist \(A\) eine notwendige Bedingung f&#252;r \(B\), bedeutet das, dass \(A\) eintreten muss, damit \(B\) eintreten kann. Wenn schon klar ist, dass \(B\) eingetreten ist, hei&#223;t dies dann automatisch, dass \(A\) auch gelten muss. Daher schreibt man in diesem
                 Fall \(B\Rightarrow A\).
-            <br/>
+        <br/>
+        <br/>
+        <u>
+            Beispiel:
+        </u>
+        Die Aussage
+        <i>
+            "Person X ist Student/in"
+        </i>
+        ist eine notwendige Bedingung f&#252;r die Aussage
+        <i>
+            "Person X nimmt an MathePlus teil"
+        </i>
+        , denn man muss studieren um an MathePlus teilnehmen zu k&#246;nnen.
+        <br/>
+    </li>
+</ul>
+<p>
+    <br/>
+</p>
+<ul>
+    <li>
+        Zum Begriff "hinreichende Bedingung":
+        <br/>
+        Ist \(A\) eine hinreichende Bedingung f&#252;r \(B\), bedeutet das, dass \(A\)
+        <u>
+            eine
+        </u>
+        Ursache f&#252;r \(B\) ist, aber nicht notwendigerweise die einzige: Wenn \(A\) eintritt, bedeutet dies, dass \(B\) ebenfalls eintritt. Allerdings bedeutet umgekehrt das Eintreten von \(B\) nicht immer, dass auch \(A\) eingetreten sein muss.
+                Man schreibt \(A\Rightarrow B\)
+                .
+        <br/>
+        <div>
             <br/>
             <u>
                 Beispiel:
             </u>
             Die Aussage
             <i>
-                "Person X ist Student/in"
-            </i>
-            ist eine notwendige Bedingung f&#252;r die Aussage
-            <i>
                 "Person X nimmt an MathePlus teil"
             </i>
-            , denn man muss studieren um an MathePlus teilnehmen zu k&#246;nnen.
+            ist eine hinreichende Bedingung f&#252;r die Aussage
+            <i>
+                "Person X ist Student/in"
+            </i>
+            , denn wenn Person X an MathePlus teilnimmt, dann muss er/sie auch Student/in sein.
             <br/>
-        </li>
-    </ul>
-    <p>
+            Umgekehrt folgt aus der Aussage, dass Person X Student/in ist noch nicht, dass er/sie auch an MathePlus teilnimmt.
+            <br/>
+        </div>
+    </li>
+</ul>
+[[/lang]][[lang code="en"]]
+<p>
+    <b>
+        Note:
+    </b>
+</p>
+<ul>
+    <li>
+        For the term "necessary condition":
         <br/>
-    </p>
-    <ul>
-        <li>
-            Zum Begriff "hinreichende Bedingung":
-            <br/>
-            Ist \(A\) eine hinreichende Bedingung f&#252;r \(B\), bedeutet das, dass \(A\)
-            <u>
-                eine
-            </u>
-            Ursache f&#252;r \(B\) ist, aber nicht notwendigerweise die einzige: Wenn \(A\) eintritt, bedeutet dies, dass \(B\) ebenfalls eintritt. Allerdings bedeutet umgekehrt das Eintreten von \(B\) nicht immer, dass auch \(A\) eingetreten sein muss.
-                Man schreibt \(A\Rightarrow B\)
-                .
-            <br/>
-            <div>
-                <br/>
-                <u>
-                    Beispiel:
-                </u>
-                Die Aussage
-                <i>
-                    "Person X nimmt an MathePlus teil"
-                </i>
-                ist eine hinreichende Bedingung f&#252;r die Aussage
-                <i>
-                    "Person X ist Student/in"
-                </i>
-                , denn wenn Person X an MathePlus teilnimmt, dann muss er/sie auch Student/in sein.
-                <br/>
-                Umgekehrt folgt aus der Aussage, dass Person X Student/in ist noch nicht, dass er/sie auch an MathePlus teilnimmt.
-                <br/>
-            </div>
-        </li>
-    </ul>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        <b>
-            Note:
-        </b>
-    </p>
-    <ul>
-        <li>
-            To the term "necessary condition":
-            <br/>
-            I \(A\) a necessary condition for \(B\), that means that \(A\) so that \(B\) can enter. If it's clear that \(B\) then automatically means that \(A\) must also apply. This is why
-Case \(B\Rightarrow A\).
-            <br/>
+        If \(A\) is a necessary condition for \(B\), that means that \(A\) be true so that \(B\) can be true. If it's clear that \(B\) is true then that automatically means that \(A\) must also be true. This is why
+We write \(B\Rightarrow A\).
+        <br/>
+        <br/>
+        <u>
+            Example:
+        </u>
+        The statement
+        <i>
+            "Person X is a student"
+        </i>
+        is a necessary condition for the statement
+        <i>
+            "Person X participates in MathePlus"
+        </i>
+        , because you need to study to participate in MathePlus.
+        <br/>
+    </li>
+</ul>
+<p>
+    <br/>
+</p>
+<ul>
+    <li>
+        For the term "sufficent condition":
+        <br/>
+        If \(A\) is a sufficient condition for \(B\), that means that \(A\) is
+        <u>
+            one
+        </u>
+        Cause of \(B\) is, but not necessarily the only: if \(A\) applies, this means that \(B\) applies too. However, the ingress of \(B\) applying does not always mean that \(A\) must have applied.
+One writes \(A\Rightarrow B\).
+        <br/>
+        <div>
             <br/>
             <u>
                 Example:
             </u>
             The statement
             <i>
-                "Person X is a student"
-            </i>
-            is a necessary condition for the statement
-            <i>
                 "Person X participates in MathePlus"
             </i>
-            , because you need to study to participate in MathePlus.
+            is a sufficient condition for the statement
+            <i>
+                "Person X is a student"
+            </i>
+            , because if person X participates in MathePlus, they must also be a student.
             <br/>
-        </li>
-    </ul>
-    <p>
-        <br/>
-    </p>
-    <ul>
-        <li>
-            To the term "subject condition":
+            Conversely however, if person X is a Student that does not yet mean that they participate in MathePlus.
             <br/>
-            I \(A\) a sufficient condition for \(B\), that means that \(A\)
-            <u>
-                a
-            </u>
-            Cause of \(B\) is, but not necessarily the only: if \(A\) enters, this means that \(B\) too. However, the ingress of \(B\) not always that \(A\) must have entered.
-Man writes \(A\Rightarrow B\).
-            <br/>
-            <div>
-                <br/>
-                <u>
-                    Example:
-                </u>
-                The statement
-                <i>
-                    "Person X participates in MathePlus"
-                </i>
-                is a sufficient condition for the statement
-                <i>
-                    "Person X is a student"
-                </i>
-                , because if person X participates in MathePlus, he/she must also be a student.
-                <br/>
-                Conversely, it follows from the statement that person X Student is not yet participating in MathePlus.
-                <br/>
-            </div>
-        </li>
-    </ul>
-</span>
+        </div>
+    </li>
+</ul>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -214,12 +212,7 @@ TAnsMenge: set(1,4);]]></text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    [[feedback:prt1]]
-</span>
-<span class="multilang" lang="en">
-    [[feedback:prt1]]
-</span>
+[[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -233,32 +226,17 @@ TAnsMenge: set(1,4);]]></text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -344,18 +322,17 @@ TAnsMenge: set(1,4);]]></text>
                 <falseanswernote>prt1-2-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(A\) ist eine notwendige Bedingung f&#252;r \(B\), denn man muss Student/in sein um an MathePlus teilzunehmen.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(A\) is a necessary condition for \(B\), because you must be a student to participate in MathePlus.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(A\) ist eine notwendige Bedingung f&#252;r \(B\), denn man muss Student/in sein um an MathePlus teilzunehmen.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(A\) is a necessary condition for \(B\), because you must be a student to participate in MathePlus.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -382,18 +359,17 @@ TAnsMenge: set(1,4);]]></text>
                 <falseanswernote>prt1-3-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(B\) ist keine notwendige Bedingung f&#252;r \(A\), denn man muss nicht bei MathePlus teilnehmen, um ein/e Student/in zu sein.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(B\) is no necessary condition for \(A\), because you don't have to attend MathePlus to be a student.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(B\) ist keine notwendige Bedingung f&#252;r \(A\), denn man muss nicht bei MathePlus teilnehmen, um ein/e Student/in zu sein.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(B\) is no necessary condition for \(A\), because you don't have to attend MathePlus to be a student.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -420,22 +396,21 @@ TAnsMenge: set(1,4);]]></text>
                 <falseanswernote>prt1-4-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(A\) ist keine hinreichende Bedingung f&#252;r \(B\), denn wenn Person X 
+[[lang code="de"]]
+<p>
+    \(A\) ist keine hinreichende Bedingung f&#252;r \(B\), denn wenn Person X 
 Student/in ist folgt daraus noch nicht, dass sie auch bei MathePlus 
 teilnimmt.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(A\) is not a sufficient condition for \(B\), because if person X
-Student is not yet following that at MathePlus
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(A\) is not a sufficient condition for \(B\), because if person X is a
+Student that does not necessitate a MathePlus
 participation.
-        <br/>
-    </p>
-</span>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -462,18 +437,17 @@ participation.
                 <falseanswernote>prt1-5-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(B\) ist eine hinreichende Bedingung f&#252;r \(A\), denn wenn Person X bei MathePlus teilnimmt, folgt daraus, dass sie Student/in sein muss.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(B\) a sufficient condition for \(A\), because if Person X participates at MathePlus, it follows that she must be a student.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(B\) ist eine hinreichende Bedingung f&#252;r \(A\), denn wenn Person X bei MathePlus teilnimmt, folgt daraus, dass sie Student/in sein muss.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(B\) is a sufficient condition for \(A\), because if Person X participates at MathePlus, they must be a student.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -500,18 +474,17 @@ participation.
                 <falseanswernote>prt1-6-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(A\) und \(B\) sind nicht &#228;quivalent zu einander, denn dann m&#252;sste \(B\) aus \(A\) und \(A\) aus \(B\) folgen, was hier nicht der Fall ist.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(A\) and \(B\) are not equivalent to each other, because then \(B\) Of which: \(A\) and \(A\) Of which: \(B\) follow what is not the case here.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(A\) und \(B\) sind nicht &#228;quivalent zu einander, denn dann m&#252;sste \(B\) aus \(A\) und \(A\) aus \(B\) folgen, was hier nicht der Fall ist.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(A\) and \(B\) are not equivalent to each other, because then \(B\) must imply \(A\) and \(A\) must imply \(B\) which is not the case here.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>

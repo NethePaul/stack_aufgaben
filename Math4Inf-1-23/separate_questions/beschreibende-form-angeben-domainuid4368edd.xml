@@ -6,24 +6,39 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Stellen Sie die folgenden Mengen in beschreibender Form dar.
+[[lang code="de"]]Stellen Sie die folgenden Mengen in beschreibender Form dar.
+<br/>
+Erg&#228;nzen Sie daf&#252;r jeweils noch die allgemeine Form der Elemente, d.h. f&#252;llen Sie die L&#252;cken aus.
+<br/>
+<p>
+</p>
+<p>
+    a) \(M_1=\{ {@l1[1]@},{@l1[2]@},{@l1[3]@},{@l1[4]@},{@l1[5]@},\ldots\} = \Bigg\{ \)[[/lang]][[lang code="en"]]Set the following sets in a descriptive form.
     <br/>
-    Erg&#228;nzen Sie daf&#252;r jeweils noch die allgemeine Form der Elemente, d.h. f&#252;llen Sie die L&#252;cken aus.
+    Add the general form of the elements, i.e. fill the gaps.
     <br/>
     <p>
     </p>
     <p>
-        a) \(M_1=\{ {@l1[1]@},{@l1[2]@},{@l1[3]@},{@l1[4]@},{@l1[5]@},\ldots\} = \Bigg\{ \)[[input:ans1]] \(\Big|\ n \in \mathbb N_0 = \mathbb N \cup \{0\} \Bigg\} \)[[validation:ans1]] [[feedback:prt1]]
+        (a) \(M_1=\{ {@l1[1]@},{@l1[2]@},{@l1[3]@},{@l1[4]@},{@l1[5]@},\ldots\} = \Bigg\{ \)[[/lang]][[input:ans1]][[lang code="de"]] \(\Big|\ n \in \mathbb N_0 = \mathbb N \cup \{0\} \Bigg\} \)[[/lang]][[lang code="en"]] \(\Big|\ n \in \mathbb N_0 = \mathbb N \cup \{0\} \Bigg\} \)[[/lang]][[validation:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
     <p>
     </p>
     <p>
-        b) \(M_2=\{ {@l2[1]@},{@l2[2]@},{@l2[3]@},{@l2[4]@},{@l2[5]@},\ldots\} = \Bigg \{ \)[[input:ans2]] \(\Big|\ n \in \mathbb N \Bigg\} \)[[validation:ans2]] [[feedback:prt2]]
+        b) \(M_2=\{ {@l2[1]@},{@l2[2]@},{@l2[3]@},{@l2[4]@},{@l2[5]@},\ldots\} = \Bigg \{ \)[[/lang]][[lang code="en"]]
+    </p>
+    <p>
+    </p>
+    <p>
+        (b) \(M_2=\{ {@l2[1]@},{@l2[2]@},{@l2[3]@},{@l2[4]@},{@l2[5]@},\ldots\} = \Bigg \{ \)[[/lang]][[input:ans2]][[lang code="de"]] \(\Big|\ n \in \mathbb N \Bigg\} \)[[/lang]][[lang code="en"]] \(\Big|\ n \in \mathbb N \Bigg\} \)[[/lang]][[validation:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt2]][[lang code="de"]]
     </p>
     <p>
         c) \(M_3=\left\{ \displaystyle {@l3[1]@},{@l3[2]@},{@l3[3]@},{@l3[4]@},{@l3[5]@},\ldots\right\} = \Bigg \{
-                \)[[input:ans3]] \(\Big|\ n \in \mathbb N\Bigg\}\) [[validation:ans3]] [[feedback:prt3]]
+                \)[[/lang]][[lang code="en"]]
+    </p>
+    <p>
+        (c) \(M_3=\left\{ \displaystyle {@l3[1]@},{@l3[2]@},{@l3[3]@},{@l3[4]@},{@l3[5]@},\ldots\right\} = \Bigg \{
+                \)[[/lang]][[input:ans3]][[lang code="de"]] \(\Big|\ n \in \mathbb N\Bigg\}\) [[/lang]][[lang code="en"]] \(\Big|\ n \in \mathbb N\Bigg\}\) [[/lang]][[validation:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt3]][[lang code="de"]]
     </p>
     <p style="margin-top:2em;">
         <strong>
@@ -37,103 +52,84 @@
     </p>
     <p>
     </p>
-</span>
-<span class="multilang" lang="en">
-    Set the following quantities in a descriptive form.
-    <br/>
-    Add the general form of the elements, i.e. fill the gaps.
-    <br/>
-    <p>
-    </p>
-    <p>
-        (a) \(M_1=\{ {@l1[1]@},{@l1[2]@},{@l1[3]@},{@l1[4]@},{@l1[5]@},\ldots\} = \Bigg\{ \)[[input:ans1]] \(\Big|\ n \in \mathbb N_0 = \mathbb N \cup \{0\} \Bigg\} \)[[validation:ans1]] [[feedback:prt1]]
-    </p>
-    <p>
-    </p>
-    <p>
-        (b) \(M_2=\{ {@l2[1]@},{@l2[2]@},{@l2[3]@},{@l2[4]@},{@l2[5]@},\ldots\} = \Bigg \{ \)[[input:ans2]] \(\Big|\ n \in \mathbb N \Bigg\} \)[[validation:ans2]] [[feedback:prt2]]
-    </p>
-    <p>
-        (c) \(M_3=\left\{ \displaystyle {@l3[1]@},{@l3[2]@},{@l3[3]@},{@l3[4]@},{@l3[5]@},\ldots\right\} = \Bigg \{
-                \)[[input:ans3]] \(\Big|\ n \in \mathbb N\Bigg\}\) [[validation:ans3]] [[feedback:prt3]]
-    </p>
-    <p style="margin-top:2em;">
-        <strong>
-            Note:
-        </strong>
-        <em>
-        </em>
-        <span style="font-size: 0.9375rem;">
-            Note that \(n\) for task a) element of the quantity \(\mathbb N_0=\mathbb N \cup \{0\}\) (b) and (c) element of quantity \(\mathbb N\) is.
-        </span>
-    </p>
-    <p>
-    </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+<p style="margin-top:2em;">
+    <strong>
+        Note:
+    </strong>
+    <em>
+    </em>
+    <span style="font-size: 0.9375rem;">
+        Note that \(n\) for task a) element of the set \(\mathbb N_0=\mathbb N \cup \{0\}\) (b) and (c) element of set \(\mathbb N\) is.
+    </span>
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        <b>
-            Diese Aufgabe kann wie folgt gel&#246;st werden:
-        </b>
-    </p>
-    <p>
-        Hier kann man die L&#246;sung durch geschicktes Ausprobieren herausfinden.
-        <br/>
-    </p>
-    <p>
-        <u>
-            Beispiel (Aufgabe a)):
-        </u>
-        <br/>
-        Es ist ein Term \(t(x)\) gesucht mit \(t(0)={@l1[1]@}\), \(t(1)={@l1[2]@}\),&#160;\(t(2)={@l1[3]@}\) usw.
-        <br/>
-        Geht man zun&#228;chst davon aus, dass der Term die Form \(t(x) = a \cdot x+b\) hat, folgt aus \(t(0)={@l1[1]@}\) sofort, dass \(b={@l1[1]@}\) gilt (also \(t(x)=ax+{@l1[1]@}\)).
-        <br/>
-        Setzt man nun \(t({\color{Green}1})={\color{Red} {@l1[2]@} }\) ein, erh&#228;lt man \({\color{Red}{@l1[2]@}}=a\cdot {\color{Green}1}+{@l1[1]@} \Leftrightarrow a={@n1@}\). Daraus folgt, dass der richtige Term \(t(x)={@ta1@}\) sein
-        <i>
-            k&#246;nnte
-        </i>
-        . Jetzt m&#252;ssen wir noch &#252;berpr&#252;fen, ob auch \(t(2)={@l1[3]@}\) usw. gilt. Dies ist hier der Fall, also sind wir fertig.
-    </p>
-    <p>
-        Die anderen Teilaufgaben b) und c) funktionieren analog durch geschicktes Ausprobieren und &#220;berpr&#252;fen von Vermutungen.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        <b>
-            This object can be achieved as follows:
-        </b>
-    </p>
-    <p>
-        Here you can find out the solution through skillful testing.
-        <br/>
-    </p>
-    <p>
-        <u>
-            Example (order a):
-        </u>
-        <br/>
-        It's a term \(t(x)\) searched with \(t(0)={@l1[1]@}\), \(t(1)={@l1[2]@}\),\(t(2)={@l1[3]@}\) etc.
-        <br/>
-        If one assumes that the term is the form \(t(x) = a \cdot x+b\) the following \(t(0)={@l1[1]@}\) immediately that \(b={@l1[1]@}\) the following applies: \(t(x)=ax+{@l1[1]@}\)).
-        <br/>
-        You have to sit now \(t({\color{Green}1})={\color{Red} {@l1[2]@} }\) one, one gets \({\color{Red}{@l1[2]@}}=a\cdot {\color{Green}1}+{@l1[1]@} \Leftrightarrow a={@n1@}\). It follows that the correct term \(t(x)={@ta1@}\) they were
-        <i>
-            could be
-        </i>
-        . Now we have to check whether \(t(2)={@l1[3]@}\) etc. This is the case here, so we're done.
-    </p>
-    <p>
-        The other subtasks b) and c) function analogously by skillful testing and checking guesses.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    <b>
+        Diese Aufgabe kann wie folgt gel&#246;st werden:
+    </b>
+</p>
+<p>
+    Hier kann man die L&#246;sung durch geschicktes Ausprobieren herausfinden.
+    <br/>
+</p>
+<p>
+    <u>
+        Beispiel (Aufgabe a)):
+    </u>
+    <br/>
+    Es ist ein Term \(t(x)\) gesucht mit \(t(0)={@l1[1]@}\), \(t(1)={@l1[2]@}\),&#160;\(t(2)={@l1[3]@}\) usw.
+    <br/>
+    Geht man zun&#228;chst davon aus, dass der Term die Form \(t(x) = a \cdot x+b\) hat, folgt aus \(t(0)={@l1[1]@}\) sofort, dass \(b={@l1[1]@}\) gilt (also \(t(x)=ax+{@l1[1]@}\)).
+    <br/>
+    Setzt man nun \(t({\color{Green}1})={\color{Red} {@l1[2]@} }\) ein, erh&#228;lt man \({\color{Red}{@l1[2]@}}=a\cdot {\color{Green}1}+{@l1[1]@} \Leftrightarrow a={@n1@}\). Daraus folgt, dass der richtige Term \(t(x)={@ta1@}\) sein
+    <i>
+        k&#246;nnte
+    </i>
+    . Jetzt m&#252;ssen wir noch &#252;berpr&#252;fen, ob auch \(t(2)={@l1[3]@}\) usw. gilt. Dies ist hier der Fall, also sind wir fertig.
+</p>
+<p>
+    Die anderen Teilaufgaben b) und c) funktionieren analog durch geschicktes Ausprobieren und &#220;berpr&#252;fen von Vermutungen.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <b>
+        This object can be achieved as follows:
+    </b>
+</p>
+<p>
+    Here you can find out the solution through skillful testing.
+    <br/>
+</p>
+<p>
+    <u>
+        Example (order a):
+    </u>
+    <br/>
+    It's a term \(t(x)\) searched with \(t(0)={@l1[1]@}\), \(t(1)={@l1[2]@}\),\(t(2)={@l1[3]@}\) etc.
+    <br/>
+    If one assumes that the term is the form \(t(x) = a \cdot x+b\) the following \(t(0)={@l1[1]@}\) immediately that \(b={@l1[1]@}\) the following applies: \(t(x)=ax+{@l1[1]@}\)).
+    <br/>
+    You have to sit now \(t({\color{Green}1})={\color{Red} {@l1[2]@} }\) one, one gets \({\color{Red}{@l1[2]@}}=a\cdot {\color{Green}1}+{@l1[1]@} \Leftrightarrow a={@n1@}\). It follows that the correct term \(t(x)={@ta1@}\) they were
+    <i>
+        could be
+    </i>
+    . Now we have to check whether \(t(2)={@l1[3]@}\) etc. This is the case here, so we're done.
+</p>
+<p>
+    The other subtasks b) and c) function analogously by skillful testing and checking guesses.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -178,56 +174,47 @@ c)  \(M_3=\{ {@l3[1]@},{@l3[2]@},{@l3[3]@},{@l3[4]@},{@l3[5]@},...\} = \{ {@ta3@
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Richtige Antwort, gut gemacht!
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Right answer, well done!
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
+Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-adjust">
-        </i>
-    </span>
-    Ihre Antwort ist teilweise korrekt.
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-adjust">
-        </i>
-    </span>
-    Your answer is partly correct.
+Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
 </span>
+Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Falsche Antwort.
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Wrong answer.
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
+Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -341,18 +328,17 @@ c)  \(M_3=\{ {@l3[1]@},{@l3[2]@},{@l3[3]@},{@l3[4]@},{@l3[5]@},...\} = \{ {@ta3@
                 <trueanswernote>prt1-2-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        F&#252;r \(n \in \mathbb N\) w&#228;re Ihre Antwort richtig. Es gilt aber \(n \in \mathbb N_0\), und f&#252;r \(n=0\) ist \({@ans1@}={@ev(ans1,n=0)@} \notin M_1\).
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        For \(n \in \mathbb N\) your answer would be correct. However, \(n \in \mathbb N_0\)and for \(n=0\) is \({@ans1@}={@ev(ans1,n=0)@} \notin M_1\).
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    F&#252;r \(n \in \mathbb N\) w&#228;re Ihre Antwort richtig. Es gilt aber \(n \in \mathbb N_0\), und f&#252;r \(n=0\) ist \({@ans1@}={@ev(ans1,n=0)@} \notin M_1\).
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    For \(n \in \mathbb N\) your answer would be correct. However, \(n \in \mathbb N_0\)and for \(n=0\) is \({@ans1@}={@ev(ans1,n=0)@} \notin M_1\).
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>-</falsescoremode>

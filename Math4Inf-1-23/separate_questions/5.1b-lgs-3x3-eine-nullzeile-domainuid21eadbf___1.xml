@@ -6,35 +6,32 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Bestimmen Sie alle L&#246;sungen des Gleichungssystems:
-    </p>
-    <p>
-        \[&#160;\begin{matrix}&#160; @A[1][1]*x1@ &amp; @pm12@@A[1][2]*x2@ &amp;&#160;@pm13@@A[1][3]*x3@ &amp; = &amp; @A[1][4]@ \\&#160; @A[2][1]*x1@ &amp;&#160;@pm22@@A[2][2]*x2@ &amp;&#160;@pm23@@A[2][3]*x3@ &amp; = &amp; @A[2][4]@ \\&#160; @A[3][1]*x1@ &amp;&#160;@pm32@@A[3][2]*x2@ &amp;&#160;@pm33@@A[3][3]*x3@ &amp; = &amp; @A[3][4]@ \\&#160;\end{matrix} \]
-    </p>
-    <p>
-    </p>
-    <p>
-        <strong>
-            Hinweise:
-        </strong>
-    </p>
-    <ul>
-        <li>
-            Geben Sie die L&#246;sungen in der Form \([x_1, x_2, x_3]\) ein. Bitte die eckigen Klammern nicht vergessen.
-        </li>
-        <li>
-            Wenn es keine L&#246;sung gibt, dann geben Sie bitte [ ] ein.
-        </li>
-    </ul>
-    <p>
-    </p>
-    <p>
-        \(L=\)&#160;[[input:ans1]]&#160;[[validation:ans1]] [[feedback:prt1]]
-    </p>
-</span>
-<span class="multilang" lang="en">
+[[lang code="de"]]
+<p>
+    Bestimmen Sie alle L&#246;sungen des Gleichungssystems:
+</p>
+<p>
+    \[&#160;\begin{matrix}&#160; @A[1][1]*x1@ &amp; @pm12@@A[1][2]*x2@ &amp;&#160;@pm13@@A[1][3]*x3@ &amp; = &amp; @A[1][4]@ \\&#160; @A[2][1]*x1@ &amp;&#160;@pm22@@A[2][2]*x2@ &amp;&#160;@pm23@@A[2][3]*x3@ &amp; = &amp; @A[2][4]@ \\&#160; @A[3][1]*x1@ &amp;&#160;@pm32@@A[3][2]*x2@ &amp;&#160;@pm33@@A[3][3]*x3@ &amp; = &amp; @A[3][4]@ \\&#160;\end{matrix} \]
+</p>
+<p>
+</p>
+<p>
+    <strong>
+        Hinweise:
+    </strong>
+</p>
+<ul>
+    <li>
+        Geben Sie die L&#246;sungen in der Form \([x_1, x_2, x_3]\) ein. Bitte die eckigen Klammern nicht vergessen.
+    </li>
+    <li>
+        Wenn es keine L&#246;sung gibt, dann geben Sie bitte [ ] ein.
+    </li>
+</ul>
+<p>
+</p>
+<p>
+    \(L=\)&#160;[[/lang]][[lang code="en"]]
     <p>
         Determine all solutions of the equation system:
     </p>
@@ -59,9 +56,11 @@
     <p>
     </p>
     <p>
-        \(L=\)[[input:ans1]][[validation:ans1]] [[feedback:prt1]]
+        \(L=\)[[/lang]][[input:ans1]][[lang code="de"]]&#160;[[/lang]][[lang code="en"]][[/lang]][[validation:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -135,44 +134,41 @@ L&#246;sung: \(@loes@\)</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Richtige Antwort, gut gemacht!
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Right answer, well done!
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Richtige Antwort, gut gemacht!
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Right answer, well done!
+</p>
+[[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihre Antwort ist teilweise korrekt.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your answer is partly correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Ihre Antwort ist teilweise korrekt.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer is partly correct.
+</p>
+[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Falsche Antwort.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Wrong answer.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Falsche Antwort.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Wrong answer.
+</p>
+[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -250,22 +246,21 @@ L&#246;sung: \(@loes@\)</text>
                 <trueanswernote>prt1-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihre Antwort \(@ans1@\) ist eine spezifische L&#246;sung des Gleichungssystems.
-    </p>
-    <p>
-        Gefragt wird nach der allgemeinen L&#246;sung.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your answer \(@ans1@\) is a specific solution of the equation system.
-    </p>
-    <p>
-        The question is about the general solution.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Ihre Antwort \(@ans1@\) ist eine spezifische L&#246;sung des Gleichungssystems.
+</p>
+<p>
+    Gefragt wird nach der allgemeinen L&#246;sung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer \(@ans1@\) is a specific solution of the equation system.
+</p>
+<p>
+    The question is about the general solution.
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>

@@ -6,32 +6,31 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        <span style="font-size: 14px; font-weight: normal;">
-            Erg&#228;nzen Sie \(A\) zu einer orthogonalen \(2 \times 2\) Matrix:
-        </span>
-        <br/>
-    </h4>
-    <div class="editor-indent" style="margin-left: 30px;">
-        $$A =\begin{pmatrix} \frac{\sqrt{6}}{3} &amp; \frac{1}{\sqrt 3}\\ \frac{\sqrt 3}{3} &amp; a \end{pmatrix}$$
-    </div>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <h4>
-        <span style="font-size: 14px; font-weight: normal;">
-            Add \(A\) to an orthogonal \(2 \times 2\) Matrix:
-        </span>
-        <br/>
-    </h4>
-    <div class="editor-indent" style="margin-left: 30px;">
-        $$A =\begin{pmatrix} \frac{\sqrt{6}}{3} &amp; \frac{1}{\sqrt 3}\\ \frac{\sqrt 3}{3} &amp; a \end{pmatrix}$$
-    </div>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<h4>
+    <span style="font-size: 14px; font-weight: normal;">
+        Erg&#228;nzen Sie \(A\) zu einer orthogonalen \(2 \times 2\) Matrix:
+    </span>
+    <br/>
+</h4>
+<div class="editor-indent" style="margin-left: 30px;">
+    $$A =\begin{pmatrix} \frac{\sqrt{6}}{3} &amp; \frac{1}{\sqrt 3}\\ \frac{\sqrt 3}{3} &amp; a \end{pmatrix}$$
+</div>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<h4>
+    <span style="font-size: 14px; font-weight: normal;">
+        Add \(A\) to an orthogonal \(2 \times 2\) Matrix:
+    </span>
+    <br/>
+</h4>
+<div class="editor-indent" style="margin-left: 30px;">
+    $$A =\begin{pmatrix} \frac{\sqrt{6}}{3} &amp; \frac{1}{\sqrt 3}\\ \frac{\sqrt 3}{3} &amp; a \end{pmatrix}$$
+</div>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">

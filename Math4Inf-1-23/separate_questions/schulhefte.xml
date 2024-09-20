@@ -6,9 +6,9 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <style>
-        .buttonweiter {
+[[lang code="de"]]
+<style>
+    .buttonweiter {
                                 border: 1px solid black;
                                 background-color: #a9f5bc;
                 }
@@ -83,446 +83,59 @@
     .que.stack .formulation details[open] {
                                 padding: .5em;
                 }
-    </style>
-    <div id="summarybox">
-        <details>
-            <summary>
-                Inhalt und Umfang dieser Aufgabe
-            </summary>
-            <p>
-                In dieser Aufgabe lernen Sie in Aufgabenteilen (a)-(c) anhand dreier Beispiele, wie Sie die kombinatorischen Grundformeln zur L&#246;sung kombinatorischer Fragestellungen nutzen k&#246;nnen.
-            </p>
-        </details>
-        <hr/>
-    </div>
-    <div id="aufgabe" style="display:box;">
-        <div title="Page 2">
+</style>
+<div id="summarybox">
+    <details>
+        <summary>
+            Inhalt und Umfang dieser Aufgabe
+        </summary>
+        <p>
+            In dieser Aufgabe lernen Sie in Aufgabenteilen (a)-(c) anhand dreier Beispiele, wie Sie die kombinatorischen Grundformeln zur L&#246;sung kombinatorischer Fragestellungen nutzen k&#246;nnen.
+        </p>
+    </details>
+    <hr/>
+</div>
+<div id="aufgabe" style="display:box;">
+    <div title="Page 2">
+        <div>
             <div>
-                <div>
-                    <p>
-                        <b>
-                            <img alt="" class="img-responsive atto_image_button_text-top" height="200" role="presentation" src="@@PLUGINFILE@@/notebook-2478554_640.jpg" width="303"/>
-                            <br/>
-                        </b>
-                    </p>
-                    <p>
-                        <b>
-                            Schulhefte
-                        </b>
-                    </p>
-                    <p>
-                        Die Eltern der F&#252;nftkl&#228;ssler sollen die 6 Hefte der Hauptf&#228;cher (je ein Schul- und ein Hausheft f&#252;r die F&#228;cher Deutsch, Mathematik und Englisch) mit Umschl&#228;gen versehen. Es stehen 7 Farben zur Verf&#252;gung, wobei von jeder Farbe ausreichend
+                <p>
+                    <b>
+                        <img alt="" class="img-responsive atto_image_button_text-top" height="200" role="presentation" src="@@PLUGINFILE@@/notebook-2478554_640.jpg" width="303"/>
+                        <br/>
+                    </b>
+                </p>
+                <p>
+                    <b>
+                        Schulhefte
+                    </b>
+                </p>
+                <p>
+                    Die Eltern der F&#252;nftkl&#228;ssler sollen die 6 Hefte der Hauptf&#228;cher (je ein Schul- und ein Hausheft f&#252;r die F&#228;cher Deutsch, Mathematik und Englisch) mit Umschl&#228;gen versehen. Es stehen 7 Farben zur Verf&#252;gung, wobei von jeder Farbe ausreichend
                                                                                 viele Umschl&#228;ge vorhanden sind. Wie viele M&#246;glichkeiten gibt es, wenn
-                    </p>
-                    <p>
-                        <b>
-                            (a)
-                        </b>
-                        alle Hefte verschiedenfarbig eingebunden sein sollen?
-                    </p>
-                    <p>
-                        <b>
-                            (b)
-                        </b>
-                        keine Einschr&#228;nkung gilt?
-                    </p>
-                    <p>
-                        <b>
-                            (c)
-                        </b>
-                        Schul- und Hausheft des gleichen Fachs die gleiche Farbe tragen sollen, die F&#228;cher aber durch Farben unterschieden werden?
-                    </p>
-                </div>
+                </p>
+                <p>
+                    <b>
+                        (a)
+                    </b>
+                    alle Hefte verschiedenfarbig eingebunden sein sollen?
+                </p>
+                <p>
+                    <b>
+                        (b)
+                    </b>
+                    keine Einschr&#228;nkung gilt?
+                </p>
+                <p>
+                    <b>
+                        (c)
+                    </b>
+                    Schul- und Hausheft des gleichen Fachs die gleiche Farbe tragen sollen, die F&#228;cher aber durch Farben unterschieden werden?
+                </p>
             </div>
         </div>
-        Widmen wir uns zun&#228;chst Teilaufgabe (a). Die Anzahl der M&#246;glichkeiten betr&#228;gt: [[input:ans1]] [[validation:ans1]]
-        <br/>
-        [[feedback:prt1]]
     </div>
-    <div id="teilaufgabe_b" style="display:none;">
-        <span>
-            <br/>
-            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
-                <thead>
-                    <tr>
-                        <th scope="col">
-                            <span style="font-weight: normal;">
-                                <span>
-                                    <u>
-                                        Urspr&#252;ngliche Fragestellung:
-                                    </u>
-                                    <div title="Page 2">
-                                        <div>
-                                            <div>
-                                                <p>
-                                                    <b>
-                                                        <img alt="" class="img-responsive atto_image_button_text-top" height="200" role="presentation" src="@@PLUGINFILE@@/notebook-2478554_640.jpg" width="303"/>
-                                                        <br/>
-                                                    </b>
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        Schulhefte
-                                                    </b>
-                                                </p>
-                                                <p>
-                                                    Die Eltern der F&#252;nftkl&#228;ssler sollen die 6 Hefte der Hauptf&#228;cher (je ein Schul- und ein Hausheft f&#252;r die F&#228;cher Deutsch, Mathematik und Englisch) mit Umschl&#228;gen versehen. Es stehen 7 Farben zur Verf&#252;gung, wobei von jeder Farbe ausreichend viele Umschl&#228;ge vorhanden sind. Wie viele M&#246;glichkeiten gibt es,
-                                                                                wenn
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        (a)
-                                                    </b>
-                                                    alle Hefte verschiedenfarbig eingebunden sein sollen?
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        (b)
-                                                    </b>
-                                                    keine Einschr&#228;nkung gilt?
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        (c)
-                                                    </b>
-                                                    Schul- und Hausheft des gleichen Fachs die gleiche Farbe tragen sollen, die F&#228;cher aber durch Farben unterschieden werden?
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </span>
-                            </span>
-                        </th>
-                    </tr>
-                </thead>
-            </table>
-        </span>
-        <br/>
-        Widmen wir uns nun Teilaufgabe (b). Die Anzahl der M&#246;glichkeiten betr&#228;gt: [[input:ans2]] [[validation:ans2]]
-        <br/>
-        [[feedback:prt2]]
-    </div>
-    <div id="teilaufgabe_c" style="display:none;">
-        <span>
-            <br/>
-            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
-                <thead>
-                    <tr>
-                        <th scope="col">
-                            <span style="font-weight: normal;">
-                                <span>
-                                    <u>
-                                        Urspr&#252;ngliche Fragestellung:
-                                    </u>
-                                    <div title="Page 2">
-                                        <div>
-                                            <div>
-                                                <p>
-                                                    <b>
-                                                        <img alt="" class="img-responsive atto_image_button_text-top" height="200" role="presentation" src="@@PLUGINFILE@@/notebook-2478554_640.jpg" width="303"/>
-                                                        <br/>
-                                                    </b>
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        Schulhefte
-                                                    </b>
-                                                </p>
-                                                <p>
-                                                    Die Eltern der F&#252;nftkl&#228;ssler sollen die 6 Hefte der Hauptf&#228;cher (je ein Schul- und ein Hausheft f&#252;r die F&#228;cher Deutsch, Mathematik und Englisch) mit Umschl&#228;gen versehen. Es stehen 7 Farben zur Verf&#252;gung, wobei von jeder Farbe ausreichend viele Umschl&#228;ge vorhanden sind. Wie viele M&#246;glichkeiten gibt es,
-                                                                                wenn
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        (a)
-                                                    </b>
-                                                    alle Hefte verschiedenfarbig eingebunden sein sollen?
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        (b)
-                                                    </b>
-                                                    keine Einschr&#228;nkung gilt?
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        (c)
-                                                    </b>
-                                                    Schul- und Hausheft des gleichen Fachs die gleiche Farbe tragen sollen, die F&#228;cher aber durch Farben unterschieden werden?
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </span>
-                            </span>
-                        </th>
-                    </tr>
-                </thead>
-            </table>
-        </span>
-        <br/>
-        Widmen wir uns nun Teilaufgabe (c). Die Anzahl der M&#246;glichkeiten betr&#228;gt: [[input:ans3]] [[validation:ans3]]
-        <br/>
-        [[feedback:prt3]]
-    </div>
-    <div id="zwischen1" style="display:none;">
-        <span>
-            <br/>
-            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
-                <thead>
-                    <tr>
-                        <th scope="col">
-                            <span style="font-weight: normal;">
-                                <span>
-                                    <u>
-                                        Urspr&#252;ngliche Fragestellung:
-                                    </u>
-                                    <div title="Page 2">
-                                        <div>
-                                            <div>
-                                                <p>
-                                                    <b>
-                                                        <img alt="" class="img-responsive atto_image_button_text-top" height="200" role="presentation" src="@@PLUGINFILE@@/notebook-2478554_640.jpg" width="303"/>
-                                                        <br/>
-                                                    </b>
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        Schulhefte
-                                                    </b>
-                                                </p>
-                                                <p>
-                                                    Die Eltern der F&#252;nftkl&#228;ssler sollen die 6 Hefte der Hauptf&#228;cher (je ein Schul- und ein Hausheft f&#252;r die F&#228;cher Deutsch, Mathematik und Englisch) mit Umschl&#228;gen versehen. Es stehen 7 Farben zur Verf&#252;gung, wobei von jeder Farbe ausreichend viele Umschl&#228;ge vorhanden sind. Wie viele M&#246;glichkeiten gibt es,
-                                                                                wenn
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        (a)
-                                                    </b>
-                                                    alle Hefte verschiedenfarbig eingebunden sein sollen?
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        (b)
-                                                    </b>
-                                                    keine Einschr&#228;nkung gilt?
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        (c)
-                                                    </b>
-                                                    Schul- und Hausheft des gleichen Fachs die gleiche Farbe tragen sollen, die F&#228;cher aber durch Farben unterschieden werden?
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </span>
-                            </span>
-                        </th>
-                    </tr>
-                </thead>
-            </table>
-        </span>
-        <br/>
-        Widmen wir uns zun&#228;chst Teilaufgabe (a). Offensichtlich ziehen wir f&#252;r die 6 Heftumschl&#228;ge aus den 7 Farben ohne Zur&#252;cklegen. Wir m&#252;ssen uns also noch die Frage stellen, ob beim Ziehen die Reihenfolge eine Rolle spielt oder nicht: [[input:zwischen1]]
-                [[validation:zwischen1]]
-        <br/>
-        [[feedback:zwischen1]]
-    </div>
-    <div id="zwischen3" style="display:none;">
-        <span>
-            <br/>
-            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
-                <thead>
-                    <tr>
-                        <th scope="col">
-                            <span style="font-weight: normal;">
-                                <span>
-                                    <u>
-                                        Urspr&#252;ngliche Fragestellung:
-                                    </u>
-                                    <div title="Page 2">
-                                        <div>
-                                            <div>
-                                                <p>
-                                                    <b>
-                                                        <img alt="" class="img-responsive atto_image_button_text-top" height="200" role="presentation" src="@@PLUGINFILE@@/notebook-2478554_640.jpg" width="303"/>
-                                                        <br/>
-                                                    </b>
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        Schulhefte
-                                                    </b>
-                                                </p>
-                                                <p>
-                                                    Die Eltern der F&#252;nftkl&#228;ssler sollen die 6 Hefte der Hauptf&#228;cher (je ein Schul- und ein Hausheft f&#252;r die F&#228;cher Deutsch, Mathematik und Englisch) mit Umschl&#228;gen versehen. Es stehen 7 Farben zur Verf&#252;gung, wobei von jeder Farbe ausreichend viele Umschl&#228;ge vorhanden sind. Wie viele M&#246;glichkeiten gibt es, wenn
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        (a)
-                                                    </b>
-                                                    alle Hefte verschiedenfarbig eingebunden sein sollen?
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        (b)
-                                                    </b>
-                                                    keine Einschr&#228;nkung gilt?
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        (c)
-                                                    </b>
-                                                    Schul- und Hausheft des gleichen Fachs die gleiche Farbe tragen sollen, die F&#228;cher aber durch Farben unterschieden werden?
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </span>
-                            </span>
-                        </th>
-                    </tr>
-                </thead>
-            </table>
-        </span>
-        <br/>
-        Kommen wir nun zu Teilaufgabe (b). Im Gegensatz zu Teilaufgabe (a) m&#252;ssen die Hefte nun nicht mehr verschiedenfarbig eingebunden sein. Ziehen wir nun mit Zur&#252;cklegen oder ohne Zur&#252;cklegen? [[input:zwischen3]] [[validation:zwischen3]]
-        <br/>
-        [[feedback:zwischen3]]
-    </div>
-    <div id="zwischen4" style="display:none;">
-        <span>
-            <br/>
-            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
-                <thead>
-                    <tr>
-                        <th scope="col">
-                            <span style="font-weight: normal;">
-                                <span>
-                                    <u>
-                                        Urspr&#252;ngliche Fragestellung:
-                                    </u>
-                                    <div title="Page 2">
-                                        <div>
-                                            <div>
-                                                <p>
-                                                    <b>
-                                                        <img alt="" class="img-responsive atto_image_button_text-top" height="200" role="presentation" src="@@PLUGINFILE@@/notebook-2478554_640.jpg" width="303"/>
-                                                        <br/>
-                                                    </b>
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        Schulhefte
-                                                    </b>
-                                                </p>
-                                                <p>
-                                                    Die Eltern der F&#252;nftkl&#228;ssler sollen die 6 Hefte der Hauptf&#228;cher (je ein Schul- und ein Hausheft f&#252;r die F&#228;cher Deutsch, Mathematik und Englisch) mit Umschl&#228;gen versehen. Es stehen 7 Farben zur Verf&#252;gung, wobei von jeder Farbe ausreichend viele Umschl&#228;ge vorhanden sind. Wie viele M&#246;glichkeiten gibt es, wenn
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        (a)
-                                                    </b>
-                                                    alle Hefte verschiedenfarbig eingebunden sein sollen?
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        (b)
-                                                    </b>
-                                                    keine Einschr&#228;nkung gilt?
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        (c)
-                                                    </b>
-                                                    Schul- und Hausheft des gleichen Fachs die gleiche Farbe tragen sollen, die F&#228;cher aber durch Farben unterschieden werden?
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </span>
-                            </span>
-                        </th>
-                    </tr>
-                </thead>
-            </table>
-        </span>
-        <br/>
-        Wir ziehen nun also mit Zur&#252;cklegen und mit Beachtung der Reihenfolge. Da wir keine Einschr&#228;nkung machen, ziehen wir mit Zur&#252;cklegen. Wir unterscheiden in welcher Reihenfolge die Hefte eingebunden werden, da es einen Unterschied macht ob das
-                erste Heft (z.B. das Mathe-Schulheft) einen blauen oder gr&#252;nen Umschlag erh&#228;lt. Wie lautet die hierf&#252;r korrekte kombinatorische Grundfigur f&#252;r das Ziehen mit Zur&#252;cklegen und mit Beachtung der Reihenfolge? [[input:zwischen4]] [[validation:zwischen4]]
-        <br/>
-        [[feedback:zwischen4]]
-    </div>
-    <div id="zwischen6" style="display:none;">
-        <span>
-            <br/>
-            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
-                <thead>
-                    <tr>
-                        <th scope="col">
-                            <span style="font-weight: normal;">
-                                <span>
-                                    <u>
-                                        Urspr&#252;ngliche Fragestellung:
-                                    </u>
-                                    <div title="Page 2">
-                                        <div>
-                                            <div>
-                                                <p>
-                                                    <b>
-                                                        <img alt="" class="img-responsive atto_image_button_text-top" height="200" role="presentation" src="@@PLUGINFILE@@/notebook-2478554_640.jpg" width="303"/>
-                                                        <br/>
-                                                    </b>
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        Schulhefte
-                                                    </b>
-                                                </p>
-                                                <p>
-                                                    Die Eltern der F&#252;nftkl&#228;ssler sollen die 6 Hefte der Hauptf&#228;cher (je ein Schul- und ein Hausheft f&#252;r die F&#228;cher Deutsch, Mathematik und Englisch) mit Umschl&#228;gen versehen. Es stehen 7 Farben zur Verf&#252;gung, wobei von jeder Farbe ausreichend viele Umschl&#228;ge vorhanden sind. Wie viele M&#246;glichkeiten gibt es, wenn
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        (a)
-                                                    </b>
-                                                    alle Hefte verschiedenfarbig eingebunden sein sollen?
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        (b)
-                                                    </b>
-                                                    keine Einschr&#228;nkung gilt?
-                                                </p>
-                                                <p>
-                                                    <b>
-                                                        (c)
-                                                    </b>
-                                                    Schul- und Hausheft des gleichen Fachs die gleiche Farbe tragen sollen, die F&#228;cher aber durch Farben unterschieden werden?
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </span>
-                            </span>
-                        </th>
-                    </tr>
-                </thead>
-            </table>
-        </span>
-        <br/>
-        Kommen wir nun zu Teilaufgabe (c). Wie wir die Anzahl der M&#246;glichkeiten berechnen wenn die Hefte verschiedenfarbig eingebunden sein sollen, haben wir bereits in Teilaufgabe (a) gesehen. Wenn wir nun jedoch nur noch pro Fach eine Farbe w&#228;hlen,
-                wieviele Ziehungen \(k\) machen wir dann noch?
-        <br/>
-        Wir ziehen nur noch [[input:zwischen6]] [[validation:zwischen6]] mal.
-        <br/>
-        [[feedback:zwischen6]]
-    </div>
-    <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
-    </script>
-</span>
-<span class="multilang" lang="en">
+    Widmen wir uns zun&#228;chst Teilaufgabe (a). Die Anzahl der M&#246;glichkeiten betr&#228;gt: [[/lang]][[lang code="en"]]
     <style>
         .buttonweiter {
                                 border: 1px solid black;
@@ -651,9 +264,72 @@ many envelopes are available. How many possibilities exist when
                 </div>
             </div>
         </div>
-        Let's first take part (a). The number of possibilities is: [[input:ans1]] [[validation:ans1]]
+        Let's first take part (a). The number of possibilities is: [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
         <br/>
-        [[feedback:prt1]]
+        [[/lang]][[lang code="en"]]
+        <br/>
+        [[/lang]][[feedback:prt1]][[lang code="de"]]
+    </div>
+    <div id="teilaufgabe_b" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Urspr&#252;ngliche Fragestellung:
+                                    </u>
+                                    <div title="Page 2">
+                                        <div>
+                                            <div>
+                                                <p>
+                                                    <b>
+                                                        <img alt="" class="img-responsive atto_image_button_text-top" height="200" role="presentation" src="@@PLUGINFILE@@/notebook-2478554_640.jpg" width="303"/>
+                                                        <br/>
+                                                    </b>
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        Schulhefte
+                                                    </b>
+                                                </p>
+                                                <p>
+                                                    Die Eltern der F&#252;nftkl&#228;ssler sollen die 6 Hefte der Hauptf&#228;cher (je ein Schul- und ein Hausheft f&#252;r die F&#228;cher Deutsch, Mathematik und Englisch) mit Umschl&#228;gen versehen. Es stehen 7 Farben zur Verf&#252;gung, wobei von jeder Farbe ausreichend viele Umschl&#228;ge vorhanden sind. Wie viele M&#246;glichkeiten gibt es,
+                                                                                wenn
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        (a)
+                                                    </b>
+                                                    alle Hefte verschiedenfarbig eingebunden sein sollen?
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        (b)
+                                                    </b>
+                                                    keine Einschr&#228;nkung gilt?
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        (c)
+                                                    </b>
+                                                    Schul- und Hausheft des gleichen Fachs die gleiche Farbe tragen sollen, die F&#228;cher aber durch Farben unterschieden werden?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </span>
+        <br/>
+        Widmen wir uns nun Teilaufgabe (b). Die Anzahl der M&#246;glichkeiten betr&#228;gt: [[/lang]][[lang code="en"]]
     </div>
     <div id="teilaufgabe_b" style="display:none;">
         <span>
@@ -714,9 +390,72 @@ where:
             </table>
         </span>
         <br/>
-        Let's take part (b). The number of possibilities is: [[input:ans2]] [[validation:ans2]]
+        Let's take part (b). The number of possibilities is: [[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]]
         <br/>
-        [[feedback:prt2]]
+        [[/lang]][[lang code="en"]]
+        <br/>
+        [[/lang]][[feedback:prt2]][[lang code="de"]]
+    </div>
+    <div id="teilaufgabe_c" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Urspr&#252;ngliche Fragestellung:
+                                    </u>
+                                    <div title="Page 2">
+                                        <div>
+                                            <div>
+                                                <p>
+                                                    <b>
+                                                        <img alt="" class="img-responsive atto_image_button_text-top" height="200" role="presentation" src="@@PLUGINFILE@@/notebook-2478554_640.jpg" width="303"/>
+                                                        <br/>
+                                                    </b>
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        Schulhefte
+                                                    </b>
+                                                </p>
+                                                <p>
+                                                    Die Eltern der F&#252;nftkl&#228;ssler sollen die 6 Hefte der Hauptf&#228;cher (je ein Schul- und ein Hausheft f&#252;r die F&#228;cher Deutsch, Mathematik und Englisch) mit Umschl&#228;gen versehen. Es stehen 7 Farben zur Verf&#252;gung, wobei von jeder Farbe ausreichend viele Umschl&#228;ge vorhanden sind. Wie viele M&#246;glichkeiten gibt es,
+                                                                                wenn
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        (a)
+                                                    </b>
+                                                    alle Hefte verschiedenfarbig eingebunden sein sollen?
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        (b)
+                                                    </b>
+                                                    keine Einschr&#228;nkung gilt?
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        (c)
+                                                    </b>
+                                                    Schul- und Hausheft des gleichen Fachs die gleiche Farbe tragen sollen, die F&#228;cher aber durch Farben unterschieden werden?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </span>
+        <br/>
+        Widmen wir uns nun Teilaufgabe (c). Die Anzahl der M&#246;glichkeiten betr&#228;gt: [[/lang]][[lang code="en"]]
     </div>
     <div id="teilaufgabe_c" style="display:none;">
         <span>
@@ -777,9 +516,72 @@ where:
             </table>
         </span>
         <br/>
-        Let's now share (c). The number of possibilities is: [[input:ans3]] [[validation:ans3]]
+        Let's now share (c). The number of possibilities is: [[/lang]][[input:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans3]][[lang code="de"]]
         <br/>
-        [[feedback:prt3]]
+        [[/lang]][[lang code="en"]]
+        <br/>
+        [[/lang]][[feedback:prt3]][[lang code="de"]]
+    </div>
+    <div id="zwischen1" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Urspr&#252;ngliche Fragestellung:
+                                    </u>
+                                    <div title="Page 2">
+                                        <div>
+                                            <div>
+                                                <p>
+                                                    <b>
+                                                        <img alt="" class="img-responsive atto_image_button_text-top" height="200" role="presentation" src="@@PLUGINFILE@@/notebook-2478554_640.jpg" width="303"/>
+                                                        <br/>
+                                                    </b>
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        Schulhefte
+                                                    </b>
+                                                </p>
+                                                <p>
+                                                    Die Eltern der F&#252;nftkl&#228;ssler sollen die 6 Hefte der Hauptf&#228;cher (je ein Schul- und ein Hausheft f&#252;r die F&#228;cher Deutsch, Mathematik und Englisch) mit Umschl&#228;gen versehen. Es stehen 7 Farben zur Verf&#252;gung, wobei von jeder Farbe ausreichend viele Umschl&#228;ge vorhanden sind. Wie viele M&#246;glichkeiten gibt es,
+                                                                                wenn
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        (a)
+                                                    </b>
+                                                    alle Hefte verschiedenfarbig eingebunden sein sollen?
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        (b)
+                                                    </b>
+                                                    keine Einschr&#228;nkung gilt?
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        (c)
+                                                    </b>
+                                                    Schul- und Hausheft des gleichen Fachs die gleiche Farbe tragen sollen, die F&#228;cher aber durch Farben unterschieden werden?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </span>
+        <br/>
+        Widmen wir uns zun&#228;chst Teilaufgabe (a). Offensichtlich ziehen wir f&#252;r die 6 Heftumschl&#228;ge aus den 7 Farben ohne Zur&#252;cklegen. Wir m&#252;ssen uns also noch die Frage stellen, ob beim Ziehen die Reihenfolge eine Rolle spielt oder nicht: [[/lang]][[lang code="en"]]
     </div>
     <div id="zwischen1" style="display:none;">
         <span>
@@ -840,9 +642,72 @@ where:
             </table>
         </span>
         <br/>
-        Let's first take part (a). Apparently, we draw from the 7 colors for the 6 booklet envelopes. So we have to ask ourselves whether the order plays a role or not when drawing: [[input:zwischen1]][[validation:zwischen1]]
+        Let's first take part (a). Apparently, we draw from the 7 colors for the 6 booklet envelopes. So we have to ask ourselves whether the order plays a role or not when drawing: [[/lang]][[input:zwischen1]][[lang code="de"]]
+                [[/lang]][[lang code="en"]][[/lang]][[validation:zwischen1]][[lang code="de"]]
         <br/>
-        [[feedback:zwischen1]]
+        [[/lang]][[lang code="en"]]
+        <br/>
+        [[/lang]][[feedback:zwischen1]][[lang code="de"]]
+    </div>
+    <div id="zwischen3" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Urspr&#252;ngliche Fragestellung:
+                                    </u>
+                                    <div title="Page 2">
+                                        <div>
+                                            <div>
+                                                <p>
+                                                    <b>
+                                                        <img alt="" class="img-responsive atto_image_button_text-top" height="200" role="presentation" src="@@PLUGINFILE@@/notebook-2478554_640.jpg" width="303"/>
+                                                        <br/>
+                                                    </b>
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        Schulhefte
+                                                    </b>
+                                                </p>
+                                                <p>
+                                                    Die Eltern der F&#252;nftkl&#228;ssler sollen die 6 Hefte der Hauptf&#228;cher (je ein Schul- und ein Hausheft f&#252;r die F&#228;cher Deutsch, Mathematik und Englisch) mit Umschl&#228;gen versehen. Es stehen 7 Farben zur Verf&#252;gung, wobei von jeder Farbe ausreichend viele Umschl&#228;ge vorhanden sind. Wie viele M&#246;glichkeiten gibt es, wenn
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        (a)
+                                                    </b>
+                                                    alle Hefte verschiedenfarbig eingebunden sein sollen?
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        (b)
+                                                    </b>
+                                                    keine Einschr&#228;nkung gilt?
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        (c)
+                                                    </b>
+                                                    Schul- und Hausheft des gleichen Fachs die gleiche Farbe tragen sollen, die F&#228;cher aber durch Farben unterschieden werden?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </span>
+        <br/>
+        Kommen wir nun zu Teilaufgabe (b). Im Gegensatz zu Teilaufgabe (a) m&#252;ssen die Hefte nun nicht mehr verschiedenfarbig eingebunden sein. Ziehen wir nun mit Zur&#252;cklegen oder ohne Zur&#252;cklegen? [[/lang]][[lang code="en"]]
     </div>
     <div id="zwischen3" style="display:none;">
         <span>
@@ -902,9 +767,72 @@ where:
             </table>
         </span>
         <br/>
-        Let us now come to sub-task (b). In contrast to partial task (a), the booklets no longer have to be integrated in different colors. Let's move back or move back? [[input:zwischen3]] [[validation:zwischen3]]
+        Let us now come to sub-task (b). In contrast to partial task (a), the booklets no longer have to be integrated in different colors. Let's move back or move back? [[/lang]][[input:zwischen3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:zwischen3]][[lang code="de"]]
         <br/>
-        [[feedback:zwischen3]]
+        [[/lang]][[lang code="en"]]
+        <br/>
+        [[/lang]][[feedback:zwischen3]][[lang code="de"]]
+    </div>
+    <div id="zwischen4" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Urspr&#252;ngliche Fragestellung:
+                                    </u>
+                                    <div title="Page 2">
+                                        <div>
+                                            <div>
+                                                <p>
+                                                    <b>
+                                                        <img alt="" class="img-responsive atto_image_button_text-top" height="200" role="presentation" src="@@PLUGINFILE@@/notebook-2478554_640.jpg" width="303"/>
+                                                        <br/>
+                                                    </b>
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        Schulhefte
+                                                    </b>
+                                                </p>
+                                                <p>
+                                                    Die Eltern der F&#252;nftkl&#228;ssler sollen die 6 Hefte der Hauptf&#228;cher (je ein Schul- und ein Hausheft f&#252;r die F&#228;cher Deutsch, Mathematik und Englisch) mit Umschl&#228;gen versehen. Es stehen 7 Farben zur Verf&#252;gung, wobei von jeder Farbe ausreichend viele Umschl&#228;ge vorhanden sind. Wie viele M&#246;glichkeiten gibt es, wenn
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        (a)
+                                                    </b>
+                                                    alle Hefte verschiedenfarbig eingebunden sein sollen?
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        (b)
+                                                    </b>
+                                                    keine Einschr&#228;nkung gilt?
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        (c)
+                                                    </b>
+                                                    Schul- und Hausheft des gleichen Fachs die gleiche Farbe tragen sollen, die F&#228;cher aber durch Farben unterschieden werden?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </span>
+        <br/>
+        Wir ziehen nun also mit Zur&#252;cklegen und mit Beachtung der Reihenfolge. Da wir keine Einschr&#228;nkung machen, ziehen wir mit Zur&#252;cklegen. Wir unterscheiden in welcher Reihenfolge die Hefte eingebunden werden, da es einen Unterschied macht ob das
+                erste Heft (z.B. das Mathe-Schulheft) einen blauen oder gr&#252;nen Umschlag erh&#228;lt. Wie lautet die hierf&#252;r korrekte kombinatorische Grundfigur f&#252;r das Ziehen mit Zur&#252;cklegen und mit Beachtung der Reihenfolge? [[/lang]][[lang code="en"]]
     </div>
     <div id="zwischen4" style="display:none;">
         <span>
@@ -965,9 +893,74 @@ where:
         </span>
         <br/>
         So we are moving back with attention to the order. Because we don't make any restriction, we're moving backwards. We distinguish in which order the booklets are integrated, as it makes a difference whether the
-first issue (e.g. the Mathe textbook) receives a blue or green envelope. What is the correct combinatorial basic figure for drawing with resetting and observing the order? [[input:zwischen4]] [[validation:zwischen4]]
+first issue (e.g. the Mathe textbook) receives a blue or green envelope. What is the correct combinatorial basic figure for drawing with resetting and observing the order? [[/lang]][[input:zwischen4]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:zwischen4]][[lang code="de"]]
         <br/>
-        [[feedback:zwischen4]]
+        [[/lang]][[lang code="en"]]
+        <br/>
+        [[/lang]][[feedback:zwischen4]][[lang code="de"]]
+    </div>
+    <div id="zwischen6" style="display:none;">
+        <span>
+            <br/>
+            <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span style="font-weight: normal;">
+                                <span>
+                                    <u>
+                                        Urspr&#252;ngliche Fragestellung:
+                                    </u>
+                                    <div title="Page 2">
+                                        <div>
+                                            <div>
+                                                <p>
+                                                    <b>
+                                                        <img alt="" class="img-responsive atto_image_button_text-top" height="200" role="presentation" src="@@PLUGINFILE@@/notebook-2478554_640.jpg" width="303"/>
+                                                        <br/>
+                                                    </b>
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        Schulhefte
+                                                    </b>
+                                                </p>
+                                                <p>
+                                                    Die Eltern der F&#252;nftkl&#228;ssler sollen die 6 Hefte der Hauptf&#228;cher (je ein Schul- und ein Hausheft f&#252;r die F&#228;cher Deutsch, Mathematik und Englisch) mit Umschl&#228;gen versehen. Es stehen 7 Farben zur Verf&#252;gung, wobei von jeder Farbe ausreichend viele Umschl&#228;ge vorhanden sind. Wie viele M&#246;glichkeiten gibt es, wenn
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        (a)
+                                                    </b>
+                                                    alle Hefte verschiedenfarbig eingebunden sein sollen?
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        (b)
+                                                    </b>
+                                                    keine Einschr&#228;nkung gilt?
+                                                </p>
+                                                <p>
+                                                    <b>
+                                                        (c)
+                                                    </b>
+                                                    Schul- und Hausheft des gleichen Fachs die gleiche Farbe tragen sollen, die F&#228;cher aber durch Farben unterschieden werden?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </span>
+        <br/>
+        Kommen wir nun zu Teilaufgabe (c). Wie wir die Anzahl der M&#246;glichkeiten berechnen wenn die Hefte verschiedenfarbig eingebunden sein sollen, haben wir bereits in Teilaufgabe (a) gesehen. Wenn wir nun jedoch nur noch pro Fach eine Farbe w&#228;hlen,
+                wieviele Ziehungen \(k\) machen wir dann noch?
+        <br/>
+        Wir ziehen nur noch [[/lang]][[lang code="en"]]
     </div>
     <div id="zwischen6" style="display:none;">
         <span>
@@ -1030,13 +1023,19 @@ first issue (e.g. the Mathe textbook) receives a blue or green envelope. What is
         Let us now come to sub-task (c). As we calculate the number of possibilities if the booklets are to be integrated in different colors, we have already seen in sub-task (a). However, if we choose a color only per compartment,
 How many draws \(k\) will we do?
         <br/>
-        We're just moving [[input:zwischen6]] [[validation:zwischen6]] Let's go.
+        We're just moving [[/lang]][[input:zwischen6]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:zwischen6]][[lang code="de"]] mal.
         <br/>
-        [[feedback:zwischen6]]
+        [[/lang]][[lang code="en"]] Let's go.
+        <br/>
+        [[/lang]][[feedback:zwischen6]][[lang code="de"]]
     </div>
     <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
     </script>
-</span>
+    [[/lang]][[lang code="en"]]
+</div>
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]]
 ]]></text>
             <file name="notebook-2478554_640.jpg" path="/" encoding="base64">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</file>
         </questiontext>
@@ -1286,40 +1285,39 @@ lsgZwischen7: 7*6*5;]]></text>
                 <trueanswernote>prt1-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5 em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Richtige Antwort, gut gemacht!
-    <p>
-        Sie haben Teilaufgabe (a) gel&#246;st. Es ergeben sich somit \(7!=5040\) M&#246;glichkeiten, die Hefte einzubinden.
-    </p>
-    <p>
-        Klicken Sie zum Fortfahren mit Teilaufgabe (b) bitte auf den folgenden Button:
-        <button class="buttonweiter" onclick="hide('aufgabe');show('teilaufgabe_b');" type="button">
-            Weiter
-        </button>
-        <br/>
-    </p>
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5 em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Right answer, well done!
-    <p>
-        They have solved partial task (a). Thus, \(7!=5040\) Possibilities to include the booklets.
-    </p>
-    <p>
-        Click To continue with partial task (b), please click the following button:
-        <button class="buttonweiter" onclick="hide('aufgabe');show('teilaufgabe_b');" type="button">
-            Next
-        </button>
-        <br/>
-    </p>
+Richtige Antwort, gut gemacht!
+<p>
+    Sie haben Teilaufgabe (a) gel&#246;st. Es ergeben sich somit \(7!=5040\) M&#246;glichkeiten, die Hefte einzubinden.
+</p>
+<p>
+    Klicken Sie zum Fortfahren mit Teilaufgabe (b) bitte auf den folgenden Button:
+    <button class="buttonweiter" onclick="hide('aufgabe');show('teilaufgabe_b');" type="button">
+        Weiter
+    </button>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
+Right answer, well done!
+<p>
+    They have solved partial task (a). Thus, \(7!=5040\) Possibilities to include the booklets.
+</p>
+<p>
+    Click To continue with partial task (b), please click the following button:
+    <button class="buttonweiter" onclick="hide('aufgabe');show('teilaufgabe_b');" type="button">
+        Next
+    </button>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -1329,66 +1327,65 @@ lsgZwischen7: 7*6*5;]]></text>
                 <falseanswernote>prt1-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <div id="prtA-1">
-        <span style="font-size: 1.5 em; color:red;">
-            <i class="fa fa-times">
-            </i>
-        </span>
-        Falsche Antwort.
+[[lang code="de"]]
+<div id="prtA-1">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
 
 
 
 
 Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in kleinere Teilaufgaben unterteilt.
-        <p>
-            Klicken Sie zum Fortfahren bitte auf den folgenden Button:
-            <button class="buttonweiter" onclick="hide('aufgabe');show('zwischen1');" type="button">
-                Weiter
-            </button>
-            <br/>
-        </p>
-    </div>
-    <div id="prtA-2" style="display:none">
-        <span style="font-size: 1.5 em; color:red;">
-            <i class="fa fa-times">
-            </i>
-        </span>
-        Falsche Antwort.
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('aufgabe');show('zwischen1');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</div>
+<div id="prtA-2" style="display:none">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
 Wir wissen nun also, dass wir \(k\) Farben (f&#252;r \(k\) Hefte) ohne Zur&#252;cklegen und mit Beachtung der Reihenfolge (es ist wichtig, in welcher Reihenfolge wir die Hefte mit den Umschl&#228;gen versehen) aus \(n=7\) Farben ziehen. Die kombinatorische
                 Grundfigur hierf&#252;r ist \(\frac{n!}{(n-k)!}\). Wieviele M&#246;glichkeiten ergeben sich also damit? Versuchen Sie aufgabe (a) erneut!
-    </div>
-</span>
-<span class="multilang" lang="en">
-    <div id="prtA-1">
-        <span style="font-size: 1.5 em; color:red;">
-            <i class="fa fa-times">
-            </i>
-        </span>
-        Wrong answer.
+</div>
+[[/lang]][[lang code="en"]]
+<div id="prtA-1">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
 
 
 
 
 That you couldn't solve the task right away is no problem! In the following, the task is subdivided into smaller subtasks.
-        <p>
-            To continue, click on the following button:
-            <button class="buttonweiter" onclick="hide('aufgabe');show('zwischen1');" type="button">
-                Next
-            </button>
-            <br/>
-        </p>
-    </div>
-    <div id="prtA-2" style="display:none">
-        <span style="font-size: 1.5 em; color:red;">
-            <i class="fa fa-times">
-            </i>
-        </span>
-        Wrong answer.
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('aufgabe');show('zwischen1');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</div>
+<div id="prtA-2" style="display:none">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
 We now know that we \(k\) Colours (for \(k\) Booklets) without resetting and observing the order (it is important in which order we have the folders with the envelopes) \(n=7\) draw colors. Combination
 Basic figure for this \(\frac{n!}{(n-k)!}\). So how many possibilities are there? Try Task (a) again!
-    </div>
-</span>
+</div>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -1415,16 +1412,15 @@ Basic figure for this \(\frac{n!}{(n-k)!}\). So how many possibilities are there
                 <falseanswernote>prt1-2-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die in Aufgabenteil (a) angegebene Zahl ist negativ. Sie kann daher nicht als Anzahl der M&#246;glichkeiten interpretiert werden. Bitte korrigieren Sie Ihre L&#246;sung.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The number indicated in section (a) is negative. It cannot therefore be interpreted as a number of possibilities. Please correct your solution.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die in Aufgabenteil (a) angegebene Zahl ist negativ. Sie kann daher nicht als Anzahl der M&#246;glichkeiten interpretiert werden. Bitte korrigieren Sie Ihre L&#246;sung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The number indicated in section (a) is negative. It cannot therefore be interpreted as a number of possibilities. Please correct your solution.
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -1452,40 +1448,39 @@ Basic figure for this \(\frac{n!}{(n-k)!}\). So how many possibilities are there
                 <trueanswernote>prt2-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5 em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Richtige Antwort, gut gemacht!
-    <p>
-        Dies sind bereits \(7^6=117649\) M&#246;glichkeiten. In Teilaufgabe (a) waren es lediglich \(5040\) M&#246;glichkeiten.
-    </p>
-    <p>
-        Klicken Sie zum Fortfahren mit Teilaufgabe (c) bitte auf den folgenden Button:
-        <button class="buttonweiter" onclick="hide('teilaufgabe_b');show('teilaufgabe_c');" type="button">
-            Weiter
-        </button>
-        <br/>
-    </p>
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5 em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Right answer, well done!
-    <p>
-        These are already \(7^6=117649\) Opportunities. In part (a) it was only \(5040\) Opportunities.
-    </p>
-    <p>
-        Click To continue with partial task (c), please click the following button:
-        <button class="buttonweiter" onclick="hide('teilaufgabe_b');show('teilaufgabe_c');" type="button">
-            Next
-        </button>
-        <br/>
-    </p>
+Richtige Antwort, gut gemacht!
+<p>
+    Dies sind bereits \(7^6=117649\) M&#246;glichkeiten. In Teilaufgabe (a) waren es lediglich \(5040\) M&#246;glichkeiten.
+</p>
+<p>
+    Klicken Sie zum Fortfahren mit Teilaufgabe (c) bitte auf den folgenden Button:
+    <button class="buttonweiter" onclick="hide('teilaufgabe_b');show('teilaufgabe_c');" type="button">
+        Weiter
+    </button>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
+Right answer, well done!
+<p>
+    These are already \(7^6=117649\) Opportunities. In part (a) it was only \(5040\) Opportunities.
+</p>
+<p>
+    Click To continue with partial task (c), please click the following button:
+    <button class="buttonweiter" onclick="hide('teilaufgabe_b');show('teilaufgabe_c');" type="button">
+        Next
+    </button>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -1495,72 +1490,71 @@ Basic figure for this \(\frac{n!}{(n-k)!}\). So how many possibilities are there
                 <falseanswernote>prt2-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <div id="prtB-1">
-        <span style="font-size: 1.5 em; color:red;">
-            <i class="fa fa-times">
-            </i>
-        </span>
-        Falsche Antwort.
+[[lang code="de"]]
+<div id="prtB-1">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
 
 
 
 
 Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in kleinere Teilaufgaben unterteilt.
-        <p>
-            Klicken Sie zum Fortfahren bitte auf den folgenden Button:
-            <button class="buttonweiter" onclick="hide('teilaufgabe_b');show('zwischen3');" type="button">
-                Weiter
-            </button>
-            <br/>
-        </p>
-    </div>
-    <div id="prtB-2" style="display:none">
-        <span style="font-size: 1.5 em; color:red;">
-            <i class="fa fa-times">
-            </i>
-        </span>
-        Falsche Antwort.
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('teilaufgabe_b');show('zwischen3');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</div>
+<div id="prtB-2" style="display:none">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
 
 
 
 
 Wir m&#252;ssen also die Anzahl der M&#246;glichkeiten mittels der Formel \(n^k\) berechnen. Wieviele M&#246;glichkeiten ergeben sich damit, die Hefte ohne Einschr&#228;nkung mit Umschl&#228;gen zu versehen? Versuchen Sie Teil (b) erneut!
-    </div>
-</span>
-<span class="multilang" lang="en">
-    <div id="prtB-1">
-        <span style="font-size: 1.5 em; color:red;">
-            <i class="fa fa-times">
-            </i>
-        </span>
-        Wrong answer.
+</div>
+[[/lang]][[lang code="en"]]
+<div id="prtB-1">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
 
 
 
 
 That you couldn't solve the task right away is no problem! In the following, the task is subdivided into smaller subtasks.
-        <p>
-            To continue, click on the following button:
-            <button class="buttonweiter" onclick="hide('teilaufgabe_b');show('zwischen3');" type="button">
-                Next
-            </button>
-            <br/>
-        </p>
-    </div>
-    <div id="prtB-2" style="display:none">
-        <span style="font-size: 1.5 em; color:red;">
-            <i class="fa fa-times">
-            </i>
-        </span>
-        Wrong answer.
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('teilaufgabe_b');show('zwischen3');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</div>
+<div id="prtB-2" style="display:none">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
 
 
 
 
 We must therefore have the number of possibilities by means of the formula \(n^k\) calculate. How many possibilities are there to provide the booklets with envelopes without restriction? Try Part (b) again!
-    </div>
-</span>
+</div>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -1587,18 +1581,17 @@ We must therefore have the number of possibilities by means of the formula \(n^k
                 <falseanswernote>prt2-2-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Bitte geben Sie eine Zahl zwischen 0 und 1 ein!
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Please enter a number between 0 and 1.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Bitte geben Sie eine Zahl zwischen 0 und 1 ein!
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Please enter a number between 0 and 1.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -1626,26 +1619,25 @@ We must therefore have the number of possibilities by means of the formula \(n^k
                 <trueanswernote>prt3-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5 em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Richtige Antwort, gut gemacht!
-    <p>
-        Sie haben Teilaufgabe (c) und damit die gesamte Aufgabe gel&#246;st. Es gibt somit in Teilaufgabe (c) nur noch \(\frac{7!}{(7-3)!}=7\cdot 6\cdot 5=210\) M&#246;glichkeiten, die Hefte einzubinden.
-    </p>
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5 em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Right answer, well done!
-    <p>
-        They have solved partial task (c) and thus the entire task. There is thus only a partial task (c) \(\frac{7!}{(7-3)!}=7\cdot 6\cdot 5=210\) Possibilities to include the booklets.
-    </p>
+Richtige Antwort, gut gemacht!
+<p>
+    Sie haben Teilaufgabe (c) und damit die gesamte Aufgabe gel&#246;st. Es gibt somit in Teilaufgabe (c) nur noch \(\frac{7!}{(7-3)!}=7\cdot 6\cdot 5=210\) M&#246;glichkeiten, die Hefte einzubinden.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
+Right answer, well done!
+<p>
+    They have solved partial task (c) and thus the entire task. There is thus only a partial task (c) \(\frac{7!}{(7-3)!}=7\cdot 6\cdot 5=210\) Possibilities to include the booklets.
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -1655,72 +1647,71 @@ We must therefore have the number of possibilities by means of the formula \(n^k
                 <falseanswernote>prt3-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <div id="prtC-1">
-        <span style="font-size: 1.5 em; color:red;">
-            <i class="fa fa-times">
-            </i>
-        </span>
-        Falsche Antwort.
+[[lang code="de"]]
+<div id="prtC-1">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
 
 
 
 
 Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in kleinere Teilaufgaben unterteilt.
-        <p>
-            Klicken Sie zum Fortfahren bitte auf den folgenden Button:
-            <button class="buttonweiter" onclick="hide('teilaufgabe_c');show('zwischen6');" type="button">
-                Weiter
-            </button>
-            <br/>
-        </p>
-    </div>
-    <div id="prtC-2" style="display:none">
-        <span style="font-size: 1.5 em; color:red;">
-            <i class="fa fa-times">
-            </i>
-        </span>
-        Falsche Antwort.
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('teilaufgabe_c');show('zwischen6');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</div>
+<div id="prtC-2" style="display:none">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
 
 
 
 
 Nun sind wir fast am Ziel. Wir ziehen also nun nur noch \(k=3\) Farben f&#252;r die F&#228;cher Deutsch, Mathematik und Englisch aus den \(n=7\) Farben. Ob wir ohne oder mit Zur&#252;cklegen und ohne oder mit Beachtung der Reihenfolge ziehen, wissen wir bereits aus Teilaufgabe (a). Wieviele M&#246;glichkeiten ergeben sich damit insgesamt? Versuchen Sie Teil (c) erneut!
-    </div>
-</span>
-<span class="multilang" lang="en">
-    <div id="prtC-1">
-        <span style="font-size: 1.5 em; color:red;">
-            <i class="fa fa-times">
-            </i>
-        </span>
-        Wrong answer.
+</div>
+[[/lang]][[lang code="en"]]
+<div id="prtC-1">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
 
 
 
 
 That you couldn't solve the task right away is no problem! In the following, the task is subdivided into smaller subtasks.
-        <p>
-            To continue, click on the following button:
-            <button class="buttonweiter" onclick="hide('teilaufgabe_c');show('zwischen6');" type="button">
-                Next
-            </button>
-            <br/>
-        </p>
-    </div>
-    <div id="prtC-2" style="display:none">
-        <span style="font-size: 1.5 em; color:red;">
-            <i class="fa fa-times">
-            </i>
-        </span>
-        Wrong answer.
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('teilaufgabe_c');show('zwischen6');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</div>
+<div id="prtC-2" style="display:none">
+    <span style="font-size: 1.5 em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
 
 
 
 
 Now we're almost at the target. So we're just moving \(k=3\) Colours for subjects German, mathematics and English \(n=7\) Colors. Whether we move without or with resetting and without or with respect to the order, we already know from subtask (a). How many possibilities are there? Try Part (c) again!
-    </div>
-</span>
+</div>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -1747,18 +1738,17 @@ Now we're almost at the target. So we're just moving \(k=3\) Colours for subject
                 <falseanswernote>prt3-2-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die in Aufgabenteil (c) angegebene Zahl ist negativ. Sie kann daher nicht als Anzahl der M&#246;glichkeiten interpretiert werden. Bitte korrigieren Sie Ihre L&#246;sung.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The number indicated in section (c) is negative. It cannot therefore be interpreted as a number of possibilities. Please correct your solution.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die in Aufgabenteil (c) angegebene Zahl ist negativ. Sie kann daher nicht als Anzahl der M&#246;glichkeiten interpretiert werden. Bitte korrigieren Sie Ihre L&#246;sung.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The number indicated in section (c) is negative. It cannot therefore be interpreted as a number of possibilities. Please correct your solution.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -1786,34 +1776,33 @@ Now we're almost at the target. So we're just moving \(k=3\) Colours for subject
                 <trueanswernote>zwischen1-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5 em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Richtige Antwort, gut gemacht!
-    <p>
-        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
-        <button class="buttonweiter" onclick="hide('zwischen1');show('aufgabe');hide('prtA-1');show('prtA-2');" type="button">
-            Weiter
-        </button>
-        <br/>
-    </p>
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5 em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Right answer, well done!
-    <p>
-        To continue, click on the following button:
-        <button class="buttonweiter" onclick="hide('zwischen1');show('aufgabe');hide('prtA-1');show('prtA-2');" type="button">
-            Next
-        </button>
-        <br/>
-    </p>
+Richtige Antwort, gut gemacht!
+<p>
+    Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+    <button class="buttonweiter" onclick="hide('zwischen1');show('aufgabe');hide('prtA-1');show('prtA-2');" type="button">
+        Weiter
+    </button>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
+Right answer, well done!
+<p>
+    To continue, click on the following button:
+    <button class="buttonweiter" onclick="hide('zwischen1');show('aufgabe');hide('prtA-1');show('prtA-2');" type="button">
+        Next
+    </button>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -1823,26 +1812,25 @@ Now we're almost at the target. So we're just moving \(k=3\) Colours for subject
                 <falseanswernote>zwischen1-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5 em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Falsche Antwort.
-    <p dir="ltr" style="text-align: left;">
-        &#220;berlegen Sie noch einmal, ob wir mit oder ohne Beachtung der Reihenfolge ziehen. Stellen Sie sich dazu vor, die 6 Hefte liegen vor Ihnen auf dem Tisch. Spielt es nun eine Rolle, ob Sie erst gr&#252;n und dann blau, oder erst blau und dann gr&#252;n f&#252;r das erste und zweite Heft ziehen?
-    </p>
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5 em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Wrong answer.
-    <p dir="ltr" style="text-align: left;">
-        Consider whether we move with or without observing the order. Imagine the 6 stitches are in front of you on the table. Does it now matter whether you first pull green and then blue, or first blue and then green for the first and second booklet?
-    </p>
+Falsche Antwort.
+<p dir="ltr" style="text-align: left;">
+    &#220;berlegen Sie noch einmal, ob wir mit oder ohne Beachtung der Reihenfolge ziehen. Stellen Sie sich dazu vor, die 6 Hefte liegen vor Ihnen auf dem Tisch. Spielt es nun eine Rolle, ob Sie erst gr&#252;n und dann blau, oder erst blau und dann gr&#252;n f&#252;r das erste und zweite Heft ziehen?
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
+Wrong answer.
+<p dir="ltr" style="text-align: left;">
+    Consider whether we move with or without observing the order. Imagine the 6 stitches are in front of you on the table. Does it now matter whether you first pull green and then blue, or first blue and then green for the first and second booklet?
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -1869,18 +1857,17 @@ Now we're almost at the target. So we're just moving \(k=3\) Colours for subject
                 <falseanswernote>zwischen1-2-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p dir="ltr" style="text-align: left;">
-        Bitte geben Sie eine 1 oder 2 ein!
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p dir="ltr" style="text-align: left;">
-        Please enter a 1 or 2!
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    Bitte geben Sie eine 1 oder 2 ein!
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    Please enter a 1 or 2!
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -1908,34 +1895,33 @@ Now we're almost at the target. So we're just moving \(k=3\) Colours for subject
                 <trueanswernote>zwischen3-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5 em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Richtige Antwort, gut gemacht!
-    <p>
-        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
-        <button class="buttonweiter" onclick="hide('zwischen3');show('zwischen4');" type="button">
-            Weiter
-        </button>
-        <br/>
-    </p>
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5 em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Right answer, well done!
-    <p>
-        To continue, click on the following button:
-        <button class="buttonweiter" onclick="hide('zwischen3');show('zwischen4');" type="button">
-            Next
-        </button>
-        <br/>
-    </p>
+Richtige Antwort, gut gemacht!
+<p>
+    Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+    <button class="buttonweiter" onclick="hide('zwischen3');show('zwischen4');" type="button">
+        Weiter
+    </button>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
+Right answer, well done!
+<p>
+    To continue, click on the following button:
+    <button class="buttonweiter" onclick="hide('zwischen3');show('zwischen4');" type="button">
+        Next
+    </button>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -1945,32 +1931,31 @@ Now we're almost at the target. So we're just moving \(k=3\) Colours for subject
                 <falseanswernote>zwischen3-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5 em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Falsche Antwort.
-    <p dir="ltr" style="text-align: left;">
-        <em>
-            Tipp:
-        </em>
-        Wenn keine Einschr&#228;nkung gilt, d&#252;rfen wir Farben mehrfach f&#252;r verschiedene Hefte verwenden.
-    </p>
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5 em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Wrong answer.
-    <p dir="ltr" style="text-align: left;">
-        <em>
-            Tip:
-        </em>
-        If there is no restriction, we may use colors several times for different booklets.
-    </p>
+Falsche Antwort.
+<p dir="ltr" style="text-align: left;">
+    <em>
+        Tipp:
+    </em>
+    Wenn keine Einschr&#228;nkung gilt, d&#252;rfen wir Farben mehrfach f&#252;r verschiedene Hefte verwenden.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
+Wrong answer.
+<p dir="ltr" style="text-align: left;">
+    <em>
+        Tip:
+    </em>
+    If there is no restriction, we may use colors several times for different booklets.
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -1998,34 +1983,33 @@ Now we're almost at the target. So we're just moving \(k=3\) Colours for subject
                 <trueanswernote>zwischen4-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5 em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Richtige Antwort, gut gemacht!
-    <p>
-        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
-        <button class="buttonweiter" onclick="hide('zwischen4');show('teilaufgabe_b');hide('prtB-1');show('prtB-2');" type="button">
-            Weiter
-        </button>
-        <br/>
-    </p>
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5 em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Right answer, well done!
-    <p>
-        To continue, click on the following button:
-        <button class="buttonweiter" onclick="hide('zwischen4');show('teilaufgabe_b');hide('prtB-1');show('prtB-2');" type="button">
-            Next
-        </button>
-        <br/>
-    </p>
+Richtige Antwort, gut gemacht!
+<p>
+    Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+    <button class="buttonweiter" onclick="hide('zwischen4');show('teilaufgabe_b');hide('prtB-1');show('prtB-2');" type="button">
+        Weiter
+    </button>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
+Right answer, well done!
+<p>
+    To continue, click on the following button:
+    <button class="buttonweiter" onclick="hide('zwischen4');show('teilaufgabe_b');hide('prtB-1');show('prtB-2');" type="button">
+        Next
+    </button>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -2035,32 +2019,31 @@ Now we're almost at the target. So we're just moving \(k=3\) Colours for subject
                 <falseanswernote>zwischen4-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5 em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Falsche Antwort.
-    <p dir="ltr" style="text-align: left;">
-        <em>
-            Tipp:
-        </em>
-        Formeln 3 und 4 sind falsch.
-    </p>
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5 em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Wrong answer.
-    <p dir="ltr" style="text-align: left;">
-        <em>
-            Tip:
-        </em>
-        Formulas 3 and 4 are wrong.
-    </p>
+Falsche Antwort.
+<p dir="ltr" style="text-align: left;">
+    <em>
+        Tipp:
+    </em>
+    Formeln 3 und 4 sind falsch.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
+Wrong answer.
+<p dir="ltr" style="text-align: left;">
+    <em>
+        Tip:
+    </em>
+    Formulas 3 and 4 are wrong.
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -2088,34 +2071,33 @@ Now we're almost at the target. So we're just moving \(k=3\) Colours for subject
                 <trueanswernote>zwischen6-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5 em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Richtige Antwort, gut gemacht!
-    <p>
-        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
-        <button class="buttonweiter" onclick="hide('zwischen6');show('teilaufgabe_c');hide('prtC-1');show('prtC-2');" type="button">
-            Weiter
-        </button>
-        <br/>
-    </p>
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5 em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Right answer, well done!
-    <p>
-        To continue, click on the following button:
-        <button class="buttonweiter" onclick="hide('zwischen6');show('teilaufgabe_c');hide('prtC-1');show('prtC-2');" type="button">
-            Next
-        </button>
-        <br/>
-    </p>
+Richtige Antwort, gut gemacht!
+<p>
+    Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+    <button class="buttonweiter" onclick="hide('zwischen6');show('teilaufgabe_c');hide('prtC-1');show('prtC-2');" type="button">
+        Weiter
+    </button>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
+Right answer, well done!
+<p>
+    To continue, click on the following button:
+    <button class="buttonweiter" onclick="hide('zwischen6');show('teilaufgabe_c');hide('prtC-1');show('prtC-2');" type="button">
+        Next
+    </button>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -2125,26 +2107,25 @@ Now we're almost at the target. So we're just moving \(k=3\) Colours for subject
                 <falseanswernote>zwischen6-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5 em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Falsche Antwort.
-    <p dir="ltr" style="text-align: left;">
-        &#220;berlegen Sie noch einmal, wieviele Umschl&#228;ge wir nur noch ziehen, wenn die F&#228;cher jeweils dieselbe Farbe haben.
-    </p>
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5 em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Wrong answer.
-    <p dir="ltr" style="text-align: left;">
-        Consider how many envelopes we only pull when the compartments have the same color.
-    </p>
+Falsche Antwort.
+<p dir="ltr" style="text-align: left;">
+    &#220;berlegen Sie noch einmal, wieviele Umschl&#228;ge wir nur noch ziehen, wenn die F&#228;cher jeweils dieselbe Farbe haben.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
+Wrong answer.
+<p dir="ltr" style="text-align: left;">
+    Consider how many envelopes we only pull when the compartments have the same color.
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -2171,16 +2152,15 @@ Now we're almost at the target. So we're just moving \(k=3\) Colours for subject
                 <falseanswernote>zwischen6-2-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p dir="ltr" style="text-align: left;">
-        Bitte geben Sie eine nat&#252;rliche Zahl ein, da Ihre Antwort sonst nicht als Anzahl der M&#246;glichkeiten interpretiert werden kann.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p dir="ltr" style="text-align: left;">
-        Please enter a natural number, otherwise your answer cannot be interpreted as a number of possibilities.
-    </p>
-</span>
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    Bitte geben Sie eine nat&#252;rliche Zahl ein, da Ihre Antwort sonst nicht als Anzahl der M&#246;glichkeiten interpretiert werden kann.
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    Please enter a natural number, otherwise your answer cannot be interpreted as a number of possibilities.
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>

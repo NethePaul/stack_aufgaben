@@ -6,38 +6,37 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Betrachten Sie die Funktion \(f:\mathbb{R}\to\mathbb{R}\) mit \(f(x)={@f(x)@}\).
-        <br/>
-    </p>
-    <p>
-        Geben Sie zwei Stellen an, an denen die Injektivit&#228;tsbedingung f&#252;r \(f\) verletzt ist.
-        <br/>
-    </p>
-    <p>
-        \(x_1 = \) [[input:ans1]] [[validation:ans1]]
-    </p>
-    <p>
-        \(x_2 = \) [[input:ans2]] [[validation:ans2]]
-    </p>
-</span>
-<span class="multilang" lang="en">
+[[lang code="de"]]
+<p>
+    Betrachten Sie die Funktion \(f:\mathbb{R}\to\mathbb{R}\) mit \(f(x)={@f(x)@}\).
+    <br/>
+</p>
+<p>
+    Geben Sie zwei Stellen an, an denen die Injektivit&#228;tsbedingung f&#252;r \(f\) verletzt ist.
+    <br/>
+</p>
+<p>
+    \(x_1 = \) [[/lang]][[lang code="en"]]
     <p>
         View the function \(f:\mathbb{R}\to\mathbb{R}\) with \(f(x)={@f(x)@}\).
         <br/>
     </p>
     <p>
-        Specify two locations where the injector condition for \(f\) is hurt.
+        Specify two locations where the injector condition for \(f\) is violated.
         <br/>
     </p>
     <p>
-        \(x_1 = \) [[input:ans1]] [[validation:ans1]]
+        \(x_1 = \) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
     </p>
     <p>
-        \(x_2 = \) [[input:ans2]] [[validation:ans2]]
+        \(x_2 = \) [[/lang]][[lang code="en"]]
     </p>
-</span>
+    <p>
+        \(x_2 = \) [[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]]
+    </p>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -60,12 +59,7 @@ sol2:-sol1-n1;</text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    [[feedback:prt1]]
-</span>
-<span class="multilang" lang="en">
-    [[feedback:prt1]]
-</span>
+[[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -79,32 +73,17 @@ sol2:-sol1-n1;</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -176,18 +155,17 @@ f2:f(ans2);</text>
                 <trueanswernote>prt1-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Es gilt n&#228;mlich: \(f({@ans1@})={@f1@}={@f2@}=f({@ans2@})\).
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        It is true that: \(f({@ans1@})={@f1@}={@f2@}=f({@ans2@})\).
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Es gilt n&#228;mlich: \(f({@ans1@})={@f1@}={@f2@}=f({@ans2@})\).
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    It is true that: \(f({@ans1@})={@f1@}={@f2@}=f({@ans2@})\).
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -197,18 +175,17 @@ f2:f(ans2);</text>
                 <falseanswernote>prt1-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Es gilt n&#228;mlich: \(f({@ans1@})={@f1@}\neq{@f2@}=f({@ans2@})\).
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        It is true that: \(f({@ans1@})={@f1@}\neq{@f2@}=f({@ans2@})\).
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Es gilt n&#228;mlich: \(f({@ans1@})={@f1@}\neq{@f2@}=f({@ans2@})\).
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    It is true that: \(f({@ans1@})={@f1@}\neq{@f2@}=f({@ans2@})\).
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>

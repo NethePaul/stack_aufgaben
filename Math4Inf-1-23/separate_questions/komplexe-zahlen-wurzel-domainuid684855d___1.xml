@@ -6,70 +6,58 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Gegeben sind die komplexen Zahlen:
-    </p>
-    <p>
-        \[z_1=@z1@\]
-    </p>
-    <p>
-        \[z_2=@z2@\]
-    </p>
-    <p>
-    </p>
-    <p>
-        Berechnen Sie den folgenden Ausdruck.
-    </p>
-    <p>
-        \[\Large\sqrt[@w@]{z_1\cdot z_2}\]
-    </p>
-    <p>
-    </p>
-    <p>
-        Berechnen Sie die Antwort in der Polarform \[\large z= r\cdot e^{\,j\cdot(\varphi+\alpha\cdot k)}, k=0,1,...\] und geben Sie \(\,r\,\), \(\,\varphi\,\) und \(\,\alpha\,\) ein.
-    </p>
-    <p>
-    </p>
-    <p>
+[[lang code="de"]]
+<p>
+    Gegeben sind die komplexen Zahlen:
+</p>
+<p>
+    \[z_1=@z1@\]
+</p>
+<p>
+    \[z_2=@z2@\]
+</p>
+<p>
+</p>
+<p>
+    Berechnen Sie den folgenden Ausdruck.
+</p>
+<p>
+    \[\Large\sqrt[@w@]{z_1\cdot z_2}\]
+</p>
+<p>
+</p>
+<p>
+    Berechnen Sie die Antwort in der Polarform \[\large z= r\cdot e^{\,j\cdot(\varphi+\alpha\cdot k)}, k=0,1,...\] und geben Sie \(\,r\,\), \(\,\varphi\,\) und \(\,\alpha\,\) ein.
+</p>
+<p>
+</p>
+<p>
+    <strong>
+        Hinweise:
+    </strong>
+</p>
+<ul>
+    <li>
+        Geben Sie die exakte Antworten ein. Keine Dezimalzahlen.
+    </li>
+    <li>
+        Schreiben Sie \(\pi\) als
         <strong>
-            Hinweise:
+            pi
         </strong>
-    </p>
-    <ul>
-        <li>
-            Geben Sie die exakte Antworten ein. Keine Dezimalzahlen.
-        </li>
-        <li>
-            Schreiben Sie \(\pi\) als
-            <strong>
-                pi
-            </strong>
-            .
-        </li>
-        <li>
-            Schreiben Sie \(\large\sqrt[n]{a}\) als
-            <strong>
-                a^(1/n)
-            </strong>
-        </li>
-    </ul>
-    <p>
-    </p>
-    <p>
-        \(r=\,\)[[input:ans1]] [[validation:ans1]]
-    </p>
-    <p>
-        \(\varphi=\,\)[[input:ans2]] [[validation:ans2]]
-    </p>
-    <p>
-        \(\alpha=\,\)[[input:ans3]] [[validation:ans3]]
-    </p>
-    <p>
-        [[feedback:prt1]]
-    </p>
-</span>
-<span class="multilang" lang="en">
+        .
+    </li>
+    <li>
+        Schreiben Sie \(\large\sqrt[n]{a}\) als
+        <strong>
+            a^(1/n)
+        </strong>
+    </li>
+</ul>
+<p>
+</p>
+<p>
+    \(r=\,\)[[/lang]][[lang code="en"]]
     <p>
         The complex figures are given:
     </p>
@@ -120,18 +108,29 @@
     <p>
     </p>
     <p>
-        \(r=\,\)[[input:ans1]] [[validation:ans1]]
+        \(r=\,\)[[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
     </p>
     <p>
-        \(\varphi=\,\)[[input:ans2]] [[validation:ans2]]
+        \(\varphi=\,\)[[/lang]][[lang code="en"]]
     </p>
     <p>
-        \(\alpha=\,\)[[input:ans3]] [[validation:ans3]]
+        \(\varphi=\,\)[[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]]
     </p>
     <p>
-        [[feedback:prt1]]
+        \(\alpha=\,\)[[/lang]][[lang code="en"]]
     </p>
-</span>
+    <p>
+        \(\alpha=\,\)[[/lang]][[input:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans3]][[lang code="de"]]
+    </p>
+    <p>
+        [[/lang]][[lang code="en"]]
+    </p>
+    <p>
+        [[/lang]][[feedback:prt1]][[lang code="de"]]
+    </p>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -177,44 +176,41 @@ abstand: (1/w)*2*%pi;</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Richtige Antwort, gut gemacht!
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Right answer, well done!
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Richtige Antwort, gut gemacht!
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Right answer, well done!
+</p>
+[[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihre Antwort ist teilweise korrekt.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your answer is partly correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Ihre Antwort ist teilweise korrekt.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer is partly correct.
+</p>
+[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Falsche Antwort.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Wrong answer.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Falsche Antwort.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Wrong answer.
+</p>
+[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -304,16 +300,15 @@ h: for i:-4 step 1 thru 4 do if larg+i*abstand-ans2=0 then p:1;</text>
                 <trueanswernote>prt1-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(r\) ist korrekt.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(r\) is correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(r\) ist korrekt.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(r\) is correct.
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -323,16 +318,15 @@ h: for i:-4 step 1 thru 4 do if larg+i*abstand-ans2=0 then p:1;</text>
                 <falseanswernote>prt1-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(r\) ist falsch.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(r\) is wrong.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(r\) ist falsch.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(r\) is wrong.
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -351,16 +345,15 @@ h: for i:-4 step 1 thru 4 do if larg+i*abstand-ans2=0 then p:1;</text>
                 <trueanswernote>prt1-2-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(\varphi\) ist korrekt.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(\varphi\) is correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(\varphi\) ist korrekt.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(\varphi\) is correct.
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>-</falsescoremode>
@@ -370,16 +363,15 @@ h: for i:-4 step 1 thru 4 do if larg+i*abstand-ans2=0 then p:1;</text>
                 <falseanswernote>prt1-2-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(\varphi\) ist falsch.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(\varphi\) is wrong.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(\varphi\) ist falsch.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(\varphi\) is wrong.
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -398,16 +390,15 @@ h: for i:-4 step 1 thru 4 do if larg+i*abstand-ans2=0 then p:1;</text>
                 <trueanswernote>prt1-3-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(\alpha\) ist korrekt.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(\alpha\) is correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(\alpha\) ist korrekt.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(\alpha\) is correct.
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>-</falsescoremode>
@@ -417,16 +408,15 @@ h: for i:-4 step 1 thru 4 do if larg+i*abstand-ans2=0 then p:1;</text>
                 <falseanswernote>prt1-3-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(\alpha\) ist falsch.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(\alpha\) is wrong.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(\alpha\) ist falsch.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(\alpha\) is wrong.
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>

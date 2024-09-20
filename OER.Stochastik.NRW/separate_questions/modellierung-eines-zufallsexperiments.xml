@@ -1,0 +1,1840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Modellierung eines Zufallsexperiments</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<style>
+    .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #a9f5bc;
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #e0f8e6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #dcb25e;
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #e7d2a7;
+                }
+
+    
+    
+    
+    .buttontipp {
+                                border: 1px solid black;
+                                background-color: #c9d3f6;
+                }
+
+    
+    
+    
+    .buttontipp:hover {
+                                background-color: #dbe1f9;
+                }
+
+    
+    
+    
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                                margin: 5px;
+                }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: .5em .5em 0;
+                }
+
+    
+    
+    
+    .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -.5em -.5em 0;
+                                padding: .5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] {
+                                padding: .5em;
+                }
+</style>
+<div>
+    <details>
+        <summary>
+            Inhalt und Umfang dieser Aufgabe
+        </summary>
+        <p>
+            In dieser Aufgabe bestimmen Sie den Ergebnisraum eines Zufallsexperiments und eine Ereignismenge. Anschlie&#223;end berechnen Sie die Wahrscheinlichkeit des Ereignisses. Die Aufgabe besteht aus den folgenden drei Teilaufgaben:
+        </p>
+        <ul>
+            <li>
+                In
+                <b>
+                    (a)
+                </b>
+                bestimmen Sie den Ergebnisraum eines Zufallsexperiments.
+            </li>
+            <li>
+                In
+                <b>
+                    (b)
+                </b>
+                bestimmen Sie eine Ereignismenge.
+            </li>
+            <li>
+                In
+                <b>
+                    (c)
+                </b>
+                berechnen Sie die Wahrscheinlichkeit, dass das Ereignis aus (b) eintritt.
+            </li>
+        </ul>
+    </details>
+    <hr/>
+</div>
+<p>
+    In einer Urne befinden sich \(n=4\) Kugeln, die mit den Zahlen 1 bis 4
+                beschriftet sind.
+</p>
+<p>
+    Wir betrachten das Zufallsexperiment, dass \(k=3\) Kugeln ohne Zur&#252;cklegen
+                gezogen werden. Dabei wird die Reihenfolge, in der die Kugeln gezogen
+                werden, ebenfalls beobachtet.
+</p>
+<!-- Erinnerung an alle Dinge, die aus vorherigen Aufgabenteilen bekannt sind (wird sukzessive gef&#252;llt) -->
+<div class="alert alert-primary rounded border border-primary" id="oer-aufgabe-10_div-bekanntes" style="display: none; padding: 1rem">
+</div>
+<div id="oer-aufgabe-10_aufgabe1" style="display: box">
+    <p>
+        <b>
+            (a)
+        </b>
+        Geben Sie den Ergebnisraum des Zufallsexperiments an.
+    </p>
+    <p>
+        Antwort: \(\Omega=\) [[/lang]][[lang code="en"]]
+        <style>
+            .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #a9f5bc;
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #e0f8e6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #dcb25e;
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #e7d2a7;
+                }
+
+    
+    
+    
+    .buttontipp {
+                                border: 1px solid black;
+                                background-color: #c9d3f6;
+                }
+
+    
+    
+    
+    .buttontipp:hover {
+                                background-color: #dbe1f9;
+                }
+
+    
+    
+    
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                                margin: 5px;
+                }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: .5em .5em 0;
+                }
+
+    
+    
+    
+    .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -.5em -.5em 0;
+                                padding: .5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] {
+                                padding: .5em;
+                }
+        </style>
+        <div>
+            <details>
+                <summary>
+                    Content and scope of this task
+                </summary>
+                <p>
+                    In this task, you define the result space of a random experiment and an event quantity. Then calculate the probability of the event. The task consists of the following three subtasks:
+                </p>
+                <ul>
+                    <li>
+                        In
+                        <b>
+                            (a)
+                        </b>
+                        determine the result space of a random experiment.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (b)
+                        </b>
+                        determine an event quantity.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (c)
+                        </b>
+                        calculate the probability that the event will enter (b).
+                    </li>
+                </ul>
+            </details>
+            <hr/>
+        </div>
+        <p>
+            In a urn \(n=4\) Balls with numbers 1 to 4
+inscription.
+        </p>
+        <p>
+            We consider the random experiment that \(k=3\) Balls without resetting
+to be drawn. The sequence in which the balls are drawn
+are also observed.
+        </p>
+        <!-- Erinnerung an alle Dinge, die aus vorherigen Aufgabenteilen bekannt sind (wird sukzessive gef&#252;llt) -->
+        <div class="alert alert-primary rounded border border-primary" id="oer-aufgabe-10_div-bekanntes" style="display: none; padding: 1rem">
+        </div>
+        <div id="oer-aufgabe-10_aufgabe1" style="display: box">
+            <p>
+                <b>
+                    (a)
+                </b>
+                Specify the result space of the random experiment.
+            </p>
+            <p>
+                Answer: \(\Omega=\) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
+            </p>
+            [[/lang]][[lang code="en"]]
+        </div>
+    </p>
+    [[/lang]][[feedback:prt1]][[lang code="de"]]
+</div>
+<div id="oer-aufgabe-10_aufgabe2" style="display: none">
+    <p>
+        <b>
+            (b)
+        </b>
+        Wir betrachten nun das Ereignis \(A\), dass
+                                {@summe_produkt_string@} der Zahlen, die auf den gezogenen Kugeln
+                                stehen, {#n1#} ist. Bitte geben Sie das Ereignis in der Mengenform an.
+    </p>
+    <p>
+        Antwort: \(A=\) [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<div id="oer-aufgabe-10_aufgabe2" style="display: none">
+    <p>
+        <b>
+            (b)
+        </b>
+        We now look at the event \(A\)that
+    {@summe_produkt_string@} the numbers on the drawn balls
+stand, {#n1#} is. Please indicate the event in the quantity form.
+    </p>
+    <p>
+        Answer: \(A=\) [[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]]
+    </p>
+    [[/lang]][[lang code="en"]]
+    [[/lang]][[feedback:prt2]][[lang code="de"]]
+</div>
+<div id="oer-aufgabe-10_aufgabe3" style="display: none">
+    <p>
+        <b>
+            (c)
+        </b>
+        Geben Sie die Wahrscheinlichkeit von \(A\) an. Bitte runden Sie nicht, sondern geben das exakte Ergebnis an.
+    </p>
+    <p>
+        Antwort: \(P(A)=\) [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<div id="oer-aufgabe-10_aufgabe3" style="display: none">
+    <p>
+        <b>
+            (c)
+        </b>
+        Give the probability of \(A\) on. Please do not round, but give the exact result.
+    </p>
+    <p>
+        Answer: \(P(A)=\) [[/lang]][[input:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans3]][[lang code="de"]]
+    </p>
+    [[/lang]][[lang code="en"]]
+    [[/lang]][[feedback:prt3]][[lang code="de"]]
+    <div id="oer-aufgabe-10_Hinweis_Annahme">
+        <i>
+            Hinweis: Wir gehen davon aus, dass alle Ergebnisse mit gleicher
+                                                Wahrscheinlichkeit auftreten.
+        </i>
+    </div>
+</div>
+<p id="oer-aufgabe-10_Hinweis_Eingabe" style="margin-top: 0.5rem; margin-bottom: 0.5rem">
+    <i>
+        Hinweis: Eine Menge k&#246;nnen Sie in der Form
+        <code>
+            {1,2,3}
+        </code>
+        und ein
+                                Tupel in der Form
+        <code>
+            [1,2,3]
+        </code>
+        angeben.
+    </i>
+</p>
+<p id="oer-aufgabe-10_Hinweis_Pruefen" style="margin-top: 0.5rem; margin-bottom: 0.5rem">
+    Bitte klicken Sie auf "Pr&#252;fen", wenn Sie die L&#246;sung eingegeben haben.
+</p>
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]][[lang code="en"]]
+<div id="oer-aufgabe-10_Hinweis_Annahme">
+    <i>
+        Note: We assume that all results have the same
+Probability occurs.
+    </i>
+</div>
+<p id="oer-aufgabe-10_Hinweis_Eingabe" style="margin-top: 0.5rem; margin-bottom: 0.5rem">
+    <i>
+        Note: A lot you can in the form
+        <code>
+            {1,2,3}
+        </code>
+        and
+Tupel in shape
+        <code>
+            [1,2,3]
+        </code>
+        indicate.
+    </i>
+</p>
+<p id="oer-aufgabe-10_Hinweis_Pruefen" style="margin-top: 0.5rem; margin-bottom: 0.5rem">
+    Please click "Check" if you have entered the solution.
+</p>
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="moodle_auto_format">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  Modellierung eines Zufallsexperiments
+
+  wurde entwickelt von
+  
+    Jonas Lache <jonas.lache[at]ruhr-uni-bochum.de>
+
+  nach einer Idee von
+  
+    Herold Dehling <herold.dehling[at]ruhr-uni-bochum.de>
+    Jonas Lache <jonas.lache[at]ruhr-uni-bochum.de>
+
+  an der Ruhr-Universit&#228;t Bochum.
+
+  Dieses Werk ist lizenziert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+
+  Diese Aufgabe bindet das Skript &#8216;stackselbstlern.js&#8217; von Michael
+  Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+/* Korrekter Ergebnisraum: */
+Omega: set([1,2,3],[1,3,2],[1,2,4],[1,4,2],[1,3,4],[1,4,3],
+    [2,1,3],[2,3,1],[2,1,4],[2,4,1],[2,3,4],[2,4,3],
+    [3,1,2],[3,2,1],[3,1,4],[3,4,1],[3,2,4],[3,4,2],
+    [4,1,2],[4,2,1],[4,2,3],[4,3,2],[4,1,3],[4,3,1]
+);
+/* Unterteilung in vier Teile f&#252;r Ansicht mit Zeilenumbruch im Feedback: */
+Omega_part1: listify(subset(Omega,lambda([li],is(li[1]=1))));
+Omega_part2: listify(subset(Omega,lambda([li],is(li[1]=2))));
+Omega_part3: listify(subset(Omega,lambda([li],is(li[1]=3))));
+Omega_part4: listify(subset(Omega,lambda([li],is(li[1]=4))));
+
+/* Entscheidung, ob in (b) die Summe oder das Produkt der Kugeln gegeben ist: */
+summe_produkt_string: rand([tr("die Summe","the sum"),tr("das Produkt","the product")]);
+
+/* Gegebene Summe/Produkt (Je nachdem, ob die Summe oder das Produkt gegeben ist) */
+n1: if summe_produkt_string=tr("die Summe","the sum") then rand_with_step(6,9,1) else rand([6,8,12,24]);
+
+/* Einzuf&#252;gendes Rechenzeichen (Je nachdem, ob die Summe oder das Produkt gegeben ist) */
+rechenzeichen: if summe_produkt_string=tr("die Summe","the sum") then "+" else "*";
+rechenzeichen_symbol: if summe_produkt_string=tr("die Summe","the sum") then "+" else "\\cdot";
+
+/* Korrekte Ereignismenge A */
+A1: setify(sublist(listify(Omega),lambda([Liste],apply(rechenzeichen,Liste)=n1)));
+
+/* Wahrscheinlichkeit f&#252;r (c): */
+p1: length(A1)/length(Omega);
+
+/* Ergebnisraum ohne Beachtung der Reihenfolge (evtl. gemachter Fehler): */
+Omega_f1: map(setify,Omega);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{#summe_produkt_string#} {#n1#}</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partly correct.[[/lang]]
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.[[/lang]]
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>(</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>Omega</tans>
+            <boxsize>193</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>A1</tans>
+            <boxsize>50</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>p1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>/* === Erkl&#228;rung der Knoten: ===
+Knoten 1: Ist die Antwort korrekt?
+Knoten 2: Ist die Antwort eine nichtleere Menge?
+Knoten 3: Ist jedes der Elemente ein Tupel/Liste? 
+Knoten 4: Ist die Antwort eine Teilmenge der gesuchten Menge? (d.h. fehlen nur Ergebnisse?) 
+Knoten 5: Liegen alle Eintr&#228;ge der Tupel im Definitionsbereich {1,2,3,4}?
+Knoten 6: Haben alle Elemente genau drei Eintr&#228;ge?
+Knoten 7: Enthalten alle Tupel jeden Wert nur einmal?
+Knoten 8: Ist jedes der Elemente eine Menge? 
+Knoten 9: Ist jedes der Elemente eine Zahl? 
+*/
+
+/* ans1 als Liste (um besser an die Elemente zu kommen): */
+ans1_L: listify(ans1);
+
+/*Ist die Antwort eine nichtleere Menge?*/
+nichtleeremengep: is(setp(ans1) and length(ans1)#0);
+
+/*Ist jedes der Elemente ein Tupel/Liste?*/
+alleslistenp: is(listp(ans1_L) and unique(map(listp,ans1_L))=[true]);
+
+/*Ist die Antwort eine Teilmenge der gesuchten Menge?*/
+istteilmengep: is(setp(ans1) and subsetp(ans1,Omega));
+
+/*Liegen alle Eintr&#228;ge der Tupel im Definitionsbereich {1,2,3,4}?*/
+alleimdefbereichp: is(
+    nichtleeremengep and
+    alleslistenp and
+    unique(map(lambda([x],member(x,set(1,2,3,4))),apply(append,ans1_L)))=[true]
+);
+
+/*Haben alle Elemente genau drei Eintr&#228;ge?*/
+alledreieintraegep: is(
+    nichtleeremengep and
+    alleslistenp and 
+    unique(map(length,ans1_L))=[3]
+);
+
+/*Enthalten alle Tupel jeden Wert nur einmal?*/
+keinedoppeltenwertep: is(
+    nichtleeremengep and
+    alleslistenp and
+    length(sublist(ans1_L,lambda([L],length(L)#length(unique(L)))))=0
+);
+
+/*Ist jedes der Elemente eine Menge?*/
+allesmengenp: is(
+    nichtleeremengep and
+    listp(ans1_L) and
+    unique(map(setp,ans1_L))=[true]
+);
+
+/*Ist jedes der Elemente eine Zahl?*/
+alleszahlenp: is(
+    nichtleeremengep and
+    listp(ans1_L) and
+    unique(map(numberp,ans1_L))=[true]
+);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>Omega</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-aufgabe-10_prt1_button" style="display: box">
+    <p>
+        Bei diesem Zufallsexperiment hat der Ergebnisraum genau 24 Elemente. Bei
+                                Experimenten, in denen mit Beachtung der Reihenfolge gezogen wird,
+                                werden die einzelnen Ergebnisse durch Tupel beschrieben. Da drei Kugeln
+                                gezogen werden, sind es Tupel der L&#228;nge 3. Und weil die Kugeln nach dem
+                                Ziehen nicht zur&#252;ckgelegt werden, sind in den Tupeln keine doppelten
+                                Elemente enthalten. Dies f&#252;hrt zu dem Ergebnisraum
+    </p>
+    <p>
+        \(\begin{equation} \begin{split} \Omega = &amp;\{
+                                {@tex1(sequenceify(Omega_part1))@}, \\\
+                                &amp;{@tex1(sequenceify(Omega_part2))@}, \\\
+                                &amp;{@tex1(sequenceify(Omega_part3))@},\\\
+                                &amp;{@tex1(sequenceify(Omega_part4))@} \} \end{split} \end{equation}\)
+    </p>
+    <hr/>
+    <p>
+        Bitte klicken Sie auf den folgenden Button, um zum n&#228;chsten Aufgabenteil
+                                zu gelangen:
+        <button class="buttonweiter" id="oer-aufgabe-10-btn1" onclick="
+                            hide('oer-aufgabe-10_aufgabe1');
+                            show('oer-aufgabe-10_aufgabe2');
+                            show('oer-aufgabe-10_div-bekanntes');" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<script>
+    // Einf&#252;gen der bekannten Infos:
+                (function() {
+                                "use strict";
+                                const ansDiv = document.querySelector("#oer-aufgabe-10_div-bekanntes");
+                                const paragraph = document.createElement("p");
+                                paragraph.append("Bitte bearbeiten Sie nun den n&#228;chsten Aufgabenteil. Zur Erinnerung:");
+                                ansDiv.append(paragraph);
+                                const paragraph2 = document.createElement("p");
+                                paragraph2.append("\\"+"("+"\\"+"begin{equation}"+ "\\"+"begin{split}"+"\\Omega"+"=&"+"\\"+"{"+{#tex1(sequenceify(Omega_part1))#}+", "+"\\"+"\\"+"\\ "+"&"+{#tex1(sequenceify(Omega_part2))#}+", "+"\\"+"\\"+"\\ "+"&"+{#tex1(sequenceify(Omega_part3))#}+","+"\\"+"\\"+"\\ "+"&"+{#tex1(sequenceify(Omega_part4))#}+"\\"+"}"+"\\"+"end{split}"+"\\"+"end{equation}"+"\\"+")");
+                                ansDiv.append(paragraph2);
+                })();
+</script>
+[[/lang]][[lang code="en"]]
+<div id="oer-aufgabe-10_prt1_button" style="display: box">
+    <p>
+        In this random experiment, the result space has exactly 24 elements. For
+experiments in which the order is observed,
+the individual results are described by Tupel. Three balls
+they are tuples of length 3. And because the balls after the
+If you do not move, you do not have double in the tuples
+Elements included. This leads to the result area
+    </p>
+    <p>
+        \(\begin{equation} \begin{split} \Omega = &amp;\{
+                                {@tex1(sequenceify(Omega_part1))@}, \\\
+                                &amp;{@tex1(sequenceify(Omega_part2))@}, \\\
+                                &amp;{@tex1(sequenceify(Omega_part3))@},\\\
+                                &amp;{@tex1(sequenceify(Omega_part4))@} \} \end{split} \end{equation}\)
+    </p>
+    <hr/>
+    <p>
+        Please click on the following button to the next task part
+to get:
+        <button class="buttonweiter" id="oer-aufgabe-10-btn1" onclick="
+                            hide('oer-aufgabe-10_aufgabe1');
+                            show('oer-aufgabe-10_aufgabe2');
+                            show('oer-aufgabe-10_div-bekanntes');" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<script>
+    // Einf&#252;gen der bekannten Infos:
+                (function() {
+                                "use strict";
+                                const ansDiv = document.querySelector("#oer-aufgabe-10_div-bekanntes");
+                                const paragraph = document.createElement("p");
+                                paragraph.append("Bitte bearbeiten Sie nun den n&#228;chsten Aufgabenteil. Zur Erinnerung:");
+                                ansDiv.append(paragraph);
+                                const paragraph2 = document.createElement("p");
+                                paragraph2.append("\\"+"("+"\\"+"begin{equation}"+ "\\"+"begin{split}"+"\\Omega"+"=&"+"\\"+"{"+{#tex1(sequenceify(Omega_part1))#}+", "+"\\"+"\\"+"\\ "+"&"+{#tex1(sequenceify(Omega_part2))#}+", "+"\\"+"\\"+"\\ "+"&"+{#tex1(sequenceify(Omega_part3))#}+","+"\\"+"\\"+"\\ "+"&"+{#tex1(sequenceify(Omega_part4))#}+"\\"+"}"+"\\"+"end{split}"+"\\"+"end{equation}"+"\\"+")");
+                                ansDiv.append(paragraph2);
+                })();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>nichtleeremengep</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ein Ergebnisraum ist laut Definition immer eine nichtleere Menge, Ihre Antwort ist es aber nicht.
+</p>
+<p>
+    Bitte geben Sie eine nichtleere Menge ein. Klicken Sie dann erneut auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    According to definition, a result room is always a non-empty amount, but your answer is not.
+</p>
+<p>
+    Please enter a non-empty amount. Then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>alleslistenp</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>prt1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>7</falsenextnode>
+                <falseanswernote>prt1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>istteilmengep</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Die von Ihnen angegebene Menge ist eine Teilmenge des korrekten Ergebnisraums. Das bedeutet, dass alle Elemente Ihrer Menge richtig sind, aber welche fehlen.
+</p>
+<p>
+    Gehen Sie strukturiert an die Sache heran und sortieren Sie die Ergebnisse (z. B. danach, welche Kugel zuerst gezogen wird). So vergessen Sie kein Ergebnis.
+</p>
+<p>
+    Tipp: Insgesamt sind es 24 Ergebnisse. Eines der fehlenden Elemente ist {@listify(setdifference(Omega,ans1))[1]@}.
+</p>
+<p>
+    Bitte korrigieren Sie Ihre Eingabe und klicken Sie dann erneut auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The quantity you provide is a subset of the correct result area. This means that all elements of your amount are correct, but which are missing.
+</p>
+<p>
+    Go to the item in a structured manner and sort the results (e.g. after which the ball is pulled first). So do not forget a result.
+</p>
+<p>
+    Tip: Overall, there are 24 results. One of the missing elements is {@listify(setdifference(Omega,ans1))[1]@}.
+</p>
+<p>
+    Please correct your input and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prt1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>alleimdefbereichp</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>prt1-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    In Ihrer Menge befindet sich mindestens ein Tupel, in dem sich ein Eintrag au&#223;erhalb des Definitionsbereichs befindet. Bei dem betrachteten Zufallsexperiment sind die Kugeln mit den Zahlen von 1 bis 4 beschriftet. Daraus ergibt sich, dass der Definitionsbereich f&#252;r Eintr&#228;ge der Tupel (d. h. der Ergebnisse) \( \{1,2,3,4\} \) ist.
+</p>
+<p>
+    Konkret betrifft das die folgenden Tupel: {@sequenceify(sublist(ans1_L,lambda([x],intersection(setify(x),set(1,2,3,4))#setify(x))))@}
+</p>
+<p>
+    Bitte korrigieren Sie Ihre Eingabe und klicken Sie dann erneut auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    In your quantity there is at least one tuple in which an entry is located outside the definition range. In the random experiment considered, the balls are labeled with the numbers from 1 to 4. It follows that the definition range for entries of the tuple (i.e. the results) \( \{1,2,3,4\} \) is.
+</p>
+<p>
+    Specifically, this concerns the following tuples: {@sequenceify(sublist(ans1_L,lambda([x],intersection(setify(x),set(1,2,3,4))#setify(x))))@}
+</p>
+<p>
+    Please correct your input and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>alledreieintraegep</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>6</truenextnode>
+                <trueanswernote>prt1-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    In Ihrer Menge befindet sich mindestens ein Tupel, das nicht drei Eintr&#228;ge hat, n&#228;mlich: {@sequenceify(sublist(ans1_L,lambda([x],length(x)#3)))@}
+</p>
+<p>
+    Da aber ein Zufallsexperiment modelliert werden soll, bei dem drei Kugeln gezogen werden, werden alle Ergebnisse durch Tupel mit drei Eintr&#228;gen (z. B.
+    <code>
+        [1,2,3]
+    </code>
+    ) modelliert.
+</p>
+<p>
+    Bitte korrigieren Sie Ihre Eingabe und klicken Sie dann erneut auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    In your quantity there is at least one tuple that does not have three entries, namely: {@sequenceify(sublist(ans1_L,lambda([x],length(x)#3)))@}
+</p>
+<p>
+    However, since a random experiment is to be modelled, in which three balls are drawn, all results are obtained by tuple with three entries (e.g.
+    <code>
+        [1,2,3]
+    </code>
+    ) modelled.
+</p>
+<p>
+    Please correct your input and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>6</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>keinedoppeltenwertep</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-7-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-7-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    In Ihrer Menge befindet sich mindestens ein Tupel, in dem sich Eintr&#228;ge doppeln, n&#228;mlich: {@sequenceify(sublist(ans1_L,lambda([x],length(x)#length(unique(x)))))@}
+</p>
+<p>
+    Da aber ein Zufallsexperiment modelliert werden soll, bei dem die Kugeln nach dem Ziehen
+    <i>
+        nicht
+    </i>
+    zur&#252;ckgelegt werden, werden alle Ergebnisse durch Tupel ohne doppelte Eintr&#228;ge (z. B.
+    <code>
+        [1,2,3]
+    </code>
+    ) modelliert.
+</p>
+<p>
+    Bitte korrigieren Sie Ihre Eingabe und klicken Sie dann erneut auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    In your quantity there is at least one tuple in which entries double, namely: {@sequenceify(sublist(ans1_L,lambda([x],length(x)#length(unique(x)))))@}
+</p>
+<p>
+    However, since a random experiment is to be modeled, in which the balls are to be modeled after drawing
+    <i>
+        not
+    </i>
+    all results will be completed by Tupel without duplicate entries (e.g.
+    <code>
+        [1,2,3]
+    </code>
+    ) modelled.
+</p>
+<p>
+    Please correct your input and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>7</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>allesmengenp</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-8-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Menge enth&#228;lt als Elemente Mengen. Da aber in Mengen die Reihenfolge der Elemente nicht beachtet wird, modelliert man bei Zufallsexperimenten, in denen die Reihenfolge beachtet werden soll, die Ergebnisse nicht durch Mengen, sondern durch Tupel.
+</p>
+<p>
+    Bitte geben Sie eine Menge an, deren Elemente Tupel (z. B.
+    <code>
+        [1,2,3]
+    </code>
+    ) sind. Klicken Sie dann erneut auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Their quantity contains quantities as elements. However, since the order of the elements is not observed in quantities, the results are modeled by random experiments in which the order is to be observed, not by quantities, but by tuple.
+</p>
+<p>
+    Please specify a quantity whose elements Tupel (e.g.
+    <code>
+        [1,2,3]
+    </code>
+    ) are. Then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>8</falsenextnode>
+                <falseanswernote>prt1-8-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>8</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>alleszahlenp</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-9-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Menge enth&#228;lt als Elemente Zahlen. Ein Ergebnisraum enth&#228;lt laut Definition alle m&#246;glichen Ergebnisse eines Zufallsexperiments. Wir modellieren hier ein Zufallsexperiment, bei dem wir
+    <i>
+        ohne Zur&#252;cklegen
+    </i>
+    Kugeln ziehen und die
+    <i>
+        Reihenfolge beachten
+    </i>
+    . Dies modelliert man durch Tupel und nicht durch Zahlen.
+</p>
+<p>
+    Bitte geben Sie eine Menge an, deren Elemente alle Ergebnisse des in der Aufgabenstellung genannten Zufallsexperiments sind und modellieren Sie die Ergebnisse durch Tupel. Klicken Sie dann erneut auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Their quantity contains numbers as elements. According to definition, a result room contains all possible results of a random experiment. We are modeling a random experiment in which we
+    <i>
+        without resetting
+    </i>
+    Pulling balls and the
+    <i>
+        Note order
+    </i>
+    . This is modeled by tuple and not by numbers.
+</p>
+<p>
+    Please specify a quantity whose elements are all the results of the random experiment mentioned in the task and model the results by Tupel. Then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-9-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ein Ergebnisraum enth&#228;lt laut Definition alle m&#246;glichen Ergebnisse eines Zufallsexperiments. Ihre Menge enth&#228;lt aber Elemente, die &#8211; zumindest f&#252;r dieses konkreten Beispiel &#8211; die Ergebnisse nicht korrekt modellieren. Konkret betrifft das folgende Elemente: {@sequenceify(sublist(ans1_L,lambda([x],listp(x)=false)))@}
+</p>
+<p>
+    Bitte geben Sie eine Menge an, deren Elemente alle Ergebnisse des in der Aufgabenstellung genannten Zufallsexperiments sind und verwenden Sie eine geeignete Modellierung. Klicken Sie dann erneut auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    According to definition, a result room contains all possible results of a random experiment. Their quantity contains elements that, at least for this specific example, do not correctly model the results. Specifically, the following elements apply: {@sequenceify(sublist(ans1_L,lambda([x],listp(x)=false)))@}
+</p>
+<p>
+    Please specify a quantity whose elements are all the results of the random experiment mentioned in the task and use a suitable modeling. Then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text><![CDATA[/* === Erkl&#228;rung der Knoten: ===
+Knoten 1: Ist die Antwort korrekt?
+Knoten 2: Ist die Antwort eine Menge?
+    Knoten 3: Ist die Menge leer?
+Knoten 4: Ist ans2 Teilmenge des Ergebnisraums?
+Knoten 5: Ist ans2 nur unvollst&#228;ndig oder enth&#228;lt es falsche Elemente?
+*/
+
+/* ans2 als Liste: */
+ans2_L: listify(ans2);
+
+/*Ist die Antwort eine Teilmenge des Ergebnisraums?*/
+istteilmengevonomegap: is(
+    setp(ans2) and
+    subsetp(ans2,Omega)
+);
+
+/*Ist ans2 unvollst&#228;ndig?*/
+unvollstaendigp: is(
+    setp(ans2) and
+    length(setdifference(ans2,A1))>0
+);]]></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>A1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-aufgabe-10_prt2_button" style="display: box">
+    <p>
+        F&#252;r Elemente \((\omega_1,\omega_2,\omega_3)\in\Omega\) gibt es nur eine
+                                begrenzte Anzahl an M&#246;glichkeiten, sodass
+                                \(\omega_1\,{@rechenzeichen_symbol@}\,\omega_2\,{@rechenzeichen_symbol@}\,\omega_3
+                                = {@n1@}\) gilt. Es gibt sogar nur eine m&#246;gliche Kombination von Kugeln,
+                                auf die diese Eigenschaft zutrifft, n&#228;mlich {@sequenceify(ans2_L[1])@}.
+                                Da bei diesem Zufallsexperiment aber die Reihenfolge, in der die Kugeln
+                                gezogen werden, beachtet wird, ist in der Ereignismenge \(A\) je ein
+                                Tupel f&#252;r jede m&#246;gliche Permutation dieser drei Zahlen enthalten. Daraus
+                                ergibt sich die L&#246;sung \(A={@A1@}\)
+    </p>
+    <hr/>
+    <p>
+        Bitte klicken Sie auf den folgenden Button, um zum n&#228;chsten Aufgabenteil zu gelangen:
+        <button class="buttonweiter" id="oer-aufgabe-10-btn2" onclick="
+                            hide('oer-aufgabe-10_aufgabe2');
+                            show('oer-aufgabe-10_aufgabe3');
+                            hide('oer-aufgabe-10_Hinweis_Eingabe');" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<script>
+    // Einf&#252;gen der bekannten Infos:
+                (function() {
+                                "use strict";
+                                const ansDiv = document.querySelector("#oer-aufgabe-10_div-bekanntes");
+                                const paragraph = document.createElement("p");
+                                paragraph.append("und "+"\\"+"("+"\\"+"small{A="+{#tex1(ans2)#}+"}"+"\\"+")");
+                                ansDiv.append(paragraph);
+                })();
+</script>
+[[/lang]][[lang code="en"]]
+<div id="oer-aufgabe-10_prt2_button" style="display: box">
+    <p>
+        For elements \((\omega_1,\omega_2,\omega_3)\in\Omega\) there is only one
+limited number of possibilities so that
+    \(\omega_1\,{@rechenzeichen_symbol@}\,\omega_2\,{@rechenzeichen_symbol@}\,\omega_3
+                                = {@n1@}\) Article 2 There is even a possible combination of balls,
+to which this property applies, namely {@sequenceify(ans2_L[1])@}.
+Since in this random experiment the sequence in which the balls
+to be drawn, considered, is in the event quantity \(A\) one
+Tupel for each possible permutation of these three numbers included. This
+the solution \(A={@A1@}\)
+    </p>
+    <hr/>
+    <p>
+        Please click the following button to get to the next task:
+        <button class="buttonweiter" id="oer-aufgabe-10-btn2" onclick="
+                            hide('oer-aufgabe-10_aufgabe2');
+                            show('oer-aufgabe-10_aufgabe3');
+                            hide('oer-aufgabe-10_Hinweis_Eingabe');" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<script>
+    // Einf&#252;gen der bekannten Infos:
+                (function() {
+                                "use strict";
+                                const ansDiv = document.querySelector("#oer-aufgabe-10_div-bekanntes");
+                                const paragraph = document.createElement("p");
+                                paragraph.append("und "+"\\"+"("+"\\"+"small{A="+{#tex1(ans2)#}+"}"+"\\"+")");
+                                ansDiv.append(paragraph);
+                })();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>setp(ans2)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prt2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie sollten das Ereignis als Menge angeben, Ihre Antwort ist aber keine.
+</p>
+<p>
+    Bitte geben Sie eine Menge ein. Klicken Sie dann erneut auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You should specify the event as a quantity, but your answer is not.
+</p>
+<p>
+    Please enter a lot. Then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>emptyp(ans2)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die leere Menge angegeben. Es gibt aber Ergebnisse, f&#252;r die gilt, dass {@summe_produkt_string@} der Zahlen, die auf den gezogenen Kugeln stehen, {@n1@} ist.  Ein Beispiel daf&#252;r ist {@listify(A1)[1]@}.
+</p>
+<p>
+    Bitte geben Sie eine nichtleere Menge ein und klicken Sie dann erneut auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have given the empty quantity. However, there are results for which: {@summe_produkt_string@} the numbers standing on the drawn balls, {@n1@} is. An example is {@listify(A1)[1]@}.
+</p>
+<p>
+    Please enter a non-empty quantity and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prt2-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>istteilmengevonomegap</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>prt2-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antwort ist keine Teilmenge Ihres Ergebnisraums \(\Omega\), das hei&#223;t in Ihrer Menge sind Elemente zu finden, die keine m&#246;glichen Ergebnisse des Zufallsexperiments sind.
+</p>
+<p>
+    Konkret betrifft das die folgenden Elemente: {@sequenceify( listify(setdifference(ans2,Omega)) )@}
+</p>
+<p>
+    Bitte geben Sie eine Teilmenge von \(\Omega\) an und klicken Sie dann erneut auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer is not a subset of your earnings room \(\Omega\), i.e. in your quantity you can find elements that are not possible results of chance experiment.
+</p>
+<p>
+    Specifically, this concerns the following elements: {@sequenceify( listify(setdifference(ans2,Omega)) )@}
+</p>
+<p>
+    Please give a subset of \(\Omega\) and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>unvollstaendigp</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antwort ist eine Teilmenge des Ereignisses \(A\), aber unvollst&#228;ndig. Eines der fehlenden Elemente lautet {@listify(setdifference(A1,ans2))[1]@}.
+</p>
+<p>
+    Bitte erg&#228;nzen Sie Ihre Eingabe und klicken Sie dann erneut auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer is a part of the event \(A\)but incomplete. One of the missing elements is {@listify(setdifference(A1,ans2))[1]@}.
+</p>
+<p>
+    Please add your input and then click "Check".
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antwort ist eine Teilmenge des Ergebnisraums \(\Omega\). Allerdings enth&#228;lt sie Ergebnisse, die nicht die geforderte Eigenschaft erf&#252;llen, und somit keine Elemente von \(A\) sind. Dies betrifft die folgenden Elemente: {@sequenceify(sublist(listify(ans2_L),lambda([Liste],apply(rechenzeichen,Liste)#n1)))@}
+</p>
+<p>
+    Bitte korrigieren Sie Ihre Eingabe und klicken Sie dann erneut auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer is a subset of the result area \(\Omega\). However, it contains results that do not meet the required property and thus do not contain any elements of \(A\) are. This relates to the following elements: {@sequenceify(sublist(listify(ans2_L),lambda([Liste],apply(rechenzeichen,Liste)#n1)))@}
+</p>
+<p>
+    Please correct your input and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>/* === Erkl&#228;rung der Knoten: ===
+Knoten 1: Ist die Antwort eine Zahl?
+Knoten 2: Ist die Antwort korrekt?
+Knoten 3: Ist die Antwort die Gegenwahrscheinlichkeit der korrekten Antwort?
+Knoten 4: Ist die Antwort 0&#8804;p&#8804;1?
+Knoten 5: Wurde #Omega/#A gerechnet?
+*/</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>numberp(ans3)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihr Wert ist keine Zahl. Wahrscheinlichkeiten sind definitionsgem&#228;&#223; aber immer eine Zahl.
+</p>
+<p>
+    Bitte korrigieren Sie Ihre Eingabe und klicken Sie dann erneut auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Their value is not a number. Probabilities are by definition always a number.
+</p>
+<p>
+    Please correct your input and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>p1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sind ein Ergebnisraum \(\Omega\) und ein Ereignis \(A\subseteq\Omega\)
+                bekannt, dann kann die Wahrscheinlichkeit des Ereignisses mit der
+                Laplace-Formel \(P(A)=\frac{\#A}{\#\Omega}\) berechnet werden (wobei
+                "\(\#\)" die Anzahl der Elemente bezeichnet). In unserem Fall gilt \(\#A =
+                {@length(A1)@}\) sowie \(\#\Omega = {@length(Omega)@}\), also gilt
+                \(P(A)=\frac{{@length(A1)@}}{{@length(Omega)@}}={@ans3@}\).
+</p>
+<p>
+    &#220;brigens: Um die Laplace-Formel anwenden zu k&#246;nnen, sind gar keine genauen
+                Kenntnisse &#252;ber die Elemente von \(\Omega\) oder \(A\) notwendig. Wichtig
+                ist nur, dass jeweils die Anzahl der Elemente bekannt ist. Aus diesem Grund
+                gibt es eine Reihe von Formeln, mit denen man diese bestimmen kann, ohne
+                jedes einzelne Element aufschreiben zu m&#252;ssen.
+</p>
+<hr/>
+<p>
+    Herzlichen Gl&#252;ckwunsch, Sie sind am Ende der Aufgabe angelangt. Sie sollten
+                nun durch systematisches Aufz&#228;hlen den Ergebnisraum eines Zufallsexperiments
+                sowie eine Ereignismenge bestimmen und aus diesen beiden die
+                Wahrscheinlichkeit des Ereignisses berechnen k&#246;nnen.
+</p>
+<script>
+    window.onload = function () {
+                                document.getElementById(
+                                                "oer-aufgabe-10_Hinweis_Eingabe"
+                                ).style.display = "none";
+                                document.getElementById(
+                                                "oer-aufgabe-10_Hinweis_Annahme"
+                                ).style.display = "none";
+                                document.getElementById(
+                                                "oer-aufgabe-10_Hinweis_Pruefen"
+                                ).style.display = "none";
+                                document.getElementById("oer-aufgabe-10_div-bekanntes").style.display =
+                                                "none";
+                };
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    Are the result room \(\Omega\) and an event \(A\subseteq\Omega\)then the probability of the event with the
+Laplace formula \(P(A)=\frac{\#A}{\#\Omega}\) (in which
+"\(\#\)" denotes the number of elements). In our case \(\#A =
+                {@length(A1)@}\) and \(\#\Omega = {@length(Omega)@}\), so apply
+    \(P(A)=\frac{{@length(A1)@}}{{@length(Omega)@}}={@ans3@}\).
+</p>
+<p>
+    By the way: In order to be able to apply the Laplace formula, no exact
+Knowledge of the elements of \(\Omega\) or \(A\) necessary. Important
+is only that the number of elements is known in each case. That is why
+there are a number of formulas with which you can determine them without
+to have to write down each individual element.
+</p>
+<hr/>
+<p>
+    Congratulations, you have reached the end of the task. You should
+now by systematic listing the results of a random experiment
+and determine an event quantity and from these two
+Probability of the event can be calculated.
+</p>
+<script>
+    window.onload = function () {
+                                document.getElementById(
+                                                "oer-aufgabe-10_Hinweis_Eingabe"
+                                ).style.display = "none";
+                                document.getElementById(
+                                                "oer-aufgabe-10_Hinweis_Annahme"
+                                ).style.display = "none";
+                                document.getElementById(
+                                                "oer-aufgabe-10_Hinweis_Pruefen"
+                                ).style.display = "none";
+                                document.getElementById("oer-aufgabe-10_div-bekanntes").style.display =
+                                                "none";
+                };
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt3-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>1-p1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die Gegenwahrscheinlichkeit der gesuchten Wahrscheinlichkeit angegeben.
+</p>
+<p>
+    Bitte korrigieren Sie Ihre Eingabe und klicken Sie dann erneut auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    They have indicated the counter probability of the desired probability.
+</p>
+<p>
+    Please correct your input and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prt3-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans><![CDATA[is(ans3>=0) and is(ans3<=1)]]></sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>prt3-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prt3-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antwort liegt nicht im Intervall \([0,1]\). Wahrscheinlichkeiten nehmen definitionsgem&#228;&#223; aber immer einen Wert zwischen 0 und 1 an.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer is not in interval \([0,1]\). Probabilities, however, always assume a value between 0 and 1.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>length(Omega)/length(A1)</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Haben Sie vielleicht die Anzahl aller Ergebnisse durch die Anzahl der Ergebnisse des Ereignisses geteilt (anstatt umgekehrt)?
+</p>
+<p>
+    Bitte korrigieren Sie Ihre Eingabe und klicken Sie dann erneut auf "Pr&#252;fen".
+    <br/>
+    [[/lang]][[lang code="en"]]
+    <p>
+        Have you perhaps shared the number of results by the number of results of the event (instead of vice versa)?
+    </p>
+    <p>
+        Please correct your input and then click "Check" again.
+        <br/>
+        [[/lang]]
+    </p>
+</p>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Bitte korrigieren Sie Ihre Eingabe und klicken Sie dann erneut auf "Pr&#252;fen".
+</p>
+<p>
+    Tipp: Verwenden Sie die Laplace-Verteilung (diskrete Gleichverteilung).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Please correct your input and then click "Check" again.
+</p>
+<p>
+    Tip: Use the Laplace distribution (discrete equal distribution).
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>365875958</deployedseed>
+        <deployedseed>1646667833</deployedseed>
+        <deployedseed>1579016987</deployedseed>
+        <deployedseed>1561892309</deployedseed>
+        <deployedseed>1897150389</deployedseed>
+        <deployedseed>2036295892</deployedseed>
+        <deployedseed>693763685</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <description/>
+            <testinput>
+                <name>ans1</name>
+                <value>Omega</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>A1</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>p1</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt3-2-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <description/>
+            <testinput>
+                <name>ans1</name>
+                <value>Omega</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>A1</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>decimalplaces(p1,2)</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt3-2-T</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

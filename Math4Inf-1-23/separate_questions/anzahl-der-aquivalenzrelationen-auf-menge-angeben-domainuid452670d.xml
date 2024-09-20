@@ -6,14 +6,22 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    Wie viel &#196;quivalenzrelationen gibt es auf der Menge \(Y={@setify(Y)@}\)?
+</p>
+<p>
+    [[/lang]][[lang code="en"]]
     <p>
-        Wie viel &#196;quivalenzrelationen gibt es auf der Menge \(Y={@setify(Y)@}\)?
+        How many equivalence ratios exist on the set \(Y={@setify(Y)@}\)?
     </p>
     <p>
-        [[input:ans1]]
+        [[/lang]][[input:ans1]][[lang code="de"]]
         <span style="font-size: 0.9375rem;">
-            [[validation:ans1]]
+            [[/lang]][[lang code="en"]]
+            <span style="font-size: 0.9375rem;">
+                [[/lang]][[validation:ans1]][[lang code="de"]]
+            </span>
         </span>
     </p>
     <p>
@@ -31,119 +39,109 @@
             Jede &#196;quivalenzrelation unterteilt die Menge in &#196;quivalenzklassen. &#160;Wie viele &#196;quivalenzklassen welcher Gr&#246;&#223;e kann es geben?
         </span>
     </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        How much equivalence ratios exist on the amount \(Y={@setify(Y)@}\)?
-    </p>
-    <p>
-        [[input:ans1]]
-        <span style="font-size: 0.9375rem;">
-            [[validation:ans1]]
-        </span>
-    </p>
-    <p>
-        <span style="font-size: 0.9375rem;">
-            <br/>
-        </span>
-    </p>
-    <p>
-        <span>
-            <em>
-                <strong>
-                    Note:
-                </strong>
-            </em>
-            Each equivalence ratio divides the amount into equivalence classes. How many equivalence classes what size can there be?
-        </span>
-    </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+<p>
+    <span style="font-size: 0.9375rem;">
+        <br/>
+    </span>
+</p>
+<p>
+    <span>
+        <em>
+            <strong>
+                Note:
+            </strong>
+        </em>
+        Each equivalence ratio divides the set into equivalence classes. How many equivalence classes of what size can there be?
+    </span>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p dir="ltr" style="text-align: left;">
-        <strong>
-            Hinweis zur L&#246;sung:
-        </strong>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        Es gibt insgesamt 15 verschiedene &#196;quivalenzrelationen auf der Menge \(Y={@setify(Y)@}\). Eine &#196;quivalenzrelation ist eine Teilmenge des kartesischen Produkts der Menge mit sich selbst, die bestimmten Eigenschaften erf&#252;llt. In diesem Fall gibt es 15 verschiedene M&#246;glichkeiten, diese Eigenschaften zu erf&#252;llen. Die sind:
-        <br/>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-    </p>
-    <ul>
-        <li>
-            1 triviale &#196;quivalenzrelation, bei der jedes Element mit sich selbst &#228;quivalent ist.
-        </li>
-        <li>
-            1 &#196;quivalenzrelation, bei der alle Elemente in einer einzigen &#196;quivalenzklasse sind.
-        </li>
-        <li>
-            <span style="font-size: 0.9375rem;">
-                3 &#196;quivalenzrelation, bei der zwei Elemente in einer &#196;quivalenzklasse sind, und die anderen zwei in einer anderen.
-            </span>
-            <br/>
-        </li>
-        <li>
-            <span style="font-size: 0.9375rem;">
-                6 &#196;quivalenzrelation, bei der zwei Elemente in einer &#196;quivalenzklasse sind, und weitere zwei Elementen einzelne in separaten &#196;quivalenzklassen.
-            </span>
-            <br/>
-        </li>
-        <li>
-            <span style="font-size: 0.9375rem;">
-                4 &#196;quivalenzrelation, bei der ein Element in einer &#196;quivalenzklasse ist, und weitere drei Elementen in einer gemeinsamen &#196;quivalenzklasse.
-            </span>
-        </li>
-    </ul>
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    <strong>
+        Hinweis zur L&#246;sung:
+    </strong>
+</p>
+<p dir="ltr" style="text-align: left;">
+    Es gibt insgesamt 15 verschiedene &#196;quivalenzrelationen auf der Menge \(Y={@setify(Y)@}\). Eine &#196;quivalenzrelation ist eine Teilmenge des kartesischen Produkts der Menge mit sich selbst, die bestimmten Eigenschaften erf&#252;llt. In diesem Fall gibt es 15 verschiedene M&#246;glichkeiten, diese Eigenschaften zu erf&#252;llen. Die sind:
     <br/>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p dir="ltr" style="text-align: left;">
-        <strong>
-            Note to the solution:
-        </strong>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        There are a total of 15 different equivalence ratios on the amount \(Y={@setify(Y)@}\). An equivalence ratio is a subset of the Cartesian product of the amount with itself that fulfills certain properties. In this case, there are 15 different ways to fulfill these properties. They are:
+</p>
+<p dir="ltr" style="text-align: left;">
+</p>
+<ul>
+    <li>
+        1 triviale &#196;quivalenzrelation, bei der jedes Element mit sich selbst &#228;quivalent ist.
+    </li>
+    <li>
+        1 &#196;quivalenzrelation, bei der alle Elemente in einer einzigen &#196;quivalenzklasse sind.
+    </li>
+    <li>
+        <span style="font-size: 0.9375rem;">
+            3 &#196;quivalenzrelation, bei der zwei Elemente in einer &#196;quivalenzklasse sind, und die anderen zwei in einer anderen.
+        </span>
         <br/>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-    </p>
-    <ul>
-        <li>
-            1 trivial equivalence ratio in which each element is equivalent to itself.
-        </li>
-        <li>
-            1 equivalence ratio in which all elements are in a single equivalence class.
-        </li>
-        <li>
-            <span style="font-size: 0.9375rem;">
-                3 equivalence ratios in which two elements are in an equivalence class, and the other two in another.
-            </span>
-            <br/>
-        </li>
-        <li>
-            <span style="font-size: 0.9375rem;">
-                6 equivalence relation, in which two elements are in an equivalence class, and two other elements are individual in separate equivalence classes.
-            </span>
-            <br/>
-        </li>
-        <li>
-            <span style="font-size: 0.9375rem;">
-                4 equivalence ratios in which an element is in an equivalence class, and further three elements in a common equivalence class.
-            </span>
-        </li>
-    </ul>
+    </li>
+    <li>
+        <span style="font-size: 0.9375rem;">
+            6 &#196;quivalenzrelation, bei der zwei Elemente in einer &#196;quivalenzklasse sind, und weitere zwei Elementen einzelne in separaten &#196;quivalenzklassen.
+        </span>
+        <br/>
+    </li>
+    <li>
+        <span style="font-size: 0.9375rem;">
+            4 &#196;quivalenzrelation, bei der ein Element in einer &#196;quivalenzklasse ist, und weitere drei Elementen in einer gemeinsamen &#196;quivalenzklasse.
+        </span>
+    </li>
+</ul>
+<br/>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    <strong>
+        Note to the solution:
+    </strong>
+</p>
+<p dir="ltr" style="text-align: left;">
+    There are a total of 15 different equivalence ratios on the set \(Y={@setify(Y)@}\). An equivalence ratio is a subset of the Cartesian product of the set with itself that fulfills certain properties. In this case, there are 15 different ways to fulfill these properties. They are:
     <br/>
-    <p>
-    </p>
-</span>
+</p>
+<p dir="ltr" style="text-align: left;">
+</p>
+<ul>
+    <li>
+        1 trivial equivalence ratio in which each element is equivalent to itself.
+    </li>
+    <li>
+        1 equivalence ratio in which all elements are in a single equivalence class.
+    </li>
+    <li>
+        <span style="font-size: 0.9375rem;">
+            3 equivalence ratios in which two elements are in an equivalence class, and the other two in another.
+        </span>
+        <br/>
+    </li>
+    <li>
+        <span style="font-size: 0.9375rem;">
+            6 equivalence relation, in which two elements are in an equivalence class, and two other elements are individual in separate equivalence classes.
+        </span>
+        <br/>
+    </li>
+    <li>
+        <span style="font-size: 0.9375rem;">
+            4 equivalence ratios in which an element is in an equivalence class, and further three elements in a common equivalence class.
+        </span>
+    </li>
+</ul>
+<br/>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>2.0000000</defaultgrade>
@@ -160,12 +158,7 @@ Y:rest(liste2,-length(liste2)+4);</text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    [[feedback:prt1]]
-</span>
-<span class="multilang" lang="en">
-    [[feedback:prt1]]
-</span>
+[[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -179,32 +172,17 @@ Y:rest(liste2,-length(liste2)+4);</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

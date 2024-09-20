@@ -6,428 +6,426 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Bestimmen Sie f&#252;r die Matrix
-    </p>
-    <p>
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-        </p>
-        <p>
-        </p>
-        <p>
-            \({@(A)@} =\) {@A1@}
-        </p>
-        <p>
-        </p>
-        <p>
-        </p>
-    </div>
+[[lang code="de"]]
+<p>
+    Bestimmen Sie f&#252;r die Matrix
+</p>
+<p>
+    <br/>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
     </p>
     <p>
     </p>
     <p>
-        <br/>
+        \({@(A)@} =\) {@A1@}
     </p>
     <p>
-        <b>
-            (a)
-        </b>
-        die Eigenwerte:
     </p>
     <p>
-        Geben Sie die Eigenwerte in aufsteigender Reihenfolge (\(\lambda_1&lt;\lambda_2&lt;\lambda_3\)) an.
     </p>
-    <p>
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div>
-            <p>
-                \(\lambda_1 =\) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
-            </p>
-        </div>
-        <div>
-            <p>
-                \(\lambda_2 =\) [[input:ans2]] [[validation:ans2]][[feedback:prt2]]
-            </p>
-        </div>
-        <div>
-            <p>
-                \(\lambda_3 =\) [[input:ans3]] [[validation:ans3]][[feedback:prt3]]
-            </p>
-        </div>
-    </div>
-    <p>
-        <br/>
-    </p>
+</div>
+<p>
+</p>
+<p>
+</p>
+<p>
+    <br/>
+</p>
+<p>
     <b>
-        (b)
+        (a)
     </b>
-    Geben Sie Komponenten des normierten Eigenvektors \( \frac{\vec{v}}{||\vec{v}||} \) zum Eigenwert 1 an:
-    <p>
-        <nobr>
-            <span role="math">
-                <br/>
-            </span>
-        </nobr>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div>
+    die Eigenwerte:
+</p>
+<p>
+    Geben Sie die Eigenwerte in aufsteigender Reihenfolge (\(\lambda_1&lt;\lambda_2&lt;\lambda_3\)) an.
+</p>
+<p>
+    <br/>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <div>
+        <p>
+            \(\lambda_1 =\) [[/lang]][[lang code="en"]]
             <p>
-                <span id="MathJax-Element-2-Frame">
-                    <nobr>
-                        <span id="MathJax-Span-56" role="math">
-                            <span id="MathJax-Span-57">
-                                <span id="MathJax-Span-58">
-                                    <span id="MathJax-Span-59">
-                                        <span id="MathJax-Span-60">
+                Determine for the matrix
+            </p>
+            <p>
+                <br/>
+            </p>
+            <div class="editor-indent" style="margin-left: 30px;">
+                <p>
+                </p>
+                <p>
+                </p>
+                <p>
+                    \({@(A)@} =\) {@A1@}
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+            </div>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+                <br/>
+            </p>
+            <p>
+                <b>
+                    (a)
+                </b>
+                the own values:
+            </p>
+            <p>
+                Specify the values in ascending order (\(\lambda_1&lt;\lambda_2&lt;\lambda_3\))
+            </p>
+            <p>
+                <br/>
+            </p>
+            <div class="editor-indent" style="margin-left: 30px;">
+                <div>
+                    <p>
+                        \(\lambda_1 =\) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]]
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        \(\lambda_2 =\) [[/lang]][[lang code="en"]]
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        \(\lambda_2 =\) [[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt2]][[lang code="de"]]
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        \(\lambda_3 =\) [[/lang]][[lang code="en"]]
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        \(\lambda_3 =\) [[/lang]][[input:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans3]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt3]][[lang code="de"]]
+                    </p>
+                </div>
+            </div>
+            <p>
+                <br/>
+            </p>
+            <b>
+                (b)
+            </b>
+            Geben Sie Komponenten des normierten Eigenvektors \( \frac{\vec{v}}{||\vec{v}||} \) zum Eigenwert 1 an:
+            <p>
+                <nobr>
+                    <span role="math">
+                        <br/>
+                    </span>
+                </nobr>
+            </p>
+            <div class="editor-indent" style="margin-left: 30px;">
+                <div>
+                    <p>
+                        <span id="MathJax-Element-2-Frame">
+                            <nobr>
+                                <span id="MathJax-Span-56" role="math">
+                                    <span id="MathJax-Span-57">
+                                        <span id="MathJax-Span-58">
+                                            <span id="MathJax-Span-59">
+                                                <span id="MathJax-Span-60">
+                                                </span>
+                                            </span>
                                         </span>
                                     </span>
                                 </span>
-                            </span>
+                            </nobr>
                         </span>
-                    </nobr>
-                </span>
-                \(v_1 =\) [[input:ans4]] [[validation:ans4]][[feedback:prt4]]
-            </p>
-        </div>
-        <div>
+                        \(v_1 =\) [[/lang]][[lang code="en"]]
+                    </p>
+                </div>
+            </div>
             <p>
-                \(v_2 =\) [[input:ans5]] [[validation:ans5]][[feedback:prt5]]
-            </p>
-        </div>
-        <div>
-            <p>
-                <span>
-                    \(v_3 =\) [[input:ans6]] [[validation:ans6]][[feedback:prt6]]
-                </span>
-            </p>
-        </div>
-    </div>
-    <p>
-    </p>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Determine for the matrix
-    </p>
-    <p>
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-        </p>
-        <p>
-        </p>
-        <p>
-            \({@(A)@} =\) {@A1@}
-        </p>
-        <p>
-        </p>
-        <p>
-        </p>
-    </div>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <b>
-            (a)
-        </b>
-        the own values:
-    </p>
-    <p>
-        Specify the values in ascending order (\(\lambda_1&lt;\lambda_2&lt;\lambda_3\))
-    </p>
-    <p>
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div>
-            <p>
-                \(\lambda_1 =\) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
-            </p>
-        </div>
-        <div>
-            <p>
-                \(\lambda_2 =\) [[input:ans2]] [[validation:ans2]][[feedback:prt2]]
-            </p>
-        </div>
-        <div>
-            <p>
-                \(\lambda_3 =\) [[input:ans3]] [[validation:ans3]][[feedback:prt3]]
-            </p>
-        </div>
-    </div>
-    <p>
-        <br/>
-    </p>
-    <b>
-        (b)
-    </b>
-    Specify components of the normalized eigenvector \( \frac{\vec{v}}{||\vec{v}||} \) for own value 1
-    <p>
-        <nobr>
-            <span role="math">
                 <br/>
-            </span>
-        </nobr>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div>
+            </p>
+            <b>
+                (b)
+            </b>
+            Specify components of the normalized eigenvector \( \frac{\vec{v}}{||\vec{v}||} \) for own value 1
             <p>
-                <span id="MathJax-Element-2-Frame">
-                    <nobr>
-                        <span id="MathJax-Span-56" role="math">
-                            <span id="MathJax-Span-57">
-                                <span id="MathJax-Span-58">
-                                    <span id="MathJax-Span-59">
-                                        <span id="MathJax-Span-60">
+                <nobr>
+                    <span role="math">
+                        <br/>
+                    </span>
+                </nobr>
+            </p>
+            <div class="editor-indent" style="margin-left: 30px;">
+                <div>
+                    <p>
+                        <span id="MathJax-Element-2-Frame">
+                            <nobr>
+                                <span id="MathJax-Span-56" role="math">
+                                    <span id="MathJax-Span-57">
+                                        <span id="MathJax-Span-58">
+                                            <span id="MathJax-Span-59">
+                                                <span id="MathJax-Span-60">
+                                                </span>
+                                            </span>
                                         </span>
                                     </span>
                                 </span>
-                            </span>
+                            </nobr>
                         </span>
-                    </nobr>
-                </span>
-                \(v_1 =\) [[input:ans4]] [[validation:ans4]][[feedback:prt4]]
-            </p>
-        </div>
-        <div>
+                        \(v_1 =\) [[/lang]][[input:ans4]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans4]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt4]][[lang code="de"]]
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        \(v_2 =\) [[/lang]][[lang code="en"]]
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        \(v_2 =\) [[/lang]][[input:ans5]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans5]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt5]][[lang code="de"]]
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <span>
+                            \(v_3 =\) [[/lang]][[lang code="en"]]
+                        </span>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <span>
+                            \(v_3 =\) [[/lang]][[input:ans6]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans6]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt6]][[lang code="de"]]
+                        </span>
+                    </p>
+                </div>
+            </div>
             <p>
-                \(v_2 =\) [[input:ans5]] [[validation:ans5]][[feedback:prt5]]
             </p>
-        </div>
-        <div>
             <p>
-                <span>
-                    \(v_3 =\) [[input:ans6]] [[validation:ans6]][[feedback:prt6]]
-                </span>
             </p>
-        </div>
+            [[/lang]][[lang code="en"]]
+        </p>
     </div>
-    <p>
-    </p>
-    <p>
-    </p>
-</span>
+</div>
+<p>
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        <b>
-            L&#246;sung
-        </b>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <span>
-        </span>
-    </p>
-    <p style="">
-        <b>
-            (a)
-        </b>
-        Es muss gelten: \(p(\lambda)=\det(A- \lambda E)=0\)
-    </p>
-    <p style="">
-        <br/>
-    </p>
-    <p style="">
-        \(p(\lambda)=\det(A- \lambda E)\)
-    </p>
-    <p style="">
-        \(=\det\left({@a1@}\right)\)
-        <br/>
-    </p>
-    <p style="">
-        \(=(-3-\lambda)\cdot \det\left({@a2@}\right)\)
-    </p>
-    <p style="">
-        (Laplace Entwicklung nach der dritten Zeile)
-    </p>
-    <p style="">
-        \(=(-3-\lambda)(2-\lambda)(1-\lambda)\)
-    </p>
-    <p style="">
-        <br/>
-    </p>
-    <p style="">
-        Damit der Ausdruck \(0\) wird, muss entweder 1., 2. oder 3. gelten (Linearfaktoren):
-    </p>
-    <p style="">
-    </p>
-    <ol style="">
-        <li>
-            \((-3-\lambda)=0\)&#160; &#160; &#160;\(\Leftrightarrow\)&#160; &#160; &#160; \(\lambda_1=-3\)
-        </li>
-        <li>
-            \((1-\lambda)=0\)&#160; &#160; &#160; &#160; &#160;\(\Leftrightarrow\)&#160; &#160; &#160; \(\lambda_2=1\)
-        </li>
-        <li>
-            \((2-\lambda)=0\)&#160; &#160; &#160; &#160; &#160;\(\Leftrightarrow\)&#160; &#160; &#160; \(\lambda_3=2\)
-        </li>
-    </ol>
+[[lang code="de"]]
+<h4>
+    <b>
+        L&#246;sung
+    </b>
+</h4>
+<p>
     <br/>
-    <p>
-    </p>
-    <p>
-        <span>
-            <b>
-                (b)
-            </b>
-            Eigenvektor zu \(\lambda_2=1\):
-        </span>
-    </p>
-    <p>
-        <span>
-        </span>
-        Berechne \(\ker(A-\lambda_2 E)\)&#160; &#160;(Das hei&#223;t: \(A-\lambda_2 E=O\))
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(A-E={@a3@}\xrightarrow{II-I}{@a5@}\)
-    </p>
-    <p>
-        \(\xrightarrow{ \frac{II}{-8},\frac{III}{-4}}{@a6@}\xrightarrow{I-5II, III-II}{@a7@}\)
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        Da der \(A-\lambda E=O\) sein muss, folgt \(v={@a8@}\) (oder jedes Vielfache).
-    </p>
-    <p>
-        Der normierte Eigenvektor ist definiert als \(\frac{v}{||v||}\).
-    </p>
-    <p>
-        Da hier \(||v||=1\) gilt, ist \(v\) auch der normierte Eigenvektor.
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <h4>
-        <b>
-            Solution
-        </b>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <span>
-        </span>
-    </p>
-    <p style="">
-        <b>
-            (a)
-        </b>
-        It must apply: \(p(\lambda)=\det(A- \lambda E)=0\)
-    </p>
-    <p style="">
-        <br/>
-    </p>
-    <p style="">
-        \(p(\lambda)=\det(A- \lambda E)\)
-    </p>
-    <p style="">
-        \(=\det\left({@a1@}\right)\)
-        <br/>
-    </p>
-    <p style="">
-        \(=(-3-\lambda)\cdot \det\left({@a2@}\right)\)
-    </p>
-    <p style="">
-        (Laplace development after third line)
-    </p>
-    <p style="">
-        \(=(-3-\lambda)(2-\lambda)(1-\lambda)\)
-    </p>
-    <p style="">
-        <br/>
-    </p>
-    <p style="">
-        So the expression \(0\) shall apply either 1., 2. or 3. (linear factors):
-    </p>
-    <p style="">
-    </p>
-    <ol style="">
-        <li>
-            \((-3-\lambda)=0\)\(\Leftrightarrow\) \(\lambda_1=-3\)
-        </li>
-        <li>
-            \((1-\lambda)=0\)\(\Leftrightarrow\) \(\lambda_2=1\)
-        </li>
-        <li>
-            \((2-\lambda)=0\)\(\Leftrightarrow\) \(\lambda_3=2\)
-        </li>
-    </ol>
+</p>
+<p>
+    <span>
+    </span>
+</p>
+<p style="">
+    <b>
+        (a)
+    </b>
+    Es muss gelten: \(p(\lambda)=\det(A- \lambda E)=0\)
+</p>
+<p style="">
     <br/>
-    <p>
-    </p>
-    <p>
-        <span>
-            <b>
-                (b)
-            </b>
-            Own vector \(\lambda_2=1\):
-        </span>
-    </p>
-    <p>
-        <span>
-        </span>
-        Calculation \(\ker(A-\lambda_2 E)\)(That means: \(A-\lambda_2 E=O\))
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(A-E={@a3@}\xrightarrow{II-I}{@a5@}\)
-    </p>
-    <p>
-        \(\xrightarrow{ \frac{II}{-8},\frac{III}{-4}}{@a6@}\xrightarrow{I-5II, III-II}{@a7@}\)
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        There \(A-\lambda E=O\) must be followed \(v={@a8@}\) (or multiple).
-    </p>
-    <p>
-        The normalized eigenvector is defined as \(\frac{v}{||v||}\).
-    </p>
-    <p>
-        Here. \(||v||=1\) is applicable, \(v\) also the normalized eigenvector.
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-</span>
+</p>
+<p style="">
+    \(p(\lambda)=\det(A- \lambda E)\)
+</p>
+<p style="">
+    \(=\det\left({@a1@}\right)\)
+    <br/>
+</p>
+<p style="">
+    \(=(-3-\lambda)\cdot \det\left({@a2@}\right)\)
+</p>
+<p style="">
+    (Laplace Entwicklung nach der dritten Zeile)
+</p>
+<p style="">
+    \(=(-3-\lambda)(2-\lambda)(1-\lambda)\)
+</p>
+<p style="">
+    <br/>
+</p>
+<p style="">
+    Damit der Ausdruck \(0\) wird, muss entweder 1., 2. oder 3. gelten (Linearfaktoren):
+</p>
+<p style="">
+</p>
+<ol style="">
+    <li>
+        \((-3-\lambda)=0\)&#160; &#160; &#160;\(\Leftrightarrow\)&#160; &#160; &#160; \(\lambda_1=-3\)
+    </li>
+    <li>
+        \((1-\lambda)=0\)&#160; &#160; &#160; &#160; &#160;\(\Leftrightarrow\)&#160; &#160; &#160; \(\lambda_2=1\)
+    </li>
+    <li>
+        \((2-\lambda)=0\)&#160; &#160; &#160; &#160; &#160;\(\Leftrightarrow\)&#160; &#160; &#160; \(\lambda_3=2\)
+    </li>
+</ol>
+<br/>
+<p>
+</p>
+<p>
+    <span>
+        <b>
+            (b)
+        </b>
+        Eigenvektor zu \(\lambda_2=1\):
+    </span>
+</p>
+<p>
+    <span>
+    </span>
+    Berechne \(\ker(A-\lambda_2 E)\)&#160; &#160;(Das hei&#223;t: \(A-\lambda_2 E=O\))
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    \(A-E={@a3@}\xrightarrow{II-I}{@a5@}\)
+</p>
+<p>
+    \(\xrightarrow{ \frac{II}{-8},\frac{III}{-4}}{@a6@}\xrightarrow{I-5II, III-II}{@a7@}\)
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    Da der \(A-\lambda E=O\) sein muss, folgt \(v={@a8@}\) (oder jedes Vielfache).
+</p>
+<p>
+    Der normierte Eigenvektor ist definiert als \(\frac{v}{||v||}\).
+</p>
+<p>
+    Da hier \(||v||=1\) gilt, ist \(v\) auch der normierte Eigenvektor.
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<h4>
+    <b>
+        Solution
+    </b>
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    <span>
+    </span>
+</p>
+<p style="">
+    <b>
+        (a)
+    </b>
+    It must apply: \(p(\lambda)=\det(A- \lambda E)=0\)
+</p>
+<p style="">
+    <br/>
+</p>
+<p style="">
+    \(p(\lambda)=\det(A- \lambda E)\)
+</p>
+<p style="">
+    \(=\det\left({@a1@}\right)\)
+    <br/>
+</p>
+<p style="">
+    \(=(-3-\lambda)\cdot \det\left({@a2@}\right)\)
+</p>
+<p style="">
+    (Laplace development after third line)
+</p>
+<p style="">
+    \(=(-3-\lambda)(2-\lambda)(1-\lambda)\)
+</p>
+<p style="">
+    <br/>
+</p>
+<p style="">
+    So the expression \(0\) shall apply either 1., 2. or 3. (linear factors):
+</p>
+<p style="">
+</p>
+<ol style="">
+    <li>
+        \((-3-\lambda)=0\)\(\Leftrightarrow\) \(\lambda_1=-3\)
+    </li>
+    <li>
+        \((1-\lambda)=0\)\(\Leftrightarrow\) \(\lambda_2=1\)
+    </li>
+    <li>
+        \((2-\lambda)=0\)\(\Leftrightarrow\) \(\lambda_3=2\)
+    </li>
+</ol>
+<br/>
+<p>
+</p>
+<p>
+    <span>
+        <b>
+            (b)
+        </b>
+        Own vector \(\lambda_2=1\):
+    </span>
+</p>
+<p>
+    <span>
+    </span>
+    Calculation \(\ker(A-\lambda_2 E)\)(That means: \(A-\lambda_2 E=O\))
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    \(A-E={@a3@}\xrightarrow{II-I}{@a5@}\)
+</p>
+<p>
+    \(\xrightarrow{ \frac{II}{-8},\frac{III}{-4}}{@a6@}\xrightarrow{I-5II, III-II}{@a7@}\)
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    There \(A-\lambda E=O\) must be followed \(v={@a8@}\) (or multiple).
+</p>
+<p>
+    The normalized eigenvector is defined as \(\frac{v}{||v||}\).
+</p>
+<p>
+    Here. \(||v||=1\) is applicable, \(v\) also the normalized eigenvector.
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -473,32 +471,17 @@ a8: matrix([0],[1],[0])</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

@@ -1,0 +1,3318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Regressionsgerade (Grafik)</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<style>
+    .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #a9f5bc;
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #e0f8e6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #dcb25e;
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #e7d2a7;
+                }
+
+    
+    
+    
+    .buttontipp {
+                                border: 1px solid black;
+                                background-color: #c9d3f6;
+                }
+
+    
+    
+    
+    .buttontipp:hover {
+                                background-color: #dbe1f9;
+                }
+
+    
+    
+    
+    .divtipp {
+                                background-color: #dbe1f9;
+                                border: 1px black solid;
+                                border-radius: 4px;
+                                padding: 20px;
+                                width: 60%;
+                                text-align: center;
+                }
+
+    
+    
+    
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                }
+
+    
+    
+    
+    .herv {
+                                color: purple;
+                }
+
+    
+    
+    
+    .anm {
+                                background-color: coral;
+                }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: 0.5em 0.5em 0;
+                }
+
+    
+    
+    
+    .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -0.5em -0.5em 0;
+                                padding: 0.5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] {
+                                padding: 0.5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] summary {
+                                border-bottom: 1px solid #aaa;
+                                margin-bottom: 0.5em;
+                }
+</style>
+<div>
+    <details>
+        <summary>
+            Inhalt und Umfang dieser Aufgabe
+        </summary>
+        <p>
+            In dieser Aufgabe bestimmen Sie die Gleichung einer
+                                                Regressionsgeraden und treffen mithilfe eines solchen Modells
+                                                Vorhersagen. Die Aufgabe besteht aus den folgenden drei
+                                                Teilaufgaben:
+        </p>
+        <ul>
+            <li>
+                In
+                <b>
+                    (a)
+                </b>
+                treffen Sie eine Vorhersage, indem Sie die Grafik
+                                                                in der Aufgabenstellung nutzen.
+            </li>
+            <li>
+                In
+                <b>
+                    (b)
+                </b>
+                berechnen Sie eine Regressionsgerade.
+            </li>
+            <li>
+                In
+                <b>
+                    (c)
+                </b>
+                treffen Sie eine Vorhersage, indem Sie das
+                                                                Regressionsmodell nutzen.
+            </li>
+        </ul>
+    </details>
+    <hr/>
+</div>
+<div id="oer-aufgabe-24_aufgabe1">
+    <p>
+        Gegeben sei ein Datensatz aus {#laenge#} Punkten, der wie folgt verteilt
+                                ist:
+    </p>
+    [[jsxgraph]]
+                                JXG.Options.text.useMathJax = true;
+                                //Board:
+                                var board = JXG.JSXGraph.initBoard(divid, {
+                                                axis: true,
+                                                showNavigation: false,
+                                                showCopyright: false,
+                                                boundingbox: [{#aufg1_neg_x #},
+                                                {#aufg1_pos_y #},
+                                                                {#aufg1_pos_x #},
+                                                                {#aufg1_neg_y #}
+                                ]});
+                                //Arrays:
+                                var DatenArr = {#Daten#};
+                                var DatenArr_x = {#Lx#};
+                                var DatenArr_y = {#Ly#};
+                                var PunkteArr = [];
+                                var segArr = [];
+                                //Datenpunkte:
+                                for (var i of DatenArr) {
+                                                PunkteArr.push(board.create('point', i, {
+                                                                fixed: true,
+                                                                size: 1.5,
+                                                                withLabel: false,
+                                                                highlight: false
+                                                }));
+                                };
+                [[/jsxgraph]]
+    <p>
+        <b>
+            (a)
+        </b>
+        F&#252;r einen weiteren Datenpunkt \((x, y)\) ist der die Messung
+                                des y-Wertes verloren gegangen. Es ist nur noch der Wert \(x={@x2@}\)
+                                bekannt.
+    </p>
+    <p>
+        Sch&#228;tzen Sie anhand der Grafik einen ungef&#228;hren \(y\)-Wert f&#252;r den Wert
+                                \(x={@x2@}\), sodass sich der resultierende Punkt \(({@x2@}, y)\)
+                                plausibel in die Punktewolke einf&#252;gt.
+        <em>
+            Es ist keine Rechnung erforderlich!
+        </em>
+    </p>
+    <p>
+        Antwort: Der \(y\)-Wert lautet [[/lang]][[lang code="en"]]
+        <style>
+            .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #a9f5bc;
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #e0f8e6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #dcb25e;
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #e7d2a7;
+                }
+
+    
+    
+    
+    .buttontipp {
+                                border: 1px solid black;
+                                background-color: #c9d3f6;
+                }
+
+    
+    
+    
+    .buttontipp:hover {
+                                background-color: #dbe1f9;
+                }
+
+    
+    
+    
+    .divtipp {
+                                background-color: #dbe1f9;
+                                border: 1px black solid;
+                                border-radius: 4px;
+                                padding: 20px;
+                                width: 60%;
+                                text-align: center;
+                }
+
+    
+    
+    
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                }
+
+    
+    
+    
+    .herv {
+                                color: purple;
+                }
+
+    
+    
+    
+    .anm {
+                                background-color: coral;
+                }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: 0.5em 0.5em 0;
+                }
+
+    
+    
+    
+    .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -0.5em -0.5em 0;
+                                padding: 0.5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] {
+                                padding: 0.5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] summary {
+                                border-bottom: 1px solid #aaa;
+                                margin-bottom: 0.5em;
+                }
+        </style>
+        <div>
+            <details>
+                <summary>
+                    Content and scope of this task
+                </summary>
+                <p>
+                    In this task you define the equation of
+Regression gears and meet with the help of such a model
+Predict. The task consists of the following three
+Partial tasks:
+                </p>
+                <ul>
+                    <li>
+                        In
+                        <b>
+                            (a)
+                        </b>
+                        make a prediction by using the graph
+in the task.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (b)
+                        </b>
+                        calculate a regression line.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (c)
+                        </b>
+                        make a prediction by using this
+Use regression model.
+                    </li>
+                </ul>
+            </details>
+            <hr/>
+        </div>
+        <div id="oer-aufgabe-24_aufgabe1">
+            <p>
+                a data set from {#laenge#} Points distributed as follows
+is:
+            </p>
+            [[jsxgraph]]
+                                JXG.Options.text.useMathJax = true;
+                                //Board:
+                                var board = JXG.JSXGraph.initBoard(divid, {
+                                                axis: true,
+                                                showNavigation: false,
+                                                showCopyright: false,
+                                                boundingbox: [{#aufg1_neg_x #},
+                                                {#aufg1_pos_y #},
+                                                                {#aufg1_pos_x #},
+                                                                {#aufg1_neg_y #}
+                                ]});
+                                //Arrays:
+                                var DatenArr = {#Daten#};
+                                var DatenArr_x = {#Lx#};
+                                var DatenArr_y = {#Ly#};
+                                var PunkteArr = [];
+                                var segArr = [];
+                                //Datenpunkte:
+                                for (var i of DatenArr) {
+                                                PunkteArr.push(board.create('point', i, {
+                                                                fixed: true,
+                                                                size: 1.5,
+                                                                withLabel: false,
+                                                                highlight: false
+                                                }));
+                                };
+                [[/jsxgraph]]
+            <p>
+                <b>
+                    (a)
+                </b>
+                For a further data point \((x, y)\) the measurement
+of the y value lost. It's just the value \(x={@x2@}\)known.
+            </p>
+            <p>
+                Estimate an approximate graph \(y\)-value for value
+    \(x={@x2@}\)so that the resulting point \(({@x2@}, y)\)plausible into the point cloud.
+                <em>
+                    No invoice is required!
+                </em>
+            </p>
+            <p>
+                Answer: The \(y\)- value is [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
+            </p>
+            <p>
+                Bitte klicken Sie nach der Eingabe auf "Pr&#252;fen".
+            </p>
+            <p>
+                [[/lang]][[lang code="en"]]
+            </p>
+            <p>
+                Please click "Check" after entering.
+            </p>
+            <p>
+                [[/lang]][[feedback:prt_aufg1]][[lang code="de"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-24_aufgabe2" style="display: none">
+            <p>
+                <b>
+                    (b)
+                </b>
+                Eine statistische Analyse der Daten aus Aufgabe (a) ergab die
+                                folgenden Zahlen:
+            </p>
+            <p>
+                \(\bar{x}={@aMx@}\), \(s_{x}^{2}={@Var_x@}\), \(\bar{y}={@aMy@}\),
+                                \(s_{y}^{2}={@Var_y@}\), \(r_{x,y}={@Corr@}\)
+            </p>
+            <p>
+                Geben Sie die Kleinste-Quadrate-Regressionsgerade
+                                \(g(x)=\alpha+\beta\cdot x\) an, indem Sie die zugeh&#246;rigen Parameter
+                                \(\alpha\) und \(\beta\) bestimmen. Klicken Sie dann auf "Pr&#252;fen".
+            </p>
+            <p>
+                Antwort:
+            </p>
+            <p>
+                \( \alpha =\) [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-24_aufgabe2" style="display: none">
+            <p>
+                <b>
+                    (b)
+                </b>
+                A statistical analysis of the data from task (a) showed that
+the following figures:
+            </p>
+            <p>
+                \(\bar{x}={@aMx@}\), \(s_{x}^{2}={@Var_x@}\), \(\bar{y}={@aMy@}\),
+    \(s_{y}^{2}={@Var_y@}\), \(r_{x,y}={@Corr@}\)
+            </p>
+            <p>
+                Enter the smallest square regression line
+    \(g(x)=\alpha+\beta\cdot x\) by using the associated parameters
+    \(\alpha\) and \(\beta\) to determine. Then click "Check".
+            </p>
+            <p>
+                Answer:
+            </p>
+            <p>
+                \( \alpha =\) [[/lang]][[input:ans_alpha]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans_alpha]][[lang code="de"]]
+            </p>
+            [[/lang]][[lang code="en"]]
+        </div>
+    </p>
+    [[/lang]][[feedback:prt_aufg2_alpha]][[lang code="de"]]
+    <p>
+        \(\beta=\) [[/lang]][[lang code="en"]]
+        <p>
+            \(\beta=\) [[/lang]][[input:ans_beta]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans_beta]][[lang code="de"]]
+        </p>
+        [[/lang]][[lang code="en"]]
+    </p>
+    [[/lang]][[feedback:prt_aufg2_beta]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt_aufg2_weiter]][[lang code="de"]]
+</div>
+<div id="oer-aufgabe-24_aufgabe3" style="display: none">
+    <p>
+        <b>
+            (c)
+        </b>
+        In Aufgabe (a) haben Sie einen zum Wert \(x={@x2@}\)
+                                passenden \(y\)-Wert gesch&#228;tzt, sodass der resultierende Punkt der
+                                Verteilung der Punkte aus dem Datensatz folgt.
+    </p>
+    <p>
+        Berechnen Sie nun eine
+        <em>
+            genaue
+        </em>
+        Vorhersage des y-Werts f&#252;r
+                                \(x={@x2@}\), indem Sie das Regressionsmodell nutzen. Klicken Sie dann
+                                auf "Pr&#252;fen".
+    </p>
+    <div id="oer-aufgabe-24_aufg3_input">
+        <p>
+            Antwort: Der \(y\)-Wert lautet [[/lang]][[lang code="en"]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-24_aufgabe3" style="display: none">
+        <p>
+            <b>
+                (c)
+            </b>
+            In Task (a) you have one to the value \(x={@x2@}\)suitable \(y\)-value estimated so that the resulting point
+Distribution of points from the dataset follows.
+        </p>
+        <p>
+            Calculate now a
+            <em>
+                Accurate
+            </em>
+            Forecasting the y value for
+    \(x={@x2@}\)by using the regression model. Click then
+on "Check".
+        </p>
+        <div id="oer-aufgabe-24_aufg3_input">
+            <p>
+                Answer: The \(y\)- value is [[/lang]][[input:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans3]][[lang code="de"]]
+            </p>
+        </div>
+        <!-- Erinnerung an Gleichung der Regressionsgerade: -->
+        <div id="oer-aufgabe-24_erinnerung_a3" style="display: none">
+        </div>
+        <p>
+            [[/lang]][[lang code="en"]]
+        </p>
+    </div>
+    <!-- Erinnerung an Gleichung der Regressionsgerade: -->
+    <div id="oer-aufgabe-24_erinnerung_a3" style="display: none">
+    </div>
+    <p>
+        [[/lang]][[feedback:prt_aufg3]][[lang code="de"]]
+    </p>
+</div>
+<div id="oer-aufgabe-24_mc" style="display: none">
+    <p>
+        Schauen Sie in die Grafik. Woran k&#246;nnen Sie sehen, dass Ihre Antwort
+                                nicht richtig ist?
+    </p>
+    <p>
+        Bitte w&#228;hlen Sie
+        <em>
+            eine
+        </em>
+        Antwort aus und klicken Sie dann auf
+                                "Pr&#252;fen".
+    </p>
+    <p>
+        [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<div id="oer-aufgabe-24_mc" style="display: none">
+    <p>
+        Look at the graphics. What can you see that your answer
+isn't right?
+    </p>
+    <p>
+        Please choose
+        <em>
+            a
+        </em>
+        Answer and then click on
+"Check."
+    </p>
+    <p>
+        [[/lang]][[input:ans_mc]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans_mc]][[lang code="de"]]
+    </p>
+    <p>
+        [[/lang]][[lang code="en"]]
+    </p>
+    <p>
+        [[/lang]][[feedback:prt_mc]][[lang code="de"]]
+    </p>
+</div>
+<div id="oer-aufgabe-24_aufg3_aufforderung" style="display: none">
+    <p class="herv">
+        Bitte beantworten Sie die Aufgabe nun erneut. Klicken Sie dann auf
+                                "Pr&#252;fen".
+    </p>
+</div>
+<div id="oer-aufgabe-24_hinweisEingabe">
+    <p>
+        <em>
+            Hinweis: Wenn Sie gerundete Ergebnisse angeben, dann runden Sie
+                                                bitte auf mindestens zwei Nachkommastellen.
+        </em>
+    </p>
+</div>
+<div id="oer-aufgabe-24_input_state" style="display: none">
+    [[/lang]][[lang code="en"]]
+</div>
+<div id="oer-aufgabe-24_aufg3_aufforderung" style="display: none">
+    <p class="herv">
+        Please answer the task again. Click on
+"Check."
+    </p>
+</div>
+<div id="oer-aufgabe-24_hinweisEingabe">
+    <p>
+        <em>
+            Note: If you specify rounded results, then round
+at least two off-the-spots.
+        </em>
+    </p>
+</div>
+<div id="oer-aufgabe-24_input_state" style="display: none">
+    [[/lang]][[input:state]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:state]][[lang code="de"]]
+</div>
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]][[lang code="en"]]
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>6.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  Regressionsgerade (Grafik)
+
+  wurde entwickelt von
+  
+    Jonas Lache <jonas.lache[at]ruhr-uni-bochum.de>
+
+  an der Ruhr-Universit&#228;t Bochum.
+
+  Dieses Werk ist lizenziert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+
+  Diese Aufgabe bindet das Skript &#8216;stackselbstlern.js&#8217; von Michael
+  Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+/* Funktion f&#252;r das Runden auf zwei Dezimalstellen: */
+dp(x):=decimalplaces(x,2);
+/*dp(x):=float(x);*/
+
+/* Funktion f&#252;r das arithmetische Mittel der Werte einer Liste: */
+mean2(L):= apply("+",L)/length(L);
+
+/* Funktion f&#252;r die Varianz der Werte einer Liste: */
+var2(L) := block([n, mean],
+     n: length(L),
+     mean: sum(L[k], k, 1, n)/n,
+     var: (sum(L[k]^2, k, 1, n)/n - mean^2) * n / (n-1)
+);
+
+/* Zuf&#228;llige Gerade: */
+m1: rand_with_prohib(-3,3,[0]);
+b1: rand_with_step(-3,3,1);
+f(x):=m1*x+b1;
+
+/* Datensatz, der der Geraden folgt, mit zuf&#228;lligen Fehlern: */
+laenge: 8;
+Daten: makelist([
+         k+rand_with_step(0,9/10,1/10),
+         f(k)+rand_with_step(0,9/10,1/10)
+      ],k,1,laenge);
+
+/* x- bzw. y-Werte der Datenpunkte: */
+Lx: makelist(Daten[i][1],i,1,laenge);
+Ly: makelist(Daten[i][2],i,1,laenge);
+
+/* F&#252;r die JSXGraph-Grafik aus dem Fragetext: */
+aufg1_pos_y: max(lmax(Ly), 0);
+aufg1_pos_x: lmax(Lx);
+aufg1_neg_y: min(lmin(Ly),0);
+aufg1_neg_x: -1/10*aufg1_pos_x;
+aufg1_toleranz_x: 1/10*abs(aufg1_pos_x-aufg1_neg_x);
+aufg1_toleranz_y: 1/10*abs(aufg1_pos_y-aufg1_neg_y);
+aufg1_pos_y: aufg1_pos_y+aufg1_toleranz_y;
+aufg1_pos_x: aufg1_pos_x+aufg1_toleranz_x;
+aufg1_neg_y: aufg1_neg_y-aufg1_toleranz_y;
+
+/* Arithmetisches Mittel, Varianz und Korrelationskoeffizienten: */
+aMx: dp(mean2(Lx));
+aMy: dp(mean2(Ly));
+Var_x: dp(var2(Lx));
+Var_y: dp(var2(Ly));
+Corr: dp(1/(laenge-1)*sum((Lx[i]-aMx)*(Ly[i]-aMy),i,1,laenge)/sqrt(Var_x*Var_y));
+
+/* Regressionsmodell: */
+beta: sqrt(Var_y)/sqrt(Var_x)*Corr;
+alpha: aMy-beta*aMx;
+g(x):=beta*x+alpha;
+
+/* x-Wert, zu dem der y-Wert in (a) gesch&#228;tzt und in (c) berechnet werden soll: */
+x2: rand_with_prohib(
+	ceiling(lmin(Lx))+1,
+	floor(lmax(Lx))-1,
+	Lx
+);
+
+/* Korrekter zu x2 geh&#246;riger y-Wert: */
+y2: g(x2);
+
+/* N&#228;chst kleinerer Wert aus der Liste: */
+x2_links: last(sublist(Daten, lambda([P], is(P[1]<x2))));
+
+/* N&#228;chst gr&#246;&#223;erer Wert aus der Liste: */
+x2_rechts: first(sublist(Daten, lambda([P], is(P[1]>x2))));
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+/* Auswahloptionen f&#252;r die Single-Choice-Frage zu (c): */
+Liste_mc: [
+    [1,true,  tr(sconcat("Der Punkt an der Stelle \\(x=", x2, "\\) liegt nicht auf der Regressionsgeraden.")
+              ,sconcat("The point at \\(x=", x2, "\\) is not on the regression line."))],
+    [2,false, tr(sconcat("Der Punkt an der Stelle \\(x=", x2, "\\) stimmt mit keinem der Datenpunkte &#252;berein.")
+              ,sconcat("The point at \\(x=", x2, "\\) does not match any datapoint."))],
+    [3,false, tr(sconcat("Der Punkt an der Stelle \\(x=", x2, "\\) liegt auf der gestrichelten vertikalen Linie.")
+              ,sconcat("The point at \\(x=", x2, "\\) is on the dotted vertical line."))],
+    [4,false, tr(sconcat("Der Abstand des Punktes an der Stelle \\(x=", x2, "\\) von der Regressionsgeraden ist null.")
+              ,sconcat("The Distance of the Point at \\(x=", x2, "\\) to the regression line is zero."))]
+];
+Liste_mc: random_permutation(Liste_mc);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text><![CDATA[Daten: {#Daten#}[[lang code="de"]]<br>[[/lang]][[lang code="en"]]<br>[[/lang]]
+x={#x2#}]]></text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partly correct.[[/lang]]
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.[[/lang]]
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans_alpha</name>
+            <type>algebraic</type>
+            <tans>decimalplaces(alpha,2)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords>alpha, beta, g</forbidwords>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans_beta</name>
+            <type>algebraic</type>
+            <tans>decimalplaces(beta,2)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords>alpha, beta, g</forbidwords>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans_mc</name>
+            <type>radio</type>
+            <tans>Liste_mc</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>decimalplaces(y2,2)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords>alpha, beta, g</forbidwords>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>decimalplaces(y2,2)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords>alpha, beta, g</forbidwords>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>state</name>
+            <type>algebraic</type>
+            <tans><![CDATA[""]]></tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>allowempty</options>
+        </input>
+        <prt>
+            <name>prt_aufg1</name>
+            <value>0.5000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>/*
+=== Erkl&#228;rung der Knoten: ===
+Knoten 1: &#220;berpr&#252;ft, ob die Antwort Variablen enth&#228;lt.
+Knoten 2: In der aktuellen Version der Aufgabe wird hier nur Feedback-Text generiert. Optional kann hier aber eine &#220;berpr&#252;fung eingebaut werden, die sicherstellt, dass die Sch&#228;tzung nicht zu grob ist.
+*/</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>listofvars(ans1)</sans>
+                <tans>[]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt_aufg1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_aufg1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Der Wert f&#252;r Ihre Sch&#228;tzung konnte nicht zu einer Zahl vereinfacht werden. Bitte geben Sie eine Zahl ein und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+<script>
+    document.querySelector(".stackprtfeedback-prt_aufg1 > div").style.display="none";
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    The value for your estimate could not be simplified to a number. Please enter a number and then click "Check" again.
+</p>
+<script>
+    document.querySelector(".stackprtfeedback-prt_aufg1 > div").style.display="none";
+</script>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>ans1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_aufg1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Danke f&#252;r Ihre Sch&#228;tzung. In einem sp&#228;teren Aufgabenteil kommen wir noch einmal auf sie zur&#252;ck.
+</p>
+<p>
+    Bitte klicken Sie auf den folgenden Button, um zum n&#228;chsten Teil der Aufgabe zu gelangen:
+    <button class="buttonweiter" id="oer-aufgabe-24-btn_prt_aufg1" onclick="hide('oer-aufgabe-24_aufgabe1');show('oer-aufgabe-24_aufgabe2');" type="button">
+        Weiter
+    </button>
+</p>
+<script>
+    document.querySelector(".stackprtfeedback-prt_aufg1 > div").style.display="none";
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    Thanks for your estimate. In a later task, we come back to them again.
+</p>
+<p>
+    Please click the following button to get to the next part of the task:
+    <button class="buttonweiter" id="oer-aufgabe-24-btn_prt_aufg1" onclick="hide('oer-aufgabe-24_aufgabe1');show('oer-aufgabe-24_aufgabe2');" type="button">
+        Next
+    </button>
+</p>
+<script>
+    document.querySelector(".stackprtfeedback-prt_aufg1 > div").style.display="none";
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_aufg1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Bitte geben Sie eine genauere Sch&#228;tzung ab.
+</p>
+<script>
+    document.querySelector([".stackprtfeedback-prt_aufg1 > div"]).innerHTML
+								= "<p>Ihre Sch&#228;tzung ist sehr ungenau.</p>";
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    Please give a more accurate estimate.
+</p>
+<script>
+    document.querySelector([".stackprtfeedback-prt_aufg1 > div"]).innerHTML
+								= "<p>Ihre Sch&#228;tzung ist sehr ungenau.</p>";
+</script>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_aufg2_alpha</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text><![CDATA[/*
+=== Erkl&#228;rung der Knoten: ===
+Knoten 1: &#220;berpr&#252;ft, ob die Antwort Variablen enth&#228;lt.
+Knoten 2: &#220;berpr&#252;fung, ob `ans_alpha` richtig ist.
+*/
+
+/*Notwendig, damit verschiedene Varianten von alpha akzeptiert werden:*/
+beta_liste: [beta, dp(beta), sqrt(dp(Var_y/Var_x))*Corr, dp(sqrt(Var_y))/dp(sqrt(Var_x))*Corr];
+alpha_liste: [alpha, dp(alpha), aMy-beta_liste[2]*aMx, aMy-beta_liste[3]*aMx, aMy-dp(beta_liste[3])*aMx, aMy-beta_liste[4]*aMx, aMy-dp(beta_liste[4])*aMx];
+alphacorrectp(toleranz):= block([L],
+    L: makelist(
+        is(abs(ans_alpha-alpha_liste[k])<=toleranz),
+        k, 1, length(alpha_liste)
+    ),
+    return(member(true, L))
+);]]></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>listofvars(ans_alpha)</sans>
+                <tans>[]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt_aufg2_alpha-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_aufg2_alpha-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihr Wert f&#252;r \(\alpha\) konnte nicht zu einer Zahl vereinfacht werden. Bitte geben Sie eine Zahl ein und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your value for \(\alpha\) could not be simplified to a number. Please enter a number and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>alphacorrectp(0.01)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_aufg2_alpha-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Die Regressionskonstante \(\alpha\) ist richtig.
+</p>
+<details class="oer-aufgabe-24_details">
+    <summary>
+        Zeige/verberge Musterl&#246;sung f&#252;r \(\alpha\)
+    </summary>
+    <p>
+        Es gilt
+				\[\begin{align}
+								\alpha &amp;= \color{rgb(0,114,178)}{\bar{y}}-\color{rgb(0,158,115)}{\beta} \color{rgb(204,121,167)}{\bar{x}} \\
+												&amp;=  \color{rgb(0,114,178)}{{@aMy@}} - (\color{rgb(0,158,115)}{{@decimalplaces(beta,2)@}}\cdot\color{rgb(204,121,167)}{{@aMx@}}) \\
+												&amp;\approx {@decimalplaces(ans_alpha,4)@}
+				\end{align} \]
+    </p>
+</details>
+[[/lang]][[lang code="en"]]
+<p>
+    The regression constant \(\alpha\) is correct.
+</p>
+<details class="oer-aufgabe-24_details">
+    <summary>
+        Show / hide sample solution for \(\alpha\)
+    </summary>
+    <p>
+        The following shall apply:
+\[\begin{align}
+								\alpha &amp;= \color{rgb(0,114,178)}{\bar{y}}-\color{rgb(0,158,115)}{\beta} \color{rgb(204,121,167)}{\bar{x}} \\
+												&amp;=  \color{rgb(0,114,178)}{{@aMy@}} - (\color{rgb(0,158,115)}{{@decimalplaces(beta,2)@}}\cdot\color{rgb(204,121,167)}{{@aMx@}}) \\
+												&amp;\approx {@decimalplaces(ans_alpha,4)@}
+				\end{align} \]
+    </p>
+</details>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_aufg2_alpha-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]][[ if test='is(abs(ans_alpha-alpha)&lt;=0.02) or is(abs(ans_alpha-dp(alpha))&lt;=0.02)' ]]
+<p>
+    Die Regressionskonstante \(\alpha\) ist falsch, aber Ihr Wert ist nahe dem korrekten Wert. Kann es sein, dass Sie falsch gerundet haben?
+</p>
+[[ else ]]
+<p>
+    Die Regressionskonstante \(\alpha\) ist falsch.
+</p>
+[[/ if]][[/lang]][[lang code="en"]][[ if test='is(abs(ans_alpha-alpha)&lt;=0.02) or is(abs(ans_alpha-dp(alpha))&lt;=0.02)' ]]
+<p>
+    The regression constant \(\alpha\) is wrong, but your value is close to the correct value. Can it be that you rounded up wrong?
+</p>
+[[ else ]]
+<p>
+    The regression constant \(\alpha\) is wrong.
+</p>
+[[/ if]][[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_aufg2_beta</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text><![CDATA[/*
+=== Erkl&#228;rung der Knoten: ===
+Knoten 1: &#220;berpr&#252;ft, ob die Antwort Variablen enth&#228;lt.
+Knoten 2: &#220;berpr&#252;fung, ob `ans_beta` richtig ist.
+*/
+
+
+/*Notwendig, damit verschiedene Varianten von beta akzeptiert werden:*/
+beta_liste: [beta, dp(beta), sqrt(dp(Var_y/Var_x))*Corr, dp(sqrt(Var_y))/dp(sqrt(Var_x))*Corr];
+betacorrectp(toleranz):= block([L],
+    L: makelist(
+        is(abs(ans_beta-beta_liste[k])<=toleranz),
+        k, 1, length(beta_liste)
+    ),
+    return(member(true, L))
+);]]></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>listofvars(ans_beta)</sans>
+                <tans>[]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt_aufg2_beta-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_aufg2_beta-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihr Wert f&#252;r \(\beta\) konnte nicht zu einer Zahl vereinfacht werden. Bitte geben Sie eine Zahl ein und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your value for \(\beta\) could not be simplified to a number. Please enter a number and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>betacorrectp(0.005)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_aufg2_beta-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Der Regressionskoeffizient \(\beta\) ist richtig.
+</p>
+<details class="oer-aufgabe-24_details">
+    <summary>
+        Zeige/verberge Musterl&#246;sung f&#252;r \(\beta\)
+    </summary>
+    <p>
+        Es gilt
+				\[\begin{align}
+								\beta &amp;=  \color{rgb(0,114,178)}{r_{x,y}} \cdot \frac{\color{rgb(0,158,115)}{s_y}}{\color{rgb(204,121,167)}{s_x}}\\
+												&amp;= \color{rgb(0,114,178)}{r_{x,y}} \cdot \frac{\color{rgb(0,158,115)}{\sqrt{s_y^2}}}{\color{rgb(204,121,167)}{\sqrt{s_x^2}}} \\
+												&amp;= \color{rgb(0,114,178)}{{@decimalplaces(Corr,2)@}} \cdot \frac{\color{rgb(0,158,115)}{\sqrt{{@decimalplaces(Var_y,2)@}}}}{\color{rgb(204,121,167)}{\sqrt{{@decimalplaces(Var_x,2)@}}}} \\
+												&amp;\approx \color{rgb(0,114,178)}{{@decimalplaces(Corr,2)@}} \cdot \frac{\color{rgb(0,158,115)}{{@decimalplaces(sqrt(Var_y),2)@}}}{\color{rgb(204,121,167)}{{@decimalplaces(sqrt(Var_x),2)@}}} \\
+												&amp;\approx {@decimalplaces(ans_beta,4)@}
+				\end{align} \]
+    </p>
+</details>
+[[/lang]][[lang code="en"]]
+<p>
+    The regression coefficient \(\beta\) is correct.
+</p>
+<details class="oer-aufgabe-24_details">
+    <summary>
+        Show / hide sample solution for \(\beta\)
+    </summary>
+    <p>
+        The following shall apply:
+\[\begin{align}
+								\beta &amp;=  \color{rgb(0,114,178)}{r_{x,y}} \cdot \frac{\color{rgb(0,158,115)}{s_y}}{\color{rgb(204,121,167)}{s_x}}\\
+												&amp;= \color{rgb(0,114,178)}{r_{x,y}} \cdot \frac{\color{rgb(0,158,115)}{\sqrt{s_y^2}}}{\color{rgb(204,121,167)}{\sqrt{s_x^2}}} \\
+												&amp;= \color{rgb(0,114,178)}{{@decimalplaces(Corr,2)@}} \cdot \frac{\color{rgb(0,158,115)}{\sqrt{{@decimalplaces(Var_y,2)@}}}}{\color{rgb(204,121,167)}{\sqrt{{@decimalplaces(Var_x,2)@}}}} \\
+												&amp;\approx \color{rgb(0,114,178)}{{@decimalplaces(Corr,2)@}} \cdot \frac{\color{rgb(0,158,115)}{{@decimalplaces(sqrt(Var_y),2)@}}}{\color{rgb(204,121,167)}{{@decimalplaces(sqrt(Var_x),2)@}}} \\
+												&amp;\approx {@decimalplaces(ans_beta,4)@}
+				\end{align} \]
+    </p>
+</details>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_aufg2_beta-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]][[ if test='is(abs(ans_beta-beta)&lt;=0.015)']]
+<p>
+    Der Regressionskoeffizient \(\beta\) ist falsch, aber Ihr Wert ist nahe dem korrekten Wert. Kann es sein, dass Sie falsch gerundet haben?
+</p>
+[[ else ]]
+<p>
+    Der Regressionskoeffizient \(\beta\) ist falsch.
+</p>
+[[/ if ]][[/lang]][[lang code="en"]][[ if test='is(abs(ans_beta-beta)&lt;=0.015)']]
+<p>
+    The regression coefficient \(\beta\) is wrong, but your value is close to the correct value. Can it be that you rounded up wrong?
+</p>
+[[ else ]]
+<p>
+    The regression coefficient \(\beta\) is wrong.
+</p>
+[[/ if ]][[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_aufg2_weiter</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text><![CDATA[/*
+=== Erkl&#228;rung der Knoten: ===
+Knoten 1: &#220;berpr&#252;ft, ob die Antworten f&#252;r alpha und beta Variablen enthalten.
+Knoten 2: &#220;berpr&#252;fung, ob `ans_alpha` und `ans_beta` richtig ist.
+*/
+
+/*Gerade, die sich aus den Antworten der Studierenden ergibt:*/
+g1(x):= ans_alpha+ans_beta*x;
+
+/*Minimaler y-Wert von g im Intervall, in dem die Punkte liegen:*/
+min_g_ans: min( g1(lmin(Lx)), g1(lmax(Lx)) );
+
+/*Maximaler y-Wert von g im Intervall, in dem die Punkte liegen:*/
+max_g_ans: max( g1(lmin(Lx)), g1(lmax(Lx)) );
+
+/*Variablen f&#252;r die JSXGraph-Grafik im Feedbacktext:*/
+pos_y: max(max_g_ans, lmax(Ly), 0);
+pos_x: lmax(Lx);
+neg_y: min(lmin(Ly),0, min_g_ans);
+neg_x: -1/10*pos_x;
+toleranz_x: 1/10*abs(pos_x-neg_x);
+toleranz_y: 1/10*abs(pos_y-neg_y);
+pos_y: pos_y+toleranz_y;
+pos_x: pos_x+toleranz_x;
+neg_y: neg_y-toleranz_y;
+
+/*Notwendig, damit verschiedene Varianten von alpha und beta akzeptiert werden:*/
+beta_liste: [beta, dp(beta), sqrt(dp(Var_y/Var_x))*Corr, dp(sqrt(Var_y))/dp(sqrt(Var_x))*Corr];
+alpha_liste: [alpha, dp(alpha), aMy-beta_liste[2]*aMx, aMy-beta_liste[3]*aMx, aMy-dp(beta_liste[3])*aMx, aMy-beta_liste[4]*aMx, aMy-dp(beta_liste[4])*aMx];
+alphacorrectp(toleranz):= block([L],
+    L: makelist(
+        is(abs(ans_alpha-alpha_liste[k])<=toleranz),
+        k, 1, length(alpha_liste)
+    ),
+    return(member(true, L))
+);
+betacorrectp(toleranz):= block([L],
+    L: makelist(
+        is(abs(ans_beta-beta_liste[k])<=toleranz),
+        k, 1, length(beta_liste)
+    ),
+    return(member(true, L))
+);]]></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>map(length,map(listofvars,[ans_beta,ans_alpha]))</sans>
+                <tans>[0,0]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt_aufg2_weiter-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_aufg2_weiter-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>betacorrectp(0.005) and alphacorrectp(0.01)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_aufg2_weiter-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    In der folgenden Abbildung sehen Sie die Datenpunkte und die von Ihnen angegebene Gerade. Die Gerade liegt so, dass die vertikalen quadratischen Abst&#228;nde der Datenpunkte zur Geraden minimal sind.
+</p>
+[[jsxgraph]]
+JXG.Options.text.useMathJax = true;
+
+
+
+
+//Board:
+var board = JXG.JSXGraph.initBoard(divid, {axis:true, showNavigation:false, showCopyright:false, boundingbox: [{#neg_x#}, {#pos_y#}, {#pos_x#}, {#neg_y#}]});
+
+
+
+
+//Arrays:
+var DatenArr = {#Daten#};
+var DatenArr_x = {#Lx#};
+var DatenArr_y = {#Ly#};
+var PunkteArr = [];
+var segArr = [];
+
+
+
+
+//Gerade:
+var g = board.jc.snippet('{#g(x)#}', true, 'x', true);
+
+
+
+
+var gerade = board.create('functiongraph',[g],{
+            highlight:false
+});
+
+
+
+
+//Datenpunkte:
+for(var i of DatenArr){
+            PunkteArr.push(board.create('point',i,{
+                        fixed:true,
+                        size:1.5,
+                        withLabel:false,
+                        highlight:false
+            }));
+};
+
+
+
+
+//Linien zwischen Punkten und Gerade:
+for(let p of PunkteArr){
+            segArr.push(
+	   	   	   	   board.create('segment',[p,[p.X(), function(){return g(p.X())}]],{
+												dash:1,
+												highlight:false,
+												visible:true,
+												color:'black',
+												layer:5
+								})
+            );
+};
+
+	
+	
+	
+	document.getElementById('oer-aufgabe-24_teil1_checkbox_w').addEventListener("change",
+								function(event){
+												if(this.checked){
+																for(let seg of segArr){
+																				seg.setAttribute({visible:true})
+																}
+												} else{
+																for(let seg of segArr){
+																				seg.setAttribute({visible:false})
+																}
+												}
+				});
+[[/jsxgraph]]
+<p>
+    <input checked="true" id="oer-aufgabe-24_teil1_checkbox_w" type="checkbox"/>
+    <label for="oer-aufgabe-24_teil1_checkbox_w">
+        Linien ein-/ausblenden
+    </label>
+</p>
+<hr/>
+<p>
+    Bitte klicken Sie auf den folgenden Button, um zur n&#228;chsten Teilaufgabe zu gelangen:
+    <button class="buttonweiter" id="oer-aufgabe-24-btn_prt_aufg2_weiter" onclick="
+                                hide('oer-aufgabe-24_aufgabe2');
+                                show('oer-aufgabe-24_aufgabe3');
+                " type="button">
+        Weiter
+    </button>
+</p>
+<script>
+    // Einf&#252;gen der Regressionsgeraden in den Fragetext:
+(function(){
+				window.addEventListener('load', function (){
+    		    		    		    		const ansDiv = document.querySelector("#oer-aufgabe-24_erinnerung_a3");
+								ansDiv.style.display = "block";
+								const paragraph = document.createElement("p");
+								paragraph.append("Zur Erinnerung: Ihre angegebene Regressionsgerade lautete "+"\\"+"(g(x)="+{#tex1(ans_alpha+ans_beta*x)#}+"\\"+").");
+								ansDiv.append(paragraph);
+				});
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    In the following picture you will see the data points and the straight line you provide. The straight line is such that the vertical square distances of the data points to the straight line are minimal.
+</p>
+[[jsxgraph]]
+JXG.Options.text.useMathJax = true;
+
+
+
+
+//Board:
+var board = JXG.JSXGraph.initBoard(divid, {axis:true, showNavigation:false, showCopyright:false, boundingbox: [{#neg_x#}, {#pos_y#}, {#pos_x#}, {#neg_y#}]});
+
+
+
+
+//Arrays:
+var DatenArr = {#Daten#};
+var DatenArr_x = {#Lx#};
+var DatenArr_y = {#Ly#};
+var PunkteArr = [];
+var segArr = [];
+
+
+
+
+//Gerade:
+var g = board.jc.snippet('{#g(x)#}', true, 'x', true);
+
+
+
+
+var gerade = board.create('functiongraph',[g],{
+            highlight:false
+});
+
+
+
+
+//Datenpunkte:
+for(var i of DatenArr){
+            PunkteArr.push(board.create('point',i,{
+                        fixed:true,
+                        size:1.5,
+                        withLabel:false,
+                        highlight:false
+            }));
+};
+
+
+
+
+//Linien zwischen Punkten und Gerade:
+for(let p of PunkteArr){
+            segArr.push(
+	   	   	   	   board.create('segment',[p,[p.X(), function(){return g(p.X())}]],{
+												dash:1,
+												highlight:false,
+												visible:true,
+												color:'black',
+												layer:5
+								})
+            );
+};
+
+	
+	
+	
+	document.getElementById('oer-aufgabe-24_teil1_checkbox_w').addEventListener("change",
+								function(event){
+												if(this.checked){
+																for(let seg of segArr){
+																				seg.setAttribute({visible:true})
+																}
+												} else{
+																for(let seg of segArr){
+																				seg.setAttribute({visible:false})
+																}
+												}
+				});
+[[/jsxgraph]]
+<p>
+    <input checked="true" id="oer-aufgabe-24_teil1_checkbox_w" type="checkbox"/>
+    <label for="oer-aufgabe-24_teil1_checkbox_w">
+        Show / hide lines
+    </label>
+</p>
+<hr/>
+<p>
+    Please click the following button to get to the next part task:
+    <button class="buttonweiter" id="oer-aufgabe-24-btn_prt_aufg2_weiter" onclick="
+                                hide('oer-aufgabe-24_aufgabe2');
+                                show('oer-aufgabe-24_aufgabe3');
+                " type="button">
+        Next
+    </button>
+</p>
+<script>
+    // Einf&#252;gen der Regressionsgeraden in den Fragetext:
+(function(){
+				window.addEventListener('load', function (){
+    		    		    		    		const ansDiv = document.querySelector("#oer-aufgabe-24_erinnerung_a3");
+								ansDiv.style.display = "block";
+								const paragraph = document.createElement("p");
+								paragraph.append("Zur Erinnerung: Ihre angegebene Regressionsgerade lautete "+"\\"+"(g(x)="+{#tex1(ans_alpha+ans_beta*x)#}+"\\"+").");
+								ansDiv.append(paragraph);
+				});
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_aufg2_weiter-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    In der folgenden Abbildung sehen Sie die Datenpunkte und die von Ihnen angegebene Gerade. Die Gerade liegt so, dass die vertikalen quadratischen Abst&#228;nde der Datenpunkte zur Geraden noch nicht minimal sind.
+</p>
+[[jsxgraph]]
+JXG.Options.text.useMathJax = true;
+
+
+
+
+//Board:
+var board = JXG.JSXGraph.initBoard(divid, {axis:true, showNavigation:false, showCopyright:false, boundingbox: [{#neg_x#}, {#pos_y#}, {#pos_x#}, {#neg_y#}]});
+
+
+
+
+//Arrays:
+var DatenArr = {#Daten#};
+var DatenArr_x = {#Lx#};
+var DatenArr_y = {#Ly#};
+var PunkteArr = [];
+var segArr = [];
+
+
+
+
+var g = board.jc.snippet('{#g1(x)#}', true, 'x', true);
+
+
+
+
+var gerade = board.create('functiongraph',[g],{
+            highlight:false
+});
+
+
+
+
+//Datenpunkte:
+for(var i of DatenArr){
+            PunkteArr.push(board.create('point',i,{
+                        fixed:true,
+                        size:1.5,
+                        withLabel:false,
+                        highlight:false
+            }));
+};
+
+
+
+
+//Linien zwischen Punkten und Gerade:
+for(let p of PunkteArr){
+            segArr.push(
+	   	   	   	   board.create('segment',[p,[p.X(), function(){return g(p.X())}]],{
+												dash:1,
+												highlight:false,
+												visible:true,
+												color:'black',
+												layer:5
+								})
+            );
+};
+
+	
+	
+	
+	document.getElementById('oer-aufgabe-24_teil1_checkbox_f').addEventListener("change",
+								function(event){
+												if(this.checked){
+																for(let seg of segArr){
+																				seg.setAttribute({visible:true})
+																}
+												} else{
+																for(let seg of segArr){
+																				seg.setAttribute({visible:false})
+																}
+												}
+				});
+[[/jsxgraph]]
+<p>
+    <input checked="true" id="oer-aufgabe-24_teil1_checkbox_f" type="checkbox"/>
+    <label for="oer-aufgabe-24_teil1_checkbox_f">
+        Linien ein-/ausblenden
+    </label>
+</p>
+<hr/>
+<p>
+    Bitte versuchen Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+<div id="oer-aufgabe-24_tipp_button_prt_aufg2">
+    <p>
+        Wenn Sie nicht weiterkommen, k&#246;nnen Sie auf den folgenden Button klicken:
+        <button class="buttontipp" onclick="hide('oer-aufgabe-24_tipp_button_prt_aufg2');show('oer-aufgabe-24_tipp_prt_aufg2');show('oer-aufgabe-24_tipp2_button_prt_aufg2');" type="button">
+            Tipp
+        </button>
+    </p>
+</div>
+<div class="divtipp" id="oer-aufgabe-24_tipp_prt_aufg2" style="display:none">
+    <p>
+        Tipp:
+    </p>
+    <p>
+        Bestimmen Sie zun&#228;chst \(\beta\) und nutzen Sie das Ergebnis, um anschlie&#223;end \(\alpha\) zu bestimmen.
+    </p>
+</div>
+<!-- Zweiter Tipp: -->
+<div id="oer-aufgabe-24_tipp2_button_prt_aufg2" style="display:none">
+    <br/>
+    <button class="buttontipp" onclick="hide('oer-aufgabe-24_tipp2_button_prt_aufg2');show('oer-aufgabe-24_tipp2_prt_aufg2');" type="button">
+        Ich ben&#246;tige einen weiteren Tipp
+    </button>
+</div>
+<div class="divtipp" id="oer-aufgabe-24_tipp2_prt_aufg2" style="display:none">
+    <p>
+        Tipp:
+    </p>
+    <p>
+        Es gilt \(\beta = \frac{s_y}{s_x}\cdot r_{x,y}\) und \(\alpha = \bar{y}-\beta \bar{x}\).
+    </p>
+</div>
+[[/lang]][[lang code="en"]]
+<p>
+    In the following picture you will see the data points and the straight line you provide. The straight line is such that the vertical square distances of the data points to the straight line are not yet minimal.
+</p>
+[[jsxgraph]]
+JXG.Options.text.useMathJax = true;
+
+
+
+
+//Board:
+var board = JXG.JSXGraph.initBoard(divid, {axis:true, showNavigation:false, showCopyright:false, boundingbox: [{#neg_x#}, {#pos_y#}, {#pos_x#}, {#neg_y#}]});
+
+
+
+
+//Arrays:
+var DatenArr = {#Daten#};
+var DatenArr_x = {#Lx#};
+var DatenArr_y = {#Ly#};
+var PunkteArr = [];
+var segArr = [];
+
+
+
+
+var g = board.jc.snippet('{#g1(x)#}', true, 'x', true);
+
+
+
+
+var gerade = board.create('functiongraph',[g],{
+            highlight:false
+});
+
+
+
+
+//Datenpunkte:
+for(var i of DatenArr){
+            PunkteArr.push(board.create('point',i,{
+                        fixed:true,
+                        size:1.5,
+                        withLabel:false,
+                        highlight:false
+            }));
+};
+
+
+
+
+//Linien zwischen Punkten und Gerade:
+for(let p of PunkteArr){
+            segArr.push(
+	   	   	   	   board.create('segment',[p,[p.X(), function(){return g(p.X())}]],{
+												dash:1,
+												highlight:false,
+												visible:true,
+												color:'black',
+												layer:5
+								})
+            );
+};
+
+	
+	
+	
+	document.getElementById('oer-aufgabe-24_teil1_checkbox_f').addEventListener("change",
+								function(event){
+												if(this.checked){
+																for(let seg of segArr){
+																				seg.setAttribute({visible:true})
+																}
+												} else{
+																for(let seg of segArr){
+																				seg.setAttribute({visible:false})
+																}
+												}
+				});
+[[/jsxgraph]]
+<p>
+    <input checked="true" id="oer-aufgabe-24_teil1_checkbox_f" type="checkbox"/>
+    <label for="oer-aufgabe-24_teil1_checkbox_f">
+        Show / hide lines
+    </label>
+</p>
+<hr/>
+<p>
+    Please try again and then click "Check" again.
+</p>
+<div id="oer-aufgabe-24_tipp_button_prt_aufg2">
+    <p>
+        If you do not proceed, you can click the following button:
+        <button class="buttontipp" onclick="hide('oer-aufgabe-24_tipp_button_prt_aufg2');show('oer-aufgabe-24_tipp_prt_aufg2');show('oer-aufgabe-24_tipp2_button_prt_aufg2');" type="button">
+            Tips
+        </button>
+    </p>
+</div>
+<div class="divtipp" id="oer-aufgabe-24_tipp_prt_aufg2" style="display:none">
+    <p>
+        Tip:
+    </p>
+    <p>
+        First determine \(\beta\) and use the result to follow \(\alpha\) to determine.
+    </p>
+</div>
+<!-- Zweiter Tipp: -->
+<div id="oer-aufgabe-24_tipp2_button_prt_aufg2" style="display:none">
+    <br/>
+    <button class="buttontipp" onclick="hide('oer-aufgabe-24_tipp2_button_prt_aufg2');show('oer-aufgabe-24_tipp2_prt_aufg2');" type="button">
+        I need another tip
+    </button>
+</div>
+<div class="divtipp" id="oer-aufgabe-24_tipp2_prt_aufg2" style="display:none">
+    <p>
+        Tip:
+    </p>
+    <p>
+        The following shall apply: \(\beta = \frac{s_y}{s_x}\cdot r_{x,y}\) and \(\alpha = \bar{y}-\beta \bar{x}\).
+    </p>
+</div>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_aufg3</name>
+            <value>0.5000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text><![CDATA[/*
+=== Erkl&#228;rung der Knoten: ===
+Knoten 1: &#220;berpr&#252;ft, ob die Antwort Variablen enth&#228;lt.
+Knoten 2 bis 4: &#220;berpr&#252;fung, ob `ans_beta` richtig ist (verschiedene Varianten des Rundens werden hier ber&#252;cksichtigt)
+Knoten 5: &#220;berpr&#252;fung, ob die Single-Choice-Aufgabe bearbeitet wurde
+*/
+
+/*Verschiedene Darstellungen der Gerade, wo alpha und beta jeweils anders (bzw. bei g1 gar nicht) gerundet werden:*/
+g1(x):= ans_alpha+ans_beta*x;
+g2(x):= decimalplaces(ans_alpha,2)+decimalplaces(ans_beta,2)*x;
+g3(x):= decimalplaces(ans_alpha,4)+decimalplaces(ans_beta,4)*x;
+
+/*Verschiedene Schreibweisen f&#252;r den korrekten y-Wert, je nach Rundung:*/
+y2_2: g1(x2);
+y2_3: g2(x2);
+
+/*Minimaler y-Wert von g im Intervall, in dem die Punkte liegen:*/
+min_g_ans: min( g1(lmin(Lx)), g1(lmax(Lx)) );
+
+/*Maximaler y-Wert von g im Intervall, in dem die Punkte liegen:*/
+max_g_ans: max( g1(lmin(Lx)), g1(lmax(Lx)) );
+
+/*Variablen f&#252;r die JSXGraph-Grafik im Feedbacktext:*/
+pos_y: max( max_g_ans, lmax(Ly), 0 ,ans3, y2 );
+pos_x: max( lmax(Lx), x2);
+neg_y: min(lmin(Ly),0, min_g_ans, ans3, y2);
+neg_x: -1/10*pos_x;
+toleranz_x: 1/10*abs(pos_x-neg_x);
+toleranz_y: 1/10*abs(pos_y-neg_y);
+pos_y: pos_y+toleranz_y;
+pos_x: pos_x+toleranz_x;
+neg_y: neg_y-toleranz_y;
+
+/*String, der in den Feedbacktext eingef&#252;gt wird (je nachdem, ob der gesch&#228;tzte Wert aus (a) auf der Geraden liegt oder nicht):*/
+schaetzung_liegt_auf_geraden: if member(decimalplaces(ans1,2),{decimalplaces(g1(x2),2), decimalplaces(g2(x2),2), decimalplaces(g3(x2),2)}) or is(ans1=ans3) or is(float(ans1)=float(ans3)) then "ebenfalls" else "nicht";
+
+/*In Flie&#223;kommazahlen umgewandelte Antworten aus (a) bzw. (c) */
+ans3_float: float(ans3);
+ans1_float: float(ans1);]]></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>listofvars(ans3)</sans>
+                <tans>[]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt_aufg3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_aufg3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihr Wert f&#252;r \(y\) konnte nicht zu einer Zahl vereinfacht werden. Bitte geben Sie eine Zahl ein und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your value for \(y\) could not be simplified to a number. Please enter a number and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans3</sans>
+                <tans>y2</tans>
+                <testoptions>0.005</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_aufg3-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Setzt man den gegebenen Wert \(x={@x2@}\) in die Regressionsgeradengleichung \(y={@[simp:false,g3(x)][2]@}\) ein, so ergibt sich der zugeh&#246;rige \(y\)-Wert wie folgt:
+    <p>
+        \[
+                \begin{align}
+                                y &amp;= {@[simp:false,g3(x)][2]@} \\
+                                &amp;= {@[simp:false,g1(x2)][2]@} \\
+                                &amp;\approx {@decimalplaces(ans3,4)@}
+                \end{align}
+\]
+        <p>
+            In der folgenden Abbildung sehen Sie noch einmal die Datenpunkte und die von Ihnen angegebene Gerade aus Aufgabe a). Zudem sehen Sie den
+            <span style="color:deeppink">
+                Punkt \( \left( {@x2@} \mid {@ans3@} \right) \)
+            </span>
+            eingezeichnet, dessen \(y\)-Koordinate Sie soeben bestimmt haben (
+            <span style="color:deeppink">
+                pinkes "X"
+            </span>
+            ). Er liegt auf der Regressionsgeraden.
+        </p>
+        <p>
+            Zudem ist auch noch Ihr
+            <span style="color:DarkMagenta">
+                in Aufgabe a) gesch&#228;tzter Punkt \( \left( {@x2@} \mid {@ans1@} \right) \)
+            </span>
+            eingezeichnet (
+            <span style="color:DarkMagenta">
+                violettes "+"
+            </span>
+            ). Er liegt {@schaetzung_liegt_auf_geraden@} auf der Geraden.
+        </p>
+        [[jsxgraph]]
+JXG.Options.text.useMathJax = true;
+
+
+
+
+//Board:
+var board = JXG.JSXGraph.initBoard(divid, {axis:true, showNavigation:false, showCopyright:false, boundingbox: [{#neg_x#}, {#pos_y#}, {#pos_x#}, {#neg_y#}]});
+
+
+
+
+//Arrays:
+var DatenArr = {#Daten#};
+var DatenArr_x = {#Lx#};
+var DatenArr_y = {#Ly#};
+var PunkteArr = [];
+
+
+
+
+var g = board.jc.snippet('{#g1(x)#}', true, 'x', true);
+
+
+
+
+var gerade = board.create('functiongraph',[g],{
+            highlight:false
+});
+
+
+
+
+//Datenpunkte:
+for(var i of DatenArr){
+            PunkteArr.push(board.create('point',i,{
+                        fixed:true,
+                        size:1.5,
+                        withLabel:false,
+                        highlight:false,
+                        color:'grey'
+            }));
+};
+
+
+
+
+//Punkt aus Aufgabe c)
+var p2 = board.create('point',[{#x2#},{#ans3_float#}],{
+                fixed:true,
+                color:'deeppink',
+                size:5,
+                face:'x',
+                withLabel:false,
+                highlight:false
+});
+
+
+
+
+//Punkt aus Aufgabe a)
+var p2 = board.create('point',[{#x2#},{#ans1_float#}],{
+                fixed:true,
+                color:'DarkMagenta',
+                size:3,
+                face:'+',
+                withLabel:false,
+                highlight:false
+});
+
+
+
+
+[[/jsxgraph]]
+        <script>
+            window.onload=function(){
+								hide("oer-aufgabe-24_aufg3_aufforderung");
+								hide("oer-aufgabe-24_hinweisEingabe");
+				};
+        </script>
+        <br/>
+        <p>
+            Herzlichen Gl&#252;ckwunsch, Sie sind am Ende der Aufgabe angekommen! Sie sollten nun eine Regressionsgerade aus gegebenen Kennwerten berechnen und das Regressionsmodell f&#252;r eine Vorhersage anwenden k&#246;nnen.
+        </p>
+        [[/lang]][[lang code="en"]]
+        <p>
+            Set the given value \(x={@x2@}\) in the regression equation \(y={@[simp:false,g3(x)][2]@}\) one, then the associated \(y\)-value as follows:
+            <p>
+                \[
+                \begin{align}
+                                y &amp;= {@[simp:false,g3(x)][2]@} \\
+                                &amp;= {@[simp:false,g1(x2)][2]@} \\
+                                &amp;\approx {@decimalplaces(ans3,4)@}
+                \end{align}
+\]
+                <p>
+                    In the following picture, you will see the data points and the straight line you provide from task a). You can also see
+                    <span style="color:deeppink">
+                        Point \( \left( {@x2@} \mid {@ans3@} \right) \)
+                    </span>
+                    of which: \(y\)-Coordinate you have just determined (
+                    <span style="color:deeppink">
+                        pink "X"
+                    </span>
+                    ). He's on the regression line.
+                </p>
+                <p>
+                    Also yours
+                    <span style="color:DarkMagenta">
+                        (a) estimated point \( \left( {@x2@} \mid {@ans1@} \right) \)
+                    </span>
+                    marked (
+                    <span style="color:DarkMagenta">
+                        violet "+"
+                    </span>
+                    ). He's lying {@schaetzung_liegt_auf_geraden@} on the straight line.
+                </p>
+                [[jsxgraph]]
+JXG.Options.text.useMathJax = true;
+
+
+
+
+//Board:
+var board = JXG.JSXGraph.initBoard(divid, {axis:true, showNavigation:false, showCopyright:false, boundingbox: [{#neg_x#}, {#pos_y#}, {#pos_x#}, {#neg_y#}]});
+
+
+
+
+//Arrays:
+var DatenArr = {#Daten#};
+var DatenArr_x = {#Lx#};
+var DatenArr_y = {#Ly#};
+var PunkteArr = [];
+
+
+
+
+var g = board.jc.snippet('{#g1(x)#}', true, 'x', true);
+
+
+
+
+var gerade = board.create('functiongraph',[g],{
+            highlight:false
+});
+
+
+
+
+//Datenpunkte:
+for(var i of DatenArr){
+            PunkteArr.push(board.create('point',i,{
+                        fixed:true,
+                        size:1.5,
+                        withLabel:false,
+                        highlight:false,
+                        color:'grey'
+            }));
+};
+
+
+
+
+//Punkt aus Aufgabe c)
+var p2 = board.create('point',[{#x2#},{#ans3_float#}],{
+                fixed:true,
+                color:'deeppink',
+                size:5,
+                face:'x',
+                withLabel:false,
+                highlight:false
+});
+
+
+
+
+//Punkt aus Aufgabe a)
+var p2 = board.create('point',[{#x2#},{#ans1_float#}],{
+                fixed:true,
+                color:'DarkMagenta',
+                size:3,
+                face:'+',
+                withLabel:false,
+                highlight:false
+});
+
+
+
+
+[[/jsxgraph]]
+                <script>
+                    window.onload=function(){
+								hide("oer-aufgabe-24_aufg3_aufforderung");
+								hide("oer-aufgabe-24_hinweisEingabe");
+				};
+                </script>
+                <br/>
+                <p>
+                    Congratulations, you have arrived at the end of the task! You should now be able to calculate a regression line from given characteristic values and apply the regression model for a prediction.
+                </p>
+                [[/lang]]
+            </p>
+        </p>
+    </p>
+</p>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt_aufg3-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans3</sans>
+                <tans>y2_2</tans>
+                <testoptions>0.005</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_aufg3-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Setzt man den gegebenen Wert \(x={@x2@}\) in die Regressionsgeradengleichung \(y={@[simp:false,g3(x)][2]@}\) ein, so ergibt sich der zugeh&#246;rige \(y\)-Wert wie folgt:
+    <p>
+        \[
+                \begin{align}
+                                y &amp;= {@[simp:false,g3(x)][2]@} \\
+                                &amp;= {@[simp:false,g1(x2)][2]@} \\
+                                &amp;\approx {@ans3@}
+                \end{align}
+\]
+        <p>
+            In der folgenden Abbildung sehen Sie noch einmal die Datenpunkte und die von Ihnen angegebene Gerade aus Aufgabe a). Zudem sehen Sie den
+            <span style="color:deeppink">
+                Punkt \( \left( {@x2@} \mid {@ans3@} \right) \)
+            </span>
+            eingezeichnet, dessen \(y\)-Koordinate Sie soeben bestimmt haben (
+            <span style="color:deeppink">
+                pinkes "X"
+            </span>
+            ). Er liegt auf der Regressionsgeraden.
+        </p>
+        <p>
+            Zudem ist auch noch Ihr
+            <span style="color:DarkMagenta">
+                in Aufgabe a) gesch&#228;tzter Punkt \( \left( {@x2@} \mid {@ans1@} \right) \)
+            </span>
+            eingezeichnet (
+            <span style="color:DarkMagenta">
+                violettes "+"
+            </span>
+            ). Er liegt {@schaetzung_liegt_auf_geraden@} auf der Geraden.
+        </p>
+        [[jsxgraph]]
+JXG.Options.text.useMathJax = true;
+
+
+
+
+//Board:
+var board = JXG.JSXGraph.initBoard(divid, {axis:true, showNavigation:false, showCopyright:false, boundingbox: [{#neg_x#}, {#pos_y#}, {#pos_x#}, {#neg_y#}]});
+
+
+
+
+//Arrays:
+var DatenArr = {#Daten#};
+var DatenArr_x = {#Lx#};
+var DatenArr_y = {#Ly#};
+var PunkteArr = [];
+
+
+
+
+var g = board.jc.snippet('{#g1(x)#}', true, 'x', true);
+
+
+
+
+var gerade = board.create('functiongraph',[g],{
+            highlight:false
+});
+
+
+
+
+//Datenpunkte:
+for(var i of DatenArr){
+            PunkteArr.push(board.create('point',i,{
+                        fixed:true,
+                        size:1.5,
+                        withLabel:false,
+                        highlight:false,
+                        color:'grey'
+            }));
+};
+
+
+
+
+//Punkt aus Aufgabe c)
+var p2 = board.create('point',[{#x2#},{#ans3_float#}],{
+                fixed:true,
+                color:'deeppink',
+                size:5,
+                face:'x',
+                withLabel:false,
+                highlight:false
+});
+
+
+
+
+//Punkt aus Aufgabe a)
+var p2 = board.create('point',[{#x2#},{#ans1_float#}],{
+                fixed:true,
+                color:'DarkMagenta',
+                size:3,
+                face:'+',
+                withLabel:false,
+                highlight:false
+});
+[[/jsxgraph]]
+        <script>
+            window.onload=function(){
+								hide("oer-aufgabe-24_aufg3_aufforderung");
+								hide("oer-aufgabe-24_hinweisEingabe");
+				};
+        </script>
+        <br/>
+        <p>
+            Herzlichen Gl&#252;ckwunsch, Sie sind am Ende der Aufgabe angekommen! Sie sollten nun eine Regressionsgerade aus gegebenen Kennwerten berechnen und das Regressionsmodell f&#252;r eine Vorhersage anwenden k&#246;nnen.
+        </p>
+        [[/lang]][[lang code="en"]]
+        <p>
+            Set the given value \(x={@x2@}\) in the regression equation \(y={@[simp:false,g3(x)][2]@}\) one, then the associated \(y\)-value as follows:
+            <p>
+                \[
+                \begin{align}
+                                y &amp;= {@[simp:false,g3(x)][2]@} \\
+                                &amp;= {@[simp:false,g1(x2)][2]@} \\
+                                &amp;\approx {@ans3@}
+                \end{align}
+\]
+                <p>
+                    In the following picture, you will see the data points and the straight line you provide from task a). You can also see
+                    <span style="color:deeppink">
+                        Point \( \left( {@x2@} \mid {@ans3@} \right) \)
+                    </span>
+                    of which: \(y\)-Coordinate you have just determined (
+                    <span style="color:deeppink">
+                        pink "X"
+                    </span>
+                    ). He's on the regression line.
+                </p>
+                <p>
+                    Also yours
+                    <span style="color:DarkMagenta">
+                        (a) estimated point \( \left( {@x2@} \mid {@ans1@} \right) \)
+                    </span>
+                    marked (
+                    <span style="color:DarkMagenta">
+                        violet "+"
+                    </span>
+                    ). He's lying {@schaetzung_liegt_auf_geraden@} on the straight line.
+                </p>
+                [[jsxgraph]]
+JXG.Options.text.useMathJax = true;
+
+
+
+
+//Board:
+var board = JXG.JSXGraph.initBoard(divid, {axis:true, showNavigation:false, showCopyright:false, boundingbox: [{#neg_x#}, {#pos_y#}, {#pos_x#}, {#neg_y#}]});
+
+
+
+
+//Arrays:
+var DatenArr = {#Daten#};
+var DatenArr_x = {#Lx#};
+var DatenArr_y = {#Ly#};
+var PunkteArr = [];
+
+
+
+
+var g = board.jc.snippet('{#g1(x)#}', true, 'x', true);
+
+
+
+
+var gerade = board.create('functiongraph',[g],{
+            highlight:false
+});
+
+
+
+
+//Datenpunkte:
+for(var i of DatenArr){
+            PunkteArr.push(board.create('point',i,{
+                        fixed:true,
+                        size:1.5,
+                        withLabel:false,
+                        highlight:false,
+                        color:'grey'
+            }));
+};
+
+
+
+
+//Punkt aus Aufgabe c)
+var p2 = board.create('point',[{#x2#},{#ans3_float#}],{
+                fixed:true,
+                color:'deeppink',
+                size:5,
+                face:'x',
+                withLabel:false,
+                highlight:false
+});
+
+
+
+
+//Punkt aus Aufgabe a)
+var p2 = board.create('point',[{#x2#},{#ans1_float#}],{
+                fixed:true,
+                color:'DarkMagenta',
+                size:3,
+                face:'+',
+                withLabel:false,
+                highlight:false
+});
+[[/jsxgraph]]
+                <script>
+                    window.onload=function(){
+								hide("oer-aufgabe-24_aufg3_aufforderung");
+								hide("oer-aufgabe-24_hinweisEingabe");
+				};
+                </script>
+                <br/>
+                <p>
+                    Congratulations, you have arrived at the end of the task! You should now be able to calculate a regression line from given characteristic values and apply the regression model for a prediction.
+                </p>
+                [[/lang]]
+            </p>
+        </p>
+    </p>
+</p>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prt_aufg3-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans3</sans>
+                <tans>y2_3</tans>
+                <testoptions>0.005</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_aufg3-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Setzt man den gegebenen Wert \(x={@x2@}\) in die Regressionsgeradengleichung \(y={@[simp:false,g3(x)][2]@}\) ein, so ergibt sich der zugeh&#246;rige \(y\)-Wert wie folgt:
+    <p>
+        \[
+                \begin{align}
+                                y &amp;= {@[simp:false,g3(x)][2]@} \\
+                                &amp;= {@[simp:false,g1(x2)][2]@} \\
+                                &amp;\approx {@ans3@}
+                \end{align}
+\]
+        <p>
+            In der folgenden Abbildung sehen Sie noch einmal die Datenpunkte und die von Ihnen angegebene Gerade aus Aufgabe a). Zudem sehen Sie den
+            <span style="color:deeppink">
+                Punkt \( \left( {@x2@} \mid {@ans3@} \right) \)
+            </span>
+            eingezeichnet, dessen \(y\)-Koordinate Sie soeben bestimmt haben (
+            <span style="color:deeppink">
+                pinkes "X"
+            </span>
+            ). Er liegt auf der Regressionsgeraden.
+        </p>
+        <p>
+            Zudem ist auch noch Ihr
+            <span style="color:DarkMagenta">
+                in Aufgabe a) gesch&#228;tzter Punkt \( \left( {@x2@} \mid {@ans1@} \right) \)
+            </span>
+            eingezeichnet (
+            <span style="color:DarkMagenta">
+                violettes "+"
+            </span>
+            ). Er liegt {@schaetzung_liegt_auf_geraden@} auf der Geraden.
+        </p>
+        [[jsxgraph]]
+JXG.Options.text.useMathJax = true;
+
+
+
+
+//Board:
+var board = JXG.JSXGraph.initBoard(divid, {axis:true, showNavigation:false, showCopyright:false, boundingbox: [{#neg_x#}, {#pos_y#}, {#pos_x#}, {#neg_y#}]});
+
+
+
+
+//Arrays:
+var DatenArr = {#Daten#};
+var DatenArr_x = {#Lx#};
+var DatenArr_y = {#Ly#};
+var PunkteArr = [];
+
+
+
+
+var g = board.jc.snippet('{#g1(x)#}', true, 'x', true);
+
+
+
+
+var gerade = board.create('functiongraph',[g],{
+            highlight:false
+});
+
+
+
+
+//Datenpunkte:
+for(var i of DatenArr){
+            PunkteArr.push(board.create('point',i,{
+                        fixed:true,
+                        size:1.5,
+                        withLabel:false,
+                        highlight:false,
+                        color:'grey'
+            }));
+};
+
+
+
+
+//Punkt aus Aufgabe c)
+var p2 = board.create('point',[{#x2#},{#ans3_float#}],{
+                fixed:true,
+                color:'deeppink',
+                size:5,
+                face:'x',
+                withLabel:false,
+                highlight:false
+});
+
+
+
+
+//Punkt aus Aufgabe a)
+var p2 = board.create('point',[{#x2#},{#ans1_float#}],{
+                fixed:true,
+                color:'DarkMagenta',
+                size:3,
+                face:'+',
+                withLabel:false,
+                highlight:false
+});
+[[/jsxgraph]]
+        <script>
+            window.onload=function(){
+								hide("oer-aufgabe-24_aufg3_aufforderung");
+								hide("oer-aufgabe-24_hinweisEingabe");
+				};
+        </script>
+        <br/>
+        <p>
+            Herzlichen Gl&#252;ckwunsch, Sie sind am Ende der Aufgabe angekommen!
+        </p>
+        [[/lang]][[lang code="en"]]
+        <p>
+            Set the given value \(x={@x2@}\) in the regression equation \(y={@[simp:false,g3(x)][2]@}\) one, then the associated \(y\)-value as follows:
+            <p>
+                \[
+                \begin{align}
+                                y &amp;= {@[simp:false,g3(x)][2]@} \\
+                                &amp;= {@[simp:false,g1(x2)][2]@} \\
+                                &amp;\approx {@ans3@}
+                \end{align}
+\]
+                <p>
+                    In the following picture, you will see the data points and the straight line you provide from task a). You can also see
+                    <span style="color:deeppink">
+                        Point \( \left( {@x2@} \mid {@ans3@} \right) \)
+                    </span>
+                    of which: \(y\)-Coordinate you have just determined (
+                    <span style="color:deeppink">
+                        pink "X"
+                    </span>
+                    ). He's on the regression line.
+                </p>
+                <p>
+                    Also yours
+                    <span style="color:DarkMagenta">
+                        (a) estimated point \( \left( {@x2@} \mid {@ans1@} \right) \)
+                    </span>
+                    marked (
+                    <span style="color:DarkMagenta">
+                        violet "+"
+                    </span>
+                    ). He's lying {@schaetzung_liegt_auf_geraden@} on the straight line.
+                </p>
+                [[jsxgraph]]
+JXG.Options.text.useMathJax = true;
+
+
+
+
+//Board:
+var board = JXG.JSXGraph.initBoard(divid, {axis:true, showNavigation:false, showCopyright:false, boundingbox: [{#neg_x#}, {#pos_y#}, {#pos_x#}, {#neg_y#}]});
+
+
+
+
+//Arrays:
+var DatenArr = {#Daten#};
+var DatenArr_x = {#Lx#};
+var DatenArr_y = {#Ly#};
+var PunkteArr = [];
+
+
+
+
+var g = board.jc.snippet('{#g1(x)#}', true, 'x', true);
+
+
+
+
+var gerade = board.create('functiongraph',[g],{
+            highlight:false
+});
+
+
+
+
+//Datenpunkte:
+for(var i of DatenArr){
+            PunkteArr.push(board.create('point',i,{
+                        fixed:true,
+                        size:1.5,
+                        withLabel:false,
+                        highlight:false,
+                        color:'grey'
+            }));
+};
+
+
+
+
+//Punkt aus Aufgabe c)
+var p2 = board.create('point',[{#x2#},{#ans3_float#}],{
+                fixed:true,
+                color:'deeppink',
+                size:5,
+                face:'x',
+                withLabel:false,
+                highlight:false
+});
+
+
+
+
+//Punkt aus Aufgabe a)
+var p2 = board.create('point',[{#x2#},{#ans1_float#}],{
+                fixed:true,
+                color:'DarkMagenta',
+                size:3,
+                face:'+',
+                withLabel:false,
+                highlight:false
+});
+[[/jsxgraph]]
+                <script>
+                    window.onload=function(){
+								hide("oer-aufgabe-24_aufg3_aufforderung");
+								hide("oer-aufgabe-24_hinweisEingabe");
+				};
+                </script>
+                <br/>
+                <p>
+                    Congratulations, you have arrived at the end of the task!
+                </p>
+                [[/lang]]
+            </p>
+        </p>
+    </p>
+</p>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prt_aufg3-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben den zu \(x={@x2@}\) geh&#246;rigen \(y\)-Wert nicht korrekt mit dem Regressionsmodell vorhergesagt.
+</p>
+<p>
+    In der folgenden Abbildung sehen Sie noch einmal die Datenpunkte und die von Ihnen angegebene Gerade aus Aufgabe a). Zudem sehen Sie den
+    <span style="color:deeppink">
+        Punkt \( \left( {@x2@} \mid {@ans3@} \right) \)
+    </span>
+    eingezeichnet, dessen \(y\)-Koordinate Sie soeben angegeben haben (
+    <span style="color:deeppink">
+        pinkes "X"
+    </span>
+    ). Die
+    <span style="color:deeppink">
+        pinke vertikale Linie
+    </span>
+    markiert die gegebene \(x\)-Stelle.
+</p>
+[[jsxgraph]]
+JXG.Options.text.useMathJax = true;
+
+
+
+
+//Board:
+var board = JXG.JSXGraph.initBoard(divid, {axis:true, showNavigation:false, showCopyright:false, boundingbox: [{#neg_x#}, {#pos_y#}, {#pos_x#}, {#neg_y#}]});
+
+
+
+
+//Arrays:
+var DatenArr = {#Daten#};
+var DatenArr_x = {#Lx#};
+var DatenArr_y = {#Ly#};
+var PunkteArr = [];
+
+
+
+
+var g = board.jc.snippet('{#g1(x)#}', true, 'x', true);
+
+
+
+
+var gerade = board.create('functiongraph',[g],{
+            highlight:false
+});
+
+
+
+
+//Datenpunkte:
+for(var i of DatenArr){
+            PunkteArr.push(board.create('point',i,{
+                        fixed:true,
+                        size:1.5,
+                        withLabel:false,
+                        highlight:false,
+                        color:'grey'
+            }));
+};
+
+
+
+
+//Punkt aus Aufgabe b)
+var p2 = board.create('point',[{#x2#},{#ans3_float#}],{
+                fixed:true,
+                color:'deeppink',
+                size:5,
+                face:'x',
+                withLabel:false,
+                highlight:false
+});
+
+
+
+
+//Hilfslinie
+var l2 = board.create('line',[p2,[{#x2#},{#100#}]],{
+                fixed:true,
+                color:'deeppink',
+                dash:'2',
+                withLabel:false,
+                highlight:false,
+                strokeWidth:1
+});
+[[/jsxgraph]][[/lang]][[lang code="en"]]
+<p>
+    You have to \(x={@x2@}\) Decoy \(y\)-value not correctly predicted with the regression model.
+</p>
+<p>
+    In the following picture, you will see the data points and the straight line you provide from task a). You can also see
+    <span style="color:deeppink">
+        Point \( \left( {@x2@} \mid {@ans3@} \right) \)
+    </span>
+    of which: \(y\)-Coordinate you have just specified (
+    <span style="color:deeppink">
+        pink "X"
+    </span>
+    ). The
+    <span style="color:deeppink">
+        pink vertical line
+    </span>
+    marked the given \(x\)-Shut up.
+</p>
+[[jsxgraph]]
+JXG.Options.text.useMathJax = true;
+
+
+
+
+//Board:
+var board = JXG.JSXGraph.initBoard(divid, {axis:true, showNavigation:false, showCopyright:false, boundingbox: [{#neg_x#}, {#pos_y#}, {#pos_x#}, {#neg_y#}]});
+
+
+
+
+//Arrays:
+var DatenArr = {#Daten#};
+var DatenArr_x = {#Lx#};
+var DatenArr_y = {#Ly#};
+var PunkteArr = [];
+
+
+
+
+var g = board.jc.snippet('{#g1(x)#}', true, 'x', true);
+
+
+
+
+var gerade = board.create('functiongraph',[g],{
+            highlight:false
+});
+
+
+
+
+//Datenpunkte:
+for(var i of DatenArr){
+            PunkteArr.push(board.create('point',i,{
+                        fixed:true,
+                        size:1.5,
+                        withLabel:false,
+                        highlight:false,
+                        color:'grey'
+            }));
+};
+
+
+
+
+//Punkt aus Aufgabe b)
+var p2 = board.create('point',[{#x2#},{#ans3_float#}],{
+                fixed:true,
+                color:'deeppink',
+                size:5,
+                face:'x',
+                withLabel:false,
+                highlight:false
+});
+
+
+
+
+//Hilfslinie
+var l2 = board.create('line',[p2,[{#x2#},{#100#}]],{
+                fixed:true,
+                color:'deeppink',
+                dash:'2',
+                withLabel:false,
+                highlight:false,
+                strokeWidth:1
+});
+[[/jsxgraph]][[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>state</sans>
+                <tans>EMPTYANSWER</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_aufg3-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-aufgabe-24_button-zu-MC">
+    <p>
+        Bitte klicken Sie zum Fortfahren auf den folgenden Button:
+        <button class="buttonweiter" id="oer-aufgabe-24-btn_prt_aufg3" onclick="
+                                show('oer-aufgabe-24_mc');
+                                hide('oer-aufgabe-24_hinweisEingabe');
+                                hide('oer-aufgabe-24_button-zu-MC');
+                                document.querySelector(['#oer-aufgabe-24_input_state &gt; input']).value='1';
+                                location.href = '#oer-aufgabe-24_mc';
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<script>
+    window.addEventListener('load', function (){
+	    	    	    	    hide('oer-aufgabe-24_aufg3_input');
+				});
+</script>
+[[/lang]][[lang code="en"]]
+<div id="oer-aufgabe-24_button-zu-MC">
+    <p>
+        Please click on the following button to continue:
+        <button class="buttonweiter" id="oer-aufgabe-24-btn_prt_aufg3" onclick="
+                                show('oer-aufgabe-24_mc');
+                                hide('oer-aufgabe-24_hinweisEingabe');
+                                hide('oer-aufgabe-24_button-zu-MC');
+                                document.querySelector(['#oer-aufgabe-24_input_state &gt; input']).value='1';
+                                location.href = '#oer-aufgabe-24_mc';
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<script>
+    window.addEventListener('load', function (){
+	    	    	    	    hide('oer-aufgabe-24_aufg3_input');
+				});
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_aufg3-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_mc</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text>/*
+=== Erkl&#228;rung der Knoten: ===
+Knoten 1: &#220;berpr&#252;ft, ob Option 1 ausgew&#228;hlt wurde.
+Knoten 2: &#220;berpr&#252;ft, ob Option 2 ausgew&#228;hlt wurde.
+Knoten 3: &#220;berpr&#252;ft, ob Option 3 ausgew&#228;hlt wurde.
+*/</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_mc</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_mc-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p class="correct">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</p>
+<p>
+    Der Punkt \( \left( {@x2@} \mid {@ans1@} \right) \) liegt nicht auf der Regressionsgeraden. Das muss er aber, damit es sich um eine korrekte Vorhersage f&#252;r den zu \(x={@x2@}\) geh&#246;rigen \(y\)-Wert handeln kann.
+    <p>
+        <p>
+            Beachten Sie dies, wenn Sie die urspr&#252;ngliche Aufgabe nun noch einmal probieren. Klicken Sie dazu auf den folgenden Button:
+            <button class="buttonzurueck" id="oer-aufgabe-24-btn_prt_mc" onclick="
+                                show('oer-aufgabe-24_aufg3_input');
+                                hide('oer-aufgabe-24_mc');
+                                show('oer-aufgabe-24_hinweisEingabe');
+                                show('oer-aufgabe-24_aufg3_aufforderung');
+                                location.href = '#oer-aufgabe-24_aufg3_aufforderung';
+                " type="button">
+                Zur&#252;ck zur urspr&#252;nglichen Aufgabe
+            </button>
+        </p>
+        [[/lang]][[lang code="en"]]
+        <p class="correct">
+            <span style="font-size: 1.5em; color:green;">
+                <i class="fa fa-check">
+                </i>
+            </span>
+            Right answer, well done!
+        </p>
+        <p>
+            The point \( \left( {@x2@} \mid {@ans1@} \right) \) is not on the regression line. But he must, so that it is a correct prediction for the \(x={@x2@}\) Decoy \(y\)-value can act.
+            <p>
+                <p>
+                    Note this if you try the original task again. Click on the following button:
+                    <button class="buttonzurueck" id="oer-aufgabe-24-btn_prt_mc" onclick="
+                                show('oer-aufgabe-24_aufg3_input');
+                                hide('oer-aufgabe-24_mc');
+                                show('oer-aufgabe-24_hinweisEingabe');
+                                show('oer-aufgabe-24_aufg3_aufforderung');
+                                location.href = '#oer-aufgabe-24_aufg3_aufforderung';
+                " type="button">
+                        Back to the original task
+                    </button>
+                </p>
+                [[/lang]]
+            </p>
+        </p>
+    </p>
+</p>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt_mc-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p class="incorrect">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</p>
+[[/lang]][[lang code="en"]]
+<p class="incorrect">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_mc</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_mc-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Der Punkt an der Stelle \(x={@x2@}\) muss nicht mit einem der Datenpunkte &#252;bereinstimmen. Vielmehr ist die Idee der Vorhersage des \(y\)-Werts mithilfe des Regressionsmodells, dass auch f&#252;r \(x\)-Werte, an denen
+    <em>
+        kein
+    </em>
+    Datenpunkt vorliegt, ein passender \(y\)-Wert ermittelt werden kann.
+</p>
+<p>
+    Bitte w&#228;hlen Sie eine andere Antwort aus und klicken Sie dann auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The point at the place \(x={@x2@}\) does not have to match one of the data points. The idea of predicting the \(y\)-value with the regression model that also for \(x\)-values at which
+    <em>
+        No
+    </em>
+    data point is present, a suitable \(y\)-value can be determined.
+</p>
+<p>
+    Please select another answer and then click "Check".
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt_mc-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans_mc</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_mc-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Da die gestrichelte Linie an der gegebenen \(x\)-Stelle gezogen wurde, wird der Punkt immer auf der Linie liegen &#8211; auch, wenn die Antwort richtig ist.
+</p>
+<p>
+    Bitte w&#228;hlen Sie eine andere Antwort aus und klicken Sie dann auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Since the dashed line at the given \(x\)The point will always be on the line &#8211; even if the answer is correct.
+</p>
+<p>
+    Please select another answer and then click "Check".
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_mc-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Der Abstand des Punktes an der Stelle \(x={@x2@}\) von der Regressionsgeraden ist
+    <em>
+        nicht
+    </em>
+    null. Dementsprechend kann daraus auch nichts gefolgert werden.
+</p>
+<p>
+    Bitte w&#228;hlen Sie eine andere Antwort aus und klicken Sie dann auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The distance of the point at the place \(x={@x2@}\) of the regression line
+    <em>
+        not
+    </em>
+    Zero. Accordingly, nothing can be concluded from this.
+</p>
+<p>
+    Please select another answer and then click "Check".
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>56173882</deployedseed>
+        <deployedseed>1595405767</deployedseed>
+        <deployedseed>726171890</deployedseed>
+        <deployedseed>64366251</deployedseed>
+        <deployedseed>2033877197</deployedseed>
+        <deployedseed>819038372</deployedseed>
+        <deployedseed>454241332</deployedseed>
+        <deployedseed>1292039656</deployedseed>
+        <deployedseed>151467768</deployedseed>
+        <deployedseed>826060884</deployedseed>
+        <deployedseed>617063643</deployedseed>
+        <deployedseed>651106060</deployedseed>
+        <deployedseed>167142319</deployedseed>
+        <deployedseed>22723110</deployedseed>
+        <deployedseed>2081372898</deployedseed>
+        <deployedseed>493094652</deployedseed>
+        <deployedseed>2012873005</deployedseed>
+        <deployedseed>1292558276</deployedseed>
+        <deployedseed>1927104039</deployedseed>
+        <deployedseed>438537007</deployedseed>
+        <deployedseed>1257768953</deployedseed>
+        <deployedseed>2142719307</deployedseed>
+        <deployedseed>261625581</deployedseed>
+        <deployedseed>2083752522</deployedseed>
+        <deployedseed>1801844084</deployedseed>
+        <deployedseed>1071502176</deployedseed>
+        <deployedseed>2064929461</deployedseed>
+        <deployedseed>1463459998</deployedseed>
+        <deployedseed>426175315</deployedseed>
+        <deployedseed>634639999</deployedseed>
+        <deployedseed>612834742</deployedseed>
+        <deployedseed>982919482</deployedseed>
+        <deployedseed>141762779</deployedseed>
+        <deployedseed>1650383583</deployedseed>
+        <deployedseed>1918324595</deployedseed>
+        <deployedseed>888255387</deployedseed>
+        <deployedseed>1212210560</deployedseed>
+        <deployedseed>934666144</deployedseed>
+        <deployedseed>869807783</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <description/>
+            <testinput>
+                <name>ans_alpha</name>
+                <value>decimalplaces(alpha,2)</value>
+            </testinput>
+            <testinput>
+                <name>ans_beta</name>
+                <value>decimalplaces(beta,2)</value>
+            </testinput>
+            <testinput>
+                <name>ans_mc</name>
+                <value>first(mcq_correct(Liste_mc))</value>
+            </testinput>
+            <testinput>
+                <name>ans1</name>
+                <value>decimalplaces(y2,2)</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>decimalplaces(y2,2)</value>
+            </testinput>
+            <testinput>
+                <name>state</name>
+                <value><![CDATA[""]]></value>
+            </testinput>
+            <expected>
+                <name>prt_aufg1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt_aufg1-2-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_aufg2_alpha</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt_aufg2_alpha-2-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_aufg2_beta</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt_aufg2_beta-2-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_aufg2_weiter</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt_aufg2_weiter-2-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_aufg3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt_aufg3-2-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_mc</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt_mc-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

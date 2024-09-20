@@ -6,23 +6,17 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Wir betrachten die komplexe Zahl \( z={@z@}\).
-    </p>
-    <p>
-        Bestimmen Sie Realteil \( x\) und Imagin&#228;rteil \( y\) der komplexen Zahl \[\dfrac{1}{z} = x + \mathrm{i} \cdot y\].
-    </p>
-    <p>
-    </p>
-    <span style="font-size: 0.9375rem;">
-        \( x = \) [[input:ans1]] [[validation:ans1]] und \( y = \) [[input:ans2]]. [[validation:ans2]]
-    </span>
-    <br/>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
+[[lang code="de"]]
+<p>
+    Wir betrachten die komplexe Zahl \( z={@z@}\).
+</p>
+<p>
+    Bestimmen Sie Realteil \( x\) und Imagin&#228;rteil \( y\) der komplexen Zahl \[\dfrac{1}{z} = x + \mathrm{i} \cdot y\].
+</p>
+<p>
+</p>
+<span style="font-size: 0.9375rem;">
+    \( x = \) [[/lang]][[lang code="en"]]
     <p>
         We consider the complex number \( z={@z@}\).
     </p>
@@ -32,56 +26,60 @@
     <p>
     </p>
     <span style="font-size: 0.9375rem;">
-        \( x = \) [[input:ans1]] [[validation:ans1]] and \( y = \) [[input:ans2]]. [[validation:ans2]]
+        \( x = \) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]] und \( y = \) [[/lang]][[lang code="en"]] and \( y = \) [[/lang]][[input:ans2]][[lang code="de"]]. [[/lang]][[lang code="en"]]. [[/lang]][[validation:ans2]][[lang code="de"]]
     </span>
     <br/>
     <p>
     </p>
+    [[/lang]][[lang code="en"]]
 </span>
+<br/>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p dir="ltr" style="text-align: left;">
-        <strong>
-            L&#246;sungsweg:
-        </strong>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        Wegen \(|z|^2 = z \cdot \overline{z}\) gilt&#160;\(\dfrac{1}{z} = \dfrac{\overline{z}}{|z|^2}\).
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        \(\overline{z}= \overline{{@z@}} = {@zq@}\)
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        \(|z|^2 = ({@x@})^2+({@y@})^2&#160;= {@x^2@}+{@y^2@} = {@x^2+y^2@}\)
-        <br/>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        Also ist \(\dfrac{1}{z} = \dfrac{@zq@}{{@x^2+y^2@}} = \displaystyle {@zi@}\), womit \(x = \displaystyle {@xi@}\) und \(y = \displaystyle {@yi@}\).
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p dir="ltr" style="text-align: left;">
-        <strong>
-            Solution:
-        </strong>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        About \(|z|^2 = z \cdot \overline{z}\) Date\(\dfrac{1}{z} = \dfrac{\overline{z}}{|z|^2}\).
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        \(\overline{z}= \overline{{@z@}} = {@zq@}\)
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        \(|z|^2 = ({@x@})^2+({@y@})^2&#160;= {@x^2@}+{@y^2@} = {@x^2+y^2@}\)
-        <br/>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        So... \(\dfrac{1}{z} = \dfrac{@zq@}{{@x^2+y^2@}} = \displaystyle {@zi@}\)with \(x = \displaystyle {@xi@}\) and \(y = \displaystyle {@yi@}\).
-    </p>
-</span>
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    <strong>
+        L&#246;sungsweg:
+    </strong>
+</p>
+<p dir="ltr" style="text-align: left;">
+    Wegen \(|z|^2 = z \cdot \overline{z}\) gilt&#160;\(\dfrac{1}{z} = \dfrac{\overline{z}}{|z|^2}\).
+</p>
+<p dir="ltr" style="text-align: left;">
+    \(\overline{z}= \overline{{@z@}} = {@zq@}\)
+</p>
+<p dir="ltr" style="text-align: left;">
+    \(|z|^2 = ({@x@})^2+({@y@})^2&#160;= {@x^2@}+{@y^2@} = {@x^2+y^2@}\)
+    <br/>
+</p>
+<p dir="ltr" style="text-align: left;">
+    Also ist \(\dfrac{1}{z} = \dfrac{@zq@}{{@x^2+y^2@}} = \displaystyle {@zi@}\), womit \(x = \displaystyle {@xi@}\) und \(y = \displaystyle {@yi@}\).
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    <strong>
+        Solution:
+    </strong>
+</p>
+<p dir="ltr" style="text-align: left;">
+    About \(|z|^2 = z \cdot \overline{z}\) Date\(\dfrac{1}{z} = \dfrac{\overline{z}}{|z|^2}\).
+</p>
+<p dir="ltr" style="text-align: left;">
+    \(\overline{z}= \overline{{@z@}} = {@zq@}\)
+</p>
+<p dir="ltr" style="text-align: left;">
+    \(|z|^2 = ({@x@})^2+({@y@})^2&#160;= {@x^2@}+{@y^2@} = {@x^2+y^2@}\)
+    <br/>
+</p>
+<p dir="ltr" style="text-align: left;">
+    So... \(\dfrac{1}{z} = \dfrac{@zq@}{{@x^2+y^2@}} = \displaystyle {@zi@}\)with \(x = \displaystyle {@xi@}\) and \(y = \displaystyle {@yi@}\).
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -102,20 +100,17 @@ zq: conjugate(z);</text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    [[feedback:prt1]]
+[[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]]
+<p>
+    [[/lang]][[lang code="en"]]
     <p>
-        [[feedback:prt2]]
+        [[/lang]][[feedback:prt2]][[lang code="de"]]
         <br/>
     </p>
-</span>
-<span class="multilang" lang="en">
-    [[feedback:prt1]]
-    <p>
-        [[feedback:prt2]]
-        <br/>
-    </p>
-</span>
+    [[/lang]][[lang code="en"]]
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -129,32 +124,17 @@ zq: conjugate(z);</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -225,16 +205,15 @@ zq: conjugate(z);</text>
                 <trueanswernote>prt1-2-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Der Realteil ist korrekt berechnet.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The real part is calculated correctly.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Der Realteil ist korrekt berechnet.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The real part is calculated correctly.
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -244,18 +223,17 @@ zq: conjugate(z);</text>
                 <falseanswernote>prt1-2-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Der Realteil ist falsch.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The real part is wrong.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Der Realteil ist falsch.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The real part is wrong.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -283,16 +261,15 @@ zq: conjugate(z);</text>
                 <trueanswernote>prt2-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Der Imagin&#228;rteil ist richtig.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The imaginary part is correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Der Imagin&#228;rteil ist richtig.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The imaginary part is correct.
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -302,18 +279,17 @@ zq: conjugate(z);</text>
                 <falseanswernote>prt2-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Der Imagin&#228;rteil ist falsch.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The imaginary part is wrong.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Der Imagin&#228;rteil ist falsch.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The imaginary part is wrong.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -332,16 +308,15 @@ zq: conjugate(z);</text>
                 <trueanswernote>prt2-2-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihr Imagin&#228;rteil enth&#228;lt f&#228;lschlicherweise noch das \(i\).
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your imaginary part contains incorrectly the \(i\).
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Ihr Imagin&#228;rteil enth&#228;lt f&#228;lschlicherweise noch das \(i\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your imaginary part contains incorrectly the \(i\).
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>

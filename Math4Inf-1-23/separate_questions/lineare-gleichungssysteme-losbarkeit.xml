@@ -6,88 +6,84 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Sei \[A = \begin{pmatrix} 1 &amp; 2 &amp; 2\\ -2 &amp; 5 &amp; 1\\ 4 &amp; 8 &amp; 8 \end{pmatrix}\] und \[b= \begin{pmatrix} 1\\ 1\\ 4\end{pmatrix}.\]
-    <br/>
-    <br/>
-    Was k&#246;nnen Sie &#252;ber die L&#246;sungsmenge \(\mathbb{L}\) des LGS \(Ax=b\) aussagen?
-    <br/>
-</span>
-<span class="multilang" lang="en">
-    Be careful \[A = \begin{pmatrix} 1 &amp; 2 &amp; 2\\ -2 &amp; 5 &amp; 1\\ 4 &amp; 8 &amp; 8 \end{pmatrix}\] and \[b= \begin{pmatrix} 1\\ 1\\ 4\end{pmatrix}.\]
-    <br/>
-    <br/>
-    What can you do about the solution quantity \(\mathbb{L}\) the LGS \(Ax=b\) testify?
-    <br/>
-</span>
+[[lang code="de"]]Sei \[A = \begin{pmatrix} 1 &amp; 2 &amp; 2\\ -2 &amp; 5 &amp; 1\\ 4 &amp; 8 &amp; 8 \end{pmatrix}\] und \[b= \begin{pmatrix} 1\\ 1\\ 4\end{pmatrix}.\]
+<br/>
+<br/>
+Was k&#246;nnen Sie &#252;ber die L&#246;sungsmenge \(\mathbb{L}\) des LGS \(Ax=b\) aussagen?
+<br/>
+[[/lang]][[lang code="en"]]Let \[A = \begin{pmatrix} 1 &amp; 2 &amp; 2\\ -2 &amp; 5 &amp; 1\\ 4 &amp; 8 &amp; 8 \end{pmatrix}\] and \[b= \begin{pmatrix} 1\\ 1\\ 4\end{pmatrix}.\]
+<br/>
+<br/>
+What can you do about the solution set \(\mathbb{L}\) the LGS \(Ax=b\) testify?
+<br/>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        <strong>
-            L&#246;sung
-        </strong>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        Mit Gauss:
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(\left(\begin{array}{ccc|c} 1 &amp; 2 &amp; 2 &amp; 1 \\ -2 &amp; 5 &amp; 1 &amp; 1 \\ 4 &amp; 8 &amp; 8 &amp; 4 \end{array}\right) \xrightarrow{II+2I, III-4I} \left(\begin{array}{ccc|c} 1 &amp; 2 &amp; 2 &amp; 1 \\ 0 &amp; 9 &amp; 5 &amp; 3 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right)\)
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        Daraus folgt, dass es eine freie Variable gibt und somit unendlich viele L&#246;sungen existieren.
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <h4>
-        <strong>
-            Solution
-        </strong>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        With Gauss:
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(\left(\begin{array}{ccc|c} 1 &amp; 2 &amp; 2 &amp; 1 \\ -2 &amp; 5 &amp; 1 &amp; 1 \\ 4 &amp; 8 &amp; 8 &amp; 4 \end{array}\right) \xrightarrow{II+2I, III-4I} \left(\begin{array}{ccc|c} 1 &amp; 2 &amp; 2 &amp; 1 \\ 0 &amp; 9 &amp; 5 &amp; 3 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right)\)
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        It follows that there is a free variable and thus infinitely many solutions exist.
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<h4>
+    <strong>
+        L&#246;sung
+    </strong>
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    Mit Gauss:
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    \(\left(\begin{array}{ccc|c} 1 &amp; 2 &amp; 2 &amp; 1 \\ -2 &amp; 5 &amp; 1 &amp; 1 \\ 4 &amp; 8 &amp; 8 &amp; 4 \end{array}\right) \xrightarrow{II+2I, III-4I} \left(\begin{array}{ccc|c} 1 &amp; 2 &amp; 2 &amp; 1 \\ 0 &amp; 9 &amp; 5 &amp; 3 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right)\)
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    Daraus folgt, dass es eine freie Variable gibt und somit unendlich viele L&#246;sungen existieren.
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<h4>
+    <strong>
+        Solution
+    </strong>
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    With Gauss:
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    \(\left(\begin{array}{ccc|c} 1 &amp; 2 &amp; 2 &amp; 1 \\ -2 &amp; 5 &amp; 1 &amp; 1 \\ 4 &amp; 8 &amp; 8 &amp; 4 \end{array}\right) \xrightarrow{II+2I, III-4I} \left(\begin{array}{ccc|c} 1 &amp; 2 &amp; 2 &amp; 1 \\ 0 &amp; 9 &amp; 5 &amp; 3 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right)\)
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    It follows that there is a free variable and thus infinitely many solutions exist.
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>

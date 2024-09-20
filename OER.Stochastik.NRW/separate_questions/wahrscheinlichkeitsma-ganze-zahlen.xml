@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Wahrscheinlichkeitsma&#223; ganze Zahlen</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<style>
+    .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.formulation details[open] {
+                padding: .5em;
+}
+.formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+} 
+table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+}
+.buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+</style>
+<div id="summarybox">
+    <details>
+        <summary>
+            Inhalt und Umfang dieser Aufgabe
+        </summary>
+        <p>
+            In dieser Aufgabe lernen Sie, wie Sie Wahrscheinlichkeiten von Elementarereignissen bei Kenntnis der Wahrscheinlichkeiten anderer Ereignisse bestimmen.
+        </p>
+    </details>
+    <hr/>
+</div>
+<div id="aufgabe" style="display:box;">
+    <div id="aufgabentitel">
+        <div>
+            <div>
+                <p>
+                    <b>
+                        Wahrscheinlichkeitsma&#223; auf den ganzen Zahlen
+                    </b>
+                </p>
+                <div>
+                    <b>
+                        <br/>
+                    </b>
+                    <p>
+                        Seien \(\mathbb{N}:=\{1,2,...\}\) und \(\mathbb{Z}\) die nat&#252;rlichen und die ganzen Zahlen. Geben Sie ein Wahrscheinlichkeitsma&#223; \(P\) auf dem Messraum \(\mathbb{Z},\mathcal{P}(\mathbb{Z})\) an, f&#252;r das \(P(\{0\})=0.5\), \(P(\{0,1,-1\})=0.7\),
+                                                                                                \(P(\{2,-2\})=0.3\), \(P(\{-1,2\})=0.35\) und \(P(\{-1,2,-2\})=0.4\) gilt. Stellen Sie dazu zun&#228;chst ein Gleichungssystem auf Basis der obigen Bedingungen auf, wobei \(p_0,p_1,p_2,p_{-1},p_{-2},p_{-3}\) die jeweiligen Wahrscheinlichkeiten
+                                                                                                f&#252;r die Indizes angeben. Es muss z.B. wegen \(P(\{0\})=0.5\) gelten, dass \(p_0=0.5\). Setzen Sie \(p_k=0\) f&#252;r alle \(k \in \mathbb{Z}\setminus \{0,1,-1,2,-2\}\) und machen Sie sich klar, dass sich durch die restlichen \(p_k\)
+                                                                                                eine Z&#228;hldichte auf dem Messraum ergibt. L&#246;sen Sie dazu das Gleichungssystem nach \(p_0,p_1,p_{-1},p_2,p_{-2}\).
+                    </p>
+                </div>
+            </div>
+        </div>
+        <p>
+            Die L&#246;sung f&#252;r \(p_0\) ist:
+            <span style="font-size: 0.9375rem;">
+                [[/lang]][[lang code="en"]]
+                <style>
+                    .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.formulation details[open] {
+                padding: .5em;
+}
+.formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+} 
+table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+}
+.buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+                </style>
+                <div id="summarybox">
+                    <details>
+                        <summary>
+                            Content and scope of this task
+                        </summary>
+                        <p>
+                            In this task, you will learn how to determine probabilities of elementary events when knowledge of the probabilities of other events.
+                        </p>
+                    </details>
+                    <hr/>
+                </div>
+                <div id="aufgabe" style="display:box;">
+                    <div id="aufgabentitel">
+                        <div>
+                            <div>
+                                <p>
+                                    <b>
+                                        Probability in all figures
+                                    </b>
+                                </p>
+                                <div>
+                                    <b>
+                                        <br/>
+                                    </b>
+                                    <p>
+                                        Be \(\mathbb{N}:=\{1,2,...\}\) and \(\mathbb{Z}\) the natural and the whole numbers. Enter a probability measure \(P\) on the measuring chamber \(\mathbb{Z},\mathcal{P}(\mathbb{Z})\) for the \(P(\{0\})=0.5\), \(P(\{0,1,-1\})=0.7\),
+    \(P(\{2,-2\})=0.3\), \(P(\{-1,2\})=0.35\) and \(P(\{-1,2,-2\})=0.4\) Article 2 First set up a equation based on the above conditions, whereby \(p_0,p_1,p_2,p_{-1},p_{-2},p_{-3}\) the respective probabilities
+for the indices. For example, \(P(\{0\})=0.5\) that: \(p_0=0.5\). Sit \(p_k=0\) for all \(k \in \mathbb{Z}\setminus \{0,1,-1,2,-2\}\) and make it clear that through the rest \(p_k\)a count density on the measuring chamber. Resolve the equation \(p_0,p_1,p_{-1},p_2,p_{-2}\).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            The solution for \(p_0\) is:
+                            <span style="font-size: 0.9375rem;">
+                                [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
+                            </span>
+                        </p>
+                        [[/lang]][[lang code="en"]]
+                    </div>
+                </div>
+            </span>
+        </p>
+        [[/lang]][[feedback:prt1]][[lang code="de"]]
+        <p>
+            Die L&#246;sung f&#252;r \(p_1\) ist:
+            <span style="font-size: 0.9375rem;">
+                [[/lang]][[lang code="en"]]
+                <p>
+                    The solution for \(p_1\) is:
+                    <span style="font-size: 0.9375rem;">
+                        [[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]]
+                    </span>
+                </p>
+                [[/lang]][[lang code="en"]]
+            </span>
+        </p>
+        [[/lang]][[feedback:prt2]][[lang code="de"]]
+        <p>
+            Die L&#246;sung f&#252;r \(p_{-1}\) ist:
+            <span style="font-size: 0.9375rem;">
+                [[/lang]][[lang code="en"]]
+                <p>
+                    The solution for \(p_{-1}\) is:
+                    <span style="font-size: 0.9375rem;">
+                        [[/lang]][[input:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans3]][[lang code="de"]]
+                    </span>
+                </p>
+                [[/lang]][[lang code="en"]]
+            </span>
+        </p>
+        [[/lang]][[feedback:prt3]][[lang code="de"]]
+        <p>
+            Die L&#246;sung f&#252;r \(p_2\) ist:
+            <span style="font-size: 0.9375rem;">
+                [[/lang]][[lang code="en"]]
+                <p>
+                    The solution for \(p_2\) is:
+                    <span style="font-size: 0.9375rem;">
+                        [[/lang]][[input:ans4]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans4]][[lang code="de"]]
+                    </span>
+                </p>
+                [[/lang]][[lang code="en"]]
+            </span>
+        </p>
+        [[/lang]][[feedback:prt4]][[lang code="de"]]
+        <p>
+            Die L&#246;sung f&#252;r \(p_{-2}\) ist:
+            <span style="font-size: 0.9375rem;">
+                [[/lang]][[lang code="en"]]
+                <p>
+                    The solution for \(p_{-2}\) is:
+                    <span style="font-size: 0.9375rem;">
+                        [[/lang]][[input:ans5]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans5]][[lang code="de"]]
+                    </span>
+                </p>
+                [[/lang]][[lang code="en"]]
+            </span>
+        </p>
+        [[/lang]][[feedback:prt5]][[lang code="de"]]
+    </div>
+</div>
+<div id="zwischen1" style="display:none;">
+    <br/>
+    Wir erhalten aus den obigen Angaben das folgende Gleichungssystem: \[ p_0 = \frac{1}{2}\] \[ p_0 + p_1+p_{-1} = 0.7\] \[ p_2 + p_{-2} = 0.3 \] \[ p_{-1}+p_2 = 0.35\] \[ p_{-1}+p_2+p_{-2} = 0.4\] L&#246;sen Sie nun dieses Gleichungssystem. Wenn wir \(p_k\) f&#252;r alle anderen \(k \in \mathbb{Z}\)
+                nun gleich \(0\) setzten, ergibt sich durch die L&#246;sungen des Gleichungssystems eine Z&#228;hldichte auf den ganzen Zahlen. Diese impliziert ein Wahrscheinlichkeitsma&#223; auf letzeren, welches die geforderten Bedingungen erf&#252;llt.
+</div>
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]][[lang code="en"]]
+<div id="zwischen1" style="display:none;">
+    <br/>
+    From the above information we receive the following equation: \[ p_0 = \frac{1}{2}\] \[ p_0 + p_1+p_{-1} = 0.7\] \[ p_2 + p_{-2} = 0.3 \] \[ p_{-1}+p_2 = 0.35\] \[ p_{-1}+p_2+p_{-2} = 0.4\] Solve this equation now. If we \(p_k\) for all others \(k \in \mathbb{Z}\)now \(0\) the solutions of the equation system result in a count density on the whole numbers. This implies a degree of probability for Latvia, which meets the required conditions.
+</div>
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  Wahrscheinlichkeitsma&#223; ganze Zahlen
+
+  wurde entwickelt von
+  
+    Riko Kelter <riko.kelter(at)uni-siegen.de>
+    Alexander Schnurr <schnurr(at)mathematik.uni-siegen.de>
+    Susanne Spies <spies(at)mathematik.uni-siegen.de>
+
+  nach einer Idee von
+  
+   Riko Kelter <riko.kelter(at)uni-siegen.de>
+   Alexander Schnurr <schnurr(at)mathematik.uni-siegen.de>
+   Susanne Spies <spies(at)mathematik.uni-siegen.de>
+
+  an der Universit&#228;t Siegen.
+
+  Dieses Werk ist lizenziert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+
+  Diese Aufgabe bindet das Skript &#8216;stackselbstlern.js&#8217; von Michael
+  Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+p0: 0.5;
+p1: 0.1;
+pMinus1: 0.1;
+p2: 0.25;
+pMinus2: 0.05;
+test01(x):= is(x>=0) and is(x<=1);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text/>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text/>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text/>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text/>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>p0</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>p1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>pMinus1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>algebraic</type>
+            <tans>p2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans5</name>
+            <type>algebraic</type>
+            <tans>pMinus2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ans1)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    Bitte geben Sie eine Zahl zwischen 0 und 1 f&#252;r \(p_0\) ein!
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    Please give a number between 0 and 1 for \(p_0\) one!
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>p0</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+    Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein Problem! Als Hilfestellung k&#246;nnen Sie sich das Gleichungssystem anzeigen lassen:
+<button class="buttonweiter" onclick="show('zwischen1');" type="button">
+    Hinweis
+</button>
+<br/>
+<i>
+    Achtung: Entfernen Sie falsche Antworten, um mehrfache Punktabz&#252;ge zu vermeiden.
+</i>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+That you couldn't solve the task right away is no problem! As a help you can see the equation system:
+<button class="buttonweiter" onclick="show('zwischen1');" type="button">
+    Note
+</button>
+<br/>
+<i>
+    Attention: Remove incorrect answers to avoid multiple point deductions.
+</i>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ans2)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    Bitte geben Sie eine Zahl zwischen 0 und 1 f&#252;r \(p_1\) ein.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    Please give a number between 0 and 1 for \(p_1\) one.
+    <br/>
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>p1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+    Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein Problem! Als Hilfestellung k&#246;nnen Sie sich das Gleichungssystem anzeigen lassen:
+<button class="buttonweiter" onclick="show('zwischen1');" type="button">
+    Hinweis
+</button>
+<br/>
+<i>
+    Achtung: Entfernen Sie falsche Antworten, um mehrfache Punktabz&#252;ge zu vermeiden.
+</i>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+That you couldn't solve the task right away is no problem! As a help you can see the equation system:
+<button class="buttonweiter" onclick="show('zwischen1');" type="button">
+    Note
+</button>
+<br/>
+<i>
+    Attention: Remove incorrect answers to avoid multiple point deductions.
+</i>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ans3)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    Bitte geben Sie eine Zahl zwischen 0 und 1 f&#252;r \(p_{-1}\) ein.
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    Please give a number between 0 and 1 for \(p_{-1}\) one.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>pMinus1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+    Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein Problem! Als Hilfestellung k&#246;nnen Sie sich das Gleichungssystem anzeigen lassen:
+<button class="buttonweiter" onclick="show('zwischen1');" type="button">
+    Hinweis
+</button>
+<br/>
+<i>
+    Achtung: Entfernen Sie falsche Antworten, um mehrfache Punktabz&#252;ge zu vermeiden.
+</i>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+That you couldn't solve the task right away is no problem! As a help you can see the equation system:
+<button class="buttonweiter" onclick="show('zwischen1');" type="button">
+    Note
+</button>
+<br/>
+<i>
+    Attention: Remove incorrect answers to avoid multiple point deductions.
+</i>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ans4)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    Bitte geben Sie eine Zahl zwischen 0 und 1 f&#252;r \(p_2\) ein.
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    Please give a number between 0 and 1 for \(p_2\) one.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>p2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+    Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein Problem! Als Hilfestellung k&#246;nnen Sie sich das Gleichungssystem anzeigen lassen:
+<button class="buttonweiter" onclick="show('zwischen1');" type="button">
+    Hinweis
+</button>
+<br/>
+<i>
+    Achtung: Entfernen Sie falsche Antworten, um mehrfache Punktabz&#252;ge zu vermeiden.
+</i>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+That you couldn't solve the task right away is no problem! As a help you can see the equation system:
+<button class="buttonweiter" onclick="show('zwischen1');" type="button">
+    Note
+</button>
+<br/>
+<i>
+    Attention: Remove incorrect answers to avoid multiple point deductions.
+</i>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt5</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ans5)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt5-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt5-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    Bitte geben Sie eine Zahl zwischen 0 und 1 f&#252;r \(p_{-2}\) ein.
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    Please give a number between 0 and 1 for \(p_{-2}\) one.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans5</sans>
+                <tans>pMinus2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt5-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+    Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein Problem! Als Hilfestellung k&#246;nnen Sie sich das Gleichungssystem anzeigen lassen:
+<button class="buttonweiter" onclick="show('zwischen1');" type="button">
+    Hinweis
+</button>
+<br/>
+<i>
+    Achtung: Entfernen Sie falsche Antworten, um mehrfache Punktabz&#252;ge zu vermeiden.
+</i>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+That you couldn't solve the task right away is no problem! As a help you can see the equation system:
+<button class="buttonweiter" onclick="show('zwischen1');" type="button">
+    Note
+</button>
+<br/>
+<i>
+    Attention: Remove incorrect answers to avoid multiple point deductions.
+</i>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

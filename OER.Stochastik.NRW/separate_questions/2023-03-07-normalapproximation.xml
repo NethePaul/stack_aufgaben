@@ -1,0 +1,4174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>2023-03-07 Normalapproximation</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-aufgabe-20-info">
+    <details>
+        <summary>
+            Inhalt und Umfang dieser Aufgabe
+        </summary>
+        <p>
+            In dieser Aufgabe lernen Sie, die Normalapproximation zur Berechnung von Wahrscheinlichkeiten anzuwenden. Sie besteht aus den folgenden drei Teilaufgaben.
+        </p>
+        <ul>
+            <li>
+                In
+                <b>
+                    (a)
+                </b>
+                berechnen Sie die Wahrscheinlichkeit exakt mittels der Binomialverteilung.
+            </li>
+            <li>
+                In
+                <b>
+                    (b)
+                </b>
+                berechnen Sie die Wahrscheinlichkeit approximativ mittels einer Normalapproximation ohne Stetigkeitskorrektur.
+            </li>
+            <li>
+                In
+                <b>
+                    (c)
+                </b>
+                berechnen Sie die Wahrscheinlichkeit approximativ mittels einer Normalapproximation mit Stetigkeitskorrektur.
+            </li>
+        </ul>
+    </details>
+    <hr/>
+</div>
+<div id="oer-aufgabe-20">
+    <p>
+        Beim Paketversand kann es bei jedem Paket unabh&#228;ngig voneinander mit Wahrscheinlichkeit \(p={@p@}\) zu Lieferverz&#246;gerungen kommen. T&#228;glich werden \(n={@n@}\) Pakete verschickt. Sei \(X\) die zuf&#228;llige Anzahl der Pakete, die nicht rechtzeitig zugestellt werden k&#246;nnen.
+    </p>
+    <hr/>
+</div>
+<div id="oer-aufgabe-20a">
+    <p>
+        <b>
+            (a)
+        </b>
+        Berechnen Sie exakt die Wahrscheinlichkeit, dass es an einem Tag bei mindestens {@a@}, aber gleichzeitig nur h&#246;chstens {@b@} Paketen zu Lieferverz&#246;gerungen kommt.
+    </p>
+    <p>
+        Die exakt berechnete Wahrscheinlichkeit ist \(P({@a@}\leq X\leq {@b@})=\) [[/lang]][[lang code="en"]]
+        <div id="oer-aufgabe-20-info">
+            <details>
+                <summary>
+                    Content and scope of this task
+                </summary>
+                <p>
+                    In this task, you will learn to apply the normal approximation to calculate probabilities. It consists of the following three subtasks.
+                </p>
+                <ul>
+                    <li>
+                        In
+                        <b>
+                            (a)
+                        </b>
+                        calculate the probability exactly by means of the binomial distribution.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (b)
+                        </b>
+                        calculate the probability approximate by means of a normal approximation without stiffness correction.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (c)
+                        </b>
+                        calculate the probability approximate by means of a normal approximation with stiffness correction.
+                    </li>
+                </ul>
+            </details>
+            <hr/>
+        </div>
+        <div id="oer-aufgabe-20">
+            <p>
+                In the case of parcel delivery, it may be probable for each package \(p={@p@}\) to delays in delivery. Every day \(n={@n@}\) Packages sent. Be careful \(X\) the random number of packages that cannot be delivered in time.
+            </p>
+            <hr/>
+        </div>
+        <div id="oer-aufgabe-20a">
+            <p>
+                <b>
+                    (a)
+                </b>
+                Calculate exactly the probability that it will be on a day at least {@a@}, but at the same time only at most {@b@} Packages come to delivery delays.
+            </p>
+            <p>
+                The exactly calculated probability is \(P({@a@}\leq X\leq {@b@})=\) [[/lang]][[input:ansA]][[lang code="de"]].
+                <i>
+                    Geben Sie das Ergebnis als Formel ein oder runden Sie auf mindestens drei Nachkommastellen.
+                </i>
+                [[/lang]][[lang code="en"]].
+                <i>
+                    Enter the result as a formula or round to at least three descendants.
+                </i>
+                [[/lang]][[validation:ansA]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtA]][[lang code="de"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-20a1" style="display:none;">
+            <p>
+                <b>
+                    (a1)
+                </b>
+                Welche Verteilung besitzt die Zufallsvariable \(X\)?
+            </p>
+            <p>
+                [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-20a1" style="display:none;">
+            <p>
+                <b>
+                    (a1)
+                </b>
+                What distribution is the random variable \(X\)?
+            </p>
+            <p>
+                [[/lang]][[input:ansA1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansA1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtA1]][[lang code="de"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-20b" style="display:none;">
+            <p>
+                <b>
+                    (b)
+                </b>
+                Wir k&#246;nnen die gesuchte Wahrscheinlichkeit auch approximativ berechnen, indem wir die Normalapproximation verwenden, welche auf dem zentralen Grenzwertsatz beruht. Berechnen Sie die Wahrscheinlichkeit, dass es an einem Tag bei mindestens {@a@}, aber gleichzeitig nur h&#246;chstens {@b@} Paketen zu Lieferverz&#246;gerungen kommt, approximativ mittels einer Normalapproximation
+                <i>
+                    ohne
+                </i>
+                Stetigkeitskorrektur.
+            </p>
+            <p>
+                Die approximierte Wahrscheinlichkeit ist \(P({@a@}\leq X\leq {@b@})\approx\) [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-20b" style="display:none;">
+            <p>
+                <b>
+                    (b)
+                </b>
+                We can also calculate the desired probability approximate by using the normal approximation based on the central limit set. Calculate the probability that it will be on a day at least {@a@}, but at the same time only at most {@b@} Packages come to delivery delays, approximate by means of a normal approximation
+                <i>
+                    Other
+                </i>
+                Strength correction.
+            </p>
+            <p>
+                The approximated probability is \(P({@a@}\leq X\leq {@b@})\approx\) [[/lang]][[input:ansB]][[lang code="de"]].
+                <i>
+                    Runden Sie das Ergebnis auf mindestens drei Nachkommastellen.
+                </i>
+                [[/lang]][[lang code="en"]].
+                <i>
+                    Round the result to at least three descending points.
+                </i>
+                [[/lang]][[validation:ansB]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtB]][[lang code="de"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-20b1" style="display:none;">
+            <p>
+                <b>
+                    (b1)
+                </b>
+                Die Normalapproximation basiert auf dem zentralen Grenzwertsatz, der besagt, dass die Verteilungsfunktion der standardisierten Summenvariablen punktweise gegen die Verteilungsfunktion \(\Phi\) der Standardnormalverteilung konvergiert. Unsere binomialverteilte Zufallsvariable \(X\) kann als Summenvariable aufgefasst werden, da sich die Anzahl der nicht rechtzeitig zugestellten Pakete additiv aus den einzelnen Zustellversuchen ergibt. Da \(X\) hier eine diskrete Zufallsvariable ist, muss zun&#228;chst das Ereignis \(\{{@a@}\leq X\leq {@b@}\}\), dessen Wahrscheinlichkeit approximiert werden soll, so umgeschrieben werden, dass wir sp&#228;ter auf Werte der Verteilungsfunktion kommen.
+            </p>
+            <p>
+                Formen Sie den folgenden Term so um, dass weiterhin Gleichheit gilt: \(P({@a@}\leq X\leq {@b@})=P(\) [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-20b1" style="display:none;">
+            <p>
+                <b>
+                    (b1)
+                </b>
+                The normal approximation is based on the central limit value set, which states that the distribution function of the standardized sum variables is point-by-point against the distribution function \(\Phi\) the standard distribution converged. Our binomial distributed random variable \(X\) can be considered as a sum variable, since the number of packages not supplied in time is produced additively from the individual delivery attempts. There. \(X\) here is a discrete random variable, first the event \(\{{@a@}\leq X\leq {@b@}\}\), the probability of which is to be approximated is to be rewritten so that we come to values of the distribution function later.
+            </p>
+            <p>
+                Form the following term to continue equality: \(P({@a@}\leq X\leq {@b@})=P(\) [[/lang]][[input:ansB11]][[lang code="de"]] \(&lt; X \leq\) [[/lang]][[lang code="en"]] \(&lt; X \leq\) [[/lang]][[input:ansB12]][[lang code="de"]] \()\).
+                <i>
+                    Geben Sie jeweils nur ganzzahlige Werte ein.
+                </i>
+            </p>
+            [[/lang]][[lang code="en"]] \()\).
+            <i>
+                Enter only integer values.
+            </i>
+        </div>
+    </p>
+    [[/lang]][[validation:ansB11]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansB12]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtB1]][[lang code="de"]]
+</div>
+<div id="oer-aufgabe-20b2" style="display:none;">
+    <p>
+        <b>
+            (b2)
+        </b>
+        Die Rechnung ohne Stetigkeitskorrektur lautet bis jetzt:
+\begin{equation*}
+P({@a@}\leq X\leq {@b@})
+=P({@a-1@} &lt; X\leq {@b@}).
+\end{equation*}
+Das l&#228;sst sich schreiben als \(F_X({@b@})-F_X({@a-1@})\), wobei \(F_X\) die Verteilungsfunktion von \(X\) ist. F&#252;r die Normalapproximation wird jedoch die Verteilungsfunktion der standardisierten Zufallsvariablen \(X^*\) ben&#246;tigt, sodass \(X\) als N&#228;chstes standardisiert werden muss.
+    </p>
+    <p>
+        Formen Sie den folgenden Term so um, dass weiterhin Gleichheit gilt: \(P({@a-1@} &lt; X\leq {@b@})=P(\) [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<div id="oer-aufgabe-20b2" style="display:none;">
+    <p>
+        <b>
+            (b2)
+        </b>
+        The invoice without a firmness correction is up to now:
+\begin{equation*}
+P({@a@}\leq X\leq {@b@})
+=P({@a-1@} &lt; X\leq {@b@}).
+\end{equation*}This can be written as \(F_X({@b@})-F_X({@a-1@})\)where \(F_X\) the distribution function of \(X\) is. For normal approximation, however, the distribution function of the standardized random variables is \(X^*\) required so that \(X\) must be standardized next.
+    </p>
+    <p>
+        Form the following term to continue equality: \(P({@a-1@} &lt; X\leq {@b@})=P(\) [[/lang]][[input:ansB21]][[lang code="de"]] \(&lt; X^*\leq\) [[/lang]][[lang code="en"]] \(&lt; X^*\leq\) [[/lang]][[input:ansB22]][[lang code="de"]] \()\).
+        <i>
+            Geben Sie jeweils das Ergebnis als Formel ein oder runden Sie auf mindestens zwei Nachkommastellen.
+        </i>
+    </p>
+    <p>
+        <i>
+            Hinweis:
+        </i>
+        Die
+        <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "Z-Transformation"'>
+            Standardisierung
+        </span>
+        einer Zufallsvariablen \(X\) ist die Zufallsvariable \(X^*=\dfrac{X-\text{E}(X)}{\sqrt{\text{Var}(X)}}\). Um \(X\) zu standardisieren, muss somit zuerst der Erwartungswert subtrahiert und anschlie&#223;end durch die Standardabweichung dividiert werden.
+    </p>
+    [[/lang]][[lang code="en"]] \()\).
+    <i>
+        In each case, type the result as a formula or round to at least two descending points.
+    </i>
+    <p>
+        <i>
+            Note:
+        </i>
+        The
+        <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "Z-Transformation"'>
+            Standardization
+        </span>
+        a random variable \(X\) is the random variable \(X^*=\dfrac{X-\text{E}(X)}{\sqrt{\text{Var}(X)}}\). Um... \(X\) thus first the expected value must be subtracted and then divided by the standard deviation.
+    </p>
+    [[/lang]][[validation:ansB21]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansB22]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtB2]][[lang code="de"]]
+</div>
+<div id="oer-aufgabe-20b3" style="display:none;">
+    <p>
+        <b>
+            (b3)
+        </b>
+        Die Rechnung ohne Stetigkeitskorrektur lautet bis jetzt:
+\begin{align*}
+P({@a@}\leq X\leq {@b@})
+&amp;=P({@a-1@} &lt; X\leq {@b@})\\
+&amp;\approx P({@ZGS(a-1)@} &lt; X^*\leq {@ZGS(b)@}).
+\end{align*}
+Das l&#228;sst sich schreiben als \(F_{X^*}({@ZGS(b)@})-F_{X^*}({@ZGS(a-1)@})\), wobei \(F_{X^*}\) die Verteilungsfunktion der standardisierten Zufallsvariablen \(X^*\) ist. Aufgrund des zentralen Grenzwertsatzes kann \(F_{X^*}(t)\approx\Phi(t)\) f&#252;r jedes \(t\in\mathbb{R}\) approximiert werden, wobei \(\Phi\) die Verteilungsfunktion der Standardnormalverteilung ist. Somit k&#246;nnen wir nun die Normalapproximation anwenden.
+    </p>
+    <p>
+        Wenden Sie auf den folgenden Term die Normalapproximation an: \(P({@ZGS(a-1)@} &lt; X^*\leq {@ZGS(b)@})\approx\Phi(\) [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<div id="oer-aufgabe-20b3" style="display:none;">
+    <p>
+        <b>
+            (b3)
+        </b>
+        The invoice without a firmness correction is up to now:
+\begin{align*}
+P({@a@}\leq X\leq {@b@})
+&amp;=P({@a-1@} &lt; X\leq {@b@})\\
+&amp;\approx P({@ZGS(a-1)@} &lt; X^*\leq {@ZGS(b)@}).
+\end{align*}This can be written as \(F_{X^*}({@ZGS(b)@})-F_{X^*}({@ZGS(a-1)@})\)where \(F_{X^*}\) the distribution function of the standardized random variables \(X^*\) is. Due to the central limit value set, \(F_{X^*}(t)\approx\Phi(t)\) for each \(t\in\mathbb{R}\) are approximated, wherein \(\Phi\) the distribution function of the standard distribution. Thus we can now apply the normal approximation.
+    </p>
+    <p>
+        Apply the normal approximation to the following term: \(P({@ZGS(a-1)@} &lt; X^*\leq {@ZGS(b)@})\approx\Phi(\) [[/lang]][[input:ansB31]][[lang code="de"]] \()-\Phi(\) [[/lang]][[lang code="en"]] \()-\Phi(\) [[/lang]][[input:ansB32]][[lang code="de"]] \()\).
+    </p>
+    [[/lang]][[lang code="en"]] \()\).
+    [[/lang]][[validation:ansB31]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansB32]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtB3]][[lang code="de"]]
+</div>
+<div id="oer-aufgabe-20c" style="display:none;">
+    <p>
+        <b>
+            (c)
+        </b>
+        Bei Zufallsvariablen mit Werten in den ganzen Zahlen kann die Normalapproximation um eine sogenannte Stetigkeitskorrektur erweitert werden. Dabei werden die (ganzzahligen) Intervallgrenzen um 0.5 erh&#246;ht bzw. um 0.5 verringert, sodass die mit der Binomialverteilung exakt berechnete Wahrscheinlichkeit unver&#228;ndert bleibt, aber bei der Approximation durch die Normalverteilung sich eine oftmals bessere N&#228;herung an den exakten Wert ergibt.
+    </p>
+    <p>
+        Berechnen Sie die Wahrscheinlichkeit, dass es an einem Tag bei mindestens {@a@}, aber gleichzeitig nur h&#246;chstens {@b@} Paketen zu Lieferverz&#246;gerungen kommt, approximativ mittels einer Normalapproximation
+        <i>
+            mit
+        </i>
+        Stetigkeitskorrektur.
+    </p>
+    <p>
+        Die approximierte Wahrscheinlichkeit ist \(P({@a@}\leq X\leq {@b@})\approx\) [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<div id="oer-aufgabe-20c" style="display:none;">
+    <p>
+        <b>
+            (c)
+        </b>
+        With random variables with values in the whole numbers, normal approximation can be extended by a so-called stiffness correction. In this case, the (gap-numbered) interval limits are increased by 0.5 or reduced by 0.5, so that the probability exactly calculated with the binomial distribution remains unchanged, but in the approximation due to the normal distribution a often better approximation to the exact value results.
+    </p>
+    <p>
+        Calculate the probability that it will be on a day at least {@a@}, but at the same time only at most {@b@} Packages come to delivery delays, approximate by means of a normal approximation
+        <i>
+            with
+        </i>
+        Strength correction.
+    </p>
+    <p>
+        The approximated probability is \(P({@a@}\leq X\leq {@b@})\approx\) [[/lang]][[input:ansC]][[lang code="de"]].
+        <i>
+            Runden Sie das Ergebnis auf mindestens drei Nachkommastellen.
+        </i>
+        [[/lang]][[lang code="en"]].
+        <i>
+            Round the result to at least three descending points.
+        </i>
+        [[/lang]][[validation:ansC]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtC]][[lang code="de"]]
+    </p>
+</div>
+<div id="oer-aufgabe-20c1" style="display:none;">
+    <p>
+        <b>
+            (c1)
+        </b>
+        Da \(X\) eine diskrete Zufallsvariable ist, muss zun&#228;chst wieder das Ereignis \(\{{@a@}\leq X\leq {@b@}\}\) so umgeschrieben werden, dass wir sp&#228;ter auf Werte der Verteilungsfunktion kommen, wobei jetzt zus&#228;tzlich die Stetigkeitskorrektur eingebaut werden soll.
+    </p>
+    <p>
+        Formen Sie den folgenden Term so um, dass weiterhin Gleichheit gilt und die Stetigkeitskorrektur ber&#252;cksichtigt ist: \(P({@a@}\leq X\leq {@b@})=P(\) [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<div id="oer-aufgabe-20c1" style="display:none;">
+    <p>
+        <b>
+            (c1)
+        </b>
+        There. \(X\) is a discrete random variable, first the event must again be \(\{{@a@}\leq X\leq {@b@}\}\) to be rewritten in such a way that we come to the values of the distribution function later, with now the stiffness correction to be added.
+    </p>
+    <p>
+        Mould the following term to continue to apply equality and the stiffness correction is taken into account: \(P({@a@}\leq X\leq {@b@})=P(\) [[/lang]][[input:ansC11]][[lang code="de"]] \(&lt; X \leq\) [[/lang]][[lang code="en"]] \(&lt; X \leq\) [[/lang]][[input:ansC12]][[lang code="de"]] \()\).
+        <i>
+            Geben Sie jeweils nur halbzahlige Werte ein.
+        </i>
+    </p>
+    [[/lang]][[lang code="en"]] \()\).
+    <i>
+        Enter only half-number values.
+    </i>
+    [[/lang]][[validation:ansC11]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansC12]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtC1]][[lang code="de"]]
+</div>
+<div id="oer-aufgabe-20c2" style="display:none;">
+    <p>
+        <b>
+            (c2)
+        </b>
+        Die Rechnung mit Stetigkeitskorrektur lautet bis jetzt:
+\begin{equation*}
+P({@a@}\leq X\leq {@b@})
+=P({@a-0.5@} &lt; X\leq {@b+0.5@}).
+\end{equation*}
+Das l&#228;sst sich schreiben als \(F_X({@b+0.5@})-F_X({@a-0.5@})\), wobei \(F_X\) die Verteilungsfunktion von \(X\) ist. F&#252;r die Normalapproximation wird jedoch die Verteilungsfunktion der standardisierten Zufallsvariablen \(X^*\) ben&#246;tigt, sodass \(X\) als N&#228;chstes wieder standardisiert werden muss.
+    </p>
+    <p>
+        Formen Sie den folgenden Term so um, dass weiterhin Gleichheit gilt: \(P({@a-0.5@} &lt; X\leq {@b+0.5@})=P(\) [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<div id="oer-aufgabe-20c2" style="display:none;">
+    <p>
+        <b>
+            (c2)
+        </b>
+        The account with stiffness correction is up to now:
+\begin{equation*}
+P({@a@}\leq X\leq {@b@})
+=P({@a-0.5@} &lt; X\leq {@b+0.5@}).
+\end{equation*}This can be written as \(F_X({@b+0.5@})-F_X({@a-0.5@})\)where \(F_X\) the distribution function of \(X\) is. For normal approximation, however, the distribution function of the standardized random variables is \(X^*\) required so that \(X\) must be standardized next.
+    </p>
+    <p>
+        Form the following term to continue equality: \(P({@a-0.5@} &lt; X\leq {@b+0.5@})=P(\) [[/lang]][[input:ansC21]][[lang code="de"]] \(&lt; X^*\leq\) [[/lang]][[lang code="en"]] \(&lt; X^*\leq\) [[/lang]][[input:ansC22]][[lang code="de"]] \()\)
+        <i>
+            Geben Sie jeweils das Ergebnis als Formel ein oder runden Sie auf mindestens zwei Nachkommastellen.
+        </i>
+    </p>
+    <p>
+        <i>
+            Hinweis:
+        </i>
+        Die
+        <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "Z-Transformation"'>
+            Standardisierung
+        </span>
+        einer Zufallsvariablen \(X\) ist die Zufallsvariable \(X^*=\dfrac{X-\text{E}(X)}{\sqrt{\text{Var}(X)}}\). Um \(X\) zu standardisieren, muss somit zuerst der Erwartungswert subtrahiert und anschlie&#223;end durch die Standardabweichung dividiert werden.
+    </p>
+    [[/lang]][[lang code="en"]] \()\)
+    <i>
+        In each case, type the result as a formula or round to at least two descending points.
+    </i>
+    <p>
+        <i>
+            Note:
+        </i>
+        The
+        <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "Z-Transformation"'>
+            Standardization
+        </span>
+        a random variable \(X\) is the random variable \(X^*=\dfrac{X-\text{E}(X)}{\sqrt{\text{Var}(X)}}\). Um... \(X\) thus first the expected value must be subtracted and then divided by the standard deviation.
+    </p>
+    [[/lang]][[validation:ansC21]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansC22]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtC2]][[lang code="de"]]
+</div>
+<div id="oer-aufgabe-20c3" style="display:none;">
+    <p>
+        <b>
+            (c3)
+        </b>
+        Die Rechnung mit Stetigkeitskorrektur lautet bis jetzt:
+\begin{align*}
+P({@a@}\leq X\leq {@b@})
+&amp;=P({@a-0.5@} &lt; X\leq {@b+0.5@})\\
+&amp;\approx P({@ZGS(a-1/2)@} &lt; X^*\leq {@ZGS(b+1/2)@}).
+\end{align*}
+Das l&#228;sst sich schreiben als \(F_{X^*}({@ZGS(b+1/2)@})-F_{X^*}({@ZGS(a-1/2)@})\), wobei \(F_{X^*}\) die Verteilungsfunktion der standardisierten Zufallsvariablen \(X^*\) ist. Aufgrund des zentralen Grenzwertsatzes kann \(F_{X^*}(t)\approx\Phi(t)\) f&#252;r jedes \(t\in\mathbb{R}\) approximiert werden, wobei \(\Phi\) die Verteilungsfunktion der Standardnormalverteilung ist. Somit k&#246;nnen wir nun wieder die Normalapproximation anwenden.
+    </p>
+    <p>
+        Wenden Sie auf den folgenden Term die Normalapproximation an: \(P({@ZGS(a-1/2)@} &lt; X^*\leq {@ZGS(b+1/2)@})\approx\Phi(\) [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<div id="oer-aufgabe-20c3" style="display:none;">
+    <p>
+        <b>
+            (c3)
+        </b>
+        The account with stiffness correction is up to now:
+\begin{align*}
+P({@a@}\leq X\leq {@b@})
+&amp;=P({@a-0.5@} &lt; X\leq {@b+0.5@})\\
+&amp;\approx P({@ZGS(a-1/2)@} &lt; X^*\leq {@ZGS(b+1/2)@}).
+\end{align*}This can be written as \(F_{X^*}({@ZGS(b+1/2)@})-F_{X^*}({@ZGS(a-1/2)@})\)where \(F_{X^*}\) the distribution function of the standardized random variables \(X^*\) is. Due to the central limit value set, \(F_{X^*}(t)\approx\Phi(t)\) for each \(t\in\mathbb{R}\) are approximated, wherein \(\Phi\) the distribution function of the standard distribution. So we can now use the normal approximation again.
+    </p>
+    <p>
+        Apply the normal approximation to the following term: \(P({@ZGS(a-1/2)@} &lt; X^*\leq {@ZGS(b+1/2)@})\approx\Phi(\) [[/lang]][[input:ansC31]][[lang code="de"]] \()-\Phi(\) [[/lang]][[lang code="en"]] \()-\Phi(\) [[/lang]][[input:ansC32]][[lang code="de"]] \()\)
+    </p>
+    [[/lang]][[lang code="en"]] \()\)
+    [[/lang]][[validation:ansC31]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansC32]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtC3]][[lang code="de"]]
+</div>
+<style>
+    .buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+</style>
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]][[lang code="en"]]
+<style>
+    .buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+</style>
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>3.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+Normalapproximation
+
+wurde entwickelt von
+  
+Christian M&#252;ller <c.mueller(at)hhu.de>
+
+nach einer Idee von
+
+Axel B&#252;cher <axel.buecher(at)hhu.de>
+Peter Kern <kern(at)hhu.de>
+
+an der Heinrich-Heine-Universit&#228;t D&#252;sseldorf.
+
+Dieses Werk ist lizenziert unter einer Creative Commons Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie https://creativecommons.org/licenses/by-sa/4.0/.
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+
+Technische Informationen:
+
+Diese Aufgabe verwendet das Maxima Paket 'distrib'.
+
+Diese Aufgabe bindet das Skript 'stackselbstlern.js' von Michael Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+/* &#252;berpr&#252;fe, ob ans als Wahrscheinlichkeit interpretiert werden kann */
+probabilityp(ans) := is(numberp(float(ans)) and ans >= 0 and ans <= 1)
+/* runde x auf 2 bzw. 3 Nachkommastellen */
+dp2(x) := decimalplaces(x, 2)
+dp3(x) := decimalplaces(x, 3)
+/* stelle x in wissenschaftlicher Notation dar */
+SCI(x) := scientific_notation(x, 2)
+/* Rundungsgenauigkeit bei numerischen Antworttests */
+epsilon2: 0.01
+epsilon3: 0.001
+
+/* Anzahl der Pakete */
+n: rand([60, 180, 240])
+/* Wahrscheinlichkeit f&#252;r Lieferverz&#246;gerung */
+p: rand([1 / 6 , 1 / 10 , 1 / 12])
+/* Mindest-/H&#246;chstanzahl der Lieferverz&#246;gerungen */
+a: n * p - rand([1, 2, 3])
+b: n * p + rand([1, 2, 3])
+
+/* Abk&#252;rzungen f&#252;r Verteilungen */
+Bin: "Binomialverteilung"
+Hyp: "Hypergeometrische Verteilung"
+U: "Laplace-Verteilung"
+Geo: "Geometrische Verteilung"
+
+/* Verteilungsfunktion von N(0,1) */
+Phi(x) := cdf_normal(x, 0, 1)
+/* Standardisierung */
+ZGS(x) := dp2((x - n * p) / sqrt(n * p * (1 - p)))
+/* keine Division durch Standardabweichung */
+ZGS_error1(x) := x - n * p
+/* Division durch Varianz */
+ZGS_error2(x) := (x - n * p) / (n * p * (1 - p))
+/* keine Zentrierung */
+ZGS_error3(x) := x / sqrt(n * p * (1 - p))
+/* keine Zentrierung und Division durch Varianz */
+ZGS_error4(x) := x / (n * p * (1 - p))
+
+/* L&#246;sungen */
+TansA: dp3(sum(binomial(n, k) * p^k * (1 - p)^(n - k), k, a, b))
+TansA1: random_permutation([[1, true, Bin], [2, false, Hyp], [3, false, U], [4, false, Geo]])
+TansB: dp3(Phi(ZGS(b)) - Phi(ZGS(a - 1)))
+TansB11: a - 1
+TansB12: b
+TansB21: ZGS(a - 1)
+TansB22: ZGS(b)
+TansB31: ZGS(b)
+TansB32: ZGS(a - 1)
+TansC: dp3(Phi(ZGS(b + 1 / 2)) - Phi(ZGS(a - 1 / 2)))
+TansC11: a - 0.5
+TansC12: b + 0.5
+TansC21: ZGS(a - 1 / 2)
+TansC22: ZGS(b + 1 / 2)
+TansC31: ZGS(b + 1 / 2)
+TansC32: ZGS(a - 1 / 2)]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\(n={@n@}\), \(p={@p@}\), \(a={@a@}\), \(b={@b@}\)</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partly correct.[[/lang]]
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.[[/lang]]
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ansA</name>
+            <type>numerical</type>
+            <tans>TansA</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansA1</name>
+            <type>radio</type>
+            <tans>TansA1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ansB</name>
+            <type>numerical</type>
+            <tans>TansB</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB11</name>
+            <type>numerical</type>
+            <tans>TansB11</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB12</name>
+            <type>numerical</type>
+            <tans>TansB12</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB21</name>
+            <type>numerical</type>
+            <tans>TansB21</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB22</name>
+            <type>numerical</type>
+            <tans>TansB22</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB31</name>
+            <type>numerical</type>
+            <tans>TansB31</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB32</name>
+            <type>numerical</type>
+            <tans>TansB32</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC</name>
+            <type>numerical</type>
+            <tans>TansC</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC11</name>
+            <type>numerical</type>
+            <tans>TansC11</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC12</name>
+            <type>numerical</type>
+            <tans>TansC12</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC21</name>
+            <type>numerical</type>
+            <tans>TansC21</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC22</name>
+            <type>numerical</type>
+            <tans>TansC22</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC31</name>
+            <type>numerical</type>
+            <tans>TansC31</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC32</name>
+            <type>numerical</type>
+            <tans>TansC32</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prtA</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ansA)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtA-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihr Ergebnis liegt nicht im Intervall \([0,1]\) und kann daher nicht als Wahrscheinlichkeit interpretiert werden.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your result is not in interval \([0,1]\) and therefore cannot be interpreted as probability.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansA</sans>
+                <tans>TansA</tans>
+                <testoptions>epsilon3</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die gesuchte Wahrscheinlichkeit mit der Binomialverteilung richtig berechnet. Die Anzahl \(X\) der nicht rechtzeitig zugestellten Pakete ist \(\text{Bin}({@n@},{@p@})\)-verteilt und somit ist 
+\begin{align*}
+P({@a@}\leq X\leq {@b@})
+&amp;=\sum_{k={@a@}}^{{@b@}}\text{Bin}\left({@n@},{@p@}\right)(\{k\})\\
+&amp;=\sum_{k={@a@}}^{{@b@}}\binom{{@n@}}{k}\left({@p@}\right)^k\left({@1-p@}\right)^{{@n@}-k}\\
+&amp;\approx {@TansA@}.
+\end{align*}
+</p>
+<hr/>
+<p>
+    Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20a');
+show('oer-aufgabe-20b');
+" type="button">
+        Weiter
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have correctly calculated the desired probability with the binomial distribution. The number \(X\) the unpaid package is \(\text{Bin}({@n@},{@p@})\)-distributed and thus is
+\begin{align*}
+P({@a@}\leq X\leq {@b@})
+&amp;=\sum_{k={@a@}}^{{@b@}}\text{Bin}\left({@n@},{@p@}\right)(\{k\})\\
+&amp;=\sum_{k={@a@}}^{{@b@}}\binom{{@n@}}{k}\left({@p@}\right)^k\left({@1-p@}\right)^{{@n@}-k}\\
+&amp;\approx {@TansA@}.
+\end{align*}
+</p>
+<hr/>
+<p>
+    To get to the next task, click on
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20a');
+show('oer-aufgabe-20b');
+" type="button">
+        Next
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-aufgabe-20a-PRT1">
+    <p>
+        Dass Sie die Wahrscheinlichkeit nicht auf Anhieb berechnen konnten, ist kein Problem! L&#246;sen Sie zun&#228;chst die folgende Teilaufgabe. Dann k&#246;nnen Sie sicherlich auch die urspr&#252;ngliche Aufgabe l&#246;sen. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20a');
+show('oer-aufgabe-20a1');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-20a-PRT2" style="display:none">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Sie haben gerade gelernt, dass die Anzahl der nicht rechtzeitig zugestellten Pakete unter allen Paketen eine Binomialverteilung mit den Parametern \(n={@n@}\) und \(p={@p@}\) besitzt. Zur Berechnung der Wahrscheinlichkeit \(P({@a@}\leq X\leq {@b@})\) m&#252;ssen Sie alle Werte der
+        <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "Wahrscheinlichkeitsfunktion"'>
+            Z&#228;hldichte
+        </span>
+        \(P(X=k)=\text{Bin}({@n@},{@p@})(\{k\})\) zwischen \(k={@a@}\) und \(k={@b@}\) aufsummieren. Bestimmen Sie den Wert dieser Summe mithilfe einer Binomialtabelle oder eines Taschenrechners.
+    </p>
+</div>
+[[/lang]][[lang code="en"]]
+<div id="oer-aufgabe-20a-PRT1">
+    <p>
+        That you couldn't calculate the likelihood right away is no problem! First, solve the following subtask. Then you can also solve the original task. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20a');
+show('oer-aufgabe-20a1');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-20a-PRT2" style="display:none">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        You have just learned that the number of packages not delivered in time is a binomial distribution with the parameters \(n={@n@}\) and \(p={@p@}\) has. To calculate the probability \(P({@a@}\leq X\leq {@b@})\) you need all values of
+        <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "Wahrscheinlichkeitsfunktion"'>
+            Counting density
+        </span>
+        \(P(X=k)=\text{Bin}({@n@},{@p@})(\{k\})\) between \(k={@a@}\) and \(k={@b@}\) to sum up. Determine the value of this sum using a binomial table or a calculator.
+    </p>
+</div>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtA1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA1</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Mit der Binomialverteilung wird die Anzahl der Erfolge in \(n\) unabh&#228;ngigen Bernoulli-Experimenten mit Erfolgswahrscheinlichkeit \(p\) modelliert.
+</p>
+<p>
+    Jedes einzelne Paket wird entweder verz&#246;gert oder rechtzeitig zugestellt, was einem Bernoulli-Experiment entspricht, wobei die "Erfolgswahrscheinlichkeit" einer Lieferverz&#246;gerung \(p={@p@}\) betr&#228;gt. Da Lieferverz&#246;gerungen nach Annahme unabh&#228;ngig voneinander auftreten sollen, ist die Gesamtanzahl \(X\) der nicht rechtzeitig zugestellten Pakete unter den \(n={@n@}\) Paketen binomialverteilt mit \(n={@n@}\) und \(p={@p@}\).
+</p>
+<hr/>
+<p>
+    Jetzt k&#246;nnen Sie die urspr&#252;ngliche Aufgabe noch einmal versuchen. Klicken Sie dazu auf
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20a1');
+show('oer-aufgabe-20a');
+hide('oer-aufgabe-20a-PRT1');
+show('oer-aufgabe-20a-PRT2');
+" type="button">
+        Weiter
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    With the binomial distribution, the number of successes in \(n\) independent Bernoulli experiments with probability of success \(p\) modelled.
+</p>
+<p>
+    Each individual package is either delayed or delivered in time, which corresponds to an Bernoulli experiment, with the "success probability" of a delivery delay \(p={@p@}\) is. Since delivery delays should occur independently after acceptance, the total number \(X\) the packages not delivered in good time \(n={@n@}\) Packages binomial distributed with \(n={@n@}\) and \(p={@p@}\).
+</p>
+<hr/>
+<p>
+    Now you can try the original task again. Click on
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20a1');
+show('oer-aufgabe-20a');
+hide('oer-aufgabe-20a-PRT1');
+show('oer-aufgabe-20a-PRT2');
+" type="button">
+        Next
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtA1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA1</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Die hypergeometrische Verteilung tritt auf, wenn eine Stichprobe aus einer endlichen Grundgesamtheit, von der ein bestimmter Teil eine gewisse Eigenschaft besitzt, ohne Zur&#252;cklegen gezogen wird. Die Anzahl der Elemente in der Stichprobe mit der gesuchten Eigenschaft hat dann eine hypergeometrische Verteilung. Das entspricht nicht der Fragestellung.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    The hypergeometric distribution occurs when a sample is drawn from a finite population of which a certain part has a certain property without being reset. The number of elements in the sample with the desired property then has a hypergeometric distribution. This does not correspond to the question.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtA1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA1</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Die
+    <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "diskrete Gleichverteilung"'>
+        Laplace-Verteilung
+    </span>
+    wird dann verwendet, wenn ein Zufallsexperiment endlich viele Ausg&#228;nge hat und jeder m&#246;gliche Ausgang mit derselben Wahrscheinlichkeit auftreten kann. Das entspricht nicht der Fragestellung.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    The
+    <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "diskrete Gleichverteilung"'>
+        Laplace distribution
+    </span>
+    is used when a random experiment finally has many outputs and any possible output can occur with the same probability. This does not correspond to the question.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prtA1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA1</sans>
+                <tans>4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Wird ein Zufallsexperiment so lange wiederholt, bis ein bestimmtes Ereignis erstmals eingetreten ist, so hat die Anzahl der Fehlversuche vor dem ersten Eintreten des Ereignisses eine geometrische Verteilung. Das entspricht nicht der Fragestellung.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    If a random experiment is repeated until a specific event has occurred for the first time, the number of faulty tests before the first occurrence of the event has a geometric distribution. This does not correspond to the question.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ansB)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtB-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihr Ergebnis liegt nicht im Intervall \([0,1]\) und kann daher nicht als Wahrscheinlichkeit interpretiert werden.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your result is not in interval \([0,1]\) and therefore cannot be interpreted as probability.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansB</sans>
+                <tans>TansB</tans>
+                <testoptions>epsilon3</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die Normalapproximation ohne Stetigkeitskorrektur richtig angewendet. Eine m&#246;gliche Rechnung sieht vollst&#228;ndig aufgeschrieben folgenderma&#223;en aus:
+\begin{align*}
+P({@a@}\leq X\leq {@b@})
+&amp;=P({@a-1@} &lt; X\leq {@b@})\\
+&amp;=P\left(\frac{{@a-1@}-\text{E}(X)}{\sqrt{\text{Var}(X)}} &lt; \frac{X-\text{E}(X)}{\sqrt{\text{Var}(X)}}\leq\frac{{@b@}-\text{E}(X)}{\sqrt{\text{Var}(X)}}\right)\\
+&amp;=P\left(\frac{{@a-1@}-{@n@}\cdot{@p@}}{\sqrt{{@n@}\cdot{@p@}\cdot(1-{@p@})}} &lt; X^*\leq\frac{{@b@}-{@n@}\cdot{@p@}}{\sqrt{{@n@}\cdot{@p@}\cdot(1-{@p@})}}\right)\\
+&amp;\approx P({@ZGS(a-1)@} &lt; X^*\leq {@ZGS(b)@})\\
+&amp;\approx\Phi({@ZGS(b)@})-\Phi({@ZGS(a-1)@})\\
+&amp;=\Phi({@ZGS(b)@})+\Phi({@-ZGS(a-1)@})-1\\
+&amp;\approx {@TansB@}.
+\end{align*}
+</p>
+<hr/>
+<p>
+    Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20b');
+show('oer-aufgabe-20c');
+" type="button">
+        Weiter
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    They have correctly applied the normal approximation without stiffness correction. A possible invoice looks fully written as follows:
+\begin{align*}
+P({@a@}\leq X\leq {@b@})
+&amp;=P({@a-1@} &lt; X\leq {@b@})\\
+&amp;=P\left(\frac{{@a-1@}-\text{E}(X)}{\sqrt{\text{Var}(X)}} &lt; \frac{X-\text{E}(X)}{\sqrt{\text{Var}(X)}}\leq\frac{{@b@}-\text{E}(X)}{\sqrt{\text{Var}(X)}}\right)\\
+&amp;=P\left(\frac{{@a-1@}-{@n@}\cdot{@p@}}{\sqrt{{@n@}\cdot{@p@}\cdot(1-{@p@})}} &lt; X^*\leq\frac{{@b@}-{@n@}\cdot{@p@}}{\sqrt{{@n@}\cdot{@p@}\cdot(1-{@p@})}}\right)\\
+&amp;\approx P({@ZGS(a-1)@} &lt; X^*\leq {@ZGS(b)@})\\
+&amp;\approx\Phi({@ZGS(b)@})-\Phi({@ZGS(a-1)@})\\
+&amp;=\Phi({@ZGS(b)@})+\Phi({@-ZGS(a-1)@})-1\\
+&amp;\approx {@TansB@}.
+\end{align*}
+</p>
+<hr/>
+<p>
+    To get to the next task, click on
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20b');
+show('oer-aufgabe-20c');
+" type="button">
+        Next
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-aufgabe-20b-PRT1">
+    <p>
+        Dass Sie die Normalapproximation nicht auf Anhieb geschafft haben, ist kein Problem! Im Folgenden wird die Aufgabe in drei kleinere Teilaufgaben unterteilt. Wenn Sie diese alle gel&#246;st haben, k&#246;nnen Sie sicherlich auch die urspr&#252;ngliche Aufgabe l&#246;sen. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20b');
+show('oer-aufgabe-20b1');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-20b-PRT2" style="display:none;">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Die Rechnung lautet bis jetzt:
+\begin{equation*}
+P({@a@}\leq X\leq {@b@})
+=P({@a-1@} &lt; X\leq {@b@}).
+\end{equation*}
+Als N&#228;chstes m&#252;ssen Sie \(X\) standardisieren, um dann die Normalapproximation anwenden zu k&#246;nnen.
+    </p>
+    <hr/>
+    <p>
+        Wenn Sie bei der Umformung nicht weiterkommen, l&#246;sen Sie zus&#228;tzlich noch die zweite Teilaufgabe. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20b');
+show('oer-aufgabe-20b2');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-20b-PRT3" style="display:none;">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Die Rechnung lautet bis jetzt:
+\begin{align*}
+P({@a@}\leq X\leq {@b@})
+&amp;=P({@a-1@} &lt; X\leq {@b@})\\
+&amp;\approx P({@ZGS(a-1)@} &lt; X^*\leq {@ZGS(b)@}).
+\end{align*}
+Wenden Sie als N&#228;chstes die Normalapproximation an und bestimmen Sie dann die auftretenden Funktionswerte von \(\Phi\).
+    </p>
+    <hr/>
+    <p>
+        Wenn Sie bei der Umformung nicht weiterkommen, l&#246;sen Sie zus&#228;tzlich noch die dritte Teilaufgabe. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20b');
+show('oer-aufgabe-20b3');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-20b-PRT4" style="display:none;">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Die Rechnung lautet bis jetzt:
+\begin{align*}
+P({@a@}\leq X\leq {@b@})
+&amp;=P({@a-1@} &lt; X\leq {@b@})\\
+&amp;\approx P({@ZGS(a-1)@} &lt; X^*\leq {@ZGS(b)@})\\
+&amp;\approx\Phi({@ZGS(b)@})-\Phi({@ZGS(a-1)@}).
+\end{align*}
+Bestimmen Sie nun noch die auftretenden Funktionswerte von \(\Phi\) aus einer geeigneten Tabelle. Hierbei ist die Identit&#228;t \(\Phi(-t)=1-\Phi(t)\) f&#252;r \(t\in\mathbb{R}\) hilfreich.
+    </p>
+</div>
+[[/lang]][[lang code="en"]]
+<div id="oer-aufgabe-20b-PRT1">
+    <p>
+        That you didn't get the normal approximation right away is no problem! In the following, the task is divided into three smaller subtasks. If you have solved these all, you can also solve the original task. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20b');
+show('oer-aufgabe-20b1');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-20b-PRT2" style="display:none;">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        The invoice is now:
+\begin{equation*}
+P({@a@}\leq X\leq {@b@})
+=P({@a-1@} &lt; X\leq {@b@}).
+\end{equation*}Next you need \(X\) to be able to apply the normal approximation.
+    </p>
+    <hr/>
+    <p>
+        If you do not proceed during the forming process, you will also solve the second part task. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20b');
+show('oer-aufgabe-20b2');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-20b-PRT3" style="display:none;">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        The invoice is now:
+\begin{align*}
+P({@a@}\leq X\leq {@b@})
+&amp;=P({@a-1@} &lt; X\leq {@b@})\\
+&amp;\approx P({@ZGS(a-1)@} &lt; X^*\leq {@ZGS(b)@}).
+\end{align*}Next, apply normal approximation and then determine the function values of \(\Phi\).
+    </p>
+    <hr/>
+    <p>
+        If you do not proceed during the forming process, you will also solve the third part task. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20b');
+show('oer-aufgabe-20b3');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-20b-PRT4" style="display:none;">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        The invoice is now:
+\begin{align*}
+P({@a@}\leq X\leq {@b@})
+&amp;=P({@a-1@} &lt; X\leq {@b@})\\
+&amp;\approx P({@ZGS(a-1)@} &lt; X^*\leq {@ZGS(b)@})\\
+&amp;\approx\Phi({@ZGS(b)@})-\Phi({@ZGS(a-1)@}).
+\end{align*}Determine the functional values of \(\Phi\) from a suitable table. Here is the identity \(\Phi(-t)=1-\Phi(t)\) for \(t\in\mathbb{R}\) helpful.
+    </p>
+</div>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ansB11,ansB12]</sans>
+                <tans>[TansB11,TansB12]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Da \(X\) nur ganzzahlige Werte annehmen kann, ist die Bedingung \({@a@}\leq X\) &#228;quivalent zu \({@a-1@} &lt; X\). Die Bedingung \(X\leq {@b@}\) hat sich nicht ver&#228;ndert.
+</p>
+<hr/>
+<ul>
+    <li>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20b1');
+show('oer-aufgabe-20b2');
+" type="button">
+            Weiter
+        </button>
+    </li>
+    <li>
+        Um zur urspr&#252;nglichen Aufgabe zu gelangen, klicken Sie auf
+        <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-20b1');
+hide('oer-aufgabe-20b-PRT1');
+show('oer-aufgabe-20b');
+show('oer-aufgabe-20b-PRT2');
+" type="button">
+            Zur&#252;ck
+        </button>
+    </li>
+</ul>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    There. \(X\) can only assume integer values, is the condition \({@a@}\leq X\) equivalent to \({@a-1@} &lt; X\). The condition \(X\leq {@b@}\) has not changed.
+</p>
+<hr/>
+<ul>
+    <li>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20b1');
+show('oer-aufgabe-20b2');
+" type="button">
+            Next
+        </button>
+    </li>
+    <li>
+        To get to the original task, click on
+        <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-20b1');
+hide('oer-aufgabe-20b-PRT1');
+show('oer-aufgabe-20b');
+show('oer-aufgabe-20b-PRT2');
+" type="button">
+            Back
+        </button>
+    </li>
+</ul>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtB1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>GTE</answertest>
+                <sans>ansB11</sans>
+                <tans>ansB12</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Die linke Seite der Ungleichungskette ist nicht kleiner als die rechte Seite. Das resultiert in einem leeren Ereignis mit der Wahrscheinlichkeit 0.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    The left side of the unequalification chain is not smaller than the right side. This results in an empty event with probability 0.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtB1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB11</sans>
+                <tans>TansB11</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>prtB1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die linke Seite der Ungleichungskette richtig an das ver&#228;nderte Ungleichheitszeichen angepasst.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have correctly adapted the left side of the unequalification chain to the changed inequality mark.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prtB1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die linke Seite der Ungleichungskette falsch an das ver&#228;nderte Ungleichheitszeichen angepasst oder keinen ganzzahligen Wert eingegeben.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have incorrectly adapted the left side of the unequalification chain to the changed inequality mark or have not entered an integer value.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB11</sans>
+                <tans>a</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>prtB1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Das Ungleichheitszeichen in der linken Ungleichung hat sich ver&#228;ndert. Daher muss auch die linke Seite der Ungleichungskette ver&#228;ndert werden, denn \(\{{@a@}\leq X\}\neq\{{@a@} &lt; X\}\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The inequality mark in the left imbalance has changed. Therefore, the left side of the unequalification chain must also be changed, because \(\{{@a@}\leq X\}\neq\{{@a@} &lt; X\}\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prtB1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB11</sans>
+                <tans>a+1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>prtB1-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Die linke Seite der Ungleichungskette muss beim &#220;bergang von \(\leq\) zu \(&lt;\) um eins verringert statt um eins erh&#246;ht werden, denn \(\{{@a+1@} &lt; X\}=\{{@a+2@}\leq X\}\neq\{{@a@}\leq X\}\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The left side of the unequalification chain must be at the transition from \(\leq\) to \(&lt;\) reduced by one rather than by one, because \(\{{@a+1@} &lt; X\}=\{{@a+2@}\leq X\}\neq\{{@a@}\leq X\}\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>prtB1-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB12</sans>
+                <tans>TansB12</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>6</truenextnode>
+                <trueanswernote>prtB1-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Da sich das Ungleichheitszeichen in der rechten Ungleichung nicht ver&#228;ndert hat, haben Sie auch die rechte Seite der Ungleichungskette unver&#228;ndert gelassen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Since the inequality mark has not changed in the right balance, you have also left the right side of the inequality chain unchanged.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>6</falsenextnode>
+                <falseanswernote>prtB1-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Das Ungleichheitszeichen in der rechten Ungleichung hat sich nicht ver&#228;ndert. Daher bleibt auch die rechte Seite der Ungleichungskette unver&#228;ndert.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The inequality mark in the right balance has not changed. Therefore, the right side of the unequalification chain remains unchanged.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>6</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>0</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB1-7-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB1-7-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>[ansB21,ansB22]</sans>
+                <tans>[TansB21,TansB22]</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Auf allen Seiten der Ungleichungskette \({@a-1@} &lt; X\leq {@b@}\) muss der Erwartungswert \(\text{E}(X)={@n@}\cdot{@p@}={@n*p@}\) subtrahiert und anschlie&#223;end durch die Standardabweichung \(\sqrt{\text{Var}(X)}=\sqrt{{@n@}\cdot{@p@}\cdot(1-{@p@})}=\sqrt{{@n*p*(1-p)@}}\) dividiert werden. Das ergibt
+\begin{align*}
+P({@a-1@} &lt; X\leq {@b@})
+&amp;=P\left(\frac{{@a-1@}-{@n*p@}}{\sqrt{{@n*p*(1-p)@}}} &lt; \frac{X-\text{E}(X)}{\sqrt{\text{Var}(X)}}\leq\frac{{@b@}-{@n*p@}}{\sqrt{{@n*p*(1-p)@}}}\right)\\
+&amp;\approx P({@ZGS(a-1)@} &lt; X^*\leq {@ZGS(b)@}).
+\end{align*}
+</p>
+<hr/>
+<ul>
+    <li>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20b2');
+show('oer-aufgabe-20b3');
+" type="button">
+            Weiter
+        </button>
+    </li>
+    <li>
+        Um zur urspr&#252;nglichen Aufgabe zu gelangen, klicken Sie auf
+        <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-20b2');
+hide('oer-aufgabe-20b-PRT1');
+hide('oer-aufgabe-20b-PRT2');
+show('oer-aufgabe-20b');
+show('oer-aufgabe-20b-PRT3');
+" type="button">
+            Zur&#252;ck
+        </button>
+    </li>
+</ul>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    On all sides of the inequality chain \({@a-1@} &lt; X\leq {@b@}\) the expected value \(\text{E}(X)={@n@}\cdot{@p@}={@n*p@}\) subtracted and subsequently by the standard deviation \(\sqrt{\text{Var}(X)}=\sqrt{{@n@}\cdot{@p@}\cdot(1-{@p@})}=\sqrt{{@n*p*(1-p)@}}\) to be divided. This results
+\begin{align*}
+P({@a-1@} &lt; X\leq {@b@})
+&amp;=P\left(\frac{{@a-1@}-{@n*p@}}{\sqrt{{@n*p*(1-p)@}}} &lt; \frac{X-\text{E}(X)}{\sqrt{\text{Var}(X)}}\leq\frac{{@b@}-{@n*p@}}{\sqrt{{@n*p*(1-p)@}}}\right)\\
+&amp;\approx P({@ZGS(a-1)@} &lt; X^*\leq {@ZGS(b)@}).
+\end{align*}
+</p>
+<hr/>
+<ul>
+    <li>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20b2');
+show('oer-aufgabe-20b3');
+" type="button">
+            Next
+        </button>
+    </li>
+    <li>
+        To get to the original task, click on
+        <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-20b2');
+hide('oer-aufgabe-20b-PRT1');
+hide('oer-aufgabe-20b-PRT2');
+show('oer-aufgabe-20b');
+show('oer-aufgabe-20b-PRT3');
+" type="button">
+            Back
+        </button>
+    </li>
+</ul>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtB2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>GTE</answertest>
+                <sans>ansB21</sans>
+                <tans>ansB22</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Die linke Seite der Ungleichungskette ist nicht kleiner als die rechte Seite. Das resultiert in einem leeren Ereignis mit der Wahrscheinlichkeit 0.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    The left side of the unequalification chain is not smaller than the right side. This results in an empty event with probability 0.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtB2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>10</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansB22</sans>
+                <tans>ZGS_error3(b)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>11</truenextnode>
+                <trueanswernote>prtB2-11-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der rechten Seite vergessen, zuerst den Erwartungswert zu subtrahieren, bevor Sie durch die Standardabweichung dividieren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You probably forgot to subtract the expected value at the right hand side before dividing by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>11</falsenextnode>
+                <falseanswernote>prtB2-11-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>11</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansB22</sans>
+                <tans>ZGS_error4(b)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>12</truenextnode>
+                <trueanswernote>prtB2-12-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der rechten Seite vergessen, zuerst den Erwartungswert zu subtrahieren, und haben durch die Varianz dividiert anstatt durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you forgot to subtract the expected value at the right hand side, and have divided by the variance instead of by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>12</falsenextnode>
+                <falseanswernote>prtB2-12-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>12</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>0</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB2-13-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB2-13-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansB21</sans>
+                <tans>TansB21</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>7</truenextnode>
+                <trueanswernote>prtB2-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die linke Seite der Ungleichungskette richtig standardisiert.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have correctly standardized the left side of the unequalification chain.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prtB2-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die linke Seite der Ungleichungskette falsch standardisiert. Subtrahieren Sie von \({@a-1@}\) den Erwartungswert und dividieren Sie anschlie&#223;end durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have incorrectly standardized the left side of the unequalification chain. Subtract from \({@a-1@}\) the expected value and then divide by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansB21</sans>
+                <tans>ZGS_error1(a-1)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>prtB2-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der linken Seite vergessen, durch die Standardabweichung zu dividieren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you forgot to divide by the standard deviation on the left.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prtB2-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansB21</sans>
+                <tans>ZGS_error2(a-1)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>prtB2-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der linken Seite durch die Varianz dividiert anstatt durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you have divided by the variance at the left side instead of by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>prtB2-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansB21</sans>
+                <tans>ZGS_error3(a-1)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>6</truenextnode>
+                <trueanswernote>prtB2-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der linken Seite vergessen, zuerst den Erwartungswert zu subtrahieren, bevor Sie durch die Standardabweichung dividieren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You probably forgot to subtract the expected value first from the left hand side before dividing by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>6</falsenextnode>
+                <falseanswernote>prtB2-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>6</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansB21</sans>
+                <tans>ZGS_error4(a-1)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>7</truenextnode>
+                <trueanswernote>prtB2-7-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der linken Seite vergessen, zuerst den Erwartungswert zu subtrahieren, und haben durch die Varianz dividiert anstatt durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you forgot to subtract the expected value from the left, and have divided by the variance instead of by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>7</falsenextnode>
+                <falseanswernote>prtB2-7-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>7</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansB22</sans>
+                <tans>TansB22</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>12</truenextnode>
+                <trueanswernote>prtB2-8-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die rechte Seite der Ungleichungskette richtig standardisiert.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    They have properly standardized the right side of the unequalification chain.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>8</falsenextnode>
+                <falseanswernote>prtB2-8-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die rechte Seite der Ungleichungskette falsch standardisiert. Subtrahieren Sie von \({@b@}\) den Erwartungswert und dividieren Sie anschlie&#223;end durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    They have incorrectly standardized the right side of the unequalification chain. Subtract from \({@b@}\) the expected value and then divide by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>8</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansB22</sans>
+                <tans>ZGS_error1(b)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>9</truenextnode>
+                <trueanswernote>prtB2-9-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der rechten Seite vergessen, durch die Standardabweichung zu dividieren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you forgot to divide by the standard deviation at the right side.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>9</falsenextnode>
+                <falseanswernote>prtB2-9-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>9</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansB22</sans>
+                <tans>ZGS_error2(b)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>10</truenextnode>
+                <trueanswernote>prtB2-10-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der rechten Seite durch die Varianz dividiert anstatt durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you have divided by the variance on the right side instead of the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>10</falsenextnode>
+                <falseanswernote>prtB2-10-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>[ansB31,ansB32]</sans>
+                <tans>[TansB31,TansB32]</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Aufgrund des zentralen Grenzwertsatzes ist
+\begin{align*}
+P({@ZGS(a-1)@} &lt; X^*\leq {@ZGS(b)@})
+&amp;=F_{X^*}({@ZGS(b)@})-F_{X^*}({@ZGS(a-1)@})\\
+&amp;\approx\Phi({@ZGS(b)@})-\Phi({@ZGS(a-1)@}).
+\end{align*}
+</p>
+<p>
+    Jetzt k&#246;nnen Sie die urspr&#252;ngliche Aufgabe noch einmal versuchen. Klicken Sie dazu auf
+    <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-20b3');
+hide('oer-aufgabe-20b-PRT1');
+hide('oer-aufgabe-20b-PRT2');
+hide('oer-aufgabe-20b-PRT3');
+show('oer-aufgabe-20b');
+show('oer-aufgabe-20b-PRT4');
+" type="button">
+        Zur&#252;ck
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    Due to the central limit value set
+\begin{align*}
+P({@ZGS(a-1)@} &lt; X^*\leq {@ZGS(b)@})
+&amp;=F_{X^*}({@ZGS(b)@})-F_{X^*}({@ZGS(a-1)@})\\
+&amp;\approx\Phi({@ZGS(b)@})-\Phi({@ZGS(a-1)@}).
+\end{align*}
+</p>
+<p>
+    Now you can try the original task again. Click on
+    <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-20b3');
+hide('oer-aufgabe-20b-PRT1');
+hide('oer-aufgabe-20b-PRT2');
+hide('oer-aufgabe-20b-PRT3');
+show('oer-aufgabe-20b');
+show('oer-aufgabe-20b-PRT4');
+" type="button">
+        Back
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtB3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>[ansB31,ansB32]</sans>
+                <tans>[TansB32,TansB31]</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB3-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Ihre Ergebnisse sind richtig, aber Sie haben beide Eingaben miteinander vertauscht.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    Your results are correct, but you have interchanged both inputs.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB3-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Setzen Sie die linke bzw. rechte Seite der Ungleichungskette in die Verteilungsfunktion \(\Phi\) der Standardnormalverteilung ein.
+</p>
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    Set the left or right side of the non-uniform chain into the distribution function \(\Phi\) the standard distribution.
+</p>
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtC</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ansC)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtC-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihr Ergebnis liegt nicht im Intervall \([0,1]\) und kann daher nicht als Wahrscheinlichkeit interpretiert werden.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your result is not in interval \([0,1]\) and therefore cannot be interpreted as probability.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC</sans>
+                <tans>TansC</tans>
+                <testoptions>epsilon3</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die Normalapproximation mit Stetigkeitskorrektur richtig angewendet. Eine m&#246;gliche Rechnung sieht vollst&#228;ndig aufgeschrieben folgenderma&#223;en aus:
+\begin{align*}
+P({@a@}\leq X\leq {@b@})
+&amp;=P({@a-0.5@} &lt; X\leq {@b+0.5@})\\
+&amp;=P\left(\frac{{@a-0.5@}-\text{E}(X)}{\sqrt{\text{Var}(X)}} &lt; \frac{X-\text{E}(X)}{\sqrt{\text{Var}(X)}}\leq\frac{{@b+0.5@}-\text{E}(X)}{\sqrt{\text{Var}(X)}}\right)\\
+&amp;=P\left(\frac{{@a-0.5@}-{@n@}\cdot{@p@}}{\sqrt{{@n@}\cdot{@p@}\cdot(1-{@p@})}} &lt; X^*\leq\frac{{@b+0.5@}-{@n@}\cdot{@p@}}{\sqrt{{@n@}\cdot{@p@}\cdot(1-{@p@})}}\right)\\
+&amp;\approx P({@ZGS(a-1/2)@} &lt; X^*\leq {@ZGS(b+1/2)@})\\
+&amp;\approx\Phi({@ZGS(b+1/2)@})-\Phi({@ZGS(a-1/2)@})\\
+&amp;=\Phi({@ZGS(b+1/2)@})+\Phi({@-ZGS(a-1/2)@})-1\\
+&amp;\approx {@TansC@}.
+\end{align*}
+Wenn wir die exakte Wahrscheinlichkeit \(P({@a@}\leq X\leq {@b@})={@TansA@}\) mit den beiden mittels der Normalapproximation angen&#228;herten Ergebnissen vergleichen, stellen wir fest, dass die soeben mit Stetigkeitskorrektur berechnete Approximation \(P({@a@}\leq X\leq {@b@})\approx {@TansC@}\) n&#228;her am exakten Wert liegt als die zuvor ohne Stetigkeitskorrektur berechnete Approximation \(P({@a@}\leq X\leq {@b@})\approx {@TansB@}\). Die Stetigkeitskorrektur verbessert hier also das durch die Normalapproximation berechnete Ergebnis.
+</p>
+<hr/>
+<p>
+    Sie haben die Aufgabe erfolgreich gel&#246;st! Jetzt sollten Sie die Normalapproximation sicher anwenden k&#246;nnen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have applied the normal approximation with stiffness correction correctly. A possible invoice looks fully written as follows:
+\begin{align*}
+P({@a@}\leq X\leq {@b@})
+&amp;=P({@a-0.5@} &lt; X\leq {@b+0.5@})\\
+&amp;=P\left(\frac{{@a-0.5@}-\text{E}(X)}{\sqrt{\text{Var}(X)}} &lt; \frac{X-\text{E}(X)}{\sqrt{\text{Var}(X)}}\leq\frac{{@b+0.5@}-\text{E}(X)}{\sqrt{\text{Var}(X)}}\right)\\
+&amp;=P\left(\frac{{@a-0.5@}-{@n@}\cdot{@p@}}{\sqrt{{@n@}\cdot{@p@}\cdot(1-{@p@})}} &lt; X^*\leq\frac{{@b+0.5@}-{@n@}\cdot{@p@}}{\sqrt{{@n@}\cdot{@p@}\cdot(1-{@p@})}}\right)\\
+&amp;\approx P({@ZGS(a-1/2)@} &lt; X^*\leq {@ZGS(b+1/2)@})\\
+&amp;\approx\Phi({@ZGS(b+1/2)@})-\Phi({@ZGS(a-1/2)@})\\
+&amp;=\Phi({@ZGS(b+1/2)@})+\Phi({@-ZGS(a-1/2)@})-1\\
+&amp;\approx {@TansC@}.
+\end{align*}If we have the exact probability \(P({@a@}\leq X\leq {@b@})={@TansA@}\) compare with the two results approximated by normal approximation, we note that the approximation just calculated with stiffness correction \(P({@a@}\leq X\leq {@b@})\approx {@TansC@}\) is closer to the exact value than the approximation previously calculated without stiffness correction \(P({@a@}\leq X\leq {@b@})\approx {@TansB@}\). The stiffness correction thus improves the result calculated by the normal approximation.
+</p>
+<hr/>
+<p>
+    You have successfully solved the task! Now you should be able to safely apply the normal approximation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-aufgabe-20c-PRT1">
+    <p>
+        Dass Sie die Normalapproximation nicht auf Anhieb geschafft haben, ist kein Problem! Im Folgenden wird die Aufgabe in drei kleinere Teilaufgaben unterteilt. Wenn Sie diese alle gel&#246;st haben, k&#246;nnen Sie sicherlich auch die urspr&#252;ngliche Aufgabe l&#246;sen. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20c');
+show('oer-aufgabe-20c1');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-20c-PRT2" style="display:none;">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Die Rechnung lautet bis jetzt:
+\begin{equation*}
+P({@a@}\leq X\leq {@b@})
+=P({@a-0.5@} &lt; X\leq {@b+0.5@}).
+\end{equation*}
+Als N&#228;chstes m&#252;ssen Sie \(X\) standardisieren, um dann die Normalapproximation anwenden zu k&#246;nnen.
+    </p>
+    <hr/>
+    <p>
+        Wenn Sie bei der Umformung nicht weiterkommen, l&#246;sen Sie zus&#228;tzlich noch die zweite Teilaufgabe. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20c');
+show('oer-aufgabe-20c2');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-20c-PRT3" style="display:none;">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Die Rechnung lautet bis jetzt:
+\begin{align*}
+P({@a@}\leq X\leq {@b@})
+&amp;=P({@a-0.5@} &lt; X\leq {@b+0.5@})\\
+&amp;\approx P({@ZGS(a-1/2)@} &lt; X^*\leq {@ZGS(b+1/2)@}).
+\end{align*}
+Wenden Sie als N&#228;chstes die Normalapproximation an und bestimmen Sie dann die auftretenden Funktionswerte von \(\Phi\).
+    </p>
+    <hr/>
+    <p>
+        Wenn Sie bei der Umformung nicht weiterkommen, l&#246;sen Sie zus&#228;tzlich noch die dritte Teilaufgabe. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20c');
+show('oer-aufgabe-20c3');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-20c-PRT4" style="display:none;">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Die Rechnung lautet bis jetzt:
+\begin{align*}
+P({@a@}\leq X\leq {@b@})
+&amp;=P({@a-0.5@} &lt; X\leq {@b+0.5@})\\
+&amp;\approx P({@ZGS(a-1/2)@} &lt; X^*\leq {@ZGS(b+1/2)@})\\
+&amp;\approx\Phi({@ZGS(b+1/2)@})-\Phi({@ZGS(a-1/2)@}).
+\end{align*}
+Bestimmen Sie nun noch die auftretenden Funktionswerte von \(\Phi\) aus einer geeigneten Tabelle. Hierbei ist die Identit&#228;t \(\Phi(-t)=1-\Phi(t)\) f&#252;r \(t\in\mathbb{R}\) hilfreich.
+    </p>
+</div>
+[[/lang]][[lang code="en"]]
+<div id="oer-aufgabe-20c-PRT1">
+    <p>
+        That you didn't get the normal approximation right away is no problem! In the following, the task is divided into three smaller subtasks. If you have solved these all, you can also solve the original task. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20c');
+show('oer-aufgabe-20c1');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-20c-PRT2" style="display:none;">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        The invoice is now:
+\begin{equation*}
+P({@a@}\leq X\leq {@b@})
+=P({@a-0.5@} &lt; X\leq {@b+0.5@}).
+\end{equation*}Next you need \(X\) to be able to apply the normal approximation.
+    </p>
+    <hr/>
+    <p>
+        If you do not proceed during the forming process, you will also solve the second part task. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20c');
+show('oer-aufgabe-20c2');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-20c-PRT3" style="display:none;">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        The invoice is now:
+\begin{align*}
+P({@a@}\leq X\leq {@b@})
+&amp;=P({@a-0.5@} &lt; X\leq {@b+0.5@})\\
+&amp;\approx P({@ZGS(a-1/2)@} &lt; X^*\leq {@ZGS(b+1/2)@}).
+\end{align*}Next, apply normal approximation and then determine the function values of \(\Phi\).
+    </p>
+    <hr/>
+    <p>
+        If you do not proceed during the forming process, you will also solve the third part task. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20c');
+show('oer-aufgabe-20c3');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-20c-PRT4" style="display:none;">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        The invoice is now:
+\begin{align*}
+P({@a@}\leq X\leq {@b@})
+&amp;=P({@a-0.5@} &lt; X\leq {@b+0.5@})\\
+&amp;\approx P({@ZGS(a-1/2)@} &lt; X^*\leq {@ZGS(b+1/2)@})\\
+&amp;\approx\Phi({@ZGS(b+1/2)@})-\Phi({@ZGS(a-1/2)@}).
+\end{align*}Determine the functional values of \(\Phi\) from a suitable table. Here is the identity \(\Phi(-t)=1-\Phi(t)\) for \(t\in\mathbb{R}\) helpful.
+    </p>
+</div>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtC1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[ansC11,ansC12]</sans>
+                <tans>[TansC11,TansC12]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Unter Ber&#252;cksichtigung der Stetigkeitskorrektur ist die Bedingung \({@a@}\leq X\) &#228;quivalent zu \({@a-0.5@} &lt; X\) und die Bedingung \(X\leq {@b@}\) ist &#228;quivalent zu \(X\leq {@b+0.5@}\).
+</p>
+<hr/>
+<ul>
+    <li>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20c1');
+show('oer-aufgabe-20c2');
+" type="button">
+            Weiter
+        </button>
+    </li>
+    <li>
+        Um zur urspr&#252;nglichen Aufgabe zu gelangen, klicken Sie auf
+        <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-20c1');
+hide('oer-aufgabe-20c-PRT1');
+show('oer-aufgabe-20c');
+show('oer-aufgabe-20c-PRT2');
+" type="button">
+            Zur&#252;ck
+        </button>
+    </li>
+</ul>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    Taking into account the stiffness correction, the condition \({@a@}\leq X\) equivalent to \({@a-0.5@} &lt; X\) and the condition \(X\leq {@b@}\) is equivalent to \(X\leq {@b+0.5@}\).
+</p>
+<hr/>
+<ul>
+    <li>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20c1');
+show('oer-aufgabe-20c2');
+" type="button">
+            Next
+        </button>
+    </li>
+    <li>
+        To get to the original task, click on
+        <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-20c1');
+hide('oer-aufgabe-20c-PRT1');
+show('oer-aufgabe-20c');
+show('oer-aufgabe-20c-PRT2');
+" type="button">
+            Back
+        </button>
+    </li>
+</ul>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtC1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>GTE</answertest>
+                <sans>ansC11</sans>
+                <tans>ansC12</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Die linke Seite der Ungleichungskette ist nicht kleiner als die rechte Seite. Das resultiert in einem leeren Ereignis mit der Wahrscheinlichkeit 0.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    The left side of the unequalification chain is not smaller than the right side. This results in an empty event with probability 0.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtC1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansC11</sans>
+                <tans>TansC11</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>prtC1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die linke Seite der Ungleichungskette richtig an das ver&#228;nderte Ungleichheitszeichen und die Stetigkeitskorrektur angepasst.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have correctly adapted the left side of the unequalification chain to the changed inequality mark and the stiffness correction.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prtC1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die linke Seite der Ungleichungskette falsch an das ver&#228;nderte Ungleichheitszeichen und die Stetigkeitskorrektur angepasst oder keinen halbzahligen Wert eingegeben.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have incorrectly adjusted the left side of the non-equalification chain to the changed inequality mark and the stiffness correction or not entered a half-numbered value.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansC11</sans>
+                <tans>a</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>prtC1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Das Ungleichheitszeichen in der linken Ungleichung hat sich ver&#228;ndert. Daher muss auch die linke Seite der Ungleichungskette ver&#228;ndert werden, denn \(\{{@a@}\leq X\}\neq\{{@a@} &lt; X\}\). Ber&#252;cksichtigen Sie dabei die Stetigkeitskorrektur.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The inequality mark in the left imbalance has changed. Therefore, the left side of the unequalification chain must also be changed, because \(\{{@a@}\leq X\}\neq\{{@a@} &lt; X\}\). Please take into account the stiffness correction.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prtC1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansC11</sans>
+                <tans>a+0.5</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>prtC1-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Die linke Seite der Ungleichungskette muss beim &#220;bergang von \(\leq\) zu \(&lt;\) und unter Ber&#252;cksichtigung der Stetigkeitskorrektur um \(0.5\) verringert statt um \(0.5\) erh&#246;ht werden, denn \(\{{@a+0.5@} &lt; X\}=\{{@a+1@}\leq X\}\neq\{{@a@}\leq X\}\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The left side of the unequalification chain must be at the transition from \(\leq\) to \(&lt;\) and considering the stiffness correction \(0.5\) reduced instead of \(0.5\) increase because \(\{{@a+0.5@} &lt; X\}=\{{@a+1@}\leq X\}\neq\{{@a@}\leq X\}\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>prtC1-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansC12</sans>
+                <tans>TansC12</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>7</truenextnode>
+                <trueanswernote>prtC1-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die rechte Seite der Ungleichungskette richtig an die Stetigkeitskorrektur angepasst.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have correctly adapted the right side of the unequalification chain to the stiffness correction.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>6</falsenextnode>
+                <falseanswernote>prtC1-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die rechte Seite der Ungleichungskette falsch an die Stetigkeitskorrektur angepasst oder keinen halbzahligen Wert eingegeben.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have incorrectly adjusted the right side of the unequalification chain to the stiffness correction or have not entered a half-numbered value.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>6</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansC12</sans>
+                <tans>b-0.5</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>7</truenextnode>
+                <trueanswernote>prtC1-7-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Die rechte Seite der Ungleichungskette muss unter Ber&#252;cksichtigung der Stetigkeitskorrektur um \(0.5\) erh&#246;ht statt um \(0.5\) verringert werden, denn \(\{X\leq {@b-0.5@}\}=\{X\leq {@b-1@}\}\neq\{X\leq {@b@}\}\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The right side of the non-equalification chain must, taking into account the stiffness correction, \(0.5\) increased instead of \(0.5\) to be reduced because \(\{X\leq {@b-0.5@}\}=\{X\leq {@b-1@}\}\neq\{X\leq {@b@}\}\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>7</falsenextnode>
+                <falseanswernote>prtC1-7-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>7</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>0</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC1-8-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC1-8-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtC2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>[ansC21,ansC22]</sans>
+                <tans>[TansC21,TansC22]</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Wieder muss auf allen Seiten der Ungleichungskette \({@a-0.5@} &lt; X\leq {@b+0.5@}\) der Erwartungswert \(\text{E}(X)={@n@}\cdot{@p@}={@n*p@}\) subtrahiert und anschlie&#223;end durch die Standardabweichung \(\sqrt{\text{Var}(X)}=\sqrt{{@n@}\cdot{@p@}\cdot(1-{@p@})}=\sqrt{{@n*p*(1-p)@}}\) dividiert werden. Das ergibt
+\begin{align*}
+P({@a-0.5@} &lt; X\leq {@b+0.5@})
+&amp;=P\left(\frac{{@a-0.5@}-{@n*p@}}{\sqrt{{@n*p*(1-p)@}}} &lt; \frac{X-\text{E}(X)}{\sqrt{\text{Var}(X)}}\leq\frac{{@b+0.5@}-{@n*p@}}{\sqrt{{@n*p*(1-p)@}}}\right)\\
+&amp;\approx P({@ZGS(a-1/2)@} &lt; X^*\leq {@ZGS(b+1/2)@}).
+\end{align*}
+</p>
+<hr/>
+<ul>
+    <li>
+        Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20c2');
+show('oer-aufgabe-20c3');
+" type="button">
+            Weiter
+        </button>
+    </li>
+    <li>
+        Um zur urspr&#252;nglichen Aufgabe zu gelangen, klicken Sie auf
+        <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-20c2');
+hide('oer-aufgabe-20c-PRT1');
+hide('oer-aufgabe-20c-PRT2');
+show('oer-aufgabe-20c');
+show('oer-aufgabe-20c-PRT3');
+" type="button">
+            Zur&#252;ck
+        </button>
+    </li>
+</ul>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    Again on all sides of the unequal chain \({@a-0.5@} &lt; X\leq {@b+0.5@}\) the expected value \(\text{E}(X)={@n@}\cdot{@p@}={@n*p@}\) subtracted and subsequently by the standard deviation \(\sqrt{\text{Var}(X)}=\sqrt{{@n@}\cdot{@p@}\cdot(1-{@p@})}=\sqrt{{@n*p*(1-p)@}}\) to be divided. This results
+\begin{align*}
+P({@a-0.5@} &lt; X\leq {@b+0.5@})
+&amp;=P\left(\frac{{@a-0.5@}-{@n*p@}}{\sqrt{{@n*p*(1-p)@}}} &lt; \frac{X-\text{E}(X)}{\sqrt{\text{Var}(X)}}\leq\frac{{@b+0.5@}-{@n*p@}}{\sqrt{{@n*p*(1-p)@}}}\right)\\
+&amp;\approx P({@ZGS(a-1/2)@} &lt; X^*\leq {@ZGS(b+1/2)@}).
+\end{align*}
+</p>
+<hr/>
+<ul>
+    <li>
+        To get to the next task, click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-20c2');
+show('oer-aufgabe-20c3');
+" type="button">
+            Next
+        </button>
+    </li>
+    <li>
+        To get to the original task, click on
+        <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-20c2');
+hide('oer-aufgabe-20c-PRT1');
+hide('oer-aufgabe-20c-PRT2');
+show('oer-aufgabe-20c');
+show('oer-aufgabe-20c-PRT3');
+" type="button">
+            Back
+        </button>
+    </li>
+</ul>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtC2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>GTE</answertest>
+                <sans>ansC21</sans>
+                <tans>ansC22</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Die linke Seite der Ungleichungskette ist nicht kleiner als die rechte Seite. Das resultiert in einem leeren Ereignis mit der Wahrscheinlichkeit 0.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    The left side of the unequalification chain is not smaller than the right side. This results in an empty event with probability 0.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtC2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>10</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC22</sans>
+                <tans>ZGS_error3(b+1/2)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>11</truenextnode>
+                <trueanswernote>prtC2-11-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der rechten Seite vergessen, zuerst den Erwartungswert zu subtrahieren, bevor Sie durch die Standardabweichung dividieren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You probably forgot to subtract the expected value at the right hand side before dividing by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>11</falsenextnode>
+                <falseanswernote>prtC2-11-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>11</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC22</sans>
+                <tans>ZGS_error4(b+1/2)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>12</truenextnode>
+                <trueanswernote>prtC2-12-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der rechten Seite vergessen, zuerst den Erwartungswert zu subtrahieren, und haben durch die Varianz dividiert anstatt durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you forgot to subtract the expected value at the right hand side, and have divided by the variance instead of by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>12</falsenextnode>
+                <falseanswernote>prtC2-12-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>12</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>0</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC2-13-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC2-13-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC21</sans>
+                <tans>TansC21</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>7</truenextnode>
+                <trueanswernote>prtC2-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die linke Seite der Ungleichungskette richtig standardisiert.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have correctly standardized the left side of the unequalification chain.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prtC2-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die linke Seite der Ungleichungskette falsch standardisiert. Subtrahieren Sie von \({@a-0.5@}\) den Erwartungswert und dividieren Sie anschlie&#223;end durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have incorrectly standardized the left side of the unequalification chain. Subtract from \({@a-0.5@}\) the expected value and then divide by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC21</sans>
+                <tans>ZGS_error1(a-1/2)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>prtC2-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der linken Seite vergessen, durch die Standardabweichung zu dividieren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you forgot to divide by the standard deviation on the left.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prtC2-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC21</sans>
+                <tans>ZGS_error2(a-1/2)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>prtC2-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der linken Seite durch die Varianz dividiert anstatt durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you have divided by the variance at the left side instead of by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>prtC2-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC21</sans>
+                <tans>ZGS_error3(a-1/2)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>6</truenextnode>
+                <trueanswernote>prtC2-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der linken Seite vergessen, zuerst den Erwartungswert zu subtrahieren, bevor Sie durch die Standardabweichung dividieren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You probably forgot to subtract the expected value first from the left hand side before dividing by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>6</falsenextnode>
+                <falseanswernote>prtC2-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>6</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC21</sans>
+                <tans>ZGS_error4(a-1/2)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>7</truenextnode>
+                <trueanswernote>prtC2-7-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der linken Seite vergessen, zuerst den Erwartungswert zu subtrahieren, und haben durch die Varianz dividiert anstatt durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you forgot to subtract the expected value from the left, and have divided by the variance instead of by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>7</falsenextnode>
+                <falseanswernote>prtC2-7-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>7</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC22</sans>
+                <tans>TansC22</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>12</truenextnode>
+                <trueanswernote>prtC2-8-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die rechte Seite der Ungleichungskette richtig standardisiert.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    They have properly standardized the right side of the unequalification chain.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>8</falsenextnode>
+                <falseanswernote>prtC2-8-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die rechte Seite der Ungleichungskette falsch standardisiert. Subtrahieren Sie von \({@b+0.5@}\) den Erwartungswert und dividieren Sie anschlie&#223;end durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    They have incorrectly standardized the right side of the unequalification chain. Subtract from \({@b+0.5@}\) the expected value and then divide by the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>8</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC22</sans>
+                <tans>ZGS_error1(b+1/2)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>9</truenextnode>
+                <trueanswernote>prtC2-9-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der rechten Seite vergessen, durch die Standardabweichung zu dividieren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you forgot to divide by the standard deviation at the right side.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>9</falsenextnode>
+                <falseanswernote>prtC2-9-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>9</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC22</sans>
+                <tans>ZGS_error2(b+1/2)</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>10</truenextnode>
+                <trueanswernote>prtC2-10-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie bei der rechten Seite durch die Varianz dividiert anstatt durch die Standardabweichung.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probably you have divided by the variance on the right side instead of the standard deviation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>10</falsenextnode>
+                <falseanswernote>prtC2-10-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtC3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>[ansC31,ansC32]</sans>
+                <tans>[TansC31,TansC32]</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Aufgrund des zentralen Grenzwertsatzes ist
+\begin{align*}
+P({@ZGS(a-1/2)@} &lt; X^*\leq {@ZGS(b+1/2)@})
+&amp;=F_{X^*}({@ZGS(b+1/2)@})-F_{X^*}({@ZGS(a-1/2)@})\\
+&amp;\approx\Phi({@ZGS(b+1/2)@})-\Phi({@ZGS(a-1/2)@}).
+\end{align*}
+</p>
+<p>
+    Jetzt k&#246;nnen Sie die urspr&#252;ngliche Aufgabe noch einmal versuchen. Klicken Sie dazu auf
+    <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-20c3');
+hide('oer-aufgabe-20c-PRT1');
+hide('oer-aufgabe-20c-PRT2');
+hide('oer-aufgabe-20c-PRT3');
+show('oer-aufgabe-20c');
+show('oer-aufgabe-20c-PRT4');
+" type="button">
+        Zur&#252;ck
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    Due to the central limit value set
+\begin{align*}
+P({@ZGS(a-1/2)@} &lt; X^*\leq {@ZGS(b+1/2)@})
+&amp;=F_{X^*}({@ZGS(b+1/2)@})-F_{X^*}({@ZGS(a-1/2)@})\\
+&amp;\approx\Phi({@ZGS(b+1/2)@})-\Phi({@ZGS(a-1/2)@}).
+\end{align*}
+</p>
+<p>
+    Now you can try the original task again. Click on
+    <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-20c3');
+hide('oer-aufgabe-20c-PRT1');
+hide('oer-aufgabe-20c-PRT2');
+hide('oer-aufgabe-20c-PRT3');
+show('oer-aufgabe-20c');
+show('oer-aufgabe-20c-PRT4');
+" type="button">
+        Back
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtC3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>[ansC31,ansC32]</sans>
+                <tans>[TansC32,TansC31]</tans>
+                <testoptions>epsilon2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC3-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Ihre Ergebnisse sind richtig, aber Sie haben beide Eingaben miteinander vertauscht.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    Your results are correct, but you have interchanged both inputs.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC3-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Setzen Sie die linke bzw. rechte Seite der Ungleichungskette in die Verteilungsfunktion \(\Phi\) der Standardnormalverteilung ein.
+</p>
+<p>
+    Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    Set the left or right side of the non-uniform chain into the distribution function \(\Phi\) the standard distribution.
+</p>
+<p>
+    Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>565212537</deployedseed>
+        <deployedseed>1115092509</deployedseed>
+        <deployedseed>1991684599</deployedseed>
+        <deployedseed>1600602539</deployedseed>
+        <deployedseed>1730112772</deployedseed>
+        <deployedseed>1254353518</deployedseed>
+        <deployedseed>1210556372</deployedseed>
+        <deployedseed>737807419</deployedseed>
+        <deployedseed>368289260</deployedseed>
+        <deployedseed>1290168192</deployedseed>
+        <deployedseed>22656833</deployedseed>
+        <deployedseed>541638168</deployedseed>
+        <deployedseed>1825142743</deployedseed>
+        <deployedseed>1369843537</deployedseed>
+        <deployedseed>854651219</deployedseed>
+        <deployedseed>1783377117</deployedseed>
+        <deployedseed>1604977513</deployedseed>
+        <deployedseed>1153742811</deployedseed>
+        <deployedseed>1254591718</deployedseed>
+        <deployedseed>1501197735</deployedseed>
+        <deployedseed>475507762</deployedseed>
+        <deployedseed>1097671962</deployedseed>
+        <deployedseed>1033836307</deployedseed>
+    </question>
+    
+
+</quiz>

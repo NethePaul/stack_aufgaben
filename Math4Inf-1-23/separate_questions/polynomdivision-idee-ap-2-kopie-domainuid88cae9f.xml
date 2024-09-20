@@ -6,14 +6,21 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    F&#252;hren Sie die nachstehende Polynomdivision durch:
+</p>
+<p>
+    \( p(x) = ({@p@}\)) : (\( x-{@x0@}\) )= [[/lang]][[lang code="en"]]
     <p>
     </p>
     <p>
-        F&#252;hren Sie die nachstehende Polynomdivision durch:
+        Perform the following polynomial division:
     </p>
     <p>
-        \( p(x) = ({@p@}\)) : (\( x-{@x0@}\) )= [[input:ans1]] \(\cdot x^2 +\) [[input:ans2]]\( \cdot &#160;x +\) [[input:ans3]]
+        \( p(x) = ({@p@}\): (\( x-{@x0@}\) )= [[/lang]][[input:ans1]][[lang code="de"]] \(\cdot x^2 +\) [[/lang]][[lang code="en"]] \(\cdot x^2 +\) [[/lang]][[input:ans2]][[lang code="de"]]\( \cdot &#160;x +\) [[/lang]][[lang code="en"]]\( \cdot &#160;x +\) [[/lang]][[input:ans3]][[lang code="de"]]
     </p>
     <div>
         <br/>
@@ -25,53 +32,7 @@
         "Das obige Polynom \(p(x)\) l&#228;sst sich &#252;ber den reellen Zahlen vollst&#228;ndig in Linearfaktoren zerlegen."
     </div>
     <p>
-        [[input:ans4]]
-    </p>
-    <p>
-        <br/>
-    </p>
-    <div>
-        <span style="line-height: 21px;">
-            <span style="line-height: 20px;">
-                [[validation:ans1]]
-            </span>
-            <br/>
-        </span>
-    </div>
-    <div>
-        <span style="line-height: 21px;">
-            <span style="line-height: 20px;">
-                [[validation:ans2]]
-            </span>
-            <br/>
-        </span>
-    </div>
-    <div>
-        <span style="line-height: 21px; display: inline; float: none;">
-            <span style="line-height: 20px; display: inline; float: none;">
-                <span style="display: inline; float: none;">
-                    [[validation:ans3]]
-                </span>
-                <br/>
-            </span>
-        </span>
-    </div>
-    <div>
-        <span style="line-height: 21px;">
-            <span style="line-height: 20px;">
-                [[validation:ans4]]
-            </span>
-        </span>
-    </div>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-        Perform the following polynomial division:
-    </p>
-    <p>
-        \( p(x) = ({@p@}\): (\( x-{@x0@}\) )= [[input:ans1]] \(\cdot x^2 +\) [[input:ans2]]\( \cdot &#160;x +\) [[input:ans3]]
+        [[/lang]][[lang code="en"]]
     </p>
     <div>
         <br/>
@@ -83,7 +44,7 @@
         "The above polynomial \(p(x)\) can be completely divided into linear factors via real numbers."
     </div>
     <p>
-        [[input:ans4]]
+        [[/lang]][[input:ans4]][[lang code="de"]]
     </p>
     <p>
         <br/>
@@ -91,37 +52,75 @@
     <div>
         <span style="line-height: 21px;">
             <span style="line-height: 20px;">
-                [[validation:ans1]]
+                [[/lang]][[lang code="en"]]
+            </span>
+        </span>
+    </div>
+</p>
+<p>
+    <br/>
+</p>
+<div>
+    <span style="line-height: 21px;">
+        <span style="line-height: 20px;">
+            [[/lang]][[validation:ans1]][[lang code="de"]]
+        </span>
+        <br/>
+    </span>
+</div>
+<div>
+    <span style="line-height: 21px;">
+        <span style="line-height: 20px;">
+            [[/lang]][[lang code="en"]]
+        </span>
+        <br/>
+    </span>
+</div>
+<div>
+    <span style="line-height: 21px;">
+        <span style="line-height: 20px;">
+            [[/lang]][[validation:ans2]][[lang code="de"]]
+        </span>
+        <br/>
+    </span>
+</div>
+<div>
+    <span style="line-height: 21px; display: inline; float: none;">
+        <span style="line-height: 20px; display: inline; float: none;">
+            <span style="display: inline; float: none;">
+                [[/lang]][[lang code="en"]]
             </span>
             <br/>
         </span>
-    </div>
-    <div>
-        <span style="line-height: 21px;">
-            <span style="line-height: 20px;">
-                [[validation:ans2]]
+    </span>
+</div>
+<div>
+    <span style="line-height: 21px; display: inline; float: none;">
+        <span style="line-height: 20px; display: inline; float: none;">
+            <span style="display: inline; float: none;">
+                [[/lang]][[validation:ans3]][[lang code="de"]]
             </span>
             <br/>
         </span>
-    </div>
-    <div>
-        <span style="line-height: 21px; display: inline; float: none;">
-            <span style="line-height: 20px; display: inline; float: none;">
-                <span style="display: inline; float: none;">
-                    [[validation:ans3]]
-                </span>
-                <br/>
-            </span>
+    </span>
+</div>
+<div>
+    <span style="line-height: 21px;">
+        <span style="line-height: 20px;">
+            [[/lang]][[lang code="en"]]
         </span>
-    </div>
-    <div>
-        <span style="line-height: 21px;">
-            <span style="line-height: 20px;">
-                [[validation:ans4]]
-            </span>
+        <br/>
+    </span>
+</div>
+<div>
+    <span style="line-height: 21px;">
+        <span style="line-height: 20px;">
+            [[/lang]][[validation:ans4]][[lang code="de"]]
         </span>
-    </div>
-</span>
+    </span>
+</div>
+[[/lang]][[lang code="en"]]
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -154,12 +153,7 @@ ta4 : is (b<0)]]></text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    [[feedback:prt1]]
-</span>
-<span class="multilang" lang="en">
-    [[feedback:prt1]]
-</span>
+[[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -173,32 +167,17 @@ ta4 : is (b<0)]]></text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -313,16 +292,15 @@ ta4 : is (b<0)]]></text>
                 <falseanswernote>prt1-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Der f&#252;hrende Koeffizient des Polynoms ist falsch.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The leading coefficient of the polynomial is incorrect.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Der f&#252;hrende Koeffizient des Polynoms ist falsch.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The leading coefficient of the polynomial is incorrect.
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>

@@ -6,13 +6,19 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    Geben Sie eine symmetrische Relation \(R\) auf \(X={@setify(X)@}\) mit \(|R|\ge 2\) an.
+    <br/>
+</p>
+<p>
+    \(R = \) [[/lang]][[lang code="en"]]
     <p>
-        Geben Sie eine symmetrische Relation \(R\) auf \(X={@setify(X)@}\) mit \(|R|\ge 2\) an.
+        Specify a symmetrical relation \(R\) on \(X={@setify(X)@}\) with \(|R|\ge 2\) on.
         <br/>
     </p>
     <p>
-        \(R = \) [[input:ans1]][[validation:ans1]]
+        \(R = \) [[/lang]][[input:ans1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans1]][[lang code="de"]]
         <br/>
     </p>
     <div>
@@ -27,29 +33,22 @@
             eingegeben.
         </em>
     </div>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Specify a symmetrical relation \(R\) on \(X={@setify(X)@}\) with \(|R|\ge 2\) on.
-        <br/>
-    </p>
-    <p>
-        \(R = \) [[input:ans1]][[validation:ans1]]
-        <br/>
-    </p>
-    <div>
-        <em>
-            <strong>
-                Note to input:
-            </strong>
-            e.g. \(R=\{(1,1),(1,2)\}\) as
-            <code>
-                {[1,1],[1,2]}
-            </code>
-            entered.
-        </em>
-    </div>
-</span>
+    [[/lang]][[lang code="en"]]
+    <br/>
+</p>
+<div>
+    <em>
+        <strong>
+            Note to input:
+        </strong>
+        e.g. \(R=\{(1,1),(1,2)\}\) as
+        <code>
+            {[1,1],[1,2]}
+        </code>
+        entered.
+    </em>
+</div>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -70,12 +69,7 @@ X:rest(liste,-length(liste)+n1);</text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    [[feedback:prt1]]
-</span>
-<span class="multilang" lang="en">
-    [[feedback:prt1]]
-</span>
+[[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -89,32 +83,17 @@ X:rest(liste,-length(liste)+n1);</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -172,14 +151,11 @@ nicht_in_X:setdifference(nums_ans1,setify(X));</text>
                 <trueanswernote>prt1-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Relation ist symmetrisch.
-    <br/>
-</span>
-<span class="multilang" lang="en">
-    Their relationship is symmetrical.
-    <br/>
-</span>
+[[lang code="de"]]Ihre Relation ist symmetrisch.
+<br/>
+[[/lang]][[lang code="en"]]Your relation is symmetrical.
+<br/>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -189,18 +165,17 @@ nicht_in_X:setdifference(nums_ans1,setify(X));</text>
                 <falseanswernote>prt1-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihre Relation ist nicht symmetrisch. So ist zwar \({@lans1[false_i[1]]@}\in R\), aber \({@reverse(lans1[false_i[1]])@}\not\in R\)
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Their relationship is not symmetrical. That's right. \({@lans1[false_i[1]]@}\in R\)but \({@reverse(lans1[false_i[1]])@}\not\in R\)
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Ihre Relation ist nicht symmetrisch. So ist zwar \({@lans1[false_i[1]]@}\in R\), aber \({@reverse(lans1[false_i[1]])@}\not\in R\)
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your relation is not symmetrical.  \({@lans1[false_i[1]]@}\in R\) is true but \({@reverse(lans1[false_i[1]])@}\not\in R\)
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -227,18 +202,17 @@ nicht_in_X:setdifference(nums_ans1,setify(X));</text>
                 <falseanswernote>prt1-2-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihre Relation enth&#228;lt nur ein Paar! Es soll aber \(|R|\ge 2\) sein.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your relationship contains only one pair! It is \(|R|\ge 2\) be.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Ihre Relation enth&#228;lt nur ein Paar! Es soll aber \(|R|\ge 2\) sein.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your relation contains only one pair! It is \(|R|\ge 2\) be.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -265,18 +239,17 @@ nicht_in_X:setdifference(nums_ans1,setify(X));</text>
                 <falseanswernote>prt1-4-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Sie haben Zahlen in Ihre Relation aufgenommen, die keine Elemente von \(X\) sind: \( {@nicht_in_X@} \).
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        You have recorded numbers in your relation that do not include elements of \(X\) are: \( {@nicht_in_X@} \).
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Sie haben Zahlen in Ihre Relation aufgenommen, die keine Elemente von \(X\) sind: \( {@nicht_in_X@} \).
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have recorded numbers in your relation that do not include elements of \(X\) are: \( {@nicht_in_X@} \).
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>

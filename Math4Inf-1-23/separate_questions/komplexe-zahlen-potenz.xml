@@ -6,61 +6,133 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    Sei die folgende komplexe Zahl gegeben
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
+        \(z=-{@a@}+{@a@}i\),
     </p>
-    <p>
-        Sei die folgende komplexe Zahl gegeben
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \(z=-{@a@}+{@a@}i\),
-        </p>
-    </div>
-    <span style="">
-        <span>
-            deren Argument im Intervall \(]-\pi,\pi]\) liegt.
-            <br/>
-            <br/>
-            <strong>
-                Hinweis:
-            </strong>
-        </span>
-        Benutzen Sie f&#252;r \(\sqrt{a}\) die Eingabeform
+</div>
+<span style="">
+    <span>
+        deren Argument im Intervall \(]-\pi,\pi]\) liegt.
+        <br/>
+        <br/>
         <strong>
-            sqrt(a)
+            Hinweis:
         </strong>
-        sowie f&#252;r \(\pi \) die Eingabeform
-        <strong>
-            pi
-        </strong>
-        .
     </span>
-    <p>
-        <br/>
-    </p>
-    <p>
-        Berechnen Sie
-        <br/>
-    </p>
-    <p>
-        <span style="">
-        </span>
-    </p>
-    <p>
-    </p>
-    <p>
-        <strong>
-            (a)
-        </strong>
-        \(z\) in Exponentialform:
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div>
+    Benutzen Sie f&#252;r \(\sqrt{a}\) die Eingabeform
+    <strong>
+        sqrt(a)
+    </strong>
+    sowie f&#252;r \(\pi \) die Eingabeform
+    <strong>
+        pi
+    </strong>
+    .
+</span>
+<p>
+    <br/>
+</p>
+<p>
+    Berechnen Sie
+    <br/>
+</p>
+<p>
+    <span style="">
+    </span>
+</p>
+<p>
+</p>
+<p>
+    <strong>
+        (a)
+    </strong>
+    \(z\) in Exponentialform:
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <div>
+        <p>
+            \(z=\) [[/lang]][[lang code="en"]]
             <p>
-                \(z=\) [[input:ans1]] \(\cdot \text{exp}\big(\)[[input:ans2]]\(\big)\) [[validation:ans1]][[validation:ans2]][[feedback:prt1]][[feedback:prt2]]
             </p>
-        </div>
+            <p>
+                Be given the following complex number
+            </p>
+            <div class="editor-indent" style="margin-left: 30px;">
+                <p>
+                    \(z=-{@a@}+{@a@}i\),
+                </p>
+            </div>
+            <span style="">
+                <span>
+                    their argument in interval \(]-\pi,\pi]\) ,
+                    <br/>
+                    <br/>
+                    <strong>
+                        Note:
+                    </strong>
+                </span>
+                Use for \(\sqrt{a}\) the input form
+                <strong>
+                    sqrt(a)
+                </strong>
+                and \(\pi \) the input form
+                <strong>
+                    pi
+                </strong>
+                .
+            </span>
+            <p>
+                <br/>
+            </p>
+            <p>
+                Calculate
+                <br/>
+            </p>
+            <p>
+                <span style="">
+                </span>
+            </p>
+            <p>
+            </p>
+            <p>
+                <strong>
+                    (a)
+                </strong>
+                \(z\) in exponential form:
+            </p>
+            <div class="editor-indent" style="margin-left: 30px;">
+                <div>
+                    <p>
+                        \(z=\) [[/lang]][[input:ans1]][[lang code="de"]] \(\cdot \text{exp}\big(\)[[/lang]][[lang code="en"]] \(\cdot \text{exp}\big(\)[[/lang]][[input:ans2]][[lang code="de"]]\(\big)\) [[/lang]][[lang code="en"]]\(\big)\) [[/lang]][[validation:ans1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans2]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt2]][[lang code="de"]]
+                    </p>
+                </div>
+            </div>
+            <div class="editor-indent" style="margin-left: 30px;">
+                <p>
+                </p>
+            </div>
+            <p>
+                <br/>
+            </p>
+            <p>
+                <strong>
+                    (b)
+                </strong>
+                \(z^4\) in Exponentialform:
+            </p>
+            <div class="editor-indent" style="margin-left: 30px;">
+                <p>
+                    \(z^4=\) [[/lang]][[lang code="en"]]
+                </p>
+            </div>
+        </p>
     </div>
     <div class="editor-indent" style="margin-left: 30px;">
         <p>
@@ -73,11 +145,11 @@
         <strong>
             (b)
         </strong>
-        \(z^4\) in Exponentialform:
+        \(z^4\) in exponential form:
     </p>
     <div class="editor-indent" style="margin-left: 30px;">
         <p>
-            \(z^4=\) [[input:ans3]] \(\cdot \text{exp}\big(\)[[input:ans4]]\(\big)\) [[validation:ans3]][[validation:ans4]][[feedback:prt3]][[feedback:prt4]]
+            \(z^4=\) [[/lang]][[input:ans3]][[lang code="de"]] \(\cdot \text{exp}\big(\)[[/lang]][[lang code="en"]] \(\cdot \text{exp}\big(\)[[/lang]][[input:ans4]][[lang code="de"]]\(\big)\) [[/lang]][[lang code="en"]]\(\big)\) [[/lang]][[validation:ans3]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans4]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt3]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt4]][[lang code="de"]]
         </p>
         <p>
             <br/>
@@ -119,433 +191,359 @@
         <span style="">
             <div style="">
                 <p style="">
-                    \(z^4=\) [[input:ans5]] \(+i\cdot\) [[input:ans6]] [[validation:ans5]][[validation:ans6]][[feedback:prt5]][[feedback:prt6]]
+                    \(z^4=\) [[/lang]][[lang code="en"]]
+                </p>
+                <p>
+                    <br/>
                 </p>
             </div>
-        </span>
-    </div>
-    <span style="">
-        <br/>
-    </span>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-        Be given the following complex number
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \(z=-{@a@}+{@a@}i\),
-        </p>
-    </div>
-    <span style="">
-        <span>
-            their argument in interval \(]-\pi,\pi]\) ,
-            <br/>
-            <br/>
-            <strong>
-                Note:
-            </strong>
-        </span>
-        Use for \(\sqrt{a}\) the input form
-        <strong>
-            sqrt(a)
-        </strong>
-        and \(\pi \) the input form
-        <strong>
-            pi
-        </strong>
-        .
-    </span>
-    <p>
-        <br/>
-    </p>
-    <p>
-        Calculate
-        <br/>
-    </p>
-    <p>
-        <span style="">
-        </span>
-    </p>
-    <p>
-    </p>
-    <p>
-        <strong>
-            (a)
-        </strong>
-        \(z\) in exponential form:
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div>
-            <p>
-                \(z=\) [[input:ans1]] \(\cdot \text{exp}\big(\)[[input:ans2]]\(\big)\) [[validation:ans1]][[validation:ans2]][[feedback:prt1]][[feedback:prt2]]
-            </p>
-        </div>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-        </p>
-    </div>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <strong>
-            (b)
-        </strong>
-        \(z^4\) in exponential form:
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \(z^4=\) [[input:ans3]] \(\cdot \text{exp}\big(\)[[input:ans4]]\(\big)\) [[validation:ans3]][[validation:ans4]][[feedback:prt3]][[feedback:prt4]]
-        </p>
-        <p>
-            <br/>
-        </p>
-    </div>
-    <span style="">
-        <p style="">
-            <strong>
-                (c)
-            </strong>
-            \(z^4\) in standard form:
-        </p>
-    </span>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
             <span style="">
-            </span>
-        </p>
-        <p style="">
-            <strong>
-                Note:
-            </strong>
-            <span>
-                In the event that no real/imaginary part exists, enter the corresponding field
-                <strong>
-                    0
-                </strong>
-                one.
-            </span>
-        </p>
-        <p>
-        </p>
-    </div>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <span style="">
-            <div style="">
                 <p style="">
-                    \(z^4=\) [[input:ans5]] \(+i\cdot\) [[input:ans6]] [[validation:ans5]][[validation:ans6]][[feedback:prt5]][[feedback:prt6]]
+                    <strong>
+                        (c)
+                    </strong>
+                    \(z^4\) in standard form:
+                </p>
+            </span>
+            <p>
+            </p>
+            <div class="editor-indent" style="margin-left: 30px;">
+                <p>
+                    <span style="">
+                    </span>
+                </p>
+                <p style="">
+                    <strong>
+                        Note:
+                    </strong>
+                    <span>
+                        In the event that no real/imaginary part exists, enter the corresponding field
+                        <strong>
+                            0
+                        </strong>
+                        one.
+                    </span>
+                </p>
+                <p>
                 </p>
             </div>
+            <p>
+            </p>
+            <div class="editor-indent" style="margin-left: 30px;">
+                <span style="">
+                    <div style="">
+                        <p style="">
+                            \(z^4=\) [[/lang]][[input:ans5]][[lang code="de"]] \(+i\cdot\) [[/lang]][[lang code="en"]] \(+i\cdot\) [[/lang]][[input:ans6]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans5]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans6]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt5]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt6]][[lang code="de"]]
+                        </p>
+                    </div>
+                </span>
+            </div>
+            <span style="">
+                <br/>
+            </span>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            [[/lang]][[lang code="en"]]
         </span>
     </div>
-    <span style="">
-        <br/>
-    </span>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
+</div>
+<span style="">
+    <br/>
 </span>
+<p>
+</p>
+<p>
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        <strong>
-            L&#246;sung
-        </strong>
-    </h4>
-    <p>
-        <br/>
-    </p>
+[[lang code="de"]]
+<h4>
+    <strong>
+        L&#246;sung
+    </strong>
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    <span>
+    </span>
+</p>
+<p style="">
+    <strong style="font-weight: bold;">
+        (a)
+    </strong>
+    \(z\) in Exponentialform:
+</p>
+<p style="">
+</p>
+<ul>
+    <li>
+        <span>
+            <p style="">
+                \(r=|z|=\sqrt{(-{@a@})^2+{@a@}^2}={@l1@}\)
+            </p>
+        </span>
+    </li>
+    <li>
+        <p style="">
+            \(\varphi=\text{arg}(z)=\arctan(\frac{-{@a@}}{{@a@}})+\pi=\frac{3 \pi}{4}\)
+        </p>
+    </li>
+</ul>
+<p>
+</p>
+<p>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
         <span>
         </span>
     </p>
-    <p style="">
-        <strong style="font-weight: bold;">
-            (a)
-        </strong>
-        \(z\) in Exponentialform:
-    </p>
-    <p style="">
-    </p>
-    <ul>
-        <li>
-            <span>
-                <p style="">
-                    \(r=|z|=\sqrt{(-{@a@})^2+{@a@}^2}={@l1@}\)
-                </p>
-            </span>
-        </li>
-        <li>
-            <p style="">
-                \(\varphi=\text{arg}(z)=\arctan(\frac{-{@a@}}{{@a@}})+\pi=\frac{3 \pi}{4}\)
-            </p>
-        </li>
-    </ul>
-    <p>
-    </p>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            <span>
-            </span>
-        </p>
-        <div style="">
-            <p style="">
-                \(z=re^{\varphi i}={@l1@}e^{{@l2@}}\)
-            </p>
-        </div>
-        <p>
+    <div style="">
+        <p style="">
+            \(z=re^{\varphi i}={@l1@}e^{{@l2@}}\)
         </p>
     </div>
     <p>
-        <span>
-        </span>
     </p>
-    <p style="font-weight: bold;">
-        <br/>
+</div>
+<p>
+    <span>
+    </span>
+</p>
+<p style="font-weight: bold;">
+    <br/>
+</p>
+<p style="">
+</p>
+<p>
+    <strong>
+        (b)
+    </strong>
+    \(z^4\) in Exponentialform:
+</p>
+<p>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <div>
+        <div>
+            <p>
+                \(z^4=({@l1@}e^{{@l2@}})^4=({@l1@})^4e^{{@l2@}\cdot 4}={@l3@}e^{3\pi i}={@l3@}e^{{@l4@}}\)
+            </p>
+        </div>
+    </div>
+</div>
+<div>
+    <p>
     </p>
-    <p style="">
+    <div>
+        <p>
+            <br/>
+        </p>
+    </div>
+    <p>
+    </p>
+</div>
+<p>
+</p>
+<div>
+    <p>
     </p>
     <p>
         <strong>
-            (b)
+            (c)
         </strong>
-        \(z^4\) in Exponentialform:
-    </p>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div>
-            <div>
-                <p>
-                    \(z^4=({@l1@}e^{{@l2@}})^4=({@l1@})^4e^{{@l2@}\cdot 4}={@l3@}e^{3\pi i}={@l3@}e^{{@l4@}}\)
-                </p>
-            </div>
-        </div>
-    </div>
-    <div>
-        <p>
-        </p>
-        <div>
-            <p>
-                <br/>
-            </p>
-        </div>
-        <p>
-        </p>
-    </div>
-    <p>
+        \(z^4\) in Normalform:
     </p>
     <div>
         <p>
         </p>
-        <p>
-            <strong>
-                (c)
-            </strong>
-            \(z^4\) in Normalform:
-        </p>
-        <div>
-            <p>
-            </p>
-        </div>
-        <p>
-        </p>
-        <p>
-        </p>
-        <p>
-        </p>
     </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div>
-            <p>
-            </p>
-            <div>
-                <div>
-                    <div>
-                        <p>
-                            \(z^4={@l3@}e^{{@l4@}}={@l3@}\big(\cos(\pi)+i\sin(\pi)\big)=-{@l3@}\)
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <p>
-            </p>
-        </div>
-    </div>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
     <div>
         <p>
         </p>
         <div>
-            <p>
-            </p>
-        </div>
-    </div>
-    <p>
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <h4>
-        <strong>
-            Solution
-        </strong>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <span>
-        </span>
-    </p>
-    <p style="">
-        <strong style="font-weight: bold;">
-            (a)
-        </strong>
-        \(z\) in exponential form:
-    </p>
-    <p style="">
-    </p>
-    <ul>
-        <li>
-            <span>
-                <p style="">
-                    \(r=|z|=\sqrt{(-{@a@})^2+{@a@}^2}={@l1@}\)
-                </p>
-            </span>
-        </li>
-        <li>
-            <p style="">
-                \(\varphi=\text{arg}(z)=\arctan(\frac{-{@a@}}{{@a@}})+\pi=\frac{3 \pi}{4}\)
-            </p>
-        </li>
-    </ul>
-    <p>
-    </p>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            <span>
-            </span>
-        </p>
-        <div style="">
-            <p style="">
-                \(z=re^{\varphi i}={@l1@}e^{{@l2@}}\)
-            </p>
-        </div>
-        <p>
-        </p>
-    </div>
-    <p>
-        <span>
-        </span>
-    </p>
-    <p style="font-weight: bold;">
-        <br/>
-    </p>
-    <p style="">
-    </p>
-    <p>
-        <strong>
-            (b)
-        </strong>
-        \(z^4\) in exponential form:
-    </p>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div>
-            <div>
-                <p>
-                    \(z^4=({@l1@}e^{{@l2@}})^4=({@l1@})^4e^{{@l2@}\cdot 4}={@l3@}e^{3\pi i}={@l3@}e^{{@l4@}}\)
-                </p>
-            </div>
-        </div>
-    </div>
-    <div>
-        <p>
-        </p>
-        <div>
-            <p>
-                <br/>
-            </p>
-        </div>
-        <p>
-        </p>
-    </div>
-    <p>
-    </p>
-    <div>
-        <p>
-        </p>
-        <p>
-            <strong>
-                (c)
-            </strong>
-            \(z^4\) in normal form:
-        </p>
-        <div>
-            <p>
-            </p>
-        </div>
-        <p>
-        </p>
-        <p>
-        </p>
-        <p>
-        </p>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div>
-            <p>
-            </p>
             <div>
                 <div>
-                    <div>
-                        <p>
-                            \(z^4={@l3@}e^{{@l4@}}={@l3@}\big(\cos(\pi)+i\sin(\pi)\big)=-{@l3@}\)
-                        </p>
-                    </div>
+                    <p>
+                        \(z^4={@l3@}e^{{@l4@}}={@l3@}\big(\cos(\pi)+i\sin(\pi)\big)=-{@l3@}\)
+                    </p>
                 </div>
             </div>
+        </div>
+        <p>
+        </p>
+    </div>
+</div>
+<div>
+    <p>
+    </p>
+    <div>
+        <p>
+        </p>
+    </div>
+</div>
+<p>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<h4>
+    <strong>
+        Solution
+    </strong>
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    <span>
+    </span>
+</p>
+<p style="">
+    <strong style="font-weight: bold;">
+        (a)
+    </strong>
+    \(z\) in exponential form:
+</p>
+<p style="">
+</p>
+<ul>
+    <li>
+        <span>
+            <p style="">
+                \(r=|z|=\sqrt{(-{@a@})^2+{@a@}^2}={@l1@}\)
+            </p>
+        </span>
+    </li>
+    <li>
+        <p style="">
+            \(\varphi=\text{arg}(z)=\arctan(\frac{-{@a@}}{{@a@}})+\pi=\frac{3 \pi}{4}\)
+        </p>
+    </li>
+</ul>
+<p>
+</p>
+<p>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        <span>
+        </span>
+    </p>
+    <div style="">
+        <p style="">
+            \(z=re^{\varphi i}={@l1@}e^{{@l2@}}\)
+        </p>
+    </div>
+    <p>
+    </p>
+</div>
+<p>
+    <span>
+    </span>
+</p>
+<p style="font-weight: bold;">
+    <br/>
+</p>
+<p style="">
+</p>
+<p>
+    <strong>
+        (b)
+    </strong>
+    \(z^4\) in exponential form:
+</p>
+<p>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <div>
+        <div>
             <p>
+                \(z^4=({@l1@}e^{{@l2@}})^4=({@l1@})^4e^{{@l2@}\cdot 4}={@l3@}e^{3\pi i}={@l3@}e^{{@l4@}}\)
             </p>
         </div>
     </div>
+</div>
+<div>
+    <p>
+    </p>
+    <div>
+        <p>
+            <br/>
+        </p>
+    </div>
+    <p>
+    </p>
+</div>
+<p>
+</p>
+<div>
+    <p>
+    </p>
+    <p>
+        <strong>
+            (c)
+        </strong>
+        \(z^4\) in normal form:
+    </p>
+    <div>
+        <p>
+        </p>
+    </div>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
     <div>
         <p>
         </p>
         <div>
-            <p>
-            </p>
+            <div>
+                <div>
+                    <p>
+                        \(z^4={@l3@}e^{{@l4@}}={@l3@}\big(\cos(\pi)+i\sin(\pi)\big)=-{@l3@}\)
+                    </p>
+                </div>
+            </div>
         </div>
+        <p>
+        </p>
     </div>
+</div>
+<div>
     <p>
-        <br/>
     </p>
-</span>
+    <div>
+        <p>
+        </p>
+    </div>
+</div>
+<p>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -579,32 +577,17 @@ l6: 0</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

@@ -6,45 +6,40 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Eine Zahlenfolge \(a_1,a_2,a_3, \ldots \) ist durch die folgende Vorschrift gegeben:
+[[lang code="de"]]Eine Zahlenfolge \(a_1,a_2,a_3, \ldots \) ist durch die folgende Vorschrift gegeben:
 \[ a_1 = 1, \quad a_{n+1} = a_n + 8n \mbox{ f&#252;r } n \ge 1. \]
 Berechnen Sie die Folgenglieder \(a_2\),  \(a_3\),  \(a_4\) und \(a_5\).
-    <br/>
-    <br/>
-    \(a_2 = \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
-    <br/>
-    \(a_3 = \) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
-    <br/>
-    \(a_4 = \) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]
-    <br/>
-    \(a_5 = \) [[input:ans4]] [[validation:ans4]] [[feedback:prt4]]
-    <br/>
-    <br/>
-    Welche Vermutung &#252;ber die Gestalt der Zahlenfolge k&#246;nnte man an den ersten f&#252;nf Folgengliedern ablesen? (Geben Sie also einen Ausdruck an, der \( a_n\) allein in Abh&#228;ngigkeit von \( n\) beschreibt, also einen sogenannten geschlossenen Ausdruck.)
-    <br/>
-    <br/>
-    \(a_n = \)[[input:ans5]] [[validation:ans5]] [[feedback:prt5]]
-</span>
-<span class="multilang" lang="en">
-    A sequence of numbers \(a_1,a_2,a_3, \ldots \) is given by the following provision:
+<br/>
+<br/>
+\(a_2 = \) [[/lang]][[lang code="en"]]A sequence of numbers \(a_1,a_2,a_3, \ldots \) is given by the following rule:
 \[ a_1 = 1, \quad a_{n+1} = a_n + 8n \mbox{ f&#252;r } n \ge 1. \]Calculate the sequences \(a_2\), \(a_3\), \(a_4\) and \(a_5\).
-    <br/>
-    <br/>
-    \(a_2 = \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
-    <br/>
-    \(a_3 = \) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
-    <br/>
-    \(a_4 = \) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]
-    <br/>
-    \(a_5 = \) [[input:ans4]] [[validation:ans4]] [[feedback:prt4]]
-    <br/>
-    <br/>
-    What assumption about the shape of the sequence of numbers could one read at the first five sequences? (So add an expression to \( a_n\) only depending on \( n\) describes a so-called closed expression.)
-    <br/>
-    <br/>
-    \(a_n = \)[[input:ans5]] [[validation:ans5]] [[feedback:prt5]]
-</span>
+<br/>
+<br/>
+\(a_2 = \) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]]
+<br/>
+\(a_3 = \) [[/lang]][[lang code="en"]]
+<br/>
+\(a_3 = \) [[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt2]][[lang code="de"]]
+<br/>
+\(a_4 = \) [[/lang]][[lang code="en"]]
+<br/>
+\(a_4 = \) [[/lang]][[input:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt3]][[lang code="de"]]
+<br/>
+\(a_5 = \) [[/lang]][[lang code="en"]]
+<br/>
+\(a_5 = \) [[/lang]][[input:ans4]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans4]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt4]][[lang code="de"]]
+<br/>
+<br/>
+Welche Vermutung &#252;ber die Gestalt der Zahlenfolge k&#246;nnte man an den ersten f&#252;nf Folgengliedern ablesen? (Geben Sie also einen Ausdruck an, der \( a_n\) allein in Abh&#228;ngigkeit von \( n\) beschreibt, also einen sogenannten geschlossenen Ausdruck.)
+<br/>
+<br/>
+\(a_n = \)[[/lang]][[lang code="en"]]
+<br/>
+<br/>
+What assumption about the shape of the sequence of numbers could one read at the first five sequences? (So add an expression to \( a_n\) only depending on \( n\) describes a so-called closed expression.)
+<br/>
+<br/>
+\(a_n = \)[[/lang]][[input:ans5]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans5]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt5]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -79,56 +74,47 @@ lcmdlvar4: ((2*n-1)^2);</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Richtige Antwort, gut gemacht!
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Right answer, well done!
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
+Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-adjust">
-        </i>
-    </span>
-    Ihre Antwort ist teilweise korrekt.
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-adjust">
-        </i>
-    </span>
-    Your answer is partly correct.
+Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
 </span>
+Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Falsche Antwort.
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Wrong answer.
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
+Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -261,12 +247,7 @@ lcmdlvar4: ((2*n-1)^2);</text>
                 <falseanswernote>prt1-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    &#220;berpr&#252;fen Sie \( a_2. \)
-</span>
-<span class="multilang" lang="en">
-    Check \( a_2. \)
-</span>
+[[lang code="de"]]&#220;berpr&#252;fen Sie \( a_2. \)[[/lang]][[lang code="en"]]Check \( a_2. \)[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -302,12 +283,7 @@ lcmdlvar4: ((2*n-1)^2);</text>
                 <falseanswernote>prt2-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    &#220;berpr&#252;fen Sie \( a_3. \)
-</span>
-<span class="multilang" lang="en">
-    Check \( a_3. \)
-</span>
+[[lang code="de"]]&#220;berpr&#252;fen Sie \( a_3. \)[[/lang]][[lang code="en"]]Check \( a_3. \)[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -343,12 +319,7 @@ lcmdlvar4: ((2*n-1)^2);</text>
                 <falseanswernote>prt3-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    &#220;berpr&#252;fen Sie \( a_4. \)
-</span>
-<span class="multilang" lang="en">
-    Check \( a_4. \)
-</span>
+[[lang code="de"]]&#220;berpr&#252;fen Sie \( a_4. \)[[/lang]][[lang code="en"]]Check \( a_4. \)[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -384,12 +355,7 @@ lcmdlvar4: ((2*n-1)^2);</text>
                 <falseanswernote>prt4-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    &#220;berpr&#252;fen Sie \( a_5. \)
-</span>
-<span class="multilang" lang="en">
-    Check \( a_5. \)
-</span>
+[[lang code="de"]]&#220;berpr&#252;fen Sie \( a_5. \)[[/lang]][[lang code="en"]]Check \( a_5. \)[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -425,12 +391,7 @@ lcmdlvar4: ((2*n-1)^2);</text>
                 <falseanswernote>prt5-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    &#220;berpr&#252;fen Sie die geschlossene Formel.
-</span>
-<span class="multilang" lang="en">
-    Check the closed formula.
-</span>
+[[lang code="de"]]&#220;berpr&#252;fen Sie die geschlossene Formel.[[/lang]][[lang code="en"]]Check the closed formula.[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>

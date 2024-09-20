@@ -6,25 +6,43 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    Die symmetrische Differenz zweier Mengen \(A\) und \(B\) ist definiert als \(A\,\triangle\, B=(A\setminus B)\cup(B\setminus A)\)
+    <br/>
+</p>
+<p>
+    Seien \( A=\{{@a@},{@a*2@},{@a*3@},\ldots\} \) und \( B=\{{@b@},{@b*2@},{@b*3@},\ldots\} \) gegeben.
+</p>
+<p>
+    Bestimmen Sie eine mindestens \(3\)-elementige Menge \( C\subseteq A\cup B \), so dass
+</p>
+<p>
+    \( C = \) [[/lang]][[lang code="en"]]
     <p>
-        Die symmetrische Differenz zweier Mengen \(A\) und \(B\) ist definiert als \(A\,\triangle\, B=(A\setminus B)\cup(B\setminus A)\)
+        The symmetrical difference of two sets \(A\) and \(B\) is defined as \(A\,\triangle\, B=(A\setminus B)\cup(B\setminus A)\)
         <br/>
     </p>
     <p>
-        Seien \( A=\{{@a@},{@a*2@},{@a*3@},\ldots\} \) und \( B=\{{@b@},{@b*2@},{@b*3@},\ldots\} \) gegeben.
+        Be \( A=\{{@a@},{@a*2@},{@a*3@},\ldots\} \) and \( B=\{{@b@},{@b*2@},{@b*3@},\ldots\} \) given.
     </p>
     <p>
-        Bestimmen Sie eine mindestens \(3\)-elementige Menge \( C\subseteq A\cup B \), so dass
+        Determine at least one \(3\)-elementary set \( C\subseteq A\cup B \)so that
     </p>
     <p>
-        \( C = \) [[input:ans1]] \( \subseteq A\cap B \) [[validation:ans1]] [[feedback:prt1]]
+        \( C = \) [[/lang]][[input:ans1]][[lang code="de"]] \( \subseteq A\cap B \) [[/lang]][[lang code="en"]] \( \subseteq A\cap B \) [[/lang]][[validation:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
     <p>
         Bestimmen Sie eine mindestens \(3\)-elementige Menge \( D\subseteq A\cup B \), so dass
     </p>
     <p>
-        \( D = \) [[input:ans2]] \( \subseteq A\,\triangle\, B \) [[validation:ans2]] [[feedback:prt2]]
+        \( D = \) [[/lang]][[lang code="en"]]
+    </p>
+    <p>
+        Determine at least one \(3\)-elementary set \( D\subseteq A\cup B \)so that
+    </p>
+    <p>
+        \( D = \) [[/lang]][[input:ans2]][[lang code="de"]] \( \subseteq A\,\triangle\, B \) [[/lang]][[lang code="en"]] \( \subseteq A\,\triangle\, B \) [[/lang]][[validation:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt2]][[lang code="de"]]
     </p>
     <p>
         <strong>
@@ -40,104 +58,84 @@
             Schreiben Sie die leere Menge als { }.
         </li>
     </ul>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The symmetrical difference of two quantities \(A\) and \(B\) is defined as \(A\,\triangle\, B=(A\setminus B)\cup(B\setminus A)\)
+    [[/lang]][[lang code="en"]]
+</p>
+<p>
+    <strong>
+        Note:
         <br/>
-    </p>
-    <p>
-        Be \( A=\{{@a@},{@a*2@},{@a*3@},\ldots\} \) and \( B=\{{@b@},{@b*2@},{@b*3@},\ldots\} \) given.
-    </p>
-    <p>
-        Determine at least one \(3\)-elementary quantity \( C\subseteq A\cup B \)so that
-    </p>
-    <p>
-        \( C = \) [[input:ans1]] \( \subseteq A\cap B \) [[validation:ans1]] [[feedback:prt1]]
-    </p>
-    <p>
-        Determine at least one \(3\)-elementary quantity \( D\subseteq A\cup B \)so that
-    </p>
-    <p>
-        \( D = \) [[input:ans2]] \( \subseteq A\,\triangle\, B \) [[validation:ans2]] [[feedback:prt2]]
-    </p>
-    <p>
-        <strong>
-            Note:
-            <br/>
-        </strong>
-    </p>
-    <ul>
-        <li>
-            Write the amount with curly brackets. Separate the solutions with comma, e.g. {1,3}.
-        </li>
-        <li>
-            Write the empty quantity as { }.
-        </li>
-    </ul>
-</span>
+    </strong>
+</p>
+<ul>
+    <li>
+        Write the set with curly brackets. Separate the solutions with comma, e.g. {1,3}.
+    </li>
+    <li>
+        Write the empty set as { }.
+    </li>
+</ul>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        <b>
-            L&#246;sungsweg:
-        </b>
-    </p>
-    <p>
-    </p>
-    <ul>
-        <li>
-            \( C \subseteq A\cap B \) bedeutet, dass die Elemente von \(C\) in den Mengen \(A\)
-            <u>
-                und
-            </u>
-            \(B\) enthalten sein m&#252;ssen. Da \(A\) offenbar alle Vielfachen von {@a@} und \(B\) alle Vielfachen von {@b@} enth&#228;lt, gilt: F&#252;r alle \(k\in \mathbb{N}\) liegt \(k\cdot {@a@} \cdot {@b@}\) im Schnitt von \(A\) und \(B\). Ein Beispiel daf&#252;r ist die Menge \(&#160; \{ 1\cdot {@a@} \cdot {@b@},2\cdot {@a@} \cdot {@b@}, 3\cdot {@a@} \cdot {@b@} \} ={@set(a*b,a*b*2,a*b*3)@}\).
-        </li>
-    </ul>
-    <p>
-    </p>
-    <p>
-    </p>
-    <ul>
-        <li>
-            Zeichnet man f&#252;r die Menge \(A\,\triangle\, B =(A\setminus B)\cup(B\setminus A)\) ein Venn-Diagramm, sieht man schnell, dass \(A\,\triangle\, B = (A\cup B)\setminus (A\cap B)\) gilt. Dies bedeutet, dass man hier einfach nur Elemente der Vereinigung \(A\cup B\) angeben muss, die nicht im Durchschnitt \(A\cap B\) liegen. Ein Beispiel daf&#252;r ist die Menge \({@set(a,b,13*b)@}\).
-        </li>
-    </ul>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        <b>
-            Solution:
-        </b>
-    </p>
-    <p>
-    </p>
-    <ul>
-        <li>
-            \( C \subseteq A\cap B \) means that the elements of \(C\) in quantities \(A\)
-            <u>
-                and
-            </u>
-            \(B\) must be included. There. \(A\) apparently all multiples of {@a@} and \(B\) all multiples of {@b@} for all: \(k\in \mathbb{N}\) lies \(k\cdot {@a@} \cdot {@b@}\) in section \(A\) and \(B\). An example is the amount \(&#160; \{ 1\cdot {@a@} \cdot {@b@},2\cdot {@a@} \cdot {@b@}, 3\cdot {@a@} \cdot {@b@} \} ={@set(a*b,a*b*2,a*b*3)@}\).
-        </li>
-    </ul>
-    <p>
-    </p>
-    <p>
-    </p>
-    <ul>
-        <li>
-            Signs for quantity \(A\,\triangle\, B =(A\setminus B)\cup(B\setminus A)\) a Venn chart, you can quickly see that \(A\,\triangle\, B = (A\cup B)\setminus (A\cap B)\) Article 2 This means that here you simply have elements of union \(A\cup B\) not on average \(A\cap B\) lie. An example is the amount \({@set(a,b,13*b)@}\).
-        </li>
-    </ul>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    <b>
+        L&#246;sungsweg:
+    </b>
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        \( C \subseteq A\cap B \) bedeutet, dass die Elemente von \(C\) in den Mengen \(A\)
+        <u>
+            und
+        </u>
+        \(B\) enthalten sein m&#252;ssen. Da \(A\) offenbar alle Vielfachen von {@a@} und \(B\) alle Vielfachen von {@b@} enth&#228;lt, gilt: F&#252;r alle \(k\in \mathbb{N}\) liegt \(k\cdot {@a@} \cdot {@b@}\) im Schnitt von \(A\) und \(B\). Ein Beispiel daf&#252;r ist die Menge \(&#160; \{ 1\cdot {@a@} \cdot {@b@},2\cdot {@a@} \cdot {@b@}, 3\cdot {@a@} \cdot {@b@} \} ={@set(a*b,a*b*2,a*b*3)@}\).
+    </li>
+</ul>
+<p>
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        Zeichnet man f&#252;r die Menge \(A\,\triangle\, B =(A\setminus B)\cup(B\setminus A)\) ein Venn-Diagramm, sieht man schnell, dass \(A\,\triangle\, B = (A\cup B)\setminus (A\cap B)\) gilt. Dies bedeutet, dass man hier einfach nur Elemente der Vereinigung \(A\cup B\) angeben muss, die nicht im Durchschnitt \(A\cap B\) liegen. Ein Beispiel daf&#252;r ist die Menge \({@set(a,b,13*b)@}\).
+    </li>
+</ul>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <b>
+        Solution:
+    </b>
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        \( C \subseteq A\cap B \) means that the elements of \(C\) in sets \(A\)
+        <u>
+            and
+        </u>
+        \(B\) must be included. There. \(A\) apparently all multiples of {@a@} and \(B\) all multiples of {@b@} for all: \(k\in \mathbb{N}\) lies \(k\cdot {@a@} \cdot {@b@}\) in section \(A\) and \(B\). An example is the set \(&#160; \{ 1\cdot {@a@} \cdot {@b@},2\cdot {@a@} \cdot {@b@}, 3\cdot {@a@} \cdot {@b@} \} ={@set(a*b,a*b*2,a*b*3)@}\).
+    </li>
+</ul>
+<p>
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        Signs for set \(A\,\triangle\, B =(A\setminus B)\cup(B\setminus A)\) a Venn chart, you can quickly see that \(A\,\triangle\, B = (A\cup B)\setminus (A\cap B)\) Article 2 This means that here you simply have elements of union \(A\cup B\) not on average \(A\cap B\) lie. An example is the set \({@set(a,b,13*b)@}\).
+    </li>
+</ul>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>2.0000000</defaultgrade>
@@ -160,14 +158,13 @@ b:b1*b2;</text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <br/>
-    <br/>
-</span>
-<span class="multilang" lang="en">
-    <br/>
-    <br/>
-</span>
+[[lang code="de"]]
+<br/>
+<br/>
+[[/lang]][[lang code="en"]]
+<br/>
+<br/>
+[[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -181,32 +178,17 @@ b:b1*b2;</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -289,18 +271,17 @@ falsche_b:setify(sublist(liste1,lambda([x],mod(x,b)>0)));]]></text>
                 <falseanswernote>prt1-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Zahlen aus der Menge \({@falsche_a@}\) sind keine Elemente von \(A\) und daher auch keine Elemente von \(A\cap B\).
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The numbers from the crowd \({@falsche_a@}\) are not elements of \(A\) and therefore no elements of \(A\cap B\).
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Zahlen aus der Menge \({@falsche_a@}\) sind keine Elemente von \(A\) und daher auch keine Elemente von \(A\cap B\).
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The numbers from the set \({@falsche_a@}\) are not elements of \(A\) and therefore no elements of \(A\cap B\).
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -327,16 +308,15 @@ falsche_b:setify(sublist(liste1,lambda([x],mod(x,b)>0)));]]></text>
                 <falseanswernote>prt1-2-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Zahlen aus der Menge \({@falsche_b@}\) sind keine Elemente von \(B\) und daher auch keine Elemente von \(A\cap B\).
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The numbers from the crowd \({@falsche_b@}\) are not elements of \(B\) and therefore no elements of \(A\cap B\).
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Zahlen aus der Menge \({@falsche_b@}\) sind keine Elemente von \(B\) und daher auch keine Elemente von \(A\cap B\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The numbers from the set \({@falsche_b@}\) are not elements of \(B\) and therefore no elements of \(A\cap B\).
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -378,18 +358,17 @@ reste_A_oder_B:sum(map(lambda([x],mod(x,a)+mod(x,b)),liste2)[i],i,1,length(liste
                 <falseanswernote>prt2-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Zahlen aus der Menge \({@nicht_in_A_oder_B@}\) sind weder Elemente von A noch von B und daher auch keine Elemente von \(A\, \triangle\, B\).
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The numbers from the crowd \({@nicht_in_A_oder_B@}\) are neither elements A nor B and therefore no elements of \(A\, \triangle\, B\).
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Zahlen aus der Menge \({@nicht_in_A_oder_B@}\) sind weder Elemente von A noch von B und daher auch keine Elemente von \(A\, \triangle\, B\).
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The numbers from the set \({@nicht_in_A_oder_B@}\) are neither elements A nor B and therefore no elements of \(A\, \triangle\, B\).
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -408,18 +387,17 @@ reste_A_oder_B:sum(map(lambda([x],mod(x,a)+mod(x,b)),liste2)[i],i,1,length(liste
                 <trueanswernote>prt2-2-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Zahlen aus der Menge \({@in_A_und_B@}\) sind Elemente von \( A \cap B \) und daher keine Elemente von \(A\,\triangle\, B\).
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The numbers from the crowd \({@in_A_und_B@}\) are elements of \( A \cap B \) and therefore no elements of \(A\,\triangle\, B\).
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Zahlen aus der Menge \({@in_A_und_B@}\) sind Elemente von \( A \cap B \) und daher keine Elemente von \(A\,\triangle\, B\).
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The numbers from the set \({@in_A_und_B@}\) are elements of \( A \cap B \) and therefore no elements of \(A\,\triangle\, B\).
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>+</falsescoremode>

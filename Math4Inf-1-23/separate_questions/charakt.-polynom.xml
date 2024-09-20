@@ -6,84 +6,80 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Sei $$A=\begin{pmatrix}1 &amp;3\\ -2 &amp; 0\end{pmatrix} $$
-    <br/>
-    die Abbildungsmatrix einer linearen Abbildung \(f:\mathbb R^2 \rightarrow \mathbb R^2\).
-    <br/>
-    Das charakteristische Polynom ist gegeben durch:
-    <br/>
-</span>
-<span class="multilang" lang="en">
-    Be $$A=\begin{pmatrix}1 &amp;3\\ -2 &amp; 0\end{pmatrix} $$
-    <br/>
-    the imaging matrix of a linear image \(f:\mathbb R^2 \rightarrow \mathbb R^2\).
-    <br/>
-    The characteristic polynomial is given by:
-    <br/>
-</span>
+[[lang code="de"]]Sei $$A=\begin{pmatrix}1 &amp;3\\ -2 &amp; 0\end{pmatrix} $$
+<br/>
+die Abbildungsmatrix einer linearen Abbildung \(f:\mathbb R^2 \rightarrow \mathbb R^2\).
+<br/>
+Das charakteristische Polynom ist gegeben durch:
+<br/>
+[[/lang]][[lang code="en"]]Be $$A=\begin{pmatrix}1 &amp;3\\ -2 &amp; 0\end{pmatrix} $$
+<br/>
+the imaging matrix of a linear image \(f:\mathbb R^2 \rightarrow \mathbb R^2\).
+<br/>
+The characteristic polynomial is given by:
+<br/>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        L&#246;sung
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(p(\lambda)=\det(A-\lambda E)\)
-    </p>
-    <p>
-        \(=\det\begin{pmatrix} 1-\lambda &amp; 3 \\ -2 &amp; 0-\lambda \end{pmatrix}\)
-    </p>
-    <p>
-        \(=(1-\lambda)(-\lambda)+6\)
-    </p>
-    <p>
-        \(=\lambda^2-\lambda+6\)
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <h4>
-        Solution
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(p(\lambda)=\det(A-\lambda E)\)
-    </p>
-    <p>
-        \(=\det\begin{pmatrix} 1-\lambda &amp; 3 \\ -2 &amp; 0-\lambda \end{pmatrix}\)
-    </p>
-    <p>
-        \(=(1-\lambda)(-\lambda)+6\)
-    </p>
-    <p>
-        \(=\lambda^2-\lambda+6\)
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<h4>
+    L&#246;sung
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    \(p(\lambda)=\det(A-\lambda E)\)
+</p>
+<p>
+    \(=\det\begin{pmatrix} 1-\lambda &amp; 3 \\ -2 &amp; 0-\lambda \end{pmatrix}\)
+</p>
+<p>
+    \(=(1-\lambda)(-\lambda)+6\)
+</p>
+<p>
+    \(=\lambda^2-\lambda+6\)
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<h4>
+    Solution
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    \(p(\lambda)=\det(A-\lambda E)\)
+</p>
+<p>
+    \(=\det\begin{pmatrix} 1-\lambda &amp; 3 \\ -2 &amp; 0-\lambda \end{pmatrix}\)
+</p>
+<p>
+    \(=(1-\lambda)(-\lambda)+6\)
+</p>
+<p>
+    \(=\lambda^2-\lambda+6\)
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>

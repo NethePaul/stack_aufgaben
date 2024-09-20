@@ -6,13 +6,17 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Schreiben Sie die komplexe Zahl \(z = \displaystyle {@z@}\) als trigonometrische Darstellung und geben Sie die beschreibenden Gr&#246;&#223;en (also Betrag \(r\) sowie Argument/Phasenwinkel
+[[lang code="de"]]Schreiben Sie die komplexe Zahl \(z = \displaystyle {@z@}\) als trigonometrische Darstellung und geben Sie die beschreibenden Gr&#246;&#223;en (also Betrag \(r\) sowie Argument/Phasenwinkel
+<span>
+    \(\varphi\)) dieser Zahl an.
+    <br/>
+    <br/>
+    \(r=\,\) [[/lang]][[lang code="en"]]Write the complex number \(z = \displaystyle {@z@}\) as trigonometric representation and specify the descriptive variables (so set \(r\) as well as argument/phase angles
     <span>
-        \(\varphi\)) dieser Zahl an.
+        \(\varphi\)) this number.
         <br/>
         <br/>
-        \(r=\,\) [[input:ans1]] [[validation:ans1]] und \(\varphi=\,\) [[input:ans2]] [[validation:ans2]] [[feedback:prt1]]
+        \(r=\,\) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]] und \(\varphi=\,\) [[/lang]][[lang code="en"]] and \(\varphi=\,\) [[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt1]][[lang code="de"]]
     </span>
     <br/>
     <p>
@@ -41,85 +45,77 @@
             Geben Sie \(\varphi\) im Intervall von \((0; 2 \cdot \pi]\) ein.
         </li>
     </ul>
+    [[/lang]][[lang code="en"]]
 </span>
-<span class="multilang" lang="en">
-    Write the complex number \(z = \displaystyle {@z@}\) as trigonometric representation and specify the descriptive variables (so amount \(r\) as well as argument/phase angles
-    <span>
-        \(\varphi\)) this number.
-        <br/>
-        <br/>
-        \(r=\,\) [[input:ans1]] [[validation:ans1]] and \(\varphi=\,\) [[input:ans2]] [[validation:ans2]] [[feedback:prt1]]
-    </span>
-    <br/>
-    <p>
-    </p>
-    <p>
+<br/>
+<p>
+</p>
+<p>
+    <strong>
+        Notes:
+    </strong>
+</p>
+<ul>
+    <li>
+        Enter the exact answer (no decimal numbers).
+    </li>
+    <li>
+        If necessary, write \(\pi\) as
         <strong>
-            Notes:
+            pi
         </strong>
-    </p>
-    <ul>
-        <li>
-            Enter the exact answer (no decimal numbers).
-        </li>
-        <li>
-            If necessary, write \(\pi\) as
-            <strong>
-                pi
-            </strong>
-            and \(\sqrt{a}\) as
-            <strong>
-                sqrt(a)
-            </strong>
-            .
-        </li>
-        <li>
-            Enter \(\varphi\) in the interval of \((0; 2 \cdot \pi]\) one.
-        </li>
-    </ul>
-</span>
+        and \(\sqrt{a}\) as
+        <strong>
+            sqrt(a)
+        </strong>
+        .
+    </li>
+    <li>
+        Enter \(\varphi\) in the interval of \((0; 2 \cdot \pi]\) one.
+    </li>
+</ul>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p dir="ltr">
-        <strong>
-            L&#246;sungsweg:
-        </strong>
-    </p>
-    <p dir="ltr">
-        Die komplexe Zahl \(z = \displaystyle {@z@}\) besteht aus \(\mathrm{Re}(z) = \displaystyle {@x@}\) und \(\mathrm{Im}(z) = \displaystyle {@y@}\) und liegt somit im {@s@}.Quadranten.
-    </p>
-    <p dir="ltr">
-        Dann ist \(r = \sqrt{(\mathrm{Re}(z))^2+(\mathrm{Im}(z))^2}\) \(= \displaystyle \sqrt{\left({@x@}\right)^{\!2}+\left({@y@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@x^2@}+{@y^2@}}\) \(= \displaystyle \sqrt{{@x^2+y^2@}} = {@loes_r@}\).
-    </p>
-    <p dir="ltr">
-        Da die komplexe Zahl \(z\) im {@s@}.Quadranten liegt, gilt:
-    </p>
-    <p dir="ltr">
-        \(\varphi =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z)}{\mathrm{Re}(z)}\right) + {@plus@} \) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@y@}}{{@x@}}\right) + {@plus@} \)&#160;\(=&#160;\displaystyle&#160; \arctan\!\left({@y_x@}\right) + {@plus@} \) \(= \displaystyle&#160;{@phi_y_x@} + {@plus@} = {@phi_y_x+plus@}\).
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p dir="ltr">
-        <strong>
-            Solution:
-        </strong>
-    </p>
-    <p dir="ltr">
-        The complex number \(z = \displaystyle {@z@}\) consists of: \(\mathrm{Re}(z) = \displaystyle {@x@}\) and \(\mathrm{Im}(z) = \displaystyle {@y@}\) and thus lies in {@s@}.Quadrants.
-    </p>
-    <p dir="ltr">
-        Then \(r = \sqrt{(\mathrm{Re}(z))^2+(\mathrm{Im}(z))^2}\) \(= \displaystyle \sqrt{\left({@x@}\right)^{\!2}+\left({@y@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@x^2@}+{@y^2@}}\) \(= \displaystyle \sqrt{{@x^2+y^2@}} = {@loes_r@}\).
-    </p>
-    <p dir="ltr">
-        Since the complex number \(z\) the {@s@}.Quadranten is:
-    </p>
-    <p dir="ltr">
-        \(\varphi =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z)}{\mathrm{Re}(z)}\right) + {@plus@} \) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@y@}}{{@x@}}\right) + {@plus@} \)\(=&#160;\displaystyle&#160; \arctan\!\left({@y_x@}\right) + {@plus@} \) \(= \displaystyle&#160;{@phi_y_x@} + {@plus@} = {@phi_y_x+plus@}\).
-    </p>
-</span>
+[[lang code="de"]]
+<p dir="ltr">
+    <strong>
+        L&#246;sungsweg:
+    </strong>
+</p>
+<p dir="ltr">
+    Die komplexe Zahl \(z = \displaystyle {@z@}\) besteht aus \(\mathrm{Re}(z) = \displaystyle {@x@}\) und \(\mathrm{Im}(z) = \displaystyle {@y@}\) und liegt somit im {@s@}.Quadranten.
+</p>
+<p dir="ltr">
+    Dann ist \(r = \sqrt{(\mathrm{Re}(z))^2+(\mathrm{Im}(z))^2}\) \(= \displaystyle \sqrt{\left({@x@}\right)^{\!2}+\left({@y@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@x^2@}+{@y^2@}}\) \(= \displaystyle \sqrt{{@x^2+y^2@}} = {@loes_r@}\).
+</p>
+<p dir="ltr">
+    Da die komplexe Zahl \(z\) im {@s@}.Quadranten liegt, gilt:
+</p>
+<p dir="ltr">
+    \(\varphi =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z)}{\mathrm{Re}(z)}\right) + {@plus@} \) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@y@}}{{@x@}}\right) + {@plus@} \)&#160;\(=&#160;\displaystyle&#160; \arctan\!\left({@y_x@}\right) + {@plus@} \) \(= \displaystyle&#160;{@phi_y_x@} + {@plus@} = {@phi_y_x+plus@}\).
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr">
+    <strong>
+        Solution:
+    </strong>
+</p>
+<p dir="ltr">
+    The complex number \(z = \displaystyle {@z@}\) consists of: \(\mathrm{Re}(z) = \displaystyle {@x@}\) and \(\mathrm{Im}(z) = \displaystyle {@y@}\) and thus lies in {@s@}.Quadrants.
+</p>
+<p dir="ltr">
+    Then \(r = \sqrt{(\mathrm{Re}(z))^2+(\mathrm{Im}(z))^2}\) \(= \displaystyle \sqrt{\left({@x@}\right)^{\!2}+\left({@y@}\right)^{\!2}} \) \(= \displaystyle \sqrt{{@x^2@}+{@y^2@}}\) \(= \displaystyle \sqrt{{@x^2+y^2@}} = {@loes_r@}\).
+</p>
+<p dir="ltr">
+    Since the complex number \(z\) the {@s@}.Quadranten is:
+</p>
+<p dir="ltr">
+    \(\varphi =&#160;\displaystyle&#160; \arctan\!\left(\dfrac{\mathrm{Im}(z)}{\mathrm{Re}(z)}\right) + {@plus@} \) \(=&#160;\displaystyle&#160; \arctan\!\left(\dfrac{{@y@}}{{@x@}}\right) + {@plus@} \)\(=&#160;\displaystyle&#160; \arctan\!\left({@y_x@}\right) + {@plus@} \) \(= \displaystyle&#160;{@phi_y_x@} + {@plus@} = {@phi_y_x+plus@}\).
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -158,18 +154,17 @@ phi_y_x: atan(y_x);</text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+</p>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -183,44 +178,41 @@ phi_y_x: atan(y_x);</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Richtige Antwort, gut gemacht!
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Right answer, well done!
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Richtige Antwort, gut gemacht!
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Right answer, well done!
+</p>
+[[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihre Antwort ist teilweise korrekt.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your answer is partly correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Ihre Antwort ist teilweise korrekt.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer is partly correct.
+</p>
+[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Falsche Antwort.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Wrong answer.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Falsche Antwort.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Wrong answer.
+</p>
+[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

@@ -6,370 +6,368 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+</p>
+<p>
+</p>
+<h4>
+    <span style="font-size: 14px; font-weight: normal;">
+        Bestimmen Sie die L&#246;sungen der Gleichung und geben Sie Ihre L&#246;sungen in kartesischer Form an. Au&#223;erdem w&#228;hlen Sie \( \varphi \in [0,2\pi [\) in der Form \( z_j = r \cdot (\cos (\varphi ) + \ i \cdot \sin (\varphi )) \).
+    </span>
+    <br/>
+</h4>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
-    </p>
-    <p>
-    </p>
-    <h4>
-        <span style="font-size: 14px; font-weight: normal;">
-            Bestimmen Sie die L&#246;sungen der Gleichung und geben Sie Ihre L&#246;sungen in kartesischer Form an. Au&#223;erdem w&#228;hlen Sie \( \varphi \in [0,2\pi [\) in der Form \( z_j = r \cdot (\cos (\varphi ) + \ i \cdot \sin (\varphi )) \).
+        <span>
+            \( z^4= {@B@} \)
         </span>
+    </p>
+</div>
+<p>
+    <span>
         <br/>
-    </h4>
-    <div class="editor-indent" style="margin-left: 30px;">
+    </span>
+</p>
+<p>
+    <b>
+        <b>
+            Hinweis:
+        </b>
+    </b>
+    Falls kein Real- oder Imagin&#228;rpart existiert, tragen Sie in das Feld
+    <span style="">
+        0
+    </span>
+    ein.
+    <br/>
+</p>
+<p>
+    <span>
+        <b>
+            Tipp:
+        </b>
+        L&#246;sen Sie die Aufgabe mit Hilfe der Tabelle f&#252;r trigonometrische Funktionen.
+    </span>
+</p>
+<p>
+    <span>
+        <br/>
+    </span>
+</p>
+<p>
+    <span>
+        L&#246;sung im Quadranten I:&#160; &#160; &#160;\(z_0 =\) [[/lang]][[lang code="en"]]
+        <p>
+        </p>
+        <p>
+        </p>
+        <h4>
+            <span style="font-size: 14px; font-weight: normal;">
+                Determine the solutions of the equation and specify your solutions in Cartesian form. Also choose \( \varphi \in [0,2\pi [\) in the form \( z_j = r \cdot (\cos (\varphi ) + \ i \cdot \sin (\varphi )) \).
+            </span>
+            <br/>
+        </h4>
+        <div class="editor-indent" style="margin-left: 30px;">
+            <p>
+                <span>
+                    \( z^4= {@B@} \)
+                </span>
+            </p>
+        </div>
         <p>
             <span>
-                \( z^4= {@B@} \)
+                <br/>
             </span>
         </p>
-    </div>
-    <p>
-        <span>
-            <br/>
-        </span>
-    </p>
-    <p>
-        <b>
+        <p>
             <b>
-                Hinweis:
+                <b>
+                    Note:
+                </b>
             </b>
-        </b>
-        Falls kein Real- oder Imagin&#228;rpart existiert, tragen Sie in das Feld
-        <span style="">
-            0
-        </span>
-        ein.
-        <br/>
-    </p>
-    <p>
-        <span>
-            <b>
-                Tipp:
-            </b>
-            L&#246;sen Sie die Aufgabe mit Hilfe der Tabelle f&#252;r trigonometrische Funktionen.
-        </span>
-    </p>
-    <p>
-        <span>
+            If there is no real or imaginary part, put in the field
+            <span style="">
+                0
+            </span>
+            one.
             <br/>
-        </span>
-    </p>
-    <p>
-        <span>
-            L&#246;sung im Quadranten I:&#160; &#160; &#160;\(z_0 =\) [[input:ans1]]
-        </span>
-        \(+ \ i \cdot\) [[input:ans2]][[validation:ans1]] [[feedback:prt1]][[validation:ans2]] [[feedback:prt2]]
-    </p>
-    <p>
-        <span>
-            L&#246;sung im Quadranten II:&#160; &#160; \(z_1 =\) [[input:ans3]]
-        </span>
-        \(+ \ i \cdot\) [[input:ans4]][[validation:ans3]] [[feedback:prt3]][[validation:ans4]] [[feedback:prt4]]
-    </p>
-    <p>
-        <span>
-            L&#246;sung im Quadranten III:&#160; &#160;\(z_2 =\) [[input:ans5]]
-        </span>
-        \(+ \ i \cdot\) [[input:ans6]][[validation:ans5]] [[feedback:prt5]][[validation:ans6]] [[feedback:prt6]]
-    </p>
-    <p>
-        <span>
-            L&#246;sung im Quadranten IV
-        </span>
-        <span style="font-size: 0.9375rem;">
-            :&#160; &#160;\(z_3 =\) [[input:ans7]]
-        </span>
-        <span style="font-size: 0.9375rem;">
-            \(+ \ i \cdot\) [[input:ans8]][[validation:ans7]] [[feedback:prt7]][[validation:ans8]] [[feedback:prt8]]
-        </span>
-    </p>
-    <p>
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-    </p>
-    <h4>
-        <span style="font-size: 14px; font-weight: normal;">
-            Determine the solutions of the equation and specify your solutions in Cartesian form. Also choose \( \varphi \in [0,2\pi [\) in the form \( z_j = r \cdot (\cos (\varphi ) + \ i \cdot \sin (\varphi )) \).
-        </span>
-        <br/>
-    </h4>
-    <div class="editor-indent" style="margin-left: 30px;">
+        </p>
         <p>
             <span>
-                \( z^4= {@B@} \)
+                <b>
+                    Tip:
+                </b>
+                Solve the task using the table for trigonometric functions.
             </span>
         </p>
-    </div>
-    <p>
-        <span>
-            <br/>
-        </span>
-    </p>
-    <p>
-        <b>
-            <b>
-                Note:
-            </b>
-        </b>
-        If there is no real or imaginary part, put in the field
-        <span style="">
-            0
-        </span>
-        one.
-        <br/>
-    </p>
-    <p>
-        <span>
-            <b>
-                Tip:
-            </b>
-            Solve the task using the table for trigonometric functions.
-        </span>
-    </p>
-    <p>
-        <span>
-            <br/>
-        </span>
-    </p>
-    <p>
-        <span>
-            Solution in Quadrant I:\(z_0 =\) [[input:ans1]]
-        </span>
-        \(+ \ i \cdot\) [[input:ans2]][[validation:ans1]] [[feedback:prt1]][[validation:ans2]] [[feedback:prt2]]
-    </p>
-    <p>
-        <span>
-            Solution in Quadrant II: \(z_1 =\) [[input:ans3]]
-        </span>
-        \(+ \ i \cdot\) [[input:ans4]][[validation:ans3]] [[feedback:prt3]][[validation:ans4]] [[feedback:prt4]]
-    </p>
-    <p>
-        <span>
-            Solution in Quadrant III:\(z_2 =\) [[input:ans5]]
-        </span>
-        \(+ \ i \cdot\) [[input:ans6]][[validation:ans5]] [[feedback:prt5]][[validation:ans6]] [[feedback:prt6]]
-    </p>
-    <p>
-        <span>
-            Solution in Quadrant IV
-        </span>
-        <span style="font-size: 0.9375rem;">
-            :\(z_3 =\) [[input:ans7]]
-        </span>
-        <span style="font-size: 0.9375rem;">
-            \(+ \ i \cdot\) [[input:ans8]][[validation:ans7]] [[feedback:prt7]][[validation:ans8]] [[feedback:prt8]]
-        </span>
-    </p>
-    <p>
-        <br/>
-    </p>
-</span>
+        <p>
+            <span>
+                <br/>
+            </span>
+        </p>
+        <p>
+            <span>
+                Solution in Quadrant I:\(z_0 =\) [[/lang]][[input:ans1]][[lang code="de"]]
+            </span>
+            \(+ \ i \cdot\) [[/lang]][[lang code="en"]]
+        </p>
+    </span>
+    \(+ \ i \cdot\) [[/lang]][[input:ans2]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt2]][[lang code="de"]]
+</p>
+<p>
+    <span>
+        L&#246;sung im Quadranten II:&#160; &#160; \(z_1 =\) [[/lang]][[lang code="en"]]
+    </span>
+</p>
+<p>
+    <span>
+        Solution in Quadrant II: \(z_1 =\) [[/lang]][[input:ans3]][[lang code="de"]]
+    </span>
+    \(+ \ i \cdot\) [[/lang]][[lang code="en"]]
+    \(+ \ i \cdot\) [[/lang]][[input:ans4]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt3]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans4]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt4]][[lang code="de"]]
+</p>
+<p>
+    <span>
+        L&#246;sung im Quadranten III:&#160; &#160;\(z_2 =\) [[/lang]][[lang code="en"]]
+    </span>
+</p>
+<p>
+    <span>
+        Solution in Quadrant III:\(z_2 =\) [[/lang]][[input:ans5]][[lang code="de"]]
+    </span>
+    \(+ \ i \cdot\) [[/lang]][[lang code="en"]]
+    \(+ \ i \cdot\) [[/lang]][[input:ans6]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans5]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt5]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans6]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt6]][[lang code="de"]]
+</p>
+<p>
+    <span>
+        L&#246;sung im Quadranten IV
+    </span>
+    <span style="font-size: 0.9375rem;">
+        :&#160; &#160;\(z_3 =\) [[/lang]][[lang code="en"]]
+    </span>
+</p>
+<p>
+    <span>
+        Solution in Quadrant IV
+    </span>
+    <span style="font-size: 0.9375rem;">
+        :\(z_3 =\) [[/lang]][[input:ans7]][[lang code="de"]]
+    </span>
+    <span style="font-size: 0.9375rem;">
+        \(+ \ i \cdot\) [[/lang]][[lang code="en"]]
+    </span>
+    <span style="font-size: 0.9375rem;">
+        \(+ \ i \cdot\) [[/lang]][[input:ans8]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans7]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt7]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans8]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt8]][[lang code="de"]]
+    </span>
+</p>
+<p>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <h4>
-        <strong>
-            L&#246;sung
-        </strong>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <div style="margin:1em; padding:1em; border:solid 1px #805926; background-color:#FFFFFF">
-        <p style="text-align: center;">
-            \(z_k = \sqrt[n]{r} e^{i \frac{\varphi}{n}}e^{i \frac{2 \pi k}{n}}\)&#160; &#160;f&#252;r&#160; &#160;\(k=0,1,2,3\)
-        </p>
-    </div>
-    <p>
-    </p>
-    <ol>
-        <li>
-            \(z^4={@B@}=r e^{i\varphi}\) in Exponentialform umformen:
-        </li>
-    </ol>
-    <p>
-        \(r=\sqrt{({@B@})^2+0^2}={@-B@}\)&#160; &#160;und&#160; &#160;\(\varphi=\pi\)&#160; (da {@B@} keinen Imagin&#228;rteil hat.)
-    </p>
-    <p>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        2. \(\sqrt[4]{r}=\sqrt[4]{{@-B@}}={@A@}\)
-    </p>
-    <p>
-    </p>
-    <p>
-        \(\frac{\varphi}{4}=\frac{\pi}{4}\)
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-        \(\frac{2\pi k}{4}=k \frac{\pi}{2}\)
-    </p>
-    <p>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        3. Umrechnen in Normalform
-    </p>
-    <p>
-        \(z_k = {@-B@} e^{i \frac{\varphi}{4}}e^{i k \frac{\pi}{2}}\)
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(z_0={@A@} e^{i \frac{\pi}{4}}e^{i 0 \frac{\pi}{2}}={@A@} \cdot [\cos(\frac{\pi}{4})+i \cdot \sin(\frac{\pi}{4})]\)
-    </p>
-    <p>
-        \(={@lsg1@}\)
-    </p>
-    <p>
-    </p>
-    <p>
-        \(z_1={@A@} e^{i \frac{\pi}{4}}e^{i 1 \frac{\pi}{2}}={@A@} \cdot [\cos(\frac{\pi}{4}+1 \cdot \frac{\pi}{2})+i \cdot \sin(\frac{\pi}{4}+1\cdot \frac{\pi}{2})]\)
-    </p>
-    <p>
-        \(={@lsg2@}\)
-    </p>
-    <p>
-    </p>
-    <p>
-        \(z_2={@A@} e^{i \frac{\pi}{4}}e^{i 2 \frac{\pi}{2}}={@A@} \cdot [\cos(\frac{\pi}{4}+2 \cdot \frac{\pi}{2})+i \cdot \sin(\frac{\pi}{4}+\pi)]\)
-    </p>
-    <p>
-        \(={@lsg3@}\)
-    </p>
-    <p>
-    </p>
-    <p>
-        \(z_3={@A@} e^{i \frac{\pi}{4}}e^{i 3 \frac{\pi}{2}}={@A@} \cdot [\cos(\frac{\pi}{4}+3 \cdot \frac{\pi}{2})+i \cdot \sin(\frac{\pi}{4}+3 \cdot \frac{\pi}{2})]\)
-    </p>
-    <p>
-        \(={@lsg4@}\)
-    </p>
+[[lang code="de"]]
+<p>
+</p>
+<h4>
+    <strong>
+        L&#246;sung
+    </strong>
+</h4>
+<p>
     <br/>
-    <p>
+</p>
+<div style="margin:1em; padding:1em; border:solid 1px #805926; background-color:#FFFFFF">
+    <p style="text-align: center;">
+        \(z_k = \sqrt[n]{r} e^{i \frac{\varphi}{n}}e^{i \frac{2 \pi k}{n}}\)&#160; &#160;f&#252;r&#160; &#160;\(k=0,1,2,3\)
     </p>
+</div>
+<p>
+</p>
+<ol>
+    <li>
+        \(z^4={@B@}=r e^{i\varphi}\) in Exponentialform umformen:
+    </li>
+</ol>
+<p>
+    \(r=\sqrt{({@B@})^2+0^2}={@-B@}\)&#160; &#160;und&#160; &#160;\(\varphi=\pi\)&#160; (da {@B@} keinen Imagin&#228;rteil hat.)
+</p>
+<p>
+</p>
+<p>
     <br/>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <h4>
-        <strong>
-            Solution
-        </strong>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <div style="margin:1em; padding:1em; border:solid 1px #805926; background-color:#FFFFFF">
-        <p style="text-align: center;">
-            \(z_k = \sqrt[n]{r} e^{i \frac{\varphi}{n}}e^{i \frac{2 \pi k}{n}}\)for\(k=0,1,2,3\)
-        </p>
-    </div>
-    <p>
-    </p>
-    <ol>
-        <li>
-            \(z^4={@B@}=r e^{i\varphi}\) in exponential form:
-        </li>
-    </ol>
-    <p>
-        \(r=\sqrt{({@B@})^2+0^2}={@-B@}\)and\(\varphi=\pi\)(da {@B@} has no imaginary part.)
-    </p>
-    <p>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        Two. \(\sqrt[4]{r}=\sqrt[4]{{@-B@}}={@A@}\)
-    </p>
-    <p>
-    </p>
-    <p>
-        \(\frac{\varphi}{4}=\frac{\pi}{4}\)
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-        \(\frac{2\pi k}{4}=k \frac{\pi}{2}\)
-    </p>
-    <p>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        3. Convert in normal form
-    </p>
-    <p>
-        \(z_k = {@-B@} e^{i \frac{\varphi}{4}}e^{i k \frac{\pi}{2}}\)
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(z_0={@A@} e^{i \frac{\pi}{4}}e^{i 0 \frac{\pi}{2}}={@A@} \cdot [\cos(\frac{\pi}{4})+i \cdot \sin(\frac{\pi}{4})]\)
-    </p>
-    <p>
-        \(={@lsg1@}\)
-    </p>
-    <p>
-    </p>
-    <p>
-        \(z_1={@A@} e^{i \frac{\pi}{4}}e^{i 1 \frac{\pi}{2}}={@A@} \cdot [\cos(\frac{\pi}{4}+1 \cdot \frac{\pi}{2})+i \cdot \sin(\frac{\pi}{4}+1\cdot \frac{\pi}{2})]\)
-    </p>
-    <p>
-        \(={@lsg2@}\)
-    </p>
-    <p>
-    </p>
-    <p>
-        \(z_2={@A@} e^{i \frac{\pi}{4}}e^{i 2 \frac{\pi}{2}}={@A@} \cdot [\cos(\frac{\pi}{4}+2 \cdot \frac{\pi}{2})+i \cdot \sin(\frac{\pi}{4}+\pi)]\)
-    </p>
-    <p>
-        \(={@lsg3@}\)
-    </p>
-    <p>
-    </p>
-    <p>
-        \(z_3={@A@} e^{i \frac{\pi}{4}}e^{i 3 \frac{\pi}{2}}={@A@} \cdot [\cos(\frac{\pi}{4}+3 \cdot \frac{\pi}{2})+i \cdot \sin(\frac{\pi}{4}+3 \cdot \frac{\pi}{2})]\)
-    </p>
-    <p>
-        \(={@lsg4@}\)
-    </p>
+</p>
+<p>
+    2. \(\sqrt[4]{r}=\sqrt[4]{{@-B@}}={@A@}\)
+</p>
+<p>
+</p>
+<p>
+    \(\frac{\varphi}{4}=\frac{\pi}{4}\)
+</p>
+<p>
+</p>
+<p>
+</p>
+<p>
+    \(\frac{2\pi k}{4}=k \frac{\pi}{2}\)
+</p>
+<p>
+</p>
+<p>
     <br/>
-    <p>
-    </p>
+</p>
+<p>
+    3. Umrechnen in Normalform
+</p>
+<p>
+    \(z_k = {@-B@} e^{i \frac{\varphi}{4}}e^{i k \frac{\pi}{2}}\)
     <br/>
-    <p>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    \(z_0={@A@} e^{i \frac{\pi}{4}}e^{i 0 \frac{\pi}{2}}={@A@} \cdot [\cos(\frac{\pi}{4})+i \cdot \sin(\frac{\pi}{4})]\)
+</p>
+<p>
+    \(={@lsg1@}\)
+</p>
+<p>
+</p>
+<p>
+    \(z_1={@A@} e^{i \frac{\pi}{4}}e^{i 1 \frac{\pi}{2}}={@A@} \cdot [\cos(\frac{\pi}{4}+1 \cdot \frac{\pi}{2})+i \cdot \sin(\frac{\pi}{4}+1\cdot \frac{\pi}{2})]\)
+</p>
+<p>
+    \(={@lsg2@}\)
+</p>
+<p>
+</p>
+<p>
+    \(z_2={@A@} e^{i \frac{\pi}{4}}e^{i 2 \frac{\pi}{2}}={@A@} \cdot [\cos(\frac{\pi}{4}+2 \cdot \frac{\pi}{2})+i \cdot \sin(\frac{\pi}{4}+\pi)]\)
+</p>
+<p>
+    \(={@lsg3@}\)
+</p>
+<p>
+</p>
+<p>
+    \(z_3={@A@} e^{i \frac{\pi}{4}}e^{i 3 \frac{\pi}{2}}={@A@} \cdot [\cos(\frac{\pi}{4}+3 \cdot \frac{\pi}{2})+i \cdot \sin(\frac{\pi}{4}+3 \cdot \frac{\pi}{2})]\)
+</p>
+<p>
+    \(={@lsg4@}\)
+</p>
+<br/>
+<p>
+</p>
+<br/>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<h4>
+    <strong>
+        Solution
+    </strong>
+</h4>
+<p>
+    <br/>
+</p>
+<div style="margin:1em; padding:1em; border:solid 1px #805926; background-color:#FFFFFF">
+    <p style="text-align: center;">
+        \(z_k = \sqrt[n]{r} e^{i \frac{\varphi}{n}}e^{i \frac{2 \pi k}{n}}\)for\(k=0,1,2,3\)
     </p>
-</span>
+</div>
+<p>
+</p>
+<ol>
+    <li>
+        \(z^4={@B@}=r e^{i\varphi}\) in exponential form:
+    </li>
+</ol>
+<p>
+    \(r=\sqrt{({@B@})^2+0^2}={@-B@}\)and\(\varphi=\pi\)(da {@B@} has no imaginary part.)
+</p>
+<p>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    Two. \(\sqrt[4]{r}=\sqrt[4]{{@-B@}}={@A@}\)
+</p>
+<p>
+</p>
+<p>
+    \(\frac{\varphi}{4}=\frac{\pi}{4}\)
+</p>
+<p>
+</p>
+<p>
+</p>
+<p>
+    \(\frac{2\pi k}{4}=k \frac{\pi}{2}\)
+</p>
+<p>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    3. Convert in normal form
+</p>
+<p>
+    \(z_k = {@-B@} e^{i \frac{\varphi}{4}}e^{i k \frac{\pi}{2}}\)
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    \(z_0={@A@} e^{i \frac{\pi}{4}}e^{i 0 \frac{\pi}{2}}={@A@} \cdot [\cos(\frac{\pi}{4})+i \cdot \sin(\frac{\pi}{4})]\)
+</p>
+<p>
+    \(={@lsg1@}\)
+</p>
+<p>
+</p>
+<p>
+    \(z_1={@A@} e^{i \frac{\pi}{4}}e^{i 1 \frac{\pi}{2}}={@A@} \cdot [\cos(\frac{\pi}{4}+1 \cdot \frac{\pi}{2})+i \cdot \sin(\frac{\pi}{4}+1\cdot \frac{\pi}{2})]\)
+</p>
+<p>
+    \(={@lsg2@}\)
+</p>
+<p>
+</p>
+<p>
+    \(z_2={@A@} e^{i \frac{\pi}{4}}e^{i 2 \frac{\pi}{2}}={@A@} \cdot [\cos(\frac{\pi}{4}+2 \cdot \frac{\pi}{2})+i \cdot \sin(\frac{\pi}{4}+\pi)]\)
+</p>
+<p>
+    \(={@lsg3@}\)
+</p>
+<p>
+</p>
+<p>
+    \(z_3={@A@} e^{i \frac{\pi}{4}}e^{i 3 \frac{\pi}{2}}={@A@} \cdot [\cos(\frac{\pi}{4}+3 \cdot \frac{\pi}{2})+i \cdot \sin(\frac{\pi}{4}+3 \cdot \frac{\pi}{2})]\)
+</p>
+<p>
+    \(={@lsg4@}\)
+</p>
+<br/>
+<p>
+</p>
+<br/>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -398,18 +396,17 @@ Im4: imagpart(lsg4)</text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        <br/>
-    </h4>
+[[lang code="de"]]
+<h4>
     <br/>
-</span>
-<span class="multilang" lang="en">
-    <h4>
-        <br/>
-    </h4>
+</h4>
+<br/>
+[[/lang]][[lang code="en"]]
+<h4>
     <br/>
-</span>
+</h4>
+<br/>
+[[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -423,32 +420,17 @@ Im4: imagpart(lsg4)</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

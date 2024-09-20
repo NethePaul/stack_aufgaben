@@ -6,60 +6,58 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    Seien \(A = \{x | x \hbox{ ist eine ungerade ganze Zahl und } x \hbox{ ist gr&#246;&#223;er als 0 und kleiner als } {@a@}\}\), und \( B = \{x | x \hbox{ ist eine gerade ganze Zahl und } x \hbox{ ist gr&#246;&#223;er als } {@b@} \hbox{ und kleiner als } {@c@} \}\). Bestimmen Sie die folgenden Mengen \(A\) und \(B\).
+</p>
+<p>
+    \(A = \) [[/lang]][[lang code="en"]]
     <p>
-        Seien \(A = \{x | x \hbox{ ist eine ungerade ganze Zahl und } x \hbox{ ist gr&#246;&#223;er als 0 und kleiner als } {@a@}\}\), und \( B = \{x | x \hbox{ ist eine gerade ganze Zahl und } x \hbox{ ist gr&#246;&#223;er als } {@b@} \hbox{ und kleiner als } {@c@} \}\). Bestimmen Sie die folgenden Mengen \(A\) und \(B\).
+        Let \(A = \{x | x \hbox{ is an odd integer and } x \hbox{ is greater than 0 and less than } {@a@}\}\)and \( B = \{x | x \hbox{ is an even integer and } x \hbox{ is greater than } {@b@} \hbox{ and less than } {@c@} \}\). Determine the following sets \(A\) and \(B\).
     </p>
     <p>
-        \(A = \) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+        \(A = \) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
     <p>
-        \(B = \) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Be \(A = \{x | x \hbox{ ist eine ungerade ganze Zahl und } x \hbox{ ist gr&#246;&#223;er als 0 und kleiner als } {@a@}\}\)and \( B = \{x | x \hbox{ ist eine gerade ganze Zahl und } x \hbox{ ist gr&#246;&#223;er als } {@b@} \hbox{ und kleiner als } {@c@} \}\). Determine the following quantities \(A\) and \(B\).
+        \(B = \) [[/lang]][[lang code="en"]]
     </p>
     <p>
-        \(A = \) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+        \(B = \) [[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt2]][[lang code="de"]]
     </p>
-    <p>
-        \(B = \) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
-    </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        <strong>
-            L&#246;s&#252;ng:
-        </strong>
-        <br/>
-    </p>
-    <p>
-        \(\begin{align*}A &amp; = \{x | x \hbox{ ist eine ungerade ganze Zahl und } x \hbox{ ist gr&#246;&#223;er als 0 und kleiner als } {@a@}\}\\ &amp; = {@ta1@}. \end{align*}\)
-    </p>
-    <p>
-        \(\begin{align*}B &amp; = \{x | x \hbox{ ist eine gerade ganze Zahl und } x \hbox{ ist gr&#246;&#223;er als } {@b@} \hbox{ und kleiner als } {@c@} \}\\ &amp; = {@ta2@}. \end{align*}\)
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        <strong>
-            Lace:
-        </strong>
-        <br/>
-    </p>
-    <p>
-        \(\begin{align*}A &amp; = \{x | x \hbox{ ist eine ungerade ganze Zahl und } x \hbox{ ist gr&#246;&#223;er als 0 und kleiner als } {@a@}\}\\ &amp; = {@ta1@}. \end{align*}\)
-    </p>
-    <p>
-        \(\begin{align*}B &amp; = \{x | x \hbox{ ist eine gerade ganze Zahl und } x \hbox{ ist gr&#246;&#223;er als } {@b@} \hbox{ und kleiner als } {@c@} \}\\ &amp; = {@ta2@}. \end{align*}\)
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    <strong>
+        L&#246;s&#252;ng:
+    </strong>
+    <br/>
+</p>
+<p>
+    \(\begin{align*}A &amp; = \{x | x \hbox{ ist eine ungerade ganze Zahl und } x \hbox{ ist gr&#246;&#223;er als 0 und kleiner als } {@a@}\}\\ &amp; = {@ta1@}. \end{align*}\)
+</p>
+<p>
+    \(\begin{align*}B &amp; = \{x | x \hbox{ ist eine gerade ganze Zahl und } x \hbox{ ist gr&#246;&#223;er als } {@b@} \hbox{ und kleiner als } {@c@} \}\\ &amp; = {@ta2@}. \end{align*}\)
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <strong>
+        Lace:
+    </strong>
+    <br/>
+</p>
+<p>
+    \(\begin{align*}A &amp; = \{x | x \hbox{ is an odd integer and } x \hbox{ is greater than 0 and less than } {@a@}\}\\ &amp; = {@ta1@}. \end{align*}\)
+</p>
+<p>
+    \(\begin{align*}B &amp; = \{x | x \hbox{ is and even integer and } x \hbox{ is greater than } {@b@} \hbox{ and less than} {@c@} \}\\ &amp; = {@ta2@}. \end{align*}\)
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -98,56 +96,47 @@ ta2:subset(B,evenp);</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Richtige Antwort, gut gemacht!
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Right answer, well done!
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
+Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Deine Antwort ist teilweise korrekt.
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-check">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Your answer is partly correct.
+Deine Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-check">
+    </i>
 </span>
+Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Falsche Antwort.
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Wrong answer.
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
+Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

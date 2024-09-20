@@ -6,29 +6,18 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Geben sind die Vektoren
-        <br/>
-        \(\vec{a_1}=\begin{pmatrix}@a1@\\@a2@ \\@a3@ \end{pmatrix},\quad \vec{a_2}=\begin{pmatrix}@x1@\\@x2@ \\@x3@ \end{pmatrix} \quad\) und \( \quad \vec{a_3}=\begin{pmatrix}@b1@\\@b2@ \\p\end{pmatrix}\)
-    </p>
-    <p>
-        <br/>
-        Geben Sie einen Wert des Parameters \(p \in \mathbb{R}\) ein, so dass \(\vec{a_1},&#160;\vec{a_2}\) und \(\vec{a_3}\) linear abh&#228;ngig sind.
-    </p>
-    <p>
-        \(p_1=\)[[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
-    </p>
-    <p>
-    </p>
-    <p>
-        Geben Sie noch einen Wert des Parameters \(p \in \mathbb{R}\) ein, so dass \(\vec{a_1},&#160;\vec{a_2}\) und \(\vec{a_3}\) linear unabh&#228;ngig sind.
-    </p>
-    <p>
-        \(p_2=\)[[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
-    </p>
-</span>
-<span class="multilang" lang="en">
+[[lang code="de"]]
+<p>
+    Geben sind die Vektoren
+    <br/>
+    \(\vec{a_1}=\begin{pmatrix}@a1@\\@a2@ \\@a3@ \end{pmatrix},\quad \vec{a_2}=\begin{pmatrix}@x1@\\@x2@ \\@x3@ \end{pmatrix} \quad\) und \( \quad \vec{a_3}=\begin{pmatrix}@b1@\\@b2@ \\p\end{pmatrix}\)
+</p>
+<p>
+    <br/>
+    Geben Sie einen Wert des Parameters \(p \in \mathbb{R}\) ein, so dass \(\vec{a_1},&#160;\vec{a_2}\) und \(\vec{a_3}\) linear abh&#228;ngig sind.
+</p>
+<p>
+    \(p_1=\)[[/lang]][[lang code="en"]]
     <p>
         Enter the vectors
         <br/>
@@ -39,7 +28,15 @@
         Enter a value of the parameter \(p \in \mathbb{R}\) so that \(\vec{a_1},&#160;\vec{a_2}\) and \(\vec{a_3}\) are linearly dependent.
     </p>
     <p>
-        \(p_1=\)[[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+        \(p_1=\)[[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt1]][[lang code="de"]]
+    </p>
+    <p>
+    </p>
+    <p>
+        Geben Sie noch einen Wert des Parameters \(p \in \mathbb{R}\) ein, so dass \(\vec{a_1},&#160;\vec{a_2}\) und \(\vec{a_3}\) linear unabh&#228;ngig sind.
+    </p>
+    <p>
+        \(p_2=\)[[/lang]][[lang code="en"]]
     </p>
     <p>
     </p>
@@ -47,9 +44,11 @@
         Enter a value of the parameter \(p \in \mathbb{R}\) so that \(\vec{a_1},&#160;\vec{a_2}\) and \(\vec{a_3}\) are linearly independent.
     </p>
     <p>
-        \(p_2=\)[[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
+        \(p_2=\)[[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt2]][[lang code="de"]]
     </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -100,44 +99,41 @@ x3: vx[3];</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Richtige Antwort, gut gemacht!
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Right answer, well done!
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Richtige Antwort, gut gemacht!
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Right answer, well done!
+</p>
+[[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihre Antwort ist teilweise korrekt.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your answer is partly correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Ihre Antwort ist teilweise korrekt.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer is partly correct.
+</p>
+[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Falsche Antwort.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Wrong answer.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Falsche Antwort.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Wrong answer.
+</p>
+[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

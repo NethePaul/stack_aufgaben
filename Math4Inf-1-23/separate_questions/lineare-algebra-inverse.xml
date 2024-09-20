@@ -6,550 +6,548 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <strong>
-        <span style="font-size:20px;">
-            <strong>
-            </strong>
-        </span>
-    </strong>
-    <span style="font-size: 20px;">
+[[lang code="de"]]
+<strong>
+    <span style="font-size:20px;">
+        <strong>
+        </strong>
     </span>
-    <span>
-        <span style="font-size: 16px;">
-        </span>
+</strong>
+<span style="font-size: 20px;">
+</span>
+<span>
+    <span style="font-size: 16px;">
     </span>
-    <p style="">
-        Berechnen Sie die Inverse der folgenden Matrizen.
-    </p>
-    <b>
-        a)
-    </b>
-    \(A = \begin{bmatrix}
+</span>
+<p style="">
+    Berechnen Sie die Inverse der folgenden Matrizen.
+</p>
+<b>
+    a)
+</b>
+\(A = \begin{bmatrix}
 1 &amp; {@a@} &amp; 0  \\
 {@a@}&amp; 1 &amp; {@a@}  \\
 0 &amp; {@a@} &amp; 1  \\
 \end{bmatrix} \)
-    <p>
-        <br data-cke-eol="1"/>
-    </p>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                [[input:ans1]]&#160; [[input:ans2]]&#160; [[input:ans3]]
-            </p>
-        </div>
-    </div>
+<p>
+    <br data-cke-eol="1"/>
+</p>
+<p>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <div class="editor-indent" style="margin-left: 30px;">
         <p>
-            \(A^{-1} =\) [[input:ans4]]&#160; [[input:ans5]]&#160; [[input:ans6]]
-        </p>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                [[input:ans7]]&#160; [[input:ans8]]&#160; [[input:ans9]]
-            </p>
-            <p>
-                [[validation:ans1]][[validation:ans2]][[validation:ans3]]
-            </p>
-            <p>
-                [[validation:ans4]][[validation:ans5]][[validation:ans6]]
-            </p>
-            <p>
-                [[validation:ans7]][[validation:ans8]][[validation:ans9]]
-            </p>
-            <p>
-            </p>
-            <p>
-                [[feedback:prt1]]&#160;[[feedback:prt2]][[feedback:prt3]]
-                <br/>
-            </p>
-            <p>
-                [[feedback:prt4]][[feedback:prt5]][[feedback:prt6]]
-                <br/>
-            </p>
-            <p>
-                [[feedback:prt7]][[feedback:prt8]][[feedback:prt9]]
-            </p>
-            <br/>
-            <p>
-            </p>
-            <p>
-            </p>
-            <p>
-                <br/>
-            </p>
-        </div>
-    </div>
-    <p>
-    </p>
-    <p>
-        <span>
-            <span>
-                <b>
-                    b)
-                </b>
-                \(B = \begin{bmatrix} \dfrac{1}{{@b@}}  &amp; - \dfrac{{@bplus1@}}{{@b@}} &amp; 1 \\ 0&amp; \dfrac{{@bplus1@}}{{@b@}}&amp;-1\\ 0 &amp; -1 &amp; 1 \\ \end{bmatrix} \)
-            </span>
-        </span>
-    </p>
-    <p>
-        <span>
-            <span>
-                <br/>
-            </span>
-        </span>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-        </p>
-        <div>
-            <div>
-                <p>
-                    [[input:ans10]]&#160; [[input:ans11]]&#160; [[input:ans12]]
-                </p>
-            </div>
-        </div>
-        <p>
-        </p>
-        <p>
-        </p>
-        <div>
-            <span>
-                \(B^{-1} =\) [[input:ans13]]&#160; [[input:ans14]]&#160; [[input:ans15]]
-            </span>
-        </div>
-        <p>
-        </p>
-        <p>
-        </p>
-        <div>
-            <div>
-                <p>
-                    [[input:ans16]]&#160; [[input:ans17]]&#160; [[input:ans18]]
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                [[validation:ans10]][[validation:ans11]][[validation:ans12]]
-            </p>
-        </div>
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                [[validation:ans13]][[validation:ans14]][[validation:ans15]]
-            </p>
-        </div>
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                [[validation:ans16]][[validation:ans17]][[validation:ans18]]
-            </p>
-            <p>
-            </p>
-            <p>
-                [[feedback:prt10]][[feedback:prt11]][[feedback:prt12]]
-                <br/>
-            </p>
-            <p>
-                [[feedback:prt13]][[feedback:prt14]][[feedback:prt15]]
-                <br/>
-            </p>
-            <p>
-                [[feedback:prt16]][[feedback:prt17]][[feedback:prt18]]
-            </p>
-            <br/>
-            <p>
-            </p>
-        </div>
-    </div>
-    <p>
-    </p>
-    <p>
-        <b>
-            Hinweis:
-        </b>
-        Geben Sie die Werte gegebenfalls in Br&#252;chen an.
-    </p>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <strong>
-        <span style="font-size:20px;">
+            [[/lang]][[lang code="en"]]
             <strong>
+                <span style="font-size:20px;">
+                    <strong>
+                    </strong>
+                </span>
             </strong>
-        </span>
-    </strong>
-    <span style="font-size: 20px;">
-    </span>
-    <span>
-        <span style="font-size: 16px;">
-        </span>
-    </span>
-    <p style="">
-        Calculate the inverse of the following matrices.
-    </p>
-    <b>
-        (a)
-    </b>
-    \(A = \begin{bmatrix}
+            <span style="font-size: 20px;">
+            </span>
+            <span>
+                <span style="font-size: 16px;">
+                </span>
+            </span>
+            <p style="">
+                Calculate the inverse of the following matrices.
+            </p>
+            <b>
+                (a)
+            </b>
+            \(A = \begin{bmatrix}
 1 &amp; {@a@} &amp; 0  \\
 {@a@}&amp; 1 &amp; {@a@}  \\
 0 &amp; {@a@} &amp; 1  \\
 \end{bmatrix} \)
-    <p>
-        <br data-cke-eol="1"/>
-    </p>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
             <p>
-                [[input:ans1]] [[input:ans2]] [[input:ans3]]
-            </p>
-        </div>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \(A^{-1} =\) [[input:ans4]] [[input:ans5]] [[input:ans6]]
-        </p>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                [[input:ans7]] [[input:ans8]] [[input:ans9]]
-            </p>
-            <p>
-                [[validation:ans1]][[validation:ans2]][[validation:ans3]]
-            </p>
-            <p>
-                [[validation:ans4]][[validation:ans5]][[validation:ans6]]
-            </p>
-            <p>
-                [[validation:ans7]][[validation:ans8]][[validation:ans9]]
+                <br data-cke-eol="1"/>
             </p>
             <p>
             </p>
-            <p>
-                [[feedback:prt1]][[feedback:prt2]][[feedback:prt3]]
-                <br/>
-            </p>
-            <p>
-                [[feedback:prt4]][[feedback:prt5]][[feedback:prt6]]
-                <br/>
-            </p>
-            <p>
-                [[feedback:prt7]][[feedback:prt8]][[feedback:prt9]]
-            </p>
-            <br/>
-            <p>
-            </p>
-            <p>
-            </p>
-            <p>
-                <br/>
-            </p>
-        </div>
-    </div>
-    <p>
-    </p>
-    <p>
-        <span>
-            <span>
-                <b>
-                    (b)
-                </b>
-                \(B = \begin{bmatrix} \dfrac{1}{{@b@}}  &amp; - \dfrac{{@bplus1@}}{{@b@}} &amp; 1 \\ 0&amp; \dfrac{{@bplus1@}}{{@b@}}&amp;-1\\ 0 &amp; -1 &amp; 1 \\ \end{bmatrix} \)
-            </span>
-        </span>
-    </p>
-    <p>
-        <span>
-            <span>
-                <br/>
-            </span>
-        </span>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-        </p>
-        <div>
-            <div>
+            <div class="editor-indent" style="margin-left: 30px;">
+                <div class="editor-indent" style="margin-left: 30px;">
+                    <p>
+                        [[/lang]][[input:ans1]][[lang code="de"]]&#160; [[/lang]][[lang code="en"]] [[/lang]][[input:ans2]][[lang code="de"]]&#160; [[/lang]][[lang code="en"]] [[/lang]][[input:ans3]][[lang code="de"]]
+                    </p>
+                </div>
+            </div>
+            <div class="editor-indent" style="margin-left: 30px;">
                 <p>
-                    [[input:ans10]] [[input:ans11]] [[input:ans12]]
+                    \(A^{-1} =\) [[/lang]][[lang code="en"]]
+                </p>
+            </div>
+        </p>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <p>
+            \(A^{-1} =\) [[/lang]][[input:ans4]][[lang code="de"]]&#160; [[/lang]][[lang code="en"]] [[/lang]][[input:ans5]][[lang code="de"]]&#160; [[/lang]][[lang code="en"]] [[/lang]][[input:ans6]][[lang code="de"]]
+        </p>
+    </div>
+    <div class="editor-indent" style="margin-left: 30px;">
+        <div class="editor-indent" style="margin-left: 30px;">
+            <p>
+                [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div class="editor-indent" style="margin-left: 30px;">
+            <div class="editor-indent" style="margin-left: 30px;">
+                <p>
+                    [[/lang]][[input:ans7]][[lang code="de"]]&#160; [[/lang]][[lang code="en"]] [[/lang]][[input:ans8]][[lang code="de"]]&#160; [[/lang]][[lang code="en"]] [[/lang]][[input:ans9]][[lang code="de"]]
+                </p>
+                <p>
+                    [[/lang]][[lang code="en"]]
+                </p>
+                <p>
+                    [[/lang]][[validation:ans1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans2]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans3]][[lang code="de"]]
+                </p>
+                <p>
+                    [[/lang]][[lang code="en"]]
+                </p>
+                <p>
+                    [[/lang]][[validation:ans4]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans5]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans6]][[lang code="de"]]
+                </p>
+                <p>
+                    [[/lang]][[lang code="en"]]
+                </p>
+                <p>
+                    [[/lang]][[validation:ans7]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans8]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans9]][[lang code="de"]]
+                </p>
+                <p>
+                </p>
+                <p>
+                    [[/lang]][[lang code="en"]]
+                </p>
+                <p>
+                </p>
+                <p>
+                    [[/lang]][[feedback:prt1]][[lang code="de"]]&#160;[[/lang]][[lang code="en"]][[/lang]][[feedback:prt2]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt3]][[lang code="de"]]
+                    <br/>
+                </p>
+                <p>
+                    [[/lang]][[lang code="en"]]
+                    <br/>
+                </p>
+                <p>
+                    [[/lang]][[feedback:prt4]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt5]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt6]][[lang code="de"]]
+                    <br/>
+                </p>
+                <p>
+                    [[/lang]][[lang code="en"]]
+                    <br/>
+                </p>
+                <p>
+                    [[/lang]][[feedback:prt7]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt8]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt9]][[lang code="de"]]
+                </p>
+                <br/>
+                <p>
+                </p>
+                <p>
+                </p>
+                <p>
+                    <br/>
                 </p>
             </div>
         </div>
         <p>
         </p>
         <p>
-        </p>
-        <div>
             <span>
-                \(B^{-1} =\) [[input:ans13]] [[input:ans14]] [[input:ans15]]
+                <span>
+                    <b>
+                        b)
+                    </b>
+                    \(B = \begin{bmatrix} \dfrac{1}{{@b@}}  &amp; - \dfrac{{@bplus1@}}{{@b@}} &amp; 1 \\ 0&amp; \dfrac{{@bplus1@}}{{@b@}}&amp;-1\\ 0 &amp; -1 &amp; 1 \\ \end{bmatrix} \)
+                </span>
             </span>
-        </div>
-        <p>
         </p>
         <p>
+            <span>
+                <span>
+                    <br/>
+                </span>
+            </span>
         </p>
-        <div>
+        <div class="editor-indent" style="margin-left: 30px;">
+            <p>
+            </p>
             <div>
+                <div>
+                    <p>
+                        [[/lang]][[lang code="en"]]
+                    </p>
+                    <br/>
+                    <p>
+                    </p>
+                    <p>
+                    </p>
+                    <p>
+                        <br/>
+                    </p>
+                </div>
+            </div>
+            <p>
+            </p>
+            <p>
+                <span>
+                    <span>
+                        <b>
+                            (b)
+                        </b>
+                        \(B = \begin{bmatrix} \dfrac{1}{{@b@}}  &amp; - \dfrac{{@bplus1@}}{{@b@}} &amp; 1 \\ 0&amp; \dfrac{{@bplus1@}}{{@b@}}&amp;-1\\ 0 &amp; -1 &amp; 1 \\ \end{bmatrix} \)
+                    </span>
+                </span>
+            </p>
+            <p>
+                <span>
+                    <span>
+                        <br/>
+                    </span>
+                </span>
+            </p>
+            <div class="editor-indent" style="margin-left: 30px;">
                 <p>
-                    [[input:ans16]] [[input:ans17]] [[input:ans18]]
+                </p>
+                <div>
+                    <div>
+                        <p>
+                            [[/lang]][[input:ans10]][[lang code="de"]]&#160; [[/lang]][[lang code="en"]] [[/lang]][[input:ans11]][[lang code="de"]]&#160; [[/lang]][[lang code="en"]] [[/lang]][[input:ans12]][[lang code="de"]]
+                        </p>
+                    </div>
+                </div>
+                <p>
+                </p>
+                <p>
+                </p>
+                <div>
+                    <span>
+                        \(B^{-1} =\) [[/lang]][[lang code="en"]]
+                    </span>
+                </div>
+            </div>
+            <p>
+            </p>
+            <p>
+            </p>
+            <div>
+                <span>
+                    \(B^{-1} =\) [[/lang]][[input:ans13]][[lang code="de"]]&#160; [[/lang]][[lang code="en"]] [[/lang]][[input:ans14]][[lang code="de"]]&#160; [[/lang]][[lang code="en"]] [[/lang]][[input:ans15]][[lang code="de"]]
+                </span>
+            </div>
+            <p>
+            </p>
+            <p>
+            </p>
+            <div>
+                <div>
+                    <p>
+                        [[/lang]][[lang code="en"]]
+                    </p>
+                </div>
+                <p>
+                </p>
+                <p>
+                </p>
+                <div>
+                    <div>
+                        <p>
+                            [[/lang]][[input:ans16]][[lang code="de"]]&#160; [[/lang]][[lang code="en"]] [[/lang]][[input:ans17]][[lang code="de"]]&#160; [[/lang]][[lang code="en"]] [[/lang]][[input:ans18]][[lang code="de"]]
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="editor-indent" style="margin-left: 30px;">
+                <div class="editor-indent" style="margin-left: 30px;">
+                    <p>
+                        [[/lang]][[lang code="en"]]
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="editor-indent" style="margin-left: 30px;">
+            <div class="editor-indent" style="margin-left: 30px;">
+                <p>
+                    [[/lang]][[validation:ans10]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans11]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans12]][[lang code="de"]]
+                </p>
+            </div>
+            <div class="editor-indent" style="margin-left: 30px;">
+                <p>
+                    [[/lang]][[lang code="en"]]
+                </p>
+            </div>
+            <div class="editor-indent" style="margin-left: 30px;">
+                <p>
+                    [[/lang]][[validation:ans13]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans14]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans15]][[lang code="de"]]
+                </p>
+            </div>
+            <div class="editor-indent" style="margin-left: 30px;">
+                <p>
+                    [[/lang]][[lang code="en"]]
+                </p>
+            </div>
+            <div class="editor-indent" style="margin-left: 30px;">
+                <p>
+                    [[/lang]][[validation:ans16]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans17]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans18]][[lang code="de"]]
+                </p>
+                <p>
+                </p>
+                <p>
+                    [[/lang]][[lang code="en"]]
+                </p>
+                <p>
+                </p>
+                <p>
+                    [[/lang]][[feedback:prt10]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt11]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt12]][[lang code="de"]]
+                    <br/>
+                </p>
+                <p>
+                    [[/lang]][[lang code="en"]]
+                    <br/>
+                </p>
+                <p>
+                    [[/lang]][[feedback:prt13]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt14]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt15]][[lang code="de"]]
+                    <br/>
+                </p>
+                <p>
+                    [[/lang]][[lang code="en"]]
+                    <br/>
+                </p>
+                <p>
+                    [[/lang]][[feedback:prt16]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt17]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt18]][[lang code="de"]]
+                </p>
+                <br/>
+                <p>
                 </p>
             </div>
         </div>
+        <p>
+        </p>
+        <p>
+            <b>
+                Hinweis:
+            </b>
+            Geben Sie die Werte gegebenfalls in Br&#252;chen an.
+        </p>
+        <p>
+        </p>
+        [[/lang]][[lang code="en"]]
+        <br/>
+        <p>
+        </p>
     </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                [[validation:ans10]][[validation:ans11]][[validation:ans12]]
-            </p>
-        </div>
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                [[validation:ans13]][[validation:ans14]][[validation:ans15]]
-            </p>
-        </div>
-        <div class="editor-indent" style="margin-left: 30px;">
-            <p>
-                [[validation:ans16]][[validation:ans17]][[validation:ans18]]
-            </p>
-            <p>
-            </p>
-            <p>
-                [[feedback:prt10]][[feedback:prt11]][[feedback:prt12]]
-                <br/>
-            </p>
-            <p>
-                [[feedback:prt13]][[feedback:prt14]][[feedback:prt15]]
-                <br/>
-            </p>
-            <p>
-                [[feedback:prt16]][[feedback:prt17]][[feedback:prt18]]
-            </p>
-            <br/>
-            <p>
-            </p>
-        </div>
-    </div>
-    <p>
-    </p>
-    <p>
-        <b>
-            Note:
-        </b>
-        Specify the values in fractures.
-    </p>
-    <p>
-    </p>
-</span>
+</div>
+<p>
+</p>
+<p>
+    <b>
+        Note:
+    </b>
+    Specify the values in fractures.
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    <b>
+        Musterl&#246;sung:
+    </b>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <b>
+        a)
+    </b>
+    \(A = \begin{bmatrix} 1 &amp; {@a@} &amp; 0 \\ {@a@}&amp; 1 &amp; {@a@} \\ 0 &amp; {@a@} &amp; 1 \\ \end{bmatrix} \)
+    <br/>
+</p>
+<p>
+    Mit Gauss:
+</p>
+<p>
+    <br/>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
+        \(\left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ {@a@} &amp; 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; {@a@} &amp; 1 &amp; 0 &amp; 0 &amp;1 \end{array}\right] \xrightarrow{II-{@a@}I} \left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; {@a1@} &amp; {@a@} &amp; {@a2@} &amp; 1 &amp; 0 \\ 0 &amp; {@a@} &amp; 1 &amp; 0 &amp; 0 &amp;1 \end{array}\right] \xrightarrow{II/({@a1@}), III/({@a@})}\)
+    </p>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        \(\left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; {@a3@} &amp; {@a4@} &amp; {@a10@} &amp; 0 \\ 0 &amp; 1 &amp; {@a5@} &amp; 0 &amp; 0 &amp; {@a5@} \end{array}\right] \xrightarrow{III-II} \left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; {@a3@} &amp; {@a4@} &amp; {@a10@} &amp; 0 \\ 0 &amp; 0 &amp; {@a6@} &amp; {@a3@} &amp; {@a4@} &amp; {@a5@} \end{array}\right] \xrightarrow{III \cdot ({@a11@})}\)
+    </p>
+    <p>
+        \(\left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; {@a3@} &amp; {@a4@} &amp; {@a10@} &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; {@a7@} &amp; {@a8@} &amp; {@a9@} \end{array}\right]\xrightarrow{II - ({@a3@} \cdot III)} \left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; {@a12@} &amp; {@a13@} &amp; {@a14@} \\ 0 &amp; 0 &amp; 1 &amp; {@a7@} &amp; {@a8@} &amp; {@a9@} \end{array}\right] \xrightarrow{I- {@a@}II}\)
+    </p>
+    <p>
+        \(\left[ \begin{array}{ccc|ccc} 1 &amp; 0 &amp; 0 &amp; {@a15@} &amp; {@a16@} &amp; {@a17@} \\ 0 &amp; 1 &amp; 0 &amp; {@a12@} &amp; {@a13@} &amp; {@a14@} \\ 0 &amp; 0 &amp; 1 &amp; {@a7@} &amp; {@a8@} &amp; {@a9@} \end{array}\right]\)
+    </p>
+    <p>
+        <br/>
+    </p>
+</div>
+<span style="">
+    Das hei&#223;t:
+</span>
+<p>
+    <span style="">
+        \( A^{-1}=\left[ \begin{array}{ccc} {@a15@} &amp; {@a16@} &amp; {@a17@} \\ {@a12@} &amp; {@a13@} &amp; {@a14@} \\ {@a7@} &amp; {@a8@} &amp; {@a9@} \end{array}\right]\)
+    </span>
+</p>
+<p>
+    <span style="">
+        <br/>
+    </span>
+</p>
+<p>
+    <span style="">
+        <br/>
+    </span>
+    <span style="">
         <b>
-            Musterl&#246;sung:
+            b)
         </b>
-    </p>
-    <p>
+        \(B = \begin{bmatrix} {@b1@} &amp; - {@b2@} &amp; 1 \\ 0&amp; {@b2@}&amp;-1\\ 0 &amp; -1 &amp; 1 \\ \end{bmatrix} \)
         <br/>
+    </span>
+</p>
+<p>
+    Mit Gauss:
+</p>
+<p>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        \(\left[ \begin{array}{ccc|ccc} {@b1@} &amp; - {@b2@} &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\ 0&amp; {@b2@}&amp;-1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; -1 &amp; 1 &amp; 0 &amp; 0 &amp;1 \end{array}\right] \xrightarrow{I+II} \left[ \begin{array}{ccc|ccc} {@b1@} &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 \\ 0&amp; {@b2@}&amp;-1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; -1 &amp; 1 &amp; 0 &amp; 0 &amp;1 \end{array}\right] \xrightarrow{{@b@}I, III+{@b3@}II}\)
     </p>
     <p>
-        <b>
-            a)
-        </b>
-        \(A = \begin{bmatrix} 1 &amp; {@a@} &amp; 0 \\ {@a@}&amp; 1 &amp; {@a@} \\ 0 &amp; {@a@} &amp; 1 \\ \end{bmatrix} \)
-        <br/>
+        \(\left[ \begin{array}{ccc|ccc} 1 &amp; 0 &amp; 0 &amp; {@b@} &amp; {@b@} &amp; 0 \\ 0&amp; {@b2@} &amp; -1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; {@b4@} &amp; 0 &amp; {@b3@} &amp;1 \end{array}\right] \xrightarrow{{@b3@}II, {@b7@}III} \left[ \begin{array}{ccc|ccc} 1 &amp; 0 &amp; 0 &amp; {@b@} &amp; {@b@} &amp; 0 \\ 0&amp; 1 &amp; {@b5@} &amp; 0 &amp; {@b3@} &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; {@b6@} &amp; {@b7@} \end{array}\right] \xrightarrow{II+{@b3@}III}\)
     </p>
     <p>
-        Mit Gauss:
+        \(\left[ \begin{array}{ccc|ccc} 1 &amp; 0 &amp; 0 &amp; {@b@} &amp; {@b@} &amp; 0 \\ 0&amp; 1 &amp; 0 &amp; 0 &amp; {@b8@} &amp; {@b9@} \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; {@b6@} &amp; {@b7@} \end{array}\right]\)
     </p>
-    <p>
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \(\left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ {@a@} &amp; 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; {@a@} &amp; 1 &amp; 0 &amp; 0 &amp;1 \end{array}\right] \xrightarrow{II-{@a@}I} \left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; {@a1@} &amp; {@a@} &amp; {@a2@} &amp; 1 &amp; 0 \\ 0 &amp; {@a@} &amp; 1 &amp; 0 &amp; 0 &amp;1 \end{array}\right] \xrightarrow{II/({@a1@}), III/({@a@})}\)
-        </p>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \(\left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; {@a3@} &amp; {@a4@} &amp; {@a10@} &amp; 0 \\ 0 &amp; 1 &amp; {@a5@} &amp; 0 &amp; 0 &amp; {@a5@} \end{array}\right] \xrightarrow{III-II} \left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; {@a3@} &amp; {@a4@} &amp; {@a10@} &amp; 0 \\ 0 &amp; 0 &amp; {@a6@} &amp; {@a3@} &amp; {@a4@} &amp; {@a5@} \end{array}\right] \xrightarrow{III \cdot ({@a11@})}\)
-        </p>
-        <p>
-            \(\left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; {@a3@} &amp; {@a4@} &amp; {@a10@} &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; {@a7@} &amp; {@a8@} &amp; {@a9@} \end{array}\right]\xrightarrow{II - ({@a3@} \cdot III)} \left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; {@a12@} &amp; {@a13@} &amp; {@a14@} \\ 0 &amp; 0 &amp; 1 &amp; {@a7@} &amp; {@a8@} &amp; {@a9@} \end{array}\right] \xrightarrow{I- {@a@}II}\)
-        </p>
-        <p>
-            \(\left[ \begin{array}{ccc|ccc} 1 &amp; 0 &amp; 0 &amp; {@a15@} &amp; {@a16@} &amp; {@a17@} \\ 0 &amp; 1 &amp; 0 &amp; {@a12@} &amp; {@a13@} &amp; {@a14@} \\ 0 &amp; 0 &amp; 1 &amp; {@a7@} &amp; {@a8@} &amp; {@a9@} \end{array}\right]\)
-        </p>
-        <p>
-            <br/>
-        </p>
-    </div>
+</div>
+<span style="">
+    <br/>
+</span>
+<p>
+</p>
+<p>
     <span style="">
         Das hei&#223;t:
     </span>
+</p>
+<p>
+    <span style="">
+        \(B^{-1}=\left[ \begin{array}{ccc} {@b@} &amp; {@b@} &amp; 0 \\ 0 &amp; {@b8@} &amp; {@b9@} \\ 0 &amp; {@b6@} &amp; {@b7@} \end{array}\right]\)
+    </span>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <b>
+        Sample solution:
+    </b>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <b>
+        (a)
+    </b>
+    \(A = \begin{bmatrix} 1 &amp; {@a@} &amp; 0 \\ {@a@}&amp; 1 &amp; {@a@} \\ 0 &amp; {@a@} &amp; 1 \\ \end{bmatrix} \)
+    <br/>
+</p>
+<p>
+    With Gauss:
+</p>
+<p>
+    <br/>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
-        <span style="">
-            \( A^{-1}=\left[ \begin{array}{ccc} {@a15@} &amp; {@a16@} &amp; {@a17@} \\ {@a12@} &amp; {@a13@} &amp; {@a14@} \\ {@a7@} &amp; {@a8@} &amp; {@a9@} \end{array}\right]\)
-        </span>
+        \(\left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ {@a@} &amp; 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; {@a@} &amp; 1 &amp; 0 &amp; 0 &amp;1 \end{array}\right] \xrightarrow{II-{@a@}I} \left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; {@a1@} &amp; {@a@} &amp; {@a2@} &amp; 1 &amp; 0 \\ 0 &amp; {@a@} &amp; 1 &amp; 0 &amp; 0 &amp;1 \end{array}\right] \xrightarrow{II/({@a1@}), III/({@a@})}\)
+    </p>
+</div>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        \(\left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; {@a3@} &amp; {@a4@} &amp; {@a10@} &amp; 0 \\ 0 &amp; 1 &amp; {@a5@} &amp; 0 &amp; 0 &amp; {@a5@} \end{array}\right] \xrightarrow{III-II} \left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; {@a3@} &amp; {@a4@} &amp; {@a10@} &amp; 0 \\ 0 &amp; 0 &amp; {@a6@} &amp; {@a3@} &amp; {@a4@} &amp; {@a5@} \end{array}\right] \xrightarrow{III \cdot ({@a11@})}\)
     </p>
     <p>
-        <span style="">
-            <br/>
-        </span>
+        \(\left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; {@a3@} &amp; {@a4@} &amp; {@a10@} &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; {@a7@} &amp; {@a8@} &amp; {@a9@} \end{array}\right]\xrightarrow{II - ({@a3@} \cdot III)} \left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; {@a12@} &amp; {@a13@} &amp; {@a14@} \\ 0 &amp; 0 &amp; 1 &amp; {@a7@} &amp; {@a8@} &amp; {@a9@} \end{array}\right] \xrightarrow{I- {@a@}II}\)
     </p>
     <p>
-        <span style="">
-            <br/>
-        </span>
-        <span style="">
-            <b>
-                b)
-            </b>
-            \(B = \begin{bmatrix} {@b1@} &amp; - {@b2@} &amp; 1 \\ 0&amp; {@b2@}&amp;-1\\ 0 &amp; -1 &amp; 1 \\ \end{bmatrix} \)
-            <br/>
-        </span>
+        \(\left[ \begin{array}{ccc|ccc} 1 &amp; 0 &amp; 0 &amp; {@a15@} &amp; {@a16@} &amp; {@a17@} \\ 0 &amp; 1 &amp; 0 &amp; {@a12@} &amp; {@a13@} &amp; {@a14@} \\ 0 &amp; 0 &amp; 1 &amp; {@a7@} &amp; {@a8@} &amp; {@a9@} \end{array}\right]\)
     </p>
     <p>
-        Mit Gauss:
+        <br/>
     </p>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \(\left[ \begin{array}{ccc|ccc} {@b1@} &amp; - {@b2@} &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\ 0&amp; {@b2@}&amp;-1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; -1 &amp; 1 &amp; 0 &amp; 0 &amp;1 \end{array}\right] \xrightarrow{I+II} \left[ \begin{array}{ccc|ccc} {@b1@} &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 \\ 0&amp; {@b2@}&amp;-1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; -1 &amp; 1 &amp; 0 &amp; 0 &amp;1 \end{array}\right] \xrightarrow{{@b@}I, III+{@b3@}II}\)
-        </p>
-        <p>
-            \(\left[ \begin{array}{ccc|ccc} 1 &amp; 0 &amp; 0 &amp; {@b@} &amp; {@b@} &amp; 0 \\ 0&amp; {@b2@} &amp; -1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; {@b4@} &amp; 0 &amp; {@b3@} &amp;1 \end{array}\right] \xrightarrow{{@b3@}II, {@b7@}III} \left[ \begin{array}{ccc|ccc} 1 &amp; 0 &amp; 0 &amp; {@b@} &amp; {@b@} &amp; 0 \\ 0&amp; 1 &amp; {@b5@} &amp; 0 &amp; {@b3@} &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; {@b6@} &amp; {@b7@} \end{array}\right] \xrightarrow{II+{@b3@}III}\)
-        </p>
-        <p>
-            \(\left[ \begin{array}{ccc|ccc} 1 &amp; 0 &amp; 0 &amp; {@b@} &amp; {@b@} &amp; 0 \\ 0&amp; 1 &amp; 0 &amp; 0 &amp; {@b8@} &amp; {@b9@} \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; {@b6@} &amp; {@b7@} \end{array}\right]\)
-        </p>
-    </div>
+</div>
+<span style="">
+    That means:
+</span>
+<p>
+    <span style="">
+        \( A^{-1}=\left[ \begin{array}{ccc} {@a15@} &amp; {@a16@} &amp; {@a17@} \\ {@a12@} &amp; {@a13@} &amp; {@a14@} \\ {@a7@} &amp; {@a8@} &amp; {@a9@} \end{array}\right]\)
+    </span>
+</p>
+<p>
     <span style="">
         <br/>
     </span>
+</p>
+<p>
+    <span style="">
+        <br/>
+    </span>
+    <span style="">
+        <b>
+            (b)
+        </b>
+        \(B = \begin{bmatrix} {@b1@} &amp; - {@b2@} &amp; 1 \\ 0&amp; {@b2@}&amp;-1\\ 0 &amp; -1 &amp; 1 \\ \end{bmatrix} \)
+        <br/>
+    </span>
+</p>
+<p>
+    With Gauss:
+</p>
+<p>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
+        \(\left[ \begin{array}{ccc|ccc} {@b1@} &amp; - {@b2@} &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\ 0&amp; {@b2@}&amp;-1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; -1 &amp; 1 &amp; 0 &amp; 0 &amp;1 \end{array}\right] \xrightarrow{I+II} \left[ \begin{array}{ccc|ccc} {@b1@} &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 \\ 0&amp; {@b2@}&amp;-1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; -1 &amp; 1 &amp; 0 &amp; 0 &amp;1 \end{array}\right] \xrightarrow{{@b@}I, III+{@b3@}II}\)
     </p>
     <p>
-        <span style="">
-            Das hei&#223;t:
-        </span>
+        \(\left[ \begin{array}{ccc|ccc} 1 &amp; 0 &amp; 0 &amp; {@b@} &amp; {@b@} &amp; 0 \\ 0&amp; {@b2@} &amp; -1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; {@b4@} &amp; 0 &amp; {@b3@} &amp;1 \end{array}\right] \xrightarrow{{@b3@}II, {@b7@}III} \left[ \begin{array}{ccc|ccc} 1 &amp; 0 &amp; 0 &amp; {@b@} &amp; {@b@} &amp; 0 \\ 0&amp; 1 &amp; {@b5@} &amp; 0 &amp; {@b3@} &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; {@b6@} &amp; {@b7@} \end{array}\right] \xrightarrow{II+{@b3@}III}\)
     </p>
     <p>
-        <span style="">
-            \(B^{-1}=\left[ \begin{array}{ccc} {@b@} &amp; {@b@} &amp; 0 \\ 0 &amp; {@b8@} &amp; {@b9@} \\ 0 &amp; {@b6@} &amp; {@b7@} \end{array}\right]\)
-        </span>
+        \(\left[ \begin{array}{ccc|ccc} 1 &amp; 0 &amp; 0 &amp; {@b@} &amp; {@b@} &amp; 0 \\ 0&amp; 1 &amp; 0 &amp; 0 &amp; {@b8@} &amp; {@b9@} \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; {@b6@} &amp; {@b7@} \end{array}\right]\)
     </p>
+</div>
+<span style="">
+    <br/>
 </span>
-<span class="multilang" lang="en">
-    <p>
-        <b>
-            Sample solution:
-        </b>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <b>
-            (a)
-        </b>
-        \(A = \begin{bmatrix} 1 &amp; {@a@} &amp; 0 \\ {@a@}&amp; 1 &amp; {@a@} \\ 0 &amp; {@a@} &amp; 1 \\ \end{bmatrix} \)
-        <br/>
-    </p>
-    <p>
-        With Gauss:
-    </p>
-    <p>
-        <br/>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \(\left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ {@a@} &amp; 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; {@a@} &amp; 1 &amp; 0 &amp; 0 &amp;1 \end{array}\right] \xrightarrow{II-{@a@}I} \left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; {@a1@} &amp; {@a@} &amp; {@a2@} &amp; 1 &amp; 0 \\ 0 &amp; {@a@} &amp; 1 &amp; 0 &amp; 0 &amp;1 \end{array}\right] \xrightarrow{II/({@a1@}), III/({@a@})}\)
-        </p>
-    </div>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \(\left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; {@a3@} &amp; {@a4@} &amp; {@a10@} &amp; 0 \\ 0 &amp; 1 &amp; {@a5@} &amp; 0 &amp; 0 &amp; {@a5@} \end{array}\right] \xrightarrow{III-II} \left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; {@a3@} &amp; {@a4@} &amp; {@a10@} &amp; 0 \\ 0 &amp; 0 &amp; {@a6@} &amp; {@a3@} &amp; {@a4@} &amp; {@a5@} \end{array}\right] \xrightarrow{III \cdot ({@a11@})}\)
-        </p>
-        <p>
-            \(\left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; {@a3@} &amp; {@a4@} &amp; {@a10@} &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; {@a7@} &amp; {@a8@} &amp; {@a9@} \end{array}\right]\xrightarrow{II - ({@a3@} \cdot III)} \left[ \begin{array}{ccc|ccc} 1 &amp; {@a@} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; {@a12@} &amp; {@a13@} &amp; {@a14@} \\ 0 &amp; 0 &amp; 1 &amp; {@a7@} &amp; {@a8@} &amp; {@a9@} \end{array}\right] \xrightarrow{I- {@a@}II}\)
-        </p>
-        <p>
-            \(\left[ \begin{array}{ccc|ccc} 1 &amp; 0 &amp; 0 &amp; {@a15@} &amp; {@a16@} &amp; {@a17@} \\ 0 &amp; 1 &amp; 0 &amp; {@a12@} &amp; {@a13@} &amp; {@a14@} \\ 0 &amp; 0 &amp; 1 &amp; {@a7@} &amp; {@a8@} &amp; {@a9@} \end{array}\right]\)
-        </p>
-        <p>
-            <br/>
-        </p>
-    </div>
+<p>
+</p>
+<p>
     <span style="">
         That means:
     </span>
-    <p>
-        <span style="">
-            \( A^{-1}=\left[ \begin{array}{ccc} {@a15@} &amp; {@a16@} &amp; {@a17@} \\ {@a12@} &amp; {@a13@} &amp; {@a14@} \\ {@a7@} &amp; {@a8@} &amp; {@a9@} \end{array}\right]\)
-        </span>
-    </p>
-    <p>
-        <span style="">
-            <br/>
-        </span>
-    </p>
-    <p>
-        <span style="">
-            <br/>
-        </span>
-        <span style="">
-            <b>
-                (b)
-            </b>
-            \(B = \begin{bmatrix} {@b1@} &amp; - {@b2@} &amp; 1 \\ 0&amp; {@b2@}&amp;-1\\ 0 &amp; -1 &amp; 1 \\ \end{bmatrix} \)
-            <br/>
-        </span>
-    </p>
-    <p>
-        With Gauss:
-    </p>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \(\left[ \begin{array}{ccc|ccc} {@b1@} &amp; - {@b2@} &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\ 0&amp; {@b2@}&amp;-1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; -1 &amp; 1 &amp; 0 &amp; 0 &amp;1 \end{array}\right] \xrightarrow{I+II} \left[ \begin{array}{ccc|ccc} {@b1@} &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 \\ 0&amp; {@b2@}&amp;-1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; -1 &amp; 1 &amp; 0 &amp; 0 &amp;1 \end{array}\right] \xrightarrow{{@b@}I, III+{@b3@}II}\)
-        </p>
-        <p>
-            \(\left[ \begin{array}{ccc|ccc} 1 &amp; 0 &amp; 0 &amp; {@b@} &amp; {@b@} &amp; 0 \\ 0&amp; {@b2@} &amp; -1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; {@b4@} &amp; 0 &amp; {@b3@} &amp;1 \end{array}\right] \xrightarrow{{@b3@}II, {@b7@}III} \left[ \begin{array}{ccc|ccc} 1 &amp; 0 &amp; 0 &amp; {@b@} &amp; {@b@} &amp; 0 \\ 0&amp; 1 &amp; {@b5@} &amp; 0 &amp; {@b3@} &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; {@b6@} &amp; {@b7@} \end{array}\right] \xrightarrow{II+{@b3@}III}\)
-        </p>
-        <p>
-            \(\left[ \begin{array}{ccc|ccc} 1 &amp; 0 &amp; 0 &amp; {@b@} &amp; {@b@} &amp; 0 \\ 0&amp; 1 &amp; 0 &amp; 0 &amp; {@b8@} &amp; {@b9@} \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; {@b6@} &amp; {@b7@} \end{array}\right]\)
-        </p>
-    </div>
+</p>
+<p>
     <span style="">
-        <br/>
+        \(B^{-1}=\left[ \begin{array}{ccc} {@b@} &amp; {@b@} &amp; 0 \\ 0 &amp; {@b8@} &amp; {@b9@} \\ 0 &amp; {@b6@} &amp; {@b7@} \end{array}\right]\)
     </span>
-    <p>
-    </p>
-    <p>
-        <span style="">
-            That means:
-        </span>
-    </p>
-    <p>
-        <span style="">
-            \(B^{-1}=\left[ \begin{array}{ccc} {@b@} &amp; {@b@} &amp; 0 \\ 0 &amp; {@b8@} &amp; {@b9@} \\ 0 &amp; {@b6@} &amp; {@b7@} \end{array}\right]\)
-        </span>
-    </p>
-</span>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -606,32 +604,17 @@ b9: b7*b3</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

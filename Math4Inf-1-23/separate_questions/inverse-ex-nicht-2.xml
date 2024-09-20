@@ -6,90 +6,86 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Welche der folgenden Matrizen ist invers zu \(A\)?
-        <br/>
-    </p>
-    $$A=\begin{pmatrix} 1 &amp; 0 &amp; 0\\ 0 &amp; 2 &amp; 2\\ 1 &amp; 0 &amp; 1\end{pmatrix}$$
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Which of the following matrices is inverse to \(A\)?
-        <br/>
-    </p>
-    $A=\begin{pmatrix} 1 &amp; 0 &amp; 0\\ 0 &amp; 2 &amp; 2\\ 1 &amp; 0 &amp; 1\end{pmatrix}$$
-</span>
+[[lang code="de"]]
+<p>
+    Welche der folgenden Matrizen ist invers zu \(A\)?
+    <br/>
+</p>
+$$A=\begin{pmatrix} 1 &amp; 0 &amp; 0\\ 0 &amp; 2 &amp; 2\\ 1 &amp; 0 &amp; 1\end{pmatrix}$$[[/lang]][[lang code="en"]]
+<p>
+    Which of the following matrices is inverse to \(A\)?
+    <br/>
+</p>
+$A=\begin{pmatrix} 1 &amp; 0 &amp; 0\\ 0 &amp; 2 &amp; 2\\ 1 &amp; 0 &amp; 1\end{pmatrix}$$[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        L&#246;sung
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;2&amp;2&amp;0&amp;1&amp;0\\1&amp;0&amp;1&amp;0&amp;0&amp;1\end{array}\right)\xrightarrow{III-I}\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;2&amp;2&amp;0&amp;1&amp;0\\0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right)\)
-    </p>
-    <p>
-        \(\xrightarrow{II:2}\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;1&amp;1&amp;0&amp;\frac{1}{2}&amp;0\\0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right)\xrightarrow{II-III}\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;1&amp;0&amp;1&amp;\frac{1}{2}&amp;-1\\0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right)\)
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(A^{-1}=\left(\begin{matrix} 1 &amp;0 &amp; 0 \\1 &amp; \frac{1}{2} &amp; -1\\-1 &amp;0 &amp;1 \end{matrix}\right)\)
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        Alternativ \(A \cdot A^{-1}=A^{-1} \cdot A=E\) &#252;berpr&#252;fen!
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <h4>
-        Solution
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;2&amp;2&amp;0&amp;1&amp;0\\1&amp;0&amp;1&amp;0&amp;0&amp;1\end{array}\right)\xrightarrow{III-I}\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;2&amp;2&amp;0&amp;1&amp;0\\0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right)\)
-    </p>
-    <p>
-        \(\xrightarrow{II:2}\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;1&amp;1&amp;0&amp;\frac{1}{2}&amp;0\\0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right)\xrightarrow{II-III}\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;1&amp;0&amp;1&amp;\frac{1}{2}&amp;-1\\0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right)\)
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(A^{-1}=\left(\begin{matrix} 1 &amp;0 &amp; 0 \\1 &amp; \frac{1}{2} &amp; -1\\-1 &amp;0 &amp;1 \end{matrix}\right)\)
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        Alternative \(A \cdot A^{-1}=A^{-1} \cdot A=E\) Check!
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<h4>
+    L&#246;sung
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    \(\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;2&amp;2&amp;0&amp;1&amp;0\\1&amp;0&amp;1&amp;0&amp;0&amp;1\end{array}\right)\xrightarrow{III-I}\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;2&amp;2&amp;0&amp;1&amp;0\\0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right)\)
+</p>
+<p>
+    \(\xrightarrow{II:2}\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;1&amp;1&amp;0&amp;\frac{1}{2}&amp;0\\0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right)\xrightarrow{II-III}\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;1&amp;0&amp;1&amp;\frac{1}{2}&amp;-1\\0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right)\)
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    \(A^{-1}=\left(\begin{matrix} 1 &amp;0 &amp; 0 \\1 &amp; \frac{1}{2} &amp; -1\\-1 &amp;0 &amp;1 \end{matrix}\right)\)
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    Alternativ \(A \cdot A^{-1}=A^{-1} \cdot A=E\) &#252;berpr&#252;fen!
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<h4>
+    Solution
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    \(\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;2&amp;2&amp;0&amp;1&amp;0\\1&amp;0&amp;1&amp;0&amp;0&amp;1\end{array}\right)\xrightarrow{III-I}\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;2&amp;2&amp;0&amp;1&amp;0\\0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right)\)
+</p>
+<p>
+    \(\xrightarrow{II:2}\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;1&amp;1&amp;0&amp;\frac{1}{2}&amp;0\\0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right)\xrightarrow{II-III}\left(\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;0&amp;0\\0&amp;1&amp;0&amp;1&amp;\frac{1}{2}&amp;-1\\0&amp;0&amp;1&amp;-1&amp;0&amp;1\end{array}\right)\)
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    \(A^{-1}=\left(\begin{matrix} 1 &amp;0 &amp; 0 \\1 &amp; \frac{1}{2} &amp; -1\\-1 &amp;0 &amp;1 \end{matrix}\right)\)
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    Alternative \(A \cdot A^{-1}=A^{-1} \cdot A=E\) Check!
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -111,16 +107,15 @@
         </incorrectfeedback>
         <answer fraction="100" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(\begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 1 &amp; \frac{1}{2} &amp; -1 \\ -1 &amp; 0 &amp; 1 \end{pmatrix}\)
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(\begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 1 &amp; \frac{1}{2} &amp; -1 \\ -1 &amp; 0 &amp; 1 \end{pmatrix}\)
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(\begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 1 &amp; \frac{1}{2} &amp; -1 \\ -1 &amp; 0 &amp; 1 \end{pmatrix}\)
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(\begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 1 &amp; \frac{1}{2} &amp; -1 \\ -1 &amp; 0 &amp; 1 \end{pmatrix}\)
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text/>
@@ -128,16 +123,15 @@
         </answer>
         <answer fraction="0" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(\begin{pmatrix} 1 &amp; 0 &amp; 0\\ 2 &amp; 1 &amp; -2\\ 1 &amp; 0 &amp; -1\end{pmatrix}\)
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(\begin{pmatrix} 1 &amp; 0 &amp; 0\\ 2 &amp; 1 &amp; -2\\ 1 &amp; 0 &amp; -1\end{pmatrix}\)
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(\begin{pmatrix} 1 &amp; 0 &amp; 0\\ 2 &amp; 1 &amp; -2\\ 1 &amp; 0 &amp; -1\end{pmatrix}\)
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(\begin{pmatrix} 1 &amp; 0 &amp; 0\\ 2 &amp; 1 &amp; -2\\ 1 &amp; 0 &amp; -1\end{pmatrix}\)
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text/>
@@ -145,16 +139,15 @@
         </answer>
         <answer fraction="0" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        \(\begin{pmatrix} 1 &amp; 0&amp; 0\\ 0 &amp; 1 &amp; 0\\ 0 &amp; 0 &amp; 1 \end{pmatrix}\)
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        \(\begin{pmatrix} 1 &amp; 0&amp; 0\\ 0 &amp; 1 &amp; 0\\ 0 &amp; 0 &amp; 1 \end{pmatrix}\)
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    \(\begin{pmatrix} 1 &amp; 0&amp; 0\\ 0 &amp; 1 &amp; 0\\ 0 &amp; 0 &amp; 1 \end{pmatrix}\)
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    \(\begin{pmatrix} 1 &amp; 0&amp; 0\\ 0 &amp; 1 &amp; 0\\ 0 &amp; 0 &amp; 1 \end{pmatrix}\)
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text/>
@@ -162,12 +155,7 @@
         </answer>
         <answer fraction="0" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    \(\begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; \frac{1}{2} &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix}\)
-</span>
-<span class="multilang" lang="en">
-    \(\begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; \frac{1}{2} &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix}\)
-</span>
+[[lang code="de"]]\(\begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; \frac{1}{2} &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix}\)[[/lang]][[lang code="en"]]\(\begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; \frac{1}{2} &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix}\)[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text/>

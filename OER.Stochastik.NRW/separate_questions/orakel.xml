@@ -1,0 +1,2785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Orakel</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<style>
+    .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #a9f5bc;
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #e0f8e6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #dcb25e;
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #e7d2a7;
+                }
+
+    
+    
+    
+    .buttontipp {
+                                border: 1px solid black;
+                                background-color: #c9d3f6;
+                }
+
+    
+    
+    
+    .buttontipp:hover {
+                                background-color: #dbe1f9;
+                }
+
+    
+    
+    
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                                margin: 5px;
+                }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: .5em .5em 0;
+                }
+
+    
+    
+    
+    .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -.5em -.5em 0;
+                                padding: .5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] {
+                                padding: .5em;
+                }
+</style>
+<div id="summarybox">
+    <details>
+        <summary>
+            Inhalt und Umfang dieser Aufgabe
+        </summary>
+        <p>
+            In dieser Aufgabe lernen Sie in Aufgabenteilen (a)-(c) anhand dreier Beispiele, wie Sie die kombinatorischen Grundformeln zur L&#246;sung kombinatorischer Fragestellungen nutzen k&#246;nnen.
+        </p>
+    </details>
+    <hr/>
+</div>
+<p>
+</p>
+<p>
+</p>
+<div id="aufgabe" style="display:box;">
+    <div title="Page 9">
+        <div>
+            <div>
+                <p>
+                    <b>
+                        Die Astragalorakel
+                    </b>
+                </p>
+                <p>
+                    Schon in der Antike wurde das W&#252;rfelgl&#252;ck f&#252;r allerlei Vorhersagen genutzt. Gew&#252;rfelt wurde dabei mit sogenannten Astragalen (den Hinterfu&#223;knochen von Schaf oder Ziege), die auf Grund ihrer Form auf vier verschiedenen Seiten zum Liegen
+                                                                                kommen konnten. Pausanias (110-180) berichtet von einem Astragalorakel:
+                </p>
+                <p>
+                    <span style="font-size: 0.9375rem;">
+                        <i>
+                            &#8222;Geht man von Burna zum Meer hinab, so ist da ein nicht gro&#223;er Herakles in einer H&#246;hle. [. . . ] Man kann dort mit einer Tafel und Astragali Orakelspr&#252;che erhalten. Wer den Gott befragen will, betet vor der Statue und nimmt dann 4 von den reichlich vor dem Herakles liegenden Astragali und l&#228;sst sie auf einen Tisch fallen. Zu jeder Konfiguration dieser 4 Astragali ist auf einer Tafel ein passender Wortlaut als Erkl&#228;rung angegeben.&#8220;
+                        </i>
+                    </span>
+                    <br/>
+                </p>
+                <p>
+                    Hinweis: Bei einer Konfiguration spielt es nur eine Rolle, wieviele Astragali mit welcher Seite oben liegen.
+                    <br/>
+                </p>
+                <p>
+                    <b>
+                        (a)
+                    </b>
+                    <span style="font-size: 0.9375rem;">
+                        Wie viele Orakelspr&#252;che mussten von den Priestern erstellt werden, wenn zu jedem Ergebnis eine andere Prophezeiung geh&#246;rte?
+                    </span>
+                </p>
+                <p>
+                    <b>
+                        (b)
+                    </b>
+                    <span style="font-size: 0.9375rem;">
+                        Astragalorakel gab es nicht nur in Heiligt&#252;mern sondern auch auf &#246;ffentlichen Pl&#228;tzen. In Teremessos schm&#252;ckte eine Orakelliste f&#252;r 7 Astragali die Mauer des Stadttores. Wie viele Prophezeiungen enthielt sie?
+                    </span>
+                </p>
+                <p>
+                    <b>
+                        (c)
+                    </b>
+                    <span style="font-size: 0.9375rem;">
+                        Im Allgemeinen spielte die Reihenfolge der geworfenen Astragalausg&#228;nge keine Rolle. Wie viele Spr&#252;che w&#228;ren n&#246;tig gewesen, wenn verschiedene Abfolgen von W&#252;rfen zu verschiedenen Prophezeiungen f&#252;hren sollen in Teilaufgabe
+                        <b>
+                            (b)
+                        </b>
+                        ?
+                    </span>
+                </p>
+                Widmen wir uns zun&#228;chst Teilaufgabe
+                <b>
+                    (a)
+                </b>
+                . Wie viele Orakelspr&#252;che mussten von den Priestern erstellt werden, wenn zu jedem Ergebnis eine andere Prophezeiung geh&#246;rte?
+                <p>
+                    <span style="font-size: 0.9375rem;">
+                        [[/lang]][[lang code="en"]]
+                        <style>
+                            .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #a9f5bc;
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #e0f8e6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #dcb25e;
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #e7d2a7;
+                }
+
+    
+    
+    
+    .buttontipp {
+                                border: 1px solid black;
+                                background-color: #c9d3f6;
+                }
+
+    
+    
+    
+    .buttontipp:hover {
+                                background-color: #dbe1f9;
+                }
+
+    
+    
+    
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                                margin: 5px;
+                }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: .5em .5em 0;
+                }
+
+    
+    
+    
+    .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -.5em -.5em 0;
+                                padding: .5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] {
+                                padding: .5em;
+                }
+                        </style>
+                        <div id="summarybox">
+                            <details>
+                                <summary>
+                                    Content and scope of this task
+                                </summary>
+                                <p>
+                                    In this task, you will learn in Tasks (a)-(c) using three examples how to use the combinatorial basic formulas for solving combinatorial questions.
+                                </p>
+                            </details>
+                            <hr/>
+                        </div>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <div id="aufgabe" style="display:box;">
+                            <div title="Page 9">
+                                <div>
+                                    <div>
+                                        <p>
+                                            <b>
+                                                The Astragalorakel
+                                            </b>
+                                        </p>
+                                        <p>
+                                            In ancient times, the dice luck was used for all kinds of predictions. In this case, the so-called astragals (the rear foot bones of sheep or goats) were thrown on four different sides to lie on the basis of their shape.
+could come. Pausanias (110-180) reports on an astragaloracle:
+                                        </p>
+                                        <p>
+                                            <span style="font-size: 0.9375rem;">
+                                                <i>
+                                                    &#8220;If you go down from Burna to the sea, there is a not great Herakles in a cave. [. . ] You can get there with a table and Astragali oracles spells. Whoever wants to question the God, pray before the statue, and then take 4 of the Astragali lying abundantly in front of the Herakles and let them fall on a table. For each configuration of this 4 Astragali, a suitable wording is given on a board as a statement. &#8216;
+                                                </i>
+                                            </span>
+                                            <br/>
+                                        </p>
+                                        <p>
+                                            Note: In a configuration, it only plays a role in how many Astragali with which side is above.
+                                            <br/>
+                                        </p>
+                                        <p>
+                                            <b>
+                                                (a)
+                                            </b>
+                                            <span style="font-size: 0.9375rem;">
+                                                How many oracles' spells had to be created by the priests when a different prophecy belonged to each result?
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <b>
+                                                (b)
+                                            </b>
+                                            <span style="font-size: 0.9375rem;">
+                                                Astragalorakel was not only in sanctuaries but also in public places. In Teremessos, an oracle list for 7 Astragali decorated the wall of the city gate. How many prophecies did she contain?
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <b>
+                                                (c)
+                                            </b>
+                                            <span style="font-size: 0.9375rem;">
+                                                In general, the order of the thrown astragal outputs did not matter. How many sayings would have been necessary if different sequences of litters were to lead to different prophecies in division
+                                                <b>
+                                                    (b)
+                                                </b>
+                                                ?
+                                            </span>
+                                        </p>
+                                        Let's first take part
+                                        <b>
+                                            (a)
+                                        </b>
+                                        . How many oracles' spells had to be created by the priests when a different prophecy belonged to each result?
+                                        <p>
+                                            <span style="font-size: 0.9375rem;">
+                                                [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
+                                                <br/>
+                                            </span>
+                                        </p>
+                                        [[/lang]][[lang code="en"]]
+                                        <br/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </p>
+                [[/lang]][[feedback:prt1]][[lang code="de"]]
+            </div>
+        </div>
+    </div>
+    <br/>
+    <p>
+    </p>
+</div>
+<div id="zwischen1" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Urspr&#252;ngliche Fragestellung:
+                                </u>
+                                <div title="Page 9">
+                                    <div>
+                                        <div>
+                                            <p>
+                                                <b>
+                                                    Die Astragalorakel
+                                                </b>
+                                            </p>
+                                            <p>
+                                                Schon in der Antike wurde das W&#252;rfelgl&#252;ck f&#252;r allerlei Vorhersagen genutzt. Gew&#252;rfelt wurde dabei mit sogenannten Astragalen (den Hinterfu&#223;knochen von Schaf oder Ziege), die auf Grund ihrer Form auf vier verschiedenen Seiten zum Liegen kommen
+                                                                                konnten. Pausanias (110-180) berichtet von einem Astragalorakel:
+                                            </p>
+                                            <p>
+                                                <span style="font-size: 0.9375rem;">
+                                                    <i>
+                                                        &#8222;Geht man von Burna zum Meer hinab, so ist da ein nicht gro&#223;er Herakles in einer H&#246;hle. [. . . ] Man kann dort mit einer Tafel und Astragali Orakelspr&#252;che erhalten. Wer den Gott befragen will, betet vor der Statue und nimmt dann 4 von den reichlich vor dem Herakles liegenden Astragali und l&#228;sst sie auf einen Tisch fallen. Zu jeder Konfiguration dieser 4 Astragali ist auf einer Tafel ein passender Wortlaut als Erkl&#228;rung angegeben.&#8220;
+                                                    </i>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                Hinweis: Bei einer Konfiguration spielt es nur eine Rolle, wieviele Astragali mit welcher Seite oben liegen.
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (a)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Wie viele Orakelspr&#252;che mussten von den Priestern erstellt werden, wenn zu jedem Ergebnis eine andere Prophezeiung geh&#246;rte?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (b)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Astragalorakel gab es nicht nur in Heiligt&#252;mern sondern auch auf &#246;ffentlichen Pl&#228;tzen. In Teremessos schm&#252;ckte eine Orakelliste f&#252;r 7 Astragali die Mauer des Stadttores. Wie viele Prophezeiung enthielt sie?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (c)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Im Allgemeinen spielte die Reihenfolge der geworfenen Astragalausg&#228;nge keine Rolle. Wie viele Spr&#252;che w&#228;ren n&#246;tig gewesen, wenn verschiedene Abfolgen von W&#252;rfen zu verschiedenen Prophezeiungen f&#252;hren sollen in Teilaufgabe
+                                                    <b>
+                                                        (b)
+                                                    </b>
+                                                    ?
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </span>
+    <br/>
+    Widmen wir uns zun&#228;chst Teilaufgabe
+    <b>
+        (a)
+    </b>
+    . Wir ziehen hier offensichtlich mit Zur&#252;cklegen, da jedes der Astragali erneut auf allen vier Seiten landen kann. Au&#223;erdem ziehen wir ohne Beachtung der Reihenfolge, da es egal ist, in welcher Reihenfolge
+die Astragali fallen. Relevant ist nur, wie oft welche Seite oben ist. Die passende Formel die wir zur Berechnung der Anzahl der M&#246;glichkeiten brauchen ist daher: [[/lang]][[lang code="en"]]
+</div>
+<br/>
+<p>
+</p>
+<div id="zwischen1" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Original question:
+                                </u>
+                                <div title="Page 9">
+                                    <div>
+                                        <div>
+                                            <p>
+                                                <b>
+                                                    The Astragalorakel
+                                                </b>
+                                            </p>
+                                            <p>
+                                                In ancient times, the dice luck was used for all kinds of predictions. In this case, it was cubed with so-called astragals (the rear foot bones of sheep or goats), which come to lie on four different sides due to their shape.
+. Pausanias (110-180) reports on an astragaloracle:
+                                            </p>
+                                            <p>
+                                                <span style="font-size: 0.9375rem;">
+                                                    <i>
+                                                        &#8220;If you go down from Burna to the sea, there is a not great Herakles in a cave. [. . ] You can get there with a table and Astragali oracles spells. Whoever wants to question the God, pray before the statue, and then take 4 of the Astragali lying abundantly in front of the Herakles and let them fall on a table. For each configuration of this 4 Astragali, a suitable wording is given on a board as a statement. &#8216;
+                                                    </i>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                Note: In a configuration, it only plays a role in how many Astragali with which side is above.
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (a)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    How many oracles' spells had to be created by the priests when a different prophecy belonged to each result?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (b)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Astragalorakel was not only in sanctuaries but also in public places. In Teremessos, an oracle list for 7 Astragali decorated the wall of the city gate. How many prophecy did she contain?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (c)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    In general, the order of the thrown astragal outputs did not matter. How many sayings would have been necessary if different sequences of litters were to lead to different prophecies in division
+                                                    <b>
+                                                        (b)
+                                                    </b>
+                                                    ?
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </span>
+    <br/>
+    Let's first take part
+    <b>
+        (a)
+    </b>
+    . We obviously move back here, as each of the Astragali can land again on all four sides. In addition, we draw without observing the order, as it does not matter in which order
+the Astragali fall. Relevant is just how often which side is above. The appropriate formula we need to calculate the number of possibilities is therefore: [[/lang]][[input:zwischen1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:zwischen1]][[lang code="de"]]
+    <p>
+    </p>
+    <br/>
+    [[/lang]][[lang code="en"]]
+    <p>
+    </p>
+    <br/>
+    [[/lang]][[feedback:zwischen1]][[lang code="de"]]
+</div>
+<div id="zwischen2" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Urspr&#252;ngliche Fragestellung:
+                                </u>
+                                <div title="Page 9">
+                                    <div>
+                                        <div>
+                                            <p>
+                                                <b>
+                                                    Die Astragalorakel
+                                                </b>
+                                            </p>
+                                            <p>
+                                                Schon in der Antike wurde das W&#252;rfelgl&#252;ck f&#252;r allerlei Vorhersagen genutzt. Gew&#252;rfelt wurde dabei mit sogenannten Astragalen (den Hinterfu&#223;knochen von Schaf oder Ziege), die auf Grund ihrer Form auf vier verschiedenen Seiten zum Liegen kommen
+                                                                                konnten. Pausanias (110-180) berichtet von einem Astragalorakel:
+                                            </p>
+                                            <p>
+                                                <span style="font-size: 0.9375rem;">
+                                                    <i>
+                                                        &#8222;Geht man von Burna zum Meer hinab, so ist da ein nicht gro&#223;er Herakles in einer H&#246;hle. [. . . ] Man kann dort mit einer Tafel und Astragali Orakelspr&#252;che erhalten. Wer den Gott befragen will, betet vor der Statue und nimmt dann 4 von den reichlich vor dem Herakles liegenden Astragali und l&#228;sst sie auf einen Tisch fallen. Zu jeder Konfiguration dieser 4 Astragali ist auf einer Tafel ein passender Wortlaut als Erkl&#228;rung angegeben.&#8220;
+                                                    </i>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                Hinweis: Bei einer Konfiguration spielt es nur eine Rolle, wieviele Astragali mit welcher Seite oben liegen.
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (a)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Wie viele Orakelspr&#252;che mussten von den Priestern erstellt werden, wenn zu jedem Ergebnis eine andere Prophezeiung geh&#246;rte?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (b)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Astragalorakel gab es nicht nur in Heiligt&#252;mern sondern auch auf &#246;ffentlichen Pl&#228;tzen. In Teremessos schm&#252;ckte eine Orakelliste f&#252;r 7 Astragali die Mauer des Stadttores. Wie viele Prophezeiung enthielt sie?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (c)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Im Allgemeinen spielte die Reihenfolge der geworfenen Astragalausg&#228;nge keine Rolle. Wie viele Spr&#252;che w&#228;ren n&#246;tig gewesen, wenn verschiedene Abfolgen von W&#252;rfen zu verschiedenen Prophezeiungen f&#252;hren sollen in Teilaufgabe
+                                                    <b>
+                                                        (b)
+                                                    </b>
+                                                    ?
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </span>
+    <br/>
+    Wir m&#252;ssen also die Grundfigur \({n+k-1\choose k}\) verwenden. Nun sollten Sie die Anzahl durch einsetzen der Werte von \(n\) und \(k\) - die Sie aus der Aufgabenstellung entnehmen k&#246;nnen - berechnen k&#246;nnen.
+    <br/>
+    Es ergeben sich insgesamt [[/lang]][[lang code="en"]]
+</div>
+<div id="zwischen2" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Original question:
+                                </u>
+                                <div title="Page 9">
+                                    <div>
+                                        <div>
+                                            <p>
+                                                <b>
+                                                    The Astragalorakel
+                                                </b>
+                                            </p>
+                                            <p>
+                                                In ancient times, the dice luck was used for all kinds of predictions. In this case, it was cubed with so-called astragals (the rear foot bones of sheep or goats), which come to lie on four different sides due to their shape.
+. Pausanias (110-180) reports on an astragaloracle:
+                                            </p>
+                                            <p>
+                                                <span style="font-size: 0.9375rem;">
+                                                    <i>
+                                                        &#8220;If you go down from Burna to the sea, there is a not great Herakles in a cave. [. . ] You can get there with a table and Astragali oracles spells. Whoever wants to question the God, pray before the statue, and then take 4 of the Astragali lying abundantly in front of the Herakles and let them fall on a table. For each configuration of this 4 Astragali, a suitable wording is given on a board as a statement. &#8216;
+                                                    </i>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                Note: In a configuration, it only plays a role in how many Astragali with which side is above.
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (a)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    How many oracles' spells had to be created by the priests when a different prophecy belonged to each result?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (b)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Astragalorakel was not only in sanctuaries but also in public places. In Teremessos, an oracle list for 7 Astragali decorated the wall of the city gate. How many prophecy did she contain?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (c)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    In general, the order of the thrown astragal outputs did not matter. How many sayings would have been necessary if different sequences of litters were to lead to different prophecies in division
+                                                    <b>
+                                                        (b)
+                                                    </b>
+                                                    ?
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </span>
+    <br/>
+    So we need the basic character \({n+k-1\choose k}\) use. Now you should use the number by using the values of \(n\) and \(k\) - you can calculate from the task.
+    <br/>
+    Total [[/lang]][[input:zwischen2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:zwischen2]][[lang code="de"]] M&#246;glichkeiten.
+    <p>
+    </p>
+    <br/>
+    [[/lang]][[lang code="en"]] Opportunities.
+    <p>
+    </p>
+    <br/>
+    [[/lang]][[feedback:zwischen2]][[lang code="de"]]
+</div>
+<div id="zwischen3" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Urspr&#252;ngliche Fragestellung:
+                                </u>
+                                <div title="Page 9">
+                                    <div>
+                                        <div>
+                                            <p>
+                                                <b>
+                                                    Die Astragalorakel
+                                                </b>
+                                            </p>
+                                            <p>
+                                                Schon in der Antike wurde das W&#252;rfelgl&#252;ck f&#252;r allerlei Vorhersagen genutzt. Gew&#252;rfelt wurde dabei mit sogenannten Astragalen (den Hinterfu&#223;knochen von Schaf oder Ziege), die auf Grund ihrer Form auf vier verschiedenen Seiten zum Liegen kommen
+                                                                                konnten. Pausanias (110-180) berichtet von einem Astragalorakel:
+                                            </p>
+                                            <p>
+                                                <span style="font-size: 0.9375rem;">
+                                                    <i>
+                                                        &#8222;Geht man von Burna zum Meer hinab, so ist da ein nicht gro&#223;er Herakles in einer H&#246;hle. [. . . ] Man kann dort mit einer Tafel und Astragali Orakelspr&#252;che erhalten. Wer den Gott befragen will, betet vor der Statue und nimmt dann 4 von den reichlich vor dem Herakles liegenden Astragali und l&#228;sst sie auf einen Tisch fallen. Zu jeder Konfiguration dieser 4 Astragali ist auf einer Tafel ein passender Wortlaut als Erkl&#228;rung angegeben.&#8220;
+                                                    </i>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                Hinweis: Bei einer Konfiguration spielt es nur eine Rolle, wieviele Astragali mit welcher Seite oben liegen.
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (a)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Wie viele Orakelspr&#252;che mussten von den Priestern erstellt werden, wenn zu jedem Ergebnis eine andere Prophezeiung geh&#246;rte?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (b)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Astragalorakel gab es nicht nur in Heiligt&#252;mern sondern auch auf &#246;ffentlichen Pl&#228;tzen. In Teremessos schm&#252;ckte eine Orakelliste f&#252;r 7 Astragali die Mauer des Stadttores. Wie viele Prophezeiung enthielt sie?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (c)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Im Allgemeinen spielte die Reihenfolge der geworfenen Astragalausg&#228;nge keine Rolle. Wie viele Spr&#252;che w&#228;ren n&#246;tig gewesen, wenn verschiedene Abfolgen von W&#252;rfen zu verschiedenen Prophezeiungen f&#252;hren sollen in Teilaufgabe
+                                                    <b>
+                                                        (b)
+                                                    </b>
+                                                    ?
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </span>
+    <br/>
+    Kommen wir zu Teilaufgabe
+    <b>
+        (b)
+    </b>
+    . Im Gegensatz zu Teilaufgabe
+    <b>
+        (a)
+    </b>
+    haben wir nun \(7\) verschiedene Astragali, die verwendet werden k&#246;nnen. Unsere Formel \({n+k-1\choose k}\) k&#246;nnen wir offensichtlich weiter verwenden, m&#252;ssen jedoch andere
+Werte einsetzen. Wieviele M&#246;glichkeiten ergeben sich nun?
+    <br/>
+    Es ergeben sich insgesamt [[/lang]][[lang code="en"]]
+</div>
+<div id="zwischen3" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Original question:
+                                </u>
+                                <div title="Page 9">
+                                    <div>
+                                        <div>
+                                            <p>
+                                                <b>
+                                                    The Astragalorakel
+                                                </b>
+                                            </p>
+                                            <p>
+                                                In ancient times, the dice luck was used for all kinds of predictions. In this case, it was cubed with so-called astragals (the rear foot bones of sheep or goats), which come to lie on four different sides due to their shape.
+. Pausanias (110-180) reports on an astragaloracle:
+                                            </p>
+                                            <p>
+                                                <span style="font-size: 0.9375rem;">
+                                                    <i>
+                                                        &#8220;If you go down from Burna to the sea, there is a not great Herakles in a cave. [. . ] You can get there with a table and Astragali oracles spells. Whoever wants to question the God, pray before the statue, and then take 4 of the Astragali lying abundantly in front of the Herakles and let them fall on a table. For each configuration of this 4 Astragali, a suitable wording is given on a board as a statement. &#8216;
+                                                    </i>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                Note: In a configuration, it only plays a role in how many Astragali with which side is above.
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (a)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    How many oracles' spells had to be created by the priests when a different prophecy belonged to each result?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (b)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Astragalorakel was not only in sanctuaries but also in public places. In Teremessos, an oracle list for 7 Astragali decorated the wall of the city gate. How many prophecy did she contain?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (c)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    In general, the order of the thrown astragal outputs did not matter. How many sayings would have been necessary if different sequences of litters were to lead to different prophecies in division
+                                                    <b>
+                                                        (b)
+                                                    </b>
+                                                    ?
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </span>
+    <br/>
+    Let's get a part
+    <b>
+        (b)
+    </b>
+    . Contrary to Partial Task
+    <b>
+        (a)
+    </b>
+    we have now \(7\) various astragali that can be used. Our formula \({n+k-1\choose k}\) we can obviously continue to use, but other
+Use values. How many possibilities are there?
+    <br/>
+    Total [[/lang]][[input:zwischen3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:zwischen3]][[lang code="de"]] M&#246;glichkeiten.
+    <p>
+    </p>
+    <br/>
+    [[/lang]][[lang code="en"]] Opportunities.
+    <p>
+    </p>
+    <br/>
+    [[/lang]][[feedback:zwischen3]][[lang code="de"]]
+</div>
+<div id="zwischen4b" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Urspr&#252;ngliche Fragestellung:
+                                </u>
+                                <div title="Page 9">
+                                    <div>
+                                        <div>
+                                            <p>
+                                                <b>
+                                                    Die Astragalorakel
+                                                </b>
+                                            </p>
+                                            <p>
+                                                Schon in der Antike wurde das W&#252;rfelgl&#252;ck f&#252;r allerlei Vorhersagen genutzt. Gew&#252;rfelt wurde dabei mit sogenannten Astragalen (den Hinterfu&#223;knochen von Schaf oder Ziege), die auf Grund ihrer Form auf vier verschiedenen Seiten zum Liegen kommen
+                                                                                konnten. Pausanias (110-180) berichtet von einem Astragalorakel:
+                                            </p>
+                                            <p>
+                                                <span style="font-size: 0.9375rem;">
+                                                    <i>
+                                                        &#8222;Geht man von Burna zum Meer hinab, so ist da ein nicht gro&#223;er Herakles in einer H&#246;hle. [. . . ] Man kann dort mit einer Tafel und Astragali Orakelspr&#252;che erhalten. Wer den Gott befragen will, betet vor der Statue und nimmt dann 4 von den reichlich vor dem Herakles liegenden Astragali und l&#228;sst sie auf einen Tisch fallen. Zu jeder Konfiguration dieser 4 Astragali ist auf einer Tafel ein passender Wortlaut als Erkl&#228;rung angegeben.&#8220;
+                                                    </i>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                Hinweis: Bei einer Konfiguration spielt es nur eine Rolle, wieviele Astragali mit welcher Seite oben liegen.
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (a)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Wie viele Orakelspr&#252;che mussten von den Priestern erstellt werden, wenn zu jedem Ergebnis eine andere Prophezeiung geh&#246;rte?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (b)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Astragalorakel gab es nicht nur in Heiligt&#252;mern sondern auch auf &#246;ffentlichen Pl&#228;tzen. In Teremessos schm&#252;ckte eine Orakelliste f&#252;r 7 Astragali die Mauer des Stadttores. Wie viele Prophezeiung enthielt sie?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (c)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Im Allgemeinen spielte die Reihenfolge der geworfenen Astragalausg&#228;nge keine Rolle. Wie viele Spr&#252;che w&#228;ren n&#246;tig gewesen, wenn verschiedene Abfolgen von W&#252;rfen zu verschiedenen Prophezeiungen f&#252;hren sollen in Teilaufgabe
+                                                    <b>
+                                                        (b)
+                                                    </b>
+                                                    ?
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </span>
+    <br/>
+    Kommen wir zu Teilaufgabe
+    <b>
+        (c)
+    </b>
+    . Wie viele Spr&#252;che w&#228;ren n&#246;tig gewesen, wenn verschiedene Abfolgen von W&#252;rfen zu verschiedenen Prophezeiungen f&#252;hren sollen in Teilaufgabe b) ? [[/lang]][[lang code="en"]]
+</div>
+<div id="zwischen4b" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Original question:
+                                </u>
+                                <div title="Page 9">
+                                    <div>
+                                        <div>
+                                            <p>
+                                                <b>
+                                                    The Astragalorakel
+                                                </b>
+                                            </p>
+                                            <p>
+                                                In ancient times, the dice luck was used for all kinds of predictions. In this case, it was cubed with so-called astragals (the rear foot bones of sheep or goats), which come to lie on four different sides due to their shape.
+. Pausanias (110-180) reports on an astragaloracle:
+                                            </p>
+                                            <p>
+                                                <span style="font-size: 0.9375rem;">
+                                                    <i>
+                                                        &#8220;If you go down from Burna to the sea, there is a not great Herakles in a cave. [. . ] You can get there with a table and Astragali oracles spells. Whoever wants to question the God, pray before the statue, and then take 4 of the Astragali lying abundantly in front of the Herakles and let them fall on a table. For each configuration of this 4 Astragali, a suitable wording is given on a board as a statement. &#8216;
+                                                    </i>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                Note: In a configuration, it only plays a role in how many Astragali with which side is above.
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (a)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    How many oracles' spells had to be created by the priests when a different prophecy belonged to each result?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (b)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Astragalorakel was not only in sanctuaries but also in public places. In Teremessos, an oracle list for 7 Astragali decorated the wall of the city gate. How many prophecy did she contain?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (c)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    In general, the order of the thrown astragal outputs did not matter. How many sayings would have been necessary if different sequences of litters were to lead to different prophecies in division
+                                                    <b>
+                                                        (b)
+                                                    </b>
+                                                    ?
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </span>
+    <br/>
+    Let's get a part
+    <b>
+        (c)
+    </b>
+    . How many sayings would have been necessary if different sequences of litters were to lead to different prophecies in sub-task b) ? [[/lang]][[input:zwischen4b]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:zwischen4b]][[lang code="de"]]
+    <p>
+    </p>
+    <br/>
+    [[/lang]][[lang code="en"]]
+    <p>
+    </p>
+    <br/>
+    [[/lang]][[feedback:zwischen4b]][[lang code="de"]]
+</div>
+<div id="zwischen4" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Urspr&#252;ngliche Fragestellung:
+                                </u>
+                                <div title="Page 9">
+                                    <div>
+                                        <div>
+                                            <p>
+                                                <b>
+                                                    Die Astragalorakel
+                                                </b>
+                                            </p>
+                                            <p>
+                                                Schon in der Antike wurde das W&#252;rfelgl&#252;ck f&#252;r allerlei Vorhersagen genutzt. Gew&#252;rfelt wurde dabei mit sogenannten Astragalen (den Hinterfu&#223;knochen von Schaf oder Ziege), die auf Grund ihrer Form auf vier verschiedenen Seiten zum Liegen kommen
+                                                                                konnten. Pausanias (110-180) berichtet von einem Astragalorakel:
+                                            </p>
+                                            <p>
+                                                <span style="font-size: 0.9375rem;">
+                                                    <i>
+                                                        &#8222;Geht man von Burna zum Meer hinab, so ist da ein nicht gro&#223;er Herakles in einer H&#246;hle. [. . . ] Man kann dort mit einer Tafel und Astragali Orakelspr&#252;che erhalten. Wer den Gott befragen will, betet vor der Statue und nimmt dann 4 von den reichlich vor dem Herakles liegenden Astragali und l&#228;sst sie auf einen Tisch fallen. Zu jeder Konfiguration dieser 4 Astragali ist auf einer Tafel ein passender Wortlaut als Erkl&#228;rung angegeben.&#8220;
+                                                    </i>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                Hinweis: Bei einer Konfiguration spielt es nur eine Rolle, wieviele Astragali mit welcher Seite oben liegen.
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (a)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Wie viele Orakelspr&#252;che mussten von den Priestern erstellt werden, wenn zu jedem Ergebnis eine andere Prophezeiung geh&#246;rte?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (b)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Astragalorakel gab es nicht nur in Heiligt&#252;mern sondern auch auf &#246;ffentlichen Pl&#228;tzen. In Teremessos schm&#252;ckte eine Orakelliste f&#252;r 7 Astragali die Mauer des Stadttores. Wie viele Prophezeiung enthielt sie?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (c)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Im Allgemeinen spielte die Reihenfolge der geworfenen Astragalausg&#228;nge keine Rolle. Wie viele Spr&#252;che w&#228;ren n&#246;tig gewesen, wenn verschiedene Abfolgen von W&#252;rfen zu verschiedenen Prophezeiungen f&#252;hren sollen in Teilaufgabe
+                                                    <b>
+                                                        (b)
+                                                    </b>
+                                                    ?
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </span>
+    <br/>
+    Kommen wir zu Teilaufgabe
+    <b>
+        (c)
+    </b>
+    . Im Gegensatz zu Teilaufgaben
+    <b>
+        (a)
+    </b>
+    und
+    <b>
+        (b)
+    </b>
+    spielt es nun eine Rolle, in welcher Reihenfolge die Astragali fallen. Das bedeutet, wir ziehen nun mit Beachtung der Reihenfolge. Die passende Formel zur
+Berechnung der Anzahl der M&#246;glichkeiten ist nun: [[/lang]][[lang code="en"]]
+</div>
+<div id="zwischen4" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Original question:
+                                </u>
+                                <div title="Page 9">
+                                    <div>
+                                        <div>
+                                            <p>
+                                                <b>
+                                                    The Astragalorakel
+                                                </b>
+                                            </p>
+                                            <p>
+                                                In ancient times, the dice luck was used for all kinds of predictions. In this case, it was cubed with so-called astragals (the rear foot bones of sheep or goats), which come to lie on four different sides due to their shape.
+. Pausanias (110-180) reports on an astragaloracle:
+                                            </p>
+                                            <p>
+                                                <span style="font-size: 0.9375rem;">
+                                                    <i>
+                                                        &#8220;If you go down from Burna to the sea, there is a not great Herakles in a cave. [. . ] You can get there with a table and Astragali oracles spells. Whoever wants to question the God, pray before the statue, and then take 4 of the Astragali lying abundantly in front of the Herakles and let them fall on a table. For each configuration of this 4 Astragali, a suitable wording is given on a board as a statement. &#8216;
+                                                    </i>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                Note: In a configuration, it only plays a role in how many Astragali with which side is above.
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (a)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    How many oracles' spells had to be created by the priests when a different prophecy belonged to each result?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (b)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Astragalorakel was not only in sanctuaries but also in public places. In Teremessos, an oracle list for 7 Astragali decorated the wall of the city gate. How many prophecy did she contain?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (c)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    In general, the order of the thrown astragal outputs did not matter. How many sayings would have been necessary if different sequences of litters were to lead to different prophecies in division
+                                                    <b>
+                                                        (b)
+                                                    </b>
+                                                    ?
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </span>
+    <br/>
+    Let's get a part
+    <b>
+        (c)
+    </b>
+    . In contrast to subtasks
+    <b>
+        (a)
+    </b>
+    and
+    <b>
+        (b)
+    </b>
+    it now plays a role in which order the Astragali falls. This means we are now moving with respect to the order. The right formula for
+Calculation of the number of possibilities is now: [[/lang]][[input:zwischen4]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:zwischen4]][[lang code="de"]]
+    <p>
+    </p>
+    <br/>
+    [[/lang]][[lang code="en"]]
+    <p>
+    </p>
+    <br/>
+    [[/lang]][[feedback:zwischen4]][[lang code="de"]]
+</div>
+<div id="zwischen5" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Urspr&#252;ngliche Fragestellung:
+                                </u>
+                                <div title="Page 9">
+                                    <div>
+                                        <div>
+                                            <p>
+                                                <b>
+                                                    Die Astragalorakel
+                                                </b>
+                                            </p>
+                                            <p>
+                                                Schon in der Antike wurde das W&#252;rfelgl&#252;ck f&#252;r allerlei Vorhersagen genutzt. Gew&#252;rfelt wurde dabei mit sogenannten Astragalen (den Hinterfu&#223;knochen von Schaf oder Ziege), die auf Grund ihrer Form auf vier verschiedenen Seiten zum Liegen kommen
+                                                                                konnten. Pausanias (110-180) berichtet von einem Astragalorakel:
+                                            </p>
+                                            <p>
+                                                <span style="font-size: 0.9375rem;">
+                                                    <i>
+                                                        &#8222;Geht man von Burna zum Meer hinab, so ist da ein nicht gro&#223;er Herakles in einer H&#246;hle. [. . . ] Man kann dort mit einer Tafel und Astragali Orakelspr&#252;che erhalten. Wer den Gott befragen will, betet vor der Statue und nimmt dann 4 von den reichlich vor dem Herakles liegenden Astragali und l&#228;sst sie auf einen Tisch fallen. Zu jeder Konfiguration dieser 4 Astragali ist auf einer Tafel ein passender Wortlaut als Erkl&#228;rung angegeben.&#8220;
+                                                    </i>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                Hinweis: Bei einer Konfiguration spielt es nur eine Rolle, wieviele Astragali mit welcher Seite oben liegen.
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (a)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Wie viele Orakelspr&#252;che mussten von den Priestern erstellt werden, wenn zu jedem Ergebnis eine andere Prophezeiung geh&#246;rte?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (b)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Astragalorakel gab es nicht nur in Heiligt&#252;mern sondern auch auf &#246;ffentlichen Pl&#228;tzen. In Teremessos schm&#252;ckte eine Orakelliste f&#252;r 7 Astragali die Mauer des Stadttores. Wie viele Prophezeiung enthielt sie?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (c)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Im Allgemeinen spielte die Reihenfolge der geworfenen Astragalausg&#228;nge keine Rolle. Wie viele Spr&#252;che w&#228;ren n&#246;tig gewesen, wenn verschiedene Abfolgen von W&#252;rfen zu verschiedenen Prophezeiungen f&#252;hren sollen in Teilaufgabe
+                                                    <b>
+                                                        (b)
+                                                    </b>
+                                                    ?
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </span>
+    <br/>
+    Die passende Formel ist also \(n^k\). Die Werte f&#252;r \(n\) und \(k\) kennen wir bereits aus Aufgabenteil
+    <b>
+        (b)
+    </b>
+    . Wieviele M&#246;glichkeiten ergeben sich damit insgesamt?
+    <br/>
+    Es ergeben sich insgesamt [[/lang]][[lang code="en"]]
+</div>
+<div id="zwischen5" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Original question:
+                                </u>
+                                <div title="Page 9">
+                                    <div>
+                                        <div>
+                                            <p>
+                                                <b>
+                                                    The Astragalorakel
+                                                </b>
+                                            </p>
+                                            <p>
+                                                In ancient times, the dice luck was used for all kinds of predictions. In this case, it was cubed with so-called astragals (the rear foot bones of sheep or goats), which come to lie on four different sides due to their shape.
+. Pausanias (110-180) reports on an astragaloracle:
+                                            </p>
+                                            <p>
+                                                <span style="font-size: 0.9375rem;">
+                                                    <i>
+                                                        &#8220;If you go down from Burna to the sea, there is a not great Herakles in a cave. [. . ] You can get there with a table and Astragali oracles spells. Whoever wants to question the God, pray before the statue, and then take 4 of the Astragali lying abundantly in front of the Herakles and let them fall on a table. For each configuration of this 4 Astragali, a suitable wording is given on a board as a statement. &#8216;
+                                                    </i>
+                                                </span>
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                Note: In a configuration, it only plays a role in how many Astragali with which side is above.
+                                                <br/>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (a)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    How many oracles' spells had to be created by the priests when a different prophecy belonged to each result?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (b)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    Astragalorakel was not only in sanctuaries but also in public places. In Teremessos, an oracle list for 7 Astragali decorated the wall of the city gate. How many prophecy did she contain?
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    (c)
+                                                </b>
+                                                <span style="font-size: 0.9375rem;">
+                                                    In general, the order of the thrown astragal outputs did not matter. How many sayings would have been necessary if different sequences of litters were to lead to different prophecies in division
+                                                    <b>
+                                                        (b)
+                                                    </b>
+                                                    ?
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </span>
+    <br/>
+    The right formula is therefore \(n^k\). Values for \(n\) and \(k\) we already know from task
+    <b>
+        (b)
+    </b>
+    . How many possibilities are there?
+    <br/>
+    Total [[/lang]][[input:zwischen5]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:zwischen5]][[lang code="de"]] M&#246;glichkeiten.
+    <p>
+    </p>
+    <br/>
+    [[/lang]][[lang code="en"]] Opportunities.
+    <p>
+    </p>
+    <br/>
+    [[/lang]][[feedback:zwischen5]][[lang code="de"]]
+</div>
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]][[lang code="en"]]
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>3.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  Orakel
+
+  wurde entwickelt von
+  
+    Riko Kelter <riko.kelter(at)uni-siegen.de>
+    Alexander Schnurr <schnurr(at)mathematik.uni-siegen.de>
+    Susanne Spies <spies(at)mathematik.uni-siegen.de>
+
+  nach einer Idee von
+  
+   Barth, Friedrich & Haller, Rudolf (1998): Stochastik Leistungskurs der Kollegstufe. 12. verbesserte Aufl., Oldenbourg Verlag, M&#252;nchen. S. 117f.
+
+  an der Universit&#228;t Siegen.
+
+  Dieses Werk ist lizensiert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+
+  Diese Aufgabe bindet das Skript &#8216;stackselbstlern.js&#8217; von Michael
+  Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+lsg1: 35; /* n+k-1 &#252;ber k mit n=k=4 */
+lsg2: binomial(10,7); /* n+k-1 &#252;ber k mit n=4, k=7 */
+lsg3: 16384; /* n^k f&#252;r n=4, k=7 */
+ListeZwischen1: [[1, false, "\\(n^k\\)"], [2, false, "\\({n\\choose k}\\)"], [3, false, "\\(\\frac{n!}{(n-k)!}\\)"], [4, true, "\\({n+k-1\\choose k}\\)"] ];
+ListeZwischen4: [[1, true, "\\(n^k\\)"], [2, false, "\\({n\\choose k}\\)"], [3, false, "\\(\\frac{n!}{(n-k)!}\\)"], [4, false, "\\({n+k-1\\choose k}\\)"] ];
+test01(x):= is(x>0) and integerp(x);
+test02(x):= is(x>=1 and x<=4) and integerp(x);
+lsgZwischen1: 4;
+lsgZwischen2: 35;
+lsgZwischen3: binomial(10,7);
+lsgZwischen4: 1;
+lsgZwischen5: 16384;]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>Schon in der Antike wurde das W&#252;rfelgl&#252;ck f&#252;r allerlei Vorhersagen genutzt. Ge- w&#252;rfelt wurde dabei mit sog. Astragalen (den Hinterfu&#223;knochen von Schaf oder Ziege), die auf Grund ihrer Form auf vier verschiedenen Seiten zum Liegen kommen konnten. Pausanias (110-180) berichtet von einem Astragalorakel:
+
+&#8222;Geht man von Burna zum Meer hinab, so ist da ein nicht gro&#223;er Herakles in einer H&#246;hle. [. . . ] Man kann dort mit einer Tafel und Astragali Orakelspr&#252;che erhalten. Wer den Gott befragen will, betet, vor der Statue und nimmt dann 4 von den reichlich vor dem Herakles liegenden Astragali und l&#228;sst sie auf einen Tisch fallen. Zu jeder Konfiguration dieser 4 Astragali ist auf einer Tafel ein passender Wortlaut als Erkl&#228;rung angegeben.&#8220;</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text/>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text/>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text/>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>lsg1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>zwischen1</name>
+            <type>radio</type>
+            <tans>ListeZwischen1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>zwischen2</name>
+            <type>algebraic</type>
+            <tans>lsgZwischen2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>zwischen3</name>
+            <type>algebraic</type>
+            <tans>lsgZwischen3</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>zwischen4</name>
+            <type>radio</type>
+            <tans>ListeZwischen4</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>zwischen4b</name>
+            <type>algebraic</type>
+            <tans>lsg3</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>zwischen5</name>
+            <type>algebraic</type>
+            <tans>lsgZwischen5</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>lsg1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<br/>
+<p>
+    Es gibt \(35\) Orakelspr&#252;che, die sich durch \({n+k-1\choose k}={7\choose 4}\) ergeben, da man ohne Beachtung der Reihenfolge mit Zur&#252;cklegen zieht.
+    <br/>
+</p>
+<p>
+    Klicken Sie zum Fortfahren mit Teilaufgabe
+    <b>
+        (b)
+    </b>
+    bitte auf den folgenden Button:
+    <button class="buttonweiter" onclick="hide('aufgabe');show('zwischen3');" type="button">
+        Weiter
+    </button>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<br/>
+<p>
+    There are \(35\) Oracles's spells, through \({n+k-1\choose k}={7\choose 4}\) show that without observing the order, one moves back.
+    <br/>
+</p>
+<p>
+    Click to continue with partial task
+    <b>
+        (b)
+    </b>
+    on the following button:
+    <button class="buttonweiter" onclick="hide('aufgabe');show('zwischen3');" type="button">
+        Next
+    </button>
+    <br/>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<div id="PRTa_Falsch_Feedback1">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <br/>
+    Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in kleinere Teilaufgaben unterteilt.
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('aufgabe');show('zwischen1');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</div>
+<div id="PRTa_Falsch_Feedback2" style="display:none;">
+    <p>
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+
+
+
+
+Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal Teilaufgabe
+        <b>
+            (a)
+        </b>
+        . Setzen Sie die Werte f&#252;r \(n\) und \(k\) also in die Formel \(n+k-1\choose k\) ein.
+    </p>
+    <p>
+    </p>
+</div>
+[[/lang]][[lang code="en"]]
+<div id="PRTa_Falsch_Feedback1">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <br/>
+    That you couldn't solve the task right away is no problem! In the following, the task is subdivided into smaller subtasks.
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('aufgabe');show('zwischen1');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</div>
+<div id="PRTa_Falsch_Feedback2" style="display:none;">
+    <p>
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+
+
+
+
+Use the intermediate step to edit part task again
+        <b>
+            (a)
+        </b>
+        . Set the values for \(n\) and \(k\) thus into the formula \(n+k-1\choose k\) one.
+    </p>
+    <p>
+    </p>
+</div>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ans1)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Der angegebene Wert zu Aufgabenteil a) ist keine nat&#252;rliche Zahl. Er kann daher nicht als Anzahl der M&#246;glichkeiten interpretiert werden.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The specified value to task part a) is not a natural number. It cannot therefore be interpreted as a number of possibilities.
+    <br/>
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>zwischen1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>zwischen1</sans>
+                <tans>lsgZwischen1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>zwischen1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<br/>
+Diese Formel gibt die Anzahl der M&#246;glichkeiten an, ohne Beachtung der Reihenfolge und mit Zur&#252;cklegen zu ziehen.
+<p>
+    Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+    <button class="buttonweiter" onclick="hide('zwischen1');show('aufgabe');show('PRTa_Falsch_Feedback2');hide('PRTa_Falsch_Feedback1');" type="button">
+        Weiter
+    </button>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<br/>
+This formula specifies the number of possibilities without taking into account the order and with resetting.
+<p>
+    To continue, click on the following button:
+    <button class="buttonweiter" onclick="hide('zwischen1');show('aufgabe');show('PRTa_Falsch_Feedback2');hide('PRTa_Falsch_Feedback1');" type="button">
+        Next
+    </button>
+    <br/>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>zwischen1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test02(zwischen1)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>zwischen1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>zwischen1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    Bitte geben Sie eine Zahl zwischen 1 und 4 ein!
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    Please enter a number between 1 and 4!
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>zwischen1</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>zwischen1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<br/>
+<p dir="ltr" style="text-align: left;">
+    Die Formel \(\frac{n!}{(n-k)!}\) gibt die Anzahl der M&#246;glichkeiten an, unter Beachtung der Reihenfolge und ohne Zur&#252;cklegen zu ziehen. Hier ziehen wir jedoch ohne Beachtung der Reihenfolge mit Zur&#252;cklegen.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<br/>
+<p dir="ltr" style="text-align: left;">
+    The formula \(\frac{n!}{(n-k)!}\) indicates the number of possibilities to draw in due course and without resetting. Here, however, we withdraw without observing the order.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>zwischen1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>zwischen1</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>zwischen1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<br/>
+<p dir="ltr" style="text-align: left;">
+    Die Formel \(n\choose k\) gibt die Anzahl der M&#246;glichkeiten an, ohne Beachtung der Reihenfolge und ohne Zur&#252;cklegen zu ziehen. Hier ziehen wir jedoch ohne Beachtung der Reihenfolge mit Zur&#252;cklegen.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<br/>
+<p dir="ltr" style="text-align: left;">
+    The formula \(n\choose k\) Specifies the number of possibilities without taking into account the order and without resetting. Here, however, we withdraw without observing the order.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>zwischen1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>zwischen1</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>zwischen1-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<br/>
+<p dir="ltr" style="text-align: left;">
+    Die Formel \(n^k\) gibt die Anzahl der M&#246;glichkeiten an, unter Beachtung der Reihenfolge und mit Zur&#252;cklegen zu ziehen. Hier ziehen wir jedoch ohne Beachtung der Reihenfolge mit Zur&#252;cklegen.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<br/>
+<p dir="ltr" style="text-align: left;">
+    The formula \(n^k\) specifies the number of possibilities to draw in accordance with the order and with resetting. Here, however, we withdraw without observing the order.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>zwischen1-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>zwischen2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>zwischen2</sans>
+                <tans>lsgZwischen2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>zwischen2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<br/>
+Sie haben Aufgabenteil
+<b>
+    (a)
+</b>
+damit gel&#246;st. Es gibt 35 M&#246;glichkeiten Orakelspr&#252;che zu erstellen, wenn zu jedem Ergebnis eine andere Prophezeiung geh&#246;rt.
+<p>
+    Klicken Sie zum Fortfahren mit Teilaufgabe
+    <b>
+        (b)
+    </b>
+    bitte auf den folgenden Button:
+    <button class="buttonweiter" onclick="hide('zwischen2');show('zwischen3');" type="button">
+        Weiter
+    </button>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<br/>
+You have task
+<b>
+    (a)
+</b>
+with it. There are 35 ways to create oracles when a different prophecy belongs to each result.
+<p>
+    Click to continue with partial task
+    <b>
+        (b)
+    </b>
+    on the following button:
+    <button class="buttonweiter" onclick="hide('zwischen2');show('zwischen3');" type="button">
+        Next
+    </button>
+    <br/>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>zwischen2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<br/>
+<p dir="ltr" style="text-align: left;">
+    &#220;berpr&#252;fen Sie noch einmal, ob Sie die Formel korrekt angewandt haben. Die Werte von \(k\) und \(n\) sind jeweils \(4\).
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<br/>
+<p dir="ltr" style="text-align: left;">
+    Check again if you have applied the formula correctly. The values of \(k\) and \(n\) are each \(4\).
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(zwischen2)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>zwischen2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>zwischen2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    Bitte geben Sie eine Zahl ein, die gr&#246;&#223;er oder gleich null ist, sonst kann Ihre Antwort nicht als Anzahl der M&#246;glichkeiten interpretiert werden.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    Please enter a number greater than or equal to zero, otherwise your answer cannot be interpreted as a number of possibilities.
+    <br/>
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>zwischen3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>zwischen3</sans>
+                <tans>lsgZwischen3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>zwischen3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<br/>
+Sie haben damit Aufgabenteil
+<b>
+    (b)
+</b>
+gel&#246;st. Es existieren somit bereits 120 Orakelspr&#252;che, wenn 7 Astragali verwendet werden anstatt 4.
+<p>
+    Klicken Sie zum Fortfahren mit Teilaufgabe
+    <b>
+        (c)
+    </b>
+    bitte auf den folgenden Button:
+    <button class="buttonweiter" onclick="hide('zwischen3');show('zwischen4b');" type="button">
+        Weiter
+    </button>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<br/>
+You have task
+<b>
+    (b)
+</b>
+dissolved. There are already 120 oracles when 7 astragali are used instead of 4.
+<p>
+    Click to continue with partial task
+    <b>
+        (c)
+    </b>
+    on the following button:
+    <button class="buttonweiter" onclick="hide('zwischen3');show('zwischen4b');" type="button">
+        Next
+    </button>
+    <br/>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>zwischen3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<br/>
+<p dir="ltr" style="text-align: left;">
+    &#220;berpr&#252;fen Sie noch einmal, ob Sie die Formel korrekt angewandt haben. Tipp: \(n\) bleibt hier gleich, aber \(k\) ver&#228;ndert sich.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<br/>
+<p dir="ltr" style="text-align: left;">
+    Check again if you have applied the formula correctly. Tip: \(n\) remains the same here, but \(k\) changes.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(zwischen3)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>zwischen3-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>zwischen3-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    Bitte geben Sie eine Zahl ein, die gr&#246;&#223;er oder gleich null ist, sonst kann Ihre Antwort nicht als Anzahl der M&#246;glichkeiten interpretiert werden.
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    Please enter a number greater than or equal to zero, otherwise your answer cannot be interpreted as a number of possibilities.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>zwischen4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>zwischen4</sans>
+                <tans>lsgZwischen4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>zwischen4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<br/>
+Da die Reihenfolge nun eine Rolle spielt, ziehen wir mit Zur&#252;cklegen unter Beachtung der Reihenfolge und es ergibt sich die Formel \(n^k\).
+<p>
+    Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+    <button class="buttonweiter" onclick="hide('zwischen4');show('zwischen4b');hide('PRTc_Falsch_Feedback1');show('PRTc_Falsch_Feedback2');" type="button">
+        Weiter
+    </button>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<br/>
+Since the order now plays a role, we draw with reference to the order and it results in the formula \(n^k\).
+<p>
+    To continue, click on the following button:
+    <button class="buttonweiter" onclick="hide('zwischen4');show('zwischen4b');hide('PRTc_Falsch_Feedback1');show('PRTc_Falsch_Feedback2');" type="button">
+        Next
+    </button>
+    <br/>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>zwischen4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<br/>
+<p dir="ltr" style="text-align: left;">
+    &#220;berlegen Sie noch einmal, welche Formel die richtige ist.
+    <em>
+        Tipp:
+    </em>
+    Da die Reihenfolge nun eine Rolle spielt, ziehen wir mit Zur&#252;cklegen unter Beachtung der Reihenfolge.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<br/>
+<p dir="ltr" style="text-align: left;">
+    Think again what formula is the right one.
+    <em>
+        Tip:
+    </em>
+    Since the order now plays a role, we draw with reference to the order.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test02(zwischen4)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>zwischen4-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>zwischen4-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    Bitte geben Sie eine Zahl zwischen 1 und 4 ein!
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    Please enter a number between 1 and 4!
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>zwischen4b</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(zwischen4b)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>zwischen4b-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>zwischen4b-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]Bitte geben Sie eine nat&#252;rliche Zahl ein![[/lang]][[lang code="en"]]Please enter a natural number![[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>zwischen4b</sans>
+                <tans>lsg3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>zwischen4b-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<br/>
+<p dir="ltr" style="text-align: left;">
+    Sie Aufgabenteil
+    <b>
+        (c)
+    </b>
+    und damit die gesamte Aufgabe gel&#246;st! Es gibt nun bereits \(4^7=16384\) M&#246;glichkeiten Orakelspr&#252;che zu erstellen, wenn wir die Reihenfolge beachten. Das ist mehr als 100 mal so viel wie in Aufgabenteil
+    <b>
+        (b)
+    </b>
+    , wo der einzige Unterschied darin bestand, dass wir die Reihenfolge ignorieren!
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<br/>
+<p dir="ltr" style="text-align: left;">
+    You task
+    <b>
+        (c)
+    </b>
+    and thus the entire task is solved! There are now \(4^7=16384\) Possibilities to create oracles when we observe the order. This is more than 100 times as much as in the task
+    <b>
+        (b)
+    </b>
+    where the only difference was that we ignore the order!
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>zwischen4b-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<div id="PRTc_Falsch_Feedback1">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+    <br/>
+    Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in kleinere Teilaufgaben unterteilt.
+    <p>
+        Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+        <button class="buttonweiter" onclick="hide('zwischen4b');show('zwischen4');" type="button">
+            Weiter
+        </button>
+        <br/>
+    </p>
+</div>
+<div id="PRTc_Falsch_Feedback2" style="display:none;">
+    <p>
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Falsche Antwort.
+
+
+
+
+Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal Teilaufgabe
+        <b>
+            (c)
+        </b>
+        . Die passende Formel ist also \(n^k\). Die Werte f&#252;r \(n\) und \(k\) kennen wir bereits aus Aufgabenteil
+        <b>
+            (b)
+        </b>
+        . Wieviele M&#246;glichkeiten ergeben sich damit insgesamt?
+    </p>
+    <p>
+    </p>
+</div>
+[[/lang]][[lang code="en"]]
+<div id="PRTc_Falsch_Feedback1">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+    <br/>
+    That you couldn't solve the task right away is no problem! In the following, the task is subdivided into smaller subtasks.
+    <p>
+        To continue, click on the following button:
+        <button class="buttonweiter" onclick="hide('zwischen4b');show('zwischen4');" type="button">
+            Next
+        </button>
+        <br/>
+    </p>
+</div>
+<div id="PRTc_Falsch_Feedback2" style="display:none;">
+    <p>
+        <span style="font-size: 1.5 em; color:red;">
+            <i class="fa fa-times">
+            </i>
+        </span>
+        Wrong answer.
+
+
+
+
+Use the intermediate step to edit part task again
+        <b>
+            (c)
+        </b>
+        . The right formula is therefore \(n^k\). Values for \(n\) and \(k\) we already know from task
+        <b>
+            (b)
+        </b>
+        . How many possibilities are there?
+    </p>
+    <p>
+    </p>
+</div>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>zwischen5</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>zwischen5</sans>
+                <tans>lsgZwischen5</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>zwischen5-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<br/>
+<p dir="ltr" style="text-align: left;">
+    Sie Aufgabenteil
+    <b>
+        (c)
+    </b>
+    und damit die gesamte Aufgabe gel&#246;st! Es gibt nun bereits \(4^7=16384\) M&#246;glichkeiten Orakelspr&#252;che zu erstellen, wenn wir die Reihenfolge beachten. Das ist mehr als 100 mal so viel wie in Aufgabenteil
+    <b>
+        (b)
+    </b>
+    , wo der einzige Unterschied darin bestand, dass wir die Reihenfolge ignorieren!
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<br/>
+<p dir="ltr" style="text-align: left;">
+    You task
+    <b>
+        (c)
+    </b>
+    and thus the entire task is solved! There are now \(4^7=16384\) Possibilities to create oracles when we observe the order. This is more than 100 times as much as in the task
+    <b>
+        (b)
+    </b>
+    where the only difference was that we ignore the order!
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>zwischen5-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<br/>
+<p dir="ltr" style="text-align: left;">
+    &#220;berpr&#252;fen Sie noch einmal, ob Sie die Formel korrekt ausgerechnet haben.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<br/>
+<p dir="ltr" style="text-align: left;">
+    Check again if you have correctly calculated the formula.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(zwischen5)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>zwischen5-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>zwischen5-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    Bitte geben Sie eine nat&#252;rliche Zahl ein, sonst kann Ihre Antwort nicht als Anzahl der M&#246;glichkeiten interpretiert werden.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    Please enter a natural number, otherwise your answer cannot be interpreted as a number of possibilities.
+    <br/>
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,1378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Verteilungsfunktion</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<style>
+    .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #a9f5bc;
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #e0f8e6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #dcb25e;
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #e7d2a7;
+                }
+
+    
+    
+    
+    .buttontipp {
+                                border: 1px solid black;
+                                background-color: #c9d3f6;
+                }
+
+    
+    
+    
+    .buttontipp:hover {
+                                background-color: #dbe1f9;
+                }
+
+    
+    
+    
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                                margin: 5px;
+                }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: .5em .5em 0;
+                }
+
+    
+    
+    
+    .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -.5em -.5em 0;
+                                padding: .5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] {
+                                padding: .5em;
+                }
+</style>
+<div id="summarybox">
+    <details>
+        <summary>
+            Inhalt und Umfang dieser Aufgabe
+        </summary>
+        <p>
+            In dieser Aufgabe lernen Sie in Teil (a), wie Sie die Axiome der Wahrscheinlichkeitsdichte &#252;berpr&#252;fen, und in Teil (b), wie Sie die Verteilungsfunktion bestimmen.
+        </p>
+    </details>
+    <hr/>
+</div>
+<div id="aufgabe" style="display:box;">
+    <div id="aufgabentitel">
+        <div>
+            <div>
+                <p>
+                    <b>
+                        Verteilungsfunktion
+                    </b>
+                </p>
+                <div>
+                    <b>
+                        <br/>
+                    </b>
+                    <p>
+                        Sei \(k\in \mathbb{R}\) und \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) eine Funktion von \(\mathbb{R}\) nach&#160;\(\mathbb{R}\).
+                        <br/>
+                    </p>
+                    <p>
+                        <b>
+                            (a)
+                        </b>
+                        Warum ist \(f_k(x)\) f&#252;r \(k=10\) eine Lebesgue-Dichte?
+                        <br/>
+                    </p>
+                    <p>
+                        <b>
+                            (b)
+                        </b>
+                        Bestimmen Sie f&#252;r \(k=10\) den Wert der Verteilungsfunktion \(F_k(t):=\int_{-\infty}^t f_k(x)dx\) an der Stelle \(t=1.1\).
+                        <br/>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <p>
+            Widmen wir uns zun&#228;chst Teilaufgabe (a). Wir wissen, dass aus Stetigkeit die Messbarkeit einer Funktion folgt, und offensichtlich ist \(f_k\) st&#252;ckweise stetig. Wenn&#160; \(f_k\) also messbar ist, warum ist&#160;\(f_k\) dann eine Lebesgue-Dichte?
+        </p>
+        <p>
+            <span style="font-size: 0.9375rem;">
+                [[/lang]][[lang code="en"]]
+                <style>
+                    .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #a9f5bc;
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #e0f8e6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #dcb25e;
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #e7d2a7;
+                }
+
+    
+    
+    
+    .buttontipp {
+                                border: 1px solid black;
+                                background-color: #c9d3f6;
+                }
+
+    
+    
+    
+    .buttontipp:hover {
+                                background-color: #dbe1f9;
+                }
+
+    
+    
+    
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                                margin: 5px;
+                }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: .5em .5em 0;
+                }
+
+    
+    
+    
+    .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -.5em -.5em 0;
+                                padding: .5em;
+                }
+
+    
+    
+    
+    .que.stack .formulation details[open] {
+                                padding: .5em;
+                }
+                </style>
+                <div id="summarybox">
+                    <details>
+                        <summary>
+                            Content and scope of this task
+                        </summary>
+                        <p>
+                            In this task, you will learn in part (a) how to check the axioms of probability density, and in part (b), how to determine the distribution function.
+                        </p>
+                    </details>
+                    <hr/>
+                </div>
+                <div id="aufgabe" style="display:box;">
+                    <div id="aufgabentitel">
+                        <div>
+                            <div>
+                                <p>
+                                    <b>
+                                        Distribution function
+                                    </b>
+                                </p>
+                                <div>
+                                    <b>
+                                        <br/>
+                                    </b>
+                                    <p>
+                                        Be careful \(k\in \mathbb{R}\) and \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) a function of \(\mathbb{R}\) After\(\mathbb{R}\).
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (a)
+                                        </b>
+                                        Why is it? \(f_k(x)\) for \(k=10\) a Lebesgue density?
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (b)
+                                        </b>
+                                        Choose for \(k=10\) the value of the distribution function \(F_k(t):=\int_{-\infty}^t f_k(x)dx\) in place \(t=1.1\).
+                                        <br/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            Let's first take part (a). We know that from rigidity the measurability follows a function, and is obvious \(f_k\) constantly. If \(f_k\) So it's measurable why\(f_k\) then a Lebesgue density?
+                        </p>
+                        <p>
+                            <span style="font-size: 0.9375rem;">
+                                [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
+                            </span>
+                        </p>
+                        [[/lang]][[lang code="en"]]
+                    </div>
+                </div>
+            </span>
+        </p>
+        [[/lang]][[feedback:prt1]][[lang code="de"]]
+    </div>
+</div>
+<div id="zwischen0b" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Urspr&#252;ngliche Fragestellung:
+                                </u>
+                                <div id="aufgabe" style="display:box;">
+                                    <b>
+                                        <br/>
+                                    </b>
+                                    <p>
+                                        Sei \(k\in \mathbb{R}\) und \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) eine Funktion von \(\mathbb{R}\) nach&#160;\(\mathbb{R}\).
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (a)
+                                        </b>
+                                        Warum ist \(f_k(x)\) f&#252;r \(k=10\) eine Lebesgue-Dichte?
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (b)
+                                        </b>
+                                        Bestimmen Sie f&#252;r \(k=10\) den Wert der Verteilungsfunktion \(F_k(t):=\int_{-\infty}^t f_k(x)dx\) an der Stelle \(t=1.1\).
+                                        <br/>
+                                    </p>
+                                </div>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <br/>
+    </span>
+    &#220;berlegen wir uns f&#252;r Teilaufgabe (b) nun zun&#228;chst, wie die Stammfunktion von \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) f&#252;r \(k=10\) aussieht, bevor wir das Integral \(F_k(t):=\int_{-\infty}^t f_k(x)dx\) berechnen. Berechnen Sie zun&#228;chst die Stammfunktion
+                \(S_k(x)\) von \(f_k(x)\) f&#252;r \(k=10\), f&#252;r welche die Integrationskonstante \(C\) gleich \(0\) ist, f&#252;r die also \(S_k(x)=\int_{\mathbb{R}} f_k(x)d\lambda(dx) +C\) f&#252;r \(C:=0\) erf&#252;llt ist.
+    <br/>
+    Die Stammfunktion ist im Bereich \(x\geq 1\) gegeben durch: [[/lang]][[lang code="en"]]
+</div>
+<div id="zwischen0b" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Original question:
+                                </u>
+                                <div id="aufgabe" style="display:box;">
+                                    <b>
+                                        <br/>
+                                    </b>
+                                    <p>
+                                        Be careful \(k\in \mathbb{R}\) and \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) a function of \(\mathbb{R}\) After\(\mathbb{R}\).
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (a)
+                                        </b>
+                                        Why is it? \(f_k(x)\) for \(k=10\) a Lebesgue density?
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (b)
+                                        </b>
+                                        Choose for \(k=10\) the value of the distribution function \(F_k(t):=\int_{-\infty}^t f_k(x)dx\) in place \(t=1.1\).
+                                        <br/>
+                                    </p>
+                                </div>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <br/>
+    </span>
+    Let's now consider how the parent function of \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) for \(k=10\) before we see the integral \(F_k(t):=\int_{-\infty}^t f_k(x)dx\) calculate. First calculate the master function
+    \(S_k(x)\) of \(f_k(x)\) for \(k=10\)for which the integration constant \(C\) the \(0\) for which \(S_k(x)=\int_{\mathbb{R}} f_k(x)d\lambda(dx) +C\) for \(C:=0\) is fulfilled.
+    <br/>
+    The root function is in the range \(x\geq 1\) given by: [[/lang]][[input:ans0b]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans0b]][[lang code="de"]]
+    <br/>
+    <br/>
+    Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+    <br/>
+    [[/lang]][[lang code="en"]]
+    <br/>
+    <br/>
+    Please click the "Check" button after entering the solution.
+    <br/>
+    [[/lang]][[feedback:prt0b]][[lang code="de"]]
+</div>
+<div id="zwischen1" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Urspr&#252;ngliche Fragestellung:
+                                </u>
+                                <div id="aufgabe" style="display:box;">
+                                    <b>
+                                        <br/>
+                                    </b>
+                                    <p>
+                                        Sei \(k\in \mathbb{R}\) und \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) eine Funktion von \(\mathbb{R}\) nach&#160;\(\mathbb{R}\).
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (a)
+                                        </b>
+                                        Warum ist \(f_k(x)\) f&#252;r \(k=10\) eine Lebesgue-Dichte?
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (b)
+                                        </b>
+                                        Bestimmen Sie f&#252;r \(k=10\) den Wert der Verteilungsfunktion \(F_k(t):=\int_{-\infty}^t f_k(x)dx\) an der Stelle \(t=1.1\).
+                                        <br/>
+                                    </p>
+                                </div>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <br/>
+    </span>
+    <br/>
+    Wir wissen nun, dass eine Stammfunktion durch \([-x^{-10} ]\) gegeben ist. Wir m&#252;ssen nun also nur noch die Integrationsgrenzen \(a\) und \(b\) bestimmen, bevor wir den Wert von \([-x^{-10}]_{a}^{b}\) berechnen.
+    <br/>
+    Der Wert f&#252;r \(a\) betr&#228;gt: [[/lang]][[lang code="en"]]
+</div>
+<div id="zwischen1" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Original question:
+                                </u>
+                                <div id="aufgabe" style="display:box;">
+                                    <b>
+                                        <br/>
+                                    </b>
+                                    <p>
+                                        Be careful \(k\in \mathbb{R}\) and \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) a function of \(\mathbb{R}\) After\(\mathbb{R}\).
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (a)
+                                        </b>
+                                        Why is it? \(f_k(x)\) for \(k=10\) a Lebesgue density?
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (b)
+                                        </b>
+                                        Choose for \(k=10\) the value of the distribution function \(F_k(t):=\int_{-\infty}^t f_k(x)dx\) in place \(t=1.1\).
+                                        <br/>
+                                    </p>
+                                </div>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <br/>
+    </span>
+    <br/>
+    We now know that a tribal function through \([-x^{-10} ]\) is given. So we just need to have the integration limits \(a\) and \(b\) before we determine the value of \([-x^{-10}]_{a}^{b}\) calculate.
+    <br/>
+    The value for \(a\) is: [[/lang]][[input:ansZwischen1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansZwischen1]][[lang code="de"]]
+    <br/>
+    <br/>
+    Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+    <br/>
+    [[/lang]][[lang code="en"]]
+    <br/>
+    <br/>
+    Please click the "Check" button after entering the solution.
+    <br/>
+    [[/lang]][[feedback:prtZwischen1]][[lang code="de"]]
+</div>
+<div id="zwischen2" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Urspr&#252;ngliche Fragestellung:
+                                </u>
+                                <div id="aufgabe" style="display:box;">
+                                    <b>
+                                        <br/>
+                                    </b>
+                                    <p>
+                                        Sei \(k\in \mathbb{R}\) und \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) eine Funktion von \(\mathbb{R}\) nach&#160;\(\mathbb{R}\).
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (a)
+                                        </b>
+                                        Warum ist \(f_k(x)\) f&#252;r \(k=10\) eine Lebesgue-Dichte?
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (b)
+                                        </b>
+                                        Bestimmen Sie f&#252;r \(k=10\) den Wert der Verteilungsfunktion \(F_k(t):=\int_{-\infty}^t f_k(x)dx\) an der Stelle \(t=1.1\).
+                                        <br/>
+                                    </p>
+                                </div>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <br/>
+    </span>
+    <br/>
+    Wir wissen nun, dass eine Stammfunktion durch \([-x^{-10}]_{1}^{b}\) gegeben ist. Den Wert der Verteilungsfunktion \(F_k(t):=\int_{-\infty}^t f_k(x)dx\) an der Stelle \(t=1.1\) k&#246;nnen wir also berechnen, indem wir nur noch die Integrationsobergrenze
+                \(b\) in \([-x^{-10}]_{1}^{b}\) bestimmen. Wenn wir die Verteilungsfunktion \(F_k\) im Punkt \(t=1.1\) auswerten wollen, welche Integrationsobergrenze \(b\) ergibt sich damit?
+    <br/>
+    Der Wert f&#252;r \(b\) betr&#228;gt: [[/lang]][[lang code="en"]]
+</div>
+<div id="zwischen2" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Original question:
+                                </u>
+                                <div id="aufgabe" style="display:box;">
+                                    <b>
+                                        <br/>
+                                    </b>
+                                    <p>
+                                        Be careful \(k\in \mathbb{R}\) and \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) a function of \(\mathbb{R}\) After\(\mathbb{R}\).
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (a)
+                                        </b>
+                                        Why is it? \(f_k(x)\) for \(k=10\) a Lebesgue density?
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (b)
+                                        </b>
+                                        Choose for \(k=10\) the value of the distribution function \(F_k(t):=\int_{-\infty}^t f_k(x)dx\) in place \(t=1.1\).
+                                        <br/>
+                                    </p>
+                                </div>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <br/>
+    </span>
+    <br/>
+    We now know that a tribal function through \([-x^{-10}]_{1}^{b}\) is given. The value of the distribution function \(F_k(t):=\int_{-\infty}^t f_k(x)dx\) in place \(t=1.1\) we can therefore calculate by only the integration ceiling
+    \(b\) in \([-x^{-10}]_{1}^{b}\) to determine. When we use the distribution function \(F_k\) in point \(t=1.1\) to evaluate which integration ceiling \(b\) is it?
+    <br/>
+    The value for \(b\) is: [[/lang]][[input:ansZwischen2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansZwischen2]][[lang code="de"]]
+    <br/>
+    <br/>
+    Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+    <br/>
+    [[/lang]][[lang code="en"]]
+    <br/>
+    <br/>
+    Please click the "Check" button after entering the solution.
+    <br/>
+    [[/lang]][[feedback:prtZwischen2]][[lang code="de"]]
+</div>
+<div id="zwischen3" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Urspr&#252;ngliche Fragestellung:
+                                </u>
+                                <div id="aufgabe" style="display:box;">
+                                    <b>
+                                        <br/>
+                                    </b>
+                                    <p>
+                                        Sei \(k\in \mathbb{R}\) und \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) eine Funktion von \(\mathbb{R}\) nach&#160;\(\mathbb{R}\).
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (a)
+                                        </b>
+                                        Warum ist \(f_k(x)\) f&#252;r \(k=10\) eine Lebesgue-Dichte?
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (b)
+                                        </b>
+                                        Bestimmen Sie f&#252;r \(k=10\) den Wert der Verteilungsfunktion \(F_k(t):=\int_{-\infty}^t f_k(x)dx\) an der Stelle \(t=1.1\).
+                                        <br/>
+                                    </p>
+                                </div>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <br/>
+    </span>
+    <br/>
+    Wir wissen nun, dass eine Stammfunktion durch \([-x^{-10}]_{1}^{b}\) gegeben ist. Den Wert der Verteilungsfunktion \(F_{10}(1.1):=\int_{-\infty}^{1.1}f_{10}(x)dx=[-x^{-10}]_{1}^{1.1}\) ist. Rechnen Sie den Wert aus uns geben Sie das Ergebnis \(F_{10}(1.1)\)
+                an.
+    <br/>
+    Der Wert f&#252;r \(F_{10}(1.1)\) betr&#228;gt: [[/lang]][[lang code="en"]]
+</div>
+<div id="zwischen3" style="display:none;">
+    <span>
+        <br/>
+        <table style="border-width: 2px; border-style: solid; border-color: rgb(152, 202, 62);">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <span style="font-weight: normal;">
+                            <span>
+                                <u>
+                                    Original question:
+                                </u>
+                                <div id="aufgabe" style="display:box;">
+                                    <b>
+                                        <br/>
+                                    </b>
+                                    <p>
+                                        Be careful \(k\in \mathbb{R}\) and \(f_k(x):=k(\frac{1}{x})^{k+1}1_{[1,\infty)}(x)\) a function of \(\mathbb{R}\) After\(\mathbb{R}\).
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (a)
+                                        </b>
+                                        Why is it? \(f_k(x)\) for \(k=10\) a Lebesgue density?
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            (b)
+                                        </b>
+                                        Choose for \(k=10\) the value of the distribution function \(F_k(t):=\int_{-\infty}^t f_k(x)dx\) in place \(t=1.1\).
+                                        <br/>
+                                    </p>
+                                </div>
+                            </span>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <br/>
+    </span>
+    <br/>
+    We now know that a tribal function through \([-x^{-10}]_{1}^{b}\) is given. The value of the distribution function \(F_{10}(1.1):=\int_{-\infty}^{1.1}f_{10}(x)dx=[-x^{-10}]_{1}^{1.1}\) is. Rectify the value from us give the result \(F_{10}(1.1)\)on.
+    <br/>
+    The value for \(F_{10}(1.1)\) is: [[/lang]][[input:ansZwischen3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansZwischen3]][[lang code="de"]]
+    <br/>
+    <br/>
+    Bitte klicken Sie nach dem Eintragen der L&#246;sung auf den Button "Pr&#252;fen".
+    <br/>
+    [[/lang]][[lang code="en"]]
+    <br/>
+    <br/>
+    Please click the "Check" button after entering the solution.
+    <br/>
+    [[/lang]][[feedback:prtZwischen3]][[lang code="de"]]
+</div>
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]][[lang code="en"]]
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>5.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  Verteilungsfunktion
+
+  wurde entwickelt von
+  
+    Riko Kelter <riko.kelter(at)uni-siegen.de>
+    Alexander Schnurr <schnurr(at)mathematik.uni-siegen.de>
+    Susanne Spies <spies(at)mathematik.uni-siegen.de>
+
+  nach einer Idee von
+  
+   Riko Kelter <riko.kelter(at)uni-siegen.de>
+   Alexander Schnurr <schnurr(at)mathematik.uni-siegen.de>
+   Susanne Spies <spies(at)mathematik.uni-siegen.de>
+
+  an der Universit&#228;t Siegen.
+
+  Dieses Werk ist lizenziert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+
+  Diese Aufgabe bindet das Skript &#8216;stackselbstlern.js&#8217; von Michael
+  Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+lsg1: 1-1.1^(-10);
+Liste1: [[1, false, "Weil die Integration von \\(f_k\\) f&#252;r \\(k=10\\) &#252;ber die reellen Zahlen nicht negativ ist, also \\(\\int_{\\mathbb{R}}f_k(x)\\lambda(dx)\\geq 0\\) ist."], [2, false, "Weil die Integration von \\(f_k\\) f&#252;r \\(k=10\\) &#252;ber die nat&#252;rlichen Zahlen den Wert 1 ergibt, also \\(\\int_{\\mathbb{N}}f_k(x)\\lambda(dx)=1\\) gilt."], [3, false, "Weil die Integration von \\(f_k\\) f&#252;r \\(k=10\\) &#252;ber die reellen Zahlen positiv ist, also \\(\\int_{\\mathbb{R}}f_k(x)\\lambda(dx)>0\\) ist."], [4, true, "Weil die Integration von \\(f_k\\) f&#252;r \\(k=10\\) &#252;ber die reellen Zahlen den Wert 1 ergibt, also \\(\\int_{\\mathbb{R}}f_k(x)\\lambda(dx)=1\\) ist."] ];
+stammfunktion: -x^(-10);
+lsgA: 1;
+lsgB: 1.1;
+test01(x):= is(x>=0) and (x<=1);
+]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text/>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text/>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text/>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text/>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans0b</name>
+            <type>algebraic</type>
+            <tans>stammfunktion</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans1</name>
+            <type>radio</type>
+            <tans>Liste1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ansZwischen1</name>
+            <type>algebraic</type>
+            <tans>lsgA</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansZwischen2</name>
+            <type>algebraic</type>
+            <tans>lsgB</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansZwischen3</name>
+            <type>algebraic</type>
+            <tans>lsg1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt0b</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans0b</sans>
+                <tans>stammfunktion</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt0b-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+
+
+
+
+Eine Stammfunktion ergibt sich als \(-x^{-10}\).
+<br/>
+<p>
+    Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+    <button class="buttonweiter" onclick="hide('zwischen0b');show('zwischen1');" type="button">
+        Weiter
+    </button>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+
+
+
+
+A tribal function results as \(-x^{-10}\).
+<br/>
+<p>
+    To continue, click on the following button:
+    <button class="buttonweiter" onclick="hide('zwischen0b');show('zwischen1');" type="button">
+        Next
+    </button>
+    <br/>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt0b-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+
+
+
+
+&#220;berpr&#252;fen Sie noch einmal, ob Sie die Stammfunktion korrekt berechnet haben. Sie m&#252;ssen \(k=10\) annehmen. Bitte verzichten Sie bei der Eingabe auf eckige Klammern. Ist ihre L&#246;sung etwa \(x^2\), so geben Sie \(x^2\) und nicht \([x^2]\) ein!
+<br/>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+
+
+
+
+Check again if you have calculated the root function correctly. You must \(k=10\) to be adopted. Please dispense with square brackets when entering. The solution is \(x^2\), so give \(x^2\) and not \([x^2]\) one!
+<br/>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p dir="ltr" style="text-align: left;">
+    Die Funktion \(f_k\) ist positiv und messbar, da sie st&#252;ckweise stetig ist. Man kann leicht nachrechnen, dass \[\int_{\mathbb{R}}f_k(x)\lambda(dx)=1\] f&#252;r \(k&gt;1\), also insbesondere f&#252;r \(k=10\). Die Funktion \(f_{10}\) ist also eine Lebesgue-Dichte.
+    <br/>
+</p>
+<p>
+    Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+    <button class="buttonweiter" onclick="hide('aufgabe');show('zwischen0b');" type="button">
+        Weiter
+    </button>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p dir="ltr" style="text-align: left;">
+    The function \(f_k\) is positive and measurable, as it is continuous in pieces. You can easily calculate that \[\int_{\mathbb{R}}f_k(x)\lambda(dx)=1\] for \(k&gt;1\)in particular for \(k=10\). The function \(f_{10}\) is therefore a Lebesgue density.
+    <br/>
+</p>
+<p>
+    To continue, click on the following button:
+    <button class="buttonweiter" onclick="hide('aufgabe');show('zwischen0b');" type="button">
+        Next
+    </button>
+    <br/>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+
+
+
+
+Tipp: &#220;berlegen Sie noch einmal, welche Normierungseigenschaft eine Lebesgue-Dichte bez&#252;glich der Integration erf&#252;llen muss.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+
+
+
+
+Tip: Think again what standardization property must fulfill a Lebesgue density with regard to integration.[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtZwischen1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansZwischen1</sans>
+                <tans>lsgA</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtZwischen1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+
+
+
+
+Die untere Integrationsgrenze ergibt sich zu \(a=1\), da die Indikatorfunktion in die Integrationsgrenzen gezogen werden kann.
+<p>
+    Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+    <button class="buttonweiter" onclick="hide('zwischen1');show('zwischen2');" type="button">
+        Weiter
+    </button>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+
+
+
+
+The lower integration limit results in \(a=1\), since the indicator function can be drawn into the integration limits.
+<p>
+    To continue, click on the following button:
+    <button class="buttonweiter" onclick="hide('zwischen1');show('zwischen2');" type="button">
+        Next
+    </button>
+    <br/>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtZwischen1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p dir="ltr" style="text-align: left;">
+    Tipp: Sie k&#246;nnen die Indikatorfunktion in die Integrationsgrenzen, dann sehen Sie welcher Wert \(a\) sich ergibt.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p dir="ltr" style="text-align: left;">
+    Tip: You can see the indicator function in the integration limits, then see what value \(a\) it results.
+    <br/>
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtZwischen2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansZwischen2</sans>
+                <tans>lsgB</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtZwischen2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+
+
+
+
+Die obere Integrationsgrenze ergibt sich zu \(b=1.1\).
+<p>
+    Klicken Sie zum Fortfahren bitte auf den folgenden Button:
+    <button class="buttonweiter" onclick="hide('zwischen2');show('zwischen3');" type="button">
+        Weiter
+    </button>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+
+
+
+
+The upper integration limit results in \(b=1.1\).
+<p>
+    To continue, click on the following button:
+    <button class="buttonweiter" onclick="hide('zwischen2');show('zwischen3');" type="button">
+        Next
+    </button>
+    <br/>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtZwischen2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p dir="ltr" style="text-align: left;">
+    &#220;berlegen Sie noch einmal, welche Obergrenze sich ergibt. Welche Obergrenze im Integral erhalten Sie f&#252;r \(F_{10}(1.1)\)?
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p dir="ltr" style="text-align: left;">
+    Consider the upper limit. What upper limit in the integral will you receive for \(F_{10}(1.1)\)?
+    <br/>
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtZwischen3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>test01(ansZwischen3)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtZwischen3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtZwischen3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    Bitte geben Sie eine Zahl zwischen 0 und 1 ein!
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    Please enter a number between 0 and 1.
+    <br/>
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>float(ansZwischen3)</sans>
+                <tans>lsg1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtZwischen3-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p dir="ltr" style="text-align: left;">
+    Sie haben damit Teilaufgabe (b) und somit die gesamte Aufgabe gel&#246;st! Der Wert der Verteilungsfunktion ergibt sich zu \(F_{10}(1.1)=1-1.1^{-10}=0.61\).
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p dir="ltr" style="text-align: left;">
+    They have thus achieved partial task (b) and thus the entire task! The value of the distribution function results in \(F_{10}(1.1)=1-1.1^{-10}=0.61\).
+    <br/>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtZwischen3-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p dir="ltr" style="text-align: left;">
+    &#220;berpr&#252;fen Sie noch einmal, ob Sie \([-x^{-10}]_{1}^{1.1}\) richtig ausgerechnet haben.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5 em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p dir="ltr" style="text-align: left;">
+    Check again if you \([-x^{-10}]_{1}^{1.1}\) have been properly calculated.
+    <br/>
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

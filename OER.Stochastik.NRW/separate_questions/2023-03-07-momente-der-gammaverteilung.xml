@@ -1,0 +1,2772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>2023-03-07 Momente der Gammaverteilung</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-aufgabe-18-info">
+    <details>
+        <summary>
+            Inhalt und Umfang dieser Aufgabe
+        </summary>
+        <p>
+            In dieser Aufgabe lernen Sie, den Erwartungswert und die Varianz einer stetigen Zufallsvariablen zu berechnen. Sie besteht aus den folgenden drei Teilaufgaben.
+        </p>
+        <ul>
+            <li>
+                In
+                <b>
+                    (a)
+                </b>
+                berechnen Sie den Erwartungswert.
+            </li>
+            <li>
+                In
+                <b>
+                    (b)
+                </b>
+                berechnen Sie das zweite Moment.
+            </li>
+            <li>
+                In
+                <b>
+                    (c)
+                </b>
+                berechnen Sie die Varianz.
+            </li>
+        </ul>
+    </details>
+    <hr/>
+</div>
+<div id="oer-aufgabe-18">
+    <p>
+        Sei \(X\) eine Zufallsvariable, die die folgende Dichtefunktion \(f:\mathbb{R}\to[0,\infty)\) besitzt: \[f(x)={@Gam_f(alpha, beta)@}\textbf{1}_{(0,\infty)}(x).\]
+    </p>
+    <hr/>
+</div>
+<div id="oer-aufgabe-18a">
+    <p>
+        <b>
+            (a)
+        </b>
+        Berechnen Sie den Erwartungswert von \(X\).
+    </p>
+    <p>
+        \(\text{E}(X)=\) [[/lang]][[lang code="en"]]
+        <div id="oer-aufgabe-18-info">
+            <details>
+                <summary>
+                    Content and scope of this task
+                </summary>
+                <p>
+                    In this task, you will learn to calculate the expected value and the variance of a steady random variable. It consists of the following three subtasks.
+                </p>
+                <ul>
+                    <li>
+                        In
+                        <b>
+                            (a)
+                        </b>
+                        calculate the expected value.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (b)
+                        </b>
+                        calculate the second moment.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (c)
+                        </b>
+                        calculate the variance.
+                    </li>
+                </ul>
+            </details>
+            <hr/>
+        </div>
+        <div id="oer-aufgabe-18">
+            <p>
+                Be careful \(X\) a random variable which has the following density function \(f:\mathbb{R}\to[0,\infty)\) owns: \[f(x)={@Gam_f(alpha, beta)@}\textbf{1}_{(0,\infty)}(x).\]
+            </p>
+            <hr/>
+        </div>
+        <div id="oer-aufgabe-18a">
+            <p>
+                <b>
+                    (a)
+                </b>
+                Calculate the expected value of \(X\).
+            </p>
+            <p>
+                \(\text{E}(X)=\) [[/lang]][[input:ansA]][[lang code="de"]]
+                <i>
+                    Geben Sie den exakten Wert als Formel ein oder runden Sie das Ergebnis auf mindestens drei Nachkommastellen.
+                </i>
+                [[/lang]][[lang code="en"]]
+                <i>
+                    Enter the exact value as a formula or round the result to at least three decimal places.
+                </i>
+                [[/lang]][[validation:ansA]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtA]][[lang code="de"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-18a1" style="display:none;">
+            <p>
+                <b>
+                    (a1)
+                </b>
+                Wie lautet die allgemeine Formel, um den Erwartungswert einer stetigen Zufallsvariablen mit Dichtefunktion \(f\) zu berechnen?
+            </p>
+            <p>
+                [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-18a1" style="display:none;">
+            <p>
+                <b>
+                    (a1)
+                </b>
+                What is the general formula for the expected value of a steady random variable with density function \(f\) to calculate?
+            </p>
+            <p>
+                [[/lang]][[input:ansA1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansA1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtA1]][[lang code="de"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-18a2" style="display:none;">
+            <p>
+                <b>
+                    (a2)
+                </b>
+                Den Erwartungswert einer stetigen Zufallsvariablen \(X\) mit Dichtefunktion \(f\) berechnet man allgemein mit der Formel \[\text{E}(X)=\int_{-\infty}^\infty xf(x)\text{ d}x.\] Welches konkrete Integral m&#252;ssen Sie nun im vorliegenden Fall ausrechnen? Achten Sie auf die Indikatorfunktion in der Definition von \(f\).
+            </p>
+            <p>
+                [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-18a2" style="display:none;">
+            <p>
+                <b>
+                    (a2)
+                </b>
+                The expected value of a steady random variable \(X\) with density function \(f\) is generally calculated with the formula \[\text{E}(X)=\int_{-\infty}^\infty xf(x)\text{ d}x.\] What specific integral do you have to calculate in the present case? Watch the indicator function in the definition of \(f\).
+            </p>
+            <p>
+                [[/lang]][[input:ansA2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansA2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtA2]][[lang code="de"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-18b" style="display:none;">
+            <p>
+                <b>
+                    (b)
+                </b>
+                Berechnen Sie das zweite Moment von \(X\).
+            </p>
+            <p>
+                \(\text{E}(X^2)=\) [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-18b" style="display:none;">
+            <p>
+                <b>
+                    (b)
+                </b>
+                Calculate the second moment of \(X\).
+            </p>
+            <p>
+                \(\text{E}(X^2)=\) [[/lang]][[input:ansB]][[lang code="de"]]
+                <i>
+                    Geben Sie den exakten Wert als Formel ein oder runden Sie das Ergebnis auf mindestens drei Nachkommastellen.
+                </i>
+                [[/lang]][[lang code="en"]]
+                <i>
+                    Enter the exact value as a formula or round the result to at least three decimal places.
+                </i>
+                [[/lang]][[validation:ansB]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtB]][[lang code="de"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-18b1" style="display:none;">
+            <p>
+                <b>
+                    (b1)
+                </b>
+                Wie lautet die allgemeine Formel, um das zweite Moment einer stetigen Zufallsvariablen mit Dichtefunktion \(f\) zu berechnen?
+            </p>
+            <p>
+                [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-18b1" style="display:none;">
+            <p>
+                <b>
+                    (b1)
+                </b>
+                What is the general formula for the second moment of a steady random variable with density function \(f\) to calculate?
+            </p>
+            <p>
+                [[/lang]][[input:ansB1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansB1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtB1]][[lang code="de"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-18b2" style="display:none;">
+            <p>
+                <b>
+                    (b2)
+                </b>
+                Das zweite Moment einer stetigen Zufallsvariablen \(X\) mit Dichtefunktion \(f\) berechnet man allgemein mit der Formel \[\text{E}(X^2)=\int_{-\infty}^\infty x^2f(x)\text{ d}x.\] Welches konkrete Integral m&#252;ssen Sie nun im vorliegenden Fall ausrechnen? Achten Sie auf die Indikatorfunktion in der Definition von \(f\).
+            </p>
+            <p>
+                [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-18b2" style="display:none;">
+            <p>
+                <b>
+                    (b2)
+                </b>
+                The second moment of a steady random variable \(X\) with density function \(f\) is generally calculated with the formula \[\text{E}(X^2)=\int_{-\infty}^\infty x^2f(x)\text{ d}x.\] What specific integral do you have to calculate in the present case? Watch the indicator function in the definition of \(f\).
+            </p>
+            <p>
+                [[/lang]][[input:ansB2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansB2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtB2]][[lang code="de"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-18c" style="display:none;">
+            <p>
+                <b>
+                    (c)
+                </b>
+                Berechnen Sie die Varianz von \(X\). Zur Erinnerung: Sie haben in (a) den Erwartungswert \(\text{E}(X)={@Gam_E(alpha, beta)@}\) und in (b) das zweite Moment \(\text{E}(X^2)={@Gam_E2(alpha, beta)@}\) berechnet.
+            </p>
+            <p>
+                \(\text{Var}(X)=\) [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-18c" style="display:none;">
+            <p>
+                <b>
+                    (c)
+                </b>
+                Calculate the variance of \(X\). To remember: You have the expected value in (a) \(\text{E}(X)={@Gam_E(alpha, beta)@}\) and in (b) the second moment \(\text{E}(X^2)={@Gam_E2(alpha, beta)@}\) calculated.
+            </p>
+            <p>
+                \(\text{Var}(X)=\) [[/lang]][[input:ansC]][[lang code="de"]]
+                <i>
+                    Geben Sie den exakten Wert als Formel ein oder runden Sie das Ergebnis auf mindestens drei Nachkommastellen.
+                </i>
+                [[/lang]][[lang code="en"]]
+                <i>
+                    Enter the exact value as a formula or round the result to at least three decimal places.
+                </i>
+                [[/lang]][[validation:ansC]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtC]][[lang code="de"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-18c1" style="display:none;">
+            <p>
+                <b>
+                    (c1)
+                </b>
+                Wie lautet die allgemeine Formel, um die Varianz einer Zufallsvariablen zu berechnen?
+            </p>
+            <p>
+                [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-18c1" style="display:none;">
+            <p>
+                <b>
+                    (c1)
+                </b>
+                What is the general formula to calculate the variance of a random variable?
+            </p>
+            <p>
+                [[/lang]][[input:ansC1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansC1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtC1]][[lang code="de"]]
+            </p>
+        </div>
+        <style>
+            .buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+        </style>
+        <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+        </script>
+        [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<style>
+    .buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+</style>
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="moodle_auto_format">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>3.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+Momente der Gammaverteilung
+
+wurde entwickelt von
+  
+Christian M&#252;ller <c.mueller(at)hhu.de>
+
+nach einer Idee von
+
+Axel B&#252;cher <axel.buecher(at)hhu.de>
+Peter Kern <kern(at)hhu.de>
+
+an der Heinrich-Heine-Universit&#228;t D&#252;sseldorf.
+
+Dieses Werk ist lizenziert unter einer Creative Commons Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie https://creativecommons.org/licenses/by-sa/4.0/.
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+
+Technische Informationen:
+
+Diese Aufgabe bindet das Skript 'stackselbstlern.js' von Michael Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+/* &#252;berpr&#252;fe, ob ans als Wahrscheinlichkeit interpretiert werden kann */
+probabilityp(ans) := is(numberp(float(ans)) and ans >= 0 and ans <= 1)
+/* runde x auf 3 Nachkommastellen */
+dp(x) := decimalplaces(x, 3)
+/* stelle x in wissenschaftlicher Notation dar */
+SCI(x) := scientific_notation(x, 2)
+/* Rundungsgenauigkeit bei numerischen Antworttests */
+epsilon: 0.01
+
+/* Gammaverteilung */
+/* Verteilungsparameter */
+alpha: (rand(10) + 1) / 2
+beta: (rand(10) + 1) / 2
+/* Dichte */
+Gam_f(alpha, beta) := alpha^beta / gamma(beta) * x^(beta - 1) * %e^(-alpha * x)
+/* Erwartungswert */
+Gam_E(alpha, beta) := beta / alpha
+/* zweites Moment */
+Gam_E2(alpha, beta) := beta * (beta + 1) / alpha^2
+/* Varianz */
+Gam_Var(alpha, beta) := beta / alpha^2
+
+/* L&#246;sungen */
+TansA: Gam_E(alpha, beta)
+
+TansA1: random_permutation([
+[1, false, "\\(\\displaystyle\\text{E}(X)=\\int_{-\\infty}^\\infty f(x)\\text{ d}x\\)"],
+[2, false,"\\(\\displaystyle\\text{E}(X)=\\int_0^\\infty f(x)\\text{ d}x\\)"],
+[3, true, "\\(\\displaystyle\\text{E}(X)=\\int_{-\\infty}^\\infty xf(x)\\text{ d}x\\)"],
+[4, false, "\\(\\displaystyle\\text{E}(X)=\\int_0^\\infty xf(x)\\text{ d}x\\)"]
+])
+
+TansA2: random_permutation([
+[1, false, simplode(["\\(\\displaystyle\\int_{-\\infty}^\\infty",stack_disp(Gam_f(alpha,beta),""),"\\text{ d}x\\)"])],
+[2, false, simplode(["\\(\\displaystyle\\int_0^\\infty",stack_disp(Gam_f(alpha,beta),""),"\\text{ d}x\\)"])],
+[3, false, simplode(["\\(\\displaystyle\\int_{-\\infty}^\\infty",stack_disp(x*Gam_f(alpha,beta),""),"\\text{ d}x\\)"])],
+[4, true, simplode(["\\(\\displaystyle\\int_0^\\infty",stack_disp(x*Gam_f(alpha,beta),""),"\\text{ d}x\\)"])]
+])
+
+TansB: Gam_E2(alpha, beta)
+
+TansB1: random_permutation([
+[1, false, "\\(\\displaystyle\\text{E}(X^2)=\\Bigg(\\int_{-\\infty}^\\infty xf(x)\\text{ d}x\\Bigg)^2\\)"],
+[2, false, "\\(\\displaystyle\\text{E}(X^2)=\\int_{-\\infty}^\\infty xf(x)^2\\text{ d}x\\)"],
+[3, true, "\\(\\displaystyle\\text{E}(X^2)=\\int_{-\\infty}^\\infty x^2f(x)\\text{ d}x\\)"],
+[4, false, "\\(\\displaystyle\\text{E}(X^2)=\\int_0^\\infty x^2f(x)\\text{ d}x\\)"]
+])
+
+TansB2: random_permutation([
+[1, false, simplode(["\\(\\displaystyle\\Bigg(\\int_0^\\infty",stack_disp(x*Gam_f(alpha,beta),""),"\\text{ d}x\\Bigg)^2\\)"])],
+[2, false, simplode(["\\(\\displaystyle\\int_{-\\infty}^\\infty",stack_disp(x*(Gam_f(alpha,beta))^2,""),"\\text{ d}x\\)"])],
+[3, false, simplode(["\\(\\displaystyle\\int_{-\\infty}^\\infty",stack_disp(x^2*Gam_f(alpha,beta),""),"\\text{ d}x\\)"])],
+[4, true, simplode(["\\(\\displaystyle\\int_0^\\infty",stack_disp(x^2*Gam_f(alpha,beta),""),"\\text{ d}x\\)"])]
+])
+
+TansC: Gam_Var(alpha, beta)
+
+TansC1: random_permutation([
+[1, false, "\\(\\text{Var}(X)=\\text{E}(X)^2-\\text{E}(X^2)\\)"],
+[2, false, "\\(\\text{Var}(X)=\\big(\\text{E}(X-\\text{E}(X))\\big)^2\\)"],
+[3, true, "\\(\\text{Var}(X)=\\text{E}(X^2)-\\text{E}(X)^2\\)"],
+[4, true, "\\(\\text{Var}(X)=\\text{E}\\big((X-\\text{E}(X))^2\\big)\\)"]
+])]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\(\alpha={@alpha@}\), \(\beta={@beta@}\)</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partly correct.[[/lang]]
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.[[/lang]]
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ansA</name>
+            <type>numerical</type>
+            <tans>TansA</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords>integrate</forbidwords>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansA1</name>
+            <type>radio</type>
+            <tans>TansA1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ansA2</name>
+            <type>radio</type>
+            <tans>TansA2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ansB</name>
+            <type>numerical</type>
+            <tans>TansB</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords>integrate</forbidwords>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB1</name>
+            <type>radio</type>
+            <tans>TansB1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ansB2</name>
+            <type>radio</type>
+            <tans>TansB2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ansC</name>
+            <type>numerical</type>
+            <tans>TansC</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords>integrate</forbidwords>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC1</name>
+            <type>radio</type>
+            <tans>TansC1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <prt>
+            <name>prtA</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>torx: if alpha=1 then x else t</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans><![CDATA[is(ansA>0)]]></sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtA-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihr Ergebnis ist keine positive Zahl. Da die Dichtefunktion \(f\) auf \((-\infty,0]\) konstant 0 ist und nur auf \((0,\infty)\) positive Funktionswerte annimmt, nimmt die Zufallsvariable \(X\) mit Wahrscheinlichkeit 1 nur positive Werte an und somit muss auch der Erwartungswert von \(X\) positiv sein.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Their result is not a positive number. Since the density function \(f\) on \((-\infty,0]\) is constant 0 and only \((0,\infty)\) adopts positive functional values, takes the random variable \(X\) with probability 1, only positive values and thus also the expected value of \(X\) be positive.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansA</sans>
+                <tans>TansA</tans>
+                <testoptions>epsilon</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben den Erwartungswert richtig berechnet. Eine m&#246;gliche Rechnung sieht vollst&#228;ndig aufgeschrieben folgenderma&#223;en aus:
+\begin{align*}
+\text{E}(X)
+&amp;=\int_{-\infty}^\infty xf(x)\text{ d}x\\
+&amp;=\int_0^\infty {@x*Gam_f(alpha,beta)@}\text{ d}x\\
+&amp;={@1/(alpha*gamma(beta))@}\int_0^\infty {@torx^beta*%e^-torx@}\text{ d}{@torx@}\\
+&amp;={@1/(alpha*gamma(beta))@}\cdot\Gamma\left({@beta+1@}\right)\\
+&amp;={@1/(alpha*gamma(beta))@}\cdot {@gamma(beta+1)@}\\
+&amp;={@Gam_E(alpha, beta)@}.
+\end{align*}
+</p>
+<hr/>
+<p>
+    Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18a');
+show('oer-aufgabe-18b');
+" type="button">
+        Weiter
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have calculated the expected value correctly. A possible invoice looks fully written as follows:
+\begin{align*}
+\text{E}(X)
+&amp;=\int_{-\infty}^\infty xf(x)\text{ d}x\\
+&amp;=\int_0^\infty {@x*Gam_f(alpha,beta)@}\text{ d}x\\
+&amp;={@1/(alpha*gamma(beta))@}\int_0^\infty {@torx^beta*%e^-torx@}\text{ d}{@torx@}\\
+&amp;={@1/(alpha*gamma(beta))@}\cdot\Gamma\left({@beta+1@}\right)\\
+&amp;={@1/(alpha*gamma(beta))@}\cdot {@gamma(beta+1)@}\\
+&amp;={@Gam_E(alpha, beta)@}.
+\end{align*}
+</p>
+<hr/>
+<p>
+    To get to the next task, click on
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18a');
+show('oer-aufgabe-18b');
+" type="button">
+        Next
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-aufgabe-18a-PRT1">
+    <p>
+        Dass Sie den Erwartungswert nicht auf Anhieb berechnen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in zwei kleinere Teilaufgaben unterteilt. Wenn Sie diese alle gel&#246;st haben, k&#246;nnen Sie sicherlich auch die urspr&#252;ngliche Aufgabe l&#246;sen. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18a');
+show('oer-aufgabe-18a1');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-18a-PRT2" style="display:none;">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Sie haben gerade gelernt, dass der Erwartungswert von \(X\) im Allgemeinen mit der Formel \[\text{E}(X)=\int_{-\infty}^\infty xf(x)\text{ d}x\] berechnet wird. Versuchen Sie, dieses Integral f&#252;r die gegebene Dichtefunktion \(f\) zu berechnen!
+    </p>
+    <hr/>
+    <p>
+        Wenn Sie bei der Berechnung nicht weiterkommen, l&#246;sen Sie zus&#228;tzlich noch die zweite Teilaufgabe. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18a');
+show('oer-aufgabe-18a2');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-18a-PRT3" style="display:none;">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Sie haben gerade gelernt, dass der Erwartungswert von \(X\) durch das Integral
+\begin{equation*}
+\text{E}(X)
+=\int_{-\infty}^\infty xf(x)\text{ d}x
+=\int_0^\infty {@x*Gam_f(alpha, beta)@}\text{ d}x
+\end{equation*}
+berechnet wird. Versuchen Sie nun, dieses Integral zu berechnen! Sie haben dazu mehrere M&#246;glichkeiten:
+        <ul>
+            <li>
+                F&#252;hren Sie das Integral durch partielle Integration auf das Integral der Dichtefunktion zur&#252;ck. Dieses ist dann nach Definition \(\displaystyle\int_0^\infty {@Gam_f(alpha, beta)@}\text{ d}x=1\).
+            </li>
+            <li>
+                Schreiben Sie das Integral durch eine geeignete Substitution auf die Gammafunktion \(\displaystyle\Gamma(x)=\int_0^\infty t^{x-1}e^{-t}\text{ d}t\) um. Werte der Gammafunktion k&#246;nnen Sie dann mit dem Befehl
+                <code>
+                    gamma(x)
+                </code>
+                berechnen.
+            </li>
+        </ul>
+    </p>
+</div>
+[[/lang]][[lang code="en"]]
+<div id="oer-aufgabe-18a-PRT1">
+    <p>
+        That you couldn't calculate the expected value right away is no problem! In the following, the task is divided into two smaller subtasks. If you have solved these all, you can also solve the original task. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18a');
+show('oer-aufgabe-18a1');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-18a-PRT2" style="display:none;">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        You have just learned that the expected value of \(X\) in general with the formula \[\text{E}(X)=\int_{-\infty}^\infty xf(x)\text{ d}x\] is calculated. Try this integral for the given density function \(f\) to calculate!
+    </p>
+    <hr/>
+    <p>
+        If you do not proceed during the calculation, you will also solve the second subtask. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18a');
+show('oer-aufgabe-18a2');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-18a-PRT3" style="display:none;">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        You have just learned that the expected value of \(X\) through the integral
+\begin{equation*}
+\text{E}(X)
+=\int_{-\infty}^\infty xf(x)\text{ d}x
+=\int_0^\infty {@x*Gam_f(alpha, beta)@}\text{ d}x
+\end{equation*}is calculated. Try to calculate this integral! You have several options:
+        <ul>
+            <li>
+                Return the integral to the integral of the density function by partial integration. This is then defined \(\displaystyle\int_0^\infty {@Gam_f(alpha, beta)@}\text{ d}x=1\).
+            </li>
+            <li>
+                Write the integral by appropriate substitution on the gamma function \(\displaystyle\Gamma(x)=\int_0^\infty t^{x-1}e^{-t}\text{ d}t\) Um. Values of the gamma function can then be used with the command
+                <code>
+                    gamma(x)
+                </code>
+                calculate.
+            </li>
+        </ul>
+    </p>
+</div>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtA1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA1</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Dieses Integral hat immer den Wert 1, da \(f\) eine Dichtefunktion ist. Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    This integral always has the value 1, since \(f\) is a density function. Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtA1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA1</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Wenn die Dichtefunktion nicht explizit bekannt ist, kann man im Allgemeinen nichts &#252;ber den genauen Wert dieses Integrals sagen, au&#223;er dass er zwischen 0 und 1 liegt. Da die gegebene Dichtefunktion auf den negativen reellen Zahlen konstant null ist, gilt hier jedoch \[\int_0^\infty f(x)\text{ d}x=\int_{-\infty}^\infty f(x)\text{ d}x=1.\] Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    If the density function is not explicitly known, one can generally say nothing about the exact value of this integral, except that it is between 0 and 1. Since the given density function on the negative real numbers is constant zero, however, this applies \[\int_0^\infty f(x)\text{ d}x=\int_{-\infty}^\infty f(x)\text{ d}x=1.\] Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtA1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA1</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Das Integral \(\displaystyle\int_{-\infty}^\infty xf(x)\text{ d}x\) ergibt genau den Erwartungswert einer stetigen Zufallsvariablen mit Dichtefunktion \(f\).
+</p>
+<hr/>
+<p>
+    <ul>
+        <li>
+            Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+            <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18a1');
+show('oer-aufgabe-18a2');
+" type="button">
+                Weiter
+            </button>
+        </li>
+        <li>
+            Um zur urspr&#252;nglichen Aufgabe zu gelangen, klicken Sie auf
+            <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-18a1');
+show('oer-aufgabe-18a');
+hide('oer-aufgabe-18a-PRT1');
+show('oer-aufgabe-18a-PRT2');
+" type="button">
+                Zur&#252;ck
+            </button>
+        </li>
+    </ul>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    The Integral \(\displaystyle\int_{-\infty}^\infty xf(x)\text{ d}x\) gives exactly the expected value of a continuous random variable with density function \(f\).
+</p>
+<hr/>
+<p>
+    <ul>
+        <li>
+            To get to the next task, click on
+            <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18a1');
+show('oer-aufgabe-18a2');
+" type="button">
+                Next
+            </button>
+        </li>
+        <li>
+            To get to the original task, click on
+            <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-18a1');
+show('oer-aufgabe-18a');
+hide('oer-aufgabe-18a-PRT1');
+show('oer-aufgabe-18a-PRT2');
+" type="button">
+                Back
+            </button>
+        </li>
+    </ul>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prtA1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA1</sans>
+                <tans>4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Im Allgemeinen m&#252;sste man zur Berechnung des Erwartungswerts die Funktion \(xf(x)\) zwar &#252;ber ganz \(\mathbb{R}\) integrieren, aber da die gegebene Dichtefunktion auf den negativen reellen Zahlen konstant null ist, ergibt hier auch das Integral \(\displaystyle\int_0^\infty xf(x)\text{ d}x\) den Erwartungswert von \(X\). Somit ist diese Antwort nicht ganz falsch.
+</p>
+<hr/>
+<p>
+    <ul>
+        <li>
+            Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+            <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18a1');
+show('oer-aufgabe-18a2');
+" type="button">
+                Weiter
+            </button>
+        </li>
+        <li>
+            Um zur urspr&#252;nglichen Aufgabe zu gelangen, klicken Sie auf
+            <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-18a1');
+show('oer-aufgabe-18a');
+hide('oer-aufgabe-18a-PRT1');
+show('oer-aufgabe-18a-PRT2');
+" type="button">
+                Zur&#252;ck
+            </button>
+        </li>
+    </ul>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    In general, the function should be \(xf(x)\) on the whole \(\mathbb{R}\) integrating, but since the given density function is constant zero on the negative real numbers, the integral \(\displaystyle\int_0^\infty xf(x)\text{ d}x\) the expected value of \(X\). This answer is not entirely wrong.
+</p>
+<hr/>
+<p>
+    <ul>
+        <li>
+            To get to the next task, click on
+            <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18a1');
+show('oer-aufgabe-18a2');
+" type="button">
+                Next
+            </button>
+        </li>
+        <li>
+            To get to the original task, click on
+            <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-18a1');
+show('oer-aufgabe-18a');
+hide('oer-aufgabe-18a-PRT1');
+show('oer-aufgabe-18a-PRT2');
+" type="button">
+                Back
+            </button>
+        </li>
+    </ul>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtA2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA2</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Dieses Integral existiert nicht, da der Integrand f&#252;r \(x\to-\infty\) unbeschr&#228;nkt ist. Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    This integral does not exist because the integrand for \(x\to-\infty\) is unlimited. Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtA2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA2</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Dieses Integral hat den Wert 1, denn \[\int_0^\infty {@Gam_f(alpha,beta)@}\text{ d}x=\int_{-\infty}^\infty f(x)\text{ d}x=1.\] Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    This integral has the value 1. \[\int_0^\infty {@Gam_f(alpha,beta)@}\text{ d}x=\int_{-\infty}^\infty f(x)\text{ d}x=1.\] Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtA2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA2</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA2-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Dieses Integral existiert nicht, da der Integrand f&#252;r \(x\to-\infty\) unbeschr&#228;nkt ist. Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    This integral does not exist because the integrand for \(x\to-\infty\) is unlimited. Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prtA2-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA2</sans>
+                <tans>4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA2-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Da die gegebene Dichtefunktion \(f\) auf den negativen reellen Zahlen konstant null ist, berechnen wir den Erwartungswert von \(X\) hier mit dem Integral \[\int_{-\infty}^\infty xf(x)\text{ d}x=\int_0^\infty {@x*Gam_f(alpha, beta)@}\text{ d}x.\]
+</p>
+<hr/>
+<p>
+    Jetzt k&#246;nnen Sie die urspr&#252;ngliche Aufgabe noch einmal versuchen. Klicken Sie dazu auf
+    <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-18a2');
+show('oer-aufgabe-18a');
+hide('oer-aufgabe-18a-PRT1');
+hide('oer-aufgabe-18a-PRT2');
+show('oer-aufgabe-18a-PRT3');
+" type="button">
+        Zur&#252;ck
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    Since the given density function \(f\) on the negative real numbers is constant zero, we calculate the expected value of \(X\) here with the Integral \[\int_{-\infty}^\infty xf(x)\text{ d}x=\int_0^\infty {@x*Gam_f(alpha, beta)@}\text{ d}x.\]
+</p>
+<hr/>
+<p>
+    Now you can try the original task again. Click on
+    <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-18a2');
+show('oer-aufgabe-18a');
+hide('oer-aufgabe-18a-PRT1');
+hide('oer-aufgabe-18a-PRT2');
+show('oer-aufgabe-18a-PRT3');
+" type="button">
+        Back
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA2-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>torx: if alpha=1 then x else t</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans><![CDATA[is(ansB>0)]]></sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtB-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtB-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansB</sans>
+                <tans>TansB</tans>
+                <testoptions>epsilon</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben das zweite Moment richtig berechnet. Eine m&#246;gliche Rechnung sieht vollst&#228;ndig aufgeschrieben folgenderma&#223;en aus:
+\begin{align*}
+\text{E}(X^2)
+&amp;=\int_{-\infty}^\infty x^2f(x)\text{ d}x\\
+&amp;=\int_0^\infty {@x^2*Gam_f(alpha, beta)@}\text{ d}x\\
+&amp;={@1/(alpha^2*gamma(beta))@}\int_0^\infty {@torx^(beta+1)*%e^-torx@}\text{ d}{@torx@}\\
+&amp;={@1/(alpha^2*gamma(beta))@}\cdot\Gamma\left({@beta+2@}\right)\\
+&amp;={@1/(alpha^2*gamma(beta))@}\cdot {@gamma(beta+2)@}\\
+&amp;={@Gam_E2(alpha, beta)@}.
+\end{align*}
+</p>
+<hr/>
+<p>
+    Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18b');
+show('oer-aufgabe-18c');
+" type="button">
+        Weiter
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You calculated the second moment correctly. A possible invoice looks fully written as follows:
+\begin{align*}
+\text{E}(X^2)
+&amp;=\int_{-\infty}^\infty x^2f(x)\text{ d}x\\
+&amp;=\int_0^\infty {@x^2*Gam_f(alpha, beta)@}\text{ d}x\\
+&amp;={@1/(alpha^2*gamma(beta))@}\int_0^\infty {@torx^(beta+1)*%e^-torx@}\text{ d}{@torx@}\\
+&amp;={@1/(alpha^2*gamma(beta))@}\cdot\Gamma\left({@beta+2@}\right)\\
+&amp;={@1/(alpha^2*gamma(beta))@}\cdot {@gamma(beta+2)@}\\
+&amp;={@Gam_E2(alpha, beta)@}.
+\end{align*}
+</p>
+<hr/>
+<p>
+    To get to the next task, click on
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18b');
+show('oer-aufgabe-18c');
+" type="button">
+        Next
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prtB-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans><![CDATA[is(ansB<0)]]></sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihr Ergebnis ist eine negative Zahl, aber das zweite Moment einer Zufallsvariablen kann nicht negativ sein.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Their result is a negative number, but the second moment of a random variable cannot be negative.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Das zweite Moment einer Zufallsvariablen ist nur dann 0, wenn die Zufallsvariable konstant und damit deterministisch ist. Das ist hier aber nicht der Fall.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The second moment of a random variable is only 0 if the random variable is constant and thus deterministic. This isn't the case.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB</sans>
+                <tans>TansA^2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Vermutlich haben Sie den in (a) berechneten Erwartungswert quadriert. Im Allgemeinen gilt jedoch \(\text{E}(X^2)\neq\text{E}(X)^2\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You may have quadrated the expected value calculated in (a). In general, however, \(\text{E}(X^2)\neq\text{E}(X)^2\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-aufgabe-18b-PRT1">
+    <p>
+        Dass Sie das zweite Moment nicht auf Anhieb berechnen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in zwei kleinere Teilaufgaben unterteilt. Wenn Sie diese alle gel&#246;st haben, k&#246;nnen Sie sicherlich auch die urspr&#252;ngliche Aufgabe l&#246;sen. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18b');
+show('oer-aufgabe-18b1');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-18b-PRT2" style="display:none;">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Sie haben gerade gelernt, dass das zweite Moment von \(X\) im Allgemeinen mit der Formel \[\text{E}(X^2)=\int_{-\infty}^\infty x^2f(x)\text{ d}x\] berechnet wird. Versuchen Sie, dieses Integral f&#252;r die gegebene Dichtefunktion \(f\) zu berechnen!
+    </p>
+    <hr/>
+    <p>
+        Wenn Sie bei der Berechnung nicht weiterkommen, l&#246;sen Sie zus&#228;tzlich noch die zweite Teilaufgabe. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18b');
+show('oer-aufgabe-18b2');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-18b-PRT3" style="display:none;">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Sie haben gerade gelernt, dass das zweite Moment von \(X\) durch das Integral
+\begin{equation*}
+\text{E}(X)
+=\int_{-\infty}^\infty x^2f(x)\text{ d}x
+=\int_0^\infty {@x^2*Gam_f(alpha, beta)@}\text{ d}x
+\end{equation*}
+berechnet wird. Versuchen Sie nun, dieses Integral zu berechnen! Sie haben dazu mehrere M&#246;glichkeiten:
+        <ul>
+            <li>
+                F&#252;hren Sie das Integral durch partielle Integration auf das Integral der Dichtefunktion zur&#252;ck. Dieses ist dann nach Definition \(\displaystyle\int_0^\infty {@Gam_f(alpha, beta)@}\text{ d}x=1\).
+            </li>
+            <li>
+                Schreiben Sie das Integral durch eine geeignete Substitution auf die Gammafunktion \(\displaystyle\Gamma(x)=\int_0^\infty t^{x-1}e^{-t}\text{ d}t\) um. Werte der Gammafunktion k&#246;nnen Sie dann mit dem Befehl
+                <code>
+                    gamma(x)
+                </code>
+                berechnen.
+            </li>
+        </ul>
+    </p>
+</div>
+[[/lang]][[lang code="en"]]
+<div id="oer-aufgabe-18b-PRT1">
+    <p>
+        That you couldn't calculate the second moment right away is no problem! In the following, the task is divided into two smaller subtasks. If you have solved these all, you can also solve the original task. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18b');
+show('oer-aufgabe-18b1');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-18b-PRT2" style="display:none;">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        You just learned that the second moment of \(X\) in general with the formula \[\text{E}(X^2)=\int_{-\infty}^\infty x^2f(x)\text{ d}x\] is calculated. Try this integral for the given density function \(f\) to calculate!
+    </p>
+    <hr/>
+    <p>
+        If you do not proceed during the calculation, you will also solve the second subtask. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18b');
+show('oer-aufgabe-18b2');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-18b-PRT3" style="display:none;">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        You just learned that the second moment of \(X\) through the integral
+\begin{equation*}
+\text{E}(X)
+=\int_{-\infty}^\infty x^2f(x)\text{ d}x
+=\int_0^\infty {@x^2*Gam_f(alpha, beta)@}\text{ d}x
+\end{equation*}is calculated. Try to calculate this integral! You have several options:
+        <ul>
+            <li>
+                Return the integral to the integral of the density function by partial integration. This is then defined \(\displaystyle\int_0^\infty {@Gam_f(alpha, beta)@}\text{ d}x=1\).
+            </li>
+            <li>
+                Write the integral by appropriate substitution on the gamma function \(\displaystyle\Gamma(x)=\int_0^\infty t^{x-1}e^{-t}\text{ d}t\) Um. Values of the gamma function can then be used with the command
+                <code>
+                    gamma(x)
+                </code>
+                calculate.
+            </li>
+        </ul>
+    </p>
+</div>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB1</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Dieses Integral ist das Quadrat des Erwartungswerts, aber nicht das zweite Moment. Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    This integral is the square of the expected value, but not the second moment. Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtB1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB1</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Wenn die Dichtefunktion nicht explizit bekannt ist, kann man im Allgemeinen nichts &#252;ber den genauen Wert dieses Integrals sagen. Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    If the density function is not explicitly known, one can generally say nothing about the exact value of this integral. Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtB1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB1</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Das Integral \(\displaystyle\int_{-\infty}^\infty x^2f(x)\text{ d}x\) ergibt genau das zweite Moment einer stetigen Zufallsvariablen mit Dichtefunktion \(f\).
+</p>
+<hr/>
+<p>
+    <ul>
+        <li>
+            Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+            <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18b1');
+show('oer-aufgabe-18b2');
+" type="button">
+                Weiter
+            </button>
+        </li>
+        <li>
+            Um zur urspr&#252;nglichen Aufgabe zu gelangen, klicken Sie auf
+            <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-18b1');
+show('oer-aufgabe-18b');
+hide('oer-aufgabe-18b-PRT1');
+show('oer-aufgabe-18b-PRT2');
+" type="button">
+                Zur&#252;ck
+            </button>
+        </li>
+    </ul>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    The Integral \(\displaystyle\int_{-\infty}^\infty x^2f(x)\text{ d}x\) gives exactly the second moment of a steady random variable with density function \(f\).
+</p>
+<hr/>
+<p>
+    <ul>
+        <li>
+            To get to the next task, click on
+            <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18b1');
+show('oer-aufgabe-18b2');
+" type="button">
+                Next
+            </button>
+        </li>
+        <li>
+            To get to the original task, click on
+            <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-18b1');
+show('oer-aufgabe-18b');
+hide('oer-aufgabe-18b-PRT1');
+show('oer-aufgabe-18b-PRT2');
+" type="button">
+                Back
+            </button>
+        </li>
+    </ul>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prtB1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB1</sans>
+                <tans>4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Im Allgemeinen m&#252;sste man zur Berechnung des zweiten Moments die Funktion \(x^2f(x)\) zwar &#252;ber ganz \(\mathbb{R}\) integrieren, aber da die gegebene Dichtefunktion auf den negativen reellen Zahlen konstant null ist, ergibt hier auch das Integral \(\displaystyle\int_0^\infty x^2f(x)\text{ d}x\) das zweite Moment von \(X\). Somit ist diese Antwort nicht ganz falsch.
+</p>
+<hr/>
+<p>
+    <ul>
+        <li>
+            Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+            <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18b1');
+show('oer-aufgabe-18b2');
+" type="button">
+                Weiter
+            </button>
+        </li>
+        <li>
+            Um zur urspr&#252;nglichen Aufgabe zu gelangen, klicken Sie auf
+            <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-18b1');
+show('oer-aufgabe-18b');
+hide('oer-aufgabe-18b-PRT1');
+show('oer-aufgabe-18b-PRT2');
+" type="button">
+                Zur&#252;ck
+            </button>
+        </li>
+    </ul>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    In general, to calculate the second moment, the function \(x^2f(x)\) on the whole \(\mathbb{R}\) integrating, but since the given density function is constant zero on the negative real numbers, the integral \(\displaystyle\int_0^\infty x^2f(x)\text{ d}x\) the second moment of \(X\). This answer is not entirely wrong.
+</p>
+<hr/>
+<p>
+    <ul>
+        <li>
+            To get to the next task, click on
+            <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18b1');
+show('oer-aufgabe-18b2');
+" type="button">
+                Next
+            </button>
+        </li>
+        <li>
+            To get to the original task, click on
+            <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-18b1');
+show('oer-aufgabe-18b');
+hide('oer-aufgabe-18b-PRT1');
+show('oer-aufgabe-18b-PRT2');
+" type="button">
+                Back
+            </button>
+        </li>
+    </ul>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB2</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Hiermit erhalten Sie das Quadrat des Erwartungswerts, den Sie schon in (a) berechnet haben. Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    This gives you the square of the expected value you have already calculated in (a). Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtB2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB2</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Dieses Integral existiert nicht, da der Integrand f&#252;r \(x\to-\infty\) unbeschr&#228;nkt ist. Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    This integral does not exist because the integrand for \(x\to-\infty\) is unlimited. Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtB2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB2</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB2-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Dieses Integral existiert nicht, da der Integrand f&#252;r \(x\to-\infty\) unbeschr&#228;nkt ist. Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    This integral does not exist because the integrand for \(x\to-\infty\) is unlimited. Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prtB2-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB2</sans>
+                <tans>4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB2-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Da die gegebene Dichtefunktion \(f\) auf den negativen reellen Zahlen konstant null ist, berechnen wir das zweite Moment von \(X\) hier mit dem Integral \[\int_{-\infty}^\infty x^2f(x)\text{ d}x=\int_0^\infty {@x^2*Gam_f(alpha, beta)@}\text{ d}x.\]
+</p>
+<hr/>
+<p>
+    Jetzt k&#246;nnen Sie die urspr&#252;ngliche Aufgabe noch einmal versuchen. Klicken Sie dazu auf
+    <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-18b2');
+show('oer-aufgabe-18b');
+hide('oer-aufgabe-18b-PRT1');
+hide('oer-aufgabe-18b-PRT2');
+show('oer-aufgabe-18b-PRT3');
+" type="button">
+        Zur&#252;ck
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    Since the given density function \(f\) on the negative real numbers is constant zero, we calculate the second moment of \(X\) here with the Integral \[\int_{-\infty}^\infty x^2f(x)\text{ d}x=\int_0^\infty {@x^2*Gam_f(alpha, beta)@}\text{ d}x.\]
+</p>
+<hr/>
+<p>
+    Now you can try the original task again. Click on
+    <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-18b2');
+show('oer-aufgabe-18b');
+hide('oer-aufgabe-18b-PRT1');
+hide('oer-aufgabe-18b-PRT2');
+show('oer-aufgabe-18b-PRT3');
+" type="button">
+        Back
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB2-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtC</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans><![CDATA[is(ansC>0)]]></sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtC-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtC-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansC</sans>
+                <tans>TansC</tans>
+                <testoptions>epsilon</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die Varianz richtig berechnet. Bei Verwendung des Verschiebungssatzes sieht die Rechnung vollst&#228;ndig aufgeschrieben folgenderma&#223;en aus:
+\begin{equation*}
+\text{Var}(X)
+=\text{E}(X^2)-\text{E}(X)^2
+={@Gam_E2(alpha, beta)@}-{@Gam_E(alpha, beta)^2@}
+={@Gam_Var(alpha, beta)@}.
+\end{equation*}
+</p>
+<hr/>
+<p>
+    Sie haben die Aufgabe erfolgreich gel&#246;st! Jetzt sollten Sie Erwartungswerte und Varianzen von stetigen Zufallsvariablen sicher berechnen k&#246;nnen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have calculated the variance correctly. If the shift rate is used, the invoice looks fully written as follows:
+\begin{equation*}
+\text{Var}(X)
+=\text{E}(X^2)-\text{E}(X)^2
+={@Gam_E2(alpha, beta)@}-{@Gam_E(alpha, beta)^2@}
+={@Gam_Var(alpha, beta)@}.
+\end{equation*}
+</p>
+<hr/>
+<p>
+    You have successfully solved the task! Now you should be able to reliably calculate expected values and variances of constant random variables.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-aufgabe-18c-PRT1">
+    <p>
+        Dass Sie die Varianz nicht auf Anhieb berechnen konnten, ist kein Problem! Im Folgenden gibt es zuerst wieder eine kleinere Teilaufgabe. Wenn Sie diese gel&#246;st haben, k&#246;nnen Sie sicherlich auch die urspr&#252;ngliche Aufgabe l&#246;sen. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18c');
+show('oer-aufgabe-18c1');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-18c-PRT2" style="display:none;">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Sie haben gerade gelernt, dass Sie zur Berechnung der Varianz zwei M&#246;glichkeiten haben.
+        <ul>
+            <li>
+                Benutzen Sie den Verschiebungssatz \(\text{Var}(X)=\text{E}(X^2)-\text{E}(X)^2\).
+            </li>
+            <li>
+                Benutzen Sie die Definition \(\text{Var}(X)=\text{E}\big((X-\text{E}(X))^2\big)\).
+            </li>
+        </ul>
+    </p>
+    <p>
+        Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+    </p>
+</div>
+[[/lang]][[lang code="en"]]
+<div id="oer-aufgabe-18c-PRT1">
+    <p>
+        That you couldn't calculate the variance right away is no problem! In the following, there is again a smaller subtask. If you have solved this, you can also solve the original task. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-18c');
+show('oer-aufgabe-18c1');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-18c-PRT2" style="display:none;">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        You have just learned that you have two options to calculate the variance.
+        <ul>
+            <li>
+                Use the displacement set \(\text{Var}(X)=\text{E}(X^2)-\text{E}(X)^2\).
+            </li>
+            <li>
+                Use the definition \(\text{Var}(X)=\text{E}\big((X-\text{E}(X))^2\big)\).
+            </li>
+        </ul>
+    </p>
+    <p>
+        Try it again and then click "Check" again.
+    </p>
+</div>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans><![CDATA[is(ansC<0)]]></sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC-8-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihr Ergebnis ist eine negative Zahl, aber die Varianz einer Zufallsvariablen kann nicht negativ sein.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Their result is a negative number, but the variance of a random variable cannot be negative.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC-8-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Die Varianz einer Zufallsvariablen ist nur dann 0, wenn die Zufallsvariable konstant und damit deterministisch ist. Das ist hier aber nicht der Fall.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The variance of a random variable is only 0 if the random variable is constant and thus deterministic. This isn't the case.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtC1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansC1</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Wegen \(\text{E}(X)^2\leq\text{E}(X^2)\) ist der Ausdruck \(\text{E}(X)^2-\text{E}(X^2)\) f&#252;r nicht-deterministische Zufallsvariablen immer negativ, aber die Varianz muss in diesem Fall positiv sein. Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    About \(\text{E}(X)^2\leq\text{E}(X^2)\) is the expression \(\text{E}(X)^2-\text{E}(X^2)\) for non-deterministic random variables always negative, but in this case the variance must be positive. Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtC1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansC1</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Aufgrund der Linearit&#228;t des Erwartungswerts gilt immer \(\big(\text{E}((X-\text{E}(X))\big)^2=\big(\text{E}(X)-\text{E}(X)\big)^2=0\). Probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    Due to the linearity of the expected value always applies \(\big(\text{E}((X-\text{E}(X))\big)^2=\big(\text{E}(X)-\text{E}(X)\big)^2=0\). Try it again and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtC1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansC1</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Diese auch Verschiebungssatz genannte Formel wird &#252;blicherweise zur Berechnung der Varianz benutzt. Da Sie den Erwartungswert und das zweite Moment von \(X\) schon berechnet haben, ist es nun besonders leicht, mithilfe dieser Formel an die Varianz von \(X\) zu kommen.
+</p>
+<p>
+    Alternativ k&#246;nnen Sie die Varianz auch direkt mit der Definition berechnen. Allerdings ist dieser Rechenweg etwas aufw&#228;ndig, da sie erneut ein Integral berechnen m&#252;ssen:
+\begin{align*}
+\text{Var}(X)
+&amp;=\text{E}\big((X-\text{E}(X))^2\big)\\
+&amp;=\int_{-\infty}^\infty\big(x-\text{E}(X)\big)^2f(x)\text{ d}x\\
+&amp;=\int_0^\infty\left(x-{@Gam_E(alpha, beta)@}\right)^2\cdot {@Gam_f(alpha, beta)@}\text{ d}x.
+\end{align*}
+</p>
+<hr/>
+<p>
+    Jetzt k&#246;nnen Sie die urspr&#252;ngliche Aufgabe noch einmal versuchen. Klicken Sie dazu auf
+    <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-18c1');
+show('oer-aufgabe-18c');
+hide('oer-aufgabe-18c-PRT1');
+show('oer-aufgabe-18c-PRT2');
+" type="button">
+        Zur&#252;ck
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    This formula also referred to as a displacement set is usually used for calculating the variance. Since you are expecting and the second moment of \(X\) have already calculated, it is now particularly easy to use this formula to the variance of \(X\) to come.
+</p>
+<p>
+    Alternatively, you can calculate the variance directly with the definition. However, this computational path is somewhat complicated since they have to calculate an integral again:
+\begin{align*}
+\text{Var}(X)
+&amp;=\text{E}\big((X-\text{E}(X))^2\big)\\
+&amp;=\int_{-\infty}^\infty\big(x-\text{E}(X)\big)^2f(x)\text{ d}x\\
+&amp;=\int_0^\infty\left(x-{@Gam_E(alpha, beta)@}\right)^2\cdot {@Gam_f(alpha, beta)@}\text{ d}x.
+\end{align*}
+</p>
+<hr/>
+<p>
+    Now you can try the original task again. Click on
+    <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-18c1');
+show('oer-aufgabe-18c');
+hide('oer-aufgabe-18c-PRT1');
+show('oer-aufgabe-18c-PRT2');
+" type="button">
+        Back
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prtC1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansC1</sans>
+                <tans>4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Das ist genau die Definition der Varianz. Allerdings ist dieser Rechenweg etwas aufw&#228;ndig, da sie erneut ein Integral berechnen m&#252;ssen:
+\begin{align*}
+\text{Var}(X)
+&amp;=\text{E}\big((X-\text{E}(X))^2\big)\\
+&amp;=\int_{-\infty}^\infty\big(x-\text{E}(X)\big)^2f(x)\text{ d}x\\
+&amp;=\int_0^\infty\left(x-{@Gam_E(alpha, beta)@}\right)^2\cdot {@Gam_f(alpha, beta)@}\text{ d}x.
+\end{align*}
+</p>
+<p>
+    Alternativ k&#246;nnen Sie die Varianz mit der auch Verschiebungssatz genannten Formel \(\text{Var}(X)=\text{E}(X^2)-\text{E}(X)^2\) berechnen. Da Sie den Erwartungswert und das zweite Moment von \(X\) schon berechnet haben, ist es nun besonders leicht, mithilfe dieser Formel an die Varianz von \(X\) zu kommen.
+</p>
+<hr/>
+<p>
+    Jetzt k&#246;nnen Sie die urspr&#252;ngliche Aufgabe noch einmal versuchen. Klicken Sie dazu auf
+    <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-18c1');
+show('oer-aufgabe-18c');
+hide('oer-aufgabe-18c-PRT1');
+show('oer-aufgabe-18c-PRT2');
+" type="button">
+        Zur&#252;ck
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    This is exactly the definition of variance. However, this computational path is somewhat complicated since they have to calculate an integral again:
+\begin{align*}
+\text{Var}(X)
+&amp;=\text{E}\big((X-\text{E}(X))^2\big)\\
+&amp;=\int_{-\infty}^\infty\big(x-\text{E}(X)\big)^2f(x)\text{ d}x\\
+&amp;=\int_0^\infty\left(x-{@Gam_E(alpha, beta)@}\right)^2\cdot {@Gam_f(alpha, beta)@}\text{ d}x.
+\end{align*}
+</p>
+<p>
+    Alternatively, you can use the variance with the formula also mentioned shift set \(\text{Var}(X)=\text{E}(X^2)-\text{E}(X)^2\) calculate. Since you are expecting and the second moment of \(X\) have already calculated, it is now particularly easy to use this formula to the variance of \(X\) to come.
+</p>
+<hr/>
+<p>
+    Now you can try the original task again. Click on
+    <button class="buttonzurueck" onclick="
+hide('oer-aufgabe-18c1');
+show('oer-aufgabe-18c');
+hide('oer-aufgabe-18c-PRT1');
+show('oer-aufgabe-18c-PRT2');
+" type="button">
+        Back
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1566710881</deployedseed>
+        <deployedseed>1269876604</deployedseed>
+        <deployedseed>1165444829</deployedseed>
+        <deployedseed>1884185849</deployedseed>
+        <deployedseed>1010436902</deployedseed>
+        <deployedseed>798827983</deployedseed>
+        <deployedseed>25083523</deployedseed>
+        <deployedseed>1672424848</deployedseed>
+        <deployedseed>40347476</deployedseed>
+        <deployedseed>66918074</deployedseed>
+    </question>
+    
+
+</quiz>

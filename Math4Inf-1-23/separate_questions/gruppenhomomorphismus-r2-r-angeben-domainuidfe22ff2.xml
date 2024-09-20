@@ -6,30 +6,29 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Geben Sie einen Gruppenhomomorphismus \(\varphi: (\mathbb{R}^2,+)\to(\mathbb{R},+)\) an.
-        <br/>
-    </p>
-    <p>
-        \(\varphi(x; y) = \) [[input:ans1]]
-        <span style="font-size: 0.9375rem;">
-            [[validation:ans1]]
-        </span>
-    </p>
-</span>
-<span class="multilang" lang="en">
+[[lang code="de"]]
+<p>
+    Geben Sie einen Gruppenhomomorphismus \(\varphi: (\mathbb{R}^2,+)\to(\mathbb{R},+)\) an.
+    <br/>
+</p>
+<p>
+    \(\varphi(x; y) = \) [[/lang]][[lang code="en"]]
     <p>
         Give a group homomorphism \(\varphi: (\mathbb{R}^2,+)\to(\mathbb{R},+)\) on.
         <br/>
     </p>
     <p>
-        \(\varphi(x; y) = \) [[input:ans1]]
+        \(\varphi(x; y) = \) [[/lang]][[input:ans1]][[lang code="de"]]
         <span style="font-size: 0.9375rem;">
-            [[validation:ans1]]
+            [[/lang]][[lang code="en"]]
+            <span style="font-size: 0.9375rem;">
+                [[/lang]][[validation:ans1]][[lang code="de"]]
+            </span>
         </span>
     </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -47,12 +46,7 @@
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    [[feedback:prt1]]
-</span>
-<span class="multilang" lang="en">
-    [[feedback:prt1]]
-</span>
+[[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -66,32 +60,17 @@
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -146,14 +125,11 @@ f12:subst([x=x1+x2,y=y1+y2],ans1);</text>
                 <trueanswernote>prt1-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    Es gilt: \( f(x_1+x_2,y_1+y_2) = {@f12@} = {@f1@}+{@f2@} = f(x_1,y_1)+f(x_2,y_2) \)
-    <br/>
-</span>
-<span class="multilang" lang="en">
-    It shall apply: \( f(x_1+x_2,y_1+y_2) = {@f12@} = {@f1@}+{@f2@} = f(x_1,y_1)+f(x_2,y_2) \)
-    <br/>
-</span>
+[[lang code="de"]]Es gilt: \( f(x_1+x_2,y_1+y_2) = {@f12@} = {@f1@}+{@f2@} = f(x_1,y_1)+f(x_2,y_2) \)
+<br/>
+[[/lang]][[lang code="en"]]It applies: \( f(x_1+x_2,y_1+y_2) = {@f12@} = {@f1@}+{@f2@} = f(x_1,y_1)+f(x_2,y_2) \)
+<br/>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -163,18 +139,17 @@ f12:subst([x=x1+x2,y=y1+y2],ans1);</text>
                 <falseanswernote>prt1-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Es gilt: \( f(x_1+x_2,y_1+y_2) = {@f12@} \neq {@f1+f2@} = f(x_1,y_1)+f(x_2,y_2) \)
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        It shall apply: \( f(x_1+x_2,y_1+y_2) = {@f12@} \neq {@f1+f2@} = f(x_1,y_1)+f(x_2,y_2) \)
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Es gilt: \( f(x_1+x_2,y_1+y_2) = {@f12@} \neq {@f1+f2@} = f(x_1,y_1)+f(x_2,y_2) \)
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    It applies: \( f(x_1+x_2,y_1+y_2) = {@f12@} \neq {@f1+f2@} = f(x_1,y_1)+f(x_2,y_2) \)
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>

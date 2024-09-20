@@ -1,0 +1,2318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Verkehrstote in Bochum (ML-Sch&#228;tzer)</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<style>
+    button.next, button.top-next {
+    border: 1px solid black;
+background-color: #A9F5BC;
+}
+button.next:hover, button.top-next:hover {
+        background-color: #E0F8E6;
+}
+button.prev, button.top {
+    border: 1px solid black;
+    background-color: #DCB25E;
+}
+button.prev:hover, button.top:hover {
+        background-color: #E7D2A7;
+}
+.new {
+                color: purple;
+
+
+
+
+}
+
+
+
+
+.flashback {
+        border: 1px solid black;
+        box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
+        margin: 1rem 0;
+        padding: 0.7rem;
+        text-align: center;
+}
+
+
+
+
+.flashback li {
+        text-align: left;
+}
+
+
+
+
+.current {
+        font-weight: bold;
+}
+
+
+
+
+/* Style f&#252;r Details */
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+</style>
+<details>
+    <summary>
+        Inhalt und Umfang dieser Aufgabe
+    </summary>
+    <p>
+        In dieser Aufgabe lernen Sie das Bestimmen eines Maximum-Likelihood-Sch&#228;tzers sowie einige seiner Eigenschaften. Sie besteht aus den folgenden f&#252;nf
+Teilaufgaben .
+    </p>
+    <ul>
+        <li>
+            In
+            <b>
+                (a)
+            </b>
+            Bestimmen des ML-Sch&#228;tzers.
+        </li>
+        <li>
+            In
+            <b>
+                (b)
+            </b>
+            Bestimmen der Varianz des ML-Sch&#228;tzers.
+        </li>
+        <li>
+            In
+            <b>
+                (c)
+            </b>
+            Sch&#228;tzen der Varianz und der Standardabweichung des ML-Sch&#228;tzers, anhand eines Beispiels.
+        </li>
+        <li>
+            In
+            <b>
+                (d)
+            </b>
+            Bestimmen eines 95%-Konfidenzintervalls f&#252;r den unbekannten Parameter mit Hilfe der zuvor gesch&#228;tzten Standardabweichung.
+        </li>
+        <li>
+            In
+            <b>
+                (e)
+            </b>
+            Kennen von Eigenschaften dieses Konfidenzintervalls.
+        </li>
+    </ul>
+</details>
+<div class="question-view">
+    <p>
+        Wir wollen die j&#228;hrliche Anzahl der Verkehrstoten in Bochum
+analysieren. Es liegen uns Daten \(x_1, \dots, x_{12}\) aus zw&#246;lf
+aufeinanderfolgenden Jahren vor, die wir als Realisierungen
+unabh&#228;ngiger Poisson(\(\lambda\))-verteilter Zufallsvariablen \(X_1,
+\dots, X_{12}\) auffassen, wobei der Parameter \(\lambda &gt; 0\) unbekannt
+ist.
+    </p>
+    <div class="question-view">
+        <div class="question-view" id="cb8d4d1f-dc92-4883-aeec-db05babda766">
+            [[/lang]][[lang code="en"]]
+            <style>
+                button.next, button.top-next {
+    border: 1px solid black;
+background-color: #A9F5BC;
+}
+button.next:hover, button.top-next:hover {
+        background-color: #E0F8E6;
+}
+button.prev, button.top {
+    border: 1px solid black;
+    background-color: #DCB25E;
+}
+button.prev:hover, button.top:hover {
+        background-color: #E7D2A7;
+}
+.new {
+                color: purple;
+
+
+
+
+}
+
+
+
+
+.flashback {
+        border: 1px solid black;
+        box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
+        margin: 1rem 0;
+        padding: 0.7rem;
+        text-align: center;
+}
+
+
+
+
+.flashback li {
+        text-align: left;
+}
+
+
+
+
+.current {
+        font-weight: bold;
+}
+
+
+
+
+/* Style f&#252;r Details */
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+            </style>
+            <details>
+                <summary>
+                    Content and scope of this task
+                </summary>
+                <p>
+                    In this task you will learn to determine a maximum-Likelihood estimator as well as some of its properties. It consists of the following five
+Subtasks .
+                </p>
+                <ul>
+                    <li>
+                        In
+                        <b>
+                            (a)
+                        </b>
+                        Determine the ML estimator.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (b)
+                        </b>
+                        determining the variance of the ML estimator.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (c)
+                        </b>
+                        estimating the variance and the standard deviation of the ML estimator, using an example.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (d)
+                        </b>
+                        determining a 95% confidence interval for the unknown parameter with the aid of the previously estimated standard deviation.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (e)
+                        </b>
+                        Knowing properties of this confidence interval.
+                    </li>
+                </ul>
+            </details>
+            <div class="question-view">
+                <p>
+                    We want the annual number of traffic deaths in Bochum
+analyse. Our data \(x_1, \dots, x_{12}\) Of twelve
+in successive years, which we as realizations
+independent Poisson(\(\lambda\))-distributed random variables \(X_1,
+\dots, X_{12}\) recording, wherein the parameter \(\lambda &gt; 0\) unknown
+is.
+                </p>
+                <div class="question-view">
+                    <div class="question-view" id="cb8d4d1f-dc92-4883-aeec-db05babda766">
+                        [[/lang]][[feedback:after_help]][[lang code="de"]]
+                        <p>
+                            <b>
+                                (a)
+                            </b>
+                            Bestimmen Sie den Maximum-Likelihood Sch&#228;tzer f&#252;r \(\lambda\). Sie k&#246;nnen dabei zum Beispiel \(x_1\) als
+                            <code>
+                                x1
+                            </code>
+                            und \(x_{12}\) als
+                            <code>
+                                x12
+                            </code>
+                            eingeben. Eine Eingabe von Summenzeichen ist in dieser Aufgabe nicht m&#246;glich.
+                        </p>
+                        <p>
+                            \(\hat{\lambda}_{ML} = \) [[/lang]][[lang code="en"]]
+                            <p>
+                                <b>
+                                    (a)
+                                </b>
+                                Determine the Maximum Likelihood Treasurer for \(\lambda\). For example, you can \(x_1\) as
+                                <code>
+                                    x1
+                                </code>
+                                and \(x_{12}\) as
+                                <code>
+                                    x12
+                                </code>
+                                enter. An input of sum characters is not possible in this task.
+                            </p>
+                            <p>
+                                \(\hat{\lambda}_{ML} = \) [[/lang]][[input:ans1]][[lang code="de"]]
+                            </p>
+                            [[/lang]][[lang code="en"]]
+                        </p>
+                        [[/lang]][[validation:ans1]][[lang code="de"]]
+[[/lang]][[lang code="en"]][[/lang]][[feedback:ans1]][[lang code="de"]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            Um den Maximum-Likelihood-Sch&#228;tzer zum Parameter \(\lambda\) zu
+        bestimmen, muss die passende Likelihood-Funktion oder
+        Loglikelihood-Funktion maximiert werden.  Diese Hilfe f&#252;hrt Sie
+        durch die folgenden drei Schritte:
+                        </p>
+                        <ol>
+                            <li class="current">
+                                Bestimmung der Likelihood-Funktion
+                            </li>
+                            <li>
+                                Bestimmung der Loglikelihood-Funktion
+                            </li>
+                            <li>
+                                Berechung der ersten Ableitung der Loglikelihood-Funktion
+                            </li>
+                        </ol>
+                        <p>
+                            <b>
+                                (a.1)
+                            </b>
+                            W&#228;hlen Sie die passende Likelihood-Funktion f&#252;r den Parameter \(\lambda\) aus.
+                        </p>
+                        [[/lang]][[lang code="en"]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            To the maximum Likelihood estimator to the parameter \(\lambda\) to
+determine the matching likelihood function or
+Loglikelihood function can be maximized. This help guides you
+by the following three steps:
+                        </p>
+                        <ol>
+                            <li class="current">
+                                Determination of the Likelihood function
+                            </li>
+                            <li>
+                                Determination of Loglikelihood Function
+                            </li>
+                            <li>
+                                Recalculation of the first derivative of the Loglikelihood function
+                            </li>
+                        </ol>
+                        <p>
+                            <b>
+                                (a)
+                            </b>
+                            Select the matching Likelihood function for the parameter \(\lambda\) out.
+                        </p>
+                        [[/lang]][[input:likelihood]][[lang code="de"]]
+[[/lang]][[lang code="en"]][[/lang]][[validation:likelihood]][[lang code="de"]]
+[[/lang]][[lang code="en"]][[/lang]][[feedback:likelihood]][[lang code="de"]]
+                    </div>
+                    <div class="question-view">
+                        [[/lang]][[lang code="en"]]
+                    </div>
+                    <div class="question-view">
+                        [[/lang]][[feedback:flbk_likelihood]][[lang code="de"]]
+                        <p>
+                            <b>
+                                (a.2)
+                            </b>
+                            W&#228;hlen Sie die passende Loglikelihood-Funktion f&#252;r den Parameter \(\lambda\) aus.
+                        </p>
+                        [[/lang]][[lang code="en"]]
+                        <p>
+                            <b>
+                                (a.2)
+                            </b>
+                            Select the appropriate Loglikelihood function for the parameter \(\lambda\) out.
+                        </p>
+                        [[/lang]][[input:loglikelihood]][[lang code="de"]]
+[[/lang]][[lang code="en"]][[/lang]][[validation:loglikelihood]][[lang code="de"]]
+[[/lang]][[lang code="en"]][[/lang]][[feedback:loglikelihood]][[lang code="de"]]
+                    </div>
+                    <div class="question-view">
+                        [[/lang]][[lang code="en"]]
+                    </div>
+                    <div class="question-view">
+                        [[/lang]][[feedback:flbk_loglikelihood]][[lang code="de"]]
+                        <p>
+                            <b>
+                                (a.3)
+                            </b>
+                            W&#228;hlen Sie die korrekte Ableitung der Loglikelihood-Funktion aus.
+[[/lang]][[lang code="en"]]
+                            <p>
+                                <b>
+                                    (a.3)
+                                </b>
+                                Select the correct derivation of the Loglikelihood function.
+[[/lang]][[input:diffloglikelihood]][[lang code="de"]]
+[[/lang]][[lang code="en"]][[/lang]][[validation:diffloglikelihood]][[lang code="de"]]
+[[/lang]][[lang code="en"]][[/lang]][[feedback:diffloglikelihood]][[lang code="de"]]
+                            </p>
+                        </p>
+                    </div>
+                </div>
+                <div class="question-view">
+                    [[/lang]][[lang code="en"]]
+                </div>
+            </div>
+            <div class="question-view">
+                [[/lang]][[feedback:mlSchaetzer]][[lang code="de"]]
+                <p>
+                    <b>
+                        (b)
+                    </b>
+                    Bestimmen Sie eine Formel f&#252;r die Varianz des Maximum-Likelihood Sch&#228;tzers \(\mathrm{Var}(\hat{\lambda}_{ML})\). Sie k&#246;nnen \(\lambda\) als
+                    <code>
+                        lambda
+                    </code>
+                    eingeben.
+                </p>
+                <p>
+                    \(\mathrm{Var}(\hat{\lambda}_{ML}) = \) [[/lang]][[lang code="en"]]
+                    <p>
+                        <b>
+                            (b)
+                        </b>
+                        Determine a formula for the variance of the Maximum Likelihood Treasurer \(\mathrm{Var}(\hat{\lambda}_{ML})\). You can \(\lambda\) as
+                        <code>
+                            lambda
+                        </code>
+                        enter.
+                    </p>
+                    <p>
+                        \(\mathrm{Var}(\hat{\lambda}_{ML}) = \) [[/lang]][[input:ans3]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans3]][[lang code="de"]]
+                    </p>
+                    [[/lang]][[lang code="en"]]
+                </p>
+                [[/lang]][[feedback:ans3]][[lang code="de"]]
+            </div>
+            <div class="question-view">
+                [[/lang]][[lang code="en"]]
+            </div>
+            <div class="question-view">
+                [[/lang]][[feedback:before_c]][[lang code="de"]]
+                <p>
+                    In der Stadt Bochum gab es im 12-Jahreszeitraum von 2009 bis 2020
+insgesamt {# totals #} Verkehrstote.
+                </p>
+                <p>
+                    <b>
+                        (c)
+                    </b>
+                    Sch&#228;tzen Sie die Varianz und die Standardabweichung des
+Maximum-Likelihood-Sch&#228;tzers und geben Sie das Ergebnis auf mindestens
+drei Nachkommastellen genau an.
+                </p>
+                <p>
+                    \(\hat{\sigma}^2_{\hat{\lambda}_{ML}} = \) [[/lang]][[lang code="en"]]
+                    <p>
+                        In the city of Bochum there were between 2009 and 2020 in the 12-year period
+Total {# totals #} Traffic dead.
+                    </p>
+                    <p>
+                        <b>
+                            (c)
+                        </b>
+                        Estimate the variance and the standard deviation of the
+Maximum Likelihood Estimator and give the result to at least
+three descendants exactly.
+                    </p>
+                    <p>
+                        \(\hat{\sigma}^2_{\hat{\lambda}_{ML}} = \) [[/lang]][[input:est_variance]][[lang code="de"]]
+                    </p>
+                    [[/lang]][[lang code="en"]]
+                </p>
+                [[/lang]][[validation:est_variance]][[lang code="de"]]
+        [[/lang]][[lang code="en"]][[/lang]][[feedback:est_variance]][[lang code="de"]]
+                <p>
+                    \(\hat{\sigma}_{\hat{\lambda}_{ML}} = \) [[/lang]][[lang code="en"]]
+                    <p>
+                        \(\hat{\sigma}_{\hat{\lambda}_{ML}} = \) [[/lang]][[input:est_std]][[lang code="de"]]
+[[/lang]][[lang code="en"]][[/lang]][[validation:est_std]][[lang code="de"]]
+[[/lang]][[lang code="en"]][[/lang]][[feedback:est_std]][[lang code="de"]]
+                        <br/>
+                        [[/lang]][[lang code="en"]]
+                        <br/>
+                        [[/lang]][[feedback:est_complete]][[lang code="de"]]
+                    </p>
+                </p>
+            </div>
+            <div class="question-view">
+                [[/lang]][[lang code="en"]]
+            </div>
+            <div class="question-view">
+                [[/lang]][[feedback:before_d]][[lang code="de"]]
+                <p>
+                    <b>
+                        (d)
+                    </b>
+                    Geben Sie mithilfe der Faustregel &#8222;Sch&#228;tzwert &#177; 2 &#215;
+gesch&#228;tzte Standardabweichung des Sch&#228;tzers&#8220; ein approximatives
+95%-Konfidenzintervall f&#252;r den unbekannten Parameter \(\lambda\)
+an.
+                </p>
+                <!-- Numerical input -->
+                <p>
+                    [[/lang]][[lang code="en"]]
+                    <p>
+                        <b>
+                            (d)
+                        </b>
+                        Use the rule of thumb to specify &#8220;estimate value &#177; 2 &#215;
+estimated standard deviation of the estimator&#8221; an approximate
+95% confidence interval for the unknown parameter \(\lambda\)on.
+                    </p>
+                    <!-- Numerical input -->
+                    <p>
+                        [[/lang]][[input:ansd]][[lang code="de"]]
+                    </p>
+                    [[/lang]][[lang code="en"]]
+                </p>
+                [[/lang]][[validation:ansd]][[lang code="de"]]
+[[/lang]][[lang code="en"]][[/lang]][[feedback:ansd]][[lang code="de"]]
+            </div>
+            <div class="question-view">
+                [[/lang]][[lang code="en"]]
+            </div>
+            <div class="question-view">
+                [[/lang]][[feedback:before_e]][[lang code="de"]]
+                <p>
+                    <b>
+                        (e)
+                    </b>
+                    Welche der folgenden Aussagen trifft auf das von Ihnen bestimmte
+        Konfidenzintervall zu?
+                </p>
+                <!-- Multiple-choice input -->
+                <p>
+                    [[/lang]][[lang code="en"]]
+                    <p>
+                        <b>
+                            (e)
+                        </b>
+                        Which of the following statements applies to the statements you have made
+Confidence interval too?
+                    </p>
+                    <!-- Multiple-choice input -->
+                    <p>
+                        [[/lang]][[input:anse]][[lang code="de"]]
+                    </p>
+                    [[/lang]][[lang code="en"]]
+                </p>
+                [[/lang]][[validation:anse]][[lang code="de"]]
+[[/lang]][[lang code="en"]][[/lang]][[feedback:anse]][[lang code="de"]]
+            </div>
+        </div>
+        <script>
+            // This script is responsible for the question navigation.
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later
+(()=>{function e(e,t){this.rootElement=e,this.id=t,this.views=e.querySelectorAll(".question-view"),this.currentView=Array.prototype.findIndex.call(this.views,i)}function t(e){for(;e;)o(e),e=n(e)}function n(e){let t=e.parentNode;return t&&(t=t.closest(".question-view")),t}function o(e){e.style.display="block"}function i(e){return null==e.querySelector(".question-view")}function s(e){e.style.display="none"}
+void 0===window.QController&&(window.QController=e,document.addEventListener("DOMContentLoaded",(t=>{const n=document.getElementById("responseform");if(!n)throw Error("Element with id responseform not found.");n.querySelectorAll(".stack.que").forEach((t=>{const n=t.querySelector(".question-view");if(!n)return void console.log("QController Warning: no elements with class question-view inside "+t.id);const o=new e(n,t.id);o.installHandlers(),o.loadState(),o.update()}))}))),e.prototype.update=function(){this.views.forEach(s);const e=this.views[this.currentView];i(e)?t(e):function(e){let n=e;for(;n&&!i(n);)n=n.querySelector(".question-view");t(n)}(e)},e.prototype.installHandlers=function(){const e=this;this.rootElement.querySelectorAll("button").forEach((t=>{t.addEventListener("click",(o=>{const i=t.closest(".question-view");if(!i)return void console.log("qcontroller: <button> not inside question view");const s=t.classList;let r=null;if(s.contains("next"))r=i.nextElementSibling;else if(s.contains("top-next")){const e=i.parentNode;r=e?e.nextElementSibling:null}else s.contains("top")?r=n(i):s.contains("prev")&&(r=i.previousElementSibling);r&&r.classList.contains("question-view")&&(e.currentView=Array.prototype.findIndex.call(e.views,(e=>e===r)),e.saveState(),e.update())}))}))},e.prototype.saveState=function(){const e=this.id+"-controller-state";window.sessionStorage.setItem(e,this.currentView)},e.prototype.loadState=function(){const e=this.id+"-controller-state",t=window.sessionStorage.getItem(e);t&&(this.currentView=Number.parseInt(t))}})();
+//# sourceMappingURL=qcontroller.js.map
+// @license-end
+        </script>
+        [[/lang]][[lang code="en"]]
+    </div>
+</div>
+<script>
+    // This script is responsible for the question navigation.
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later
+(()=>{function e(e,t){this.rootElement=e,this.id=t,this.views=e.querySelectorAll(".question-view"),this.currentView=Array.prototype.findIndex.call(this.views,i)}function t(e){for(;e;)o(e),e=n(e)}function n(e){let t=e.parentNode;return t&&(t=t.closest(".question-view")),t}function o(e){e.style.display="block"}function i(e){return null==e.querySelector(".question-view")}function s(e){e.style.display="none"}
+void 0===window.QController&&(window.QController=e,document.addEventListener("DOMContentLoaded",(t=>{const n=document.getElementById("responseform");if(!n)throw Error("Element with id responseform not found.");n.querySelectorAll(".stack.que").forEach((t=>{const n=t.querySelector(".question-view");if(!n)return void console.log("QController Warning: no elements with class question-view inside "+t.id);const o=new e(n,t.id);o.installHandlers(),o.loadState(),o.update()}))}))),e.prototype.update=function(){this.views.forEach(s);const e=this.views[this.currentView];i(e)?t(e):function(e){let n=e;for(;n&&!i(n);)n=n.querySelector(".question-view");t(n)}(e)},e.prototype.installHandlers=function(){const e=this;this.rootElement.querySelectorAll("button").forEach((t=>{t.addEventListener("click",(o=>{const i=t.closest(".question-view");if(!i)return void console.log("qcontroller: <button> not inside question view");const s=t.classList;let r=null;if(s.contains("next"))r=i.nextElementSibling;else if(s.contains("top-next")){const e=i.parentNode;r=e?e.nextElementSibling:null}else s.contains("top")?r=n(i):s.contains("prev")&&(r=i.previousElementSibling);r&&r.classList.contains("question-view")&&(e.currentView=Array.prototype.findIndex.call(e.views,(e=>e===r)),e.saveState(),e.update())}))}))},e.prototype.saveState=function(){const e=this.id+"-controller-state";window.sessionStorage.setItem(e,this.currentView)},e.prototype.loadState=function(){const e=this.id+"-controller-state",t=window.sessionStorage.getItem(e);t&&(this.currentView=Number.parseInt(t))}})();
+//# sourceMappingURL=qcontroller.js.map
+// @license-end
+</script>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="moodle_auto_format">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[totals: 54;
+nn: 12;
+
+Tans1: 1 / nn * (x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10 + x11 + x12);
+ta_loglikelihood: -nn * lambda + log(lambda)*(x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10 + x11 + x12) - (log(x1!) + log(x2!) + log(x3!) + log(x4!) + log(x5!) + log(x6!) + log(x7!) + log(x8!) + log(x9!) + log(x10!) + log(x11!) + log(x12!));
+Tans3: lambda / nn;
+ta_est_variance: totals / nn / nn;
+
+ta_likelihood: random_permutation([
+ [1, false, "\\(L(\\lambda) =&#8239;e^{-\\lambda}\\frac{\\lambda^k}{k!}\\)"],
+ [2, false, "\\(L(\\lambda) =&#8239;e^{-\\lambda}\\frac{\\lambda^{x_1}}{{x_1}!}\\)"],
+ [3, true, sconcat("\\( L(\\lambda) =&#8239;e^{-", nn, "\\lambda} \\frac{\\lambda^{\\sum_{i=1}^{", nn, "}x_i}}{\\prod_{i=1}^{", nn, "} x_i!} \\)")]
+]);
+
+ta_loglikelihood: [
+ [1, true, sconcat("\\(l(\\lambda) =&#8239;-", nn, "\\lambda + \\sum_{i=1}^{", nn, "} x_i \\ln(\\lambda) - \\sum_{i=1}^{", nn, "} \\ln(x_i!) \\)")],
+ [2, false, "\\(l(\\lambda) =&#8239;-\\lambda +&#8239;x_1 \\ln(\\lambda) - \\ln(x_1!)\\)"],
+ [3, false, sconcat("\\(l(\\lambda) =&#8239;", nn, "\\lambda - \\sum_{i=1}^{", nn, "} x_i \\ln(\\lambda) +&#8239;\\sum_{i=1}^{", nn, "} \\ln(x_i!) \\)")]
+];
+
+ta_diffloglikelihood: [
+ [1, true, sconcat("\\(l'(\\lambda) =&#8239;-", nn, " + \\sum_{i=1}^{", nn, "} x_i \\frac{1}{\\lambda}\\)")],
+ [2, false, sconcat("\\(l'(\\lambda) = ", nn, " -\\sum_{i=1}^{", nn, "} \\frac{1}{x_i!}\\)")],
+ [3, false, "\\(l'(\\lambda) =&#8239;-1 +&#8239;x_1 \\frac{1}{\\lambda}\\)"]
+];
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+Tanse: random_permutation([
+[1, true,  tr("Wenn wir die oben genannte Faustregel anwenden, machen wir in ca. 95% aller F&#228;lle eine korrekte Aussage",
+              "If we use the aforementioned rule of thumb, we will make a correct statement in ca.95% of all cases"
+              ],
+[2, false, tr("Wir k&#246;nnen mit 100% Sicherheit sagen, dass der wahre Parameterwert \\(\\lambda\\) im angegebenen Intervall liegt.",
+              "We can say with 100% security, that the true parameter value of \\(\\lambda\\) is in the given intervall."
+              ],
+[3, false, tr("Die Zahl der Verkehrstoten im kommenden Jahr wird zwischen 3 und 6 liegen.",
+              "The Number of traffic deaths in the next year will be between 3 and 6."
+              ]
+]);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{# totals #}, {# llambda #}, {#ta_likelihood#}</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partly correct.[[/lang]]
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.[[/lang]]
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>Tans1</tans>
+            <boxsize>25</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>Tans3</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansd</name>
+            <type>numerical</type>
+            <tans>totals/nn + 2*sqrt(ta_est_variance)*[-1,1]</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>anse</name>
+            <type>radio</type>
+            <tans>Tanse</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>diffloglikelihood</name>
+            <type>radio</type>
+            <tans>ta_diffloglikelihood</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>est_std</name>
+            <type>numerical</type>
+            <tans>sqrt(ta_est_variance)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>est_variance</name>
+            <type>numerical</type>
+            <tans>ta_est_variance</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>likelihood</name>
+            <type>radio</type>
+            <tans>ta_likelihood</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>loglikelihood</name>
+            <type>radio</type>
+            <tans>ta_loglikelihood</tans>
+            <boxsize>35</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <prt>
+            <name>after_help</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>diffloglikelihood</sans>
+                <tans>first(mcq_correct(ta_diffloglikelihood))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>after_help-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Um den Maximum-Likelihood-Sch&#228;tzer zum Parameter \(\lambda\)
+zu bestimmen, muss die passende Likelihood-Funktion oder
+Loglikelihood-Funktion maximiert werden.  Die Hilfe hat Sie durch
+die folgenden drei Schritte gef&#252;hrt:
+</p>
+<ol>
+    <li>
+        Bestimmung der Likelihood-Funktion
+        <div>
+            {@ sublist(ta_likelihood, lambda ([el], is(el[2] = true)))[1][3]; @}
+        </div>
+    </li>
+    <li>
+        Bestimmung der Loglikelihood-Funktion
+        <div>
+            {@ sublist(ta_loglikelihood, lambda ([el], is(el[2] = true)))[1][3]; @}
+        </div>
+    </li>
+    <li>
+        Berechung der ersten Ableitung der Loglikelihood-Funktion
+        <div>
+            {@ sublist(ta_diffloglikelihood, lambda ([el], is(el[2] = true)))[1][3]; @}
+        </div>
+    </li>
+</ol>
+<script>
+    document.addEventListener("DOMContentLoaded", event => {
+const feedback = document.querySelector(".stackprtfeedback-after_help");
+feedback.classList.remove("stackprtfeedback");
+});
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    To the maximum Likelihood estimator to the parameter \(\lambda\)to determine, the appropriate likelihood function or
+Loglikelihood function can be maximized. The help has you through
+the following three steps:
+</p>
+<ol>
+    <li>
+        Determination of the Likelihood function
+        <div>
+            {@ sublist(ta_likelihood, lambda ([el], is(el[2] = true)))[1][3]; @}
+        </div>
+    </li>
+    <li>
+        Determination of Loglikelihood Function
+        <div>
+            {@ sublist(ta_loglikelihood, lambda ([el], is(el[2] = true)))[1][3]; @}
+        </div>
+    </li>
+    <li>
+        Recalculation of the first derivative of the Loglikelihood function
+        <div>
+            {@ sublist(ta_diffloglikelihood, lambda ([el], is(el[2] = true)))[1][3]; @}
+        </div>
+    </li>
+</ol>
+<script>
+    document.addEventListener("DOMContentLoaded", event => {
+const feedback = document.querySelector(".stackprtfeedback-after_help");
+feedback.classList.remove("stackprtfeedback");
+});
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>after_help-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>ans1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>data_independent : emptyp (intersect (setify (listofvars (ans1)), setify([x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12])))</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>Tans1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ans1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Klicken Sie auf
+    <button class="top-next" type="button">
+        Weiter
+    </button>
+    , um zum n&#228;chsten Aufgabenteil zu gelangen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Click on
+    <button class="top-next" type="button">
+        Next
+    </button>
+    to get to the next task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ans1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]][[if test="data_independent"]]
+<p>
+    Ihre Antwort enth&#228;lt keine der Variablen \(x_1, \dots, x_{12}\). Ihr Sch&#228;tzer w&#252;rde daher &#8211;&#8201;unabh&#228;ngig von den Daten&#8201;&#8211; immer die gleiche Sch&#228;tzung liefern.
+</p>
+[[/ if]]
+<p>
+    Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein Problem! Im Folgenden wird die Aufgabe in kleinere Teilaufgaben unterteilt. Wenn Sie diese Aufgaben alle gel&#246;st haben, k&#246;nnen Sie die urspr&#252;ngliche Aufgabe sicherlich l&#246;sen. Klicken Sie dazu auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    .
+</p>
+[[/lang]][[lang code="en"]][[if test="data_independent"]]
+<p>
+    Your answer does not include any variables \(x_1, \dots, x_{12}\). Your estimator would therefore always deliver the same estimate regardless of the data.
+</p>
+[[/ if]]
+<p>
+    That you couldn't solve the task right away is no problem! In the following, the task is subdivided into smaller subtasks. If you have all solved these tasks, you can certainly solve the original task. Click on
+    <button class="next" type="button">
+        Next
+    </button>
+    .
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>ans3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>Tans3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ans3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Klicken Sie auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    , um zum n&#228;chsten Aufgabenteil zu gelangen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Click on
+    <button class="next" type="button">
+        Next
+    </button>
+    to get to the next task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ans3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Verwenden Sie die Formel \(\mathrm{Var}(aX) =&#8239;a^2\mathrm{Var}(X)\) und die Tatsache, dass die \(X_i\) unabh&#228;ngig sind, um folgende Rechnung weiterzuf&#252;hren:
+\[
+\mathrm{Var}(\hat{\lambda}_{ML}) = \mathrm{Var}\left(\frac{1}{{@nn@}} \sum_{i=1}^{{@nn@}} X_i \right)
+\]
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Use the formula \(\mathrm{Var}(aX) =&#8239;a^2\mathrm{Var}(X)\) and the fact that the \(X_i\) are independent to forward the following invoice:
+\[
+\mathrm{Var}(\hat{\lambda}_{ML}) = \mathrm{Var}\left(\frac{1}{{@nn@}} \sum_{i=1}^{{@nn@}} X_i \right)
+\]
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>ansd</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>interval: totals/nn + 2*sqrt(ta_est_variance)*[-1,1];</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansd</sans>
+                <tans>interval</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ansd-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Mit der genannten Faustregel erh&#228;lt man das approximative 95%-Konfidenzintervall {@ interval = decimalplaces(interval, 3) @}. Das Konfidenzintervall ist relativ gro&#223;, weil uns nur Daten aus 12 Jahren vorliegen, die keine genaue Sch&#228;tzung von \(\lambda\) erlauben.
+</p>
+<p>
+    Klicken Sie auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    , um zum n&#228;chsten Aufgabenteil zu gelangen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    With the mentioned rule of thumb, the approximate 95% confidence interval is obtained {@ interval = decimalplaces(interval, 3) @}. The confidence interval is relatively large, because we have only 12 years of data, which is not an accurate estimate of \(\lambda\) allow.
+</p>
+<p>
+    Click on
+    <button class="next" type="button">
+        Next
+    </button>
+    to get to the next task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ansd-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Verwenden Sie die vorherigen Resultate, um die Grenzen des folgenden Intervalls zu bestimmen:
+\[
+\left[ \hat{\lambda}_{\mathrm{ML}} - 2\sqrt{\widehat{\mathrm{Var}}(\hat{\lambda}_{\mathrm{ML}})},
+\hat{\lambda}_{\mathrm{ML}} + 2\sqrt{\widehat{\mathrm{Var}}(\hat{\lambda}_{\mathrm{ML}})}
+\right]
+\]
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Use the previous results to determine the limits of the following interval:
+\[
+\left[ \hat{\lambda}_{\mathrm{ML}} - 2\sqrt{\widehat{\mathrm{Var}}(\hat{\lambda}_{\mathrm{ML}})},
+\hat{\lambda}_{\mathrm{ML}} + 2\sqrt{\widehat{\mathrm{Var}}(\hat{\lambda}_{\mathrm{ML}})}
+\right]
+\]
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>listp(ansd) and length(ansd) = 2</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>ansd-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ansd-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Bitte geben Sie ein abgeschlossenes Intervall ein. Sie k&#246;nnen es so eingeben
+    <code>
+        [a,b]
+    </code>
+    . Bitte beachten Sie au&#223;erdem, dass Sie Dezimalzahlen mit einem Punkt als Trennzeichen eingeben m&#252;ssen:
+    <code>
+        3.14
+    </code>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Please enter a completed interval. You can enter it like this
+    <code>
+        [a,b]
+    </code>
+    . Please also note that you must enter decimal numbers with a point as a separator:
+    <code>
+        3.14
+    </code>
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>anse</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>anse</sans>
+                <tans>first(mcq_correct(Tanse))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>anse-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Herzlichen Gl&#252;ckwunsch, Sie sind am Ende der Aufgabe angelangt.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Congratulations, you have reached the end of the task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>anse-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>before_c</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>Tans3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>before_c-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    a) Bestimmen Sie den Maximum-Likelihood Sch&#228;tzer f&#252;r \(\lambda\).
+\[
+\hat{\lambda}_{\mathrm{ML}} = \frac{1}{{@nn@}}\sum_{i=1}^{@nn@}  x_i
+\]
+</p>
+<p>
+    b) Bestimmen Sie eine Formel f&#252;r die Varianz des Maximum-Likelihood Sch&#228;tzers \(\mathrm{Var}(\hat{\lambda}_{ML})\).
+\[ \mathrm{Var}(\hat{\lambda}_{ML}) = {@ ans3 @} \]
+</p>
+<script>
+    (function(){
+const feedback = document.querySelector(".stackprtfeedback-before_c");
+feedback.classList.remove("stackprtfeedback");
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    a) Determine the Maximum Likelihood Treasurer for \(\lambda\).
+\[
+\hat{\lambda}_{\mathrm{ML}} = \frac{1}{{@nn@}}\sum_{i=1}^{@nn@}  x_i
+\]
+</p>
+<p>
+    b) Define a formula for the variance of the Maximum Likelihood Treasurer \(\mathrm{Var}(\hat{\lambda}_{ML})\).
+\[ \mathrm{Var}(\hat{\lambda}_{ML}) = {@ ans3 @} \]
+</p>
+<script>
+    (function(){
+const feedback = document.querySelector(".stackprtfeedback-before_c");
+feedback.classList.remove("stackprtfeedback");
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>before_c-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>before_d</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text>sa: [est_variance, est_std];
+ta: [ta_est_variance, sqrt(ta_est_variance)];</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>sa</sans>
+                <tans>ta</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>before_d-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    a) Bestimmen Sie den Maximum-Likelihood Sch&#228;tzer f&#252;r \(\lambda\).
+\[
+\hat{\lambda}_{\mathrm{ML}} = \frac{1}{{@nn@}}\sum_{i=1}^{@nn@}  x_i
+\]
+</p>
+<p>
+    b) Bestimmen Sie eine Formel f&#252;r die Varianz des Maximum-Likelihood Sch&#228;tzers \(\mathrm{Var}(\hat{\lambda}_{ML})\).
+\[ \mathrm{Var}(\hat{\lambda}_{ML}) = {@ ans3 @} \]
+</p>
+<p>
+    c) Sch&#228;tzen Sie die Varianz und die Standardabweichung des
+Maximum-Likelihood-Sch&#228;tzers und geben Sie das Ergebnis auf mindestens
+drei Nachkommastellen genau an.
+</p>
+<p>
+    \[\hat{\sigma}^2_{\hat{\lambda}_{ML}} = {@est_variance@}\]
+\[\hat{\sigma}_{\hat{\lambda}_{ML}} = {@est_std@} \]
+</p>
+<script>
+    (function(){
+const feedback = document.querySelector(".stackprtfeedback-before_d");
+feedback.classList.remove("stackprtfeedback");
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    a) Determine the Maximum Likelihood Treasurer for \(\lambda\).
+\[
+\hat{\lambda}_{\mathrm{ML}} = \frac{1}{{@nn@}}\sum_{i=1}^{@nn@}  x_i
+\]
+</p>
+<p>
+    b) Define a formula for the variance of the Maximum Likelihood Treasurer \(\mathrm{Var}(\hat{\lambda}_{ML})\).
+\[ \mathrm{Var}(\hat{\lambda}_{ML}) = {@ ans3 @} \]
+</p>
+<p>
+    c) Estimate the variance and the standard deviation of the
+Maximum Likelihood Estimator and give the result to at least
+three descendants exactly.
+</p>
+<p>
+    \[\hat{\sigma}^2_{\hat{\lambda}_{ML}} = {@est_variance@}\]\[\hat{\sigma}_{\hat{\lambda}_{ML}} = {@est_std@} \]
+</p>
+<script>
+    (function(){
+const feedback = document.querySelector(".stackprtfeedback-before_d");
+feedback.classList.remove("stackprtfeedback");
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>before_d-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>before_e</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>CasEqual</answertest>
+                <sans>true</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>before_e-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    a) Bestimmen Sie den Maximum-Likelihood Sch&#228;tzer f&#252;r \(\lambda\).
+\[
+\hat{\lambda}_{\mathrm{ML}} = \frac{1}{{@nn@}}\sum_{i=1}^{@nn@}  x_i
+\]
+</p>
+<p>
+    b) Bestimmen Sie eine Formel f&#252;r die Varianz des Maximum-Likelihood Sch&#228;tzers \(\mathrm{Var}(\hat{\lambda}_{ML})\).
+\[ \mathrm{Var}(\hat{\lambda}_{ML}) = {@ ans3 @} \]
+</p>
+<p>
+    c) Sch&#228;tzen Sie die Varianz und die Standardabweichung des
+Maximum-Likelihood-Sch&#228;tzers und geben Sie das Ergebnis auf mindestens
+drei Nachkommastellen genau an.
+</p>
+<p>
+    \[\hat{\sigma}^2_{\hat{\lambda}_{ML}} = {@est_variance@}\]
+\[\hat{\sigma}_{\hat{\lambda}_{ML}} = {@est_std@} \]
+</p>
+<p>
+    d) Geben Sie mithilfe der Faustregel &#8222;Sch&#228;tzwert &#177; 2 &#215;
+gesch&#228;tzte Standardabweichung des Sch&#228;tzers&#8220; ein approximatives
+95%-Konfidenzintervall f&#252;r den unbekannten Parameter \(\lambda\)
+an.
+</p>
+<p>
+    Antwort: {@ansd@}
+</p>
+<script>
+    (function(){
+const feedback = document.querySelector(".stackprtfeedback-before_e");
+feedback.classList.remove("stackprtfeedback");
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    a) Determine the Maximum Likelihood Treasurer for \(\lambda\).
+\[
+\hat{\lambda}_{\mathrm{ML}} = \frac{1}{{@nn@}}\sum_{i=1}^{@nn@}  x_i
+\]
+</p>
+<p>
+    b) Define a formula for the variance of the Maximum Likelihood Treasurer \(\mathrm{Var}(\hat{\lambda}_{ML})\).
+\[ \mathrm{Var}(\hat{\lambda}_{ML}) = {@ ans3 @} \]
+</p>
+<p>
+    c) Estimate the variance and the standard deviation of the
+Maximum Likelihood Estimator and give the result to at least
+three descendants exactly.
+</p>
+<p>
+    \[\hat{\sigma}^2_{\hat{\lambda}_{ML}} = {@est_variance@}\]\[\hat{\sigma}_{\hat{\lambda}_{ML}} = {@est_std@} \]
+</p>
+<p>
+    (d) Use the rule of thumb to specify &#8220;estimate value &#177; 2 &#215;
+estimated standard deviation of the estimator&#8221; an approximate
+95% confidence interval for the unknown parameter \(\lambda\)on.
+</p>
+<p>
+    Answer: {@ansd@}
+</p>
+<script>
+    (function(){
+const feedback = document.querySelector(".stackprtfeedback-before_e");
+feedback.classList.remove("stackprtfeedback");
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>before_e-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>diffloglikelihood</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>diffloglikelihood</sans>
+                <tans>first(mcq_correct(ta_diffloglikelihood))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>diffloglikelihood-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</p>
+<p>
+    Sie k&#246;nnen nun \(l'(\lambda) =&#8239;0\) setzen und nach \(\lambda\) aufl&#246;sen, um den Maximum-Likelihood-Sch&#228;tzer zu erhalten.
+</p>
+<p>
+    Klicken Sie auf
+    <button class="top" id="596b0c5c-9f58-41ff-817e-c7c7efd5034f" type="button">
+        Zur&#252;ck
+    </button>
+    , um zur urspr&#252;nglichen Aufgaben zur&#252;ck zu gelangen, und geben Sie dort ihr Ergebnis ein.
+</p>
+<script>
+    const btn = document.getElementById("596b0c5c-9f58-41ff-817e-c7c7efd5034f");
+btn.addEventListener("click", event => {
+const feedback = document.querySelector(".stackprtfeedback-ans1");
+feedback.hidden = true;
+const validation = document.querySelector("#cb8d4d1f-dc92-4883-aeec-db05babda766 .stackinputfeedback");
+validation.hidden = true;
+const input = document.querySelector("#cb8d4d1f-dc92-4883-aeec-db05babda766 input");
+input.value = "";
+input.focus();
+});
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+</p>
+<p>
+    You can now \(l'(\lambda) =&#8239;0\) set and after \(\lambda\) to get the maximum Likelihood estimator.
+</p>
+<p>
+    Click on
+    <button class="top" id="596b0c5c-9f58-41ff-817e-c7c7efd5034f" type="button">
+        Back
+    </button>
+    to get back to the original tasks, and enter their result there.
+</p>
+<script>
+    const btn = document.getElementById("596b0c5c-9f58-41ff-817e-c7c7efd5034f");
+btn.addEventListener("click", event => {
+const feedback = document.querySelector(".stackprtfeedback-ans1");
+feedback.hidden = true;
+const validation = document.querySelector("#cb8d4d1f-dc92-4883-aeec-db05babda766 .stackinputfeedback");
+validation.hidden = true;
+const input = document.querySelector("#cb8d4d1f-dc92-4883-aeec-db05babda766 input");
+input.value = "";
+input.focus();
+});
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>diffloglikelihood-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>est_complete</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text>sa: [est_variance, est_std];
+ta: [ta_est_variance, sqrt(ta_est_variance)];</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>sa</sans>
+                <tans>ta</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>est_complete-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Klicken Sie auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    , um zum n&#228;chsten Aufgabenteil zu gelangen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Click on
+    <button class="next" type="button">
+        Next
+    </button>
+    to get to the next task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>est_complete-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>est_std</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>est_std</sans>
+                <tans>sqrt(ta_est_variance)</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>est_std-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>est_std-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Die Standardabweichung ist definiert als Wurzel aus der Varianz.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The standard deviation is defined as root from the variance.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>est_variance</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>est_variance</sans>
+                <tans>ta_est_variance</tans>
+                <testoptions>0.001</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>est_variance-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>est_variance-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>est_variance</sans>
+                <tans>totals/nn</tans>
+                <testoptions>0.001</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>est_variance-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Der von Ihnen eingegebene Wert \(\hat{\lambda} = {@est_variance@}\) ist eine Sch&#228;tzung f&#252;r den unbekannten Parameter \(\lambda\). Sie m&#252;ssen diese Sch&#228;tzung anstelle von \(\lambda\) in der Formel f&#252;r die Varianz des Sch&#228;tzers aus Aufgabenteil b) einsetzen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The value you enter \(\hat{\lambda} = {@est_variance@}\) is an estimate for the unknown parameter \(\lambda\). You need this estimate instead of \(\lambda\) in the formula for the variance of the estimator from task part b).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>est_variance-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie k&#246;nnen die Varianz sch&#228;tzen, indem Sie in der Formel aus Aufgabenteil b) anstatt des unbekannten \(\lambda\) den ML-Sch&#228;tzer \(\hat{\lambda}_{ML}\) einsetzen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You can estimate the variance by using the formula from task part b) instead of the unknown \(\lambda\) the ML estimator \(\hat{\lambda}_{ML}\) to use.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>flbk_likelihood</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>likelihood</sans>
+                <tans>first(mcq_correct(ta_likelihood))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>flbk_likelihood-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Um den Maximum-Likelihood-Sch&#228;tzer zum Parameter \(\lambda\) zu
+        bestimmen, muss die passende Likelihood-Funktion oder
+        Loglikelihood-Funktion maximiert werden.  Diese Hilfe f&#252;hrt Sie
+        durch die folgenden drei Schritte:
+</p>
+<ol>
+    <li>
+        Bestimmung der Likelihood-Funktion
+        <div>
+            {@ sublist(ta_likelihood, lambda ([el], is(el[2] = true)))[1][3]; @}
+        </div>
+    </li>
+    <li class="current">
+        Bestimmung der Loglikelihood-Funktion
+    </li>
+    <li>
+        Berechung der ersten Ableitung der Loglikelihood-Funktion
+    </li>
+</ol>
+<script>
+    document.addEventListener("DOMContentLoaded", event => {
+const feedback = document.querySelector(".stackprtfeedback-flbk_likelihood");
+feedback.classList.remove("stackprtfeedback");
+feedback.style.display = "block";
+});
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    To the maximum Likelihood estimator to the parameter \(\lambda\) to
+determine the matching likelihood function or
+Loglikelihood function can be maximized. This help guides you
+by the following three steps:
+</p>
+<ol>
+    <li>
+        Determination of the Likelihood function
+        <div>
+            {@ sublist(ta_likelihood, lambda ([el], is(el[2] = true)))[1][3]; @}
+        </div>
+    </li>
+    <li class="current">
+        Determination of Loglikelihood Function
+    </li>
+    <li>
+        Recalculation of the first derivative of the Loglikelihood function
+    </li>
+</ol>
+<script>
+    document.addEventListener("DOMContentLoaded", event => {
+const feedback = document.querySelector(".stackprtfeedback-flbk_likelihood");
+feedback.classList.remove("stackprtfeedback");
+feedback.style.display = "block";
+});
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>flbk_likelihood-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>flbk_loglikelihood</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>loglikelihood</sans>
+                <tans>first(mcq_correct(ta_loglikelihood))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>flbk_loglikelihood-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Um den Maximum-Likelihood-Sch&#228;tzer zum Parameter \(\lambda\) zu
+        bestimmen, muss die passende Likelihood-Funktion oder
+        Loglikelihood-Funktion maximiert werden.  Diese Hilfe f&#252;hrt Sie
+        durch die folgenden drei Schritte:
+</p>
+<ol>
+    <li>
+        Bestimmung der Likelihood-Funktion
+        <div>
+            {@ sublist(ta_likelihood, lambda ([el], is(el[2] = true)))[1][3]; @}
+        </div>
+    </li>
+    <li>
+        Bestimmung der Loglikelihood-Funktion
+        <div>
+            {@ sublist(ta_loglikelihood, lambda ([el], is(el[2] = true)))[1][3]; @}
+        </div>
+    </li>
+    <li class="current">
+        Berechung der ersten Ableitung der Loglikelihood-Funktion
+    </li>
+</ol>
+<script>
+    document.addEventListener("DOMContentLoaded", event => {
+const feedback = document.querySelector(".stackprtfeedback-flbk_loglikelihood");
+feedback.classList.remove("stackprtfeedback");
+});
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    To the maximum Likelihood estimator to the parameter \(\lambda\) to
+determine the matching likelihood function or
+Loglikelihood function can be maximized. This help guides you
+by the following three steps:
+</p>
+<ol>
+    <li>
+        Determination of the Likelihood function
+        <div>
+            {@ sublist(ta_likelihood, lambda ([el], is(el[2] = true)))[1][3]; @}
+        </div>
+    </li>
+    <li>
+        Determination of Loglikelihood Function
+        <div>
+            {@ sublist(ta_loglikelihood, lambda ([el], is(el[2] = true)))[1][3]; @}
+        </div>
+    </li>
+    <li class="current">
+        Recalculation of the first derivative of the Loglikelihood function
+    </li>
+</ol>
+<script>
+    document.addEventListener("DOMContentLoaded", event => {
+const feedback = document.querySelector(".stackprtfeedback-flbk_loglikelihood");
+feedback.classList.remove("stackprtfeedback");
+});
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>flbk_loglikelihood-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>likelihood</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>likelihood</sans>
+                <tans>first(mcq_correct(ta_likelihood))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>likelihood-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</p>
+<p>
+    Klicken Sie auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    , um zum n&#228;chsten Aufgabenteil zu gelangen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+</p>
+<p>
+    Click on
+    <button class="next" type="button">
+        Next
+    </button>
+    to get to the next task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>likelihood-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</p>
+[[ if test="is(likelihood=1)" ]]
+<p>
+    Sie haben die Likelihood-Funktion f&#252;r eine Einzelbeobachtung \(k\) ausgew&#228;hlt. Damit haben Sie die Daten \(x_1, \ldots, x_{12}\) nicht ber&#252;cksichtigt.
+</p>
+[[ elif test="is(likelihood=2)" ]]
+<p>
+    Sie haben die Likelihood-Funktion f&#252;r eine Einzelbeobachtung \(x_1\) ausgew&#228;hlt. Um einen Maximum-Likelihood-Sch&#228;tzer zu bestimmen, m&#252;ssen Sie aber alle {#nn#} Beobachtungen ber&#252;cksichtigen.
+</p>
+[[/ if ]][[/lang]][[lang code="en"]]
+<p>
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</p>
+[[ if test="is(likelihood=1)" ]]
+<p>
+    You have the Likelihood function for a single observation \(k\) selected. With this you have the data \(x_1, \ldots, x_{12}\) not taken into account.
+</p>
+[[ elif test="is(likelihood=2)" ]]
+<p>
+    You have the Likelihood function for a single observation \(x_1\) selected. To determine a maximum Likelihood estimator, however, you must all {#nn#} observations.
+</p>
+[[/ if ]][[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>loglikelihood</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>loglikelihood</sans>
+                <tans>first(mcq_correct(ta_loglikelihood))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>loglikelihood-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</p>
+<p>
+    Klicken Sie auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    , um zum n&#228;chsten Aufgabenteil zu gelangen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+</p>
+<p>
+    Click on
+    <button class="next" type="button">
+        Next
+    </button>
+    to get to the next task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>loglikelihood-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>mlSchaetzer</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>Tans1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>mlSchaetzer-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    a) Bestimmen Sie den Maximum-Likelihood Sch&#228;tzer f&#252;r \(\lambda\).
+\[
+\hat{\lambda}_{\mathrm{ML}} = \frac{1}{12}\sum_{i=1}^{@nn@}  x_i
+\]
+</p>
+<script>
+    (function(){
+const feedback = document.querySelector(".stackprtfeedback-mlSchaetzer");
+feedback.classList.remove("stackprtfeedback");
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    a) Determine the Maximum Likelihood Treasurer for \(\lambda\).
+\[
+\hat{\lambda}_{\mathrm{ML}} = \frac{1}{12}\sum_{i=1}^{@nn@}  x_i
+\]
+</p>
+<script>
+    (function(){
+const feedback = document.querySelector(".stackprtfeedback-mlSchaetzer");
+feedback.classList.remove("stackprtfeedback");
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>mlSchaetzer-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1365655957</deployedseed>
+        <deployedseed>535505348</deployedseed>
+        <deployedseed>1376280801</deployedseed>
+        <deployedseed>700056989</deployedseed>
+        <deployedseed>1156732796</deployedseed>
+        <deployedseed>602983893</deployedseed>
+        <deployedseed>1392046022</deployedseed>
+        <deployedseed>979135215</deployedseed>
+        <deployedseed>802530978</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <description/>
+            <testinput>
+                <name>ans1</name>
+                <value>first(mcq_correct(Tans1))</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>Tans3</value>
+            </testinput>
+            <expected>
+                <name>ans1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>ans1-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>ans3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>ans3-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <description/>
+            <testinput>
+                <name>ans1</name>
+                <value>first(mcq_incorrect(Tans1))</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>Tans3+1</value>
+            </testinput>
+            <expected>
+                <name>ans1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>ans1-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>ans3</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>ans3-1-F</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

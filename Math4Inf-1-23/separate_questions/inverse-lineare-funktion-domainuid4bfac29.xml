@@ -6,24 +6,21 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<div>
+    <span style="font-size: 0.9375rem;">
+        Bestimmen Sie die Umkehrfunktion
+    </span>
+    <span style="font-size: 0.9375rem;">
+        \(f^{-1}\) der Funktion \(\displaystyle f(x) = {@v1@} \cdot x + {@v2@}\).
+    </span>
+    <br/>
+</div>
+<p>
+    \(f^{-1}(x) = \) [[/lang]][[lang code="en"]]
     <div>
         <span style="font-size: 0.9375rem;">
-            Bestimmen Sie die Umkehrfunktion
-        </span>
-        <span style="font-size: 0.9375rem;">
-            \(f^{-1}\) der Funktion \(\displaystyle f(x) = {@v1@} \cdot x + {@v2@}\).
-        </span>
-        <br/>
-    </div>
-    <p>
-        \(f^{-1}(x) = \) [[input:ans1]] [[validation:ans1]]
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <div>
-        <span style="font-size: 0.9375rem;">
-            Determine the reversing function
+            Determine the inverse function
         </span>
         <span style="font-size: 0.9375rem;">
             \(f^{-1}\) the function \(\displaystyle f(x) = {@v1@} \cdot x + {@v2@}\).
@@ -31,69 +28,70 @@
         <br/>
     </div>
     <p>
-        \(f^{-1}(x) = \) [[input:ans1]] [[validation:ans1]]
+        \(f^{-1}(x) = \) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
     </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        <strong>
-            L&#246;sungsweg:
-        </strong>
-    </p>
-    <p>
-        Gesucht wird die Umkehrfunktion der Funktion \(\displaystyle f(x)={@v1@}\cdot x + {@v2@}\).
-    </p>
-    <p>
-        Dazu l&#246;sen wir die Gleichung
-        <span style="font-size: 0.9375rem;">
-            \(\displaystyle y={@v1@}\cdot x + {@v2@}\)&#160;nach \(x\) auf.
-        </span>
-    </p>
-    <p>
-        Wir erhalten
-        <span style="font-size: 0.9375rem;">
-            \(\displaystyle x={@1/v1@}\cdot ( {@y-v2@})\).
-        </span>
-    </p>
-    <p>
-        Jetzt benennen wir die Variablen um und erhalten
-        <span style="font-size: 0.9375rem;">
-            \(\qquad \displaystyle f^{-1}(x) = {@tans1@}\).
-        </span>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        <strong>
-            Solution:
-        </strong>
-    </p>
-    <p>
-        The aim is to reverse the function \(\displaystyle f(x)={@v1@}\cdot x + {@v2@}\).
-    </p>
-    <p>
-        We solve the equation
-        <span style="font-size: 0.9375rem;">
-            \(\displaystyle y={@v1@}\cdot x + {@v2@}\)After \(x\) up.
-        </span>
-    </p>
-    <p>
-        We receive
-        <span style="font-size: 0.9375rem;">
-            \(\displaystyle x={@1/v1@}\cdot ( {@y-v2@})\).
-        </span>
-    </p>
-    <p>
-        Now we rename and receive the variables
-        <span style="font-size: 0.9375rem;">
-            \(\qquad \displaystyle f^{-1}(x) = {@tans1@}\).
-        </span>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    <strong>
+        L&#246;sungsweg:
+    </strong>
+</p>
+<p>
+    Gesucht wird die Umkehrfunktion der Funktion \(\displaystyle f(x)={@v1@}\cdot x + {@v2@}\).
+</p>
+<p>
+    Dazu l&#246;sen wir die Gleichung
+    <span style="font-size: 0.9375rem;">
+        \(\displaystyle y={@v1@}\cdot x + {@v2@}\)&#160;nach \(x\) auf.
+    </span>
+</p>
+<p>
+    Wir erhalten
+    <span style="font-size: 0.9375rem;">
+        \(\displaystyle x={@1/v1@}\cdot ( {@y-v2@})\).
+    </span>
+</p>
+<p>
+    Jetzt benennen wir die Variablen um und erhalten
+    <span style="font-size: 0.9375rem;">
+        \(\qquad \displaystyle f^{-1}(x) = {@tans1@}\).
+    </span>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <strong>
+        Solution:
+    </strong>
+</p>
+<p>
+    The aim is to reverse the function \(\displaystyle f(x)={@v1@}\cdot x + {@v2@}\).
+</p>
+<p>
+    We solve the equation
+    <span style="font-size: 0.9375rem;">
+        \(\displaystyle y={@v1@}\cdot x + {@v2@}\)After \(x\) up.
+    </span>
+</p>
+<p>
+    We receive
+    <span style="font-size: 0.9375rem;">
+        \(\displaystyle x={@1/v1@}\cdot ( {@y-v2@})\).
+    </span>
+</p>
+<p>
+    Now we rename and receive the variables
+    <span style="font-size: 0.9375rem;">
+        \(\qquad \displaystyle f^{-1}(x) = {@tans1@}\).
+    </span>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -112,16 +110,15 @@ tans1: (x-v2)/v1;</text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    [[/lang]][[lang code="en"]]
     <p>
-        [[feedback:prt1]]
+        [[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        [[feedback:prt1]]
-    </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -135,68 +132,65 @@ tans1: (x-v2)/v1;</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    <strong>
-        Richtige Antwort, gut gemacht!
-    </strong>
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    <strong>
-        Right answer, well done!
-    </strong>
+<strong>
+    Richtige Antwort, gut gemacht!
+</strong>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
+<strong>
+    Right answer, well done!
+</strong>
+[[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-adjust">
-        </i>
-    </span>
-    <strong>
-        Ihre Antwort ist teilweise korrekt.
-    </strong>
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-adjust">
-        </i>
-    </span>
-    <strong>
-        Your answer is partly correct.
-    </strong>
+<strong>
+    Ihre Antwort ist teilweise korrekt.
+</strong>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
 </span>
+<strong>
+    Your answer is partly correct.
+</strong>
+[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    <strong>
-        Falsche Antwort.
-    </strong>
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    <strong>
-        Wrong answer.
-    </strong>
+<strong>
+    Falsche Antwort.
+</strong>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
+<strong>
+    Wrong answer.
+</strong>
+[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

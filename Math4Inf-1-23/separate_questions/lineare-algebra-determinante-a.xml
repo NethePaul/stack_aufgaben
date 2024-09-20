@@ -6,26 +6,23 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p style="">
-        Bestimmen Sie den Parameter \(a\), so&#160;dass die Determinante der Matrix \(A\)&#160;Null ergibt.
+[[lang code="de"]]
+<p style="">
+    Bestimmen Sie den Parameter \(a\), so&#160;dass die Determinante der Matrix \(A\)&#160;Null ergibt.
+</p>
+<p style="">
+    <br/>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        \( {@(A)@} =\)&#160; {@A1@}
     </p>
-    <p style="">
+    <p>
         <br/>
     </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \( {@(A)@} =\)&#160; {@A1@}
-        </p>
-        <p>
-            <br/>
-        </p>
-    </div>
-    <p>
-        \( a= \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
-    </p>
-</span>
-<span class="multilang" lang="en">
+</div>
+<p>
+    \( a= \) [[/lang]][[lang code="en"]]
     <p style="">
         Define the parameter \(a\)so that the determinant of the matrix \(A\)Zero.
     </p>
@@ -41,117 +38,118 @@
         </p>
     </div>
     <p>
-        \( a= \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+        \( a= \) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        <b>
-            L&#246;sung
-        </b>
-    </h4>
-    <p>
-        <b>
-            <br/>
-        </b>
-    </p>
-    <p>
-        <span>
-            \(\det(A)=\det\left({@A1@}\right)\)
-        </span>
-    </p>
-    <p>
-        <span>
-            \(=(-2+({@a1@}))-(-2+{@a2@})\)
-        </span>
-    </p>
-    <p>
-        <span>
-            (Regel von Sarrus)
-        </span>
-    </p>
-    <p>
-        <span>
-            \(={@a3@}\)
-        </span>
-    </p>
-    <p>
-        <span>
-            \(=0\)
-        </span>
-    </p>
-    <p>
-        <span>
-            (Nach Aufgabenstellung)
-        </span>
-    </p>
-    <p>
-        <span>
-            <br/>
-        </span>
-    </p>
-    <p>
-        <span>
-            \(\Leftrightarrow \ \ a={@a4@}\)
-        </span>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <h4>
-        <b>
-            Solution
-        </b>
-    </h4>
-    <p>
-        <b>
-            <br/>
-        </b>
-    </p>
-    <p>
-        <span>
-            \(\det(A)=\det\left({@A1@}\right)\)
-        </span>
-    </p>
-    <p>
-        <span>
-            \(=(-2+({@a1@}))-(-2+{@a2@})\)
-        </span>
-    </p>
-    <p>
-        <span>
-            (Rule of Sarrus)
-        </span>
-    </p>
-    <p>
-        <span>
-            \(={@a3@}\)
-        </span>
-    </p>
-    <p>
-        <span>
-            \(=0\)
-        </span>
-    </p>
-    <p>
-        <span>
-            (According to task)
-        </span>
-    </p>
-    <p>
-        <span>
-            <br/>
-        </span>
-    </p>
-    <p>
-        <span>
-            \(\Leftrightarrow \ \ a={@a4@}\)
-        </span>
-    </p>
-</span>
+[[lang code="de"]]
+<h4>
+    <b>
+        L&#246;sung
+    </b>
+</h4>
+<p>
+    <b>
+        <br/>
+    </b>
+</p>
+<p>
+    <span>
+        \(\det(A)=\det\left({@A1@}\right)\)
+    </span>
+</p>
+<p>
+    <span>
+        \(=(-2+({@a1@}))-(-2+{@a2@})\)
+    </span>
+</p>
+<p>
+    <span>
+        (Regel von Sarrus)
+    </span>
+</p>
+<p>
+    <span>
+        \(={@a3@}\)
+    </span>
+</p>
+<p>
+    <span>
+        \(=0\)
+    </span>
+</p>
+<p>
+    <span>
+        (Nach Aufgabenstellung)
+    </span>
+</p>
+<p>
+    <span>
+        <br/>
+    </span>
+</p>
+<p>
+    <span>
+        \(\Leftrightarrow \ \ a={@a4@}\)
+    </span>
+</p>
+[[/lang]][[lang code="en"]]
+<h4>
+    <b>
+        Solution
+    </b>
+</h4>
+<p>
+    <b>
+        <br/>
+    </b>
+</p>
+<p>
+    <span>
+        \(\det(A)=\det\left({@A1@}\right)\)
+    </span>
+</p>
+<p>
+    <span>
+        \(=(-2+({@a1@}))-(-2+{@a2@})\)
+    </span>
+</p>
+<p>
+    <span>
+        (Rule of Sarrus)
+    </span>
+</p>
+<p>
+    <span>
+        \(={@a3@}\)
+    </span>
+</p>
+<p>
+    <span>
+        \(=0\)
+    </span>
+</p>
+<p>
+    <span>
+        (According to task)
+    </span>
+</p>
+<p>
+    <span>
+        <br/>
+    </span>
+</p>
+<p>
+    <span>
+        \(\Leftrightarrow \ \ a={@a4@}\)
+    </span>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -185,32 +183,17 @@ a4: -A2</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

@@ -6,41 +6,29 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Gegeben sind die Volumen \(V\) und die Oberfl&#228;che \(O\) eines K&#246;rpers:
-        <br/>
-        <span style="font-size: 0.9375rem;">
-            \( V = \displaystyle\frac{1}{3} \cdot \pi \cdot r^2 \cdot&#160;h\)
-        </span>
-        <br/>
-    </p>
-    <p>
-        \(O = \pi \cdot&#160;r \cdot&#160;\sqrt{r^2+h^2} + \pi \cdot&#160;r^2 \)
-    </p>
-    <p>
-        Mit welchen absoluten linearisierten Fehlern muss man bei der Ermittlung des Volumens und der Oberfl&#228;che rechnen, wenn der Radius \( r = {@radius@}\,cm\) und die H&#246;he \(h = {@hoehe@}\,cm\) mit einer Genauigkeit von \( \pm{@fehler@}\,cm \) gemessen wurden?
-    </p>
-    <p>
-        <strong>
-            Hinweise:
-        </strong>
-        Benutzen Sie keine Dezimahlzahlen. Schreiben Sie pi f&#252;r \(\pi\).
-    </p>
-    <p>
-        \( \Delta V = \) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
-    </p>
-    <p>
-        \( \Delta O = \) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
-    </p>
-    <p>
-        Relative Fehler von \(V =\) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]
-    </p>
-    <p>
-        Relative Fehler von \(O =\) [[input:ans4]] [[validation:ans4]] [[feedback:prt4]]
-    </p>
-</span>
-<span class="multilang" lang="en">
+[[lang code="de"]]
+<p>
+    Gegeben sind die Volumen \(V\) und die Oberfl&#228;che \(O\) eines K&#246;rpers:
+    <br/>
+    <span style="font-size: 0.9375rem;">
+        \( V = \displaystyle\frac{1}{3} \cdot \pi \cdot r^2 \cdot&#160;h\)
+    </span>
+    <br/>
+</p>
+<p>
+    \(O = \pi \cdot&#160;r \cdot&#160;\sqrt{r^2+h^2} + \pi \cdot&#160;r^2 \)
+</p>
+<p>
+    Mit welchen absoluten linearisierten Fehlern muss man bei der Ermittlung des Volumens und der Oberfl&#228;che rechnen, wenn der Radius \( r = {@radius@}\,cm\) und die H&#246;he \(h = {@hoehe@}\,cm\) mit einer Genauigkeit von \( \pm{@fehler@}\,cm \) gemessen wurden?
+</p>
+<p>
+    <strong>
+        Hinweise:
+    </strong>
+    Benutzen Sie keine Dezimahlzahlen. Schreiben Sie pi f&#252;r \(\pi\).
+</p>
+<p>
+    \( \Delta V = \) [[/lang]][[lang code="en"]]
     <p>
         The volume \(V\) and the surface \(O\) a body:
         <br/>
@@ -62,18 +50,29 @@
         Don't use decirculum numbers. Write pi for \(\pi\).
     </p>
     <p>
-        \( \Delta V = \) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+        \( \Delta V = \) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
     <p>
-        \( \Delta O = \) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
+        \( \Delta O = \) [[/lang]][[lang code="en"]]
     </p>
     <p>
-        Relative errors of \(V =\) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]
+        \( \Delta O = \) [[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt2]][[lang code="de"]]
     </p>
     <p>
-        Relative errors of \(O =\) [[input:ans4]] [[validation:ans4]] [[feedback:prt4]]
+        Relative Fehler von \(V =\) [[/lang]][[lang code="en"]]
     </p>
-</span>
+    <p>
+        Relative errors of \(V =\) [[/lang]][[input:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt3]][[lang code="de"]]
+    </p>
+    <p>
+        Relative Fehler von \(O =\) [[/lang]][[lang code="en"]]
+    </p>
+    <p>
+        Relative errors of \(O =\) [[/lang]][[input:ans4]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans4]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt4]][[lang code="de"]]
+    </p>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -119,44 +118,41 @@ relo : deltao / O;</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Richtig
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Right
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Richtig
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Right
+</p>
+[[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Teilweise richtig
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Partly correct
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Teilweise richtig
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Partly correct
+</p>
+[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Antwort ist nicht richtig
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The answer is not correct
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Antwort ist nicht richtig
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The answer is not correct
+</p>
+[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

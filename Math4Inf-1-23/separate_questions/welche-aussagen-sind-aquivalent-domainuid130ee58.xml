@@ -6,640 +6,636 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Seien \(A\), \(B\) und \(C\) logische Aussagen. Geben Sie jeweils an, ob die beiden Aussagen &#228;quivalent zu einander sind.
-    </p>
-    <table>
-        <thead>
-            <tr>
-                <th scope="col">
-                    <span style="font-weight: normal;">
-                        a)
-                    </span>
-                    <br/>
-                </th>
-                <th scope="col">
-                    <span style="font-weight: normal;">
-                        \( A \Rightarrow B \)
-                        <span>
-                            und
-                            <span>
-                                \( B \Rightarrow A \)
-                            </span>
-                        </span>
-                    </span>
-                    <br/>
-                </th>
-                <th scope="col">
-                    <br/>
-                </th>
-                <th scope="col">
-                    <br/>
-                </th>
-                <th scope="col">
-                    <span style="font-weight: normal;">
-                        [[input:ans1]]
-                    </span>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    b)
-                    <br/>
-                </td>
-                <td>
-                    <span>
-                        \( A \Rightarrow B \)
-                        <span>
-                            und&#160;\(&#160;\lnot B \Rightarrow \lnot A\)
-                        </span>
-                    </span>
-                </td>
-                <td>
-                    <span>
-                    </span>
-                    <br/>
-                </td>
-                <td>
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans2]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    c)
-                    <br/>
-                </td>
-                <td>
-                    \( A \lor B \)
-                    <span>
-                        und \( B \lor A \)
-                    </span>
-                    <br/>
-                </td>
-                <td>
-                    <span>
-                    </span>
-                    <br/>
-                </td>
-                <td>
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans3]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    d)
-                    <br/>
-                </td>
-                <td>
-                    \( A \lor B \lor C \)
+[[lang code="de"]]
+<p>
+    Seien \(A\), \(B\) und \(C\) logische Aussagen. Geben Sie jeweils an, ob die beiden Aussagen &#228;quivalent zu einander sind.
+</p>
+<table>
+    <thead>
+        <tr>
+            <th scope="col">
+                <span style="font-weight: normal;">
+                    a)
+                </span>
+                <br/>
+            </th>
+            <th scope="col">
+                <span style="font-weight: normal;">
+                    \( A \Rightarrow B \)
                     <span>
                         und
-                    </span>
-                    \( (A \lor B) \lor C \)
-                    <br/>
-                </td>
-                <td>
-                    <span>
-                    </span>
-                    <br/>
-                </td>
-                <td>
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans4]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    e)
-                    <br/>
-                </td>
-                <td>
-                    \( A \land (B \lor C) \)
-                    <span>
-                        und \( (A \land B) \lor C \)
-                        <br/>
-                    </span>
-                </td>
-                <td>
-                    <span>
-                    </span>
-                    <br/>
-                </td>
-                <td>
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans5]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    f)
-                    <br/>
-                </td>
-                <td>
-                    \( \lnot (A \land B) \)
-                    <span>
-                        und&#160; \( \lnot A \lor \lnot B \)
-                    </span>
-                    <br/>
-                </td>
-                <td>
-                    <span>
-                    </span>
-                    <br/>
-                </td>
-                <td>
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans6]]
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    [[validation:ans1]] [[validation:ans2]] [[validation:ans3]] [[validation:ans4]] [[validation:ans5]] [[validation:ans6]]
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Be \(A\), \(B\) and \(C\) logical statements. Specify whether the two statements are equivalent to each other.
-    </p>
-    <table>
-        <thead>
-            <tr>
-                <th scope="col">
-                    <span style="font-weight: normal;">
-                        (a)
-                    </span>
-                    <br/>
-                </th>
-                <th scope="col">
-                    <span style="font-weight: normal;">
-                        \( A \Rightarrow B \)
                         <span>
-                            and
-                            <span>
-                                \( B \Rightarrow A \)
-                            </span>
+                            \( B \Rightarrow A \)
                         </span>
                     </span>
-                    <br/>
-                </th>
-                <th scope="col">
-                    <br/>
-                </th>
-                <th scope="col">
-                    <br/>
-                </th>
-                <th scope="col">
-                    <span style="font-weight: normal;">
-                        [[input:ans1]]
-                    </span>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    (b)
-                    <br/>
-                </td>
-                <td>
+                </span>
+                <br/>
+            </th>
+            <th scope="col">
+                <br/>
+            </th>
+            <th scope="col">
+                <br/>
+            </th>
+            <th scope="col">
+                <span style="font-weight: normal;">
+                    [[/lang]][[lang code="en"]]
+                    <p>
+                        Let \(A\), \(B\) and \(C\) be logical statements. Specify whether the two statements are equivalent to each other.
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <span style="font-weight: normal;">
+                                        (a)
+                                    </span>
+                                    <br/>
+                                </th>
+                                <th scope="col">
+                                    <span style="font-weight: normal;">
+                                        \( A \Rightarrow B \)
+                                        <span>
+                                            and
+                                            <span>
+                                                \( B \Rightarrow A \)
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <br/>
+                                </th>
+                                <th scope="col">
+                                    <br/>
+                                </th>
+                                <th scope="col">
+                                    <br/>
+                                </th>
+                                <th scope="col">
+                                    <span style="font-weight: normal;">
+                                        [[/lang]][[input:ans1]][[lang code="de"]]
+                                    </span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    b)
+                                    <br/>
+                                </td>
+                                <td>
+                                    <span>
+                                        \( A \Rightarrow B \)
+                                        <span>
+                                            und&#160;\(&#160;\lnot B \Rightarrow \lnot A\)
+                                        </span>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span>
+                                    </span>
+                                    <br/>
+                                </td>
+                                <td>
+                                    <br/>
+                                </td>
+                                <td>
+                                    [[/lang]][[lang code="en"]]
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </span>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                (b)
+                <br/>
+            </td>
+            <td>
+                <span>
+                    \( A \Rightarrow B \)
                     <span>
-                        \( A \Rightarrow B \)
-                        <span>
-                            and\(&#160;\lnot B \Rightarrow \lnot A\)
-                        </span>
+                        and\(&#160;\lnot B \Rightarrow \lnot A\)
                     </span>
-                </td>
-                <td>
-                    <span>
-                    </span>
+                </span>
+            </td>
+            <td>
+                <span>
+                </span>
+                <br/>
+            </td>
+            <td>
+                <br/>
+            </td>
+            <td>
+                [[/lang]][[input:ans2]][[lang code="de"]]
+            </td>
+        </tr>
+        <tr>
+            <td>
+                c)
+                <br/>
+            </td>
+            <td>
+                \( A \lor B \)
+                <span>
+                    und \( B \lor A \)
+                </span>
+                <br/>
+            </td>
+            <td>
+                <span>
+                </span>
+                <br/>
+            </td>
+            <td>
+                <br/>
+            </td>
+            <td>
+                [[/lang]][[lang code="en"]]
+            </td>
+        </tr>
+        <tr>
+            <td>
+                (c)
+                <br/>
+            </td>
+            <td>
+                \( A \lor B \)
+                <span>
+                    and \( B \lor A \)
+                </span>
+                <br/>
+            </td>
+            <td>
+                <span>
+                </span>
+                <br/>
+            </td>
+            <td>
+                <br/>
+            </td>
+            <td>
+                [[/lang]][[input:ans3]][[lang code="de"]]
+            </td>
+        </tr>
+        <tr>
+            <td>
+                d)
+                <br/>
+            </td>
+            <td>
+                \( A \lor B \lor C \)
+                <span>
+                    und
+                </span>
+                \( (A \lor B) \lor C \)
+                <br/>
+            </td>
+            <td>
+                <span>
+                </span>
+                <br/>
+            </td>
+            <td>
+                <br/>
+            </td>
+            <td>
+                [[/lang]][[lang code="en"]]
+            </td>
+        </tr>
+        <tr>
+            <td>
+                (d)
+                <br/>
+            </td>
+            <td>
+                \( A \lor B \lor C \)
+                <span>
+                    and
+                </span>
+                \( (A \lor B) \lor C \)
+                <br/>
+            </td>
+            <td>
+                <span>
+                </span>
+                <br/>
+            </td>
+            <td>
+                <br/>
+            </td>
+            <td>
+                [[/lang]][[input:ans4]][[lang code="de"]]
+            </td>
+        </tr>
+        <tr>
+            <td>
+                e)
+                <br/>
+            </td>
+            <td>
+                \( A \land (B \lor C) \)
+                <span>
+                    und \( (A \land B) \lor C \)
                     <br/>
-                </td>
-                <td>
+                </span>
+            </td>
+            <td>
+                <span>
+                </span>
+                <br/>
+            </td>
+            <td>
+                <br/>
+            </td>
+            <td>
+                [[/lang]][[lang code="en"]]
+            </td>
+        </tr>
+        <tr>
+            <td>
+                (e)
+                <br/>
+            </td>
+            <td>
+                \( A \land (B \lor C) \)
+                <span>
+                    and \( (A \land B) \lor C \)
                     <br/>
-                </td>
-                <td>
-                    [[input:ans2]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    (c)
-                    <br/>
-                </td>
-                <td>
-                    \( A \lor B \)
-                    <span>
-                        and \( B \lor A \)
-                    </span>
-                    <br/>
-                </td>
-                <td>
-                    <span>
-                    </span>
-                    <br/>
-                </td>
-                <td>
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans3]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    (d)
-                    <br/>
-                </td>
-                <td>
-                    \( A \lor B \lor C \)
-                    <span>
-                        and
-                    </span>
-                    \( (A \lor B) \lor C \)
-                    <br/>
-                </td>
-                <td>
-                    <span>
-                    </span>
-                    <br/>
-                </td>
-                <td>
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans4]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    (e)
-                    <br/>
-                </td>
-                <td>
-                    \( A \land (B \lor C) \)
-                    <span>
-                        and \( (A \land B) \lor C \)
-                        <br/>
-                    </span>
-                </td>
-                <td>
-                    <span>
-                    </span>
-                    <br/>
-                </td>
-                <td>
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans5]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    (f)
-                    <br/>
-                </td>
-                <td>
-                    \( \lnot (A \land B) \)
-                    <span>
-                        and \( \lnot A \lor \lnot B \)
-                    </span>
-                    <br/>
-                </td>
-                <td>
-                    <span>
-                    </span>
-                    <br/>
-                </td>
-                <td>
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans6]]
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    [[validation:ans1]] [[validation:ans2]] [[validation:ans3]] [[validation:ans4]] [[validation:ans5]] [[validation:ans6]]
-</span>
+                </span>
+            </td>
+            <td>
+                <span>
+                </span>
+                <br/>
+            </td>
+            <td>
+                <br/>
+            </td>
+            <td>
+                [[/lang]][[input:ans5]][[lang code="de"]]
+            </td>
+        </tr>
+        <tr>
+            <td>
+                f)
+                <br/>
+            </td>
+            <td>
+                \( \lnot (A \land B) \)
+                <span>
+                    und&#160; \( \lnot A \lor \lnot B \)
+                </span>
+                <br/>
+            </td>
+            <td>
+                <span>
+                </span>
+                <br/>
+            </td>
+            <td>
+                <br/>
+            </td>
+            <td>
+                [[/lang]][[lang code="en"]]
+            </td>
+        </tr>
+        <tr>
+            <td>
+                (f)
+                <br/>
+            </td>
+            <td>
+                \( \lnot (A \land B) \)
+                <span>
+                    and \( \lnot A \lor \lnot B \)
+                </span>
+                <br/>
+            </td>
+            <td>
+                <span>
+                </span>
+                <br/>
+            </td>
+            <td>
+                <br/>
+            </td>
+            <td>
+                [[/lang]][[input:ans6]][[lang code="de"]]
+            </td>
+        </tr>
+    </tbody>
+</table>
+[[/lang]][[lang code="en"]]
+[[/lang]][[validation:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans4]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans5]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans6]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-        <strong>
-            Hinweise:
-        </strong>
-    </p>
-    <p>
-        a) Die Aussagen
-        <span>
-            \( A \Rightarrow B \)
-            <span>
-                und
-                <span>
-                    \( B \Rightarrow A \) sind
-                    <strong>
-                        <span>
-                            nicht
-                        </span>
-                        &#228;quivalent
-                    </strong>
-                    .
-                    <br/>
-                </span>
-            </span>
-        </span>
-        <span>
-            <span>
-                <span>
-                </span>
-            </span>
-        </span>
-        <u>
-            Beispiel:
-        </u>
-        \(A\) =
-        <i>
-            "Drau&#223;en regnet es"
-        </i>
-        und \(B\) =
-        <i>
-            "Die Stra&#223;e ist nass"
-        </i>
-        <br/>
-        Dann gilt zwar \(A\Rightarrow B\), aber
-        <u>
-            nicht
-        </u>
-        \(B\Rightarrow A\), denn die Stra&#223;e k&#246;nnte ja auch aus anderen Gr&#252;nden nass sein.
-        <br/>
-        <span>
-            <span>
-                <span>
-                </span>
-            </span>
-        </span>
-        <span>
-            <span>
-                <span>
-                </span>
-            </span>
-        </span>
-    </p>
-    <p>
-        <span>
-            <span>
-                <span>
-                    b) Die Aussagen
-                    <span>
-                        \( A \Rightarrow B \)
-                        <span>
-                            und&#160;\(&#160;\lnot B \Rightarrow \lnot A\) sind
-                            <strong>
-                                &#228;quivalent
-                            </strong>
-                        </span>
-                    </span>
-                </span>
-            </span>
-        </span>
-        . Diese Regel nennt man Kontrapositionsgesetz.
-        <span>
-            <span>
-                <span>
-                    <span>
-                    </span>
-                </span>
-            </span>
-        </span>
-        <br/>
-    </p>
-    <ol>
-    </ol>
-    <ol>
-    </ol>
-    c) In der Aussagenlogik ist die
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    <strong>
+        Hinweise:
+    </strong>
+</p>
+<p>
+    a) Die Aussagen
     <span>
-        Disjunktion ("\(\lor\)") kommutativ, daher sind&#160;\( A \lor B \)
+        \( A \Rightarrow B \)
         <span>
-            und \( B \lor A \)
-        </span>
-        <span>
+            und
             <span>
+                \( B \Rightarrow A \) sind
                 <strong>
+                    <span>
+                        nicht
+                    </span>
                     &#228;quivalent
                 </strong>
                 .
+                <br/>
             </span>
         </span>
     </span>
-    <p>
-    </p>
-    <p>
-        d) Die Aussagen \( A \lor B \lor C \)
+    <span>
         <span>
-            und
+            <span>
+            </span>
         </span>
-        \( (A \lor B) \lor C \) sind
+    </span>
+    <u>
+        Beispiel:
+    </u>
+    \(A\) =
+    <i>
+        "Drau&#223;en regnet es"
+    </i>
+    und \(B\) =
+    <i>
+        "Die Stra&#223;e ist nass"
+    </i>
+    <br/>
+    Dann gilt zwar \(A\Rightarrow B\), aber
+    <u>
+        nicht
+    </u>
+    \(B\Rightarrow A\), denn die Stra&#223;e k&#246;nnte ja auch aus anderen Gr&#252;nden nass sein.
+    <br/>
+    <span>
+        <span>
+            <span>
+            </span>
+        </span>
+    </span>
+    <span>
+        <span>
+            <span>
+            </span>
+        </span>
+    </span>
+</p>
+<p>
+    <span>
+        <span>
+            <span>
+                b) Die Aussagen
+                <span>
+                    \( A \Rightarrow B \)
+                    <span>
+                        und&#160;\(&#160;\lnot B \Rightarrow \lnot A\) sind
+                        <strong>
+                            &#228;quivalent
+                        </strong>
+                    </span>
+                </span>
+            </span>
+        </span>
+    </span>
+    . Diese Regel nennt man Kontrapositionsgesetz.
+    <span>
+        <span>
+            <span>
+                <span>
+                </span>
+            </span>
+        </span>
+    </span>
+    <br/>
+</p>
+<ol>
+</ol>
+<ol>
+</ol>
+c) In der Aussagenlogik ist die
+<span>
+    Disjunktion ("\(\lor\)") kommutativ, daher sind&#160;\( A \lor B \)
+    <span>
+        und \( B \lor A \)
+    </span>
+    <span>
+        <span>
+            <strong>
+                &#228;quivalent
+            </strong>
+            .
+        </span>
+    </span>
+</span>
+<p>
+</p>
+<p>
+    d) Die Aussagen \( A \lor B \lor C \)
+    <span>
+        und
+    </span>
+    \( (A \lor B) \lor C \) sind
+    <strong>
+        &#228;quivalent
+    </strong>
+    . Dies sieht man, wenn man eine Wahrheitstafel anfertigt.
+</p>
+<p>
+    e) Die Aussagen \( A \land (B \lor C) \)
+    <span>
+        und \( (A \land B) \lor C \) sind
         <strong>
+            <span>
+                nicht
+            </span>
             &#228;quivalent
         </strong>
         . Dies sieht man, wenn man eine Wahrheitstafel anfertigt.
-    </p>
-    <p>
-        e) Die Aussagen \( A \land (B \lor C) \)
-        <span>
-            und \( (A \land B) \lor C \) sind
-            <strong>
-                <span>
-                    nicht
-                </span>
-                &#228;quivalent
-            </strong>
-            . Dies sieht man, wenn man eine Wahrheitstafel anfertigt.
-        </span>
-        <br/>
-    </p>
-    <p>
-        f) Die Aussagen \( \lnot (A \land B) \)
-        <span>
-            und&#160; \( \lnot A \lor \lnot B \) sind
-            <strong>
-                &#228;quivalent
-            </strong>
-            . Diese Regel ist eines der De Morganschen Gesetze der Aussagenlogik.
-        </span>
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-        <strong>
-            Notes:
-        </strong>
-    </p>
-    <p>
-        (a) The statements
-        <span>
-            \( A \Rightarrow B \)
-            <span>
-                and
-                <span>
-                    \( B \Rightarrow A \) are
-                    <strong>
-                        <span>
-                            not
-                        </span>
-                        equivalent
-                    </strong>
-                    .
-                    <br/>
-                </span>
-            </span>
-        </span>
-        <span>
-            <span>
-                <span>
-                </span>
-            </span>
-        </span>
-        <u>
-            Example:
-        </u>
-        \(A\) =
-        <i>
-            "It's raining outside"
-        </i>
-        and \(B\) =
-        <i>
-            "The road is wet"
-        </i>
-        <br/>
-        This is true \(A\Rightarrow B\)but
-        <u>
-            not
-        </u>
-        \(B\Rightarrow A\), because the road could also be wet for other reasons.
-        <br/>
-        <span>
-            <span>
-                <span>
-                </span>
-            </span>
-        </span>
-        <span>
-            <span>
-                <span>
-                </span>
-            </span>
-        </span>
-    </p>
-    <p>
-        <span>
-            <span>
-                <span>
-                    (b) The statements
-                    <span>
-                        \( A \Rightarrow B \)
-                        <span>
-                            and\(&#160;\lnot B \Rightarrow \lnot A\) are
-                            <strong>
-                                equivalent
-                            </strong>
-                        </span>
-                    </span>
-                </span>
-            </span>
-        </span>
-        . This rule is called contraposition law.
-        <span>
-            <span>
-                <span>
-                    <span>
-                    </span>
-                </span>
-            </span>
-        </span>
-        <br/>
-    </p>
-    <ol>
-    </ol>
-    <ol>
-    </ol>
-    (c) In the statement logic,
+    </span>
+    <br/>
+</p>
+<p>
+    f) Die Aussagen \( \lnot (A \land B) \)
     <span>
-        Disjunction ("\(\lor\)") commutative, so are\( A \lor B \)
+        und&#160; \( \lnot A \lor \lnot B \) sind
+        <strong>
+            &#228;quivalent
+        </strong>
+        . Diese Regel ist eines der De Morganschen Gesetze der Aussagenlogik.
+    </span>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<p>
+    <strong>
+        Notes:
+    </strong>
+</p>
+<p>
+    (a) The statements
+    <span>
+        \( A \Rightarrow B \)
         <span>
-            and \( B \lor A \)
-        </span>
-        <span>
+            and
             <span>
+                \( B \Rightarrow A \) are
                 <strong>
+                    <span>
+                        not
+                    </span>
                     equivalent
                 </strong>
                 .
+                <br/>
             </span>
         </span>
     </span>
-    <p>
-    </p>
-    <p>
-        (d) The statements \( A \lor B \lor C \)
+    <span>
         <span>
-            and
+            <span>
+            </span>
         </span>
-        \( (A \lor B) \lor C \) are
+    </span>
+    <u>
+        Example:
+    </u>
+    \(A\) =
+    <i>
+        "It's raining outside"
+    </i>
+    and \(B\) =
+    <i>
+        "The road is wet"
+    </i>
+    <br/>
+    This is true \(A\Rightarrow B\)but
+    <u>
+        not
+    </u>
+    \(B\Rightarrow A\), because the road could also be wet for other reasons.
+    <br/>
+    <span>
+        <span>
+            <span>
+            </span>
+        </span>
+    </span>
+    <span>
+        <span>
+            <span>
+            </span>
+        </span>
+    </span>
+</p>
+<p>
+    <span>
+        <span>
+            <span>
+                (b) The statements
+                <span>
+                    \( A \Rightarrow B \)
+                    <span>
+                        and\(&#160;\lnot B \Rightarrow \lnot A\) are
+                        <strong>
+                            equivalent
+                        </strong>
+                    </span>
+                </span>
+            </span>
+        </span>
+    </span>
+    . This rule is called contraposition law.
+    <span>
+        <span>
+            <span>
+                <span>
+                </span>
+            </span>
+        </span>
+    </span>
+    <br/>
+</p>
+<ol>
+</ol>
+<ol>
+</ol>
+(c) In the statement logic,
+<span>
+    Disjunction ("\(\lor\)") commutative, so are\( A \lor B \)
+    <span>
+        and \( B \lor A \)
+    </span>
+    <span>
+        <span>
+            <strong>
+                equivalent
+            </strong>
+            .
+        </span>
+    </span>
+</span>
+<p>
+</p>
+<p>
+    (d) The statements \( A \lor B \lor C \)
+    <span>
+        and
+    </span>
+    \( (A \lor B) \lor C \) are
+    <strong>
+        equivalent
+    </strong>
+    . You can see this when you make a truth table.
+</p>
+<p>
+    (e) The statements \( A \land (B \lor C) \)
+    <span>
+        and \( (A \land B) \lor C \) are
+        <strong>
+            <span>
+                not
+            </span>
+            equivalent
+        </strong>
+        . You can see this when you make a truth table.
+    </span>
+    <br/>
+</p>
+<p>
+    (f) The statements \( \lnot (A \land B) \)
+    <span>
+        and \( \lnot A \lor \lnot B \) are
         <strong>
             equivalent
         </strong>
-        . You can see this when you make a truth board.
-    </p>
-    <p>
-        (e) The statements \( A \land (B \lor C) \)
-        <span>
-            and \( (A \land B) \lor C \) are
-            <strong>
-                <span>
-                    not
-                </span>
-                equivalent
-            </strong>
-            . You can see this when you make a truth board.
-        </span>
-        <br/>
-    </p>
-    <p>
-        (f) The statements \( \lnot (A \land B) \)
-        <span>
-            and \( \lnot A \lor \lnot B \) are
-            <strong>
-                equivalent
-            </strong>
-            . This rule is one of the De Morgan laws of the statement logic.
-        </span>
-        <br/>
-    </p>
-</span>
+        . This rule is one of the De Morgan laws of the statement logic.
+    </span>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -661,12 +657,7 @@ L6: [[false,false,tr("nicht &#228;quivalent","not equivalent")],[true,true,tr("&
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    [[feedback:prt1]]
-</span>
-<span class="multilang" lang="en">
-    [[feedback:prt1]]
-</span>
+[[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -680,56 +671,47 @@ L6: [[false,false,tr("nicht &#228;quivalent","not equivalent")],[true,true,tr("&
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Alle Antworten sind richtig, gut gemacht!
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    All answers are right, well done!
+Alle Antworten sind richtig, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
+All answers are right, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-adjust">
-        </i>
-    </span>
-    Ihre Antworten sind teilweise richtig.
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-adjust">
-        </i>
-    </span>
-    Your answers are partly correct.
+Ihre Antworten sind teilweise richtig.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
 </span>
+Your answers are partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Alle Antworten sind falsch.
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    All answers are wrong.
+Alle Antworten sind falsch.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
+All answers are wrong.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -743,7 +725,7 @@ L6: [[false,false,tr("nicht &#228;quivalent","not equivalent")],[true,true,tr("&
         <variantsselectionseed/>
         <input>
             <name>ans1</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>L1</tans>
             <boxsize>15</boxsize>
             <strictsyntax>1</strictsyntax>
@@ -761,7 +743,7 @@ L6: [[false,false,tr("nicht &#228;quivalent","not equivalent")],[true,true,tr("&
         </input>
         <input>
             <name>ans2</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>L2</tans>
             <boxsize>15</boxsize>
             <strictsyntax>1</strictsyntax>
@@ -779,7 +761,7 @@ L6: [[false,false,tr("nicht &#228;quivalent","not equivalent")],[true,true,tr("&
         </input>
         <input>
             <name>ans3</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>L3</tans>
             <boxsize>15</boxsize>
             <strictsyntax>1</strictsyntax>
@@ -797,7 +779,7 @@ L6: [[false,false,tr("nicht &#228;quivalent","not equivalent")],[true,true,tr("&
         </input>
         <input>
             <name>ans4</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>L4</tans>
             <boxsize>15</boxsize>
             <strictsyntax>1</strictsyntax>
@@ -815,7 +797,7 @@ L6: [[false,false,tr("nicht &#228;quivalent","not equivalent")],[true,true,tr("&
         </input>
         <input>
             <name>ans5</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>L5</tans>
             <boxsize>15</boxsize>
             <strictsyntax>1</strictsyntax>
@@ -833,7 +815,7 @@ L6: [[false,false,tr("nicht &#228;quivalent","not equivalent")],[true,true,tr("&
         </input>
         <input>
             <name>ans6</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>L6</tans>
             <boxsize>15</boxsize>
             <strictsyntax>1</strictsyntax>

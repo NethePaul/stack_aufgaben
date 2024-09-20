@@ -1,0 +1,1416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>M&#252;sliriegel zum Wandern (Rechnen mit Normalverteilung)</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<style>
+    button.top-next,
+button.next {
+                border: 1px solid black;
+                background-color: #A9F5BC;
+}
+
+
+
+
+button.top-next:hover,
+button.next:hover {
+                background-color: #E0F8E6;
+}
+
+
+
+
+button.top,
+button.prev {
+                border: 1px solid black;
+                background-color: #DCB25E;
+}
+button.top:hover,
+button.prev:hover {
+                background-color: #E7D2A7;
+}
+</style>
+<div class="question-view">
+    <p>
+        Das Gewicht eines bei Wanderern beliebten M&#252;sliriegels ist
+normalverteilt mit Erwartungswert {@ mu = mean @}&#8201;g und Varianz {@
+sigma^2 = std^2 @}&#8201;g
+        <sup>
+            2
+        </sup>
+        .
+    </p>
+    <div class="question-view">
+        <div class="question-view">
+            <p>
+                Wie gro&#223; ist die Wahrscheinlichkeit, dass ein zuf&#228;llig ausgew&#228;hlter
+M&#252;sliriegel weniger als {# decimalplaces(min_weight, 1) #}&#8201;g
+wiegt?
+            </p>
+            <p>
+                Antwort: [[/lang]][[lang code="en"]]
+                <style>
+                    button.top-next,
+button.next {
+                border: 1px solid black;
+                background-color: #A9F5BC;
+}
+
+
+
+
+button.top-next:hover,
+button.next:hover {
+                background-color: #E0F8E6;
+}
+
+
+
+
+button.top,
+button.prev {
+                border: 1px solid black;
+                background-color: #DCB25E;
+}
+button.top:hover,
+button.prev:hover {
+                background-color: #E7D2A7;
+}
+                </style>
+                <div class="question-view">
+                    <p>
+                        The weight of a muesli bar popular with hikers is
+normal distributed with expected value {@ mu = mean @}g and variance {@
+sigma^2 = std^2 @}g
+                        <sup>
+                            2
+                        </sup>
+                        .
+                    </p>
+                    <div class="question-view">
+                        <div class="question-view">
+                            <p>
+                                How great is the probability that a randomly selected
+Bars less than {# decimalplaces(min_weight, 1) #}g
+is it?
+                            </p>
+                            <p>
+                                Answer: [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
+                            </p>
+                            [[/lang]][[lang code="en"]]
+                        </div>
+                    </div>
+                </div>
+            </p>
+            [[/lang]][[feedback:prt1]][[lang code="de"]]
+        </div>
+        <div class="question-view">
+            <p>
+                Wir bezeichnen das Gewicht des M&#252;sliriegels mit \(X\).
+        &#220;berf&#252;hren Sie die Zufallsvariable \(X\) mithilfe der
+        Z-Transformation in ein standardnormalverteilte Zufallsvariable
+        \(Z\)
+            </p>
+            \(Z\) = [[/lang]][[lang code="en"]]
+        </div>
+        <div class="question-view">
+            <p>
+                We call the weight of the muesli bar with \(X\).
+Transfer the random variable \(X\) using:
+Z-Transformation to a standard random variable
+    \(Z\)
+            </p>
+            \(Z\) = [[/lang]][[input:ans1_1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1_1]][[lang code="de"]]
+        [[/lang]][[lang code="en"]][[/lang]][[feedback:ztransform]][[lang code="de"]]
+        </div>
+        <div class="question-view">
+            <p>
+                Im vorigen Aufgabenteil haben Sie die folgende standardisierte Zufallsvariable definiert: {@ Z = (X-mean)/std@}
+            </p>
+            <p>
+                Dr&#252;cken Sie das Ereignis \(X \le {@ decimalplaces(min_weight, 1)
+        @}\) durch die Zufallsvariable \(Z\) aus
+            </p>
+            {[[/lang]][[lang code="en"]]
+        </div>
+        <div class="question-view">
+            <p>
+                In the previous task, you have defined the following standardized random variable: {@ Z = (X-mean)/std@}
+            </p>
+            <p>
+                Press the event \(X \le {@ decimalplaces(min_weight, 1)
+        @}\) by the random variable \(Z\) Of which:
+            </p>
+            {[[/lang]][[input:zEvent]][[lang code="de"]]}
+        [[/lang]][[lang code="en"]]}[[/lang]][[validation:zEvent]][[lang code="de"]]
+        [[/lang]][[lang code="en"]][[/lang]][[feedback:zEvent]][[lang code="de"]]
+            <p>
+                <em>
+                    Hinweis: Sie k&#246;nnen \(Z \leq 5\) folgenderma&#223;en eingeben:
+                    <code>
+                        Z &lt;= 5
+                    </code>
+                </em>
+            </p>
+        </div>
+    </div>
+    <script>
+        /*
+    * This program is free software: you can redistribute it and/or
+    * modify it under the terms of the GNU General Public License as
+    * published by the Free Software Foundation, either version 3 of the
+    * License, or (at your option) any later version.
+    *
+    * This program is distributed in the hope that it will be useful, but
+    * WITHOUT ANY WARRANTY; without even the implied warranty of
+    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    * General Public License for more details.
+    *
+    * You should have received a copy of the GNU General Public License
+    * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    *
+    * Copyright (C) 2021 by Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>
+    * SPDX-License-Identifier: GPL-3.0-or-later
+    *
+    */
+
+
+
+
+/* @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later */
+
+
+
+
+(function() {
+/* Make sure to create QController instances only once even if the
+            script is loaded multiple times.  This is so that the script can
+            be included in more than one STACK question on the page and still
+            function properly. */
+if (window.QController === undefined) {
+        window.QController = QController;
+        document.addEventListener("DOMContentLoaded", event => {
+                const responseform = document.getElementById("responseform");
+                if (!responseform) {
+                        throw Error("Element with id responseform not found.");
+                }
+
+    
+    
+    
+    responseform.querySelectorAll(".stack.que").forEach(stackQue => {
+                        const rootElement = stackQue.querySelector(".question-view");
+
+      
+      
+      
+      if (!rootElement) {
+                                console.warn("QController: no elements with class question-view inside " + stackQue.id);
+                                return;
+                        }
+
+      
+      
+      
+      const controller = new QController(rootElement, stackQue.id);
+                        controller.installHandlers();
+                        controller.loadState();
+                        controller.update();
+                });
+        });
+}
+
+
+
+
+/* This class handles the navigation of a single STACK question */
+function QController(rootElement, questionId) {
+        this.rootElement = rootElement;
+        this.id = questionId;
+        this.views = rootElement.querySelectorAll(".question-view");
+        this.visited = (new Array(this.views.length)).fill(false);
+        this.currentView = Array.prototype.findIndex.call(this.views, isLeaf);
+        this.visited[this.currentView] = true;
+}
+
+
+
+
+QController.prototype.handleVisitedNodes = function(current) {
+        var visitedSiblings = [];
+        var el = current;
+        while (el.nextElementSibling) {
+                var index =
+                                Array.prototype.indexOf.call(this.views, el.nextElementSibling);
+                visitedSiblings.push(this.visited[index])
+                el = el.nextElementSibling;
+        }
+
+  
+  
+  
+  var withoutHelp = visitedSiblings.every(x => x == false);
+        var helpCompleted = visitedSiblings.every(x => x == true);
+
+  
+  
+  
+  current.querySelectorAll(".visited").forEach(function(element) {
+                var index = element.getAttribute("data-qcontroller-help");
+                if (!index || index === "none")
+                        element.hidden = !withoutHelp;
+                else if (index === "complete")
+                        element.hidden = !helpCompleted;
+                else if (index === "partial")
+                        element.hidden = withoutHelp || helpCompleted;
+                else
+                        element.hidden = !visitedSiblings[index - 1];
+        });
+};
+
+
+
+
+/* Update view according to current controller state */
+QController.prototype.update = function() {
+        this.views.forEach(hide);
+
+  
+  
+  
+  const current = this.views[this.currentView];
+        if (isLeaf(current)) {
+                showView(current);
+                this.handleVisitedNodes(current);
+        } else {
+                this.showFirstView(current);
+        }
+};
+
+
+
+
+/* Install event handlers for all buttons under root element */
+QController.prototype.installHandlers = function() {
+        const controller = this;
+        this.rootElement.querySelectorAll("button").forEach(button => {
+                button.addEventListener("click", ev => {
+                        const view = button.closest(".question-view");
+
+      
+      
+      
+      if (!view) {
+                                console.log("qcontroller: <button> not inside question view");
+                                return;
+                        }
+
+      
+      
+      
+      const classList = button.classList;
+                        let forward = null;
+
+      
+      
+      
+      if (classList.contains("next")) {
+                                forward = view.nextElementSibling;
+                        } else if (classList.contains("top-next")) {
+                                const parent = view.parentNode;
+                                if (parent) {
+                                        forward = parent.nextElementSibling;
+                                } else {
+                                        forward = null;
+                                }
+                        } else if (classList.contains("top")) {
+                                forward = containingView(view);
+                        } else if (classList.contains("prev")) {
+                                forward = view.previousElementSibling;
+                        }
+
+      
+      
+      
+      if (forward && forward.classList.contains("question-view")) {
+                                controller.visit(forward);
+                                controller.saveState();
+                                controller.update();
+                        }
+                });
+        });
+};
+
+
+
+
+QController.prototype.hasVisited = function(viewIndex) {
+        return this.visited[viewIndex];
+};
+
+
+
+
+QController.prototype.visit = function(nextView) {
+        const index = Array.prototype.findIndex.call(
+                this.views,
+                x => x === nextView);
+        this.currentView = index;
+        this.visited[index] = true;
+};
+
+
+
+
+/* Save controller state to current session */
+QController.prototype.saveState = function() {
+        const key = this.id + "-controller-state";
+        const state = {
+                currentView: this.currentView,
+                visited: this.visited
+        };
+        window.sessionStorage.setItem(key, JSON.stringify(state));
+};
+
+
+
+
+/* Load controller state from current session */
+QController.prototype.loadState = function() {
+        const key = this.id + "-controller-state";
+        const state = JSON.parse(window.sessionStorage.getItem(key));
+
+  
+  
+  
+  if (state) {
+                this.currentView = state.currentView;
+                this.visited = state.visited;
+        }
+};
+
+
+
+
+/* Show the first leaf question view */
+QController.prototype.showFirstView = function(questionView) {
+        let view = questionView;
+
+  
+  
+  
+  while (view && !isLeaf(view)) {
+                view = view.querySelector(".question-view");
+        }
+
+  
+  
+  
+  showView(view);
+        this.handleVisitedNodes(view);
+}
+
+
+
+
+function showView(view) {
+        /* show all containing views */
+        while (view) {
+                show(view);
+                view = containingView(view);
+        }
+}
+
+
+
+
+/* Return the view containing VIEW */
+function containingView(view) {
+        let parent = view.parentNode;
+
+  
+  
+  
+  if (parent) {
+                parent = parent.closest(".question-view");
+        }
+
+  
+  
+  
+  return parent;
+}
+
+
+
+
+function show(view) {
+        view.style.display = "block";
+}
+
+
+
+
+function isLeaf(view) {
+        return view.querySelector(".question-view") == null;
+}
+
+
+
+
+function isVisible(view) {
+        return view.style.display != "none";
+}
+
+
+
+
+function hide(view) {
+        view.style.display = "none";
+}
+
+
+
+
+})();
+/* @license-end */
+    </script>
+</div>
+[[/lang]][[lang code="en"]]
+<p>
+    <em>
+        Note: You can \(Z \leq 5\) enter as follows:
+        <code>
+            Z &lt;= 5
+        </code>
+    </em>
+</p>
+<script>
+    /*
+    * This program is free software: you can redistribute it and/or
+    * modify it under the terms of the GNU General Public License as
+    * published by the Free Software Foundation, either version 3 of the
+    * License, or (at your option) any later version.
+    *
+    * This program is distributed in the hope that it will be useful, but
+    * WITHOUT ANY WARRANTY; without even the implied warranty of
+    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    * General Public License for more details.
+    *
+    * You should have received a copy of the GNU General Public License
+    * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    *
+    * Copyright (C) 2021 by Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>
+    * SPDX-License-Identifier: GPL-3.0-or-later
+    *
+    */
+
+
+
+
+/* @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later */
+
+
+
+
+(function() {
+/* Make sure to create QController instances only once even if the
+            script is loaded multiple times.  This is so that the script can
+            be included in more than one STACK question on the page and still
+            function properly. */
+if (window.QController === undefined) {
+        window.QController = QController;
+        document.addEventListener("DOMContentLoaded", event => {
+                const responseform = document.getElementById("responseform");
+                if (!responseform) {
+                        throw Error("Element with id responseform not found.");
+                }
+
+    
+    
+    
+    responseform.querySelectorAll(".stack.que").forEach(stackQue => {
+                        const rootElement = stackQue.querySelector(".question-view");
+
+      
+      
+      
+      if (!rootElement) {
+                                console.warn("QController: no elements with class question-view inside " + stackQue.id);
+                                return;
+                        }
+
+      
+      
+      
+      const controller = new QController(rootElement, stackQue.id);
+                        controller.installHandlers();
+                        controller.loadState();
+                        controller.update();
+                });
+        });
+}
+
+
+
+
+/* This class handles the navigation of a single STACK question */
+function QController(rootElement, questionId) {
+        this.rootElement = rootElement;
+        this.id = questionId;
+        this.views = rootElement.querySelectorAll(".question-view");
+        this.visited = (new Array(this.views.length)).fill(false);
+        this.currentView = Array.prototype.findIndex.call(this.views, isLeaf);
+        this.visited[this.currentView] = true;
+}QController.prototype.handleVisitedNodes = function(current) {
+        var visitedSiblings = [];
+        var el = current;
+        while (el.nextElementSibling) {
+                var index =
+                                Array.prototype.indexOf.call(this.views, el.nextElementSibling);
+                visitedSiblings.push(this.visited[index])
+                el = el.nextElementSibling;
+        }
+
+  
+  
+  
+  var withoutHelp = visitedSiblings.every(x => x == false);
+        var helpCompleted = visitedSiblings.every(x => x == true);
+
+  
+  
+  
+  current.querySelectorAll(".visited").forEach(function(element) {
+                var index = element.getAttribute("data-qcontroller-help");
+                if (!index || index === "none")
+                        element.hidden = !withoutHelp;
+                else if (index === "complete")
+                        element.hidden = !helpCompleted;
+                else if (index === "partial")
+                        element.hidden = withoutHelp || helpCompleted;
+                else
+                        element.hidden = !visitedSiblings[index - 1];
+        });
+};
+
+
+
+
+/* Update view according to current controller state */
+QController.prototype.update = function() {
+        this.views.forEach(hide);
+
+  
+  
+  
+  const current = this.views[this.currentView];
+        if (isLeaf(current)) {
+                showView(current);
+                this.handleVisitedNodes(current);
+        } else {
+                this.showFirstView(current);
+        }
+};
+
+
+
+
+/* Install event handlers for all buttons under root element */
+QController.prototype.installHandlers = function() {
+        const controller = this;
+        this.rootElement.querySelectorAll("button").forEach(button => {
+                button.addEventListener("click", ev => {
+                        const view = button.closest(".question-view");
+
+      
+      
+      
+      if (!view) {
+                                console.log("qcontroller: <button> not inside question view");
+                                return;
+                        }
+
+      
+      
+      
+      const classList = button.classList;
+                        let forward = null;
+
+      
+      
+      
+      if (classList.contains("next")) {
+                                forward = view.nextElementSibling;
+                        } else if (classList.contains("top-next")) {
+                                const parent = view.parentNode;
+                                if (parent) {
+                                        forward = parent.nextElementSibling;
+                                } else {
+                                        forward = null;
+                                }
+                        } else if (classList.contains("top")) {
+                                forward = containingView(view);
+                        } else if (classList.contains("prev")) {
+                                forward = view.previousElementSibling;
+                        }
+
+      
+      
+      
+      if (forward && forward.classList.contains("question-view")) {
+                                controller.visit(forward);
+                                controller.saveState();
+                                controller.update();
+                        }
+                });
+        });
+};
+
+
+
+
+QController.prototype.hasVisited = function(viewIndex) {
+        return this.visited[viewIndex];
+};
+
+
+
+
+QController.prototype.visit = function(nextView) {
+        const index = Array.prototype.findIndex.call(
+                this.views,
+                x => x === nextView);
+        this.currentView = index;
+        this.visited[index] = true;
+};
+
+
+
+
+/* Save controller state to current session */
+QController.prototype.saveState = function() {
+        const key = this.id + "-controller-state";
+        const state = {
+                currentView: this.currentView,
+                visited: this.visited
+        };
+        window.sessionStorage.setItem(key, JSON.stringify(state));
+};
+
+
+
+
+/* Load controller state from current session */
+QController.prototype.loadState = function() {
+        const key = this.id + "-controller-state";
+        const state = JSON.parse(window.sessionStorage.getItem(key));
+
+  
+  
+  
+  if (state) {
+                this.currentView = state.currentView;
+                this.visited = state.visited;
+        }
+};
+
+
+
+
+/* Show the first leaf question view */
+QController.prototype.showFirstView = function(questionView) {
+        let view = questionView;
+
+  
+  
+  
+  while (view && !isLeaf(view)) {
+                view = view.querySelector(".question-view");
+        }
+
+  
+  
+  
+  showView(view);
+        this.handleVisitedNodes(view);
+}function showView(view) {
+        /* show all containing views */
+        while (view) {
+                show(view);
+                view = containingView(view);
+        }
+}/* Return the view containing VIEW
+function containingView(view) {
+        let parent = view.parentNode;
+
+  
+  
+  
+  if (parent) {
+                parent = parent.closest(".question-view");
+        }
+
+  
+  
+  
+  return parent;
+}function show(view) {
+        view.style.display = "block";
+}function isLeaf(view) {
+        return view.querySelector(".question-view") == null;
+}function isVisible(view) {
+        return view.style.display != "none";
+}function hide(view) {
+        view.style.display = "none";
+}}();
+/* @license-end */
+</script>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>10.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  M&#252;sliriegel zum Wandern (Rechnen mit Normalverteilung)
+
+  wurde entwickelt von
+
+    Daniel Mei&#223;ner <daniel.meissner-i4k(at)ruhr-uni-bochum.de>
+
+  nach einer Idee von
+
+    Herold Dehling <herold.dehling(at)ruhr-uni-bochum.de>
+
+  an der Ruhr-Universit&#228;t Bochum.
+
+  Dieses Werk ist lizenziert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+
+  Diese Aufgabe enth&#228;lt Hilfeschritte, die mithilfe von JavaScript
+  nacheinander sichtbar gemacht werden.
+
+  Diese Aufgabe verwendet das Maxima-Paket &#8216;distrib&#8217;.
+*/
+nn: 4;
+mean: rand([42, 44, 46]);
+std: rand([2,3]);
+min_weight: decimalplaces(mean + rand([1/2,1,3/2])*std, 1);
+
+ta_ztransform: (X - mean) / std;
+ta_zEvent: Z <= (min_weight - mean) / std;
+
+Tans1: decimalplaces(cdf_normal (min_weight, mean, std), 2);
+Tans3: nn*mean;
+Tans4: nn*std^2;]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>Erwartungswert: {# mean #}
+Varianz: {# std^2 #}
+Mindestgewicht: {# decimalplaces(min_weight, 1) #}
+Wahrscheinlichkeit: {# Tans1 #}</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Ihre Antwort ist nicht komplett falsch.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is not completely wrong.[[/lang]]
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.[[/lang]]
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed>i</variantsselectionseed>
+        <input>
+            <name>ans1</name>
+            <type>numerical</type>
+            <tans>Tans1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>2</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans1_1</name>
+            <type>algebraic</type>
+            <tans>ta_ztransform</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>zEvent</name>
+            <type>algebraic</type>
+            <tans>ta_zEvent</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text><![CDATA[probabilityp(p) := is(numberp(p) and p >= 0 and p <= 1);]]></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans1</sans>
+                <tans>Tans1</tans>
+                <testoptions>0.005</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Herzlichen Gl&#252;ckwunsch, Sie sind am Ende der Aufgabe angelangt.
+</p>
+<p>
+    Wenn wir das Gewicht eines zuf&#228;llig ausgew&#228;hlten M&#252;sliriegels mit \(X\) bezeichnen, k&#246;nnen wir die gesuchte Wahrscheinlichkeit als \(P(X &lt; {@ decimalplaces(min_weight,1) @})\) beschreiben. Die Zufallsvariable \(X\) ist laut Aufgabenstellung normalverteilt mit Erwartungswert {# mean#} und Standardabweichung {# std #}. Mithilfe der Z-Transformation k&#246;nnen wir die standardnormalverteilte Zufallsvariable \(Z = \frac{X - {@mean@}}{{@std@}}\) definieren und es gilt:
+
+
+
+
+\[
+P(X &lt; {@decimalplaces(min_weight, 1)@}) = P\left(Z &lt; \frac{{@decimalplaces(min_weight,1)@}- {@mean@}}{{@std@}}\right) \approx {@decimalplaces(Tans1, 3)@}
+\]
+
+
+
+
+Den Wert f&#252;r \(P(Z &lt; {@ (min_weight - mean)/std @})\) k&#246;nnen wir aus der Tabelle f&#252;r die Verteilungsfunktion der Standardnormalverteilung ablesen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Congratulations, you have reached the end of the task.
+</p>
+<p>
+    If we have the weight of a randomly selected muesli bar with \(X\) we can describe the likelihood sought as \(P(X &lt; {@ decimalplaces(min_weight,1) @})\) describe. The random variable \(X\) is normally distributed according to task with expected value {# mean#} and standard deviation {# std #}. With the help of the Z-transformation, we can use the normal distributed random variable \(Z = \frac{X - {@mean@}}{{@std@}}\) define and apply:
+
+
+
+
+\[
+P(X &lt; {@decimalplaces(min_weight, 1)@}) = P\left(Z &lt; \frac{{@decimalplaces(min_weight,1)@}- {@mean@}}{{@std@}}\right) \approx {@decimalplaces(Tans1, 3)@}
+\]Value for \(P(Z &lt; {@ (min_weight - mean)/std @})\) we can read from the table for the distribution function of standard distribution.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p class="visited" data-qcontroller-help="none">
+    Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein
+        Problem! Im Folgenden wird die Aufgabe in kleinere Teilaufgaben
+        unterteilt. Wenn Sie diese Aufgaben alle gel&#246;st haben, k&#246;nnen Sie
+        die urspr&#252;ngliche Aufgabe sicherlich l&#246;sen. Klicken Sie dazu auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    .
+</p>
+<p>
+    <span class="visited" data-qcontroller-help="1">
+        Willkommen zur&#252;ck! In der Hilfe haben Sie die neue standardisierte
+                Zufallsvariable {@ Z = (X-mean)/std@} definiert.
+    </span>
+    <span class="visited" data-qcontroller-help="2">
+        Dann haben Sie das Ereignis {@{X &lt;= min_weight}@} mithilfe der
+                Variable \(Z\) zu {@{Z &lt;= (min_weight-mean)/std}@} umgeschrieben.
+    </span>
+</p>
+<p class="visited" data-qcontroller-help="partial">
+    Wenn Sie die Hilfe fortsetzen m&#246;chten, klicken Sie auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    .
+</p>
+[[/lang]][[lang code="en"]]
+<p class="visited" data-qcontroller-help="none">
+    That you couldn't solve the task right away is not a
+Problem! In the following, the task is to
+divided. If you have solved all these tasks, you can
+the original task will certainly solve. Click on
+    <button class="next" type="button">
+        Next
+    </button>
+    .
+</p>
+<p>
+    <span class="visited" data-qcontroller-help="1">
+        Welcome back! In the help you have the new standardized
+Random variable {@ Z = (X-mean)/std@} defined.
+    </span>
+    <span class="visited" data-qcontroller-help="2">
+        Then you have the event {@{X &lt;= min_weight}@} using:
+Variable \(Z\) to {@{Z &lt;= (min_weight-mean)/std}@} rewritten.
+    </span>
+</p>
+<p class="visited" data-qcontroller-help="partial">
+    If you want to continue the help, click on
+    <button class="next" type="button">
+        Next
+    </button>
+    .
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ans1)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Wahrscheinlichkeiten sollten im Intervall [0, 1] liegen, das trifft f&#252;r Ihre Eingabe nicht zu.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probabilities should be in the interval [0, 1], this does not apply to your input.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>zEvent</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>zEvent</sans>
+                <tans>ta_zEvent</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>zEvent-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</p>
+<p>
+    Da der Zusammenhang {@ Z = (X - mean)/std @} gilt, folgt, dass
+\[
+\{{@ X &lt;= min_weight @}\} = \{ Z \le \frac{{@min_weight@} - {@mean@}}{{@std@}} \}
+= {@ {Z &lt;= (min_weight - mean)/std} @}.
+\]
+</p>
+<p>
+    Klicken Sie auf
+    <button class="top" type="button">
+        Zur&#252;ck
+    </button>
+    , um zum urspr&#252;nglichen Aufgabenteil zu gelangen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+</p>
+<p>
+    Since the context {@ Z = (X - mean)/std @} the following applies:
+\[
+\{{@ X &lt;= min_weight @}\} = \{ Z \le \frac{{@min_weight@} - {@mean@}}{{@std@}} \}
+= {@ {Z &lt;= (min_weight - mean)/std} @}.
+\]
+</p>
+<p>
+    Click on
+    <button class="top" type="button">
+        Back
+    </button>
+    to get to the original task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>zEvent-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</p>
+<p>
+    Verwenden Sie den Zusammenhang {@ Z = (X - mean)/std @}, um das gew&#252;nschte Ereignis zu formulieren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</p>
+<p>
+    Use the connection {@ Z = (X - mean)/std @}to formulate the desired event.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>ztransform</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text>var_ztransform: (X - mean)/std^2;</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1_1</sans>
+                <tans>ta_ztransform</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ztransform-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</p>
+<p>
+    Die Zufallsvariable \(Z\) hei&#223;t Standardisierung von \(X\) und es gilt folgender Zusammenhang:
+\[
+Z = \frac{X - \mu}{\sigma} = {@ (X - mean)/std @}
+\]
+</p>
+<p>
+    Klicken Sie auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    , um mit der Hilfe fortzufahren,
+oder auf
+    <button class="top" type="button">
+        Zur&#252;ck
+    </button>
+    ,
+um zur urspr&#252;nglichen Aufgabenstellung zur&#252;ckzukehren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+</p>
+<p>
+    The random variable \(Z\) means standardization \(X\) and the following:
+\[
+Z = \frac{X - \mu}{\sigma} = {@ (X - mean)/std @}
+\]
+</p>
+<p>
+    Click on
+    <button class="next" type="button">
+        Next
+    </button>
+    to continue with the help,
+or
+    <button class="top" type="button">
+        Back
+    </button>
+    ,
+to return to the original task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>ztransform-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1_1</sans>
+                <tans>var_ztransform</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ztransform-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Haben Sie m&#246;glicherweise Varianz und Standardabweichung verwechselt? Standardisieren Sie die Variable \(X\), indem Sie den Erwartungswert subtrahieren und durch die Standardabweichung dividieren, um eine standard-normalverteilte Variable zu erhalten.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Have you possibly confused variance and standard deviation? Standardize the variable \(X\)by subtracting the expected value and dividing by the standard deviation to obtain a standard-normally distributed variable.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ztransform-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Standardisieren Sie die Variable \(X\), indem Sie den Erwartungswert subtrahieren und durch die Standardabweichung dividieren, um eine standard-normalverteilte Variable zu erhalten.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Standardize the variable \(X\)by subtracting the expected value and dividing by the standard deviation to obtain a standard-normally distributed variable.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1035579669</deployedseed>
+        <deployedseed>1489871648</deployedseed>
+        <deployedseed>118429441</deployedseed>
+        <deployedseed>544202029</deployedseed>
+        <deployedseed>966521728</deployedseed>
+        <deployedseed>205833150</deployedseed>
+        <deployedseed>1140104951</deployedseed>
+        <deployedseed>177145653</deployedseed>
+        <deployedseed>968945518</deployedseed>
+        <deployedseed>872715898</deployedseed>
+        <deployedseed>743901615</deployedseed>
+        <deployedseed>577762856</deployedseed>
+        <deployedseed>200235602</deployedseed>
+        <deployedseed>245311224</deployedseed>
+        <deployedseed>115883786</deployedseed>
+        <deployedseed>430269634</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <description/>
+            <testinput>
+                <name>ans1</name>
+                <value>Tans1</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <description/>
+            <testinput>
+                <name>ans1</name>
+                <value>Tans1+1</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-F</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

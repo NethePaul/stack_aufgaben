@@ -6,19 +6,31 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    Zeigen Sie, dass f&#252;r drei Mengen \(A, B, C\) im Allgemeinen \[(A\cap B)\cup C \ne (A\cap C)\cup B\] gilt, indem Sie drei Mengen \(A, B, C\) angeben, bei denen diese Ungleichung erf&#252;llt ist.
+    <br/>
+</p>
+<p>
+    \(A=\) [[/lang]][[lang code="en"]]
     <p>
-        Zeigen Sie, dass f&#252;r drei Mengen \(A, B, C\) im Allgemeinen \[(A\cap B)\cup C \ne (A\cap C)\cup B\] gilt, indem Sie drei Mengen \(A, B, C\) angeben, bei denen diese Ungleichung erf&#252;llt ist.
+        Show that for three sets \(A, B, C\) in general \[(A\cap B)\cup C \ne (A\cap C)\cup B\] applies by providing three sets \(A, B, C\) for which this imbalance is fulfilled.
         <br/>
     </p>
     <p>
-        \(A=\) [[input:ans1]] [[validation:ans1]]
+        \(A=\) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
     </p>
     <p>
-        \(B=\) [[input:ans2]] [[validation:ans2]]
+        \(B=\) [[/lang]][[lang code="en"]]
     </p>
     <p>
-        \(C=\) [[input:ans3]] [[validation:ans3]]
+        \(B=\) [[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]]
+    </p>
+    <p>
+        \(C=\) [[/lang]][[lang code="en"]]
+    </p>
+    <p>
+        \(C=\) [[/lang]][[input:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans3]][[lang code="de"]]
     </p>
     <p>
         <span>
@@ -36,88 +48,74 @@
             eingeben.
         </span>
     </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Show that for three quantities \(A, B, C\) in general \[(A\cap B)\cup C \ne (A\cap C)\cup B\] by applying three quantities \(A, B, C\) indicate that this imbalance is fulfilled.
-        <br/>
-    </p>
-    <p>
-        \(A=\) [[input:ans1]] [[validation:ans1]]
-    </p>
-    <p>
-        \(B=\) [[input:ans2]] [[validation:ans2]]
-    </p>
-    <p>
-        \(C=\) [[input:ans3]] [[validation:ans3]]
-    </p>
-    <p>
-        <span>
+    [[/lang]][[lang code="en"]]
+</p>
+<p>
+    <span>
+        <span style="">
+            <strong style="">
+                Note:
+            </strong>
             <span style="">
-                <strong style="">
-                    Note:
-                </strong>
-                <span style="">
-                    A lot \(\{a,b,c\}\) you can
-                </span>
+                A set \(\{a,b,c\}\) can be entered as
             </span>
-            <code style="">
-                {a,b,c}
-            </code>
-            enter.
         </span>
-    </p>
-</span>
+        <code style="">
+            {a,b,c}
+        </code>
+        .
+    </span>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        <b>
-            L&#246;sungsidee:
-        </b>
-    </p>
-    <p>
-        Ein Beispiel f&#252;r drei Mengen, an denen deutlich wird, dass im Allgemeinen \[(A\cap B)\cup C \ne (A\cap C)\cup B\] gilt, sind die Mengen \(A={@MusterA@}\), \( B={@MusterB@}\) und \(C={@MusterC@}\), denn:
-        <br/>
-    </p>
-    <ul>
-        <li>
-            \((A\cap B)\cup C = {@intersection(MusterA,MusterB)@}\cup {@MusterC@} = {@union( intersection(MusterA, MusterB), MusterC )@}\)
-        </li>
-        <li>
-            \((A\cap C)\cup B = \emptyset\cup {@MusterB@} = {@union( intersection(MusterA, MusterC), MusterB )@}\)
-        </li>
-    </ul>
-    <p>
-        Und diese beiden Mengen sind unterschiedlich.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        <b>
-            Solution idea:
-        </b>
-    </p>
-    <p>
-        An example of three quantities where it becomes clear that in general \[(A\cap B)\cup C \ne (A\cap C)\cup B\] the quantities \(A={@MusterA@}\), \( B={@MusterB@}\) and \(C={@MusterC@}\)for:
-        <br/>
-    </p>
-    <ul>
-        <li>
-            \((A\cap B)\cup C = {@intersection(MusterA,MusterB)@}\cup {@MusterC@} = {@union( intersection(MusterA, MusterB), MusterC )@}\)
-        </li>
-        <li>
-            \((A\cap C)\cup B = \emptyset\cup {@MusterB@} = {@union( intersection(MusterA, MusterC), MusterB )@}\)
-        </li>
-    </ul>
-    <p>
-        And these two quantities are different.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    <b>
+        L&#246;sungsidee:
+    </b>
+</p>
+<p>
+    Ein Beispiel f&#252;r drei Mengen, an denen deutlich wird, dass im Allgemeinen \[(A\cap B)\cup C \ne (A\cap C)\cup B\] gilt, sind die Mengen \(A={@MusterA@}\), \( B={@MusterB@}\) und \(C={@MusterC@}\), denn:
+    <br/>
+</p>
+<ul>
+    <li>
+        \((A\cap B)\cup C = {@intersection(MusterA,MusterB)@}\cup {@MusterC@} = {@union( intersection(MusterA, MusterB), MusterC )@}\)
+    </li>
+    <li>
+        \((A\cap C)\cup B = \emptyset\cup {@MusterB@} = {@union( intersection(MusterA, MusterC), MusterB )@}\)
+    </li>
+</ul>
+<p>
+    Und diese beiden Mengen sind unterschiedlich.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <b>
+        Solution idea:
+    </b>
+</p>
+<p>
+    An example of three sets where it becomes clear that in general \[(A\cap B)\cup C \ne (A\cap C)\cup B\] applies: the sets \(A={@MusterA@}\), \( B={@MusterB@}\) and \(C={@MusterC@}\)for:
+    <br/>
+</p>
+<ul>
+    <li>
+        \((A\cap B)\cup C = {@intersection(MusterA,MusterB)@}\cup {@MusterC@} = {@union( intersection(MusterA, MusterB), MusterC )@}\)
+    </li>
+    <li>
+        \((A\cap C)\cup B = \emptyset\cup {@MusterB@} = {@union( intersection(MusterA, MusterC), MusterB )@}\)
+    </li>
+</ul>
+<p>
+    And these two sets are different.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -135,12 +133,7 @@ MusterC: set(4);</text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    [[feedback:prt1]]
-</span>
-<span class="multilang" lang="en">
-    [[feedback:prt1]]
-</span>
+[[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -154,32 +147,17 @@ MusterC: set(4);</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -269,34 +247,33 @@ RHS: union( intersection(ans1, ans3), ans2 );</text>
                 <trueanswernote>prt1-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        F&#252;r Ihre Eingabe gilt
-        <span style="font-size: 0.9375rem;">
-            \( (A\cap B)\cup C={@LHS@} \) und
-        </span>
-        <span style="font-size: 0.9375rem;">
-            \( (A\cap C)\cup B={@RHS@}\)
-        </span>
-        <span style="font-size: 0.9375rem;">
-            und somit \((A\cap B)\cup C = (A\cap C)\cup B\), wof&#252;r Sie eigentlich ein Gegenbeispiel finden sollten.
-        </span>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your entry is valid
-        <span style="font-size: 0.9375rem;">
-            \( (A\cap B)\cup C={@LHS@} \) and
-        </span>
-        <span style="font-size: 0.9375rem;">
-            \( (A\cap C)\cup B={@RHS@}\)
-        </span>
-        <span style="font-size: 0.9375rem;">
-            and thus \((A\cap B)\cup C = (A\cap C)\cup B\), for which you should actually find an example.
-        </span>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    F&#252;r Ihre Eingabe gilt
+    <span style="font-size: 0.9375rem;">
+        \( (A\cap B)\cup C={@LHS@} \) und
+    </span>
+    <span style="font-size: 0.9375rem;">
+        \( (A\cap C)\cup B={@RHS@}\)
+    </span>
+    <span style="font-size: 0.9375rem;">
+        und somit \((A\cap B)\cup C = (A\cap C)\cup B\), wof&#252;r Sie eigentlich ein Gegenbeispiel finden sollten.
+    </span>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your entry is valid
+    <span style="font-size: 0.9375rem;">
+        \( (A\cap B)\cup C={@LHS@} \) and
+    </span>
+    <span style="font-size: 0.9375rem;">
+        \( (A\cap C)\cup B={@RHS@}\)
+    </span>
+    <span style="font-size: 0.9375rem;">
+        and thus \((A\cap B)\cup C = (A\cap C)\cup B\), for which you should actually find an example.
+    </span>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -306,34 +283,33 @@ RHS: union( intersection(ans1, ans3), ans2 );</text>
                 <falseanswernote>prt1-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        F&#252;r Ihre Eingabe gilt
-        <span style="font-size: 0.9375rem;">
-            \((A\cap B)\cup C={@LHS@}\) und
-        </span>
-        <span style="font-size: 0.9375rem;">
-            \((A\cap C)\cup B={@RHS@}\)
-        </span>
-        <span style="font-size: 0.9375rem;">
-            und somit \((A\cap B)\cup C \ne (A\cap C)\cup B\), sehr gut!
-        </span>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your entry is valid
-        <span style="font-size: 0.9375rem;">
-            \((A\cap B)\cup C={@LHS@}\) and
-        </span>
-        <span style="font-size: 0.9375rem;">
-            \((A\cap C)\cup B={@RHS@}\)
-        </span>
-        <span style="font-size: 0.9375rem;">
-            and thus \((A\cap B)\cup C \ne (A\cap C)\cup B\)Very good!
-        </span>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    F&#252;r Ihre Eingabe gilt
+    <span style="font-size: 0.9375rem;">
+        \((A\cap B)\cup C={@LHS@}\) und
+    </span>
+    <span style="font-size: 0.9375rem;">
+        \((A\cap C)\cup B={@RHS@}\)
+    </span>
+    <span style="font-size: 0.9375rem;">
+        und somit \((A\cap B)\cup C \ne (A\cap C)\cup B\), sehr gut!
+    </span>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your entry is valid
+    <span style="font-size: 0.9375rem;">
+        \((A\cap B)\cup C={@LHS@}\) and
+    </span>
+    <span style="font-size: 0.9375rem;">
+        \((A\cap C)\cup B={@RHS@}\)
+    </span>
+    <span style="font-size: 0.9375rem;">
+        and thus \((A\cap B)\cup C \ne (A\cap C)\cup B\)Very good!
+    </span>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>

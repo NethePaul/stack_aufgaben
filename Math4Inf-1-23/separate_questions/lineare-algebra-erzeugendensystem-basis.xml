@@ -6,280 +6,278 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    Es werden die folgenden Vektoren betrachtet
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
+        \(v_1={@v1@}\),&#160; \(v_2={@v2@}\),&#160; \(v_3={@v3@}\)
     </p>
     <p>
-        Es werden die folgenden Vektoren betrachtet
+        <br/>
     </p>
-    <div class="editor-indent" style="margin-left: 30px;">
+</div>
+<p>
+    <b>
+        (a)
+    </b>
+    Entscheiden Sie:
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        Die Vektoren \(v_1,v_2\) und \(v_3\) bilden [[/lang]][[lang code="en"]]
         <p>
-            \(v_1={@v1@}\),&#160; \(v_2={@v2@}\),&#160; \(v_3={@v3@}\)
         </p>
         <p>
-            <br/>
+            The following vectors are considered
         </p>
-    </div>
-    <p>
-        <b>
-            (a)
-        </b>
-        Entscheiden Sie:
-    </p>
-    <p>
-    </p>
-    <ul>
-        <li>
-            Die Vektoren \(v_1,v_2\) und \(v_3\) bilden [[input:ans1]]&#160; Erzeugendensystem des \(\mathbb{R}^2\).[[validation:ans1]][[feedback:prt1]]
-        </li>
-        <li>
-            Die Vektoren&#160; &#160; &#160;\(v_1\) und \(v_2\)&#160; &#160; bilden [[input:ans2]]&#160; Erzeugendensystem des \(\mathbb{R}^2\).[[validation:ans2]][[feedback:prt2]]
-        </li>
-        <li>
-            Die Vektoren&#160; &#160; &#160; \(v_1\) und \(v_3\)&#160; &#160;bilden [[input:ans3]]&#160; Erzeugendensystem des \(\mathbb{R}^2\). [[validation:ans3]][[feedback:prt3]]
-        </li>
-    </ul>
-    <p>
-        <b>
-            (b)
-        </b>
-        Entscheiden Sie:
-    </p>
-    <p>
-    </p>
-    <ul>
-        <li>
-            Die Vektoren \(v_1,v_2\) und \(v_3\) bilden [[input:ans4]]&#160; Basis des \(\mathbb{R}^2\).[[validation:ans4]][[feedback:prt4]]
-        </li>
-        <li>
-            Die Vektoren&#160; &#160; \(v_1\) und \(v_2\)&#160; &#160; &#160;bilden [[input:ans5]]&#160; Basis des \(\mathbb{R}^2\).[[validation:ans5]][[feedback:prt5]]
-        </li>
-        <li>
-            Die Vektoren&#160; &#160; \(v_1\) und \(v_3\)&#160; &#160; &#160;bilden [[input:ans6]]&#160; Basis des \(\mathbb{R}^2\).[[validation:ans6]][[feedback:prt6]]
-        </li>
-    </ul>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-        The following vectors are considered
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
+        <div class="editor-indent" style="margin-left: 30px;">
+            <p>
+                \(v_1={@v1@}\), \(v_2={@v2@}\), \(v_3={@v3@}\)
+            </p>
+            <p>
+                <br/>
+            </p>
+        </div>
         <p>
-            \(v_1={@v1@}\), \(v_2={@v2@}\), \(v_3={@v3@}\)
+            <b>
+                (a)
+            </b>
+            Choose:
         </p>
         <p>
-            <br/>
         </p>
-    </div>
-    <p>
-        <b>
-            (a)
-        </b>
-        Choose:
-    </p>
-    <p>
-    </p>
-    <ul>
-        <li>
-            The vectors \(v_1,v_2\) and \(v_3\) form [[input:ans1]]generating system of the \(\mathbb{R}^2\).[[validation:ans1]][[feedback:prt1]]
-        </li>
-        <li>
-            The vectors\(v_1\) and \(v_2\)form [[input:ans2]]generating system of the \(\mathbb{R}^2\).[[validation:ans2]][[feedback:prt2]]
-        </li>
-        <li>
-            The vectors \(v_1\) and \(v_3\)form [[input:ans3]]generating system of the \(\mathbb{R}^2\). [[validation:ans3]][[feedback:prt3]]
-        </li>
-    </ul>
-    <p>
-        <b>
-            (b)
-        </b>
-        Choose:
-    </p>
-    <p>
-    </p>
-    <ul>
-        <li>
-            The vectors \(v_1,v_2\) and \(v_3\) form [[input:ans4]]Based on \(\mathbb{R}^2\).[[validation:ans4]][[feedback:prt4]]
-        </li>
-        <li>
-            The vectors \(v_1\) and \(v_2\)form [[input:ans5]]Based on \(\mathbb{R}^2\).[[validation:ans5]][[feedback:prt5]]
-        </li>
-        <li>
-            The vectors \(v_1\) and \(v_3\)form [[input:ans6]]Based on \(\mathbb{R}^2\).[[validation:ans6]][[feedback:prt6]]
-        </li>
-    </ul>
-</span>
+        <ul>
+            <li>
+                The vectors \(v_1,v_2\) and \(v_3\) form [[/lang]][[input:ans1]][[lang code="de"]]&#160; Erzeugendensystem des \(\mathbb{R}^2\).[[/lang]][[lang code="en"]]generating system of the \(\mathbb{R}^2\).[[/lang]][[validation:ans1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]]
+            </li>
+            <li>
+                Die Vektoren&#160; &#160; &#160;\(v_1\) und \(v_2\)&#160; &#160; bilden [[/lang]][[lang code="en"]]
+            </li>
+            <li>
+                The vectors\(v_1\) and \(v_2\)form [[/lang]][[input:ans2]][[lang code="de"]]&#160; Erzeugendensystem des \(\mathbb{R}^2\).[[/lang]][[lang code="en"]]generating system of the \(\mathbb{R}^2\).[[/lang]][[validation:ans2]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt2]][[lang code="de"]]
+            </li>
+            <li>
+                Die Vektoren&#160; &#160; &#160; \(v_1\) und \(v_3\)&#160; &#160;bilden [[/lang]][[lang code="en"]]
+            </li>
+            <li>
+                The vectors \(v_1\) and \(v_3\)form [[/lang]][[input:ans3]][[lang code="de"]]&#160; Erzeugendensystem des \(\mathbb{R}^2\). [[/lang]][[lang code="en"]]generating system of the \(\mathbb{R}^2\). [[/lang]][[validation:ans3]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt3]][[lang code="de"]]
+            </li>
+        </ul>
+        <p>
+            <b>
+                (b)
+            </b>
+            Entscheiden Sie:
+        </p>
+        <p>
+        </p>
+        <ul>
+            <li>
+                Die Vektoren \(v_1,v_2\) und \(v_3\) bilden [[/lang]][[lang code="en"]]
+            </li>
+        </ul>
+        <p>
+            <b>
+                (b)
+            </b>
+            Choose:
+        </p>
+        <p>
+        </p>
+        <ul>
+            <li>
+                The vectors \(v_1,v_2\) and \(v_3\) form [[/lang]][[input:ans4]][[lang code="de"]]&#160; Basis des \(\mathbb{R}^2\).[[/lang]][[lang code="en"]]Based on \(\mathbb{R}^2\).[[/lang]][[validation:ans4]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt4]][[lang code="de"]]
+            </li>
+            <li>
+                Die Vektoren&#160; &#160; \(v_1\) und \(v_2\)&#160; &#160; &#160;bilden [[/lang]][[lang code="en"]]
+            </li>
+            <li>
+                The vectors \(v_1\) and \(v_2\)form [[/lang]][[input:ans5]][[lang code="de"]]&#160; Basis des \(\mathbb{R}^2\).[[/lang]][[lang code="en"]]Based on \(\mathbb{R}^2\).[[/lang]][[validation:ans5]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt5]][[lang code="de"]]
+            </li>
+            <li>
+                Die Vektoren&#160; &#160; \(v_1\) und \(v_3\)&#160; &#160; &#160;bilden [[/lang]][[lang code="en"]]
+            </li>
+            <li>
+                The vectors \(v_1\) and \(v_3\)form [[/lang]][[input:ans6]][[lang code="de"]]&#160; Basis des \(\mathbb{R}^2\).[[/lang]][[lang code="en"]]Based on \(\mathbb{R}^2\).[[/lang]][[validation:ans6]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt6]][[lang code="de"]]
+            </li>
+        </ul>
+        [[/lang]][[lang code="en"]]
+    </li>
+</ul>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        <strong>
-            L&#246;sung
-        </strong>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <strong>
-            (a)
-        </strong>
-        F&#252;r ein Erzeugendensystem des \(\mathbb{R}^2\) m&#252;ssen
-        <strong>
-            zwei
-        </strong>
-        Vektoren linear unabh&#228;ngig sein.
-    </p>
-    <p>
-        (Es d&#252;rfen zus&#228;tzlich auch linear abh&#228;ngige Vektoren enthalten sein.)
-    </p>
-    <p>
-        Hier ist \(v_1\), \(v_3\) kolinear und \(v_1\), \(v_2\), bzw. \(v_1\), \(v_3\) sind linear unabh&#228;ngig.
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-    <ul>
-        <li>
-            Die Vektoren \(v_1,v_2\) und \(v_3\) bilden ein&#160; &#160; Erzeugendensystem des \(\mathbb{R}^2\). (Zwei linear unabh&#228;ngige Vektoren)
-        </li>
-    </ul>
-    <ul>
-        <li>
-            Die Vektoren&#160; &#160; &#160;\(v_1\) und \(v_2\)&#160; &#160; bilden ein&#160; &#160; Erzeugendensystem des \(\mathbb{R}^2\).&#160;(Zwei linear unabh&#228;ngige Vektoren)
-        </li>
-    </ul>
-    <ul>
-        <li>
-            Die Vektoren&#160; &#160; &#160; \(v_1\) und \(v_3\)&#160; &#160;bilden kein&#160; Erzeugendensystem des \(\mathbb{R}^2\).&#160;(Kolineare Vektoren)
-        </li>
-    </ul>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <strong>
-            (b)
-        </strong>
-        Im Gegensatz zum Erzeugendensystem m&#252;ssen die Vektoren einer Basis alle linear unabh&#228;ngig sein.
-    </p>
-    <p>
-        Das hei&#223;t eine Basis des&#160; \(\mathbb{R}^2\) wird durch
-        <strong>
-            genau zwei linear unabh&#228;ngige Vektoren
-        </strong>
-        gebildet.
-    </p>
-    <p>
-        <br/>
-    </p>
-    <ul>
-        <li>
-            Die Vektoren \(v_1,v_2\) und \(v_3\) bilden keine&#160; Basis des \(\mathbb{R}^2\). (Ein linear abh&#228;ngiger Vektor zu viel)
-        </li>
-    </ul>
-    <ul>
-        <li>
-            Die Vektoren&#160; &#160; \(v_1\) und \(v_2\)&#160; &#160; &#160;bilden eine&#160; Basis des \(\mathbb{R}^2\). (Zwei linear unabh&#228;ngige Vektoren)
-        </li>
-    </ul>
-    <ul>
-        <li>
-            Die Vektoren&#160; &#160; \(v_1\) und \(v_3\)&#160; &#160; &#160;bilden keine&#160; Basis des \(\mathbb{R}^2\).&#160;(Kolineare Vektoren)
-        </li>
-    </ul>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <h4>
-        <strong>
-            Solution
-        </strong>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <strong>
-            (a)
-        </strong>
-        For a generating system of \(\mathbb{R}^2\) have to
-        <strong>
-            two
-        </strong>
-        Vectors are linearly independent.
-    </p>
-    <p>
-        (In addition, linearly dependent vectors may also be present.)
-    </p>
-    <p>
-        Here we go \(v_1\), \(v_3\) colinear and \(v_1\), \(v_2\), and \(v_1\), \(v_3\) are linearly independent.
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-    <ul>
-        <li>
-            The vectors \(v_1,v_2\) and \(v_3\) forming a generating system of the \(\mathbb{R}^2\). (Two linear independent vectors)
-        </li>
-    </ul>
-    <ul>
-        <li>
-            The vectors\(v_1\) and \(v_2\)forming a generating system of the \(\mathbb{R}^2\). (Two linear independent vectors)
-        </li>
-    </ul>
-    <ul>
-        <li>
-            The vectors \(v_1\) and \(v_3\)do not form a generating system of \(\mathbb{R}^2\). (colinear vectors)
-        </li>
-    </ul>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <strong>
-            (b)
-        </strong>
-        In contrast to the generating system, the vectors of a base must all be linearly independent.
-    </p>
-    <p>
-        This means a basis of \(\mathbb{R}^2\) by
-        <strong>
-            exactly two linearly independent vectors
-        </strong>
-        formed.
-    </p>
-    <p>
-        <br/>
-    </p>
-    <ul>
-        <li>
-            The vectors \(v_1,v_2\) and \(v_3\) do not form a basis of \(\mathbb{R}^2\). (A linearly dependent vector too much)
-        </li>
-    </ul>
-    <ul>
-        <li>
-            The vectors \(v_1\) and \(v_2\)form a base of \(\mathbb{R}^2\). (Two linear independent vectors)
-        </li>
-    </ul>
-    <ul>
-        <li>
-            The vectors \(v_1\) and \(v_3\)do not form a basis of \(\mathbb{R}^2\). (colinear vectors)
-        </li>
-    </ul>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<h4>
+    <strong>
+        L&#246;sung
+    </strong>
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    <strong>
+        (a)
+    </strong>
+    F&#252;r ein Erzeugendensystem des \(\mathbb{R}^2\) m&#252;ssen
+    <strong>
+        zwei
+    </strong>
+    Vektoren linear unabh&#228;ngig sein.
+</p>
+<p>
+    (Es d&#252;rfen zus&#228;tzlich auch linear abh&#228;ngige Vektoren enthalten sein.)
+</p>
+<p>
+    Hier ist \(v_1\), \(v_3\) kolinear und \(v_1\), \(v_2\), bzw. \(v_1\), \(v_3\) sind linear unabh&#228;ngig.
+</p>
+<p>
+    <br/>
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        Die Vektoren \(v_1,v_2\) und \(v_3\) bilden ein&#160; &#160; Erzeugendensystem des \(\mathbb{R}^2\). (Zwei linear unabh&#228;ngige Vektoren)
+    </li>
+</ul>
+<ul>
+    <li>
+        Die Vektoren&#160; &#160; &#160;\(v_1\) und \(v_2\)&#160; &#160; bilden ein&#160; &#160; Erzeugendensystem des \(\mathbb{R}^2\).&#160;(Zwei linear unabh&#228;ngige Vektoren)
+    </li>
+</ul>
+<ul>
+    <li>
+        Die Vektoren&#160; &#160; &#160; \(v_1\) und \(v_3\)&#160; &#160;bilden kein&#160; Erzeugendensystem des \(\mathbb{R}^2\).&#160;(Kolineare Vektoren)
+    </li>
+</ul>
+<p>
+    <br/>
+</p>
+<p>
+    <strong>
+        (b)
+    </strong>
+    Im Gegensatz zum Erzeugendensystem m&#252;ssen die Vektoren einer Basis alle linear unabh&#228;ngig sein.
+</p>
+<p>
+    Das hei&#223;t eine Basis des&#160; \(\mathbb{R}^2\) wird durch
+    <strong>
+        genau zwei linear unabh&#228;ngige Vektoren
+    </strong>
+    gebildet.
+</p>
+<p>
+    <br/>
+</p>
+<ul>
+    <li>
+        Die Vektoren \(v_1,v_2\) und \(v_3\) bilden keine&#160; Basis des \(\mathbb{R}^2\). (Ein linear abh&#228;ngiger Vektor zu viel)
+    </li>
+</ul>
+<ul>
+    <li>
+        Die Vektoren&#160; &#160; \(v_1\) und \(v_2\)&#160; &#160; &#160;bilden eine&#160; Basis des \(\mathbb{R}^2\). (Zwei linear unabh&#228;ngige Vektoren)
+    </li>
+</ul>
+<ul>
+    <li>
+        Die Vektoren&#160; &#160; \(v_1\) und \(v_3\)&#160; &#160; &#160;bilden keine&#160; Basis des \(\mathbb{R}^2\).&#160;(Kolineare Vektoren)
+    </li>
+</ul>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<h4>
+    <strong>
+        Solution
+    </strong>
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    <strong>
+        (a)
+    </strong>
+    For a generating system of \(\mathbb{R}^2\) have to
+    <strong>
+        two
+    </strong>
+    Vectors are linearly independent.
+</p>
+<p>
+    (In addition, linearly dependent vectors may also be present.)
+</p>
+<p>
+    Here we go \(v_1\), \(v_3\) colinear and \(v_1\), \(v_2\), and \(v_1\), \(v_3\) are linearly independent.
+</p>
+<p>
+    <br/>
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        The vectors \(v_1,v_2\) and \(v_3\) forming a generating system of the \(\mathbb{R}^2\). (Two linear independent vectors)
+    </li>
+</ul>
+<ul>
+    <li>
+        The vectors\(v_1\) and \(v_2\)forming a generating system of the \(\mathbb{R}^2\). (Two linear independent vectors)
+    </li>
+</ul>
+<ul>
+    <li>
+        The vectors \(v_1\) and \(v_3\)do not form a generating system of \(\mathbb{R}^2\). (colinear vectors)
+    </li>
+</ul>
+<p>
+    <br/>
+</p>
+<p>
+    <strong>
+        (b)
+    </strong>
+    In contrast to the generating system, the vectors of a base must all be linearly independent.
+</p>
+<p>
+    This means a basis of \(\mathbb{R}^2\) by
+    <strong>
+        exactly two linearly independent vectors
+    </strong>
+    formed.
+</p>
+<p>
+    <br/>
+</p>
+<ul>
+    <li>
+        The vectors \(v_1,v_2\) and \(v_3\) do not form a basis of \(\mathbb{R}^2\). (A linearly dependent vector too much)
+    </li>
+</ul>
+<ul>
+    <li>
+        The vectors \(v_1\) and \(v_2\)form a base of \(\mathbb{R}^2\). (Two linear independent vectors)
+    </li>
+</ul>
+<ul>
+    <li>
+        The vectors \(v_1\) and \(v_3\)do not form a basis of \(\mathbb{R}^2\). (colinear vectors)
+    </li>
+</ul>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -326,32 +324,17 @@ AnsList6: [[1, false, tr("eine","one")], [2, true, tr("keine","none")]];]]></tex
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -365,7 +348,7 @@ AnsList6: [[1, false, tr("eine","one")], [2, true, tr("keine","none")]];]]></tex
         <variantsselectionseed/>
         <input>
             <name>ans1</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>AnsList1</tans>
             <boxsize>2</boxsize>
             <strictsyntax>1</strictsyntax>
@@ -383,7 +366,7 @@ AnsList6: [[1, false, tr("eine","one")], [2, true, tr("keine","none")]];]]></tex
         </input>
         <input>
             <name>ans2</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>AnsList2</tans>
             <boxsize>2</boxsize>
             <strictsyntax>1</strictsyntax>
@@ -401,7 +384,7 @@ AnsList6: [[1, false, tr("eine","one")], [2, true, tr("keine","none")]];]]></tex
         </input>
         <input>
             <name>ans3</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>AnsList3</tans>
             <boxsize>2</boxsize>
             <strictsyntax>1</strictsyntax>
@@ -419,7 +402,7 @@ AnsList6: [[1, false, tr("eine","one")], [2, true, tr("keine","none")]];]]></tex
         </input>
         <input>
             <name>ans4</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>AnsList4</tans>
             <boxsize>2</boxsize>
             <strictsyntax>1</strictsyntax>
@@ -437,7 +420,7 @@ AnsList6: [[1, false, tr("eine","one")], [2, true, tr("keine","none")]];]]></tex
         </input>
         <input>
             <name>ans5</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>AnsList5</tans>
             <boxsize>2</boxsize>
             <strictsyntax>1</strictsyntax>
@@ -455,7 +438,7 @@ AnsList6: [[1, false, tr("eine","one")], [2, true, tr("keine","none")]];]]></tex
         </input>
         <input>
             <name>ans6</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>AnsList6</tans>
             <boxsize>2</boxsize>
             <strictsyntax>1</strictsyntax>

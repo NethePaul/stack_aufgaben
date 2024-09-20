@@ -6,16 +6,15 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p dir="ltr" style="text-align: left;">
-        Ich habe die vierte Aufgabe gel&#246;st und kann auch die Aufgabe vorstellen.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p dir="ltr" style="text-align: left;">
-        I have achieved the fourth task and can also imagine the task.
-    </p>
-</span>
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    Ich habe die vierte Aufgabe gel&#246;st und kann auch die Aufgabe vorstellen.
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    I have achieved the fourth task and can also present the task.
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -29,16 +28,15 @@
             <text>true</text>
             <feedback format="html">
                 <text><![CDATA[
-<span class="multilang" lang="de">
-    <p dir="ltr" style="text-align: left;">
-        Du bekommst 1 Punkt
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p dir="ltr" style="text-align: left;">
-        You get 1 point
-    </p>
-</span>
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    Du bekommst 1 Punkt
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    You get 1 point
+</p>
+[[/lang]]
 ]]></text>
             </feedback>
         </answer>
@@ -46,16 +44,15 @@
             <text>false</text>
             <feedback format="html">
                 <text><![CDATA[
-<span class="multilang" lang="de">
-    <p dir="ltr" style="text-align: left;">
-        Leider bekommst du keine Punkte
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p dir="ltr" style="text-align: left;">
-        Unfortunately you get no points
-    </p>
-</span>
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    Leider bekommst du keine Punkte
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    Unfortunately you get no points
+</p>
+[[/lang]]
 ]]></text>
             </feedback>
         </answer>

@@ -6,62 +6,60 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Vereinfachen Sie soweit wie m&#246;glich.
-    </p>
-    <p>
-        \(\left( \left({@v@}-\dfrac{1}{{@v@}} \right)^{2}+2\right) : {\dfrac{1}{{@v^2@}}}\,=\,\)&#160; [[input:ans]] [[validation:ans]]
-        <span style="font-size: 0.9375rem;">
-            [[feedback:prt1]]
-        </span>
-    </p>
-</span>
-<span class="multilang" lang="en">
+[[lang code="de"]]
+<p>
+    Vereinfachen Sie soweit wie m&#246;glich.
+</p>
+<p>
+    \(\left( \left({@v@}-\dfrac{1}{{@v@}} \right)^{2}+2\right) : {\dfrac{1}{{@v^2@}}}\,=\,\)&#160; [[/lang]][[lang code="en"]]
     <p>
         Simplify as far as possible.
     </p>
     <p>
-        \(\left( \left({@v@}-\dfrac{1}{{@v@}} \right)^{2}+2\right) : {\dfrac{1}{{@v^2@}}}\,=\,\) [[input:ans]] [[validation:ans]]
+        \(\left( \left({@v@}-\dfrac{1}{{@v@}} \right)^{2}+2\right) : {\dfrac{1}{{@v^2@}}}\,=\,\) [[/lang]][[input:ans]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans]][[lang code="de"]]
         <span style="font-size: 0.9375rem;">
-            [[feedback:prt1]]
+            [[/lang]][[lang code="en"]]
+            <span style="font-size: 0.9375rem;">
+                [[/lang]][[feedback:prt1]][[lang code="de"]]
+            </span>
         </span>
     </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        <strong>
-            L&#246;sungsweg:
-        </strong>
-    </p>
-    <p>
-        <strong>
-            <br/>
-        </strong>
-    </p>
-    <p>
-        \[ \left(\left({@v@}-\dfrac{1}{{@v@}}\right)^{2}+2\right) : {\dfrac{1}{{@v^2@}}} = {\left({{@v@}}^{2}-2+\dfrac{1}{{{@v@}}^{2}}+2\right)} : {\dfrac{1}{{@v^2@}}} = {\left({{@v@}}^{2}+\dfrac{1}{{{@v@}}^{2}}\right)}\cdot{{@v^2@}} = \displaystyle {@ta@}. \]
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        <strong>
-            Solution:
-        </strong>
-    </p>
-    <p>
-        <strong>
-            <br/>
-        </strong>
-    </p>
-    <p>
-        \[ \left(\left({@v@}-\dfrac{1}{{@v@}}\right)^{2}+2\right) : {\dfrac{1}{{@v^2@}}} = {\left({{@v@}}^{2}-2+\dfrac{1}{{{@v@}}^{2}}+2\right)} : {\dfrac{1}{{@v^2@}}} = {\left({{@v@}}^{2}+\dfrac{1}{{{@v@}}^{2}}\right)}\cdot{{@v^2@}} = \displaystyle {@ta@}. \]
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    <strong>
+        L&#246;sungsweg:
+    </strong>
+</p>
+<p>
+    <strong>
+        <br/>
+    </strong>
+</p>
+<p>
+    \[ \left(\left({@v@}-\dfrac{1}{{@v@}}\right)^{2}+2\right) : {\dfrac{1}{{@v^2@}}} = {\left({{@v@}}^{2}-2+\dfrac{1}{{{@v@}}^{2}}+2\right)} : {\dfrac{1}{{@v^2@}}} = {\left({{@v@}}^{2}+\dfrac{1}{{{@v@}}^{2}}\right)}\cdot{{@v^2@}} = \displaystyle {@ta@}. \]
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <strong>
+        Solution:
+    </strong>
+</p>
+<p>
+    <strong>
+        <br/>
+    </strong>
+</p>
+<p>
+    \[ \left(\left({@v@}-\dfrac{1}{{@v@}}\right)^{2}+2\right) : {\dfrac{1}{{@v^2@}}} = {\left({{@v@}}^{2}-2+\dfrac{1}{{{@v@}}^{2}}+2\right)} : {\dfrac{1}{{@v^2@}}} = {\left({{@v@}}^{2}+\dfrac{1}{{{@v@}}^{2}}\right)}\cdot{{@v^2@}} = \displaystyle {@ta@}. \]
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -89,44 +87,41 @@ ta:ratsimp(((v-1/v)^2+2)/(1/v^2));</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Antwort ist richtig.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The answer is correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Antwort ist richtig.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The answer is correct.
+</p>
+[[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Antwort ist teilweise richtig.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The answer is partly correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Antwort ist teilweise richtig.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The answer is partly correct.
+</p>
+[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Antwort ist nicht richtig.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The answer is not correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Antwort ist nicht richtig.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The answer is not correct.
+</p>
+[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -204,16 +199,15 @@ ta:ratsimp(((v-1/v)^2+2)/(1/v^2));</text>
                 <trueanswernote>1-1-T </trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Sie k&#246;nnen die Antwort noch weiter k&#252;rzen oder zusammenfassen.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        You can further shorten or summarize the answer.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Sie k&#246;nnen die Antwort noch weiter k&#252;rzen oder zusammenfassen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You can further shorten or summarize the answer.
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -223,16 +217,15 @@ ta:ratsimp(((v-1/v)^2+2)/(1/v^2));</text>
                 <falseanswernote>1-1-F </falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Wenn Sie eine Kombination von mehreren Rechenoperationen haben, sollten Sie die Operationen nacheinander durchf&#252;hren.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        If you have a combination of multiple computing operations, you should perform the operations one after the other.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Wenn Sie eine Kombination von mehreren Rechenoperationen haben, sollten Sie die Operationen nacheinander durchf&#252;hren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    If you have a combination of multiple computing operations, you should perform the operations one after the other.
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>

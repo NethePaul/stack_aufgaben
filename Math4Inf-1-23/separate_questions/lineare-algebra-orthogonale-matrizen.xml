@@ -6,428 +6,426 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        <span style="font-size: 14px; font-weight: normal;">
-            Welche der folgenden Aussagen sind wahr?
-        </span>
-        <br/>
-    </h4>
-</span>
-<span class="multilang" lang="en">
-    <h4>
-        <span style="font-size: 14px; font-weight: normal;">
-            Which of the following statements are true?
-        </span>
-        <br/>
-    </h4>
-</span>
+[[lang code="de"]]
+<h4>
+    <span style="font-size: 14px; font-weight: normal;">
+        Welche der folgenden Aussagen sind wahr?
+    </span>
+    <br/>
+</h4>
+[[/lang]][[lang code="en"]]
+<h4>
+    <span style="font-size: 14px; font-weight: normal;">
+        Which of the following statements are true?
+    </span>
+    <br/>
+</h4>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        <span>
-            L&#246;sung
-        </span>
-    </h4>
-    <p>
-        <span>
-            <br/>
-        </span>
-    </p>
-    <u>
-        Orthogonale Matrizen sind regul&#228;r.
-    </u>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            <span>
-                Ja, nach der Definition von orthogonalen Matrizen m&#252;ssen diese immer regul&#228;r sein. Denn es existiert eine inverse Matrix mit \(A^T=A^{-1}\)
-            </span>
-        </p>
-        <p>
-            <span>
-                <br/>
-            </span>
-        </p>
-    </div>
-    <u>
-        <span style="">
-            Orthogonale Matrizen sind symmetrisch.
-        </span>
+[[lang code="de"]]
+<h4>
+    <span>
+        L&#246;sung
+    </span>
+</h4>
+<p>
+    <span>
         <br/>
-    </u>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            <span style="">
-                <span>
-                    N
-                </span>
-                ein, da zum Beispiel \(A= \begin{pmatrix} 1 \ \ 1 \\ 1 \ \ 0 \end{pmatrix}\) symmetrisch ist (\(A=A^{T}\))
-            </span>
-        </p>
-        <p>
-            <span style="">
-            </span>
-        </p>
-        <p>
-            Aber: \(A \cdot A^T= A^2=\begin{pmatrix} 2 \ \ 1 \\ 1 \ \ 0 \end{pmatrix} \neq E\)
-        </p>
-        <p>
-        </p>
-        <p>
-            <span style="">
-            </span>
-        </p>
-        <p>
-            und damit ist \(A\) nicht orthogonal.
-        </p>
-        <p>
-            <br/>
-        </p>
-        <p>
-        </p>
-    </div>
+    </span>
+</p>
+<u>
+    Orthogonale Matrizen sind regul&#228;r.
+</u>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
-        <span style="">
-            <u>
-                Wenn \(A\) orthogonal ist, so ist auch \(2A\) orthogonal.
-            </u>
-            <br/>
-        </span>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            <span style="">
-                Nein, da \((2A)\cdot (2A)^T=4\cdot (A \cdot A^T)=4 \cdot E \neq E\)
-            </span>
-        </p>
-        <p>
-            <span style="">
-                <br/>
-            </span>
-        </p>
-    </div>
-    <p>
-        <span style="">
-            <u>
-                Wenn \(A\) orthogonal ist, so ist auch \(-A\) orthogonal.
-            </u>
-            <br/>
-        </span>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            <span style="">
-                Ja, da&#160;\((-A)\cdot (-A)^T=(-1)^2 \cdot (A \cdot A^T)=E\)
-            </span>
-        </p>
-        <p>
-            <span style="">
-                <br/>
-            </span>
-        </p>
-    </div>
-    <p>
-        <span style="">
-            <u>
-                Wenn \(A\) eine orthogonale Matrix ist und die Vektoren \(v\) und \(w\) orthogonal sind, so sind auch \(Av\) und \(Aw\) orthogonal.
-            </u>
-            <br/>
-        </span>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            <span style="">
-                Ja, da \((Av)\cdot (Aw)=(Av)^T \cdot (Aw)=v^T \cdot A^T \cdot A \cdot w= v^T \cdot w=v \cdot w =0\).
-            </span>
-        </p>
-        <p>
-            <span style="">
-                (\(A\), \(w\) und \(v\) sind orthogonal.)
-            </span>
-        </p>
-        <p>
-            <span style="">
-                <br/>
-            </span>
-        </p>
-    </div>
-    <p>
-        <span style="">
-            <u>
-                Diagonalmatrizen sind stets orthogonal.
-            </u>
-            <br/>
-        </span>
-    </p>
-    <p>
-        <span style="">
-        </span>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            Nein, da zum Beispiel f&#252;r \(A= \begin{pmatrix} 2 \ \ 0 \\ 0 \ \ 2 \end{pmatrix}\) gilt:
-        </p>
-    </div>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            <span style="">
-            </span>
-        </p>
-        <p>
-            \(A \cdot A^T=A^2= \begin{pmatrix} 4 \ \ 0 \\ 0 \ \ 4 \end{pmatrix} \neq E\)
-        </p>
-        <p>
-        </p>
-    </div>
-    <p>
-        <span style="">
-            <u>
-                <br/>
-            </u>
-        </span>
-    </p>
-    <p>
-        <span style="">
-            <u>
-                Die Determinante einer reellen orthogonalen Matrix ist \(1\) oder \(-1\).
-            </u>
-            <br/>
-        </span>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            <span style="">
-                Ja, da gilt
-            </span>
-        </p>
-        <p>
-            <span style="">
-                \(\det(A)^2=\det(A^2)=\det(A \cdot A)=\det(A \cdot A^{T})=\det(A \cdot A^{-1})=\det(E)=1\)
-            </span>
-        </p>
-        <p>
-            <span style="">
-                und damit \(\det(A)= \pm 1\) sein muss.
-            </span>
-        </p>
-        <p>
-            <span style="">
-                <br/>
-            </span>
-        </p>
-        <p>
-            <span style="">
-                <br/>
-            </span>
-        </p>
-    </div>
-</span>
-<span class="multilang" lang="en">
-    <h4>
         <span>
-            Solution
+            Ja, nach der Definition von orthogonalen Matrizen m&#252;ssen diese immer regul&#228;r sein. Denn es existiert eine inverse Matrix mit \(A^T=A^{-1}\)
         </span>
-    </h4>
+    </p>
     <p>
         <span>
             <br/>
         </span>
     </p>
-    <u>
-        Orthogonal dies are regular.
-    </u>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            <span>
-                Yes, according to the definition of orthogonal dies, these must always be regular. Because there is an inverse matrix with \(A^T=A^{-1}\)
-            </span>
-        </p>
-        <p>
-            <span>
-                <br/>
-            </span>
-        </p>
-    </div>
-    <u>
+</div>
+<u>
+    <span style="">
+        Orthogonale Matrizen sind symmetrisch.
+    </span>
+    <br/>
+</u>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
         <span style="">
-            Orthogonal dies are symmetrical.
+            <span>
+                N
+            </span>
+            ein, da zum Beispiel \(A= \begin{pmatrix} 1 \ \ 1 \\ 1 \ \ 0 \end{pmatrix}\) symmetrisch ist (\(A=A^{T}\))
         </span>
+    </p>
+    <p>
+        <span style="">
+        </span>
+    </p>
+    <p>
+        Aber: \(A \cdot A^T= A^2=\begin{pmatrix} 2 \ \ 1 \\ 1 \ \ 0 \end{pmatrix} \neq E\)
+    </p>
+    <p>
+    </p>
+    <p>
+        <span style="">
+        </span>
+    </p>
+    <p>
+        und damit ist \(A\) nicht orthogonal.
+    </p>
+    <p>
         <br/>
-    </u>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            <span style="">
-                <span>
-                    N
-                </span>
-                as, for example \(A= \begin{pmatrix} 1 \ \ 1 \\ 1 \ \ 0 \end{pmatrix}\) is symmetrical (\(A=A^{T}\))
-            </span>
-        </p>
-        <p>
-            <span style="">
-            </span>
-        </p>
-        <p>
-            But: \(A \cdot A^T= A^2=\begin{pmatrix} 2 \ \ 1 \\ 1 \ \ 0 \end{pmatrix} \neq E\)
-        </p>
-        <p>
-        </p>
-        <p>
-            <span style="">
-            </span>
-        </p>
-        <p>
-            and with it \(A\) not orthogonal.
-        </p>
-        <p>
-            <br/>
-        </p>
-        <p>
-        </p>
-    </div>
+    </p>
+    <p>
+    </p>
+</div>
+<p>
+    <span style="">
+        <u>
+            Wenn \(A\) orthogonal ist, so ist auch \(2A\) orthogonal.
+        </u>
+        <br/>
+    </span>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
         <span style="">
-            <u>
-                If \(A\) is orthogonal, so is \(2A\) orthogonal.
-            </u>
+            Nein, da \((2A)\cdot (2A)^T=4\cdot (A \cdot A^T)=4 \cdot E \neq E\)
+        </span>
+    </p>
+    <p>
+        <span style="">
             <br/>
         </span>
     </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            <span style="">
-                No, there \((2A)\cdot (2A)^T=4\cdot (A \cdot A^T)=4 \cdot E \neq E\)
-            </span>
-        </p>
-        <p>
-            <span style="">
-                <br/>
-            </span>
-        </p>
-    </div>
+</div>
+<p>
+    <span style="">
+        <u>
+            Wenn \(A\) orthogonal ist, so ist auch \(-A\) orthogonal.
+        </u>
+        <br/>
+    </span>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
         <span style="">
-            <u>
-                If \(A\) is orthogonal, so is \(-A\) orthogonal.
-            </u>
+            Ja, da&#160;\((-A)\cdot (-A)^T=(-1)^2 \cdot (A \cdot A^T)=E\)
+        </span>
+    </p>
+    <p>
+        <span style="">
             <br/>
         </span>
     </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            <span style="">
-                Yes, there\((-A)\cdot (-A)^T=(-1)^2 \cdot (A \cdot A^T)=E\)
-            </span>
-        </p>
-        <p>
-            <span style="">
-                <br/>
-            </span>
-        </p>
-    </div>
+</div>
+<p>
+    <span style="">
+        <u>
+            Wenn \(A\) eine orthogonale Matrix ist und die Vektoren \(v\) und \(w\) orthogonal sind, so sind auch \(Av\) und \(Aw\) orthogonal.
+        </u>
+        <br/>
+    </span>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
         <span style="">
-            <u>
-                If \(A\) is an orthogonal matrix and the vectors \(v\) and \(w\) are orthogonal, so are \(Av\) and \(Aw\) orthogonal.
-            </u>
+            Ja, da \((Av)\cdot (Aw)=(Av)^T \cdot (Aw)=v^T \cdot A^T \cdot A \cdot w= v^T \cdot w=v \cdot w =0\).
+        </span>
+    </p>
+    <p>
+        <span style="">
+            (\(A\), \(w\) und \(v\) sind orthogonal.)
+        </span>
+    </p>
+    <p>
+        <span style="">
             <br/>
         </span>
     </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            <span style="">
-                Yes, there \((Av)\cdot (Aw)=(Av)^T \cdot (Aw)=v^T \cdot A^T \cdot A \cdot w= v^T \cdot w=v \cdot w =0\).
-            </span>
-        </p>
-        <p>
-            <span style="">
-                (\(A\), \(w\) and \(v\) are orthogonal.)
-            </span>
-        </p>
-        <p>
-            <span style="">
-                <br/>
-            </span>
-        </p>
-    </div>
+</div>
+<p>
+    <span style="">
+        <u>
+            Diagonalmatrizen sind stets orthogonal.
+        </u>
+        <br/>
+    </span>
+</p>
+<p>
+    <span style="">
+    </span>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        Nein, da zum Beispiel f&#252;r \(A= \begin{pmatrix} 2 \ \ 0 \\ 0 \ \ 2 \end{pmatrix}\) gilt:
+    </p>
+</div>
+<p>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
         <span style="">
-            <u>
-                Diagonal matrices are always orthogonal.
-            </u>
+        </span>
+    </p>
+    <p>
+        \(A \cdot A^T=A^2= \begin{pmatrix} 4 \ \ 0 \\ 0 \ \ 4 \end{pmatrix} \neq E\)
+    </p>
+    <p>
+    </p>
+</div>
+<p>
+    <span style="">
+        <u>
+            <br/>
+        </u>
+    </span>
+</p>
+<p>
+    <span style="">
+        <u>
+            Die Determinante einer reellen orthogonalen Matrix ist \(1\) oder \(-1\).
+        </u>
+        <br/>
+    </span>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        <span style="">
+            Ja, da gilt
+        </span>
+    </p>
+    <p>
+        <span style="">
+            \(\det(A)^2=\det(A^2)=\det(A \cdot A)=\det(A \cdot A^{T})=\det(A \cdot A^{-1})=\det(E)=1\)
+        </span>
+    </p>
+    <p>
+        <span style="">
+            und damit \(\det(A)= \pm 1\) sein muss.
+        </span>
+    </p>
+    <p>
+        <span style="">
             <br/>
         </span>
     </p>
     <p>
         <span style="">
-        </span>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            No, as for example \(A= \begin{pmatrix} 2 \ \ 0 \\ 0 \ \ 2 \end{pmatrix}\) the following:
-        </p>
-    </div>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            <span style="">
-            </span>
-        </p>
-        <p>
-            \(A \cdot A^T=A^2= \begin{pmatrix} 4 \ \ 0 \\ 0 \ \ 4 \end{pmatrix} \neq E\)
-        </p>
-        <p>
-        </p>
-    </div>
-    <p>
-        <span style="">
-            <u>
-                <br/>
-            </u>
-        </span>
-    </p>
-    <p>
-        <span style="">
-            <u>
-                The determinant of a real orthogonal matrix is \(1\) or \(-1\).
-            </u>
             <br/>
         </span>
     </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            <span style="">
-                Yes, there is
+</div>
+[[/lang]][[lang code="en"]]
+<h4>
+    <span>
+        Solution
+    </span>
+</h4>
+<p>
+    <span>
+        <br/>
+    </span>
+</p>
+<u>
+    Orthogonal matrices are regular.
+</u>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        <span>
+            Yes, according to the definition of orthogonal matrices, these must always be regular. Because there is an inverse matrix with \(A^T=A^{-1}\)
+        </span>
+    </p>
+    <p>
+        <span>
+            <br/>
+        </span>
+    </p>
+</div>
+<u>
+    <span style="">
+        Orthogonal matrices are symmetrical.
+    </span>
+    <br/>
+</u>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        <span style="">
+            <span>
+                N
             </span>
-        </p>
-        <p>
-            <span style="">
-                \(\det(A)^2=\det(A^2)=\det(A \cdot A)=\det(A \cdot A^{T})=\det(A \cdot A^{-1})=\det(E)=1\)
-            </span>
-        </p>
-        <p>
-            <span style="">
-                and with \(\det(A)= \pm 1\) must be.
-            </span>
-        </p>
-        <p>
-            <span style="">
-                <br/>
-            </span>
-        </p>
-        <p>
-            <span style="">
-                <br/>
-            </span>
-        </p>
-    </div>
-</span>
+            as, for example \(A= \begin{pmatrix} 1 \ \ 1 \\ 1 \ \ 0 \end{pmatrix}\) is symmetrical (\(A=A^{T}\))
+        </span>
+    </p>
+    <p>
+        <span style="">
+        </span>
+    </p>
+    <p>
+        But: \(A \cdot A^T= A^2=\begin{pmatrix} 2 \ \ 1 \\ 1 \ \ 0 \end{pmatrix} \neq E\)
+    </p>
+    <p>
+    </p>
+    <p>
+        <span style="">
+        </span>
+    </p>
+    <p>
+        and with it \(A\) not orthogonal.
+    </p>
+    <p>
+        <br/>
+    </p>
+    <p>
+    </p>
+</div>
+<p>
+    <span style="">
+        <u>
+            If \(A\) is orthogonal, so is \(2A\) orthogonal.
+        </u>
+        <br/>
+    </span>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        <span style="">
+            No, there \((2A)\cdot (2A)^T=4\cdot (A \cdot A^T)=4 \cdot E \neq E\)
+        </span>
+    </p>
+    <p>
+        <span style="">
+            <br/>
+        </span>
+    </p>
+</div>
+<p>
+    <span style="">
+        <u>
+            If \(A\) is orthogonal, so is \(-A\) orthogonal.
+        </u>
+        <br/>
+    </span>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        <span style="">
+            Yes, there\((-A)\cdot (-A)^T=(-1)^2 \cdot (A \cdot A^T)=E\)
+        </span>
+    </p>
+    <p>
+        <span style="">
+            <br/>
+        </span>
+    </p>
+</div>
+<p>
+    <span style="">
+        <u>
+            If \(A\) is an orthogonal matrix and the vectors \(v\) and \(w\) are orthogonal, so are \(Av\) and \(Aw\) orthogonal.
+        </u>
+        <br/>
+    </span>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        <span style="">
+            Yes, there \((Av)\cdot (Aw)=(Av)^T \cdot (Aw)=v^T \cdot A^T \cdot A \cdot w= v^T \cdot w=v \cdot w =0\).
+        </span>
+    </p>
+    <p>
+        <span style="">
+            (\(A\), \(w\) and \(v\) are orthogonal.)
+        </span>
+    </p>
+    <p>
+        <span style="">
+            <br/>
+        </span>
+    </p>
+</div>
+<p>
+    <span style="">
+        <u>
+            Diagonal matrices are always orthogonal.
+        </u>
+        <br/>
+    </span>
+</p>
+<p>
+    <span style="">
+    </span>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        No, as for example \(A= \begin{pmatrix} 2 \ \ 0 \\ 0 \ \ 2 \end{pmatrix}\) the following:
+    </p>
+</div>
+<p>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        <span style="">
+        </span>
+    </p>
+    <p>
+        \(A \cdot A^T=A^2= \begin{pmatrix} 4 \ \ 0 \\ 0 \ \ 4 \end{pmatrix} \neq E\)
+    </p>
+    <p>
+    </p>
+</div>
+<p>
+    <span style="">
+        <u>
+            <br/>
+        </u>
+    </span>
+</p>
+<p>
+    <span style="">
+        <u>
+            The determinant of a real orthogonal matrix is \(1\) or \(-1\).
+        </u>
+        <br/>
+    </span>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        <span style="">
+            Yes, there is
+        </span>
+    </p>
+    <p>
+        <span style="">
+            \(\det(A)^2=\det(A^2)=\det(A \cdot A)=\det(A \cdot A^{T})=\det(A \cdot A^{-1})=\det(E)=1\)
+        </span>
+    </p>
+    <p>
+        <span style="">
+            and with \(\det(A)= \pm 1\) must be.
+        </span>
+    </p>
+    <p>
+        <span style="">
+            <br/>
+        </span>
+    </p>
+    <p>
+        <span style="">
+            <br/>
+        </span>
+    </p>
+</div>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -440,49 +438,33 @@
         <showstandardinstruction>1</showstandardinstruction>
         <correctfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Die Antwort ist richtig.
-</span>
-<span class="multilang" lang="en">
-    The answer is correct.
-</span>
+[[lang code="de"]]Die Antwort ist richtig.[[/lang]][[lang code="en"]]The answer is correct.[[/lang]]
 ]]></text>
         </correctfeedback>
         <partiallycorrectfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Die Antwort ist teilweise richtig.
-</span>
-<span class="multilang" lang="en">
-    The answer is partly correct.
-</span>
+[[lang code="de"]]Die Antwort ist teilweise richtig.[[/lang]][[lang code="en"]]The answer is partly correct.[[/lang]]
 ]]></text>
         </partiallycorrectfeedback>
         <incorrectfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Die Antwort ist falsch.
-</span>
-<span class="multilang" lang="en">
-    The answer is wrong.
-</span>
+[[lang code="de"]]Die Antwort ist falsch.[[/lang]][[lang code="en"]]The answer is wrong.[[/lang]]
 ]]></text>
         </incorrectfeedback>
         <shownumcorrect/>
         <answer fraction="25" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Orthogonale Matrizen sind regul&#228;r.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Orthogonal dies are regular.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Orthogonale Matrizen sind regul&#228;r.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Orthogonal matrices are regular.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text/>
@@ -490,44 +472,41 @@
         </answer>
         <answer fraction="-33.33333" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Orthogonale Matrizen sind symmetrisch.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Orthogonal dies are symmetrical.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Orthogonale Matrizen sind symmetrisch.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Orthogonal matrices are symmetrical.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text><![CDATA[
-<span class="multilang" lang="de">
-    <br/>
-</span>
-<span class="multilang" lang="en">
-    <br/>
-</span>
+[[lang code="de"]]
+<br/>
+[[/lang]][[lang code="en"]]
+<br/>
+[[/lang]]
 ]]></text>
             </feedback>
         </answer>
         <answer fraction="-33.33333" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Wenn \(A\) orthogonal ist, so ist auch \(2A\) orthogonal.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        If \(A\) is orthogonal, so is \(2A\) orthogonal.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Wenn \(A\) orthogonal ist, so ist auch \(2A\) orthogonal.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    If \(A\) is orthogonal, so is \(2A\) orthogonal.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text/>
@@ -535,18 +514,17 @@
         </answer>
         <answer fraction="25" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Wenn \(A\) orthogonal ist, so ist auch \(-A\) orthogonal.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        If \(A\) is orthogonal, so is \(-A\) orthogonal.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Wenn \(A\) orthogonal ist, so ist auch \(-A\) orthogonal.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    If \(A\) is orthogonal, so is \(-A\) orthogonal.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text/>
@@ -554,18 +532,17 @@
         </answer>
         <answer fraction="25" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Wenn \(A\) eine orthogonale Matrix ist und die Vektoren \(v\) und \(w\) orthogonal sind, so sind auch \(Av\) und \(Aw\) orthogonal.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        If \(A\) is an orthogonal matrix and the vectors \(v\) and \(w\) are orthogonal, so are \(Av\) and \(Aw\) orthogonal.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Wenn \(A\) eine orthogonale Matrix ist und die Vektoren \(v\) und \(w\) orthogonal sind, so sind auch \(Av\) und \(Aw\) orthogonal.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    If \(A\) is an orthogonal matrix and the vectors \(v\) and \(w\) are orthogonal, so are \(Av\) and \(Aw\) orthogonal.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text/>
@@ -573,54 +550,51 @@
         </answer>
         <answer fraction="-33.33333" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Diagonalmatrizen sind stets orthogonal.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Diagonal matrices are always orthogonal.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Diagonalmatrizen sind stets orthogonal.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Diagonal matrices are always orthogonal.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(A \cdot A^T=A^2= \begin{pmatrix 4 \ 0 \\ 0 \ 4 \end{pmatrix} \neq \mathbb{1}\)
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(A \cdot A^T=A^2= \begin{pmatrix 4 \ 0 \\ 0 \ 4 \end{pmatrix} \neq \mathbb{1}\)
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    <br/>
+</p>
+<p>
+    \(A \cdot A^T=A^2= \begin{pmatrix 4 \ 0 \\ 0 \ 4 \end{pmatrix} \neq \mathbb{1}\)
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <br/>
+</p>
+<p>
+    \(A \cdot A^T=A^2= \begin{pmatrix 4 \ 0 \\ 0 \ 4 \end{pmatrix} \neq \mathbb{1}\)
+</p>
+[[/lang]]
 ]]></text>
             </feedback>
         </answer>
         <answer fraction="25" format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Determinante einer reellen orthogonalen Matrix ist \(1\) oder \(-1\).
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The determinant of a real orthogonal matrix is \(1\) or \(-1\).
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Determinante einer reellen orthogonalen Matrix ist \(1\) oder \(-1\).
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The determinant of a real orthogonal matrix is \(1\) or \(-1\).
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
             <feedback format="html">
                 <text/>

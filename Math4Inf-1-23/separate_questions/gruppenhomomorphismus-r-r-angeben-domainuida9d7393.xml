@@ -6,30 +6,29 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Geben Sie einen Gruppenhomomorphismus \(\varphi: (\mathbb{R},+)\to(\mathbb{R}\setminus\{0\},*)\) an.
-        <br/>
-    </p>
-    <p>
-        \(\varphi(x) = \) [[input:ans1]]
-        <span style="font-size: 0.9375rem;">
-            [[validation:ans1]]
-        </span>
-    </p>
-</span>
-<span class="multilang" lang="en">
+[[lang code="de"]]
+<p>
+    Geben Sie einen Gruppenhomomorphismus \(\varphi: (\mathbb{R},+)\to(\mathbb{R}\setminus\{0\},*)\) an.
+    <br/>
+</p>
+<p>
+    \(\varphi(x) = \) [[/lang]][[lang code="en"]]
     <p>
         Give a group homomorphism \(\varphi: (\mathbb{R},+)\to(\mathbb{R}\setminus\{0\},*)\) on.
         <br/>
     </p>
     <p>
-        \(\varphi(x) = \) [[input:ans1]]
+        \(\varphi(x) = \) [[/lang]][[input:ans1]][[lang code="de"]]
         <span style="font-size: 0.9375rem;">
-            [[validation:ans1]]
+            [[/lang]][[lang code="en"]]
+            <span style="font-size: 0.9375rem;">
+                [[/lang]][[validation:ans1]][[lang code="de"]]
+            </span>
         </span>
     </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -47,12 +46,7 @@
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    [[feedback:prt1]]
-</span>
-<span class="multilang" lang="en">
-    [[feedback:prt1]]
-</span>
+[[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -66,32 +60,17 @@
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -146,14 +125,11 @@ fxy:subst(x=x+y,ans1);</text>
                 <trueanswernote>prt1-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    Es gilt: \( f(x+y) = {@fxy@} = {@fx@} \cdot {@fy@} = f(x)\cdot f(y) \)
-    <br/>
-</span>
-<span class="multilang" lang="en">
-    It shall apply: \( f(x+y) = {@fxy@} = {@fx@} \cdot {@fy@} = f(x)\cdot f(y) \)
-    <br/>
-</span>
+[[lang code="de"]]Es gilt: \( f(x+y) = {@fxy@} = {@fx@} \cdot {@fy@} = f(x)\cdot f(y) \)
+<br/>
+[[/lang]][[lang code="en"]]It applies: \( f(x+y) = {@fxy@} = {@fx@} \cdot {@fy@} = f(x)\cdot f(y) \)
+<br/>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -163,18 +139,17 @@ fxy:subst(x=x+y,ans1);</text>
                 <falseanswernote>prt1-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Es gilt: \( f(x+y) = {@fxy@} \neq {@fx*fy@} = f(x)\cdot f(y) \)
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        It shall apply: \( f(x+y) = {@fxy@} \neq {@fx*fy@} = f(x)\cdot f(y) \)
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Es gilt: \( f(x+y) = {@fxy@} \neq {@fx*fy@} = f(x)\cdot f(y) \)
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    It applies: \( f(x+y) = {@fxy@} \neq {@fx*fy@} = f(x)\cdot f(y) \)
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>

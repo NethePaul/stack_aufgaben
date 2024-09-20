@@ -6,38 +6,26 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-        Betrachte folgende Matrix
-    </p>
-    <p>
-        \(A={@A@}\)
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <b>
-            (a)
-        </b>
-        Berechen sie die Determinante von \(A\).
-    </p>
-    <p>
-        \(\det(A)=\) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <b>
-            (b)
-        </b>
-        Die Matrix hat den Rang \(\text{rg}(A)=\) [[input:ans2]] und die Spaltenvektoren bilden somit&#160; [[input:ans3]] Basis des \(\mathbb{C}^3\).[[validation:ans2]][[validation:ans3]][[feedback:prt2]][[feedback:prt3]]
-    </p>
-</span>
-<span class="multilang" lang="en">
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    Betrachte folgende Matrix
+</p>
+<p>
+    \(A={@A@}\)
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <b>
+        (a)
+    </b>
+    Berechen sie die Determinante von \(A\).
+</p>
+<p>
+    \(\det(A)=\) [[/lang]][[lang code="en"]]
     <p>
     </p>
     <p>
@@ -56,7 +44,7 @@
         Calculate the determinant of \(A\).
     </p>
     <p>
-        \(\det(A)=\) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+        \(\det(A)=\) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
     <p>
         <br/>
@@ -65,105 +53,115 @@
         <b>
             (b)
         </b>
-        The matrix has the rank \(\text{rg}(A)=\) [[input:ans2]] and the column vectors thus form [[input:ans3]] Based on \(\mathbb{C}^3\).[[validation:ans2]][[validation:ans3]][[feedback:prt2]][[feedback:prt3]]
+        Die Matrix hat den Rang \(\text{rg}(A)=\) [[/lang]][[lang code="en"]]
     </p>
-</span>
+    <p>
+        <br/>
+    </p>
+    <p>
+        <b>
+            (b)
+        </b>
+        The matrix has the rank \(\text{rg}(A)=\) [[/lang]][[input:ans2]][[lang code="de"]] und die Spaltenvektoren bilden somit&#160; [[/lang]][[lang code="en"]] and the column vectors thus form [[/lang]][[input:ans3]][[lang code="de"]] Basis des \(\mathbb{C}^3\).[[/lang]][[lang code="en"]] Based on \(\mathbb{C}^3\).[[/lang]][[validation:ans2]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans3]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt2]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt3]][[lang code="de"]]
+    </p>
+    [[/lang]][[lang code="en"]]
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        <strong>
-            L&#246;sung
-        </strong>
-    </h4>
+[[lang code="de"]]
+<h4>
+    <strong>
+        L&#246;sung
+    </strong>
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    <strong>
+        (a)
+    </strong>
+    \(A\) ist eine Dreiecksmatrix (Alle Eintr&#228;ge unter der Diagonale sind Null). F&#252;r solche Matrizen ist die Determinante das Produkt der Diagonaleintr&#228;ge:
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        \(\det(A)=(1+{@b@}i)(-i)({@a@}+i)={@det@}\)
+    </p>
     <p>
         <br/>
     </p>
-    <p>
+</div>
+<span style="">
+    <span style="">
         <strong>
-            (a)
+            (b)
         </strong>
-        \(A\) ist eine Dreiecksmatrix (Alle Eintr&#228;ge unter der Diagonale sind Null). F&#252;r solche Matrizen ist die Determinante das Produkt der Diagonaleintr&#228;ge:
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \(\det(A)=(1+{@b@}i)(-i)({@a@}+i)={@det@}\)
-        </p>
-        <p>
-            <br/>
-        </p>
-    </div>
+        Der Rang der Matrix ist voll, also \(\text{rg}(A)=3\). Das l&#228;sst sich entweder direkt aus der Matrix ablesen, da sie keine Gau&#223;-Umformung mehr ben&#246;tigt oder man argumentiert mit \(\det(A)\neq 0\). Die Spaltenvektoren bilden bei vollem Rang immer auch eine Basis, da sie damit linear unabh&#228;ngig sind.
+    </span>
+</span>
+<p>
     <span style="">
         <span style="">
-            <strong>
-                (b)
-            </strong>
-            Der Rang der Matrix ist voll, also \(\text{rg}(A)=3\). Das l&#228;sst sich entweder direkt aus der Matrix ablesen, da sie keine Gau&#223;-Umformung mehr ben&#246;tigt oder man argumentiert mit \(\det(A)\neq 0\). Die Spaltenvektoren bilden bei vollem Rang immer auch eine Basis, da sie damit linear unabh&#228;ngig sind.
+            <br/>
         </span>
     </span>
-    <p>
+</p>
+<p>
+    <span style="">
         <span style="">
-            <span style="">
-                <br/>
-            </span>
+            <br/>
         </span>
-    </p>
+    </span>
+</p>
+[[/lang]][[lang code="en"]]
+<h4>
+    <strong>
+        Solution
+    </strong>
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    <strong>
+        (a)
+    </strong>
+    \(A\) is a triangular matrix (all entries under the diagonal are zero). For such matrices, the determinant is the product of the diagonal entries:
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
-        <span style="">
-            <span style="">
-                <br/>
-            </span>
-        </span>
+        \(\det(A)=(1+{@b@}i)(-i)({@a@}+i)={@det@}\)
     </p>
-</span>
-<span class="multilang" lang="en">
-    <h4>
-        <strong>
-            Solution
-        </strong>
-    </h4>
     <p>
         <br/>
     </p>
-    <p>
+</div>
+<span style="">
+    <span style="">
         <strong>
-            (a)
+            (b)
         </strong>
-        \(A\) is a triangular matrix (all entries under the diagonal are zero). For such dies, the determinant is the product of the diagonal entries:
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \(\det(A)=(1+{@b@}i)(-i)({@a@}+i)={@det@}\)
-        </p>
-        <p>
-            <br/>
-        </p>
-    </div>
+        The rank of the matrix is full, so \(\text{rg}(A)=3\). This can be seen either directly from the matrix, as it no longer needs Gaussian transformation or you argue with \(\det(A)\neq 0\). The column vectors always form a base with full rank, since they are therefore linearly independent.
+    </span>
+</span>
+<p>
     <span style="">
         <span style="">
-            <strong>
-                (b)
-            </strong>
-            The rank of the matrix is full, so \(\text{rg}(A)=3\). This can be seen either directly from the matrix, as it no longer needs Gaussian transformation or you argue with \(\det(A)\neq 0\). The column vectors always form a base with full rank, since they are therefore linearly independent.
+            <br/>
         </span>
     </span>
-    <p>
+</p>
+<p>
+    <span style="">
         <span style="">
-            <span style="">
-                <br/>
-            </span>
+            <br/>
         </span>
-    </p>
-    <p>
-        <span style="">
-            <span style="">
-                <br/>
-            </span>
-        </span>
-    </p>
-</span>
+    </span>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -198,32 +196,17 @@ al: [[1, true, tr("eine","one")], [2, false, tr("keine","none")]]]]></text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -273,7 +256,7 @@ al: [[1, true, tr("eine","one")], [2, false, tr("keine","none")]]]]></text>
         </input>
         <input>
             <name>ans3</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>al</tans>
             <boxsize>2</boxsize>
             <strictsyntax>1</strictsyntax>

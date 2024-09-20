@@ -6,46 +6,25 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    Sei \(K\) ein K&#246;rper und sei \(B=\{b_1,b_2,b_3\}\) eine Basis f&#252;r \(K^3\).
+    <br/>
+    Betrachten Sie die Basis \(C:=\{c_1,c_2,c_3\}\) mit \(c_1:={@vzs11@} b_1\), \(c_2:={@vzs21@} b_1&#160; {@vzs22@} b_2\) und \(c_3:={@vzs31@} b_1&#160; {@vzs32@} b_2&#160; {@vzs33@} b_3\).
+    <br/>
+    Weiter sei \(f:K^3\to K^3\) die Identit&#228;tsabbildung, d.h. es ist \(f(v)=v\ \forall v \in K^3\).
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    a) Geben Sie die Darstellungsmatrix von \(f\) bez&#252;glich der Basis \(B\) im Quellraum und der Basis \(C\) im Zielraum an.
+</p>
+<p>
+    \(A_B^C(f) = \) [[/lang]][[lang code="en"]]
     <p>
-        Sei \(K\) ein K&#246;rper und sei \(B=\{b_1,b_2,b_3\}\) eine Basis f&#252;r \(K^3\).
-        <br/>
-        Betrachten Sie die Basis \(C:=\{c_1,c_2,c_3\}\) mit \(c_1:={@vzs11@} b_1\), \(c_2:={@vzs21@} b_1&#160; {@vzs22@} b_2\) und \(c_3:={@vzs31@} b_1&#160; {@vzs32@} b_2&#160; {@vzs33@} b_3\).
-        <br/>
-        Weiter sei \(f:K^3\to K^3\) die Identit&#228;tsabbildung, d.h. es ist \(f(v)=v\ \forall v \in K^3\).
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        a) Geben Sie die Darstellungsmatrix von \(f\) bez&#252;glich der Basis \(B\) im Quellraum und der Basis \(C\) im Zielraum an.
-    </p>
-    <p>
-        \(A_B^C(f) = \) [[input:ans1]] [[validation:ans1]]
-    </p>
-    <p>
-        [[feedback:prt1]]
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        b) Geben Sie die Darstellungsmatrix von \(f\) bez&#252;glich der Basis \(C\) im Quellraum und der Basis \(B\) im Zielraum an.
-        <br/>
-    </p>
-    <p>
-        \(A_C^B(f) = \) [[input:ans2]] [[validation:ans2]]
-        <br/>
-    </p>
-    <p>
-        [[feedback:prt2]]
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Be careful \(K\) a body and be \(B=\{b_1,b_2,b_3\}\) a basis for \(K^3\).
+        Let \(K\) be a body and be \(B=\{b_1,b_2,b_3\}\) a basis for \(K^3\).
         <br/>
         View the base \(C:=\{c_1,c_2,c_3\}\) with \(c_1:={@vzs11@} b_1\), \(c_2:={@vzs21@} b_1&#160; {@vzs22@} b_2\) and \(c_3:={@vzs31@} b_1&#160; {@vzs32@} b_2&#160; {@vzs33@} b_3\).
         <br/>
@@ -56,30 +35,50 @@
         <br/>
     </p>
     <p>
-        a) Specify the display matrix of \(f\) with regard to the base \(B\) in the source room and the base \(C\) in the target room.
+        a) Specify the display matrix of \(f\) with regard to the base \(B\) in the source space and the base \(C\) in the target space.
     </p>
     <p>
-        \(A_B^C(f) = \) [[input:ans1]] [[validation:ans1]]
+        \(A_B^C(f) = \) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
     </p>
     <p>
-        [[feedback:prt1]]
+        [[/lang]][[lang code="en"]]
+    </p>
+    <p>
+        [[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
     <p>
         <br/>
     </p>
     <p>
-        (b) Specify the display matrix of \(f\) with regard to the base \(C\) in the source room and the base \(B\) in the target room.
+        b) Geben Sie die Darstellungsmatrix von \(f\) bez&#252;glich der Basis \(C\) im Quellraum und der Basis \(B\) im Zielraum an.
         <br/>
     </p>
     <p>
-        \(A_C^B(f) = \) [[input:ans2]] [[validation:ans2]]
+        \(A_C^B(f) = \) [[/lang]][[lang code="en"]]
+    </p>
+    <p>
         <br/>
     </p>
     <p>
-        [[feedback:prt2]]
+        (b) Specify the display matrix of \(f\) with regard to the base \(C\) in the source space and the base \(B\) in the target space.
         <br/>
     </p>
-</span>
+    <p>
+        \(A_C^B(f) = \) [[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]]
+        <br/>
+    </p>
+    <p>
+        [[/lang]][[lang code="en"]]
+        <br/>
+    </p>
+    <p>
+        [[/lang]][[feedback:prt2]][[lang code="de"]]
+        <br/>
+    </p>
+    [[/lang]][[lang code="en"]]
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -104,14 +103,13 @@ M1:invert(M2);]]></text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <br/>
-    <br/>
-</span>
-<span class="multilang" lang="en">
-    <br/>
-    <br/>
-</span>
+[[lang code="de"]]
+<br/>
+<br/>
+[[/lang]][[lang code="en"]]
+<br/>
+<br/>
+[[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -125,32 +123,17 @@ M1:invert(M2);]]></text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -246,18 +229,17 @@ M1:invert(M2);]]></text>
                 <trueanswernote>prt1-2-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Sie haben in Aufgabenteil a) leider die Darstellungsmatrix \(A_C^B(f)\) angegeben.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        You unfortunately have the representation matrix in task part a) \(A_C^B(f)\) specified.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Sie haben in Aufgabenteil a) leider die Darstellungsmatrix \(A_C^B(f)\) angegeben.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You unfortunately have the representation matrix in task part a) \(A_C^B(f)\) specified.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>-</falsescoremode>
@@ -318,18 +300,17 @@ M1:invert(M2);]]></text>
                 <trueanswernote>prt2-2-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Sie haben in Aufgabenteil b) leider die Darstellungsmatrix \(A_B^C(f)\) angegeben.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        You unfortunately have the representation matrix in task part b) \(A_B^C(f)\) specified.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Sie haben in Aufgabenteil b) leider die Darstellungsmatrix \(A_B^C(f)\) angegeben.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You unfortunately have the representation matrix in task part b) \(A_B^C(f)\) specified.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>-</falsescoremode>

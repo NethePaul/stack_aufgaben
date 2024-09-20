@@ -6,18 +6,30 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    Negieren Sie die folgenden Aussagen.
+    <br/>
+</p>
+<p>
+    a) Aussage \(A\) = "Alle Hunde haben vier Beine"
+</p>
+<p>
+    \(\lnot A=\) [[/lang]][[lang code="en"]]
     <p>
-        Negieren Sie die folgenden Aussagen.
+        Negate the following statements.
         <br/>
     </p>
     <p>
-        a) Aussage \(A\) = "Alle Hunde haben vier Beine"
+        a) Statement \(A\) = "All dogs have four legs"
     </p>
     <p>
-        \(\lnot A=\) [[input:ans1]] [[input:ans2]]
+        \(\lnot A=\) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[input:ans2]][[lang code="de"]]
         <span style="font-size: 0.9375rem;">
-            [[feedback:prt1]]
+            [[/lang]][[lang code="en"]]
+            <span style="font-size: 0.9375rem;">
+                [[/lang]][[feedback:prt1]][[lang code="de"]]
+            </span>
         </span>
     </p>
     <p>
@@ -27,9 +39,21 @@
         <br/>
     </p>
     <p>
-        \(\lnot B=\) [[input:ans3]] [[input:ans4]]
+        \(\lnot B=\) [[/lang]][[lang code="en"]]
+    </p>
+    <p>
         <span style="font-size: 0.9375rem;">
-            [[feedback:prt2]]
+            b) Statement \(B\) = "There is at least one building in the world that is higher than 500 meters"
+        </span>
+        <br/>
+    </p>
+    <p>
+        \(\lnot B=\) [[/lang]][[input:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[input:ans4]][[lang code="de"]]
+        <span style="font-size: 0.9375rem;">
+            [[/lang]][[lang code="en"]]
+            <span style="font-size: 0.9375rem;">
+                [[/lang]][[feedback:prt2]][[lang code="de"]]
+            </span>
         </span>
     </p>
     <p>
@@ -39,9 +63,21 @@
         <br/>
     </p>
     <p>
-        \(\lnot C=\) [[input:ans5]] [[input:ans6]]
+        \(\lnot C=\) [[/lang]][[lang code="en"]]
+    </p>
+    <p>
         <span style="font-size: 0.9375rem;">
-            [[feedback:prt3]]
+            c) Statement \(C\) = "There is no mathematician who has never been charged"
+        </span>
+        <br/>
+    </p>
+    <p>
+        \(\lnot C=\) [[/lang]][[input:ans5]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[input:ans6]][[lang code="de"]]
+        <span style="font-size: 0.9375rem;">
+            [[/lang]][[lang code="en"]]
+            <span style="font-size: 0.9375rem;">
+                [[/lang]][[feedback:prt3]][[lang code="de"]]
+            </span>
         </span>
     </p>
     <p>
@@ -51,53 +87,7 @@
         <br/>
     </p>
     <p>
-        \(\lnot D=\) [[input:ans7]] [[input:ans8]] [[input:ans9]]
-        <span style="font-size: 0.9375rem;">
-            [[feedback:prt4]]
-        </span>
-    </p>
-    <p>
-        [[validation:ans1]] [[validation:ans2]] [[validation:ans3]] [[validation:ans4]] [[validation:ans5]] [[validation:ans6]] [[validation:ans7]] [[validation:ans8]] [[validation:ans9]]
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Negate the following statements.
-        <br/>
-    </p>
-    <p>
-        a) Statement \(A\) = "All dogs have four legs"
-    </p>
-    <p>
-        \(\lnot A=\) [[input:ans1]] [[input:ans2]]
-        <span style="font-size: 0.9375rem;">
-            [[feedback:prt1]]
-        </span>
-    </p>
-    <p>
-        <span style="font-size: 0.9375rem;">
-            b) Statement \(B\) = "There are at least one building in the world that is higher than 500 meters"
-        </span>
-        <br/>
-    </p>
-    <p>
-        \(\lnot B=\) [[input:ans3]] [[input:ans4]]
-        <span style="font-size: 0.9375rem;">
-            [[feedback:prt2]]
-        </span>
-    </p>
-    <p>
-        <span style="font-size: 0.9375rem;">
-            c) Statement \(C\) = "There is no mathematician who has never been charged"
-        </span>
-        <br/>
-    </p>
-    <p>
-        \(\lnot C=\) [[input:ans5]] [[input:ans6]]
-        <span style="font-size: 0.9375rem;">
-            [[feedback:prt3]]
-        </span>
+        \(\lnot D=\) [[/lang]][[lang code="en"]]
     </p>
     <p>
         <span style="font-size: 0.9375rem;">
@@ -106,56 +96,64 @@
         <br/>
     </p>
     <p>
-        \(\lnot D=\) [[input:ans7]] [[input:ans8]] [[input:ans9]]
+        \(\lnot D=\) [[/lang]][[input:ans7]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[input:ans8]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[input:ans9]][[lang code="de"]]
         <span style="font-size: 0.9375rem;">
-            [[feedback:prt4]]
+            [[/lang]][[lang code="en"]]
+            <span style="font-size: 0.9375rem;">
+                [[/lang]][[feedback:prt4]][[lang code="de"]]
+            </span>
         </span>
     </p>
     <p>
-        [[validation:ans1]] [[validation:ans2]] [[validation:ans3]] [[validation:ans4]] [[validation:ans5]] [[validation:ans6]] [[validation:ans7]] [[validation:ans8]] [[validation:ans9]]
+        [[/lang]][[lang code="en"]]
+    </p>
+    <p>
+        [[/lang]][[validation:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans4]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans5]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans6]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans7]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans8]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans9]][[lang code="de"]]
         <br/>
     </p>
-</span>
+    [[/lang]][[lang code="en"]]
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        <b>
-            Hinweis zur Negation von Aussagen:
-        </b>
-    </p>
-    <p>
-        Aussagen mit Quantoren (\(\forall\) und \(\exists\)) werden negiert, indem man jeden der \(\forall\) in ein \(\exists\) umgewandelt und umgekehrt. Die inneren Aussagen werden ganz normal negiert, die Aussagen des Quantors bleiben unber&#252;hrt.
-        <br/>
-    </p>
-    <p>
-        <u>
-            Beispiel:
-        </u>
-        \(\lnot (\forall x\in M : x&gt;5 )\Leftrightarrow \exists x\in M: x\le 5\)
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        <b>
-            Note on the negation of statements:
-        </b>
-    </p>
-    <p>
-        Statements with quantums (\(\forall\) and \(\exists\)) are negated by making every \(\forall\) in a \(\exists\) and vice versa. The inner statements are negated quite normally, the statements of the quantum remain unaffected.
-        <br/>
-    </p>
-    <p>
-        <u>
-            Example:
-        </u>
-        \(\lnot (\forall x\in M : x&gt;5 )\Leftrightarrow \exists x\in M: x\le 5\)
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    <b>
+        Hinweis zur Negation von Aussagen:
+    </b>
+</p>
+<p>
+    Aussagen mit Quantoren (\(\forall\) und \(\exists\)) werden negiert, indem man jeden der \(\forall\) in ein \(\exists\) umgewandelt und umgekehrt. Die inneren Aussagen werden ganz normal negiert, die Aussagen des Quantors bleiben unber&#252;hrt.
+    <br/>
+</p>
+<p>
+    <u>
+        Beispiel:
+    </u>
+    \(\lnot (\forall x\in M : x&gt;5 )\Leftrightarrow \exists x\in M: x\le 5\)
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <b>
+        Note on the negation of statements:
+    </b>
+</p>
+<p>
+    Statements with quantums (\(\forall\) and \(\exists\)) are negated by making every \(\forall\) in a \(\exists\) and vice versa. The inner statements are negated quite normally, the statements of the quantifier remain unaffected.
+    <br/>
+</p>
+<p>
+    <u>
+        Example:
+    </u>
+    \(\lnot (\forall x\in M : x&gt;5 )\Leftrightarrow \exists x\in M: x\le 5\)
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -244,56 +242,47 @@ L9: random_permutation(L9_1);]]></text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Richtige Antwort, gut gemacht!
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Right answer, well done!
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
+Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-adjust">
-        </i>
-    </span>
-    Ihre Antwort ist teilweise korrekt.
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-adjust">
-        </i>
-    </span>
-    Your answer is partly correct.
+Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
 </span>
+Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Falsche Antwort.
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Wrong answer.
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
+Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -307,7 +296,7 @@ L9: random_permutation(L9_1);]]></text>
         <variantsselectionseed/>
         <input>
             <name>ans1</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>L1</tans>
             <boxsize>15</boxsize>
             <strictsyntax>1</strictsyntax>
@@ -325,7 +314,7 @@ L9: random_permutation(L9_1);]]></text>
         </input>
         <input>
             <name>ans2</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>L2</tans>
             <boxsize>15</boxsize>
             <strictsyntax>1</strictsyntax>
@@ -343,7 +332,7 @@ L9: random_permutation(L9_1);]]></text>
         </input>
         <input>
             <name>ans3</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>L3</tans>
             <boxsize>15</boxsize>
             <strictsyntax>1</strictsyntax>
@@ -361,7 +350,7 @@ L9: random_permutation(L9_1);]]></text>
         </input>
         <input>
             <name>ans4</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>L4</tans>
             <boxsize>15</boxsize>
             <strictsyntax>1</strictsyntax>
@@ -379,7 +368,7 @@ L9: random_permutation(L9_1);]]></text>
         </input>
         <input>
             <name>ans5</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>L5</tans>
             <boxsize>15</boxsize>
             <strictsyntax>1</strictsyntax>
@@ -397,7 +386,7 @@ L9: random_permutation(L9_1);]]></text>
         </input>
         <input>
             <name>ans6</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>L6</tans>
             <boxsize>15</boxsize>
             <strictsyntax>1</strictsyntax>
@@ -415,7 +404,7 @@ L9: random_permutation(L9_1);]]></text>
         </input>
         <input>
             <name>ans7</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>L7</tans>
             <boxsize>15</boxsize>
             <strictsyntax>1</strictsyntax>
@@ -433,7 +422,7 @@ L9: random_permutation(L9_1);]]></text>
         </input>
         <input>
             <name>ans8</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>L8</tans>
             <boxsize>15</boxsize>
             <strictsyntax>1</strictsyntax>
@@ -451,7 +440,7 @@ L9: random_permutation(L9_1);]]></text>
         </input>
         <input>
             <name>ans9</name>
-            <type>dropdown</type>
+            <type>radio</type>
             <tans>L9</tans>
             <boxsize>15</boxsize>
             <strictsyntax>1</strictsyntax>
@@ -498,22 +487,21 @@ L9: random_permutation(L9_1);]]></text>
                 <falseanswernote>prt1-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihre Antwort "{@SAns1@}" ist leider nicht korrekt.
-        <br/>
-        Richtig w&#228;re "Es gibt mindestens einen Hund, der nicht vier Beine hat".
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your answer "{@SAns1@}" is unfortunately not correct.
-        <br/>
-        "There's at least one dog that doesn't have four legs."
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Ihre Antwort "{@SAns1@}" ist leider nicht korrekt.
+    <br/>
+    Richtig w&#228;re "Es gibt mindestens einen Hund, der nicht vier Beine hat".
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer "{@SAns1@}" is unfortunately not correct.
+    <br/>
+    "There's at least one dog that doesn't have four legs."
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -540,18 +528,15 @@ L9: random_permutation(L9_1);]]></text>
                 <falseanswernote>prt1-2-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort "{@SAns1@}" ist leider nicht korrekt.
-    <br/>
-    Richtig w&#228;re "Es gibt mindestens einen Hund, der nicht vier Beine hat".
-    <br/>
-</span>
-<span class="multilang" lang="en">
-    Your answer "{@SAns1@}" is unfortunately not correct.
-    <br/>
-    "There's at least one dog that doesn't have four legs."
-    <br/>
-</span>
+[[lang code="de"]]Ihre Antwort "{@SAns1@}" ist leider nicht korrekt.
+<br/>
+Richtig w&#228;re "Es gibt mindestens einen Hund, der nicht vier Beine hat".
+<br/>
+[[/lang]][[lang code="en"]]Your answer "{@SAns1@}" is unfortunately not correct.
+<br/>
+"There's at least one dog that doesn't have four legs."
+<br/>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -587,18 +572,15 @@ L9: random_permutation(L9_1);]]></text>
                 <falseanswernote>prt2-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort "{@SAns2@}" ist leider nicht korrekt.
-    <br/>
-    Richtig w&#228;re "F&#252;r jedes Geb&#228;ude auf der Welt gilt, dass es niedriger als 500 Meter oder genau 500 Meter hoch ist"
-    <br/>
-</span>
-<span class="multilang" lang="en">
-    Your answer "{@SAns2@}" is unfortunately not correct.
-    <br/>
-    "For every building in the world, it is lower than 500 meters or exactly 500 meters high"
-    <br/>
-</span>
+[[lang code="de"]]Ihre Antwort "{@SAns2@}" ist leider nicht korrekt.
+<br/>
+Richtig w&#228;re "F&#252;r jedes Geb&#228;ude auf der Welt gilt, dass es niedriger als 500 Meter oder genau 500 Meter hoch ist"
+<br/>
+[[/lang]][[lang code="en"]]Your answer "{@SAns2@}" is unfortunately not correct.
+<br/>
+"For every building in the world, it is lower than 500 meters or exactly 500 meters high"
+<br/>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -625,22 +607,21 @@ L9: random_permutation(L9_1);]]></text>
                 <falseanswernote>prt2-2-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihre Antwort "{@SAns2@}" ist leider nicht korrekt.
-        <br/>
-        Richtig w&#228;re "F&#252;r jedes Geb&#228;ude auf der Welt gilt, dass es niedriger als 500 Meter oder genau 500 Meter hoch ist"
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your answer "{@SAns2@}" is unfortunately not correct.
-        <br/>
-        "For every building in the world, it is lower than 500 meters or exactly 500 meters high"
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Ihre Antwort "{@SAns2@}" ist leider nicht korrekt.
+    <br/>
+    Richtig w&#228;re "F&#252;r jedes Geb&#228;ude auf der Welt gilt, dass es niedriger als 500 Meter oder genau 500 Meter hoch ist"
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer "{@SAns2@}" is unfortunately not correct.
+    <br/>
+    "For every building in the world, it is lower than 500 meters or exactly 500 meters high"
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -676,22 +657,21 @@ L9: random_permutation(L9_1);]]></text>
                 <falseanswernote>prt3-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihre Antwort "{@SAns3@}" ist leider nicht korrekt.
-        <br/>
-        Richtig w&#228;re "Es gibt mindestens einen Mathematiker, f&#252;r den gilt, dass er sich noch nie verrechnet hat"
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your answer "{@SAns3@}" is unfortunately not correct.
-        <br/>
-        "There's at least one mathematician to whom he has never been charged"
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Ihre Antwort "{@SAns3@}" ist leider nicht korrekt.
+    <br/>
+    Richtig w&#228;re "Es gibt mindestens einen Mathematiker, f&#252;r den gilt, dass er sich noch nie verrechnet hat"
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer "{@SAns3@}" is unfortunately not correct.
+    <br/>
+    "There's at least one mathematician to whom he has never been charged"
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -718,22 +698,21 @@ L9: random_permutation(L9_1);]]></text>
                 <falseanswernote>prt3-2-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihre Antwort "{@SAns3@}" ist leider nicht korrekt.
-        <br/>
-        Richtig w&#228;re "Es gibt mindestens einen Mathematiker, f&#252;r den gilt, dass er sich noch nie verrechnet hat"
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your answer "{@SAns3@}" is unfortunately not correct.
-        <br/>
-        "There's at least one mathematician to whom he has never been charged"
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Ihre Antwort "{@SAns3@}" ist leider nicht korrekt.
+    <br/>
+    Richtig w&#228;re "Es gibt mindestens einen Mathematiker, f&#252;r den gilt, dass er sich noch nie verrechnet hat"
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer "{@SAns3@}" is unfortunately not correct.
+    <br/>
+    "There's at least one mathematician to whom he has never been charged"
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -769,32 +748,31 @@ L9: random_permutation(L9_1);]]></text>
                 <falseanswernote>prt4-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-        Ihre Antwort "{@SAns4@}" ist leider nicht korrekt.
-        <br/>
-        Richtig w&#228;re "Es gibt mindestens einen Pferdebesitzer, f&#252;r den gilt, dass er mindstens ein Pferd besitzt, f&#252;r das gilt, dass es nicht wiehert"
-        <br/>
-    </p>
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    Ihre Antwort "{@SAns4@}" ist leider nicht korrekt.
     <br/>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-        Your answer "{@SAns4@}" is unfortunately not correct.
-        <br/>
-        "There is at least one horse owner, for whom it has at least one horse, for which it does not weigh"
-        <br/>
-    </p>
+    Richtig w&#228;re "Es gibt mindestens einen Pferdebesitzer, f&#252;r den gilt, dass er mindstens ein Pferd besitzt, f&#252;r das gilt, dass es nicht wiehert"
     <br/>
-    <p>
-    </p>
-</span>
+</p>
+<br/>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<p>
+    Your answer "{@SAns4@}" is unfortunately not correct.
+    <br/>
+    "There is at least one horse owner, for whom it has at least one horse, for which it does not weigh"
+    <br/>
+</p>
+<br/>
+<p>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -821,26 +799,25 @@ L9: random_permutation(L9_1);]]></text>
                 <falseanswernote>prt4-2-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihre Antwort "{@SAns4@}" ist leider nicht korrekt.
-        <br/>
-        Richtig w&#228;re "Es 
+[[lang code="de"]]
+<p>
+    Ihre Antwort "{@SAns4@}" ist leider nicht korrekt.
+    <br/>
+    Richtig w&#228;re "Es 
 gibt mindestens einen Pferdebesitzer, f&#252;r den gilt, dass er mindstens 
 ein Pferd besitzt, f&#252;r das gilt, dass es nicht wiehert"
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your answer "{@SAns4@}" is unfortunately not correct.
-        <br/>
-        Right would be:
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer "{@SAns4@}" is unfortunately not correct.
+    <br/>
+    Right would be:
 gives at least one horse owner to whom it applies at least
 a horse, for which it does not weigh"
-        <br/>
-    </p>
-</span>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -867,26 +844,25 @@ a horse, for which it does not weigh"
                 <falseanswernote>prt4-3-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihre Antwort "{@SAns4@}" ist leider nicht korrekt.
-        <br/>
-        Richtig w&#228;re "Es 
+[[lang code="de"]]
+<p>
+    Ihre Antwort "{@SAns4@}" ist leider nicht korrekt.
+    <br/>
+    Richtig w&#228;re "Es 
 gibt mindestens einen Pferdebesitzer, f&#252;r den gilt, dass er mindstens 
 ein Pferd besitzt, f&#252;r das gilt, dass es nicht wiehert"
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your answer "{@SAns4@}" is unfortunately not correct.
-        <br/>
-        Right would be:
-gives at least one horse owner to whom it applies at least
-a horse, for which it does not weigh"
-        <br/>
-    </p>
-</span>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answer "{@SAns4@}" is unfortunately not correct.
+    <br/>
+    Right would be:
+There is at least one horse owner to whom it applies that they have at least
+one horse,  which it does not neigh"
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>

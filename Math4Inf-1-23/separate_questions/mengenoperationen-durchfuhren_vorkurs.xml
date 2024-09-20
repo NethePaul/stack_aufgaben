@@ -6,93 +6,90 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    Gegeben sind die Mengen \(A={@MA@}\), \(B={@MB@}\) und \(C={@MC@}\).
+    <br/>
+    Geben Sie die folgenden Mengen an.
+    <br/>
     <p>
-        Gegeben sind die Mengen \(A={@MA@}\), \(B={@MB@}\) und \(C={@MC@}\).
-        <br/>
-        Geben Sie die folgenden Mengen an.
-        <br/>
+        a) \( A \setminus (B\cup C) =\) [[/lang]][[lang code="en"]]
         <p>
-            a) \( A \setminus (B\cup C) =\) [[input:ans1]] [[validation:ans1]]
+            The sets \(A={@MA@}\), \(B={@MB@}\) and \(C={@MC@}\).
+            <br/>
+            Specify the following sets.
+            <br/>
+            <p>
+                (a) \( A \setminus (B\cup C) =\) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
+            </p>
+            <p>
+                b) \( (B\cup C) \setminus A =\) [[/lang]][[lang code="en"]]
+            </p>
+            <p>
+                (b) \( (B\cup C) \setminus A =\) [[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]]
+            </p>
         </p>
         <p>
-            b) \( (B\cup C) \setminus A =\) [[input:ans2]] [[validation:ans2]]
-        </p>
-    </p>
-    <p>
-    </p>
-    <p>
-        <strong>
-            Hinweis:
-        </strong>
-    </p>
-    <ul>
-        <li>
-            Schreiben Sie die Menge mit geschweiften Klammern. Trennen Sie die L&#246;sungen mit Komma, z.B. {1,3}.
-        </li>
-        <li>
-            Schreiben Sie die leere Menge als { }.
-        </li>
-    </ul>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The quantities \(A={@MA@}\), \(B={@MB@}\) and \(C={@MC@}\).
-        <br/>
-        Specify the following quantities.
-        <br/>
-        <p>
-            (a) \( A \setminus (B\cup C) =\) [[input:ans1]] [[validation:ans1]]
         </p>
         <p>
-            (b) \( (B\cup C) \setminus A =\) [[input:ans2]] [[validation:ans2]]
+            <strong>
+                Hinweis:
+            </strong>
         </p>
+        <ul>
+            <li>
+                Schreiben Sie die Menge mit geschweiften Klammern. Trennen Sie die L&#246;sungen mit Komma, z.B. {1,3}.
+            </li>
+            <li>
+                Schreiben Sie die leere Menge als { }.
+            </li>
+        </ul>
+        [[/lang]][[lang code="en"]]
     </p>
-    <p>
-    </p>
-    <p>
-        <strong>
-            Note:
-        </strong>
-    </p>
-    <ul>
-        <li>
-            Write the amount with curly brackets. Separate the solutions with comma, e.g. {1,3}.
-        </li>
-        <li>
-            Write the empty quantity as { }.
-        </li>
-    </ul>
-</span>
+</p>
+<p>
+</p>
+<p>
+    <strong>
+        Note:
+    </strong>
+</p>
+<ul>
+    <li>
+        Write the set with curly brackets. Separate the solutions with comma, e.g. {1,3}.
+    </li>
+    <li>
+        Write the empty set as { }.
+    </li>
+</ul>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        <b>
-            Die Aufgabe kann wie folgt gel&#246;st werden:
-        </b>
-    </p>
-    <p>
-        Bei allen Aufgaben ist es sinnvoll, Schritt f&#252;r Schritt vorzugehen.
-    </p>
-    <p>
-        a) Zun&#228;chst bestimmen wir \(B\cup C\). Es gilt \(B\cup C={@union(MB, MC)@}\).
-        <br/>
-        Jetzt bestimmen wir noch \( A \setminus (B\cup C) = {@MA@} \setminus {@union(MB, MC)@} = {@TA1@}\)
-    </p>
-    <p>
-        b) \(B\cup C\) haben wir schon in Aufgabe a) bestimmt.
-        <br/>
-        Jetzt bestimmen wir noch \( (B\cup C) \setminus A ={@union(MB, MC)@} \setminus&#160;{@MA@}\).
-        <br/>
-        Hier kommt die Menge \({@TA2@}\) heraus.
-    </p>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
+[[lang code="de"]]
+<p>
+    <b>
+        Die Aufgabe kann wie folgt gel&#246;st werden:
+    </b>
+</p>
+<p>
+    Bei allen Aufgaben ist es sinnvoll, Schritt f&#252;r Schritt vorzugehen.
+</p>
+<p>
+    a) Zun&#228;chst bestimmen wir \(B\cup C\). Es gilt \(B\cup C={@union(MB, MC)@}\).
+    <br/>
+    Jetzt bestimmen wir noch \( A \setminus (B\cup C) = {@MA@} \setminus {@union(MB, MC)@} = {@TA1@}\)
+</p>
+<p>
+    b) \(B\cup C\) haben wir schon in Aufgabe a) bestimmt.
+    <br/>
+    Jetzt bestimmen wir noch \( (B\cup C) \setminus A ={@union(MB, MC)@} \setminus&#160;{@MA@}\).
+    <br/>
+    Hier kommt die Menge \({@TA2@}\) heraus.
+</p>
+<p>
+    [[/lang]][[lang code="en"]]
     <p>
         <b>
             The object can be achieved as follows:
@@ -111,11 +108,12 @@
         <br/>
         Let's go \( (B\cup C) \setminus A ={@union(MB, MC)@} \setminus&#160;{@MA@}\).
         <br/>
-        Here comes the quantity \({@TA2@}\) out.
+        Here comes the set \({@TA2@}\) out.
     </p>
     <p>
+        [[/lang]]
     </p>
-</span>
+</p>
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -144,12 +142,7 @@ es(M):= if M=setify([]) then "\(\emptyset\)" else M;]]></text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    [[feedback:prt1]]
-</span>
-<span class="multilang" lang="en">
-    [[feedback:prt1]]
-</span>
+[[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -163,32 +156,17 @@ es(M):= if M=setify([]) then "\(\emptyset\)" else M;]]></text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

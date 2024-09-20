@@ -1,0 +1,2039 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Der Wasserstand der Ruhr in Hattingen</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<style>
+    /*Style f&#252;r Buttons bei tutoriellen Aufgaben */
+                        button.top-next,
+                        button.next {
+                                        border: 1px solid black;
+                                        background-color: #A9F5BC;
+                        }
+                        button.top-next:hover,
+                        button.next:hover {
+                                        background-color: #E0F8E6;
+                        }
+                        button.top,
+                        button.prev {
+                                        border: 1px solid black;
+                                        background-color: #DCB25E;
+                        }
+                        button.top:hover,
+                        button.prev:hover {
+                                        background-color: #E7D2A7;
+                        }
+                        /* Style f&#252;r Details */
+                        .que.stack .formulation details {
+                                        border: 1px solid #aaa;
+                                        border-radius: 4px;
+                                        padding: .5em .5em 0;
+                        }
+                        .que.stack .formulation summary {
+                                        font-weight: bold;
+                                        margin: -.5em -.5em 0;
+                                        padding: .5em;
+                        }
+                        .que.stack .formulation details[open] {
+                                        padding: .5em;
+                        }
+                        .que.stack .formulation details[open] summary {
+                                        border-bottom: 1px solid #aaa;
+                                        margin-bottom: .5em;
+                        }
+</style>
+<details>
+    <summary>
+        Inhalt und Umfang dieser Aufgabe
+    </summary>
+    <p>
+        In dieser Aufgabe lernen Sie, Wahrscheinlichkeiten mittels der Verteilungsfunktion einer stetigen Zufallsvariable zu berechnen sowie Zufallsvariablen zu transformieren. Sie besteht aus den folgenden zwei Teilaufgaben.
+    </p>
+    <ul>
+        <li>
+            In
+            <b>
+                (a)
+            </b>
+            Berechnen einer Wahrscheinlichkeit mittels einer Verteilungsfunktion.
+        </li>
+        <li>
+            In
+            <b>
+                (b)
+            </b>
+            Transformieren einer stetigen Zufallsvariable.
+        </li>
+    </ul>
+</details>
+<div class="question-view">
+    <p>
+        Der maximale Wasserstand [gemessen in m] der Ruhr bei Hattingen in
+                        einem Jahr wird durch eine Zufallsvariable \(X\) mit der folgenden
+                        Verteilungsfunktion beschrieben:
+      
+            
+            
+            
+      \[
+                        F(x):= \begin{cases}
+                        {@ cdf(x) @} &amp; \text{f&#252;r } x \geq 1 \\
+                        0 &amp;  \text{f&#252;r } x &lt; 1.
+                        \end{cases}
+                        \]
+    </p>
+    <div class="question-view">
+        <div class="question-view">
+            <p>
+                <b>
+                    (a)
+                </b>
+                Bestimmen Sie die Wahrscheinlichkeit, dass der maximale
+                                Wasserstand im kommenden Jahr mehr als {# min_height #} Meter
+                                betragen wird.
+            </p>
+            <label>
+                Antwort:
+            </label>
+            [[/lang]][[lang code="en"]]
+            <style>
+                /*Style f&#252;r Buttons bei tutoriellen Aufgaben */
+                        button.top-next,
+                        button.next {
+                                        border: 1px solid black;
+                                        background-color: #A9F5BC;
+                        }
+                        button.top-next:hover,
+                        button.next:hover {
+                                        background-color: #E0F8E6;
+                        }
+                        button.top,
+                        button.prev {
+                                        border: 1px solid black;
+                                        background-color: #DCB25E;
+                        }
+                        button.top:hover,
+                        button.prev:hover {
+                                        background-color: #E7D2A7;
+                        }
+                        /* Style f&#252;r Details */
+                        .que.stack .formulation details {
+                                        border: 1px solid #aaa;
+                                        border-radius: 4px;
+                                        padding: .5em .5em 0;
+                        }
+                        .que.stack .formulation summary {
+                                        font-weight: bold;
+                                        margin: -.5em -.5em 0;
+                                        padding: .5em;
+                        }
+                        .que.stack .formulation details[open] {
+                                        padding: .5em;
+                        }
+                        .que.stack .formulation details[open] summary {
+                                        border-bottom: 1px solid #aaa;
+                                        margin-bottom: .5em;
+                        }
+            </style>
+            <details>
+                <summary>
+                    Content and scope of this task
+                </summary>
+                <p>
+                    In this task, you will learn to calculate probabilities using the distribution function of a steady random variable and to transform random variables. It consists of the following two subtasks.
+                </p>
+                <ul>
+                    <li>
+                        In
+                        <b>
+                            (a)
+                        </b>
+                        calculating a probability by means of a distribution function.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (b)
+                        </b>
+                        Transform a steady random variable.
+                    </li>
+                </ul>
+            </details>
+            <div class="question-view">
+                <p>
+                    The maximum water level [measured in m] of the Ruhr at Hattingen in
+one year is made by a random variable \(X\) with the following
+Distribution function described:
+
+ 
+ 
+ 
+ \[
+                        F(x):= \begin{cases}
+                        {@ cdf(x) @} &amp; \text{f&#252;r } x \geq 1 \\
+                        0 &amp;  \text{f&#252;r } x &lt; 1.
+                        \end{cases}
+                        \]
+                </p>
+                <div class="question-view">
+                    <div class="question-view">
+                        <p>
+                            <b>
+                                (a)
+                            </b>
+                            Determine the probability that the maximum
+Water levels over the next year {# min_height #} metres
+the amount.
+                        </p>
+                        <label>
+                            Answer:
+                        </label>
+                        [[/lang]][[input:ans1]][[lang code="de"]]
+                        [[/lang]][[lang code="en"]][[/lang]][[validation:ans1]][[lang code="de"]]
+                        [[/lang]][[lang code="en"]][[/lang]][[feedback:prt_ans1]][[lang code="de"]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            <b>
+                                (a.1)
+                            </b>
+                            Bestimmen Sie die Wahrscheinlichkeit, dass der maximale
+                                Wasserstand im kommenden Jahr mehr als {# min_height #} Meter
+                                betragen wird. Dr&#252;cken Sie die gesuchte Wahrscheinlichkeit in mathematischen Symbolen aus.
+                        </p>
+                        [[/lang]][[lang code="en"]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            <b>
+                                (a)
+                            </b>
+                            Determine the probability that the maximum
+Water levels over the next year {# min_height #} metres
+the amount. Press the desired probability in mathematical symbols.
+                        </p>
+                        [[/lang]][[input:sa_translateMath]][[lang code="de"]]
+                        [[/lang]][[lang code="en"]][[/lang]][[validation:sa_translateMath]][[lang code="de"]]
+                        [[/lang]][[lang code="en"]][[/lang]][[feedback:translateMath]][[lang code="de"]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            <b>
+                                (a.2)
+                            </b>
+                            Dr&#252;cken Sie {@ P(X &gt; min_height) @} durch die
+                                Verteilungsfunktion von \(X\) aus, indem Sie zur
+                                Gegenwahrscheinlichkeit &#252;bergehen.
+                        </p>
+                        [[/lang]][[lang code="en"]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            <b>
+                                (a.2)
+                            </b>
+                            Press {@ P(X &gt; min_height) @} by
+Distribution function of \(X\) by getting to
+Probability.
+                        </p>
+                        [[/lang]][[input:s_complement]][[lang code="de"]]
+                            [[/lang]][[lang code="en"]][[/lang]][[validation:s_complement]][[lang code="de"]]
+                        <p>
+                            <em>
+                                Hinweis:
+                            </em>
+                            Den Wert der Verteilungsfunktion von \(X\) an
+                                der Stelle \(x\) geben Sie als
+                            <code>
+                                F(x)
+                            </code>
+                            ein.
+                        </p>
+                        [[/lang]][[lang code="en"]]
+                        <p>
+                            <em>
+                                Note:
+                            </em>
+                            The value of the distribution function of \(X\) on
+the place \(x\) give as
+                            <code>
+                                F(x)
+                            </code>
+                            one.
+                        </p>
+                        [[/lang]][[feedback:complement]][[lang code="de"]]
+                    </div>
+                </div>
+                <div class="question-view">
+                    <div class="question-view">
+                        <p>
+                            <b>
+                                (b)
+                            </b>
+                            Berechnen Sie die Verteilungsfunktion der Zufallsvariablen \(Y:=\ln(X)\).
+                        </p>
+                        [[/lang]][[lang code="en"]]
+                    </div>
+                </div>
+                <div class="question-view">
+                    <div class="question-view">
+                        <p>
+                            <b>
+                                (b)
+                            </b>
+                            Calculate the distribution function of random variables \(Y:=\ln(X)\).
+                        </p>
+                        [[/lang]][[input:ans2]][[lang code="de"]]
+                        [[/lang]][[lang code="en"]][[/lang]][[validation:ans2]][[lang code="de"]]
+                        [[/lang]][[lang code="en"]][[/lang]][[feedback:prt_ans2]][[lang code="de"]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            <b>
+                                (b.1)
+                            </b>
+                            Wir bezeichnen die Verteilungsfunktion von \(Y = \ln(X)\) mit \(G\).
+                                Welche Aussage &#252;ber \(G\) stimmt?
+                        </p>
+                        [[/lang]][[lang code="en"]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            <b>
+                                (b.1)
+                            </b>
+                            We call the distribution function of \(Y = \ln(X)\) with \(G\).
+Which statement \(G\) Right?
+                        </p>
+                        [[/lang]][[input:sa_defnCdf]][[lang code="de"]]
+                        [[/lang]][[lang code="en"]][[/lang]][[validation:sa_defnCdf]][[lang code="de"]]
+                        [[/lang]][[lang code="en"]][[/lang]][[feedback:defnCdf]][[lang code="de"]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            <b>
+                                (b.2)
+                            </b>
+                            Wir wollen die Wahrscheinlichkeit \(P(Y \le a)\) mit \(Y = \ln(X)\) bestimmen.
+                                Wie k&#246;nnen wir das Ereignis \(\{Y \le a\}\) durch die
+                                Zufallsvariable \(X\) ausdr&#252;cken?
+                        </p>
+                        [[/lang]][[lang code="en"]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            <b>
+                                (b.2)
+                            </b>
+                            We want the probability \(P(Y \le a)\) with \(Y = \ln(X)\) to determine.
+How can we get the event \(\{Y \le a\}\) by
+Random variable \(X\) express?
+                        </p>
+                        [[/lang]][[input:sa_solveX]][[lang code="de"]]
+                                [[/lang]][[lang code="en"]][[/lang]][[validation:sa_solveX]][[lang code="de"]]
+                                [[/lang]][[lang code="en"]][[/lang]][[feedback:solveX]][[lang code="de"]]
+                    </div>
+                </div>
+                <script>
+                    /*
+    * This program is free software: you can redistribute it and/or
+    * modify it under the terms of the GNU General Public License as
+    * published by the Free Software Foundation, either version 3 of the
+    * License, or (at your option) any later version.
+    *
+    * This program is distributed in the hope that it will be useful, but
+    * WITHOUT ANY WARRANTY; without even the implied warranty of
+    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    * General Public License for more details.
+    *
+    * You should have received a copy of the GNU General Public License
+    * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    *
+    * Copyright (C) 2021 by Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>
+    * SPDX-License-Identifier: GPL-3.0-or-later
+    *
+    */
+
+
+
+
+/* @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later */
+
+
+
+
+(function() {
+/* Make sure to create QController instances only once even if the
+            script is loaded multiple times.  This is so that the script can
+            be included in more than one STACK question on the page and still
+            function properly. */
+if (window.QController === undefined) {
+        window.QController = QController;
+        document.addEventListener("DOMContentLoaded", event => {
+                const responseform = document.getElementById("responseform");
+                if (!responseform) {
+                        throw Error("Element with id responseform not found.");
+                }
+
+    
+    
+    
+    responseform.querySelectorAll(".stack.que").forEach(stackQue => {
+                        const rootElement = stackQue.querySelector(".question-view");
+
+      
+      
+      
+      if (!rootElement) {
+                                console.warn("QController: no elements with class question-view inside " + stackQue.id);
+                                return;
+                        }
+
+      
+      
+      
+      const controller = new QController(rootElement, stackQue.id);
+                        controller.installHandlers();
+                        controller.loadState();
+                        controller.update();
+                });
+        });
+}
+
+
+
+
+/* This class handles the navigation of a single STACK question */
+function QController(rootElement, questionId) {
+        this.rootElement = rootElement;
+        this.id = questionId;
+        this.views = rootElement.querySelectorAll(".question-view");
+        this.visited = (new Array(this.views.length)).fill(false);
+        this.currentView = Array.prototype.findIndex.call(this.views, isLeaf);
+        this.visited[this.currentView] = true;
+}
+
+
+
+
+QController.prototype.handleVisitedNodes = function(current) {
+        var visitedSiblings = [];
+        var el = current;
+        while (el.nextElementSibling) {
+                var index =
+                                Array.prototype.indexOf.call(this.views, el.nextElementSibling);
+                visitedSiblings.push(this.visited[index])
+                el = el.nextElementSibling;
+        }
+
+  
+  
+  
+  var withoutHelp = visitedSiblings.every(x => x == false);
+        var helpCompleted = visitedSiblings.every(x => x == true);
+
+  
+  
+  
+  current.querySelectorAll(".visited").forEach(function(element) {
+                var index = element.getAttribute("data-qcontroller-help");
+                if (!index || index === "none")
+                        element.hidden = !withoutHelp;
+                else if (index === "complete")
+                        element.hidden = !helpCompleted;
+                else if (index === "partial")
+                        element.hidden = withoutHelp || helpCompleted;
+                else
+                        element.hidden = !visitedSiblings[index - 1];
+        });
+};
+
+
+
+
+/* Update view according to current controller state */
+QController.prototype.update = function() {
+        this.views.forEach(hide);
+
+  
+  
+  
+  const current = this.views[this.currentView];
+        if (isLeaf(current)) {
+                showView(current);
+                this.handleVisitedNodes(current);
+        } else {
+                this.showFirstView(current);
+        }
+};
+
+
+
+
+/* Install event handlers for all buttons under root element */
+QController.prototype.installHandlers = function() {
+        const controller = this;
+        this.rootElement.querySelectorAll("button").forEach(button => {
+                button.addEventListener("click", ev => {
+                        const view = button.closest(".question-view");
+
+      
+      
+      
+      if (!view) {
+                                console.log("qcontroller: <button> not inside question view");
+                                return;
+                        }
+
+      
+      
+      
+      const classList = button.classList;
+                        let forward = null;
+
+      
+      
+      
+      if (classList.contains("next")) {
+                                forward = view.nextElementSibling;
+                        } else if (classList.contains("top-next")) {
+                                const parent = view.parentNode;
+                                if (parent) {
+                                        forward = parent.nextElementSibling;
+                                } else {
+                                        forward = null;
+                                }
+                        } else if (classList.contains("top")) {
+                                forward = containingView(view);
+                        } else if (classList.contains("prev")) {
+                                forward = view.previousElementSibling;
+                        }
+
+      
+      
+      
+      if (forward && forward.classList.contains("question-view")) {
+                                controller.visit(forward);
+                                controller.saveState();
+                                controller.update();
+                        }
+                });
+        });
+};
+
+
+
+
+QController.prototype.hasVisited = function(viewIndex) {
+        return this.visited[viewIndex];
+};
+
+
+
+
+QController.prototype.visit = function(nextView) {
+        const index = Array.prototype.findIndex.call(
+                this.views,
+                x => x === nextView);
+        this.currentView = index;
+        this.visited[index] = true;
+};
+
+
+
+
+/* Save controller state to current session */
+QController.prototype.saveState = function() {
+        const key = this.id + "-controller-state";
+        const state = {
+                currentView: this.currentView,
+                visited: this.visited
+        };
+        window.sessionStorage.setItem(key, JSON.stringify(state));
+};
+
+
+
+
+/* Load controller state from current session */
+QController.prototype.loadState = function() {
+        const key = this.id + "-controller-state";
+        const state = JSON.parse(window.sessionStorage.getItem(key));
+
+  
+  
+  
+  if (state) {
+                this.currentView = state.currentView;
+                this.visited = state.visited;
+        }
+};
+
+
+
+
+/* Show the first leaf question view */
+QController.prototype.showFirstView = function(questionView) {
+        let view = questionView;
+
+  
+  
+  
+  while (view && !isLeaf(view)) {
+                view = view.querySelector(".question-view");
+        }
+
+  
+  
+  
+  showView(view);
+        this.handleVisitedNodes(view);
+}
+
+
+
+
+function showView(view) {
+        /* show all containing views */
+        while (view) {
+                show(view);
+                view = containingView(view);
+        }
+}
+
+
+
+
+/* Return the view containing VIEW */
+function containingView(view) {
+        let parent = view.parentNode;
+
+  
+  
+  
+  if (parent) {
+                parent = parent.closest(".question-view");
+        }
+
+  
+  
+  
+  return parent;
+}
+
+
+
+
+function show(view) {
+        view.style.display = "block";
+}
+
+
+
+
+function isLeaf(view) {
+        return view.querySelector(".question-view") == null;
+}
+
+
+
+
+function isVisible(view) {
+        return view.style.display != "none";
+}
+
+
+
+
+function hide(view) {
+        view.style.display = "none";
+}
+
+
+
+
+})();
+/* @license-end */
+                </script>
+            </div>
+            [[/lang]][[lang code="en"]]
+        </div>
+    </div>
+    <script>
+        /*
+    * This program is free software: you can redistribute it and/or
+    * modify it under the terms of the GNU General Public License as
+    * published by the Free Software Foundation, either version 3 of the
+    * License, or (at your option) any later version.
+    *
+    * This program is distributed in the hope that it will be useful, but
+    * WITHOUT ANY WARRANTY; without even the implied warranty of
+    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    * General Public License for more details.
+    *
+    * You should have received a copy of the GNU General Public License
+    * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*
+* Copyright (C) 2021 by Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>* SPDX-License Identifier: GPL-3.0-or-later
+*
+*/
+
+
+
+
+/* @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-orLater */
+
+
+
+
+(function() {
+/* Make sure to create QController instances only once even if the
+            script is loaded multiple times.  This is so that the script can
+            be included in more than one STACK question on the page and still
+            function properly. */
+if (window.QController === undefined) {
+        window.QController = QController;
+        document.addEventListener("DOMContentLoaded", event => {
+                const responseform = document.getElementById("responseform");
+                if (!responseform) {
+                        throw Error("Element with id responseform not found.");
+                }
+
+    
+    
+    
+    responseform.querySelectorAll(".stack.que").forEach(stackQue => {
+                        const rootElement = stackQue.querySelector(".question-view");
+
+      
+      
+      
+      if (!rootElement) {
+                                console.warn("QController: no elements with class question-view inside " + stackQue.id);
+                                return;
+                        }
+
+      
+      
+      
+      const controller = new QController(rootElement, stackQue.id);
+                        controller.installHandlers();
+                        controller.loadState();
+                        controller.update();
+                });
+        });
+}
+
+
+
+
+/* This class handles the navigation of a single STACK question */
+function QController(rootElement, questionId) {
+        this.rootElement = rootElement;
+        this.id = questionId;
+        this.views = rootElement.querySelectorAll(".question-view");
+        this.visited = (new Array(this.views.length)).fill(false);
+        this.currentView = Array.prototype.findIndex.call(this.views, isLeaf);
+        this.visited[this.currentView] = true;
+}
+
+
+
+
+QController.prototype.handleVisitedNodes = function(current) {
+        var visitedSiblings = [];
+        var el = current;
+        while (el.nextElementSibling) {
+                var index =
+                                Array.prototype.indexOf.call(this.views, el.nextElementSibling);
+                visitedSiblings.push(this.visited[index])
+                el = el.nextElementSibling;
+        }
+
+  
+  
+  
+  var withoutHelp = visitedSiblings.every(x => x == false);
+        var helpCompleted = visitedSiblings.every(x => x == true);
+
+  
+  
+  
+  current.querySelectorAll(".visited").forEach(function(element) {
+                var index = element.getAttribute("data-qcontroller-help");
+                if (!index || index === "none")
+                        element.hidden = !withoutHelp;
+                else if (index === "complete")
+                        element.hidden = !helpCompleted;
+                else if (index === "partial")
+                        element.hidden = withoutHelp || helpCompleted;
+                else
+                        element.hidden = !visitedSiblings[index - 1];
+        });
+};
+
+
+
+
+/* Update view according to current controller state */
+QController.prototype.update = function() {
+        this.views.forEach(hide);
+
+  
+  
+  
+  const current = this.views[this.currentView];
+        if (isLeaf(current)) {
+                showView(current);
+                this.handleVisitedNodes(current);
+        } else {
+                this.showFirstView(current);
+        }
+};
+
+
+
+
+/* Install event handlers for all buttons under root element */
+QController.prototype.installHandlers = function() {
+        const controller = this;
+        this.rootElement.querySelectorAll("button").forEach(button => {
+                button.addEventListener("click", ev => {
+                        const view = button.closest(".question-view");
+
+      
+      
+      
+      if (!view) {
+                                console.log("qcontroller: <button> not inside question view");
+                                return;
+                        }
+
+      
+      
+      
+      const classList = button.classList;
+                        let forward = null;
+
+      
+      
+      
+      if (classList.contains("next")) {
+                                forward = view.nextElementSibling;
+                        } else if (classList.contains("top-next")) {
+                                const parent = view.parentNode;
+                                if (parent) {
+                                        forward = parent.nextElementSibling;
+                                } else {
+                                        forward = null;
+                                }
+                        } else if (classList.contains("top")) {
+                                forward = containingView(view);
+                        } else if (classList.contains("prev")) {
+                                forward = view.previousElementSibling;
+                        }
+
+      
+      
+      
+      if (forward && forward.classList.contains("question-view")) {
+                                controller.visit(forward);
+                                controller.saveState();
+                                controller.update();
+                        }
+                });
+        });
+};
+
+
+
+
+QController.prototype.hasVisited = function(viewIndex) {
+        return this.visited[viewIndex];
+};
+
+
+
+
+QController.prototype.visit = function(nextView) {
+        const index = Array.prototype.findIndex.call(
+                this.views,
+                x => x === nextView);
+        this.currentView = index;
+        this.visited[index] = true;
+};
+
+
+
+
+/* Save controller state to current session */
+QController.prototype.saveState = function() {
+        const key = this.id + "-controller-state";
+        const state = {
+                currentView: this.currentView,
+                visited: this.visited
+        };
+        window.sessionStorage.setItem(key, JSON.stringify(state));
+};
+
+
+
+
+/* Load controller state from current session */
+QController.prototype.loadState = function() {
+        const key = this.id + "-controller-state";
+        const state = JSON.parse(window.sessionStorage.getItem(key));
+
+  
+  
+  
+  if (state) {
+                this.currentView = state.currentView;
+                this.visited = state.visited;
+        }
+};
+
+
+
+
+/* Show the first leaf question view */
+QController.prototype.showFirstView = function(questionView) {
+        let view = questionView;
+
+  
+  
+  
+  while (view && !isLeaf(view)) {
+                view = view.querySelector(".question-view");
+        }
+
+  
+  
+  
+  showView(view);
+        this.handleVisitedNodes(view);
+}
+
+
+
+
+function showView(view) {
+        /* show all containing views */
+        while (view) {
+                show(view);
+                view = containingView(view);
+        }
+}
+
+
+
+
+/* Return the view containing VIEW */
+function containingView(view) {
+        let parent = view.parentNode;
+
+  
+  
+  
+  if (parent) {
+                parent = parent.closest(".question-view");
+        }
+
+  
+  
+  
+  return parent;
+}
+
+
+
+
+function show(view) {
+        view.style.display = "block";
+}
+
+
+
+
+function isLeaf(view) {
+        return view.querySelector(".question-view") == null;
+}
+
+
+
+
+function isVisible(view) {
+        return view.style.display != "none";
+}
+
+
+
+
+function hide(view) {
+        view.style.display = "none";
+}
+
+
+
+
+}),
+/* @license-end */
+    </script>
+</div>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  Der Wasserstand der Ruhr in Hattingen
+
+  wurde entwickelt von
+
+    Daniel Mei&#223;ner <daniel.meissner-i4k(at)ruhr-uni-bochum.de>
+
+  nach einer Idee von
+
+    Herold Dehling <herold.dehling(at)ruhr-uni-bochum.de>
+
+  an der Ruhr-Universit&#228;t Bochum.
+
+  Dieses Werk ist lizenziert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+
+  Diese Aufgabe enth&#228;lt Hilfeschritte und besteht aus mehreren
+  Aufgabenteilen, die mithilfe von JavaScript nacheinander sichtbar
+  gemacht werden.
+  */
+/* utilities */
+
+probabilityp(p) := is(numberp(p) and p >= 0 and p <= 1);
+
+zip(l1, l2) :=
+  if emptyp (l1) then []
+  else if emptyp (l2) then []
+  else
+  cons ([first (l1), first (l2)],
+    zip (rest (l1), rest (l2)));
+
+/* question variables */
+
+min_height: rand([2,3,4,5,6,7]);
+cdf(x) := 1 - x^(-2);
+
+/* teacher answers */
+
+Tans1: 1 - cdf(min_height);
+Tans2: random_permutation([
+[1, false , "\\(e^{-2y} 1_{[0,\\infty)} (y) \\)"],
+[2, true, "\\((1-e^{-2y}) 1_{[0,\\infty)} (y) \\)"],
+[3, false, "\\((1-e^{2y}) 1_{[0,\\infty)} (y) \\)"],
+[4, false, "\\((1-(\\ln y)^{-2})1_{[0,\\infty)} (y) \\)"],
+[5, false, "\\(\\frac{1}{y} (1-(\\ln y)^{-2}) 1_{(0,\\infty)} (y) \\)"]
+]);
+
+ta_translateMath: random_permutation(
+  zip([
+      P(X >= min_height),
+      P(X >= min_height + 1),
+      P(X > min_height + 1),
+      P(X > min_height)
+], [false, false, false, true]));
+
+ta_complement: 1 - F(min_height);
+
+ta_defnCdf: random_permutation(
+  map(lambda([x], [x[1], x[2], sconcat(stack_disp(x[3], "i"), " f&#252;r alle \\(a\\).")]), [
+      [1, true, G(a) = P(Y <= a)],
+      [2, false, G(a) = P(Y >= a)],
+      [3, false, G(a) = P(Y = a)]]));
+
+ta_solveX: random_permutation(
+  zip(map(lambda([x], setify([x])), [
+        X <= exp(a),
+        X <= exp(Y),
+        X <= log(a),
+        X > exp(a),
+        X = exp(a)
+      ]),
+    [true, false, false, false, false]));]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{# min_height #}</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Ihre Antwort ist nicht komplett falsch.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is not completely wrong.[[/lang]]
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.[[/lang]]
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>numerical</type>
+            <tans>Tans1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>radio</type>
+            <tans>Tans2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>s_complement</name>
+            <type>algebraic</type>
+            <tans>ta_complement</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>sa_defnCdf</name>
+            <type>radio</type>
+            <tans>ta_defnCdf</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>sa_solveX</name>
+            <type>radio</type>
+            <tans>ta_solveX</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>sa_translateMath</name>
+            <type>radio</type>
+            <tans>ta_translateMath</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <prt>
+            <name>complement</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>s_complement</sans>
+                <tans>ta_complement</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>complement-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Klicken Sie auf
+    <button class="top" type="button">
+        Zur&#252;ck
+    </button>
+    ,
+um zur urspr&#252;nglichen Aufgabenstellung zur&#252;ckzukehren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Click on
+    <button class="top" type="button">
+        Back
+    </button>
+    ,
+to return to the original task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>complement-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Die Verteilungsfunktion \(F\) einer Zufallsvariablen \(X\) ist definiert durch \(F(a) := P(X \le a)\).
+</p>
+<p>
+    Versuchen Sie es noch einmal und dr&#252;cke auf Pr&#252;fen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The distribution function \(F\) a random variable \(X\) is defined by \(F(a) := P(X \le a)\).
+</p>
+<p>
+    Try it again and press the test.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>defnCdf</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>CasEqual</answertest>
+                <sans>sa_defnCdf</sans>
+                <tans>first(mcq_correct(ta_defnCdf))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>defnCdf-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Klicken Sie auf
+    <button "="" class="next" type="button">
+        Weiter
+    </button>
+    ,
+um mit der Hilfe fortzufahren, oder auf
+    <button class="top" type="button">
+        Zur&#252;ck
+    </button>
+    , um zur
+urspr&#252;nglichen Aufgabenstellung zur&#252;ckzukehren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Press
+    <button "="" class="next" type="button">
+        Next
+    </button>
+    ,
+to continue with the help, or pree
+    <button class="top" type="button">
+        Back
+    </button>
+    ,
+to return to the original task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>defnCdf-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Schauen Sie noch einmal in Ihre Notizen nach der Definition der Verteilungsfunktion.
+</p>
+<details>
+    <summary>
+        <em>
+            Hinweis
+        </em>
+    </summary>
+    Die Verteilungsfunktion \(F\) von \(X\) ist definiert als
+\[
+F(x) = P(X \le x).
+\]
+</details>
+[[/lang]][[lang code="en"]]
+<p>
+    Check again in your notes after defining the distribution function.
+</p>
+<details>
+    <summary>
+        <em>
+            Note
+        </em>
+    </summary>
+    The distribution function \(F\) of \(X\) is defined as
+\[
+F(x) = P(X \le x).
+\]
+</details>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans1</sans>
+                <tans>Tans1</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>0-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Die angegebene Wahrscheinlichkeit kann
+zum Beispiel als \(1 - F({@min_height@})\) berechnet werden.
+</p>
+<p>
+    Klicken Sie auf
+    <button class="top-next" type="button">
+        Weiter
+    </button>
+    ,
+        um zum n&#228;chsten Aufgabenteil zu gelangen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The specified probability may
+for example as \(1 - F({@min_height@})\) are calculated.
+</p>
+<p>
+    Click on
+    <button class="top-next" type="button">
+        Next
+    </button>
+    ,
+to get to the next task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>0-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p class="visited" data-qcontroller-help="none">
+    Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen konnten, ist kein Problem!
+        Im Folgenden wird die Aufgabe in kleinere Schritte unterteilt. Wenn
+        Sie diese Schritte alle gel&#246;st haben, k&#246;nnen Sie die urspr&#252;ngliche
+        Aufgabe sicherlich l&#246;sen.  Klicken Sie dazu auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    .
+</p>
+<p class="visited" data-qcontroller-help="complete">
+    Willkommen zur&#252;ck!  W&#228;hrend der Bearbeitung der Hilfeschritte haben
+        Sie die gesuchte Wahrscheinlichkeit als mathematisches Symbol ausgedr&#252;ckt:
+        {@ P(X &gt; min_height) @}  Dann haben Sie diese Wahrscheinlichkeit mithilfe
+        der Verteilungsfunktion \(F\) ausgedr&#252;ckt:
+        \[
+        {@ P(X &gt; min_height) = 1 - F(min_height)@}
+        \]
+</p>
+[[/lang]][[lang code="en"]]
+<p class="visited" data-qcontroller-help="none">
+    That you couldn't solve the task right away is no problem!
+In the following, the object is subdivided into smaller steps. If
+You have solved these steps all, you can the original
+I am sure we can solve this task. Click on
+    <button class="next" type="button">
+        Next
+    </button>
+    .
+</p>
+<p class="visited" data-qcontroller-help="complete">
+    Welcome back! During the processing of the aid steps
+They expressed the probability sought as a mathematical symbol:
+    {@ P(X &gt; min_height) @} Then you have this probability with the help of
+the distribution function \(F\) expressed as follows:
+    \[
+        {@ P(X &gt; min_height) = 1 - F(min_height)@}
+        \]
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ans1)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>0</truenextnode>
+                <trueanswernote>prt_ans1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Wahrscheinlichkeiten sollten im Intervall [0, 1] liegen, das trifft f&#252;r Ihre Eingabe nicht zu.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Probabilities should be in the interval [0, 1], this does not apply to your input.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>numberp(ans1)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt_ans1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prt_ans1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>1-F(min_height)</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie sind auf dem richtigen Weg, als Antwort wird allerdings eine Zahl erwartet. Sie m&#252;ssen nur noch den Wert von \(1 - F({@min_height@})\) mithilfe der Definition von \(F\), die im Aufgabentext gegeben ist, berechnen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    They are on the right path, but in response a number is expected. You just have to \(1 - F({@min_height@})\) using the definition of \(F\), which is given in the task text, calculate.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Dass Sie die Aufgabe nicht auf Anhieb l&#246;sen
+konnten, ist kein Problem! Im Folgenden wird die Aufgabe in kleinere
+Schritte unterteilt. Wenn Sie diese Schritte alle gel&#246;st haben,
+k&#246;nnen Sie die urspr&#252;ngliche Aufgabe sicherlich l&#246;sen. Klicken Sie
+dazu auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    .
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    That you do not solve the task immediately
+could, is not a problem! In the following, the task becomes smaller
+Steps divided. If you have solved all these steps,
+you can certainly solve the original task. Click
+the
+    <button class="next" type="button">
+        Next
+    </button>
+    .
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>mcq_correct(Tans2)[1]</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>0-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Um die Verteilungsfunktion der Zufallsvariable \(X\) auszurechnen, kann das Ereignis \(\{Y \le a\}\) als \(\{X \le e^a\}\) geschrieben werden, sodass sich die Verteilungsfunktion von \(Y\) aus der Verteilungsfunktion von \(X\) ergibt.
+</p>
+<p>
+    Herzlichen Gl&#252;ckwunsch, Sie haben das Ende der Aufgabe erreicht.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    To the distribution function of the random variable \(X\) to calculate, the event may \(\{Y \le a\}\) as \(\{X \le e^a\}\) so that the distribution function of \(Y\) from the distribution function of \(X\) :
+</p>
+<p>
+    Congratulations, you have reached the end of the task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>0-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p class="visited" data-qcontroller-help="none">
+    Sie k&#246;nnen es noch einmal versuchen, indem Sie eine andere Antwort
+        ausw&#228;hlen und auf &#8222;Pr&#252;fen&#8220; dr&#252;cken. Sie k&#246;nnen es aber
+        auch mit einer Hilfestellung versuchen. Dann wird die Aufgabe in
+        kleinere Schritte unterteilt. Wenn Sie diese Schritte alle gel&#246;st
+        haben, k&#246;nnen Sie die urspr&#252;ngliche Aufgabe sicherlich
+        l&#246;sen. Klicken Sie dazu auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    .
+</p>
+<p>
+    <span class="visited" data-qcontroller-help="1">
+        Willkommen zur&#252;ck!  In der Hilfe haben Sie erfahren, dass Sie die
+        Verteilungsfunktion \(G\) von \(Y\) so schreiben k&#246;nnen:
+        \[
+                G(a) = P(Y \leq a)
+        \]
+    </span>
+    <span class="visited" data-qcontroller-help="2">
+        Danach haben Sie das Ereignis \(\{Y \leq a\}\) mithilfe der
+        Zufallsvariablen \(X\) ausgedr&#252;ckt:
+        \[
+                \{Y \leq a\} = \{X \leq e^a\}
+        \]
+        Die Verteilungsfunktion von \(Y\) ist daher gegeben durch
+        \(G(a) = P(X \leq e^a)\).
+    </span>
+</p>
+<p class="visited" data-qcontroller-help="partial">
+    Wenn Sie die Hilfe fortsetzen m&#246;chten, klicken Sie auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    .
+</p>
+[[/lang]][[lang code="en"]]
+<p class="visited" data-qcontroller-help="none">
+    You can try it again by giving a different answer
+Select and press &#8220;Check&#8221;. You can
+also try with help. Then the task becomes
+small steps divided. If you have all solved these steps
+you can certainly have the original task
+solve. Click on
+    <button class="next" type="button">
+        Next
+    </button>
+    .
+</p>
+<p>
+    <span class="visited" data-qcontroller-help="1">
+        Welcome back! In the help you have learned that
+Distribution function \(G\) of \(Y\) so can write:
+    \[
+                G(a) = P(Y \leq a)
+        \]
+    </span>
+    <span class="visited" data-qcontroller-help="2">
+        After that you have the event \(\{Y \leq a\}\) using:
+Random variable \(X\) expressed as follows:
+    \[
+                \{Y \leq a\} = \{X \leq e^a\}
+        \]The distribution function of \(Y\) is therefore given by
+    \(G(a) = P(X \leq e^a)\).
+    </span>
+</p>
+<p class="visited" data-qcontroller-help="partial">
+    If you want to continue the help, click on
+    <button class="next" type="button">
+        Next
+    </button>
+    .
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>solveX</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>sa_solveX</sans>
+                <tans>first(mcq_correct(ta_solveX))</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>solveX-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Klicken Sie auf
+    <button class="top" type="button">
+        Zur&#252;ck
+    </button>
+    ,
+um zur urspr&#252;nglichen Aufgabenstellung zur&#252;ckzukehren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Click on
+    <button class="top" type="button">
+        Back
+    </button>
+    ,
+to return to the original task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>solveX-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Nutzen Sie die Gleichung \(Y = \ln X\) um die Ungleichung \(Y \le a\) in eine Ungleichung f&#252;r \(X\) zu &#252;berf&#252;hren.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Use the equation \(Y = \ln X\) about the inequality \(Y \le a\) in a disparity for \(X\) to transfer.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>translateMath</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>sa_translateMath</sans>
+                <tans>first(mcq_correct(ta_translateMath))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>translateMath-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Klicken Sie auf
+    <button class="next" type="button">
+        Weiter
+    </button>
+    ,
+um zur n&#228;chsten Teilaufgabe zu gelangen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Click on
+    <button class="next" type="button">
+        Next
+    </button>
+    ,
+to get to the next task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>translateMath-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>sa_translateMath</sans>
+                <tans><![CDATA[P(X >= min_height)]]></tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>translateMath-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Formal ist Ihre Antwort nicht korrekt, da nach der Wahrscheinlichkeit gefragt wurde, dass der maximale Wasserstand
+    <em>
+        mehr als (nicht mindestens)
+    </em>
+    {#min_height#}&#160;Meter betragen wird. Der numerische Wert der ausgew&#228;hlten Wahrscheinlichkeit ist allerdings derselbe, da \(X\) eine stetige Verteilung hat und somit {@P(X = min_height) = 0@} gilt. W&#228;hlen Sie eine andere Option und dr&#252;cken Sie erneut auf Pr&#252;fen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Formally, your answer is not correct as it was asked for the probability that the maximum water level
+    <em>
+        more than (not at least)
+    </em>
+    {#min_height#}I think it's time. However, the numerical value of the selected probability is the same as \(X\) has a continuous distribution and thus {@P(X = min_height) = 0@} Article 2 Select another option and press Check again.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>translateMath-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Versuchen Sie es noch einmal und dr&#252;cke auf Pr&#252;fen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Try it again and press the test.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>746269</deployedseed>
+        <deployedseed>722523611</deployedseed>
+        <deployedseed>790537384</deployedseed>
+        <deployedseed>1437158738</deployedseed>
+        <deployedseed>1427931182</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <description/>
+            <testinput>
+                <name>ans1</name>
+                <value>Tans1</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>first(mcq_correct(Tans2))</value>
+            </testinput>
+            <expected>
+                <name>prt_ans1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>0-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>0-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <description/>
+            <testinput>
+                <name>ans1</name>
+                <value>Tans1+2</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>first(mcq_incorrect(Tans2))</value>
+            </testinput>
+            <testinput>
+                <name>s_complement</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>sa_defnCdf</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>sa_solveX</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>sa_translateMath</name>
+                <value/>
+            </testinput>
+            <expected>
+                <name>complement</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>defnCdf</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt_ans1-2-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans2</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>0-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>solveX</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>translateMath</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

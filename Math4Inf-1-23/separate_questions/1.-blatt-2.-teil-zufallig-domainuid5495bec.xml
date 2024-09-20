@@ -6,37 +6,19 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    Geben Sie zu dem folgenden Paar von Mengen an, welche der vier Relationen gelten
+</p>
+<p>
+    \(\left\{{@a1@},{@a2@},{@a3@}\right\}\) und \(\left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\)
+</p>
+<p>
+</p>
+<span style="font-size: 0.9375rem;">
+    \(\subset\) [[/lang]][[lang code="en"]]
     <p>
-        Geben Sie zu dem folgenden Paar von Mengen an, welche der vier Relationen gelten
-    </p>
-    <p>
-        \(\left\{{@a1@},{@a2@},{@a3@}\right\}\) und \(\left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\)
-    </p>
-    <p>
-    </p>
-    <span style="font-size: 0.9375rem;">
-        \(\subset\) [[input:ans1]][[validation:ans1]]
-    </span>
-    <br/>
-    <span style="font-size: 0.9375rem;">
-        \(\supset\) [[input:ans2]][[validation:ans2]]
-    </span>
-    <br/>
-    <span style="font-size: 0.9375rem;">
-        \(\in\) [[input:ans3]][[validation:ans3]]
-    </span>
-    <br/>
-    <span style="font-size: 0.9375rem;">
-        \(=\) [[input:ans4]][[validation:ans4]]
-    </span>
-    <br/>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Specify to the following pair of quantities that apply to the four relations
+        Specify to the following pair of sets that apply to the four relations
     </p>
     <p>
         \(\left\{{@a1@},{@a2@},{@a3@}\right\}\) and \(\left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\)
@@ -44,72 +26,88 @@
     <p>
     </p>
     <span style="font-size: 0.9375rem;">
-        \(\subset\) [[input:ans1]][[validation:ans1]]
+        \(\subset\) [[/lang]][[input:ans1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans1]][[lang code="de"]]
     </span>
     <br/>
     <span style="font-size: 0.9375rem;">
-        \(\supset\) [[input:ans2]][[validation:ans2]]
+        \(\supset\) [[/lang]][[lang code="en"]]
     </span>
     <br/>
     <span style="font-size: 0.9375rem;">
-        \(\in\) [[input:ans3]][[validation:ans3]]
+        \(\supset\) [[/lang]][[input:ans2]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans2]][[lang code="de"]]
     </span>
     <br/>
     <span style="font-size: 0.9375rem;">
-        \(=\) [[input:ans4]][[validation:ans4]]
+        \(\in\) [[/lang]][[lang code="en"]]
+    </span>
+    <br/>
+    <span style="font-size: 0.9375rem;">
+        \(\in\) [[/lang]][[input:ans3]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans3]][[lang code="de"]]
+    </span>
+    <br/>
+    <span style="font-size: 0.9375rem;">
+        \(=\) [[/lang]][[lang code="en"]]
+    </span>
+    <br/>
+    <span style="font-size: 0.9375rem;">
+        \(=\) [[/lang]][[input:ans4]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans4]][[lang code="de"]]
     </span>
     <br/>
     <p>
     </p>
+    [[/lang]][[lang code="en"]]
 </span>
+<br/>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        <strong>
-            L&#246;sungsweg:
-        </strong>
-    </p>
-    <p>
-        \(\left\{{@a1@},{@a2@},{@a3@}\right\} \not\subset \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\),&#160;weil jedes Element \({@a1@},&#160;{@a2@},&#160;{@a3@} \in \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\).
-    </p>
-    <p>
-        \(\left\{{@a1@},{@a2@},{@a3@}\right\} \not\supset \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\),&#160;weil jedes Element \({@a1@},&#160;{@a2@},&#160;{@a3@} \in \left\{{@a1@},{@a2@},{@a3@}\right\}\).
-        <br/>
-    </p>
-    <p>
-        \(\left\{{@a1@},{@a2@},{@a3@}\right\} \not\in \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\), weil \(\left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\) keine Menge \(\left\{{@a1@},{@a2@},{@a3@}\right\}\) als Element hat.
-        <br/>
-    </p>
-    <p>
-        \(\left\{{@a1@},{@a2@},{@a3@}\right\} \subset \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\),&#160;weil jedes Element \({@a1@},&#160;{@a2@},&#160;{@a3@} \in \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\) und&#160;\({@a1@},&#160;{@a2@},&#160;{@a3@} \in \left\{{@a1@},{@a2@},{@a3@}\right\}\).
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        <strong>
-            Solution:
-        </strong>
-    </p>
-    <p>
-        \(\left\{{@a1@},{@a2@},{@a3@}\right\} \not\subset \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\)because each element \({@a1@},&#160;{@a2@},&#160;{@a3@} \in \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\).
-    </p>
-    <p>
-        \(\left\{{@a1@},{@a2@},{@a3@}\right\} \not\supset \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\)because each element \({@a1@},&#160;{@a2@},&#160;{@a3@} \in \left\{{@a1@},{@a2@},{@a3@}\right\}\).
-        <br/>
-    </p>
-    <p>
-        \(\left\{{@a1@},{@a2@},{@a3@}\right\} \not\in \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\)because \(\left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\) No quantity \(\left\{{@a1@},{@a2@},{@a3@}\right\}\) as an element.
-        <br/>
-    </p>
-    <p>
-        \(\left\{{@a1@},{@a2@},{@a3@}\right\} \subset \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\)because each element \({@a1@},&#160;{@a2@},&#160;{@a3@} \in \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\) and\({@a1@},&#160;{@a2@},&#160;{@a3@} \in \left\{{@a1@},{@a2@},{@a3@}\right\}\).
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    <strong>
+        L&#246;sungsweg:
+    </strong>
+</p>
+<p>
+    \(\left\{{@a1@},{@a2@},{@a3@}\right\} \not\subset \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\),&#160;weil jedes Element \({@a1@},&#160;{@a2@},&#160;{@a3@} \in \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\).
+</p>
+<p>
+    \(\left\{{@a1@},{@a2@},{@a3@}\right\} \not\supset \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\),&#160;weil jedes Element \({@a1@},&#160;{@a2@},&#160;{@a3@} \in \left\{{@a1@},{@a2@},{@a3@}\right\}\).
+    <br/>
+</p>
+<p>
+    \(\left\{{@a1@},{@a2@},{@a3@}\right\} \not\in \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\), weil \(\left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\) keine Menge \(\left\{{@a1@},{@a2@},{@a3@}\right\}\) als Element hat.
+    <br/>
+</p>
+<p>
+    \(\left\{{@a1@},{@a2@},{@a3@}\right\} \subset \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\),&#160;weil jedes Element \({@a1@},&#160;{@a2@},&#160;{@a3@} \in \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\) und&#160;\({@a1@},&#160;{@a2@},&#160;{@a3@} \in \left\{{@a1@},{@a2@},{@a3@}\right\}\).
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <strong>
+        Solution:
+    </strong>
+</p>
+<p>
+    \(\left\{{@a1@},{@a2@},{@a3@}\right\} \not\subset \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\)because each element \({@a1@},&#160;{@a2@},&#160;{@a3@} \in \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\).
+</p>
+<p>
+    \(\left\{{@a1@},{@a2@},{@a3@}\right\} \not\supset \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\)because each element \({@a1@},&#160;{@a2@},&#160;{@a3@} \in \left\{{@a1@},{@a2@},{@a3@}\right\}\).
+    <br/>
+</p>
+<p>
+    \(\left\{{@a1@},{@a2@},{@a3@}\right\} \not\in \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\)because \(\left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\) No set \(\left\{{@a1@},{@a2@},{@a3@}\right\}\) as an element.
+    <br/>
+</p>
+<p>
+    \(\left\{{@a1@},{@a2@},{@a3@}\right\} \subset \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\)because each element \({@a1@},&#160;{@a2@},&#160;{@a3@} \in \left\{{@a1@},{@a3@},{@a2@},{@a2@}\right\}\) and\({@a1@},&#160;{@a2@},&#160;{@a3@} \in \left\{{@a1@},{@a2@},{@a3@}\right\}\).
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -126,12 +124,7 @@ a3:rand_with_prohib(-140,-20,[a1,a2]);</text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    [[feedback:prt1]]
-</span>
-<span class="multilang" lang="en">
-    [[feedback:prt1]]
-</span>
+[[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -145,32 +138,17 @@ a3:rand_with_prohib(-140,-20,[a1,a2]);</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

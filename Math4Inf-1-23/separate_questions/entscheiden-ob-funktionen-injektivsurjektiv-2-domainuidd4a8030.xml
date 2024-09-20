@@ -6,67 +6,66 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Entscheiden Sie bei folgenden Funktionen, ob sie injektiv oder surjektiv sind, indem Sie den Wahrheitsgehalt folgender Aussagen beurteilen.
-        <br/>
-    </p>
-    [[validation:ans1]]
+[[lang code="de"]]
+<p>
+    Entscheiden Sie bei folgenden Funktionen, ob sie injektiv oder surjektiv sind, indem Sie den Wahrheitsgehalt folgender Aussagen beurteilen.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    In the following functions, decide whether they are subjective or surjective by assessing the truth of the following statements.
+    <br/>
+</p>
+[[/lang]][[validation:ans1]][[lang code="de"]]
 
 
 
 
-[[validation:ans2]]
-    <table>
-        <tbody>
-            <tr>
-                <td>
-                    Die Funktion \(f:\mathbb{R}\to\mathbb{R}\) mit \(f(x)={@f(x)@}\) ist injektiv.
-                </td>
-                <td>
-                    [[input:ans1]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Die Funktion \(g:\mathbb{R}\to\mathbb{R}\) mit \(g(x)={@g(x)@}\) ist surjektiv.
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans2]]
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        In the following functions, decide whether they are subjective or surjective by assessing the truth content of the following statements.
-        <br/>
-    </p>
-    [[validation:ans1]][[validation:ans2]]
-    <table>
-        <tbody>
-            <tr>
-                <td>
-                    The function \(f:\mathbb{R}\to\mathbb{R}\) with \(f(x)={@f(x)@}\) is injective.
-                </td>
-                <td>
-                    [[input:ans1]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    The function \(g:\mathbb{R}\to\mathbb{R}\) with \(g(x)={@g(x)@}\) is surjective.
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans2]]
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</span>
+[[/lang]][[lang code="en"]][[/lang]][[validation:ans2]][[lang code="de"]]
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Die Funktion \(f:\mathbb{R}\to\mathbb{R}\) mit \(f(x)={@f(x)@}\) ist injektiv.
+            </td>
+            <td>
+                [[/lang]][[lang code="en"]]
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                The function \(f:\mathbb{R}\to\mathbb{R}\) with \(f(x)={@f(x)@}\) is injective.
+                            </td>
+                            <td>
+                                [[/lang]][[input:ans1]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Die Funktion \(g:\mathbb{R}\to\mathbb{R}\) mit \(g(x)={@g(x)@}\) ist surjektiv.
+                                <br/>
+                            </td>
+                            <td>
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                The function \(g:\mathbb{R}\to\mathbb{R}\) with \(g(x)={@g(x)@}\) is surjective.
+                                <br/>
+                            </td>
+                            <td>
+                                [[/lang]][[input:ans2]][[lang code="de"]]
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                [[/lang]][[lang code="en"]]
+            </td>
+        </tr>
+    </tbody>
+</table>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -93,12 +92,7 @@ g_text:[tr("nicht surjektiv","not surjective"),tr("surjektiv","surjective")][1+m
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    [[feedback:prt1]]
-</span>
-<span class="multilang" lang="en">
-    [[feedback:prt1]]
-</span>
+[[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -113,32 +107,17 @@ g_text:[tr("nicht surjektiv","not surjective"),tr("surjektiv","surjective")][1+m
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -209,18 +188,17 @@ g_text:[tr("nicht surjektiv","not surjective"),tr("surjektiv","surjective")][1+m
                 <trueanswernote>prt1-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Funktion \(f(x)={@f(x)@}\) ist {@f_text@}. Das haben Sie richtig gemacht.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The function \(f(x)={@f(x)@}\) is {@f_text@}. You did that right.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Funktion \(f(x)={@f(x)@}\) ist {@f_text@}. Das haben Sie richtig gemacht.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The function \(f(x)={@f(x)@}\) is {@f_text@}. You did that right.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -230,18 +208,17 @@ g_text:[tr("nicht surjektiv","not surjective"),tr("surjektiv","surjective")][1+m
                 <falseanswernote>prt1-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Funktion \(f(x)={@f(x)@}\) ist {@f_text@}. Das haben Sie leider falsch gemacht.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The function \(f(x)={@f(x)@}\) is {@f_text@}. You've done that wrong.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Funktion \(f(x)={@f(x)@}\) ist {@f_text@}. Das haben Sie leider falsch gemacht.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The function \(f(x)={@f(x)@}\) is {@f_text@}. You've done that wrong.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -260,18 +237,17 @@ g_text:[tr("nicht surjektiv","not surjective"),tr("surjektiv","surjective")][1+m
                 <trueanswernote>prt1-2-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Funktion \(g(x)={@g(x)@}\) ist {@g_text@}. Das haben Sie richtig gemacht.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The function \(g(x)={@g(x)@}\) is {@g_text@}. You did that right.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Funktion \(g(x)={@g(x)@}\) ist {@g_text@}. Das haben Sie richtig gemacht.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The function \(g(x)={@g(x)@}\) is {@g_text@}. You did that right.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>-</falsescoremode>
@@ -281,18 +257,17 @@ g_text:[tr("nicht surjektiv","not surjective"),tr("surjektiv","surjective")][1+m
                 <falseanswernote>prt1-2-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Funktion \(g(x)={@g(x)@}\) ist {@g_text@}. Das haben Sie leider falsch gemacht.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The function \(g(x)={@g(x)@}\) is {@g_text@}. You've done that wrong.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Funktion \(g(x)={@g(x)@}\) ist {@g_text@}. Das haben Sie leider falsch gemacht.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The function \(g(x)={@g(x)@}\) is {@g_text@}. You've done that wrong.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>

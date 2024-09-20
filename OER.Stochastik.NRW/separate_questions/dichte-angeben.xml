@@ -1,0 +1,2264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Dichte angeben</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<style>
+    .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #A9F5BC; 
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #E0F8E6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #DCB25E; 
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #E7D2A7;
+                }
+    
+        
+        
+        
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                                margin-bottom: 5px;
+                }
+
+    
+    
+    
+    .herv {
+                                color:purple;
+                }
+</style>
+<div id="oer-aufgabe-26_aufgabenstellung">
+    <div id="oer-aufgabe-26_ans1_aufforderung" style="display:none;">
+        <p class="herv">
+            Bitte probieren Sie es nun noch einmal und klicken Sie dann erneut auf "Pr&#252;fen":
+        </p>
+    </div>
+    <p>
+        Sei \(f\colon\mathbb{R}\to\mathbb{R}\) eine Funktion mit \(x\mapsto     
+                                \begin{cases}
+                                                g(x), \text{ wenn } {@aa@}\le x \le {@bb@} \\
+                                                0, \text{ sonst}
+                                \end{cases} \).
+    </p>
+    <p>
+        Geben Sie ein Beispiel f&#252;r eine rationale Funktion \(g\colon \mathbb{R}\to\mathbb{R},\ x\mapsto g(x)\) an, sodass \(f\) die Eigenschaften einer Wahrscheinlichkeitsdichte erf&#252;llt.
+    </p>
+</div>
+<div class="erinnerungsbox" id="oer-aufgabe-26_erinnerungsbox" style="display:none;">
+    <p>
+        <u>
+            Urspr&#252;ngliche Fragestellung:
+        </u>
+    </p>
+    <p>
+        Sei \(f\colon\mathbb{R}\to\mathbb{R}\) eine Funktion mit \(x\mapsto
+                                \begin{cases}
+                                                    g(x), \text{ wenn } {@aa@}\le x \le {@bb@} \\
+                                                    0, \text{ sonst}\end{cases} \).
+    </p>
+    <p>
+        Geben Sie ein Beispiel f&#252;r eine rationale Funktion \(g\colon \mathbb{R}\to\mathbb{R},\ x\mapsto g(x)\) an, sodass \(f\) die Eigenschaften einer Wahrscheinlichkeitsdichte erf&#252;llt.
+    </p>
+</div>
+<div id="oer-aufgabe-26_input-ans1">
+    <p>
+        Antwort: \(g(x)=\) [[/lang]][[lang code="en"]]
+        <style>
+            .buttonweiter {
+                                border: 1px solid black;
+                                background-color: #A9F5BC; 
+                }
+
+    
+    
+    
+    .buttonweiter:hover {
+                                background-color: #E0F8E6;
+                }
+
+    
+    
+    
+    .buttonzurueck {
+                                border: 1px solid black;
+                                background-color: #DCB25E; 
+                }
+
+    
+    
+    
+    .buttonzurueck:hover {
+                                background-color: #E7D2A7;
+                }
+    
+        
+        
+        
+    .erinnerungsbox {
+                                border: 2px rgb(152, 202, 62) solid;
+                                padding: 5px;
+                                margin-bottom: 5px;
+                }
+
+    
+    
+    
+    .herv {
+                                color:purple;
+                }
+        </style>
+        <div id="oer-aufgabe-26_aufgabenstellung">
+            <div id="oer-aufgabe-26_ans1_aufforderung" style="display:none;">
+                <p class="herv">
+                    Please try it again and then click "Check" again:
+                </p>
+            </div>
+            <p>
+                Be careful \(f\colon\mathbb{R}\to\mathbb{R}\) a function with \(x\mapsto     
+                                \begin{cases}
+                                                g(x), \text{ wenn } {@aa@}\le x \le {@bb@} \\
+                                                0, \text{ sonst}
+                                \end{cases} \).
+            </p>
+            <p>
+                Give an example of a rational function \(g\colon \mathbb{R}\to\mathbb{R},\ x\mapsto g(x)\) so that \(f\) the properties of a probability density are fulfilled.
+            </p>
+        </div>
+        <div class="erinnerungsbox" id="oer-aufgabe-26_erinnerungsbox" style="display:none;">
+            <p>
+                <u>
+                    Original question:
+                </u>
+            </p>
+            <p>
+                Be careful \(f\colon\mathbb{R}\to\mathbb{R}\) a function with \(x\mapsto
+                                \begin{cases}
+                                                    g(x), \text{ wenn } {@aa@}\le x \le {@bb@} \\
+                                                    0, \text{ sonst}\end{cases} \).
+            </p>
+            <p>
+                Give an example of a rational function \(g\colon \mathbb{R}\to\mathbb{R},\ x\mapsto g(x)\) so that \(f\) the properties of a probability density are fulfilled.
+            </p>
+        </div>
+        <div id="oer-aufgabe-26_input-ans1">
+            <p>
+                Answer: \(g(x)=\) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
+            </p>
+            <p>
+                Bitte klicken Sie nach der Eingabe der L&#246;sung auf den Button "Pr&#252;fen".
+            </p>
+        </div>
+        [[/lang]][[lang code="en"]]
+    </p>
+    <p>
+        Please click the "Check" button after entering the solution.
+    </p>
+</div>
+[[/lang]][[feedback:prt1]][[lang code="de"]]
+<div id="oer-aufgabe-26_mc" style="display:none;">
+    <div id="oer-aufgabe-26_mc_aufforderung" style="display:none;">
+        <p class="herv">
+            Bitte probieren Sie es nun noch einmal und klicken Sie dann erneut auf "Pr&#252;fen". Im Eingabefeld und der Grafik sehen Sie noch ihre vorherige L&#246;sung.
+        </p>
+    </div>
+    <p>
+        Betrachten Sie die
+        <a href="#oer-aufgabe-26_grafik_f">
+            obige Grafik
+        </a>
+        .
+    </p>
+    <p>
+        Welche Eigenschaften treffen auf
+        <span class="herv">
+            Ihre Funktion
+        </span>
+        zu? Kreuzen Sie eine oder mehrere Antwortoptionen an und klicken Sie dann auf "Pr&#252;fen".
+    </p>
+    <div id="oer-aufgabe-26_input-mc">
+        <p>
+            [[/lang]][[lang code="en"]]
+            <div id="oer-aufgabe-26_mc" style="display:none;">
+                <div id="oer-aufgabe-26_mc_aufforderung" style="display:none;">
+                    <p class="herv">
+                        Please try it again and then click "Check". In the input field and the graphics you will still see their previous solution.
+                    </p>
+                </div>
+                <p>
+                    Consider the
+                    <a href="#oer-aufgabe-26_grafik_f">
+                        above chart
+                    </a>
+                    .
+                </p>
+                <p>
+                    What properties meet
+                    <span class="herv">
+                        Your function
+                    </span>
+                    to? Cross one or more response options and then click "Check".
+                </p>
+                <div id="oer-aufgabe-26_input-mc">
+                    <p>
+                        [[/lang]][[input:ans_mc]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans_mc]][[lang code="de"]]
+                    </p>
+                </div>
+                [[/lang]][[lang code="en"]]
+            </div>
+        </p>
+    </div>
+    [[/lang]][[feedback:ans_mc]][[lang code="de"]]
+</div>
+<div id="oer-aufgabe-26_mc_2" style="display:none;">
+    <div id="oer-aufgabe-26_mc_2_aufforderung" style="display:none;">
+        <p class="herv">
+            Bitte probieren Sie es nun noch einmal und klicken Sie dann erneut auf "Pr&#252;fen". Im Eingabefeld und der Grafik sehen Sie noch ihre vorherige L&#246;sung.
+        </p>
+    </div>
+    <p>
+        Welche der folgenden Eigenschaften m&#252;ssen auf eine Funktion \(h\colon\mathbb{R}\to\mathbb{R}\) zutreffen, damit \(h\)
+        <span class="herv">
+            eine Wahrscheinlichkeitsdichte
+        </span>
+        ist? Kreuzen Sie eine oder mehrere Antwortoptionen an und klicken Sie dann auf "Pr&#252;fen".
+    </p>
+    <div id="oer-aufgabe-26_input-mc_2">
+        <p>
+            [[/lang]][[lang code="en"]]
+        </p>
+    </div>
+    <div id="oer-aufgabe-26_mc_2" style="display:none;">
+        <div id="oer-aufgabe-26_mc_2_aufforderung" style="display:none;">
+            <p class="herv">
+                Please try it again and then click "Check". In the input field and the graphics you will still see their previous solution.
+            </p>
+        </div>
+        <p>
+            Which of the following properties must be a function \(h\colon\mathbb{R}\to\mathbb{R}\) in order to \(h\)
+            <span class="herv">
+                a probability density
+            </span>
+            is it? Cross one or more response options and then click "Check".
+        </p>
+        <div id="oer-aufgabe-26_input-mc_2">
+            <p>
+                [[/lang]][[input:ans_mc_dichte]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans_mc_dichte]][[lang code="de"]]
+            </p>
+        </div>
+        [[/lang]][[lang code="en"]]
+    </div>
+    [[/lang]][[feedback:ans_mc_dichte]][[lang code="de"]]
+</div>
+<div id="oer-aufgabe-26_state" style="display:none;">
+    [[/lang]][[lang code="en"]]
+</div>
+<div id="oer-aufgabe-26_state" style="display:none;">
+    [[/lang]][[input:state]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:state]][[lang code="de"]]
+</div>
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]][[lang code="en"]]
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="moodle_auto_format">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  Dichte angeben
+
+  wurde entwickelt von
+  
+    Jonas Lache <jonas.lache[at]ruhr-uni-bochum.de>
+
+  an der Ruhr-Universit&#228;t Bochum.
+
+  Dieses Werk ist lizenziert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+
+  Diese Aufgabe bindet das Skript &#8216;stackselbstlern.js&#8217; von Michael
+  Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+/*Intervallgrenzen a und b:*/
+aa: rand_with_prohib(-8,7,[0]);
+bb: rand_with_prohib(aa+1,8,[0]);
+
+/*Generiere EINE m&#246;gliche Musterl&#246;sung:*/
+ta1: x^2/integrate(x^2,x,aa,bb);
+
+/*&#220;berpr&#252;fe, on eine Funktion f eine rationale Funktion ist:*/
+rationaleFunktionp(f):=polynomialp(ratnumer(ans1), [x]) and polynomialp(ratdenom(ans1), [x]);
+
+/*Bestimme Extrema von f:*/
+Extrema(f,a,b):= if diff(f,x)=0 then [[],[]] else block([L1,L2,L3,L4,L5],
+    /*Nst. von f' in der Form [x=n1, x=n2, ...]:*/
+    L1:solve(diff(f,x)=0,x),
+    /*Nst. von f' in der Form [n1, n2, ...]:*/
+    L2: map(rhs,L1), 
+    /*Nur noch alle Nst. aus dem Intervall:*/
+    L3: sublist(L2,lambda([t],is(t>=aa and t<=bb))), 
+    /*Alle dieser Nst. als Liste in der Form  [n1, f(n1), f''(n1)]:*/
+    L4: makelist(
+        [L3[k],subst(L3[k],x,f),subst(L3[k],x,diff(diff(f,x),x))],
+        k,1,length(L3)
+    ),
+    /* Aufteilung in Unterlisten, wobei die erste Unterliste alle Minima und die zweite alle Maxima in der o. g. Form enth&#228;lt:*/
+    L5: [sublist(L4,lambda([t],t[3]>0)),sublist(L4,lambda([t],t[3]<0))], 
+    return(L5)
+);
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+/*Variable f&#252;r die erste Multiple-Choice-Aufgabe:*/
+Liste_mc: [
+    [1,true, tr("Es gilt \\(f(x)\\ge0\\) f&#252;r alle \\(x\\in \\mathbb{R}\\)","It applies \\(f(x)\\ge0\\) for all \\(x\\in \\mathbb{R}\\)")],
+    [2,false,tr("Es existiert mindestens ein \\(x\\in \\mathbb{R}\\) mit \\(f(x)<0\\)","There exists a \\(x\\in \\mathbb{R}\\) with \\(f(x)<0\\)")],
+    [3,true, tr("Es gilt \\(\\int_{-\\infty}^{\\infty}f(x)\\, dx =1\\)","It applies \\(\\int_{-\\infty}^{\\infty}f(x)\\, dx =1\\)")],
+    [4,false,tr("Es gilt \\(\\int_{-\\infty}^{\\infty}f(x)\\, dx >1\\)","It applies \\(\\int_{-\\infty}^{\\infty}f(x)\\, dx >1\\)")],
+    [5,false,tr("Es gilt \\(\\int_{-\\infty}^{\\infty}f(x)\\, dx <1\\)","It applies \\(\\int_{-\\infty}^{\\infty}f(x)\\, dx <1\\)")]
+];
+/*Variable f&#252;r die zweite Multiple-Choice-Aufgabe:*/
+Liste_mc_2: [
+    [1,true, tr("Es muss gelten \\(h(x)\\ge0\\) f&#252;r alle \\(x\\in \\mathbb{R}\\)","It must apply \\(h(x)\\ge0\\) for all \\(x\\in \\mathbb{R}\\)")],
+    [2,false,tr("Es muss mindestens ein \\(x\\in \\mathbb{R}\\) mit \\(h(x)<0\\) existieren","There must exists a \\(x\\in \\mathbb{R}\\) with \\(h(x)<0\\)")],
+    [3,true, tr("Es muss gelten \\(\\int_{-\\infty}^{\\infty}h(x)\\, dx =1\\)","It must apply \\(\\int_{-\\infty}^{\\infty}h(x)\\, dx =1\\)")],
+    [4,false,tr("Es muss gelten \\(\\int_{-\\infty}^{\\infty}h(x)\\, dx >1\\)","It must apply \\(\\int_{-\\infty}^{\\infty}h(x)\\, dx >1\\)")],
+    [5,false,tr("Es muss gelten \\(\\int_{-\\infty}^{\\infty}h(x)\\, dx <1\\)","It must apply \\(\\int_{-\\infty}^{\\infty}h(x)\\, dx <1\\)")]
+];]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{#[aa,bb]#}</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+    Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]
+    <span style="font-size: 1.5em; color:orange;">
+        <i class="fa fa-adjust">
+        </i>
+        Your answer is partly correct.[[/lang]]
+    </span>
+</span>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.[[/lang]]
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>(</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans_mc</name>
+            <type>checkbox</type>
+            <tans>Liste_mc</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans_mc_dichte</name>
+            <type>checkbox</type>
+            <tans>Liste_mc_2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>ta1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>state</name>
+            <type>algebraic</type>
+            <tans>0</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>allowempty</options>
+        </input>
+        <prt>
+            <name>ans_mc</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text><![CDATA[/* === Erkl&#228;rung der Knoten: ===
+Knoten 1: Ist die MC-Aufgabe komplett richtig?
+Knoten 2: Anzahl der Optionen richtig?
+Knoten 3: Wurden 1 und 2 gleichzeitig angekreuzt?
+Knoten 4: Wurden 3 und 4, 3 und 5 oder 4 und 5 gleichzeitig angekreuzt?
+*/
+
+/*Definiere die Antwort als Funktion:*/
+g(x):=ans1;
+
+/*Liste: Zahlen aus dem Intervall zwischen aa und bb (in 1/500-Schritten) in ans1 eingesetzt:*/
+L1:makelist(subst(aa+(bb-aa)*(k-1)/500,x,ans1),k,1,501); 
+
+/* Gibt "true" zur&#252;ck, wenn die Eigenschaft der Nichtnegativit&#228;t ordnungsgem&#228;&#223; erf&#252;llt ist: */
+nichtnegativ: is(length(sublist(L1,lambda([x], is(x<0))))=0);
+
+/*Wert des Integrals:*/
+integ: if numberp(integrate(g(x),x,aa,bb)) then integrate(g(x),x,aa,bb) else decimalplaces(quad_qag(g(x),x,aa,bb,6)[1],3);
+
+/*Menge der richtigen Optionen wird anhand der Eigenschaften der eingegebenen Funktion adaptiv berechnet:*/
+Menge_Richtig_TAns: block([L],
+    L:[1,2,3,4,5],
+    if not(nichtnegativ) then L:delete(1,L), /*Nichtneg.-Eigenschaft erf&#252;llt*/
+    if nichtnegativ then L:delete(2,L), /*Nichtneg.-Eigenschaft nicht erf&#252;llt*/
+    if not(integ=1) then L:delete(3,L), /*Integral-Eigenschaft erf&#252;llt*/
+    if not(integ>1) then L:delete(4,L), /*Integral >1*/
+    if not(integ<1) then L:delete(5,L), /*Integral <1*/
+    return(setify(L))
+);
+
+/* Menge mit den von Student*in angekreuzten Optionen: */
+Menge_Richtig_SAns: setify(ans_mc);]]></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>Menge_Richtig_SAns</sans>
+                <tans>Menge_Richtig_TAns</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ans_mc-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p class="correct">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</p>
+<p>
+    Bitte klicken Sie zum Fortfahren auf den folgenden Button:
+    <button class="buttonweiter" onclick="
+                hide('oer-aufgabe-26_mc');
+                show('oer-aufgabe-26_mc_2');
+" type="button">
+        Weiter
+    </button>
+</p>
+<script>
+    window.onload=function(){
+                document.querySelectorAll('#oer-aufgabe-26_input-mc > div')[0].childNodes.forEach(element => element.childNodes[0].disabled='true');
+}
+</script>
+[[/lang]][[lang code="en"]]
+<p class="correct">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+</p>
+<p>
+    Please click on the following button to continue:
+    <button class="buttonweiter" onclick="
+                hide('oer-aufgabe-26_mc');
+                show('oer-aufgabe-26_mc_2');
+" type="button">
+        Next
+    </button>
+</p>
+<script>
+    window.onload=function(){
+                document.querySelectorAll('#oer-aufgabe-26_input-mc > div')[0].childNodes.forEach(element => element.childNodes[0].disabled='true');
+}
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>ans_mc-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p class="incorrect">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</p>
+[[/lang]][[lang code="en"]]
+<p class="incorrect">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>length(mcq_correct(Liste_mc))</sans>
+                <tans>length(ans_mc)</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>ans_mc-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die richtige Anzahl an M&#246;glichkeiten angekreuzt. Allerdings sind davon nicht alle richtig.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have crossed the correct number of possibilities. However, it is not all right.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>ans_mc-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Tipp: Zwei der f&#252;nf Eigenschaften treffen zu.
+    <p>
+        [[/lang]][[lang code="en"]]
+        <p>
+            Tip: Two of the five properties meet.
+            <p>
+                [[/lang]]
+            </p>
+        </p>
+    </p>
+</p>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(1,setify(ans_mc)) and member(2,setify(ans_mc))</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>ans_mc-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>ans_mc-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die ersten beiden Optionen aus der Liste (\(f(x)\ge0\; \forall x\in \mathbb{R}\) und \(\exists x\in \mathbb{R}: f(x)&lt;0\)) ausgew&#228;hlt. Diese Optionen widersprechen sich aber: Es kann nicht gleichzeitig \(f(x)\ge0\; \forall x\in \mathbb{R}\) gelten und ein \(x\in\mathbb{R}\) existieren, f&#252;r das diese Eigenschaft nicht gilt.
+    <p>
+        [[/lang]][[lang code="en"]]
+        <p>
+            You have the first two options from the list (\(f(x)\ge0\; \forall x\in \mathbb{R}\) and \(\exists x\in \mathbb{R}: f(x)&lt;0\)) selected. However, these options contradict each other: it cannot be \(f(x)\ge0\; \forall x\in \mathbb{R}\) and a \(x\in\mathbb{R}\) exist for which this property does not apply.
+            <p>
+                [[/lang]]
+            </p>
+        </p>
+    </p>
+</p>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans><![CDATA[is(length(sublist(ans_mc, lambda([el],member(el,{3,4,5}))))>1)]]></sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ans_mc-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Bitte probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Please try it again and then click "Check".
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ans_mc-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Von den drei untersten Antwortoptionen haben Sie mehr als eine ausgew&#228;hlt. Dies kann aber nicht sein: Das Integral hat entweder einen Wert gr&#246;&#223;er als 1, einen Wert kleiner als 1 oder einen Wert von genau 1.
+</p>
+<p>
+    Bitte probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Of the three lowest answer options, you have selected more than one. But this cannot be: The integral has either a value greater than 1, a value less than 1 or a value of exactly 1.
+</p>
+<p>
+    Please try it again and then click "Check".
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>ans_mc_dichte</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text>/* === Erkl&#228;rung der Knoten: ===
+Knoten 1: Ist die MC-Aufgabe komplett richtig?
+Knoten 2: Anzahl der Optionen richtig?
+Knoten 3: Wurden 1 und 2 gleichzeitig angekreuzt?
+Knoten 4: Wurden 3 und 4, 3 und 5 oder 4 und 5 gleichzeitig angekreuzt?
+*/</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>setify(ans_mc_dichte)</sans>
+                <tans>set(1,3)</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ans_mc_dichte-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p class="correct">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</p>
+<p>
+    Um die Eigenschaften einer Dichtefunktion zu erf&#252;llen, muss eine Funktion auf dem gesamten Definitionsbereich nichtnegativ sein und es muss \( \int_{-\infty}^{\infty} f(x)\, dx = 1 \) gelten.
+</p>
+<p>
+    F&#252;r diese Aufgabe bedeutet das: Da \(f\) au&#223;erhalb des Intervalls \(\left[ {@aa@},{@bb@} \right]\) null ist, muss \( \int_{{@aa@}}^{{@bb@}} g(x)\, dx = 1 \) gelten.
+</p>
+<p>
+    Bitte klicken Sie zum Fortfahren auf den folgenden Button:
+    <button class="buttonzurueck" onclick="
+                hide('oer-aufgabe-26_mc_2');
+                hide('oer-aufgabe-26_erinnerungsbox');
+                show('oer-aufgabe-26_aufgabenstellung');
+                show('oer-aufgabe-26_input-ans1');
+                show('oer-aufgabe-26_ans1_aufforderung');
+                window.location.href='#oer-aufgabe-26_ans1_aufforderung';
+                document.querySelector('#oer-aufgabe-26_state &gt; input').value='2';
+" type="button">
+        Zur&#252;ck zur urspr&#252;nglichen Aufgabe
+    </button>
+</p>
+<script>
+    window.onload=function(){
+                document.querySelectorAll('#oer-aufgabe-26_input-mc_2 > div')[0].childNodes.forEach(element => element.childNodes[0].disabled='true');
+}
+</script>
+[[/lang]][[lang code="en"]]
+<p class="correct">
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+</p>
+<p>
+    In order to fulfill the properties of a density function, a function must be non-negative throughout the definition range and it must \( \int_{-\infty}^{\infty} f(x)\, dx = 1 \) apply.
+</p>
+<p>
+    For this task, this means: \(f\) outside the interval \(\left[ {@aa@},{@bb@} \right]\) is zero, must \( \int_{{@aa@}}^{{@bb@}} g(x)\, dx = 1 \) apply.
+</p>
+<p>
+    Please click on the following button to continue:
+    <button class="buttonzurueck" onclick="
+                hide('oer-aufgabe-26_mc_2');
+                hide('oer-aufgabe-26_erinnerungsbox');
+                show('oer-aufgabe-26_aufgabenstellung');
+                show('oer-aufgabe-26_input-ans1');
+                show('oer-aufgabe-26_ans1_aufforderung');
+                window.location.href='#oer-aufgabe-26_ans1_aufforderung';
+                document.querySelector('#oer-aufgabe-26_state &gt; input').value='2';
+" type="button">
+        Back to the original task
+    </button>
+</p>
+<script>
+    window.onload=function(){
+                document.querySelectorAll('#oer-aufgabe-26_input-mc_2 > div')[0].childNodes.forEach(element => element.childNodes[0].disabled='true');
+}
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>ans_mc_dichte-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p class="incorrect">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</p>
+[[/lang]][[lang code="en"]]
+<p class="incorrect">
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>length(ans_mc_dichte)</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>ans_mc_dichte-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die richtige Anzahl an M&#246;glichkeiten angekreuzt. Allerdings sind davon nicht alle richtig.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have crossed the correct number of possibilities. However, it is not all right.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>ans_mc_dichte-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Tipp: Zwei der f&#252;nf Eigenschaften treffen zu.
+    <p>
+        [[/lang]][[lang code="en"]]
+        <p>
+            Tip: Two of the five properties meet.
+            <p>
+                [[/lang]]
+            </p>
+        </p>
+    </p>
+</p>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>member(1,setify(ans_mc_dichte)) and member(2,setify(ans_mc_dichte))</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>ans_mc_dichte-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>ans_mc_dichte-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die ersten beiden Optionen aus der Liste (\(f(x)\ge0\; \forall x\in \mathbb{R}\) und \(\exists x\in \mathbb{R}: f(x)&lt;0\)) ausgew&#228;hlt. Diese Optionen widersprechen sich aber: Es kann nicht gleichzeitig \(f(x)\ge0\; \forall x\in \mathbb{R}\) gelten und ein \(x\in\mathbb{R}\) existieren, f&#252;r das diese Eigenschaft nicht gilt.
+    <p>
+        [[/lang]][[lang code="en"]]
+        <p>
+            You have the first two options from the list (\(f(x)\ge0\; \forall x\in \mathbb{R}\) and \(\exists x\in \mathbb{R}: f(x)&lt;0\)) selected. However, these options contradict each other: it cannot be \(f(x)\ge0\; \forall x\in \mathbb{R}\) and a \(x\in\mathbb{R}\) exist for which this property does not apply.
+            <p>
+                [[/lang]]
+            </p>
+        </p>
+    </p>
+</p>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans><![CDATA[is(length(sublist(ans_mc_dichte, lambda([el],member(el,{3,4,5}))))>1)]]></sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ans_mc_dichte-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Bitte probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Please try it again and then click "Check".
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ans_mc_dichte-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Von den drei untersten Antwortoptionen haben Sie mehr als eine ausgew&#228;hlt. Dies kann aber nicht sein: Das Integral hat entweder einen Wert gr&#246;&#223;er als 1, einen Wert kleiner als 1 oder einen Wert von genau 1.
+</p>
+<p>
+    Bitte probieren Sie es erneut und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Of the three lowest answer options, you have selected more than one. But this cannot be: The integral has either a value greater than 1, a value less than 1 or a value of exactly 1.
+</p>
+<p>
+    Please try it again and then click "Check".
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text><![CDATA[/* === Erkl&#228;rung der Knoten: ===
+Knoten 1: Enth&#228;lt die Funktion eine andere Variable als x?
+Knoten 2: Ist die Funktion rational?
+Knoten 3: Ist die Integraleigenschaft erf&#252;llt?
+Knoten 4: Ist die Nichtnegativit&#228;tseigenschaft erf&#252;llt?
+Knoten 5: Sind beide Eigenschaften erf&#252;llt (grafisches Feedback)
+Knoten 6: Welchen Wert hat die Hilfsvariable state?
+*/
+
+/*Definiere die Antwort als Funktion:*/
+g(x):=ans1;
+
+/*Liste der in der Antwort vorkommenden Variablen:*/
+Listofvars: listofvars(ans1);
+Listofvars_ohne_x: delete(x,Listofvars);
+
+/*Liste: Zahlen aus dem Intervall zwischen aa und bb (in 1/500-Schritten) in ans1 eingesetzt:*/
+L1:makelist(subst(aa+(bb-aa)*(k-1)/500,x,ans1),k,1,501); 
+
+/* Gibt "true" zur&#252;ck, wenn die Eigenschaft der Nichtnegativit&#228;t ordnungsgem&#228;&#223; erf&#252;llt ist: */
+nichtnegativ: is(length(sublist(L1,lambda([x], is(x<0))))=0);
+
+/*Wert des Integrals:*/
+integ: if numberp(integrate(g(x),x,aa,bb)) then integrate(g(x),x,aa,bb) else decimalplaces(quad_qag(g(x),x,aa,bb,6)[1],3);
+
+/*Strings, die dem Feedback-Text hinzugef&#252;gt werden:*/
+variablen_str_1: if length(Listofvars_ohne_x)>1 then "den Parametern" else "dem Parameter";
+variablen_str_2: if length(Listofvars_ohne_x)>1 then "diese Parameter" else "diesen Parameter";
+integ_text: if numberp(integrate(g(x),x,aa,bb)) then integrate(g(x),x,aa,bb) else sconcat("ann&#228;herungsweise \\(",decimalplaces(quad_qag(g(x),x,aa,bb,6)[1],3),"\\)");]]></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>Listofvars_ohne_x</sans>
+                <tans>[]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Funktion \(g(x)={@ans1@}\) h&#228;ngt von {@variablen_str_1@} {@sequenceify(Listofvars_ohne_x)@} ab. Da aber keine weiteren Informationen &#252;ber {@variablen_str_2@} bekannt sind, kann auch nicht &#252;berpr&#252;ft werden, ob \(g\) die Eigenschaften einer Wahrscheinlichkeitsdichte erf&#252;llt.
+</p>
+<p>
+    Bitte geben Sie eine Funktion ein, die nur \(x\) als Variable enth&#228;lt. Klicken Sie dann erneut auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your function \(g(x)={@ans1@}\) depends on {@variablen_str_1@} {@sequenceify(Listofvars_ohne_x)@} off. Since no further information is available {@variablen_str_2@} can also not be checked whether \(g\) the properties of a probability density are fulfilled.
+</p>
+<p>
+    Please enter a function that only \(x\) as variable. Then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>rationaleFunktionp(ans1)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Laut Aufgabenstellung ist eine rationale Funktion gesucht. Ihre Funktion \(g(x)={@ans1@}\) ist aber keine.
+</p>
+<p>
+    Zur Erinnerung: Eine rationale Funktion hat eine Vorschrift der Form \( \large{{\frac {a_{m}x^{m}+a_{m-1}x^{m-1}+\dotsb +a_{1}x+a_{0}}{b_{n}x^{n}+b_{n-1}x^{n-1}+\dotsb +b_{1}x+b_{0}}}}={\frac {P_{m}(x)}{Q_{n}(x)}} \), wobei \(a_{m},\dotsc ,a_{0},b_{n},\dotsc ,b_{0}\in\mathbb{R}\) und \(Q_n\neq 0\).
+</p>
+<p>
+    Bitte geben Sie eine solche Funktion ein und klicken Sie dann noch einmal auf "Pr&#252;fen".
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    According to the task, a rational function is sought. Your function \(g(x)={@ans1@}\) is not.
+</p>
+<p>
+    To remember: A rational function has a rule of form \( \large{{\frac {a_{m}x^{m}+a_{m-1}x^{m-1}+\dotsb +a_{1}x+a_{0}}{b_{n}x^{n}+b_{n-1}x^{n-1}+\dotsb +b_{1}x+b_{0}}}}={\frac {P_{m}(x)}{Q_{n}(x)}} \)where \(a_{m},\dotsc ,a_{0},b_{n},\dotsc ,b_{0}\in\mathbb{R}\) and \(Q_n\neq 0\).
+</p>
+<p>
+    Please enter such a function and then click "Check" again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>integ</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>prt1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prt1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>nichtnegativ</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>prt1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prt1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>[integ, nichtnegativ]</sans>
+                <tans>[1,true]</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    In der folgenden Abbildung sehen Sie den Graphen der Funktion \(f\), mit der Funktionsvorschrift \(f(x)= \begin{cases} {@ans1@}, \text{ wenn } {@aa@}\le x \le {@bb@} \\ 0, \text{ sonst}\end{cases} \) gem&#228;&#223; Ihrer Antwort.
+</p>
+<p>
+    Sie erf&#252;llt die Eigenschaften einer Dichte, denn \(\forall x\in \mathbb{R}\) gilt \(f(x)\ge0\) und es gilt zudem \(\int_{-\infty}^{\infty}f(x)\,dx = 1\).
+</p>
+[[jsxgraph]]
+                JXG.Options.text.useMathJax = true;
+
+    
+    
+    
+    //Farben:
+                const colorStrokes = "#2d72ad";
+                const colorIntegral = 'deeppink';
+
+    
+    
+    
+    //Variablen:
+                const a={#aa#};
+                const b={#bb#};
+                const aby=1/(b-a);
+
+    
+    
+    
+    var board = JXG.JSXGraph.initBoard(divid, {
+                                showNavigation:false,
+                                showCopyright:false,
+                                axis:true,
+                                boundingbox: [-5,5,5,-5],
+                                pan:{enabled:false},
+                                zoom:{enabled:false}
+                });
+
+    
+    
+    
+    //Eingegebene Funktion als JS-Funktion:
+                var gsnip = board.jc.snippet('{#float(ans1)#}', true, 'x', true);
+    
+        
+        
+        
+    // === Intervallgrenzen f&#252;r Boundingbox berechnen (y-Abschnitte) ===
+                var fwerte_y_liste=[];
+                for(let i=0; i&lt;=100; i++){
+                                fwerte_y_liste.push(gsnip(a + (b-a)/100*i));
+                };
+                fwerte_y_liste.sort(function(a, b){return a - b});
+                const min_y = fwerte_y_liste[0];
+                const max_y = fwerte_y_liste[fwerte_y_liste.length-1];
+
+    
+    
+    
+    var Intervall_y_Hilfsliste =  [ Math.abs(max_y-min_y), -min_y, max_y ];
+                Intervall_y_Hilfsliste.sort(function(a, b){return a - b});
+                var Intervall_y = Intervall_y_Hilfsliste[Intervall_y_Hilfsliste.length-1];
+
+    
+    
+    
+    var max_board_y_Hilfsliste = [2, max_y+0.4*Intervall_y, 0.2*Intervall_y];
+                max_board_y_Hilfsliste.sort(function(a, b){return a - b});
+                var max_board_y = max_board_y_Hilfsliste[max_board_y_Hilfsliste.length-1];
+
+    
+    
+    
+    var min_board_y_Hilfsliste = [-2, min_y-0.4*Intervall_y, -0.2*Intervall_y];
+                min_board_y_Hilfsliste.sort(function(a, b){return a - b});
+                var min_board_y = min_board_y_Hilfsliste[0];
+
+    
+    
+    
+    // === Intervallgrenzen f&#252;r Boundingbox berechnen (x-Abschnitte) ===
+                var Intervall_x_Hilfsliste = [-b,a,b-a];
+                Intervall_x_Hilfsliste.sort(function(a, b){return a - b});
+                var Intervall_x = Intervall_x_Hilfsliste[Intervall_x_Hilfsliste.length-1];
+
+    
+    
+    
+    var max_board_x_Hilfsliste = [0.2*Intervall_x, b+0.4*Intervall_x];
+                max_board_x_Hilfsliste.sort(function(a, b){return a - b});
+                var max_board_x = max_board_x_Hilfsliste[max_board_x_Hilfsliste.length-1];
+
+    
+    
+    
+    var min_board_x_Hilfsliste = [a-0.4*Intervall_x, -0.2*Intervall_x];
+                min_board_x_Hilfsliste.sort(function(a, b){return a - b});
+                var min_board_x = min_board_x_Hilfsliste[0];
+
+    
+    
+    
+    //Board zur&#252;cksetzen und mit neuer Boundingbox neu definieren:
+                JXG.JSXGraph.freeBoard(board);
+                board = JXG.JSXGraph.initBoard(divid, {
+                                showNavigation:false,
+                                showCopyright:false,
+                                axis:true,
+                                boundingbox: [min_board_x,max_board_y,max_board_x,min_board_y],
+                                pan:{enabled:false},
+                                zoom:{enabled:false}
+                });
+
+    
+    
+    
+    //Plot:
+                const lline = board.create('line',[[a-1,0],[a,0]],{
+                                straightLast:false,
+                                fixed:true,
+                                highlight:false,
+                                color:colorStrokes
+                });
+                const g = board.create('functiongraph',[gsnip,a,b],{
+                                strokeWidth:2,
+                                highlight:false,
+                                strokeColor:colorStrokes
+                }); 
+                const rline = board.create('line',[[b,0],[b+1,0]],{
+                                straightFirst:false,
+                                fixed:true,
+                                highlight:false,
+                                color:colorStrokes
+                });
+    
+        
+        
+        
+    //Integral:
+                const integral = board.create('integral',[[a,b],g],{
+                                curveLeft:{
+                                                fixed:true,
+                                                visible:false
+                                },
+                                curveRight:{
+                                                fixed:true,
+                                                visible:false
+                                },
+                                fillColor:colorIntegral,
+                                fillOpacity:0.2,
+                                label:{
+                                                color:colorIntegral,
+                                                highlight:false
+                                },
+                                highlight:false
+                });
+                integral.setLabel("&#8747; = "+ JXG._round10(integral.Value(),-2));
+
+    
+    
+    
+    //Punkte an der unteren Intervallgrenze (ggf. Sprungstelle):
+                if(gsnip(a)!==0){
+                                //Leerer Punkt auf der x-Achse:
+                                board.create('point',[a,0],{
+                                                fixed:true,
+                                                withLabel:false,
+                                                fillColor:'transparent',
+                                                strokeColor:colorStrokes,
+                                                highlight:false
+                                });
+                                //Gef&#252;llter Punkt am Graphen von g:
+                                board.create('point',[a,gsnip(a)],{
+                                                fixed:true,
+                                                withLabel:false,
+                                                fillColor:colorStrokes,
+                                                strokeColor:colorStrokes,
+                                                highlight:false
+                                });
+                };
+
+    
+    
+    
+    //Punkte an der oberen Intervallgrenze (ggf. Sprungstelle)::
+                if(gsnip(b)!==0){
+                                //Leerer Punkt auf der x-Achse
+                                board.create('point',[b,0],{
+                                                fixed:true,
+                                                withLabel:false,
+                                                fillColor:'transparent',
+                                                strokeColor:colorStrokes,
+                                                highlight:false
+                                });
+                                //Gef&#252;llter Punkt am Graphen von g
+                                board.create('point',[b,gsnip(b)],{
+                                                fixed:true,
+                                                withLabel:false,
+                                                fillColor:colorStrokes,
+                                                strokeColor:colorStrokes,
+                                                highlight:false
+                                });
+                };
+[[/jsxgraph]]
+<hr/>
+<p>
+    Herzlichen Gl&#252;ckwunsch, Sie sind am Ende der Aufgabe angelangt! Sie sollten nun eine abschnittsweise definierte Funktion so erg&#228;nzen k&#246;nnen, dass sie die Eigenschaften einer Dichtefunktion erf&#252;llt.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    In the following picture you will see the graph of the function \(f\), with the function specification \(f(x)= \begin{cases} {@ans1@}, \text{ wenn } {@aa@}\le x \le {@bb@} \\ 0, \text{ sonst}\end{cases} \) according to your answer.
+</p>
+<p>
+    It meets the properties of a density, because \(\forall x\in \mathbb{R}\) Date \(f(x)\ge0\) and also \(\int_{-\infty}^{\infty}f(x)\,dx = 1\).
+</p>
+[[jsxgraph]]
+                JXG.Options.text.useMathJax = true;
+
+    
+    
+    
+    //Farben:
+                const colorStrokes = "#2d72ad";
+                const colorIntegral = 'deeppink';
+
+    
+    
+    
+    //Variablen:
+                const a={#aa#};
+                const b={#bb#};
+                const aby=1/(b-a);
+
+    
+    
+    
+    var board = JXG.JSXGraph.initBoard(divid, {
+                                showNavigation:false,
+                                showCopyright:false,
+                                axis:true,
+                                boundingbox: [-5,5,5,-5],
+                                pan:{enabled:false},
+                                zoom:{enabled:false}
+                });
+
+    
+    
+    
+    //Eingegebene Funktion als JS-Funktion:
+                var gsnip = board.jc.snippet('{#float(ans1)#}', true, 'x', true);
+    
+        
+        
+        
+    // === Intervallgrenzen f&#252;r Boundingbox berechnen (y-Abschnitte) ===
+                var fwerte_y_liste=[];
+                for(let i=0; i&lt;=100; i++){
+                                fwerte_y_liste.push(gsnip(a + (b-a)/100*i));
+                };
+                fwerte_y_liste.sort(function(a, b){return a - b});
+                const min_y = fwerte_y_liste[0];
+                const max_y = fwerte_y_liste[fwerte_y_liste.length-1];
+
+    
+    
+    
+    var Intervall_y_Hilfsliste =  [ Math.abs(max_y-min_y), -min_y, max_y ];
+                Intervall_y_Hilfsliste.sort(function(a, b){return a - b});
+                var Intervall_y = Intervall_y_Hilfsliste[Intervall_y_Hilfsliste.length-1];
+
+    
+    
+    
+    var max_board_y_Hilfsliste = [2, max_y+0.4*Intervall_y, 0.2*Intervall_y];
+                max_board_y_Hilfsliste.sort(function(a, b){return a - b});
+                var max_board_y = max_board_y_Hilfsliste[max_board_y_Hilfsliste.length-1];
+
+    
+    
+    
+    var min_board_y_Hilfsliste = [-2, min_y-0.4*Intervall_y, -0.2*Intervall_y];
+                min_board_y_Hilfsliste.sort(function(a, b){return a - b});
+                var min_board_y = min_board_y_Hilfsliste[0];
+
+    
+    
+    
+    // === Intervallgrenzen f&#252;r Boundingbox berechnen (x-Abschnitte) ===
+                var Intervall_x_Hilfsliste = [-b,a,b-a];
+                Intervall_x_Hilfsliste.sort(function(a, b){return a - b});
+                var Intervall_x = Intervall_x_Hilfsliste[Intervall_x_Hilfsliste.length-1];
+
+    
+    
+    
+    var max_board_x_Hilfsliste = [0.2*Intervall_x, b+0.4*Intervall_x];
+                max_board_x_Hilfsliste.sort(function(a, b){return a - b});
+                var max_board_x = max_board_x_Hilfsliste[max_board_x_Hilfsliste.length-1];
+
+    
+    
+    
+    var min_board_x_Hilfsliste = [a-0.4*Intervall_x, -0.2*Intervall_x];
+                min_board_x_Hilfsliste.sort(function(a, b){return a - b});
+                var min_board_x = min_board_x_Hilfsliste[0];
+
+    
+    
+    
+    //Board zur&#252;cksetzen und mit neuer Boundingbox neu definieren:
+                JXG.JSXGraph.freeBoard(board);
+                board = JXG.JSXGraph.initBoard(divid, {
+                                showNavigation:false,
+                                showCopyright:false,
+                                axis:true,
+                                boundingbox: [min_board_x,max_board_y,max_board_x,min_board_y],
+                                pan:{enabled:false},
+                                zoom:{enabled:false}
+                });
+
+    
+    
+    
+    //Plot:
+                const lline = board.create('line',[[a-1,0],[a,0]],{
+                                straightLast:false,
+                                fixed:true,
+                                highlight:false,
+                                color:colorStrokes
+                });
+                const g = board.create('functiongraph',[gsnip,a,b],{
+                                strokeWidth:2,
+                                highlight:false,
+                                strokeColor:colorStrokes
+                }); 
+                const rline = board.create('line',[[b,0],[b+1,0]],{
+                                straightFirst:false,
+                                fixed:true,
+                                highlight:false,
+                                color:colorStrokes
+                });
+    
+        
+        
+        
+    //Integral:
+                const integral = board.create('integral',[[a,b],g],{
+                                curveLeft:{
+                                                fixed:true,
+                                                visible:false
+                                },
+                                curveRight:{
+                                                fixed:true,
+                                                visible:false
+                                },
+                                fillColor:colorIntegral,
+                                fillOpacity:0.2,
+                                label:{
+                                                color:colorIntegral,
+                                                highlight:false
+                                },
+                                highlight:false
+                });
+                integral.setLabel("&#8747; = "+ JXG._round10(integral.Value(),-2));
+
+    
+    
+    
+    //Punkte an der unteren Intervallgrenze (ggf. Sprungstelle):
+                if(gsnip(a)!==0){
+                                //Leerer Punkt auf der x-Achse:
+                                board.create('point',[a,0],{
+                                                fixed:true,
+                                                withLabel:false,
+                                                fillColor:'transparent',
+                                                strokeColor:colorStrokes,
+                                                highlight:false
+                                });
+                                //Gef&#252;llter Punkt am Graphen von g:
+                                board.create('point',[a,gsnip(a)],{
+                                                fixed:true,
+                                                withLabel:false,
+                                                fillColor:colorStrokes,
+                                                strokeColor:colorStrokes,
+                                                highlight:false
+                                });
+                };
+
+    
+    
+    
+    //Punkte an der oberen Intervallgrenze (ggf. Sprungstelle)::
+                if(gsnip(b)!==0){
+                                //Leerer Punkt auf der x-Achse
+                                board.create('point',[b,0],{
+                                                fixed:true,
+                                                withLabel:false,
+                                                fillColor:'transparent',
+                                                strokeColor:colorStrokes,
+                                                highlight:false
+                                });
+                                //Gef&#252;llter Punkt am Graphen von g
+                                board.create('point',[b,gsnip(b)],{
+                                                fixed:true,
+                                                withLabel:false,
+                                                fillColor:colorStrokes,
+                                                strokeColor:colorStrokes,
+                                                highlight:false
+                                });
+                };
+[[/jsxgraph]]
+<hr/>
+<p>
+    Congratulations, you have reached the end of the task! They should now be able to supplement a sectionally defined function in such a way that it meets the properties of a density function.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>prt1-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    In der folgenden Abbildung sehen Sie den Graphen der Funktion \(f\), mit der Funktionsvorschrift \(f(x)= \begin{cases}
+{@ans1@}, \text{ wenn } {@aa@}\le x \le {@bb@} \\ 0, \text{ sonst}\end{cases} \) gem&#228;&#223; Ihrer Antwort.
+</p>
+<div id="oer-aufgabe-26_grafik_f">
+    [[jsxgraph]]
+                JXG.Options.text.useMathJax = true;
+
+    
+    
+    
+    //Farben:
+                const colorStrokes = "#2d72ad";
+                const colorIntegral = 'deeppink';
+    
+        
+        
+        
+    //Variablen:
+                const a={#aa#};
+                const b={#bb#};
+                const aby=1/(b-a);
+
+    
+    
+    
+    var board = JXG.JSXGraph.initBoard(divid, {
+                                showNavigation:false,
+                                showCopyright:false,
+                                axis:true,
+                                boundingbox: [-5,5,5,-5],
+                                pan:{enabled:false},
+                                zoom:{enabled:false}
+                });
+
+    
+    
+    
+    //Eingegebene Funktion als JS-Funktion:
+                var gsnip = board.jc.snippet('{#float(ans1)#}', true, 'x', true);
+
+    
+    
+    
+    // === Intervallgrenzen f&#252;r Boundingbox berechnen (y-Abschnitte) ===
+                var fwerte_y_liste=[];
+
+    
+    
+    
+    for(let i=0; i&lt;=100; i++){
+                                fwerte_y_liste.push(gsnip(a + (b-a)/100*i));
+                };
+                fwerte_y_liste.sort(function(a, b){return a - b});
+                const min_y = fwerte_y_liste[0];
+                const max_y = fwerte_y_liste[fwerte_y_liste.length-1];
+    
+        
+        
+        
+    var Intervall_y_Hilfsliste =  [ Math.abs(max_y-min_y), -min_y, max_y ];
+                Intervall_y_Hilfsliste.sort(function(a, b){return a - b});
+                var Intervall_y = Intervall_y_Hilfsliste[Intervall_y_Hilfsliste.length-1];
+
+    
+    
+    
+    var max_board_y_Hilfsliste = [2, max_y+0.4*Intervall_y, 0.2*Intervall_y];
+                max_board_y_Hilfsliste.sort(function(a, b){return a - b});
+                var max_board_y = max_board_y_Hilfsliste[max_board_y_Hilfsliste.length-1];
+
+    
+    
+    
+    var min_board_y_Hilfsliste = [-2, min_y-0.4*Intervall_y, -0.2*Intervall_y];
+                min_board_y_Hilfsliste.sort(function(a, b){return a - b});
+                var min_board_y = min_board_y_Hilfsliste[0];
+
+    
+    
+    
+    // === Intervallgrenzen f&#252;r Boundingbox berechnen (x-Abschnitte) ===
+                var Intervall_x_Hilfsliste = [-b,a,b-a];
+                Intervall_x_Hilfsliste.sort(function(a, b){return a - b});
+                var Intervall_x = Intervall_x_Hilfsliste[Intervall_x_Hilfsliste.length-1];
+
+    
+    
+    
+    var max_board_x_Hilfsliste = [0.2*Intervall_x, b+0.4*Intervall_x];
+                max_board_x_Hilfsliste.sort(function(a, b){return a - b});
+                var max_board_x = max_board_x_Hilfsliste[max_board_x_Hilfsliste.length-1];
+
+    
+    
+    
+    var min_board_x_Hilfsliste = [a-0.4*Intervall_x, -0.2*Intervall_x];
+                min_board_x_Hilfsliste.sort(function(a, b){return a - b});
+                var min_board_x = min_board_x_Hilfsliste[0];
+
+    
+    
+    
+    //Board zur&#252;cksetzen und mit neuer Boundingbox neu definieren:
+                JXG.JSXGraph.freeBoard(board);
+                board = JXG.JSXGraph.initBoard(divid, {
+                                showNavigation:false,
+                                showCopyright:false,
+                                axis:true,
+                                boundingbox: [min_board_x,max_board_y,max_board_x,min_board_y],
+                                pan:{enabled:false},
+                                zoom:{enabled:false}
+                });
+
+    
+    
+    
+    //Plot:
+                const lline = board.create('line',[[a-1,0],[a,0]],{
+                                straightLast:false,
+                                fixed:true,
+                                highlight:false,
+                                color:colorStrokes
+                });
+                const g = board.create('functiongraph',[gsnip,a,b],{
+                                strokeWidth:2,
+                                highlight:false,
+                                strokeColor:colorStrokes
+                }); 
+                const rline = board.create('line',[[b,0],[b+1,0]],{
+                                straightFirst:false,
+                                fixed:true,
+                                highlight:false,
+                                color:colorStrokes
+                });
+
+    
+    
+    
+    //Integral:
+                const integral = board.create('integral',[[a,b],g],{
+                                curveLeft:{
+                                                fixed:true,
+                                                visible:false
+                                },
+                                curveRight:{
+                                                fixed:true,
+                                                visible:false
+                                },
+                                fillColor:colorIntegral,
+                                fillOpacity:0.2,
+                                label:{
+                                                color:colorIntegral,
+                                                highlight:false
+                                },
+                                highlight:false
+                });
+                integral.setLabel("&#8747; = "+ JXG._round10(integral.Value(),-2));
+
+    
+    
+    
+    //Punkte an der unteren Intervallgrenze (ggf. Sprungstelle):
+                if(gsnip(a)!==0){
+                                //Leerer Punkt auf der x-Achse
+                                board.create('point',[a,0],{
+                                                fixed:true,
+                                                withLabel:false,
+                                                fillColor:'transparent',
+                                                strokeColor:colorStrokes,
+                                                highlight:false
+                                });
+                                //Gef&#252;llter Punkt am Graphen von g
+                                board.create('point',[a,gsnip(a)],{
+                                                fixed:true,
+                                                withLabel:false,
+                                                fillColor:colorStrokes,
+                                                strokeColor:colorStrokes,
+                                                highlight:false
+                                });
+        
+            
+            
+            
+    };
+
+    
+    
+    
+    //Punkte an der oberen Intervallgrenze (ggf. Sprungstelle):
+                if(gsnip(b)!==0){
+                                //Leerer Punkt auf der x-Achse
+                                board.create('point',[b,0],{
+                                                fixed:true,
+                                                withLabel:false,
+                                                fillColor:'transparent',
+                                                strokeColor:colorStrokes,
+                                                highlight:false
+                                });
+                                //Gef&#252;llter Punkt am Graphen von g
+                                board.create('point',[b,gsnip(b)],{
+                                                fixed:true,
+                                                withLabel:false,
+                                                fillColor:colorStrokes,
+                                                strokeColor:colorStrokes,
+                                                highlight:false
+                                });
+                };
+[[/jsxgraph]]
+</div>
+[[/lang]][[lang code="en"]]
+<p>
+    In the following picture you will see the graph of the function \(f\), with the function specification \(f(x)= \begin{cases}
+{@ans1@}, \text{ wenn } {@aa@}\le x \le {@bb@} \\ 0, \text{ sonst}\end{cases} \) according to your answer.
+</p>
+<div id="oer-aufgabe-26_grafik_f">
+    [[jsxgraph]]
+                JXG.Options.text.useMathJax = true;
+
+    
+    
+    
+    //Farben:
+                const colorStrokes = "#2d72ad";
+                const colorIntegral = 'deeppink';
+    
+        
+        
+        
+    //Variablen:
+                const a={#aa#};
+                const b={#bb#};
+                const aby=1/(b-a);
+
+    
+    
+    
+    var board = JXG.JSXGraph.initBoard(divid, {
+                                showNavigation:false,
+                                showCopyright:false,
+                                axis:true,
+                                boundingbox: [-5,5,5,-5],
+                                pan:{enabled:false},
+                                zoom:{enabled:false}
+                });
+
+    
+    
+    
+    //Eingegebene Funktion als JS-Funktion:
+                var gsnip = board.jc.snippet('{#float(ans1)#}', true, 'x', true);
+
+    
+    
+    
+    // === Intervallgrenzen f&#252;r Boundingbox berechnen (y-Abschnitte) ===
+                var fwerte_y_liste=[];
+
+    
+    
+    
+    for(let i=0; i&lt;=100; i++){
+                                fwerte_y_liste.push(gsnip(a + (b-a)/100*i));
+                };
+                fwerte_y_liste.sort(function(a, b){return a - b});
+                const min_y = fwerte_y_liste[0];
+                const max_y = fwerte_y_liste[fwerte_y_liste.length-1];
+    
+        
+        
+        
+    var Intervall_y_Hilfsliste =  [ Math.abs(max_y-min_y), -min_y, max_y ];
+                Intervall_y_Hilfsliste.sort(function(a, b){return a - b});
+                var Intervall_y = Intervall_y_Hilfsliste[Intervall_y_Hilfsliste.length-1];
+
+    
+    
+    
+    var max_board_y_Hilfsliste = [2, max_y+0.4*Intervall_y, 0.2*Intervall_y];
+                max_board_y_Hilfsliste.sort(function(a, b){return a - b});
+                var max_board_y = max_board_y_Hilfsliste[max_board_y_Hilfsliste.length-1];
+
+    
+    
+    
+    var min_board_y_Hilfsliste = [-2, min_y-0.4*Intervall_y, -0.2*Intervall_y];
+                min_board_y_Hilfsliste.sort(function(a, b){return a - b});
+                var min_board_y = min_board_y_Hilfsliste[0];
+
+    
+    
+    
+    // === Intervallgrenzen f&#252;r Boundingbox berechnen (x-Abschnitte) ===
+                var Intervall_x_Hilfsliste = [-b,a,b-a];
+                Intervall_x_Hilfsliste.sort(function(a, b){return a - b});
+                var Intervall_x = Intervall_x_Hilfsliste[Intervall_x_Hilfsliste.length-1];
+
+    
+    
+    
+    var max_board_x_Hilfsliste = [0.2*Intervall_x, b+0.4*Intervall_x];
+                max_board_x_Hilfsliste.sort(function(a, b){return a - b});
+                var max_board_x = max_board_x_Hilfsliste[max_board_x_Hilfsliste.length-1];
+
+    
+    
+    
+    var min_board_x_Hilfsliste = [a-0.4*Intervall_x, -0.2*Intervall_x];
+                min_board_x_Hilfsliste.sort(function(a, b){return a - b});
+                var min_board_x = min_board_x_Hilfsliste[0];
+
+    
+    
+    
+    //Board zur&#252;cksetzen und mit neuer Boundingbox neu definieren:
+                JXG.JSXGraph.freeBoard(board);
+                board = JXG.JSXGraph.initBoard(divid, {
+                                showNavigation:false,
+                                showCopyright:false,
+                                axis:true,
+                                boundingbox: [min_board_x,max_board_y,max_board_x,min_board_y],
+                                pan:{enabled:false},
+                                zoom:{enabled:false}
+                });
+
+    
+    
+    
+    //Plot:
+                const lline = board.create('line',[[a-1,0],[a,0]],{
+                                straightLast:false,
+                                fixed:true,
+                                highlight:false,
+                                color:colorStrokes
+                });
+                const g = board.create('functiongraph',[gsnip,a,b],{
+                                strokeWidth:2,
+                                highlight:false,
+                                strokeColor:colorStrokes
+                }); 
+                const rline = board.create('line',[[b,0],[b+1,0]],{
+                                straightFirst:false,
+                                fixed:true,
+                                highlight:false,
+                                color:colorStrokes
+                });
+
+    
+    
+    
+    //Integral:
+                const integral = board.create('integral',[[a,b],g],{
+                                curveLeft:{
+                                                fixed:true,
+                                                visible:false
+                                },
+                                curveRight:{
+                                                fixed:true,
+                                                visible:false
+                                },
+                                fillColor:colorIntegral,
+                                fillOpacity:0.2,
+                                label:{
+                                                color:colorIntegral,
+                                                highlight:false
+                                },
+                                highlight:false
+                });
+                integral.setLabel("&#8747; = "+ JXG._round10(integral.Value(),-2));
+
+    
+    
+    
+    //Punkte an der unteren Intervallgrenze (ggf. Sprungstelle):
+                if(gsnip(a)!==0){
+                                //Leerer Punkt auf der x-Achse
+                                board.create('point',[a,0],{
+                                                fixed:true,
+                                                withLabel:false,
+                                                fillColor:'transparent',
+                                                strokeColor:colorStrokes,
+                                                highlight:false
+                                });
+                                //Gef&#252;llter Punkt am Graphen von g
+                                board.create('point',[a,gsnip(a)],{
+                                                fixed:true,
+                                                withLabel:false,
+                                                fillColor:colorStrokes,
+                                                strokeColor:colorStrokes,
+                                                highlight:false
+                                });
+        
+            
+            
+            
+    };
+
+    
+    
+    
+    //Punkte an der oberen Intervallgrenze (ggf. Sprungstelle):
+                if(gsnip(b)!==0){
+                                //Leerer Punkt auf der x-Achse
+                                board.create('point',[b,0],{
+                                                fixed:true,
+                                                withLabel:false,
+                                                fillColor:'transparent',
+                                                strokeColor:colorStrokes,
+                                                highlight:false
+                                });
+                                //Gef&#252;llter Punkt am Graphen von g
+                                board.create('point',[b,gsnip(b)],{
+                                                fixed:true,
+                                                withLabel:false,
+                                                fillColor:colorStrokes,
+                                                strokeColor:colorStrokes,
+                                                highlight:false
+                                });
+                };
+[[/jsxgraph]]
+</div>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>state</sans>
+                <tans>EMPTYANSWER</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]][[ comment ]] Weiter-Button (Anfang) [[/ comment ]]
+<div id="oer-aufgabe-26_ans1_buttonweiter">
+    <br/>
+    <p>
+        Bitte klicken Sie zum Fortfahren auf den folgenden Button:
+        <button class="buttonweiter" onclick="
+                                show('oer-aufgabe-26_mc');
+                                hide('oer-aufgabe-26_input-ans1');
+                                hide('oer-aufgabe-26_aufgabenstellung');
+                                show('oer-aufgabe-26_erinnerungsbox');
+                                hide('oer-aufgabe-26_ans1_aufforderung');
+                                document.querySelector('#oer-aufgabe-26_state &gt; input').value='1';
+                                window.location.href='#oer-aufgabe-26_mc';
+                                hide('oer-aufgabe-26_ans1_buttonweiter');
+                                " type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<script>
+    window.onload = function(){
+                                hide('oer-aufgabe-26_input-ans1');
+                }
+</script>
+[[/lang]][[lang code="en"]][[ comment ]] Further button (beginning) [[/ comment ]]
+<div id="oer-aufgabe-26_ans1_buttonweiter">
+    <br/>
+    <p>
+        Please click on the following button to continue:
+        <button class="buttonweiter" onclick="
+                                show('oer-aufgabe-26_mc');
+                                hide('oer-aufgabe-26_input-ans1');
+                                hide('oer-aufgabe-26_aufgabenstellung');
+                                show('oer-aufgabe-26_erinnerungsbox');
+                                hide('oer-aufgabe-26_ans1_aufforderung');
+                                document.querySelector('#oer-aufgabe-26_state &gt; input').value='1';
+                                window.location.href='#oer-aufgabe-26_mc';
+                                hide('oer-aufgabe-26_ans1_buttonweiter');
+                                " type="button">
+            Next
+        </button>
+    </p>
+</div>
+<script>
+    window.onload = function(){
+                                hide('oer-aufgabe-26_input-ans1');
+                }
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]][[ if test='is(state=2)' ]]
+[[ comment ]] Aufforderung zur erneuten Bearbeitung, weil erneut falsch beantwortet [[/ comment ]]
+<p>
+    Bitte versuchen Sie es erneut und klicken Sie dann auf "Pr&#252;fen".
+</p>
+<p>
+    Zur Erinnerung: Um die Eigenschaften einer Dichtefunktion zu erf&#252;llen, muss eine Funktion auf dem gesamten Definitionsbereich nichtnegativ sein und es muss \( \int_{-\infty}^{\infty} f(x)\, dx = 1 \) gelten.
+</p>
+<p>
+    F&#252;r diese Aufgabe bedeutet das: Da \(f\) au&#223;erhalb des Intervalls \(\left[ {@aa@},{@bb@} \right]\) null ist, muss \( \int_{{@aa@}}^{{@bb@}} g(x)\, dx = 1 \) gelten.
+</p>
+[[/ if ]]
+[[ comment ]] Sonst: kein weiteres Feedback, weil gerade erst aus MC-Teil raus [[/ comment ]][[/lang]][[lang code="en"]][[ if test='is(state=2)' ]][[ comment ]] Invitation to reprocess because again incorrectly answered [[/ comment ]]
+<p>
+    Please try again and then click "Check".
+</p>
+<p>
+    To remember: In order to fulfill the properties of a density function, a function must be non-negative throughout the definition range and it must \( \int_{-\infty}^{\infty} f(x)\, dx = 1 \) apply.
+</p>
+<p>
+    For this task, this means: \(f\) outside the interval \(\left[ {@aa@},{@bb@} \right]\) is zero, must \( \int_{{@aa@}}^{{@bb@}} g(x)\, dx = 1 \) apply.
+</p>
+[[/ if ]][[ comment ]] Otherwise: no further feedback because just out of MC part [[/ comment ]][[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1035488150</deployedseed>
+        <deployedseed>595940963</deployedseed>
+        <deployedseed>282680313</deployedseed>
+        <deployedseed>75654699</deployedseed>
+        <deployedseed>159499291</deployedseed>
+        <deployedseed>738826493</deployedseed>
+        <deployedseed>41362291</deployedseed>
+        <deployedseed>1961987483</deployedseed>
+        <deployedseed>47246737</deployedseed>
+        <deployedseed>974865384</deployedseed>
+        <deployedseed>1634186337</deployedseed>
+        <deployedseed>788922526</deployedseed>
+        <deployedseed>1759129411</deployedseed>
+        <deployedseed>1239768680</deployedseed>
+        <deployedseed>1280057423</deployedseed>
+        <deployedseed>155539940</deployedseed>
+        <deployedseed>533042252</deployedseed>
+        <deployedseed>1075730561</deployedseed>
+        <deployedseed>2020189722</deployedseed>
+        <deployedseed>979191069</deployedseed>
+        <deployedseed>836326524</deployedseed>
+        <deployedseed>1978448983</deployedseed>
+        <deployedseed>600956686</deployedseed>
+        <deployedseed>1496541010</deployedseed>
+        <deployedseed>1535162018</deployedseed>
+        <deployedseed>1711127685</deployedseed>
+        <deployedseed>160939106</deployedseed>
+        <deployedseed>928119846</deployedseed>
+        <deployedseed>1098146612</deployedseed>
+        <deployedseed>1337791253</deployedseed>
+        <deployedseed>2114198013</deployedseed>
+        <deployedseed>829811244</deployedseed>
+        <deployedseed>1413243056</deployedseed>
+        <deployedseed>1866944543</deployedseed>
+        <deployedseed>1872901973</deployedseed>
+        <deployedseed>1039966946</deployedseed>
+        <deployedseed>1250332115</deployedseed>
+        <deployedseed>538525915</deployedseed>
+        <deployedseed>353560704</deployedseed>
+        <deployedseed>52500723</deployedseed>
+        <deployedseed>1421181969</deployedseed>
+        <deployedseed>1932962231</deployedseed>
+        <deployedseed>141899870</deployedseed>
+        <deployedseed>584184251</deployedseed>
+        <deployedseed>1255089409</deployedseed>
+        <deployedseed>1803060505</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <description/>
+            <testinput>
+                <name>ans_mc</name>
+                <value>mcq_correct(Liste_mc)</value>
+            </testinput>
+            <testinput>
+                <name>ans_mc_dichte</name>
+                <value>mcq_correct(Liste_mc_2)</value>
+            </testinput>
+            <testinput>
+                <name>ans1</name>
+                <value>ta1</value>
+            </testinput>
+            <testinput>
+                <name>state</name>
+                <value>0</value>
+            </testinput>
+            <expected>
+                <name>ans_mc</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>ans_mc-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>ans_mc_dichte</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>ans_mc_dichte-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-5-T</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

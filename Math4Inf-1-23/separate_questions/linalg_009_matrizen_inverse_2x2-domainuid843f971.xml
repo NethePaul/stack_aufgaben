@@ -6,124 +6,122 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Bestimmen Sie die inverse Matrix zu \(\mathbf{M} = {@M@}\).
-    </p>
-    <p>
-    </p>
-    <span style="font-size: 0.9375rem;">
-        \(\mathbf{M}^{-1} = \) [[input:ans1]] [[validation:ans1]]
-    </span>
-    <br/>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
+[[lang code="de"]]
+<p>
+    Bestimmen Sie die inverse Matrix zu \(\mathbf{M} = {@M@}\).
+</p>
+<p>
+</p>
+<span style="font-size: 0.9375rem;">
+    \(\mathbf{M}^{-1} = \) [[/lang]][[lang code="en"]]
     <p>
         Determine the inverse matrix \(\mathbf{M} = {@M@}\).
     </p>
     <p>
     </p>
     <span style="font-size: 0.9375rem;">
-        \(\mathbf{M}^{-1} = \) [[input:ans1]] [[validation:ans1]]
+        \(\mathbf{M}^{-1} = \) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
     </span>
     <br/>
     <p>
     </p>
+    [[/lang]][[lang code="en"]]
 </span>
+<br/>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p dir="ltr" style="text-align: left;">
-        <strong>
-            L&#246;sungsweg:
-        </strong>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        Man kann die inverse Matrix \(\mathbf{M}^{-1}\) z.B. mit Hilfe der&#160;Unterdeterminanten-Methode bestimmen.
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        (1) Berechnung der Determinante der urspr&#252;nglichen Matrix \(\mathbf{M}\).
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        \(\det(\mathbf{M}) = {@M[1][1]@} \cdot ({@M[2][2]@}) - ({@M[2][1]@}) \cdot ({@M[1][2]@})\) \(= {@M[1][1]*M[2][2]@} - ({@M[2][1]*M[1][2]@})\) \(= {@determinant(M)@}\)
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        (2) Bestimmung aller Unterdeterminanten&#160;der urspr&#252;nglichen Matrix \(\mathbf{M}\).
-    </p>
-    <p dir="ltr" style="text-align: left;">
-    </p>
-    <ul>
-        <li>
-            \(M_{11} = (-1)^{1+1} \cdot&#160;({@M[2][2]@}) = {@M[2][2]@}\)
-        </li>
-        <li>
-            \(M_{12} = (-1)^{1+2} \cdot&#160;({@M[2][1]@}) = {@-M[2][1]@}\)
-        </li>
-        <li>
-            \(M_{21} = (-1)^{2+1} \cdot&#160;({@M[1][2]@}) = {@-M[1][2]@}\)
-        </li>
-        <li>
-            \(M_{22} = (-1)^{2+2} \cdot&#160;({@M[1][1]@}) = {@M[1][1]@}\)
-        </li>
-    </ul>
-    <p>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        (3) Bestimmung der gesuchten&#160;inversen Matrix \(\mathbf{M}^{-1}\).
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        \(\mathbf{M}^{-1} = \dfrac{1}{{@determinant(M)@}} \cdot {@Trans@}^T\) \(= {@1/determinant(M)@} \cdot {@TransT@}\) \(={@LSG@}\)
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p dir="ltr" style="text-align: left;">
-        <strong>
-            Solution:
-        </strong>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        You can use the inverse matrix \(\mathbf{M}^{-1}\) e.g. by means of the subdeterminant method.
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        (1) Calculation of the determinant of the original matrix \(\mathbf{M}\).
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        \(\det(\mathbf{M}) = {@M[1][1]@} \cdot ({@M[2][2]@}) - ({@M[2][1]@}) \cdot ({@M[1][2]@})\) \(= {@M[1][1]*M[2][2]@} - ({@M[2][1]*M[1][2]@})\) \(= {@determinant(M)@}\)
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        (2) Determination of all subdeterminants of the original matrix \(\mathbf{M}\).
-    </p>
-    <p dir="ltr" style="text-align: left;">
-    </p>
-    <ul>
-        <li>
-            \(M_{11} = (-1)^{1+1} \cdot&#160;({@M[2][2]@}) = {@M[2][2]@}\)
-        </li>
-        <li>
-            \(M_{12} = (-1)^{1+2} \cdot&#160;({@M[2][1]@}) = {@-M[2][1]@}\)
-        </li>
-        <li>
-            \(M_{21} = (-1)^{2+1} \cdot&#160;({@M[1][2]@}) = {@-M[1][2]@}\)
-        </li>
-        <li>
-            \(M_{22} = (-1)^{2+2} \cdot&#160;({@M[1][1]@}) = {@M[1][1]@}\)
-        </li>
-    </ul>
-    <p>
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        (3) Determination of the sought inverse matrix \(\mathbf{M}^{-1}\).
-    </p>
-    <p dir="ltr" style="text-align: left;">
-        \(\mathbf{M}^{-1} = \dfrac{1}{{@determinant(M)@}} \cdot {@Trans@}^T\) \(= {@1/determinant(M)@} \cdot {@TransT@}\) \(={@LSG@}\)
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p dir="ltr" style="text-align: left;">
+    <strong>
+        L&#246;sungsweg:
+    </strong>
+</p>
+<p dir="ltr" style="text-align: left;">
+    Man kann die inverse Matrix \(\mathbf{M}^{-1}\) z.B. mit Hilfe der&#160;Unterdeterminanten-Methode bestimmen.
+</p>
+<p dir="ltr" style="text-align: left;">
+    (1) Berechnung der Determinante der urspr&#252;nglichen Matrix \(\mathbf{M}\).
+</p>
+<p dir="ltr" style="text-align: left;">
+    \(\det(\mathbf{M}) = {@M[1][1]@} \cdot ({@M[2][2]@}) - ({@M[2][1]@}) \cdot ({@M[1][2]@})\) \(= {@M[1][1]*M[2][2]@} - ({@M[2][1]*M[1][2]@})\) \(= {@determinant(M)@}\)
+</p>
+<p dir="ltr" style="text-align: left;">
+    (2) Bestimmung aller Unterdeterminanten&#160;der urspr&#252;nglichen Matrix \(\mathbf{M}\).
+</p>
+<p dir="ltr" style="text-align: left;">
+</p>
+<ul>
+    <li>
+        \(M_{11} = (-1)^{1+1} \cdot&#160;({@M[2][2]@}) = {@M[2][2]@}\)
+    </li>
+    <li>
+        \(M_{12} = (-1)^{1+2} \cdot&#160;({@M[2][1]@}) = {@-M[2][1]@}\)
+    </li>
+    <li>
+        \(M_{21} = (-1)^{2+1} \cdot&#160;({@M[1][2]@}) = {@-M[1][2]@}\)
+    </li>
+    <li>
+        \(M_{22} = (-1)^{2+2} \cdot&#160;({@M[1][1]@}) = {@M[1][1]@}\)
+    </li>
+</ul>
+<p>
+</p>
+<p dir="ltr" style="text-align: left;">
+    (3) Bestimmung der gesuchten&#160;inversen Matrix \(\mathbf{M}^{-1}\).
+</p>
+<p dir="ltr" style="text-align: left;">
+    \(\mathbf{M}^{-1} = \dfrac{1}{{@determinant(M)@}} \cdot {@Trans@}^T\) \(= {@1/determinant(M)@} \cdot {@TransT@}\) \(={@LSG@}\)
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p dir="ltr" style="text-align: left;">
+    <strong>
+        Solution:
+    </strong>
+</p>
+<p dir="ltr" style="text-align: left;">
+    You can use the inverse matrix \(\mathbf{M}^{-1}\) e.g. by means of the subdeterminant method.
+</p>
+<p dir="ltr" style="text-align: left;">
+    (1) Calculation of the determinant of the original matrix \(\mathbf{M}\).
+</p>
+<p dir="ltr" style="text-align: left;">
+    \(\det(\mathbf{M}) = {@M[1][1]@} \cdot ({@M[2][2]@}) - ({@M[2][1]@}) \cdot ({@M[1][2]@})\) \(= {@M[1][1]*M[2][2]@} - ({@M[2][1]*M[1][2]@})\) \(= {@determinant(M)@}\)
+</p>
+<p dir="ltr" style="text-align: left;">
+    (2) Determination of all subdeterminants of the original matrix \(\mathbf{M}\).
+</p>
+<p dir="ltr" style="text-align: left;">
+</p>
+<ul>
+    <li>
+        \(M_{11} = (-1)^{1+1} \cdot&#160;({@M[2][2]@}) = {@M[2][2]@}\)
+    </li>
+    <li>
+        \(M_{12} = (-1)^{1+2} \cdot&#160;({@M[2][1]@}) = {@-M[2][1]@}\)
+    </li>
+    <li>
+        \(M_{21} = (-1)^{2+1} \cdot&#160;({@M[1][2]@}) = {@-M[1][2]@}\)
+    </li>
+    <li>
+        \(M_{22} = (-1)^{2+2} \cdot&#160;({@M[1][1]@}) = {@M[1][1]@}\)
+    </li>
+</ul>
+<p>
+</p>
+<p dir="ltr" style="text-align: left;">
+    (3) Determination of the sought inverse matrix \(\mathbf{M}^{-1}\).
+</p>
+<p dir="ltr" style="text-align: left;">
+    \(\mathbf{M}^{-1} = \dfrac{1}{{@determinant(M)@}} \cdot {@Trans@}^T\) \(= {@1/determinant(M)@} \cdot {@TransT@}\) \(={@LSG@}\)
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -148,12 +146,7 @@ TransT:transpose(Trans);</text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    [[feedback:prt1]]
-</span>
-<span class="multilang" lang="en">
-    [[feedback:prt1]]
-</span>
+[[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -167,56 +160,47 @@ TransT:transpose(Trans);</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Richtig.
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    Right.
+Richtig.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
+Right.[[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-adjust">
-        </i>
-    </span>
-    Teilweise richtig.
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-adjust">
-        </i>
-    </span>
-    Partly right.
+Teilweise richtig.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
 </span>
+Partly right.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Falsch.
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    Wrong.
+Falsch.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
+Wrong.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -270,16 +254,15 @@ I:matrix([1,0],[0,1]);</text>
                 <trueanswernote>prt1-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Korrekt!
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Correct!
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Korrekt!
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Correct!
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -289,22 +272,21 @@ I:matrix([1,0],[0,1]);</text>
                 <falseanswernote>prt1-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Matrix \({@ans1@}\) ist nicht die Inverse von \({@M@}\), denn
-    </p>
-    <p>
-        \({@ans1@} \cdot {@M@} = {@N@} \neq {@I@} \).
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The matrix \({@ans1@}\) is not the inverse of \({@M@}\)for
-    </p>
-    <p>
-        \({@ans1@} \cdot {@M@} = {@N@} \neq {@I@} \).
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Matrix \({@ans1@}\) ist nicht die Inverse von \({@M@}\), denn
+</p>
+<p>
+    \({@ans1@} \cdot {@M@} = {@N@} \neq {@I@} \).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The matrix \({@ans1@}\) is not the inverse of \({@M@}\)for
+</p>
+<p>
+    \({@ans1@} \cdot {@M@} = {@N@} \neq {@I@} \).
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>

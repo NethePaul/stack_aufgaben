@@ -1,0 +1,1500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>IQ-Stichprobe</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<style>
+    .prev-answers {
+                        border: 1px solid gray;
+                        border-radius: 10px;
+                        padding: 5px;
+                        display: none;
+        }
+</style>
+<p>
+    Tests f&#252;r den Intelligenzquotienten (
+    <abbr>
+        IQ
+    </abbr>
+    ) sind immer so
+konstruiert, dass die Ergebnisse f&#252;r eine repr&#228;sentative Stichprobe der
+Bev&#246;lkerung normalverteilt mit Erwartungswert {@mu[0] = mean @} und
+Standardabweichung {@sigma = sd @} sind.
+</p>
+<p>
+    Sie f&#252;hren eine Studie mit {@ n = sampleSize @} Personen durch
+und erhalten die folgenden Daten
+</p>
+<p>
+    \[X=\left(X_1,\, \ldots,\, X_{15}\right)={@data@}.\]
+</p>
+<p>
+    Sie fragen sich, ob Ihre Stichprobe sich im
+    <abbr>
+        IQ
+    </abbr>
+    signifikant von der Population unterscheidet. F&#252;hren Sie dazu einen
+Hypothesentest zum Niveau {@ alpha = sigLevel @} durch.
+</p>
+<div class="row">
+    <div class="question-view col-7">
+        <div class="prev-answers" id="28d5ca6a-80db-4109-a565-56af793f2c42">
+        </div>
+        <div class="question-view">
+            <p>
+                a) Welche Hypothese und welche Alternative sollen untersucht werden?
+            </p>
+            <p>
+                [[/lang]][[lang code="en"]]
+                <style>
+                    .prev-answers {
+                        border: 1px solid gray;
+                        border-radius: 10px;
+                        padding: 5px;
+                        display: none;
+        }
+                </style>
+                <p>
+                    Tests for the intelligence quotient (
+                    <abbr>
+                        IQ
+                    </abbr>
+                    ) are always so
+constructed that the results for a representative sample of the
+Population normally distributed with expected value {@mu[0] = mean @} and
+Standard deviation {@sigma = sd @} are.
+                </p>
+                <p>
+                    They lead a study with {@ n = sampleSize @} Persons
+and receive the following data
+                </p>
+                <p>
+                    \[X=\left(X_1,\, \ldots,\, X_{15}\right)={@data@}.\]
+                </p>
+                <p>
+                    You are wondering if your sample is in
+                    <abbr>
+                        IQ
+                    </abbr>
+                    significantly different from the population. To do this
+Hypothesis test to level {@ alpha = sigLevel @} through.
+                </p>
+                <div class="row">
+                    <div class="question-view col-7">
+                        <div class="prev-answers" id="28d5ca6a-80db-4109-a565-56af793f2c42">
+                        </div>
+                        <div class="question-view">
+                            <p>
+                                a) What hypothesis and what alternative should be investigated?
+                            </p>
+                            <p>
+                                [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
+                            </p>
+                            [[/lang]][[lang code="en"]]
+                        </div>
+                    </div>
+                </div>
+            </p>
+            [[/lang]][[feedback:ans1]][[lang code="de"]]
+        </div>
+        <div class="question-view">
+            <p>
+                b) W&#228;hlen Sie die richtige Teststatistik aus.
+            </p>
+            <p>
+                [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div class="question-view">
+            <p>
+                b) Select the correct test statistics.
+            </p>
+            <p>
+                [[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]]
+            </p>
+            [[/lang]][[lang code="en"]]
+            [[/lang]][[feedback:ans2]][[lang code="de"]]
+        </div>
+        <div class="question-view">
+            <p>
+                c) Berechnen Sie die Teststatistik \(T\). Geben Sie die L&#246;sung auf {@sigFigs@} Nachkommastellen gerundet an.
+            </p>
+            <p>
+                \(T = \) [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div class="question-view">
+            <p>
+                c) Calculate the test statistics \(T\). Specify the solution {@sigFigs@} Postpoints rounded.
+            </p>
+            <p>
+                \(T = \) [[/lang]][[input:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans3]][[lang code="de"]]
+            </p>
+            [[/lang]][[lang code="en"]]
+            [[/lang]][[feedback:ans3]][[lang code="de"]]
+        </div>
+        <div class="question-view">
+            <p>
+                d) Treffen Sie die Testentscheidung:
+            </p>
+            <p>
+                Die Hypothese \(H_0\) wird [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div class="question-view">
+            <p>
+                d) Make the test decision:
+            </p>
+            <p>
+                The hypothesis \(H_0\) the [[/lang]][[input:ans4]][[lang code="de"]]. [[/lang]][[lang code="en"]]. [[/lang]][[validation:ans4]][[lang code="de"]]
+            </p>
+            [[/lang]][[lang code="en"]]
+            [[/lang]][[feedback:ans4]][[lang code="de"]]
+        </div>
+        <script>
+            /*
+    * This program is free software: you can redistribute it and/or
+    * modify it under the terms of the GNU General Public License as
+    * published by the Free Software Foundation, either version 3 of the
+    * License, or (at your option) any later version.
+    *
+    * This program is distributed in the hope that it will be useful, but
+    * WITHOUT ANY WARRANTY; without even the implied warranty of
+    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    * General Public License for more details.
+    *
+    * You should have received a copy of the GNU General Public License
+    * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    *
+    * Copyright (C) 2021 by Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>
+    * SPDX-License-Identifier: GPL-3.0-or-later
+    *
+    */
+
+
+
+
+/* @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later */
+
+
+
+
+(function() {
+/* Make sure to create QController instances only once even if the
+            script is loaded multiple times.  This is so that the script can
+            be included in more than one STACK question on the page and still
+            function properly. */
+if (window.QController === undefined) {
+        window.QController = QController;
+        document.addEventListener("DOMContentLoaded", event => {
+                const responseform = document.getElementById("responseform");
+                if (!responseform) {
+                        throw Error("Element with id responseform not found.");
+                }
+
+    
+    
+    
+    responseform.querySelectorAll(".stack.que").forEach(stackQue => {
+                        const rootElement = stackQue.querySelector(".question-view");
+
+      
+      
+      
+      if (!rootElement) {
+                                console.log("QController Warning: no elements with class question-view inside " + stackQue.id);
+                                return;
+                        }
+
+      
+      
+      
+      const controller = new QController(rootElement, stackQue.id);
+                        controller.installHandlers();
+                        controller.loadState();
+                        controller.update();
+                });
+        });
+}
+
+
+
+
+/* This class handles the navigation of a single STACK question */
+function QController(rootElement, questionId) {
+        this.rootElement = rootElement;
+        this.id = questionId;
+        this.views = rootElement.querySelectorAll(".question-view");
+        this.currentView = Array.prototype.findIndex.call(this.views, isLeaf);
+}
+
+
+
+
+/* Update view according to current controller state */
+QController.prototype.update = function() {
+        this.views.forEach(hide);
+
+  
+  
+  
+  const current = this.views[this.currentView];
+        if (isLeaf(current)) {
+                showView(current);
+        } else {
+                showFirstView(current);
+        }
+};
+
+
+
+
+/* Install event handlers for all buttons under root element */
+QController.prototype.installHandlers = function() {
+        const controller = this;
+        this.rootElement.querySelectorAll("button").forEach(button => {
+                button.addEventListener("click", ev => {
+                        const view = button.closest(".question-view");
+
+      
+      
+      
+      if (!view) {
+                                console.log("qcontroller: <button> not inside question view");
+                                return;
+                        }
+
+      
+      
+      
+      const classList = button.classList;
+                        let forward = null;
+
+      
+      
+      
+      if (classList.contains("next")) {
+                                forward = view.nextElementSibling;
+                        } else if (classList.contains("top-next")) {
+                                const parent = view.parentNode;
+                                if (parent) {
+                                        forward = parent.nextElementSibling;
+                                } else {
+                                        forward = null;
+                                }
+                        } else if (classList.contains("top")) {
+                                forward = containingView(view);
+                        } else if (classList.contains("prev")) {
+                                forward = view.previousElementSibling;
+                        }
+
+      
+      
+      
+      if (forward && forward.classList.contains("question-view")) {
+                                controller.currentView = Array.prototype.findIndex.call(
+                                        controller.views, x => x === forward);
+                                controller.saveState();
+                                controller.update();
+                        }
+                });
+        });
+};
+
+
+
+
+/* Save controller state to current session */
+QController.prototype.saveState = function() {
+        const key = this.id + "-controller-state";
+        window.sessionStorage.setItem(key, this.currentView);
+};
+
+
+
+
+/* Load controller state from current session */
+QController.prototype.loadState = function() {
+        const key = this.id + "-controller-state";
+        const state = window.sessionStorage.getItem(key);
+
+  
+  
+  
+  if (state) {
+                this.currentView = Number.parseInt(state);
+        }
+};
+
+
+
+
+/* Show the first leaf question view */
+function showFirstView(questionView) {
+        let view = questionView;
+
+  
+  
+  
+  while (view && !isLeaf(view)) {
+                view = view.querySelector(".question-view");
+        }
+
+  
+  
+  
+  showView(view);
+}
+
+
+
+
+function showView(view) {
+        /* show all containing views */
+        while (view) {
+                show(view);
+                view = containingView(view);
+        }
+}
+
+
+
+
+/* Return the view containing VIEW */
+function containingView(view) {
+        let parent = view.parentNode;
+
+  
+  
+  
+  if (parent) {
+                parent = parent.closest(".question-view");
+        }
+
+  
+  
+  
+  return parent;
+}
+
+
+
+
+function show(view) {
+        view.style.display = "block";
+}
+
+
+
+
+function isLeaf(view) {
+        return view.querySelector(".question-view") == null;
+}
+
+
+
+
+function isVisible(view) {
+        return view.style.display != "none";
+}
+
+
+
+
+function hide(view) {
+        view.style.display = "none";
+}
+
+
+
+
+})();
+/* @license-end */
+        </script>
+    </div>
+    <div class="col-5">
+        <ol class="list-group" id="4d83497c-4e8d-4801-a6e0-4eeafcb26edd">
+            <li class="list-group-item active">
+                a) Welche Hypothese soll untersucht werden?
+            </li>
+            <li class="list-group-item">
+                b) W&#228;hlen Sie die richtige Teststatistik aus.
+            </li>
+            <li class="list-group-item">
+                c) Berechnen Sie die Teststatistik \(T\).
+            </li>
+            <li class="list-group-item">
+                d) Treffen Sie die Testentscheidung.
+            </li>
+        </ol>
+    </div>
+    <script>
+        (function() {
+                "use strict";
+                const id = document.currentScript.closest(".que.stack").id;
+                const key = id + "-menu-state";
+
+    
+    
+    
+    function update(state) {
+                                const listGroup = document.getElementById("4d83497c-4e8d-4801-a6e0-4eeafcb26edd");
+                                listGroup.querySelectorAll("li").forEach(function (item, ind) {
+                                                if (ind == state) {
+                                                                item.classList.add("active");
+                                                } else {
+                                                                item.classList.remove("active");
+                                                }
+                                });
+                }
+
+    
+    
+    
+    function load() {
+                                const state = window.sessionStorage.getItem(key);
+                                if (state) {
+                                                return state;
+                                } else {
+                                                return 0;
+                                }
+                }
+
+    
+    
+    
+    function storeAndUpdate(state) {
+                                window.sessionStorage.setItem(key, state);
+                                update(state);
+                }
+
+    
+    
+    
+    document.addEventListener("DOMContentLoaded", function(event) {
+                                update(load());
+                });
+
+    
+    
+    
+    let QMenu = {};
+                QMenu.update = update;
+                QMenu.storeAndUpdate = storeAndUpdate;
+                window.QMenu = QMenu;
+})();
+    </script>
+</div>
+[[/lang]][[lang code="en"]]
+<script>
+    /*
+    * This program is free software: you can redistribute it and/or
+    * modify it under the terms of the GNU General Public License as
+    * published by the Free Software Foundation, either version 3 of the
+    * License, or (at your option) any later version.
+    *
+    * This program is distributed in the hope that it will be useful, but
+    * WITHOUT ANY WARRANTY; without even the implied warranty of
+    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    * General Public License for more details.
+    *
+    * You should have received a copy of the GNU General Public License
+    * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*
+* Copyright (C) 2021 by Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>* SPDX-License Identifier: GPL-3.0-or-later
+*
+*/
+
+
+
+
+/* @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-orLater */
+
+
+
+
+(function() {
+/* Make sure to create QController instances only once even if the
+            script is loaded multiple times.  This is so that the script can
+            be included in more than one STACK question on the page and still
+            function properly. */
+if (window.QController === undefined) {
+        window.QController = QController;
+        document.addEventListener("DOMContentLoaded", event => {
+                const responseform = document.getElementById("responseform");
+                if (!responseform) {
+                        throw Error("Element with id responseform not found.");
+                }
+
+    
+    
+    
+    responseform.querySelectorAll(".stack.que").forEach(stackQue => {
+                        const rootElement = stackQue.querySelector(".question-view");
+
+      
+      
+      
+      if (!rootElement) {
+                                console.log("QController Warning: no elements with class question-view inside " + stackQue.id);
+                                return;
+                        }
+
+      
+      
+      
+      const controller = new QController(rootElement, stackQue.id);
+                        controller.installHandlers();
+                        controller.loadState();
+                        controller.update();
+                });
+        });
+}
+
+
+
+
+/* This class handles the navigation of a single STACK question */
+function QController(rootElement, questionId) {
+        this.rootElement = rootElement;
+        this.id = questionId;
+        this.views = rootElement.querySelectorAll(".question-view");
+        this.currentView = Array.prototype.findIndex.call(this.views, isLeaf);
+}
+
+
+
+
+/* Update view according to current controller state */
+QController.prototype.update = function() {
+        this.views.forEach(hide);
+
+  
+  
+  
+  const current = this.views[this.currentView];
+        if (isLeaf(current)) {
+                showView(current);
+        } else {
+                showFirstView(current);
+        }
+};
+
+
+
+
+/* Install event handlers for all buttons under root element */
+QController.prototype.installHandlers = function() {
+        const controller = this;
+        this.rootElement.querySelectorAll("button").forEach(button => {
+                button.addEventListener("click", ev => {
+                        const view = button.closest(".question-view");
+
+      
+      
+      
+      if (!view) {
+                                console.log("qcontroller: <button> not inside question view");
+                                return;
+                        }
+
+      
+      
+      
+      const classList = button.classList;
+                        let forward = null;
+
+      
+      
+      
+      if (classList.contains("next")) {
+                                forward = view.nextElementSibling;
+                        } else if (classList.contains("top-next")) {
+                                const parent = view.parentNode;
+                                if (parent) {
+                                        forward = parent.nextElementSibling;
+                                } else {
+                                        forward = null;
+                                }
+                        } else if (classList.contains("top")) {
+                                forward = containingView(view);
+                        } else if (classList.contains("prev")) {
+                                forward = view.previousElementSibling;
+                        }
+
+      
+      
+      
+      if (forward && forward.classList.contains("question-view")) {
+                                controller.currentView = Array.prototype.findIndex.call(
+                                        controller.views, x => x === forward);
+                                controller.saveState();
+                                controller.update();
+                        }
+                });
+        });
+};
+
+
+
+
+/* Save controller state to current session */
+QController.prototype.saveState = function() {
+        const key = this.id + "-controller-state";
+        window.sessionStorage.setItem(key, this.currentView);
+};
+
+
+
+
+/* Load controller state from current session */
+QController.prototype.loadState = function() {
+        const key = this.id + "-controller-state";
+        const state = window.sessionStorage.getItem(key);
+
+  
+  
+  
+  if (state) {
+                this.currentView = Number.parseInt(state);
+        }
+};
+
+
+
+
+/* Show the first leaf question view */
+function showFirstView(questionView) {
+        let view = questionView;
+
+  
+  
+  
+  while (view && !isLeaf(view)) {
+                view = view.querySelector(".question-view");
+        }
+
+  
+  
+  
+  showView(view);
+}
+
+
+
+
+function showView(view) {
+        /* show all containing views */
+        while (view) {
+                show(view);
+                view = containingView(view);
+        }
+}
+
+
+
+
+/* Return the view containing VIEW */
+function containingView(view) {
+        let parent = view.parentNode;
+
+  
+  
+  
+  if (parent) {
+                parent = parent.closest(".question-view");
+        }
+
+  
+  
+  
+  return parent;
+}
+
+
+
+
+function show(view) {
+        view.style.display = "block";
+}
+
+
+
+
+function isLeaf(view) {
+        return view.querySelector(".question-view") == null;
+}
+
+
+
+
+function isVisible(view) {
+        return view.style.display != "none";
+}
+
+
+
+
+function hide(view) {
+        view.style.display = "none";
+}
+
+
+
+
+}),
+/* @license-end */
+</script>
+<div class="col-5">
+    <ol class="list-group" id="4d83497c-4e8d-4801-a6e0-4eeafcb26edd">
+        <li class="list-group-item active">
+            a) What hypothesis should be investigated?
+        </li>
+        <li class="list-group-item">
+            b) Select the correct test statistics.
+        </li>
+        <li class="list-group-item">
+            c) Calculate the test statistics \(T\).
+        </li>
+        <li class="list-group-item">
+            d) Make the test decision.
+        </li>
+    </ol>
+</div>
+<script>
+    (function() {
+                "use strict";
+                const id = document.currentScript.closest(".que.stack").id;
+                const key = id + "-menu-state";
+
+    
+    
+    
+    function update(state) {
+                                const listGroup = document.getElementById("4d83497c-4e8d-4801-a6e0-4eeafcb26edd");
+                                listGroup.querySelectorAll("li").forEach(function (item, ind) {
+                                                if (ind == state) {
+                                                                item.classList.add("active");
+                                                } else {
+                                                                item.classList.remove("active");
+                                                }
+                                });
+                }
+
+    
+    
+    
+    function load() {
+                                const state = window.sessionStorage.getItem(key);
+                                if (state) {
+                                                return state;
+                                } else {
+                                                return 0;
+                                }
+                }
+
+    
+    
+    
+    function storeAndUpdate(state) {
+                                window.sessionStorage.setItem(key, state);
+                                update(state);
+                }
+
+    
+    
+    
+    document.addEventListener("DOMContentLoaded", function(event) {
+                                update(load());
+                });
+
+    
+    
+    
+    let QMenu = {};
+                QMenu.update = update;
+                QMenu.storeAndUpdate = storeAndUpdate;
+                window.QMenu = QMenu;
+})();
+</script>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/* bars for means of X and Y*/
+texput(Xbar, "\\bar{X}");
+texput(Ybar, "\\bar{Y}");
+
+sampleSize : 15;
+data : rand_selection (makelist(i, i, 85, 115), sampleSize);
+sigLevel : 0.05;
+mean : 100;
+sd : 15;
+variance : sd^2;
+
+gaussStatistics(X, mean, variance, n) := sum((X[i] - mean)/sqrt(n*variance), i, 1, n);
+
+tans1: [
+  [1, true, sconcat(" \\(H_0: \\mu=100\\) vs. \\(H_1: \\mu \\neq 100 \\)")],
+  [2, false, sconcat(" \\(H_0: \\mu<100\\) vs. \\(H_1: \\mu \\leq 100 \\)")],
+  [3, false, sconcat(" \\(H_0: \\mu>100\\) vs. \\(H_1: \\mu \\geq 100 \\)")],
+  [4, false, sconcat(" \\(H_0: \\mu=100\\) vs. \\(H_1: \\mu > 100 \\)")]];
+
+simp: false;
+choices: block([vals, correct, incorrect],
+  correct: [T = sum(X[i] - mu[0], i, 1, n)/sqrt(n*sigma^2)],
+  incorrect: [
+  F = s_Y^2 / s_X^2,
+  T = (n-1)* s_X^2 / sigma_0^2,
+  T = (Ybar - Xbar) / sqrt((1/m + 1/n) *s_P^2),
+  T = sum(X[i] - mu[0], i, 1, n)/sqrt(n*s_X^2)],
+  vals: makelist(i, i, ev(length(correct) + length(incorrect), simp)),
+  zip_with(lambda([a, b],
+      [a, if a <= length(correct) then true else false, stack_disp(b, "id")]),
+    vals, append(correct, incorrect)));
+simp: true;
+
+tans2: random_permutation (choices);
+
+x: sum(data[i],i,1,15)/15;
+LSG3: (sqrt(15)*(x-100))/15;
+sigFigs:3;
+LSG4:is(abs(LSG3)>=1.96);
+LSGf:(x-100)/(std1(data)/sqrt(15));
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+tans3 : gaussStatistics(data, mean, variance, length(data));
+tans4 : [
+  [tr("verworfen","discarded"), is(abs(tans3) >= 1.96)],
+  [tr("beibehalten","kept"), is(not(abs(tans3) >= 1.96)) ]];
+
+simp:false;]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{@ X = data @}</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Ihre Antwort ist nicht komplett falsch.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is not completely wrong.[[/lang]]
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.[[/lang]]
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>radio</type>
+            <tans>tans1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>LaTeX,nonotanswered</options>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>radio</type>
+            <tans>tans2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>LaTeX,nonotanswered</options>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>numerical</type>
+            <tans>decimalplaces(tans3,3)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>dropdown</type>
+            <tans>tans4</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>ans1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>first(mcq_correct(tans1))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ans1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Wir wollen wissen, ob sich unsere Stichprobe signifikant von der Population unterscheidet.  Daher testen wir die Hypothese {@mu = mean@} gegen die Alternative {@ mu # mean @}. Wir haben es hier also mit einer zweiseitigen Alternative zu tun.
+</p>
+<p>
+    Klicken Sie auf
+    <button class="next" id="9f21b59c-9cfb-4974-92c1-10470ca8f3b1" type="button">
+        Weiter
+    </button>
+    , um zum n&#228;chsten Aufgabenteil zu gelangen.
+</p>
+<script>
+    (function() {
+const memory = document.getElementById("28d5ca6a-80db-4109-a565-56af793f2c42");
+const text = document.createElement("p");
+text.innerText = "Sie haben die folgende Hypothese und Alternative ausgew&#228;hlt: \\"+"(H_0 : \\mu = 100\\"+") vs. \\"+"(H_1 : \\mu \\neq 100\\"+")";
+memory.append(text);
+memory.style.display = "block";
+
+
+
+
+const btn = document.getElementById("9f21b59c-9cfb-4974-92c1-10470ca8f3b1");
+btn.addEventListener("click", function(event) {
+        QMenu.storeAndUpdate(1);
+});
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    We want to know whether our sample differs significantly from the population. Therefore we test the hypothesis {@mu = mean@} against the alternative {@ mu # mean @}. So we have a two-sided alternative here.
+</p>
+<p>
+    Click on
+    <button class="next" id="9f21b59c-9cfb-4974-92c1-10470ca8f3b1" type="button">
+        Next
+    </button>
+    to get to the next task.
+</p>
+<script>
+    (function() {
+const memory = document.getElementById("28d5ca6a-80db-4109-a565-56af793f2c42");
+const text = document.createElement("p");
+text.innerText = "Sie haben die folgende Hypothese und Alternative ausgew&#228;hlt: \\"+"(H_0 : \\mu = 100\\"+") vs. \\"+"(H_1 : \\mu \\neq 100\\"+")";
+memory.append(text);
+memory.style.display = "block";
+
+
+
+
+const btn = document.getElementById("9f21b59c-9cfb-4974-92c1-10470ca8f3b1");
+btn.addEventListener("click", function(event) {
+        QMenu.storeAndUpdate(1);
+});
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>ans1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ans1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Auswahl hat die falsche Alternative. Die ausgew&#228;hlte Alternative besagt, dass der mittlere Intelligenzquotient in der Stichprobe gr&#246;&#223;er ist, als in der Population. Sie sollen aber nur testen, ob sich Stichprobe und Population hinsichtlich des mittleren IQ unterscheiden.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your choice has the wrong alternative. The selected alternative indicates that the average intelligence quotient in the sample is greater than in the population. However, they should only test whether sample and population differ with regard to the average IQ.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ans1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Hypothese und Alternative m&#252;ssen disjunkte Mengen sein.  F&#252;r einen gegebenen Parameter ist entweder die Hypothese oder die Alternative g&#252;ltig.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Hypothesis and alternatives must be disjunctive quantities. For a given parameter, either the hypothesis or the alternative is valid.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>ans2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>first(mcq_correct(tans2))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ans2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Da hier die Varianz der zugrundeliegenden Normalverteilung gegeben ist, ist der sogenannte Gau&#223;-Test angebracht.
+</p>
+<p>
+    Klicken Sie auf
+    <button class="next" id="1e630d54-3d4a-4586-8615-52ecdd1172c4" type="button">
+        Weiter
+    </button>
+    , um zum n&#228;chsten Aufgabenteil zu gelangen.
+</p>
+<script>
+    (function() {
+const memory = document.getElementById("28d5ca6a-80db-4109-a565-56af793f2c42");
+const text = document.createElement("p");
+text.innerText = "Sie haben die Teststatistik ausgew&#228;hlt: \\"+"(T = \\frac{\\sum_{i=1}^n (X_i - \\mu_0)}{\\sqrt{n\\cdot\\sigma^2}}\\"+")";
+memory.append(text);
+memory.style.display = "block";
+
+
+
+
+const btn = document.getElementById("1e630d54-3d4a-4586-8615-52ecdd1172c4");
+btn.addEventListener("click", function(event) {
+        QMenu.storeAndUpdate(2);
+});
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    Since the variance of the underlying normal distribution is given here, the so-called Gaussian test is appropriate.
+</p>
+<p>
+    Click on
+    <button class="next" id="1e630d54-3d4a-4586-8615-52ecdd1172c4" type="button">
+        Next
+    </button>
+    to get to the next task.
+</p>
+<script>
+    (function() {
+const memory = document.getElementById("28d5ca6a-80db-4109-a565-56af793f2c42");
+const text = document.createElement("p");
+text.innerText = "Sie haben die Teststatistik ausgew&#228;hlt: \\"+"(T = \\frac{\\sum_{i=1}^n (X_i - \\mu_0)}{\\sqrt{n\\cdot\\sigma^2}}\\"+")";
+memory.append(text);
+memory.style.display = "block";
+
+
+
+
+const btn = document.getElementById("1e630d54-3d4a-4586-8615-52ecdd1172c4");
+btn.addEventListener("click", function(event) {
+        QMenu.storeAndUpdate(2);
+});
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ans2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    [[if test="ans2 = 2"]]
+    <!-- F = s_Y^2 / s_X^2 -->
+    Diese Teststatistik geh&#246;rt zum F-Test zum Vergleich der Varianzen
+zweier Stichproben.  Dieser Test ist hier nicht angebracht.
+Lesen Sie noch einmal den Einleitungstext und achten Sie darauf,
+welcher Parameter in der Hypothese und wie viele Stichproben vorkommen.
+[[elif test="ans2 = 3"]]
+    <!-- T = (n-1)* s_X^2 / sigma_0^2 -->
+    Diese Teststatistik geh&#246;rt zu einem Test, der die Varianz einer Stichprobe
+mit einem vorgegebenen Wert \(\sigma_0^2\) vergleicht.  Lesen Sie noch einmal
+den Einleitungstext und achten Sie darauf, welcher Parameter in der
+Hypothese vorkommt.
+[[elif test="ans2 = 4"]]
+    <!-- T = (Ybar - Xbar) / sqrt((1/m + 1/n) *s_P^2) -->
+    Diese Teststatistik geh&#246;rt zu einem Test, der die Erwartungswerte
+zweier Stichproben vergleicht.  Dieser Test ist hier nicht angebracht.
+Lesen Sie noch einmal den Einleitungstext und achten Sie darauf,
+wie viele Stichproben vorkommen.
+[[elif test="ans2 = 5"]]
+    <!-- T = sum(X[i] - mu[0], i, 1, n)/sqrt(n*s_X^2)] -->
+    Diese Teststatistik geh&#246;rt zwar zu einem Test f&#252;r den Erwartungswert. Allerdings ist sie hier dennoch nicht angebracht, da die Varianz der zugrundeliegenden Normalverteilung gegeben ist. 
+[[/if]]
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    [[if test="ans2 = 2"]]
+    <!-- F = s_Y^2 / s_X^2 -->
+    These test statistics are part of the F test for comparing the variances
+two samples. This test is not appropriate here.
+Read the introduction text again and make sure
+the parameters in the hypothesis and how many samples occur.
+[[elif test="ans2 = 3"]]
+    <!-- T = (n-1)* s_X^2 / sigma_0^2 -->
+    This test statistics is part of a test that shows the variance of a sample
+with a predetermined value \(\sigma_0^2\) compares. Read more
+the introduction text and make sure that the parameters in the
+Hypothesis occurs.
+[[elif test="ans2 = 4"]]
+    <!-- T = (Ybar - Xbar) / sqrt((1/m + 1/n) *s_P^2) -->
+    These test statistics are part of a test which shows the expected values
+two samples. This test is not appropriate here.
+Read the introduction text again and make sure
+how many samples occur.
+[[elif test="ans2 = 5"]]
+    <!-- T = sum(X[i] - mu[0], i, 1, n)/sqrt(n*s_X^2)] -->
+    These test statistics are part of a test for the expected value. However, it is not appropriate here, since the variance of the underlying normal distribution is given.
+[[/if]]
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>ans3</name>
+            <value>1.0000000</value>
+            <autosimplify>0</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans3</sans>
+                <tans>tans3</tans>
+                <testoptions>0.0005</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ans3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Nach Einsetzen der jeweiligen Zahlenwerte in die Formel f&#252;r die Teststatistik ergibt sich:
+</p>
+\begin{align*}
+T &amp;= {@ (sum(X[i] - mu[0], i, 1, sampleSize))/(sqrt(n * sigma^2)) @} \\
+&amp;= {@ (sum(X[i] - mean, i, 1, sampleSize))/(sqrt(sampleSize * variance)) @} \\
+&amp;= {@ ev(sum(data[i] - mean, i, 1, sampleSize), simp)/ev(sqrt(sampleSize * variance), simp) @}
+= {@ ev((sum(data[i] - mean, i, 1, sampleSize))/(sqrt(sampleSize * variance)), simp) @}
+\end{align*}
+<p>
+    Klicken Sie auf
+    <button class="next" id="4bcf567c-51d7-4b61-a9d6-40b96040cdc7" type="button">
+        Weiter
+    </button>
+    , um zum n&#228;chsten Aufgabenteil zu gelangen.
+</p>
+<script>
+    (function() {
+const memory = document.getElementById("28d5ca6a-80db-4109-a565-56af793f2c42");
+const text = document.createElement("p");
+text.innerText = "Sie haben den folgenden Wert f&#252;r die Teststatistik ausgerechnet: \\"+"(T = {# decimalplaces(tans3, 3) #}\\"+")";
+memory.append(text);
+memory.style.display = "block";
+
+
+
+
+const btn = document.getElementById("4bcf567c-51d7-4b61-a9d6-40b96040cdc7");
+btn.addEventListener("click", function(event) {
+        QMenu.storeAndUpdate(3);
+});
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    After inserting the respective numerical values into the formula for the test statistics, the following results:
+</p>
+\begin{align*}
+T &amp;= {@ (sum(X[i] - mu[0], i, 1, sampleSize))/(sqrt(n * sigma^2)) @} \\
+&amp;= {@ (sum(X[i] - mean, i, 1, sampleSize))/(sqrt(sampleSize * variance)) @} \\
+&amp;= {@ ev(sum(data[i] - mean, i, 1, sampleSize), simp)/ev(sqrt(sampleSize * variance), simp) @}
+= {@ ev((sum(data[i] - mean, i, 1, sampleSize))/(sqrt(sampleSize * variance)), simp) @}
+\end{align*}
+<p>
+    Click on
+    <button class="next" id="4bcf567c-51d7-4b61-a9d6-40b96040cdc7" type="button">
+        Next
+    </button>
+    to get to the next task.
+</p>
+<script>
+    (function() {
+const memory = document.getElementById("28d5ca6a-80db-4109-a565-56af793f2c42");
+const text = document.createElement("p");
+text.innerText = "Sie haben den folgenden Wert f&#252;r die Teststatistik ausgerechnet: \\"+"(T = {# decimalplaces(tans3, 3) #}\\"+")";
+memory.append(text);
+memory.style.display = "block";
+
+
+
+
+const btn = document.getElementById("4bcf567c-51d7-4b61-a9d6-40b96040cdc7");
+btn.addEventListener("click", function(event) {
+        QMenu.storeAndUpdate(3);
+});
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ans3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie m&#252;ssen die Werte f&#252;r \(\mu_0\), \(n\) und \(\sigma\) und die Datenpunkte aus dem Einleitungstext in die Formel f&#252;r die Teststatistik einsetzen.  Bitte &#252;berpr&#252;fen Sie Ihre Rechnung und versuchen Sie es noch einmal.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You need the values for \(\mu_0\), \(n\) and \(\sigma\) and use the data points from the introduction text in the formula for the test statistics. Please check your bill and try again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>ans4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>first(mcq_correct(tans4))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ans4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Da es sich hier um eine zweiseitige Hypothese handelt, wird die Hypothese verworfen, falls \(|T| &gt;= 1.96\) gilt.
+</p>
+<p>
+    <span style="font-size: 1.5em;">
+        <i class="fa fa-thumbs-up">
+        </i>
+    </span>
+    Herzlichen Gl&#252;ckwunsch, Sie sind am Ende der Aufgabe angelangt.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Since this is a two-sided hypothesis, the hypothesis is discarded if \(|T| &gt;= 1.96\) Article 2
+</p>
+<p>
+    <span style="font-size: 1.5em;">
+        <i class="fa fa-thumbs-up">
+        </i>
+    </span>
+    Congratulations, you have reached the end of the task.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ans4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Da es sich hier um eine zweiseitige Hypothese handelt, wird die Hypothese verworfen, falls \(|T| &gt;= 1.96\) gilt.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Since this is a two-sided hypothesis, the hypothesis is discarded if \(|T| &gt;= 1.96\) Article 2
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>2048481925</deployedseed>
+        <deployedseed>624345506</deployedseed>
+        <deployedseed>915696578</deployedseed>
+        <deployedseed>480887009</deployedseed>
+        <deployedseed>1482928633</deployedseed>
+        <deployedseed>405110347</deployedseed>
+        <deployedseed>3465143</deployedseed>
+        <deployedseed>375207695</deployedseed>
+        <deployedseed>675947886</deployedseed>
+        <deployedseed>892416041</deployedseed>
+    </question>
+    
+
+</quiz>

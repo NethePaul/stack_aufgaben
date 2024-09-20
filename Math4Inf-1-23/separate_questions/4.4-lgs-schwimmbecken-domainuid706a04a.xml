@@ -6,33 +6,59 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
+[[lang code="de"]]
+<p>
+    Ein Schwimmbecken kann durch \(3\) Leitungen gef&#252;llt werden. Um das Schwimmbecken zu f&#252;llen, ben&#246;tigen die beiden ersten Leitungen zusammen @v1@ Minuten. Die erste und die dritte Leitung brauchen zusammen @v2@ Minuten. Die zweite und die dritte Leitung schaffen es zusammen in @v3@ Minuten.
+</p>
+<p>
+    Wie lange braucht jede Leitung um den Schwimmbecken alleine zum F&#252;llen?
+</p>
+<p>
+    1. Leitung braucht: [[/lang]][[lang code="en"]]
     <p>
-        Ein Schwimmbecken kann durch \(3\) Leitungen gef&#252;llt werden. Um das Schwimmbecken zu f&#252;llen, ben&#246;tigen die beiden ersten Leitungen zusammen @v1@ Minuten. Die erste und die dritte Leitung brauchen zusammen @v2@ Minuten. Die zweite und die dritte Leitung schaffen es zusammen in @v3@ Minuten.
+        A swimming pool can be filled through \(3\) lines. To fill the swimming pool, the first two lines need @v1@ minutes. The first and third lines need @v2@ minutes together. The second and third lines fill it together in @v3@ minutes.
     </p>
     <p>
-        Wie lange braucht jede Leitung um den Schwimmbecken alleine zum F&#252;llen?
+        How long does every line around the swimming pool need to fill?
     </p>
     <p>
-        1. Leitung braucht: [[input:ans1]]&#160;\(min\) [[validation:ans1]]
+        Line 1 needs: [[/lang]][[input:ans1]][[lang code="de"]]&#160;\(min\) [[/lang]][[lang code="en"]]\(min\) [[/lang]][[validation:ans1]][[lang code="de"]]
     </p>
     <p>
-        2. Leitung braucht: [[input:ans2]]&#160;\(min\) [[validation:ans2]]
+        2. Leitung braucht: [[/lang]][[lang code="en"]]
     </p>
     <p>
-        3. Leitung braucht: [[input:ans3]]&#160;\(min\) [[validation:ans3]]
+        Line 2 needs: [[/lang]][[input:ans2]][[lang code="de"]]&#160;\(min\) [[/lang]][[lang code="en"]]\(min\) [[/lang]][[validation:ans2]][[lang code="de"]]
     </p>
     <p>
-        [[feedback:prt1]]
+        3. Leitung braucht: [[/lang]][[lang code="en"]]
+    </p>
+    <p>
+        Line 3 needs: [[/lang]][[input:ans3]][[lang code="de"]]&#160;\(min\) [[/lang]][[lang code="en"]]\(min\) [[/lang]][[validation:ans3]][[lang code="de"]]
+    </p>
+    <p>
+        [[/lang]][[lang code="en"]]
+    </p>
+    <p>
+        [[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
     <p>
         Nach wieviel Minuten ist das Becken gef&#252;llt, wenn alle drei Leitungen zusammen benutzt werden?
     </p>
     <p>
-        Nach [[input:ans4]]&#160;\(min\) [[validation:ans4]]
+        Nach [[/lang]][[lang code="en"]]
     </p>
     <p>
-        [[feedback:prt2]]
+        After how much minutes is the basin filled when all three lines are used together?
+    </p>
+    <p>
+        After [[/lang]][[input:ans4]][[lang code="de"]]&#160;\(min\) [[/lang]][[lang code="en"]]\(min\) [[/lang]][[validation:ans4]][[lang code="de"]]
+    </p>
+    <p>
+        [[/lang]][[lang code="en"]]
+    </p>
+    <p>
+        [[/lang]][[feedback:prt2]][[lang code="de"]]
     </p>
     <p>
         <strong>
@@ -40,42 +66,15 @@
         </strong>
         Runden Sie die Antworten bei Bedarf auf die ganze Minute.
     </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        A swimming pool can be \(3\) Lines are filled. To fill the swimming pool, the first two lines need @v1@ minutes. The first and third lines need @v2@ minutes together. The second and third lines create it together in @v3@ minutes.
-    </p>
-    <p>
-        How long does every line around the swimming pool need to fill?
-    </p>
-    <p>
-        1. Line needs: [[input:ans1]]\(min\) [[validation:ans1]]
-    </p>
-    <p>
-        Two. Line needs: [[input:ans2]]\(min\) [[validation:ans2]]
-    </p>
-    <p>
-        3. Line needs: [[input:ans3]]\(min\) [[validation:ans3]]
-    </p>
-    <p>
-        [[feedback:prt1]]
-    </p>
-    <p>
-        After how much minutes is the basin filled when all three lines are used together?
-    </p>
-    <p>
-        After [[input:ans4]]\(min\) [[validation:ans4]]
-    </p>
-    <p>
-        [[feedback:prt2]]
-    </p>
-    <p>
-        <strong>
-            Note:
-        </strong>
-        Complete the answers for the whole minute as needed.
-    </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+<p>
+    <strong>
+        Note:
+    </strong>
+    Complete the answers for the whole minute as needed.
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -119,44 +118,41 @@ loes4: M/(rhs(loesung[1][1])+rhs(loesung[1][2])+rhs(loesung[1][3]));</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Richtig!
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Right!
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Richtig!
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Right!
+</p>
+[[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Antwort ist teilweise richtig.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        The answer is partly correct.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Antwort ist teilweise richtig.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The answer is partly correct.
+</p>
+[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Die Antwort ist leider falsch.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Unfortunately, the answer is wrong.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Die Antwort ist leider falsch.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Unfortunately, the answer is wrong.
+</p>
+[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

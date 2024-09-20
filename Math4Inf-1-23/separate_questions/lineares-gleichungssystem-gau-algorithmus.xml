@@ -6,234 +6,232 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Bestimmen Sie f&#252;r
-        <br/>
-    </p>
-    <p style="">
-        \({@A@}={@m@}\) und &#160; \(b={@b@}\)
-        <br/>
-    </p>
-    die L&#246;sung des linearen Gleichungssystems \( A\cdot x=b  \)
-    <div class="editor-indent" style="margin-left: 30px;">
-        <h5>
-            <ul>
-                <li>
-                    <span style="font-weight: normal;">
-                        \({@x1@}=\) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
-                    </span>
-                </li>
-                <li>
-                    <span style="font-weight: normal;">
-                        \({@x2@}=\) [[input:ans2]] [[validation:ans2]][[feedback:prt2]]
-                    </span>
-                </li>
-                <li>
-                    <span style="font-weight: normal;">
-                        \({@x3@}=\) [[input:ans3]] [[validation:ans3]][[feedback:prt3]]
-                    </span>
-                </li>
-                <li>
-                    <span style="font-weight: normal;">
-                        \({@x4@}=\) [[input:ans4]] [[validation:ans4]][[feedback:prt4]]
-                    </span>
-                </li>
-            </ul>
-        </h5>
-    </div>
-    <p>
-    </p>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Choose for
-        <br/>
-    </p>
-    <p style="">
-        \({@A@}={@m@}\) and \(b={@b@}\)
-        <br/>
-    </p>
-    the solution of the linear equation system \( A\cdot x=b  \)
-    <div class="editor-indent" style="margin-left: 30px;">
-        <h5>
-            <ul>
-                <li>
-                    <span style="font-weight: normal;">
-                        \({@x1@}=\) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
-                    </span>
-                </li>
-                <li>
-                    <span style="font-weight: normal;">
-                        \({@x2@}=\) [[input:ans2]] [[validation:ans2]][[feedback:prt2]]
-                    </span>
-                </li>
-                <li>
-                    <span style="font-weight: normal;">
-                        \({@x3@}=\) [[input:ans3]] [[validation:ans3]][[feedback:prt3]]
-                    </span>
-                </li>
-                <li>
-                    <span style="font-weight: normal;">
-                        \({@x4@}=\) [[input:ans4]] [[validation:ans4]][[feedback:prt4]]
-                    </span>
-                </li>
-            </ul>
-        </h5>
-    </div>
-    <p>
-    </p>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Bestimmen Sie f&#252;r
+    <br/>
+</p>
+<p style="">
+    \({@A@}={@m@}\) und &#160; \(b={@b@}\)
+    <br/>
+</p>
+die L&#246;sung des linearen Gleichungssystems \( A\cdot x=b  \)
+<div class="editor-indent" style="margin-left: 30px;">
+    <h5>
+        <ul>
+            <li>
+                <span style="font-weight: normal;">
+                    \({@x1@}=\) [[/lang]][[lang code="en"]]
+                    <p>
+                        Choose for
+                        <br/>
+                    </p>
+                    <p style="">
+                        \({@A@}={@m@}\) and \(b={@b@}\)
+                        <br/>
+                    </p>
+                    the solution of the linear equation system \( A\cdot x=b  \)
+                    <div class="editor-indent" style="margin-left: 30px;">
+                        <h5>
+                            <ul>
+                                <li>
+                                    <span style="font-weight: normal;">
+                                        \({@x1@}=\) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]]
+                                    </span>
+                                </li>
+                                <li>
+                                    <span style="font-weight: normal;">
+                                        \({@x2@}=\) [[/lang]][[lang code="en"]]
+                                    </span>
+                                </li>
+                                <li>
+                                    <span style="font-weight: normal;">
+                                        \({@x2@}=\) [[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt2]][[lang code="de"]]
+                                    </span>
+                                </li>
+                                <li>
+                                    <span style="font-weight: normal;">
+                                        \({@x3@}=\) [[/lang]][[lang code="en"]]
+                                    </span>
+                                </li>
+                                <li>
+                                    <span style="font-weight: normal;">
+                                        \({@x3@}=\) [[/lang]][[input:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans3]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt3]][[lang code="de"]]
+                                    </span>
+                                </li>
+                                <li>
+                                    <span style="font-weight: normal;">
+                                        \({@x4@}=\) [[/lang]][[lang code="en"]]
+                                    </span>
+                                </li>
+                                <li>
+                                    <span style="font-weight: normal;">
+                                        \({@x4@}=\) [[/lang]][[input:ans4]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans4]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt4]][[lang code="de"]]
+                                    </span>
+                                </li>
+                            </ul>
+                        </h5>
+                    </div>
+                    <p>
+                    </p>
+                    <p>
+                    </p>
+                    [[/lang]][[lang code="en"]]
+                </span>
+            </li>
+        </ul>
+    </h5>
+</div>
+<p>
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        <strong>
-            L&#246;sung
-        </strong>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        Mit Gauss:
-    </p>
-    <p>
-        \(\left(\begin{array}{cccc|c}-1&amp;1&amp;-1&amp;1&amp;{@A1@}\\1&amp;1&amp;1&amp;1&amp;{@A1+1@}\\8&amp;4&amp;2&amp;1&amp;{@A1+2@}\\0&amp;0&amp;0&amp;1&amp;{@A1+3@}\end{array}\right)\xrightarrow{II+I, III+8I}\left(\begin{array}{cccc|c}-1&amp;1&amp;-1&amp;1&amp;{@A1@}\\0&amp;2&amp;0&amp;2&amp;{@2*A1+1@}\\0&amp;12&amp;-6&amp;9&amp;{@9*A1+2@}\\0&amp;0&amp;0&amp;1&amp;{@A1+3@} \end{array}\right)\xrightarrow{III-6II}\left(\begin{array}{cccc|c}-1&amp;1&amp;-1&amp;1&amp; {@A1@}\\0&amp;2&amp;0&amp;2&amp;{@2*A1+1@}\\0&amp;0&amp;-6&amp;-3&amp;{@-3*A1-4@}\\0&amp;0&amp;0&amp;1&amp;{@A1+3@}\end{array}\right)\)
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <strong>
-            IV
-        </strong>
-        <strong>
-            :
-        </strong>
-        \(x_4={@A1+3@}\)
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <strong>
-            III
-        </strong>
-        <strong>
-            :
-        </strong>
-        \(-6x_3-3x_4={@-3*A1-4@}\) mit IV:
-    </p>
-    <p>
-        \(-6x_3-3\cdot {@A1+3@}={@-3*A1-4@}\)&#160; &#160; \(\Leftrightarrow\)&#160; &#160;\(x_3={@t3@}\)
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <strong>
-            II:
-        </strong>
-        \(2x_2+2x_4={@2*A1+1@}\)&#160; mit IV:
-    </p>
-    <p>
-        \(2x_2+2\cdot {@t4@}={@2*A1+1@}\)&#160; &#160; \(\Leftrightarrow\)&#160; &#160;\(x_2={@t2@}\)
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <strong>
-            I:
-        </strong>
-        \(-x_1+x_2-x_3+x_4={@A1@}\)&#160; mit II, III, IV:
-    </p>
-    <p>
-        \(-x_1+{@t2@}-{@t3@}+{@t4@}={@A1@}\)&#160; &#160; \(\Leftrightarrow\)&#160; &#160;\(x_1={@t1@}\)
-    </p>
-    <p>
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <h4>
-        <strong>
-            Solution
-        </strong>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        With Gauss:
-    </p>
-    <p>
-        \(\left(\begin{array}{cccc|c}-1&amp;1&amp;-1&amp;1&amp;{@A1@}\\1&amp;1&amp;1&amp;1&amp;{@A1+1@}\\8&amp;4&amp;2&amp;1&amp;{@A1+2@}\\0&amp;0&amp;0&amp;1&amp;{@A1+3@}\end{array}\right)\xrightarrow{II+I, III+8I}\left(\begin{array}{cccc|c}-1&amp;1&amp;-1&amp;1&amp;{@A1@}\\0&amp;2&amp;0&amp;2&amp;{@2*A1+1@}\\0&amp;12&amp;-6&amp;9&amp;{@9*A1+2@}\\0&amp;0&amp;0&amp;1&amp;{@A1+3@} \end{array}\right)\xrightarrow{III-6II}\left(\begin{array}{cccc|c}-1&amp;1&amp;-1&amp;1&amp; {@A1@}\\0&amp;2&amp;0&amp;2&amp;{@2*A1+1@}\\0&amp;0&amp;-6&amp;-3&amp;{@-3*A1-4@}\\0&amp;0&amp;0&amp;1&amp;{@A1+3@}\end{array}\right)\)
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <strong>
-            IV
-        </strong>
-        <strong>
-            :
-        </strong>
-        \(x_4={@A1+3@}\)
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <strong>
-            III
-        </strong>
-        <strong>
-            :
-        </strong>
-        \(-6x_3-3x_4={@-3*A1-4@}\) with IV:
-    </p>
-    <p>
-        \(-6x_3-3\cdot {@A1+3@}={@-3*A1-4@}\) \(\Leftrightarrow\)\(x_3={@t3@}\)
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <strong>
-            II:
-        </strong>
-        \(2x_2+2x_4={@2*A1+1@}\)with IV:
-    </p>
-    <p>
-        \(2x_2+2\cdot {@t4@}={@2*A1+1@}\) \(\Leftrightarrow\)\(x_2={@t2@}\)
-        <br/>
-    </p>
-    <p>
-        <br/>
-    </p>
-    <p>
-        <strong>
-            I:
-        </strong>
-        \(-x_1+x_2-x_3+x_4={@A1@}\)with II, III, IV:
-    </p>
-    <p>
-        \(-x_1+{@t2@}-{@t3@}+{@t4@}={@A1@}\) \(\Leftrightarrow\)\(x_1={@t1@}\)
-    </p>
-    <p>
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<h4>
+    <strong>
+        L&#246;sung
+    </strong>
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    Mit Gauss:
+</p>
+<p>
+    \(\left(\begin{array}{cccc|c}-1&amp;1&amp;-1&amp;1&amp;{@A1@}\\1&amp;1&amp;1&amp;1&amp;{@A1+1@}\\8&amp;4&amp;2&amp;1&amp;{@A1+2@}\\0&amp;0&amp;0&amp;1&amp;{@A1+3@}\end{array}\right)\xrightarrow{II+I, III+8I}\left(\begin{array}{cccc|c}-1&amp;1&amp;-1&amp;1&amp;{@A1@}\\0&amp;2&amp;0&amp;2&amp;{@2*A1+1@}\\0&amp;12&amp;-6&amp;9&amp;{@9*A1+2@}\\0&amp;0&amp;0&amp;1&amp;{@A1+3@} \end{array}\right)\xrightarrow{III-6II}\left(\begin{array}{cccc|c}-1&amp;1&amp;-1&amp;1&amp; {@A1@}\\0&amp;2&amp;0&amp;2&amp;{@2*A1+1@}\\0&amp;0&amp;-6&amp;-3&amp;{@-3*A1-4@}\\0&amp;0&amp;0&amp;1&amp;{@A1+3@}\end{array}\right)\)
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <strong>
+        IV
+    </strong>
+    <strong>
+        :
+    </strong>
+    \(x_4={@A1+3@}\)
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <strong>
+        III
+    </strong>
+    <strong>
+        :
+    </strong>
+    \(-6x_3-3x_4={@-3*A1-4@}\) mit IV:
+</p>
+<p>
+    \(-6x_3-3\cdot {@A1+3@}={@-3*A1-4@}\)&#160; &#160; \(\Leftrightarrow\)&#160; &#160;\(x_3={@t3@}\)
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <strong>
+        II:
+    </strong>
+    \(2x_2+2x_4={@2*A1+1@}\)&#160; mit IV:
+</p>
+<p>
+    \(2x_2+2\cdot {@t4@}={@2*A1+1@}\)&#160; &#160; \(\Leftrightarrow\)&#160; &#160;\(x_2={@t2@}\)
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <strong>
+        I:
+    </strong>
+    \(-x_1+x_2-x_3+x_4={@A1@}\)&#160; mit II, III, IV:
+</p>
+<p>
+    \(-x_1+{@t2@}-{@t3@}+{@t4@}={@A1@}\)&#160; &#160; \(\Leftrightarrow\)&#160; &#160;\(x_1={@t1@}\)
+</p>
+<p>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<h4>
+    <strong>
+        Solution
+    </strong>
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    With Gauss:
+</p>
+<p>
+    \(\left(\begin{array}{cccc|c}-1&amp;1&amp;-1&amp;1&amp;{@A1@}\\1&amp;1&amp;1&amp;1&amp;{@A1+1@}\\8&amp;4&amp;2&amp;1&amp;{@A1+2@}\\0&amp;0&amp;0&amp;1&amp;{@A1+3@}\end{array}\right)\xrightarrow{II+I, III+8I}\left(\begin{array}{cccc|c}-1&amp;1&amp;-1&amp;1&amp;{@A1@}\\0&amp;2&amp;0&amp;2&amp;{@2*A1+1@}\\0&amp;12&amp;-6&amp;9&amp;{@9*A1+2@}\\0&amp;0&amp;0&amp;1&amp;{@A1+3@} \end{array}\right)\xrightarrow{III-6II}\left(\begin{array}{cccc|c}-1&amp;1&amp;-1&amp;1&amp; {@A1@}\\0&amp;2&amp;0&amp;2&amp;{@2*A1+1@}\\0&amp;0&amp;-6&amp;-3&amp;{@-3*A1-4@}\\0&amp;0&amp;0&amp;1&amp;{@A1+3@}\end{array}\right)\)
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <strong>
+        IV
+    </strong>
+    <strong>
+        :
+    </strong>
+    \(x_4={@A1+3@}\)
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <strong>
+        III
+    </strong>
+    <strong>
+        :
+    </strong>
+    \(-6x_3-3x_4={@-3*A1-4@}\) with IV:
+</p>
+<p>
+    \(-6x_3-3\cdot {@A1+3@}={@-3*A1-4@}\) \(\Leftrightarrow\)\(x_3={@t3@}\)
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <strong>
+        II:
+    </strong>
+    \(2x_2+2x_4={@2*A1+1@}\)with IV:
+</p>
+<p>
+    \(2x_2+2\cdot {@t4@}={@2*A1+1@}\) \(\Leftrightarrow\)\(x_2={@t2@}\)
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <strong>
+        I:
+    </strong>
+    \(-x_1+x_2-x_3+x_4={@A1@}\)with II, III, IV:
+</p>
+<p>
+    \(-x_1+{@t2@}-{@t3@}+{@t4@}={@A1@}\) \(\Leftrightarrow\)\(x_1={@t1@}\)
+</p>
+<p>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -278,32 +276,17 @@ f4:tbb[4,1];</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>

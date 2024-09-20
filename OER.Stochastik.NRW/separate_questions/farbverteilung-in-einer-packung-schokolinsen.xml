@@ -1,0 +1,3727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Farbverteilung in einer Packung Schokolinsen</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<style type="text/css">
+    button.top-next,
+                        button.next {
+                                        border: 1px solid black;
+                                        background-color: #A9F5BC;
+                        }
+
+      
+      
+      
+      button.top-next:hover,
+                        button.next:hover {
+                                        background-color: #E0F8E6;
+                        }
+
+      
+      
+      
+      button.top,
+                        button.prev {
+                                        border: 1px solid black;
+                                        background-color: #DCB25E;
+                        }
+                        button.top:hover,
+                        button.prev:hover {
+                                        background-color: #E7D2A7;
+                        }
+
+  
+  
+  
+  .data-table {
+                        border-collapse: collapse;
+                        margin: 25px 0;
+                        font-size: 0.9em;
+                        min-width: 400px;
+                        border-radius: 5px 5px 0 0;
+                        overflow: hidden;
+                        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+  
+  
+  
+  .data-table thead tr {
+                        background-color: #17365c;
+                        color: #ffffff;
+                        text-align: left;
+                        font-weight: bold;
+        }
+
+  
+  
+  
+  .data-table th,
+        .data-table td {
+                        padding: 12px 15px;
+        }
+
+  
+  
+  
+  .data-table tbody tr {
+                        border-bottom: 1px solid #e7e7e7;
+        }
+
+  
+  
+  
+  .data-table tbody tr:nth-of-type(even) {
+                        background-color: #f3f3f3;
+        }
+
+  
+  
+  
+  .data-table tbody tr:last-of-type {
+                        border-bottom: 2px solid #17365c;
+        }
+
+  
+  
+  
+  .data-table tbody tr.active-row {
+                        font-weight: bold;
+                        color: #17365c;
+        }
+
+  
+  
+  
+  .que.stack .formulation .question-view .flashback .stackprtfeedback {
+                        border: 1px solid gray;
+                        border-radius: 10px;
+                        padding: 5px;
+                        background: transparent;
+        }
+
+  
+  
+  
+  .que.stack .formulation td.correct {
+                background-color: #c8ffc7;
+        }
+        .que.stack .formulation td.incorrect {
+                background-color: #fec4c5;
+        }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: .5em .5em 0;
+                }
+                .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -.5em -.5em 0;
+                                padding: .5em;
+                }
+                .que.stack .formulation details[open] {
+                                padding: .5em;
+                }
+                .que.stack .formulation details[open] summary {
+                                border-bottom: 1px solid #aaa;
+                                margin-bottom: .5em;
+                }
+</style>
+<div class="question-view">
+    <p>
+        Ein:e Mitarbeiter:in eines Lehrstuhls behauptet, dass die Wahrscheinlichkeit, dass eine
+Schokolinse eines bekannten Herstellers blau oder orange ist, jeweils {#p2#} ist, und dass die
+Wahrscheinlichkeit f&#252;r die anderen 4 Farben (rot, gelb, gr&#252;n, braun)
+jeweils {#p1#} ist.  Ein:e Professor:in vertraut diesen Angaben nicht und
+bestimmt dazu die Farbverteilung von {# lreduce("+", nn) #} zuf&#228;llig
+gew&#228;hlten Schokolinsen.  Die sechs Farben kamen mit den folgenden
+H&#228;ufigkeiten vor:
+    </p>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>
+                    Farbe
+                </th>
+                <td>
+                    rot
+                </td>
+                <td>
+                    gelb
+                </td>
+                <td>
+                    blau
+                </td>
+                <td>
+                    gr&#252;n
+                </td>
+                <td>
+                    orange
+                </td>
+                <td>
+                    braun
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    Anzahl
+                </th>
+                <td>
+                    {# nn[1] #}
+                </td>
+                <td>
+                    {# nn[2] #}
+                </td>
+                <td>
+                    {# nn[3] #}
+                </td>
+                <td>
+                    {# nn[4] #}
+                </td>
+                <td>
+                    {# nn[5] #}
+                </td>
+                <td>
+                    {# nn[6] #}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        Wir wollen wissen, ob diese Daten im Einklang mit der Verteilung aus der Literatur sind.  Weil wir uns sicher sein wollen, wenn wir der Behauptung widersprechen, w&#228;hlen wir als Nullhypothese, dass die Daten von der oben genannten Verteilung kommen.
+    </p>
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="question-view">
+                <p>
+                    <b>
+                        (a)
+                    </b>
+                    W&#228;hlen Sie einen geeigneten Test f&#252;r dieses Testproblem aus.
+                </p>
+                <p>
+                    [[/lang]][[lang code="en"]]
+                    <style type="text/css">
+                        button.top-next,
+                        button.next {
+                                        border: 1px solid black;
+                                        background-color: #A9F5BC;
+                        }
+
+      
+      
+      
+      button.top-next:hover,
+                        button.next:hover {
+                                        background-color: #E0F8E6;
+                        }
+
+      
+      
+      
+      button.top,
+                        button.prev {
+                                        border: 1px solid black;
+                                        background-color: #DCB25E;
+                        }
+                        button.top:hover,
+                        button.prev:hover {
+                                        background-color: #E7D2A7;
+                        }
+
+  
+  
+  
+  .data-table {
+                        border-collapse: collapse;
+                        margin: 25px 0;
+                        font-size: 0.9em;
+                        min-width: 400px;
+                        border-radius: 5px 5px 0 0;
+                        overflow: hidden;
+                        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+  
+  
+  
+  .data-table thead tr {
+                        background-color: #17365c;
+                        color: #ffffff;
+                        text-align: left;
+                        font-weight: bold;
+        }
+
+  
+  
+  
+  .data-table th,
+        .data-table td {
+                        padding: 12px 15px;
+        }
+
+  
+  
+  
+  .data-table tbody tr {
+                        border-bottom: 1px solid #e7e7e7;
+        }
+
+  
+  
+  
+  .data-table tbody tr:nth-of-type(even) {
+                        background-color: #f3f3f3;
+        }
+
+  
+  
+  
+  .data-table tbody tr:last-of-type {
+                        border-bottom: 2px solid #17365c;
+        }
+
+  
+  
+  
+  .data-table tbody tr.active-row {
+                        font-weight: bold;
+                        color: #17365c;
+        }
+
+  
+  
+  
+  .que.stack .formulation .question-view .flashback .stackprtfeedback {
+                        border: 1px solid gray;
+                        border-radius: 10px;
+                        padding: 5px;
+                        background: transparent;
+        }
+
+  
+  
+  
+  .que.stack .formulation td.correct {
+                background-color: #c8ffc7;
+        }
+        .que.stack .formulation td.incorrect {
+                background-color: #fec4c5;
+        }
+
+    
+    
+    
+    .que.stack .formulation details {
+                                border: 1px solid #aaa;
+                                border-radius: 4px;
+                                padding: .5em .5em 0;
+                }
+                .que.stack .formulation summary {
+                                font-weight: bold;
+                                margin: -.5em -.5em 0;
+                                padding: .5em;
+                }
+                .que.stack .formulation details[open] {
+                                padding: .5em;
+                }
+                .que.stack .formulation details[open] summary {
+                                border-bottom: 1px solid #aaa;
+                                margin-bottom: .5em;
+                }
+                    </style>
+                    <div class="question-view">
+                        <p>
+                            A:e employee:in a chair claims that the probability that a
+chocolate lens of a known manufacturer is blue or orange, each {#p2#} and that the
+Probability for the other 4 colors (red, yellow, green, brown)
+each {#p1#} is. A:e Professor:does not trust this information and
+the color distribution of {# lreduce("+", nn) #} Random
+chosen  Schokolinsen. The six colors came with the following
+Frequency before:
+                        </p>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Colour
+                                    </th>
+                                    <td>
+                                        Red
+                                    </td>
+                                    <td>
+                                        yellow
+                                    </td>
+                                    <td>
+                                        blue
+                                    </td>
+                                    <td>
+                                        green
+                                    </td>
+                                    <td>
+                                        orange
+                                    </td>
+                                    <td>
+                                        brown
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        Number
+                                    </th>
+                                    <td>
+                                        {# nn[1] #}
+                                    </td>
+                                    <td>
+                                        {# nn[2] #}
+                                    </td>
+                                    <td>
+                                        {# nn[3] #}
+                                    </td>
+                                    <td>
+                                        {# nn[4] #}
+                                    </td>
+                                    <td>
+                                        {# nn[5] #}
+                                    </td>
+                                    <td>
+                                        {# nn[6] #}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            We want to know whether this data is in line with the distribution from literature. Because we want to be sure if we object to the assertion, we choose as a zero hypothesis that the data comes from the above-mentioned distribution.
+                        </p>
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="question-view">
+                                    <p>
+                                        <b>
+                                            (a)
+                                        </b>
+                                        Select a suitable test for this test problem.
+                                    </p>
+                                    <p>
+                                        [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
+                                    </p>
+                                    [[/lang]][[lang code="en"]]
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+                [[/lang]][[feedback:prt_ans1]][[lang code="de"]]
+            </div>
+            <div class="question-view">
+                <div class="question-view">
+                    <p>
+                        <b>
+                            (b)
+                        </b>
+                        Bestimmen Sie den Wert der Test-Statistik.
+                    </p>
+                    <p>
+                        \(T = \) [[/lang]][[lang code="en"]]
+                    </p>
+                </div>
+                <div class="question-view">
+                    <div class="question-view">
+                        <p>
+                            <b>
+                                (b)
+                            </b>
+                            Determine the value of the test statistics.
+                        </p>
+                        <p>
+                            \(T = \) [[/lang]][[input:ans2]][[lang code="de"]]
+                        </p>
+                        [[/lang]][[lang code="en"]]
+                        [[/lang]][[validation:ans2]][[lang code="de"]]
+                [[/lang]][[lang code="en"]][[/lang]][[feedback:prt_ans2]][[lang code="de"]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            <b>
+                                (b.1)
+                            </b>
+                            W&#228;hlen Sie die richtige Formel f&#252;r die Test-Statistik des
+                \(\chi^2\)-Tests aus.
+                        </p>
+                        <p>
+                            [[/lang]][[lang code="en"]]
+                        </p>
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            <b>
+                                (b.1)
+                            </b>
+                            Choose the right formula for the test statistics of the
+    \(\chi^2\)- Testing.
+                        </p>
+                        <p>
+                            [[/lang]][[input:ans1a]][[lang code="de"]]
+                        </p>
+                        [[/lang]][[lang code="en"]]
+                        [[/lang]][[validation:ans1a]][[lang code="de"]]
+                [[/lang]][[lang code="en"]][[/lang]][[feedback:prt_ans1a]][[lang code="de"]]
+                    </div>
+                    <div class="question-view">
+                        <p>
+                            Sie haben zuvor folgende Test-Statistik ausgew&#228;hlt:
+\[
+    \sum_{i=1}^n \frac{(n_i - n \theta^{(0)}_i)^2}{n \theta^{(0)}_i}
+\]
+                        </p>
+                        <p>
+                            <b>
+                                (b.2)
+                            </b>
+                            Tragen Sie in die folgende Tabelle die Anzahlen ein, die
+Sie laut Mitarbeiter:in f&#252;r die jeweilige Farbe erwarten w&#252;rden.
+                        </p>
+                        <p>
+                            <em>
+                                Hinweis: Bitte f&#252;llen Sie alle Felder der Tabelle aus, um Feedback zu Ihrer L&#246;sung zu erhalten.
+                            </em>
+                        </p>
+                        <div style="overflow: scroll">
+                            <table class="data-table" id="4ec48367-96d5-4467-868e-4eb177116d77">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Farbe
+                                        </th>
+                                        <th>
+                                            rot
+                                        </th>
+                                        <th>
+                                            gelb
+                                        </th>
+                                        <th>
+                                            blau
+                                        </th>
+                                        <th>
+                                            gr&#252;n
+                                        </th>
+                                        <th>
+                                            orange
+                                        </th>
+                                        <th>
+                                            braun
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            beobachtet \(n_i\)
+                                        </th>
+                                        <td>
+                                            {# nn[1] #}
+                                        </td>
+                                        <td>
+                                            {# nn[2] #}
+                                        </td>
+                                        <td>
+                                            {# nn[3] #}
+                                        </td>
+                                        <td>
+                                            {# nn[4] #}
+                                        </td>
+                                        <td>
+                                            {# nn[5] #}
+                                        </td>
+                                        <td>
+                                            {# nn[6] #}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            erwartet \(n\theta^{(0)}_i\)
+                                        </th>
+                                        <td>
+                                            [[/lang]][[lang code="en"]]
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="question-view">
+                            <p>
+                                You have previously selected the following test statistics:
+\[
+    \sum_{i=1}^n \frac{(n_i - n \theta^{(0)}_i)^2}{n \theta^{(0)}_i}
+\]
+                            </p>
+                            <p>
+                                <b>
+                                    (b.2)
+                                </b>
+                                In the following table, enter the numbers
+According to employees, they would expect for the respective color.
+                            </p>
+                            <p>
+                                <em>
+                                    Note: Please fill out all fields of the table to receive feedback on your solution.
+                                </em>
+                            </p>
+                            <div style="overflow: scroll">
+                                <table class="data-table" id="4ec48367-96d5-4467-868e-4eb177116d77">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Colour
+                                            </th>
+                                            <th>
+                                                Red
+                                            </th>
+                                            <th>
+                                                yellow
+                                            </th>
+                                            <th>
+                                                blue
+                                            </th>
+                                            <th>
+                                                green
+                                            </th>
+                                            <th>
+                                                orange
+                                            </th>
+                                            <th>
+                                                brown
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                observed \(n_i\)
+                                            </th>
+                                            <td>
+                                                {# nn[1] #}
+                                            </td>
+                                            <td>
+                                                {# nn[2] #}
+                                            </td>
+                                            <td>
+                                                {# nn[3] #}
+                                            </td>
+                                            <td>
+                                                {# nn[4] #}
+                                            </td>
+                                            <td>
+                                                {# nn[5] #}
+                                            </td>
+                                            <td>
+                                                {# nn[6] #}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                expected \(n\theta^{(0)}_i\)
+                                            </th>
+                                            <td>
+                                                [[/lang]][[input:ans1b_rot]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans1b_rot]][[lang code="de"]]
+                                            </td>
+                                            <td>
+                                                [[/lang]][[lang code="en"]]
+                                            </td>
+                                            <td>
+                                                [[/lang]][[input:ans1b_gelb]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans1b_gelb]][[lang code="de"]]
+                                            </td>
+                                            <td>
+                                                [[/lang]][[lang code="en"]]
+                                            </td>
+                                            <td>
+                                                [[/lang]][[input:ans1b_blau]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans1b_blau]][[lang code="de"]]
+                                            </td>
+                                            <td>
+                                                [[/lang]][[lang code="en"]]
+                                            </td>
+                                            <td>
+                                                [[/lang]][[input:ans1b_gruen]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans1b_gruen]][[lang code="de"]]
+                                            </td>
+                                            <td>
+                                                [[/lang]][[lang code="en"]]
+                                            </td>
+                                            <td>
+                                                [[/lang]][[input:ans1b_orange]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans1b_orange]][[lang code="de"]]
+                                            </td>
+                                            <td>
+                                                [[/lang]][[lang code="en"]]
+                                            </td>
+                                            <td>
+                                                [[/lang]][[input:ans1b_braun]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[validation:ans1b_braun]][[lang code="de"]]
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            [[/lang]][[lang code="en"]]
+                        </div>
+                        [[/lang]][[feedback:prt_ans1b]][[lang code="de"]]
+                    </div>
+                </div>
+                <div class="question-view">
+                    <p>
+                        <b>
+                            (c)
+                        </b>
+                        Es soll zum Niveau \(\alpha = {# alpha #}\) getestet
+                        werden. Bestimmen Sie den kritischen Wert f&#252;r Ihren Test.
+                    </p>
+                    <p>
+                        \(k_\alpha = \) [[/lang]][[lang code="en"]]
+                    </p>
+                </div>
+            </div>
+            <div class="question-view">
+                <p>
+                    <b>
+                        (c)
+                    </b>
+                    It should be level \(\alpha = {# alpha #}\) tested
+,. Determine the critical value for your test.
+                </p>
+                <p>
+                    \(k_\alpha = \) [[/lang]][[input:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans3]][[lang code="de"]]
+                </p>
+                <p>
+                    <em>
+                        Hinweis: Runden Sie den Wert auf mindestens eine Nachkommastelle.
+                    </em>
+                </p>
+                [[/lang]][[lang code="en"]]
+                <p>
+                    <em>
+                        Note: Complete the value for at least one decimal place.
+                    </em>
+                </p>
+                [[/lang]][[feedback:prt_ans3]][[lang code="de"]]
+            </div>
+            <div class="question-view">
+                <div class="flashback">
+                    [[/lang]][[lang code="en"]]
+                </div>
+                <div class="question-view">
+                    <div class="flashback">
+                        [[/lang]][[feedback:memD]][[lang code="de"]]
+                    </div>
+                    <p>
+                        <b>
+                            (d)
+                        </b>
+                        Wie lautet Ihre Testentscheidung?
+                    </p>
+                    <p>
+                        [[/lang]][[lang code="en"]]
+                    </p>
+                </div>
+                <p>
+                    <b>
+                        (d)
+                    </b>
+                    What is your test decision?
+                </p>
+                <p>
+                    [[/lang]][[input:ans4]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans4]][[lang code="de"]]
+                </p>
+                [[/lang]][[lang code="en"]]
+                [[/lang]][[feedback:prt_ans4]][[lang code="de"]]
+            </div>
+            <div class="question-view">
+                <div class="flashback">
+                    [[/lang]][[lang code="en"]]
+                </div>
+                <div class="question-view">
+                    <div class="flashback">
+                        [[/lang]][[feedback:memE]][[lang code="de"]]
+                    </div>
+                    <p>
+                        <b>
+                            (e)
+                        </b>
+                        Berechnen Sie den p-Wert.
+                    </p>
+                    <p>
+                        Antwort: [[/lang]][[lang code="en"]]
+                    </p>
+                </div>
+                <p>
+                    <b>
+                        (e)
+                    </b>
+                    Calculate the p value.
+                </p>
+                <p>
+                    Answer: [[/lang]][[input:ans5]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans5]][[lang code="de"]]
+                </p>
+                [[/lang]][[lang code="en"]]
+                [[/lang]][[feedback:prt_ans5]][[lang code="de"]]
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <ol class="menu-group list-group">
+                <li class="list-group-item active">
+                    <b>
+                        (a)
+                    </b>
+                    Geeigneten Test ausw&#228;hlen
+                </li>
+                <li class="list-group-item">
+                    <b>
+                        (b)
+                    </b>
+                    Wert der Test-Statistik bestimmen
+                </li>
+                <li class="list-group-item">
+                    <b>
+                        (c)
+                    </b>
+                    Kritischen Wert bestimmen
+                </li>
+                <li class="list-group-item">
+                    <b>
+                        (d)
+                    </b>
+                    Testentscheidung treffen
+                </li>
+                <li class="list-group-item">
+                    <b>
+                        (e)
+                    </b>
+                    \(p\)-Wert berechnen
+                </li>
+            </ol>
+        </div>
+    </div>
+    <script>
+        /*
+    * This program is free software: you can redistribute it and/or
+    * modify it under the terms of the GNU General Public License as
+    * published by the Free Software Foundation, either version 3 of the
+    * License, or (at your option) any later version.
+    *
+    * This program is distributed in the hope that it will be useful, but
+    * WITHOUT ANY WARRANTY; without even the implied warranty of
+    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    * General Public License for more details.
+    *
+    * You should have received a copy of the GNU General Public License
+    * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    *
+    * Copyright (C) 2021 by Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>
+    * SPDX-License-Identifier: GPL-3.0-or-later
+    *
+    */
+
+
+
+
+/* @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later */
+
+
+
+
+(function() {
+/* Make sure to create QController instances only once even if the
+            script is loaded multiple times.  This is so that the script can
+            be included in more than one STACK question on the page and still
+            function properly. */
+if (window.QController === undefined) {
+        window.QController = QController;
+        document.addEventListener("DOMContentLoaded", event => {
+                const responseform = document.getElementById("responseform");
+                if (!responseform) {
+                        throw Error("Element with id responseform not found.");
+                }
+
+    
+    
+    
+    responseform.querySelectorAll(".stack.que").forEach(stackQue => {
+                        const rootElement = stackQue.querySelector(".question-view");
+
+      
+      
+      
+      if (!rootElement) {
+                                console.log("QController Warning: no elements with class question-view inside " + stackQue.id);
+                                return;
+                        }
+
+      
+      
+      
+      const controller = new QController(rootElement, stackQue.id);
+                        controller.installHandlers();
+                        controller.loadState();
+                        controller.update();
+                });
+        });
+}
+
+
+
+
+/* This class handles the navigation of a single STACK question */
+function QController(rootElement, questionId) {
+        this.rootElement = rootElement;
+        this.id = questionId;
+        this.views = rootElement.querySelectorAll(".question-view");
+        this.currentView = Array.prototype.findIndex.call(this.views, isLeaf);
+}
+
+
+
+
+/* Update view according to current controller state */
+QController.prototype.update = function() {
+        this.views.forEach(hide);
+
+  
+  
+  
+  const current = this.views[this.currentView];
+        if (isLeaf(current)) {
+                showView(current);
+        } else {
+                showFirstView(current);
+        }
+};
+
+
+
+
+/* Install event handlers for all buttons under root element */
+QController.prototype.installHandlers = function() {
+        const controller = this;
+        this.rootElement.querySelectorAll("button").forEach(button => {
+                button.addEventListener("click", ev => {
+                        const view = button.closest(".question-view");
+
+      
+      
+      
+      if (!view) {
+                                console.log("qcontroller: <button> not inside question view");
+                                return;
+                        }
+
+      
+      
+      
+      const classList = button.classList;
+                        let forward = null;
+
+      
+      
+      
+      if (classList.contains("next")) {
+                                forward = view.nextElementSibling;
+                        } else if (classList.contains("top-next")) {
+                                const parent = view.parentNode;
+                                if (parent) {
+                                        forward = parent.nextElementSibling;
+                                } else {
+                                        forward = null;
+                                }
+                        } else if (classList.contains("top")) {
+                                forward = containingView(view);
+                        } else if (classList.contains("prev")) {
+                                forward = view.previousElementSibling;
+                        }
+
+      
+      
+      
+      if (forward && forward.classList.contains("question-view")) {
+                                controller.currentView = Array.prototype.findIndex.call(
+                                        controller.views, x => x === forward);
+                                controller.saveState();
+                                controller.update();
+                        }
+                });
+        });
+};
+
+
+
+
+/* Save controller state to current session */
+QController.prototype.saveState = function() {
+        const key = this.id + "-controller-state";
+        window.sessionStorage.setItem(key, this.currentView);
+};
+
+
+
+
+/* Load controller state from current session */
+QController.prototype.loadState = function() {
+        const key = this.id + "-controller-state";
+        const state = window.sessionStorage.getItem(key);
+
+  
+  
+  
+  if (state) {
+                this.currentView = Number.parseInt(state);
+        }
+};
+
+
+
+
+/* Show the first leaf question view */
+function showFirstView(questionView) {
+        let view = questionView;
+
+  
+  
+  
+  while (view && !isLeaf(view)) {
+                view = view.querySelector(".question-view");
+        }
+
+  
+  
+  
+  showView(view);
+}
+
+
+
+
+function showView(view) {
+        /* show all containing views */
+        while (view) {
+                show(view);
+                view = containingView(view);
+        }
+}
+
+
+
+
+/* Return the view containing VIEW */
+function containingView(view) {
+        let parent = view.parentNode;
+
+  
+  
+  
+  if (parent) {
+                parent = parent.closest(".question-view");
+        }
+
+  
+  
+  
+  return parent;
+}
+
+
+
+
+function show(view) {
+        view.style.display = "block";
+}
+
+
+
+
+function isLeaf(view) {
+        return view.querySelector(".question-view") == null;
+}
+
+
+
+
+function isVisible(view) {
+        return view.style.display != "none";
+}
+
+
+
+
+function hide(view) {
+        view.style.display = "none";
+}
+
+
+
+
+})();
+/* @license-end */
+    </script>
+    <script>
+        /* This program is free software: you can redistribute it and/or
+            modify it under the terms of the GNU General Public License as
+            published by the Free Software Foundation, either version 3 of the
+            License, or (at your option) any later version.
+
+   
+   
+   
+   This program is distributed in the hope that it will be useful, but
+            WITHOUT ANY WARRANTY; without even the implied warranty of
+            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+            General Public License for more details.
+
+   
+   
+   
+   You should have received a copy of the GNU General Public License
+            along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+   
+   
+   
+   Copyright 2022 Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>
+            SPDX-License-Identifier: GPL-3.0-or-later  */
+
+
+
+
+(function() {
+        "use strict";
+        var menuGroup = null;
+        var id = document.currentScript.closest(".que.stack").id;
+        var key = id + "-menu-state";
+
+  
+  
+  
+  function update(state) {
+                if (!menuGroup) {
+                        console.warn("QMenu.update: No menu-group found");
+                        return;
+                }
+
+    
+    
+    
+    menuGroup.querySelectorAll("li").forEach(function (item, ind) {
+                        if (ind == state) {
+                                item.classList.add("active");
+                        } else {
+                                item.classList.remove("active");
+                        }
+                });
+        }
+
+  
+  
+  
+  function load() {
+                const state = window.sessionStorage.getItem(key);
+                if (state) {
+                        return state;
+                } else {
+                        return 0;
+                }
+        }
+
+  
+  
+  
+  function storeAndUpdate(state) {
+                window.sessionStorage.setItem(key, state);
+                update(state);
+        }
+
+  
+  
+  
+  document.addEventListener("DOMContentLoaded", function(event) {
+                menuGroup = document.getElementById(id).querySelector(".menu-group");
+                update(load());
+        });
+
+  
+  
+  
+  var QMenu = {};
+        QMenu.update = update;
+        QMenu.storeAndUpdate = storeAndUpdate;
+        window.QMenu = QMenu;
+})();
+    </script>
+    [[/lang]][[lang code="en"]]
+</div>
+<div class="col-sm-4">
+    <ol class="menu-group list-group">
+        <li class="list-group-item active">
+            <b>
+                (a)
+            </b>
+            Select suitable test
+        </li>
+        <li class="list-group-item">
+            <b>
+                (b)
+            </b>
+            Determine value of test statistics
+        </li>
+        <li class="list-group-item">
+            <b>
+                (c)
+            </b>
+            Determine critical value
+        </li>
+        <li class="list-group-item">
+            <b>
+                (d)
+            </b>
+            Making a decision
+        </li>
+        <li class="list-group-item">
+            <b>
+                (e)
+            </b>
+            \(p\)-Calculate value
+        </li>
+    </ol>
+</div>
+<script>
+    /*
+    * This program is free software: you can redistribute it and/or
+    * modify it under the terms of the GNU General Public License as
+    * published by the Free Software Foundation, either version 3 of the
+    * License, or (at your option) any later version.
+    *
+    * This program is distributed in the hope that it will be useful, but
+    * WITHOUT ANY WARRANTY; without even the implied warranty of
+    * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    * General Public License for more details.
+    *
+    * You should have received a copy of the GNU General Public License
+    * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*
+* Copyright (C) 2021 by Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>* SPDX-License Identifier: GPL-3.0-or-later
+*
+*/
+
+
+
+
+/* @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-orLater */
+
+
+
+
+(function() {
+/* Make sure to create QController instances only once even if the
+            script is loaded multiple times.  This is so that the script can
+            be included in more than one STACK question on the page and still
+            function properly. */
+if (window.QController === undefined) {
+        window.QController = QController;
+        document.addEventListener("DOMContentLoaded", event => {
+                const responseform = document.getElementById("responseform");
+                if (!responseform) {
+                        throw Error("Element with id responseform not found.");
+                }
+
+    
+    
+    
+    responseform.querySelectorAll(".stack.que").forEach(stackQue => {
+                        const rootElement = stackQue.querySelector(".question-view");
+
+      
+      
+      
+      if (!rootElement) {
+                                console.log("QController Warning: no elements with class question-view inside " + stackQue.id);
+                                return;
+                        }
+
+      
+      
+      
+      const controller = new QController(rootElement, stackQue.id);
+                        controller.installHandlers();
+                        controller.loadState();
+                        controller.update();
+                });
+        });
+}
+
+
+
+
+/* This class handles the navigation of a single STACK question */
+function QController(rootElement, questionId) {
+        this.rootElement = rootElement;
+        this.id = questionId;
+        this.views = rootElement.querySelectorAll(".question-view");
+        this.currentView = Array.prototype.findIndex.call(this.views, isLeaf);
+}
+
+
+
+
+/* Update view according to current controller state */
+QController.prototype.update = function() {
+        this.views.forEach(hide);
+
+  
+  
+  
+  const current = this.views[this.currentView];
+        if (isLeaf(current)) {
+                showView(current);
+        } else {
+                showFirstView(current);
+        }
+};
+
+
+
+
+/* Install event handlers for all buttons under root element */
+QController.prototype.installHandlers = function() {
+        const controller = this;
+        this.rootElement.querySelectorAll("button").forEach(button => {
+                button.addEventListener("click", ev => {
+                        const view = button.closest(".question-view");
+
+      
+      
+      
+      if (!view) {
+                                console.log("qcontroller: <button> not inside question view");
+                                return;
+                        }
+
+      
+      
+      
+      const classList = button.classList;
+                        let forward = null;
+
+      
+      
+      
+      if (classList.contains("next")) {
+                                forward = view.nextElementSibling;
+                        } else if (classList.contains("top-next")) {
+                                const parent = view.parentNode;
+                                if (parent) {
+                                        forward = parent.nextElementSibling;
+                                } else {
+                                        forward = null;
+                                }
+                        } else if (classList.contains("top")) {
+                                forward = containingView(view);
+                        } else if (classList.contains("prev")) {
+                                forward = view.previousElementSibling;
+                        }
+
+      
+      
+      
+      if (forward && forward.classList.contains("question-view")) {
+                                controller.currentView = Array.prototype.findIndex.call(
+                                        controller.views, x => x === forward);
+                                controller.saveState();
+                                controller.update();
+                        }
+                });
+        });
+};
+
+
+
+
+/* Save controller state to current session */
+QController.prototype.saveState = function() {
+        const key = this.id + "-controller-state";
+        window.sessionStorage.setItem(key, this.currentView);
+};
+
+
+
+
+/* Load controller state from current session */
+QController.prototype.loadState = function() {
+        const key = this.id + "-controller-state";
+        const state = window.sessionStorage.getItem(key);
+
+  
+  
+  
+  if (state) {
+                this.currentView = Number.parseInt(state);
+        }
+};
+
+
+
+
+/* Show the first leaf question view */
+function showFirstView(questionView) {
+        let view = questionView;
+
+  
+  
+  
+  while (view && !isLeaf(view)) {
+                view = view.querySelector(".question-view");
+        }
+
+  
+  
+  
+  showView(view);
+}
+
+
+
+
+function showView(view) {
+        /* show all containing views */
+        while (view) {
+                show(view);
+                view = containingView(view);
+        }
+}
+
+
+
+
+/* Return the view containing VIEW */
+function containingView(view) {
+        let parent = view.parentNode;
+
+  
+  
+  
+  if (parent) {
+                parent = parent.closest(".question-view");
+        }
+
+  
+  
+  
+  return parent;
+}
+
+
+
+
+function show(view) {
+        view.style.display = "block";
+}
+
+
+
+
+function isLeaf(view) {
+        return view.querySelector(".question-view") == null;
+}
+
+
+
+
+function isVisible(view) {
+        return view.style.display != "none";
+}
+
+
+
+
+function hide(view) {
+        view.style.display = "none";
+}
+
+
+
+
+}),
+/* @license-end */
+</script>
+<script>
+    /* This program is free software: you can redistribute it and/or
+            modify it under the terms of the GNU General Public License as
+            published by the Free Software Foundation, either version 3 of the
+            License, or (at your option) any later version.
+
+   
+   
+   
+   This program is distributed in the hope that it will be useful, but
+            WITHOUT ANY WARRANTY; without even the implied warranty of
+            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+            General Public License for more details.
+
+   
+   
+   
+   You should have received a copy of the GNU General Public License
+            along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
+
+Copyright 2022 Daniel Mei&#223;ner <daniel.meissner-i4k@ruhr-uni-bochum.de>SPDX-License Identifier: GPL-3.0-or-later */
+
+
+
+
+(function() {
+        "use strict";
+        var menuGroup = null;
+        var id = document.currentScript.closest(".que.stack").id;
+        var key = id + "-menu-state";
+
+  
+  
+  
+  function update(state) {
+                if (!menuGroup) {
+                        console.warn("QMenu.update: No menu-group found");
+                        return;
+                }
+
+    
+    
+    
+    menuGroup.querySelectorAll("li").forEach(function (item, ind) {
+                        if (ind == state) {
+                                item.classList.add("active");
+                        } else {
+                                item.classList.remove("active");
+                        }
+                });
+        }
+
+  
+  
+  
+  function load() {
+                const state = window.sessionStorage.getItem(key);
+                if (state) {
+                        return state;
+                } else {
+                        return 0;
+                }
+        }
+
+  
+  
+  
+  function storeAndUpdate(state) {
+                window.sessionStorage.setItem(key, state);
+                update(state);
+        }
+
+  
+  
+  
+  document.addEventListener("DOMContentLoaded", function(event) {
+                menuGroup = document.getElementById(id).querySelector(".menu-group");
+                update(load());
+        });
+
+  
+  
+  
+  var QMenu = {};
+        QMenu.update = update;
+        QMenu.storeAndUpdate = storeAndUpdate;
+        window.QMenu = QMenu;
+}),
+</script>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>5.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+  Farbverteilung in einer Packung Schokolinsen
+
+  wurde entwickelt von
+
+    Daniel Mei&#223;ner <daniel.meissner-i4k(at)ruhr-uni-bochum.de>
+
+  nach einer Idee von
+
+    Herold Dehling <herold.dehling(at)ruhr-uni-bochum.de>
+
+  an der Ruhr-Universit&#228;t Bochum.
+
+  Dieses Werk ist lizenziert unter einer Creative Commons
+  Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International
+  Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie
+  http://creativecommons.org/licenses/by-sa/4.0/.
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
+
+  Technische Informationen:
+
+  Diese Aufgabe ist eine mehrteilige Aufgabe, deren einzelne
+  Aufgabenteile mithilfe von JavaScript nacheinander sichtbar gemacht
+  werden.  Manchen Aufgabenteilen sind zus&#228;tzlich Hilfeschritte
+  beigef&#252;gt, die Studierende schrittweise durch den Aufgabenteil
+  f&#252;hren.
+
+  Diese Aufgabe verwendet das Maxima-Paket &#8216;distrib&#8217;.
+*/
+
+texqchisq(e) := block([q : first(args(e)), df : second(args(e))],
+  sconcat("\\chi^2_{", tex1(df), "; ", tex1(q), "}"));
+texput(qchisq, texqchisq);
+
+nn: /* rot gelb blau gr&#252;n orange braun */
+     [ 33, 22,  39,  17,  47,    22 ];
+
+kk: length (nn);
+alpha: 0.05;
+
+p1: 0.125;
+p2: 0.25;
+theta0: /* rot gelb blau gr&#252;n orange braun */
+         [ p1, p1,  p2,  p1,  p2,    p1 ];
+total: sum (nn[j], j, 1, kk);
+
+statistic: sum ((nn[i] - total*theta0[i])^2 / (total * theta0[i]), i, 1, kk);
+critical: quantile_chi2 (1 - alpha, kk - 1);
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+correct_ans: [
+tr("Chi-Quadrat-Anpassungstest","Chi-Square qoodness-of-fit test")
+];
+
+incorrect_ans: [
+tr("Zweiseitiger Test f&#252;r den Erwartungswert bei einer Stichprobe","two-sided test for the expected value of a sample"),
+tr("Einseitiger Test f&#252;r den Erwartungswert bei einer Stichprobe","One-sided test for the expected value of a sample"),
+tr("Einseitiger Test f&#252;r die Varianz bei einer Stichprobe","One-sided test for the variance of a sample"),
+tr("Zweiseitiger Test f&#252;r die Varianz bei einer Stichprobe","two-sided test for the variance of a sample")
+];
+
+appropiate_tests: append (maplist (lambda([t], [t, true]), correct_ans),
+                maplist (lambda ([t], [t, false]), incorrect_ans));
+
+test_result: [
+[tr("Hypothese verwerfen","discard hypothesis"), is(statistic >= critical)],
+[tr("Hypothese nicht verwerfen","don't discard hypothesis"), is(statistic < critical)]];
+
+Tans1: random_permutation (appropiate_tests);
+Tans2: statistic;
+Tans3: critical;
+Tans4: random_permutation (test_result);
+Tans5: 1 - cdf_chi2(statistic, kk - 1);
+
+Tans1a: random_permutation([
+[1, true, "\\(\\displaystyle \\sum_{i=1}^n \\frac{(n_i - n \\theta^{(0)}_i)^2}{n \\theta^{(0)}_i}\\)"],
+[2, false, "\\(\\displaystyle \\sum_{i=1}^n \\frac{n_i - n \\theta^{(0)}_i}{n \\theta^{(0)}_i}\\)"],
+[3, false, "\\(\\displaystyle \\sum_{i=1}^n \\frac{X_i -\\mu}{\\sqrt{n} \\sigma}\\)"],
+[4, false, "\\(\\displaystyle \\frac{s_Y^2}{s_X^2}\\)"]
+]);]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>{#nn#} {#Tans1#} {#Tans4#} {#Tans5#}</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Ihre Antwort ist nur teilweise richtig.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is only partly correct.[[/lang]]
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.[[/lang]]
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed>i</variantsselectionseed>
+        <input>
+            <name>ans1</name>
+            <type>radio</type>
+            <tans>Tans1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans1a</name>
+            <type>radio</type>
+            <tans>Tans1a</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ans1b_blau</name>
+            <type>numerical</type>
+            <tans>theta0[3]*total</tans>
+            <boxsize>3</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans1b_braun</name>
+            <type>numerical</type>
+            <tans>theta0[6]*total</tans>
+            <boxsize>3</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans1b_gelb</name>
+            <type>numerical</type>
+            <tans>theta0[2]*total</tans>
+            <boxsize>3</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans1b_gruen</name>
+            <type>numerical</type>
+            <tans>theta0[4]*total</tans>
+            <boxsize>3</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans1b_orange</name>
+            <type>numerical</type>
+            <tans>theta0[5]*total</tans>
+            <boxsize>3</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans1b_rot</name>
+            <type>numerical</type>
+            <tans>theta0[1]*total</tans>
+            <boxsize>3</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>numerical</type>
+            <tans>decimalplaces(Tans2,2)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>numerical</type>
+            <tans>decimalplaces(Tans3, 1)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>dropdown</type>
+            <tans>Tans4</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans5</name>
+            <type>numerical</type>
+            <tans>decimalplaces(Tans5,2)</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>memD</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>[ans2, ans3]</sans>
+                <tans>[Tans2,Tans3]</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>memD-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben zuvor Folgendes erarbeitet:
+</p>
+<ul>
+    <li>
+        Der Wert der Teststatistik betr&#228;gt {@T =&#8239;decimalplaces(Tans2,2) @}
+    </li>
+    <li>
+        Der kritische Wert betr&#228;gt \(k_\alpha =&#8239;{@ decimalplaces(Tans3, 1) @}\)
+    </li>
+</ul>
+[[/lang]][[lang code="en"]]
+<p>
+    You have prepared the following before:
+</p>
+<ul>
+    <li>
+        The value of the test statistics is {@T =&#8239;decimalplaces(Tans2,2) @}
+    </li>
+    <li>
+        The critical value is \(k_\alpha =&#8239;{@ decimalplaces(Tans3, 1) @}\)
+    </li>
+</ul>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>memD-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>memE</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>[ans2, ans3]</sans>
+                <tans>[Tans2,Tans3]</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>memE-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben zuvor Folgendes erarbeitet:
+</p>
+<ul>
+    <li>
+        Der Wert der Teststatistik betr&#228;gt {@T =&#8239;decimalplaces(Tans2,2) @}
+    </li>
+    <li>
+        Der kritische Wert betr&#228;gt \(k_\alpha =&#8239;{@ decimalplaces(Tans3, 1) @}\)
+    </li>
+</ul>
+[[/lang]][[lang code="en"]]
+<p>
+    You have prepared the following before:
+</p>
+<ul>
+    <li>
+        The value of the test statistics is {@T =&#8239;decimalplaces(Tans2,2) @}
+    </li>
+    <li>
+        The critical value is \(k_\alpha =&#8239;{@ decimalplaces(Tans3, 1) @}\)
+    </li>
+</ul>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>memE-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>first(mcq_correct(Tans1))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Mit dem Chi-Quadrat-Anpassungstest k&#246;nnen Sie pr&#252;fen, ob ein gegebener Datensatz zu einer vorgegebenen diskreten Verteilung passt. In dieser Aufgabe sollen Sie testen, ob die Daten zur behaupteten Farbverteilung  passen.
+</p>
+<p>
+    Klicken Sie auf
+    <button class="next" id="427374d8-8794-4eba-9e21-73782a4b23e4" type="button">
+        Weiter
+    </button>
+    , um zum n&#228;chsten Aufgaben-Teil zu gelangen.
+</p>
+<script>
+    (function() {
+document.getElementById("427374d8-8794-4eba-9e21-73782a4b23e4").addEventListener("click", function (event) {
+QMenu.storeAndUpdate(1);
+});
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    With the Chi-Quadrat customization test, you can check whether a given dataset matches a predetermined discrete distribution. In this task, you should test whether the data fit the claimed color distribution.
+</p>
+<p>
+    Click on
+    <button class="next" id="427374d8-8794-4eba-9e21-73782a4b23e4" type="button">
+        Next
+    </button>
+    to get to the next task part.
+</p>
+<script>
+    (function() {
+document.getElementById("427374d8-8794-4eba-9e21-73782a4b23e4").addEventListener("click", function (event) {
+QMenu.storeAndUpdate(1);
+});
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben einen Test f&#252;r den Erwartungswert oder die Varianz ausgew&#228;hlt. In dieser Aufgabe sollen Sie aber testen, ob die Daten zur behaupteten Farbverteilung passen. Versuchen Sie es bitte noch einmal.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have selected a test for the expected value or the variance. In this task, however, you should test whether the data fit the claimed color distribution. Please try again.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans1a</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1a</sans>
+                <tans>first(mcq_correct(Tans1a))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans1a-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</p>
+<p>
+    Diese Teststatistik geh&#246;rt zum Chi-Quadrat-Anpassungstest.  Die einzelnen Summanden messen wie stark die jeweiligen
+    <em>
+        beobachteten H&#228;ufigkeiten&#160;\(n_i\)
+    </em>
+    von den
+    <em>
+        erwarteten H&#228;ufigkeiten&#160;\(n\theta^{(0)}_i\)
+    </em>
+    abweichen.
+    <p>
+        Klicken Sie auf
+        <button class="next" type="button">
+            Weiter
+        </button>
+        , um mit der Hilfe fortzufahren.
+        <!--Alternativ klicken Sie auf <button type="button" class="top">Zur&#252;ck</button>, um zur urspr&#252;nglichen Aufgabenstellung zur&#252;ckzukehren.-->
+    </p>
+    [[/lang]][[lang code="en"]]
+    <p>
+        <span style="font-size: 1.5em; color:green;">
+            <i class="fa fa-check">
+            </i>
+        </span>
+        Right answer, well done!
+    </p>
+    <p>
+        These test statistics are part of the Chi Quartrate Adaptation Test. The individual summands measure the extent to which the respective
+        <em>
+            observed frequencies\(n_i\)
+        </em>
+        of the
+        <em>
+            expected frequencies\(n\theta^{(0)}_i\)
+        </em>
+        differ.
+        <p>
+            Click on
+            <button class="next" type="button">
+                Next
+            </button>
+            to continue with the help.
+            <!--Alternativ klicken Sie auf <button type="button" class="top">Zur&#252;ck</button>, um zur urspr&#252;nglichen Aufgabenstellung zur&#252;ckzukehren.-->
+        </p>
+        [[/lang]]
+    </p>
+</p>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans1a-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</p>
+<p>
+    [[if test="is(ans1a = 4)"]]
+    <!-- F = s_Y^2 / s_X^2 -->
+    Diese Teststatistik geh&#246;rt zum F-Test zum Vergleich der Varianzen
+zweier Verteilungen.  Dieser Test ist hier nicht angebracht.
+Lesen Sie noch einmal den Einleitungstext und achten Sie darauf,
+welche Hypothese getestet werden soll.
+[[elif test="is(ans1a = 2)"]]
+Diese Teststatistik ist der richtigen Teststatistik sehr &#228;hnlich.  Allerdings hat sich ein Fehler im Z&#228;hler der Summanden eingeschlichen. Bitte versuchen Sie es noch einmal.
+[[elif test="is(ans1a = 3)"]]
+Diese Teststatistik geh&#246;rt zu einem Test f&#252;r den Erwartungswert. Dieser Test ist hier nicht angebracht. Lesen Sie noch einmal
+den Einleitungstext und achten Sie darauf, welche Hypothese getestet werden soll.
+[[/if]]
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</p>
+<p>
+    [[if test="is(ans1a = 4)"]]
+    <!-- F = s_Y^2 / s_X^2 -->
+    These test statistics are part of the F test for comparing the variances
+two distributions. This test is not appropriate here.
+Read the introduction text again and make sure
+which hypothesis should be tested.
+[[elif test="is(ans1a = 2)"]]This test statistics is very similar to the correct test statistics. However, an error occurred in the summand counter. Please try again.
+[[elif test="is(ans1a = 3)"]]These test statistics are part of a test for the expected value. This test is not appropriate here. Read more
+the introduction text and make sure which hypothesis is to be tested.
+[[/if]]
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans1b</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text>expected: [ans1b_rot, ans1b_gelb, ans1b_blau, ans1b_gruen, ans1b_orange, ans1b_braun];</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>expected</sans>
+                <tans>theta0*total</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans1b-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Richtige Antwort, gut gemacht!
+</p>
+<p>
+    Klicken Sie auf
+    <button class="top" id="bf8fbe97-18c0-4c85-b896-8897d65348f1" type="button">
+        Zur&#252;ck
+    </button>
+    , um zur urspr&#252;nglichen Aufgabenstellung zur&#252;ckzukehren.
+</p>
+<script>
+    (function() {
+                "use strict";
+                const btn = document.getElementById("bf8fbe97-18c0-4c85-b896-8897d65348f1");
+                btn.addEventListener("click", function (event) {
+                        document.getElementById("oer-244f6008-prt2-help").style.display = "block";
+                        document.getElementById("oer-244f6008-prt2-no-help").style.display = "none";
+                        sessionStorage.setItem("oer-244f6008-prt2-help", "block");
+                        sessionStorage.setItem("oer-244f6008-prt2-no-help", "none");
+                });
+        })();
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    <span style="font-size: 1.5em; color:green;">
+        <i class="fa fa-check">
+        </i>
+    </span>
+    Right answer, well done!
+</p>
+<p>
+    Click on
+    <button class="top" id="bf8fbe97-18c0-4c85-b896-8897d65348f1" type="button">
+        Back
+    </button>
+    to return to the original task.
+</p>
+<script>
+    (function() {
+                "use strict";
+                const btn = document.getElementById("bf8fbe97-18c0-4c85-b896-8897d65348f1");
+                btn.addEventListener("click", function (event) {
+                        document.getElementById("oer-244f6008-prt2-help").style.display = "block";
+                        document.getElementById("oer-244f6008-prt2-no-help").style.display = "none";
+                        sessionStorage.setItem("oer-244f6008-prt2-help", "block");
+                        sessionStorage.setItem("oer-244f6008-prt2-no-help", "none");
+                });
+        })();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt_ans1b-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Falsche Antwort.
+</p>
+<p>
+    Die rot markierten Eintr&#228;ge sind falsch.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    <span style="font-size: 1.5em; color:red;">
+        <i class="fa fa-times">
+        </i>
+    </span>
+    Wrong answer.
+</p>
+<p>
+    The red marked entries are wrong.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1b_rot</sans>
+                <tans>theta0[1]*total</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prt_ans1b-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[6].classList.add("correct");
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[6].classList.add("correct");
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prt_ans1b-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[6].classList.add("incorrect");
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[6].classList.add("incorrect");
+})();
+</script>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1b_gelb</sans>
+                <tans>theta0[2]*total</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>prt_ans1b-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[7].classList.add("correct");
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[7].classList.add("correct");
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prt_ans1b-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[7].classList.add("incorrect");
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[7].classList.add("incorrect");
+})();
+</script>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1b_blau</sans>
+                <tans>theta0[3]*total</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>prt_ans1b-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[8].classList.add("correct");
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[8].classList.add("correct");
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prt_ans1b-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[8].classList.add("incorrect");
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[8].classList.add("incorrect");
+})();
+</script>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1b_gruen</sans>
+                <tans>theta0[4]*total</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>prt_ans1b-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[9].classList.add("correct");
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[9].classList.add("correct");
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>prt_ans1b-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[9].classList.add("incorrect");
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[9].classList.add("incorrect");
+})();
+</script>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1b_orange</sans>
+                <tans>theta0[5]*total</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>6</truenextnode>
+                <trueanswernote>prt_ans1b-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[10].classList.add("correct");
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[10].classList.add("correct");
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>6</falsenextnode>
+                <falseanswernote>prt_ans1b-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[10].classList.add("incorrect");
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[10].classList.add("incorrect");
+})();
+</script>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>6</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1b_braun</sans>
+                <tans>theta0[6]*total</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt_ans1b-7-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[11].classList.add("correct");
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[11].classList.add("correct");
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans1b-7-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[11].classList.add("incorrect");
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<script>
+    (function() {
+"use strict";
+document.getElementById("4ec48367-96d5-4467-868e-4eb177116d77").querySelectorAll("td")[11].classList.add("incorrect");
+})();
+</script>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans2</sans>
+                <tans>Tans2</tans>
+                <testoptions>0.1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Der Wert der Teststatistik kann mithilfe der folgenden Formel ermittelt werden:
+\[
+T = \sum_{i=1}^{@kk@} \frac{(n_i - n\theta^{(0)}_i)^2}{n\theta^{(0)}_i}
+\approx {@ decimalplaces(sum ((nn[i] - total*theta0[i])^2 / (total * theta0[i]), i, 1, kk), 2)@}
+\]
+Hierbei ersetzen Sie \(n_i\) mit den jeweiligen Werten aus der obigen Tabelle und die \(\theta^{(0)}_i\) beschreiben die theoretische Farbverteilung.
+</p>
+<p>
+    Klicken Sie auf
+    <button class="top-next" id="f1af6f50-b36c-4552-96b4-d0f81dc65d32" type="button">
+        Weiter
+    </button>
+    , um zum n&#228;chsten Aufgaben-Teil zu gelangen.
+</p>
+<script>
+    (function() {
+document.getElementById("f1af6f50-b36c-4552-96b4-d0f81dc65d32").addEventListener("click", function (event) {
+QMenu.storeAndUpdate(2);
+});
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    The value of the test statistics can be determined using the following formula:
+\[
+T = \sum_{i=1}^{@kk@} \frac{(n_i - n\theta^{(0)}_i)^2}{n\theta^{(0)}_i}
+\approx {@ decimalplaces(sum ((nn[i] - total*theta0[i])^2 / (total * theta0[i]), i, 1, kk), 2)@}
+\]Replace here \(n_i\) with the respective values from the above table and \(\theta^{(0)}_i\) describe the theoretical color distribution.
+</p>
+<p>
+    Click on
+    <button class="top-next" id="f1af6f50-b36c-4552-96b4-d0f81dc65d32" type="button">
+        Next
+    </button>
+    to get to the next task part.
+</p>
+<script>
+    (function() {
+document.getElementById("f1af6f50-b36c-4552-96b4-d0f81dc65d32").addEventListener("click", function (event) {
+QMenu.storeAndUpdate(2);
+});
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-244f6008-prt2-no-help">
+    <p>
+        Haben Sie sich verrechnet? Schauen Sie gegebenenfalls noch einmal im Skript nach.
+    </p>
+    <p>
+        Ben&#246;tigen Sie Hilfe bei der Bearbeitung dieses Aufgabenteils? Dann klicken Sie auf
+        <button class="next" type="button">
+            Hilfe
+        </button>
+        .
+    </p>
+</div>
+<div id="oer-244f6008-prt2-help" style="display: none">
+    <p>
+        Willkommen zur&#252;ck!  W&#228;hrend der Bearbeitung der Zwischenschritte haben Sie sich erarbeitet, dass die korrekte Formel f&#252;r die Teststatistik
+\[\sum_{i=1}^n \frac{(n_i - n \theta^{(0)}_i)^2}{n \theta^{(0)}_i}\]
+lautet. Au&#223;erdem haben Sie die Werte f&#252;r \(n\theta^{(0)}_i\) wie folgt berechnet:
+    </p>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>
+                    Farbe
+                </th>
+                <th>
+                    rot
+                </th>
+                <th>
+                    gelb
+                </th>
+                <th>
+                    blau
+                </th>
+                <th>
+                    gr&#252;n
+                </th>
+                <th>
+                    orange
+                </th>
+                <th>
+                    braun
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    beobachtet \(n_i\)
+                </th>
+                <td>
+                    {# nn[1] #}
+                </td>
+                <td>
+                    {# nn[2] #}
+                </td>
+                <td>
+                    {# nn[3] #}
+                </td>
+                <td>
+                    {# nn[4] #}
+                </td>
+                <td>
+                    {# nn[5] #}
+                </td>
+                <td>
+                    {# nn[6] #}
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    erwartet \(n\theta^{(0)}_i\)
+                </th>
+                <td>
+                    {# total*theta0[1] #}
+                </td>
+                <td>
+                    {# total*theta0[2] #}
+                </td>
+                <td>
+                    {# total*theta0[3] #}
+                </td>
+                <td>
+                    {# total*theta0[4] #}
+                </td>
+                <td>
+                    {# total*theta0[5] #}
+                </td>
+                <td>
+                    {# total*theta0[6] #}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+    (function() {
+                "use strict";
+                const feedback = document.currentScript.closest(".stackprtfeedback");
+                document.addEventListener("DOMContentLoaded", function (event) {
+                        const x = sessionStorage.getItem("oer-244f6008-prt2-no-help");
+                        const y = sessionStorage.getItem("oer-244f6008-prt2-help");
+                        if (x != null && y != null) {
+                                document.getElementById("oer-244f6008-prt2-no-help").style.display = x;
+                                document.getElementById("oer-244f6008-prt2-help").style.display = y;
+                        }
+                });
+        })();
+</script>
+[[/lang]][[lang code="en"]]
+<div id="oer-244f6008-prt2-no-help">
+    <p>
+        Have you made a mistake? Check the script again if necessary.
+    </p>
+    <p>
+        Do you need help to process this task? Then click on
+        <button class="next" type="button">
+            Help
+        </button>
+        .
+    </p>
+</div>
+<div id="oer-244f6008-prt2-help" style="display: none">
+    <p>
+        Welcome back! During the processing of the intermediate steps, you have worked out that the correct formula for the test statistics
+\[\sum_{i=1}^n \frac{(n_i - n \theta^{(0)}_i)^2}{n \theta^{(0)}_i}\]is. In addition, you have the values for \(n\theta^{(0)}_i\) calculated as follows:
+    </p>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>
+                    Colour
+                </th>
+                <th>
+                    Red
+                </th>
+                <th>
+                    yellow
+                </th>
+                <th>
+                    blue
+                </th>
+                <th>
+                    green
+                </th>
+                <th>
+                    orange
+                </th>
+                <th>
+                    brown
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    observed \(n_i\)
+                </th>
+                <td>
+                    {# nn[1] #}
+                </td>
+                <td>
+                    {# nn[2] #}
+                </td>
+                <td>
+                    {# nn[3] #}
+                </td>
+                <td>
+                    {# nn[4] #}
+                </td>
+                <td>
+                    {# nn[5] #}
+                </td>
+                <td>
+                    {# nn[6] #}
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    expected \(n\theta^{(0)}_i\)
+                </th>
+                <td>
+                    {# total*theta0[1] #}
+                </td>
+                <td>
+                    {# total*theta0[2] #}
+                </td>
+                <td>
+                    {# total*theta0[3] #}
+                </td>
+                <td>
+                    {# total*theta0[4] #}
+                </td>
+                <td>
+                    {# total*theta0[5] #}
+                </td>
+                <td>
+                    {# total*theta0[6] #}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+    (function() {
+                "use strict";
+                const feedback = document.currentScript.closest(".stackprtfeedback");
+                document.addEventListener("DOMContentLoaded", function (event) {
+                        const x = sessionStorage.getItem("oer-244f6008-prt2-no-help");
+                        const y = sessionStorage.getItem("oer-244f6008-prt2-help");
+                        if (x != null && y != null) {
+                                document.getElementById("oer-244f6008-prt2-no-help").style.display = x;
+                                document.getElementById("oer-244f6008-prt2-help").style.display = y;
+                        }
+                });
+        })();
+</script>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans3</sans>
+                <tans>Tans3</tans>
+                <testoptions>0.05</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Der kritische Wert zum Niveau \(\alpha\) ist durch das {@(1-alpha)@}-Quantil der \(\chi^2\)-Verteilung mit {@kk-1@} Freiheitsgraden gegeben: Der Test verwirft die Hypothese, falls {@ T &gt;= qchisq(1-alpha, kk-1) @}. Sie k&#246;nnen diesen Wert entweder aus einer passenden Tabelle ablesen oder mithilfe von R bestimmen (der passende Befehl lautet
+    <code>
+        qchisq
+    </code>
+    ).
+</p>
+<p>
+    Klicken Sie auf
+    <button class="next" id="1f70c354-ebfd-4ed3-ac01-0e76ad12bc2a" type="button">
+        Weiter
+    </button>
+    , um zum n&#228;chsten Aufgaben-Teil zu gelangen.
+</p>
+<script>
+    (function() {
+document.getElementById("1f70c354-ebfd-4ed3-ac01-0e76ad12bc2a").addEventListener("click", function (event) {
+QMenu.storeAndUpdate(3);
+});
+})();
+</script>
+[[/lang]][[lang code="en"]]
+<p>
+    The critical value to the level \(\alpha\) by the {@(1-alpha)@}-Quality of \(\chi^2\)- Distribution with {@kk-1@} There is a lack of freedom: The test rejects the hypothesis if {@ T &gt;= qchisq(1-alpha, kk-1) @}. You can either read this value from a suitable table or determine it using R (the appropriate command is
+    <code>
+        qchisq
+    </code>
+    ).
+</p>
+<p>
+    Click on
+    <button class="next" id="1f70c354-ebfd-4ed3-ac01-0e76ad12bc2a" type="button">
+        Next
+    </button>
+    to get to the next task part.
+</p>
+<script>
+    (function() {
+document.getElementById("1f70c354-ebfd-4ed3-ac01-0e76ad12bc2a").addEventListener("click", function (event) {
+QMenu.storeAndUpdate(3);
+});
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Der kritische Wert ergibt sich aus einem passenden Quantil der \(\chi^2\)-Verteilung. Haben Sie die richtige Anzahl an Freiheitsgraden f&#252;r die Verteilung gew&#228;hlt? Bitte &#252;berpr&#252;fen Sie Ihre Rechnung und versuchen Sie es noch einmal.
+</p>
+<p>
+    Sie k&#246;nnen den kritischen Wert entweder aus einer geeigneten Tabelle ablesen oder mit R bestimmen. Der R-Befehl lautet
+    <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html#R-as-a-set-of-statistical-tables">
+        <code>
+            qchisq
+        </code>
+    </a>
+    .
+</p>
+<details>
+    <summary>
+        F&#252;r einen weiteren Hinweis, klicken Sie hier.
+    </summary>
+    <p>
+        Der kritische Wert zum Niveau \(\alpha\) ist durch das {@(1-alpha)@}-Quantil der \(\chi^2\)-Verteilung mit {@kk-1@} Freiheitsgraden gegeben: Der Test verwirft die Hypothese, falls {@ T &gt;= qchisq(1-alpha, kk-1) @}.
+    </p>
+</details>
+[[/lang]][[lang code="en"]]
+<p>
+    The critical value results from a suitable quantum of \(\chi^2\)- Distribution. Have you chosen the correct number of degrees of freedom for distribution? Please check your bill and try again.
+</p>
+<p>
+    You can either read the critical value from a suitable table or determine it with R. The R command is
+    <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html#R-as-a-set-of-statistical-tables">
+        <code>
+            qchisq
+        </code>
+    </a>
+    .
+</p>
+<details>
+    <summary>
+        For further information, click here.
+    </summary>
+    <p>
+        The critical value to the level \(\alpha\) by the {@(1-alpha)@}-Quality of \(\chi^2\)- Distribution with {@kk-1@} There is a lack of freedom: The test rejects the hypothesis if {@ T &gt;= qchisq(1-alpha, kk-1) @}.
+    </p>
+</details>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>first(mcq_correct(Tans4))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]][[if test="is(statistic &gt;= critical)"]]
+<p>
+    Wir verwerfen die Hypothese, da {@ T &gt;= decimalplaces(critical, 1) @}.
+</p>
+[[else]]
+<p>
+    Wir behalten die Hypothese bei, da {@ T &lt; decimalplaces(critical, 1) @}.
+</p>
+[[/if]]
+<p>
+    Klicken Sie auf
+    <button class="next" id="2b369951-0a28-4136-972a-4c86f9df9d05" type="button">
+        Weiter
+    </button>
+    , um zum n&#228;chsten Aufgaben-Teil zu gelangen.
+</p>
+<script>
+    (function() {
+document.getElementById("2b369951-0a28-4136-972a-4c86f9df9d05").addEventListener("click", function (event) {
+QMenu.storeAndUpdate(4);
+});
+})();
+</script>
+[[/lang]][[lang code="en"]][[if test="is(statistic &gt;= critical)"]]
+<p>
+    We reject the hypothesis, {@ T &gt;= decimalplaces(critical, 1) @}.
+</p>
+[[else]]
+<p>
+    We keep the hypothesis there {@ T &lt; decimalplaces(critical, 1) @}.
+</p>
+[[/if]]
+<p>
+    Click on
+    <button class="next" id="2b369951-0a28-4136-972a-4c86f9df9d05" type="button">
+        Next
+    </button>
+    to get to the next task part.
+</p>
+<script>
+    (function() {
+document.getElementById("2b369951-0a28-4136-972a-4c86f9df9d05").addEventListener("click", function (event) {
+QMenu.storeAndUpdate(4);
+});
+})();
+</script>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    &#220;berpr&#252;fen Sie Ihre Eingabe noch einmal.Der Test verwirft die Hypothese, falls {@ T &gt;= qchisq(1-alpha, kk-1) @}.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Check your input again.The test rejects the hypothesis if {@ T &gt;= qchisq(1-alpha, kk-1) @}.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt_ans5</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text><![CDATA[probabilityp(x) := is(0 <= x and x <= 1);]]></text>
+            </feedbackvariables>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans5</sans>
+                <tans>Tans5</tans>
+                <testoptions>0.01</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Herzlichen Gl&#252;ckwunsch, Sie sind am Ende der Aufgabe angelangt.
+</p>
+<p>
+    In der vorliegenden Situation testen wir die Nullhypothese, dass die Farbverteilung der behaupteten Verteilung entspricht. Die Nullhypothese \(\Theta_0\) enth&#228;lt also nur ein \(\theta\), n&#228;mlich \(\theta = (0.125, 0.125, 0.25, 0.125, 0.25, 0.125)\). Daher ergibt sich (den Wert f&#252;r die Teststatistik haben Sie oben ausgerechnet):
+\[
+p = \sup_{\theta \in \Theta_0} P(T \ge t(x)) = P(T \ge {@decimalplaces(statistic,1)@}) = 1 - F_{\chi^2_{{@kk-1@}}}({@decimalplaces(statistic,1)@}) \approx {@decimalplaces(Tans5,3)@}.
+\]
+Hier bezeichnet \(F_{\chi^2_{{@kk-1@}}}\) die Verteilungsfunktion der \(\chi^2_{{@kk-1@}}\)-Verteilung. Sie k&#246;nnen den Wert dieser Funktion zum Beispiel mit dem R-Befehl
+    <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html#R-as-a-set-of-statistical-tables">
+        <code>
+            pchisq
+        </code>
+    </a>
+    bestimmen oder aus einer passenden Tabelle ablesen.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Congratulations, you have reached the end of the task.
+</p>
+<p>
+    In the present situation, we test the zero hypothesis that the color distribution corresponds to the claimed distribution. The zero hypothesis \(\Theta_0\) therefore only one \(\theta\): \(\theta = (0.125, 0.125, 0.25, 0.125, 0.25, 0.125)\). Therefore (the value for the test statistics has been calculated above):
+\[
+p = \sup_{\theta \in \Theta_0} P(T \ge t(x)) = P(T \ge {@decimalplaces(statistic,1)@}) = 1 - F_{\chi^2_{{@kk-1@}}}({@decimalplaces(statistic,1)@}) \approx {@decimalplaces(Tans5,3)@}.
+\]Reference \(F_{\chi^2_{{@kk-1@}}}\) the distribution function of \(\chi^2_{{@kk-1@}}\)- Distribution. You can use the value of this function, for example, with the R command
+    <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html#R-as-a-set-of-statistical-tables">
+        <code>
+            pchisq
+        </code>
+    </a>
+    determine or read from a suitable table.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Der \(p\)-Wert ist gegeben durch
+\[
+p = \sup_{\theta \in \Theta_0} P(T \ge t(X)).
+\]
+&#220;berlegen Sie einmal, &#252;ber welche \(\theta\) Sie das Supremum nehmen und was der Wert \(t(X)\) ist. Die Verteilung von \(T\) ist eine \(\chi^2_{{@kk-1@}}\)-Verteilung. Sie kommen trotzdem nicht weiter? Klicken Sie auf den Hinweis.
+</p>
+<details>
+    <summary>
+        Hinweis
+    </summary>
+    <p>
+        In der vorliegenden Situation testen wir die Nullhypothese, dass die Farbverteilung der behaupteten Verteilung entspricht. Die Nullhypothese \(\Theta_0\) enth&#228;lt also nur ein \(\theta\), n&#228;mlich \(\theta = (0.125, 0.125, 0.25, 0.125, 0.25, 0.125)\). Daher ergibt sich (den Wert f&#252;r die Teststatistik haben Sie oben ausgerechnet):
+\[
+p = \sup_{\theta \in \Theta_0} P(T \ge t(X)) = P(T \ge {@decimalplaces(statistic,1)@}) = 1 - F_{\chi^2_{{@kk-1@}}}({@decimalplaces(statistic,1)@}).
+\]
+Hier bezeichnet \(F_{\chi^2_{{@kk-1@}}}\) die Verteilungsfunktion der \(\chi^2_{{@kk-1@}}\)-Verteilung. Sie k&#246;nnen den Wert dieser Funktion zum Beispiel mit dem R-Befehl
+        <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html#R-as-a-set-of-statistical-tables">
+            <code>
+                pchisq
+            </code>
+        </a>
+        bestimmen oder aus einer passenden Tabelle ablesen.
+    </p>
+</details>
+[[/lang]][[lang code="en"]]
+<p>
+    The \(p\)-value is given by
+\[
+p = \sup_{\theta \in \Theta_0} P(T \ge t(X)).
+\]Think about which \(\theta\) Take the Supremum and what the value \(t(X)\) is. The distribution of \(T\) is a \(\chi^2_{{@kk-1@}}\)- Distribution. You're still not coming? Click the hint.
+</p>
+<details>
+    <summary>
+        Note
+    </summary>
+    <p>
+        In the present situation, we test the zero hypothesis that the color distribution corresponds to the claimed distribution. The zero hypothesis \(\Theta_0\) therefore only one \(\theta\): \(\theta = (0.125, 0.125, 0.25, 0.125, 0.25, 0.125)\). Therefore (the value for the test statistics has been calculated above):
+\[
+p = \sup_{\theta \in \Theta_0} P(T \ge t(X)) = P(T \ge {@decimalplaces(statistic,1)@}) = 1 - F_{\chi^2_{{@kk-1@}}}({@decimalplaces(statistic,1)@}).
+\]Reference \(F_{\chi^2_{{@kk-1@}}}\) the distribution function of \(\chi^2_{{@kk-1@}}\)- Distribution. You can use the value of this function, for example, with the R command
+        <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html#R-as-a-set-of-statistical-tables">
+            <code>
+                pchisq
+            </code>
+        </a>
+        determine or read from a suitable table.
+    </p>
+</details>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>6</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ans5)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>prt_ans5-7-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt_ans5-7-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Der \(p\)-Wert ist eine Wahrscheinlichkeit und muss daher eine Zahl im Intervall [0,1] sein. Haben Sie sich m&#246;glicherweise verrechnet?
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    The \(p\)-value is a probability and must therefore be a number in the interval [0.1]. Do you have any calculations?
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1291938106</deployedseed>
+        <deployedseed>1567684062</deployedseed>
+        <deployedseed>348127765</deployedseed>
+        <deployedseed>1476733934</deployedseed>
+        <deployedseed>1574750082</deployedseed>
+        <deployedseed>385791236</deployedseed>
+        <deployedseed>1143966779</deployedseed>
+        <deployedseed>2078467889</deployedseed>
+        <deployedseed>1700203352</deployedseed>
+        <deployedseed>119755386</deployedseed>
+        <deployedseed>912062459</deployedseed>
+        <deployedseed>1603989281</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <description/>
+            <testinput>
+                <name>ans1</name>
+                <value>first(mcq_correct(Tans1))</value>
+            </testinput>
+            <testinput>
+                <name>ans1a</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans1b_blau</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans1b_braun</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans1b_gelb</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans1b_gruen</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans1b_orange</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans1b_rot</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>decimalplaces(Tans2, 2)</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>decimalplaces(Tans3, 1)</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>first(mcq_correct(Tans4))</value>
+            </testinput>
+            <testinput>
+                <name>ans5</name>
+                <value>decimalplaces(Tans5,2)</value>
+            </testinput>
+            <expected>
+                <name>memD</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty/>
+                <expectedanswernote>memD-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>memE</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty/>
+                <expectedanswernote>memE-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans1a</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans1b</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>2-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>3-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans4</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>4-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans5</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>5-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <description/>
+            <testinput>
+                <name>ans1</name>
+                <value>first(mcq_incorrect(Tans1))</value>
+            </testinput>
+            <testinput>
+                <name>ans1a</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans1b_blau</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans1b_braun</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans1b_gelb</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans1b_gruen</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans1b_orange</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans1b_rot</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>0</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>0</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>first(mcq_incorrect(Tans4))</value>
+            </testinput>
+            <testinput>
+                <name>ans5</name>
+                <value>2</value>
+            </testinput>
+            <expected>
+                <name>memD</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>memE</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans1a</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans1b</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans2</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>2-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans3</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>3-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans4</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans5</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt_ans5-7-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>3</testcase>
+            <description/>
+            <testinput>
+                <name>ans1</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans1a</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans1b_blau</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans1b_braun</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans1b_gelb</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans1b_gruen</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans1b_orange</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans1b_rot</name>
+                <value/>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>3</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>4</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value><![CDATA["Hypothese nicht verwerfen"]]></value>
+            </testinput>
+            <testinput>
+                <name>ans5</name>
+                <value/>
+            </testinput>
+            <expected>
+                <name>memD</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>memE</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans1</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans1a</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans1b</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans2</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>2-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans3</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>3-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans4</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt_ans5</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

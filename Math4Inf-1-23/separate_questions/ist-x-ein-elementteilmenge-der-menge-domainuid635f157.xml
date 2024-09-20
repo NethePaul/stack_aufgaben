@@ -6,412 +6,411 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Beantworten Sie folgende Fragen:
-    </p>
-    <table>
-        <tbody>
-            <tr>
-                <td>
-                    a)
-                </td>
-                <td>
-                    Ist \(0\) ein Element von \(\mathbb{Z}\)?
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans1]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt1]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    b)
-                </td>
-                <td>
-                    Ist \(\emptyset\) ein Element von \(\mathbb{Z}\)?
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans2]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt2]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    c)
-                </td>
-                <td>
-                    Ist \(\{\emptyset\}\) ein Element von \(\mathbb{Z}\)?
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans3]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt3]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    d)
-                </td>
-                <td>
-                    Ist \(0\) eine Teilmenge von \(\mathbb{Z}\)?
-                </td>
-                <td>
-                    [[input:ans4]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt4]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    e)
-                </td>
-                <td>
-                    Ist \(\emptyset\) eine Teilmenge von \(\mathbb{Z}\)?
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans5]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt5]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    f)
-                </td>
-                <td>
-                    Ist \(\{\emptyset\}\) eine Teilmenge von \(\mathbb{Z}\)?
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans6]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt6]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    g)
-                </td>
-                <td>
-                    Ist \(\emptyset\) ein Element von \(\emptyset\)?
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans7]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt7]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    h)
-                </td>
-                <td>
-                    Ist \(\emptyset\) ein Element von \(\{\emptyset\}\)?
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans8]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt8]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    i)
-                </td>
-                <td>
-                    Ist \(\emptyset\) ein Element von \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\)?
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans9]]
-                    <br/>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt9]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    j)
-                </td>
-                <td>
-                    Ist \(\emptyset\) eine Teilmenge von \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\)?
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans10]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt10]]
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <p>
-    </p>
-    [[validation:ans1]] [[validation:ans2]] [[validation:ans3]] [[validation:ans4]] [[validation:ans5]] [[validation:ans6]] [[validation:ans7]] [[validation:ans8]] [[validation:ans9]] [[validation:ans10]]
-    <br/>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Answer the following questions:
-    </p>
-    <table>
-        <tbody>
-            <tr>
-                <td>
-                    (a)
-                </td>
-                <td>
-                    I \(0\) an element of \(\mathbb{Z}\)?
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans1]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt1]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    (b)
-                </td>
-                <td>
-                    I \(\emptyset\) an element of \(\mathbb{Z}\)?
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans2]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt2]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    (c)
-                </td>
-                <td>
-                    I \(\{\emptyset\}\) an element of \(\mathbb{Z}\)?
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans3]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt3]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    (d)
-                </td>
-                <td>
-                    I \(0\) a subset of \(\mathbb{Z}\)?
-                </td>
-                <td>
-                    [[input:ans4]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt4]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    (e)
-                </td>
-                <td>
-                    I \(\emptyset\) a subset of \(\mathbb{Z}\)?
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans5]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt5]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    (f)
-                </td>
-                <td>
-                    I \(\{\emptyset\}\) a subset of \(\mathbb{Z}\)?
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans6]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt6]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    g)
-                </td>
-                <td>
-                    I \(\emptyset\) an element of \(\emptyset\)?
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans7]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt7]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    h)
-                </td>
-                <td>
-                    I \(\emptyset\) an element of \(\{\emptyset\}\)?
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans8]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt8]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    (i)
-                </td>
-                <td>
-                    I \(\emptyset\) an element of \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\)?
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans9]]
-                    <br/>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt9]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    j)
-                </td>
-                <td>
-                    I \(\emptyset\) a subset of \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\)?
-                    <br/>
-                </td>
-                <td>
-                    [[input:ans10]]
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td colspan="2">
-                    [[feedback:prt10]]
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <p>
-    </p>
-    [[validation:ans1]] [[validation:ans2]] [[validation:ans3]] [[validation:ans4]] [[validation:ans5]] [[validation:ans6]] [[validation:ans7]] [[validation:ans8]] [[validation:ans9]] [[validation:ans10]]
-    <br/>
-</span>
+[[lang code="de"]]
+<p>
+    Beantworten Sie folgende Fragen:
+</p>
+<table>
+    <tbody>
+        <tr>
+            <td>
+                a)
+            </td>
+            <td>
+                Ist \(0\) ein Element von \(\mathbb{Z}\)?
+                <br/>
+            </td>
+            <td>
+                [[/lang]][[lang code="en"]]
+                <p>
+                    Answer the following questions:
+                </p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                (a)
+                            </td>
+                            <td>
+                                I \(0\) an element of \(\mathbb{Z}\)?
+                                <br/>
+                            </td>
+                            <td>
+                                [[/lang]][[input:ans1]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[feedback:prt1]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                b)
+                            </td>
+                            <td>
+                                Ist \(\emptyset\) ein Element von \(\mathbb{Z}\)?
+                                <br/>
+                            </td>
+                            <td>
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                (b)
+                            </td>
+                            <td>
+                                Is \(\emptyset\) an element of \(\mathbb{Z}\)?
+                                <br/>
+                            </td>
+                            <td>
+                                [[/lang]][[input:ans2]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[feedback:prt2]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                c)
+                            </td>
+                            <td>
+                                Ist \(\{\emptyset\}\) ein Element von \(\mathbb{Z}\)?
+                                <br/>
+                            </td>
+                            <td>
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                (c)
+                            </td>
+                            <td>
+                                Is \(\{\emptyset\}\) an element of \(\mathbb{Z}\)?
+                                <br/>
+                            </td>
+                            <td>
+                                [[/lang]][[input:ans3]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[feedback:prt3]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                d)
+                            </td>
+                            <td>
+                                Ist \(0\) eine Teilmenge von \(\mathbb{Z}\)?
+                            </td>
+                            <td>
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                (d)
+                            </td>
+                            <td>
+                                Is \(0\) a subset of \(\mathbb{Z}\)?
+                            </td>
+                            <td>
+                                [[/lang]][[input:ans4]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[feedback:prt4]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                e)
+                            </td>
+                            <td>
+                                Ist \(\emptyset\) eine Teilmenge von \(\mathbb{Z}\)?
+                                <br/>
+                            </td>
+                            <td>
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                (e)
+                            </td>
+                            <td>
+                                I \(\emptyset\) a subset of \(\mathbb{Z}\)?
+                                <br/>
+                            </td>
+                            <td>
+                                [[/lang]][[input:ans5]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[feedback:prt5]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                f)
+                            </td>
+                            <td>
+                                Ist \(\{\emptyset\}\) eine Teilmenge von \(\mathbb{Z}\)?
+                                <br/>
+                            </td>
+                            <td>
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                (f)
+                            </td>
+                            <td>
+                                Is \(\{\emptyset\}\) a subset of \(\mathbb{Z}\)?
+                                <br/>
+                            </td>
+                            <td>
+                                [[/lang]][[input:ans6]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[feedback:prt6]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                g)
+                            </td>
+                            <td>
+                                Ist \(\emptyset\) ein Element von \(\emptyset\)?
+                                <br/>
+                            </td>
+                            <td>
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                g)
+                            </td>
+                            <td>
+                                Is \(\emptyset\) an element of \(\emptyset\)?
+                                <br/>
+                            </td>
+                            <td>
+                                [[/lang]][[input:ans7]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[feedback:prt7]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                h)
+                            </td>
+                            <td>
+                                Ist \(\emptyset\) ein Element von \(\{\emptyset\}\)?
+                                <br/>
+                            </td>
+                            <td>
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                h)
+                            </td>
+                            <td>
+                                Is \(\emptyset\) an element of \(\{\emptyset\}\)?
+                                <br/>
+                            </td>
+                            <td>
+                                [[/lang]][[input:ans8]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[feedback:prt8]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                i)
+                            </td>
+                            <td>
+                                Ist \(\emptyset\) ein Element von \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\)?
+                                <br/>
+                            </td>
+                            <td>
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                (i)
+                            </td>
+                            <td>
+                                Is \(\emptyset\) an element of \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\)?
+                                <br/>
+                            </td>
+                            <td>
+                                [[/lang]][[input:ans9]][[lang code="de"]]
+                                <br/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[lang code="en"]]
+                                <br/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[feedback:prt9]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                j)
+                            </td>
+                            <td>
+                                Ist \(\emptyset\) eine Teilmenge von \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\)?
+                                <br/>
+                            </td>
+                            <td>
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                j)
+                            </td>
+                            <td>
+                                Is \(\emptyset\) a subset of \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\)?
+                                <br/>
+                            </td>
+                            <td>
+                                [[/lang]][[input:ans10]][[lang code="de"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[lang code="en"]]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="2">
+                                [[/lang]][[feedback:prt10]][[lang code="de"]]
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                </p>
+                [[/lang]][[lang code="en"]]
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+</p>
+[[/lang]][[validation:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans4]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans5]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans6]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans7]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans8]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans9]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans10]][[lang code="de"]]
+<br/>
+[[/lang]][[lang code="en"]]
+<br/>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -442,32 +441,17 @@ n2:15+rand(10);</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -682,14 +666,11 @@ n2:15+rand(10);</text>
                 <trueanswernote>prt1-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    Denn: Die Menge \(\mathbb{Z}\) umfasst alle Zahlen \(\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\).
-    <br/>
-</span>
-<span class="multilang" lang="en">
-    Because: The crowd \(\mathbb{Z}\) All numbers \(\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\).
-    <br/>
-</span>
+[[lang code="de"]]Denn: Die Menge \(\mathbb{Z}\) umfasst alle Zahlen \(\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\).
+<br/>
+[[/lang]][[lang code="en"]]Because: The set \(\mathbb{Z}\) All numbers \(\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\).
+<br/>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -699,18 +680,17 @@ n2:15+rand(10);</text>
                 <falseanswernote>prt1-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Denn: Die Menge&#160;\(\mathbb{Z}\) umfasst alle Zahlen \(\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\).
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Because: The crowd\(\mathbb{Z}\) All numbers \(\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\).
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Denn: Die Menge&#160;\(\mathbb{Z}\) umfasst alle Zahlen \(\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\).
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Because: The set\(\mathbb{Z}\) All numbers \(\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\).
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -738,26 +718,25 @@ n2:15+rand(10);</text>
                 <trueanswernote>prt10-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-        Denn: Die leere Menge \(\emptyset\) ist eine Teilmenge von jeder Menge.
-        <br/>
-    </p>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-        For: The empty quantity \(\emptyset\) is a part of a lot.
-        <br/>
-    </p>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    Denn: Die leere Menge \(\emptyset\) ist eine Teilmenge von jeder Menge.
+    <br/>
+</p>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<p>
+    For: The empty set \(\emptyset\) is a part of any set.
+    <br/>
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -767,26 +746,25 @@ n2:15+rand(10);</text>
                 <falseanswernote>prt10-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-        Denn: Die leere Menge \(\emptyset\) ist eine Teilmenge von jeder Menge.
-        <br/>
-    </p>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-        For: The empty quantity \(\emptyset\) is a part of a lot.
-        <br/>
-    </p>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    Denn: Die leere Menge \(\emptyset\) ist eine Teilmenge von jeder Menge.
+    <br/>
+</p>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<p>
+    For: The empty set \(\emptyset\) is a part of any set.
+    <br/>
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -814,20 +792,19 @@ n2:15+rand(10);</text>
                 <trueanswernote>prt2-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Denn: \(\emptyset\) ist eine Menge und \(\mathbb{Z}=\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\) hat nur Zahlen und nicht die
+[[lang code="de"]]
+<p>
+    Denn: \(\emptyset\) ist eine Menge und \(\mathbb{Z}=\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\) hat nur Zahlen und nicht die
     Menge \(\emptyset\) als Elemente.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Because: \(\emptyset\) is a lot and \(\mathbb{Z}=\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\) has only numbers and not the
-Quantity \(\emptyset\) as elements.
-        <br/>
-    </p>
-</span>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Because: \(\emptyset\) is a set and \(\mathbb{Z}=\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\) has only numbers and not the
+set \(\emptyset\) as elements.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -837,20 +814,19 @@ Quantity \(\emptyset\) as elements.
                 <falseanswernote>prt2-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Denn: \(\emptyset\) ist eine Menge und \(\mathbb{Z}=\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\) hat nur Zahlen und nicht die
+[[lang code="de"]]
+<p>
+    Denn: \(\emptyset\) ist eine Menge und \(\mathbb{Z}=\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\) hat nur Zahlen und nicht die
     Menge \(\emptyset\) als Elemente.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Because: \(\emptyset\) is a lot and \(\mathbb{Z}=\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\) has only numbers and not the
-Quantity \(\emptyset\) as elements.
-        <br/>
-    </p>
-</span>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Because: \(\emptyset\) is a set and \(\mathbb{Z}=\{&#160; \ldots,-3,-2,-1,0,1,2,3,\ldots \}\) has only numbers and not the
+set \(\emptyset\) as elements.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -878,20 +854,19 @@ Quantity \(\emptyset\) as elements.
                 <trueanswernote>prt3-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Denn: \(\{\emptyset\}\) ist eine Menge, die als Element nur die leere Menge \(\emptyset\) als Element enth&#228;lt. Diese Menge ist nicht als Element in \(\mathbb{Z}=\{&#160; 
+[[lang code="de"]]
+<p>
+    Denn: \(\{\emptyset\}\) ist eine Menge, die nur die leere Menge \(\emptyset\) als Element enth&#228;lt. Diese Menge ist nicht als Element in \(\mathbb{Z}=\{&#160; 
 \dots,-5,-4,-3,-2,-1,0,1,2,3,4,5,\dots \}\) enthalten.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Because: \(\{\emptyset\}\) is a quantity that as an element only the empty quantity \(\emptyset\) as an element. This quantity is not as an element in \(\mathbb{Z}=\{&#160; 
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Because: \(\{\emptyset\}\) is a set that only contains the empty set \(\emptyset\) as an element. This set is not as an element in \(\mathbb{Z}=\{&#160; 
 \dots,-5,-4,-3,-2,-1,0,1,2,3,4,5,\dots \}\) included.
-        <br/>
-    </p>
-</span>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -901,24 +876,23 @@ Quantity \(\emptyset\) as elements.
                 <falseanswernote>prt3-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Denn: \(\{\emptyset\}\) ist eine 
-Menge, die als Element nur die leere Menge \(\emptyset\) als Element enth&#228;lt. Diese 
+[[lang code="de"]]
+<p>
+    Denn: \(\{\emptyset\}\) ist eine 
+Menge, die nur die leere Menge \(\emptyset\) als Element enth&#228;lt. Diese 
 Menge ist nicht als Element in \(\mathbb{Z}=\{&#160; 
 \dots,-5,-4,-3,-2,-1,0,1,2,3,4,5,\dots \}\) enthalten.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Because: \(\{\emptyset\}\) is a
-quantity that as element only the empty quantity \(\emptyset\) as an element. These
-Quantity is not as an element in \(\mathbb{Z}=\{&#160; 
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Because: \(\{\emptyset\}\) is a
+set that only contains the empty set \(\emptyset\) as an element. This
+set is not as an element in \(\mathbb{Z}=\{&#160; 
 \dots,-5,-4,-3,-2,-1,0,1,2,3,4,5,\dots \}\) included.
-        <br/>
-    </p>
-</span>
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -946,18 +920,17 @@ Quantity is not as an element in \(\mathbb{Z}=\{&#160;
                 <trueanswernote>prt4-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Denn: \(0\) ist eine Zahl und keine Menge und kann daher keine Teilmenge von \(\mathbb{Z}\) sein.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Because: \(0\) is a number and no quantity and therefore cannot be a subset \(\mathbb{Z}\) be.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Denn: \(0\) ist eine Zahl und keine Menge und kann daher keine Teilmenge von \(\mathbb{Z}\) sein.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Because: \(0\) is a number and no set and therefore cannot be a subset of \(\mathbb{Z}\).
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -967,16 +940,15 @@ Quantity is not as an element in \(\mathbb{Z}=\{&#160;
                 <falseanswernote>prt4-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Denn: \(0\) ist eine Zahl und keine Menge und kann daher keine Teilmenge von \(\mathbb{Z}\) sein.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Because: \(0\) is a number and no quantity and therefore cannot be a subset \(\mathbb{Z}\) be.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Denn: \(0\) ist eine Zahl und keine Menge und kann daher keine Teilmenge von \(\mathbb{Z}\) sein.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Because: \(0\) is a number and no set and therefore cannot be a subset of \(\mathbb{Z}\).
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -1004,18 +976,17 @@ Quantity is not as an element in \(\mathbb{Z}=\{&#160;
                 <trueanswernote>prt5-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Denn: Die leere Menge \(\emptyset\) ist eine Teilmenge von jeder Menge.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        For: The empty quantity \(\emptyset\) is a part of a lot.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Denn: Die leere Menge \(\emptyset\) ist eine Teilmenge von jeder Menge.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    For: The empty set \(\emptyset\) is a subset of any set.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -1025,16 +996,15 @@ Quantity is not as an element in \(\mathbb{Z}=\{&#160;
                 <falseanswernote>prt5-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Denn: Die leere Menge \(\emptyset\) ist eine Teilmenge von jeder Menge.
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        For: The empty quantity \(\emptyset\) is a part of a lot.
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Denn: Die leere Menge \(\emptyset\) ist eine Teilmenge von jeder Menge.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    For: The empty set \(\emptyset\) is a subset of any set.
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -1062,18 +1032,17 @@ Quantity is not as an element in \(\mathbb{Z}=\{&#160;
                 <trueanswernote>prt6-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Denn: \(\{\emptyset\}\) ist eine Menge, die nur die leere Menge \(\emptyset\) als Element enth&#228;lt. Diese Menge ist keine Teilmenge von \(\mathbb{Z}\), denn \(\mathbb{Z}\) enth&#228;lt \(\emptyset\) nicht als Element.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Because: \(\{\emptyset\}\) is a quantity that only the empty quantity \(\emptyset\) as an element. This quantity is not a subset of \(\mathbb{Z}\)for \(\mathbb{Z}\) Containing by weight: \(\emptyset\) not as an element.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Denn: \(\{\emptyset\}\) ist eine Menge, die nur die leere Menge \(\emptyset\) als Element enth&#228;lt. Diese Menge ist keine Teilmenge von \(\mathbb{Z}\), denn \(\mathbb{Z}\) enth&#228;lt \(\emptyset\) nicht als Element.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Because: \(\{\emptyset\}\) is a set that contains only the empty set \(\emptyset\) as an element. This set is not a subset of \(\mathbb{Z}\)for \(\mathbb{Z}\) does not contain \(\emptyset\) as an element.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -1083,23 +1052,22 @@ Quantity is not as an element in \(\mathbb{Z}=\{&#160;
                 <falseanswernote>prt6-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Denn: \(\{\emptyset\}\) ist eine
+[[lang code="de"]]
+<p>
+    Denn: \(\{\emptyset\}\) ist eine
                 Menge, die nur die leere Menge \(\emptyset\) als Element enth&#228;lt. Diese
                 Menge ist keine Teilmenge von \(\mathbb{Z}\), denn \(\mathbb{Z}\)
                 enth&#228;lt \(\emptyset\) nicht als Element.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Because: \(\{\emptyset\}\) is a
-quantity that only the empty quantity \(\emptyset\) as an element. These
-Quantity is not a subset \(\mathbb{Z}\)for \(\mathbb{Z}\)Containing by weight: \(\emptyset\) not as an element.
-        <br/>
-    </p>
-</span>
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Because: \(\{\emptyset\}\) is a
+set that contains only the empty set \(\emptyset\) as an element. This
+set is not a subset \(\mathbb{Z}\)for \(\mathbb{Z}\) does not contain \(\emptyset\) as an element.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -1127,26 +1095,25 @@ Quantity is not a subset \(\mathbb{Z}\)for \(\mathbb{Z}\)Containing by weight: \
                 <trueanswernote>prt7-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-        Denn: \(\emptyset\) ist die leere Menge und enth&#228;lt daher keine Elemente (auch nicht sich selbst).
-        <br/>
-    </p>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-        Because: \(\emptyset\) is the empty quantity and therefore contains no elements (also not itself).
-        <br/>
-    </p>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    Denn: \(\emptyset\) ist die leere Menge und enth&#228;lt daher keine Elemente (auch nicht sich selbst).
+    <br/>
+</p>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<p>
+    Because: \(\emptyset\) is the empty set and therefore contains no elements (also not itself).
+    <br/>
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -1156,28 +1123,27 @@ Quantity is not a subset \(\mathbb{Z}\)for \(\mathbb{Z}\)Containing by weight: \
                 <falseanswernote>prt7-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Denn: \(\emptyset\) ist die leere Menge und enth&#228;lt daher keine Elemente (auch nicht sich selbst).
-        <br/>
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
+[[lang code="de"]]
+<p>
+    Denn: \(\emptyset\) ist die leere Menge und enth&#228;lt daher keine Elemente (auch nicht sich selbst).
     <br/>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Because: \(\emptyset\) is the empty quantity and therefore contains no elements (also not itself).
-        <br/>
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
+</p>
+<p>
+</p>
+<p>
+</p>
+<br/>
+[[/lang]][[lang code="en"]]
+<p>
+    Because: \(\emptyset\) is the empty set and therefore contains no elements (also not itself).
     <br/>
-</span>
+</p>
+<p>
+</p>
+<p>
+</p>
+<br/>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -1205,18 +1171,17 @@ Quantity is not a subset \(\mathbb{Z}\)for \(\mathbb{Z}\)Containing by weight: \
                 <trueanswernote>prt8-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Denn: \(\{\emptyset\}\) ist die Menge, die die leere Menge \(\emptyset\) als Element enth&#228;lt. Somit gilt \(\emptyset \in \{\emptyset\}\).
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Because: \(\{\emptyset\}\) is the amount that the empty quantity \(\emptyset\) as an element. This applies \(\emptyset \in \{\emptyset\}\).
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Denn: \(\{\emptyset\}\) ist die Menge, die die leere Menge \(\emptyset\) als Element enth&#228;lt. Somit gilt \(\emptyset \in \{\emptyset\}\).
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Because: \(\{\emptyset\}\) is the set that the empty set \(\emptyset\) is an element of. This applies \(\emptyset \in \{\emptyset\}\).
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -1226,26 +1191,25 @@ Quantity is not a subset \(\mathbb{Z}\)for \(\mathbb{Z}\)Containing by weight: \
                 <falseanswernote>prt8-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-        Denn: \(\{\emptyset\}\) ist die Menge, die die leere Menge \(\emptyset\) als Element enth&#228;lt. Somit gilt \(\emptyset \in \{\emptyset\}\).
-        <br/>
-    </p>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-        Because: \(\{\emptyset\}\) is the amount that the empty quantity \(\emptyset\) as an element. This applies \(\emptyset \in \{\emptyset\}\).
-        <br/>
-    </p>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    Denn: \(\{\emptyset\}\) ist die Menge, die die leere Menge \(\emptyset\) als Element enth&#228;lt. Somit gilt \(\emptyset \in \{\emptyset\}\).
+    <br/>
+</p>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<p>
+    Because: \(\{\emptyset\}\) is the set that the empty set \(\emptyset\) is an element of. This applies \(\emptyset \in \{\emptyset\}\).
+    <br/>
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -1273,18 +1237,17 @@ Quantity is not a subset \(\mathbb{Z}\)for \(\mathbb{Z}\)Containing by weight: \
                 <trueanswernote>prt9-1-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Denn: Die Menge \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\) besteht aus allen Tupeln \((x,y)\), mit \(x\in \{{@n1@},\ldots,{@n2@}\}\) und \(y \in \mathbb{Z}\). Daher ist die leere Menge \(\emptyset\) kein Element dieser Menge.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Because: The crowd \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\) consists of all tuples \((x,y)\)with \(x\in \{{@n1@},\ldots,{@n2@}\}\) and \(y \in \mathbb{Z}\). Therefore, the empty quantity \(\emptyset\) no element of this amount.
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Denn: Die Menge \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\) besteht aus allen Tupeln \((x,y)\), mit \(x\in \{{@n1@},\ldots,{@n2@}\}\) und \(y \in \mathbb{Z}\). Daher ist die leere Menge \(\emptyset\) kein Element dieser Menge.
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Because: The set \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\) consists of all tuples \((x,y)\)with \(x\in \{{@n1@},\ldots,{@n2@}\}\) and \(y \in \mathbb{Z}\). Therefore, the empty set \(\emptyset\) is not an element of this set.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>=</falsescoremode>
@@ -1294,24 +1257,23 @@ Quantity is not a subset \(\mathbb{Z}\)for \(\mathbb{Z}\)Containing by weight: \
                 <falseanswernote>prt9-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Denn: Die Menge \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\) besteht aus 
+[[lang code="de"]]
+<p>
+    Denn: Die Menge \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\) besteht aus 
 allen Tupeln \((x,y)\), mit \(x\in \{{@n1@},\ldots,{@n2@}\}\) und \(y \in
     \mathbb{Z}\). Daher ist die leere Menge \(\emptyset\) kein Element 
 dieser Menge.
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Because: The crowd \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\) consists of:
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Because: The set \(\{{@n1@},\ldots,{@n2@}\}\times\mathbb{Z}\) consists of:
 all tuples \((x,y)\)with \(x\in \{{@n1@},\ldots,{@n2@}\}\) and \(y \in
-    \mathbb{Z}\). Therefore, the empty quantity \(\emptyset\) no element
-this amount.
-        <br/>
-    </p>
-</span>
+    \mathbb{Z}\). Therefore, the empty set \(\emptyset\) is no element of
+this set.
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>

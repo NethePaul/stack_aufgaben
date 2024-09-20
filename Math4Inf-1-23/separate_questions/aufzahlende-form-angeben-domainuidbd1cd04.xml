@@ -6,15 +6,21 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Stellen Sie die folgenden Mengen in aufz&#228;hlender Form dar.
+[[lang code="de"]]Stellen Sie die folgenden Mengen in aufz&#228;hlender Form dar.
+<p>
+</p>
+<p>
+    a) \(M_1 = \left\{n^{@n5@}+{@n1@} \ \Big|\&#160; n\in\mathbb N, n &lt; {@n2@} \right\} = \) [[/lang]][[lang code="en"]]Set the following sets in a listing form.
     <p>
     </p>
     <p>
-        a) \(M_1 = \left\{n^{@n5@}+{@n1@} \ \Big|\&#160; n\in\mathbb N, n &lt; {@n2@} \right\} = \) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+        (a) \(M_1 = \left\{n^{@n5@}+{@n1@} \ \Big|\&#160; n\in\mathbb N, n &lt; {@n2@} \right\} = \) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
     <p>
-        b) \(M_2 = \left\{{@n3@} \cdot z \ \Big|\ z \in \mathbb Z, |z|\le {@n4@} \right\} = \) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
+        b) \(M_2 = \left\{{@n3@} \cdot z \ \Big|\ z \in \mathbb Z, |z|\le {@n4@} \right\} = \) [[/lang]][[lang code="en"]]
+    </p>
+    <p>
+        (b) \(M_2 = \left\{{@n3@} \cdot z \ \Big|\ z \in \mathbb Z, |z|\le {@n4@} \right\} = \) [[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prt2]][[lang code="de"]]
     </p>
     <p>
     </p>
@@ -32,64 +38,54 @@
             Schreiben Sie die leere Menge als { }.
         </li>
     </ul>
-</span>
-<span class="multilang" lang="en">
-    Set the following quantities in a listing form.
-    <p>
-    </p>
-    <p>
-        (a) \(M_1 = \left\{n^{@n5@}+{@n1@} \ \Big|\&#160; n\in\mathbb N, n &lt; {@n2@} \right\} = \) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
-    </p>
-    <p>
-        (b) \(M_2 = \left\{{@n3@} \cdot z \ \Big|\ z \in \mathbb Z, |z|\le {@n4@} \right\} = \) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
-    </p>
-    <p>
-    </p>
-    <p>
-        <strong>
-            Note:
-            <br/>
-        </strong>
-    </p>
-    <ul>
-        <li>
-            Write the amount with curly brackets. Separate the solutions with comma, e.g. {1,3}.
-        </li>
-        <li>
-            Write the empty quantity as { }.
-        </li>
-    </ul>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+<p>
+</p>
+<p>
+    <strong>
+        Note:
+        <br/>
+    </strong>
+</p>
+<ul>
+    <li>
+        Write the set with curly brackets. Separate the solutions with comma, e.g. {1,3}.
+    </li>
+    <li>
+        Write the empty set as { }.
+    </li>
+</ul>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <strong>
-        L&#246;sungsweg:
-    </strong>
-    <p>
-    </p>
-    <p>
-        a) F&#252;r jede nat&#252;rliche Zahl, die \(n &lt; {@n2@}\) ist, wird die Potenz \(n^{@n5@}\) gebildet und die Zahl \({@n1@}\) dazu addiert. So bekommt man die Menge \(M_1 = {@M1@}\).
-    </p>
-    <p>
-        b) F&#252;r jede ganze Zahl, die \({@-n4@} \le z \le {@n4@}\) ist, wird das \({@n3@}\)-fache dieser Zahl gebildet. So bekommt man die Menge \(M_2 = {@M2@}\).
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <strong>
-        Solution:
-    </strong>
-    <p>
-    </p>
-    <p>
-        (a) For any natural number \(n &lt; {@n2@}\) is the potency \(n^{@n5@}\) and the number \({@n1@}\) added. How to get the crowd \(M_1 = {@M1@}\).
-    </p>
-    <p>
-        (b) For each integer \({@-n4@} \le z \le {@n4@}\) it will \({@n3@}\)- more of this number. How to get the crowd \(M_2 = {@M2@}\).
-    </p>
-</span>
+[[lang code="de"]]
+<strong>
+    L&#246;sungsweg:
+</strong>
+<p>
+</p>
+<p>
+    a) F&#252;r jede nat&#252;rliche Zahl, die \(n &lt; {@n2@}\) ist, wird die Potenz \(n^{@n5@}\) gebildet und die Zahl \({@n1@}\) dazu addiert. So bekommt man die Menge \(M_1 = {@M1@}\).
+</p>
+<p>
+    b) F&#252;r jede ganze Zahl, die \({@-n4@} \le z \le {@n4@}\) ist, wird das \({@n3@}\)-fache dieser Zahl gebildet. So bekommt man die Menge \(M_2 = {@M2@}\).
+</p>
+[[/lang]][[lang code="en"]]
+<strong>
+    Solution:
+</strong>
+<p>
+</p>
+<p>
+    (a) For any natural number \(n &lt; {@n2@}\) is the potency \(n^{@n5@}\) and the number \({@n1@}\) added. How to get the set \(M_1 = {@M1@}\).
+</p>
+<p>
+    (b) For each integer \({@-n4@} \le z \le {@n4@}\) it will \({@n3@}\)- more of this number. How to get the set \(M_2 = {@M2@}\).
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -132,68 +128,65 @@ b) \(M_2=\{{@n3@} z\ |\ z \in \mathbb Z, |z| \le {@n4@}\}={@M2@}\)]]></text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    <strong>
-        Richtige Antwort, gut gemacht!
-    </strong>
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:green;">
-        <i class="fa fa-check">
-        </i>
-    </span>
-    <strong>
-        Right answer, well done!
-    </strong>
+<strong>
+    Richtige Antwort, gut gemacht!
+</strong>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
 </span>
+<strong>
+    Right answer, well done!
+</strong>
+[[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-adjust">
-        </i>
-    </span>
-    <strong>
-        Ihre Antwort ist teilweise korrekt.
-    </strong>
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:orange;">
-        <i class="fa fa-adjust">
-        </i>
-    </span>
-    <strong>
-        Your answer is partly correct.
-    </strong>
+<strong>
+    Ihre Antwort ist teilweise korrekt.
+</strong>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
 </span>
+<strong>
+    Your answer is partly correct.
+</strong>
+[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    <strong>
-        Falsche Antwort.
-    </strong>
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
-<span class="multilang" lang="en">
-    <span style="font-size: 1.5em; color:red;">
-        <i class="fa fa-times">
-        </i>
-    </span>
-    <strong>
-        Wrong answer.
-    </strong>
+<strong>
+    Falsche Antwort.
+</strong>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
 </span>
+<strong>
+    Wrong answer.
+</strong>
+[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -289,28 +282,27 @@ b) \(M_2=\{{@n3@} z\ |\ z \in \mathbb Z, |z| \le {@n4@}\}={@M2@}\)]]></text>
                 <trueanswernote>prt1-2-T</trueanswernote>
                 <truefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-        Beachten Sie, dass die Zahl \(0\) kein Element der nat&#252;rlichen Zahlen ist und daher \(0^{@n5@}+{@n1@}={@0^n5+n1@}\notin M_1\).
-    </p>
-    <p>
-        Die korrekte Darstellung der Menge ist \(M_1={@M1@}\).
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-        Note that the number \(0\) is not an element of natural numbers and therefore \(0^{@n5@}+{@n1@}={@0^n5+n1@}\notin M_1\).
-    </p>
-    <p>
-        The correct representation of the quantity is \(M_1={@M1@}\).
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    Beachten Sie, dass die Zahl \(0\) kein Element der nat&#252;rlichen Zahlen ist und daher \(0^{@n5@}+{@n1@}={@0^n5+n1@}\notin M_1\).
+</p>
+<p>
+    Die korrekte Darstellung der Menge ist \(M_1={@M1@}\).
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<p>
+    Note that the number \(0\) is not an element of natural numbers and therefore \(0^{@n5@}+{@n1@}={@0^n5+n1@}\notin M_1\).
+</p>
+<p>
+    The correct representation of the set is \(M_1={@M1@}\).
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </truefeedback>
                 <falsescoremode>-</falsescoremode>
@@ -320,22 +312,21 @@ b) \(M_2=\{{@n3@} z\ |\ z \in \mathbb Z, |z| \le {@n4@}\}={@M2@}\)]]></text>
                 <falseanswernote>prt1-2-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-        Die korrekte Darstellung der Menge ist \(M_1={@M1@}\).
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-        The correct representation of the quantity is \(M_1={@M1@}\).
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    Die korrekte Darstellung der Menge ist \(M_1={@M1@}\).
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<p>
+    The correct representation of the set is \(M_1={@M1@}\).
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -371,22 +362,21 @@ b) \(M_2=\{{@n3@} z\ |\ z \in \mathbb Z, |z| \le {@n4@}\}={@M2@}\)]]></text>
                 <falseanswernote>prt2-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-        Die korrekte Darstellung der Menge ist \(M_2={@M2@}\).
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-        The correct representation of the quantity is \(M_2={@M2@}\).
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    Die korrekte Darstellung der Menge ist \(M_2={@M2@}\).
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<p>
+    The correct representation of the set is \(M_2={@M2@}\).
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>

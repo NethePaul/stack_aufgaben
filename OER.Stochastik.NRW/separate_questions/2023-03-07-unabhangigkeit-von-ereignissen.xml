@@ -1,0 +1,2441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>2023-03-07 Unabh&#228;ngigkeit von Ereignissen</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-aufgabe-13-info">
+    <details>
+        <summary>
+            Inhalt und Umfang dieser Aufgabe
+        </summary>
+        <p>
+            In dieser Aufgabe lernen Sie, die stochastische Unabh&#228;ngigkeit von Ereignissen nachzuweisen oder zu widerlegen. Sie besteht aus den folgenden drei Teilaufgaben.
+        </p>
+        <ul>
+            <li>
+                In
+                <b>
+                    (a)
+                </b>
+                finden Sie ein Beispiel f&#252;r drei Ereignisse, die nicht unabh&#228;ngig sind, obwohl die Wahrscheinlichkeit ihres Schnitts gleich dem Produkt ihrer Wahrscheinlichkeiten ist.
+            </li>
+            <li>
+                In
+                <b>
+                    (b)
+                </b>
+                finden Sie ein Beispiel f&#252;r drei Ereignisse, die nicht unabh&#228;ngig sind, obwohl sie paarweise unabh&#228;ngig sind.
+            </li>
+            <li>
+                In
+                <b>
+                    (c)
+                </b>
+                zeigen Sie mit einem Gegenbeispiel, dass die stochastische Unabh&#228;ngigkeit nicht transitiv ist.
+            </li>
+        </ul>
+    </details>
+    <hr/>
+</div>
+<div id="oer-aufgabe-13">
+    <p>
+        Bekanntlich ist eine Familie \((A_i)_{i\in I}\subseteq\Omega\) von Ereignissen \(P\)-stochastisch unabh&#228;ngig, falls f&#252;r alle endlichen Teilmengen \(J\subseteq I\) die folgende Produktformel erf&#252;llt ist:  \[P\Bigg(\bigcap_{j\in J}A_j\Bigg)=\prod_{j\in J}P(A_j).\] Ist die Indexmenge \(I=\{1,\ldots,n\}\) selbst endlich, stecken in dieser Bedingung insgesamt \(2^n-n-1\) Gleichungen, die die Ereignisse \(A_1,\ldots,A_n\) erf&#252;llen m&#252;ssen, um \(P\)-stochastisch unabh&#228;ngig zu sein.
+    </p>
+    <hr/>
+</div>
+<div id="oer-aufgabe-13a">
+    <p>
+        <b>
+            (a)
+        </b>
+        &#220;berlegen Sie sich im Spezialfall \(n=3\), dass aus der G&#252;ltigkeit obiger Produktformel f&#252;r \(J=I\) noch nicht die paarweise Unabh&#228;ngigkeit folgt, indem Sie ein Gegenbeispiel konstruieren. Finden Sie dazu einen endlichen Grundraum \(\Omega\) und nichtleere Ereignisse \(A_1,A_2,A_3\subseteq\Omega\), die bez&#252;glich der Gleichverteilung \(P\) auf \(\Omega\) die obige Produktformel f&#252;r \(J=I\) erf&#252;llen, aber nicht f&#252;r zweielementige Teilmengen \(J\subsetneq I\). Geben Sie also Mengen \(\Omega\) und \(A_1,A_2,A_3\subseteq\Omega\) an, sodass
+\begin{align*}
+P(A_1\cap A_2)&amp;\neq P(A_1)P(A_2),\\
+P(A_2\cap A_3)&amp;\neq P(A_2)P(A_3),\\
+P(A_3\cap A_1)&amp;\neq P(A_3)P(A_1),\\
+P(A_1\cap A_2\cap A_3)&amp;=P(A_1)P(A_2)P(A_3).
+\end{align*}
+        <i>
+            Mengen k&#246;nnen mit geschweiften Klammern oder mit dem Befehl
+        </i>
+        <code>
+            set
+        </code>
+        <i>
+            eingegeben werden. Beispielsweise ergeben sowohl
+        </i>
+        <code>
+            {1,2,3}
+        </code>
+        <i>
+            als auch
+        </i>
+        <code>
+            set(1,2,3)
+        </code>
+        <i>
+            die Menge \(\{1,2,3\}\).
+        </i>
+    </p>
+    <p>
+        \(\Omega=\) [[/lang]][[lang code="en"]]
+        <div id="oer-aufgabe-13-info">
+            <details>
+                <summary>
+                    Content and scope of this task
+                </summary>
+                <p>
+                    In this task you will learn to prove or refute the stochastic independence of events. It consists of the following three subtasks.
+                </p>
+                <ul>
+                    <li>
+                        In
+                        <b>
+                            (a)
+                        </b>
+                        find an example of three events that are not independent, although the probability of their cut is equal to the product of their probabilities.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (b)
+                        </b>
+                        find an example of three events that are not independent, although they are pairwise independent.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (c)
+                        </b>
+                        show with an example that stochastic independence is not transitive.
+                    </li>
+                </ul>
+            </details>
+            <hr/>
+        </div>
+        <div id="oer-aufgabe-13">
+            <p>
+                A family \((A_i)_{i\in I}\subseteq\Omega\) of events \(P\)-stochastic independent if for all finite subsets \(J\subseteq I\) the following product formula is fulfilled: \[P\Bigg(\bigcap_{j\in J}A_j\Bigg)=\prod_{j\in J}P(A_j).\] Is the index quantity \(I=\{1,\ldots,n\}\) even finally, are in this condition \(2^n-n-1\) Equations containing the events \(A_1,\ldots,A_n\) have to meet to \(P\)-tostochastic independent.
+            </p>
+            <hr/>
+        </div>
+        <div id="oer-aufgabe-13a">
+            <p>
+                <b>
+                    (a)
+                </b>
+                Consider yourself in a special case \(n=3\)that from the validity of the above product formula for \(J=I\) not yet follows the pairwise independence by constructing a counter-example. Find a finite space \(\Omega\) and non-empty events \(A_1,A_2,A_3\subseteq\Omega\), in relation to equal distribution \(P\) on \(\Omega\) the above product formula for \(J=I\) but not for two-element subsets \(J\subsetneq I\). So give quantities \(\Omega\) and \(A_1,A_2,A_3\subseteq\Omega\) so that
+\begin{align*}
+P(A_1\cap A_2)&amp;\neq P(A_1)P(A_2),\\
+P(A_2\cap A_3)&amp;\neq P(A_2)P(A_3),\\
+P(A_3\cap A_1)&amp;\neq P(A_3)P(A_1),\\
+P(A_1\cap A_2\cap A_3)&amp;=P(A_1)P(A_2)P(A_3).
+\end{align*}
+                <i>
+                    Quantities can be used with crooked brackets or with the command
+                </i>
+                <code>
+                    set
+                </code>
+                <i>
+                    are entered. For example,
+                </i>
+                <code>
+                    {1,2,3}
+                </code>
+                <i>
+                    and
+                </i>
+                <code>
+                    set(1,2,3)
+                </code>
+                <i>
+                    the amount \(\{1,2,3\}\).
+                </i>
+            </p>
+            <p>
+                \(\Omega=\) [[/lang]][[input:ansA]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansA]][[lang code="de"]]
+            </p>
+            <p>
+                \(A_1=\) [[/lang]][[lang code="en"]]
+            </p>
+            <p>
+                \(A_1=\) [[/lang]][[input:ansA1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansA1]][[lang code="de"]]
+            </p>
+            <p>
+                \(A_2=\) [[/lang]][[lang code="en"]]
+            </p>
+            <p>
+                \(A_2=\) [[/lang]][[input:ansA2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansA2]][[lang code="de"]]
+            </p>
+            <p>
+                \(A_3=\) [[/lang]][[lang code="en"]]
+            </p>
+            <p>
+                \(A_3=\) [[/lang]][[input:ansA3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansA3]][[lang code="de"]]
+            </p>
+            <p>
+                [[/lang]][[lang code="en"]]
+            </p>
+            <p>
+                [[/lang]][[feedback:prtA]][[lang code="de"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-13b" style="display:none;">
+            <p>
+                <b>
+                    (b)
+                </b>
+                &#220;berlegen Sie sich im Spezialfall \(n=3\), dass aus der paarweisen Unabh&#228;ngigkeit dreier Ereignisse noch nicht deren Unabh&#228;ngigkeit folgt, indem Sie ein Gegenbeispiel konstruieren. Finden Sie dazu einen endlichen Grundraum \(\Omega\) und nichtleere Ereignisse \(B_1,B_2,B_3\subseteq\Omega\), die bez&#252;glich der Gleichverteilung \(P\) auf \(\Omega\) die obige Produktformel f&#252;r zweielementige Teilmengen \(J\subsetneq I\) erf&#252;llen, aber nicht f&#252;r \(J=I\). Geben Sie also Mengen \(\Omega\) und \(B_1,B_2,B_3\subseteq\Omega\) an, sodass
+\begin{align*}
+P(B_1\cap B_2)&amp;=P(B_1)P(B_2),\\
+P(B_2\cap B_3)&amp;=P(B_2)P(B_3),\\
+P(B_3\cap B_1)&amp;=P(B_3)P(B_1),\\
+P(B_1\cap B_2\cap B_3)&amp;\neq P(B_1)P(B_2)P(B_3).
+\end{align*}
+                <i>
+                    Mengen k&#246;nnen mit geschweiften Klammern oder mit dem Befehl
+                </i>
+                <code>
+                    set
+                </code>
+                <i>
+                    eingegeben werden. Beispielsweise ergeben sowohl
+                </i>
+                <code>
+                    {1,2,3}
+                </code>
+                <i>
+                    als auch
+                </i>
+                <code>
+                    set(1,2,3)
+                </code>
+                <i>
+                    die Menge \(\{1,2,3\}\).
+                </i>
+            </p>
+            <p>
+                \(\Omega=\) [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-13b" style="display:none;">
+            <p>
+                <b>
+                    (b)
+                </b>
+                Consider yourself in a special case \(n=3\)that from the pairwise independence of three events does not yet follow their independence by constructing a counter-example. Find a finite space \(\Omega\) and non-empty events \(B_1,B_2,B_3\subseteq\Omega\), in relation to equal distribution \(P\) on \(\Omega\) the above product formula for two-element subsets \(J\subsetneq I\) but not for \(J=I\). So give quantities \(\Omega\) and \(B_1,B_2,B_3\subseteq\Omega\) so that
+\begin{align*}
+P(B_1\cap B_2)&amp;=P(B_1)P(B_2),\\
+P(B_2\cap B_3)&amp;=P(B_2)P(B_3),\\
+P(B_3\cap B_1)&amp;=P(B_3)P(B_1),\\
+P(B_1\cap B_2\cap B_3)&amp;\neq P(B_1)P(B_2)P(B_3).
+\end{align*}
+                <i>
+                    Quantities can be used with crooked brackets or with the command
+                </i>
+                <code>
+                    set
+                </code>
+                <i>
+                    are entered. For example,
+                </i>
+                <code>
+                    {1,2,3}
+                </code>
+                <i>
+                    and
+                </i>
+                <code>
+                    set(1,2,3)
+                </code>
+                <i>
+                    the amount \(\{1,2,3\}\).
+                </i>
+            </p>
+            <p>
+                \(\Omega=\) [[/lang]][[input:ansB]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansB]][[lang code="de"]]
+            </p>
+            <p>
+                \(B_1=\) [[/lang]][[lang code="en"]]
+            </p>
+            <p>
+                \(B_1=\) [[/lang]][[input:ansB1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansB1]][[lang code="de"]]
+            </p>
+            <p>
+                \(B_2=\) [[/lang]][[lang code="en"]]
+            </p>
+            <p>
+                \(B_2=\) [[/lang]][[input:ansB2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansB2]][[lang code="de"]]
+            </p>
+            <p>
+                \(B_3=\) [[/lang]][[lang code="en"]]
+            </p>
+            <p>
+                \(B_3=\) [[/lang]][[input:ansB3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansB3]][[lang code="de"]]
+            </p>
+            <p>
+                [[/lang]][[lang code="en"]]
+            </p>
+            <p>
+                [[/lang]][[feedback:prtB]][[lang code="de"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-13c" style="display:none;">
+            <p>
+                <b>
+                    (c)
+                </b>
+                Zeigen Sie mit einem Gegenbeispiel, dass der Begriff der stochastischen Unabh&#228;ngigkeit nicht transitiv ist. Finden Sie dazu einen endlichen Grundraum \(\Omega\) und nichtleere Ereignisse \(C_1,C_2,C_3\subseteq\Omega\), sodass bez&#252;glich der Gleichverteilung \(P\) auf \(\Omega\) sowohl \(C_1\) und \(C_2\) als auch \(C_2\) und \(C_3\) unabh&#228;ngig sind, aber \(C_1\) und \(C_3\) nicht unabh&#228;ngig sind. Geben Sie also Mengen \(\Omega\) und \(C_1,C_2,C_3\subseteq\Omega\) an, sodass
+\begin{align*}
+P(C_1\cap C_2)&amp;=P(C_1)P(C_2),\\
+P(C_2\cap C_3)&amp;=P(C_2)P(C_3),\\
+P(C_1\cap C_3)&amp;\neq P(C_1)P(C_3).
+\end{align*}
+                <i>
+                    Mengen k&#246;nnen mit geschweiften Klammern oder mit dem Befehl
+                </i>
+                <code>
+                    set
+                </code>
+                <i>
+                    eingegeben werden. Beispielsweise ergeben sowohl
+                </i>
+                <code>
+                    {1,2,3}
+                </code>
+                <i>
+                    als auch
+                </i>
+                <code>
+                    set(1,2,3)
+                </code>
+                <i>
+                    die Menge \(\{1,2,3\}\).
+                </i>
+            </p>
+            <p>
+                \(\Omega=\) [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-13c" style="display:none;">
+            <p>
+                <b>
+                    (c)
+                </b>
+                Show with an example that the term stochastic independence is not transitive. Find a finite space \(\Omega\) and non-empty events \(C_1,C_2,C_3\subseteq\Omega\)so that with regard to the equal distribution \(P\) on \(\Omega\) both \(C_1\) and \(C_2\) and \(C_2\) and \(C_3\) are independent, but \(C_1\) and \(C_3\) are not independent. So give quantities \(\Omega\) and \(C_1,C_2,C_3\subseteq\Omega\) so that
+\begin{align*}
+P(C_1\cap C_2)&amp;=P(C_1)P(C_2),\\
+P(C_2\cap C_3)&amp;=P(C_2)P(C_3),\\
+P(C_1\cap C_3)&amp;\neq P(C_1)P(C_3).
+\end{align*}
+                <i>
+                    Quantities can be used with crooked brackets or with the command
+                </i>
+                <code>
+                    set
+                </code>
+                <i>
+                    are entered. For example,
+                </i>
+                <code>
+                    {1,2,3}
+                </code>
+                <i>
+                    and
+                </i>
+                <code>
+                    set(1,2,3)
+                </code>
+                <i>
+                    the amount \(\{1,2,3\}\).
+                </i>
+            </p>
+            <p>
+                \(\Omega=\) [[/lang]][[input:ansC]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansC]][[lang code="de"]]
+            </p>
+            <p>
+                \(C_1=\) [[/lang]][[lang code="en"]]
+            </p>
+            <p>
+                \(C_1=\) [[/lang]][[input:ansC1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansC1]][[lang code="de"]]
+            </p>
+            <p>
+                \(C_2=\) [[/lang]][[lang code="en"]]
+            </p>
+            <p>
+                \(C_2=\) [[/lang]][[input:ansC2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansC2]][[lang code="de"]]
+            </p>
+            <p>
+                \(C_3=\) [[/lang]][[lang code="en"]]
+            </p>
+            <p>
+                \(C_3=\) [[/lang]][[input:ansC3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansC3]][[lang code="de"]]
+            </p>
+            <p>
+                [[/lang]][[lang code="en"]]
+            </p>
+            <p>
+                [[/lang]][[feedback:prtC]][[lang code="de"]]
+            </p>
+        </div>
+        <style>
+            .buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+        </style>
+        <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+        </script>
+        [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<style>
+    .buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+</style>
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="moodle_auto_format">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>3.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+Unabh&#228;ngigkeit von Ereignissen
+
+wurde entwickelt von
+  
+Christian M&#252;ller <c.mueller(at)hhu.de>
+
+nach einer Idee von
+
+Axel B&#252;cher <axel.buecher(at)hhu.de>
+Peter Kern <kern(at)hhu.de>
+
+an der Heinrich-Heine-Universit&#228;t D&#252;sseldorf.
+
+Dieses Werk ist lizenziert unter einer Creative Commons Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie https://creativecommons.org/licenses/by-sa/4.0/.
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+
+Technische Informationen:
+
+Diese Aufgabe bindet das Skript 'stackselbstlern.js' von Michael Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+/* &#252;berpr&#252;fe, ob ans eine nichtleere Menge ist */
+f(ans) := setp(ans) and not emptyp(ans)
+
+/* L&#246;sungen */
+TansA: {1, 2, 3, 4, 5, 6, 7, 8}
+TansA1: {1, 2, 3, 4}
+TansA2: {4, 6, 7, 8}
+TansA3: {4, 5, 7, 8}
+TansB: {1, 2, 3, 4}
+TansB1: {1, 4}
+TansB2: {2, 4}
+TansB3: {3, 4}
+TansC: {1, 2, 3, 4}
+TansC1: {1, 2}
+TansC2: {2, 3}
+TansC3: {3, 4}]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text/>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partly correct.[[/lang]]
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.[[/lang]]
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ansA</name>
+            <type>algebraic</type>
+            <tans>TansA</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansA1</name>
+            <type>algebraic</type>
+            <tans>TansA1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansA2</name>
+            <type>algebraic</type>
+            <tans>TansA2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansA3</name>
+            <type>algebraic</type>
+            <tans>TansA3</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB</name>
+            <type>algebraic</type>
+            <tans>TansB</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB1</name>
+            <type>algebraic</type>
+            <tans>TansB1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB2</name>
+            <type>algebraic</type>
+            <tans>TansB2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB3</name>
+            <type>algebraic</type>
+            <tans>TansB3</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC</name>
+            <type>algebraic</type>
+            <tans>TansC</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC1</name>
+            <type>algebraic</type>
+            <tans>TansC1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC2</name>
+            <type>algebraic</type>
+            <tans>TansC2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansC3</name>
+            <type>algebraic</type>
+            <tans>TansC3</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prtA</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>g(x) := subsetp(x, ansA)
+n: cardinality(ansA)
+
+ProbA1: cardinality(ansA1) / n
+ProbA2: cardinality(ansA2) / n
+ProbA3: cardinality(ansA3) / n
+ProbA12: cardinality(intersection(ansA1, ansA2)) / n
+ProbA23: cardinality(intersection(ansA2, ansA3)) / n
+ProbA31: cardinality(intersection(ansA3, ansA1)) / n
+ProbA123: cardinality(intersection(ansA1, ansA2, ansA3)) / n
+
+checkA12: is(notequal(ProbA12, ProbA1 * ProbA2))
+checkA23: is(notequal(ProbA23, ProbA2 * ProbA3))
+checkA31: is(notequal(ProbA31, ProbA3 * ProbA1))
+checkA123: is(equal(ProbA123, ProbA1 * ProbA2 * ProbA3))
+checkA: is(equal([checkA12, checkA23, checkA31, checkA123], [true, true, true, true]))</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>every(f, [ansA, ansA1, ansA2, ansA3])</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtA-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>10</falsenextnode>
+                <falseanswernote>prtA-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>every(g, [ansA1, ansA2, ansA3])</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prtA-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>7</falsenextnode>
+                <falseanswernote>prtA-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>10</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>f(ansA)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>11</truenextnode>
+                <trueanswernote>prtA-11-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben f&#252;r \(\Omega\) keine nichtleere Menge eingegeben.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have for \(\Omega\) no empty quantity entered.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>11</falsenextnode>
+                <falseanswernote>prtA-11-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>11</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>f(ansA1)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>12</truenextnode>
+                <trueanswernote>prtA-12-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben f&#252;r \(A_1\) keine nichtleere Menge eingegeben.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have for \(A_1\) no empty quantity entered.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>12</falsenextnode>
+                <falseanswernote>prtA-12-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>12</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>f(ansA2)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>13</truenextnode>
+                <trueanswernote>prtA-13-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben f&#252;r \(A_2\) keine nichtleere Menge eingegeben.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have for \(A_2\) no empty quantity entered.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>13</falsenextnode>
+                <falseanswernote>prtA-13-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>13</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>f(ansA3)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA-14-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben f&#252;r \(A_3\) keine nichtleere Menge eingegeben.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have for \(A_3\) no empty quantity entered.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA-14-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>checkA12</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>prtA-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(A_1\) und \(A_2\) erf&#252;llen wie gefordert die Bedingung \(P(A_1\cap A_2)={@ProbA12@}\neq{@ProbA1@}\cdot{@ProbA2@}=P(A_1)P(A_2)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(A_1\) and \(A_2\) meet as required \(P(A_1\cap A_2)={@ProbA12@}\neq{@ProbA1@}\cdot{@ProbA2@}=P(A_1)P(A_2)\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prtA-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(A_1\) und \(A_2\) erf&#252;llen nicht wie gefordert die Bedingung \(P(A_1\cap A_2)\neq P(A_1)P(A_2)\), da \(P(A_1\cap A_2)={@ProbA12@}={@ProbA1@}\cdot{@ProbA2@}=P(A_1)P(A_2)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(A_1\) and \(A_2\) do not meet as required \(P(A_1\cap A_2)\neq P(A_1)P(A_2)\)there \(P(A_1\cap A_2)={@ProbA12@}={@ProbA1@}\cdot{@ProbA2@}=P(A_1)P(A_2)\).
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>checkA23</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>prtA-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(A_2\) und \(A_3\) erf&#252;llen wie gefordert die Bedingung \(P(A_2\cap A_3)={@ProbA23@}\neq{@ProbA2@}\cdot{@ProbA3@}=P(A_2)P(A_3)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(A_2\) and \(A_3\) meet as required \(P(A_2\cap A_3)={@ProbA23@}\neq{@ProbA2@}\cdot{@ProbA3@}=P(A_2)P(A_3)\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prtA-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(A_2\) und \(A_3\) erf&#252;llen nicht wie gefordert die Bedingung \(P(A_2\cap A_3)\neq P(A_2)P(A_3)\), da \(P(A_2\cap A_3)={@ProbA23@}={@ProbA2@}\cdot{@ProbA3@}=P(A_2)P(A_3)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(A_2\) and \(A_3\) do not meet as required \(P(A_2\cap A_3)\neq P(A_2)P(A_3)\)there \(P(A_2\cap A_3)={@ProbA23@}={@ProbA2@}\cdot{@ProbA3@}=P(A_2)P(A_3)\).
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>checkA31</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>prtA-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(A_3\) und \(A_1\) erf&#252;llen wie gefordert die Bedingung \(P(A_3\cap A_1)={@ProbA31@}\neq{@ProbA3@}\cdot{@ProbA1@}=P(A_3)P(A_1)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(A_3\) and \(A_1\) meet as required \(P(A_3\cap A_1)={@ProbA31@}\neq{@ProbA3@}\cdot{@ProbA1@}=P(A_3)P(A_1)\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>prtA-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(A_3\) und \(A_1\) erf&#252;llen nicht wie gefordert die Bedingung \(P(A_3\cap A_1)\neq P(A_3)P(A_1)\), da \(P(A_3\cap A_1)={@ProbA31@}={@ProbA3@}\cdot{@ProbA1@}=P(A_3)P(A_1)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(A_3\) and \(A_1\) do not meet as required \(P(A_3\cap A_1)\neq P(A_3)P(A_1)\)there \(P(A_3\cap A_1)={@ProbA31@}={@ProbA3@}\cdot{@ProbA1@}=P(A_3)P(A_1)\).
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>checkA123</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>6</truenextnode>
+                <trueanswernote>prtA-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(A_1\), \(A_2\) und \(A_3\) erf&#252;llen wie gefordert die Bedingung \(P(A_1\cap A_2\cap A_3)={@ProbA123@}={@ProbA1@}\cdot{@ProbA2@}\cdot{@ProbA3@}=P(A_1)P(A_2)P(A_3)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(A_1\), \(A_2\) and \(A_3\) meet as required \(P(A_1\cap A_2\cap A_3)={@ProbA123@}={@ProbA1@}\cdot{@ProbA2@}\cdot{@ProbA3@}=P(A_1)P(A_2)P(A_3)\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>6</falsenextnode>
+                <falseanswernote>prtA-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(A_1\), \(A_2\) und \(A_3\) erf&#252;llen nicht wie gefordert die Bedingung \(P(A_1\cap A_2\cap A_3)=P(A_1)P(A_2)P(A_3)\), da \(P(A_1\cap A_2\cap A_3)={@ProbA123@}\neq{@ProbA1@}\cdot{@ProbA2@}\cdot{@ProbA3@}=P(A_1)P(A_2)P(A_3)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(A_1\), \(A_2\) and \(A_3\) do not meet as required \(P(A_1\cap A_2\cap A_3)=P(A_1)P(A_2)P(A_3)\)there \(P(A_1\cap A_2\cap A_3)={@ProbA123@}\neq{@ProbA1@}\cdot{@ProbA2@}\cdot{@ProbA3@}=P(A_1)P(A_2)P(A_3)\).
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>6</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>checkA</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA-7-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<hr/>
+<p>
+    Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-13a');
+show('oer-aufgabe-13b');
+" type="button">
+        Weiter
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<hr/>
+<p>
+    To get to the next task, click on
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-13a');
+show('oer-aufgabe-13b');
+" type="button">
+        Next
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA-7-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>7</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>subsetp(ansA1, ansA)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>8</truenextnode>
+                <trueanswernote>prtA-8-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antwort f&#252;r \(A_1\) ist keine Teilmenge von \(\Omega\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your reply \(A_1\) is not a subset \(\Omega\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>8</falsenextnode>
+                <falseanswernote>prtA-8-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>8</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>subsetp(ansA2, ansA)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>9</truenextnode>
+                <trueanswernote>prtA-9-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antwort f&#252;r \(A_2\) ist keine Teilmenge von \(\Omega\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your reply \(A_2\) is not a subset \(\Omega\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>9</falsenextnode>
+                <falseanswernote>prtA-9-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>9</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>subsetp(ansA3, ansA)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA-10-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antwort f&#252;r \(A_3\) ist keine Teilmenge von \(\Omega\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your reply \(A_3\) is not a subset \(\Omega\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA-10-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>g(x) := subsetp(x, ansB)
+n: cardinality(ansB)
+
+ProbB1: cardinality(ansB1) / n
+ProbB2: cardinality(ansB2) / n
+ProbB3: cardinality(ansB3) / n
+ProbB12: cardinality(intersection(ansB1, ansB2)) / n
+ProbB23: cardinality(intersection(ansB2, ansB3)) / n
+ProbB31: cardinality(intersection(ansB3, ansB1)) / n
+ProbB123: cardinality(intersection(ansB1, ansB2, ansB3)) / n
+
+checkB12: is(equal(ProbB12, ProbB1 * ProbB2))
+checkB23: is(equal(ProbB23, ProbB2 * ProbB3))
+checkB31: is(equal(ProbB31, ProbB3 * ProbB1))
+checkB123: is(notequal(ProbB123, ProbB1 * ProbB2 * ProbB3))
+checkB: is(equal([checkB12, checkB23, checkB31, checkB123], [true, true, true, true]))</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>every(f, [ansB, ansB1, ansB2, ansB3])</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtB-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>10</falsenextnode>
+                <falseanswernote>prtB-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>every(g, [ansB1, ansB2, ansB3])</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prtB-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>7</falsenextnode>
+                <falseanswernote>prtB-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>10</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>f(ansB)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>11</truenextnode>
+                <trueanswernote>prtB-11-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben f&#252;r \(\Omega\) keine nichtleere Menge eingegeben.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have for \(\Omega\) no empty quantity entered.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>11</falsenextnode>
+                <falseanswernote>prtB-11-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>11</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>f(ansB1)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>12</truenextnode>
+                <trueanswernote>prtB-12-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben f&#252;r \(B_1\) keine nichtleere Menge eingegeben.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have for \(B_1\) no empty quantity entered.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>12</falsenextnode>
+                <falseanswernote>prtB-12-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>12</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>f(ansB2)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>13</truenextnode>
+                <trueanswernote>prtB-13-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben f&#252;r \(B_2\) keine nichtleere Menge eingegeben.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have for \(B_2\) no empty quantity entered.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>13</falsenextnode>
+                <falseanswernote>prtB-13-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>13</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>f(ansB3)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB-14-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben f&#252;r \(B_3\) keine nichtleere Menge eingegeben.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have for \(B_3\) no empty quantity entered.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB-14-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>checkB12</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>prtB-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(B_1\) und \(B_2\) erf&#252;llen wie gefordert die Bedingung \(P(B_1\cap B_2)={@ProbB12@}={@ProbB1@}\cdot{@ProbB2@}=P(B_1)P(B_2)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(B_1\) and \(B_2\) meet as required \(P(B_1\cap B_2)={@ProbB12@}={@ProbB1@}\cdot{@ProbB2@}=P(B_1)P(B_2)\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prtB-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(B_1\) und \(B_2\) erf&#252;llen nicht wie gefordert die Bedingung \(P(B_1\cap B_2)=P(B_1)P(B_2)\), da \(P(B_1\cap B_2)={@ProbB12@}\neq{@ProbB1@}\cdot{@ProbB2@}=P(B_1)P(B_2)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(B_1\) and \(B_2\) do not meet as required \(P(B_1\cap B_2)=P(B_1)P(B_2)\)there \(P(B_1\cap B_2)={@ProbB12@}\neq{@ProbB1@}\cdot{@ProbB2@}=P(B_1)P(B_2)\).
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>checkB23</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>prtB-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(B_2\) und \(B_3\) erf&#252;llen wie gefordert die Bedingung \(P(B_2\cap B_3)={@ProbB23@}={@ProbB2@}\cdot{@ProbB3@}=P(B_2)P(B_3)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(B_2\) and \(B_3\) meet as required \(P(B_2\cap B_3)={@ProbB23@}={@ProbB2@}\cdot{@ProbB3@}=P(B_2)P(B_3)\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prtB-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(B_2\) und \(B_3\) erf&#252;llen nicht wie gefordert die Bedingung \(P(B_2\cap B_3)=P(B_2)P(B_3)\), da \(P(B_2\cap B_3)={@ProbB23@}\neq{@ProbB2@}\cdot{@ProbB3@}=P(B_2)P(B_3)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(B_2\) and \(B_3\) do not meet as required \(P(B_2\cap B_3)=P(B_2)P(B_3)\)there \(P(B_2\cap B_3)={@ProbB23@}\neq{@ProbB2@}\cdot{@ProbB3@}=P(B_2)P(B_3)\).
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>checkB31</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>prtB-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(B_3\) und \(B_1\) erf&#252;llen wie gefordert die Bedingung \(P(B_3\cap B_1)={@ProbB31@}={@ProbB3@}\cdot{@ProbB1@}=P(B_3)P(B_1)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(B_3\) and \(B_1\) meet as required \(P(B_3\cap B_1)={@ProbB31@}={@ProbB3@}\cdot{@ProbB1@}=P(B_3)P(B_1)\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>prtB-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(B_3\) und \(B_1\) erf&#252;llen nicht wie gefordert die Bedingung \(P(B_3\cap B_1)=P(B_3)P(B_1)\), da \(P(B_3\cap B_1)={@ProbB31@}\neq{@ProbB3@}\cdot{@ProbB1@}=P(B_3)P(B_1)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(B_3\) and \(B_1\) do not meet as required \(P(B_3\cap B_1)=P(B_3)P(B_1)\)there \(P(B_3\cap B_1)={@ProbB31@}\neq{@ProbB3@}\cdot{@ProbB1@}=P(B_3)P(B_1)\).
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>checkB123</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.2500000</truescore>
+                <truepenalty/>
+                <truenextnode>6</truenextnode>
+                <trueanswernote>prtB-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(B_1\), \(B_2\) und \(B_3\) erf&#252;llen wie gefordert die Bedingung \(P(B_1\cap B_2\cap B_3)={@ProbB123@}\neq{@ProbB1@}\cdot{@ProbB2@}\cdot{@ProbB3@}=P(B_1)P(B_2)P(B_3)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(B_1\), \(B_2\) and \(B_3\) meet as required \(P(B_1\cap B_2\cap B_3)={@ProbB123@}\neq{@ProbB1@}\cdot{@ProbB2@}\cdot{@ProbB3@}=P(B_1)P(B_2)P(B_3)\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>6</falsenextnode>
+                <falseanswernote>prtB-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(B_1\), \(B_2\) und \(B_3\) erf&#252;llen nicht wie gefordert die Bedingung \(P(B_1\cap B_2\cap B_3)\neq P(B_1)P(B_2)P(B_3)\), da \(P(B_1\cap B_2\cap B_3)={@ProbB123@}={@ProbB1@}\cdot{@ProbB2@}\cdot{@ProbB3@}=P(B_1)P(B_2)P(B_3)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(B_1\), \(B_2\) and \(B_3\) do not meet as required \(P(B_1\cap B_2\cap B_3)\neq P(B_1)P(B_2)P(B_3)\)there \(P(B_1\cap B_2\cap B_3)={@ProbB123@}={@ProbB1@}\cdot{@ProbB2@}\cdot{@ProbB3@}=P(B_1)P(B_2)P(B_3)\).
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>6</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>checkB</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB-7-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<hr/>
+<p>
+    Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-13b');
+show('oer-aufgabe-13c');
+" type="button">
+        Weiter
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<hr/>
+<p>
+    To get to the next task, click on
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-13b');
+show('oer-aufgabe-13c');
+" type="button">
+        Next
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB-7-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>7</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>subsetp(ansB1, ansB)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>8</truenextnode>
+                <trueanswernote>prtB-8-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antwort f&#252;r \(B_1\) ist keine Teilmenge von \(\Omega\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your reply \(B_1\) is not a subset \(\Omega\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>8</falsenextnode>
+                <falseanswernote>prtB-8-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>8</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>subsetp(ansB2, ansB)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>9</truenextnode>
+                <trueanswernote>prtB-9-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antwort f&#252;r \(B_2\) ist keine Teilmenge von \(\Omega\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your reply \(B_2\) is not a subset \(\Omega\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>9</falsenextnode>
+                <falseanswernote>prtB-9-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>9</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>subsetp(ansB3, ansB)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB-10-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antwort f&#252;r \(B_3\) ist keine Teilmenge von \(\Omega\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your reply \(B_3\) is not a subset \(\Omega\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB-10-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtC</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>g(x) := subsetp(x, ansC)
+n: cardinality(ansC)
+
+ProbC1: cardinality(ansC1) / n
+ProbC2: cardinality(ansC2) / n
+ProbC3: cardinality(ansC3) / n
+ProbC12: cardinality(intersection(ansC1, ansC2)) / n
+ProbC23: cardinality(intersection(ansC2, ansC3)) / n
+ProbC31: cardinality(intersection(ansC3, ansC1)) / n
+
+checkC12: is(equal(ProbC12, ProbC1 * ProbC2))
+checkC23: is(equal(ProbC23, ProbC2 * ProbC3))
+checkC31: is(notequal(ProbC31, ProbC3 * ProbC1))
+checkC: is(equal([checkC12, checkC23, checkC31], [true, true, true]))</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>every(f, [ansC, ansC1, ansC2, ansC3])</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtC-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>9</falsenextnode>
+                <falseanswernote>prtC-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>every(g, [ansC1, ansC2, ansC3])</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prtC-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>6</falsenextnode>
+                <falseanswernote>prtC-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>10</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>f(ansC1)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>11</truenextnode>
+                <trueanswernote>prtC-11-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben f&#252;r \(C_1\) keine nichtleere Menge eingegeben.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have for \(C_1\) no empty quantity entered.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>11</falsenextnode>
+                <falseanswernote>prtC-11-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>11</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>f(ansC2)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>12</truenextnode>
+                <trueanswernote>prtC-12-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben f&#252;r \(C_2\) keine nichtleere Menge eingegeben.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have for \(C_2\) no empty quantity entered.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>12</falsenextnode>
+                <falseanswernote>prtC-12-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>12</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>f(ansC3)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC-13-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben f&#252;r \(C_3\) keine nichtleere Menge eingegeben.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have for \(C_3\) no empty quantity entered.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC-13-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>checkC12</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.3300000</truescore>
+                <truepenalty/>
+                <truenextnode>3</truenextnode>
+                <trueanswernote>prtC-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(C_1\) und \(C_2\) erf&#252;llen wie gefordert die Bedingung \(P(C_1\cap C_2)={@ProbC12@}={@ProbC1@}\cdot{@ProbC2@}=P(C_1)P(C_2)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(C_1\) and \(C_2\) meet as required \(P(C_1\cap C_2)={@ProbC12@}={@ProbC1@}\cdot{@ProbC2@}=P(C_1)P(C_2)\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prtC-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(C_1\) und \(C_2\) erf&#252;llen nicht wie gefordert die Bedingung \(P(C_1\cap C_2)=P(C_1)P(C_2)\), da \(P(C_1\cap C_2)={@ProbC12@}\neq{@ProbC1@}\cdot{@ProbC2@}=P(C_1)P(C_2)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(C_1\) and \(C_2\) do not meet as required \(P(C_1\cap C_2)=P(C_1)P(C_2)\)there \(P(C_1\cap C_2)={@ProbC12@}\neq{@ProbC1@}\cdot{@ProbC2@}=P(C_1)P(C_2)\).
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>checkC23</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.3300000</truescore>
+                <truepenalty/>
+                <truenextnode>4</truenextnode>
+                <trueanswernote>prtC-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(C_2\) und \(C_3\) erf&#252;llen wie gefordert die Bedingung \(P(C_2\cap C_3)={@ProbC23@}={@ProbC2@}\cdot{@ProbC3@}=P(C_2)P(C_3)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(C_2\) and \(C_3\) meet as required \(P(C_2\cap C_3)={@ProbC23@}={@ProbC2@}\cdot{@ProbC3@}=P(C_2)P(C_3)\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>4</falsenextnode>
+                <falseanswernote>prtC-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(C_2\) und \(C_3\) erf&#252;llen nicht wie gefordert die Bedingung \(P(C_2\cap C_3)=P(C_2)P(C_3)\), da \(P(C_2\cap C_3)={@ProbC23@}\neq{@ProbC2@}\cdot{@ProbC3@}=P(C_2)P(C_3)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(C_2\) and \(C_3\) do not meet as required \(P(C_2\cap C_3)=P(C_2)P(C_3)\)there \(P(C_2\cap C_3)={@ProbC23@}\neq{@ProbC2@}\cdot{@ProbC3@}=P(C_2)P(C_3)\).
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>4</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>checkC31</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.3400000</truescore>
+                <truepenalty/>
+                <truenextnode>5</truenextnode>
+                <trueanswernote>prtC-5-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(C_1\) und \(C_3\) erf&#252;llen wie gefordert die Bedingung \(P(C_1\cap C_3)={@ProbC31@}\neq{@ProbC1@}\cdot{@ProbC3@}=P(C_1)P(C_3)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(C_1\) and \(C_3\) meet as required \(P(C_1\cap C_3)={@ProbC31@}\neq{@ProbC1@}\cdot{@ProbC3@}=P(C_1)P(C_3)\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>5</falsenextnode>
+                <falseanswernote>prtC-5-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antworten f&#252;r \(C_1\) und \(C_3\) erf&#252;llen nicht wie gefordert die Bedingung \(P(C_1\cap C_3)\neq P(C_1)P(C_3)\), da \(P(C_1\cap C_3)={@ProbC31@}={@ProbC1@}\cdot{@ProbC3@}=P(C_1)P(C_3)\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your answers for \(C_1\) and \(C_3\) do not meet as required \(P(C_1\cap C_3)\neq P(C_1)P(C_3)\)there \(P(C_1\cap C_3)={@ProbC31@}={@ProbC1@}\cdot{@ProbC3@}=P(C_1)P(C_3)\).
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>5</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>checkC</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC-6-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<hr/>
+<p>
+    Sie haben die Aufgabe erfolgreich gel&#246;st! Jetzt sollten Sie sicher entscheiden k&#246;nnen, ob Ereignisse stochastisch unabh&#228;ngig sind.
+</p>
+[[/lang]][[lang code="en"]]
+<hr/>
+<p>
+    You have successfully solved the task! Now you should be sure to decide whether events are stochastic independent.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC-6-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>6</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>subsetp(ansC1, ansC)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>7</truenextnode>
+                <trueanswernote>prtC-7-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antwort f&#252;r \(C_1\) ist keine Teilmenge von \(\Omega\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your reply \(C_1\) is not a subset \(\Omega\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>7</falsenextnode>
+                <falseanswernote>prtC-7-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>7</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>subsetp(ansC2, ansC)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>8</truenextnode>
+                <trueanswernote>prtC-8-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antwort f&#252;r \(C_2\) ist keine Teilmenge von \(\Omega\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your reply \(C_2\) is not a subset \(\Omega\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>8</falsenextnode>
+                <falseanswernote>prtC-8-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>8</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>subsetp(ansC3, ansC)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC-9-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihre Antwort f&#252;r \(C_3\) ist keine Teilmenge von \(\Omega\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your reply \(C_3\) is not a subset \(\Omega\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC-9-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>9</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>f(ansC)</sans>
+                <tans>false</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>10</truenextnode>
+                <trueanswernote>prtC-10-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben f&#252;r \(\Omega\) keine nichtleere Menge eingegeben.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have for \(\Omega\) no empty quantity entered.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>10</falsenextnode>
+                <falseanswernote>prtC-10-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

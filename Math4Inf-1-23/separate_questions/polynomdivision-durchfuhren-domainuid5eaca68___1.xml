@@ -6,98 +6,95 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Berechnen Sie mittels Polynomdivision:
+[[lang code="de"]]Berechnen Sie mittels Polynomdivision:
+<p>
+    a)
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
     <p>
-        a)
+        \( ({@P3@} ) : ({@P2@}) \)
+        <br/>
+        \(= \) [[/lang]][[lang code="en"]]Calculate using polynomial division:
+        <p>
+            (a)
+        </p>
+        <div class="editor-indent" style="margin-left: 30px;">
+            <p>
+                \( ({@P3@} ) : ({@P2@}) \)
+                <br/>
+                \(= \) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]]
+            </p>
+            <p>
+                [[/lang]][[lang code="en"]]
+            </p>
+            <p>
+                [[/lang]][[feedback:prt1]][[lang code="de"]]
+                <br/>
+            </p>
+        </div>
+        <p>
+            b)
+        </p>
+        <div class="editor-indent" style="margin-left: 30px;">
+            <p>
+                \( ({@P6@} ) : ({@P5@}) \)
+                <br/>
+                \(= \) [[/lang]][[lang code="en"]]
+                <br/>
+            </p>
+        </div>
+        <p>
+            (b)
+        </p>
+        <div class="editor-indent" style="margin-left: 30px;">
+            <p>
+                \( ({@P6@} ) : ({@P5@}) \)
+                <br/>
+                \(= \) [[/lang]][[input:ans2]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans2]][[lang code="de"]]
+            </p>
+            <p>
+                [[/lang]][[lang code="en"]]
+            </p>
+            <p>
+                [[/lang]][[feedback:prt2]][[lang code="de"]]
+                <br/>
+            </p>
+        </div>
+        <p>
+            c)
+        </p>
+        <div class="editor-indent" style="margin-left: 30px;">
+            <p>
+                \( ({@P9@} ) : ({@P8@}) \)
+                <br/>
+                \(= \) [[/lang]][[lang code="en"]]
+                <br/>
+            </p>
+        </div>
+        <p>
+            (c)
+        </p>
+        <div class="editor-indent" style="margin-left: 30px;">
+            <p>
+                \( ({@P9@} ) : ({@P8@}) \)
+                <br/>
+                \(= \) [[/lang]][[input:ans3]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans3]][[lang code="de"]]
+                <br/>
+            </p>
+            <p>
+                [[/lang]][[lang code="en"]]
+                <br/>
+            </p>
+            <p>
+                [[/lang]][[feedback:prt3]][[lang code="de"]]
+                <br/>
+            </p>
+        </div>
+        [[/lang]][[lang code="en"]]
+        <br/>
     </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \( ({@P3@} ) : ({@P2@}) \)
-            <br/>
-            \(= \) [[input:ans1]] [[validation:ans1]]
-        </p>
-        <p>
-            [[feedback:prt1]]
-            <br/>
-        </p>
-    </div>
-    <p>
-        b)
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \( ({@P6@} ) : ({@P5@}) \)
-            <br/>
-            \(= \) [[input:ans2]] [[validation:ans2]]
-        </p>
-        <p>
-            [[feedback:prt2]]
-            <br/>
-        </p>
-    </div>
-    <p>
-        c)
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \( ({@P9@} ) : ({@P8@}) \)
-            <br/>
-            \(= \) [[input:ans3]] [[validation:ans3]]
-            <br/>
-        </p>
-        <p>
-            [[feedback:prt3]]
-            <br/>
-        </p>
-    </div>
-</span>
-<span class="multilang" lang="en">
-    Calculate using polynomial division:
-    <p>
-        (a)
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \( ({@P3@} ) : ({@P2@}) \)
-            <br/>
-            \(= \) [[input:ans1]] [[validation:ans1]]
-        </p>
-        <p>
-            [[feedback:prt1]]
-            <br/>
-        </p>
-    </div>
-    <p>
-        (b)
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \( ({@P6@} ) : ({@P5@}) \)
-            <br/>
-            \(= \) [[input:ans2]] [[validation:ans2]]
-        </p>
-        <p>
-            [[feedback:prt2]]
-            <br/>
-        </p>
-    </div>
-    <p>
-        (c)
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            \( ({@P9@} ) : ({@P8@}) \)
-            <br/>
-            \(= \) [[input:ans3]] [[validation:ans3]]
-            <br/>
-        </p>
-        <p>
-            [[feedback:prt3]]
-            <br/>
-        </p>
-    </div>
-</span>
+</div>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
@@ -125,16 +122,15 @@ P9:ratsimp(P7*P8);]]></text>
         </questionvariables>
         <specificfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <br/>
-    <br/>
-    <br/>
-</span>
-<span class="multilang" lang="en">
-    <br/>
-    <br/>
-    <br/>
-</span>
+[[lang code="de"]]
+<br/>
+<br/>
+<br/>
+[[/lang]][[lang code="en"]]
+<br/>
+<br/>
+<br/>
+[[/lang]]
 ]]></text>
         </specificfeedback>
         <questionnote format="moodle_auto_format">
@@ -150,32 +146,17 @@ P9:ratsimp(P7*P8);]]></text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
@@ -272,22 +253,21 @@ P9:ratsimp(P7*P8);]]></text>
                 <falseanswernote>prt1-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-        Ihr Polynom in Aufgabenteil a) ist leider falsch.
-        <br/>
-        Es gilt: \( ({@ans1@})\cdot({@P2@})=({@ratsimp(ans1*P2)@})\neq ({@P3@}) \).
-        <br/>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-        Your polynomial in task a) is unfortunately incorrect.
-        <br/>
-        It shall apply: \( ({@ans1@})\cdot({@P2@})=({@ratsimp(ans1*P2)@})\neq ({@P3@}) \).
-        <br/>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+    Ihr Polynom in Aufgabenteil a) ist leider falsch.
+    <br/>
+    Es gilt: \( ({@ans1@})\cdot({@P2@})=({@ratsimp(ans1*P2)@})\neq ({@P3@}) \).
+    <br/>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your polynomial in task a) is unfortunately incorrect.
+    <br/>
+    It applies: \( ({@ans1@})\cdot({@P2@})=({@ratsimp(ans1*P2)@})\neq ({@P3@}) \).
+    <br/>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -323,28 +303,27 @@ P9:ratsimp(P7*P8);]]></text>
                 <falseanswernote>prt2-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-        Ihr Polynom in Aufgabenteil b) ist leider falsch.
-        <br/>
-        Es gilt: \( ({@ans2@})\cdot({@P5@})=({@ratsimp(ans2*P5)@})\neq ({@P6@}) \).
-    </p>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-        Your polynomial in task b) is unfortunately incorrect.
-        <br/>
-        It shall apply: \( ({@ans2@})\cdot({@P5@})=({@ratsimp(ans2*P5)@})\neq ({@P6@}) \).
-    </p>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    Ihr Polynom in Aufgabenteil b) ist leider falsch.
+    <br/>
+    Es gilt: \( ({@ans2@})\cdot({@P5@})=({@ratsimp(ans2*P5)@})\neq ({@P6@}) \).
+</p>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<p>
+    Your polynomial in task b) is unfortunately incorrect.
+    <br/>
+    It applies: \( ({@ans2@})\cdot({@P5@})=({@ratsimp(ans2*P5)@})\neq ({@P6@}) \).
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>
@@ -380,28 +359,27 @@ P9:ratsimp(P7*P8);]]></text>
                 <falseanswernote>prt3-1-F</falseanswernote>
                 <falsefeedback format="html">
                     <text><![CDATA[
-<span class="multilang" lang="de">
-    <p>
-    </p>
-    <p>
-        Ihr Polynom in Aufgabenteil c) ist leider falsch.
-        <br/>
-        Es gilt: \( ({@ans3@})\cdot({@P8@})=({@ratsimp(ans3*P8)@})\neq ({@P9@}) \).
-    </p>
-    <p>
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <p>
-    </p>
-    <p>
-        Your polynomial in task c) is unfortunately incorrect.
-        <br/>
-        It shall apply: \( ({@ans3@})\cdot({@P8@})=({@ratsimp(ans3*P8)@})\neq ({@P9@}) \).
-    </p>
-    <p>
-    </p>
-</span>
+[[lang code="de"]]
+<p>
+</p>
+<p>
+    Ihr Polynom in Aufgabenteil c) ist leider falsch.
+    <br/>
+    Es gilt: \( ({@ans3@})\cdot({@P8@})=({@ratsimp(ans3*P8)@})\neq ({@P9@}) \).
+</p>
+<p>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+</p>
+<p>
+    Your polynomial in task c) is unfortunately incorrect.
+    <br/>
+    It applies: \( ({@ans3@})\cdot({@P8@})=({@ratsimp(ans3*P8)@})\neq ({@P9@}) \).
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
                 </falsefeedback>
             </node>

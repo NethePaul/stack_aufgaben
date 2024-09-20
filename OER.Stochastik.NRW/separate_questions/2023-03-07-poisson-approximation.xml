@@ -1,0 +1,1398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>2023-03-07 Poisson-Approximation</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-aufgabe-7-info">
+    <details>
+        <summary>
+            Inhalt und Umfang dieser Aufgabe
+        </summary>
+        <p>
+            In dieser Aufgabe lernen Sie, die Poisson-Approximation zur Berechnung von Wahrscheinlichkeiten anzuwenden. Sie besteht aus den folgenden drei Teilaufgaben.
+        </p>
+        <ul>
+            <li>
+                In
+                <b>
+                    (a)
+                </b>
+                berechnen Sie die Wahrscheinlichkeit exakt mittels der Binomialverteilung.
+            </li>
+            <li>
+                In
+                <b>
+                    (b)
+                </b>
+                berechnen Sie die Wahrscheinlichkeit approximativ mittels einer Poisson-Approximation.
+            </li>
+            <li>
+                In
+                <b>
+                    (c)
+                </b>
+                berechnen Sie die Gr&#246;&#223;enordnung des absoluten Fehlers zwischen der exakten und der approximativen Wahrscheinlichkeit.
+            </li>
+        </ul>
+    </details>
+    <hr/>
+</div>
+<div id="oer-aufgabe-7">
+    <p>
+        {@n@} Personen werden auf Infektion mit einem Krankheitserreger getestet. Wir nehmen an, dass jede Person mit einer Wahrscheinlichkeit von {@p@} mit dem Krankheitserreger infiziert ist und dass vorherige Infektionsketten unter den Personen ausgeschlossen werden k&#246;nnen.
+    </p>
+    <hr/>
+</div>
+<div id="oer-aufgabe-7a">
+    <p>
+        <b>
+            (a)
+        </b>
+        Berechnen Sie exakt die Wahrscheinlichkeit, dass von den {@n@} getesteten Personen genau {@k@} Personen mit dem Krankheitserreger infiziert sind.
+    </p>
+    <p>
+        Die exakte Wahrscheinlichkeit betr&#228;gt [[/lang]][[lang code="en"]]
+        <div id="oer-aufgabe-7-info">
+            <details>
+                <summary>
+                    Content and scope of this task
+                </summary>
+                <p>
+                    In this task, you will learn to apply the Poisson approximation to calculate probabilities. It consists of the following three subtasks.
+                </p>
+                <ul>
+                    <li>
+                        In
+                        <b>
+                            (a)
+                        </b>
+                        calculate the probability exactly by means of the binomial distribution.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (b)
+                        </b>
+                        calculate the probability approximate by means of a Poisson approximation.
+                    </li>
+                    <li>
+                        In
+                        <b>
+                            (c)
+                        </b>
+                        calculate the order of magnitude of the absolute error between the exact and approximate probability.
+                    </li>
+                </ul>
+            </details>
+            <hr/>
+        </div>
+        <div id="oer-aufgabe-7">
+            <p>
+                {@n@} People are tested for infection with a pathogen. We assume that each person with a probability of {@p@} is infected with the pathogen and that prior infection chains can be excluded among the persons.
+            </p>
+            <hr/>
+        </div>
+        <div id="oer-aufgabe-7a">
+            <p>
+                <b>
+                    (a)
+                </b>
+                Calculate exactly the probability that from the {@n@} tested persons exactly {@k@} persons infected with the pathogen.
+            </p>
+            <p>
+                The exact probability is [[/lang]][[input:ansA]][[lang code="de"]].
+                <i>
+                    Geben Sie den Wert als Formel ein.
+                </i>
+                [[/lang]][[lang code="en"]].
+                <i>
+                    Enter the value as formula.
+                </i>
+                [[/lang]][[validation:ansA]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtA]][[lang code="de"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-7a1" style="display:none">
+            <p>
+                <b>
+                    (a1)
+                </b>
+                Welches dieser diskreten Wahrscheinlichkeitsma&#223;e beschreibt die Verteilung der infizierten Personen unter den getesteten Personen?
+            </p>
+            <p>
+                [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-7a1" style="display:none">
+            <p>
+                <b>
+                    (a1)
+                </b>
+                Which of these discrete probability measures describes the distribution of infected persons among the tested persons?
+            </p>
+            <p>
+                [[/lang]][[input:ansA1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansA1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtA1]][[lang code="de"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-7b" style="display:none">
+            <p>
+                <b>
+                    (b)
+                </b>
+                Wir k&#246;nnen die gesuchte Wahrscheinlichkeit auch approximativ berechnen, indem wir die Poisson-Approximation verwenden, welche auf dem Poissonschen Grenzwertsatz beruht. Berechnen Sie nun die Wahrscheinlichkeit, dass von den {@n@} getesteten Personen genau {@k@} Personen mit dem Krankheitserreger infiziert sind, approximativ mithilfe der Poisson-Approximation.
+            </p>
+            <p>
+                Die approximierte Wahrscheinlichkeit betr&#228;gt [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-7b" style="display:none">
+            <p>
+                <b>
+                    (b)
+                </b>
+                We can also calculate the desired probability approximate by using the Poisson approximation based on the Poisson limit set. now calculate the probability that from the {@n@} tested persons exactly {@k@} Persons infected with the pathogen are approximative with the Poisson approximation.
+            </p>
+            <p>
+                The approximate probability is [[/lang]][[input:ansB]][[lang code="de"]].
+                <i>
+                    Geben Sie den Wert als Formel ein.
+                </i>
+                [[/lang]][[lang code="en"]].
+                <i>
+                    Enter the value as formula.
+                </i>
+                [[/lang]][[validation:ansB]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtB]][[lang code="de"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-7b1" style="display:none">
+            <p>
+                <b>
+                    (b1)
+                </b>
+                Bei der Poisson-Approximation wird die Binomialverteilung durch eine Poisson-Verteilung angen&#228;hert. Wie bestimmt man dabei den Parameter \(\lambda\) der Poisson-Verteilung aus den Parametern \(n\) und \(p\) der Binomialverteilung?
+            </p>
+            <p>
+                [[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-7b1" style="display:none">
+            <p>
+                <b>
+                    (b1)
+                </b>
+                In Poisson approximation, the binomial distribution is approximated by a Poisson distribution. How to determine the parameter \(\lambda\) the Poisson distribution from the parameters \(n\) and \(p\) the binomial distribution?
+            </p>
+            <p>
+                [[/lang]][[input:ansB1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ansB1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtB1]][[lang code="de"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-7c" style="display:none">
+            <p>
+                <b>
+                    (c)
+                </b>
+                Bei der Poisson-Approximation in (b) entsteht nat&#252;rlich ein Fehler gegen&#252;ber dem exakten Ergebnis aus (a). Geben Sie die Gr&#246;&#223;enordnung des absoluten Fehlers \[|\text{Bin}({@n@},{@p@})(\{{@k@}\})-\text{Poi}({@n@}\cdot{@p@})(\{{@k@}\})|\] an, den Sie bei der Berechnung der Wahrscheinlichkeit mithilfe der Poisson-Approximation gerade gemacht haben. Damit ist die Position der ersten signifikanten Nachkommastelle der Differenz zwischen der exakten Wahrscheinlichkeit \(\text{Bin}({@n@},{@p@})(\{{@k@}\})\approx{@SCI(binprob(n,p,k))@}\) und der approximierten Wahrscheinlichkeit \(\text{Poi}({@n@}\cdot{@p@})(\{{@k@}\})\approx{@SCI(poiprob(n,p,k))@}\) gemeint.
+            </p>
+            <p>
+                Der Fehler liegt in der Gr&#246;&#223;enordnung 10^[[/lang]][[lang code="en"]]
+            </p>
+        </div>
+        <div id="oer-aufgabe-7c" style="display:none">
+            <p>
+                <b>
+                    (c)
+                </b>
+                In the case of the Poisson approximation in (b), a fault with respect to the exact result is naturally produced (a). Specify the order of absolute error \[|\text{Bin}({@n@},{@p@})(\{{@k@}\})-\text{Poi}({@n@}\cdot{@p@})(\{{@k@}\})|\] that you have just made when calculating the probability using the Poisson approximation. Thus, the position of the first significant descending point is the difference between the exact probability \(\text{Bin}({@n@},{@p@})(\{{@k@}\})\approx{@SCI(binprob(n,p,k))@}\) and the approximated probability \(\text{Poi}({@n@}\cdot{@p@})(\{{@k@}\})\approx{@SCI(poiprob(n,p,k))@}\) I mean.
+            </p>
+            <p>
+                The error is in the order of 10^[[/lang]][[input:ansC]][[lang code="de"]]. [[/lang]][[lang code="en"]]. [[/lang]][[validation:ansC]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[feedback:prtC]][[lang code="de"]]
+            </p>
+        </div>
+        <style>
+            .buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+        </style>
+        <script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+        </script>
+        [[/lang]][[lang code="en"]]
+    </p>
+</div>
+<style>
+    .buttonweiter {
+                border: 1px solid black;
+                background-color: #A9F5BC; 
+}
+.buttonweiter:hover {
+                background-color: #E0F8E6;
+}
+.buttonzurueck {
+                border: 1px solid black;
+                background-color: #DCB25E; 
+}
+.buttonzurueck:hover {
+                background-color: #E7D2A7;
+}
+.buttontipp {
+                border: 1px solid black;
+                background-color: #c9d3f6; 
+}
+.buttontipp:hover {
+                background-color: #dbe1f9;
+}
+.divtipp {
+                background-color:#dbe1f9;
+                border:1px black solid;
+                border-radius: 4px;
+                padding:20px;
+                width:60%;
+                text-align:center;
+}
+.herv {
+                color: purple;
+}
+.erinnerungsbox {
+                border: 2px rgb(152, 202, 62) solid;
+                padding: 5px;
+}
+.list-group > .indent {
+                margin-left: 15%;
+}
+span.stack-tooltip {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+}
+.que.stack .formulation details {
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: .5em .5em 0;
+}
+.que.stack .formulation summary {
+                font-weight: bold;
+                margin: -.5em -.5em 0;
+                padding: .5em;
+}
+.que.stack .formulation details[open] {
+                padding: .5em;
+}
+.que.stack .formulation details[open] summary {
+                border-bottom: 1px solid #aaa;
+                margin-bottom: .5em;
+}
+</style>
+<script src="https://www.rub.de/ak-mathe-digital/stackselbstlern.js">
+</script>
+[[/lang]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="moodle_auto_format">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>3.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*
+Poisson-Approximation
+
+wurde entwickelt von
+  
+Christian M&#252;ller <c.mueller(at)hhu.de>
+
+nach einer Idee von
+
+Axel B&#252;cher <axel.buecher(at)hhu.de>
+Peter Kern <kern(at)hhu.de>
+
+an der Heinrich-Heine-Universit&#228;t D&#252;sseldorf.
+
+Dieses Werk ist lizenziert unter einer Creative Commons Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International Lizenz. Um eine Kopie der Lizenz zu erhalten, besuchen Sie https://creativecommons.org/licenses/by-sa/4.0/.
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+
+Technische Informationen:
+
+Diese Aufgabe bindet das Skript 'stackselbstlern.js' von Michael Kallweit f&#252;r die Aufgabennavigation ein.
+*/
+
+/* &#252;berpr&#252;fe, ob ans als Wahrscheinlichkeit interpretiert werden kann */
+probabilityp(ans) := is(numberp(float(ans)) and ans >= 0 and ans <= 1)
+/* runde x auf 3 Nachkommastellen */
+dp(x) := decimalplaces(x, 3)
+/* stelle x in wissenschaftlicher Notation dar */
+SCI(x) := scientific_notation(x, 2)
+
+/* Anzahl der Personen */
+n: rand_with_step(25, 50, 1)
+/* Infektionswahrscheinlichkeit */
+p: dp(rand_with_step(0.01, 0.1, 0.01))
+/* Anzahl der infizierten Personen */
+k: rand_with_step(2, 10, 1)
+
+/* Dichten von Binomial- und Poisson-Verteilung */
+binprob(n, p, k) := binomial(n, k) * p^k * (1 - p)^(n - k)
+poiprob(n, p, k) := e^(-n * p) * (n * p)^k / k!
+/* absoluter Approximationsfehler */
+err(n, p, k) := abs(binprob(n, p, k) - poiprob(n, p, k))
+/* Gr&#246;&#223;enordnung des absoluten Approximationsfehlers */
+mag(x) := floor(log(x) / log(10))
+/* Rundungsgenauigkeit bei numerischen Antworttests */
+epsilon: 10^(mag(err(n, p, k)))
+
+tr(de,en):=castext("[[lang code='de']]{@de@}[[/lang]][[lang code='en']]{@en@}[[/lang]]");
+/* Abk&#252;rzungen f&#252;r Verteilungen */
+Bin: tr("Binomialverteilung","binomial distribution")
+Hyp: tr("Hypergeometrische Verteilung","hypergeometric distribution")
+U:   tr("Laplace-Verteilung","laplace distribution")
+Geo: tr("Geometrische Verteilung","geometric distribution")
+
+/* L&#246;sungen */
+TansA: binprob(n, p, k)
+TansA1: random_permutation([[1, true, Bin], [2, false, Hyp], [3, false, U], [4, false, Geo]])
+TansB: poiprob(n, p, k)
+TansB1: random_permutation([[1, true, "\\(n\\cdot p\\)"], [2, false, "\\(n\\cdot(1-p)\\)"], [3, false, "\\(n\\cdot p\\cdot(1-p)\\)"], [4, false, "\\(n\\cdot p^2\\)"]])
+TansC: mag(err(n, p, k))]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote format="moodle_auto_format">
+            <text>\(n={@n@}\), \(p={@p@}\), \(k={@k@}\)</text>
+        </questionnote>
+        <questiondescription format="moodle_auto_format">
+            <text/>
+        </questiondescription>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done![[/lang]]
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partly correct.[[/lang]]
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.[[/lang]]
+]]></text>
+        </prtincorrect>
+        <decimals>.</decimals>
+        <scientificnotation>*10</scientificnotation>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ansA</name>
+            <type>numerical</type>
+            <tans>TansA</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansA1</name>
+            <type>radio</type>
+            <tans>TansA1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ansB</name>
+            <type>numerical</type>
+            <tans>TansB</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ansB1</name>
+            <type>radio</type>
+            <tans>TansB1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options>nonotanswered</options>
+        </input>
+        <input>
+            <name>ansC</name>
+            <type>numerical</type>
+            <tans>TansC</tans>
+            <boxsize>2</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prtA</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ansA)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtA-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihr Ergebnis liegt nicht im Intervall \([0,1]\) und kann daher nicht als Wahrscheinlichkeit interpretiert werden.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your result is not in interval \([0,1]\) and therefore cannot be interpreted as probability.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansA</sans>
+                <tans>TansA</tans>
+                <testoptions>epsilon</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die Wahrscheinlichkeit richtig mithilfe der Binomialverteilung berechnet. Bezeichnet \(X\) die zuf&#228;llige Anzahl der infizierten Personen, so sieht die Rechnung vollst&#228;ndig aufgeschrieben folgenderma&#223;en aus:
+\begin{align*}
+P(X={@k@})
+&amp;=\text{Bin}({@n@},{@p@})(\{{@k@}\})\\
+&amp;=\binom{{@n@}}{{@k@}}\cdot{@p@}^{@k@}\cdot(1-{@p@})^{{@n@}-{@k@}}\\
+&amp;\approx{@SCI(binprob(n,p,k))@}.
+\end{align*}
+</p>
+<hr/>
+<p>
+    Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-7a');
+show('oer-aufgabe-7b');
+" type="button">
+        Weiter
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have calculated the probability correctly using the binomial distribution. Reference \(X\) the random number of infected persons, the invoice looks fully written as follows:
+\begin{align*}
+P(X={@k@})
+&amp;=\text{Bin}({@n@},{@p@})(\{{@k@}\})\\
+&amp;=\binom{{@n@}}{{@k@}}\cdot{@p@}^{@k@}\cdot(1-{@p@})^{{@n@}-{@k@}}\\
+&amp;\approx{@SCI(binprob(n,p,k))@}.
+\end{align*}
+</p>
+<hr/>
+<p>
+    To get to the next task, click on
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-7a');
+show('oer-aufgabe-7b');
+" type="button">
+        Next
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-aufgabe-7a-PRT1">
+    <p>
+        Dass Sie die Wahrscheinlichkeit nicht auf Anhieb berechnen konnten, ist kein Problem! L&#246;sen Sie zun&#228;chst die folgende Teilaufgabe. Dann k&#246;nnen Sie sicherlich auch die urspr&#252;ngliche Aufgabe l&#246;sen. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-7a');
+show('oer-aufgabe-7a1');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-7a-PRT2" style="display:none">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Sie haben gerade gelernt, dass die Anzahl der infizierten Personen unter den getesteten Personen eine Binomialverteilung mit den Parametern \(n={@n@}\) und \(p={@p@}\) besitzt. Damit k&#246;nnen Sie nun die gesuchte Wahrscheinlichkeit f&#252;r genau \(k={@k@}\) infizierte Personen berechnen.
+    </p>
+</div>
+[[/lang]][[lang code="en"]]
+<div id="oer-aufgabe-7a-PRT1">
+    <p>
+        That you couldn't calculate the likelihood right away is no problem! First, solve the following subtask. Then you can also solve the original task. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-7a');
+show('oer-aufgabe-7a1');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-7a-PRT2" style="display:none">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        You have just learned that the number of infected persons among the tested persons a binomial distribution with the parameters \(n={@n@}\) and \(p={@p@}\) has. With this you can now find the desired probability for exactly \(k={@k@}\) Calculate infected persons.
+    </p>
+</div>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtA1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA1</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Mit der Binomialverteilung wird die Anzahl der Erfolge in \(n\) unabh&#228;ngigen Bernoulli-Experimenten mit Erfolgswahrscheinlichkeit \(p\) modelliert.
+</p>
+<p>
+    Jede einzelne getestete Personen ist entweder infiziert oder nicht infiziert mit einer "Erfolgswahrscheinlichkeit" von \(p={@p@}\), was einem Bernoulli-Experiment entspricht. Der Ausschluss von Infektionsketten ist eine Unabh&#228;ngigkeitsannahme, sodass die Gesamtanzahl der infizierten Personen unter den \(n={@n@}\) getesteten Personen binomialverteilt ist mit \(n={@n@}\) und \(p={@p@}\).
+</p>
+<hr/>
+<p>
+    Jetzt k&#246;nnen Sie die urspr&#252;ngliche Aufgabe noch einmal versuchen. Klicken Sie dazu auf
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-7a1');
+show('oer-aufgabe-7a');
+hide('oer-aufgabe-7a-PRT1');
+show('oer-aufgabe-7a-PRT2');
+" type="button">
+        Weiter
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    With the binomial distribution, the number of successes in \(n\) independent Bernoulli experiments with probability of success \(p\) modelled.
+</p>
+<p>
+    Each individual tested person is either infected or not infected with a "success probability" of \(p={@p@}\)which corresponds to an Bernoulli experiment. Exclusion of infection chains is an acceptance of independence, so that the total number of infected persons among \(n={@n@}\) tested persons binomial distributed with \(n={@n@}\) and \(p={@p@}\).
+</p>
+<hr/>
+<p>
+    Now you can try the original task again. Click on
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-7a1');
+show('oer-aufgabe-7a');
+hide('oer-aufgabe-7a-PRT1');
+show('oer-aufgabe-7a-PRT2');
+" type="button">
+        Next
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prtA1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA1</sans>
+                <tans>2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Die hypergeometrische Verteilung tritt auf, wenn eine Stichprobe aus einer endlichen Grundgesamtheit, von der ein bestimmter Teil eine gewisse Eigenschaft besitzt, ohne Zur&#252;cklegen gezogen wird. Die Anzahl der Elemente in der Stichprobe mit der gesuchten Eigenschaft hat dann eine hypergeometrische Verteilung. Das entspricht nicht der Fragestellung.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    The hypergeometric distribution occurs when a sample is drawn from a finite population of which a certain part has a certain property without being reset. The number of elements in the sample with the desired property then has a hypergeometric distribution. This does not correspond to the question.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtA1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA1</sans>
+                <tans>3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA1-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Die
+    <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "diskrete Gleichverteilung"'>
+        Laplace-Verteilung
+    </span>
+    wird dann verwendet, wenn ein Zufallsexperiment endliche viele Ausg&#228;nge hat und jeder m&#246;gliche Ausgang mit derselben Wahrscheinlichkeit auftreten kann. Das entspricht nicht der Fragestellung.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    The
+    <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "diskrete Gleichverteilung"'>
+        Laplace distribution
+    </span>
+    is used when a random experiment finally has many outputs and each possible output can occur with the same probability. This does not correspond to the question.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>prtA1-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansA1</sans>
+                <tans>4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtA1-4-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Wird ein Zufallsexperiment so lange wiederholt, bis ein bestimmtes Ereignis erstmals eingetreten ist, so hat die Anzahl der Fehlversuche vor dem ersten Eintreten des Ereignisses eine geometrische Verteilung. Das entspricht nicht der Fragestellung.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    If a random experiment is repeated until a specific event has occurred for the first time, the number of faulty tests before the first occurrence of the event has a geometric distribution. This does not correspond to the question.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtA1-4-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>probabilityp(ansB)</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtB-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Ihr Ergebnis liegt nicht im Intervall \([0,1]\) und kann daher nicht als Wahrscheinlichkeit interpretiert werden.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    Your result is not in interval \([0,1]\) and therefore cannot be interpreted as probability.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>NumAbsolute</answertest>
+                <sans>ansB</sans>
+                <tans>TansB</tans>
+                <testoptions>epsilon</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die Wahrscheinlichkeit richtig mithilfe der Poisson-Approximation angen&#228;hert. Bezeichnet \(X\) wieder die zuf&#228;llige Anzahl der infizierten Personen, so sieht die Rechnung vollst&#228;ndig aufgeschrieben diesmal folgenderma&#223;en aus:
+\begin{align*}
+P(X={@k@})
+&amp;\approx\text{Poi}({@n@}\cdot{@p@})(\{{@k@}\})\\
+&amp;=e^{-{@n@}\cdot{@p@}}\frac{({@n@}\cdot{@p@})^{{@k@}}}{{@k@}!}\\
+&amp;\approx{@SCI(poiprob(n,p,k))@}.
+\end{align*}
+</p>
+<hr/>
+<p>
+    Um zum n&#228;chsten Aufgabenteil zu gelangen, klicken Sie auf
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-7b');
+show('oer-aufgabe-7c');
+" type="button">
+        Weiter
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have correctly approximated the probability using the Poisson approximation. Reference \(X\) again the random number of infected persons, so the invoice looks completely written this time:
+\begin{align*}
+P(X={@k@})
+&amp;\approx\text{Poi}({@n@}\cdot{@p@})(\{{@k@}\})\\
+&amp;=e^{-{@n@}\cdot{@p@}}\frac{({@n@}\cdot{@p@})^{{@k@}}}{{@k@}!}\\
+&amp;\approx{@SCI(poiprob(n,p,k))@}.
+\end{align*}
+</p>
+<hr/>
+<p>
+    To get to the next task, click on
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-7b');
+show('oer-aufgabe-7c');
+" type="button">
+        Next
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<div id="oer-aufgabe-7b-PRT1">
+    <p>
+        Dass Sie die Wahrscheinlichkeit nicht auf Anhieb berechnen konnten, ist kein Problem! L&#246;sen Sie zun&#228;chst die folgende Teilaufgabe. Dann k&#246;nnen Sie sicherlich auch die urspr&#252;ngliche Aufgabe l&#246;sen. Klicken Sie dazu auf
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-7b');
+show('oer-aufgabe-7b1');
+" type="button">
+            Weiter
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-7b-PRT2" style="display:none">
+    <p>
+        <b>
+            Bearbeiten Sie mithilfe des Zwischenschritts nun noch einmal die Ausgangsfrage.
+        </b>
+    </p>
+    <p>
+        Sie haben gerade gelernt, dass bei der Poisson-Approximation \(\lambda=np\) gesetzt wird, wobei \(n={@n@}\) und \(p={@p@}\) die gegebenen Parameter der Binomialverteilung sind. Damit k&#246;nnen Sie nun die gesuchte Wahrscheinlichkeit f&#252;r genau \(k={@k@}\) infizierte Personen approximativ berechnen.
+    </p>
+</div>
+[[/lang]][[lang code="en"]]
+<div id="oer-aufgabe-7b-PRT1">
+    <p>
+        That you couldn't calculate the likelihood right away is no problem! First, solve the following subtask. Then you can also solve the original task. Click on
+        <button class="buttonweiter" onclick="
+hide('oer-aufgabe-7b');
+show('oer-aufgabe-7b1');
+" type="button">
+            Next
+        </button>
+    </p>
+</div>
+<div id="oer-aufgabe-7b-PRT2" style="display:none">
+    <p>
+        <b>
+            Edit the initial question with the help of the intermediate step.
+        </b>
+    </p>
+    <p>
+        You just learned that in the Poisson approximation \(\lambda=np\) where \(n={@n@}\) and \(p={@p@}\) the given parameters of the binomial distribution are. With this you can now find the desired probability for exactly \(k={@k@}\) infected persons calculate approximate.
+    </p>
+</div>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtB1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>0</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansB1</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtB1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Richtige Antwort, gut gemacht!
+<p>
+    Der Poissonsche Grenzwertsatz gilt unter der Voraussetzung \(np\to\lambda\) f&#252;r \(n\to\infty\). Hierbei h&#228;ngt \(p\) eigentlich auch noch von \(n\) ab. Man setzt bei der Poisson-Approximation daher \(\lambda=np\).
+</p>
+<hr/>
+<p>
+    Jetzt k&#246;nnen Sie die urspr&#252;ngliche Aufgabe noch einmal versuchen. Klicken Sie dazu auf
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-7b1');
+show('oer-aufgabe-7b');
+hide('oer-aufgabe-7b-PRT1');
+show('oer-aufgabe-7b-PRT2');
+" type="button">
+        Weiter
+    </button>
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Right answer, well done!
+<p>
+    The Poisson limit value set shall apply on condition \(np\to\lambda\) for \(n\to\infty\). This depends \(p\) also from \(n\) off. One uses Poisson approximation \(\lambda=np\).
+</p>
+<hr/>
+<p>
+    Now you can try the original task again. Click on
+    <button class="buttonweiter" onclick="
+hide('oer-aufgabe-7b1');
+show('oer-aufgabe-7b');
+hide('oer-aufgabe-7b-PRT1');
+show('oer-aufgabe-7b-PRT2');
+" type="button">
+        Next
+    </button>
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtB1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Falsche Antwort.
+<p>
+    Versuchen Sie es noch einmal und denken Sie dabei an die Voraussetzungen an \(n\) und \(p\), unter denen der Poissonsche Grenzwertsatz gilt.
+</p>
+[[/lang]][[lang code="en"]]
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Wrong answer.
+<p>
+    Try it again and think about the conditions \(n\) and \(p\), under which the Poisson limit set applies.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prtC</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansC</sans>
+                <tans>TansC</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prtC-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die Gr&#246;&#223;enordnung richtig angegeben. Der absolute Fehler betr&#228;gt \(|\text{Bin}({@n@},{@p@})(\{{@k@}\})-\text{Poi}({@n@}\cdot{@p@})(\{{@k@}\})| \approx {@SCI(err(n,p,k))@}\) und liegt damit in der Gr&#246;&#223;enordnung \(10^{@TansC@}\).
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You have given the order correctly. The absolute error is \(|\text{Bin}({@n@},{@p@})(\{{@k@}\})-\text{Poi}({@n@}\cdot{@p@})(\{{@k@}\})| \approx {@SCI(err(n,p,k))@}\) and thus lies in the order of magnitude \(10^{@TansC@}\).
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    Sie haben die Gr&#246;&#223;enordnung falsch angegeben. Die mit der Binomialverteilung exakt berechnete Wahrscheinlichkeit betr&#228;gt \(\text{Bin}({@n@},{@p@})(\{{@k@}\})\approx{@SCI(binprob(n,p,k))@}\). Die mit der Poisson-Verteilung approximativ berechnete Wahrscheinlichkeit betr&#228;gt \(\text{Poi}({@n@}\cdot{@p@})(\{{@k@}\})\approx{@SCI(poiprob(n,p,k))@}\). Berechnen Sie nun den absoluten Fehler zwischen beiden Ergebnissen und geben sie dessen Gr&#246;&#223;enordnung als Zehnerpotenz an.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    You've given the order wrong. The probability exactly calculated with the binomial distribution is \(\text{Bin}({@n@},{@p@})(\{{@k@}\})\approx{@SCI(binprob(n,p,k))@}\). The probability calculated approximate with the Poisson distribution is \(\text{Poi}({@n@}\cdot{@p@})(\{{@k@}\})\approx{@SCI(poiprob(n,p,k))@}\). Now calculate the absolute error between the two results and specify its order of magnitude as a ten-potence.
+</p>
+[[/lang]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>1</sans>
+                <tans>1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>2</truenextnode>
+                <trueanswernote>prtC-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<p>
+    In der folgenden Grafik ist der (vorzeichenbehaftete) Fehler \[f_{n,k}(p)=\binom{n}{k}p^k(1-p)^{n-k}-e^{-np}\frac{(np)^k}{k!}\] zwischen den
+    <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "Wahrscheinlichkeitsfunktion"'>
+        Z&#228;hldichten
+    </span>
+    der Binomialverteilung und der Poisson-Verteilung als Funktion der Erfolgswahrscheinlichkeit \(p\) aufgezeichnet. Die Parameter \(n\) und \(k\) lassen sich &#252;ber die Schieberegler ver&#228;ndern.
+</p>
+<p>
+    [[jsxgraph]]
+var board = JXG.JSXGraph.initBoard(divid, {
+boundingbox: [-0.1, 0.06, 1.05, -0.06],
+axis: true,
+drag: { enabled: true },
+grid: false,
+showCopyright: false,
+showFullscreen: false,
+showInfobox: false,
+showNavigation: false,
+showScreenshot: false
+});
+var n = board.create('slider', [[0.1, -0.04], [0.5, -0.04], [10, 10, 100]], { name: 'n', snapWidth: 1 });
+var k = board.create('slider', [[0.1, -0.05], [0.5, -0.05], [0, 0, 10]], { name: 'k', snapWidth: 1 });
+var error = (n, k, p) =&gt; JXG.Math.binomial(n, k) * Math.pow(p, k) * Math.pow(1 - p, n - k) - Math.exp(-n * p) * Math.pow(n * p, k) / JXG.Math.factorial(k);
+board.create('functiongraph', [p =&gt; error(n.Value(), k.Value(), p), 0, 1], { highlight: false });
+board.update();
+[[/jsxgraph]]
+</p>
+<p>
+    Der Poissonsche Grenzwertsatz besagt gerade, dass \(f_{n,k}(p_n)\to0\) f&#252;r \(n\to\infty\), falls \(np_n\to\lambda\in\mathbb{R}\) f&#252;r \(n\to\infty\). F&#252;r gro&#223;e \(n\) und kleine \(p\) ist der Fehler \(f_{n,k}(p)\) also betragsm&#228;&#223;ig sehr klein.
+</p>
+[[/lang]][[lang code="en"]]
+<p>
+    In the following graph is the (sign-affected) error \[f_{n,k}(p)=\binom{n}{k}p^k(1-p)^{n-k}-e^{-np}\frac{(np)^k}{k!}\] between the
+    <span class="stack-tooltip" data-placement="top" data-toggle="tooltip" title='auch bekannt unter "Wahrscheinlichkeitsfunktion"'>
+        Counting densities
+    </span>
+    the binomial distribution and the Poisson distribution as a function of probability of success \(p\) recorded. The parameters \(n\) and \(k\) can be changed via the sliders.
+</p>
+<p>
+    [[jsxgraph]]
+var board = JXG.JSXGraph.initBoard(divid, {
+boundingbox: [-0.1, 0.06, 1.05, -0.06],
+axis: true,
+drag: { enabled: true },
+grid: false,
+showCopyright: false,
+showFullscreen: false,
+showInfobox: false,
+showNavigation: false,
+showScreenshot: false
+});
+var n = board.create('slider', [[0.1, -0.04], [0.5, -0.04], [10, 10, 100]], { name: 'n', snapWidth: 1 });
+var k = board.create('slider', [[0.1, -0.05], [0.5, -0.05], [0, 0, 10]], { name: 'k', snapWidth: 1 });
+var error = (n, k, p) =&gt; JXG.Math.binomial(n, k) * Math.pow(p, k) * Math.pow(1 - p, n - k) - Math.exp(-n * p) * Math.pow(n * p, k) / JXG.Math.factorial(k);
+board.create('functiongraph', [p =&gt; error(n.Value(), k.Value(), p), 0, 1], { highlight: false });
+board.update();
+[[/jsxgraph]]
+</p>
+<p>
+    The Poisson limit set just states that \(f_{n,k}(p_n)\to0\) for \(n\to\infty\)if \(np_n\to\lambda\in\mathbb{R}\) for \(n\to\infty\). For big \(n\) and small \(p\) is the error \(f_{n,k}(p)\) therefore very small.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>prtC-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <description/>
+                <answertest>AlgEquiv</answertest>
+                <sans>ansC</sans>
+                <tans>TansC</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prtC-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[lang code="de"]]
+<hr/>
+<p>
+    Sie haben die Aufgabe erfolgreich gel&#246;st! Jetzt sollten Sie die Poisson-Approximation sicher anwenden k&#246;nnen.
+</p>
+[[/lang]][[lang code="en"]]
+<hr/>
+<p>
+    You have successfully solved the task! Now you should be able to safely apply the Poisson approximation.
+</p>
+[[/lang]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prtC-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

@@ -6,8 +6,25 @@
         </name>
         <questiontext format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Bestimmen Sie die Determinante der folgenden Matrix:
+[[lang code="de"]]Bestimmen Sie die Determinante der folgenden Matrix:
+<br/>
+<p>
+    <br/>
+</p>
+<p>
+</p>
+<p>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        {@(A)@} = {@A1@}
+    </p>
+</div>
+<p>
+    <br/>
+</p>
+<p>
+    \( \det(A)= \) [[/lang]][[lang code="en"]]Determine the determinant of the following matrix:
     <br/>
     <p>
         <br/>
@@ -25,95 +42,74 @@
         <br/>
     </p>
     <p>
-        \( \det(A)= \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+        \( \det(A)= \) [[/lang]][[input:ans1]][[lang code="de"]] [[/lang]][[lang code="en"]] [[/lang]][[validation:ans1]][[lang code="de"]][[/lang]][[lang code="en"]][[/lang]][[feedback:prt1]][[lang code="de"]]
     </p>
     <p>
     </p>
-</span>
-<span class="multilang" lang="en">
-    Determine the determinant of the following matrix:
-    <br/>
-    <p>
-        <br/>
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <div class="editor-indent" style="margin-left: 30px;">
-        <p>
-            {@(A)@} = {@A1@}
-        </p>
-    </div>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \( \det(A)= \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
-    </p>
-    <p>
-    </p>
-</span>
+    [[/lang]][[lang code="en"]]
+</p>
+<p>
+</p>
+[[/lang]]
 ]]></text>
         </questiontext>
         <generalfeedback format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    <h4>
-        <b>
-            L&#246;sung
-        </b>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(\det(A)=\det\left({@A1@}\right)\)
-    </p>
-    <p>
-        \(=-({@C@}) \cdot \det\left({@a1@}\right)-\det\left({@a2@}\right)\)
-    </p>
-    <p>
-        (Laplace Entwicklung nach der zweiten Zeile)
-    </p>
-    <p>
-        \(=-({@C@})\Big(({@a3@}-5)-({@a4@}-4)\Big)-\Big((-15+48)-({@a5@}-30)\Big)\)
-    </p>
-    <p>
-        (Regel von Sarrus)
-    </p>
-    <p>
-        \(={@a6@}\)
-    </p>
-</span>
-<span class="multilang" lang="en">
-    <h4>
-        <b>
-            Solution
-        </b>
-    </h4>
-    <p>
-        <br/>
-    </p>
-    <p>
-        \(\det(A)=\det\left({@A1@}\right)\)
-    </p>
-    <p>
-        \(=-({@C@}) \cdot \det\left({@a1@}\right)-\det\left({@a2@}\right)\)
-    </p>
-    <p>
-        (Laplace development after the second line)
-    </p>
-    <p>
-        \(=-({@C@})\Big(({@a3@}-5)-({@a4@}-4)\Big)-\Big((-15+48)-({@a5@}-30)\Big)\)
-    </p>
-    <p>
-        (Rule of Sarrus)
-    </p>
-    <p>
-        \(={@a6@}\)
-    </p>
-</span>
+[[lang code="de"]]
+<h4>
+    <b>
+        L&#246;sung
+    </b>
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    \(\det(A)=\det\left({@A1@}\right)\)
+</p>
+<p>
+    \(=-({@C@}) \cdot \det\left({@a1@}\right)-\det\left({@a2@}\right)\)
+</p>
+<p>
+    (Laplace Entwicklung nach der zweiten Zeile)
+</p>
+<p>
+    \(=-({@C@})\Big(({@a3@}-5)-({@a4@}-4)\Big)-\Big((-15+48)-({@a5@}-30)\Big)\)
+</p>
+<p>
+    (Regel von Sarrus)
+</p>
+<p>
+    \(={@a6@}\)
+</p>
+[[/lang]][[lang code="en"]]
+<h4>
+    <b>
+        Solution
+    </b>
+</h4>
+<p>
+    <br/>
+</p>
+<p>
+    \(\det(A)=\det\left({@A1@}\right)\)
+</p>
+<p>
+    \(=-({@C@}) \cdot \det\left({@a1@}\right)-\det\left({@a2@}\right)\)
+</p>
+<p>
+    (Laplace development after the second line)
+</p>
+<p>
+    \(=-({@C@})\Big(({@a3@}-5)-({@a4@}-4)\Big)-\Big((-15+48)-({@a5@}-30)\Big)\)
+</p>
+<p>
+    (Rule of Sarrus)
+</p>
+<p>
+    \(={@a6@}\)
+</p>
+[[/lang]]
 ]]></text>
         </generalfeedback>
         <defaultgrade>1.0000000</defaultgrade>
@@ -152,32 +148,17 @@ a6: -C*((a3-5)-(a4-4))-((-15-48)-(a5-30))</text>
         <assumereal>0</assumereal>
         <prtcorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Richtige Antwort, gut gemacht!
-</span>
-<span class="multilang" lang="en">
-    Right answer, well done!
-</span>
+[[lang code="de"]]Richtige Antwort, gut gemacht![[/lang]][[lang code="en"]]Right answer, well done![[/lang]]
 ]]></text>
         </prtcorrect>
         <prtpartiallycorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Ihre Antwort ist teilweise korrekt.
-</span>
-<span class="multilang" lang="en">
-    Your answer is partly correct.
-</span>
+[[lang code="de"]]Ihre Antwort ist teilweise korrekt.[[/lang]][[lang code="en"]]Your answer is partly correct.[[/lang]]
 ]]></text>
         </prtpartiallycorrect>
         <prtincorrect format="html">
             <text><![CDATA[
-<span class="multilang" lang="de">
-    Falsche Antwort.
-</span>
-<span class="multilang" lang="en">
-    Wrong answer.
-</span>
+[[lang code="de"]]Falsche Antwort.[[/lang]][[lang code="en"]]Wrong answer.[[/lang]]
 ]]></text>
         </prtincorrect>
         <decimals>.</decimals>
