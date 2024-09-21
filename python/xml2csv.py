@@ -21,6 +21,9 @@ fieldnames=["Nummer","de","en"]
 for filename in filenames:
     if filename.endswith("_new.xml"):
         continue
+    if os.path.isfile(f"{filename}.template") or os.path.isfile(f"{filename}.csv"):
+        print(f"{filename} wird übersprungen")
+        continue
     print(filename)
     tree = ET.parse(filename)
     root = tree.getroot()

@@ -72,7 +72,6 @@ Navigiere zu den Ordner in CMD oder in einer Shell mithilfe von den "cd" Befehl,
   Mit "cd [Name des Ordner]" kann zu den Ordner navigiert werden.
   Mit "cd .." kann man zu den Obergeordneten obergeordneten Ordner zurück navigieren.
 Erstelle die .csv und .xml.template datein mit den Befehl "python xml2csv.py"
-Achtung: In allen weiteren Schritten wird eine wiederholte Ausführung eines der xml2csv Skripten die bisherigen Übersetzungen in der .csv Datei löschen!
 
 4. Übersetzung
 
