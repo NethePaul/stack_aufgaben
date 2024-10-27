@@ -37,7 +37,7 @@ for filename in filenames:
 
     categories=[i.text for i in root.findall('.//question[@type="category"]/category/text')]
     category=os.path.commonpath(categories)
-    print(f"Neue Fragen stehen unter: {category}/überstzt")
+    print(f"Neue Fragen stehen unter: {category}/übersetzt")
     
     inhalt=inhalt.replace(category,category+"/übersetzt")
     inhalt=inhalt.replace('<quiz>',f"""<quiz>
